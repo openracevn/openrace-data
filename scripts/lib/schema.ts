@@ -209,14 +209,16 @@ void _canonicalFieldsAreRaceFields;
 export type CanonicalRace = Pick<Race, CanonicalField>;
 
 /**
- * A race's file name: its slug, always ending with the race year, so files are
- * readable and editions don't blur ("vung-tau-city-trail" in 2026 →
- * "vung-tau-city-trail-2026.json"; "tet-run-mien-nam-2027" stays as is). The key is
- * still the `id` inside. A race moved to another year gets its file renamed.
+ * A race's file name: its slug, with the race year at the end and never at the
+ * start, so files are readable and editions don't blur ("vung-tau-city-trail" in
+ * 2026 → "vung-tau-city-trail-2026.json"; "2026-international-run-for-a-green-da-lat"
+ * → "international-run-for-a-green-da-lat-2026.json"; "tet-run-mien-nam-2027" stays).
+ * The key is still the `id` inside. A race moved to another year gets its file renamed.
  */
 export function raceFileName(slug: string, date: string): string {
   const year = date.slice(0, 4);
-  return `${slug.endsWith(`-${year}`) ? slug : `${slug}-${year}`}.json`;
+  const base = slug.replace(/^(?:19|20)\d{2}-(?=[a-z0-9])/, "");
+  return `${base.endsWith(`-${year}`) ? base : `${base}-${year}`}.json`;
 }
 
 export function racePath(race: { slug: string; date: string }): string {

@@ -158,6 +158,12 @@ describe("planSync", () => {
     assert.equal(RaceSchema.parse(JSON.parse(moved.files["data/races/vung-tau-city-trail-2027.json"]!)).id, first.changes[0]!.id);
   });
 
+  it("moves a year at the start of a slug to the end of the file name", async () => {
+    const p = await plan(memoryStore(), [input("https://actiup.net/vi/event/2026-green-run", { ...extractedA, name: "Green Run" })]);
+    assert.equal(p.changes[0]!.slug, "2026-green-run"); // the slug stays the source's
+    assert.ok(p.files["data/races/green-run-2026.json"]);
+  });
+
   it("gives a new race a -2 slug when its file name is taken", async () => {
     const store = await seeded(); // tay-ho-half-marathon-2026.json
     await planRename(store, store.id, "tay-ho-half-marathon").then((p) => apply(store, p.files)); // file name unchanged
