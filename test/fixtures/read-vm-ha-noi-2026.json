@@ -1,0 +1,160 @@
+{
+  "site": "vnexpress-marathon",
+  "role": "official",
+  "url": "https://vm.vnexpress.net/ha-noi-2026",
+  "extracted": {
+    "facts": {
+      "name": "VnExpress Marathon Hanoi Midnight 2026",
+      "date": "2026-11-29"
+    },
+    "pages": [
+      {
+        "url": "https://vm.vnexpress.net/ha-noi-2026",
+        "json": {
+          "pageKind": "sport",
+          "types": [
+            "road_run"
+          ],
+          "name": "VnExpress Marathon",
+          "date": "2026-11-29",
+          "endDate": "2026-11-29",
+          "distances": [
+            "5 km",
+            "10 km",
+            "21 km",
+            "42 km"
+          ],
+          "venue": "Hanoi",
+          "city": "Hà Nội",
+          "organizer": "VnExpress",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "prices": [
+            {
+              "distance": "5 km",
+              "tier": "Super Early Bird",
+              "from": "2026-09-04",
+              "to": "2026-09-24",
+              "price": 420000
+            },
+            {
+              "distance": "5 km",
+              "tier": "Early Bird",
+              "from": "2026-09-25",
+              "to": "2026-10-15",
+              "price": 500000
+            },
+            {
+              "distance": "5 km",
+              "tier": "Regular",
+              "from": "2026-10-16",
+              "to": "2026-11-06",
+              "price": 620000
+            },
+            {
+              "distance": "5 km",
+              "tier": "Late",
+              "from": "2026-11-07",
+              "to": "2026-11-19",
+              "price": 790000
+            },
+            {
+              "distance": "10 km",
+              "tier": "Super Early Bird",
+              "from": "2026-09-04",
+              "to": "2026-09-24",
+              "price": 480000
+            },
+            {
+              "distance": "10 km",
+              "tier": "Early Bird",
+              "from": "2026-09-25",
+              "to": "2026-10-15",
+              "price": 620000
+            },
+            {
+              "distance": "10 km",
+              "tier": "Regular",
+              "from": "2026-10-16",
+              "to": "2026-11-06",
+              "price": 790000
+            },
+            {
+              "distance": "10 km",
+              "tier": "Late",
+              "from": "2026-11-07",
+              "to": "2026-11-19",
+              "price": 950000
+            },
+            {
+              "distance": "21 km",
+              "tier": "Super Early Bird",
+              "from": "2026-09-04",
+              "to": "2026-09-24",
+              "price": 660000
+            },
+            {
+              "distance": "21 km",
+              "tier": "Early Bird",
+              "from": "2026-09-25",
+              "to": "2026-10-15",
+              "price": 790000
+            },
+            {
+              "distance": "21 km",
+              "tier": "Regular",
+              "from": "2026-10-16",
+              "to": "2026-11-06",
+              "price": 950000
+            },
+            {
+              "distance": "21 km",
+              "tier": "Late",
+              "from": "2026-11-07",
+              "to": "2026-11-19",
+              "price": 1150000
+            },
+            {
+              "distance": "42 km",
+              "tier": "Super Early Bird",
+              "from": "2026-09-04",
+              "to": "2026-09-24",
+              "price": 780000
+            },
+            {
+              "distance": "42 km",
+              "tier": "Early Bird",
+              "from": "2026-09-25",
+              "to": "2026-10-15",
+              "price": 950000
+            },
+            {
+              "distance": "42 km",
+              "tier": "Regular",
+              "from": "2026-10-16",
+              "to": "2026-11-06",
+              "price": 1150000
+            },
+            {
+              "distance": "42 km",
+              "tier": "Late",
+              "from": "2026-11-07",
+              "to": "2026-11-19",
+              "price": 1350000
+            }
+          ]
+        }
+      }
+    ],
+    "links": [],
+    "series": {
+      "id": "vnexpress-marathon-ha-noi",
+      "name": "VnExpress Marathon Hà Nội"
+    },
+    "organizer": {
+      "id": "vnexpress",
+      "name": "VnExpress",
+      "website": "https://vnexpress.net/"
+    }
+  }
+}

@@ -58,7 +58,8 @@ export function reconcile(sources: readonly RaceSource[], config: SitesConfig): 
     endDate: primary.facts.endDate,
     seriesId: hints("series")?.id ?? null,
     organizerId: hints("organizer")?.id ?? null,
-    organizer: first((f) => f.organizer),
+    // An organizer named in the site list beats the model's reading of a page.
+    organizer: hints("organizer")?.name ?? first((f) => f.organizer),
     distances: first((f) => f.distances, (d) => d.length === 0) ?? [],
     location: { venue: withLocation?.venue ?? null, city: withLocation?.city ?? null },
     prices,

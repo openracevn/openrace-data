@@ -40,8 +40,10 @@ export type Snapshot = {
   url: string;
   /** Relevant HTML per page (lib/html.ts cleanContent), each read as one page. */
   pages: { url: string; html: string }[];
-  /** Images that may hold the price table, best first. OCR'd only if the pages give no prices. */
+  /** Images that may hold the price table, best first. OCR'd only if the pages give no prices... */
   priceImages: string[];
+  /** ...unless the site says these are its price table (e.g. ActiUp's price section): then always. */
+  priceImagesCertain?: boolean;
   /** Outbound links on the race's pages, with folded anchor text. */
   links: PageLink[];
   /** Facts read for free from the site's own data (e.g. ActiUp's API); trusted over model output. */

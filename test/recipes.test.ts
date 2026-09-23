@@ -83,6 +83,7 @@ describe("actiup recipe", () => {
       "https://pix.actiup.net/2026/07/11/1783767689408581/price-pinkrun26.png",
       "https://pix.actiup.net/2026/07/11/1783767675896934/grouppolicy-pinkrun26.png",
     ]);
+    assert.equal(snap.priceImagesCertain, true);
     assert.match(snap.pages[0]!.html, /<h2>Chính sách giá vé<\/h2>/);
     assert.deepEqual(snap.links.map((l) => classifyLink(config, l.url, l.text).kind), ["rules"]);
     assert.equal(snap.hints?.organizer?.id, "mang-luoi-ung-thu-vu-viet-nam-bcnv");
@@ -100,7 +101,10 @@ describe("vnexpress-marathon recipe", () => {
 
   it("reads only the banner and the ticket table, not the menu of every edition", async () => {
     const http = fakeHttp({ "https://vm.vnexpress.net/ha-noi-2026": fixture("vm-ha-noi-2026.html") });
-    const snap = await vnexpressMarathonRecipe.snapshot({ url: "https://vm.vnexpress.net/ha-noi-2026", name: "Hà Nội 2026" }, ctx("vnexpress-marathon", http));
+    // Checked alone (--race): no name from the hub; the page's own menu gives it.
+    const snap = await vnexpressMarathonRecipe.snapshot({ url: "https://vm.vnexpress.net/ha-noi-2026" }, ctx("vnexpress-marathon", http));
+    assert.deepEqual(snap.facts, { name: "VnExpress Marathon Hanoi Midnight 2026", date: "2026-11-29" });
+    assert.equal(snap.slugHint, "vnexpress-marathon-ha-noi");
     const html = snap.pages[0]!.html;
     assert.match(html, /NGÀY THI ĐẤU: 29\/11\/2026/);
     assert.match(html, /Super Early Bird/);
@@ -144,6 +148,7 @@ describe("default recipe (race sites)", () => {
     assert.deepEqual(snap.pages.map((p) => p.url), ["https://hcmcmarathon.com/", "https://hcmcmarathon.com/21km/"]);
     assert.match(snap.pages[1]!.html, /17 January 2027/);
     assert.ok(snap.priceImages.some((u) => /HM27-FEE_EN_21KM/.test(u)));
+    assert.equal(snap.priceImagesCertain, true);
     assert.deepEqual(snap.hints, { series: { id: "hcmc-marathon", name: "HCMC Marathon" }, organizer: { id: "pulse-active", name: "Pulse Active", website: "https://pulse.vn/" } });
     assert.ok(snap.links.every((l) => !l.url.includes("hcmcmarathon.com")));
   });

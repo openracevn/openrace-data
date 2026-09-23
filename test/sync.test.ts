@@ -110,8 +110,8 @@ describe("planSync", () => {
     assert.equal(race.seriesId, "hcmc-marathon");
     assert.equal(race.organizerId, "pulse-active");
     assert.deepEqual(race.prices, [
-      { distance: "21km", tier: "Early Bird", kind: "early", price: 1_050_000, from: "2026-06-23", to: "2026-08-15", site: "hcmc-marathon" },
-      { distance: "21km", tier: "Regular", kind: "regular", price: 1_250_000, from: "2026-08-16", to: "2026-10-15", site: "hcmc-marathon" },
+      { distance: "21km", tier: "Early Bird", kind: "early", audience: null, price: 1_050_000, from: "2026-06-23", to: "2026-08-15", site: "hcmc-marathon" },
+      { distance: "21km", tier: "Regular", kind: "regular", audience: null, price: 1_250_000, from: "2026-08-16", to: "2026-10-15", site: "hcmc-marathon" },
     ]);
     assert.deepEqual(JSON.parse(store.files[SERIES_PATH]!), [{ id: "hcmc-marathon", name: "HCMC Marathon", website: null, organizerId: "pulse-active" }]);
     assert.deepEqual(JSON.parse(store.files[ORGANIZERS_PATH]!), [{ id: "pulse-active", name: "Pulse Active", website: null }]);
@@ -263,7 +263,7 @@ describe("OpenRace overrides and renames", () => {
     ]);
     assert.equal(p.changes[0]!.slug, "lang-chay-bo-2026");
     const race = RaceSchema.parse(JSON.parse(p.files[racePath({ slug: "lang-chay-bo-2026", date: "2026-12-06" })]!));
-    assert.deepEqual(race.prices, [{ distance: null, tier: "Vé", kind: "other", price: 200000, from: null, to: null, site: "openrace" }]);
+    assert.deepEqual(race.prices, [{ distance: null, tier: "Vé", kind: "other", audience: null, price: 200000, from: null, to: null, site: "openrace" }]);
   });
 });
 

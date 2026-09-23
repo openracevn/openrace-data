@@ -63,6 +63,14 @@ sites:
     recipe: none
     check: manual
 
+  - key: njuko
+    name: Njuko
+    kind: seller
+    url: https://in.njuko.com/
+    hosts: [njuko.com, in.njuko.com]
+    recipe: none # registration platform (HCMC Marathon)
+    check: manual
+
   - key: truerace
     name: TrueRace
     kind: seller

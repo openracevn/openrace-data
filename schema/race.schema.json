@@ -154,6 +154,20 @@
               "other"
             ]
           },
+          "audience": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "resident",
+                  "non_resident"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
           "price": {
             "type": "integer",
             "minimum": 0,
@@ -191,6 +205,7 @@
           "distance",
           "tier",
           "kind",
+          "audience",
           "price",
           "from",
           "to",

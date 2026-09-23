@@ -22,6 +22,8 @@ const MAX_SUBPAGES = 6;
 
 /** Image names or alt texts that suggest a price table or poster. */
 export const PRICE_IMAGE = /\b(bang gia|gia ve|gia|price|pricing|fee|le phi|early|eb|seb|late|regular|ticket|ve)\b/;
+/** Names that leave no doubt ("HM27-FEE_EN_21KM", "BANG-GIA-EB-HBHM"): read even when the text seems to have prices. */
+export const PRICE_TABLE_IMAGE = /\b(bang gia|gia ve|price|pricing|fee|le phi|phi dang ky)\b/;
 const MAX_PRICE_IMAGES = 6;
 
 export const defaultRecipe: Recipe = {
@@ -50,10 +52,13 @@ export const defaultRecipe: Recipe = {
       links.push(...pageLinks(root, url));
     }
 
+    const priceImages = pickPriceImages(images);
     return {
       url: ref.url,
       pages: pages.filter((p) => p.html.length > 0),
-      priceImages: pickPriceImages(images),
+      priceImages,
+      // Text often mentions other fees (photos, VIP, transfers) the model mistakes for entry fees.
+      priceImagesCertain: priceImages.some((u) => PRICE_TABLE_IMAGE.test(imageName(u))),
       links: externalLinks(links, host),
       hints: { series: ctx.site.series, organizer: ctx.site.organizer },
       slugHint: ref.slugHint,
@@ -86,15 +91,19 @@ export function pickSubpages(links: PageLink[], host: string, homeUrl: string): 
     .map((s) => s.url);
 }
 
-/** Images whose file name or alt text looks like prices, deduped across sizes. */
+/** Images whose file name or alt text looks like prices, deduped across sizes; unmistakable price tables first. */
 export function pickPriceImages(images: PageImage[]): string[] {
-  const out = new Map<string, string>();
+  const out = new Map<string, { url: string; sure: boolean }>();
   for (const { url, alt } of images) {
     const key = imageKey(url);
     if (out.has(key)) continue;
-    if (PRICE_IMAGE.test(imageName(url)) || PRICE_IMAGE.test(foldVietnamese(alt))) out.set(key, url);
+    const words = `${imageName(url)} ${foldVietnamese(alt)}`;
+    if (PRICE_IMAGE.test(words)) out.set(key, { url, sure: PRICE_TABLE_IMAGE.test(words) });
   }
-  return [...out.values()].slice(0, MAX_PRICE_IMAGES);
+  return [...out.values()]
+    .sort((a, b) => Number(b.sure) - Number(a.sure))
+    .map((i) => i.url)
+    .slice(0, MAX_PRICE_IMAGES);
 }
 
 /** Links to other sites, deduped, for classification (sellers, Facebook, rules, ...). */

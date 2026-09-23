@@ -10,7 +10,8 @@
  *   --limit N         at most N races per site (tests, small batches)
  *   --max-credits N   Firecrawl credits this run may spend (default 250; the month's cap in config/sites.yaml also applies)
  *   --free            no paid reads: only what's cached; reports what would be read
- *   --dry-run         plan against the local checkout and don't commit (still reads, unless --free)
+ *   --dry-run         plan against the local checkout and don't commit (still reads, unless --free;
+ *                     what it paid for is kept in the local state/reads.json)
  *   --preview <dir>   with --dry-run: write the planned files under <dir>
  *
  * For each site: the recipe lists its races and takes a snapshot of each (free);
@@ -258,6 +259,8 @@ let plan: SyncPlan;
 let commitSha: string | null = null;
 if (dryRun) {
   plan = await planSync(local, inputs, config, finishedAt);
+  // Keep what was paid for: the next run (dry or not, once committed) reads it from the cache.
+  if (counts.paidReads > 0) writeFileSync(READS_PATH, (await stateFiles(local))[READS_PATH]!);
   if (previewDir) {
     for (const [path, content] of Object.entries({ ...plan.files, ...(await stateFiles(local)) })) {
       if (content === null) continue;

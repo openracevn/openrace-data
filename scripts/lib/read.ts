@@ -1,13 +1,15 @@
 /**
  * Turns a recipe's snapshot into what the source said (a StoredExtraction):
- * pages first; price images only if the pages give no prices.
+ * pages first; price images only if the pages give no prices, or if the recipe
+ * knows they are the price table.
  *
  * Every read is cached by a hash of the content itself (state/reads.json), so the
- * same page text or the same image is never paid for twice, whatever its URL.
+ * same page text or the same image is never paid for twice, whatever its URL. The
+ * key includes the extraction's version: changing a prompt or schema reads again.
  */
 import { createHash } from "node:crypto";
 import { z } from "zod";
-import { normalizeExtraction } from "./extraction.ts";
+import { IMAGE_EXTRACTION_VERSION, PAGE_EXTRACTION_VERSION, normalizeExtraction } from "./extraction.ts";
 import type { Reader } from "./firecrawl.ts";
 import type { Http } from "./http.ts";
 import { imageFormat } from "./pdf.ts";
@@ -60,7 +62,7 @@ export async function readSnapshot(snap: Snapshot, reader: Reader, http: Http, c
 
   const pages: { url: string; json: Record<string, unknown> }[] = [];
   for (const page of snap.pages) {
-    const result = await cached(`page:${hash(page.html)}`, "page", () => reader.readHtml(page.html, slugOf(page.url)));
+    const result = await cached(`page:${PAGE_EXTRACTION_VERSION}:${hash(page.html)}`, "page", () => reader.readHtml(page.html, slugOf(page.url)));
     if (!result.ok) {
       const reason = page.url === snap.url ? result.error : `${page.url}: ${result.error}`;
       return { ok: false, reason, capped: "capped" in result ? result.capped : undefined };
@@ -77,7 +79,8 @@ export async function readSnapshot(snap: Snapshot, reader: Reader, http: Http, c
   };
 
   const soFar = normalizeExtraction(extraction);
-  const needImages = soFar.ok ? soFar.facts.prices.length === 0 : !/not a sports event/.test(soFar.reason);
+  const isEvent = soFar.ok || !/not a sports event/.test(soFar.reason);
+  const needImages = isEvent && (snap.priceImagesCertain || !soFar.ok || soFar.facts.prices.length === 0);
   if (needImages && snap.priceImages.length > 0) {
     const images: { url: string; json: Record<string, unknown> }[] = [];
     for (const url of snap.priceImages.slice(0, MAX_IMAGES)) {
@@ -92,7 +95,7 @@ export async function readSnapshot(snap: Snapshot, reader: Reader, http: Http, c
         notes.push(`image ${url}: not PNG or JPEG, skipped`);
         continue;
       }
-      const result = await cached(`image:${hash(bytes)}`, "image", () => reader.readImage(bytes, slugOf(url)));
+      const result = await cached(`image:${IMAGE_EXTRACTION_VERSION}:${hash(bytes)}`, "image", () => reader.readImage(bytes, slugOf(url)));
       if (!result.ok) {
         // Out of credits halfway: better no update than a race without its prices.
         if ("capped" in result && result.capped) return { ok: false, reason: result.error, capped: true };

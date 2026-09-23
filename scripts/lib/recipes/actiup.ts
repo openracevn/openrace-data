@@ -93,6 +93,7 @@ export const actiupRecipe: Recipe = {
       url: ref.url,
       pages: [{ url: ref.url, html: cleanContent(root, ref.url) }],
       priceImages,
+      priceImagesCertain: inPriceSection.length > 0,
       // A link's text is often just "Xem tại đây"; its section title says what it is.
       links: externalLinks(
         sections.flatMap((s) => pageLinks(parseHtml(s.description ?? ""), ref.url).map((l) => ({ ...l, text: `${foldVietnamese(s.title)} ${l.text}`.trim() }))),

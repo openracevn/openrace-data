@@ -9,8 +9,9 @@
  * - Every page starts with a menu of all editions; it changes whenever a race is
  *   added, so only the banner and the ticket section are read (and fingerprinted).
  */
+import { normalizeDate } from "../extraction.ts";
 import { absoluteUrl, cleanContent, pageImages, pageLinks, parseHtml } from "../html.ts";
-import { slugFromName } from "../slug.ts";
+import { str } from "../text.ts";
 import { externalLinks, pickPriceImages } from "./default.ts";
 import type { RaceRef, Recipe, RecipeContext, Snapshot } from "./types.ts";
 
@@ -45,15 +46,27 @@ export const vnexpressMarathonRecipe: Recipe = {
     const content = parseHtml(`<main>${parts.map((el) => el.outerHTML).join("")}</main>`);
 
     const m = ref.url.match(RACE_PAGE);
-    const place = ref.name?.replace(/\s*20\d\d\s*$/, "").trim();
+    // The menu on every page names each race ("Hà Nội 2026"): the series is the place.
+    const menuName =
+      ref.name ??
+      root
+        .querySelectorAll("a[href]")
+        .find((a) => absoluteUrl(a.getAttribute("href"), ref.url)?.replace(/\/$/, "") === ref.url && /20\d\d\s*$/.test(a.textContent.trim()))
+        ?.textContent;
+    const place = menuName?.replace(/\s+/g, " ").replace(/\s*20\d\d\s*$/, "").trim();
     const series = m && place ? { id: `vnexpress-marathon-${m[1]}`, name: `VnExpress Marathon ${place}` } : undefined;
+    // Free facts: the full name is the page title ("VnExpress Marathon Hanoi Midnight
+    // 2026"; the banner text alone drops the brand), race day is in the banner.
+    const name = str(root.querySelector("title")?.textContent);
+    const day = content.textContent.match(/NGÀY THI ĐẤU:?\s*(\d{1,2}\/\d{1,2}\/20\d\d)/i)?.[1];
     return {
       url: ref.url,
       pages: [{ url: ref.url, html: cleanContent(content, ref.url) }],
       priceImages: pickPriceImages(pageImages(content, ref.url)),
       links: externalLinks(pageLinks(content, ref.url), "vm.vnexpress.net"),
+      facts: { ...(name && { name }), ...(day && { date: normalizeDate(day) }) },
       hints: { series, organizer: ctx.site.organizer },
-      slugHint: ref.slugHint ?? (place ? slugFromName(`vnexpress-marathon-${place}`) : undefined),
+      slugHint: ref.slugHint ?? (m ? `vnexpress-marathon-${m[1]}` : undefined),
     };
   },
 };

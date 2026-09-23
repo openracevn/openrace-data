@@ -56,6 +56,10 @@ export const RACE_TYPES = [
 // Normalized price tier. The label as written is kept in `tier`.
 export const TIER_KINDS = ["super_early", "early", "regular", "late", "group", "other"] as const;
 
+// Who a price is for, when a race prices runners differently (HCMC Marathon:
+// Resident / Non-resident). null: everyone, or not stated.
+export const AUDIENCES = ["resident", "non_resident"] as const;
+
 // What a related URL is. `seller` links also show up in `registrations`.
 export const LINK_KINDS = ["official", "seller", "facebook", "rules", "results", "news", "other"] as const;
 
@@ -92,6 +96,7 @@ export const PriceTierSchema = z
     distance: z.string().refine(isDistance, "not a distance").nullable(),
     tier: z.string().min(1).max(80),
     kind: z.enum(TIER_KINDS),
+    audience: z.enum(AUDIENCES).nullable(),
     price: z.number().int().nonnegative().max(MAX_PRICE),
     from: isoDate.nullable(),
     to: isoDate.nullable(),
@@ -243,6 +248,7 @@ export const IndexSchema = z.array(IndexEntrySchema);
 export type RegistrationStatus = (typeof REGISTRATION_STATUSES)[number];
 export type RaceType = (typeof RACE_TYPES)[number];
 export type TierKind = (typeof TIER_KINDS)[number];
+export type Audience = (typeof AUDIENCES)[number];
 export type LinkKind = (typeof LINK_KINDS)[number];
 export type SourceRole = (typeof SOURCE_ROLES)[number];
 export type PriceTier = z.infer<typeof PriceTierSchema>;
