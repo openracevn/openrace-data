@@ -48,7 +48,6 @@ Free plan: 1,000 credits per billing period (23rd to 23rd). On 2026-09-24, 1,453
 - [ ] Agent skill for backfills without Firecrawl: same recipes, the agent reads pages and images and writes `extracted`, then `npm run sync`.
 - [ ] Backfill past races (`--past`), on a paid month.
 - [ ] Turn on the daily cron once the data is trusted.
-- [ ] Vũng Tàu City Trail 2026: ActiUp's API says race day is 2026-11-28, the price poster says 29.11.2026. Find out which is right (the organizer's page) and override the date if needed.
 - [ ] openrace-api: a "price on sale today" (from `prices[]` by date) if the frontend wants it; route tests in the Workers runtime.
 - [ ] Paid check of the official race sites found in the ActiUp study (in `config/sites.yaml` with `recipe: none`), then switch them to `recipe: default`.
 
