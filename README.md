@@ -7,26 +7,21 @@ This repo is the **data layer only**. It does not serve an API and it has no dat
 ## Architecture
 
 ```
- Firecrawl Monitor ── monitor.check.completed ──▶ worker/ (Cloudflare Worker)
- (crawls actiup.net,                               │ 1. verify HMAC signature
-  JSON-mode extraction)                            │ 2. fetch new/changed pages of the check
-                                                   │ 3. diff against data/ at main HEAD
-                                                   │ 4. one commit via GitHub API (Octokit)
-                                                   ▼
-                                      openracevn/data  (this repo, main)
-                                                   │ push to main (touching data/)
-                              ┌────────────────────┼─────────────────────┐
-                              ▼                    ▼                     ▼
-                         validate            notify-api              notify-discord
-                     (schema + index)   POST SYNC_WEBHOOK_URL     summary of races
-                                        (after validate passes,   added/updated and
-                                         only if data/ changed)   fields changed
-                                                   │
-                                                   ▼
-                              openrace-api (separate repo, later): Worker + D1, public API
-                                                   │
-                                                   ▼
-                                      openrace-mcp, frontend (later)
+ check.yml (GitHub Actions: daily 07:17 VN, or run by hand)
+   │ 1. discover: scrape the ActiUp listing for links, extract only unknown event pages
+   │    (and follow their related-event links)
+   │ 2. refresh: re-extract known races every 14 days until race day; past races never
+   │ 3. Firecrawl scrape + JSON extraction → normalize → diff against main HEAD
+   │ 4. one commit via GitHub API (race files + index + state/checks.json)
+   ▼
+ openracevn/openrace-data  (this repo, main)
+   │ push to main
+   ├──▶ validate (every push, except check-log-only pushes)
+   ├──▶ notify-api      POST SYNC_WEBHOOK_URL   (only if data/ changed, after validate)
+   └──▶ notify-discord  races added/updated     (only if data/ changed)
+                 │
+                 ▼
+ openrace-api (separate repo, later): Worker + D1, public API → openrace-mcp, frontend
 ```
 
 | Repo | Role |
@@ -43,18 +38,19 @@ MVP scope: a single source (ActiUp, actiup.net) with no cross-source verificatio
 data/
   races/<slug>.json      one file per race
   index.json             [{ id, lastModified, sourceUrls }] for cheap listing
+state/
+  checks.json            when each source page was last scraped, and the outcome
 scripts/
+  check.ts               the race checker (discover / refresh / one race)
   sync.ts                diff/commit core: planSync (pure) + syncToGitHub
-  sync-cli.ts            run a sync by hand (dry run by default)
-  validate.ts            CI: schema + index consistency
+  sync-cli.ts            commit hand-made extractions (dry run by default)
+  validate.ts            CI: schema + index + check-log consistency
   notify-discord.ts      push summary to Discord (GitHub Action)
   notify-sync.ts         tell openrace-api to resync (GitHub Action)
-  create-monitor.ts      one-off Firecrawl Monitor setup
-  lib/                   schema (zod), extraction schema + normalization,
-                         place/region table, slugging, reconciliation, GitHub I/O
-worker/                  ingestion Worker (the webhook receiver only)
+  lib/                   schema (zod), extraction schema + normalization, check
+                         schedule, Firecrawl client, places, slugs, GitHub I/O
 test/                    node:test suite
-.github/workflows/       ci.yml (PRs), main.yml (push to main)
+.github/workflows/       check.yml (scheduled), main.yml (push to main), ci.yml (PRs)
 ```
 
 ## Race record
@@ -90,67 +86,70 @@ test/                    node:test suite
 
 The schema lives in `scripts/lib/schema.ts` (zod). Notes:
 
-- **`null` means unknown.** `venue`, `city`, `region`, `priceMin`, `priceMax`, `registrationStatus`, `registrationUrl`, `organizer` and `foreignerEligible` are `null` when the source doesn't state them. We never guess a value such as `open` or `false`.
+- **`null` means unknown.** `venue`, `city`, `region`, `priceMin`, `priceMax`, `registrationStatus`, `registrationUrl`, `organizer` and `foreignerEligible` are `null` when the source doesn't state them. We never guess a value such as `open` or `false`. ActiUp event pages only show a "from" price (`priceMin`) and say nothing about foreign runners, so `priceMax` and `foreignerEligible` are always `null` for now.
 - **`sources` is always an array** and **`confidence` is always present**, even with a single source. Canonical fields are *derived* from `sources[].rawExtracted` by `scripts/lib/reconcile.ts`, so adding a second source means changing `reconcile` (and adding new `confidence` values), not rewriting files.
 - **Normalization** (`scripts/lib/extraction.ts`): standard distances are snapped (`21.1K` and `Half Marathon` both become `21km`), city names are mapped to an English display name plus a region (`TP. Hồ Chí Minh` becomes `Ho Chi Minh City` / `south`), and dates and prices are coerced. As a result, LLM wording drift between checks doesn't register as a change.
 - **Identity:** a new race gets `slug(name) + year` (e.g. `tay-ho-half-marathon-2026`, with a `-2` suffix on collision). After that, the source URL maps to the id through `index.json`'s `sourceUrls`. A race that gets renamed keeps its file.
 
-## Ingestion (`worker/`)
+## Ingestion (`scripts/check.ts`)
 
-Firecrawl Monitor webhooks don't carry the extracted data. Per the [event reference](https://docs.firecrawl.dev/webhooks/events), `monitor.check.completed` carries only `monitorId`, `checkId` and summary counts, and `monitor.page` carries a diff. So the Worker works like this:
+`.github/workflows/check.yml` runs the checker every day and on demand. It calls the Firecrawl scrape API directly, with no Firecrawl Monitor and no webhook. The reason is that a monitor has one schedule for all its pages and would re-extract every page on every run.
 
-1. Accepts `POST /webhooks/firecrawl` and verifies `X-Firecrawl-Signature: sha256=<HMAC-SHA256(raw body, FIRECRAWL_WEBHOOK_SECRET)>`, which is Firecrawl's [signing scheme](https://docs.firecrawl.dev/webhooks/security). This is the shared-secret check: the secret is your account's webhook secret, and nothing extra goes over the wire.
-2. Handles only `monitor.check.completed` and acknowledges anything else with 200.
-3. Calls `GET /v2/monitor/{monitorId}/checks/{checkId}?status=new|changed` (paginated) and takes each page's `snapshot.json`, which is the full JSON-mode extraction.
-4. Runs `syncToGitHub`, which reads `index.json` plus the affected race files at `main` HEAD, plans the changes and writes **one commit per delivery** (Git Data API: tree, commit, fast-forward ref update). If `main` moves meanwhile, it re-plans on the new head (up to 3 attempts).
-   - new race: creates the file
-   - changed canonical fields: rewrites the file, bumps `updatedAt` and that source's `lastChangedAt`, and lists the changed fields in the commit message
-   - no change: writes nothing and makes no commit (`lastCheckedAt` only advances when a file is written anyway)
-5. Firecrawl wants a 2xx within 10s. The Worker returns the real result if it finishes within 8s, so a failure returns 500 and Firecrawl retries. Otherwise it returns 202 and finishes in `waitUntil`. Retries are safe because an unchanged extraction produces no commit.
+| Mode | What it scrapes | When |
+| --- | --- | --- |
+| `daily` | `discover` + `refresh` | the scheduled run |
+| `discover` | The listing `https://actiup.net/vi/events/sports` for links (1 credit), then every `/vi/event/<slug>` page we don't know yet, following each one's "Có thể bạn sẽ thích" links | by hand, to pick up a new race now |
+| `refresh` | Known races whose date hasn't passed and that were last checked 14+ days ago (3+ days after a failed check). Past races are never checked | by hand |
+| `race` | One race, by id or ActiUp URL, whatever its schedule | by hand |
 
-Not handled yet: pages with status `removed` (ignored for now; the race file stays as is) and cross-source reconciliation.
+Rules (`scripts/lib/checks.ts`):
+
+- **State.** `state/checks.json` records each scraped URL's last check and outcome. It sits outside `data/`, so a run that changes no race commits only the log, which triggers no Discord message and no API resync.
+- **Rejected pages.** A page that isn't a running race (cycling, triathlon, …) is marked `permanent` and never re-checked automatically. Other failures (a flaky render, a race with no date yet, a scrape error) are retried after 3 days.
+- **Budget.** Each extraction costs 5 credits (1 scrape + 4 JSON). `--max-scrapes` (default 40) caps a run. Leftovers wait for the next run, oldest check first.
+- **Rate limit.** Requests are sequential, 6.5 s apart, and a 429 waits 60 s before retrying.
+- **Commits.** Everything goes into **one commit per run** through the Git Data API. If `main` moved meanwhile, the run re-plans on the new head (up to 3 attempts). An unchanged race writes nothing.
+
+Only `/vi/event/<slug>` pages count as events. The `/vi/event/<id>/tickets` pages are a login wall, and the `/en/` twins would duplicate races.
 
 ### Setup
 
-```bash
-npm install
-cp .env.example .env                       # fill in values
+Repo secrets (Settings → Secrets and variables → Actions):
 
-# Worker
-npx wrangler secret put FIRECRAWL_WEBHOOK_SECRET --config worker/wrangler.toml
-npx wrangler secret put FIRECRAWL_API_KEY        --config worker/wrangler.toml
-npx wrangler secret put GITHUB_TOKEN             --config worker/wrangler.toml
-npm run worker:deploy
+| Secret | What |
+| --- | --- |
+| `FIRECRAWL_API_KEY` | Firecrawl API key |
+| `OPENRACE_BOT_TOKEN` | Fine-grained PAT with **Contents: read and write** on this repo only. It must not be the built-in `GITHUB_TOKEN`: pushes made with that token don't trigger `main.yml`, so validation and Discord would be skipped |
+| `DISCORD_WEBHOOK_URL` | Discord channel webhook (optional) |
+| `SYNC_WEBHOOK_URL` | openrace-api resync endpoint (optional; leave unset until the API exists) |
 
-# Firecrawl Monitor (review the dry run first)
-npm run monitor:create
-npm run monitor:create -- --create
-```
-
-`GITHUB_TOKEN` must be a fine-grained PAT (or GitHub App token) with **Contents: read & write** on this repo. Commits pushed with the Actions `GITHUB_TOKEN` do not trigger workflows, so that token would silently skip the notifications.
-
-The monitor crawls the Vietnamese listing `https://actiup.net/vi/events/sports` and keeps `/vi/event/<slug>` pages only. ActiUp leaves event pages out of its sitemap; the listing shows about 12 events, and each event page links to more ("Có thể bạn sẽ thích"), which is how the crawl reaches the rest. The `/vi/event/<id>/tickets` pages sit behind a login and are excluded, as are `/en/` twins, so an event can't enter twice.
+Run by hand: Actions → **Check races** → Run workflow → pick a mode (and a race for `race`). Tick *dry run* to see the plan without committing.
 
 ## GitHub Actions
 
 | Workflow | Trigger | Does |
 | --- | --- | --- |
+| `check.yml` | daily 00:17 UTC (07:17 in Vietnam), or by hand | the race checker above |
 | `ci.yml` | pull request | typecheck, tests, `validate` |
-| `main.yml` | every push to `main` | `validate` on every push. When the push touched `data/`: **notify-api** (after validation passes, POSTs `{event, repository, ref, before, after, pushedAt}` to `SYNC_WEBHOOK_URL`) and **notify-discord** (summary of races added/updated/removed and which fields changed, built from the git diff). Code-only pushes send nothing. |
+| `main.yml` | push to `main` (ignored when only `state/` changed) | Runs `validate`. When the push touched `data/`, also runs **notify-api** (after validation passes; POSTs `{event, repository, ref, before, after, pushedAt}` to `SYNC_WEBHOOK_URL`) and **notify-discord** (a summary of races added, updated and removed, plus which fields changed, built from the git diff) |
 
-Repo secrets: `DISCORD_WEBHOOK_URL`, `SYNC_WEBHOOK_URL`. If either is unset, its step logs "skipping" and passes. Leave `SYNC_WEBHOOK_URL` empty until openrace-api exists.
+If `DISCORD_WEBHOOK_URL` or `SYNC_WEBHOOK_URL` is unset, its step logs "skipping" and passes.
 
 ## Local commands
 
 ```bash
-npm test                 # unit tests (planner, normalization, signature check)
+npm install && cp .env.example .env      # FIRECRAWL_API_KEY; GITHUB_TOKEN only for committing
+npm test
 npm run typecheck
-npm run validate         # schema + index consistency for data/
-npm run sync -- inputs.json [--commit]   # replay extractions; dry run unless --commit
-npm run worker:dev       # local Worker (secrets in worker/.dev.vars)
+npm run validate
+npm run check -- --mode daily --max-scrapes 5 --dry-run    # live scrape, no commit
+npm run check -- --mode race --race <id|url> --dry-run
+npm run sync -- inputs.json [--commit]   # commit hand-made extractions
 ```
 
 ## Limits to know
 
-- Each changed race costs one GitHub read. That's fine on Workers Paid (1000 subrequests per request). On the free plan (50), checks with more than about 40 changed races will fail and get retried. If that happens, move to Paid or a Queue.
-- Work that outlives the 8s response window runs in `waitUntil`, which Cloudflare caps at 30s after the response.
+- **Scheduled runs can start 5–30 minutes late**, and GitHub may drop some under heavy load. The next daily run catches up.
+- **Private repo:** Actions minutes count against the account allowance (2,000 min/month on Free). A daily run takes about 1–5 minutes.
+- **Distances vary between checks.** The model sometimes lists a distance from the description text and sometimes doesn't, which can cause an occasional `distances` commit.
+- **Multi-day events store the first day** of the range ("21 - 22 tháng 11" becomes the 21st).

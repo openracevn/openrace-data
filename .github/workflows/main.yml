@@ -1,11 +1,14 @@
 name: Main
 
 # Validation runs on every push to main; the API resync and Discord notification
-# only run when the push touched data/. Includes commits made by the ingestion
-# Worker (they use a PAT, so they trigger workflows; GITHUB_TOKEN pushes would not).
+# only run when the push touched data/. Includes commits made by the race checker
+# (check.yml commits with a PAT, so they trigger workflows; GITHUB_TOKEN pushes
+# would not). Pushes that only touch the check log are skipped entirely.
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - "state/**"
 
 jobs:
   changes:

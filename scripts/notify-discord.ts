@@ -1,7 +1,7 @@
 /**
  * Posts a summary of a push to Discord: races added/updated/removed and which
  * fields changed. Derived from the git diff (not the commit message), so it is
- * accurate for Worker commits, manual edits and merges alike.
+ * accurate for checker commits, manual edits and merges alike.
  *
  * Env: DISCORD_WEBHOOK_URL, BEFORE_SHA, AFTER_SHA, GITHUB_REPOSITORY, GITHUB_SERVER_URL.
  */
@@ -22,7 +22,7 @@ if (!webhook) {
 
 const after = env("AFTER_SHA") ?? git("rev-parse", "HEAD");
 const before = resolveBase(env("BEFORE_SHA"), after);
-const repo = env("GITHUB_REPOSITORY") ?? "openracevn/data";
+const repo = env("GITHUB_REPOSITORY") ?? "openracevn/openrace-data";
 const server = env("GITHUB_SERVER_URL") ?? "https://github.com";
 
 const lines: string[] = [];

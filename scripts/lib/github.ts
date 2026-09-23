@@ -71,7 +71,7 @@ export function isNotFastForward(err: unknown): boolean {
   return statusOf(err) === 422;
 }
 
-// Works in both Node and Workers (no Buffer), and decodes UTF-8 correctly for Vietnamese text.
+// Decodes UTF-8 correctly for Vietnamese text (plain atob would mangle it).
 function decodeBase64Utf8(b64: string): string {
   const bin = atob(b64.replace(/\s/g, ""));
   const bytes = Uint8Array.from(bin, (c) => c.charCodeAt(0));

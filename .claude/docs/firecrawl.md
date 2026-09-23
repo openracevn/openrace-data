@@ -1,29 +1,21 @@
 # Firecrawl: verified facts
 
-Checked against docs.firecrawl.dev (`webhooks/overview`, `webhooks/events`, `webhooks/security`, `features/monitoring`, the v2 OpenAPI spec) on 2026-09-23. Re-check them before changing the ingestion path; the API is young and has been changing.
+Checked against docs.firecrawl.dev (`billing`, `features/monitoring`, the monitor API reference, and the webhook pages) on 2026-09-23. Re-check them before changing the ingestion path; the API is young and has been changing.
 
-## Webhooks
+## What we use: `POST /v2/scrape`
 
-- Payload envelope: `{ success, type, id, webhookId?, data, metadata, error? }`.
-- **Signature:** header `X-Firecrawl-Signature: sha256=<hex>`, computed as HMAC-SHA256 over the **raw body** with the account webhook secret. There is no timestamp, so there is no replay protection beyond the HMAC itself.
-- **Delivery:** the endpoint must return a 2xx within **10 s**. Failed deliveries are retried after 1 min, 5 min and 15 min, then marked failed.
-- Monitor events: `monitor.page` (one per page, sent before the check is reconciled) and `monitor.check.completed`.
-- The docs show `data` as an array, but the schema describes an object. `checkRefs()` in the Worker accepts both.
+- `formats: ["links", {type: "json", schema, prompt}]`, `waitFor: 2000` (ActiUp renders client-side), `maxAge: 0` (always a live fetch, never Firecrawl's cache).
+- **Cost:** 1 credit per page, plus 4 for JSON, so **5 per extraction**. A links-only scrape costs 1. `map` costs 1 per call. No document returned means 0 credits; a 4xx/5xx page is still charged 1.
+- **Rate limit on the current plan:** about 10 requests/min (429 "Rate limit exceeded"). `lib/firecrawl.ts` spaces requests 6.5 s apart and waits 60 s after a 429.
+- `data.metadata.creditsUsed` reports the actual cost; `check.ts` sums it into the job summary.
 
-## The trap: webhooks carry no extracted data
+## Why not Firecrawl Monitors (removed 2026-09-23)
 
-- `monitor.check.completed` carries only `monitorId`, `checkId`, `status` and summary counts.
-- `monitor.page` carries a diff plus an optional judgment, **not** the extraction.
-- The full extraction is only in `GET /v2/monitor/{monitorId}/checks/{checkId}` → `data.pages[].snapshot.json`, and **only if** the monitor's target uses `scrapeOptions.formats: [{ type: "changeTracking", modes: ["json"], schema, prompt }]`.
-- That endpoint accepts `?status=same|new|changed|removed|error&limit≤100&skip`. Pagination goes through `next` (top-level or under `data`).
-- For JSON-mode monitors, `diff.json` is a per-field `{previous, current}` map keyed by JSON path. We ignore it and recompute diffs ourselves from the snapshot.
-
-## Monitor config (what `create-monitor.ts` sends)
-
-- `POST /v2/monitor` with `name`, `schedule` (`{text: "every 6 hours", timezone: "Asia/Ho_Chi_Minh"}`; the minimum interval is 5 min), and `targets` (1–50; types `scrape`, `crawl` or `search`).
-- We use one `crawl` target: `url: https://actiup.net/vi/events/sports`, `crawlOptions: { includePaths: ["^/vi/event/[^/]+/?$"], limit: 500 }`.
-- `webhook: { url, events: ["monitor.check.completed"] }`. Custom `headers` and `metadata` are also supported but unused.
-- A `goal` (LLM judging) is optional for crawl targets and costs 1 credit per changed page. We don't set one.
+- **One schedule per monitor**, not per page. There's no "every 14 days per race until race day".
+- **A crawl monitor re-extracts every page it finds on every check.** Checking daily for new races would cost about 40 pages × 5 × 30 ≈ 6,000 credits/month, against about 100–200 for our links-only discovery.
+- **`POST /v2/monitor/{id}/run` runs the whole monitor.** There's no single-page run.
+- Monitor webhooks carry no extraction. `monitor.check.completed` has only ids and counts; the data is in `GET /v2/monitor/{m}/checks/{c}` → `pages[].snapshot.json`, and only for `changeTracking` JSON-mode targets. Signed with `X-Firecrawl-Signature: sha256=HMAC(raw body)`, which needs a 2xx within 10 s; retries come after 1, 5 and 15 min.
+- Monitors fit a fixed set of pages on one schedule. Revisit them only if that becomes the need.
 
 ## ActiUp specifics
 

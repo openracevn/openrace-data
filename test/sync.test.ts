@@ -1,7 +1,6 @@
 import assert from "node:assert/strict";
-import { createHmac } from "node:crypto";
 import { describe, it } from "node:test";
-import { verifySignature } from "../worker/src/firecrawl.ts";
+import { isCandidate, isRefreshDue, vietnamDate, type Check } from "../scripts/lib/checks.ts";
 import { normalizeDistance, normalizeExtracted } from "../scripts/lib/extraction.ts";
 import { resolvePlace } from "../scripts/lib/places.ts";
 import { INDEX_PATH, RaceSchema, racePath, type IndexEntry, type Race } from "../scripts/lib/schema.ts";
@@ -176,19 +175,40 @@ describe("normalization", () => {
   });
 });
 
-describe("verifySignature", () => {
-  const secret = "whsec_test";
-  const body = new TextEncoder().encode(JSON.stringify({ type: "monitor.check.completed" }));
-  const good = "sha256=" + createHmac("sha256", secret).update(body).digest("hex");
-
-  it("accepts a valid Firecrawl signature", async () => {
-    assert.equal(await verifySignature(body.buffer, good, secret), true);
+describe("check schedule", () => {
+  const now = new Date("2026-09-23T01:00:00.000Z");
+  const today = vietnamDate(now);
+  const daysAgo = (d: number, status: Check["status"] = "ok", permanent?: boolean): Check => ({
+    lastCheckedAt: new Date(now.getTime() - d * 86_400_000).toISOString(),
+    status,
+    ...(permanent && { permanent }),
   });
 
-  it("rejects a wrong secret, tampered body, or malformed header", async () => {
-    assert.equal(await verifySignature(body.buffer, good, "other"), false);
-    assert.equal(await verifySignature(new TextEncoder().encode("{}").buffer, good, secret), false);
-    assert.equal(await verifySignature(body.buffer, good.replace("sha256", "sha1"), secret), false);
-    assert.equal(await verifySignature(body.buffer, null, secret), false);
+  it("uses Vietnam's date", () => {
+    assert.equal(vietnamDate(new Date("2026-09-22T18:00:00.000Z")), "2026-09-23");
+  });
+
+  it("re-checks upcoming races every 14 days, including race day", () => {
+    assert.equal(isRefreshDue("2026-12-01", undefined, today, now), true);
+    assert.equal(isRefreshDue("2026-12-01", daysAgo(13), today, now), false);
+    assert.equal(isRefreshDue("2026-12-01", daysAgo(14), today, now), true);
+    assert.equal(isRefreshDue(today, daysAgo(20), today, now), true);
+  });
+
+  it("never re-checks a race that has passed", () => {
+    assert.equal(isRefreshDue("2026-09-22", daysAgo(100), today, now), false);
+    assert.equal(isRefreshDue("2026-09-22", undefined, today, now), false);
+  });
+
+  it("retries a failed check after 3 days", () => {
+    assert.equal(isRefreshDue("2026-12-01", daysAgo(2, "error"), today, now), false);
+    assert.equal(isRefreshDue("2026-12-01", daysAgo(3, "error"), today, now), true);
+  });
+
+  it("discovers unseen pages, retries transient rejections, skips permanent ones", () => {
+    assert.equal(isCandidate(undefined, now), true);
+    assert.equal(isCandidate(daysAgo(1, "rejected"), now), false);
+    assert.equal(isCandidate(daysAgo(3, "rejected"), now), true);
+    assert.equal(isCandidate(daysAgo(400, "rejected", true), now), false);
   });
 });

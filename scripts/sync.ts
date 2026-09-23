@@ -2,7 +2,7 @@
  * Diff/commit core. Given freshly extracted race data, works out which race
  * files (and the index) must change, then commits all of it to GitHub as one
  * commit. Pure planning (`planSync`) is separated from I/O so it can be tested
- * and reused by both the ingestion Worker and the local CLI.
+ * and reused by the scheduled checker (`check.ts`) and the manual CLI.
  */
 import { changedFields, stabilize } from "./lib/diff.ts";
 import { GitHubRepo, isNotFastForward, type GitHubTarget } from "./lib/github.ts";
@@ -184,23 +184,37 @@ export function formatCommitMessage(plan: SyncPlan, context?: string): string {
 
 export type SyncResult = SyncPlan & { commitSha: string | null };
 
+export type SyncOptions = {
+  context?: string;
+  dryRun?: boolean;
+  now?: string;
+  /**
+   * Extra files for the same commit (e.g. the check log), computed against the
+   * head being committed on so a retry merges with whatever landed meanwhile.
+   */
+  extraFiles?: (store: RaceStore) => Promise<Record<string, string>>;
+  /** Commit message when only extra files changed. */
+  bookkeepingMessage?: string;
+};
+
 /**
  * Plans against the branch head and commits every change as a single commit.
- * If the branch moves underneath us (concurrent delivery), re-plans on the new
+ * If the branch moves underneath us (a concurrent run), re-plans on the new
  * head and retries, so no update is lost and no empty commit is created.
  */
-export async function syncToGitHub(
-  target: GitHubTarget,
-  inputs: readonly SyncInput[],
-  opts: { context?: string; dryRun?: boolean; now?: string } = {},
-): Promise<SyncResult> {
+export async function syncToGitHub(target: GitHubTarget, inputs: readonly SyncInput[], opts: SyncOptions = {}): Promise<SyncResult> {
   const repo = new GitHubRepo(target);
   for (let attempt = 1; ; attempt++) {
     const head = await repo.headSha();
-    const plan = await planSync(repo.storeAt(head), inputs, opts.now);
-    if (plan.changes.length === 0 || opts.dryRun) return { ...plan, commitSha: null };
+    const store = repo.storeAt(head);
+    const plan = await planSync(store, inputs, opts.now);
+    const extra = opts.extraFiles ? await opts.extraFiles(store) : {};
+    const unchanged = plan.changes.length === 0 && Object.keys(extra).length === 0;
+    if (unchanged || opts.dryRun) return { ...plan, commitSha: null };
+    const message =
+      plan.changes.length > 0 ? formatCommitMessage(plan, opts.context) : (opts.bookkeepingMessage ?? "state: update");
     try {
-      const commitSha = await repo.commitFiles(head, plan.files, formatCommitMessage(plan, opts.context));
+      const commitSha = await repo.commitFiles(head, { ...plan.files, ...extra }, message);
       return { ...plan, commitSha };
     } catch (err) {
       if (attempt >= 3 || !isNotFastForward(err)) throw err;

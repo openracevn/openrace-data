@@ -1,0 +1,62 @@
+name: Check races
+
+# Daily: look for new races on ActiUp and re-check known races that are due
+# (every 14 days until race day; past races are never checked). Can also be run
+# by hand from the Actions tab, for one race or for discovery only.
+on:
+  schedule:
+    - cron: "17 0 * * *" # 07:17 in Vietnam. GitHub may start scheduled runs late.
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "daily = discover + refresh due races; discover = new races only; refresh = due races only; race = one race now"
+        type: choice
+        options: [daily, discover, refresh, race]
+        default: daily
+      race:
+        description: "For mode 'race': race id (e.g. tet-run-mien-nam-2027) or ActiUp event URL"
+        required: false
+      max_scrapes:
+        description: "Max pages to extract (5 Firecrawl credits each)"
+        default: "40"
+      dry_run:
+        description: "Scrape and show the plan, but don't commit"
+        type: boolean
+        default: false
+
+# One run at a time; a second run waits instead of scraping the same pages.
+concurrency:
+  group: check-races
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Check races
+        env:
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          # A PAT, not the built-in token: commits must trigger main.yml (validate + Discord).
+          GITHUB_TOKEN: ${{ secrets.OPENRACE_BOT_TOKEN }}
+          GITHUB_OWNER: ${{ github.repository_owner }}
+          GITHUB_REPO: ${{ github.event.repository.name }}
+          GITHUB_BRANCH: ${{ github.event.repository.default_branch }}
+          MODE: ${{ inputs.mode || 'daily' }}
+          RACE: ${{ inputs.race }}
+          MAX_SCRAPES: ${{ inputs.max_scrapes || '40' }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          args=(--mode "$MODE" --max-scrapes "$MAX_SCRAPES")
+          if [[ -n "$RACE" ]]; then args+=(--race "$RACE"); fi
+          if [[ "$DRY_RUN" == "true" ]]; then args+=(--dry-run); fi
+          npm run -s check -- "${args[@]}"

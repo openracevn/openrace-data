@@ -14,7 +14,7 @@ if (!url) {
 
 const payload = {
   event: "openrace-data.push",
-  repository: env("GITHUB_REPOSITORY") ?? "openracevn/data",
+  repository: env("GITHUB_REPOSITORY") ?? "openracevn/openrace-data",
   ref: env("GITHUB_REF") ?? "refs/heads/main",
   before: env("BEFORE_SHA") ?? null,
   after: env("AFTER_SHA") ?? null,

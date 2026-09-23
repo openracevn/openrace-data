@@ -1,6 +1,6 @@
 /**
  * Run the diff/commit pipeline by hand, e.g. for a backfill or to replay a
- * Firecrawl extraction without waiting for the monitor.
+ * hand-made extraction without waiting for the next check.
  *
  *   npm run sync -- inputs.json            # dry run: print the plan
  *   npm run sync -- inputs.json --commit   # commit to GitHub
@@ -28,7 +28,7 @@ const result = await syncToGitHub(
   {
     token: requireEnv("GITHUB_TOKEN"),
     owner: env("GITHUB_OWNER") ?? "openracevn",
-    repo: env("GITHUB_REPO") ?? "data",
+    repo: env("GITHUB_REPO") ?? "openrace-data",
     branch: env("GITHUB_BRANCH") ?? "main",
   },
   inputs,
