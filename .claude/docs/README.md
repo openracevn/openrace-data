@@ -10,4 +10,4 @@ Working notes on how openrace-data is wired up. Read these before changing inges
 | [decisions.md](decisions.md) | Design decisions and deliberate departures from the original spec |
 | [status.md](status.md) | What's live, what isn't, known gaps, next steps |
 
-Last updated: 2026-09-23.
+Last updated: end of 2026-09-23. The check-race skill (.claude/skills/check-race) is the quick path for any single-race task.

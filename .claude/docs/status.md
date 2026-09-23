@@ -20,7 +20,7 @@
 ## API readiness (2026-09-23)
 
 - Done: `schemaVersion` + JSON Schema in `schema/`; sanity bounds; a resync payload with changed race ids.
-- Still open before going public: load the rest of the upcoming races (~35); a read-only token for openrace-api.
+- Still open before going public: load the rest of the upcoming races (~35).
 - The bibchung prompt was re-tested on Tết Run: prices are now correct (678,000 / 678,000 / group 542,000); the organizer is still the event name, and the code guard drops it.
 
 ## Not done / not verified
