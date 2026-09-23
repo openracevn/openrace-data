@@ -5,7 +5,7 @@ description: Check, add, update, edit or verify a race in openrace-data. Use whe
 
 # Check a race
 
-openrace-data holds one JSON file per race (`data/races/<uuid>.json`, listed in `data/index.json`). Races are scraped from **ActiUp** (primary for every field) and **bibchung** (a second place to buy, with a group discount: `groupPriceMin`) by `scripts/check.ts` through Firecrawl. Background: `.claude/docs/` (read only what the task needs).
+openrace-data holds one JSON file per race (`data/races/<slug>.json`; the key is the `id` inside, listed in `data/index.json`). Races are scraped from **ActiUp** (primary for every field) and **bibchung** (a second place to buy, with a group discount: `groupPriceMin`) by `scripts/check.ts` through Firecrawl. Background: `.claude/docs/` (read only what the task needs).
 
 ## Rules
 
@@ -20,7 +20,7 @@ openrace-data holds one JSON file per race (`data/races/<uuid>.json`, listed in 
 git pull -q
 python3 -c "import json,sys; q=sys.argv[1]; [print(e['id'], e['slug'], e['date'], e['name'], e['sourceUrls']) for e in json.load(open('data/index.json')) if q in e['id'] or q in e['slug'] or any(q in u for u in e['sourceUrls'])]" "<url, slug or id fragment>"
 ```
-Then read `data/races/<id>.json`. `state/checks.json` has each URL's last check and its outcome (`ok`, `rejected` + reason, `permanent`).
+Then read `data/races/<slug>.json`. `state/checks.json` has each URL's last check and its outcome (`ok`, `rejected` + reason, `permanent`).
 
 ## 2. Check it against the sources (free)
 
@@ -62,6 +62,7 @@ Use this when the user says what a field should be ("Tết Run has a 42km too, B
 npm run edit -- set <race> <field> '<json value>' --reason "<why, and where it's from>" --dry-run   # preview
 GITHUB_TOKEN=$(gh auth token) npm run edit -- set <race> <field> '<json value>' --reason "<why>"
 GITHUB_TOKEN=$(gh auth token) npm run edit -- unset <race> <field>                                  # back to the source value
+GITHUB_TOKEN=$(gh auth token) npm run edit -- slug <race> <new-slug>                                # change the slug (renames the file)
 ```
 - `<field>` is one of: name, types, date, distances, location, priceMin, priceMax, groupPriceMin, currency, registrationStatus, registrationUrl, organizer, foreignerEligible.
 - Values must already be in canonical form (the schema checks them, and the edit is refused otherwise):

@@ -14,6 +14,9 @@
  *       {"name","date","types","distances","venue","city","priceMin","priceMax",
  *        "registrationStatus","registrationUrl","organizer",…}; name and date required.
  *       Re-running add with the same --url updates that race.
+ *   npm run edit -- slug <race> <new-slug> [--reason "<why>"]
+ *       Change a race's slug. Its file is renamed to data/races/<new-slug>.json and
+ *       the index follows; the id stays, so the API updates the same race.
  *
  * <race> is a race id or slug. Add --dry-run to see the result without committing
  * (reads the local checkout). Committing needs GITHUB_TOKEN (e.g. $(gh auth token)).
@@ -23,7 +26,7 @@ import { env, requireEnv } from "./lib/env.ts";
 import { CANONICAL_FIELDS, type CanonicalField } from "./lib/schema.ts";
 import { canonicalSourceUrl } from "./lib/slug.ts";
 import { sourceForUrl } from "./lib/sources.ts";
-import { commitToGitHub, formatCommitMessage, planEdit, planSync, type RaceStore, type SyncPlan } from "./sync.ts";
+import { commitToGitHub, formatCommitMessage, planEdit, planRename, planSync, type RaceStore, type SyncPlan } from "./sync.ts";
 
 const VALUE_FLAGS = new Set(["--reason", "--url", "--json"]);
 const flags = new Map<string, string>();
@@ -57,6 +60,11 @@ if (command === "set" || command === "unset") {
     planAt = (store) => planEdit(store, race!, [{ kind: "unset", field: field as CanonicalField }], now);
     message = `edit: ${race}: remove the ${field} override (back to the source value)${reason ? `\n\n${reason}` : ""}`;
   }
+} else if (command === "slug") {
+  const newSlug = field;
+  if (!race || !newSlug) fail("usage: npm run edit -- slug <race> <new-slug> [--reason <why>]");
+  planAt = (store) => planRename(store, race!, newSlug!, now);
+  message = `edit: ${race}: slug → ${newSlug}${reason ? `\n\n${reason}` : ""}`;
 } else if (command === "add") {
   const url = flag("url");
   const json = flag("json");
@@ -75,7 +83,7 @@ if (command === "set" || command === "unset") {
   planAt = (store) => planSync(store, [{ url: reference!, extracted, checkedAt: now, source: "openrace" }], now);
   message = ""; // generated from the plan below
 } else {
-  fail("usage: npm run edit -- set|unset|add … (see scripts/edit.ts)");
+  fail("usage: npm run edit -- set|unset|add|slug … (see scripts/edit.ts)");
 }
 
 const local: RaceStore = {
@@ -120,7 +128,7 @@ function report(plan: SyncPlan, commitSha: string | null): void {
     return;
   }
   console.log(command === "add" ? formatCommitMessage(plan) : message);
-  for (const [path, content] of Object.entries(plan.files)) if (path.includes("/races/")) console.log(`\n${path}\n${content}`);
+  for (const [path, content] of Object.entries(plan.files)) if (path.includes("/races/")) console.log(`\n${path}\n${content ?? "(deleted)"}`);
   console.log(commitSha ? `Committed ${commitSha}` : "Dry run: nothing committed.");
 }
 

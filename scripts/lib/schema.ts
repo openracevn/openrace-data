@@ -121,8 +121,9 @@ export const OverrideSchema = z.object({
 export const RaceSchema = z
   .object({
     id: raceId,
-    // URL slug for the frontend. Unique, and allowed to change (SEO); for now it's
-    // the source's own slug (ActiUp's /vi/event/<slug>). Never used as a key.
+    // URL slug for the frontend, and the file name (data/races/<slug>.json). Unique,
+    // and allowed to change (SEO) with `npm run edit -- slug`; a new race starts with
+    // the source's own slug (ActiUp's /vi/event/<slug>). Never used as a key: `id` is.
     slug,
     name: raceName,
     types: z.array(z.enum(RACE_TYPES)).min(1),
@@ -205,8 +206,9 @@ const _canonicalFieldsAreRaceFields: readonly (keyof Race)[] = CANONICAL_FIELDS;
 void _canonicalFieldsAreRaceFields;
 export type CanonicalRace = Pick<Race, CanonicalField>;
 
-export function racePath(id: string): string {
-  return `${RACES_DIR}/${id}.json`;
+/** A race's file, named after its slug so it's readable; the race's key is still its `id`. */
+export function racePath(slug: string): string {
+  return `${RACES_DIR}/${slug}.json`;
 }
 
 /** Stable serialization so identical data always yields byte-identical files. */

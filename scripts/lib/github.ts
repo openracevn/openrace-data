@@ -38,13 +38,15 @@ export class GitHubRepo {
     };
   }
 
-  /** Creates one commit on top of `parentSha` containing all `files`; fails if the branch moved. */
-  async commitFiles(parentSha: string, files: Record<string, string>, message: string): Promise<string> {
+  /** Creates one commit on top of `parentSha` writing all `files` (null deletes); fails if the branch moved. */
+  async commitFiles(parentSha: string, files: Record<string, string | null>, message: string): Promise<string> {
     const { data: parent } = await this.octokit.git.getCommit({ ...this.repoRef, commit_sha: parentSha });
     const { data: tree } = await this.octokit.git.createTree({
       ...this.repoRef,
       base_tree: parent.tree.sha,
-      tree: Object.entries(files).map(([path, content]) => ({ path, mode: "100644", type: "blob", content })),
+      tree: Object.entries(files).map(([path, content]) =>
+        content === null ? { path, mode: "100644", type: "blob", sha: null } : { path, mode: "100644", type: "blob", content },
+      ),
     });
     const { data: commit } = await this.octokit.git.createCommit({
       ...this.repoRef,

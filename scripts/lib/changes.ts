@@ -12,11 +12,15 @@ export const EMPTY_TREE = "4b825dc642cb6eb9a060e54bf8d69288fbee4904";
 export type RaceDiff = {
   before: string;
   after: string;
-  added: { id: string; race: Race | null }[];
-  updated: { id: string; before: Race | null; after: Race | null; fields: CanonicalField[] }[];
-  removed: { id: string; race: Race | null }[];
+  added: { id: string; path: string; race: Race | null }[];
+  updated: { id: string; path: string; before: Race | null; after: Race | null; fields: CanonicalField[] }[];
+  removed: { id: string; path: string; race: Race | null }[];
 };
 
+/**
+ * Files are named by slug, so races are matched by the id inside them: a slug
+ * rename (old file deleted, new file added, same id) is one update.
+ */
 export function raceDiff(beforeSha: string | undefined, afterSha: string | undefined): RaceDiff {
   const after = afterSha ?? git("rev-parse", "HEAD");
   const before = resolveBase(beforeSha, after);
@@ -24,18 +28,37 @@ export function raceDiff(beforeSha: string | undefined, afterSha: string | undef
   const lines = git("diff", "--no-renames", "--name-status", before, after, "--", RACES_DIR)
     .split("\n")
     .filter((l) => l.endsWith(".json"));
+  const gone = new Map<string, { path: string; race: Race | null }>();
+  const added: { id: string; path: string; race: Race | null }[] = [];
   for (const line of lines) {
     const [status, path] = line.split("\t") as [string, string];
-    const id = path.slice(RACES_DIR.length + 1, -".json".length);
-    if (status === "A") diff.added.push({ id, race: readRace(after, path) });
-    else if (status === "D") diff.removed.push({ id, race: readRace(before, path) });
-    else {
+    if (status === "A") {
+      const race = readRace(after, path);
+      added.push({ id: race?.id ?? fileStem(path), path, race });
+    } else if (status === "D") {
+      const race = readRace(before, path);
+      gone.set(race?.id ?? fileStem(path), { path, race });
+    } else {
       const a = readRace(before, path);
       const b = readRace(after, path);
-      diff.updated.push({ id, before: a, after: b, fields: a && b ? changedFields(a, b) : [] });
+      diff.updated.push({ id: b?.id ?? a?.id ?? fileStem(path), path, before: a, after: b, fields: a && b ? changedFields(a, b) : [] });
     }
   }
+  for (const { id, path, race } of added) {
+    const old = gone.get(id);
+    if (!old) {
+      diff.added.push({ id, path, race });
+      continue;
+    }
+    gone.delete(id);
+    diff.updated.push({ id, path, before: old.race, after: race, fields: old.race && race ? changedFields(old.race, race) : [] });
+  }
+  for (const [id, { path, race }] of gone) diff.removed.push({ id, path, race });
   return diff;
+}
+
+function fileStem(path: string): string {
+  return path.slice(RACES_DIR.length + 1, -".json".length);
 }
 
 export function git(...args: string[]): string {

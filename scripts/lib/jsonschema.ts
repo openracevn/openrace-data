@@ -18,7 +18,7 @@ export function jsonSchemaFiles(): Record<string, string> {
       "x-schema-version": SCHEMA_VERSION,
     });
   return {
-    [`${SCHEMA_DIR}/race.schema.json`]: file("race.schema.json", "OpenRace race (data/races/<id>.json)", RaceSchema),
+    [`${SCHEMA_DIR}/race.schema.json`]: file("race.schema.json", "OpenRace race (data/races/<slug>.json)", RaceSchema),
     [`${SCHEMA_DIR}/index.schema.json`]: file("index.schema.json", "OpenRace race index (data/index.json)", IndexSchema),
   };
 }

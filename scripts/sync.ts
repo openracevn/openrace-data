@@ -46,6 +46,8 @@ export type RaceChange = {
   slug: string;
   kind: "added" | "updated";
   fields: CanonicalField[];
+  /** The slug (and file name) before a hand rename. */
+  renamedFrom?: string;
   /** A page from another source joined this race. */
   joined?: boolean;
   /** Overridden fields whose source value changed (the override still wins). */
@@ -54,8 +56,8 @@ export type RaceChange = {
 export type Skipped = { url: string; reason: string };
 
 export type SyncPlan = {
-  /** Repo path -> full new file contents. Empty when nothing changed. */
-  files: Record<string, string>;
+  /** Repo path -> full new file contents, or null to delete it (a renamed race's old file). Empty when nothing changed. */
+  files: Record<string, string | null>;
   changes: RaceChange[];
   skipped: Skipped[];
 };
@@ -132,9 +134,10 @@ export async function planSync(
   const planned = [...groups.values()];
   const existing = await Promise.all(
     planned.map(async ({ id }) => {
-      if (!indexById.has(id)) return null;
-      const text = await store.read(racePath(id));
-      if (text === null) throw new Error(`${racePath(id)} is listed in ${INDEX_PATH} but missing`);
+      const entry = indexById.get(id);
+      if (!entry) return null;
+      const text = await store.read(racePath(entry.slug));
+      if (text === null) throw new Error(`${racePath(entry.slug)} is listed in ${INDEX_PATH} but missing`);
       return RaceSchema.parse(JSON.parse(text));
     }),
   );
@@ -172,7 +175,7 @@ export async function planSync(
     if (prev && fields.length === 0 && !joined && shadowed.length === 0 && prev.confidence === record.confidence) return;
     for (const source of touched) source.lastChangedAt = source.lastCheckedAt;
 
-    files[racePath(id)] = serialize(record);
+    files[racePath(slug)] = serialize(record);
     changes.push({
       id,
       slug,
@@ -256,13 +259,7 @@ export type Edit =
  * changes can't move it.
  */
 export async function planEdit(store: RaceStore, race: string, edits: readonly Edit[], now = new Date().toISOString()): Promise<SyncPlan> {
-  const indexText = await store.read(INDEX_PATH);
-  const index: IndexEntry[] = indexText ? IndexSchema.parse(JSON.parse(indexText)) : [];
-  const entry = index.find((e) => e.id === race || e.slug === race);
-  if (!entry) throw new Error(`no race with id or slug "${race}"`);
-  const text = await store.read(racePath(entry.id));
-  if (text === null) throw new Error(`${racePath(entry.id)} is listed in ${INDEX_PATH} but missing`);
-  const prev = RaceSchema.parse(JSON.parse(text));
+  const { index, prev } = await readRace(store, race);
 
   const overrides: Overrides = { ...prev.overrides };
   for (const edit of edits) {
@@ -278,10 +275,42 @@ export async function planEdit(store: RaceStore, race: string, edits: readonly E
 
   const nextIndex = index.map((e) => (e.id === record.id ? indexEntry(record) : e));
   return {
-    files: { [racePath(record.id)]: serialize(record), [INDEX_PATH]: serialize(nextIndex) },
+    files: { [racePath(record.slug)]: serialize(record), [INDEX_PATH]: serialize(nextIndex) },
     changes: [{ id: record.id, slug: record.slug, kind: "updated", fields }],
     skipped: [],
   };
+}
+
+/**
+ * Give a race (found by id or slug) a new slug: its file moves to the new name and
+ * the index follows, in one change. The id stays, so the API updates the same race.
+ * Ingestion never changes a slug; this is the only way it moves.
+ */
+export async function planRename(store: RaceStore, race: string, newSlug: string, now = new Date().toISOString()): Promise<SyncPlan> {
+  const { index, prev } = await readRace(store, race);
+  if (newSlug === prev.slug) return { files: {}, changes: [], skipped: [] };
+  const owner = index.find((e) => e.slug === newSlug);
+  if (owner) throw new Error(`slug "${newSlug}" is already used by ${owner.id}`);
+  const record: Race = { ...prev, slug: newSlug, updatedAt: now };
+  const valid = RaceSchema.safeParse(record);
+  if (!valid.success) throw new Error(`invalid slug "${newSlug}": ${valid.error.issues.map((e) => e.message).join("; ")}`);
+
+  const nextIndex = index.map((e) => (e.id === record.id ? indexEntry(record) : e));
+  return {
+    files: { [racePath(prev.slug)]: null, [racePath(newSlug)]: serialize(record), [INDEX_PATH]: serialize(nextIndex) },
+    changes: [{ id: record.id, slug: newSlug, kind: "updated", fields: [], renamedFrom: prev.slug }],
+    skipped: [],
+  };
+}
+
+async function readRace(store: RaceStore, race: string): Promise<{ index: IndexEntry[]; prev: Race }> {
+  const indexText = await store.read(INDEX_PATH);
+  const index: IndexEntry[] = indexText ? IndexSchema.parse(JSON.parse(indexText)) : [];
+  const entry = index.find((e) => e.id === race || e.slug === race);
+  if (!entry) throw new Error(`no race with id or slug "${race}"`);
+  const text = await store.read(racePath(entry.slug));
+  if (text === null) throw new Error(`${racePath(entry.slug)} is listed in ${INDEX_PATH} but missing`);
+  return { index, prev: RaceSchema.parse(JSON.parse(text)) };
 }
 
 function sourceRank(source: SourceName | null): number {
@@ -356,7 +385,7 @@ export function formatCommitMessage(plan: SyncPlan, context?: string): string {
     ...added.map((c) => `+ ${c.slug} (${c.id})`),
     ...updated.map(
       (c) =>
-        `~ ${c.slug}: ${[...(c.joined ? ["+source"] : []), ...c.fields, ...(c.shadowed ?? []).map((f) => `${f} changed at the source (override kept)`)].join(", ") || "confidence"}`,
+        `~ ${c.slug}: ${[...(c.renamedFrom ? [`slug (was ${c.renamedFrom})`] : []), ...(c.joined ? ["+source"] : []), ...c.fields, ...(c.shadowed ?? []).map((f) => `${f} changed at the source (override kept)`)].join(", ") || "confidence"}`,
     ),
   ];
   if (context) lines.push("", context);

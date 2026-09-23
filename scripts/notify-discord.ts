@@ -8,7 +8,7 @@
 import { EMPTY_TREE, git, raceDiff, splitMessages } from "./lib/changes.ts";
 import { env } from "./lib/env.ts";
 import { reconcile } from "./lib/reconcile.ts";
-import { RACES_DIR, deepEqual, type CanonicalField, type Race } from "./lib/schema.ts";
+import { deepEqual, type CanonicalField, type Race } from "./lib/schema.ts";
 
 const DISCORD_LIMIT = 2000;
 const SHOW_VALUES: CanonicalField[] = ["types", "date", "priceMin", "priceMax", "groupPriceMin", "registrationStatus", "foreignerEligible"];
@@ -30,11 +30,11 @@ const link = before === EMPTY_TREE ? `${server}/${repo}/commit/${after}` : `${se
 lines.push(`**${repo}** · ${commits.length} commit(s) pushed · <${link}>`);
 
 const added = diff.added.map(
-  ({ id, race: r }) => `➕ **${r?.name ?? id}** (${[r?.date, r?.location.city].filter(Boolean).join(", ")}) \`${r?.slug ?? id}\`${conflict(r)}${links(r, id, after)}`,
+  ({ id, path, race: r }) => `➕ **${r?.name ?? id}** (${[r?.date, r?.location.city].filter(Boolean).join(", ")}) \`${r?.slug ?? id}\`${conflict(r)}${links(r, path, after)}`,
 );
-const removed = diff.removed.map(({ id, race: r }) => `➖ ${r ? `**${r.name}** \`${r.slug}\`` : `\`${id}\``}${links(r, id, before)}`);
-const updated = diff.updated.map(({ id, before: a, after: b, fields }) => {
-  if (!a || !b) return `✏️ \`${b?.slug ?? id}\` (unparseable)${links(b, id, after)}`;
+const removed = diff.removed.map(({ id, path, race: r }) => `➖ ${r ? `**${r.name}** \`${r.slug}\`` : `\`${id}\``}${links(r, path, before)}`);
+const updated = diff.updated.map(({ id, path, before: a, after: b, fields }) => {
+  if (!a || !b) return `✏️ \`${b?.slug ?? id}\` (unparseable)${links(b, path, after)}`;
   const setNow = (f: CanonicalField) => b.overrides?.[f] && a.overrides?.[f]?.at !== b.overrides[f]!.at;
   const removedNow = (f: CanonicalField) => a.overrides?.[f] && !b.overrides?.[f];
   const detail = fields.map((f) =>
@@ -50,7 +50,7 @@ const updated = diff.updated.map(({ id, before: a, after: b, fields }) => {
   for (const s of b.sources) if (!a.sources.some((x) => x.url === s.url)) detail.unshift(`+${s.name}`);
   if (a.confidence !== b.confidence) detail.push(`confidence ${a.confidence} → ${b.confidence}`);
   detail.push(...overrideNotes(a, b));
-  return `✏️ **${b.name}** \`${b.slug}\`: ${detail.join(", ") || "sources/metadata only"}${conflict(b)}${links(b, id, after)}`;
+  return `✏️ **${b.name}** \`${b.slug}\`: ${detail.join(", ") || "sources/metadata only"}${conflict(b)}${links(b, path, after)}`;
 });
 
 if (added.length + updated.length + removed.length === 0) {
@@ -108,9 +108,9 @@ function conflict(r: Race | null): string {
  * Links to check a race by hand: each source page, and the race file at this
  * commit. <…> keeps Discord from expanding them into preview cards.
  */
-function links(r: Race | null, id: string, rev: string): string {
+function links(r: Race | null, path: string, rev: string): string {
   const out = (r?.sources ?? []).map((s) => `[${s.name}](<${s.url}>)`);
-  out.push(`[json](<${server}/${repo}/blob/${rev}/${RACES_DIR}/${id}.json>)`);
+  out.push(`[json](<${server}/${repo}/blob/${rev}/${path}>)`);
   return `\n  ↳ ${out.join(" · ")}`;
 }
 

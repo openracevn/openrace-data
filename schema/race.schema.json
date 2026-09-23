@@ -312,6 +312,6 @@
   ],
   "additionalProperties": false,
   "$id": "https://openrace.vn/schema/v1/race.schema.json",
-  "title": "OpenRace race (data/races/<id>.json)",
+  "title": "OpenRace race (data/races/<slug>.json)",
   "x-schema-version": 1
 }

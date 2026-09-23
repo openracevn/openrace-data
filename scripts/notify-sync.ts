@@ -1,12 +1,14 @@
 /**
  * Tells openrace-api that race data changed on main, and which races, so it can
- * resync just those (GET data/races/<id>.json at `after`) and drop removed ones.
+ * resync. The API reads the whole data/races tree at the branch head itself (files are named
+ * <slug>.json; it maps them to ids through data/index.json), so `changes` is informational.
  *
  * Payload:
  *   { event: "openrace-data.push", schemaVersion, repository, ref, before, after, pushedAt,
  *     changes: { added: [{id, slug}], updated: [{id, slug, fields}], removed: [{id, slug}] } }
  * `fields` lists the canonical fields that changed; an empty list means only
- * sources/metadata changed (e.g. a new source joined, or a slug was edited).
+ * sources/metadata changed (e.g. a new source joined, or a slug was edited; then
+ * `renamedFrom` is the old slug).
  *
  * The API authenticates with the X-Sync-Secret header, then pulls the changed files
  * itself, at most SYNC_MAX_FETCH per call. Its reply says how many are `remaining`,
@@ -51,7 +53,12 @@ const payload = {
   pushedAt: new Date().toISOString(),
   changes: {
     added: diff.added.map(({ id, race }) => ({ id, slug: race?.slug ?? null })),
-    updated: diff.updated.map(({ id, after, fields }) => ({ id, slug: after?.slug ?? null, fields })),
+    updated: diff.updated.map(({ id, before, after, fields }) => ({
+      id,
+      slug: after?.slug ?? null,
+      fields,
+      ...(before && after && before.slug !== after.slug && { renamedFrom: before.slug }),
+    })),
     removed: diff.removed.map(({ id, race }) => ({ id, slug: race?.slug ?? null })),
   },
 };

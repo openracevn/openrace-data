@@ -6,6 +6,7 @@ import { INDEX_PATH, IndexSchema, RACES_DIR, RaceSchema, serialize, type Race } 
 
 const errors: string[] = [];
 const races = new Map<string, Race>();
+const idOwner = new Map<string, string>();
 const slugOwner = new Map<string, string>();
 
 for (const file of readdirSync(RACES_DIR).filter((f) => f.endsWith(".json")).sort()) {
@@ -23,8 +24,13 @@ for (const file of readdirSync(RACES_DIR).filter((f) => f.endsWith(".json")).sor
     for (const issue of parsed.error.issues) errors.push(`${path}: ${issue.path.join(".") || "(root)"}: ${issue.message}`);
     continue;
   }
-  if (`${parsed.data.id}.json` !== file) errors.push(`${path}: id "${parsed.data.id}" does not match filename`);
+  if (`${parsed.data.slug}.json` !== file) {
+    errors.push(`${path}: file must be named after its slug (${parsed.data.slug}.json); to change a slug use npm run edit -- slug <race> <new-slug>`);
+  }
   if (serialize(json) !== text) errors.push(`${path}: not in canonical formatting (2-space JSON + trailing newline)`);
+  const sameId = idOwner.get(parsed.data.id);
+  if (sameId) errors.push(`${path}: id "${parsed.data.id}" is also used by ${sameId}`);
+  idOwner.set(parsed.data.id, path);
   races.set(parsed.data.id, parsed.data);
   const owner = slugOwner.get(parsed.data.slug);
   if (owner) errors.push(`${path}: slug "${parsed.data.slug}" is also used by ${owner}`);
@@ -40,7 +46,7 @@ if (!index.success) {
   for (const entry of index.data) {
     const race = races.get(entry.id);
     if (!race) {
-      errors.push(`${INDEX_PATH}: "${entry.id}" has no file in ${RACES_DIR}`);
+      errors.push(`${INDEX_PATH}: "${entry.id}" (${entry.slug}) has no file in ${RACES_DIR}`);
       continue;
     }
     if (entry.slug !== race.slug) errors.push(`${INDEX_PATH}: "${entry.id}" slug != race slug`);
@@ -50,7 +56,7 @@ if (!index.success) {
     if (urls.join() !== entry.sourceUrls.join()) errors.push(`${INDEX_PATH}: "${entry.id}" sourceUrls != race sources`);
   }
   const indexed = new Set(ids);
-  for (const id of races.keys()) if (!indexed.has(id)) errors.push(`${RACES_DIR}/${id}.json: missing from ${INDEX_PATH}`);
+  for (const [id, race] of races) if (!indexed.has(id)) errors.push(`${RACES_DIR}/${race.slug}.json: id "${id}" missing from ${INDEX_PATH}`);
 }
 
 if (existsSync(CHECKS_PATH)) {

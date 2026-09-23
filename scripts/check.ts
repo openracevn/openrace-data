@@ -225,7 +225,7 @@ if (discovering) {
 if (mode === "daily" || mode === "refresh") {
   const due: string[] = [];
   for (const entry of index) {
-    const text = await current.read(racePath(entry.id));
+    const text = await current.read(racePath(entry.slug));
     if (text === null) continue;
     const race = RaceSchema.parse(JSON.parse(text));
     for (const url of entry.sourceUrls.filter((u) => sourceForUrl(u) !== null)) {
@@ -250,6 +250,7 @@ if (dryRun) {
   plan = await planSync(local, inputs, finishedAt);
   if (previewDir) {
     for (const [path, content] of Object.entries(plan.files)) {
+      if (content === null) continue;
       mkdirSync(dirname(join(previewDir, path)), { recursive: true });
       writeFileSync(join(previewDir, path), content);
     }
