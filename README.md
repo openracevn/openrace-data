@@ -117,6 +117,8 @@ The schema lives in `scripts/lib/schema.ts` (zod). Notes:
                  "removed": [{ "id": "…", "slug": "…" }] } }
   ```
   Fetch `data/races/<id>.json` at `after` for each added or updated race. An empty `fields` list means only sources or metadata changed (a new source joined, or the slug was edited).
+
+  The request carries an `X-Sync-Secret` header (the `SYNC_SECRET` secret). openrace-api ignores the body today: it compares file hashes at the branch head and downloads up to 40 changed files per call, replying with `remaining`. `notify-sync` repeats the call until `remaining` is 0, and fails the job if the API rejects any file (`errors`), since that means its copy of the contract has drifted from ours.
 - **Reading the data:** the repo is private, so the API needs its own fine-grained token with *Contents: read* on this repo.
 
 ## Ingestion (`scripts/check.ts`)
@@ -153,7 +155,8 @@ Repo secrets (Settings → Secrets and variables → Actions):
 | `FIRECRAWL_API_KEY` | Firecrawl API key |
 | `OPENRACE_BOT_TOKEN` | Fine-grained PAT with **Contents: read and write** on this repo only. It must not be the built-in `GITHUB_TOKEN`: pushes made with that token don't trigger `main.yml`, so validation and Discord would be skipped |
 | `DISCORD_WEBHOOK_URL` | Discord channel webhook (optional) |
-| `SYNC_WEBHOOK_URL` | openrace-api resync endpoint (optional; leave unset until the API exists) |
+| `SYNC_WEBHOOK_URL` | openrace-api resync endpoint, `https://<api host>/internal/sync` (optional; leave unset until the API is deployed) |
+| `SYNC_SECRET` | Shared secret sent as `X-Sync-Secret`; must equal openrace-api's `SYNC_SECRET`. Required once `SYNC_WEBHOOK_URL` is set |
 
 Run by hand: Actions → **Check races** → Run workflow → pick a mode (and a race for `race`). Tick *dry run* to see the plan without committing. Locally, `--dry-run --preview <dir>` also writes the planned files to `<dir>`.
 

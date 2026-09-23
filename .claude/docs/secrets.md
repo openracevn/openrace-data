@@ -4,11 +4,12 @@ Names and locations only. **Never write secret values into this repo.** Local va
 
 | Name | Used by | Where it's set | Status (2026-09-23) |
 | --- | --- | --- | --- |
-| `FIRECRAWL_API_KEY` | `check.ts` | Actions secret, `.env` | set in `.env`; **Actions secret not set** |
-| `OPENRACE_BOT_TOKEN` (Actions) / `GITHUB_TOKEN` (local `.env`) | `check.ts`, `sync-cli.ts` (commits) | Actions secret, `.env` | **not created yet** |
+| `FIRECRAWL_API_KEY` | `check.ts` | Actions secret, `.env` | **set** in both |
+| `OPENRACE_BOT_TOKEN` (Actions) / `GITHUB_TOKEN` (local) | `check.ts`, `sync-cli.ts`, `renormalize.ts` (commits) | Actions secret; locally `GITHUB_TOKEN=$(gh auth token)` | **set** in Actions (2026-09-23) |
 | `GITHUB_OWNER` / `GITHUB_REPO` / `GITHUB_BRANCH` | `check.ts`, `sync-cli.ts` | derived from the repo in `check.yml`; `.env` locally | `openracevn` / `openrace-data` / `main` |
-| `DISCORD_WEBHOOK_URL` | `notify-discord` job | Actions secret, `.env` | **set** in both (validated with a GET; no message sent yet) |
-| `SYNC_WEBHOOK_URL` | `notify-api` job | Actions secret | not set on purpose: placeholder until openrace-api exists; the job logs "skipping" |
+| `DISCORD_WEBHOOK_URL` | `notify-discord` job | Actions secret, `.env` | **set** in both; messages confirmed in the channel |
+| `SYNC_WEBHOOK_URL` | `notify-api` job | Actions secret | not set on purpose: placeholder until openrace-api is deployed; the job logs "skipping" |
+| `SYNC_SECRET` | `notify-api` job (`X-Sync-Secret` header) | Actions secret; the same value as openrace-api's Worker secret `SYNC_SECRET` | **not set yet**; set it together with `SYNC_WEBHOOK_URL` (`notify-sync` exits 1 if the URL is set without it) |
 
 ## Notes
 

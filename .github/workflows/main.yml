@@ -62,6 +62,7 @@ jobs:
       - run: npm run notify:sync
         env:
           SYNC_WEBHOOK_URL: ${{ secrets.SYNC_WEBHOOK_URL }}
+          SYNC_SECRET: ${{ secrets.SYNC_SECRET }}
           BEFORE_SHA: ${{ github.event.before }}
           AFTER_SHA: ${{ github.sha }}
 

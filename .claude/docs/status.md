@@ -25,11 +25,9 @@
 
 ## Not done / not verified
 
-- [ ] Create a fine-grained PAT, then set the `OPENRACE_BOT_TOKEN` Actions secret.
-- [ ] Set the `FIRECRAWL_API_KEY` Actions secret.
-- [ ] First real (committing) run: Actions → Check races → `daily`. The first run bootstraps about 20–40 races, which takes more than one day at the 40-page cap.
-- [ ] Confirm that the checker's commit triggers `main.yml` and that the first Discord message looks right.
-- [ ] `SYNC_WEBHOOK_URL`, once openrace-api exists.
+- [x] `OPENRACE_BOT_TOKEN` Actions secret set.
+- [x] First real runs, checker commits triggering `main.yml`, and Discord messages (2026-09-23).
+- [ ] `SYNC_WEBHOOK_URL` and `SYNC_SECRET`, once openrace-api is deployed. `notify-sync` already sends the header and loops until the API reports `remaining: 0` (2026-09-23).
 
 ## Known gaps
 
