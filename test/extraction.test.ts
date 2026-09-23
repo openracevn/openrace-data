@@ -16,6 +16,9 @@ describe("price tiers", () => {
     assert.equal(tierDate("2026-09-04", "2026-11-29"), "2026-09-04");
     assert.equal(tierDate("04/09/2026", "2026-11-29"), "2026-09-04");
     assert.equal(tierDate("soon", "2026-11-29"), null);
+    // Tết Run 2027's poster prints "31/11/2026".
+    assert.equal(tierDate("31/11", "2027-01-24"), "2026-11-30");
+    assert.equal(tierDate("31/11/2026", "2027-01-24"), "2026-11-30");
   });
 
   it("reads month names, and redoes a year the model made up", () => {

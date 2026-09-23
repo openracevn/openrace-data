@@ -39,3 +39,12 @@ A `Snapshot` has:
 - **Posters leave out the year** ("24 JUN – 16 JUL"). The model may invent one. Normalization works it out again from race day.
 - **Prices can depend on the runner** (HCMC Marathon: Resident / Non-resident). Each tier has an `audience`.
 - **Image names can be mangled** (ActiUp: "giải thưởng", prizes, folds to "giai", close to "gia"). Prefer the page structure (a section title) over names.
+
+## Lessons from the first ActiUp batch (2026-09-25)
+
+- **The model tags prices with an audience that isn't there** (every Sơn Trà price "Resident"; every Bắc Ninh price repeated for Resident and Non-resident). An audience is kept only when the same distance and tier kind has different resident and non-resident prices.
+- **It computes group prices from percentages** ("Nhóm 10-29: 5%"), and gets them wrong. Printed VND prices are round thousands, so a read whose group prices aren't loses its group prices.
+- **Combos and relay teams come back as the distance or audience** ("COMBO 1 (MUA 2 VÉ TICKETS)", "TIẾP SỨC (RELAY TEAM)"). They're kept in the tier label, as kind `group`, so they aren't taken for a single entry.
+- **Dates ending on race day were copied from it** (Bắc Ninh: a poster with no dates read as "07/07 - 10/01"): both ends are dropped.
+- **Posters print impossible days** ("31/11/2026"): the month's last day.
+- **Busy images can shift rows** (Vũng Tàu City Trail: each distance got the next row's prices, and a slogan, "GIANTS", became a tier). No rule catches that; the prompt now says to read rows straight across, and the race needs a re-read.

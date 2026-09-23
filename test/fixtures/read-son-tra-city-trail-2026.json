@@ -1,0 +1,161 @@
+{
+  "site": "actiup",
+  "role": "seller",
+  "url": "https://actiup.net/vi/event/son-tra-city-trail-2026",
+  "extracted": {
+    "facts": {
+      "name": "SƠN TRÀ CITY TRAIL 2026",
+      "date": "2026-12-26",
+      "endDate": "2026-12-27",
+      "venue": "Sơn Trà, Đà Nẵng",
+      "organizer": "Công ty TNHH Belove Mountain",
+      "currency": "VND",
+      "registrationStatus": "open",
+      "fromPrice": 466000
+    },
+    "pages": [
+      {
+        "url": "https://actiup.net/vi/event/son-tra-city-trail-2026",
+        "json": {
+          "pageKind": "sport",
+          "types": [
+            "trail_run"
+          ],
+          "name": "Sơn Trà City Trail 2026",
+          "date": "2026-11-21",
+          "endDate": "2026-11-22",
+          "distances": [],
+          "venue": "Bán đảo Sơn Trà",
+          "city": "Đà Nẵng",
+          "organizer": "",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "prices": []
+        }
+      }
+    ],
+    "links": [
+      {
+        "url": "https://drive.google.com/file/d/1RrDm_fgMVfex1NT6JPA3H8oKtDA3b9SP/view?usp=drive_link",
+        "text": "quy dinh tham du xem tai day"
+      }
+    ],
+    "organizer": {
+      "id": "cong-ty-tnhh-belove-mountain",
+      "name": "Công ty TNHH Belove Mountain"
+    },
+    "images": [
+      {
+        "url": "https://pix.actiup.net/2026/08/27/1787815275758247/b%E1%BA%A3ng-gi%C3%A1.png",
+        "json": {
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Super Early Bird",
+              "audience": "Resident",
+              "from": "03/09",
+              "to": "10/10",
+              "price": 466000
+            },
+            {
+              "distance": "5km",
+              "tier": "Early Bird",
+              "audience": "Resident",
+              "from": "11/10",
+              "to": "30/11",
+              "price": 660000
+            },
+            {
+              "distance": "5km",
+              "tier": "Late",
+              "audience": "Resident",
+              "from": "01/12",
+              "to": "15/12",
+              "price": 866000
+            },
+            {
+              "distance": "10km",
+              "tier": "Super Early Bird",
+              "audience": "Resident",
+              "from": "03/09",
+              "to": "10/10",
+              "price": 566000
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "audience": "Resident",
+              "from": "11/10",
+              "to": "30/11",
+              "price": 766000
+            },
+            {
+              "distance": "10km",
+              "tier": "Late",
+              "audience": "Resident",
+              "from": "01/12",
+              "to": "15/12",
+              "price": 966000
+            },
+            {
+              "distance": "21km",
+              "tier": "Super Early Bird",
+              "audience": "Resident",
+              "from": "03/09",
+              "to": "10/10",
+              "price": 688000
+            },
+            {
+              "distance": "21km",
+              "tier": "Early Bird",
+              "audience": "Resident",
+              "from": "11/10",
+              "to": "30/11",
+              "price": 988000
+            },
+            {
+              "distance": "21km",
+              "tier": "Late",
+              "audience": "Resident",
+              "from": "01/12",
+              "to": "15/12",
+              "price": 1188000
+            },
+            {
+              "distance": "42km",
+              "tier": "Super Early Bird",
+              "audience": "Resident",
+              "from": "03/09",
+              "to": "10/10",
+              "price": 888000
+            },
+            {
+              "distance": "42km",
+              "tier": "Early Bird",
+              "audience": "Resident",
+              "from": "11/10",
+              "to": "30/11",
+              "price": 1088000
+            },
+            {
+              "distance": "42km",
+              "tier": "Late",
+              "audience": "Resident",
+              "from": "01/12",
+              "to": "15/12",
+              "price": 1388000
+            }
+          ],
+          "distances": [
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "date": "2026-12-26",
+          "currency": "VND"
+        }
+      }
+    ]
+  }
+}

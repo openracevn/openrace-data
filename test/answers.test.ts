@@ -1,5 +1,5 @@
 /**
- * Known answers: real Firecrawl reads (test/fixtures/read-*.json, 2026-09-24) must
+ * Known answers: real Firecrawl reads (test/fixtures/read-*.json, 2026-09-24 and -25) must
  * normalize to the prices a person checked against the page or price image by hand.
  * Free and offline; it catches normalization changes that would break real data.
  * To add one: run `npm run check -- --race <url> --dry-run --preview <dir>`, check
@@ -89,5 +89,53 @@ describe("known answers", () => {
       ]),
     );
     assert.deepEqual(sorted(prices("hcmc-marathon-2027")), sorted(expected));
+  });
+
+  // 2026-09-25 batch: prices checked by eye against the ActiUp price images.
+  it("Sơn Trà City Trail 2026 (ActiUp): 4 distances × 3 tiers; the model's \"Resident\" on every price is dropped", () => {
+    const dates: [string, string, string][] = [
+      ["super_early", "2026-09-03", "2026-10-10"],
+      ["early", "2026-10-11", "2026-11-30"],
+      ["late", "2026-12-01", "2026-12-15"],
+    ];
+    const table: Record<string, number[]> = {
+      "5km": [466000, 660000, 866000],
+      "10km": [566000, 766000, 966000],
+      "21km": [688000, 988000, 1188000],
+      "42km": [888000, 1088000, 1388000],
+    };
+    const expected = Object.entries(table).flatMap(([distance, byTier]) => dates.map(([kind, from, to], i): Row => [distance, kind, null, byTier[i]!, from, to]));
+    assert.deepEqual(sorted(prices("son-tra-city-trail-2026")), sorted(expected));
+  });
+
+  it("Quảng Trực Half Marathon 2026 (ActiUp): 4 Early Bird prices; group prices the model computed from percentages are dropped", () => {
+    const expected: Row[] = [
+      ["21km", "early", null, 649000, "2026-09-09", "2026-09-30"],
+      ["10km", "early", null, 499000, "2026-09-09", "2026-09-30"],
+      ["5km", "early", null, 399000, "2026-09-09", "2026-09-30"],
+      ["1.5km", "early", null, 269000, "2026-09-09", "2026-09-30"],
+    ];
+    assert.deepEqual(sorted(prices("quang-truc-2026")), sorted(expected));
+  });
+
+  it("Giải Chạy Quốc Tế Vì Đà Lạt Xanh 2026 (ActiUp): 4 distances × 3 tiers, and 3 combos as group prices", () => {
+    const dates: [string, string, string][] = [
+      ["2026-09-23", "2026-10-15", "super_early"],
+      ["2026-10-16", "2026-10-30", "early"],
+      ["2026-10-31", "2026-11-12", "regular"],
+    ];
+    const table: [string | null, string, number[]][] = [
+      ["1.5km", "", [200000, 280000, 320000]],
+      ["5km", "", [300000, 420000, 480000]],
+      ["10km", "", [375000, 525000, 600000]],
+      ["21km", "", [450000, 630000, 720000]],
+      [null, "combo", [500000, 700000, 900000]],
+      [null, "combo", [800000, 1000000, 1000000]],
+      [null, "combo", [1100000, 1300000, 1500000]],
+    ];
+    const expected = table.flatMap(([distance, combo, byTier]) =>
+      dates.map(([from, to, kind], i): Row => [distance, combo ? "group" : kind, null, byTier[i]!, from, to]),
+    );
+    assert.deepEqual(sorted(prices("da-lat-xanh-2026")), sorted(expected));
   });
 });
