@@ -25,7 +25,7 @@ Design v2 is being built (`design-v2.md`). The v1 race data was removed; data is
 
 ## Firecrawl account
 
-Free plan: 1,000 credits per billing period (23rd to 23rd). On 2026-09-24, 1,453 were left before testing; the tests used about 150. The cap in `config/sites.yaml` (`monthlyCredits: 900`) counts calendar months (UTC).
+Free plan: 1,000 credits per billing period (23rd to 23rd). On 2026-09-24, 1,453 were left before testing; the tests used about 185 (about 1,270 left). The cap in `config/sites.yaml` (`monthlyCredits: 900`) counts calendar months (UTC).
 
 ## Next
 
