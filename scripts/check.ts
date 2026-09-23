@@ -151,13 +151,32 @@ if (mode === "race") {
 if (discovering) {
   for (const source of Object.values(SOURCES)) {
     for (const listing of source.listings) {
-      const result = await firecrawl.links(listing);
-      if (!result.ok) {
-        report.push(`✗ listing ${listing}: ${result.error}`);
+      // The listing renders client-side and occasionally comes back before its events
+      // load. A listing with no event links is a failed render, not "no new races".
+      let events: string[] = [];
+      let error = "no event links (page rendered without events)";
+      for (let attempt = 1; attempt <= 3 && events.length === 0; attempt++) {
+        const result = await firecrawl.links(listing);
+        if (!result.ok) {
+          error = result.error;
+          continue;
+        }
+        events = result.links.filter((link) => {
+          try {
+            return sourceForUrl(canonicalSourceUrl(link)) !== null;
+          } catch {
+            return false;
+          }
+        });
+      }
+      if (events.length === 0) {
+        report.push(`✗ listing ${listing}: ${error}`);
         failures++;
         continue;
       }
-      enqueue(newEventUrls(result.links));
+      const fresh = newEventUrls(events);
+      report.push(`listing ${listing}: ${new Set(events.map((e) => canonicalSourceUrl(e))).size} events, ${fresh.length} new`);
+      enqueue(fresh);
     }
   }
 }
@@ -235,7 +254,7 @@ console.log(summary);
 const summaryFile = env("GITHUB_STEP_SUMMARY");
 if (summaryFile) appendFileSync(summaryFile, `${summary}\n`);
 
-// Red run if nothing could be scraped at all (e.g. out of credits, bad key).
+// Red run if nothing could be scraped at all (e.g. out of credits, bad key, listing never rendered).
 if (failures > 0 && inputs.length === 0) process.exitCode = 1;
 
 function fail(message: string): never {
