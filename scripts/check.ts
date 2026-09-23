@@ -10,6 +10,10 @@
  *   --limit N         at most N races per site (tests, small batches)
  *   --max-credits N   Firecrawl credits this run may spend (default 250; the month's cap in config/sites.yaml also applies)
  *   --free            no paid reads: only what's cached; reports what would be read
+ *   --facts-only      no reads at all: create or update races from the site's free data only
+ *                     (ActiUp's API: name, dates, place, organizer, sale status). Prices,
+ *                     distances and types come with a later normal run, which still reads
+ *                     these races. A race already read in full is left alone.
  *   --dry-run         plan against the local checkout and don't commit (still reads, unless --free;
  *                     what it paid for is kept in the local state/reads.json)
  *   --preview <dir>   with --dry-run: write the planned files under <dir>
@@ -61,7 +65,8 @@ const raceArg = arg("race")?.trim();
 const includePast = args.includes("--past");
 const limit = arg("limit") ? Number(arg("limit")) : Number.POSITIVE_INFINITY;
 const maxCredits = Number(arg("max-credits") ?? 250);
-const free = args.includes("--free");
+const factsOnly = args.includes("--facts-only");
+const free = args.includes("--free") || factsOnly;
 const dryRun = args.includes("--dry-run");
 const previewDir = arg("preview");
 if (siteArg && raceArg) fail("use --site or --race, not both");
@@ -188,6 +193,24 @@ for (const job of jobs) {
     }
     const fp = snapshotFingerprint(snap);
     const prev = checks[ref.url];
+    if (factsOnly) {
+      // Never replace a full read with facts alone.
+      if (prev?.fingerprint) {
+        counts.unchanged++;
+        continue;
+      }
+      const extracted = {
+        ...(snap.facts && { facts: snap.facts }),
+        links: snap.links,
+        ...(snap.hints?.series && { series: snap.hints.series }),
+        ...(snap.hints?.organizer && { organizer: snap.hints.organizer }),
+      };
+      inputs.push({ url: ref.url, site: site.key, role: roleOf(site), extracted, checkedAt, slugHint: snap.slugHint });
+      runChecks.set(ref.url, { lastCheckedAt: checkedAt, status: "facts" });
+      counts.read++;
+      siteRead++;
+      continue;
+    }
     if (!raceArg && prev?.fingerprint === fp && prev.status !== "error") {
       counts.unchanged++;
       runChecks.set(ref.url, { ...prev, lastCheckedAt: checkedAt });
@@ -222,7 +245,8 @@ for (const job of jobs) {
     runChecks.set(ref.url, { lastCheckedAt: checkedAt, status: "ok", fingerprint: fp });
     console.log(`read ${ref.url} (${outcome.paidReads} paid, ${outcome.cachedReads} cached)`);
   }
-  runSites.set(site.key, { lastCheckedAt: now.toISOString(), status: "ok", failures: 0 });
+  // Facts alone don't count as a check: the next scheduled run should still read the site.
+  if (!factsOnly) runSites.set(site.key, { lastCheckedAt: now.toISOString(), status: "ok", failures: 0 });
   report.push(`site ${site.key}: ${refs.length} race page(s), ${siteRead} read`);
 }
 
@@ -284,7 +308,7 @@ if (counts.deferred > 0 && !free) alerts.push(`💳 Credit cap reached: ${counts
 for (const s of plan.skipped) report.push(`· skipped ${s.url}: ${s.reason}`);
 
 const summary = [
-  `## Race check${dryRun ? " (dry run)" : ""}${free ? " (free: cached reads only)" : ""}`,
+  `## Race check${dryRun ? " (dry run)" : ""}${factsOnly ? " (facts only: no reads)" : free ? " (free: cached reads only)" : ""}`,
   "",
   `- Sites: ${counts.sites} · race pages: ${counts.races} (${counts.unchanged} unchanged, ${counts.read} read, ${counts.deferred} ${free ? "to read" : "deferred"}, ${counts.failed} failed)`,
   `- Reads: ${counts.paidReads} paid, ${counts.cachedReads} from cache · Firecrawl credits: ${credits} (month: ${spentThisMonth + credits} of ${config.monthlyCredits})`,

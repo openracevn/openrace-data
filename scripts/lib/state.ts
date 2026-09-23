@@ -17,7 +17,8 @@ export const CREDITS_PATH = "state/credits.json";
 
 export const CheckSchema = z.object({
   lastCheckedAt: z.iso.datetime(),
-  status: z.enum(["ok", "rejected", "error"]),
+  // facts: only the site's free data was taken (--facts-only); the page is still to be read.
+  status: z.enum(["ok", "facts", "rejected", "error"]),
   reason: z.string().optional(),
   /** Rejected for what the page is (not a sports event), not for a transient problem. */
   permanent: z.boolean().optional(),

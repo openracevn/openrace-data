@@ -30,6 +30,10 @@ on:
         description: "No paid reads: show what would be read and what it would cost"
         type: boolean
         default: false
+      facts_only:
+        description: "No reads at all: races from the site's free data only (prices come later)"
+        type: boolean
+        default: false
       dry_run:
         description: "Read and show the plan, but don't commit"
         type: boolean
@@ -69,6 +73,7 @@ jobs:
           LIMIT: ${{ inputs.limit }}
           MAX_CREDITS: ${{ inputs.max_credits || '250' }}
           FREE: ${{ inputs.free }}
+          FACTS_ONLY: ${{ inputs.facts_only }}
           DRY_RUN: ${{ inputs.dry_run }}
         run: |
           args=(--max-credits "$MAX_CREDITS")
@@ -77,5 +82,6 @@ jobs:
           if [[ -n "$LIMIT" ]]; then args+=(--limit "$LIMIT"); fi
           if [[ "$PAST" == "true" ]]; then args+=(--past); fi
           if [[ "$FREE" == "true" ]]; then args+=(--free); fi
+          if [[ "$FACTS_ONLY" == "true" ]]; then args+=(--facts-only); fi
           if [[ "$DRY_RUN" == "true" ]]; then args+=(--dry-run); fi
           npm run -s check -- "${args[@]}"

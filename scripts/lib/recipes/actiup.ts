@@ -120,8 +120,10 @@ export const actiupRecipe: Recipe = {
 };
 
 function registrationStatus(e: NonNullable<Detail["result"]>, today: string): string | null {
+  // ActiUp marks finished events sold_out too; once registration or the race is over, it's closed.
+  const over = (e.close_registration_date ?? e.end_date ?? e.start_date).slice(0, 10) < today || e.start_date.slice(0, 10) < today;
+  if (over) return "closed";
   if (e.selling_type === "sold_out") return "sold_out";
-  if (e.close_registration_date && e.close_registration_date.slice(0, 10) < today) return "closed";
   if (e.selling_type === "selling") return "open";
   return null;
 }

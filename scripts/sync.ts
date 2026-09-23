@@ -465,7 +465,7 @@ function dedupeByUrl(inputs: readonly SyncInput[], skipped: Skipped[]): SyncInpu
 
 /** First slug among base, base-2, base-3, ... that is free, and whose file name is free too. */
 function allocateSlug(base: string, date: string, takenSlugs: ReadonlySet<string>, takenFiles: ReadonlySet<string>): string {
-  const clean = base.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 100) || "race";
+  const clean = base.toLowerCase().replace(/[^a-z0-9]+/g, "-").slice(0, 100).replace(/^-+|-+$/g, "") || "race";
   const free = (slug: string) => !takenSlugs.has(slug) && !takenFiles.has(raceFileName(slug, date));
   if (free(clean)) return clean;
   for (let n = 2; ; n++) if (free(`${clean}-${n}`)) return `${clean}-${n}`;

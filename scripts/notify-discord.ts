@@ -12,6 +12,7 @@ import { deepEqual, type CanonicalField, type Race } from "./lib/schema.ts";
 import { loadSites } from "./lib/sites.ts";
 
 const DISCORD_LIMIT = 2000;
+const MAX_LISTED = 15;
 const SHOW_VALUES: CanonicalField[] = ["types", "date", "endDate", "seriesId", "organizerId", "registrationStatus"];
 const config = loadSites();
 
@@ -61,7 +62,15 @@ const updated = diff.updated.map(({ id, path, before: a, after: b, fields }) => 
 if (added.length + updated.length + removed.length === 0) {
   lines.push("No race data changes.", ...commits.slice(0, 5).map((c) => `• ${c}`));
 } else {
-  lines.push(`Races: ${added.length} added, ${updated.length} updated, ${removed.length} removed`, ...added, ...updated, ...removed);
+  // A big batch (a backfill) gets a sample, not hundreds of messages.
+  const cap = (list: string[], label: string) =>
+    list.length > MAX_LISTED ? [...list.slice(0, MAX_LISTED), `…and ${list.length - MAX_LISTED} more ${label} (see the commit)`] : list;
+  lines.push(
+    `Races: ${added.length} added, ${updated.length} updated, ${removed.length} removed`,
+    ...cap(added, "added"),
+    ...cap(updated, "updated"),
+    ...cap(removed, "removed"),
+  );
 }
 
 for (const content of splitMessages(lines, DISCORD_LIMIT)) {
