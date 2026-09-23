@@ -9,5 +9,6 @@ Working notes on how openrace-data is wired up. Read these before changing inges
 | [firecrawl.md](firecrawl.md) | Firecrawl API facts verified against their docs, and the traps behind the current design |
 | [decisions.md](decisions.md) | Design decisions and deliberate departures from the original spec |
 | [status.md](status.md) | What's live, what isn't, known gaps, next steps |
+| [2026-09-23-summary.md](2026-09-23-summary.md) | Day summary: what was built, how the design changed and why, problems found in real runs, commits |
 
 Last updated: end of 2026-09-23. The check-race skill (.claude/skills/check-race) is the quick path for any single-race task.
