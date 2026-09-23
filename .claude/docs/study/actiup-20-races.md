@@ -1,6 +1,6 @@
 # ActiUp 20 Races Study — 2026-09-24
 
-> **Review by Claude Code (2026-09-24).** The study follows the plan (`.claude/plans/2026-09-24-actiup-20-races-study.md`): 15 upcoming races and 5 past editions, every field filled or marked. Spot-checked against ActiUp's API and the image hosts. Corrections:
+> **Review by Claude Code (2026-09-24).** The study follows the plan (`.claude/plans/001-2026-09-24-actiup-20-races-study.md`): 15 upcoming races and 5 past editions, every field filled or marked. Spot-checked against ActiUp's API and the image hosts. Corrections:
 >
 > 1. **ActiUp does link to official sites sometimes.** VPBank Hanoi (`vpbankmarathon.com/quy-dinh`) and Salonpas (`salonpasrun.vn/...`) link from their rules section. Lâm Đồng Trail does **not** link to `lamdongtrail.vn`; its only outside link is a Google Drive file. So Surprise 7 ("only Salonpas") and Open question 3 are wrong.
 > 2. **The `$17` "unresolved reference" (Aqua Warriors) isn't a problem.** It's a reference inside Next.js page data. ActiUp's event API (`/v2/content/events/slug/<slug>`, which the recipe uses) returns the full section: "Giá vé" is 6,394 characters. Open question 1 is closed.
