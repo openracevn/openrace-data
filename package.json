@@ -11,6 +11,7 @@
     "typecheck": "tsc --noEmit",
     "test": "node --import tsx --test test/*.test.ts",
     "validate": "tsx scripts/validate.ts",
+    "schema": "tsx scripts/schema.ts",
     "check": "tsx scripts/check.ts",
     "sync": "tsx scripts/sync-cli.ts",
     "renormalize": "tsx scripts/renormalize.ts",

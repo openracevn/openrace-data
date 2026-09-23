@@ -50,6 +50,8 @@ main.yml  (skipped entirely when only state/** changed)
 | `scripts/lib/slug.ts` | `canonicalSourceUrl` (the initial race slug comes from `SOURCES[x].slugOf`) |
 | `scripts/lib/github.ts` | Octokit: read files at a commit, write many files as one commit |
 | `scripts/sync.ts` | `planSync` (pure: groups a run's pages per race, matches new pages to races from other sources by date + `nameSimilarity`), `syncToGitHub` (I/O + retry + `extraFiles` for the check log), `formatCommitMessage` |
+| `scripts/lib/changes.ts` | Races added/updated/removed between two commits (git diff), shared by both notifications; `splitMessages` for Discord's 2000-char limit |
+| `scripts/lib/jsonschema.ts` + `scripts/schema.ts` | Generate `schema/*.schema.json` from the zod schemas |
 | `scripts/renormalize.ts` | Re-derive canonical fields from stored `rawExtracted` after rule changes (no scraping) |
 
 ## Tooling

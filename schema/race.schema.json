@@ -1,0 +1,273 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid",
+      "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+    },
+    "slug": {
+      "type": "string",
+      "maxLength": 120,
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "types": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "road_run",
+          "trail_run",
+          "city_trail",
+          "obstacle_run",
+          "triathlon",
+          "duathlon",
+          "aquathlon",
+          "aquabike",
+          "swimrun",
+          "swim",
+          "road_cycle",
+          "mtb",
+          "other"
+        ]
+      }
+    },
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "distances": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "venue": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "city": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "region": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "north",
+                "central",
+                "south"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "venue",
+        "city",
+        "region"
+      ],
+      "additionalProperties": false
+    },
+    "priceMin": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100000000
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "priceMax": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100000000
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "groupPriceMin": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100000000
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "currency": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "registrationStatus": {
+      "anyOf": [
+        {
+          "type": "string",
+          "enum": [
+            "open",
+            "closing_soon",
+            "sold_out",
+            "closed"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "registrationUrl": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "uri"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "organizer": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "foreignerEligible": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "sources": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "enum": [
+              "actiup",
+              "bibchung"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "lastCheckedAt": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+          },
+          "lastChangedAt": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+          },
+          "rawExtracted": {
+            "type": "object",
+            "propertyNames": {
+              "type": "string"
+            },
+            "additionalProperties": {}
+          }
+        },
+        "required": [
+          "name",
+          "url",
+          "lastCheckedAt",
+          "lastChangedAt",
+          "rawExtracted"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "single-sourced",
+        "multi-sourced",
+        "conflicting"
+      ]
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+    }
+  },
+  "required": [
+    "id",
+    "slug",
+    "name",
+    "types",
+    "date",
+    "distances",
+    "location",
+    "priceMin",
+    "priceMax",
+    "groupPriceMin",
+    "currency",
+    "registrationStatus",
+    "registrationUrl",
+    "organizer",
+    "foreignerEligible",
+    "sources",
+    "confidence",
+    "createdAt",
+    "updatedAt"
+  ],
+  "additionalProperties": false,
+  "$id": "https://openrace.vn/schema/v1/race.schema.json",
+  "title": "OpenRace race (data/races/<id>.json)",
+  "x-schema-version": 1
+}

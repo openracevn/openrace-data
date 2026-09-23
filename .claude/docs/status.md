@@ -17,6 +17,11 @@
 - **bibchung** added as the second source; migration added `groupPriceMin: null` and index name/date.
 - **The daily schedule is OFF** (user decision, 2026-09-23). Every run is manual until the data is trusted.
 
+## API readiness (2026-09-23)
+
+- Done: `schemaVersion` + JSON Schema in `schema/`; sanity bounds; a resync payload with changed race ids.
+- Still open before going public: load the rest of the upcoming races (~35); a read-only token for openrace-api; decide how removed races are handled; re-test the tightened bibchung prompt.
+
 ## Not done / not verified
 
 - [ ] Create a fine-grained PAT, then set the `OPENRACE_BOT_TOKEN` Actions secret.

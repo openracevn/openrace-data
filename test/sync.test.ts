@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
+import { splitMessages } from "../scripts/lib/changes.ts";
 import { isCandidate, isRefreshDue, vietnamDate, type Check } from "../scripts/lib/checks.ts";
 import { normalizeDistance, normalizeExtracted } from "../scripts/lib/extraction.ts";
 import { resolvePlace } from "../scripts/lib/places.ts";
@@ -291,6 +292,46 @@ describe("normalization", () => {
     assert.equal(r.race.registrationStatus, null);
   });
 
+});
+
+describe("sanity bounds", () => {
+  const valid = async () => {
+    const p = await plan(memoryStore(), [input(URL_A, extractedA)]);
+    return JSON.parse(p.files[racePath(p.changes[0]!.id)]!) as Race;
+  };
+
+  it("the schema rejects values that are extraction mistakes", async () => {
+    const race = await valid();
+    assert.ok(RaceSchema.safeParse(race).success);
+    const bad: Partial<Race>[] = [
+      { distances: ["Chỉ từ 678.000đ"] },
+      { priceMin: 200_000_000 },
+      { date: "2099-01-01" },
+      { date: "2009-01-01" },
+      { name: "Tet Run 678.000đ" },
+      { name: "See https://actiup.net" },
+      { currency: "vnd" },
+      { updatedAt: "2000-01-01T00:00:00.000Z" },
+    ];
+    for (const patch of bad) assert.equal(RaceSchema.safeParse({ ...race, ...patch }).success, false, JSON.stringify(patch));
+  });
+
+  it("normalization drops out-of-bounds values instead of failing the race", () => {
+    const r = normalizeExtracted({ pageKind: "sport", name: "X", date: "2027-01-24", distances: ["10km", "lots", "Sprint"], priceMin: 999_999_999, priceMax: 500000 });
+    assert.ok(r.ok);
+    assert.deepEqual(r.race.distances, ["10km", "Sprint"]);
+    assert.equal(r.race.priceMin, null);
+    assert.equal(normalizeExtracted({ pageKind: "sport", name: "X", date: "2099-01-24" }).ok, false);
+  });
+});
+
+describe("discord messages", () => {
+  it("splits between lines, never over the limit", () => {
+    const lines = ["header", "a".repeat(8), "b".repeat(8), "c".repeat(30)];
+    const out = splitMessages(lines, 20);
+    assert.deepEqual(out, ["header\naaaaaaaa", "bbbbbbbb", `${"c".repeat(19)}…`]);
+    for (const m of out) assert.ok(m.length <= 20);
+  });
 });
 
 describe("check schedule", () => {

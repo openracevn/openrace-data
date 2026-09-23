@@ -3,6 +3,29 @@ import { z } from "zod";
 export const RACES_DIR = "data/races";
 export const INDEX_PATH = "data/index.json";
 
+/**
+ * Version of the data contract (race files + index.json) that consumers such as
+ * openrace-api code against. Bump it on a breaking change: removing or renaming a
+ * field, narrowing a type, or changing a field's meaning. Additive changes (a new
+ * field, a new enum value) don't bump it; consumers must ignore unknown fields and
+ * tolerate unknown enum values. Published as JSON Schema under schema/ (npm run schema).
+ */
+export const SCHEMA_VERSION = 1;
+
+// Sanity bounds: values outside them are extraction mistakes, not races.
+export const MAX_PRICE = 100_000_000; // VND
+export const MIN_RACE_YEAR = 2015;
+export const MAX_YEARS_AHEAD = 3;
+
+/** "10km", "750m", "100mi", a bare number ("56.5"), or a named multisport format ("Sprint", "70.3"). */
+export function isDistance(s: string): boolean {
+  return (
+    /^\d+(\.\d+)?(km|mi|m)$/.test(s) ||
+    /^\d{1,3}(\.\d+)?$/.test(s) ||
+    /^(super sprint|sprint|olympic|standard|half|full|70\.3|140\.6|5150|kids)$/i.test(s)
+  );
+}
+
 export const REGIONS = ["north", "central", "south"] as const;
 export const REGISTRATION_STATUSES = ["open", "closing_soon", "sold_out", "closed"] as const;
 
@@ -35,8 +58,19 @@ export const CONFIDENCE_LEVELS = ["single-sourced", "multi-sourced", "conflictin
 export const SOURCE_NAMES = ["actiup", "bibchung"] as const;
 
 const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "expected YYYY-MM-DD");
+const raceDate = isoDate.refine((d) => {
+  const year = Number(d.slice(0, 4));
+  return year >= MIN_RACE_YEAR && year <= new Date().getUTCFullYear() + MAX_YEARS_AHEAD;
+}, `race year must be between ${MIN_RACE_YEAR} and ${MAX_YEARS_AHEAD} years from now`);
+const price = z.number().int().nonnegative().max(MAX_PRICE).nullable();
 const isoDateTime = z.iso.datetime();
-const slug = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, "expected kebab-case slug");
+const slug = z.string().max(120).regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, "expected kebab-case slug");
+// No URLs or prices: those are extraction mistakes.
+const raceName = z
+  .string()
+  .min(1)
+  .max(200)
+  .refine((n) => !/https?:\/\/|\d{1,3}(?:[.,]\d{3})+\s*(?:đ|₫|vnd)/i.test(n), "name contains a URL or a price");
 // Permanent key: file name, index key, API key. Never derived from race data.
 const raceId = z.uuid();
 
@@ -57,20 +91,20 @@ export const RaceSchema = z
     // URL slug for the frontend. Unique, and allowed to change (SEO); for now it's
     // the source's own slug (ActiUp's /vi/event/<slug>). Never used as a key.
     slug,
-    name: z.string().min(1),
+    name: raceName,
     types: z.array(z.enum(RACE_TYPES)).min(1),
-    date: isoDate,
-    distances: z.array(z.string().min(1)),
+    date: raceDate,
+    distances: z.array(z.string().refine(isDistance, "not a distance")),
     location: z.object({
       venue: z.string().min(1).nullable(),
       city: z.string().min(1).nullable(),
       region: z.enum(REGIONS).nullable(),
     }),
-    priceMin: z.number().int().nonnegative().nullable(),
-    priceMax: z.number().int().nonnegative().nullable(),
+    priceMin: price,
+    priceMax: price,
     // Cheapest discounted (group) price on bibchung; null when the race isn't on bibchung.
-    groupPriceMin: z.number().int().nonnegative().nullable(),
-    currency: z.string().length(3),
+    groupPriceMin: price,
+    currency: z.string().regex(/^[A-Z]{3}$/, "expected an ISO 4217 code"),
     registrationStatus: z.enum(REGISTRATION_STATUSES).nullable(),
     registrationUrl: z.url().nullable(),
     organizer: z.string().min(1).nullable(),
@@ -83,15 +117,16 @@ export const RaceSchema = z
   .refine((r) => r.priceMin === null || r.priceMax === null || r.priceMin <= r.priceMax, {
     message: "priceMin must be <= priceMax",
     path: ["priceMin"],
-  });
+  })
+  .refine((r) => r.createdAt <= r.updatedAt, { message: "createdAt must be <= updatedAt", path: ["updatedAt"] });
 
 export const IndexEntrySchema = z.object({
   id: raceId,
   slug,
   // Name and race day, so a page from another source can be matched to its race
   // without reading every race file.
-  name: z.string().min(1),
-  date: isoDate,
+  name: raceName,
+  date: raceDate,
   lastModified: isoDateTime,
   // Lets ingestion map a source URL to its race without reading every race file,
   // so a renamed race keeps its id instead of forking a new file.

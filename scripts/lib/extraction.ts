@@ -1,7 +1,11 @@
 import { foldVietnamese, resolvePlace } from "./places.ts";
 import {
+  MAX_PRICE,
+  MAX_YEARS_AHEAD,
+  MIN_RACE_YEAR,
   RACE_TYPES,
   REGISTRATION_STATUSES,
+  isDistance,
   type CanonicalRace,
   type RaceType,
   type RegistrationStatus,
@@ -186,20 +190,22 @@ function normalizeDate(v: unknown): string | null {
   const s = str(v);
   if (!s) return null;
   const iso = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
-  if (iso) return `${iso[1]}-${iso[2]}-${iso[3]}`;
   // Vietnamese pages use DD/MM/YYYY.
   const dmy = s.match(/^(\d{1,2})[/.-](\d{1,2})[/.-](\d{4})$/);
-  if (dmy) return `${dmy[3]}-${dmy[2]!.padStart(2, "0")}-${dmy[1]!.padStart(2, "0")}`;
-  return null;
+  const date = iso ? `${iso[1]}-${iso[2]}-${iso[3]}` : dmy ? `${dmy[3]}-${dmy[2]!.padStart(2, "0")}-${dmy[1]!.padStart(2, "0")}` : null;
+  if (!date) return null;
+  const year = Number(date.slice(0, 4));
+  return year >= MIN_RACE_YEAR && year <= new Date().getUTCFullYear() + MAX_YEARS_AHEAD ? date : null;
 }
 
 function normalizePrice(v: unknown): number | null {
-  if (typeof v === "number" && Number.isFinite(v) && v >= 0) return Math.round(v);
-  if (typeof v === "string") {
+  let n: number | null = null;
+  if (typeof v === "number" && Number.isFinite(v) && v >= 0) n = Math.round(v);
+  else if (typeof v === "string") {
     const digits = v.replace(/[^\d]/g, "");
-    return digits ? Number(digits) : null;
+    n = digits ? Number(digits) : null;
   }
-  return null;
+  return n !== null && n <= MAX_PRICE ? n : null;
 }
 
 function normalizeUrl(v: unknown): string | null {
@@ -239,7 +245,11 @@ const NOT_A_DISTANCE = /đ|vnd|chỉ từ|giá|\d{1,3}(?:[.,]\d{3}){1,}(?!\s*(?:
 function normalizeDistances(v: unknown): string[] {
   if (!Array.isArray(v)) return [];
   const out = new Set<string>();
-  for (const d of v) if (typeof d === "string" && d.trim() && !NOT_A_DISTANCE.test(d)) out.add(normalizeDistance(d));
+  for (const d of v) {
+    if (typeof d !== "string" || !d.trim() || NOT_A_DISTANCE.test(d)) continue;
+    const normalized = normalizeDistance(d);
+    if (isDistance(normalized)) out.add(normalized); // anything else is extraction noise
+  }
   return [...out].sort((a, b) => km(a) - km(b) || a.localeCompare(b));
 }
 

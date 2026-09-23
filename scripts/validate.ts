@@ -1,6 +1,7 @@
 /** CI check: every race file matches the schema and data/index.json agrees with the files. */
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { CHECKS_PATH, ChecksSchema, serializeChecks } from "./lib/checks.ts";
+import { jsonSchemaFiles } from "./lib/jsonschema.ts";
 import { INDEX_PATH, IndexSchema, RACES_DIR, RaceSchema, serialize, type Race } from "./lib/schema.ts";
 
 const errors: string[] = [];
@@ -60,6 +61,11 @@ if (existsSync(CHECKS_PATH)) {
   } else if (serializeChecks(checks.data) !== text) {
     errors.push(`${CHECKS_PATH}: not in canonical formatting (sorted keys, 2-space JSON + trailing newline)`);
   }
+}
+
+for (const [path, expected] of Object.entries(jsonSchemaFiles())) {
+  const actual = existsSync(path) ? readFileSync(path, "utf8") : null;
+  if (actual !== expected) errors.push(`${path}: out of date with scripts/lib/schema.ts (run npm run schema)`);
 }
 
 if (errors.length) {

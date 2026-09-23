@@ -22,6 +22,13 @@
 | Running races only | **All sports events**, each with `types` (road_run, trail_run, city_trail, obstacle_run, triathlon, duathlon, aquathlon, aquabike, swimrun, swim, road_cycle, mtb, other) | User decision, 2026-09-23: the frontend filters by format. `types` is an array because events mix formats. Name rules force obvious types ("City Trail", "Triathlon"/"Ironman", …). Marathon/half/ultra are distances, not types |
 | Resync webhook after every commit | Only when `data/` changed **and** validation passed | Keeps invalid data from reaching the API |
 
+## Data contract (2026-09-23)
+
+- **`SCHEMA_VERSION`** in `schema.ts`, published as `x-schema-version` in `schema/*.schema.json` and in the resync payload. It's bumped only for breaking changes; consumers ignore unknown fields and enum values. The JSON Schema is generated, and `validate` fails if it's stale.
+- **Sanity bounds live in the zod schema** (distance shape, race year 2015..now+3, price ≤ 100M VND, no URL or price in names, createdAt ≤ updatedAt). So `planSync` refuses a bad record before committing, and CI refuses one pushed by hand. Normalization drops out-of-bounds values first (a bad distance or price becomes absent/null), so one bad field doesn't cost the whole race.
+- **The resync payload lists changed race ids** (added/updated/removed + fields), from the same git diff as the Discord message (`lib/changes.ts`). The API doesn't need to diff commits.
+- **Discord lines link to the sources and the race file** (the user wants to check data by hand quickly). Long summaries are split into several messages, never mid-race.
+
 ## Other choices
 
 - **Identity (user decision, 2026-09-23):** `id` is a random UUID. It's the file name and the API key, and it never changes. `slug` is separate and **may change**, for SEO; a slug scheme will be designed later. For now a new race takes the source's slug (ActiUp `/vi/event/<slug>`), plus a `-2` suffix if that slug is taken. Ingestion never overwrites an existing slug. `validate` enforces unique slugs. Source URL → id goes through `index.json.sourceUrls`.

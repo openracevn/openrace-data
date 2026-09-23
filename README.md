@@ -45,11 +45,13 @@ scripts/
   check.ts               the race checker (discover / refresh / one race)
   sync.ts                diff/commit core: planSync (pure) + syncToGitHub
   sync-cli.ts            commit hand-made extractions (dry run by default)
-  validate.ts            CI: schema + index + check-log consistency
+  validate.ts            CI: schema + index + check-log consistency, schema/ up to date
+  schema.ts              regenerate schema/*.schema.json (npm run schema)
   notify-discord.ts      push summary to Discord (GitHub Action)
   notify-sync.ts         tell openrace-api to resync (GitHub Action)
   lib/                   schema (zod), extraction schema + normalization, check
                          schedule, Firecrawl client, places, slugs, GitHub I/O
+schema/                  JSON Schema of the data contract (generated)
 test/                    node:test suite
 .github/workflows/       check.yml (scheduled), main.yml (push to main), ci.yml (PRs)
 ```
@@ -98,6 +100,25 @@ The schema lives in `scripts/lib/schema.ts` (zod). Notes:
 - **`types`** (filterable, one or more per race): `road_run`, `trail_run`, `city_trail` (urban trail), `obstacle_run`, `triathlon` (swim+bike+run), `duathlon` (run+bike+run), `aquathlon` (swim+run), `aquabike` (swim+bike), `swimrun`, `swim`, `road_cycle`, `mtb`, `other`. Distance classes (marathon, half, ultra) are not types: filter on `distances`. The model picks the types; names containing "City Trail", "Triathlon"/"Ironman", "Duathlon", "Aquathlon" or "Swimrun" force the matching type.
 - **Identity:** `id` is a random UUID. It's the file name and the key everywhere, and it never changes. `slug` is for frontend URLs and can be changed freely, by hand or by a future slug scheme; ingestion keeps whatever slug a race has. A new race starts with the source's own slug (ActiUp's `/vi/event/<slug>`), with a `-2` suffix if another race already uses it. The source URL maps to the race through `index.json`'s `sourceUrls`, so a renamed race keeps its file.
 
+## For consumers (openrace-api)
+
+- **Contract:** `schema/race.schema.json` and `schema/index.schema.json` (JSON Schema 2020-12), generated from `scripts/lib/schema.ts` by `npm run schema`. `validate` fails if they're out of date.
+- **Versioning:** the schemas carry `x-schema-version`, which is also sent in the resync payload. It is bumped only on breaking changes: a field removed or renamed, a type narrowed, or a meaning changed. New fields and new enum values don't bump it, so **ignore unknown fields and tolerate unknown enum values**.
+- **Guarantees** (checked by CI and before every commit):
+  - Schema-valid files; unique slugs; `index.json` consistent with the race files.
+  - Sanity bounds: distances look like distances (`10km`, `750m`, `100mi`, a bare number, or `Sprint`/`Olympic`/`70.3`/…); the race year is between 2015 and 3 years from now; prices are 0–100,000,000 VND; names contain no URLs or prices.
+- **Past races are included.** Filter on `date` for upcoming ones. Races are never deleted automatically.
+- **Resync webhook** (`SYNC_WEBHOOK_URL`, sent after `validate` passes on a push that changed `data/`):
+  ```json
+  { "event": "openrace-data.push", "schemaVersion": 1, "repository": "openracevn/openrace-data",
+    "ref": "refs/heads/main", "before": "<sha>", "after": "<sha>", "pushedAt": "…",
+    "changes": { "added":   [{ "id": "…", "slug": "…" }],
+                 "updated": [{ "id": "…", "slug": "…", "fields": ["distances", "groupPriceMin"] }],
+                 "removed": [{ "id": "…", "slug": "…" }] } }
+  ```
+  Fetch `data/races/<id>.json` at `after` for each added or updated race. An empty `fields` list means only sources or metadata changed (a new source joined, or the slug was edited).
+- **Reading the data:** the repo is private, so the API needs its own fine-grained token with *Contents: read* on this repo.
+
 ## Ingestion (`scripts/check.ts`)
 
 `.github/workflows/check.yml` runs the checker every day and on demand. It calls the Firecrawl scrape API directly, with no Firecrawl Monitor and no webhook. The reason is that a monitor has one schedule for all its pages and would re-extract every page on every run.
@@ -142,7 +163,7 @@ Run by hand: Actions → **Check races** → Run workflow → pick a mode (and a
 | --- | --- | --- |
 | `check.yml` | daily 00:17 UTC (07:17 in Vietnam), or by hand | the race checker above |
 | `ci.yml` | pull request | typecheck, tests, `validate` |
-| `main.yml` | push to `main` (ignored when only `state/` changed) | Runs `validate`. When the push touched `data/`, also runs **notify-api** (after validation passes; POSTs `{event, repository, ref, before, after, pushedAt}` to `SYNC_WEBHOOK_URL`) and **notify-discord** (a summary of races added, updated and removed, plus which fields changed, built from the git diff) |
+| `main.yml` | push to `main` (ignored when only `state/` changed) | Runs `validate`. When the push touched `data/`, also runs **notify-api** (after validation passes; POSTs the resync payload above to `SYNC_WEBHOOK_URL`) and **notify-discord** (a summary of races added, updated and removed and which fields changed, built from the git diff, with links under each race to its source pages and its JSON file; long summaries are split into several messages) |
 
 If `DISCORD_WEBHOOK_URL` or `SYNC_WEBHOOK_URL` is unset, its step logs "skipping" and passes.
 
