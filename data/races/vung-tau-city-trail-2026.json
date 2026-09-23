@@ -22,8 +22,28 @@
   },
   "prices": [
     {
+      "distance": "7km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 550000,
+      "from": "2026-09-19",
+      "to": "2026-10-18",
+      "site": "actiup"
+    },
+    {
+      "distance": "7km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 650000,
+      "from": "2026-10-19",
+      "to": "2026-11-15",
+      "site": "actiup"
+    },
+    {
       "distance": "12km",
-      "tier": "Giants",
+      "tier": "Giá vé",
       "kind": "other",
       "audience": null,
       "price": 350000,
@@ -33,7 +53,7 @@
     },
     {
       "distance": "12km",
-      "tier": "Early Bird",
+      "tier": "EARLY BIRD",
       "kind": "early",
       "audience": null,
       "price": 550000,
@@ -43,7 +63,7 @@
     },
     {
       "distance": "12km",
-      "tier": "Regular",
+      "tier": "REGULAR",
       "kind": "regular",
       "audience": null,
       "price": 650000,
@@ -53,7 +73,7 @@
     },
     {
       "distance": "25km",
-      "tier": "Giants",
+      "tier": "Giá vé",
       "kind": "other",
       "audience": null,
       "price": 450000,
@@ -63,7 +83,7 @@
     },
     {
       "distance": "25km",
-      "tier": "Early Bird",
+      "tier": "EARLY BIRD",
       "kind": "early",
       "audience": null,
       "price": 650000,
@@ -73,7 +93,7 @@
     },
     {
       "distance": "25km",
-      "tier": "Regular",
+      "tier": "REGULAR",
       "kind": "regular",
       "audience": null,
       "price": 750000,
@@ -83,7 +103,7 @@
     },
     {
       "distance": "35km",
-      "tier": "Giants",
+      "tier": "Giá vé",
       "kind": "other",
       "audience": null,
       "price": 550000,
@@ -93,7 +113,7 @@
     },
     {
       "distance": "35km",
-      "tier": "Early Bird",
+      "tier": "EARLY BIRD",
       "kind": "early",
       "audience": null,
       "price": 750000,
@@ -103,40 +123,10 @@
     },
     {
       "distance": "35km",
-      "tier": "Regular",
+      "tier": "REGULAR",
       "kind": "regular",
       "audience": null,
       "price": 850000,
-      "from": "2026-10-19",
-      "to": "2026-11-15",
-      "site": "actiup"
-    },
-    {
-      "distance": null,
-      "tier": "Giants",
-      "kind": "other",
-      "audience": null,
-      "price": 750000,
-      "from": null,
-      "to": null,
-      "site": "actiup"
-    },
-    {
-      "distance": null,
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 850000,
-      "from": "2026-09-19",
-      "to": "2026-10-18",
-      "site": "actiup"
-    },
-    {
-      "distance": null,
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 1150000,
       "from": "2026-10-19",
       "to": "2026-11-15",
       "site": "actiup"
@@ -164,7 +154,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/vung-tau-city-trail",
-      "lastCheckedAt": "2026-09-23T18:50:29.853Z",
+      "lastCheckedAt": "2026-09-23T19:01:53.539Z",
       "lastChangedAt": "2026-09-23T18:30:39.797Z",
       "extracted": {
         "facts": {
@@ -188,8 +178,13 @@
               "name": "Giải chạy Vũng Tàu City Trail 2026",
               "date": "2026-11-21",
               "endDate": "2026-11-22",
-              "distances": [],
-              "venue": "",
+              "distances": [
+                "7km",
+                "12km",
+                "25km",
+                "35km"
+              ],
+              "venue": "Vũng Tàu",
               "city": "Vũng Tàu",
               "organizer": "",
               "currency": "VND",
@@ -214,128 +209,104 @@
             "json": {
               "prices": [
                 {
-                  "distance": "7KM",
-                  "tier": "Flash Sale",
-                  "audience": "WITH",
+                  "distance": "07KM",
+                  "tier": "FLASH SALE",
+                  "audience": "Giants",
                   "from": "18/09",
                   "to": "18/09",
                   "price": 0
                 },
                 {
-                  "distance": "7KM",
-                  "tier": "Early Bird",
-                  "audience": "WITH",
+                  "distance": "07KM",
+                  "tier": "EARLY BIRD",
+                  "audience": "Giants",
                   "from": "19/09",
                   "to": "18/10",
-                  "price": 0
+                  "price": 550000
                 },
                 {
-                  "distance": "7KM",
-                  "tier": "Regular",
-                  "audience": "WITH",
+                  "distance": "07KM",
+                  "tier": "REGULAR",
+                  "audience": "Giants",
                   "from": "19/10",
                   "to": "15/11",
-                  "price": 0
+                  "price": 650000
                 },
                 {
                   "distance": "12KM",
-                  "tier": "Giants",
-                  "audience": "GIANTS",
+                  "tier": "Giá vé",
+                  "audience": "Giants",
                   "from": "",
                   "to": "",
                   "price": 350000
                 },
                 {
                   "distance": "12KM",
-                  "tier": "Early Bird",
-                  "audience": "GIANTS",
-                  "from": "19/09",
-                  "to": "18/10",
+                  "tier": "EARLY BIRD",
+                  "audience": "Giants",
+                  "from": "",
+                  "to": "",
                   "price": 550000
                 },
                 {
                   "distance": "12KM",
-                  "tier": "Regular",
-                  "audience": "GIANTS",
-                  "from": "19/10",
-                  "to": "15/11",
+                  "tier": "REGULAR",
+                  "audience": "Giants",
+                  "from": "",
+                  "to": "",
                   "price": 650000
                 },
                 {
                   "distance": "25KM",
-                  "tier": "Giants",
-                  "audience": "GIANTS",
+                  "tier": "Giá vé",
+                  "audience": "Giants",
                   "from": "",
                   "to": "",
                   "price": 450000
                 },
                 {
                   "distance": "25KM",
-                  "tier": "Early Bird",
-                  "audience": "GIANTS",
-                  "from": "19/09",
-                  "to": "18/10",
+                  "tier": "EARLY BIRD",
+                  "audience": "Giants",
+                  "from": "",
+                  "to": "",
                   "price": 650000
                 },
                 {
                   "distance": "25KM",
-                  "tier": "Regular",
-                  "audience": "GIANTS",
-                  "from": "19/10",
-                  "to": "15/11",
+                  "tier": "REGULAR",
+                  "audience": "Giants",
+                  "from": "",
+                  "to": "",
                   "price": 750000
                 },
                 {
                   "distance": "35KM",
-                  "tier": "Giants",
-                  "audience": "GIANTS",
+                  "tier": "Giá vé",
+                  "audience": "Giants",
                   "from": "",
                   "to": "",
                   "price": 550000
                 },
                 {
                   "distance": "35KM",
-                  "tier": "Early Bird",
-                  "audience": "GIANTS",
-                  "from": "19/09",
-                  "to": "18/10",
-                  "price": 750000
-                },
-                {
-                  "distance": "35KM",
-                  "tier": "Regular",
-                  "audience": "GIANTS",
-                  "from": "19/10",
-                  "to": "15/11",
-                  "price": 850000
-                },
-                {
-                  "distance": "",
-                  "tier": "Giants",
-                  "audience": "GIANTS",
+                  "tier": "EARLY BIRD",
+                  "audience": "Giants",
                   "from": "",
                   "to": "",
                   "price": 750000
                 },
                 {
-                  "distance": "",
-                  "tier": "Early Bird",
-                  "audience": "GIANTS",
-                  "from": "19/09",
-                  "to": "18/10",
+                  "distance": "35KM",
+                  "tier": "REGULAR",
+                  "audience": "Giants",
+                  "from": "",
+                  "to": "",
                   "price": 850000
-                },
-                {
-                  "distance": "",
-                  "tier": "Regular",
-                  "audience": "GIANTS",
-                  "from": "19/10",
-                  "to": "15/11",
-                  "price": 1150000
                 }
               ],
               "distances": [
-                "7KM",
+                "07KM",
                 "12KM",
                 "25KM",
                 "35KM"
@@ -350,5 +321,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:52:52.246Z"
+  "updatedAt": "2026-09-23T19:02:11.181Z"
 }
