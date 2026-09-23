@@ -1,4 +1,4 @@
-# Status (2026-09-24)
+# Status (end of 2026-09-24)
 
 Design v2 is being built (`design-v2.md`). The v1 race data was removed; data is rebuilt from scratch with the new pipeline.
 
@@ -25,6 +25,7 @@ Design v2 is being built (`design-v2.md`). The v1 race data was removed; data is
 
 ## Data (2026-09-24)
 
+- **Series from slugs across years:** 39 series, 92 races (commit 2f7a6bf). Renamed events aren't linked; set `seriesId` by hand with an override.
 - **300 ActiUp races seeded with `--facts-only`** (0 credits; commit bf98deb, fix f459f9b): every sports event ActiUp lists, 2024–2027, 35 of them upcoming.
   - **What they have:** name, dates, venue, organizer (113 organizers), sale status, and links.
   - **What they don't have yet:** prices, distances and types (`other`), until a normal run reads them. `state/checks.json` marks them `facts`.
@@ -36,19 +37,18 @@ Free plan: 1,000 credits per billing period (23rd to 23rd). On 2026-09-24, 1,453
 
 ## Next
 
-- [ ] First real committed runs, in small batches: `--site actiup --limit 10`, then VM, then the race sites. About 10–15 credits per ActiUp race the first time.
+- [ ] **Next session:** read the 35 upcoming ActiUp races for prices, distances and types, in small batches (`--site actiup --limit 10`, about 10–15 credits per race). Then VM (15 races, ≤85 credits), then the race sites.
 - [ ] Paid check of the default recipe on Hạ Long, Lâm Đồng Trail and Run To Live (≤20–50 each), with their prices added to `test/answers.test.ts`.
 - [ ] Recipes: bibchung (group prices; server-rendered), vietnammtbseries (hub).
 - [ ] Agent skill for backfills without Firecrawl: same recipes, the agent reads pages and images and writes `extracted`, then `npm run sync`.
 - [ ] Backfill past races (`--past`), on a paid month.
 - [ ] openrace-api: read schema v2, then re-enable `notify-api` in `main.yml`.
 - [ ] Turn on the daily cron once the data is trusted.
-- [ ] Series for ActiUp races from slug stems across years (`dalat-ultra-trail-2024/2025/2026`); see the study review.
 - [ ] Paid check of the official race sites found in the ActiUp study (in `config/sites.yaml` with `recipe: none`), then switch them to `recipe: default`.
 
 ## Known gaps
 
 - **Race sites are one edition at a time:** the site's current edition only. Past editions need the Wayback Machine or a seller's old page.
 - **Only PNG and JPEG images can be OCR'd** (pdf-lib). WebP and GIF are skipped, with a note in the run report.
-- **Series for ActiUp races** aren't detected yet (only the organizer, from `merchant_public_name`).
+- **Series across renamed events** ("Chạy Vì Trái Tim" → "Run for the Heart") aren't detected.
 - **Race names are as the site writes them**, so the same race can be named differently by different sites. The official site's name wins.

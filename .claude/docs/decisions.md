@@ -1,5 +1,7 @@
 # Decisions
 
+> These are the v1 decisions (2026-09-23). Where [design-v2.md](design-v2.md) differs, it wins: sources, price fields, discovery, location, schedule rules.
+
 ## Kept from the original spec (don't simplify)
 
 - **`sources` is always an array and `confidence` is always set**, even with one source. They're the hooks for multi-source reconciliation and the "verified" badge. Canonical fields are derived from `sources[].rawExtracted` by `reconcile()`, so a second source means changing `reconcile.ts` and adding `confidence` values. Adding enum members needs no data migration.

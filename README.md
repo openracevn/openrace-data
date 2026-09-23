@@ -1,204 +1,100 @@
 # openrace-data
 
-The source of truth for [OpenRace](https://openrace.vn): endurance sports events in Vietnam (road and trail running, triathlon and other multisport, swimming, cycling), stored as one JSON file per race, with git history as the audit trail.
+The race data behind OpenRace (openrace.vn): one JSON file per race edition in Vietnam, read from ticket sellers (ActiUp, ...) and races' own sites, with a git history of every change.
 
-This repo is the **data layer only**. It does not serve an API and it has no database. It holds JSON files, ingests updates, and records every change as a commit.
+The design and the reasons behind it are in [`.claude/docs/design-v2.md`](.claude/docs/design-v2.md). The current state is in [`.claude/docs/status.md`](.claude/docs/status.md).
 
-## Architecture
+## How it works
 
 ```
- check.yml (GitHub Actions: daily 07:17 VN, or run by hand)
-   │ 1. discover: scrape the ActiUp listing for links, extract only unknown event pages
-   │ 2. refresh: re-extract known races every 14 days until race day; past races never
-   │ 3. Firecrawl scrape + JSON extraction → normalize → diff against main HEAD
-   │ 4. one commit via GitHub API (race files + index + state/checks.json)
-   ▼
- openracevn/openrace-data  (this repo, main)
-   │ push to main
-   ├──▶ validate (every push, except check-log-only pushes)
-   ├──▶ notify-api      POST SYNC_WEBHOOK_URL   (only if data/ changed, after validate)
-   └──▶ notify-discord  races added/updated     (only if data/ changed)
-                 │
-                 ▼
- openrace-api (separate repo, later): Worker + D1, public API → openrace-mcp, frontend
+config/sites.yaml ──► recipe (free: plain requests, site APIs) ──► snapshot of each race
+                                                                       │ changed since last time?
+                                                                       ▼
+                       Firecrawl Parse (paid, ~5 credits): cleaned HTML → JSON,
+                       price image → PDF → OCR → JSON   (cached by content)
+                                                                       │
+                                                                       ▼
+                 planner (sync.ts): match to races, merge sources, series, checks
+                                                                       │
+                                                                       ▼
+                      one commit to main ──► validate ──► Discord summary
 ```
 
-| Repo | Role |
-| --- | --- |
-| **openrace-data** (this) | SSOT: JSON files, ingestion, git history |
-| openrace-api (later) | Cloudflare Worker + D1. Reads this repo and serves the public API |
-| openrace-mcp, frontend (later) | Consume the API |
-
-Sources:
-- **ActiUp** (actiup.net) is the primary source for every field.
-- **openrace** is us: a race no site lists, entered by hand with a reference URL (the organizer's page or post). It's never scraped. Separately, **overrides** let OpenRace set any field on any race, over every source.
-- **bibchung** (bibchung.pro) sells bibs in groups at a discount. It adds a second place to buy (its URL is in `sources[]`) and the group price (`groupPriceMin`), and it fills fields ActiUp leaves empty, such as distances and the full price range.
+- **Sites** (`config/sites.yaml`): each site has a kind and a read cadence. The kinds are `seller` (ActiUp, bibchung, 5BIB, iRace, ...), `hub` (an organizer's site with many races, e.g. VnExpress Marathon) and `race-site` (one race's own site). Sites with `recipe: none` are only recognized in links.
+- **Recipes** (`scripts/lib/recipes/`): each one knows a site's layout: where its races are, and which pages and images of a race to read. See [`scripts/lib/recipes/README.md`](scripts/lib/recipes/README.md).
+- **Reading:** Firecrawl only reads what the recipe hands it. An unchanged race costs nothing (fingerprint), and the same content is never paid for twice (`state/reads.json`).
+- **Merging:** the race's official site wins for date, distances and location. Every seller keeps its own prices.
+- **Series:** series come from the site config or recipe (VnExpress Marathon, HCMC Marathon), or from slugs shared across years (`dalat-ultra-trail-2024/2025/2026`).
 
 ## Layout
 
 ```
-data/
-  races/<slug>-<year>.json  one file per race: slug + race year (the key is the id inside)
-  index.json             [{ id, slug, name, date, lastModified, file, sourceUrls }] for cheap listing
-state/
-  checks.json            when each source page was last scraped, and the outcome
-scripts/
-  check.ts               the race checker (discover / refresh / one race)
-  sync.ts                diff/commit core: planSync (pure) + syncToGitHub
-  sync-cli.ts            commit hand-made extractions (dry run by default)
-  validate.ts            CI: schema + index + check-log consistency, schema/ up to date
-  schema.ts              regenerate schema/*.schema.json (npm run schema)
-  notify-discord.ts      push summary to Discord (GitHub Action)
-  notify-sync.ts         tell openrace-api to resync (GitHub Action)
-  lib/                   schema (zod), extraction schema + normalization, check
-                         schedule, Firecrawl client, places, slugs, GitHub I/O
-schema/                  JSON Schema of the data contract (generated)
-test/                    node:test suite
-.github/workflows/       check.yml (scheduled), main.yml (push to main), ci.yml (PRs)
+config/sites.yaml         sites to read, recipes, cadence; monthly credit cap
+data/races/<slug>-<year>.json   one race edition
+data/index.json           id → slug, name, date, file, series, source and link URLs
+data/series.json          recurring events (added automatically, never changed; edit by hand)
+data/organizers.json      organizers (same)
+schema/                   JSON Schema of the above (generated: npm run schema)
+state/                    checks.json (per page), sites.json (per site), credits.json, reads.json (read cache)
+scripts/                  check, edit, renormalize, sync, validate, notify-*
 ```
 
-## Race record
+## A race
 
 ```jsonc
 {
-  "id": "955725b2-ff80-4643-8ef9-9540ba23ab3a", // UUID, the key; never changes
-  "slug": "tay-ho-half-marathon-2026",          // URL slug; names the file; may change
-  "name": "Tay Ho Half Marathon 2026",
-  "types": ["road_run"],                        // one or more formats, see below
-  "date": "2026-11-15",
-  "distances": ["5km", "10km", "21km"],
-  "location": { "venue": "Tay Ho Lake", "city": "Hanoi", "region": "north" },
-  "priceMin": 300000,
-  "priceMax": 800000,
-  "groupPriceMin": 640000,                      // bibchung's discounted group price, or null
-  "currency": "VND",
-  "registrationStatus": "open",               // open | closing_soon | sold_out | closed
-  "registrationUrl": "https://…",
-  "organizer": "…",
-  "foreignerEligible": true,
-  "overrides": {                                // OpenRace's own values; each wins over every source
-    "distances": { "value": ["5km", "10km", "21km"], "reason": "BTC confirmed", "at": "…" }
-  },
-  "sources": [
-    {
-      "name": "actiup",
-      "url": "https://actiup.net/vi/event/…",
-      "lastCheckedAt": "2026-09-23T10:00:00.000Z",
-      "lastChangedAt": "2026-09-20T08:00:00.000Z",
-      "rawExtracted": { /* verbatim Firecrawl JSON extraction */ }
-    }
+  "id": "…uuid…", "slug": "hcmc-marathon", "name": "HCMC Marathon",
+  "types": ["road_run"], "date": "2027-01-17", "endDate": null,
+  "seriesId": "hcmc-marathon", "organizerId": "pulse-active", "organizer": "Pulse Active",
+  "distances": ["10km", "21km", "42km"],
+  "location": { "venue": "30/4 Park, Le Duan", "city": "Ho Chi Minh City" },   // as the site writes it
+  "prices": [
+    { "distance": "42km", "tier": "Early Bird", "kind": "early", "audience": "resident",
+      "price": 1020000, "from": "2026-06-24", "to": "2026-07-16", "site": "hcmc-marathon" }
   ],
-  "confidence": "multi-sourced",               // single-sourced | multi-sourced | conflicting
-  "createdAt": "…",
-  "updatedAt": "…"
+  "currency": "VND", "registrationStatus": "open",
+  "registrations": [{ "site": "njuko", "url": "https://in.njuko.com/ho-chi-minh-city-marathon-2027" }],
+  "links": [{ "url": "https://facebook.com/hcmcmarathon", "kind": "facebook", "foundOn": "hcmcmarathon.com" }],
+  "flags": [],                  // things to look at, e.g. sources disagree on race day
+  "overrides": {},              // values set by OpenRace; they win over every source
+  "sources": [{ "site": "hcmc-marathon", "role": "official", "url": "…", "extracted": { … } }],
+  "confidence": "single-sourced", "createdAt": "…", "updatedAt": "…"
 }
 ```
 
-The schema lives in `scripts/lib/schema.ts` (zod). Notes:
+- **Price tiers:**
+  - `kind` is one of super_early, early, regular, late, group, other.
+  - `audience` is resident, non_resident or null.
+  - Dates without a year on posters take their year from race day.
+  - Add-on fees (photos, VIP, transfers) are left out.
+- **`null` means unknown**, never "no" or "zero".
+- **Consumers** must ignore unknown fields and tolerate unknown enum values. `SCHEMA_VERSION` (now 2) is bumped only for breaking changes.
 
-- **`null` means unknown.** `venue`, `city`, `region`, `priceMin`, `priceMax`, `registrationStatus`, `registrationUrl`, `organizer` and `foreignerEligible` are `null` when the source doesn't state them. We never guess a value such as `open` or `false`. ActiUp event pages only show a "from" price (`priceMin`) and say nothing about foreign runners, so `priceMax` and `foreignerEligible` are always `null` for now.
-- **`sources` is always an array** and **`confidence` is always present**, even with a single source. Each source keeps its URL (where to buy) and its verbatim extraction.
-- **Overrides** (`overrides`, set with `npm run edit`): a value OpenRace sets, e.g. a correction or a fact no source states. It's applied after merging the sources, so it wins, and it survives re-checks and `renormalize`. The race's field always equals the override value; `validate` enforces that. When a source later changes an overridden field, the race's source data is updated, the override stays, and Discord shows `⚠️ distances: sources now say … (override kept)`. Removing the override brings the source value back.
-- **Merging sources** (`scripts/lib/reconcile.ts`): each field comes from the highest-priority source that has a value, with ActiUp first and bibchung second. So bibchung fills only what ActiUp leaves empty, and `groupPriceMin` can only come from bibchung. `confidence` is `single-sourced` (one usable source), `multi-sourced` (sources agree on race day) or `conflicting` (they disagree, which gets flagged in Discord).
-- **Matching** (`scripts/sync.ts`): a page from a source that doesn't have the race yet joins an existing race when race day is within 1 day and the names are mostly the same (character-bigram similarity ≥ 0.5, ignoring spaces and diacritics). Otherwise it becomes a new race.
-- **Normalization** (`scripts/lib/extraction.ts`): standard distances are snapped (`21.1K` and `Half Marathon` both become `21km`), city names are mapped to an English display name plus a region (`TP. Hồ Chí Minh` becomes `Ho Chi Minh City` / `south`), and dates and prices are coerced. As a result, LLM wording drift between checks doesn't register as a change.
-- **`types`** (filterable, one or more per race): `road_run`, `trail_run`, `city_trail` (urban trail), `obstacle_run`, `triathlon` (swim+bike+run), `duathlon` (run+bike+run), `aquathlon` (swim+run), `aquabike` (swim+bike), `swimrun`, `swim`, `road_cycle`, `mtb`, `other`. Distance classes (marathon, half, ultra) are not types: filter on `distances`. The model picks the types; names containing "City Trail", "Triathlon"/"Ironman", "Duathlon", "Aquathlon" or "Swimrun" force the matching type.
-- **Identity:** `id` is a random UUID. It's the key everywhere (index, API, matching), and it never changes. `slug` is for frontend URLs. It also names the file, which **always ends with the race year**: `vung-tau-city-trail` in 2026 is `data/races/vung-tau-city-trail-2026.json`, `tet-run-mien-nam-2027` (already ending with its year) is `tet-run-mien-nam-2027.json`, and a year at the start moves to the end (`2026-international-run-for-a-green-da-lat` is `international-run-for-a-green-da-lat-2026.json`). `index.json` records each race's `file`. If a race moves to another year, the next update renames its file (the slug doesn't change). A new race starts with the source's own slug (ActiUp's `/vi/event/<slug>`), with a `-2` suffix if another race already uses it. After that, ingestion never changes a slug; only OpenRace does, with `npm run edit -- slug <race> <new-slug>`, which renames the file, updates the slug field and the index in one commit. A new race whose file name would clash with an existing one gets a `-2` slug. The source URL maps to the race through `index.json`'s `sourceUrls`, so a re-check finds the race whatever its slug is. `validate` fails if a file isn't named slug + race year.
+## Commands
 
-## For consumers (openrace-api)
-
-- **Contract:** `schema/race.schema.json` and `schema/index.schema.json` (JSON Schema 2020-12), generated from `scripts/lib/schema.ts` by `npm run schema`. `validate` fails if they're out of date.
-- **Versioning:** the schemas carry `x-schema-version`, which is also sent in the resync payload. It is bumped only on breaking changes: a field removed or renamed, a type narrowed, or a meaning changed. New fields and new enum values don't bump it, so **ignore unknown fields and tolerate unknown enum values**.
-- **Guarantees** (checked by CI and before every commit):
-  - Schema-valid files, each named slug + race year (`index.json` `file`); unique ids, slugs and file names; `index.json` consistent with the race files.
-  - Sanity bounds: distances look like distances (`10km`, `750m`, `100mi`, a bare number, or `Sprint`/`Olympic`/`70.3`/…); the race year is between 2015 and 3 years from now; prices are 0–100,000,000 VND; names contain no URLs or prices.
-- **Overrides are already applied.** Every field holds the value to serve; `overrides` only records which fields OpenRace set, and why. Source `openrace` means a race entered by hand, and its `url` is the reference it came from.
-- **Past races are included, and races are never removed**, not even when they disappear from every source. The API serves them all; each consumer decides what to show (e.g. filter on `date`).
-- **Resync webhook** (`SYNC_WEBHOOK_URL`, sent after `validate` passes on a push that changed `data/`):
-  ```json
-  { "event": "openrace-data.push", "schemaVersion": 1, "repository": "openracevn/openrace-data",
-    "ref": "refs/heads/main", "before": "<sha>", "after": "<sha>", "pushedAt": "…",
-    "changes": { "added":   [{ "id": "…", "slug": "…" }],
-                 "updated": [{ "id": "…", "slug": "…", "fields": ["distances", "groupPriceMin"] },
-                             { "id": "…", "slug": "new-slug", "fields": [], "renamedFrom": "old-slug" }],
-                 "removed": [{ "id": "…", "slug": "…" }] } }
-  ```
-  Races are matched by the `id` inside each file, not by file name: a slug change (old file deleted, new file added) is one `updated` entry with `renamedFrom`. Files are in `data/races/`, named slug + race year; each `data/index.json` entry gives the race's `file`. An empty `fields` list means only sources or metadata changed (a new source joined, or the slug was edited).
-
-  The request carries an `X-Sync-Secret` header (the `SYNC_SECRET` secret). openrace-api ignores the body today: it lists `data/races` at the branch head, maps each file to its id through `data/index.json` (`file`), compares file hashes and downloads up to 40 changed files per call, replying with `remaining`. `notify-sync` repeats the call until `remaining` is 0, and fails the job if the API rejects any file (`errors`). The API tolerates new fields and enum values, so a rejection means a breaking change it hasn't caught up with.
-- **Reading the data:** the repo is private, so the API needs its own fine-grained token with *Contents: read* on this repo.
-
-## Ingestion (`scripts/check.ts`)
-
-`.github/workflows/check.yml` runs the checker every day and on demand. It calls the Firecrawl scrape API directly, with no Firecrawl Monitor and no webhook. The reason is that a monitor has one schedule for all its pages and would re-extract every page on every run.
-
-| Mode | What it scrapes | When |
-| --- | --- | --- |
-| `daily` | `discover` + `refresh` | the scheduled run |
-| `discover` | The listing `https://actiup.net/vi/events/sports` for links (1 credit), then every `/vi/event/<slug>` page on it that we don't know yet | by hand, to pick up a new race now |
-| `refresh` | Known races whose date hasn't passed and that were last checked 14+ days ago (3+ days after a failed check). Past races are never checked | by hand |
-| `race` | One race, by id or ActiUp URL, whatever its schedule | by hand |
-
-Rules (`scripts/lib/checks.ts`):
-
-- **State.** `state/checks.json` records each scraped URL's last check and outcome. It sits outside `data/`, so a run that changes no race commits only the log, which triggers no Discord message and no API resync.
-- **Rejected pages.** A page that isn't a sports event (concert, tour, hotel, conference) is marked `permanent` and never re-checked automatically. Every sport is kept. Other failures (a flaky render, a race with no date yet, a scrape error) are retried after 3 days.
-- **Budget.** Each extraction costs 5 credits (1 scrape + 4 JSON). `--max-scrapes` (default 40) caps a run. Leftovers wait for the next run, oldest check first.
-- **Rate limit.** Requests are sequential, 6.5 s apart, and a 429 waits 60 s before retrying.
-- **Commits.** Everything goes into **one commit per run** through the Git Data API. If `main` moved meanwhile, the run re-plans on the new head (up to 3 attempts). An unchanged race writes nothing.
-
-Event pages per source:
-- **ActiUp:** only `/vi/event/<slug>`. The `/vi/event/<id>/tickets` pages are a login wall, and the `/en/` twins would duplicate races.
-- **bibchung:** only `/events/<slug>`, not `/en/events/…`. Its listing is paginated (`/events?page=2`), and discovery follows the page links, up to 10 pages.
-
-Each source has its own extraction schema and prompt (`EXTRACTIONS` in `scripts/lib/extraction.ts`). A race on both sites costs 2 × 5 = 10 credits per check.
-
-### Setup
-
-Repo secrets (Settings → Secrets and variables → Actions):
-
-| Secret | What |
-| --- | --- |
-| `FIRECRAWL_API_KEY` | Firecrawl API key |
-| `OPENRACE_BOT_TOKEN` | Fine-grained PAT with **Contents: read and write** on this repo only. It must not be the built-in `GITHUB_TOKEN`: pushes made with that token don't trigger `main.yml`, so validation and Discord would be skipped |
-| `DISCORD_WEBHOOK_URL` | Discord channel webhook (optional) |
-| `SYNC_WEBHOOK_URL` | openrace-api resync endpoint, currently `https://openrace-api.bmp.workers.dev/internal/sync` |
-| `SYNC_SECRET` | Shared secret sent as `X-Sync-Secret`; must equal openrace-api's `SYNC_SECRET`. Required once `SYNC_WEBHOOK_URL` is set |
-
-Run by hand: Actions → **Check races** → Run workflow → pick a mode (and a race for `race`). Tick *dry run* to see the plan without committing. Locally, `--dry-run --preview <dir>` also writes the planned files to `<dir>`.
-
-## GitHub Actions
-
-| Workflow | Trigger | Does |
-| --- | --- | --- |
-| `check.yml` | daily 00:17 UTC (07:17 in Vietnam), or by hand | the race checker above |
-| `ci.yml` | pull request | typecheck, tests, `validate` |
-| `main.yml` | push to `main` (ignored when only `state/` changed) | Runs `validate`. When the push touched `data/`, also runs **notify-api** (after validation passes; POSTs the resync payload above to `SYNC_WEBHOOK_URL`) and **notify-discord** (a summary of races added, updated and removed and which fields changed, built from the git diff, with links under each race to its source pages and its JSON file; long summaries are split into several messages) |
-
-If `DISCORD_WEBHOOK_URL` or `SYNC_WEBHOOK_URL` is unset, its step logs "skipping" and passes.
-
-## Local commands
+Committing runs need a token; your gh login works: `GITHUB_TOKEN=$(gh auth token)`. Without it, use `--dry-run`.
 
 ```bash
-npm install && cp .env.example .env      # FIRECRAWL_API_KEY; GITHUB_TOKEN only for committing
-# Committing runs work on the latest main on GitHub, so no pull is needed. Your gh login works as the token:
-#   GITHUB_TOKEN=$(gh auth token) npm run check -- --mode race --race <url>
-npm test
-npm run typecheck
-npm run validate
-npm run check -- --mode daily --max-scrapes 5 --dry-run    # live scrape, no commit
-npm run check -- --mode race --race <id|slug|url> --dry-run
-npm run sync -- inputs.json [--commit]   # commit hand-made extractions
-npm run renormalize [-- --commit]        # re-apply normalization to stored extractions (no scraping)
-npm run edit -- set <race> <field> <json> --reason "<why>"   # OpenRace override (add --dry-run to preview)
-npm run edit -- unset <race> <field>                          # back to the source value
-npm run edit -- add --url <reference> --json '<fields>' --reason "<why>"   # a race no site lists
-npm run edit -- slug <race> <new-slug>                       # change a slug (renames the file)
+npm run check -- --site <key> --free --dry-run         # free: what would be read, and the most it would cost
+npm run check -- --site <key> --dry-run --preview /tmp/x   # paid reads, no commit; planned files in /tmp/x
+npm run check -- --site <key> [--limit N] [--past]     # read and commit
+npm run check -- --race <url|slug|id>                  # one race
+npm run check -- --site actiup --past --facts-only     # free: races from ActiUp's API only (no prices)
+npm run check                                          # every site that is due (the scheduled run)
+
+npm run edit -- set <race> <field> '<json>' --reason "…"   # OpenRace override (also: unset, slug, add)
+npm run renormalize [-- --commit]     # re-derive every race from stored reads (no reading)
+npm run sync -- inputs.json [--commit]   # commit extractions made elsewhere (e.g. by an agent)
+npm run typecheck && npm test && npm run validate
 ```
+
+GitHub Actions:
+- **Check races** (`check.yml`) runs the checker. It's manual only; the schedule is off until the data is trusted.
+- **Main** validates every push and posts data changes to Discord. The openrace-api resync is paused until the API reads schema v2.
 
 ## Limits to know
 
-- **Scheduled runs can start 5–30 minutes late**, and GitHub may drop some under heavy load. The next daily run catches up.
-- **Private repo:** Actions minutes count against the account allowance (2,000 min/month on Free). A daily run takes about 1–5 minutes.
-- **Distances vary between checks.** The model sometimes lists a distance from the description text and sometimes doesn't, which can cause an occasional `distances` commit.
-- **Multi-day events store the first day** of the range ("21 - 22 tháng 11" becomes the 21st).
+- **Firecrawl:** the Free plan has 1,000 credits a month. Pages and images cost about 5 credits each.
+- **Race sites:** only the current edition is on the site; past editions need the Wayback Machine or a seller's old page.
+- **Images:** only PNG and JPEG images can be OCR'd.
+- **Races seeded with `--facts-only`** have no prices, distances or types until a normal run reads them.

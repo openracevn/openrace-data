@@ -10,6 +10,7 @@ Working notes on how openrace-data is wired up. Read these before changing inges
 | [firecrawl.md](firecrawl.md) | Firecrawl API facts verified against their docs, and the traps behind the current design |
 | [decisions.md](decisions.md) | Design decisions and deliberate departures from the original spec |
 | [status.md](status.md) | What's live, what isn't, known gaps, next steps |
+| [2026-09-24-summary.md](2026-09-24-summary.md) | Day summary: design v2 built and checked, 300 races seeded, series |
 | [2026-09-23-summary.md](2026-09-23-summary.md) | Day summary: what was built, how the design changed and why, problems found in real runs, commits |
 
-Last updated: 2026-09-24. The check-race skill (.claude/skills/check-race) is the quick path for any single-race task; `scripts/lib/recipes/README.md` explains recipes and how to add a site.
+Last updated: end of 2026-09-24. The check-race skill (.claude/skills/check-race) is the quick path for any single-race task; `scripts/lib/recipes/README.md` explains recipes and how to add a site.
