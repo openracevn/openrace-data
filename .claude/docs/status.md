@@ -30,18 +30,18 @@ Design v2 is being built (`design-v2.md`). The v1 race data was removed; data is
   - **What they have:** name, dates, venue, organizer (113 organizers), sale status, and links.
   - **What they don't have yet:** prices, distances and types (`other`), until a normal run reads them. `state/checks.json` marks them `facts`.
 - **First paid batch (2026-09-25): 10 upcoming ActiUp races read, 100 credits** (commit ca25eed). Checked by eye against every price image. That found 5 error patterns, now fixed in normalization and replayed for free (9341f84, 9dd2444); see the lessons in `scripts/lib/recipes/README.md`. Known answers added: Sơn Trà City Trail, Quảng Trực, Đà Lạt Xanh 2026.
-  - **Still wrong: Vũng Tàu City Trail 2026.** The model shifted the image's rows (12km got 7km's prices, and so on). It needs a re-read (≤10 credits, since the prompt changed) or a hand fix.
+  - **Vũng Tàu City Trail 2026: prices set by hand** (override, commit 26545c4). The model shifted the image's rows. A re-read with the new prompt (10 credits) shifted them again. The override stays until someone removes it (`npm run edit -- unset vung-tau-city-trail prices`), so later price changes on ActiUp won't show.
   - Tết Run Miền Nam 2027: the Early Bird starts on 2026-10-22, but the image only says "until 22/10".
   - No prices on ActiUp: Kun Fun Run Đồng Tháp, 2027 Sunrise Sprint and IRONKIDS Đà Nẵng.
 - 31 upcoming races are left (≤325 credits by the dry run). A normal run (`--site actiup`) reads the upcoming ones first, at about 10–15 credits per race. Past races wait for a paid month (`--past`).
 
 ## Firecrawl account
 
-Free plan: 1,000 credits per billing period (23rd to 23rd). On 2026-09-24, 1,453 were left before testing; the tests used about 185. The 2026-09-25 batch used 100 (about 1,170 left). The cap in `config/sites.yaml` (`monthlyCredits: 900`) counts calendar months (UTC).
+Free plan: 1,000 credits per billing period (23rd to 23rd). On 2026-09-24, 1,453 were left before testing; the tests used about 185. On 2026-09-25, the batch used 100 and the Vũng Tàu re-read 10 (about 1,160 left). The cap in `config/sites.yaml` (`monthlyCredits: 900`) counts calendar months (UTC).
 
 ## Next
 
-- [ ] **Next session:** fix Vũng Tàu City Trail 2026's prices, then read the other 31 upcoming ActiUp races for prices, distances and types, in small batches (`--site actiup --limit 10`, about 10–15 credits per race). Then VM (15 races, ≤85 credits), then the race sites.
+- [ ] **Next session (ask first; the user is saving credits):** read the other 31 upcoming ActiUp races for prices, distances and types, in small batches (`--site actiup --limit 10`, about 10–15 credits per race). Then VM (15 races, ≤85 credits), then the race sites.
 - [ ] Paid check of the default recipe on Hạ Long, Lâm Đồng Trail and Run To Live (≤20–50 each), with their prices added to `test/answers.test.ts`.
 - [ ] Recipes: bibchung (group prices; server-rendered), vietnammtbseries (hub).
 - [ ] Agent skill for backfills without Firecrawl: same recipes, the agent reads pages and images and writes `extracted`, then `npm run sync`.

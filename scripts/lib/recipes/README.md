@@ -47,4 +47,4 @@ A `Snapshot` has:
 - **Combos and relay teams come back as the distance or audience** ("COMBO 1 (MUA 2 VÉ TICKETS)", "TIẾP SỨC (RELAY TEAM)"). They're kept in the tier label, as kind `group`, so they aren't taken for a single entry.
 - **Dates ending on race day were copied from it** (Bắc Ninh: a poster with no dates read as "07/07 - 10/01"): both ends are dropped.
 - **Posters print impossible days** ("31/11/2026"): the month's last day.
-- **Busy images can shift rows** (Vũng Tàu City Trail: each distance got the next row's prices, and a slogan, "GIANTS", became a tier). No rule catches that; the prompt now says to read rows straight across, and the race needs a re-read.
+- **Busy images can shift rows** (Vũng Tàu City Trail: each distance got the next row's prices, and a slogan, "GIANTS", became a tier). No rule catches that, and the prompt now says to read rows straight across, but a re-read shifted them again. Such a race gets its prices by hand (`npm run edit -- set <race> prices …`).
