@@ -1,0 +1,32 @@
+{
+  "name": "openrace-data",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Source-of-truth race data for OpenRace (openrace.vn): JSON records, ingestion, git audit trail.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit && tsc --noEmit -p worker",
+    "test": "node --import tsx --test test/*.test.ts",
+    "validate": "tsx scripts/validate.ts",
+    "sync": "tsx scripts/sync-cli.ts",
+    "monitor:create": "tsx scripts/create-monitor.ts",
+    "notify:discord": "tsx scripts/notify-discord.ts",
+    "notify:sync": "tsx scripts/notify-sync.ts",
+    "worker:dev": "wrangler dev --config worker/wrangler.toml",
+    "worker:deploy": "wrangler deploy --config worker/wrangler.toml"
+  },
+  "dependencies": {
+    "@octokit/rest": "^22.0.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260923.1",
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.136.3"
+  }
+}

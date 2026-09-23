@@ -1,0 +1,81 @@
+name: Main
+
+# Validation runs on every push to main; the API resync and Discord notification
+# only run when the push touched data/. Includes commits made by the ingestion
+# Worker (they use a PAT, so they trigger workflows; GITHUB_TOKEN pushes would not).
+on:
+  push:
+    branches: [main]
+
+jobs:
+  changes:
+    runs-on: ubuntu-latest
+    outputs:
+      data_changed: ${{ steps.changes.outputs.data_changed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - id: changes
+        name: Detect data changes
+        env:
+          BEFORE: ${{ github.event.before }}
+        run: |
+          if [[ "$BEFORE" =~ ^0+$ ]] || ! git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            echo "data_changed=true" >> "$GITHUB_OUTPUT"
+          elif git diff --quiet "$BEFORE" "$GITHUB_SHA" -- data/; then
+            echo "data_changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "data_changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run validate
+
+  # Tell openrace-api to resync, only once the pushed data has validated.
+  notify-api:
+    needs: [changes, validate]
+    if: needs.changes.outputs.data_changed == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run notify:sync
+        env:
+          SYNC_WEBHOOK_URL: ${{ secrets.SYNC_WEBHOOK_URL }}
+          BEFORE_SHA: ${{ github.event.before }}
+          AFTER_SHA: ${{ github.sha }}
+
+  # Doesn't wait for validation, so a bad data push is still announced.
+  notify-discord:
+    needs: changes
+    if: needs.changes.outputs.data_changed == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run notify:discord
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          BEFORE_SHA: ${{ github.event.before }}
+          AFTER_SHA: ${{ github.sha }}

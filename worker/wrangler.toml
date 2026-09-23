@@ -1,0 +1,17 @@
+name = "openrace-ingest"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+GITHUB_OWNER = "openracevn"
+GITHUB_REPO = "data"
+GITHUB_BRANCH = "main"
+
+# Secrets (set with `npx wrangler secret put <NAME> --config worker/wrangler.toml`):
+#   FIRECRAWL_WEBHOOK_SECRET  Firecrawl account webhook secret (Settings > Advanced)
+#   FIRECRAWL_API_KEY         to read monitor check results
+#   GITHUB_TOKEN              fine-grained PAT with Contents: read & write on this repo
+
+[observability]
+enabled = true
