@@ -11,7 +11,8 @@
  * The API authenticates with the X-Sync-Secret header, then pulls the changed files
  * itself, at most SYNC_MAX_FETCH per call. Its reply says how many are `remaining`,
  * so this repeats the call until that reaches 0. Files the API rejected (`errors`)
- * fail the job: they passed our validation, so the two contracts have drifted.
+ * fail the job: they passed our validation and the API tolerates new fields and enum
+ * values, so a rejection means a breaking change the API hasn't caught up with.
  *
  * Env: SYNC_WEBHOOK_URL (skipped when unset), SYNC_SECRET (required with the URL),
  *      BEFORE_SHA, AFTER_SHA, GITHUB_REPOSITORY, GITHUB_REF.
@@ -99,7 +100,7 @@ if (result && result.remaining > 0) {
   process.exit(1);
 }
 if (errors.size > 0) {
-  console.error(`API rejected ${errors.size} file(s) that passed validate here (contract drift?):`);
+  console.error(`API rejected ${errors.size} file(s) that passed validate here (breaking change not yet handled by the API?):`);
   for (const [file, message] of errors) console.error(`  ${file}: ${message}`);
   process.exit(1);
 }

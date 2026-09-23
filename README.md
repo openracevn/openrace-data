@@ -118,7 +118,7 @@ The schema lives in `scripts/lib/schema.ts` (zod). Notes:
   ```
   Fetch `data/races/<id>.json` at `after` for each added or updated race. An empty `fields` list means only sources or metadata changed (a new source joined, or the slug was edited).
 
-  The request carries an `X-Sync-Secret` header (the `SYNC_SECRET` secret). openrace-api ignores the body today: it compares file hashes at the branch head and downloads up to 40 changed files per call, replying with `remaining`. `notify-sync` repeats the call until `remaining` is 0, and fails the job if the API rejects any file (`errors`), since that means its copy of the contract has drifted from ours.
+  The request carries an `X-Sync-Secret` header (the `SYNC_SECRET` secret). openrace-api ignores the body today: it compares file hashes at the branch head and downloads up to 40 changed files per call, replying with `remaining`. `notify-sync` repeats the call until `remaining` is 0, and fails the job if the API rejects any file (`errors`). The API tolerates new fields and enum values, so a rejection means a breaking change it hasn't caught up with.
 - **Reading the data:** the repo is private, so the API needs its own fine-grained token with *Contents: read* on this repo.
 
 ## Ingestion (`scripts/check.ts`)
