@@ -157,7 +157,9 @@ async function extract(url: string): Promise<void> {
 // 1. Work out what to scrape.
 if (mode === "race") {
   const byId = index.find((e) => e.id === raceArg || e.slug === raceArg);
-  let urls = byId?.sourceUrls ?? [];
+  // openrace references (entered by hand) aren't scraped.
+  let urls = (byId?.sourceUrls ?? []).filter((u) => sourceForUrl(u) !== null);
+  if (byId && urls.length === 0) fail(`${byId.slug} has no scraped source (entered by hand); edit it with npm run edit`);
   if (!byId) {
     try {
       urls = [canonicalSourceUrl(raceArg!)];
@@ -226,7 +228,7 @@ if (mode === "daily" || mode === "refresh") {
     const text = await current.read(racePath(entry.id));
     if (text === null) continue;
     const race = RaceSchema.parse(JSON.parse(text));
-    for (const url of entry.sourceUrls) {
+    for (const url of entry.sourceUrls.filter((u) => sourceForUrl(u) !== null)) {
       // No log entry (e.g. the race came in via sync-cli): fall back to the source's own last check.
       const lastCheckedAt = race.sources.find((src) => src.url === url)?.lastCheckedAt;
       const check = checks[url] ?? (lastCheckedAt ? { lastCheckedAt, status: "ok" as const } : undefined);

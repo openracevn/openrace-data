@@ -7,7 +7,8 @@
  */
 import { EMPTY_TREE, git, raceDiff, splitMessages } from "./lib/changes.ts";
 import { env } from "./lib/env.ts";
-import { RACES_DIR, type CanonicalField, type Race } from "./lib/schema.ts";
+import { reconcile } from "./lib/reconcile.ts";
+import { RACES_DIR, deepEqual, type CanonicalField, type Race } from "./lib/schema.ts";
 
 const DISCORD_LIMIT = 2000;
 const SHOW_VALUES: CanonicalField[] = ["types", "date", "priceMin", "priceMax", "groupPriceMin", "registrationStatus", "foreignerEligible"];
@@ -34,10 +35,21 @@ const added = diff.added.map(
 const removed = diff.removed.map(({ id, race: r }) => `➖ ${r ? `**${r.name}** \`${r.slug}\`` : `\`${id}\``}${links(r, id, before)}`);
 const updated = diff.updated.map(({ id, before: a, after: b, fields }) => {
   if (!a || !b) return `✏️ \`${b?.slug ?? id}\` (unparseable)${links(b, id, after)}`;
-  const detail = fields.map((f) => (SHOW_VALUES.includes(f) ? `${f} ${fmt(a[f])} → ${fmt(b[f])}` : f));
+  const setNow = (f: CanonicalField) => b.overrides?.[f] && a.overrides?.[f]?.at !== b.overrides[f]!.at;
+  const removedNow = (f: CanonicalField) => a.overrides?.[f] && !b.overrides?.[f];
+  const detail = fields.map((f) =>
+    setNow(f)
+      ? `✋ ${f} → ${fmt(b[f])} (OpenRace: ${b.overrides[f]!.reason})`
+      : removedNow(f)
+        ? `${f} override removed → ${fmt(b[f])}`
+        : SHOW_VALUES.includes(f)
+          ? `${f} ${fmt(a[f])} → ${fmt(b[f])}`
+          : f,
+  );
   if (a.slug !== b.slug) detail.unshift(`slug ${a.slug} → ${b.slug}`);
   for (const s of b.sources) if (!a.sources.some((x) => x.url === s.url)) detail.unshift(`+${s.name}`);
   if (a.confidence !== b.confidence) detail.push(`confidence ${a.confidence} → ${b.confidence}`);
+  detail.push(...overrideNotes(a, b));
   return `✏️ **${b.name}** \`${b.slug}\`: ${detail.join(", ") || "sources/metadata only"}${conflict(b)}${links(b, id, after)}`;
 });
 
@@ -60,6 +72,34 @@ for (const content of splitMessages(lines, DISCORD_LIMIT)) {
   console.log(content);
 }
 
+/**
+ * Override changes that don't show up as a field change, and overridden fields whose
+ * source value changed underneath (the override was kept, but someone may want to drop it).
+ */
+function overrideNotes(a: Race, b: Race): string[] {
+  const notes: string[] = [];
+  const before = a.overrides ?? {};
+  const after = b.overrides ?? {};
+  // Overrides set or removed without changing the value (e.g. pinning the current value).
+  for (const [field, o] of Object.entries(after)) {
+    const f = field as CanonicalField;
+    if (o && before[f]?.at !== o.at && deepEqual(a[f], b[f])) notes.push(`✋ ${field} pinned (OpenRace: ${o.reason})`);
+  }
+  for (const field of Object.keys(before) as CanonicalField[]) {
+    if (!after[field] && deepEqual(a[field], b[field])) notes.push(`${field} override removed`);
+  }
+  const derivedBefore = reconcile(a.sources);
+  const derivedAfter = reconcile(b.sources);
+  if (!("error" in derivedBefore) && !("error" in derivedAfter)) {
+    for (const field of Object.keys(after) as CanonicalField[]) {
+      if (!deepEqual(derivedBefore.fields[field], derivedAfter.fields[field])) {
+        notes.push(`⚠️ ${field}: sources now say ${fmt(derivedAfter.fields[field])} (override kept)`);
+      }
+    }
+  }
+  return notes;
+}
+
 function conflict(r: Race | null): string {
   return r?.confidence === "conflicting" ? " ⚠️ sources disagree on race day" : "";
 }
@@ -75,5 +115,7 @@ function links(r: Race | null, id: string, rev: string): string {
 }
 
 function fmt(v: unknown): string {
-  return v === null || v === undefined ? "∅" : typeof v === "number" ? v.toLocaleString("en-US") : String(v);
+  if (v === null || v === undefined) return "∅";
+  if (typeof v === "number") return v.toLocaleString("en-US");
+  return typeof v === "object" && !Array.isArray(v) ? JSON.stringify(v) : String(v);
 }

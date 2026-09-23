@@ -181,6 +181,48 @@
         "null"
       ]
     },
+    "overrides": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "enum": [
+          "name",
+          "types",
+          "date",
+          "distances",
+          "location",
+          "priceMin",
+          "priceMax",
+          "groupPriceMin",
+          "currency",
+          "registrationStatus",
+          "registrationUrl",
+          "organizer",
+          "foreignerEligible"
+        ]
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "value": {},
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "at": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+          }
+        },
+        "required": [
+          "value",
+          "reason",
+          "at"
+        ],
+        "additionalProperties": false
+      }
+    },
     "sources": {
       "minItems": 1,
       "type": "array",
@@ -191,7 +233,8 @@
             "type": "string",
             "enum": [
               "actiup",
-              "bibchung"
+              "bibchung",
+              "openrace"
             ]
           },
           "url": {
@@ -261,6 +304,7 @@
     "registrationUrl",
     "organizer",
     "foreignerEligible",
+    "overrides",
     "sources",
     "confidence",
     "createdAt",

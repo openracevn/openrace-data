@@ -9,7 +9,7 @@ import {
   type CanonicalRace,
   type RaceType,
   type RegistrationStatus,
-  type SourceName,
+  type ScrapedSourceName,
 } from "./schema.ts";
 
 /**
@@ -71,7 +71,7 @@ const COMMON_PROMPT =
 
 export type Extraction = { schema: Record<string, unknown>; prompt: string };
 
-export const EXTRACTIONS: Record<SourceName, Extraction> = {
+export const EXTRACTIONS: Record<ScrapedSourceName, Extraction> = {
   actiup: {
     schema: {
       type: "object",

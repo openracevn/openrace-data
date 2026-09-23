@@ -30,6 +30,13 @@
 - **The resync payload lists changed race ids** (added/updated/removed + fields), from the same git diff as the Discord message (`lib/changes.ts`). The API doesn't need to diff commits.
 - **Discord lines link to the sources and the race file** (the user wants to check data by hand quickly). Long summaries are split into several messages, never mid-race.
 
+## OpenRace's own data (2026-09-23, user decision)
+
+- **`overrides`** on every race: `{field: {value, reason, at}}`, set and removed with `npm run edit`. Applied after merging the sources (`applyOverrides`), so they win over ActiUp and bibchung, and survive re-checks and `renormalize`. `RaceSchema` enforces that the field equals its override.
+- When a source changes an overridden field, the planner still writes the race (the source data is updated, and the change is listed as `shadowed`), so Discord can say `⚠️ sources now say … (override kept)`. Otherwise the new source value would be lost.
+- **Source `openrace`**: a race entered by hand (`npm run edit -- add`) with a required reference URL (so the API's `url` stays non-null, and we keep where it came from). It's never scraped (`check.ts` skips it). Its slug comes from the name. Last in source priority: if ActiUp later lists the race, the pages match, ActiUp becomes primary, and our hand-entered values only fill gaps (use overrides to force a value).
+- **Contract impact: additive only** (a new `overrides` field, a new source name), so `SCHEMA_VERSION` stays 1. openrace-api ignores unknown keys and accepts any source name, so it syncs unchanged.
+
 ## Other choices
 
 - **Identity (user decision, 2026-09-23):** `id` is a random UUID. It's the file name and the API key, and it never changes. `slug` is separate and **may change**, for SEO; a slug scheme will be designed later. For now a new race takes the source's slug (ActiUp `/vi/event/<slug>`), plus a `-2` suffix if that slug is taken. Ingestion never overwrites an existing slug. `validate` enforces unique slugs. Source URL → id goes through `index.json.sourceUrls`.

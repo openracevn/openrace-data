@@ -5,7 +5,7 @@ import { isCandidate, isRefreshDue, vietnamDate, type Check } from "../scripts/l
 import { normalizeDistance, normalizeExtracted } from "../scripts/lib/extraction.ts";
 import { resolvePlace } from "../scripts/lib/places.ts";
 import { INDEX_PATH, RaceSchema, racePath, type IndexEntry, type Race } from "../scripts/lib/schema.ts";
-import { formatCommitMessage, nameSimilarity, planSync, type RaceStore, type SyncInput } from "../scripts/sync.ts";
+import { formatCommitMessage, nameSimilarity, planEdit, planSync, type RaceStore, type SyncInput } from "../scripts/sync.ts";
 
 const URL_A = "https://actiup.net/vi/event/tay-ho-half-marathon-2026";
 const URL_B = "https://actiup.net/vi/event/da-lat-ultra-trail-2026";
@@ -293,6 +293,62 @@ describe("normalization", () => {
   });
 
 });
+
+describe("OpenRace overrides and hand-entered races", () => {
+  it("an override wins over the sources, survives a re-check, and can be removed", async () => {
+    const store = await seeded();
+    const set = await planEdit(store, "tay-ho-half-marathon-2026", [{ kind: "set", field: "distances", value: ["21km", "42km"], reason: "BTC confirmed" }], "2026-09-24T00:00:00.000Z");
+    assert.deepEqual(set.changes[0]!.fields, ["distances"]);
+    Object.assign(store.files, set.files);
+    let race = RaceSchema.parse(JSON.parse(store.files[racePath(store.id)]!));
+    assert.deepEqual(race.distances, ["21km", "42km"]);
+    assert.deepEqual(race.overrides.distances, { value: ["21km", "42km"], reason: "BTC confirmed", at: "2026-09-24T00:00:00.000Z" });
+
+    // The source changes that field: the override stays, and nothing else moves.
+    const recheck = await plan(store, [input(URL_A, { ...extractedA, distances: ["10km"] }, "2026-09-25T00:00:00.000Z")]);
+    assert.deepEqual(recheck.changes, [{ id: store.id, slug: "tay-ho-half-marathon-2026", kind: "updated", fields: [], shadowed: ["distances"] }]);
+    assert.deepEqual((JSON.parse(recheck.files[racePath(store.id)]!) as Race).distances, ["21km", "42km"]); // override kept
+    assert.match(formatCommitMessage(recheck), /distances changed at the source \(override kept\)/);
+    const other = await plan(store, [input(URL_A, { ...extractedA, distances: ["10km"], registrationStatus: "sold_out" })]);
+    race = RaceSchema.parse(JSON.parse(other.files[racePath(store.id)]!));
+    assert.deepEqual(race.distances, ["21km", "42km"]);
+    assert.equal(race.registrationStatus, "sold_out");
+
+    const unset = await planEdit(store, store.id, [{ kind: "unset", field: "distances" }]);
+    race = RaceSchema.parse(JSON.parse(unset.files[racePath(store.id)]!));
+    assert.deepEqual(race.distances, ["5km", "10km", "21km"]); // back to the source
+    assert.deepEqual(race.overrides, {});
+  });
+
+  it("rejects an override that isn't a valid value for its field, and a field that disagrees with its override", async () => {
+    const store = await seeded();
+    await assert.rejects(planEdit(store, store.id, [{ kind: "set", field: "priceMin", value: "cheap", reason: "x" }]), /invalid record/);
+    await assert.rejects(planEdit(store, store.id, [{ kind: "unset", field: "priceMin" }]), /no override/);
+    const race = JSON.parse(store.files[racePath(store.id)]!) as Race;
+    const bad = { ...race, overrides: { priceMin: { value: 1, reason: "x", at: race.updatedAt } } };
+    assert.equal(RaceSchema.safeParse(bad).success, false);
+  });
+
+  it("adds a race no site lists, then lets ActiUp join it as the primary source", async () => {
+    const store = memoryStore();
+    const fb = "https://www.facebook.com/tayho.run/posts/123?ref=share";
+    const manual = { pageKind: "sport", name: "Tây Hồ Half Marathon 2026", date: "2026-11-15", types: ["road_run"], distances: ["21km"], city: "Hà Nội", priceMin: 250000 };
+    const added = await plan(store, [{ url: fb, extracted: manual, checkedAt: "2026-09-24T00:00:00.000Z", source: "openrace" }]);
+    const id = added.changes[0]!.id;
+    let race = RaceSchema.parse(JSON.parse(added.files[racePath(id)]!));
+    assert.equal(race.slug, "tay-ho-half-marathon-2026"); // from the name
+    assert.deepEqual(race.sources.map((s) => [s.name, s.url]), [["openrace", "https://facebook.com/tayho.run/posts/123"]]);
+    Object.assign(store.files, added.files);
+
+    const joined = await plan(store, [input(URL_A, actiupForJoin)]);
+    assert.equal(joined.changes[0]!.id, id);
+    race = RaceSchema.parse(JSON.parse(joined.files[racePath(id)]!));
+    assert.equal(race.priceMin, 300000); // ActiUp wins
+    assert.equal(race.confidence, "multi-sourced");
+  });
+});
+
+const actiupForJoin = { ...extractedA, distances: [] };
 
 describe("sanity bounds", () => {
   const valid = async () => {

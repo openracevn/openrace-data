@@ -1,4 +1,4 @@
-import type { SourceName } from "./schema.ts";
+import type { ScrapedSourceName } from "./schema.ts";
 
 type SourceConfig = {
   hosts: readonly string[];
@@ -12,7 +12,7 @@ type SourceConfig = {
   slugOf: (url: URL) => string;
 };
 
-export const SOURCES: Record<SourceName, SourceConfig> = {
+export const SOURCES: Record<ScrapedSourceName, SourceConfig> = {
   actiup: {
     hosts: ["actiup.net"],
     // The first 12 events. Discovery reads only this page.
@@ -34,7 +34,7 @@ export const SOURCES: Record<SourceName, SourceConfig> = {
 };
 
 /** The source a URL belongs to, or null if it isn't an event page from a known source. */
-export function sourceForUrl(url: string): SourceName | null {
+export function sourceForUrl(url: string): ScrapedSourceName | null {
   let u: URL;
   try {
     u = new URL(url);
@@ -42,7 +42,7 @@ export function sourceForUrl(url: string): SourceName | null {
     return null;
   }
   const host = u.hostname.replace(/^www\./, "");
-  for (const [name, cfg] of Object.entries(SOURCES) as [SourceName, SourceConfig][]) {
+  for (const [name, cfg] of Object.entries(SOURCES) as [ScrapedSourceName, SourceConfig][]) {
     if (cfg.hosts.includes(host) && cfg.isEventPage(u)) return name;
   }
   return null;

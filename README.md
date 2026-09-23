@@ -31,6 +31,7 @@ This repo is the **data layer only**. It does not serve an API and it has no dat
 
 Sources:
 - **ActiUp** (actiup.net) is the primary source for every field.
+- **openrace** is us: a race no site lists, entered by hand with a reference URL (the organizer's page or post). It's never scraped. Separately, **overrides** let OpenRace set any field on any race, over every source.
 - **bibchung** (bibchung.pro) sells bibs in groups at a discount. It adds a second place to buy (its URL is in `sources[]`) and the group price (`groupPriceMin`), and it fills fields ActiUp leaves empty, such as distances and the full price range.
 
 ## Layout
@@ -75,6 +76,9 @@ test/                    node:test suite
   "registrationUrl": "https://…",
   "organizer": "…",
   "foreignerEligible": true,
+  "overrides": {                                // OpenRace's own values; each wins over every source
+    "distances": { "value": ["5km", "10km", "21km"], "reason": "BTC confirmed", "at": "…" }
+  },
   "sources": [
     {
       "name": "actiup",
@@ -94,6 +98,7 @@ The schema lives in `scripts/lib/schema.ts` (zod). Notes:
 
 - **`null` means unknown.** `venue`, `city`, `region`, `priceMin`, `priceMax`, `registrationStatus`, `registrationUrl`, `organizer` and `foreignerEligible` are `null` when the source doesn't state them. We never guess a value such as `open` or `false`. ActiUp event pages only show a "from" price (`priceMin`) and say nothing about foreign runners, so `priceMax` and `foreignerEligible` are always `null` for now.
 - **`sources` is always an array** and **`confidence` is always present**, even with a single source. Each source keeps its URL (where to buy) and its verbatim extraction.
+- **Overrides** (`overrides`, set with `npm run edit`): a value OpenRace sets, e.g. a correction or a fact no source states. It's applied after merging the sources, so it wins, and it survives re-checks and `renormalize`. The race's field always equals the override value; `validate` enforces that. When a source later changes an overridden field, the race's source data is updated, the override stays, and Discord shows `⚠️ distances: sources now say … (override kept)`. Removing the override brings the source value back.
 - **Merging sources** (`scripts/lib/reconcile.ts`): each field comes from the highest-priority source that has a value, with ActiUp first and bibchung second. So bibchung fills only what ActiUp leaves empty, and `groupPriceMin` can only come from bibchung. `confidence` is `single-sourced` (one usable source), `multi-sourced` (sources agree on race day) or `conflicting` (they disagree, which gets flagged in Discord).
 - **Matching** (`scripts/sync.ts`): a page from a source that doesn't have the race yet joins an existing race when race day is within 1 day and the names are mostly the same (character-bigram similarity ≥ 0.5, ignoring spaces and diacritics). Otherwise it becomes a new race.
 - **Normalization** (`scripts/lib/extraction.ts`): standard distances are snapped (`21.1K` and `Half Marathon` both become `21km`), city names are mapped to an English display name plus a region (`TP. Hồ Chí Minh` becomes `Ho Chi Minh City` / `south`), and dates and prices are coerced. As a result, LLM wording drift between checks doesn't register as a change.
@@ -107,6 +112,7 @@ The schema lives in `scripts/lib/schema.ts` (zod). Notes:
 - **Guarantees** (checked by CI and before every commit):
   - Schema-valid files; unique slugs; `index.json` consistent with the race files.
   - Sanity bounds: distances look like distances (`10km`, `750m`, `100mi`, a bare number, or `Sprint`/`Olympic`/`70.3`/…); the race year is between 2015 and 3 years from now; prices are 0–100,000,000 VND; names contain no URLs or prices.
+- **Overrides are already applied.** Every field holds the value to serve; `overrides` only records which fields OpenRace set, and why. Source `openrace` means a race entered by hand, and its `url` is the reference it came from.
 - **Past races are included, and races are never removed**, not even when they disappear from every source. The API serves them all; each consumer decides what to show (e.g. filter on `date`).
 - **Resync webhook** (`SYNC_WEBHOOK_URL`, sent after `validate` passes on a push that changed `data/`):
   ```json
@@ -183,6 +189,9 @@ npm run check -- --mode daily --max-scrapes 5 --dry-run    # live scrape, no com
 npm run check -- --mode race --race <id|slug|url> --dry-run
 npm run sync -- inputs.json [--commit]   # commit hand-made extractions
 npm run renormalize [-- --commit]        # re-apply normalization to stored extractions (no scraping)
+npm run edit -- set <race> <field> <json> --reason "<why>"   # OpenRace override (add --dry-run to preview)
+npm run edit -- unset <race> <field>                          # back to the source value
+npm run edit -- add --url <reference> --json '<fields>' --reason "<why>"   # a race no site lists
 ```
 
 ## Limits to know

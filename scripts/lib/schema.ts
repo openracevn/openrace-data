@@ -54,8 +54,11 @@ export const CONFIDENCE_LEVELS = ["single-sourced", "multi-sourced", "conflictin
 
 // Source names are stable keys; add new ones as ingestion sources are added.
 // actiup: primary. bibchung: group purchase at a discount (groupPriceMin), plus
-// distances and prices ActiUp hides behind its login.
-export const SOURCE_NAMES = ["actiup", "bibchung"] as const;
+// distances and prices ActiUp hides behind its login. openrace: entered by us, for a
+// race no site lists (never scraped; its url is the reference we took it from).
+export const SOURCE_NAMES = ["actiup", "bibchung", "openrace"] as const;
+/** Sources we scrape (everything but openrace). */
+export const SCRAPED_SOURCES = ["actiup", "bibchung"] as const;
 
 const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "expected YYYY-MM-DD");
 const raceDate = isoDate.refine((d) => {
@@ -74,14 +77,44 @@ const raceName = z
 // Permanent key: file name, index key, API key. Never derived from race data.
 const raceId = z.uuid();
 
+// Fields that come from sources, or from an OpenRace override (everything except
+// bookkeeping). Diffs, commit summaries and Discord notifications use these.
+export const CANONICAL_FIELDS = [
+  "name",
+  "types",
+  "date",
+  "distances",
+  "location",
+  "priceMin",
+  "priceMax",
+  "groupPriceMin",
+  "currency",
+  "registrationStatus",
+  "registrationUrl",
+  "organizer",
+  "foreignerEligible",
+] as const;
+
 export const SourceSchema = z.object({
   name: z.enum(SOURCE_NAMES),
   url: z.url(),
   lastCheckedAt: isoDateTime,
   lastChangedAt: isoDateTime,
-  // Verbatim Firecrawl extraction for this source. Canonical fields are derived
-  // from these, so reconciliation can be re-run later without re-scraping.
+  // Verbatim Firecrawl extraction for this source (for openrace: the fields we entered).
+  // Canonical fields are derived from these, so reconciliation can be re-run later
+  // without re-scraping.
   rawExtracted: z.record(z.string(), z.unknown()),
+});
+
+/**
+ * A value set by OpenRace that wins over every source, e.g. a correction or a fact no
+ * source states. It survives re-checks and re-derivation; removing it brings the source
+ * value back. The race's field always equals `value` (so readers can ignore this block).
+ */
+export const OverrideSchema = z.object({
+  value: z.unknown(),
+  reason: z.string().min(1),
+  at: isoDateTime,
 });
 
 // `null` means "unknown / not stated by any source", never "false" or "zero".
@@ -109,6 +142,7 @@ export const RaceSchema = z
     registrationUrl: z.url().nullable(),
     organizer: z.string().min(1).nullable(),
     foreignerEligible: z.boolean().nullable(),
+    overrides: z.partialRecord(z.enum(CANONICAL_FIELDS), OverrideSchema),
     sources: z.array(SourceSchema).min(1),
     confidence: z.enum(CONFIDENCE_LEVELS),
     createdAt: isoDateTime,
@@ -118,7 +152,26 @@ export const RaceSchema = z
     message: "priceMin must be <= priceMax",
     path: ["priceMin"],
   })
-  .refine((r) => r.createdAt <= r.updatedAt, { message: "createdAt must be <= updatedAt", path: ["updatedAt"] });
+  .refine((r) => r.createdAt <= r.updatedAt, { message: "createdAt must be <= updatedAt", path: ["updatedAt"] })
+  .superRefine((r, ctx) => {
+    for (const [field, override] of Object.entries(r.overrides)) {
+      if (!deepEqual(r[field as CanonicalField], override?.value)) {
+        ctx.addIssue({ code: "custom", message: `${field} must equal its override value`, path: [field] });
+      }
+    }
+  });
+
+/** Structural equality for JSON values (object key order doesn't matter). */
+export function deepEqual(a: unknown, b: unknown): boolean {
+  if (a === b) return true;
+  if (a === undefined || b === undefined || a === null || b === null) return false;
+  if (typeof a !== "object" || typeof b !== "object") return false;
+  if (Array.isArray(a) !== Array.isArray(b)) return false;
+  const ka = Object.keys(a as object);
+  const kb = Object.keys(b as object);
+  if (ka.length !== kb.length) return false;
+  return ka.every((k) => deepEqual((a as Record<string, unknown>)[k], (b as Record<string, unknown>)[k]));
+}
 
 export const IndexEntrySchema = z.object({
   id: raceId,
@@ -139,29 +192,17 @@ export type Region = (typeof REGIONS)[number];
 export type RegistrationStatus = (typeof REGISTRATION_STATUSES)[number];
 export type RaceType = (typeof RACE_TYPES)[number];
 export type SourceName = (typeof SOURCE_NAMES)[number];
+export type ScrapedSourceName = (typeof SCRAPED_SOURCES)[number];
 export type RaceSource = z.infer<typeof SourceSchema>;
+export type Override = z.infer<typeof OverrideSchema>;
+export type Overrides = Race["overrides"];
 export type Race = z.infer<typeof RaceSchema>;
 export type IndexEntry = z.infer<typeof IndexEntrySchema>;
 
-// Fields that come from sources (everything except bookkeeping). Diffs, commit
-// summaries and Discord notifications are all computed over these.
-export const CANONICAL_FIELDS = [
-  "name",
-  "types",
-  "date",
-  "distances",
-  "location",
-  "priceMin",
-  "priceMax",
-  "groupPriceMin",
-  "currency",
-  "registrationStatus",
-  "registrationUrl",
-  "organizer",
-  "foreignerEligible",
-] as const satisfies readonly (keyof Race)[];
-
 export type CanonicalField = (typeof CANONICAL_FIELDS)[number];
+// Every canonical field is a Race field.
+const _canonicalFieldsAreRaceFields: readonly (keyof Race)[] = CANONICAL_FIELDS;
+void _canonicalFieldsAreRaceFields;
 export type CanonicalRace = Pick<Race, CanonicalField>;
 
 export function racePath(id: string): string {

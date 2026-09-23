@@ -1,10 +1,11 @@
 import { normalizeExtracted } from "./extraction.ts";
-import { CANONICAL_FIELDS, type CanonicalRace, type Race, type RaceSource, type SourceName } from "./schema.ts";
+import { CANONICAL_FIELDS, type CanonicalRace, type Overrides, type Race, type RaceSource, type SourceName } from "./schema.ts";
 
 // Highest priority first. ActiUp is the primary source for every field; bibchung
 // fills what ActiUp leaves empty (distances, price range) and is the only source
-// of the group price.
-export const SOURCE_PRIORITY: readonly SourceName[] = ["actiup", "bibchung"];
+// of the group price. openrace (a race we entered by hand) only fills what the
+// sites leave empty once a site lists the race; to force a value, use an override.
+export const SOURCE_PRIORITY: readonly SourceName[] = ["actiup", "bibchung", "openrace"];
 
 export type Reconciled = { fields: CanonicalRace; confidence: Race["confidence"] };
 
@@ -38,6 +39,15 @@ export function reconcile(sources: readonly RaceSource[]): Reconciled | { error:
   const confidence: Race["confidence"] =
     usable.length === 1 ? "single-sourced" : usable.every((r) => r.date === primary.date) ? "multi-sourced" : "conflicting";
   return { fields, confidence };
+}
+
+/** The race's served fields: derived from the sources, then OpenRace overrides on top. */
+export function applyOverrides(fields: CanonicalRace, overrides: Overrides): CanonicalRace {
+  const out: CanonicalRace = { ...fields };
+  for (const [field, override] of Object.entries(overrides)) {
+    if (override) (out as Record<string, unknown>)[field] = override.value;
+  }
+  return out;
 }
 
 function isEmpty(field: string, value: unknown): boolean {

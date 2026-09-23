@@ -8,7 +8,7 @@ import { changedFields, deepEqual, stabilize } from "./lib/diff.ts";
 import { GitHubRepo, isNotFastForward, type GitHubTarget } from "./lib/github.ts";
 import { normalizeExtracted } from "./lib/extraction.ts";
 import { foldVietnamese } from "./lib/places.ts";
-import { SOURCE_PRIORITY, reconcile } from "./lib/reconcile.ts";
+import { SOURCE_PRIORITY, applyOverrides, reconcile } from "./lib/reconcile.ts";
 import {
   INDEX_PATH,
   IndexSchema,
@@ -17,11 +17,12 @@ import {
   serialize,
   type CanonicalField,
   type IndexEntry,
+  type Overrides,
   type Race,
   type RaceSource,
   type SourceName,
 } from "./lib/schema.ts";
-import { canonicalSourceUrl } from "./lib/slug.ts";
+import { canonicalSourceUrl, slugFromName } from "./lib/slug.ts";
 import { SOURCES, sourceForUrl } from "./lib/sources.ts";
 
 export type SyncInput = {
@@ -31,6 +32,8 @@ export type SyncInput = {
   extracted: Record<string, unknown>;
   /** When the source was checked (ISO 8601). */
   checkedAt: string;
+  /** Which source this is; defaults to the source the URL belongs to. openrace inputs may use any reference URL. */
+  source?: SourceName;
 };
 
 export interface RaceStore {
@@ -45,6 +48,8 @@ export type RaceChange = {
   fields: CanonicalField[];
   /** A page from another source joined this race. */
   joined?: boolean;
+  /** Overridden fields whose source value changed (the override still wins). */
+  shadowed?: CanonicalField[];
 };
 export type Skipped = { url: string; reason: string };
 
@@ -76,7 +81,7 @@ export async function planSync(
     id: e.id,
     name: e.name,
     date: e.date,
-    sources: new Set(e.sourceUrls.map((u) => sourceForUrl(u)).filter((x): x is SourceName => x !== null)),
+    sources: new Set<SourceName>(e.sourceUrls.map((u) => sourceForUrl(u)).filter((x) => x !== null)),
   }));
 
   const skipped: Skipped[] = [];
@@ -89,7 +94,7 @@ export async function planSync(
 
   // Primary source first, so an ActiUp page creates the race a bibchung page then joins.
   const ordered = dedupeByUrl(inputs, skipped)
-    .map((input) => ({ input, url: input.url, source: sourceForUrl(input.url) }))
+    .map((input) => ({ input, url: input.url, source: input.source ?? sourceForUrl(input.url) }))
     .sort((a, b) => sourceRank(a.source) - sourceRank(b.source));
 
   for (const { input, url, source } of ordered) {
@@ -115,7 +120,8 @@ export async function planSync(
       addToGroup(match.id, { input, url, source });
       continue;
     }
-    const newSlug = allocateSlug(SOURCES[source].slugOf(new URL(url)), takenSlugs);
+    const base = source === "openrace" ? slugFromName(normalized.race.name) : SOURCES[source].slugOf(new URL(url));
+    const newSlug = allocateSlug(base, takenSlugs);
     takenSlugs.add(newSlug);
     const id = newId();
     idByUrl.set(url, id);
@@ -155,44 +161,27 @@ export async function planSync(
       sources = prevSource ? sources.map((s) => (s === prevSource ? nextSource : s)) : [...sources, nextSource];
     }
 
-    const reconciled = reconcile(sources);
-    if ("error" in reconciled) {
-      for (const { url } of items) skipped.push({ url, reason: reconciled.error });
+    const composed = composeRace({ id, slug, prev, sources, overrides: prev?.overrides ?? {}, now, stabilizeAgainstPrev: true });
+    if ("error" in composed) {
+      for (const { url } of items) skipped.push({ url, reason: composed.error });
       return;
     }
-
-    const canonical = prev ? stabilize(prev, reconciled.fields) : reconciled.fields;
-    const fields = prev ? changedFields(prev, canonical) : [];
+    const { record, fields } = composed;
     const joined = prev ? sources.length !== prev.sources.length : false;
-    if (prev && fields.length === 0 && !joined && prev.confidence === reconciled.confidence) return;
+    const shadowed = prev ? shadowedChanges(prev, sources) : [];
+    if (prev && fields.length === 0 && !joined && shadowed.length === 0 && prev.confidence === record.confidence) return;
     for (const source of touched) source.lastChangedAt = source.lastCheckedAt;
 
-    const record: Race = {
-      id,
-      slug,
-      ...canonical,
-      sources,
-      confidence: reconciled.confidence,
-      createdAt: prev?.createdAt ?? now,
-      updatedAt: now,
-    };
-    const valid = RaceSchema.safeParse(record);
-    if (!valid.success) {
-      const reason = `invalid record: ${valid.error.issues.map((e) => `${e.path.join(".")}: ${e.message}`).join("; ")}`;
-      for (const { url } of items) skipped.push({ url, reason });
-      return;
-    }
-
     files[racePath(id)] = serialize(record);
-    changes.push({ id, slug, kind: prev ? "updated" : "added", fields, ...(joined && { joined: true }) });
-    nextIndex.set(id, {
+    changes.push({
       id,
       slug,
-      name: record.name,
-      date: record.date,
-      lastModified: now,
-      sourceUrls: [...new Set(sources.map((s) => s.url))].sort(),
+      kind: prev ? "updated" : "added",
+      fields,
+      ...(joined && { joined: true }),
+      ...(shadowed.length > 0 && { shadowed }),
     });
+    nextIndex.set(id, indexEntry(record));
   });
 
   if (changes.length > 0) {
@@ -200,6 +189,99 @@ export async function planSync(
     files[INDEX_PATH] = serialize(sorted);
   }
   return { files, changes, skipped };
+}
+
+type ComposeArgs = {
+  id: string;
+  slug: string;
+  prev: Race | null;
+  sources: RaceSource[];
+  overrides: Overrides;
+  now: string;
+  /** Keep the previous wording of venue/organizer when a re-check only rewords it. */
+  stabilizeAgainstPrev: boolean;
+};
+
+/** A race record from its sources (merged by priority) with OpenRace overrides on top, validated. */
+function composeRace(a: ComposeArgs): { record: Race; fields: CanonicalField[] } | { error: string } {
+  const reconciled = reconcile(a.sources);
+  if ("error" in reconciled) return { error: reconciled.error };
+  const derived = a.prev && a.stabilizeAgainstPrev ? stabilize(a.prev, reconciled.fields) : reconciled.fields;
+  const canonical = applyOverrides(derived, a.overrides);
+  const record: Race = {
+    id: a.id,
+    slug: a.slug,
+    ...canonical,
+    overrides: a.overrides,
+    sources: a.sources,
+    confidence: reconciled.confidence,
+    createdAt: a.prev?.createdAt ?? a.now,
+    updatedAt: a.now,
+  };
+  const valid = RaceSchema.safeParse(record);
+  if (!valid.success) {
+    return { error: `invalid record: ${valid.error.issues.map((e) => `${e.path.join(".")}: ${e.message}`).join("; ")}` };
+  }
+  return { record, fields: a.prev ? changedFields(a.prev, canonical) : [] };
+}
+
+/** Overridden fields whose value, as the sources alone would give it, differs between the old and new sources. */
+function shadowedChanges(prev: Race, sources: RaceSource[]): CanonicalField[] {
+  const fields = Object.keys(prev.overrides) as CanonicalField[];
+  if (fields.length === 0) return [];
+  const before = reconcile(prev.sources);
+  const after = reconcile(sources);
+  if ("error" in before || "error" in after) return [];
+  return fields.filter((f) => !deepEqual(before.fields[f], after.fields[f]));
+}
+
+function indexEntry(record: Race): IndexEntry {
+  return {
+    id: record.id,
+    slug: record.slug,
+    name: record.name,
+    date: record.date,
+    lastModified: record.updatedAt,
+    sourceUrls: [...new Set(record.sources.map((s) => s.url))].sort(),
+  };
+}
+
+export type Edit =
+  | { kind: "set"; field: CanonicalField; value: unknown; reason: string }
+  | { kind: "unset"; field: CanonicalField };
+
+/**
+ * Set or remove an OpenRace override on one race (found by id or slug). Setting a
+ * value equal to the current one still records the override, so later source
+ * changes can't move it.
+ */
+export async function planEdit(store: RaceStore, race: string, edits: readonly Edit[], now = new Date().toISOString()): Promise<SyncPlan> {
+  const indexText = await store.read(INDEX_PATH);
+  const index: IndexEntry[] = indexText ? IndexSchema.parse(JSON.parse(indexText)) : [];
+  const entry = index.find((e) => e.id === race || e.slug === race);
+  if (!entry) throw new Error(`no race with id or slug "${race}"`);
+  const text = await store.read(racePath(entry.id));
+  if (text === null) throw new Error(`${racePath(entry.id)} is listed in ${INDEX_PATH} but missing`);
+  const prev = RaceSchema.parse(JSON.parse(text));
+
+  const overrides: Overrides = { ...prev.overrides };
+  for (const edit of edits) {
+    if (edit.kind === "set") overrides[edit.field] = { value: edit.value, reason: edit.reason, at: now };
+    else if (overrides[edit.field]) delete overrides[edit.field];
+    else throw new Error(`${prev.slug} has no override on ${edit.field}`);
+  }
+
+  const composed = composeRace({ id: prev.id, slug: prev.slug, prev, sources: prev.sources, overrides, now, stabilizeAgainstPrev: false });
+  if ("error" in composed) throw new Error(composed.error);
+  const { record, fields } = composed;
+  if (deepEqual(record.overrides, prev.overrides) && fields.length === 0) return { files: {}, changes: [], skipped: [] };
+
+  const nextIndex = index.map((e) => (e.id === record.id ? indexEntry(record) : e));
+  return {
+    files: { [racePath(record.id)]: serialize(record), [INDEX_PATH]: serialize(nextIndex) },
+    changes: [{ id: record.id, slug: record.slug, kind: "updated", fields }],
+    skipped: [],
+  };
 }
 
 function sourceRank(source: SourceName | null): number {
@@ -272,7 +354,10 @@ export function formatCommitMessage(plan: SyncPlan, context?: string): string {
     `data: ${counts.join(", ")}`,
     "",
     ...added.map((c) => `+ ${c.slug} (${c.id})`),
-    ...updated.map((c) => `~ ${c.slug}: ${[...(c.joined ? ["+source"] : []), ...c.fields].join(", ") || "confidence"}`),
+    ...updated.map(
+      (c) =>
+        `~ ${c.slug}: ${[...(c.joined ? ["+source"] : []), ...c.fields, ...(c.shadowed ?? []).map((f) => `${f} changed at the source (override kept)`)].join(", ") || "confidence"}`,
+    ),
   ];
   if (context) lines.push("", context);
   return lines.join("\n");
@@ -291,24 +376,35 @@ export type SyncOptions = {
   extraFiles?: (store: RaceStore) => Promise<Record<string, string>>;
   /** Commit message when only extra files changed. */
   bookkeepingMessage?: string;
+  /** Full commit message, instead of the generated one. */
+  message?: string;
 };
 
-/**
- * Plans against the branch head and commits every change as a single commit.
- * If the branch moves underneath us (a concurrent run), re-plans on the new
- * head and retries, so no update is lost and no empty commit is created.
- */
+/** Extract inputs → one commit on the branch head (see commitToGitHub). */
 export async function syncToGitHub(target: GitHubTarget, inputs: readonly SyncInput[], opts: SyncOptions = {}): Promise<SyncResult> {
+  return commitToGitHub(target, (store) => planSync(store, inputs, opts.now), opts);
+}
+
+/**
+ * Plans against the branch head and commits the plan's files as a single commit.
+ * If the branch moves underneath us (a concurrent run), re-plans on the new head
+ * and retries, so no update is lost and no empty commit is created.
+ */
+export async function commitToGitHub(
+  target: GitHubTarget,
+  planAt: (store: RaceStore) => Promise<SyncPlan>,
+  opts: SyncOptions = {},
+): Promise<SyncResult> {
   const repo = new GitHubRepo(target);
   for (let attempt = 1; ; attempt++) {
     const head = await repo.headSha();
     const store = repo.storeAt(head);
-    const plan = await planSync(store, inputs, opts.now);
+    const plan = await planAt(store);
     const extra = opts.extraFiles ? await opts.extraFiles(store) : {};
     const unchanged = plan.changes.length === 0 && Object.keys(extra).length === 0;
     if (unchanged || opts.dryRun) return { ...plan, commitSha: null };
     const message =
-      plan.changes.length > 0 ? formatCommitMessage(plan, opts.context) : (opts.bookkeepingMessage ?? "state: update");
+      opts.message ?? (plan.changes.length > 0 ? formatCommitMessage(plan, opts.context) : (opts.bookkeepingMessage ?? "state: update"));
     try {
       const commitSha = await repo.commitFiles(head, { ...plan.files, ...extra }, message);
       return { ...plan, commitSha };
