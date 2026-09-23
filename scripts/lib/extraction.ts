@@ -56,7 +56,7 @@ const COMMON_PROPERTIES = {
       description: "open = can register; closing_soon = page says registration ends soon or few slots left; sold_out = all slots taken; closed = registration ended.",
     },
     registrationUrl: { type: "string", description: "Absolute URL where runners register or buy a bib." },
-    organizer: { type: "string", description: "Organizing company or body." },
+    organizer: { type: "string", description: "Organizing company or body, only if the page names one. Never the event name." },
 } as const;
 
 const COMMON_PROMPT =
@@ -89,15 +89,28 @@ export const EXTRACTIONS: Record<SourceName, Extraction> = {
       type: "object",
       properties: {
         ...COMMON_PROPERTIES,
-        priceMin: { type: "number", description: "Cheapest regular (non-discounted) registration price, as a plain number. In each price row the first price is the regular one." },
-        priceMax: { type: "number", description: "Most expensive regular (non-discounted) registration price, as a plain number." },
-        groupPriceMin: { type: "number", description: "Cheapest discounted bibchung price, as a plain number. In each price row the second, lower price is the bibchung price." },
+        priceMin: {
+          type: "number",
+          description:
+            "Cheapest REGULAR price, as a plain number: the lowest of the first (higher) prices across price rows. " +
+            "Never use a bibchung (second, lower) price here. Row \"21KM 678.000 ₫ 542.000 ₫\" → 678000.",
+        },
+        priceMax: {
+          type: "number",
+          description: "Most expensive REGULAR price: the highest of the first (higher) prices across price rows. Row \"21KM 678.000 ₫ 542.000 ₫\" → 678000.",
+        },
+        groupPriceMin: {
+          type: "number",
+          description: "Cheapest bibchung (discounted) price: the lowest of the second (lower) prices across price rows. Row \"21KM 678.000 ₫ 542.000 ₫\" → 542000.",
+        },
       },
       required: ["pageKind", "name", "date"],
     },
     prompt:
       `${COMMON_PROMPT} Distances are listed per price row (e.g. "21KM"). ` +
-      "Each price row shows the regular price followed by the lower bibchung (group) price.",
+      "Each price row shows the regular price, then the lower bibchung (group) price: " +
+      "priceMin and priceMax use only regular prices, groupPriceMin only bibchung prices. " +
+      "The organizer is a company or body named on the page (e.g. \"Ban tổ chức\"); if none is named, omit it.",
   },
 };
 
@@ -117,6 +130,10 @@ export function normalizeExtracted(raw: Record<string, unknown>): NormalizeResul
   let priceMin = normalizePrice(raw.priceMin);
   let priceMax = normalizePrice(raw.priceMax);
   if (priceMin !== null && priceMax !== null && priceMin > priceMax) [priceMin, priceMax] = [priceMax, priceMin];
+  const groupPriceMin = normalizePrice(raw.groupPriceMin);
+  // The model sometimes reports the discounted group price as the cheapest regular
+  // price too; then the real regular minimum is unknown.
+  if (groupPriceMin !== null && priceMin === groupPriceMin && priceMax !== null && priceMax > priceMin) priceMin = null;
 
   // The model alternates between the town ("Cao Lãnh") and the province; venues usually
   // end in the province ("…, Tỉnh Đồng Tháp"), so fall back to it for an unknown city.
@@ -137,13 +154,14 @@ export function normalizeExtracted(raw: Record<string, unknown>): NormalizeResul
       location: { venue: str(raw.venue), city: place.city, region: place.region },
       priceMin,
       priceMax,
-      groupPriceMin: normalizePrice(raw.groupPriceMin),
+      groupPriceMin,
       currency: str(raw.currency)?.toUpperCase().slice(0, 3) ?? "VND",
       registrationStatus: REGISTRATION_STATUSES.includes(status as RegistrationStatus)
         ? (status as RegistrationStatus)
         : null,
       registrationUrl: normalizeUrl(raw.registrationUrl),
-      organizer: str(raw.organizer),
+      // The model sometimes fills the organizer with the event name.
+      organizer: str(raw.organizer) && foldVietnamese(str(raw.organizer)!) !== foldVietnamese(name) ? str(raw.organizer) : null,
       foreignerEligible: typeof raw.foreignerEligible === "boolean" ? raw.foreignerEligible : null,
     },
   };

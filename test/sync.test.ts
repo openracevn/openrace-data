@@ -222,6 +222,15 @@ describe("multiple sources", () => {
     for (const c of p.changes) assert.equal(RaceSchema.parse(JSON.parse(p.files[racePath(c.id)]!)).confidence, "single-sourced");
   });
 
+  it("repairs bibchung extraction mistakes", () => {
+    const r = normalizeExtracted({ ...bib, priceMin: 542000, priceMax: 678000, groupPriceMin: 542000, organizer: "TẾT RUN MIỀN NAM 2027", name: "Tết Run Miền Nam 2027" });
+    assert.ok(r.ok);
+    assert.equal(r.race.priceMin, null); // it was the group price, not a regular one
+    assert.equal(r.race.priceMax, 678000);
+    assert.equal(r.race.groupPriceMin, 542000);
+    assert.equal(r.race.organizer, null); // it was the event name
+  });
+
   it("scores name similarity across spacing and diacritics", () => {
     assert.ok(nameSimilarity("Giải chạy Vũng Tàu City Trail 2026", "VungTau CityTrail 2026") >= 0.5);
     assert.ok(nameSimilarity("Tết Run Miền Nam 2027", "TẾT RUN MIỀN NAM 2027") === 1);
