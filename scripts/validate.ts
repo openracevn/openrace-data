@@ -43,6 +43,7 @@ if (!index.success) {
       continue;
     }
     if (entry.slug !== race.slug) errors.push(`${INDEX_PATH}: "${entry.id}" slug != race slug`);
+    if (entry.name !== race.name || entry.date !== race.date) errors.push(`${INDEX_PATH}: "${entry.id}" name/date != race name/date`);
     if (entry.lastModified !== race.updatedAt) errors.push(`${INDEX_PATH}: "${entry.id}" lastModified != race updatedAt`);
     const urls = [...new Set(race.sources.map((s) => s.url))].sort();
     if (urls.join() !== entry.sourceUrls.join()) errors.push(`${INDEX_PATH}: "${entry.id}" sourceUrls != race sources`);

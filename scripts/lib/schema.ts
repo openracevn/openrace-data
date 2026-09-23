@@ -25,13 +25,14 @@ export const RACE_TYPES = [
   "other", //        a sport event that fits none of the above
 ] as const;
 
-// Only "single-sourced" is produced today. Multi-source reconciliation will add
-// values here (e.g. "multi-sourced", "conflicting"); adding enum members is
-// backwards compatible, so existing files never need migrating.
-export const CONFIDENCE_LEVELS = ["single-sourced"] as const;
+// single-sourced: one usable source. multi-sourced: several sources agree on race
+// day. conflicting: they disagree on race day (someone should look). See reconcile.ts.
+export const CONFIDENCE_LEVELS = ["single-sourced", "multi-sourced", "conflicting"] as const;
 
 // Source names are stable keys; add new ones as ingestion sources are added.
-export const SOURCE_NAMES = ["actiup"] as const;
+// actiup: primary. bibchung: group purchase at a discount (groupPriceMin), plus
+// distances and prices ActiUp hides behind its login.
+export const SOURCE_NAMES = ["actiup", "bibchung"] as const;
 
 const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "expected YYYY-MM-DD");
 const isoDateTime = z.iso.datetime();
@@ -67,6 +68,8 @@ export const RaceSchema = z
     }),
     priceMin: z.number().int().nonnegative().nullable(),
     priceMax: z.number().int().nonnegative().nullable(),
+    // Cheapest discounted (group) price on bibchung; null when the race isn't on bibchung.
+    groupPriceMin: z.number().int().nonnegative().nullable(),
     currency: z.string().length(3),
     registrationStatus: z.enum(REGISTRATION_STATUSES).nullable(),
     registrationUrl: z.url().nullable(),
@@ -85,6 +88,10 @@ export const RaceSchema = z
 export const IndexEntrySchema = z.object({
   id: raceId,
   slug,
+  // Name and race day, so a page from another source can be matched to its race
+  // without reading every race file.
+  name: z.string().min(1),
+  date: isoDate,
   lastModified: isoDateTime,
   // Lets ingestion map a source URL to its race without reading every race file,
   // so a renamed race keeps its id instead of forking a new file.
@@ -111,6 +118,7 @@ export const CANONICAL_FIELDS = [
   "location",
   "priceMin",
   "priceMax",
+  "groupPriceMin",
   "currency",
   "registrationStatus",
   "registrationUrl",

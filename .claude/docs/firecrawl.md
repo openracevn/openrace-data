@@ -32,6 +32,14 @@ Checked against docs.firecrawl.dev (`billing`, `features/monitoring`, the monito
 - The sports listing mixes running, triathlon (IRONKIDS, FesTRIval, Sunrise Sprint), swimming and cycling. **All sports are kept** (user decision, 2026-09-23) and classified into `types`. Only non-sport pages (`pageKind: non_sport`) and broken ones (`none`) are skipped.
 - **ActiUp's own categories** (`/api/content/event/categories?category_type=sports`): Road Running, Trail Running, Marathon, Half Marathon, Triathlon, Aqualon/Aquathlon, Swim, Mountain Bike, Cross-Country, and some non-sport ones. Only the older `/api/…/paging` listing returns them, and only on past events: the last tagged one is from 2025-11, and none of the 40 upcoming races are tagged. The tags are also inconsistent ("Marathon" and "Road Running" used interchangeably). So we classify types ourselves; ActiUp's tags could seed a past-race backfill.
 
+## bibchung.pro specifics (checked 2026-09-23 over plain HTTP)
+
+- Next.js, but **rendered on the server**: a plain `curl` gets the full content. Unlike ActiUp, there's no empty-render problem.
+- The listing `/events` has real paging (`/events?page=2`), and `sitemap.xml` lists every event (12 on 2026-09-23), with `/en/events/<slug>` twins.
+- Event page `/events/<slug>`: name, date (`24/01/2027`), venue, description, schedule. It also has JSON-LD `SportsEvent` data (startDate/endDate, location).
+- **The registration section lists a price row per tier and distance: regular price, then the bibchung price**, e.g. `EARLY BIRD · 07/09/2026 – 22/10/2026 · 21KM · 678.000 ₫ · 542.000 ₫`. That gives us distances, the price range and `groupPriceMin`.
+- Slugs often match ActiUp's (`tet-run-mien-nam-2027`, `vietnam-festrival-2027`) but not always (`vungtau-citytrail-2026` vs `vung-tau-city-trail`), so we match races by date + name.
+
 ## Extraction test (2026-09-23): 10 pages, each scraped twice
 
 - **Cost:** 5 credits per page for scrape + JSON. **Rate limit:** 10 requests/min on the current plan.

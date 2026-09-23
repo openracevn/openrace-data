@@ -30,7 +30,7 @@ import {
   type Check,
 } from "./lib/checks.ts";
 import { env, requireEnv } from "./lib/env.ts";
-import { normalizeExtracted } from "./lib/extraction.ts";
+import { EXTRACTIONS, normalizeExtracted } from "./lib/extraction.ts";
 import { Firecrawl } from "./lib/firecrawl.ts";
 import { INDEX_PATH, IndexSchema, RaceSchema, racePath } from "./lib/schema.ts";
 import { canonicalSourceUrl } from "./lib/slug.ts";
@@ -112,7 +112,7 @@ async function extract(url: string): Promise<void> {
     return;
   }
   scrapes++;
-  const result = await firecrawl.extract(url);
+  const result = await firecrawl.extract(url, EXTRACTIONS[sourceForUrl(url)!]);
   const checkedAt = new Date().toISOString();
   if (!result.ok || !result.json) {
     const reason = result.ok ? "no extraction returned" : result.error;
@@ -148,11 +148,16 @@ if (mode === "race") {
   enqueue(urls);
 }
 
+const MAX_LISTING_PAGES = 10; // per source, when a listing is paginated
+
 if (discovering) {
   for (const source of Object.values(SOURCES)) {
-    for (const listing of source.listings) {
-      // The listing renders client-side and occasionally comes back before its events
-      // load. A listing with no event links is a failed render, not "no new races".
+    const listings = [...source.listings];
+    for (let i = 0; i < listings.length && i < MAX_LISTING_PAGES; i++) {
+      const listing = listings[i]!;
+      // ActiUp's listing renders client-side and occasionally comes back before its
+      // events load. A listing with no event links is a failed render, not "no new races".
+      let links: string[] = [];
       let events: string[] = [];
       let error = "no event links (page rendered without events)";
       for (let attempt = 1; attempt <= 3 && events.length === 0; attempt++) {
@@ -161,7 +166,8 @@ if (discovering) {
           error = result.error;
           continue;
         }
-        events = result.links.filter((link) => {
+        links = result.links;
+        events = links.filter((link) => {
           try {
             return sourceForUrl(canonicalSourceUrl(link)) !== null;
           } catch {
@@ -177,6 +183,18 @@ if (discovering) {
       const fresh = newEventUrls(events);
       report.push(`listing ${listing}: ${new Set(events.map((e) => canonicalSourceUrl(e))).size} events, ${fresh.length} new`);
       enqueue(fresh);
+      // Follow pagination (bibchung: /events?page=2, ...).
+      for (const link of links) {
+        let u: URL;
+        try {
+          u = new URL(link);
+        } catch {
+          continue;
+        }
+        if (source.hosts.includes(u.hostname.replace(/^www\./, "")) && source.isListingPage?.(u) && !listings.includes(u.toString())) {
+          listings.push(u.toString());
+        }
+      }
     }
   }
 }

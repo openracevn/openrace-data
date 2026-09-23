@@ -3,7 +3,7 @@
  * stay under the plan's rate limit (about 10/min on the current plan); a 429 or
  * 5xx is retried after a pause.
  */
-import { EXTRACTION_PROMPT, EXTRACTION_SCHEMA } from "./extraction.ts";
+import type { Extraction } from "./extraction.ts";
 
 const API = "https://api.firecrawl.dev/v2/scrape";
 
@@ -25,9 +25,9 @@ export class Firecrawl {
     return this.scrape(url, ["links"]);
   }
 
-  /** Race extraction (5 credits: 1 + 4 for JSON). */
-  extract(url: string): Promise<ScrapeResult> {
-    return this.scrape(url, [{ type: "json", schema: EXTRACTION_SCHEMA, prompt: EXTRACTION_PROMPT }]);
+  /** Race extraction with the source's schema and prompt (5 credits: 1 + 4 for JSON). */
+  extract(url: string, extraction: Extraction): Promise<ScrapeResult> {
+    return this.scrape(url, [{ type: "json", ...extraction }]);
   }
 
   private async scrape(url: string, formats: unknown[]): Promise<ScrapeResult> {

@@ -11,6 +11,8 @@
 
 | Spec said | We did | Why |
 | --- | --- | --- |
+| One source (ActiUp) | **ActiUp + bibchung**. ActiUp is primary for every field; bibchung fills gaps and alone provides `groupPriceMin`; `confidence` is multi-sourced or conflicting on race day | User decision, 2026-09-23: bibchung is where bibs can be bought in a group at a discount, so races show both links. Firecrawl extracts each page separately (5 credits each; there's no cheaper two-page AI call) |
+| (unspecified) | A page from another source joins an existing race when race day is within ±1 day and name bigram similarity is ≥ 0.5 | Slugs differ between sites (`vungtau-citytrail-2026` vs `vung-tau-city-trail`). A day mismatch is kept but flagged `conflicting` |
 | Firecrawl Monitor → webhook → Cloudflare Worker | **GitHub Actions `check.yml` + Firecrawl scrape API**; the Worker and Monitor are removed | User request, 2026-09-23: new races daily, known races every 14 days until race day, never after, and manual runs per race or for discovery. Monitors have one schedule per monitor, re-extract every page each check (~10× the credits), and can't run a single page (see firecrawl.md) |
 | `registrationStatus` is one of 4 values | Also allows `null` | We don't invent `open` when the page doesn't say. The same goes for venue, prices, organizer, etc. `null` means unknown |
 | `index.json` = slugs + lastModified | Plus `sourceUrls` | Lets ingestion map URL → slug without reading every file, so renamed races keep their id |

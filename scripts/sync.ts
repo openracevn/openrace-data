@@ -4,10 +4,11 @@
  * commit. Pure planning (`planSync`) is separated from I/O so it can be tested
  * and reused by the scheduled checker (`check.ts`) and the manual CLI.
  */
-import { changedFields, stabilize } from "./lib/diff.ts";
+import { changedFields, deepEqual, stabilize } from "./lib/diff.ts";
 import { GitHubRepo, isNotFastForward, type GitHubTarget } from "./lib/github.ts";
 import { normalizeExtracted } from "./lib/extraction.ts";
-import { reconcile } from "./lib/reconcile.ts";
+import { foldVietnamese } from "./lib/places.ts";
+import { SOURCE_PRIORITY, reconcile } from "./lib/reconcile.ts";
 import {
   INDEX_PATH,
   IndexSchema,
@@ -37,7 +38,14 @@ export interface RaceStore {
   read(path: string): Promise<string | null>;
 }
 
-export type RaceChange = { id: string; slug: string; kind: "added" | "updated"; fields: CanonicalField[] };
+export type RaceChange = {
+  id: string;
+  slug: string;
+  kind: "added" | "updated";
+  fields: CanonicalField[];
+  /** A page from another source joined this race. */
+  joined?: boolean;
+};
 export type Skipped = { url: string; reason: string };
 
 export type SyncPlan = {
@@ -47,7 +55,11 @@ export type SyncPlan = {
   skipped: Skipped[];
 };
 
-type Prepared = { input: SyncInput; url: string; source: SourceName; id: string; newSlug?: string };
+type Item = { input: SyncInput; url: string; source: SourceName };
+/** All inputs of one race in this run (e.g. its ActiUp and bibchung pages). */
+type Group = { id: string; newSlug?: string; items: Item[] };
+/** What matching needs to know about a race: known ones from the index, plus races created in this run. */
+type Candidate = { id: string; name: string; date: string; sources: Set<SourceName> };
 
 export async function planSync(
   store: RaceStore,
@@ -60,20 +72,34 @@ export async function planSync(
   const indexById = new Map(index.map((e) => [e.id, e]));
   const idByUrl = new Map(index.flatMap((e) => e.sourceUrls.map((u) => [u, e.id] as const)));
   const takenSlugs = new Set(index.map((e) => e.slug));
+  const candidates: Candidate[] = index.map((e) => ({
+    id: e.id,
+    name: e.name,
+    date: e.date,
+    sources: new Set(e.sourceUrls.map((u) => sourceForUrl(u)).filter((x): x is SourceName => x !== null)),
+  }));
 
   const skipped: Skipped[] = [];
-  const prepared: Prepared[] = [];
+  const groups = new Map<string, Group>();
+  const addToGroup = (id: string, item: Item, newSlug?: string) => {
+    const group = groups.get(id) ?? { id, newSlug, items: [] };
+    group.items.push(item);
+    groups.set(id, group);
+  };
 
-  for (const input of dedupeByUrl(inputs, skipped)) {
-    const url = input.url;
-    const source = sourceForUrl(url);
+  // Primary source first, so an ActiUp page creates the race a bibchung page then joins.
+  const ordered = dedupeByUrl(inputs, skipped)
+    .map((input) => ({ input, url: input.url, source: sourceForUrl(input.url) }))
+    .sort((a, b) => sourceRank(a.source) - sourceRank(b.source));
+
+  for (const { input, url, source } of ordered) {
     if (!source) {
       skipped.push({ url, reason: "not an event page from a known source" });
       continue;
     }
-    const id = idByUrl.get(url);
-    if (id) {
-      prepared.push({ input, url, source, id });
+    const known = idByUrl.get(url);
+    if (known) {
+      addToGroup(known, { input, url, source });
       continue;
     }
     const normalized = normalizeExtracted(input.extracted);
@@ -81,15 +107,25 @@ export async function planSync(
       skipped.push({ url, reason: normalized.reason });
       continue;
     }
+    // The same race listed on another source joins that race instead of creating a new one.
+    const match = findMatch(candidates, source, normalized.race.name, normalized.race.date);
+    if (match) {
+      match.sources.add(source);
+      idByUrl.set(url, match.id);
+      addToGroup(match.id, { input, url, source });
+      continue;
+    }
     const newSlug = allocateSlug(SOURCES[source].slugOf(new URL(url)), takenSlugs);
     takenSlugs.add(newSlug);
-    const created = newId();
-    idByUrl.set(url, created);
-    prepared.push({ input, url, source, id: created, newSlug });
+    const id = newId();
+    idByUrl.set(url, id);
+    candidates.push({ id, name: normalized.race.name, date: normalized.race.date, sources: new Set([source]) });
+    addToGroup(id, { input, url, source }, newSlug);
   }
 
+  const planned = [...groups.values()];
   const existing = await Promise.all(
-    prepared.map(async ({ id }) => {
+    planned.map(async ({ id }) => {
       if (!indexById.has(id)) return null;
       const text = await store.read(racePath(id));
       if (text === null) throw new Error(`${racePath(id)} is listed in ${INDEX_PATH} but missing`);
@@ -101,33 +137,35 @@ export async function planSync(
   const changes: RaceChange[] = [];
   const nextIndex = new Map(indexById);
 
-  prepared.forEach(({ input, url, source, id, newSlug }, i) => {
+  planned.forEach(({ id, newSlug, items }, i) => {
     const prev = existing[i] ?? null;
     const slug = prev?.slug ?? newSlug!;
-    const prevSources = prev?.sources ?? [];
-    const prevSource = prevSources.find((s) => s.name === source && s.url === url);
-
-    const nextSource: RaceSource = {
-      name: source,
-      url,
-      lastCheckedAt: input.checkedAt,
-      lastChangedAt: prevSource?.lastChangedAt ?? input.checkedAt,
-      rawExtracted: input.extracted,
-    };
-    const sources = prevSource
-      ? prevSources.map((s) => (s === prevSource ? nextSource : s))
-      : [...prevSources, nextSource];
+    let sources = prev?.sources ?? [];
+    const touched: RaceSource[] = [];
+    for (const { input, url, source } of items) {
+      const prevSource = sources.find((s) => s.name === source && s.url === url);
+      const nextSource: RaceSource = {
+        name: source,
+        url,
+        lastCheckedAt: input.checkedAt,
+        lastChangedAt: prevSource?.lastChangedAt ?? input.checkedAt,
+        rawExtracted: input.extracted,
+      };
+      if (!prevSource || !deepEqual(prevSource.rawExtracted, input.extracted)) touched.push(nextSource);
+      sources = prevSource ? sources.map((s) => (s === prevSource ? nextSource : s)) : [...sources, nextSource];
+    }
 
     const reconciled = reconcile(sources);
     if ("error" in reconciled) {
-      skipped.push({ url, reason: reconciled.error });
+      for (const { url } of items) skipped.push({ url, reason: reconciled.error });
       return;
     }
 
     const canonical = prev ? stabilize(prev, reconciled.fields) : reconciled.fields;
     const fields = prev ? changedFields(prev, canonical) : [];
-    if (prev && fields.length === 0 && prev.confidence === reconciled.confidence) return;
-    nextSource.lastChangedAt = input.checkedAt;
+    const joined = prev ? sources.length !== prev.sources.length : false;
+    if (prev && fields.length === 0 && !joined && prev.confidence === reconciled.confidence) return;
+    for (const source of touched) source.lastChangedAt = source.lastCheckedAt;
 
     const record: Race = {
       id,
@@ -140,14 +178,21 @@ export async function planSync(
     };
     const valid = RaceSchema.safeParse(record);
     if (!valid.success) {
-      skipped.push({ url, reason: `invalid record: ${valid.error.issues.map((e) => `${e.path.join(".")}: ${e.message}`).join("; ")}` });
+      const reason = `invalid record: ${valid.error.issues.map((e) => `${e.path.join(".")}: ${e.message}`).join("; ")}`;
+      for (const { url } of items) skipped.push({ url, reason });
       return;
     }
 
     files[racePath(id)] = serialize(record);
-    changes.push({ id, slug, kind: prev ? "updated" : "added", fields });
-    const urls = new Set([...(nextIndex.get(id)?.sourceUrls ?? []), url]);
-    nextIndex.set(id, { id, slug, lastModified: now, sourceUrls: [...urls].sort() });
+    changes.push({ id, slug, kind: prev ? "updated" : "added", fields, ...(joined && { joined: true }) });
+    nextIndex.set(id, {
+      id,
+      slug,
+      name: record.name,
+      date: record.date,
+      lastModified: now,
+      sourceUrls: [...new Set(sources.map((s) => s.url))].sort(),
+    });
   });
 
   if (changes.length > 0) {
@@ -155,6 +200,46 @@ export async function planSync(
     files[INDEX_PATH] = serialize(sorted);
   }
   return { files, changes, skipped };
+}
+
+function sourceRank(source: SourceName | null): number {
+  return source ? SOURCE_PRIORITY.indexOf(source) : Number.POSITIVE_INFINITY;
+}
+
+/**
+ * The race another source already has for this page: race day within a day
+ * (multi-day events list different days), and a name that's mostly the same
+ * ("Vũng Tàu City Trail 2026" vs "VungTau CityTrail 2026"). Best match wins.
+ */
+function findMatch(candidates: Candidate[], source: SourceName, name: string, date: string): Candidate | null {
+  let best: Candidate | null = null;
+  let bestScore = MATCH_THRESHOLD;
+  for (const c of candidates) {
+    if (c.sources.has(source) || Math.abs(Date.parse(c.date) - Date.parse(date)) > 86_400_000) continue;
+    const score = nameSimilarity(c.name, name);
+    if (score >= bestScore) [best, bestScore] = [c, score];
+  }
+  return best;
+}
+
+const MATCH_THRESHOLD = 0.5;
+
+/** Dice coefficient over character bigrams of the folded name, spaces removed. */
+export function nameSimilarity(a: string, b: string): number {
+  const grams = (s: string) => {
+    const t = foldVietnamese(s).replace(/\s+/g, "");
+    const out = new Map<string, number>();
+    for (let i = 0; i < t.length - 1; i++) out.set(t.slice(i, i + 2), (out.get(t.slice(i, i + 2)) ?? 0) + 1);
+    return out;
+  };
+  const ga = grams(a);
+  const gb = grams(b);
+  let shared = 0;
+  let total = 0;
+  for (const n of ga.values()) total += n;
+  for (const n of gb.values()) total += n;
+  for (const [g, n] of ga) shared += Math.min(n, gb.get(g) ?? 0);
+  return total === 0 ? 0 : (2 * shared) / total;
 }
 
 function dedupeByUrl(inputs: readonly SyncInput[], skipped: Skipped[]): SyncInput[] {
@@ -187,7 +272,7 @@ export function formatCommitMessage(plan: SyncPlan, context?: string): string {
     `data: ${counts.join(", ")}`,
     "",
     ...added.map((c) => `+ ${c.slug} (${c.id})`),
-    ...updated.map((c) => `~ ${c.slug}: ${c.fields.join(", ") || "confidence"}`),
+    ...updated.map((c) => `~ ${c.slug}: ${[...(c.joined ? ["+source"] : []), ...c.fields].join(", ") || "confidence"}`),
   ];
   if (context) lines.push("", context);
   return lines.join("\n");

@@ -29,7 +29,9 @@ This repo is the **data layer only**. It does not serve an API and it has no dat
 | openrace-api (later) | Cloudflare Worker + D1. Reads this repo and serves the public API |
 | openrace-mcp, frontend (later) | Consume the API |
 
-MVP scope: a single source (ActiUp, actiup.net) with no cross-source verification. The schema is already multi-source, so reconciliation can be added later without migrating existing data.
+Sources:
+- **ActiUp** (actiup.net) is the primary source for every field.
+- **bibchung** (bibchung.pro) sells bibs in groups at a discount. It adds a second place to buy (its URL is in `sources[]`) and the group price (`groupPriceMin`), and it fills fields ActiUp leaves empty, such as distances and the full price range.
 
 ## Layout
 
@@ -65,6 +67,7 @@ test/                    node:test suite
   "location": { "venue": "Tay Ho Lake", "city": "Hanoi", "region": "north" },
   "priceMin": 300000,
   "priceMax": 800000,
+  "groupPriceMin": 640000,                      // bibchung's discounted group price, or null
   "currency": "VND",
   "registrationStatus": "open",               // open | closing_soon | sold_out | closed
   "registrationUrl": "https://…",
@@ -79,7 +82,7 @@ test/                    node:test suite
       "rawExtracted": { /* verbatim Firecrawl JSON extraction */ }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",               // single-sourced | multi-sourced | conflicting
   "createdAt": "…",
   "updatedAt": "…"
 }
@@ -88,7 +91,9 @@ test/                    node:test suite
 The schema lives in `scripts/lib/schema.ts` (zod). Notes:
 
 - **`null` means unknown.** `venue`, `city`, `region`, `priceMin`, `priceMax`, `registrationStatus`, `registrationUrl`, `organizer` and `foreignerEligible` are `null` when the source doesn't state them. We never guess a value such as `open` or `false`. ActiUp event pages only show a "from" price (`priceMin`) and say nothing about foreign runners, so `priceMax` and `foreignerEligible` are always `null` for now.
-- **`sources` is always an array** and **`confidence` is always present**, even with a single source. Canonical fields are *derived* from `sources[].rawExtracted` by `scripts/lib/reconcile.ts`, so adding a second source means changing `reconcile` (and adding new `confidence` values), not rewriting files.
+- **`sources` is always an array** and **`confidence` is always present**, even with a single source. Each source keeps its URL (where to buy) and its verbatim extraction.
+- **Merging sources** (`scripts/lib/reconcile.ts`): each field comes from the highest-priority source that has a value, with ActiUp first and bibchung second. So bibchung fills only what ActiUp leaves empty, and `groupPriceMin` can only come from bibchung. `confidence` is `single-sourced` (one usable source), `multi-sourced` (sources agree on race day) or `conflicting` (they disagree, which gets flagged in Discord).
+- **Matching** (`scripts/sync.ts`): a page from a source that doesn't have the race yet joins an existing race when race day is within 1 day and the names are mostly the same (character-bigram similarity ≥ 0.5, ignoring spaces and diacritics). Otherwise it becomes a new race.
 - **Normalization** (`scripts/lib/extraction.ts`): standard distances are snapped (`21.1K` and `Half Marathon` both become `21km`), city names are mapped to an English display name plus a region (`TP. Hồ Chí Minh` becomes `Ho Chi Minh City` / `south`), and dates and prices are coerced. As a result, LLM wording drift between checks doesn't register as a change.
 - **`types`** (filterable, one or more per race): `road_run`, `trail_run`, `city_trail` (urban trail), `obstacle_run`, `triathlon` (swim+bike+run), `duathlon` (run+bike+run), `aquathlon` (swim+run), `aquabike` (swim+bike), `swimrun`, `swim`, `road_cycle`, `mtb`, `other`. Distance classes (marathon, half, ultra) are not types: filter on `distances`. The model picks the types; names containing "City Trail", "Triathlon"/"Ironman", "Duathlon", "Aquathlon" or "Swimrun" force the matching type.
 - **Identity:** `id` is a random UUID. It's the file name and the key everywhere, and it never changes. `slug` is for frontend URLs and can be changed freely, by hand or by a future slug scheme; ingestion keeps whatever slug a race has. A new race starts with the source's own slug (ActiUp's `/vi/event/<slug>`), with a `-2` suffix if another race already uses it. The source URL maps to the race through `index.json`'s `sourceUrls`, so a renamed race keeps its file.
@@ -112,7 +117,11 @@ Rules (`scripts/lib/checks.ts`):
 - **Rate limit.** Requests are sequential, 6.5 s apart, and a 429 waits 60 s before retrying.
 - **Commits.** Everything goes into **one commit per run** through the Git Data API. If `main` moved meanwhile, the run re-plans on the new head (up to 3 attempts). An unchanged race writes nothing.
 
-Only `/vi/event/<slug>` pages count as events. The `/vi/event/<id>/tickets` pages are a login wall, and the `/en/` twins would duplicate races.
+Event pages per source:
+- **ActiUp:** only `/vi/event/<slug>`. The `/vi/event/<id>/tickets` pages are a login wall, and the `/en/` twins would duplicate races.
+- **bibchung:** only `/events/<slug>`, not `/en/events/…`. Its listing is paginated (`/events?page=2`), and discovery follows the page links, up to 10 pages.
+
+Each source has its own extraction schema and prompt (`EXTRACTIONS` in `scripts/lib/extraction.ts`). A race on both sites costs 2 × 5 = 10 credits per check.
 
 ### Setup
 

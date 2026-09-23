@@ -4,7 +4,7 @@ import { isCandidate, isRefreshDue, vietnamDate, type Check } from "../scripts/l
 import { normalizeDistance, normalizeExtracted } from "../scripts/lib/extraction.ts";
 import { resolvePlace } from "../scripts/lib/places.ts";
 import { INDEX_PATH, RaceSchema, racePath, type IndexEntry, type Race } from "../scripts/lib/schema.ts";
-import { formatCommitMessage, planSync, type RaceStore, type SyncInput } from "../scripts/sync.ts";
+import { formatCommitMessage, nameSimilarity, planSync, type RaceStore, type SyncInput } from "../scripts/sync.ts";
 
 const URL_A = "https://actiup.net/vi/event/tay-ho-half-marathon-2026";
 const URL_B = "https://actiup.net/vi/event/da-lat-ultra-trail-2026";
@@ -65,7 +65,9 @@ describe("planSync", () => {
     assert.equal(race.createdAt, race.updatedAt);
 
     const index = JSON.parse(p.files[INDEX_PATH]!) as IndexEntry[];
-    assert.deepEqual(index, [{ id, slug: "tay-ho-half-marathon-2026", lastModified: "2026-09-23T10:00:05.000Z", sourceUrls: [URL_A] }]);
+    assert.deepEqual(index, [
+      { id, slug: "tay-ho-half-marathon-2026", name: "Tay Ho Half Marathon 2026", date: "2026-11-15", lastModified: "2026-09-23T10:00:05.000Z", sourceUrls: [URL_A] },
+    ]);
   });
 
   it("writes nothing when the extraction is unchanged", async () => {
@@ -152,6 +154,78 @@ describe("planSync", () => {
     ]);
     assert.deepEqual(p.files, {});
     assert.equal(p.skipped.length, 5);
+  });
+});
+
+describe("multiple sources", () => {
+  const BIB_URL = "https://bibchung.pro/events/tayho-hm-2026";
+  const bib = {
+    pageKind: "sport",
+    types: ["road_run"],
+    name: "TayHo Half Marathon 2026",
+    date: "2026-11-15",
+    distances: ["21KM", "10KM", "5KM"],
+    venue: "Hồ Tây",
+    city: "Hà Nội",
+    priceMin: 300000,
+    priceMax: 950000,
+    groupPriceMin: 240000,
+    organizer: "Tay Ho Sports",
+  };
+  const actiupOnly = { ...extractedA, distances: [], priceMax: undefined };
+
+  it("joins a bibchung page to the ActiUp race: ActiUp wins, bibchung fills the gaps", async () => {
+    const store = memoryStore();
+    Object.assign(store.files, (await plan(store, [input(URL_A, actiupOnly)])).files);
+    const p = await plan(store, [input(BIB_URL, bib)]);
+    const id = p.changes[0]!.id;
+    assert.equal(p.changes.length, 1);
+    assert.equal(p.changes[0]!.kind, "updated");
+    assert.equal(p.changes[0]!.joined, true);
+    const race = RaceSchema.parse(JSON.parse(p.files[racePath(id)]!));
+    assert.equal(race.name, "Tay Ho Half Marathon 2026"); // ActiUp's
+    assert.equal(race.slug, "tay-ho-half-marathon-2026"); // unchanged
+    assert.deepEqual(race.location, { venue: "Tay Ho Lake", city: "Hanoi", region: "north" }); // ActiUp's
+    assert.deepEqual(race.distances, ["5km", "10km", "21km"]); // bibchung fills
+    assert.equal(race.priceMin, 300000);
+    assert.equal(race.priceMax, 950000); // bibchung fills
+    assert.equal(race.groupPriceMin, 240000); // bibchung only
+    assert.equal(race.confidence, "multi-sourced");
+    assert.deepEqual(race.sources.map((s) => s.name), ["actiup", "bibchung"]);
+    const index = JSON.parse(p.files[INDEX_PATH]!) as IndexEntry[];
+    assert.deepEqual(index[0]!.sourceUrls, [URL_A, BIB_URL]);
+    assert.match(formatCommitMessage(p), /~ tay-ho-half-marathon-2026: \+source, distances, priceMax, groupPriceMin/);
+  });
+
+  it("pairs both pages when they arrive in the same run, in either order", async () => {
+    const p = await plan(memoryStore(), [input(BIB_URL, bib), input(URL_A, actiupOnly)]);
+    assert.equal(p.changes.length, 1);
+    const race = RaceSchema.parse(JSON.parse(p.files[racePath(p.changes[0]!.id)]!));
+    assert.equal(race.slug, "tay-ho-half-marathon-2026"); // the primary source's slug
+    assert.equal(race.sources.length, 2);
+  });
+
+  it("flags a race day mismatch as conflicting", async () => {
+    const p = await plan(memoryStore(), [input(URL_A, actiupOnly), input(BIB_URL, { ...bib, date: "2026-11-16" })]);
+    const race = RaceSchema.parse(JSON.parse(p.files[racePath(p.changes[0]!.id)]!));
+    assert.equal(race.confidence, "conflicting");
+    assert.equal(race.date, "2026-11-15"); // ActiUp's
+  });
+
+  it("keeps different races apart, and a bibchung-only race gets its own slug", async () => {
+    const p = await plan(memoryStore(), [
+      input(URL_A, actiupOnly),
+      input("https://bibchung.pro/events/bac-ninh-legacy", { ...bib, name: "Bắc Ninh Legacy Marathon" }), // same day
+      input("https://bibchung.pro/events/tayho-2027", { ...bib, date: "2027-11-14" }), // other year
+    ]);
+    assert.deepEqual(p.changes.map((c) => c.slug).sort(), ["bac-ninh-legacy", "tay-ho-half-marathon-2026", "tayho-2027"]);
+    for (const c of p.changes) assert.equal(RaceSchema.parse(JSON.parse(p.files[racePath(c.id)]!)).confidence, "single-sourced");
+  });
+
+  it("scores name similarity across spacing and diacritics", () => {
+    assert.ok(nameSimilarity("Giải chạy Vũng Tàu City Trail 2026", "VungTau CityTrail 2026") >= 0.5);
+    assert.ok(nameSimilarity("Tết Run Miền Nam 2027", "TẾT RUN MIỀN NAM 2027") === 1);
+    assert.ok(nameSimilarity("Bắc Ninh Legacy Marathon", "Tay Ho Half Marathon 2026") < 0.5);
   });
 });
 

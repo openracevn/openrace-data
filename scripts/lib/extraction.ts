@@ -1,10 +1,17 @@
 import { foldVietnamese, resolvePlace } from "./places.ts";
-import { RACE_TYPES, REGISTRATION_STATUSES, type CanonicalRace, type RaceType, type RegistrationStatus } from "./schema.ts";
+import {
+  RACE_TYPES,
+  REGISTRATION_STATUSES,
+  type CanonicalRace,
+  type RaceType,
+  type RegistrationStatus,
+  type SourceName,
+} from "./schema.ts";
 
 /**
- * JSON schema handed to Firecrawl's `changeTracking` (json mode) format. Whatever
- * Firecrawl returns for it is stored verbatim as a source's `rawExtracted`, and
- * `normalizeExtracted` turns it into canonical race fields.
+ * JSON schemas handed to Firecrawl's JSON format, one per source (their pages show
+ * different things). Whatever Firecrawl returns is stored verbatim as a source's
+ * `rawExtracted`, and `normalizeExtracted` turns it into canonical race fields.
  */
 /** sport = an endurance sports event; non_sport = concert, tour, hotel, conference; none = login, error or empty page. */
 export const PAGE_KINDS = ["sport", "non_sport", "none"] as const;
@@ -18,9 +25,7 @@ const TYPE_FROM_NAME: [RegExp, RaceType][] = [
   [/\bswimrun\b/, "swimrun"],
 ];
 
-export const EXTRACTION_SCHEMA = {
-  type: "object",
-  properties: {
+const COMMON_PROPERTIES = {
     pageKind: {
       type: "string",
       enum: [...PAGE_KINDS],
@@ -44,9 +49,6 @@ export const EXTRACTION_SCHEMA = {
     },
     venue: { type: "string", description: "Start/finish venue or area, if stated." },
     city: { type: "string", description: "City or province in Vietnam where the race takes place." },
-    // ActiUp event pages only show a "Chỉ từ" (from) price; the full price list is
-    // behind a login. Asking for a max made the model copy the from price or invent one.
-    priceMin: { type: "number", description: "The \"Chỉ từ\" (from) price as a plain number in the listed currency, no separators. \"Miễn phí\" means 0." },
     currency: { type: "string", description: "ISO 4217 currency code of the prices, usually VND." },
     registrationStatus: {
       type: "string",
@@ -55,16 +57,49 @@ export const EXTRACTION_SCHEMA = {
     },
     registrationUrl: { type: "string", description: "Absolute URL where runners register or buy a bib." },
     organizer: { type: "string", description: "Organizing company or body." },
-  },
-  required: ["pageKind", "name", "date"],
 } as const;
 
-export const EXTRACTION_PROMPT =
+const COMMON_PROMPT =
   "Extract details of the sports event (running, trail, triathlon, swimming, cycling, ...) described on this event page. The page is usually in Vietnamese: " +
-  "convert dates such as \"21 - 22 tháng 11, 2026\" to YYYY-MM-DD, and prices such as \"350.000đ\" to plain numbers. " +
-  "Ignore the \"Có thể bạn sẽ thích\" section: those are other events. " +
+  "convert dates such as \"21 - 22 tháng 11, 2026\" or \"24/01/2027\" to YYYY-MM-DD, and prices such as \"350.000đ\" to plain numbers. " +
   "If the page shows no event details (login, error or empty page), set pageKind to none and omit everything else. " +
   "Only report what the page states; omit fields that are not stated. Never guess.";
+
+export type Extraction = { schema: Record<string, unknown>; prompt: string };
+
+export const EXTRACTIONS: Record<SourceName, Extraction> = {
+  actiup: {
+    schema: {
+      type: "object",
+      properties: {
+        ...COMMON_PROPERTIES,
+        // ActiUp event pages only show a "Chỉ từ" (from) price; the full price list is
+        // behind a login. Asking for a max made the model copy the from price or invent one.
+        priceMin: { type: "number", description: "The \"Chỉ từ\" (from) price as a plain number in the listed currency, no separators. \"Miễn phí\" means 0." },
+      },
+      required: ["pageKind", "name", "date"],
+    },
+    prompt: `${COMMON_PROMPT} Ignore the "Có thể bạn sẽ thích" section: those are other events.`,
+  },
+  // bibchung sells bibs in groups at a discount. Its registration section lists
+  // each tier and distance with the regular price, then the bibchung price:
+  //   EARLY BIRD · 07/09/2026 – 22/10/2026 · 21KM · 678.000 ₫ · 542.000 ₫
+  bibchung: {
+    schema: {
+      type: "object",
+      properties: {
+        ...COMMON_PROPERTIES,
+        priceMin: { type: "number", description: "Cheapest regular (non-discounted) registration price, as a plain number. In each price row the first price is the regular one." },
+        priceMax: { type: "number", description: "Most expensive regular (non-discounted) registration price, as a plain number." },
+        groupPriceMin: { type: "number", description: "Cheapest discounted bibchung price, as a plain number. In each price row the second, lower price is the bibchung price." },
+      },
+      required: ["pageKind", "name", "date"],
+    },
+    prompt:
+      `${COMMON_PROMPT} Distances are listed per price row (e.g. "21KM"). ` +
+      "Each price row shows the regular price followed by the lower bibchung (group) price.",
+  },
+};
 
 export type NormalizeResult =
   | { ok: true; race: CanonicalRace }
@@ -102,6 +137,7 @@ export function normalizeExtracted(raw: Record<string, unknown>): NormalizeResul
       location: { venue: str(raw.venue), city: place.city, region: place.region },
       priceMin,
       priceMax,
+      groupPriceMin: normalizePrice(raw.groupPriceMin),
       currency: str(raw.currency)?.toUpperCase().slice(0, 3) ?? "VND",
       registrationStatus: REGISTRATION_STATUSES.includes(status as RegistrationStatus)
         ? (status as RegistrationStatus)

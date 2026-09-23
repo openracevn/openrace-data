@@ -4,8 +4,8 @@
 
 | Component | Where it runs | Code | Job |
 | --- | --- | --- | --- |
-| Race checker | GitHub Actions (`check.yml`: daily 00:17 UTC, or by hand) | `scripts/check.ts` | Finds new ActiUp races, re-checks the ones that are due, commits to GitHub |
-| Firecrawl | Firecrawl (hosted API) | `scripts/lib/firecrawl.ts` | Scrapes and renders pages, and does the LLM JSON extraction (`/v2/scrape`) |
+| Race checker | GitHub Actions (`check.yml`: **manual only for now**; daily cron is commented out) | `scripts/check.ts` | Finds new ActiUp races, re-checks the ones that are due, commits to GitHub |
+| Firecrawl | Firecrawl (hosted API) | `scripts/lib/firecrawl.ts` | Scrapes and renders pages, and does the LLM JSON extraction (`/v2/scrape`), for ActiUp (primary) and bibchung (group-purchase prices) |
 | Data repo `openracevn/openrace-data` (private) | GitHub | `data/`, `state/` | SSOT: `data/races/*.json` + `data/index.json`; the check log is `state/checks.json`; git history is the audit trail |
 | Main workflow | GitHub Actions | `.github/workflows/main.yml` | Validates pushes to `main`; when `data/` changed, notifies the API and Discord |
 | CI workflow | GitHub Actions | `.github/workflows/ci.yml` | Typecheck, tests and `validate` on pull requests |
@@ -45,11 +45,12 @@ main.yml  (skipped entirely when only state/** changed)
 | `scripts/lib/extraction.ts` | `EXTRACTION_SCHEMA` / `EXTRACTION_PROMPT`; `normalizeExtracted` → canonical fields, incl. `types` (name rules + model) |
 | `scripts/lib/diff.ts` | `changedFields`, and `stabilize` (ignores venue/organizer rewording) |
 | `scripts/lib/places.ts` | Vietnamese city/province → English display name + region; tries each comma-separated part |
-| `scripts/lib/reconcile.ts` | sources[] → canonical fields + confidence (MVP: highest-priority source wins) |
+| `scripts/lib/reconcile.ts` | sources[] → canonical fields (per field, first source with a value: ActiUp, then bibchung) + confidence (single-/multi-sourced, conflicting) |
 | `scripts/lib/sources.ts` | Per source: hosts, listing URLs, the event-page test (`/vi/event/<slug>` only) |
 | `scripts/lib/slug.ts` | `canonicalSourceUrl` (the initial race slug comes from `SOURCES[x].slugOf`) |
 | `scripts/lib/github.ts` | Octokit: read files at a commit, write many files as one commit |
-| `scripts/sync.ts` | `planSync` (pure, testable), `syncToGitHub` (I/O + retry + `extraFiles` for the check log), `formatCommitMessage` |
+| `scripts/sync.ts` | `planSync` (pure: groups a run's pages per race, matches new pages to races from other sources by date + `nameSimilarity`), `syncToGitHub` (I/O + retry + `extraFiles` for the check log), `formatCommitMessage` |
+| `scripts/renormalize.ts` | Re-derive canonical fields from stored `rawExtracted` after rule changes (no scraping) |
 
 ## Tooling
 

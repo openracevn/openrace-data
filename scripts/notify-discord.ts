@@ -12,7 +12,7 @@ import { RACES_DIR, type CanonicalField, type Race } from "./lib/schema.ts";
 
 const EMPTY_TREE = "4b825dc642cb6eb9a060e54bf8d69288fbee4904";
 const DISCORD_LIMIT = 2000;
-const SHOW_VALUES: CanonicalField[] = ["types", "date", "priceMin", "priceMax", "registrationStatus", "foreignerEligible"];
+const SHOW_VALUES: CanonicalField[] = ["types", "date", "priceMin", "priceMax", "groupPriceMin", "registrationStatus", "foreignerEligible"];
 
 const webhook = env("DISCORD_WEBHOOK_URL");
 if (!webhook) {
@@ -42,7 +42,7 @@ for (const line of diff) {
   const id = path.slice(RACES_DIR.length + 1, -".json".length);
   if (status === "A") {
     const r = readRace(after, path);
-    added.push(`➕ **${r?.name ?? id}** (${[r?.date, r?.location.city].filter(Boolean).join(", ")}) \`${r?.slug ?? id}\``);
+    added.push(`➕ **${r?.name ?? id}** (${[r?.date, r?.location.city].filter(Boolean).join(", ")}) \`${r?.slug ?? id}\`${sourceNote(r)}`);
   } else if (status === "D") {
     const r = readRace(before, path);
     removed.push(`➖ ${r ? `**${r.name}** \`${r.slug}\`` : `\`${id}\``}`);
@@ -55,7 +55,9 @@ for (const line of diff) {
     }
     const detail = changedFields(a, b).map((f) => (SHOW_VALUES.includes(f) ? `${f} ${fmt(a[f])} → ${fmt(b[f])}` : f));
     if (a.slug !== b.slug) detail.unshift(`slug ${a.slug} → ${b.slug}`);
-    updated.push(`✏️ **${b.name}** \`${b.slug}\`: ${detail.join(", ") || "sources/metadata only"}`);
+    for (const s of b.sources) if (!a.sources.some((x) => x.url === s.url)) detail.unshift(`+${s.name}`);
+    if (a.confidence !== b.confidence) detail.push(`confidence ${a.confidence} → ${b.confidence}`);
+    updated.push(`✏️ **${b.name}** \`${b.slug}\`: ${detail.join(", ") || "sources/metadata only"}${b.confidence === "conflicting" ? " ⚠️ sources disagree on race day" : ""}`);
   }
 }
 
@@ -98,6 +100,12 @@ function resolveBase(sha: string | undefined, head: string): string {
   } catch {
     return EMPTY_TREE;
   }
+}
+
+function sourceNote(r: Race | null): string {
+  if (!r) return "";
+  const names = r.sources.map((s) => s.name).join(" + ");
+  return ` [${names}]${r.confidence === "conflicting" ? " ⚠️ sources disagree on race day" : ""}`;
 }
 
 function readRace(rev: string, path: string): Race | null {
