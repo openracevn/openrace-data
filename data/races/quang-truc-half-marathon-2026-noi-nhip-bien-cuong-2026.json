@@ -3,19 +3,225 @@
   "slug": "quang-truc-half-marathon-2026-noi-nhip-bien-cuong",
   "name": "Quảng Trực Half Marathon 2026 - Nối nhịp biên cương",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2026-11-14",
   "endDate": "2026-11-15",
   "seriesId": null,
   "organizerId": "uy-ban-nhan-dan-dan-xa-quang-truc",
   "organizer": "Ủy ban nhân dân dân xã Quảng Trực",
-  "distances": [],
+  "distances": [
+    "1.5km",
+    "5km",
+    "10km",
+    "21km"
+  ],
   "location": {
     "venue": "Xã Quảng Trực, tỉnh Lâm Đồng",
-    "city": null
+    "city": "Lâm Đồng"
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": "resident",
+      "price": 649000,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": "resident",
+      "price": 499000,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": "resident",
+      "price": 399000,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": "resident",
+      "price": 269000,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Group 10-29",
+      "kind": "group",
+      "audience": "resident",
+      "price": 616050,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Group 30-49",
+      "kind": "group",
+      "audience": "resident",
+      "price": 584100,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Group 50-99",
+      "kind": "group",
+      "audience": "resident",
+      "price": 551500,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Group 100",
+      "kind": "group",
+      "audience": "resident",
+      "price": 519200,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Group 10-29",
+      "kind": "group",
+      "audience": "resident",
+      "price": 474050,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Group 30-49",
+      "kind": "group",
+      "audience": "resident",
+      "price": 449100,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Group 50-99",
+      "kind": "group",
+      "audience": "resident",
+      "price": 424000,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Group 100",
+      "kind": "group",
+      "audience": "resident",
+      "price": 399200,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Group 10-29",
+      "kind": "group",
+      "audience": "resident",
+      "price": 379050,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Group 30-49",
+      "kind": "group",
+      "audience": "resident",
+      "price": 359100,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Group 50-99",
+      "kind": "group",
+      "audience": "resident",
+      "price": 339000,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Group 100",
+      "kind": "group",
+      "audience": "resident",
+      "price": 319200,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Group 10-29",
+      "kind": "group",
+      "audience": "resident",
+      "price": 255050,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Group 30-49",
+      "kind": "group",
+      "audience": "resident",
+      "price": 239100,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Group 50-99",
+      "kind": "group",
+      "audience": "resident",
+      "price": 223000,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Group 100",
+      "kind": "group",
+      "audience": "resident",
+      "price": 207200,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -38,7 +244,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/quang-truc-half-marathon-2026-noi-nhip-bien-cuong",
-      "lastCheckedAt": "2026-09-23T18:30:40.997Z",
+      "lastCheckedAt": "2026-09-23T18:51:18.729Z",
       "lastChangedAt": "2026-09-23T18:30:40.997Z",
       "extracted": {
         "facts": {
@@ -51,6 +257,27 @@
           "registrationStatus": "open",
           "fromPrice": 269000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/quang-truc-half-marathon-2026-noi-nhip-bien-cuong",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Quảng Trực Half Marathon 2026 - Nối nhịp biên cương",
+              "date": "2026-11-21",
+              "endDate": "2026-11-22",
+              "distances": [],
+              "venue": "",
+              "city": "Lâm Đồng",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/18UfSrmJAqM-d-3YFToccatM205CyqLqC/view?usp=drive_link",
@@ -60,11 +287,188 @@
         "organizer": {
           "id": "uy-ban-nhan-dan-dan-xa-quang-truc",
           "name": "Ủy ban nhân dân dân xã Quảng Trực"
-        }
+        },
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/09/07/1788750003442623/B%E1%BA%A3ng-gi%C3%A1-v%C3%A9.png",
+            "json": {
+              "prices": [
+                {
+                  "distance": "21KM",
+                  "tier": "Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "09/09",
+                  "to": "30/09",
+                  "price": 649000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "09/09",
+                  "to": "30/09",
+                  "price": 499000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "09/09",
+                  "to": "30/09",
+                  "price": 399000
+                },
+                {
+                  "distance": "KIDS RUN 1,5 KM",
+                  "tier": "Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "09/09",
+                  "to": "30/09",
+                  "price": 269000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Group 10-29",
+                  "audience": "Việt Nam",
+                  "from": "09/09",
+                  "to": "30/09",
+                  "price": 616050
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Group 30-49",
+                  "audience": "Việt Nam",
+                  "from": "09/09",
+                  "to": "30/09",
+                  "price": 584100
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Group 50-99",
+                  "audience": "Việt Nam",
+                  "from": "09/09",
+                  "to": "30/09",
+                  "price": 551500
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Group 100",
+                  "audience": "Việt Nam",
+                  "from": "09/09",
+                  "to": "30/09",
+                  "price": 519200
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Group 10-29",
+                  "audience": "Việt Nam",
+                  "from": "09/09",
+                  "to": "30/09",
+                  "price": 474050
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Group 30-49",
+                  "audience": "Việt Nam",
+                  "from": "09/09",
+                  "to": "30/09",
+                  "price": 449100
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Group 50-99",
+                  "audience": "Việt Nam",
+                  "from": "09/09",
+                  "to": "30/09",
+                  "price": 424000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Group 100",
+                  "audience": "Việt Nam",
+                  "from": "09/09",
+                  "to": "30/09",
+                  "price": 399200
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Group 10-29",
+                  "audience": "Việt Nam",
+                  "from": "09/09",
+                  "to": "30/09",
+                  "price": 379050
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Group 30-49",
+                  "audience": "Việt Nam",
+                  "from": "09/09",
+                  "to": "30/09",
+                  "price": 359100
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Group 50-99",
+                  "audience": "Việt Nam",
+                  "from": "09/09",
+                  "to": "30/09",
+                  "price": 339000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Group 100",
+                  "audience": "Việt Nam",
+                  "from": "09/09",
+                  "to": "30/09",
+                  "price": 319200
+                },
+                {
+                  "distance": "KIDS RUN 1,5 KM",
+                  "tier": "Group 10-29",
+                  "audience": "Việt Nam",
+                  "from": "09/09",
+                  "to": "30/09",
+                  "price": 255050
+                },
+                {
+                  "distance": "KIDS RUN 1,5 KM",
+                  "tier": "Group 30-49",
+                  "audience": "Việt Nam",
+                  "from": "09/09",
+                  "to": "30/09",
+                  "price": 239100
+                },
+                {
+                  "distance": "KIDS RUN 1,5 KM",
+                  "tier": "Group 50-99",
+                  "audience": "Việt Nam",
+                  "from": "09/09",
+                  "to": "30/09",
+                  "price": 223000
+                },
+                {
+                  "distance": "KIDS RUN 1,5 KM",
+                  "tier": "Group 100",
+                  "audience": "Việt Nam",
+                  "from": "09/09",
+                  "to": "30/09",
+                  "price": 207200
+                }
+              ],
+              "distances": [
+                "21KM",
+                "10KM",
+                "5KM",
+                "KIDS RUN 1,5 KM"
+              ],
+              "date": "2026-09-09",
+              "currency": "VND"
+            }
+          }
+        ]
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-23T18:52:52.246Z"
 }

@@ -10,12 +10,107 @@
   "seriesId": "vietnam-festrival",
   "organizerId": "cong-ty-tnhh-stop-and-sports",
   "organizer": "CÔNG TY TNHH STOP AND SPORTS",
-  "distances": [],
+  "distances": [
+    "56.50",
+    "70.3",
+    "Sprint"
+  ],
   "location": {
     "venue": "Bàu Trắng - Hòa Thắng - Lâm Đồng",
-    "city": null
+    "city": "Vietnam"
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": null,
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 3670000,
+      "from": "2026-09-16",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 4210000,
+      "from": "2026-10-01",
+      "to": "2026-11-30",
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 4750000,
+      "from": "2026-12-01",
+      "to": "2027-02-28",
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 4530000,
+      "from": "2026-09-16",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 5070000,
+      "from": "2026-10-01",
+      "to": "2026-11-30",
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 5830000,
+      "from": "2026-12-01",
+      "to": "2027-02-28",
+      "site": "actiup"
+    },
+    {
+      "distance": "Sprint",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 2590000,
+      "from": "2026-09-16",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "Sprint",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 3130000,
+      "from": "2026-10-01",
+      "to": "2026-11-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "Sprint",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 3670000,
+      "from": "2026-12-01",
+      "to": "2027-02-28",
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -38,7 +133,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/vietnam-festrival-2027",
-      "lastCheckedAt": "2026-09-23T18:30:40.594Z",
+      "lastCheckedAt": "2026-09-23T18:50:56.802Z",
       "lastChangedAt": "2026-09-23T18:30:40.594Z",
       "extracted": {
         "facts": {
@@ -50,6 +145,31 @@
           "registrationStatus": "open",
           "fromPrice": 2590000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/vietnam-festrival-2027",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "triathlon"
+              ],
+              "name": "Vietnam FesTRIval 2027",
+              "date": "2026-11-21",
+              "endDate": "2026-11-22",
+              "distances": [
+                "70.3",
+                "56.50",
+                "Sprint"
+              ],
+              "venue": "Hồ Bàu Trắng",
+              "city": "Vietnam",
+              "organizer": "Stop And Sports (SAS) / Vietnam Triathlon Community (VNTC)",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/17B3H7j1Cq448xXmWerVd0X_CuGBHGTUc/view?usp=drive_link",
@@ -59,11 +179,98 @@
         "organizer": {
           "id": "cong-ty-tnhh-stop-and-sports",
           "name": "CÔNG TY TNHH STOP AND SPORTS"
-        }
+        },
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/09/11/1789110276099989/LE%CC%A3%CC%82-PHI%CC%81.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "70.3 - 56.50",
+                  "tier": "Super Early Bird",
+                  "audience": "CÁ NHẦN (INDIVIDUAL)",
+                  "from": "16/09",
+                  "to": "30/09",
+                  "price": 3670000
+                },
+                {
+                  "distance": "70.3 - 56.50",
+                  "tier": "Early Bird",
+                  "audience": "CÁ NHẦN (INDIVIDUAL)",
+                  "from": "01/10",
+                  "to": "30/11",
+                  "price": 4210000
+                },
+                {
+                  "distance": "70.3 - 56.50",
+                  "tier": "Standard",
+                  "audience": "CÁ NHẦN (INDIVIDUAL)",
+                  "from": "01/12",
+                  "to": "28/02",
+                  "price": 4750000
+                },
+                {
+                  "distance": "70.3 - 56.50",
+                  "tier": "Super Early Bird",
+                  "audience": "TIẾP SỰC (RELAY TEAM)",
+                  "from": "16/09",
+                  "to": "30/09",
+                  "price": 4530000
+                },
+                {
+                  "distance": "70.3 - 56.50",
+                  "tier": "Early Bird",
+                  "audience": "TIẾP SỰC (RELAY TEAM)",
+                  "from": "01/10",
+                  "to": "30/11",
+                  "price": 5070000
+                },
+                {
+                  "distance": "70.3 - 56.50",
+                  "tier": "Standard",
+                  "audience": "TIẾP SỰC (RELAY TEAM)",
+                  "from": "01/12",
+                  "to": "28/02",
+                  "price": 5830000
+                },
+                {
+                  "distance": "Sprint",
+                  "tier": "Super Early Bird",
+                  "audience": "CÁ NHẦN (INDIVIDUAL)",
+                  "from": "16/09",
+                  "to": "30/09",
+                  "price": 2590000
+                },
+                {
+                  "distance": "Sprint",
+                  "tier": "Early Bird",
+                  "audience": "CÁ NHẦN (INDIVIDUAL)",
+                  "from": "01/10",
+                  "to": "30/11",
+                  "price": 3130000
+                },
+                {
+                  "distance": "Sprint",
+                  "tier": "Standard",
+                  "audience": "CÁ NHẦN (INDIVIDUAL)",
+                  "from": "01/12",
+                  "to": "28/02",
+                  "price": 3670000
+                }
+              ],
+              "distances": [
+                "70.3 - 56.50",
+                "Sprint"
+              ],
+              "date": "2026-06-16",
+              "currency": "VND"
+            }
+          }
+        ]
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-23T18:52:52.246Z"
 }

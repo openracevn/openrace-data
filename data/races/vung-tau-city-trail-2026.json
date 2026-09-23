@@ -10,12 +10,138 @@
   "seriesId": null,
   "organizerId": "vietnam-mtb-series",
   "organizer": "Vietnam MTB Series",
-  "distances": [],
+  "distances": [
+    "7km",
+    "12km",
+    "25km",
+    "35km"
+  ],
   "location": {
     "venue": "Nhà Truyền Thống Cách Mạng Thành Phố Vũng Tàu",
-    "city": null
+    "city": "Vũng Tàu"
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "12km",
+      "tier": "Giants",
+      "kind": "other",
+      "audience": null,
+      "price": 350000,
+      "from": null,
+      "to": null,
+      "site": "actiup"
+    },
+    {
+      "distance": "12km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 550000,
+      "from": "2026-09-19",
+      "to": "2026-10-18",
+      "site": "actiup"
+    },
+    {
+      "distance": "12km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 650000,
+      "from": "2026-10-19",
+      "to": "2026-11-15",
+      "site": "actiup"
+    },
+    {
+      "distance": "25km",
+      "tier": "Giants",
+      "kind": "other",
+      "audience": null,
+      "price": 450000,
+      "from": null,
+      "to": null,
+      "site": "actiup"
+    },
+    {
+      "distance": "25km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 650000,
+      "from": "2026-09-19",
+      "to": "2026-10-18",
+      "site": "actiup"
+    },
+    {
+      "distance": "25km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 750000,
+      "from": "2026-10-19",
+      "to": "2026-11-15",
+      "site": "actiup"
+    },
+    {
+      "distance": "35km",
+      "tier": "Giants",
+      "kind": "other",
+      "audience": null,
+      "price": 550000,
+      "from": null,
+      "to": null,
+      "site": "actiup"
+    },
+    {
+      "distance": "35km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 750000,
+      "from": "2026-09-19",
+      "to": "2026-10-18",
+      "site": "actiup"
+    },
+    {
+      "distance": "35km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 850000,
+      "from": "2026-10-19",
+      "to": "2026-11-15",
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "Giants",
+      "kind": "other",
+      "audience": null,
+      "price": 750000,
+      "from": null,
+      "to": null,
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 850000,
+      "from": "2026-09-19",
+      "to": "2026-10-18",
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1150000,
+      "from": "2026-10-19",
+      "to": "2026-11-15",
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -38,7 +164,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/vung-tau-city-trail",
-      "lastCheckedAt": "2026-09-23T18:30:39.797Z",
+      "lastCheckedAt": "2026-09-23T18:50:29.853Z",
       "lastChangedAt": "2026-09-23T18:30:39.797Z",
       "extracted": {
         "facts": {
@@ -51,6 +177,27 @@
           "registrationStatus": "open",
           "fromPrice": 350000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/vung-tau-city-trail",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "trail_run"
+              ],
+              "name": "Giải chạy Vũng Tàu City Trail 2026",
+              "date": "2026-11-21",
+              "endDate": "2026-11-22",
+              "distances": [],
+              "venue": "",
+              "city": "Vũng Tàu",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1NlmkunBtqalMjKjI5dZyC6nM-GG5GhLp/view?usp=drive_link",
@@ -60,11 +207,148 @@
         "organizer": {
           "id": "vietnam-mtb-series",
           "name": "Vietnam MTB Series"
-        }
+        },
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/09/15/1789464190194610/Ticket.png",
+            "json": {
+              "prices": [
+                {
+                  "distance": "7KM",
+                  "tier": "Flash Sale",
+                  "audience": "WITH",
+                  "from": "18/09",
+                  "to": "18/09",
+                  "price": 0
+                },
+                {
+                  "distance": "7KM",
+                  "tier": "Early Bird",
+                  "audience": "WITH",
+                  "from": "19/09",
+                  "to": "18/10",
+                  "price": 0
+                },
+                {
+                  "distance": "7KM",
+                  "tier": "Regular",
+                  "audience": "WITH",
+                  "from": "19/10",
+                  "to": "15/11",
+                  "price": 0
+                },
+                {
+                  "distance": "12KM",
+                  "tier": "Giants",
+                  "audience": "GIANTS",
+                  "from": "",
+                  "to": "",
+                  "price": 350000
+                },
+                {
+                  "distance": "12KM",
+                  "tier": "Early Bird",
+                  "audience": "GIANTS",
+                  "from": "19/09",
+                  "to": "18/10",
+                  "price": 550000
+                },
+                {
+                  "distance": "12KM",
+                  "tier": "Regular",
+                  "audience": "GIANTS",
+                  "from": "19/10",
+                  "to": "15/11",
+                  "price": 650000
+                },
+                {
+                  "distance": "25KM",
+                  "tier": "Giants",
+                  "audience": "GIANTS",
+                  "from": "",
+                  "to": "",
+                  "price": 450000
+                },
+                {
+                  "distance": "25KM",
+                  "tier": "Early Bird",
+                  "audience": "GIANTS",
+                  "from": "19/09",
+                  "to": "18/10",
+                  "price": 650000
+                },
+                {
+                  "distance": "25KM",
+                  "tier": "Regular",
+                  "audience": "GIANTS",
+                  "from": "19/10",
+                  "to": "15/11",
+                  "price": 750000
+                },
+                {
+                  "distance": "35KM",
+                  "tier": "Giants",
+                  "audience": "GIANTS",
+                  "from": "",
+                  "to": "",
+                  "price": 550000
+                },
+                {
+                  "distance": "35KM",
+                  "tier": "Early Bird",
+                  "audience": "GIANTS",
+                  "from": "19/09",
+                  "to": "18/10",
+                  "price": 750000
+                },
+                {
+                  "distance": "35KM",
+                  "tier": "Regular",
+                  "audience": "GIANTS",
+                  "from": "19/10",
+                  "to": "15/11",
+                  "price": 850000
+                },
+                {
+                  "distance": "",
+                  "tier": "Giants",
+                  "audience": "GIANTS",
+                  "from": "",
+                  "to": "",
+                  "price": 750000
+                },
+                {
+                  "distance": "",
+                  "tier": "Early Bird",
+                  "audience": "GIANTS",
+                  "from": "19/09",
+                  "to": "18/10",
+                  "price": 850000
+                },
+                {
+                  "distance": "",
+                  "tier": "Regular",
+                  "audience": "GIANTS",
+                  "from": "19/10",
+                  "to": "15/11",
+                  "price": 1150000
+                }
+              ],
+              "distances": [
+                "7KM",
+                "12KM",
+                "25KM",
+                "35KM"
+              ],
+              "date": "2026-11-29",
+              "currency": "VND"
+            }
+          }
+        ]
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-23T18:52:52.246Z"
 }

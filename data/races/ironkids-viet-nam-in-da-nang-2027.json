@@ -3,17 +3,21 @@
   "slug": "2027-ironkids-viet-nam-in-da-nang",
   "name": "2027 IRONKIDS Viet Nam in Da Nang",
   "types": [
-    "other"
+    "triathlon",
+    "aquathlon"
   ],
   "date": "2027-05-08",
-  "endDate": null,
+  "endDate": "2027-11-22",
   "seriesId": "ironkids-viet-nam-in-da-nang",
   "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
-  "distances": [],
+  "distances": [
+    "1km",
+    "2km"
+  ],
   "location": {
     "venue": "Đà Nẵng, Việt Nam",
-    "city": null
+    "city": "Đà Nẵng"
   },
   "prices": [],
   "currency": "VND",
@@ -32,7 +36,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/2027-ironkids-viet-nam-in-da-nang",
-      "lastCheckedAt": "2026-09-23T18:30:42.276Z",
+      "lastCheckedAt": "2026-09-23T18:52:15.212Z",
       "lastChangedAt": "2026-09-23T18:30:42.276Z",
       "extracted": {
         "facts": {
@@ -44,6 +48,33 @@
           "registrationStatus": "open",
           "fromPrice": 980000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/2027-ironkids-viet-nam-in-da-nang",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "aquathlon",
+                "triathlon"
+              ],
+              "name": "2027 IRONKIDS Viet Nam",
+              "date": "2027-11-21",
+              "endDate": "2027-11-22",
+              "distances": [
+                "75 mét bơi và 1km chạy",
+                "150 mét bơi và 2km chạy",
+                "3km đạp",
+                "6km đạp"
+              ],
+              "venue": "Đà Nẵng",
+              "city": "Đà Nẵng",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "prices": []
+            }
+          }
+        ],
         "links": [],
         "organizer": {
           "id": "sunrise-events-vietnam",
@@ -54,5 +85,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-23T18:52:52.246Z"
 }

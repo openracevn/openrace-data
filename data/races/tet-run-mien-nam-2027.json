@@ -3,7 +3,7 @@
   "slug": "tet-run-mien-nam-2027",
   "name": "TẾT RUN MIỀN NAM 2027",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2027-01-24",
   "endDate": null,
@@ -13,9 +13,80 @@
   "distances": [],
   "location": {
     "venue": "Vinhomes Grand Park,Tp Thủ Đức, Tp Hồ Chí Minh",
-    "city": null
+    "city": "TP.HCM"
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": null,
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 678000,
+      "from": "2026-10-22",
+      "to": "2026-10-22",
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "Group 50+",
+      "kind": "group",
+      "audience": null,
+      "price": 576000,
+      "from": "2026-10-22",
+      "to": "2026-10-22",
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "Group 200+",
+      "kind": "group",
+      "audience": null,
+      "price": 542000,
+      "from": "2026-10-22",
+      "to": "2026-10-22",
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 778000,
+      "from": "2026-10-23",
+      "to": "2026-11-31",
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "Group 50+",
+      "kind": "group",
+      "audience": null,
+      "price": 660000,
+      "from": "2026-10-23",
+      "to": "2026-11-31",
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "Group 200+",
+      "kind": "group",
+      "audience": null,
+      "price": 622000,
+      "from": "2026-10-23",
+      "to": "2026-11-31",
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "Late",
+      "kind": "late",
+      "audience": "resident",
+      "price": 986000,
+      "from": "2026-12-01",
+      "to": "2026-12-23",
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -38,7 +109,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/tet-run-mien-nam-2027",
-      "lastCheckedAt": "2026-09-23T18:30:39.404Z",
+      "lastCheckedAt": "2026-09-23T18:50:00.594Z",
       "lastChangedAt": "2026-09-23T18:30:39.404Z",
       "extracted": {
         "facts": {
@@ -50,6 +121,27 @@
           "registrationStatus": "open",
           "fromPrice": 678000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/tet-run-mien-nam-2027",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "TẾT RUN MIỀN NAM 2027",
+              "date": "2027-01-24",
+              "endDate": "2027-01-24",
+              "distances": [],
+              "venue": "Vinhomes Grand Park",
+              "city": "TP.HCM",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1qfcA1Tj6Xeky22UnNty6yl4cooUlGCqh/view?usp=sharing",
@@ -59,11 +151,101 @@
         "organizer": {
           "id": "cong-ty-co-phan-duong-chay-xanh",
           "name": "CÔNG TY CỔ PHẦN ĐƯỜNG CHẠY XANH"
-        }
+        },
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/09/18/1789717694701775/EB---TET-RUN.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "",
+                  "tier": "Early Bird",
+                  "audience": "Individual",
+                  "from": "22/10",
+                  "to": "22/10",
+                  "price": 678000
+                },
+                {
+                  "distance": "",
+                  "tier": "Group 50+",
+                  "audience": "Group",
+                  "from": "22/10",
+                  "to": "22/10",
+                  "price": 576000
+                },
+                {
+                  "distance": "",
+                  "tier": "Group 200+",
+                  "audience": "Group",
+                  "from": "22/10",
+                  "to": "22/10",
+                  "price": 542000
+                }
+              ],
+              "distances": [],
+              "date": "2027-01-01",
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2026/09/18/1789717711857384/RAGULAR---TET-RUN.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "",
+                  "tier": "Regular",
+                  "audience": "Cá Nhân",
+                  "from": "23/10",
+                  "to": "31/11",
+                  "price": 778000
+                },
+                {
+                  "distance": "",
+                  "tier": "Group 50+",
+                  "audience": "THEO NHÓM",
+                  "from": "23/10",
+                  "to": "31/11",
+                  "price": 660000
+                },
+                {
+                  "distance": "",
+                  "tier": "Group 200+",
+                  "audience": "THEO NHÓM",
+                  "from": "23/10",
+                  "to": "31/11",
+                  "price": 622000
+                }
+              ],
+              "distances": [],
+              "date": "",
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2026/09/18/1789717724194489/LATE--TET-RUN.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "CÁ NHÂN",
+                  "tier": "Late",
+                  "audience": "Resident",
+                  "from": "01/12",
+                  "to": "23/12",
+                  "price": 986000
+                }
+              ],
+              "distances": [
+                "CÁ NHÂN"
+              ],
+              "date": "2026-12-01",
+              "currency": "VND"
+            }
+          }
+        ]
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-23T18:52:52.246Z"
 }

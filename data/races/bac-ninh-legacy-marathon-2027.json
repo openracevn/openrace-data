@@ -3,19 +3,185 @@
   "slug": "bac-ninh-legacy-marathon-2027",
   "name": "Giải chạy Bắc Ninh Dấu chân Miền Quan họ 2027",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2027-01-10",
   "endDate": null,
   "seriesId": "bac-ninh-legacy-marathon",
   "organizerId": "cong-ty-zaha-vietnam",
   "organizer": "Công ty Zaha Vietnam",
-  "distances": [],
+  "distances": [
+    "5km",
+    "10km",
+    "21km",
+    "42km"
+  ],
   "location": {
     "venue": "Quảng trường Trung tâm Văn hóa Kinh Bắc",
-    "city": null
+    "city": "Bắc Ninh"
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": "resident",
+      "price": 350000,
+      "from": "2026-07-07",
+      "to": "2027-01-10",
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": "non_resident",
+      "price": 350000,
+      "from": "2026-07-07",
+      "to": "2027-01-10",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": "resident",
+      "price": 350000,
+      "from": "2026-07-07",
+      "to": "2027-01-10",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": "non_resident",
+      "price": 350000,
+      "from": "2026-07-07",
+      "to": "2027-01-10",
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": "resident",
+      "price": 450000,
+      "from": "2026-07-07",
+      "to": "2027-01-10",
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": "non_resident",
+      "price": 450000,
+      "from": "2026-07-07",
+      "to": "2027-01-10",
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": "resident",
+      "price": 450000,
+      "from": "2026-07-07",
+      "to": "2027-01-10",
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": "non_resident",
+      "price": 450000,
+      "from": "2026-07-07",
+      "to": "2027-01-10",
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": "resident",
+      "price": 400000,
+      "from": null,
+      "to": null,
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": "non_resident",
+      "price": 400000,
+      "from": null,
+      "to": null,
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": "resident",
+      "price": 400000,
+      "from": null,
+      "to": null,
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": "non_resident",
+      "price": 400000,
+      "from": null,
+      "to": null,
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": "resident",
+      "price": 500000,
+      "from": null,
+      "to": null,
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": "non_resident",
+      "price": 500000,
+      "from": null,
+      "to": null,
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": "resident",
+      "price": 500000,
+      "from": null,
+      "to": null,
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": "non_resident",
+      "price": 500000,
+      "from": null,
+      "to": null,
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -38,7 +204,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/bac-ninh-legacy-marathon-2027",
-      "lastCheckedAt": "2026-09-23T18:30:42.608Z",
+      "lastCheckedAt": "2026-09-23T18:52:20.412Z",
       "lastChangedAt": "2026-09-23T18:30:42.608Z",
       "extracted": {
         "facts": {
@@ -50,6 +216,27 @@
           "registrationStatus": "open",
           "fromPrice": 350000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/bac-ninh-legacy-marathon-2027",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "BẮC NINH LEGACY MARATHON 2027 – BƯỚC CHÂN TRÊN MIỀN ĐẤT KINH BẮC",
+              "date": "2027-01-10",
+              "endDate": "2027-01-10",
+              "distances": [],
+              "venue": "",
+              "city": "Bắc Ninh",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1RTr4wj3d7sWpLVj8n29p13MJJlPuXthS/view?usp=drive_link",
@@ -59,11 +246,171 @@
         "organizer": {
           "id": "cong-ty-zaha-vietnam",
           "name": "Công ty Zaha Vietnam"
-        }
+        },
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/08/26/1787718326074999/Banner-SEB.png",
+            "json": {
+              "prices": [
+                {
+                  "distance": "5KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Resident",
+                  "from": "07/07",
+                  "to": "10/01",
+                  "price": 350000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Non-resident",
+                  "from": "07/07",
+                  "to": "10/01",
+                  "price": 350000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Resident",
+                  "from": "07/07",
+                  "to": "10/01",
+                  "price": 350000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Non-resident",
+                  "from": "07/07",
+                  "to": "10/01",
+                  "price": 350000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Resident",
+                  "from": "07/07",
+                  "to": "10/01",
+                  "price": 450000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Non-resident",
+                  "from": "07/07",
+                  "to": "10/01",
+                  "price": 450000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Resident",
+                  "from": "07/07",
+                  "to": "10/01",
+                  "price": 450000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Non-resident",
+                  "from": "07/07",
+                  "to": "10/01",
+                  "price": 450000
+                }
+              ],
+              "distances": [
+                "5KM",
+                "10KM",
+                "21KM",
+                "42KM"
+              ],
+              "date": "2027-01-10",
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2026/08/26/1787718337290185/Banner-EB.png",
+            "json": {
+              "prices": [
+                {
+                  "distance": "5KM",
+                  "tier": "Early Bird",
+                  "audience": "Resident",
+                  "from": "10/01",
+                  "to": "16/07",
+                  "price": 400000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Early Bird",
+                  "audience": "Non-resident",
+                  "from": "10/01",
+                  "to": "16/07",
+                  "price": 400000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Early Bird",
+                  "audience": "Resident",
+                  "from": "10/01",
+                  "to": "16/07",
+                  "price": 400000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Early Bird",
+                  "audience": "Non-resident",
+                  "from": "10/01",
+                  "to": "16/07",
+                  "price": 400000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Early Bird",
+                  "audience": "Resident",
+                  "from": "10/01",
+                  "to": "16/07",
+                  "price": 500000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Early Bird",
+                  "audience": "Non-resident",
+                  "from": "10/01",
+                  "to": "16/07",
+                  "price": 500000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Early Bird",
+                  "audience": "Resident",
+                  "from": "10/01",
+                  "to": "16/07",
+                  "price": 500000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Early Bird",
+                  "audience": "Non-resident",
+                  "from": "10/01",
+                  "to": "16/07",
+                  "price": 500000
+                }
+              ],
+              "distances": [
+                "5KM",
+                "10KM",
+                "21KM",
+                "42KM"
+              ],
+              "date": "2027-01-10",
+              "currency": "VND"
+            }
+          }
+        ]
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-23T18:52:52.246Z"
 }
