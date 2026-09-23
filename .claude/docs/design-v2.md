@@ -1,6 +1,6 @@
 # Design v2: source-agnostic, self-maintaining race data
 
-Agreed with the user on 2026-09-23/24, in discussion only: nothing here is built yet. It replaces the ActiUp-centred design in `decisions.md` where the two disagree (noted in "What changes from v1"). Build against this doc, and update it when a decision changes.
+Agreed with the user on 2026-09-23/24. **Build status (2026-09-24):** steps 1–3 are built: schema, pipeline, and the ActiUp, VnExpress Marathon and default race-site recipes, with 82 of 82 prices right in paid checks. See `status.md`. It replaces the ActiUp-centred design in `decisions.md` where the two disagree (noted in "What changes from v1"). Build against this doc, and update it when a decision changes.
 
 ## Goals
 
@@ -54,11 +54,13 @@ All three can be filtered on.
 
 ```
 prices: [
-  { distance: "21km", tier: "Super Early Bird", kind: "super_early", price: 660000,
-    from: "2026-09-04", to: "2026-09-24", seller: "official" },
+  { distance: "21km", tier: "Super Early Bird", kind: "super_early", audience: null, price: 660000,
+    from: "2026-09-04", to: "2026-09-24", site: "vnexpress-marathon" },
   ...
 ]
 ```
+
+- `audience` (added 2026-09-24): `resident`, `non_resident` or null, because HCMC Marathon prices every tier differently for residents and non-residents.
 
 - `tier` keeps the label as written. `kind` is normalized: `super_early | early | regular | late | group | other`.
 - Tier dates without a year ("08/7 - 18/7") take their year from the race date.

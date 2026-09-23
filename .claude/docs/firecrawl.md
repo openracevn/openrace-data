@@ -1,5 +1,18 @@
 # Firecrawl: verified facts
 
+## Design v2: what we use now (verified 2026-09-24)
+
+- **`POST /v2/parse`** (multipart: `file` + `options` JSON) on content we fetched ourselves:
+  - **HTML:** the cleaned relevant HTML of a page (`text/html` upload), with `formats: [{type: "json", schema, prompt}]`. 5 credits. Tested on VnExpress Hà Nội 2026: all 16 tier prices right.
+  - **Images:** wrapped in a one-page PDF (pdf-lib), with `parsers: [{type: "pdf", mode: "ocr"}]` plus the JSON format. 5 credits. Tested on the Pink Run, HCMC Marathon and Pink Run group-price images: every price right.
+  - Uploading beats `/v2/scrape` of the URL: Firecrawl reads exactly what we fingerprinted, and client-side pages can't come back empty.
+- **Scrape can't read images.** `images` returns URLs only, and `parsers` accepts only `pdf` in the API reference. An `"image"` parser (1 credit per image) is in an open docs PR (firecrawl-docs#1437); once it ships, the PDF step can go.
+- **Pricing:** Free is 1,000 credits per billing period. Hobby is $19/month (or $16/month billed yearly) for 5,000 credits, with extra 1,000 for $5. No rollover. Search is 2 credits per 10 results. Agent is dynamic, "most runs consume a few hundred credits", with 5 free runs a day (postponed).
+- **Credit balance (free):** `GET /v2/team/credit-usage`.
+- **ActiUp event detail API:** `GET https://api.actiup.net/v2/content/events/slug/<slug>`. It answers in **English unless `Accept-Language: vi`**. Fields: name, start/end date, place, `merchant_public_name`, `selling_type`, `close_registration_date`, `min_price`, and `details[]` (titled description sections). The listing's `limit` is capped at 30, and `offset` counts items.
+
+The sections below are the v1 notes (scrape + JSON on ActiUp/bibchung URLs), kept for the history of those decisions.
+
 Checked against docs.firecrawl.dev (`billing`, `features/monitoring`, the monitor API reference, and the webhook pages) on 2026-09-23. Re-check them before changing the ingestion path; the API is young and has been changing.
 
 ## What we use: `POST /v2/scrape`

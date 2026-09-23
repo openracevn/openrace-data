@@ -1,103 +1,91 @@
 ---
 name: check-race
-description: Check, add, update, edit or verify a race in openrace-data. Use when the user gives an ActiUp or bibchung event URL, a race slug or id, asks whether a race's data is correct or why a field is wrong, asks to (re)check, add or fix a race, to change a race's info by hand, or to add a race no site lists.
+description: Check, add, update, edit or verify a race in openrace-data. Use when the user gives a race URL (ActiUp, a race's own site, VnExpress Marathon, ...), a race slug or id, asks whether a race's data is correct or why a field is wrong, asks to (re)check, add or fix a race, to change a race's info by hand, or to add a race no site lists.
 ---
 
-# Check a race
+# Check a race (design v2)
 
-openrace-data holds one JSON file per race (`data/races/<slug>-<year>.json`, i.e. the entry's `file` in `data/index.json`; the key is the `id` inside). Races are scraped from **ActiUp** (primary for every field) and **bibchung** (a second place to buy, with a group discount: `groupPriceMin`) by `scripts/check.ts` through Firecrawl. Background: `.claude/docs/` (read only what the task needs).
+openrace-data holds one JSON file per race edition (`data/races/<slug>-<year>.json`; the key is the `id` inside). Sites are read by `scripts/check.ts` with a **recipe** per site (`scripts/lib/recipes/`, listed in `config/sites.yaml`): the recipe fetches pages and APIs for free, and Firecrawl Parse reads the relevant HTML or OCRs price images. Background: `.claude/docs/design-v2.md`, `scripts/lib/recipes/README.md`.
 
 ## Rules
 
-- **Firecrawl credits are the user's money.** Each page extraction costs 5 credits (1 scrape + 4 AI), so a race on both sites costs 10. Say the cost before scraping, don't repeat a scrape to "double-check", and prefer the free checks below.
-- Commits go straight to `main` (the private org repo can't use auto-merge). The daily schedule is **off**; nothing runs unless triggered.
-- Never print secrets. Commit with the user's gh login: `GITHUB_TOKEN=$(gh auth token)`.
-- Race data is derived from each source's stored `rawExtracted`, then **OpenRace overrides** go on top. Never hand-edit a race file's fields directly (the next re-check or `renormalize` would undo it). To change a value, fix the extraction in code (step 4) when a source is misread, or set an override (step 5) when OpenRace knows better or no source has it. `slug` is the only field edited directly in the file.
+- **Firecrawl credits are the user's money.** A page or image read costs about 5 credits. Always run with `--free` first (it shows what would be read and the most it would cost), say the cost, and don't re-read to "double-check": reads are cached by content (`state/reads.json`), so an unchanged page costs nothing anyway.
+- Commits go straight to `main`. The schedule is **off**; nothing runs unless triggered. Commit with `GITHUB_TOKEN=$(gh auth token)`.
+- Never print secrets.
+- Race fields are derived from each source's stored `extracted`, then **OpenRace overrides** go on top. Never hand-edit a race's fields in its file (the next read or `renormalize` undoes it). Fix the code (step 4) when a site is misread, or set an override (step 5). `slug` changes go through `npm run edit -- slug`.
+- **Check prices by eye.** Open the page or price image (download it with curl and look at it) and compare every tier. This is free, and it's the only real check.
 
 ## 1. Find the race (free)
 
 ```bash
 git pull -q
-python3 -c "import json,sys; q=sys.argv[1]; [print(e['id'], e['slug'], e['date'], e['name'], e['sourceUrls']) for e in json.load(open('data/index.json')) if q in e['id'] or q in e['slug'] or any(q in u for u in e['sourceUrls'])]" "<url, slug or id fragment>"
+python3 -c "import json,sys; q=sys.argv[1]; [print(e['id'], e['slug'], e['date'], e['name'], e['sourceUrls']) for e in json.load(open('data/index.json')) if q in e['id'] or q in e['slug'] or any(q in u for u in e['sourceUrls'] + e['linkUrls'])]" "<url, slug or id fragment>"
 ```
-Then read `data/races/<file>` (the index entry's `file`). `state/checks.json` has each URL's last check and its outcome (`ok`, `rejected` + reason, `permanent`).
 
-## 2. Check it against the sources (free)
+Read `data/races/<file>`. Each `sources[]` entry has the site, its role (`official` wins for date, distances and location; `seller` pages keep their own prices) and the raw `extracted` (facts, page reads, image reads with their URLs). `flags` lists what needs a look. `state/checks.json` has each page's last check.
 
-- **ActiUp listing API** (exact date, end date, from-price, `selling_type` sold_out/selling, `close_registration_date`, organizer). It lists upcoming and past events, 12 per page:
-  `curl -s "https://api.actiup.net/v2/content/events/paging?event_type=sports&limit=12&offset=<N>&price=&selling_type=&category_id=&event_time="`
-  Find the item by `event_slug` (the last part of the ActiUp URL).
-- **bibchung** pages render on the server, so `curl -sL -A 'Mozilla/5.0' <bibchung url>` gets the full text. Its price rows are `<tier> · <distance> · <regular price> · <bibchung price>`, and the page also has JSON-LD `SportsEvent` data.
-- ActiUp event pages render in the browser, so `curl` only gets the title. Use the API above instead.
+## 2. Look at the source (free)
 
-Report the differences field by field: ours vs the source, and which source wins (ActiUp first; bibchung only fills gaps).
+- **ActiUp:** `curl -s -H "Accept-Language: vi" https://api.actiup.net/v2/content/events/slug/<slug>` gives name, dates, place, organizer (`merchant_public_name`), `selling_type` and the description sections. Prices are usually an image in the "Chính sách giá vé" section.
+- **Other sites:** `curl -sL -A 'Mozilla/5.0' <url>`. To see what the recipe would read: `npm run check -- --race <url> --free --dry-run`.
+- **Price images:** download one and look at it (Read the file). Compare every tier: distance, label, audience (resident / non-resident), price, dates.
 
-## 3. Re-check with Firecrawl (costs credits; say so first)
+Report the differences field by field: ours vs the source.
+
+## 3. Read it again with Firecrawl (costs credits; say so first)
 
 ```bash
-npm run check -- --mode race --race <url|slug|id> --dry-run                    # prints the raw extraction + the plan, no commit
-GITHUB_TOKEN=$(gh auth token) npm run check -- --mode race --race <url|slug|id>  # commit
+npm run check -- --race <url|slug|id> --free --dry-run                          # free: what would be read, max cost
+npm run check -- --race <url|slug|id> --dry-run --preview /tmp/race              # paid, no commit; planned files in /tmp/race
+GITHUB_TOKEN=$(gh auth token) npm run check -- --race <url|slug|id>              # paid, commit
 ```
-- A slug or id re-checks **every** source URL of that race; pass a single URL to check one page.
-- A URL we don't have yet adds a race, or joins an existing one when race day is within 1 day and the names are similar.
-- `pageKind: "none"` means Firecrawl got an empty page (ActiUp sometimes renders late). It's logged as a transient failure; one manual retry is reasonable.
-- The same thing from the Actions tab: **Check races** → mode `race`, paste the URL.
+
+- A slug or id reads **every** source of that race that is on a site with a recipe.
+- A URL we don't have yet adds a race, or joins one: same page and edition, a page the race links to (or that links to it), or a similar name on the same day.
+- Site-wide: `--site <key>` (add `--past` for races that already took place, `--limit N` for a small batch).
+- The same from the Actions tab: **Check races** → site or race.
 
 ## 4. Fix wrong values (free once the code is fixed)
 
-1. Find the cause in the raw extraction (`sources[].rawExtracted`, or the run log's `extracted <url>` line):
-   - **The model misread the page:** prompt and field descriptions → `EXTRACTIONS` in `scripts/lib/extraction.ts`.
-   - **The value is fine but was cleaned up wrongly:** `normalizeExtracted` / `normalizeDistance` / `resolvePlace` (`scripts/lib/places.ts`).
+1. Find the cause in the source's `extracted`:
+   - **The recipe picked the wrong pages or images:** `scripts/lib/recipes/<recipe>.ts` (or `default.ts`), with a test in `test/recipes.test.ts` against a saved page in `test/fixtures/`.
+   - **The model misread the content:** the prompts and schemas in `scripts/lib/extraction.ts` (`PAGE_EXTRACTION`, `IMAGE_EXTRACTION`). Changing them makes the next run read again (the cache is keyed by version).
+   - **The value was cleaned up wrongly:** `normalizeExtraction`, `normalizeTier`, `tierDate`, `tierKind`, `audienceOf` in the same file.
    - **The merge picked the wrong source:** `scripts/lib/reconcile.ts`.
-   - **The wrong race matched:** `findMatch` / `nameSimilarity` in `scripts/sync.ts`.
-2. Add a test case in `test/sync.test.ts`, then run `npm run typecheck && npm test`.
-3. `npm run renormalize` (dry run) shows which races change, then `GITHUB_TOKEN=$(gh auth token) npm run renormalize -- --commit`. This re-derives every race from its stored extraction, with no scraping.
-4. A prompt change only takes effect on the next scrape of that page.
-5. If `scripts/lib/schema.ts` changed: `npm run schema`, and bump `SCHEMA_VERSION` only for breaking changes.
+   - **The wrong race matched:** `planSync` matching in `scripts/sync.ts`.
+2. Add a test, then `npm run typecheck && npm test`. Real reads with hand-checked prices are in `test/answers.test.ts`: they must still pass.
+3. `npm run renormalize` (dry run) shows which races change; `GITHUB_TOKEN=$(gh auth token) npm run renormalize -- --commit` applies it, with no reading.
+4. If `scripts/lib/schema.ts` changed: `npm run schema`.
 
 ## 5. Set a value by hand (OpenRace override, free)
 
-Use this when the user says what a field should be ("Tết Run has a 42km too, BTC confirmed"), or the sources don't have it. Always ask for or record the reason.
+Use this when the user says what a field should be, or no source has it. Always record the reason.
+
 ```bash
-npm run edit -- set <race> <field> '<json value>' --reason "<why, and where it's from>" --dry-run   # preview
+npm run edit -- set <race> <field> '<json value>' --reason "<why, and where it's from>" --dry-run
 GITHUB_TOKEN=$(gh auth token) npm run edit -- set <race> <field> '<json value>' --reason "<why>"
-GITHUB_TOKEN=$(gh auth token) npm run edit -- unset <race> <field>                                  # back to the source value
-GITHUB_TOKEN=$(gh auth token) npm run edit -- slug <race> <new-slug>                                # change the slug (renames the file)
+GITHUB_TOKEN=$(gh auth token) npm run edit -- unset <race> <field>
+GITHUB_TOKEN=$(gh auth token) npm run edit -- slug <race> <new-slug>
 ```
-- `<field>` is one of: name, types, date, distances, location, priceMin, priceMax, groupPriceMin, currency, registrationStatus, registrationUrl, organizer, foreignerEligible.
-- Values must already be in canonical form (the schema checks them, and the edit is refused otherwise):
+
+- Fields: name, types, date, endDate, seriesId, organizerId, organizer, distances, location, prices, currency, registrationStatus, registrations, links.
+- Values in canonical form (the schema checks them):
   - distances: `["21km","42km"]`
-  - location: `{"venue":"…","city":"Hanoi","region":"north"}`, with city as the English display name from `scripts/lib/places.ts`
-  - prices: plain integer VND
+  - location: `{"venue":"…","city":"…"}`
+  - prices: `[{"distance":"21km","tier":"Early Bird","kind":"early","audience":null,"price":750000,"from":"2026-06-24","to":"2026-07-16","site":"openrace"}]`
   - date: `"YYYY-MM-DD"`
-  - types: values from the list below
-- An override wins over every source and survives re-checks. If a source later changes that field, Discord shows `⚠️ <field>: sources now say … (override kept)`; ask the user whether to keep the override or `unset` it.
-- Several fields: run `set` once per field; each run is its own commit.
+- `seriesId` and `organizerId` must exist in `data/series.json` / `data/organizers.json`. Add entries there by hand, sorted by id.
+- An override wins over every source. If a source later changes that field, Discord shows `⚠️ <field>: sources now say … (override kept)`.
 
 ## 6. Add a race no site lists (source `openrace`, free)
 
 ```bash
-npm run edit -- add --url "<reference: organizer page / post>" --reason "<where it's from>" --json '{"name":"…","date":"YYYY-MM-DD","types":["road_run"],"distances":["5km","10km"],"venue":"…","city":"…","priceMin":150000,"registrationUrl":"…","organizer":"…"}' --dry-run
+npm run edit -- add --url "<reference: organizer page / post>" --reason "<where it's from>" \
+  --json '{"name":"…","date":"YYYY-MM-DD","types":["road_run"],"distances":["5km","10km"],"venue":"…","city":"…","organizer":"…","prices":[{"distance":"5km","tier":"Early Bird","from":"01/09","to":"30/09","price":250000}]}' --dry-run
 ```
-Then run it again without `--dry-run`, with `GITHUB_TOKEN=$(gh auth token)`.
-- The fields are extraction-shaped: they go through the same normalization as scraped data (Vietnamese city names are fine here, and distances get tidied). name and date are required.
-- The slug comes from the name. Re-running `add` with the same `--url` updates that race.
-- The reference URL must not be an ActiUp or bibchung event page; use step 3 for those.
-- Hand-entered races are never scraped. If ActiUp lists the race later, a check of that page joins it (matched by date + name), and ActiUp becomes primary.
 
-## 7. Confirm
+Drop `--dry-run` and prefix `GITHUB_TOKEN=$(gh auth token)` to commit. If the race's site should be read automatically from now on, add it to `config/sites.yaml` instead (see `scripts/lib/recipes/README.md`).
 
-- `npm run validate` must pass (it also runs in CI on every push).
-- The push triggers `main.yml`: validate, Discord (each race line links to its sources and JSON), and the API resync (once `SYNC_WEBHOOK_URL` is set). Check it with:
-  `gh run list --repo openracevn/openrace-data --workflow main.yml --limit 1`
-- Commit code changes with a message that says what was wrong and why, ending with the Co-Authored-By trailer.
+## Types
 
-## Field meanings (short)
-
-- `types`: road_run, trail_run, city_trail, obstacle_run, triathlon, duathlon, aquathlon, aquabike, swimrun, swim, road_cycle, mtb, other.
-- `null` means unknown.
-- `priceMin` on ActiUp is the "Chỉ từ" (from) price. `priceMax` and `groupPriceMin` come from bibchung.
-- `confidence`: single-sourced / multi-sourced / conflicting (the sources disagree on race day).
-- Races are never deleted, not even when they vanish from the sources. Past races stay; consumers filter on `date`.
-- `overrides` records which fields OpenRace set and why; the fields already hold those values.
-- Source `openrace`: a race entered by hand; its `url` is the reference it came from.
+road_run, trail_run, city_trail, obstacle_run, triathlon, duathlon, aquathlon, aquabike, swimrun, swim, road_cycle, mtb, other.

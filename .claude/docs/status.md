@@ -1,30 +1,46 @@
-# Status (end of 2026-09-23)
+# Status (2026-09-24)
 
-## Live and verified
+Design v2 is being built (`design-v2.md`). The v1 race data was removed; data is rebuilt from scratch with the new pipeline.
 
-- **Repo** `openracevn/openrace-data` (private, Free org plan: no branch protection or auto-merge, so commits go straight to `main`).
-- **Ingestion:** `check.yml` / `npm run check`, Firecrawl scrape + JSON, for ActiUp (primary) and bibchung (group price). It runs in Actions or locally (`GITHUB_TOKEN=$(gh auth token)`). **The daily schedule is OFF** (user decision); every run is manual.
-- **Hand edits:** `npm run edit` (overrides, hand-entered `openrace` races), `npm run renormalize` (re-derive without scraping). The single-race workflow is in `.claude/skills/check-race`.
-- **On each push touching `data/`:** `validate` → Discord (links to sources + JSON per race) → openrace-api resync (`https://openrace-api.bmp.workers.dev/internal/sync`, `X-Sync-Secret`). All verified on 2026-09-23. The first real resync replied "5 unchanged" for a push that only added `overrides: {}`, which is consistent with the API ignoring unknown keys.
-- **Manual resync:** Actions → Main → Run workflow validates `main` and calls the API, without a commit (no Discord message).
-- **Files are `data/races/<slug>-<year>.json`** (renamed from `<uuid>.json` on 2026-09-23; always end with the race year; `index.json` has each `file`); change a slug with `npm run edit -- slug`.
-- **Data:** 5 races (4 upcoming + Lâm Đồng Trail 2024); Tết Run has both ActiUp and bibchung. No overrides and no hand-entered races yet.
-- **Contract:** `schemaVersion` 1, `schema/*.schema.json`, sanity bounds. Everything added since has been additive.
-- **Secrets set in Actions:** FIRECRAWL_API_KEY, OPENRACE_BOT_TOKEN, DISCORD_WEBHOOK_URL, SYNC_WEBHOOK_URL, SYNC_SECRET.
-- **bibchung prompt:** re-tested on Tết Run. Prices are correct (678,000 / 678,000 / group 542,000); the organizer comes back as the event name, and a code guard drops it.
+## Built and verified
+
+- **Schema v2:** price tiers with dates and audience (resident / non-resident), series and organizers, registrations, links, flags; location as written. JSON Schema in `schema/`.
+- **Site list** `config/sites.yaml`:
+  - read with a recipe: ActiUp, VnExpress Marathon, and 4 race sites (HCMC Marathon, Hạ Long, Lâm Đồng Trail, Run To Live);
+  - recognized in links only: bibchung, 5BIB, iRace, EnjoySport, timve365, njuko, TrueRace, Vietnam MTB Series.
+- **Recipes:**
+  - `actiup`: public API, price-section images;
+  - `vnexpress-marathon`: banner + ticket table only;
+  - `default`: race sites, home + subpages + price images.
+- **Reading:** Firecrawl Parse on our own cleaned HTML, or a price image wrapped in a PDF (OCR); about 5 credits each. Cached by content hash in `state/reads.json`. Unchanged snapshots are skipped by fingerprint.
+- **Paid end-to-end checks** (2026-09-24), every price compared by eye with the page or image: **82 of 82 correct.**
+  - Pink Run 2026 on ActiUp: 18 prices, including group prices.
+  - VnExpress Hà Nội 2026: 16.
+  - HCMC Marathon 2027: 48, including resident / non-resident.
+  - Kept as `test/answers.test.ts`.
+- **Free dry runs against the live sites work:** ActiUp lists 41 upcoming races (≤425 credits to read them all the first time), VM 15 (≤85), and each race site ≤20–50.
+- **Workflows:**
+  - `check.yml` has v2 inputs (site / race / past / limit / max credits / free / dry run). Manual only.
+  - `main.yml` validates and posts to Discord. **The openrace-api resync is paused** (`if: false`) until the API reads schema v2.
+
+## Firecrawl account
+
+Free plan: 1,000 credits per billing period (23rd to 23rd). On 2026-09-24, 1,453 were left before testing; the tests used about 150. The cap in `config/sites.yaml` (`monthlyCredits: 900`) counts calendar months (UTC).
 
 ## Next
 
-- [ ] Load the remaining upcoming races (~35 on ActiUp, 12 on bibchung) in small manual batches (`--mode discover --max-scrapes N`), checking Discord after each.
-- [ ] Turn the daily schedule back on (uncomment the cron in `check.yml`) once the data is trusted.
-- [ ] Discovery sees only the first 12 ActiUp events. Consider using ActiUp's listing API (all 40 upcoming, free) for discovery; see firecrawl.md.
-- [ ] Rotate the Discord webhook (its URL was pasted in a chat session) and update `.env` plus the Actions secret.
-- [ ] Token expiry: OPENRACE_BOT_TOKEN and openrace-api's read token are personal fine-grained PATs. When one expires, checks (or the API sync) fail until it's replaced. Consider GitHub Apps later.
+- [ ] First real committed runs, in small batches: `--site actiup --limit 10`, then VM, then the race sites. About 10–15 credits per ActiUp race the first time.
+- [ ] Paid check of the default recipe on Hạ Long, Lâm Đồng Trail and Run To Live (≤20–50 each), with their prices added to `test/answers.test.ts`.
+- [ ] Recipes: bibchung (group prices; server-rendered), vietnammtbseries (hub).
+- [ ] Agent skill for backfills without Firecrawl: same recipes, the agent reads pages and images and writes `extracted`, then `npm run sync`.
+- [ ] Backfill past races (`--past`), on a paid month.
+- [ ] openrace-api: read schema v2, then re-enable `notify-api` in `main.yml`.
+- [ ] Turn on the daily cron once the data is trusted.
+- [ ] Review the ActiUp 20-race study (`.claude/docs/study/`, written by another agent) and merge its findings.
 
 ## Known gaps
 
-- **Removed events stay** (decided). A vanished page is retried every 3 days until race day (1 credit per failed scrape).
-- **Distance drift.** The model sometimes picks a distance up from the description text and sometimes doesn't, which can cause an occasional `distances` commit.
-- **Multi-day dates.** "21 - 22 tháng 11" stores the 21st.
-- **ActiUp empty renders.** About 1 in 10 scrapes of an ActiUp page comes back empty (`pageKind: none`, still costs credits); it's retried after 3 days or by hand.
-- **Race matching** across sources is heuristic (±1 day + name similarity ≥ 0.5). Watch the Discord `+bibchung` lines.
+- **Race sites are one edition at a time:** the site's current edition only. Past editions need the Wayback Machine or a seller's old page.
+- **Only PNG and JPEG images can be OCR'd** (pdf-lib). WebP and GIF are skipped, with a note in the run report.
+- **Series for ActiUp races** aren't detected yet (only the organizer, from `merchant_public_name`).
+- **Race names are as the site writes them**, so the same race can be named differently by different sites. The official site's name wins.
