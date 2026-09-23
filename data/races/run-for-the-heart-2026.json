@@ -3,19 +3,54 @@
   "slug": "run-for-the-heart-2026",
   "name": "Giải chạy Run For The Heart - Chạy vì trái tim 2026",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2026-12-06",
   "endDate": null,
   "seriesId": null,
   "organizerId": "gamuda-land-viet-nam-phoi-hop-cung-nhip-tim-viet-nam",
   "organizer": "Gamuda Land Việt Nam phối hợp cùng Nhịp Tim Việt Nam",
-  "distances": [],
+  "distances": [
+    "2km",
+    "5km",
+    "10km"
+  ],
   "location": {
     "venue": "Công viên Yên Sở, phường Yên Sở, TP. Hà Nội",
-    "city": null
+    "city": "Hà Nội"
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "2km",
+      "tier": "Supper Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 169000,
+      "from": "2026-08-25",
+      "to": "2026-10-13",
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Supper Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 189000,
+      "from": "2026-08-25",
+      "to": "2026-10-13",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Supper Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 199000,
+      "from": "2026-08-25",
+      "to": "2026-10-13",
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -38,7 +73,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/run-for-the-heart-2026",
-      "lastCheckedAt": "2026-09-23T18:30:43.016Z",
+      "lastCheckedAt": "2026-09-23T19:22:57.623Z",
       "lastChangedAt": "2026-09-23T18:30:43.016Z",
       "extracted": {
         "facts": {
@@ -50,6 +85,64 @@
           "registrationStatus": "open",
           "fromPrice": 169000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/run-for-the-heart-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Giải chạy Run For The Heart - Chạy vì trái tim 2026",
+              "city": "Hà Nội",
+              "organizer": "Gamuda Land Việt Nam",
+              "currency": "VND",
+              "prices": []
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/08/24/1787551238540706/Gi%C3%A1-v%C3%A9-SEB-(VN)---activeUP.png",
+            "json": {
+              "prices": [
+                {
+                  "distance": "2KM",
+                  "tier": "Supper Early Bird",
+                  "from": "2026-08-25",
+                  "to": "2026-10-13",
+                  "price": 169000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Supper Early Bird",
+                  "from": "2026-08-25",
+                  "to": "2026-10-13",
+                  "price": 189000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Supper Early Bird",
+                  "from": "2026-08-25",
+                  "to": "2026-10-13",
+                  "price": 199000
+                }
+              ],
+              "distances": [
+                "2KM",
+                "5KM",
+                "10KM"
+              ],
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2026/08/25/1787654372631111/B%E1%BA%A2NG-CHI%E1%BA%BET-KH%E1%BA%A4U-H%E1%BB%98I-NH%C3%93M.png",
+            "json": {
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1as7sB7Azzz8NLPLDxijX8h-Memw1aZi6/view?usp=drive_link",
@@ -59,11 +152,12 @@
         "organizer": {
           "id": "gamuda-land-viet-nam-phoi-hop-cung-nhip-tim-viet-nam",
           "name": "Gamuda Land Việt Nam phối hợp cùng Nhịp Tim Việt Nam"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-23T19:22:57.623Z"
 }

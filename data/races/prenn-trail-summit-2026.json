@@ -3,19 +3,349 @@
   "slug": "prenn-trail-summit-2026",
   "name": "PRENN TRAIL SUMMIT 2026",
   "types": [
-    "other"
+    "trail_run"
   ],
   "date": "2026-12-09",
   "endDate": "2026-12-13",
   "seriesId": null,
   "organizerId": "cong-ty-tnhh-dau-tu-thuong-mai-dich-vu-unique",
   "organizer": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE",
-  "distances": [],
+  "distances": [
+    "3km",
+    "10km",
+    "25km",
+    "55km",
+    "75km",
+    "103km",
+    "250km",
+    "100mi"
+  ],
   "location": {
     "venue": "Chân đèo Prenn, Phường 3, Thành Phố Đà Lạt, Tỉnh Lâm Đồng",
-    "city": null
+    "city": "Lâm Đồng"
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "3km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 550000,
+      "from": "2026-02-26",
+      "to": "2026-02-28",
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 650000,
+      "from": "2026-03-01",
+      "to": "2026-05-31",
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 800000,
+      "from": "2026-06-01",
+      "to": "2026-10-15",
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1050000,
+      "from": "2026-10-16",
+      "to": "2026-11-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 850000,
+      "from": "2026-02-26",
+      "to": "2026-02-28",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1100000,
+      "from": "2026-03-01",
+      "to": "2026-05-31",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1350000,
+      "from": "2026-06-01",
+      "to": "2026-10-15",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1650000,
+      "from": "2026-10-16",
+      "to": "2026-11-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "25km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 1250000,
+      "from": "2026-02-26",
+      "to": "2026-02-28",
+      "site": "actiup"
+    },
+    {
+      "distance": "25km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1550000,
+      "from": "2026-03-01",
+      "to": "2026-05-31",
+      "site": "actiup"
+    },
+    {
+      "distance": "25km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1850000,
+      "from": "2026-06-01",
+      "to": "2026-10-15",
+      "site": "actiup"
+    },
+    {
+      "distance": "25km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2550000,
+      "from": "2026-10-16",
+      "to": "2026-11-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "55km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 1850000,
+      "from": "2026-02-26",
+      "to": "2026-02-28",
+      "site": "actiup"
+    },
+    {
+      "distance": "55km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2250000,
+      "from": "2026-03-01",
+      "to": "2026-05-31",
+      "site": "actiup"
+    },
+    {
+      "distance": "55km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2650000,
+      "from": "2026-06-01",
+      "to": "2026-10-15",
+      "site": "actiup"
+    },
+    {
+      "distance": "55km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 3150000,
+      "from": "2026-10-16",
+      "to": "2026-11-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "75km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 2300000,
+      "from": "2026-02-26",
+      "to": "2026-02-28",
+      "site": "actiup"
+    },
+    {
+      "distance": "75km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2850000,
+      "from": "2026-03-01",
+      "to": "2026-05-31",
+      "site": "actiup"
+    },
+    {
+      "distance": "75km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 3450000,
+      "from": "2026-06-01",
+      "to": "2026-10-15",
+      "site": "actiup"
+    },
+    {
+      "distance": "75km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 3950000,
+      "from": "2026-10-16",
+      "to": "2026-11-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "103km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 2900000,
+      "from": "2026-02-26",
+      "to": "2026-02-28",
+      "site": "actiup"
+    },
+    {
+      "distance": "103km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 3450000,
+      "from": "2026-03-01",
+      "to": "2026-05-31",
+      "site": "actiup"
+    },
+    {
+      "distance": "103km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 4100000,
+      "from": "2026-06-01",
+      "to": "2026-10-15",
+      "site": "actiup"
+    },
+    {
+      "distance": "103km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 4550000,
+      "from": "2026-10-16",
+      "to": "2026-11-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "100mi",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 5950000,
+      "from": "2026-02-26",
+      "to": "2026-02-28",
+      "site": "actiup"
+    },
+    {
+      "distance": "100mi",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 6750000,
+      "from": "2026-03-01",
+      "to": "2026-05-31",
+      "site": "actiup"
+    },
+    {
+      "distance": "100mi",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 7350000,
+      "from": "2026-06-01",
+      "to": "2026-10-15",
+      "site": "actiup"
+    },
+    {
+      "distance": "100mi",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 7950000,
+      "from": "2026-10-16",
+      "to": "2026-11-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "250km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 8050000,
+      "from": "2026-02-26",
+      "to": "2026-02-28",
+      "site": "actiup"
+    },
+    {
+      "distance": "250km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 9050000,
+      "from": "2026-03-01",
+      "to": "2026-05-31",
+      "site": "actiup"
+    },
+    {
+      "distance": "250km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 11050000,
+      "from": "2026-06-01",
+      "to": "2026-10-15",
+      "site": "actiup"
+    },
+    {
+      "distance": "250km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 12050000,
+      "from": "2026-10-16",
+      "to": "2026-11-30",
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -38,7 +368,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/prenn-trail-summit-2026",
-      "lastCheckedAt": "2026-09-23T18:30:43.405Z",
+      "lastCheckedAt": "2026-09-23T19:22:57.623Z",
       "lastChangedAt": "2026-09-23T18:30:43.405Z",
       "extracted": {
         "facts": {
@@ -51,6 +381,282 @@
           "registrationStatus": "open",
           "fromPrice": 800000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/prenn-trail-summit-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "trail_run"
+              ],
+              "name": "PRENN TRAIL SUMMIT 2026",
+              "distances": [
+                "3KM",
+                "10KM",
+                "25KM",
+                "55KM",
+                "75KM",
+                "103KM",
+                "100MILES",
+                "250KM"
+              ],
+              "city": "Lâm Đồng",
+              "organizer": "Unique Events & Media",
+              "currency": "VND",
+              "prices": []
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/08/26/1787733181286213/B%E1%BA%A2NG-GI%C3%81-.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "3KM",
+                  "tier": "Flash Sale",
+                  "from": "2026-02-26",
+                  "to": "2026-02-28",
+                  "price": 550000
+                },
+                {
+                  "distance": "3KM",
+                  "tier": "Early Bird",
+                  "from": "2026-03-01",
+                  "to": "2026-05-31",
+                  "price": 650000
+                },
+                {
+                  "distance": "3KM",
+                  "tier": "Regular",
+                  "from": "2026-06-01",
+                  "to": "2026-10-15",
+                  "price": 800000
+                },
+                {
+                  "distance": "3KM",
+                  "tier": "Late",
+                  "from": "2026-10-16",
+                  "to": "2026-11-30",
+                  "price": 1050000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Flash Sale",
+                  "from": "2026-02-26",
+                  "to": "2026-02-28",
+                  "price": 850000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Early Bird",
+                  "from": "2026-03-01",
+                  "to": "2026-05-31",
+                  "price": 1100000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Regular",
+                  "from": "2026-06-01",
+                  "to": "2026-10-15",
+                  "price": 1350000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Late",
+                  "from": "2026-10-16",
+                  "to": "2026-11-30",
+                  "price": 1650000
+                },
+                {
+                  "distance": "25KM",
+                  "tier": "Flash Sale",
+                  "from": "2026-02-26",
+                  "to": "2026-02-28",
+                  "price": 1250000
+                },
+                {
+                  "distance": "25KM",
+                  "tier": "Early Bird",
+                  "from": "2026-03-01",
+                  "to": "2026-05-31",
+                  "price": 1550000
+                },
+                {
+                  "distance": "25KM",
+                  "tier": "Regular",
+                  "from": "2026-06-01",
+                  "to": "2026-10-15",
+                  "price": 1850000
+                },
+                {
+                  "distance": "25KM",
+                  "tier": "Late",
+                  "from": "2026-10-16",
+                  "to": "2026-11-30",
+                  "price": 2550000
+                },
+                {
+                  "distance": "55KM",
+                  "tier": "Flash Sale",
+                  "from": "2026-02-26",
+                  "to": "2026-02-28",
+                  "price": 1850000
+                },
+                {
+                  "distance": "55KM",
+                  "tier": "Early Bird",
+                  "from": "2026-03-01",
+                  "to": "2026-05-31",
+                  "price": 2250000
+                },
+                {
+                  "distance": "55KM",
+                  "tier": "Regular",
+                  "from": "2026-06-01",
+                  "to": "2026-10-15",
+                  "price": 2650000
+                },
+                {
+                  "distance": "55KM",
+                  "tier": "Late",
+                  "from": "2026-10-16",
+                  "to": "2026-11-30",
+                  "price": 3150000
+                },
+                {
+                  "distance": "75KM",
+                  "tier": "Flash Sale",
+                  "from": "2026-02-26",
+                  "to": "2026-02-28",
+                  "price": 2300000
+                },
+                {
+                  "distance": "75KM",
+                  "tier": "Early Bird",
+                  "from": "2026-03-01",
+                  "to": "2026-05-31",
+                  "price": 2850000
+                },
+                {
+                  "distance": "75KM",
+                  "tier": "Regular",
+                  "from": "2026-06-01",
+                  "to": "2026-10-15",
+                  "price": 3450000
+                },
+                {
+                  "distance": "75KM",
+                  "tier": "Late",
+                  "from": "2026-10-16",
+                  "to": "2026-11-30",
+                  "price": 3950000
+                },
+                {
+                  "distance": "103KM",
+                  "tier": "Flash Sale",
+                  "from": "2026-02-26",
+                  "to": "2026-02-28",
+                  "price": 2900000
+                },
+                {
+                  "distance": "103KM",
+                  "tier": "Early Bird",
+                  "from": "2026-03-01",
+                  "to": "2026-05-31",
+                  "price": 3450000
+                },
+                {
+                  "distance": "103KM",
+                  "tier": "Regular",
+                  "from": "2026-06-01",
+                  "to": "2026-10-15",
+                  "price": 4100000
+                },
+                {
+                  "distance": "103KM",
+                  "tier": "Late",
+                  "from": "2026-10-16",
+                  "to": "2026-11-30",
+                  "price": 4550000
+                },
+                {
+                  "distance": "100 MILES",
+                  "tier": "Flash Sale",
+                  "from": "2026-02-26",
+                  "to": "2026-02-28",
+                  "price": 5950000
+                },
+                {
+                  "distance": "100 MILES",
+                  "tier": "Early Bird",
+                  "from": "2026-03-01",
+                  "to": "2026-05-31",
+                  "price": 6750000
+                },
+                {
+                  "distance": "100 MILES",
+                  "tier": "Regular",
+                  "from": "2026-06-01",
+                  "to": "2026-10-15",
+                  "price": 7350000
+                },
+                {
+                  "distance": "100 MILES",
+                  "tier": "Late",
+                  "from": "2026-10-16",
+                  "to": "2026-11-30",
+                  "price": 7950000
+                },
+                {
+                  "distance": "250KM",
+                  "tier": "Flash Sale",
+                  "from": "2026-02-26",
+                  "to": "2026-02-28",
+                  "price": 8050000
+                },
+                {
+                  "distance": "250KM",
+                  "tier": "Early Bird",
+                  "from": "2026-03-01",
+                  "to": "2026-05-31",
+                  "price": 9050000
+                },
+                {
+                  "distance": "250KM",
+                  "tier": "Regular",
+                  "from": "2026-06-01",
+                  "to": "2026-10-15",
+                  "price": 11050000
+                },
+                {
+                  "distance": "250KM",
+                  "tier": "Late",
+                  "from": "2026-10-16",
+                  "to": "2026-11-30",
+                  "price": 12050000
+                }
+              ],
+              "distances": [
+                "3KM",
+                "10KM",
+                "25KM",
+                "55KM",
+                "75KM",
+                "103KM",
+                "100 MILES",
+                "250KM"
+              ],
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2026/08/26/1787733137903062/Ch%C3%ADnh-s%C3%A1ch-nh%C3%B3m.jpg",
+            "json": {
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1knH3jpewfsJUxaDcpwwOn8CfkMZxXEJo/view",
@@ -60,11 +666,12 @@
         "organizer": {
           "id": "cong-ty-tnhh-dau-tu-thuong-mai-dich-vu-unique",
           "name": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-23T19:22:57.623Z"
 }
