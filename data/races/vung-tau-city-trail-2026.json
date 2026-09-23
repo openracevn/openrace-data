@@ -23,7 +23,17 @@
   "prices": [
     {
       "distance": "7km",
-      "tier": "EARLY BIRD",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 350000,
+      "from": "2026-09-18",
+      "to": "2026-09-18",
+      "site": "actiup"
+    },
+    {
+      "distance": "7km",
+      "tier": "Early Bird",
       "kind": "early",
       "audience": null,
       "price": 550000,
@@ -33,7 +43,7 @@
     },
     {
       "distance": "7km",
-      "tier": "REGULAR",
+      "tier": "Regular",
       "kind": "regular",
       "audience": null,
       "price": 650000,
@@ -43,47 +53,17 @@
     },
     {
       "distance": "12km",
-      "tier": "Giá vé",
-      "kind": "other",
-      "audience": null,
-      "price": 350000,
-      "from": null,
-      "to": null,
-      "site": "actiup"
-    },
-    {
-      "distance": "12km",
-      "tier": "EARLY BIRD",
-      "kind": "early",
-      "audience": null,
-      "price": 550000,
-      "from": "2026-09-19",
-      "to": "2026-10-18",
-      "site": "actiup"
-    },
-    {
-      "distance": "12km",
-      "tier": "REGULAR",
-      "kind": "regular",
-      "audience": null,
-      "price": 650000,
-      "from": "2026-10-19",
-      "to": "2026-11-15",
-      "site": "actiup"
-    },
-    {
-      "distance": "25km",
-      "tier": "Giá vé",
+      "tier": "Flash Sale",
       "kind": "other",
       "audience": null,
       "price": 450000,
-      "from": null,
-      "to": null,
+      "from": "2026-09-18",
+      "to": "2026-09-18",
       "site": "actiup"
     },
     {
-      "distance": "25km",
-      "tier": "EARLY BIRD",
+      "distance": "12km",
+      "tier": "Early Bird",
       "kind": "early",
       "audience": null,
       "price": 650000,
@@ -92,8 +72,8 @@
       "site": "actiup"
     },
     {
-      "distance": "25km",
-      "tier": "REGULAR",
+      "distance": "12km",
+      "tier": "Regular",
       "kind": "regular",
       "audience": null,
       "price": 750000,
@@ -102,18 +82,18 @@
       "site": "actiup"
     },
     {
-      "distance": "35km",
-      "tier": "Giá vé",
+      "distance": "25km",
+      "tier": "Flash Sale",
       "kind": "other",
       "audience": null,
       "price": 550000,
-      "from": null,
-      "to": null,
+      "from": "2026-09-18",
+      "to": "2026-09-18",
       "site": "actiup"
     },
     {
-      "distance": "35km",
-      "tier": "EARLY BIRD",
+      "distance": "25km",
+      "tier": "Early Bird",
       "kind": "early",
       "audience": null,
       "price": 750000,
@@ -122,11 +102,41 @@
       "site": "actiup"
     },
     {
-      "distance": "35km",
-      "tier": "REGULAR",
+      "distance": "25km",
+      "tier": "Regular",
       "kind": "regular",
       "audience": null,
       "price": 850000,
+      "from": "2026-10-19",
+      "to": "2026-11-15",
+      "site": "actiup"
+    },
+    {
+      "distance": "35km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 750000,
+      "from": "2026-09-18",
+      "to": "2026-09-18",
+      "site": "actiup"
+    },
+    {
+      "distance": "35km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 850000,
+      "from": "2026-09-19",
+      "to": "2026-10-18",
+      "site": "actiup"
+    },
+    {
+      "distance": "35km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1150000,
       "from": "2026-10-19",
       "to": "2026-11-15",
       "site": "actiup"
@@ -148,7 +158,134 @@
     }
   ],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "prices": {
+      "value": [
+        {
+          "distance": "7km",
+          "tier": "Flash Sale",
+          "kind": "other",
+          "audience": null,
+          "price": 350000,
+          "from": "2026-09-18",
+          "to": "2026-09-18",
+          "site": "actiup"
+        },
+        {
+          "distance": "7km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 550000,
+          "from": "2026-09-19",
+          "to": "2026-10-18",
+          "site": "actiup"
+        },
+        {
+          "distance": "7km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 650000,
+          "from": "2026-10-19",
+          "to": "2026-11-15",
+          "site": "actiup"
+        },
+        {
+          "distance": "12km",
+          "tier": "Flash Sale",
+          "kind": "other",
+          "audience": null,
+          "price": 450000,
+          "from": "2026-09-18",
+          "to": "2026-09-18",
+          "site": "actiup"
+        },
+        {
+          "distance": "12km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 650000,
+          "from": "2026-09-19",
+          "to": "2026-10-18",
+          "site": "actiup"
+        },
+        {
+          "distance": "12km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 750000,
+          "from": "2026-10-19",
+          "to": "2026-11-15",
+          "site": "actiup"
+        },
+        {
+          "distance": "25km",
+          "tier": "Flash Sale",
+          "kind": "other",
+          "audience": null,
+          "price": 550000,
+          "from": "2026-09-18",
+          "to": "2026-09-18",
+          "site": "actiup"
+        },
+        {
+          "distance": "25km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 750000,
+          "from": "2026-09-19",
+          "to": "2026-10-18",
+          "site": "actiup"
+        },
+        {
+          "distance": "25km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 850000,
+          "from": "2026-10-19",
+          "to": "2026-11-15",
+          "site": "actiup"
+        },
+        {
+          "distance": "35km",
+          "tier": "Flash Sale",
+          "kind": "other",
+          "audience": null,
+          "price": 750000,
+          "from": "2026-09-18",
+          "to": "2026-09-18",
+          "site": "actiup"
+        },
+        {
+          "distance": "35km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 850000,
+          "from": "2026-09-19",
+          "to": "2026-10-18",
+          "site": "actiup"
+        },
+        {
+          "distance": "35km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 1150000,
+          "from": "2026-10-19",
+          "to": "2026-11-15",
+          "site": "actiup"
+        }
+      ],
+      "reason": "Firecrawl misreads the price image twice (rows shifted); checked by eye 2026-09-25",
+      "at": "2026-09-23T19:02:41.369Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -321,5 +458,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T19:02:11.181Z"
+  "updatedAt": "2026-09-23T19:02:41.369Z"
 }
