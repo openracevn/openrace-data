@@ -148,6 +148,18 @@ describe("normalizeExtraction", () => {
     assert.deepEqual(result.facts.types, ["city_trail"]);
   });
 
+  it("counts multisport races by format, not by leg", () => {
+    const race = (name: string, types: string[], distances: string[]) => {
+      const result = normalizeExtraction({ pages: [{ url: "x", json: { pageKind: "sport", name, date: "2027-11-21", types, distances } }] });
+      assert.ok(result.ok);
+      return result.facts.distances;
+    };
+    assert.deepEqual(race("SUNRISE SPRINT Viet Nam", ["triathlon"], ["750m", "20km", "5km"]), ["Sprint"]);
+    assert.deepEqual(race("2027 IRONKIDS Viet Nam", ["aquathlon", "triathlon"], ["75 mét bơi và 1km chạy", "3km đạp"]), ["Kids"]);
+    assert.deepEqual(race("Vietnam FesTRIval 2027", ["triathlon"], ["70.3", "56.50", "Sprint"]), ["56.50", "70.3", "Sprint"]);
+    assert.deepEqual(race("Run and Tri", ["road_run", "triathlon"], ["5km"]), ["5km"]);
+  });
+
   it("snaps standard distances", () => {
     assert.deepEqual(["21.1K", "Half Marathon", "42.195km", "10 km", "100 MILES", "5K"].map(normalizeDistance), ["21km", "21km", "42km", "10km", "100mi", "5km"]);
   });

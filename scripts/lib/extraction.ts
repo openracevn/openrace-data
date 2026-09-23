@@ -196,10 +196,15 @@ export function normalizeExtraction(raw: SourceExtraction | Record<string, unkno
     dropUnsplitAudiences(fillTierDates(dedupeTiers(ls.flatMap((l) => dropComputedGroupPrices((Array.isArray(l.prices) ? l.prices : []).map((t) => normalizeTier(t, date)).filter((t) => t !== null))))));
   const imageTiers = tiersOf(images);
   const prices = imageTiers.length > 0 ? imageTiers : tiersOf([facts, ...pages]);
-  const distances = normalizeDistances([
-    ...(first((l) => (Array.isArray(l.distances) && l.distances.length > 0 ? l.distances : null)) ?? []),
-    ...prices.map((t) => t.distance).filter((d) => d !== null),
-  ]);
+  const types = normalizeTypes(first((l) => (Array.isArray(l.types) && l.types.length > 0 ? l.types : null)), name);
+  const distances = multisportFormats(
+    normalizeDistances([
+      ...(first((l) => (Array.isArray(l.distances) && l.distances.length > 0 ? l.distances : null)) ?? []),
+      ...prices.map((t) => t.distance).filter((d) => d !== null),
+    ]),
+    types,
+    name,
+  );
   const status = first((l) => str(l.registrationStatus));
   const organizer = first((l) => str(l.organizer));
 
@@ -207,7 +212,7 @@ export function normalizeExtraction(raw: SourceExtraction | Record<string, unkno
     ok: true,
     facts: {
       name,
-      types: normalizeTypes(first((l) => (Array.isArray(l.types) && l.types.length > 0 ? l.types : null)), name),
+      types,
       date,
       endDate,
       distances,
@@ -446,6 +451,27 @@ export function normalizeDistance(raw: string): string {
     return `${Number.isInteger(n) ? n : Number(n.toFixed(1))}km`;
   }
   return raw.trim();
+}
+
+const MULTISPORT: ReadonlySet<RaceType> = new Set(["triathlon", "duathlon", "aquathlon", "aquabike", "swimrun"]);
+const LEG = /^\d+(\.\d+)?(km|m|mi)$/;
+
+/**
+ * A multisport race is counted by its format ("Sprint", "70.3", "56.50"), never by its
+ * legs: a triathlon's 5km run is not comparable to a 5km road race. Leg distances
+ * ("750m", "20km", "5km") are dropped; when no format is listed it comes from the name.
+ */
+function multisportFormats(distances: string[], types: RaceType[], name: string): string[] {
+  if (!types.every((t) => MULTISPORT.has(t))) return distances;
+  const formats = distances.filter((d) => !LEG.test(d));
+  if (formats.length > 0) return formats;
+  const n = name.toLowerCase();
+  if (/\bironkids\b|\bkids\b/.test(n)) return ["Kids"];
+  if (/\bsuper sprint\b/.test(n)) return ["Super Sprint"];
+  if (/\bsprint\b/.test(n)) return ["Sprint"];
+  if (/\bolympic\b/.test(n)) return ["Olympic"];
+  if (/\b70\.3\b/.test(n)) return ["70.3"];
+  return [];
 }
 
 // Prices the model sometimes puts in `distances` ("Chỉ từ 678.000đ").
