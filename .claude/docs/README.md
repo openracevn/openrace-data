@@ -4,6 +4,7 @@ Working notes on how openrace-data is wired up. Read these before changing inges
 
 | File | What's in it |
 | --- | --- |
+| [design-v2.md](design-v2.md) | **The agreed redesign (2026-09-24, not built yet):** any source, recipes + Firecrawl, price tiers, organizer → series → edition. Wins over decisions.md where they differ |
 | [infrastructure.md](infrastructure.md) | Every moving part, where it runs, and how the parts connect |
 | [secrets.md](secrets.md) | Every secret and config value: where it lives and whether it's set (names only, never values) |
 | [firecrawl.md](firecrawl.md) | Firecrawl API facts verified against their docs, and the traps behind the current design |
