@@ -90,7 +90,7 @@ npm run typecheck && npm test && npm run validate
 
 GitHub Actions:
 - **Check races** (`check.yml`) runs the checker. It's manual only; the schedule is off until the data is trusted.
-- **Main** validates every push and posts data changes to Discord. The openrace-api resync is paused until the API reads schema v2.
+- **Main** validates every push, resyncs openrace-api when `data/` changed, and posts data changes to Discord. Run it by hand for a full resync.
 
 ## Limits to know
 

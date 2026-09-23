@@ -1,4 +1,4 @@
-# Status (end of 2026-09-24)
+# Status (end of 2026-09-25)
 
 Design v2 is being built (`design-v2.md`). The v1 race data was removed; data is rebuilt from scratch with the new pipeline.
 
@@ -21,7 +21,8 @@ Design v2 is being built (`design-v2.md`). The v1 race data was removed; data is
 - **Free dry runs against the live sites work:** ActiUp lists 41 upcoming races (≤425 credits to read them all the first time), VM 15 (≤85), and each race site ≤20–50.
 - **Workflows:**
   - `check.yml` has v2 inputs (site / race / past / limit / max credits / free / dry run). Manual only.
-  - `main.yml` validates and posts to Discord. **The openrace-api resync is paused** (`if: false`) until the API reads schema v2.
+  - `main.yml` validates, resyncs openrace-api when `data/` changed, and posts to Discord.
+- **openrace-api reads schema v2** (2026-09-25, openrace-api `65f6d00`): 300 races, 39 series and 113 organizers in production after a full resync (Main run 35907691347, 0 errors). `prices[]` plus a derived `priceFrom` (cheapest tier that isn't a group price); `/series` and `/organizers` endpoints. `region` is gone from the API.
 
 ## Data (2026-09-24)
 
@@ -41,13 +42,14 @@ Free plan: 1,000 credits per billing period (23rd to 23rd). On 2026-09-24, 1,453
 
 ## Next
 
-- [ ] **Next session (ask first; the user is saving credits):** read the other 31 upcoming ActiUp races for prices, distances and types, in small batches (`--site actiup --limit 10`, about 10–15 credits per race). Then VM (15 races, ≤85 credits), then the race sites.
+- [ ] **On hold (user decided 2026-09-25 not to run more batches for now):** read the other 31 upcoming ActiUp races for prices, distances and types, in small batches (`--site actiup --limit 10`, about 10–15 credits per race). Then VM (15 races, ≤85 credits), then the race sites.
 - [ ] Paid check of the default recipe on Hạ Long, Lâm Đồng Trail and Run To Live (≤20–50 each), with their prices added to `test/answers.test.ts`.
 - [ ] Recipes: bibchung (group prices; server-rendered), vietnammtbseries (hub).
 - [ ] Agent skill for backfills without Firecrawl: same recipes, the agent reads pages and images and writes `extracted`, then `npm run sync`.
 - [ ] Backfill past races (`--past`), on a paid month.
-- [ ] openrace-api: read schema v2, then re-enable `notify-api` in `main.yml`.
 - [ ] Turn on the daily cron once the data is trusted.
+- [ ] Vũng Tàu City Trail 2026: ActiUp's API says race day is 2026-11-28, the price poster says 29.11.2026. Find out which is right (the organizer's page) and override the date if needed.
+- [ ] openrace-api: a "price on sale today" (from `prices[]` by date) if the frontend wants it; route tests in the Workers runtime.
 - [ ] Paid check of the official race sites found in the ActiUp study (in `config/sites.yaml` with `recipe: none`), then switch them to `recipe: default`.
 
 ## Known gaps
