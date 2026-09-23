@@ -25,7 +25,7 @@ const local: RaceStore = {
 // normalization output can differ, so only normalization changes show up.
 const inputs: SyncInput[] = [];
 for (const entry of IndexSchema.parse(JSON.parse((await local.read(INDEX_PATH)) ?? "[]"))) {
-  const race = RaceSchema.parse(JSON.parse((await local.read(racePath(entry.slug)))!));
+  const race = RaceSchema.parse(JSON.parse((await local.read(racePath(entry)))!));
   for (const s of race.sources) inputs.push({ url: s.url, extracted: s.rawExtracted, checkedAt: s.lastCheckedAt });
 }
 

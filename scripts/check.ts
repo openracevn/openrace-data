@@ -225,7 +225,7 @@ if (discovering) {
 if (mode === "daily" || mode === "refresh") {
   const due: string[] = [];
   for (const entry of index) {
-    const text = await current.read(racePath(entry.slug));
+    const text = await current.read(racePath(entry));
     if (text === null) continue;
     const race = RaceSchema.parse(JSON.parse(text));
     for (const url of entry.sourceUrls.filter((u) => sourceForUrl(u) !== null)) {

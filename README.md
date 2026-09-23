@@ -38,8 +38,8 @@ Sources:
 
 ```
 data/
-  races/<slug>.json      one file per race, named by its slug (the key is the id inside)
-  index.json             [{ id, slug, lastModified, sourceUrls }] for cheap listing
+  races/<slug>-<year>.json  one file per race: slug + race year (the key is the id inside)
+  index.json             [{ id, slug, name, date, lastModified, file, sourceUrls }] for cheap listing
 state/
   checks.json            when each source page was last scraped, and the outcome
 scripts/
@@ -62,7 +62,7 @@ test/                    node:test suite
 ```jsonc
 {
   "id": "955725b2-ff80-4643-8ef9-9540ba23ab3a", // UUID, the key; never changes
-  "slug": "tay-ho-half-marathon-2026",          // URL slug and file name; may change
+  "slug": "tay-ho-half-marathon-2026",          // URL slug; names the file; may change
   "name": "Tay Ho Half Marathon 2026",
   "types": ["road_run"],                        // one or more formats, see below
   "date": "2026-11-15",
@@ -103,14 +103,14 @@ The schema lives in `scripts/lib/schema.ts` (zod). Notes:
 - **Matching** (`scripts/sync.ts`): a page from a source that doesn't have the race yet joins an existing race when race day is within 1 day and the names are mostly the same (character-bigram similarity ≥ 0.5, ignoring spaces and diacritics). Otherwise it becomes a new race.
 - **Normalization** (`scripts/lib/extraction.ts`): standard distances are snapped (`21.1K` and `Half Marathon` both become `21km`), city names are mapped to an English display name plus a region (`TP. Hồ Chí Minh` becomes `Ho Chi Minh City` / `south`), and dates and prices are coerced. As a result, LLM wording drift between checks doesn't register as a change.
 - **`types`** (filterable, one or more per race): `road_run`, `trail_run`, `city_trail` (urban trail), `obstacle_run`, `triathlon` (swim+bike+run), `duathlon` (run+bike+run), `aquathlon` (swim+run), `aquabike` (swim+bike), `swimrun`, `swim`, `road_cycle`, `mtb`, `other`. Distance classes (marathon, half, ultra) are not types: filter on `distances`. The model picks the types; names containing "City Trail", "Triathlon"/"Ironman", "Duathlon", "Aquathlon" or "Swimrun" force the matching type.
-- **Identity:** `id` is a random UUID. It's the key everywhere (index, API, matching), and it never changes. `slug` is for frontend URLs and is also the file name (`data/races/<slug>.json`), so files are readable. A new race starts with the source's own slug (ActiUp's `/vi/event/<slug>`), with a `-2` suffix if another race already uses it. After that, ingestion never changes a slug; only OpenRace does, with `npm run edit -- slug <race> <new-slug>`, which renames the file, updates the slug field and the index in one commit. The source URL maps to the race through `index.json`'s `sourceUrls`, so a re-check finds the race whatever its slug is. `validate` fails if a file isn't named after its slug.
+- **Identity:** `id` is a random UUID. It's the key everywhere (index, API, matching), and it never changes. `slug` is for frontend URLs. It also names the file, which **always ends with the race year**: `vung-tau-city-trail` in 2026 is `data/races/vung-tau-city-trail-2026.json`, and `tet-run-mien-nam-2027` (already ending with its year) is `tet-run-mien-nam-2027.json`. `index.json` records each race's `file`. If a race moves to another year, the next update renames its file (the slug doesn't change). A new race starts with the source's own slug (ActiUp's `/vi/event/<slug>`), with a `-2` suffix if another race already uses it. After that, ingestion never changes a slug; only OpenRace does, with `npm run edit -- slug <race> <new-slug>`, which renames the file, updates the slug field and the index in one commit. A new race whose file name would clash with an existing one gets a `-2` slug. The source URL maps to the race through `index.json`'s `sourceUrls`, so a re-check finds the race whatever its slug is. `validate` fails if a file isn't named slug + race year.
 
 ## For consumers (openrace-api)
 
 - **Contract:** `schema/race.schema.json` and `schema/index.schema.json` (JSON Schema 2020-12), generated from `scripts/lib/schema.ts` by `npm run schema`. `validate` fails if they're out of date.
 - **Versioning:** the schemas carry `x-schema-version`, which is also sent in the resync payload. It is bumped only on breaking changes: a field removed or renamed, a type narrowed, or a meaning changed. New fields and new enum values don't bump it, so **ignore unknown fields and tolerate unknown enum values**.
 - **Guarantees** (checked by CI and before every commit):
-  - Schema-valid files, each named `<slug>.json`; unique ids and slugs; `index.json` consistent with the race files.
+  - Schema-valid files, each named slug + race year (`index.json` `file`); unique ids, slugs and file names; `index.json` consistent with the race files.
   - Sanity bounds: distances look like distances (`10km`, `750m`, `100mi`, a bare number, or `Sprint`/`Olympic`/`70.3`/…); the race year is between 2015 and 3 years from now; prices are 0–100,000,000 VND; names contain no URLs or prices.
 - **Overrides are already applied.** Every field holds the value to serve; `overrides` only records which fields OpenRace set, and why. Source `openrace` means a race entered by hand, and its `url` is the reference it came from.
 - **Past races are included, and races are never removed**, not even when they disappear from every source. The API serves them all; each consumer decides what to show (e.g. filter on `date`).
@@ -123,9 +123,9 @@ The schema lives in `scripts/lib/schema.ts` (zod). Notes:
                              { "id": "…", "slug": "new-slug", "fields": [], "renamedFrom": "old-slug" }],
                  "removed": [{ "id": "…", "slug": "…" }] } }
   ```
-  Races are matched by the `id` inside each file, not by file name: a slug change (old file deleted, new file added) is one `updated` entry with `renamedFrom`. Files are at `data/races/<slug>.json`; `data/index.json` maps each id to its slug. An empty `fields` list means only sources or metadata changed (a new source joined, or the slug was edited).
+  Races are matched by the `id` inside each file, not by file name: a slug change (old file deleted, new file added) is one `updated` entry with `renamedFrom`. Files are in `data/races/`, named slug + race year; each `data/index.json` entry gives the race's `file`. An empty `fields` list means only sources or metadata changed (a new source joined, or the slug was edited).
 
-  The request carries an `X-Sync-Secret` header (the `SYNC_SECRET` secret). openrace-api ignores the body today: it lists `data/races` at the branch head, maps each file to its id through `data/index.json`, compares file hashes and downloads up to 40 changed files per call, replying with `remaining`. `notify-sync` repeats the call until `remaining` is 0, and fails the job if the API rejects any file (`errors`). The API tolerates new fields and enum values, so a rejection means a breaking change it hasn't caught up with.
+  The request carries an `X-Sync-Secret` header (the `SYNC_SECRET` secret). openrace-api ignores the body today: it lists `data/races` at the branch head, maps each file to its id through `data/index.json` (`file`), compares file hashes and downloads up to 40 changed files per call, replying with `remaining`. `notify-sync` repeats the call until `remaining` is 0, and fails the job if the API rejects any file (`errors`). The API tolerates new fields and enum values, so a rejection means a breaking change it hasn't caught up with.
 - **Reading the data:** the repo is private, so the API needs its own fine-grained token with *Contents: read* on this repo.
 
 ## Ingestion (`scripts/check.ts`)

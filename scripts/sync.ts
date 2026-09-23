@@ -13,7 +13,8 @@ import {
   INDEX_PATH,
   IndexSchema,
   RaceSchema,
-  racePath,
+  RACES_DIR,
+  raceFileName,
   serialize,
   type CanonicalField,
   type IndexEntry,
@@ -79,6 +80,7 @@ export async function planSync(
   const indexById = new Map(index.map((e) => [e.id, e]));
   const idByUrl = new Map(index.flatMap((e) => e.sourceUrls.map((u) => [u, e.id] as const)));
   const takenSlugs = new Set(index.map((e) => e.slug));
+  const takenFiles = new Set(index.map((e) => e.file));
   const candidates: Candidate[] = index.map((e) => ({
     id: e.id,
     name: e.name,
@@ -123,8 +125,9 @@ export async function planSync(
       continue;
     }
     const base = source === "openrace" ? slugFromName(normalized.race.name) : SOURCES[source].slugOf(new URL(url));
-    const newSlug = allocateSlug(base, takenSlugs);
+    const newSlug = allocateSlug(base, normalized.race.date, takenSlugs, takenFiles);
     takenSlugs.add(newSlug);
+    takenFiles.add(raceFileName(newSlug, normalized.race.date));
     const id = newId();
     idByUrl.set(url, id);
     candidates.push({ id, name: normalized.race.name, date: normalized.race.date, sources: new Set([source]) });
@@ -136,13 +139,11 @@ export async function planSync(
     planned.map(async ({ id }) => {
       const entry = indexById.get(id);
       if (!entry) return null;
-      const text = await store.read(racePath(entry.slug));
-      if (text === null) throw new Error(`${racePath(entry.slug)} is listed in ${INDEX_PATH} but missing`);
-      return RaceSchema.parse(JSON.parse(text));
+      return readRaceFile(store, entry);
     }),
   );
 
-  const files: Record<string, string> = {};
+  const files: Record<string, string | null> = {};
   const changes: RaceChange[] = [];
   const nextIndex = new Map(indexById);
 
@@ -175,7 +176,11 @@ export async function planSync(
     if (prev && fields.length === 0 && !joined && shadowed.length === 0 && prev.confidence === record.confidence) return;
     for (const source of touched) source.lastChangedAt = source.lastCheckedAt;
 
-    files[racePath(slug)] = serialize(record);
+    const clash = writeRace(files, nextIndex, record);
+    if (clash) {
+      for (const { url } of items) skipped.push({ url, reason: clash });
+      return;
+    }
     changes.push({
       id,
       slug,
@@ -184,14 +189,37 @@ export async function planSync(
       ...(joined && { joined: true }),
       ...(shadowed.length > 0 && { shadowed }),
     });
-    nextIndex.set(id, indexEntry(record));
   });
 
-  if (changes.length > 0) {
-    const sorted = [...nextIndex.values()].sort((a, b) => a.id.localeCompare(b.id));
-    files[INDEX_PATH] = serialize(sorted);
-  }
+  if (changes.length > 0) files[INDEX_PATH] = serializeIndex(nextIndex);
   return { files, changes, skipped };
+}
+
+/**
+ * Writes a race's file and index entry. The file name follows the slug and race
+ * year, so a slug change or a move to another year renames it: the old file is
+ * deleted in the same commit. Returns an error if another race has that file name.
+ */
+function writeRace(files: Record<string, string | null>, index: Map<string, IndexEntry>, record: Race): string | null {
+  const entry = indexEntry(record);
+  const owner = [...index.values()].find((e) => e.file === entry.file && e.id !== record.id);
+  if (owner) return `file ${RACES_DIR}/${entry.file} is already used by ${owner.slug} (${owner.id})`;
+  const prevFile = index.get(record.id)?.file;
+  if (prevFile && prevFile !== entry.file) files[`${RACES_DIR}/${prevFile}`] = null;
+  files[`${RACES_DIR}/${entry.file}`] = serialize(record);
+  index.set(record.id, entry);
+  return null;
+}
+
+function serializeIndex(index: Map<string, IndexEntry>): string {
+  return serialize([...index.values()].sort((a, b) => a.id.localeCompare(b.id)));
+}
+
+async function readRaceFile(store: RaceStore, entry: IndexEntry): Promise<Race> {
+  const path = `${RACES_DIR}/${entry.file}`;
+  const text = await store.read(path);
+  if (text === null) throw new Error(`${path} is listed in ${INDEX_PATH} but missing`);
+  return RaceSchema.parse(JSON.parse(text));
 }
 
 type ComposeArgs = {
@@ -245,6 +273,7 @@ function indexEntry(record: Race): IndexEntry {
     name: record.name,
     date: record.date,
     lastModified: record.updatedAt,
+    file: raceFileName(record.slug, record.date),
     sourceUrls: [...new Set(record.sources.map((s) => s.url))].sort(),
   };
 }
@@ -273,9 +302,13 @@ export async function planEdit(store: RaceStore, race: string, edits: readonly E
   const { record, fields } = composed;
   if (deepEqual(record.overrides, prev.overrides) && fields.length === 0) return { files: {}, changes: [], skipped: [] };
 
-  const nextIndex = index.map((e) => (e.id === record.id ? indexEntry(record) : e));
+  const files: Record<string, string | null> = {};
+  const nextIndex = new Map(index.map((e) => [e.id, e]));
+  const clash = writeRace(files, nextIndex, record);
+  if (clash) throw new Error(clash);
+  files[INDEX_PATH] = serializeIndex(nextIndex);
   return {
-    files: { [racePath(record.slug)]: serialize(record), [INDEX_PATH]: serialize(nextIndex) },
+    files,
     changes: [{ id: record.id, slug: record.slug, kind: "updated", fields }],
     skipped: [],
   };
@@ -295,9 +328,13 @@ export async function planRename(store: RaceStore, race: string, newSlug: string
   const valid = RaceSchema.safeParse(record);
   if (!valid.success) throw new Error(`invalid slug "${newSlug}": ${valid.error.issues.map((e) => e.message).join("; ")}`);
 
-  const nextIndex = index.map((e) => (e.id === record.id ? indexEntry(record) : e));
+  const files: Record<string, string | null> = {};
+  const nextIndex = new Map(index.map((e) => [e.id, e]));
+  const clash = writeRace(files, nextIndex, record);
+  if (clash) throw new Error(clash);
+  files[INDEX_PATH] = serializeIndex(nextIndex);
   return {
-    files: { [racePath(prev.slug)]: null, [racePath(newSlug)]: serialize(record), [INDEX_PATH]: serialize(nextIndex) },
+    files,
     changes: [{ id: record.id, slug: newSlug, kind: "updated", fields: [], renamedFrom: prev.slug }],
     skipped: [],
   };
@@ -306,11 +343,9 @@ export async function planRename(store: RaceStore, race: string, newSlug: string
 async function readRace(store: RaceStore, race: string): Promise<{ index: IndexEntry[]; prev: Race }> {
   const indexText = await store.read(INDEX_PATH);
   const index: IndexEntry[] = indexText ? IndexSchema.parse(JSON.parse(indexText)) : [];
-  const entry = index.find((e) => e.id === race || e.slug === race);
-  if (!entry) throw new Error(`no race with id or slug "${race}"`);
-  const text = await store.read(racePath(entry.slug));
-  if (text === null) throw new Error(`${racePath(entry.slug)} is listed in ${INDEX_PATH} but missing`);
-  return { index, prev: RaceSchema.parse(JSON.parse(text)) };
+  const entry = index.find((e) => e.id === race || e.slug === race || e.file === race || e.file === `${race}.json`);
+  if (!entry) throw new Error(`no race with id, slug or file name "${race}"`);
+  return { index, prev: await readRaceFile(store, entry) };
 }
 
 function sourceRank(source: SourceName | null): number {
@@ -369,10 +404,11 @@ function dedupeByUrl(inputs: readonly SyncInput[], skipped: Skipped[]): SyncInpu
   return [...byUrl.values()];
 }
 
-/** First free slug among base, base-2, base-3, ... */
-function allocateSlug(base: string, taken: ReadonlySet<string>): string {
-  if (!taken.has(base)) return base;
-  for (let n = 2; ; n++) if (!taken.has(`${base}-${n}`)) return `${base}-${n}`;
+/** First slug among base, base-2, base-3, ... that is free, and whose file name is free too. */
+function allocateSlug(base: string, date: string, takenSlugs: ReadonlySet<string>, takenFiles: ReadonlySet<string>): string {
+  const free = (slug: string) => !takenSlugs.has(slug) && !takenFiles.has(raceFileName(slug, date));
+  if (free(base)) return base;
+  for (let n = 2; ; n++) if (free(`${base}-${n}`)) return `${base}-${n}`;
 }
 
 export function formatCommitMessage(plan: SyncPlan, context?: string): string {

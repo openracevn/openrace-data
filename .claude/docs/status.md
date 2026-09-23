@@ -7,7 +7,7 @@
 - **Hand edits:** `npm run edit` (overrides, hand-entered `openrace` races), `npm run renormalize` (re-derive without scraping). The single-race workflow is in `.claude/skills/check-race`.
 - **On each push touching `data/`:** `validate` → Discord (links to sources + JSON per race) → openrace-api resync (`https://openrace-api.bmp.workers.dev/internal/sync`, `X-Sync-Secret`). All verified on 2026-09-23. The first real resync replied "5 unchanged" for a push that only added `overrides: {}`, which is consistent with the API ignoring unknown keys.
 - **Manual resync:** Actions → Main → Run workflow validates `main` and calls the API, without a commit (no Discord message).
-- **Files are `data/races/<slug>.json`** (renamed from `<uuid>.json` on 2026-09-23); change a slug with `npm run edit -- slug`.
+- **Files are `data/races/<slug>-<year>.json`** (renamed from `<uuid>.json` on 2026-09-23; always end with the race year; `index.json` has each `file`); change a slug with `npm run edit -- slug`.
 - **Data:** 5 races (4 upcoming + Lâm Đồng Trail 2024); Tết Run has both ActiUp and bibchung. No overrides and no hand-entered races yet.
 - **Contract:** `schemaVersion` 1, `schema/*.schema.json`, sanity bounds. Everything added since has been additive.
 - **Secrets set in Actions:** FIRECRAWL_API_KEY, OPENRACE_BOT_TOKEN, DISCORD_WEBHOOK_URL, SYNC_WEBHOOK_URL, SYNC_SECRET.

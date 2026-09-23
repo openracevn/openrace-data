@@ -36,6 +36,9 @@ function memoryStore(files: Record<string, string> = {}): RaceStore & { files: R
   return { files, read: async (p) => files[p] ?? null };
 }
 
+/** A test race's file; most test races are on 2026-11-15. */
+const pathOf = (slug: string, date = "2026-11-15") => racePath({ slug, date });
+
 /** Writes a plan's files into the store, deleting the null ones. */
 function apply(store: { files: Record<string, string> }, files: Record<string, string | null>): void {
   for (const [path, content] of Object.entries(files)) {
@@ -62,7 +65,7 @@ describe("planSync", () => {
     assert.match(id, /^[0-9a-f-]{36}$/);
     assert.deepEqual(p.changes, [{ id, slug: "tay-ho-half-marathon-2026", kind: "added", fields: [] }]);
 
-    const race = RaceSchema.parse(JSON.parse(p.files[racePath(p.changes[0]!.slug)]!));
+    const race = RaceSchema.parse(JSON.parse(p.files[pathOf(p.changes[0]!.slug)]!));
     assert.equal(race.slug, "tay-ho-half-marathon-2026");
     assert.deepEqual(race.types, ["road_run"]);
     assert.deepEqual(race.distances, ["5km", "10km", "21km"]);
@@ -75,7 +78,7 @@ describe("planSync", () => {
 
     const index = JSON.parse(p.files[INDEX_PATH]!) as IndexEntry[];
     assert.deepEqual(index, [
-      { id, slug: "tay-ho-half-marathon-2026", name: "Tay Ho Half Marathon 2026", date: "2026-11-15", lastModified: "2026-09-23T10:00:05.000Z", sourceUrls: [URL_A] },
+      { id, slug: "tay-ho-half-marathon-2026", name: "Tay Ho Half Marathon 2026", date: "2026-11-15", lastModified: "2026-09-23T10:00:05.000Z", file: "tay-ho-half-marathon-2026.json", sourceUrls: [URL_A] },
     ]);
   });
 
@@ -94,7 +97,7 @@ describe("planSync", () => {
       "2026-09-23T10:00:05.000Z",
     );
     assert.deepEqual(p.changes, [{ id: store.id, slug: "tay-ho-half-marathon-2026", kind: "updated", fields: ["priceMax", "registrationStatus"] }]);
-    const race = JSON.parse(p.files[racePath(store.slug)]!) as Race;
+    const race = JSON.parse(p.files[pathOf(store.slug)]!) as Race;
     assert.equal(race.createdAt, "2026-09-20T08:00:05.000Z");
     assert.equal(race.updatedAt, "2026-09-23T10:00:05.000Z");
     assert.equal(race.sources[0]!.lastChangedAt, "2026-09-23T10:00:00.000Z");
@@ -115,7 +118,7 @@ describe("planSync", () => {
   it("keeps the id and slug when a race is renamed", async () => {
     const store = await seeded();
     const p = await plan(store, [input(URL_A, { ...extractedA, name: "VPBank Tay Ho Half Marathon 2026" })]);
-    assert.deepEqual(Object.keys(p.files).sort(), [INDEX_PATH, racePath(store.slug)]);
+    assert.deepEqual(Object.keys(p.files).sort(), [INDEX_PATH, pathOf(store.slug)]);
     assert.deepEqual(p.changes[0]!.fields, ["name"]);
     assert.equal(p.changes[0]!.slug, "tay-ho-half-marathon-2026");
   });
@@ -124,20 +127,43 @@ describe("planSync", () => {
     const store = await seeded();
     const p = await planRename(store, "tay-ho-half-marathon-2026", "tay-ho-hm", "2026-09-24T00:00:00.000Z");
     assert.deepEqual(p.changes, [{ id: store.id, slug: "tay-ho-hm", kind: "updated", fields: [], renamedFrom: "tay-ho-half-marathon-2026" }]);
-    assert.equal(p.files[racePath("tay-ho-half-marathon-2026")], null);
+    assert.equal(p.files[pathOf("tay-ho-half-marathon-2026")], null);
     assert.match(formatCommitMessage(p), /~ tay-ho-hm: slug \(was tay-ho-half-marathon-2026\)/);
     apply(store, p.files);
-    const renamed = RaceSchema.parse(JSON.parse(store.files[racePath("tay-ho-hm")]!));
+    const renamed = RaceSchema.parse(JSON.parse(store.files[pathOf("tay-ho-hm")]!));
     assert.equal(renamed.id, store.id);
     assert.equal(renamed.updatedAt, "2026-09-24T00:00:00.000Z");
     assert.deepEqual((JSON.parse(store.files[INDEX_PATH]!) as IndexEntry[]).map((e) => [e.id, e.slug]), [[store.id, "tay-ho-hm"]]);
 
     const refresh = await plan(store, [input(URL_A, { ...extractedA, registrationStatus: "sold_out" })]);
-    assert.deepEqual(Object.keys(refresh.files).sort(), [INDEX_PATH, racePath("tay-ho-hm")]);
+    assert.deepEqual(Object.keys(refresh.files).sort(), [INDEX_PATH, pathOf("tay-ho-hm")]);
     assert.equal(refresh.changes[0]!.id, store.id);
 
     await assert.rejects(planRename(store, store.id, "Not A Slug"), /invalid slug/);
     assert.deepEqual((await planRename(store, store.id, "tay-ho-hm")).changes, []);
+  });
+
+  it("adds the race year to a file name without one, and renames the file when the race moves to another year", async () => {
+    const store = memoryStore();
+    const url = "https://actiup.net/vi/event/vung-tau-city-trail";
+    const first = await plan(store, [input(url, { ...extractedA, name: "Vung Tau City Trail" })]);
+    assert.equal(first.changes[0]!.slug, "vung-tau-city-trail"); // the slug stays the source's
+    assert.ok(first.files["data/races/vung-tau-city-trail-2026.json"]);
+    apply(store, first.files);
+
+    const moved = await plan(store, [input(url, { ...extractedA, name: "Vung Tau City Trail", date: "2027-01-10" })]);
+    assert.deepEqual(moved.changes[0]!.fields, ["date"]);
+    assert.equal(moved.changes[0]!.slug, "vung-tau-city-trail");
+    assert.equal(moved.files["data/races/vung-tau-city-trail-2026.json"], null);
+    assert.equal(RaceSchema.parse(JSON.parse(moved.files["data/races/vung-tau-city-trail-2027.json"]!)).id, first.changes[0]!.id);
+  });
+
+  it("gives a new race a -2 slug when its file name is taken", async () => {
+    const store = await seeded(); // tay-ho-half-marathon-2026.json
+    await planRename(store, store.id, "tay-ho-half-marathon").then((p) => apply(store, p.files)); // file name unchanged
+    // Another race whose source slug is "tay-ho-half-marathon-2026": that slug is free, its file name isn't.
+    const other = await plan(store, [input("https://bibchung.pro/events/tay-ho-half-marathon-2026", { ...extractedA, name: "Something Else Entirely", date: "2026-05-01" })]);
+    assert.equal(other.changes[0]!.slug, "tay-ho-half-marathon-2026-2");
   });
 
   it("refuses a slug another race already uses", async () => {
@@ -205,7 +231,7 @@ describe("multiple sources", () => {
     assert.equal(p.changes.length, 1);
     assert.equal(p.changes[0]!.kind, "updated");
     assert.equal(p.changes[0]!.joined, true);
-    const race = RaceSchema.parse(JSON.parse(p.files[racePath(p.changes[0]!.slug)]!));
+    const race = RaceSchema.parse(JSON.parse(p.files[pathOf(p.changes[0]!.slug)]!));
     assert.equal(race.name, "Tay Ho Half Marathon 2026"); // ActiUp's
     assert.equal(race.slug, "tay-ho-half-marathon-2026"); // unchanged
     assert.deepEqual(race.location, { venue: "Tay Ho Lake", city: "Hanoi", region: "north" }); // ActiUp's
@@ -223,14 +249,14 @@ describe("multiple sources", () => {
   it("pairs both pages when they arrive in the same run, in either order", async () => {
     const p = await plan(memoryStore(), [input(BIB_URL, bib), input(URL_A, actiupOnly)]);
     assert.equal(p.changes.length, 1);
-    const race = RaceSchema.parse(JSON.parse(p.files[racePath(p.changes[0]!.slug)]!));
+    const race = RaceSchema.parse(JSON.parse(p.files[pathOf(p.changes[0]!.slug)]!));
     assert.equal(race.slug, "tay-ho-half-marathon-2026"); // the primary source's slug
     assert.equal(race.sources.length, 2);
   });
 
   it("flags a race day mismatch as conflicting", async () => {
     const p = await plan(memoryStore(), [input(URL_A, actiupOnly), input(BIB_URL, { ...bib, date: "2026-11-16" })]);
-    const race = RaceSchema.parse(JSON.parse(p.files[racePath(p.changes[0]!.slug)]!));
+    const race = RaceSchema.parse(JSON.parse(p.files[pathOf(p.changes[0]!.slug)]!));
     assert.equal(race.confidence, "conflicting");
     assert.equal(race.date, "2026-11-15"); // ActiUp's
   });
@@ -242,7 +268,10 @@ describe("multiple sources", () => {
       input("https://bibchung.pro/events/tayho-2027", { ...bib, date: "2027-11-14" }), // other year
     ]);
     assert.deepEqual(p.changes.map((c) => c.slug).sort(), ["bac-ninh-legacy", "tay-ho-half-marathon-2026", "tayho-2027"]);
-    for (const c of p.changes) assert.equal(RaceSchema.parse(JSON.parse(p.files[racePath(c.slug)]!)).confidence, "single-sourced");
+    const index = JSON.parse(p.files[INDEX_PATH]!) as IndexEntry[];
+    // File names always end with the race year.
+    assert.deepEqual(index.map((e) => e.file).sort(), ["bac-ninh-legacy-2026.json", "tay-ho-half-marathon-2026.json", "tayho-2027.json"]);
+    for (const e of index) assert.equal(RaceSchema.parse(JSON.parse(p.files[`data/races/${e.file}`]!)).confidence, "single-sourced");
   });
 
   it("repairs bibchung extraction mistakes", () => {
@@ -322,22 +351,22 @@ describe("OpenRace overrides and hand-entered races", () => {
     const set = await planEdit(store, "tay-ho-half-marathon-2026", [{ kind: "set", field: "distances", value: ["21km", "42km"], reason: "BTC confirmed" }], "2026-09-24T00:00:00.000Z");
     assert.deepEqual(set.changes[0]!.fields, ["distances"]);
     apply(store, set.files);
-    let race = RaceSchema.parse(JSON.parse(store.files[racePath(store.slug)]!));
+    let race = RaceSchema.parse(JSON.parse(store.files[pathOf(store.slug)]!));
     assert.deepEqual(race.distances, ["21km", "42km"]);
     assert.deepEqual(race.overrides.distances, { value: ["21km", "42km"], reason: "BTC confirmed", at: "2026-09-24T00:00:00.000Z" });
 
     // The source changes that field: the override stays, and nothing else moves.
     const recheck = await plan(store, [input(URL_A, { ...extractedA, distances: ["10km"] }, "2026-09-25T00:00:00.000Z")]);
     assert.deepEqual(recheck.changes, [{ id: store.id, slug: "tay-ho-half-marathon-2026", kind: "updated", fields: [], shadowed: ["distances"] }]);
-    assert.deepEqual((JSON.parse(recheck.files[racePath(store.slug)]!) as Race).distances, ["21km", "42km"]); // override kept
+    assert.deepEqual((JSON.parse(recheck.files[pathOf(store.slug)]!) as Race).distances, ["21km", "42km"]); // override kept
     assert.match(formatCommitMessage(recheck), /distances changed at the source \(override kept\)/);
     const other = await plan(store, [input(URL_A, { ...extractedA, distances: ["10km"], registrationStatus: "sold_out" })]);
-    race = RaceSchema.parse(JSON.parse(other.files[racePath(store.slug)]!));
+    race = RaceSchema.parse(JSON.parse(other.files[pathOf(store.slug)]!));
     assert.deepEqual(race.distances, ["21km", "42km"]);
     assert.equal(race.registrationStatus, "sold_out");
 
     const unset = await planEdit(store, store.id, [{ kind: "unset", field: "distances" }]);
-    race = RaceSchema.parse(JSON.parse(unset.files[racePath(store.slug)]!));
+    race = RaceSchema.parse(JSON.parse(unset.files[pathOf(store.slug)]!));
     assert.deepEqual(race.distances, ["5km", "10km", "21km"]); // back to the source
     assert.deepEqual(race.overrides, {});
   });
@@ -346,7 +375,7 @@ describe("OpenRace overrides and hand-entered races", () => {
     const store = await seeded();
     await assert.rejects(planEdit(store, store.id, [{ kind: "set", field: "priceMin", value: "cheap", reason: "x" }]), /invalid record/);
     await assert.rejects(planEdit(store, store.id, [{ kind: "unset", field: "priceMin" }]), /no override/);
-    const race = JSON.parse(store.files[racePath(store.slug)]!) as Race;
+    const race = JSON.parse(store.files[pathOf(store.slug)]!) as Race;
     const bad = { ...race, overrides: { priceMin: { value: 1, reason: "x", at: race.updatedAt } } };
     assert.equal(RaceSchema.safeParse(bad).success, false);
   });
@@ -357,14 +386,14 @@ describe("OpenRace overrides and hand-entered races", () => {
     const manual = { pageKind: "sport", name: "Tây Hồ Half Marathon 2026", date: "2026-11-15", types: ["road_run"], distances: ["21km"], city: "Hà Nội", priceMin: 250000 };
     const added = await plan(store, [{ url: fb, extracted: manual, checkedAt: "2026-09-24T00:00:00.000Z", source: "openrace" }]);
     const { id, slug } = added.changes[0]!;
-    let race = RaceSchema.parse(JSON.parse(added.files[racePath(slug)]!));
+    let race = RaceSchema.parse(JSON.parse(added.files[pathOf(slug)]!));
     assert.equal(race.slug, "tay-ho-half-marathon-2026"); // from the name
     assert.deepEqual(race.sources.map((s) => [s.name, s.url]), [["openrace", "https://facebook.com/tayho.run/posts/123"]]);
     apply(store, added.files);
 
     const joined = await plan(store, [input(URL_A, actiupForJoin)]);
     assert.equal(joined.changes[0]!.id, id);
-    race = RaceSchema.parse(JSON.parse(joined.files[racePath(slug)]!));
+    race = RaceSchema.parse(JSON.parse(joined.files[pathOf(slug)]!));
     assert.equal(race.priceMin, 300000); // ActiUp wins
     assert.equal(race.confidence, "multi-sourced");
   });
@@ -375,7 +404,7 @@ const actiupForJoin = { ...extractedA, distances: [] };
 describe("sanity bounds", () => {
   const valid = async () => {
     const p = await plan(memoryStore(), [input(URL_A, extractedA)]);
-    return JSON.parse(p.files[racePath(p.changes[0]!.slug)]!) as Race;
+    return JSON.parse(p.files[pathOf(p.changes[0]!.slug)]!) as Race;
   };
 
   it("the schema rejects values that are extraction mistakes", async () => {

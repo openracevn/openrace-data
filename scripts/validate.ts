@@ -2,7 +2,7 @@
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { CHECKS_PATH, ChecksSchema, serializeChecks } from "./lib/checks.ts";
 import { jsonSchemaFiles } from "./lib/jsonschema.ts";
-import { INDEX_PATH, IndexSchema, RACES_DIR, RaceSchema, serialize, type Race } from "./lib/schema.ts";
+import { INDEX_PATH, IndexSchema, RACES_DIR, RaceSchema, raceFileName, serialize, type Race } from "./lib/schema.ts";
 
 const errors: string[] = [];
 const races = new Map<string, Race>();
@@ -24,8 +24,9 @@ for (const file of readdirSync(RACES_DIR).filter((f) => f.endsWith(".json")).sor
     for (const issue of parsed.error.issues) errors.push(`${path}: ${issue.path.join(".") || "(root)"}: ${issue.message}`);
     continue;
   }
-  if (`${parsed.data.slug}.json` !== file) {
-    errors.push(`${path}: file must be named after its slug (${parsed.data.slug}.json); to change a slug use npm run edit -- slug <race> <new-slug>`);
+  const expected = raceFileName(parsed.data.slug, parsed.data.date);
+  if (expected !== file) {
+    errors.push(`${path}: should be named ${expected} (slug + race year); to change a slug use npm run edit -- slug <race> <new-slug>`);
   }
   if (serialize(json) !== text) errors.push(`${path}: not in canonical formatting (2-space JSON + trailing newline)`);
   const sameId = idOwner.get(parsed.data.id);
@@ -50,13 +51,14 @@ if (!index.success) {
       continue;
     }
     if (entry.slug !== race.slug) errors.push(`${INDEX_PATH}: "${entry.id}" slug != race slug`);
+    if (entry.file !== raceFileName(race.slug, race.date)) errors.push(`${INDEX_PATH}: "${entry.id}" file != ${raceFileName(race.slug, race.date)}`);
     if (entry.name !== race.name || entry.date !== race.date) errors.push(`${INDEX_PATH}: "${entry.id}" name/date != race name/date`);
     if (entry.lastModified !== race.updatedAt) errors.push(`${INDEX_PATH}: "${entry.id}" lastModified != race updatedAt`);
     const urls = [...new Set(race.sources.map((s) => s.url))].sort();
     if (urls.join() !== entry.sourceUrls.join()) errors.push(`${INDEX_PATH}: "${entry.id}" sourceUrls != race sources`);
   }
   const indexed = new Set(ids);
-  for (const [id, race] of races) if (!indexed.has(id)) errors.push(`${RACES_DIR}/${race.slug}.json: id "${id}" missing from ${INDEX_PATH}`);
+  for (const [id, race] of races) if (!indexed.has(id)) errors.push(`${idOwner.get(id)}: id "${id}" missing from ${INDEX_PATH}`);
 }
 
 if (existsSync(CHECKS_PATH)) {

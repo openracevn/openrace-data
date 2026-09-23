@@ -5,7 +5,7 @@ description: Check, add, update, edit or verify a race in openrace-data. Use whe
 
 # Check a race
 
-openrace-data holds one JSON file per race (`data/races/<slug>.json`; the key is the `id` inside, listed in `data/index.json`). Races are scraped from **ActiUp** (primary for every field) and **bibchung** (a second place to buy, with a group discount: `groupPriceMin`) by `scripts/check.ts` through Firecrawl. Background: `.claude/docs/` (read only what the task needs).
+openrace-data holds one JSON file per race (`data/races/<slug>-<year>.json`, i.e. the entry's `file` in `data/index.json`; the key is the `id` inside). Races are scraped from **ActiUp** (primary for every field) and **bibchung** (a second place to buy, with a group discount: `groupPriceMin`) by `scripts/check.ts` through Firecrawl. Background: `.claude/docs/` (read only what the task needs).
 
 ## Rules
 
@@ -20,7 +20,7 @@ openrace-data holds one JSON file per race (`data/races/<slug>.json`; the key is
 git pull -q
 python3 -c "import json,sys; q=sys.argv[1]; [print(e['id'], e['slug'], e['date'], e['name'], e['sourceUrls']) for e in json.load(open('data/index.json')) if q in e['id'] or q in e['slug'] or any(q in u for u in e['sourceUrls'])]" "<url, slug or id fragment>"
 ```
-Then read `data/races/<slug>.json`. `state/checks.json` has each URL's last check and its outcome (`ok`, `rejected` + reason, `permanent`).
+Then read `data/races/<file>` (the index entry's `file`). `state/checks.json` has each URL's last check and its outcome (`ok`, `rejected` + reason, `permanent`).
 
 ## 2. Check it against the sources (free)
 

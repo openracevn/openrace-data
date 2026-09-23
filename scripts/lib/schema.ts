@@ -121,9 +121,9 @@ export const OverrideSchema = z.object({
 export const RaceSchema = z
   .object({
     id: raceId,
-    // URL slug for the frontend, and the file name (data/races/<slug>.json). Unique,
-    // and allowed to change (SEO) with `npm run edit -- slug`; a new race starts with
-    // the source's own slug (ActiUp's /vi/event/<slug>). Never used as a key: `id` is.
+    // URL slug for the frontend. Unique, and allowed to change (SEO) with
+    // `npm run edit -- slug`; a new race starts with the source's own slug (ActiUp's
+    // /vi/event/<slug>). Names the file (see raceFileName). Never used as a key: `id` is.
     slug,
     name: raceName,
     types: z.array(z.enum(RACE_TYPES)).min(1),
@@ -182,6 +182,8 @@ export const IndexEntrySchema = z.object({
   name: raceName,
   date: raceDate,
   lastModified: isoDateTime,
+  // The race's file in data/races (raceFileName), so readers don't need the naming rule.
+  file: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*-\d{4}\.json$/, "expected <slug>-<year>.json"),
   // Lets ingestion map a source URL to its race without reading every race file,
   // so a renamed race keeps its id instead of forking a new file.
   sourceUrls: z.array(z.url()),
@@ -206,9 +208,19 @@ const _canonicalFieldsAreRaceFields: readonly (keyof Race)[] = CANONICAL_FIELDS;
 void _canonicalFieldsAreRaceFields;
 export type CanonicalRace = Pick<Race, CanonicalField>;
 
-/** A race's file, named after its slug so it's readable; the race's key is still its `id`. */
-export function racePath(slug: string): string {
-  return `${RACES_DIR}/${slug}.json`;
+/**
+ * A race's file name: its slug, always ending with the race year, so files are
+ * readable and editions don't blur ("vung-tau-city-trail" in 2026 →
+ * "vung-tau-city-trail-2026.json"; "tet-run-mien-nam-2027" stays as is). The key is
+ * still the `id` inside. A race moved to another year gets its file renamed.
+ */
+export function raceFileName(slug: string, date: string): string {
+  const year = date.slice(0, 4);
+  return `${slug.endsWith(`-${year}`) ? slug : `${slug}-${year}`}.json`;
+}
+
+export function racePath(race: { slug: string; date: string }): string {
+  return `${RACES_DIR}/${raceFileName(race.slug, race.date)}`;
 }
 
 /** Stable serialization so identical data always yields byte-identical files. */
