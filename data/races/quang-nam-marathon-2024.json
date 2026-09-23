@@ -1,0 +1,57 @@
+{
+  "id": "45e93347-3a06-4fdf-9ef2-f7cc305aaa2c",
+  "slug": "quang-nam-marathon-2024",
+  "name": "Quảng Nam Marathon 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-06-02",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "cong-ty-co-phan-kham-pha-khong-gioi-han-viet-nam-vud",
+  "organizer": "Công ty Cổ phần Khám phá Không giới hạn Việt Nam (VUD)",
+  "distances": [],
+  "location": {
+    "venue": "Thành phố Tam Kỳ, tỉnh Quảng Nam",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/quang-nam-marathon-2024"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/quang-nam-marathon-2024",
+      "lastCheckedAt": "2026-09-23T18:32:24.296Z",
+      "lastChangedAt": "2026-09-23T18:32:24.296Z",
+      "extracted": {
+        "facts": {
+          "name": "Quảng Nam Marathon 2024",
+          "date": "2024-06-02",
+          "venue": "Thành phố Tam Kỳ, tỉnh Quảng Nam",
+          "organizer": "Công ty Cổ phần Khám phá Không giới hạn Việt Nam (VUD)",
+          "registrationStatus": "closed",
+          "fromPrice": 99000
+        },
+        "links": [],
+        "organizer": {
+          "id": "cong-ty-co-phan-kham-pha-khong-gioi-han-viet-nam-vud",
+          "name": "Công ty Cổ phần Khám phá Không giới hạn Việt Nam (VUD)"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "2a332b9c-1969-4732-937e-519d7e0be518",
+  "slug": "giai-chay-hong-pink-run-2026",
+  "name": "Giải Chạy Hồng – Pink Run 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-11-01",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "mang-luoi-ung-thu-vu-viet-nam-bcnv",
+  "organizer": "Mạng Lưới Ung Thu Vú Việt Nam - BCNV",
+  "distances": [],
+  "location": {
+    "venue": "Celadon City ,Thành Phố Hồ Chí Minh",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/giai-chay-hong-pink-run-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://docs.google.com/document/d/17ET73GwSgE0NX4rHLTHMiK4tfTzeYysU/edit",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/giai-chay-hong-pink-run-2026",
+      "lastCheckedAt": "2026-09-23T18:30:47.521Z",
+      "lastChangedAt": "2026-09-23T18:30:47.521Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Chạy Hồng – Pink Run 2026",
+          "date": "2026-11-01",
+          "venue": "Celadon City ,Thành Phố Hồ Chí Minh",
+          "organizer": "Mạng Lưới Ung Thu Vú Việt Nam - BCNV",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 529000
+        },
+        "links": [
+          {
+            "url": "https://docs.google.com/document/d/17ET73GwSgE0NX4rHLTHMiK4tfTzeYysU/edit?usp=drive_link&ouid=111350351941733978191&rtpof=true&sd=true",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "mang-luoi-ung-thu-vu-viet-nam-bcnv",
+          "name": "Mạng Lưới Ung Thu Vú Việt Nam - BCNV"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

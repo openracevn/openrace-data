@@ -1,0 +1,69 @@
+{
+  "id": "ababd4a4-cf76-4b09-96d1-2763de7c1128",
+  "slug": "aqua-warriors-quang-binh-2025",
+  "name": "AQUA WARRIORS QUANG TRI 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-08-02",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "bolt-event",
+  "organizer": "BOLT EVENT",
+  "distances": [],
+  "location": {
+    "venue": "Bãi biển Bảo Ninh, phường Đồng Hới, tỉnh Quảng Trị",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/aqua-warriors-quang-binh-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1zL6Kh_Xe9kjp2sXnGopJwgzGeZ9MKWvE/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/aqua-warriors-quang-binh-2025",
+      "lastCheckedAt": "2026-09-23T18:31:34.459Z",
+      "lastChangedAt": "2026-09-23T18:31:34.459Z",
+      "extracted": {
+        "facts": {
+          "name": "AQUA WARRIORS QUANG TRI 2025",
+          "date": "2025-08-02",
+          "venue": "Bãi biển Bảo Ninh, phường Đồng Hới, tỉnh Quảng Trị",
+          "organizer": "BOLT EVENT",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 479000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1zL6Kh_Xe9kjp2sXnGopJwgzGeZ9MKWvE/view?usp=sharing",
+            "text": "quy dinh tham du tai day"
+          }
+        ],
+        "organizer": {
+          "id": "bolt-event",
+          "name": "BOLT EVENT"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

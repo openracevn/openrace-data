@@ -1,0 +1,58 @@
+{
+  "id": "68003b39-0451-4f9f-a8d0-9c54a7a0d0f6",
+  "slug": "giai-marathon-ca-mau-2025-cup-petrovietnam",
+  "name": "GIẢI MARATHON - CÀ MAU 2025 CÚP PETROVIETNAM",
+  "types": [
+    "other"
+  ],
+  "date": "2025-11-16",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "vietrace365",
+  "organizer": "VIETRACE365",
+  "distances": [],
+  "location": {
+    "venue": "Quảng trường Hùng Vương, phường Bạc Liêu, tỉnh Cà Mau",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/giai-marathon-ca-mau-2025-cup-petrovietnam"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/giai-marathon-ca-mau-2025-cup-petrovietnam",
+      "lastCheckedAt": "2026-09-23T18:31:19.589Z",
+      "lastChangedAt": "2026-09-23T18:31:19.589Z",
+      "extracted": {
+        "facts": {
+          "name": "GIẢI MARATHON - CÀ MAU 2025 CÚP PETROVIETNAM",
+          "date": "2025-11-16",
+          "venue": "Quảng trường Hùng Vương, phường Bạc Liêu, tỉnh Cà Mau",
+          "organizer": "VIETRACE365",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 399000
+        },
+        "links": [],
+        "organizer": {
+          "id": "vietrace365",
+          "name": "VIETRACE365"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

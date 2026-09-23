@@ -1,0 +1,69 @@
+{
+  "id": "4c8acab9-7dfc-46c5-b53e-2926a7c3d54f",
+  "slug": "giai-half-marathon-tu-hao-to-quoc-toi-2024",
+  "name": "Giải Half Marathon Tự Hào Tổ Quốc Tôi 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-04-20",
+  "endDate": "2024-04-21",
+  "seriesId": null,
+  "organizerId": "bao-nguoi-lao-dong",
+  "organizer": "Báo Người Lao Động",
+  "distances": [],
+  "location": {
+    "venue": "Huyện Bình Chánh, TP.HCM",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/giai-half-marathon-tu-hao-to-quoc-toi-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://nld.com.vn/doc-dao-duong-chay-giai-half-marathon-tu-hao-to-quoc-toi-2024-196231230085401915.htm",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/giai-half-marathon-tu-hao-to-quoc-toi-2024",
+      "lastCheckedAt": "2026-09-23T18:32:30.312Z",
+      "lastChangedAt": "2026-09-23T18:32:30.312Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Half Marathon Tự Hào Tổ Quốc Tôi 2024",
+          "date": "2024-04-20",
+          "endDate": "2024-04-21",
+          "venue": "Huyện Bình Chánh, TP.HCM",
+          "organizer": "Báo Người Lao Động",
+          "registrationStatus": "closed",
+          "fromPrice": 150000
+        },
+        "links": [
+          {
+            "url": "https://nld.com.vn/doc-dao-duong-chay-giai-half-marathon-tu-hao-to-quoc-toi-2024-196231230085401915.htm?fbclid=IwAR2wVKMTsSE-Bxs3pyse7JFi998D1GYClOfAhzvBYjcmMHXXiLbIwl9uRSc",
+            "text": "thong tin su kien tai day"
+          }
+        ],
+        "organizer": {
+          "id": "bao-nguoi-lao-dong",
+          "name": "Báo Người Lao Động"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

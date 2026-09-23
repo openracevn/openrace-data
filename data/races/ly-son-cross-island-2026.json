@@ -1,0 +1,58 @@
+{
+  "id": "d6d065f1-01c5-453f-a014-96567f7ec21a",
+  "slug": "ly-son-cross-island-2026",
+  "name": "Lý Sơn Cross Island 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-06-07",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "cong-ty-co-phan-duong-chay-xanh",
+  "organizer": "CÔNG TY CỔ PHẦN ĐƯỜNG CHẠY XANH",
+  "distances": [],
+  "location": {
+    "venue": "Đặc khu Lý Sơn, tỉnh Quảng Ngãi",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/ly-son-cross-island-2026"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/ly-son-cross-island-2026",
+      "lastCheckedAt": "2026-09-23T18:31:05.117Z",
+      "lastChangedAt": "2026-09-23T18:31:05.117Z",
+      "extracted": {
+        "facts": {
+          "name": "Lý Sơn Cross Island 2026",
+          "date": "2026-06-07",
+          "venue": "Đặc khu Lý Sơn, tỉnh Quảng Ngãi",
+          "organizer": "CÔNG TY CỔ PHẦN ĐƯỜNG CHẠY XANH",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 1440000
+        },
+        "links": [],
+        "organizer": {
+          "id": "cong-ty-co-phan-duong-chay-xanh",
+          "name": "CÔNG TY CỔ PHẦN ĐƯỜNG CHẠY XANH"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

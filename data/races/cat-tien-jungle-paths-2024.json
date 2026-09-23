@@ -1,0 +1,68 @@
+{
+  "id": "159cffe8-af08-4f39-bc11-cde50ae50e7f",
+  "slug": "cat-tien-jungle-paths-2024",
+  "name": "CAT TIEN JUNGLE PATHS 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-12-15",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "race-jungle",
+  "organizer": "Race Jungle",
+  "distances": [],
+  "location": {
+    "venue": "Vườn Quốc gia Cát Tiên, Tân Phú, Đồng Nai",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/cat-tien-jungle-paths-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1x6QCZgtR9-6B7-p2y5sgA2FeI4_PdzH8/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/cat-tien-jungle-paths-2024",
+      "lastCheckedAt": "2026-09-23T18:32:11.830Z",
+      "lastChangedAt": "2026-09-23T18:32:11.830Z",
+      "extracted": {
+        "facts": {
+          "name": "CAT TIEN JUNGLE PATHS 2024",
+          "date": "2024-12-15",
+          "venue": "Vườn Quốc gia Cát Tiên, Tân Phú, Đồng Nai",
+          "organizer": "Race Jungle",
+          "registrationStatus": "closed",
+          "fromPrice": 591600
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1x6QCZgtR9-6B7-p2y5sgA2FeI4_PdzH8/view?usp=sharing",
+            "text": "quy dinh tham du xem chi tiet tai day"
+          }
+        ],
+        "organizer": {
+          "id": "race-jungle",
+          "name": "Race Jungle"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

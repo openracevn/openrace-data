@@ -1,0 +1,58 @@
+{
+  "id": "c5837919-265f-4b92-bb28-90a6b9424767",
+  "slug": "revive-water-run-2025-danang",
+  "name": "[Đà Nẵng] Revive Water Run 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-08-09",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "yeah1",
+  "organizer": "YeaH1",
+  "distances": [],
+  "location": {
+    "venue": "Công viên Biển Đông, Thành phố Đà Nẵng, Việt Nam",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/revive-water-run-2025-danang"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/revive-water-run-2025-danang",
+      "lastCheckedAt": "2026-09-23T18:31:27.623Z",
+      "lastChangedAt": "2026-09-23T18:31:27.623Z",
+      "extracted": {
+        "facts": {
+          "name": "[Đà Nẵng] Revive Water Run 2025",
+          "date": "2025-08-09",
+          "venue": "Công viên Biển Đông, Thành phố Đà Nẵng, Việt Nam",
+          "organizer": "YeaH1",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 349000
+        },
+        "links": [],
+        "organizer": {
+          "id": "yeah1",
+          "name": "YeaH1"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

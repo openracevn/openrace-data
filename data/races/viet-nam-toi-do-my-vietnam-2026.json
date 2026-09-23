@@ -1,0 +1,59 @@
+{
+  "id": "650a2fa4-f240-4f18-98b4-00d6fbe2577f",
+  "slug": "viet-nam-toi-do-my-vietnam-2026",
+  "name": "Việt Nam Tôi đó – My Vietnam 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-08-21",
+  "endDate": "2026-08-23",
+  "seriesId": null,
+  "organizerId": "cong-ty-zaha-vietnam",
+  "organizer": "Công ty Zaha Vietnam",
+  "distances": [],
+  "location": {
+    "venue": "Trung tâm triển lãm Quốc gia, Vinhomes Global Gate, Đông Anh, Hà Nội",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/viet-nam-toi-do-my-vietnam-2026"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/viet-nam-toi-do-my-vietnam-2026",
+      "lastCheckedAt": "2026-09-23T18:30:59.094Z",
+      "lastChangedAt": "2026-09-23T18:30:59.094Z",
+      "extracted": {
+        "facts": {
+          "name": "Việt Nam Tôi đó – My Vietnam 2026",
+          "date": "2026-08-21",
+          "endDate": "2026-08-23",
+          "venue": "Trung tâm triển lãm Quốc gia, Vinhomes Global Gate, Đông Anh, Hà Nội",
+          "organizer": "Công ty Zaha Vietnam",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 392000
+        },
+        "links": [],
+        "organizer": {
+          "id": "cong-ty-zaha-vietnam",
+          "name": "Công ty Zaha Vietnam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

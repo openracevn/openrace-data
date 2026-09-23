@@ -1,0 +1,70 @@
+{
+  "id": "dee28bd9-ba1a-433c-a8e3-8007067bc7a2",
+  "slug": "ultra-trail-cao-bang-2026",
+  "name": "ULTRA TRAIL CAO BANG 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-11-27",
+  "endDate": "2026-11-29",
+  "seriesId": null,
+  "organizerId": "race-jungle",
+  "organizer": "Race Jungle",
+  "distances": [],
+  "location": {
+    "venue": "Bản Giốc, Cao Bằng, Việt Nam",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/ultra-trail-cao-bang-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1RUdii2tITB54J5fiSoIP1h8Wes_pbrsr/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/ultra-trail-cao-bang-2026",
+      "lastCheckedAt": "2026-09-23T18:30:49.445Z",
+      "lastChangedAt": "2026-09-23T18:30:49.445Z",
+      "extracted": {
+        "facts": {
+          "name": "ULTRA TRAIL CAO BANG 2026",
+          "date": "2026-11-27",
+          "endDate": "2026-11-29",
+          "venue": "Bản Giốc, Cao Bằng, Việt Nam",
+          "organizer": "Race Jungle",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 840000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1RUdii2tITB54J5fiSoIP1h8Wes_pbrsr/view?usp=drive_link",
+            "text": "quy dinh tham du tai day"
+          }
+        ],
+        "organizer": {
+          "id": "race-jungle",
+          "name": "Race Jungle"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "19349148-bf2e-4e56-ab53-7da935fbbd93",
+  "slug": "chay-vi-trai-tim-2024",
+  "name": "CHẠY VÌ TRÁI TIM 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-03-23",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "gamuda-land",
+  "organizer": "Gamuda Land",
+  "distances": [],
+  "location": {
+    "venue": "Công viên Yên Sở, Hoàng Mai, Hà Nội",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/chay-vi-trai-tim-2024"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/chay-vi-trai-tim-2024",
+      "lastCheckedAt": "2026-09-23T18:32:27.153Z",
+      "lastChangedAt": "2026-09-23T18:32:27.153Z",
+      "extracted": {
+        "facts": {
+          "name": "CHẠY VÌ TRÁI TIM 2024",
+          "date": "2024-03-23",
+          "venue": "Công viên Yên Sở, Hoàng Mai, Hà Nội",
+          "organizer": "Gamuda Land",
+          "registrationStatus": "closed",
+          "fromPrice": 200000
+        },
+        "links": [],
+        "organizer": {
+          "id": "gamuda-land",
+          "name": "Gamuda Land"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

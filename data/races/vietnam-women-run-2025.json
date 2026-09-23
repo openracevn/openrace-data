@@ -1,0 +1,70 @@
+{
+  "id": "cda18684-1934-4234-a398-2bdd256db8d4",
+  "slug": "vietnam-women-run-2025",
+  "name": "VietNam Women Run 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-10-18",
+  "endDate": "2025-10-19",
+  "seriesId": null,
+  "organizerId": "cong-ty-tnhh-content-share-viet-nam",
+  "organizer": "CÔNG TY TNHH CONTENT SHARE VIỆT NAM",
+  "distances": [],
+  "location": {
+    "venue": "The Global City - TP. Hồ Chí Minh",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/vietnam-women-run-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1gYkHmkpQcustuk6NZLe8kmG7bPv85z7t/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/vietnam-women-run-2025",
+      "lastCheckedAt": "2026-09-23T18:31:29.232Z",
+      "lastChangedAt": "2026-09-23T18:31:29.232Z",
+      "extracted": {
+        "facts": {
+          "name": "VietNam Women Run 2025",
+          "date": "2025-10-18",
+          "endDate": "2025-10-19",
+          "venue": "The Global City - TP. Hồ Chí Minh",
+          "organizer": "CÔNG TY TNHH CONTENT SHARE VIỆT NAM",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 699000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1gYkHmkpQcustuk6NZLe8kmG7bPv85z7t/view",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-tnhh-content-share-viet-nam",
+          "name": "CÔNG TY TNHH CONTENT SHARE VIỆT NAM"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

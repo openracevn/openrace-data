@@ -1,0 +1,58 @@
+{
+  "id": "d3cad187-a4c5-4716-8f50-60351f49ae95",
+  "slug": "sunrise-sprint-phu-quoc-2024",
+  "name": "Sunrise Sprint Phú Quốc 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-11-15",
+  "endDate": "2024-11-16",
+  "seriesId": null,
+  "organizerId": "sunrise-events-vietnam",
+  "organizer": "Sunrise Events Vietnam",
+  "distances": [],
+  "location": {
+    "venue": "Phú Quốc",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/sunrise-sprint-phu-quoc-2024"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/sunrise-sprint-phu-quoc-2024",
+      "lastCheckedAt": "2026-09-23T18:32:32.733Z",
+      "lastChangedAt": "2026-09-23T18:32:32.733Z",
+      "extracted": {
+        "facts": {
+          "name": "Sunrise Sprint Phú Quốc 2024",
+          "date": "2024-11-15",
+          "endDate": "2024-11-16",
+          "venue": "Phú Quốc",
+          "organizer": "Sunrise Events Vietnam",
+          "registrationStatus": "closed",
+          "fromPrice": 3000000
+        },
+        "links": [],
+        "organizer": {
+          "id": "sunrise-events-vietnam",
+          "name": "Sunrise Events Vietnam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "e47be9cd-0807-4bc7-bc7e-0700c97aeff1",
+  "slug": "kon-ka-kinh-jungle-paths-2026",
+  "name": "Kon Ka Kinh Jungle Paths 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-03-22",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "cong-ty-tnhh-fleur-de-lys-hospitality",
+  "organizer": "Công ty TNHH Fleur de Lys Hospitality",
+  "distances": [],
+  "location": {
+    "venue": "Vườn Quốc Gia Kon Ka Kinh, Gia Lai, Việt Nam",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/kon-ka-kinh-jungle-paths-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1DT7MFUl4zaWjhyIJOtQo-39GcztrDfho/view",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://drive.google.com/file/d/11iccvIiTATp_R45AVS5hU_0rI4R0-qQ9/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1IBoYfMXvYEsagDrmIHl3aKGCdUNIqd7T/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/kon-ka-kinh-jungle-paths-2026",
+      "lastCheckedAt": "2026-09-23T18:31:14.354Z",
+      "lastChangedAt": "2026-09-23T18:31:14.354Z",
+      "extracted": {
+        "facts": {
+          "name": "Kon Ka Kinh Jungle Paths 2026",
+          "date": "2026-03-22",
+          "venue": "Vườn Quốc Gia Kon Ka Kinh, Gia Lai, Việt Nam",
+          "organizer": "Công ty TNHH Fleur de Lys Hospitality",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 1072000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1DT7MFUl4zaWjhyIJOtQo-39GcztrDfho/view?usp=sharing",
+            "text": "chinh sach huy chuyen nhuong thay doi thong tin ca nhan cu ly tai day"
+          },
+          {
+            "url": "https://drive.google.com/file/d/11iccvIiTATp_R45AVS5hU_0rI4R0-qQ9/view?usp=sharing",
+            "text": "quy dinh do tuoi tham du tai day"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1IBoYfMXvYEsagDrmIHl3aKGCdUNIqd7T/view?usp=sharing",
+            "text": "quy dinh tham du tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-tnhh-fleur-de-lys-hospitality",
+          "name": "Công ty TNHH Fleur de Lys Hospitality"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

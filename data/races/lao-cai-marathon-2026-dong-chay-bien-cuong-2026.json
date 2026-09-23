@@ -1,0 +1,69 @@
+{
+  "id": "90417f03-b99a-4207-a81d-194b10b5f5b4",
+  "slug": "lao-cai-marathon-2026-dong-chay-bien-cuong",
+  "name": "LÀO CAI MARATHON 2026 - DÒNG CHẢY BIÊN CƯƠNG",
+  "types": [
+    "other"
+  ],
+  "date": "2026-10-18",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "viet-jungle",
+  "organizer": "VIET JUNGLE",
+  "distances": [],
+  "location": {
+    "venue": "TBU",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/lao-cai-marathon-2026-dong-chay-bien-cuong"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1dT42OM0Jx4Qow1s14eaWdHkJNMWN2qil/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/lao-cai-marathon-2026-dong-chay-bien-cuong",
+      "lastCheckedAt": "2026-09-23T18:30:55.920Z",
+      "lastChangedAt": "2026-09-23T18:30:55.920Z",
+      "extracted": {
+        "facts": {
+          "name": "LÀO CAI MARATHON 2026 - DÒNG CHẢY BIÊN CƯƠNG",
+          "date": "2026-10-18",
+          "venue": "TBU",
+          "organizer": "VIET JUNGLE",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 350000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1dT42OM0Jx4Qow1s14eaWdHkJNMWN2qil/view",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "viet-jungle",
+          "name": "VIET JUNGLE"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "2e889f1a-96f6-4261-ad07-ee921bb3199a",
+  "slug": "giai-marathon-ca-mau-2026-cup-petrovietnam",
+  "name": "GIẢI MARATHON - CÀ MAU 2026 CÚP PETROVIETNAM",
+  "types": [
+    "other"
+  ],
+  "date": "2026-11-15",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "vietrace365",
+  "organizer": "VIETRACE365",
+  "distances": [],
+  "location": {
+    "venue": "Trung tâm hội nghị tỉnh Cà Mau, Phường An Xuyên, Tỉnh Cà Mau.",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/giai-marathon-ca-mau-2026-cup-petrovietnam"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/giai-marathon-ca-mau-2026-cup-petrovietnam",
+      "lastCheckedAt": "2026-09-23T18:30:44.623Z",
+      "lastChangedAt": "2026-09-23T18:30:44.623Z",
+      "extracted": {
+        "facts": {
+          "name": "GIẢI MARATHON - CÀ MAU 2026 CÚP PETROVIETNAM",
+          "date": "2026-11-15",
+          "venue": "Trung tâm hội nghị tỉnh Cà Mau, Phường An Xuyên, Tỉnh Cà Mau.",
+          "organizer": "VIETRACE365",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 368000
+        },
+        "links": [],
+        "organizer": {
+          "id": "vietrace365",
+          "name": "VIETRACE365"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

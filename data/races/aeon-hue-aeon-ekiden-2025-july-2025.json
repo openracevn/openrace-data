@@ -1,0 +1,58 @@
+{
+  "id": "0b0670f8-ca5b-42e7-8e3a-a9a1cc37797f",
+  "slug": "aeon-hue-aeon-ekiden-2025-july",
+  "name": "[AEON HUẾ] AEON EKIDEN 2025 | THÁNG 7",
+  "types": [
+    "other"
+  ],
+  "date": "2025-07-20",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "aeon-viet-nam",
+  "organizer": "AEON Việt Nam",
+  "distances": [],
+  "location": {
+    "venue": "Huế",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/aeon-hue-aeon-ekiden-2025-july"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/aeon-hue-aeon-ekiden-2025-july",
+      "lastCheckedAt": "2026-09-23T18:31:28.431Z",
+      "lastChangedAt": "2026-09-23T18:31:28.431Z",
+      "extracted": {
+        "facts": {
+          "name": "[AEON HUẾ] AEON EKIDEN 2025 | THÁNG 7",
+          "date": "2025-07-20",
+          "venue": "Huế",
+          "organizer": "AEON Việt Nam",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 0
+        },
+        "links": [],
+        "organizer": {
+          "id": "aeon-viet-nam",
+          "name": "AEON Việt Nam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

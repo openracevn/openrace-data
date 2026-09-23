@@ -1,0 +1,70 @@
+{
+  "id": "b5e60341-4a62-43e6-bbba-0d851db0e425",
+  "slug": "cuc-phuong-jungle-paths-2025",
+  "name": "CUC PHUONG JUNGLE PATHS 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-04-05",
+  "endDate": "2025-04-06",
+  "seriesId": null,
+  "organizerId": "race-jungle",
+  "organizer": "Race Jungle",
+  "distances": [],
+  "location": {
+    "venue": "Khu Hồ Mạc - Vườn Quốc gia Cúc Phương, Ninh Bình",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/cuc-phuong-jungle-paths-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1UPb_CwxECdrKAVosHdFzro5Im7NxIk-3/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/cuc-phuong-jungle-paths-2025",
+      "lastCheckedAt": "2026-09-23T18:31:50.534Z",
+      "lastChangedAt": "2026-09-23T18:31:50.534Z",
+      "extracted": {
+        "facts": {
+          "name": "CUC PHUONG JUNGLE PATHS 2025",
+          "date": "2025-04-05",
+          "endDate": "2025-04-06",
+          "venue": "Khu Hồ Mạc - Vườn Quốc gia Cúc Phương, Ninh Bình",
+          "organizer": "Race Jungle",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 450000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1UPb_CwxECdrKAVosHdFzro5Im7NxIk-3/view?usp=sharing",
+            "text": "quy dinh tham du tai day"
+          }
+        ],
+        "organizer": {
+          "id": "race-jungle",
+          "name": "Race Jungle"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

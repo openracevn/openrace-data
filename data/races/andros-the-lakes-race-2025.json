@@ -1,0 +1,78 @@
+{
+  "id": "6da9ef4a-1ff9-43f9-b06a-d230c8e795f8",
+  "slug": "andros-the-lakes-race-2025",
+  "name": "Andros Lakes Race 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-06-01",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "the-lakes-race",
+  "organizer": "THE LAKES RACE",
+  "distances": [],
+  "location": {
+    "venue": "Hồ Đá - Bình Dương",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/andros-the-lakes-race-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://androslakesrace.com/charity-program.html",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://drive.google.com/file/d/100Dj6L0MlTSXMcdcIk46KlNuNvhSZhVC/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/andros-the-lakes-race-2025",
+      "lastCheckedAt": "2026-09-23T18:31:42.794Z",
+      "lastChangedAt": "2026-09-23T18:31:42.794Z",
+      "extracted": {
+        "facts": {
+          "name": "Andros Lakes Race 2025",
+          "date": "2025-06-01",
+          "venue": "Hồ Đá - Bình Dương",
+          "organizer": "THE LAKES RACE",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 400000
+        },
+        "links": [
+          {
+            "url": "https://www.androslakesrace.com/charity-program.html",
+            "text": "thong tin su kien day"
+          },
+          {
+            "url": "https://drive.google.com/file/d/100Dj6L0MlTSXMcdcIk46KlNuNvhSZhVC/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "the-lakes-race",
+          "name": "THE LAKES RACE"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

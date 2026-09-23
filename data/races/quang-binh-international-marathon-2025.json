@@ -1,0 +1,69 @@
+{
+  "id": "46ffef07-fd23-4508-b7f0-1b5a14090ca4",
+  "slug": "quang-binh-international-marathon-2025",
+  "name": "QUANG TRI INTERNATIONAL MARATHON 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-08-03",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "bolt-event",
+  "organizer": "BOLT EVENT",
+  "distances": [],
+  "location": {
+    "venue": "Quảng trường Hồ Chí Minh, đường Hùng Vương, phường Đồng Hới, tỉnh Quảng Trị",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/quang-binh-international-marathon-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1tU_7-OhgGC4tUZKtRXnvxzX1vlgaoczk/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/quang-binh-international-marathon-2025",
+      "lastCheckedAt": "2026-09-23T18:32:00.987Z",
+      "lastChangedAt": "2026-09-23T18:32:00.987Z",
+      "extracted": {
+        "facts": {
+          "name": "QUANG TRI INTERNATIONAL MARATHON 2025",
+          "date": "2025-08-03",
+          "venue": "Quảng trường Hồ Chí Minh, đường Hùng Vương, phường Đồng Hới, tỉnh Quảng Trị",
+          "organizer": "BOLT EVENT",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 455000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1tU_7-OhgGC4tUZKtRXnvxzX1vlgaoczk/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "bolt-event",
+          "name": "BOLT EVENT"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

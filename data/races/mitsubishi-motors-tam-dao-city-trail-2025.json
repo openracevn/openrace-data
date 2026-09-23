@@ -1,0 +1,58 @@
+{
+  "id": "3f1b7d43-5750-41a4-8144-a6e6913335de",
+  "slug": "mitsubishi-motors-tam-dao-city-trail-2025",
+  "name": "MITSUBISHI MOTORS VIỆT NAM — TAM ĐẢO CITY TRAIL 2025",
+  "types": [
+    "city_trail"
+  ],
+  "date": "2025-02-23",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "vietnam-mtb-series",
+  "organizer": "Vietnam MTB Series",
+  "distances": [],
+  "location": {
+    "venue": "Tam Đảo, Vĩnh Phúc",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/mitsubishi-motors-tam-dao-city-trail-2025"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/mitsubishi-motors-tam-dao-city-trail-2025",
+      "lastCheckedAt": "2026-09-23T18:31:49.408Z",
+      "lastChangedAt": "2026-09-23T18:31:49.408Z",
+      "extracted": {
+        "facts": {
+          "name": "MITSUBISHI MOTORS VIỆT NAM — TAM ĐẢO CITY TRAIL 2025",
+          "date": "2025-02-23",
+          "venue": "Tam Đảo, Vĩnh Phúc",
+          "organizer": "Vietnam MTB Series",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 610000
+        },
+        "links": [],
+        "organizer": {
+          "id": "vietnam-mtb-series",
+          "name": "Vietnam MTB Series"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

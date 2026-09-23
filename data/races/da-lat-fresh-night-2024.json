@@ -1,0 +1,69 @@
+{
+  "id": "9a92ce78-7406-45e0-a5b6-8dec1c44d642",
+  "slug": "da-lat-fresh-night",
+  "name": "Đà Lạt Fresh Night",
+  "types": [
+    "other"
+  ],
+  "date": "2024-04-19",
+  "endDate": "2024-04-20",
+  "seriesId": null,
+  "organizerId": "cong-ty-tnhh-mtv-dao-tao-tu-van-the-thao-domingo",
+  "organizer": "CÔNG TY TNHH MTV ĐÀO TẠO - TƯ VẤN - THỂ THAO DOMINGO",
+  "distances": [],
+  "location": {
+    "venue": "Đà Lạt",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/da-lat-fresh-night"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/drive/folders/13rL9zSHsLvLJ_nk07HNuJHS7Jiu8_mpG",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/da-lat-fresh-night",
+      "lastCheckedAt": "2026-09-23T18:32:32.406Z",
+      "lastChangedAt": "2026-09-23T18:32:32.406Z",
+      "extracted": {
+        "facts": {
+          "name": "Đà Lạt Fresh Night",
+          "date": "2024-04-19",
+          "endDate": "2024-04-20",
+          "venue": "Đà Lạt",
+          "organizer": "CÔNG TY TNHH MTV ĐÀO TẠO - TƯ VẤN - THỂ THAO DOMINGO",
+          "registrationStatus": "closed",
+          "fromPrice": 290000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/drive/folders/13rL9zSHsLvLJ_nk07HNuJHS7Jiu8_mpG",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-tnhh-mtv-dao-tao-tu-van-the-thao-domingo",
+          "name": "CÔNG TY TNHH MTV ĐÀO TẠO - TƯ VẤN - THỂ THAO DOMINGO"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

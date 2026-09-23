@@ -1,0 +1,70 @@
+{
+  "id": "812522dc-18fc-4f15-8b66-9ba134327d99",
+  "slug": "phu-thuan-open-trail-running-race-2026",
+  "name": "Giải chạy địa hình Phú Thuận mở rộng 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-06-27",
+  "endDate": "2026-06-28",
+  "seriesId": null,
+  "organizerId": "cong-ty-tnhh-vietnam-safety-rescue-service-vsrs",
+  "organizer": "CÔNG TY TNHH VIETNAM SAFETY & RESCUE SERVICE (VSRS)",
+  "distances": [],
+  "location": {
+    "venue": "Khu tổ hợp Mũi Đèn Đỏ - Phường Phú Thuận - Thành phố Hồ Chí Minh",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/phu-thuan-open-trail-running-race-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1NWvOn69r7ty5r_oKMqDWx39FVHuGaEwm/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/phu-thuan-open-trail-running-race-2026",
+      "lastCheckedAt": "2026-09-23T18:30:58.680Z",
+      "lastChangedAt": "2026-09-23T18:30:58.680Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy địa hình Phú Thuận mở rộng 2026",
+          "date": "2026-06-27",
+          "endDate": "2026-06-28",
+          "venue": "Khu tổ hợp Mũi Đèn Đỏ - Phường Phú Thuận - Thành phố Hồ Chí Minh",
+          "organizer": "CÔNG TY TNHH VIETNAM SAFETY & RESCUE SERVICE (VSRS)",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 250000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1NWvOn69r7ty5r_oKMqDWx39FVHuGaEwm/view",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-tnhh-vietnam-safety-rescue-service-vsrs",
+          "name": "CÔNG TY TNHH VIETNAM SAFETY & RESCUE SERVICE (VSRS)"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

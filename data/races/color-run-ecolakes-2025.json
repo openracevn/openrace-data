@@ -1,0 +1,69 @@
+{
+  "id": "8d29d934-dc32-4a55-9a7c-40a7ad182b26",
+  "slug": "color-run-ecolakes-2025",
+  "name": "Color Run EcoLakes 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-10-05",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "setiabecamex",
+  "organizer": "SetiaBecamex",
+  "distances": [],
+  "location": {
+    "venue": "Phố đi bộ - ẩm thực EcoLakes Walk, EcoLakes Mỹ Phước, Khu phố 6, Phường Thới Hòa, Thành phố Hồ Chí Minh",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/color-run-ecolakes-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1Lxp_DIFynmsrMMJ7OHb8X5AXYnBhrfpK/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/color-run-ecolakes-2025",
+      "lastCheckedAt": "2026-09-23T18:31:25.615Z",
+      "lastChangedAt": "2026-09-23T18:31:25.615Z",
+      "extracted": {
+        "facts": {
+          "name": "Color Run EcoLakes 2025",
+          "date": "2025-10-05",
+          "venue": "Phố đi bộ - ẩm thực EcoLakes Walk, EcoLakes Mỹ Phước, Khu phố 6, Phường Thới Hòa, Thành phố Hồ Chí Minh",
+          "organizer": "SetiaBecamex",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 280000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1Lxp_DIFynmsrMMJ7OHb8X5AXYnBhrfpK/view?usp=drive_link",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "setiabecamex",
+          "name": "SetiaBecamex"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

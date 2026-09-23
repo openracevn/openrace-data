@@ -1,0 +1,79 @@
+{
+  "id": "9f707b2f-9e1c-4205-b7ea-80c887c6efb6",
+  "slug": "giai-half-marathon-tu-hao-to-quoc-toi-2025-lan2",
+  "name": "Giải Half Marathon Tự Hào Tổ Quốc Tôi 2025 - Lần 2",
+  "types": [
+    "other"
+  ],
+  "date": "2025-04-12",
+  "endDate": "2025-04-13",
+  "seriesId": null,
+  "organizerId": "bao-nguoi-lao-dong",
+  "organizer": "Báo Người Lao Động",
+  "distances": [],
+  "location": {
+    "venue": "Huyện Bình Chánh, TP.HCM",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/giai-half-marathon-tu-hao-to-quoc-toi-2025-lan2"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/19TMBJ30YyD3uSUlL1X_qtoiPKLMFp1UH/view",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1bDjvCLmbl2xNGOyFn-BDjDgaG9EAqUYb/view",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/giai-half-marathon-tu-hao-to-quoc-toi-2025-lan2",
+      "lastCheckedAt": "2026-09-23T18:31:44.368Z",
+      "lastChangedAt": "2026-09-23T18:31:44.368Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Half Marathon Tự Hào Tổ Quốc Tôi 2025 - Lần 2",
+          "date": "2025-04-12",
+          "endDate": "2025-04-13",
+          "venue": "Huyện Bình Chánh, TP.HCM",
+          "organizer": "Báo Người Lao Động",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 290000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/19TMBJ30YyD3uSUlL1X_qtoiPKLMFp1UH/view?usp=sharing",
+            "text": "lien he dong hanh xem thu ngo tai day"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1bDjvCLmbl2xNGOyFn-BDjDgaG9EAqUYb/view?usp=sharing",
+            "text": "lien he dong hanh xem proposal gui nha tai tro tai day"
+          }
+        ],
+        "organizer": {
+          "id": "bao-nguoi-lao-dong",
+          "name": "Báo Người Lao Động"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

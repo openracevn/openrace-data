@@ -1,0 +1,87 @@
+{
+  "id": "3d68bf6c-be4b-4d4b-ab07-ceaaa8a27c0a",
+  "slug": "sedona-skyrun-2025",
+  "name": "SEDONA SKYRUN 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-08-10",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "sedona-suites-ho-chi-minh-city",
+  "organizer": "Sedona Suites Ho Chi Minh City",
+  "distances": [],
+  "location": {
+    "venue": "Sedona Suites, Saigon Centre, 67 Lê Lợi, phường Bến Nghé, quận 1, TP. HCM",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/sedona-skyrun-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://facebook.com/sedonaskyrun",
+      "kind": "facebook",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1TEYqdtds1oU1-XBOtFf2hPbghUZgNEWH/view",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1e3IUuxefj18uj4Sz3sKfMykWR-mt3xos/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/sedona-skyrun-2025",
+      "lastCheckedAt": "2026-09-23T18:31:28.823Z",
+      "lastChangedAt": "2026-09-23T18:31:28.823Z",
+      "extracted": {
+        "facts": {
+          "name": "SEDONA SKYRUN 2025",
+          "date": "2025-08-10",
+          "venue": "Sedona Suites, Saigon Centre, 67 Lê Lợi, phường Bến Nghé, quận 1, TP. HCM",
+          "organizer": "Sedona Suites Ho Chi Minh City",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 500000
+        },
+        "links": [
+          {
+            "url": "https://www.facebook.com/sedonaskyrun/",
+            "text": "thong tin su kien https www facebook com sedonaskyrun"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1TEYqdtds1oU1-XBOtFf2hPbghUZgNEWH/view?usp=sharing",
+            "text": "thong tin race kit tai ve tai day"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1e3IUuxefj18uj4Sz3sKfMykWR-mt3xos/view?usp=drive_link",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "sedona-suites-ho-chi-minh-city",
+          "name": "Sedona Suites Ho Chi Minh City"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

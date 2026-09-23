@@ -1,0 +1,58 @@
+{
+  "id": "df0d3e2a-3d82-4b4b-81ae-cb244f8fc052",
+  "slug": "ky-son-win-vietnam-mountain",
+  "name": "KY SON WIN VIETNAM MOUNTAIN",
+  "types": [
+    "other"
+  ],
+  "date": "2024-02-17",
+  "endDate": "2024-02-18",
+  "seriesId": null,
+  "organizerId": "cong-ty-tnhh-the-thao-win-viet-nam",
+  "organizer": "CÔNG TY TNHH THỂ THAO WIN VIỆT NAM",
+  "distances": [],
+  "location": {
+    "venue": "HUYỆN KỲ SƠN, NGHỆ AN",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/ky-son-win-vietnam-mountain"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/ky-son-win-vietnam-mountain",
+      "lastCheckedAt": "2026-09-23T18:32:30.809Z",
+      "lastChangedAt": "2026-09-23T18:32:30.809Z",
+      "extracted": {
+        "facts": {
+          "name": "KY SON WIN VIETNAM MOUNTAIN",
+          "date": "2024-02-17",
+          "endDate": "2024-02-18",
+          "venue": "HUYỆN KỲ SƠN, NGHỆ AN",
+          "organizer": "CÔNG TY TNHH THỂ THAO WIN VIỆT NAM",
+          "registrationStatus": "closed",
+          "fromPrice": 390000
+        },
+        "links": [],
+        "organizer": {
+          "id": "cong-ty-tnhh-the-thao-win-viet-nam",
+          "name": "CÔNG TY TNHH THỂ THAO WIN VIỆT NAM"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

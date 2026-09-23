@@ -1,0 +1,70 @@
+{
+  "id": "2999204c-78ad-4dc7-baf0-d6a92fce652b",
+  "slug": "pocari-sweat-run-2026",
+  "name": "Pocari Sweat Run 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-09-12",
+  "endDate": "2026-09-13",
+  "seriesId": null,
+  "organizerId": "pocari-sweat-run",
+  "organizer": "POCARI SWEAT RUN",
+  "distances": [],
+  "location": {
+    "venue": "Hà Nội, Việt Nam",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/pocari-sweat-run-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1eT1hCIA6xdJt_fK0mM9kskGTE48shNgC/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/pocari-sweat-run-2026",
+      "lastCheckedAt": "2026-09-23T18:30:57.888Z",
+      "lastChangedAt": "2026-09-23T18:30:57.888Z",
+      "extracted": {
+        "facts": {
+          "name": "Pocari Sweat Run 2026",
+          "date": "2026-09-12",
+          "endDate": "2026-09-13",
+          "venue": "Hà Nội, Việt Nam",
+          "organizer": "POCARI SWEAT RUN",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 269000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1eT1hCIA6xdJt_fK0mM9kskGTE48shNgC/view?usp=drive_link",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "pocari-sweat-run",
+          "name": "POCARI SWEAT RUN"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

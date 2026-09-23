@@ -1,0 +1,69 @@
+{
+  "id": "f6cff31b-adb1-4e2c-91a4-c1839f0e9256",
+  "slug": "giai-chay-quoc-te-komono-than-uyen-2024",
+  "name": "GIẢI CHẠY QUỐC TẾ KOMOMO THAN UYÊN 2024 - THAN UYEN INTERNATIONAL ULTRA TRAIL 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-08-31",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "great-race-vietnam",
+  "organizer": "Great Race Vietnam",
+  "distances": [],
+  "location": {
+    "venue": "Sân Vận Động Huyện Than Uyên",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/giai-chay-quoc-te-komono-than-uyen-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://docs.google.com/document/d/1Hh_ACpXhsgFUzBo37CF1b5WaOvQj5MLb8NCSOKnng9Y/edit",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/giai-chay-quoc-te-komono-than-uyen-2024",
+      "lastCheckedAt": "2026-09-23T18:32:07.021Z",
+      "lastChangedAt": "2026-09-23T18:32:07.021Z",
+      "extracted": {
+        "facts": {
+          "name": "GIẢI CHẠY QUỐC TẾ KOMOMO THAN UYÊN 2024 - THAN UYEN INTERNATIONAL ULTRA TRAIL 2024",
+          "date": "2024-08-31",
+          "venue": "Sân Vận Động Huyện Than Uyên",
+          "organizer": "Great Race Vietnam",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 499000
+        },
+        "links": [
+          {
+            "url": "https://docs.google.com/document/d/1Hh_ACpXhsgFUzBo37CF1b5WaOvQj5MLb8NCSOKnng9Y/edit",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "great-race-vietnam",
+          "name": "Great Race Vietnam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "71d5042f-4c43-45eb-8eb7-b6c617d67b89",
+  "slug": "giai-chay-marathon-quoc-te-strong-viet-nam-vung-tau-2024",
+  "name": "Giải chạy Marathon Quốc tế Strong Vietnam Vũng Tàu 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-11-17",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "cong-ty-co-phan-quang-cao-thuong-mai-sen-vang",
+  "organizer": "CÔNG TY CỔ PHẦN QUẢNG CÁO THƯƠNG MẠI SEN VÀNG",
+  "distances": [],
+  "location": {
+    "venue": "Công viên Tam Giác và Nhà Truyền thống Cách Mạng TP. Vũng Tàu",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/giai-chay-marathon-quoc-te-strong-viet-nam-vung-tau-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1pH99GMFEC_wnilu2ST9z95IkQ_p2Hxvp/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/giai-chay-marathon-quoc-te-strong-viet-nam-vung-tau-2024",
+      "lastCheckedAt": "2026-09-23T18:32:17.047Z",
+      "lastChangedAt": "2026-09-23T18:32:17.047Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Marathon Quốc tế Strong Vietnam Vũng Tàu 2024",
+          "date": "2024-11-17",
+          "venue": "Công viên Tam Giác và Nhà Truyền thống Cách Mạng TP. Vũng Tàu",
+          "organizer": "CÔNG TY CỔ PHẦN QUẢNG CÁO THƯƠNG MẠI SEN VÀNG",
+          "registrationStatus": "closed",
+          "fromPrice": 350000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1pH99GMFEC_wnilu2ST9z95IkQ_p2Hxvp/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-co-phan-quang-cao-thuong-mai-sen-vang",
+          "name": "CÔNG TY CỔ PHẦN QUẢNG CÁO THƯƠNG MẠI SEN VÀNG"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "9a71b226-e9bc-4be3-8e16-c079eb7d286a",
+  "slug": "hai-duong-half-marathon-2024",
+  "name": "Hai Duong Half Marathon 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-08-25",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "great-race-vietnam",
+  "organizer": "Great Race Vietnam",
+  "distances": [],
+  "location": {
+    "venue": "Hai Duong",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/hai-duong-half-marathon-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1FVImERSS_xBjSmVTVVi7Tmf0vrWsLztH/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/hai-duong-half-marathon-2024",
+      "lastCheckedAt": "2026-09-23T18:32:12.235Z",
+      "lastChangedAt": "2026-09-23T18:32:12.235Z",
+      "extracted": {
+        "facts": {
+          "name": "Hai Duong Half Marathon 2024",
+          "date": "2024-08-25",
+          "venue": "Hai Duong",
+          "organizer": "Great Race Vietnam",
+          "registrationStatus": "closed",
+          "fromPrice": 499000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1FVImERSS_xBjSmVTVVi7Tmf0vrWsLztH/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "great-race-vietnam",
+          "name": "Great Race Vietnam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

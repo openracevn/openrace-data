@@ -1,0 +1,58 @@
+{
+  "id": "45683828-011e-4d37-9c29-da86bf72d7fb",
+  "slug": "prenn-trail-challenge-2024",
+  "name": "PRENN TRAIL SUMMIT 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-12-19",
+  "endDate": "2024-12-22",
+  "seriesId": null,
+  "organizerId": "cong-ty-tnhh-dau-tu-thuong-mai-dich-vu-unique",
+  "organizer": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE",
+  "distances": [],
+  "location": {
+    "venue": "Chân đèo Prenn, Phường 3, Thành Phố Đà Lạt, Tỉnh Lâm Đồng",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/prenn-trail-challenge-2024"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/prenn-trail-challenge-2024",
+      "lastCheckedAt": "2026-09-23T18:32:19.867Z",
+      "lastChangedAt": "2026-09-23T18:32:19.867Z",
+      "extracted": {
+        "facts": {
+          "name": "PRENN TRAIL SUMMIT 2024",
+          "date": "2024-12-19",
+          "endDate": "2024-12-22",
+          "venue": "Chân đèo Prenn, Phường 3, Thành Phố Đà Lạt, Tỉnh Lâm Đồng",
+          "organizer": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE",
+          "registrationStatus": "closed",
+          "fromPrice": 580000
+        },
+        "links": [],
+        "organizer": {
+          "id": "cong-ty-tnhh-dau-tu-thuong-mai-dich-vu-unique",
+          "name": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "95014700-9a29-443c-a5f6-a2cc822411ff",
+  "slug": "ninh-binh-heritage-half-marathon-2025",
+  "name": "Ninh Bình Heritage Half Marathon 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-08-30",
+  "endDate": "2025-08-31",
+  "seriesId": null,
+  "organizerId": "cong-ty-tnhh-mtv-trang-an-ninh-binh",
+  "organizer": "CÔNG TY TNHH MTV TRÀNG AN NINH BÌNH",
+  "distances": [],
+  "location": {
+    "venue": "Cố đô Hoa Lư, xã Trường Yên, Ninh Bình",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/ninh-binh-heritage-half-marathon-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1Ange-V6TDsvf27aPBY-BFanEnUklUa7J/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/ninh-binh-heritage-half-marathon-2025",
+      "lastCheckedAt": "2026-09-23T18:31:32.094Z",
+      "lastChangedAt": "2026-09-23T18:31:32.094Z",
+      "extracted": {
+        "facts": {
+          "name": "Ninh Bình Heritage Half Marathon 2025",
+          "date": "2025-08-30",
+          "endDate": "2025-08-31",
+          "venue": "Cố đô Hoa Lư, xã Trường Yên, Ninh Bình",
+          "organizer": "CÔNG TY TNHH MTV TRÀNG AN NINH BÌNH",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 299000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1Ange-V6TDsvf27aPBY-BFanEnUklUa7J/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-tnhh-mtv-trang-an-ninh-binh",
+          "name": "CÔNG TY TNHH MTV TRÀNG AN NINH BÌNH"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

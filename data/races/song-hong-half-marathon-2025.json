@@ -1,0 +1,87 @@
+{
+  "id": "274c0a28-80cb-48bb-b9da-006e12910dac",
+  "slug": "song-hong-half-marathon-2025",
+  "name": "SONG HONG HALF MARATHON 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-11-16",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "skyrun-sports-sporting-republic",
+  "organizer": "Skyrun Sports / Sporting Republic",
+  "distances": [],
+  "location": {
+    "venue": "Khu Đô thị Quốc tế Ciputra, Hà Nội",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/song-hong-half-marathon-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://hanoihalfmarathon.com/",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://hanoihalfmarathon.com/event-info/race-kit-collection",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1cS6APDSna-52YsH7KeVY7XO01cygd2kR/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/song-hong-half-marathon-2025",
+      "lastCheckedAt": "2026-09-23T18:31:26.410Z",
+      "lastChangedAt": "2026-09-23T18:31:26.410Z",
+      "extracted": {
+        "facts": {
+          "name": "SONG HONG HALF MARATHON 2025",
+          "date": "2025-11-16",
+          "venue": "Khu Đô thị Quốc tế Ciputra, Hà Nội",
+          "organizer": "Skyrun Sports / Sporting Republic",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 350000
+        },
+        "links": [
+          {
+            "url": "https://hanoihalfmarathon.com/",
+            "text": "thong tin su kien https hanoihalfmarathon com"
+          },
+          {
+            "url": "https://hanoihalfmarathon.com/event-info/race-kit-collection/",
+            "text": "thong tin race kit xem tai day"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1cS6APDSna-52YsH7KeVY7XO01cygd2kR/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "skyrun-sports-sporting-republic",
+          "name": "Skyrun Sports / Sporting Republic"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

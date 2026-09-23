@@ -1,0 +1,87 @@
+{
+  "id": "087a48c1-3d51-435b-a1d2-fb77c6667a60",
+  "slug": "song-hong-half-marathon-2024",
+  "name": "SONG HONG HALF MARATHON 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-12-08",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "sporting-republic",
+  "organizer": "Sporting Republic",
+  "distances": [],
+  "location": {
+    "venue": "Khu Đô thị Quốc tế Ciputra, Hà Nội",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/song-hong-half-marathon-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/11byrKgu7GH5mHLfRGKo-1_xsj-3b8FKi/view",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://hanoihalfmarathon.com/",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://hanoihalfmarathon.com/event-info/race-kit-collection",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/song-hong-half-marathon-2024",
+      "lastCheckedAt": "2026-09-23T18:32:07.424Z",
+      "lastChangedAt": "2026-09-23T18:32:07.424Z",
+      "extracted": {
+        "facts": {
+          "name": "SONG HONG HALF MARATHON 2024",
+          "date": "2024-12-08",
+          "venue": "Khu Đô thị Quốc tế Ciputra, Hà Nội",
+          "organizer": "Sporting Republic",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 300000
+        },
+        "links": [
+          {
+            "url": "https://hanoihalfmarathon.com/",
+            "text": "thong tin su kien https hanoihalfmarathon com"
+          },
+          {
+            "url": "https://hanoihalfmarathon.com/event-info/race-kit-collection/",
+            "text": "bo race kit day"
+          },
+          {
+            "url": "https://drive.google.com/file/d/11byrKgu7GH5mHLfRGKo-1_xsj-3b8FKi/view?usp=sharing",
+            "text": "dieu khoan dieu kien xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "sporting-republic",
+          "name": "Sporting Republic"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

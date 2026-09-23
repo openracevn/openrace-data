@@ -1,0 +1,106 @@
+{
+  "id": "821c203c-b069-46cb-9fb4-c452ce7e452a",
+  "slug": "sufferfest",
+  "name": "SufferFest",
+  "types": [
+    "other"
+  ],
+  "date": "2025-03-01",
+  "endDate": "2025-03-02",
+  "seriesId": null,
+  "organizerId": "bozo-ventures",
+  "organizer": "BOZO VENTURES",
+  "distances": [],
+  "location": {
+    "venue": "Dalat Wonder Resort, Lâm Đồng",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/sufferfest"
+    }
+  ],
+  "links": [
+    {
+      "url": "http://dalatwonderresort.com/room/superior-garden-view-20.html",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://forms.gle/crFXoPAVDvyAukA26",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://google.com/maps/d/u/0/viewer",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://sufferfest.com.vn/vi/event-schedule-vn",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://sufferfest.com.vn/vi/prize-vn",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/sufferfest",
+      "lastCheckedAt": "2026-09-23T18:31:48.930Z",
+      "lastChangedAt": "2026-09-23T18:31:48.930Z",
+      "extracted": {
+        "facts": {
+          "name": "SufferFest",
+          "date": "2025-03-01",
+          "endDate": "2025-03-02",
+          "venue": "Dalat Wonder Resort, Lâm Đồng",
+          "organizer": "BOZO VENTURES",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 790000
+        },
+        "links": [
+          {
+            "url": "http://www.dalatwonderresort.com/room/superior-garden-view-20.html",
+            "text": "thong tin dat phong luu tru tai day"
+          },
+          {
+            "url": "https://forms.gle/crFXoPAVDvyAukA26",
+            "text": "chinh sach huy chuyen nhuong thay doi thong tin ca nhan cu ly tai day"
+          },
+          {
+            "url": "https://sufferfest.com.vn/vi/event-schedule-vn/",
+            "text": "lich trinh su kien xem tai day"
+          },
+          {
+            "url": "https://www.google.com/maps/d/u/0/viewer?mid=1b9E-FQFMX4m0GpmaYne3JILtQ9Np7Ik&femb=1&ll=11.897681228514827%2C108.4153545&z=14",
+            "text": "so do duong chay xem tai day"
+          },
+          {
+            "url": "https://sufferfest.com.vn/vi/prize-vn/",
+            "text": "giai thuong xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "bozo-ventures",
+          "name": "BOZO VENTURES"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

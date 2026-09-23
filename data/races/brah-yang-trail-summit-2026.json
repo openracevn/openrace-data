@@ -1,0 +1,70 @@
+{
+  "id": "841c49dc-98f2-48a0-a17b-0d66f85af21b",
+  "slug": "brah-yang-trail-summit-2026",
+  "name": "BRĂH YÀNG TRAIL SUMMIT 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-03-05",
+  "endDate": "2026-03-08",
+  "seriesId": null,
+  "organizerId": "cong-ty-tnhh-dau-tu-thuong-mai-dich-vu-unique",
+  "organizer": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE",
+  "distances": [],
+  "location": {
+    "venue": "DI LINH - LÂM ĐỒNG - VIỆT NAM",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/brah-yang-trail-summit-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1Net3Y9dN8A9JBlUFrS4BpZZwjMJmaTpu/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/brah-yang-trail-summit-2026",
+      "lastCheckedAt": "2026-09-23T18:31:30.035Z",
+      "lastChangedAt": "2026-09-23T18:31:30.035Z",
+      "extracted": {
+        "facts": {
+          "name": "BRĂH YÀNG TRAIL SUMMIT 2026",
+          "date": "2026-03-05",
+          "endDate": "2026-03-08",
+          "venue": "DI LINH - LÂM ĐỒNG - VIỆT NAM",
+          "organizer": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 750000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1Net3Y9dN8A9JBlUFrS4BpZZwjMJmaTpu/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-tnhh-dau-tu-thuong-mai-dich-vu-unique",
+          "name": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

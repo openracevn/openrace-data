@@ -1,0 +1,70 @@
+{
+  "id": "0306b725-7c51-49a2-8e33-b3f5241323e5",
+  "slug": "ta-nang-ultra-trail-2025",
+  "name": "Tà Năng Ultra Trail 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-11-21",
+  "endDate": "2025-11-22",
+  "seriesId": null,
+  "organizerId": "nexus-sport-events",
+  "organizer": "Nexus Sport Events",
+  "distances": [],
+  "location": {
+    "venue": "Tà Năng, Huyện Đức Trọng, Tỉnh Lâm Đồng",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/ta-nang-ultra-trail-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1UImyTmynav-JXcZLjbf-4aO1CNuMLphv/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/ta-nang-ultra-trail-2025",
+      "lastCheckedAt": "2026-09-23T18:31:40.157Z",
+      "lastChangedAt": "2026-09-23T18:31:40.157Z",
+      "extracted": {
+        "facts": {
+          "name": "Tà Năng Ultra Trail 2025",
+          "date": "2025-11-21",
+          "endDate": "2025-11-22",
+          "venue": "Tà Năng, Huyện Đức Trọng, Tỉnh Lâm Đồng",
+          "organizer": "Nexus Sport Events",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 950000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1UImyTmynav-JXcZLjbf-4aO1CNuMLphv/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "nexus-sport-events",
+          "name": "Nexus Sport Events"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

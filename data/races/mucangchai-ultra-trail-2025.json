@@ -1,0 +1,79 @@
+{
+  "id": "e2ae4829-55a1-464c-9cbb-04c4e3f49acd",
+  "slug": "mucangchai-ultra-trail-2025",
+  "name": "MUCANGCHAI ULTRA TRAIL 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-10-03",
+  "endDate": "2025-10-04",
+  "seriesId": null,
+  "organizerId": "viet-jungle",
+  "organizer": "VIET JUNGLE",
+  "distances": [],
+  "location": {
+    "venue": "Mù Cang Chải, Yên Bái, Việt Nam",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/mucangchai-ultra-trail-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://forms.gle/gXVq5yzFdzVTiySE9",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1Wqz1InjqI5k93moHbkJoqwSak3je7NGw/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/mucangchai-ultra-trail-2025",
+      "lastCheckedAt": "2026-09-23T18:31:46.531Z",
+      "lastChangedAt": "2026-09-23T18:31:46.531Z",
+      "extracted": {
+        "facts": {
+          "name": "MUCANGCHAI ULTRA TRAIL 2025",
+          "date": "2025-10-03",
+          "endDate": "2025-10-04",
+          "venue": "Mù Cang Chải, Yên Bái, Việt Nam",
+          "organizer": "VIET JUNGLE",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 750000
+        },
+        "links": [
+          {
+            "url": "https://forms.gle/gXVq5yzFdzVTiySE9",
+            "text": "bang gia ve tai day"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Wqz1InjqI5k93moHbkJoqwSak3je7NGw/view?usp=drive_link",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "viet-jungle",
+          "name": "VIET JUNGLE"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

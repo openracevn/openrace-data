@@ -1,0 +1,69 @@
+{
+  "id": "56c8469d-8757-4e05-9a0f-1594d664c3fb",
+  "slug": "ly-son-half-marathon-2024",
+  "name": "Lý Sơn Half Marathon 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-08-17",
+  "endDate": "2024-08-18",
+  "seriesId": null,
+  "organizerId": "uy-ban-nhan-dan-huyen-ly-son-va-cong-ty-co-phan-duong-chay-xanh",
+  "organizer": "Ủy ban nhân dân Huyện Lý Sơn và Công Ty Cổ Phần Đường Chạy Xanh",
+  "distances": [],
+  "location": {
+    "venue": "Huyện Đảo Lý Sơn, tỉnh Quảng Ngãi",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/ly-son-half-marathon-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://facebook.com/LysonHM",
+      "kind": "facebook",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/ly-son-half-marathon-2024",
+      "lastCheckedAt": "2026-09-23T18:32:14.641Z",
+      "lastChangedAt": "2026-09-23T18:32:14.641Z",
+      "extracted": {
+        "facts": {
+          "name": "Lý Sơn Half Marathon 2024",
+          "date": "2024-08-17",
+          "endDate": "2024-08-18",
+          "venue": "Huyện Đảo Lý Sơn, tỉnh Quảng Ngãi",
+          "organizer": "Ủy ban nhân dân Huyện Lý Sơn và Công Ty Cổ Phần Đường Chạy Xanh",
+          "registrationStatus": "closed",
+          "fromPrice": 268000
+        },
+        "links": [
+          {
+            "url": "https://www.facebook.com/LysonHM?mibextid=LQQJ4d",
+            "text": "chinh sach huy chuyen nhuong thay doi thong tin ca nhan cu ly fanpage ly son half marathon"
+          }
+        ],
+        "organizer": {
+          "id": "uy-ban-nhan-dan-huyen-ly-son-va-cong-ty-co-phan-duong-chay-xanh",
+          "name": "Ủy ban nhân dân Huyện Lý Sơn và Công Ty Cổ Phần Đường Chạy Xanh"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

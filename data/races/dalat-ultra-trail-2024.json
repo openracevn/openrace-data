@@ -1,0 +1,58 @@
+{
+  "id": "6e78e5c4-0811-4d68-9384-5d99dd216954",
+  "slug": "dalat-ultra-trail-2024",
+  "name": "Dalat Ultra Trail 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-03-15",
+  "endDate": "2024-03-17",
+  "seriesId": null,
+  "organizerId": "vietnam-mtb-series",
+  "organizer": "Vietnam MTB Series",
+  "distances": [],
+  "location": {
+    "venue": "Thung Lũng Tình Yêu, Thành phố Đà Lạt",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/dalat-ultra-trail-2024"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/dalat-ultra-trail-2024",
+      "lastCheckedAt": "2026-09-23T18:32:35.139Z",
+      "lastChangedAt": "2026-09-23T18:32:35.139Z",
+      "extracted": {
+        "facts": {
+          "name": "Dalat Ultra Trail 2024",
+          "date": "2024-03-15",
+          "endDate": "2024-03-17",
+          "venue": "Thung Lũng Tình Yêu, Thành phố Đà Lạt",
+          "organizer": "Vietnam MTB Series",
+          "registrationStatus": "closed",
+          "fromPrice": 650000
+        },
+        "links": [],
+        "organizer": {
+          "id": "vietnam-mtb-series",
+          "name": "Vietnam MTB Series"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

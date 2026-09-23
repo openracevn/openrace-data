@@ -1,0 +1,70 @@
+{
+  "id": "4e9bad72-f36d-49d5-9ea8-b17459874632",
+  "slug": "phu-dong-marathon-2025",
+  "name": "Phu Dong Marathon 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-04-26",
+  "endDate": "2025-04-27",
+  "seriesId": null,
+  "organizerId": "great-race-vietnam",
+  "organizer": "Great Race Vietnam",
+  "distances": [],
+  "location": {
+    "venue": "Phù Đổng - Gia Lâm - Hà Nội",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/phu-dong-marathon-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1bop6PXeQtYgUZilkERVfiCnpiV8GPpea/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/phu-dong-marathon-2025",
+      "lastCheckedAt": "2026-09-23T18:31:39.676Z",
+      "lastChangedAt": "2026-09-23T18:31:39.676Z",
+      "extracted": {
+        "facts": {
+          "name": "Phu Dong Marathon 2025",
+          "date": "2025-04-26",
+          "endDate": "2025-04-27",
+          "venue": "Phù Đổng - Gia Lâm - Hà Nội",
+          "organizer": "Great Race Vietnam",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 349000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1bop6PXeQtYgUZilkERVfiCnpiV8GPpea/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "great-race-vietnam",
+          "name": "Great Race Vietnam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

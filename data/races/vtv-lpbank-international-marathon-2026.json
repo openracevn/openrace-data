@@ -1,0 +1,70 @@
+{
+  "id": "5fc235d5-4754-4471-8787-b0252f5edf0c",
+  "slug": "vtv-lpbank-international-marathon-2026",
+  "name": "VTV LPBANK INTERNATIONAL MARATHON 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-08-29",
+  "endDate": "2026-08-30",
+  "seriesId": null,
+  "organizerId": "dai-truyen-hinh-viet-nam-vtv-cong-ty-co-phan-thanh-an-media-don-vi-dong-hanh-nga",
+  "organizer": "Đài Truyền hình Việt Nam (VTV), Công ty Cổ phần Thành An Media - Đơn vị đồng hành: Ngân hàng TMCP Lộc Phát Việt Nam (LPBank)",
+  "distances": [],
+  "location": {
+    "venue": "Đầm Vân Long, Ninh Bình",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/vtv-lpbank-international-marathon-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1y5RhwG_MTgWM1FstGALRMAXRm3pEuoZ1/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/vtv-lpbank-international-marathon-2026",
+      "lastCheckedAt": "2026-09-23T18:30:57.071Z",
+      "lastChangedAt": "2026-09-23T18:30:57.071Z",
+      "extracted": {
+        "facts": {
+          "name": "VTV LPBANK INTERNATIONAL MARATHON 2026",
+          "date": "2026-08-29",
+          "endDate": "2026-08-30",
+          "venue": "Đầm Vân Long, Ninh Bình",
+          "organizer": "Đài Truyền hình Việt Nam (VTV), Công ty Cổ phần Thành An Media - Đơn vị đồng hành: Ngân hàng TMCP Lộc Phát Việt Nam (LPBank)",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 486000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1y5RhwG_MTgWM1FstGALRMAXRm3pEuoZ1/view?usp=drive_link",
+            "text": "dieu le giai xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "dai-truyen-hinh-viet-nam-vtv-cong-ty-co-phan-thanh-an-media-don-vi-dong-hanh-nga",
+          "name": "Đài Truyền hình Việt Nam (VTV), Công ty Cổ phần Thành An Media - Đơn vị đồng hành: Ngân hàng TMCP Lộc Phát Việt Nam (LPBank)"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

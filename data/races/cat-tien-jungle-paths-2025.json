@@ -1,0 +1,70 @@
+{
+  "id": "f08151ee-529b-4259-826d-39dfb2cbde62",
+  "slug": "cat-tien-jungle-paths-2025",
+  "name": "CAT TIEN JUNGLE PATHS 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-04-26",
+  "endDate": "2025-04-27",
+  "seriesId": null,
+  "organizerId": "race-jungle",
+  "organizer": "Race Jungle",
+  "distances": [],
+  "location": {
+    "venue": "Vườn Quốc gia Cát Tiên, Tân Phú, Đồng Nai",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/cat-tien-jungle-paths-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://racejungle.com/pages/cam-ket-tham-gia",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/cat-tien-jungle-paths-2025",
+      "lastCheckedAt": "2026-09-23T18:31:46.936Z",
+      "lastChangedAt": "2026-09-23T18:31:46.936Z",
+      "extracted": {
+        "facts": {
+          "name": "CAT TIEN JUNGLE PATHS 2025",
+          "date": "2025-04-26",
+          "endDate": "2025-04-27",
+          "venue": "Vườn Quốc gia Cát Tiên, Tân Phú, Đồng Nai",
+          "organizer": "Race Jungle",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 395000
+        },
+        "links": [
+          {
+            "url": "https://racejungle.com/pages/cam-ket-tham-gia",
+            "text": "quy dinh tham du tai day"
+          }
+        ],
+        "organizer": {
+          "id": "race-jungle",
+          "name": "Race Jungle"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

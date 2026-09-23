@@ -1,0 +1,59 @@
+{
+  "id": "f99b74b1-4f6c-43dc-94d5-f510392d20e5",
+  "slug": "yen-tu-ultra-trail-2026",
+  "name": "Giải chạy vượt núi - Yên Tử Ultra Trail 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-08-21",
+  "endDate": "2026-08-23",
+  "seriesId": null,
+  "organizerId": "great-race-vietnam",
+  "organizer": "Great Race Vietnam",
+  "distances": [],
+  "location": {
+    "venue": "Di sản Văn hóa Thế giới Yên Tử, tỉnh Quảng Ninh",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/yen-tu-ultra-trail-2026"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/yen-tu-ultra-trail-2026",
+      "lastCheckedAt": "2026-09-23T18:31:04.318Z",
+      "lastChangedAt": "2026-09-23T18:31:04.318Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy vượt núi - Yên Tử Ultra Trail 2026",
+          "date": "2026-08-21",
+          "endDate": "2026-08-23",
+          "venue": "Di sản Văn hóa Thế giới Yên Tử, tỉnh Quảng Ninh",
+          "organizer": "Great Race Vietnam",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 469000
+        },
+        "links": [],
+        "organizer": {
+          "id": "great-race-vietnam",
+          "name": "Great Race Vietnam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "f1cc346b-eaa2-49a4-bde5-94511dc35ba1",
+  "slug": "vtv-lpbank-international-marathon-2025",
+  "name": "Giải Marathon Quốc tế VTV LPBank 2025 - Nhịp điệu xuyên thời gian",
+  "types": [
+    "other"
+  ],
+  "date": "2025-08-16",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "thanh-an-media",
+  "organizer": "Thanh An Media",
+  "distances": [],
+  "location": {
+    "venue": "Flamingo Đại Lải Resort - Ngọc Thanh, Phúc Yên, Vĩnh Phúc",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/vtv-lpbank-international-marathon-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1pTDuglWNEuJNtweF_K5IiWtnXndpw9mR/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/vtv-lpbank-international-marathon-2025",
+      "lastCheckedAt": "2026-09-23T18:31:33.666Z",
+      "lastChangedAt": "2026-09-23T18:31:33.666Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Marathon Quốc tế VTV LPBank 2025 - Nhịp điệu xuyên thời gian",
+          "date": "2025-08-16",
+          "venue": "Flamingo Đại Lải Resort - Ngọc Thanh, Phúc Yên, Vĩnh Phúc",
+          "organizer": "Thanh An Media",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 368000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1pTDuglWNEuJNtweF_K5IiWtnXndpw9mR/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "thanh-an-media",
+          "name": "Thanh An Media"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

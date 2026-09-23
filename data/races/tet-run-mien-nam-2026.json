@@ -1,0 +1,69 @@
+{
+  "id": "49bdaf05-ab94-4bf8-8932-5a1fa454a56b",
+  "slug": "tet-run-mien-nam-2026",
+  "name": "TẾT RUN MIỀN NAM 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-02-01",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "cong-ty-co-phan-duong-chay-xanh",
+  "organizer": "CÔNG TY CỔ PHẦN ĐƯỜNG CHẠY XANH",
+  "distances": [],
+  "location": {
+    "venue": "Vinhomes Grand Park, TP. Thủ Đức",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/tet-run-mien-nam-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1SzuLMZx2MxHhQG-1OLcMJD2HX8_jBPm0/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/tet-run-mien-nam-2026",
+      "lastCheckedAt": "2026-09-23T18:31:15.161Z",
+      "lastChangedAt": "2026-09-23T18:31:15.161Z",
+      "extracted": {
+        "facts": {
+          "name": "TẾT RUN MIỀN NAM 2026",
+          "date": "2026-02-01",
+          "venue": "Vinhomes Grand Park, TP. Thủ Đức",
+          "organizer": "CÔNG TY CỔ PHẦN ĐƯỜNG CHẠY XANH",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 495000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1SzuLMZx2MxHhQG-1OLcMJD2HX8_jBPm0/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-co-phan-duong-chay-xanh",
+          "name": "CÔNG TY CỔ PHẦN ĐƯỜNG CHẠY XANH"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

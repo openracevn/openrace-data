@@ -1,0 +1,70 @@
+{
+  "id": "7bbc3748-c5b1-4b25-ba2e-697f17bc1d0c",
+  "slug": "viet-nam-tri-factor-hcmc-triathlon-championship-2025",
+  "name": "VIET NAM TRI FACTOR CHAMPIONSHIP x HO CHI MINH CITY CHAMPIONSHIP NĂM 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-08-15",
+  "endDate": "2025-08-17",
+  "seriesId": null,
+  "organizerId": "cong-ty-tnhh-dau-tu-thuong-mai-dich-vu-unique",
+  "organizer": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE",
+  "distances": [],
+  "location": {
+    "venue": "Cần Giờ - TP HCM",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/viet-nam-tri-factor-hcmc-triathlon-championship-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/drive/folders/19wisc8w8hYk4vstY3Msua4RWFAhIjwjX",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/viet-nam-tri-factor-hcmc-triathlon-championship-2025",
+      "lastCheckedAt": "2026-09-23T18:31:40.683Z",
+      "lastChangedAt": "2026-09-23T18:31:40.683Z",
+      "extracted": {
+        "facts": {
+          "name": "VIET NAM TRI FACTOR CHAMPIONSHIP x HO CHI MINH CITY CHAMPIONSHIP NĂM 2025",
+          "date": "2025-08-15",
+          "endDate": "2025-08-17",
+          "venue": "Cần Giờ - TP HCM",
+          "organizer": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 800000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/drive/folders/19wisc8w8hYk4vstY3Msua4RWFAhIjwjX",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-tnhh-dau-tu-thuong-mai-dich-vu-unique",
+          "name": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "ff65693e-9638-4578-8a56-7ae867c7cefc",
+  "slug": "dak-lak-ultra-vietnam-backyard-2026",
+  "name": "Đắk Lắk Ultra - Vietnam Backyard 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-08-14",
+  "endDate": "2026-10-01",
+  "seriesId": null,
+  "organizerId": "4miles",
+  "organizer": "4MILES",
+  "distances": [],
+  "location": {
+    "venue": "Hồ du lịch sinh thái Ea Cuôr Kăp - Phường Tân Lập - Tỉnh Đắk Lắk",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/dak-lak-ultra-vietnam-backyard-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/18juXmVvohjC7Kq2HH5eJbsGRPpQOZ5Ta/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/dak-lak-ultra-vietnam-backyard-2026",
+      "lastCheckedAt": "2026-09-23T18:30:46.237Z",
+      "lastChangedAt": "2026-09-23T18:30:46.237Z",
+      "extracted": {
+        "facts": {
+          "name": "Đắk Lắk Ultra - Vietnam Backyard 2026",
+          "date": "2026-08-14",
+          "endDate": "2026-10-01",
+          "venue": "Hồ du lịch sinh thái Ea Cuôr Kăp - Phường Tân Lập - Tỉnh Đắk Lắk",
+          "organizer": "4MILES",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 399000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/18juXmVvohjC7Kq2HH5eJbsGRPpQOZ5Ta/view",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "4miles",
+          "name": "4MILES"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

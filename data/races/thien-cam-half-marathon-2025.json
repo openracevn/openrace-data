@@ -1,0 +1,58 @@
+{
+  "id": "65a47213-1843-485d-890b-59cff7428058",
+  "slug": "thien-cam-half-marathon-2025",
+  "name": "Thiên Cầm Half Marathon 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-03-16",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "ubnd-huyen-cam-xuyen-hatinh-race-clb-htr-ha-tinh-runners",
+  "organizer": "UBND huyện Cẩm Xuyên - HATINH RACE - CLB HTR-Hà Tĩnh Runners",
+  "distances": [],
+  "location": {
+    "venue": "Khu du lịch biển Thiên Cầm, huyện Cẩm Xuyên, tỉnh Hà Tĩnh",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/thien-cam-half-marathon-2025"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/thien-cam-half-marathon-2025",
+      "lastCheckedAt": "2026-09-23T18:31:48.122Z",
+      "lastChangedAt": "2026-09-23T18:31:48.122Z",
+      "extracted": {
+        "facts": {
+          "name": "Thiên Cầm Half Marathon 2025",
+          "date": "2025-03-16",
+          "venue": "Khu du lịch biển Thiên Cầm, huyện Cẩm Xuyên, tỉnh Hà Tĩnh",
+          "organizer": "UBND huyện Cẩm Xuyên - HATINH RACE - CLB HTR-Hà Tĩnh Runners",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 330000
+        },
+        "links": [],
+        "organizer": {
+          "id": "ubnd-huyen-cam-xuyen-hatinh-race-clb-htr-ha-tinh-runners",
+          "name": "UBND huyện Cẩm Xuyên - HATINH RACE - CLB HTR-Hà Tĩnh Runners"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

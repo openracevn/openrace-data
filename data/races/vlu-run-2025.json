@@ -1,0 +1,70 @@
+{
+  "id": "97792e83-61fd-448d-870a-5280b7087085",
+  "slug": "vlu-run-2025",
+  "name": "Giải chạy chào mừng kỷ niệm 30 năm thành lập Trường Đại học Văn Lang \"VLU Run - Văn Lang Hào khí vươn xa\"",
+  "types": [
+    "other"
+  ],
+  "date": "2025-03-01",
+  "endDate": "2025-03-02",
+  "seriesId": null,
+  "organizerId": "truong-dai-hoc-van-lang",
+  "organizer": "Trường Đại học Văn Lang",
+  "distances": [],
+  "location": {
+    "venue": "Khu đô thị Vạn Phúc, Phường Hiệp Bình Phước, TP. Thủ Đức",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/vlu-run-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1dbuWGy7WNT0UC3961_z1o2ib-mGQjdNl/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/vlu-run-2025",
+      "lastCheckedAt": "2026-09-23T18:31:44.904Z",
+      "lastChangedAt": "2026-09-23T18:31:44.904Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy chào mừng kỷ niệm 30 năm thành lập Trường Đại học Văn Lang \"VLU Run - Văn Lang Hào khí vươn xa\"",
+          "date": "2025-03-01",
+          "endDate": "2025-03-02",
+          "venue": "Khu đô thị Vạn Phúc, Phường Hiệp Bình Phước, TP. Thủ Đức",
+          "organizer": "Trường Đại học Văn Lang",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 300000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1dbuWGy7WNT0UC3961_z1o2ib-mGQjdNl/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "truong-dai-hoc-van-lang",
+          "name": "Trường Đại học Văn Lang"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

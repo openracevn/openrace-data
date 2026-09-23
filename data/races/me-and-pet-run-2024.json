@@ -1,0 +1,69 @@
+{
+  "id": "d3048953-e561-478a-bc7c-3f240ed21f23",
+  "slug": "me-and-pet-run-2024",
+  "name": "Me&Pet Run 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-08-24",
+  "endDate": "2024-08-25",
+  "seriesId": null,
+  "organizerId": "greenhat",
+  "organizer": "GreenHat",
+  "distances": [],
+  "location": {
+    "venue": "Công Viên 96, Phường Thạnh Mỹ Lợi, Quận 2, TP. Thủ Đức, TP.HCM",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/me-and-pet-run-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1KA460hRVvx-FjRwvy9btUEOdEZKDuvTU/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/me-and-pet-run-2024",
+      "lastCheckedAt": "2026-09-23T18:32:25.901Z",
+      "lastChangedAt": "2026-09-23T18:32:25.901Z",
+      "extracted": {
+        "facts": {
+          "name": "Me&Pet Run 2024",
+          "date": "2024-08-24",
+          "endDate": "2024-08-25",
+          "venue": "Công Viên 96, Phường Thạnh Mỹ Lợi, Quận 2, TP. Thủ Đức, TP.HCM",
+          "organizer": "GreenHat",
+          "registrationStatus": "closed",
+          "fromPrice": 549500
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1KA460hRVvx-FjRwvy9btUEOdEZKDuvTU/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "greenhat",
+          "name": "GreenHat"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "bccde449-e2ac-4a7f-a41e-e82e5c0fde62",
+  "slug": "da-lat-music-night-run-2026",
+  "name": "Da Lat Music Night Run 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-06-05",
+  "endDate": "2026-06-06",
+  "seriesId": null,
+  "organizerId": "nexus-sport-events",
+  "organizer": "Nexus Sport Events",
+  "distances": [],
+  "location": {
+    "venue": "Đà Lạt, Lâm Đồng",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/da-lat-music-night-run-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1lMGqnpXQvmgyGItlEDPhpnJPVrraZ9Ba/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/da-lat-music-night-run-2026",
+      "lastCheckedAt": "2026-09-23T18:31:10.354Z",
+      "lastChangedAt": "2026-09-23T18:31:10.354Z",
+      "extracted": {
+        "facts": {
+          "name": "Da Lat Music Night Run 2026",
+          "date": "2026-06-05",
+          "endDate": "2026-06-06",
+          "venue": "Đà Lạt, Lâm Đồng",
+          "organizer": "Nexus Sport Events",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 640000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1lMGqnpXQvmgyGItlEDPhpnJPVrraZ9Ba/view",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "nexus-sport-events",
+          "name": "Nexus Sport Events"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

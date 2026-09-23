@@ -1,0 +1,59 @@
+{
+  "id": "ee0faf8f-68ab-4c32-8807-564b81ccafb4",
+  "slug": "danh-thuc-vung-que-chu-pah",
+  "name": "GIẢI HALF MARATHON 2024 \"ĐÁNH THỨC VÙNG QUÊ CHƯ PĂH - HÀNH TRÌNH KẾT NỐI NÚI VÀ HOA\"",
+  "types": [
+    "other"
+  ],
+  "date": "2024-11-09",
+  "endDate": "2024-11-10",
+  "seriesId": null,
+  "organizerId": "cong-dong-5h30-vui-khoe-moi-ngay-uy-ban-nhan-dan-huyen-chu-pah-cau-lac-bo-gia-la",
+  "organizer": "Cộng đồng 5h30 - Vui khỏe mỗi ngày, Ủy ban nhân dân huyện Chư Păh, Câu lạc bộ Gia Lai Marathon",
+  "distances": [],
+  "location": {
+    "venue": "Huyện Chư Păh - Tỉnh Gia Lai",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/danh-thuc-vung-que-chu-pah"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/danh-thuc-vung-que-chu-pah",
+      "lastCheckedAt": "2026-09-23T18:32:05.804Z",
+      "lastChangedAt": "2026-09-23T18:32:05.804Z",
+      "extracted": {
+        "facts": {
+          "name": "GIẢI HALF MARATHON 2024 \"ĐÁNH THỨC VÙNG QUÊ CHƯ PĂH - HÀNH TRÌNH KẾT NỐI NÚI VÀ HOA\"",
+          "date": "2024-11-09",
+          "endDate": "2024-11-10",
+          "venue": "Huyện Chư Păh - Tỉnh Gia Lai",
+          "organizer": "Cộng đồng 5h30 - Vui khỏe mỗi ngày, Ủy ban nhân dân huyện Chư Păh, Câu lạc bộ Gia Lai Marathon",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 200000
+        },
+        "links": [],
+        "organizer": {
+          "id": "cong-dong-5h30-vui-khoe-moi-ngay-uy-ban-nhan-dan-huyen-chu-pah-cau-lac-bo-gia-la",
+          "name": "Cộng đồng 5h30 - Vui khỏe mỗi ngày, Ủy ban nhân dân huyện Chư Păh, Câu lạc bộ Gia Lai Marathon"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

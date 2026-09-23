@@ -1,0 +1,69 @@
+{
+  "id": "39264a06-fbfc-44c3-a13b-913c6bb01735",
+  "slug": "giai-chay-bao-xay-dung-running-2026-vung-buoc-kien-tao-tuong-lai",
+  "name": "GIẢI CHẠY BÁO XÂY DỰNG 2026 - VỮNG BƯỚC KIẾN TẠO TƯƠNG LAI",
+  "types": [
+    "other"
+  ],
+  "date": "2026-06-28",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "bao-xay-dung",
+  "organizer": "Báo Xây Dựng",
+  "distances": [],
+  "location": {
+    "venue": "Phường Vũng Tàu - Thành phố Hồ Chí Minh",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/giai-chay-bao-xay-dung-running-2026-vung-buoc-kien-tao-tuong-lai"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1iQer20rYYujGFprci6tcGlX1me_Bnw4i/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/giai-chay-bao-xay-dung-running-2026-vung-buoc-kien-tao-tuong-lai",
+      "lastCheckedAt": "2026-09-23T18:31:01.903Z",
+      "lastChangedAt": "2026-09-23T18:31:01.903Z",
+      "extracted": {
+        "facts": {
+          "name": "GIẢI CHẠY BÁO XÂY DỰNG 2026 - VỮNG BƯỚC KIẾN TẠO TƯƠNG LAI",
+          "date": "2026-06-28",
+          "venue": "Phường Vũng Tàu - Thành phố Hồ Chí Minh",
+          "organizer": "Báo Xây Dựng",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 400000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1iQer20rYYujGFprci6tcGlX1me_Bnw4i/view?usp=drive_link",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "bao-xay-dung",
+          "name": "Báo Xây Dựng"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

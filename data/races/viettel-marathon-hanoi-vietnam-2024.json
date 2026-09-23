@@ -1,0 +1,79 @@
+{
+  "id": "0fcd63f6-8008-462a-a435-d5fbb6d5b15d",
+  "slug": "viettel-marathon-hanoi-vietnam-2024",
+  "name": "VIETTEL MARATHON HANOI VIETNAM 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-11-30",
+  "endDate": "2024-12-01",
+  "seriesId": null,
+  "organizerId": "lien-doan-dien-kinh-viet-nam-lien-doan-dien-kinh-lao-lien-doan-dien-kinh-campuch",
+  "organizer": "Liên đoàn Điền kinh Việt Nam, Liên đoàn Điền kinh Lào, Liên đoàn Điền kinh Campuchia tổ chức; Tập đoàn Công nghiệp - Viễn thông Quân đội (Viettel Group) đồng tổ chức và tài trợ; Hiệp hội Điền kinh Châu Á giám sát và tư vấn, Công ty Vietcontent thực hiện",
+  "distances": [],
+  "location": {
+    "venue": "Khu liên hợp thể thao Quốc gia, Mỹ Đình, Quận Nam Từ Liêm, Thành phố Hà Nội",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/viettel-marathon-hanoi-vietnam-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://bestprice.vn/tour/giai-chay-viettel-marathon-series-2024-ha-noi-viet-nam-3n2d-1725.html",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1n8PfxyFfydmBZRLcLlro7UX1c-0gmJeX/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/viettel-marathon-hanoi-vietnam-2024",
+      "lastCheckedAt": "2026-09-23T18:32:03.389Z",
+      "lastChangedAt": "2026-09-23T18:32:03.389Z",
+      "extracted": {
+        "facts": {
+          "name": "VIETTEL MARATHON HANOI VIETNAM 2024",
+          "date": "2024-11-30",
+          "endDate": "2024-12-01",
+          "venue": "Khu liên hợp thể thao Quốc gia, Mỹ Đình, Quận Nam Từ Liêm, Thành phố Hà Nội",
+          "organizer": "Liên đoàn Điền kinh Việt Nam, Liên đoàn Điền kinh Lào, Liên đoàn Điền kinh Campuchia tổ chức; Tập đoàn Công nghiệp - Viễn thông Quân đội (Viettel Group) đồng tổ chức và tài trợ; Hiệp hội Điền kinh Châu Á giám sát và tư vấn, Công ty Vietcontent thực hiện",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 335000
+        },
+        "links": [
+          {
+            "url": "https://www.bestprice.vn/tour/giai-chay-viettel-marathon-series-2024-ha-noi-viet-nam-3n2d-1725.html?utm_source=actiup&utm_medium=tour-package-bestprice&utm_campaign=viettel-marathon-hanoi",
+            "text": "goi di chuyen luu tru tai day"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1n8PfxyFfydmBZRLcLlro7UX1c-0gmJeX/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "lien-doan-dien-kinh-viet-nam-lien-doan-dien-kinh-lao-lien-doan-dien-kinh-campuch",
+          "name": "Liên đoàn Điền kinh Việt Nam, Liên đoàn Điền kinh Lào, Liên đoàn Điền kinh Campuchia tổ chức; Tập đoàn Công nghiệp - Viễn thông Quân đội (Viettel Group) đồng tổ chức và tài trợ; Hiệp hội Điền kinh Châu Á giám sát và tư vấn, Công ty Vietcontent thực hiện"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "61b7b828-8172-4215-a4bc-84463e951219",
+  "slug": "standard-chartered-hanoi-marathon-heritage-race-2026",
+  "name": "Standard Chartered Marathon Di sản Hà Nội 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-11-07",
+  "endDate": "2026-11-08",
+  "seriesId": null,
+  "organizerId": "cong-ty-dha-viet-nam",
+  "organizer": "Công ty DHA Việt Nam",
+  "distances": [],
+  "location": {
+    "venue": "Hà Nội, Việt Nam",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/standard-chartered-hanoi-marathon-heritage-race-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1dWhJOepPOz7srAJf7NGjD27KhBn6YTNo/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/standard-chartered-hanoi-marathon-heritage-race-2026",
+      "lastCheckedAt": "2026-09-23T18:30:51.452Z",
+      "lastChangedAt": "2026-09-23T18:30:51.452Z",
+      "extracted": {
+        "facts": {
+          "name": "Standard Chartered Marathon Di sản Hà Nội 2026",
+          "date": "2026-11-07",
+          "endDate": "2026-11-08",
+          "venue": "Hà Nội, Việt Nam",
+          "organizer": "Công ty DHA Việt Nam",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 258000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1dWhJOepPOz7srAJf7NGjD27KhBn6YTNo/view?usp=drive_link",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-dha-viet-nam",
+          "name": "Công ty DHA Việt Nam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "993a097f-5cf3-415f-84c6-6fe1eb1b7404",
+  "slug": "quang-truc-half-marathon-2026-noi-nhip-bien-cuong",
+  "name": "Quảng Trực Half Marathon 2026 - Nối nhịp biên cương",
+  "types": [
+    "other"
+  ],
+  "date": "2026-11-14",
+  "endDate": "2026-11-15",
+  "seriesId": null,
+  "organizerId": "uy-ban-nhan-dan-dan-xa-quang-truc",
+  "organizer": "Ủy ban nhân dân dân xã Quảng Trực",
+  "distances": [],
+  "location": {
+    "venue": "Xã Quảng Trực, tỉnh Lâm Đồng",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/quang-truc-half-marathon-2026-noi-nhip-bien-cuong"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/18UfSrmJAqM-d-3YFToccatM205CyqLqC/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/quang-truc-half-marathon-2026-noi-nhip-bien-cuong",
+      "lastCheckedAt": "2026-09-23T18:30:40.997Z",
+      "lastChangedAt": "2026-09-23T18:30:40.997Z",
+      "extracted": {
+        "facts": {
+          "name": "Quảng Trực Half Marathon 2026 - Nối nhịp biên cương",
+          "date": "2026-11-14",
+          "endDate": "2026-11-15",
+          "venue": "Xã Quảng Trực, tỉnh Lâm Đồng",
+          "organizer": "Ủy ban nhân dân dân xã Quảng Trực",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 269000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/18UfSrmJAqM-d-3YFToccatM205CyqLqC/view?usp=drive_link",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "uy-ban-nhan-dan-dan-xa-quang-truc",
+          "name": "Ủy ban nhân dân dân xã Quảng Trực"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

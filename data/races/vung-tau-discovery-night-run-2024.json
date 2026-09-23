@@ -1,0 +1,69 @@
+{
+  "id": "de3fe8c6-4e02-4484-9f8b-8f03ea68d19f",
+  "slug": "vung-tau-discovery-night-run-2024",
+  "name": "VŨNG TÀU DISCOVERY NIGHT RUN 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-12-15",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "cong-ty-co-phan-secret-sport-events",
+  "organizer": "CÔNG TY CỔ PHẦN SECRET SPORT EVENTS",
+  "distances": [],
+  "location": {
+    "venue": "Thành Phố Vũng Tàu",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/vung-tau-discovery-night-run-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1fcuzgU79wX6mIzx806ct6lzlr8ZqGmFr/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/vung-tau-discovery-night-run-2024",
+      "lastCheckedAt": "2026-09-23T18:31:58.580Z",
+      "lastChangedAt": "2026-09-23T18:31:58.580Z",
+      "extracted": {
+        "facts": {
+          "name": "VŨNG TÀU DISCOVERY NIGHT RUN 2024",
+          "date": "2024-12-15",
+          "venue": "Thành Phố Vũng Tàu",
+          "organizer": "CÔNG TY CỔ PHẦN SECRET SPORT EVENTS",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 350000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1fcuzgU79wX6mIzx806ct6lzlr8ZqGmFr/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-co-phan-secret-sport-events",
+          "name": "CÔNG TY CỔ PHẦN SECRET SPORT EVENTS"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "ccc9c63e-88a4-4ab5-b5a9-e31c2c52c3e1",
+  "slug": "bidv-run-2025",
+  "name": "BIDVRUN - TẾT ẤM CHO NGƯỜI NGHÈO MÙA 6 XUÂN ẤT TỴ 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2024-11-02",
+  "endDate": "2024-11-24",
+  "seriesId": null,
+  "organizerId": "ngan-hang-tmcp-dau-tu-va-phat-trien-viet-nam",
+  "organizer": "Ngân hàng TMCP Đầu tư và Phát triển Việt Nam",
+  "distances": [],
+  "location": {
+    "venue": "Thành phố Thủ Đức",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/bidv-run-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1wnnzdLxvBNSLWA_ThC3Hytv-zbnz3W1m/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/bidv-run-2025",
+      "lastCheckedAt": "2026-09-23T18:31:59.383Z",
+      "lastChangedAt": "2026-09-23T18:31:59.383Z",
+      "extracted": {
+        "facts": {
+          "name": "BIDVRUN - TẾT ẤM CHO NGƯỜI NGHÈO MÙA 6 XUÂN ẤT TỴ 2025",
+          "date": "2024-11-02",
+          "endDate": "2024-11-24",
+          "venue": "Thành phố Thủ Đức",
+          "organizer": "Ngân hàng TMCP Đầu tư và Phát triển Việt Nam",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 0
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1wnnzdLxvBNSLWA_ThC3Hytv-zbnz3W1m/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "ngan-hang-tmcp-dau-tu-va-phat-trien-viet-nam",
+          "name": "Ngân hàng TMCP Đầu tư và Phát triển Việt Nam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

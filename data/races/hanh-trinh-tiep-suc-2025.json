@@ -1,0 +1,69 @@
+{
+  "id": "2f678a84-6cf0-4c5c-b4b4-7c569bce6b5c",
+  "slug": "hanh-trinh-tiep-suc-2025",
+  "name": "Hành trình tiếp sức 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-10-12",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "cong-ty-dha-viet-nam",
+  "organizer": "Công ty DHA Việt Nam",
+  "distances": [],
+  "location": {
+    "venue": "Phố đi bộ Trinh Công Sơn",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/hanh-trinh-tiep-suc-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1Xu7rrg57jKG5CqSjYYwYo7qCen8BT4sr/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/hanh-trinh-tiep-suc-2025",
+      "lastCheckedAt": "2026-09-23T18:31:21.622Z",
+      "lastChangedAt": "2026-09-23T18:31:21.622Z",
+      "extracted": {
+        "facts": {
+          "name": "Hành trình tiếp sức 2025",
+          "date": "2025-10-12",
+          "venue": "Phố đi bộ Trinh Công Sơn",
+          "organizer": "Công ty DHA Việt Nam",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 299000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1Xu7rrg57jKG5CqSjYYwYo7qCen8BT4sr/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-dha-viet-nam",
+          "name": "Công ty DHA Việt Nam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

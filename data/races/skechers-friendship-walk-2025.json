@@ -1,0 +1,70 @@
+{
+  "id": "849f3493-1e62-4ee2-bdf6-6ff1ed79f734",
+  "slug": "skechers-friendship-walk-2025",
+  "name": "Skechers Friendship Walk 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-08-23",
+  "endDate": "2025-08-24",
+  "seriesId": null,
+  "organizerId": "skechers-viet-nam",
+  "organizer": "Skechers Việt Nam",
+  "distances": [],
+  "location": {
+    "venue": "Đường Trần Bạch Đằng - Thủ Thiêm",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/skechers-friendship-walk-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1gXlbUNXmJiq7YgLBfMNUMLADztFjOoer/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/skechers-friendship-walk-2025",
+      "lastCheckedAt": "2026-09-23T18:31:31.643Z",
+      "lastChangedAt": "2026-09-23T18:31:31.643Z",
+      "extracted": {
+        "facts": {
+          "name": "Skechers Friendship Walk 2025",
+          "date": "2025-08-23",
+          "endDate": "2025-08-24",
+          "venue": "Đường Trần Bạch Đằng - Thủ Thiêm",
+          "organizer": "Skechers Việt Nam",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 290000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1gXlbUNXmJiq7YgLBfMNUMLADztFjOoer/view?usp=drivesdk",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "skechers-viet-nam",
+          "name": "Skechers Việt Nam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

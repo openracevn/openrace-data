@@ -1,0 +1,58 @@
+{
+  "id": "f3029c17-cebe-48db-847a-c1d759c6bb2b",
+  "slug": "tien-phong-marathon-national-championship-2024",
+  "name": "GIẢI VÔ ĐỊCH QUỐC GIA MARATHON VÀ CỰ LY DÀI BÁO TIỀN PHONG",
+  "types": [
+    "other"
+  ],
+  "date": "2024-03-29",
+  "endDate": "2024-03-31",
+  "seriesId": null,
+  "organizerId": "bao-tien-phong",
+  "organizer": "Báo Tiền Phong",
+  "distances": [],
+  "location": {
+    "venue": "Thành phố Tuy Hòa, Phú Yên, Việt Nam",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/tien-phong-marathon-national-championship-2024"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/tien-phong-marathon-national-championship-2024",
+      "lastCheckedAt": "2026-09-23T18:32:33.975Z",
+      "lastChangedAt": "2026-09-23T18:32:33.975Z",
+      "extracted": {
+        "facts": {
+          "name": "GIẢI VÔ ĐỊCH QUỐC GIA MARATHON VÀ CỰ LY DÀI BÁO TIỀN PHONG",
+          "date": "2024-03-29",
+          "endDate": "2024-03-31",
+          "venue": "Thành phố Tuy Hòa, Phú Yên, Việt Nam",
+          "organizer": "Báo Tiền Phong",
+          "registrationStatus": "closed",
+          "fromPrice": 450000
+        },
+        "links": [],
+        "organizer": {
+          "id": "bao-tien-phong",
+          "name": "Báo Tiền Phong"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

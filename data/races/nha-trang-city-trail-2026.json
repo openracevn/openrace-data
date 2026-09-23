@@ -1,0 +1,59 @@
+{
+  "id": "835f8486-65f4-48c9-8020-c3acbc0a9ac1",
+  "slug": "nha-trang-city-trail-2026",
+  "name": "Mitsubishi Motors Vietnam Nha Trang City Trail 2026",
+  "types": [
+    "city_trail"
+  ],
+  "date": "2026-07-18",
+  "endDate": "2026-07-19",
+  "seriesId": null,
+  "organizerId": "vietnam-mtb-series",
+  "organizer": "Vietnam MTB Series",
+  "distances": [],
+  "location": {
+    "venue": "Nhà Hát Đó, Thành phố Nha Trang",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/nha-trang-city-trail-2026"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/nha-trang-city-trail-2026",
+      "lastCheckedAt": "2026-09-23T18:31:01.168Z",
+      "lastChangedAt": "2026-09-23T18:31:01.168Z",
+      "extracted": {
+        "facts": {
+          "name": "Mitsubishi Motors Vietnam Nha Trang City Trail 2026",
+          "date": "2026-07-18",
+          "endDate": "2026-07-19",
+          "venue": "Nhà Hát Đó, Thành phố Nha Trang",
+          "organizer": "Vietnam MTB Series",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 350000
+        },
+        "links": [],
+        "organizer": {
+          "id": "vietnam-mtb-series",
+          "name": "Vietnam MTB Series"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

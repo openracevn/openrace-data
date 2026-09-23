@@ -1,0 +1,57 @@
+{
+  "id": "11937fe9-0828-4251-bcf9-d4d708622635",
+  "slug": "minh-dam-discovery-marathon-2024",
+  "name": "Minh Đạm Discovery Marathon 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-02-25",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "cong-ty-co-phan-secret-sport-events",
+  "organizer": "CÔNG TY CỔ PHẦN SECRET SPORT EVENTS",
+  "distances": [],
+  "location": {
+    "venue": "Long Hải - BRVT",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/minh-dam-discovery-marathon-2024"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/minh-dam-discovery-marathon-2024",
+      "lastCheckedAt": "2026-09-23T18:32:38.353Z",
+      "lastChangedAt": "2026-09-23T18:32:38.353Z",
+      "extracted": {
+        "facts": {
+          "name": "Minh Đạm Discovery Marathon 2024",
+          "date": "2024-02-25",
+          "venue": "Long Hải - BRVT",
+          "organizer": "CÔNG TY CỔ PHẦN SECRET SPORT EVENTS",
+          "registrationStatus": "closed",
+          "fromPrice": 360000
+        },
+        "links": [],
+        "organizer": {
+          "id": "cong-ty-co-phan-secret-sport-events",
+          "name": "CÔNG TY CỔ PHẦN SECRET SPORT EVENTS"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

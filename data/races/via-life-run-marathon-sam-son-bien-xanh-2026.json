@@ -1,0 +1,59 @@
+{
+  "id": "e8bc953d-016d-4a19-bc47-51d2359f8048",
+  "slug": "via-life-run-marathon-sam-son-bien-xanh-2026",
+  "name": "Via Life Run Marathon - Sầm Sơn Biển Xanh 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-04-04",
+  "endDate": "2026-04-05",
+  "seriesId": null,
+  "organizerId": "cong-ty-tnhh-thuong-mai-dich-vu-dao-tao-ki-nang-lif-up-academy",
+  "organizer": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ ĐÀO TẠO KĨ NĂNG LIF UP ACADEMY",
+  "distances": [],
+  "location": {
+    "venue": "Quảng trường biển Sầm Sơn - Thanh Hóa",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/via-life-run-marathon-sam-son-bien-xanh-2026"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/via-life-run-marathon-sam-son-bien-xanh-2026",
+      "lastCheckedAt": "2026-09-23T18:31:11.147Z",
+      "lastChangedAt": "2026-09-23T18:31:11.147Z",
+      "extracted": {
+        "facts": {
+          "name": "Via Life Run Marathon - Sầm Sơn Biển Xanh 2026",
+          "date": "2026-04-04",
+          "endDate": "2026-04-05",
+          "venue": "Quảng trường biển Sầm Sơn - Thanh Hóa",
+          "organizer": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ ĐÀO TẠO KĨ NĂNG LIF UP ACADEMY",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 150000
+        },
+        "links": [],
+        "organizer": {
+          "id": "cong-ty-tnhh-thuong-mai-dich-vu-dao-tao-ki-nang-lif-up-academy",
+          "name": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ ĐÀO TẠO KĨ NĂNG LIF UP ACADEMY"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

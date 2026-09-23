@@ -1,0 +1,77 @@
+{
+  "id": "40ee1a11-537b-4cc4-81a0-5268d667a49b",
+  "slug": "run-for-em-2024-season-2-charity-marathon",
+  "name": "Run for \"Em\" 2024 Season 2 - Charity Marathon",
+  "types": [
+    "other"
+  ],
+  "date": "2024-08-11",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "coffeerary-events",
+  "organizer": "Coffeerary Events",
+  "distances": [],
+  "location": {
+    "venue": "Metropole Thủ Thiêm, Thành Phố Thủ Đức",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/run-for-em-2024-season-2-charity-marathon"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://facebook.com/RunforEm.VMS",
+      "kind": "facebook",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://docs.google.com/document/d/1wYsOOfUn-W7QIiF3QlZLQkiAWkaCCBXPx203ESyK6HA/edit",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/run-for-em-2024-season-2-charity-marathon",
+      "lastCheckedAt": "2026-09-23T18:32:16.250Z",
+      "lastChangedAt": "2026-09-23T18:32:16.250Z",
+      "extracted": {
+        "facts": {
+          "name": "Run for \"Em\" 2024 Season 2 - Charity Marathon",
+          "date": "2024-08-11",
+          "venue": "Metropole Thủ Thiêm, Thành Phố Thủ Đức",
+          "organizer": "Coffeerary Events",
+          "registrationStatus": "closed",
+          "fromPrice": 290000
+        },
+        "links": [
+          {
+            "url": "https://www.facebook.com/RunforEm.VMS/",
+            "text": "thong tin su kien run for em 2024"
+          },
+          {
+            "url": "https://docs.google.com/document/d/1wYsOOfUn-W7QIiF3QlZLQkiAWkaCCBXPx203ESyK6HA/edit",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "coffeerary-events",
+          "name": "Coffeerary Events"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

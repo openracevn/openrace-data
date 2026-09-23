@@ -1,0 +1,69 @@
+{
+  "id": "cf16f97c-0cd6-4124-a3a7-8d9d70a06ee5",
+  "slug": "2025-sunrise-sprint-viet-nam-in-phu-quoc",
+  "name": "2025 SUNRISE SPRINT Viet Nam in Phu Quoc",
+  "types": [
+    "other"
+  ],
+  "date": "2025-11-15",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "sunrise-events-vietnam",
+  "organizer": "Sunrise Events Vietnam",
+  "distances": [],
+  "location": {
+    "venue": "Phú Quốc",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/2025-sunrise-sprint-viet-nam-in-phu-quoc"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1HimQZZpSmGWU_Ux4ukOvZksQmzZpzIcs/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/2025-sunrise-sprint-viet-nam-in-phu-quoc",
+      "lastCheckedAt": "2026-09-23T18:31:37.351Z",
+      "lastChangedAt": "2026-09-23T18:31:37.351Z",
+      "extracted": {
+        "facts": {
+          "name": "2025 SUNRISE SPRINT Viet Nam in Phu Quoc",
+          "date": "2025-11-15",
+          "venue": "Phú Quốc",
+          "organizer": "Sunrise Events Vietnam",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 3000000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1HimQZZpSmGWU_Ux4ukOvZksQmzZpzIcs/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "sunrise-events-vietnam",
+          "name": "Sunrise Events Vietnam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

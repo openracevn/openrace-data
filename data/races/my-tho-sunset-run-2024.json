@@ -1,0 +1,70 @@
+{
+  "id": "4787d603-830c-4c13-a810-70b5c77d746c",
+  "slug": "my-tho-sunset-run-2024",
+  "name": "My Tho Sunset Run 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-12-27",
+  "endDate": "2024-12-28",
+  "seriesId": null,
+  "organizerId": "nexus-sport-events",
+  "organizer": "Nexus Sport Events",
+  "distances": [],
+  "location": {
+    "venue": "TP. Mỹ Tho, Tiền Giang",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/my-tho-sunset-run-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1qK8Drb4YLpoATcXYpjqSd2EUtv6AF5gZ/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/my-tho-sunset-run-2024",
+      "lastCheckedAt": "2026-09-23T18:32:02.189Z",
+      "lastChangedAt": "2026-09-23T18:32:02.189Z",
+      "extracted": {
+        "facts": {
+          "name": "My Tho Sunset Run 2024",
+          "date": "2024-12-27",
+          "endDate": "2024-12-28",
+          "venue": "TP. Mỹ Tho, Tiền Giang",
+          "organizer": "Nexus Sport Events",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 290000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1qK8Drb4YLpoATcXYpjqSd2EUtv6AF5gZ/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "nexus-sport-events",
+          "name": "Nexus Sport Events"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

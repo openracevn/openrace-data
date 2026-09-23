@@ -1,0 +1,59 @@
+{
+  "id": "00900c59-bb50-420c-9574-ab6a5464f48a",
+  "slug": "giai-marathon-nghe-an-2026-cua-lo-bien-xanh-vay-goi",
+  "name": "Giải Marathon Nghệ An 2026 “Cửa Lò – Biển Xanh Vẫy Gọi”",
+  "types": [
+    "other"
+  ],
+  "date": "2026-07-24",
+  "endDate": "2026-07-26",
+  "seriesId": null,
+  "organizerId": "btc-giai-marathon-nghe-an-2026-cua-lo-bien-xanh-vay-goi",
+  "organizer": "BTC Giải Marathon Nghệ An 2026 “Cửa Lò – Biển Xanh Vẫy Gọi”",
+  "distances": [],
+  "location": {
+    "venue": "Phường Cửa Lò, tỉnh Nghệ An",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/giai-marathon-nghe-an-2026-cua-lo-bien-xanh-vay-goi"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/giai-marathon-nghe-an-2026-cua-lo-bien-xanh-vay-goi",
+      "lastCheckedAt": "2026-09-23T18:30:56.278Z",
+      "lastChangedAt": "2026-09-23T18:30:56.278Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Marathon Nghệ An 2026 “Cửa Lò – Biển Xanh Vẫy Gọi”",
+          "date": "2026-07-24",
+          "endDate": "2026-07-26",
+          "venue": "Phường Cửa Lò, tỉnh Nghệ An",
+          "organizer": "BTC Giải Marathon Nghệ An 2026 “Cửa Lò – Biển Xanh Vẫy Gọi”",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 315000
+        },
+        "links": [],
+        "organizer": {
+          "id": "btc-giai-marathon-nghe-an-2026-cua-lo-bien-xanh-vay-goi",
+          "name": "BTC Giải Marathon Nghệ An 2026 “Cửa Lò – Biển Xanh Vẫy Gọi”"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

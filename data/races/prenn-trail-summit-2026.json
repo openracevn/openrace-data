@@ -1,0 +1,70 @@
+{
+  "id": "a6f00e79-a428-42e0-8b80-834d002ec118",
+  "slug": "prenn-trail-summit-2026",
+  "name": "PRENN TRAIL SUMMIT 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-12-09",
+  "endDate": "2026-12-13",
+  "seriesId": null,
+  "organizerId": "cong-ty-tnhh-dau-tu-thuong-mai-dich-vu-unique",
+  "organizer": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE",
+  "distances": [],
+  "location": {
+    "venue": "Chân đèo Prenn, Phường 3, Thành Phố Đà Lạt, Tỉnh Lâm Đồng",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/prenn-trail-summit-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1knH3jpewfsJUxaDcpwwOn8CfkMZxXEJo/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/prenn-trail-summit-2026",
+      "lastCheckedAt": "2026-09-23T18:30:43.405Z",
+      "lastChangedAt": "2026-09-23T18:30:43.405Z",
+      "extracted": {
+        "facts": {
+          "name": "PRENN TRAIL SUMMIT 2026",
+          "date": "2026-12-09",
+          "endDate": "2026-12-13",
+          "venue": "Chân đèo Prenn, Phường 3, Thành Phố Đà Lạt, Tỉnh Lâm Đồng",
+          "organizer": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 800000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1knH3jpewfsJUxaDcpwwOn8CfkMZxXEJo/view",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-tnhh-dau-tu-thuong-mai-dich-vu-unique",
+          "name": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

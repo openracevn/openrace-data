@@ -1,0 +1,77 @@
+{
+  "id": "b9998a0d-1942-451f-82a8-2366f7cfbf33",
+  "slug": "giai-ban-marathon-quoc-te-viet-nam-2024",
+  "name": "GIẢI BÁN MARATHON QUỐC TẾ VIỆT NAM 2024 TÀI TRỢ BỞI HERBALIFE",
+  "types": [
+    "other"
+  ],
+  "date": "2024-01-01",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "lien-doan-dien-kinh-viet-nam",
+  "organizer": "Liên Đoàn Điền Kinh Việt Nam",
+  "distances": [],
+  "location": {
+    "venue": "Hà Nội, Việt Nam",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/giai-ban-marathon-quoc-te-viet-nam-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://forms.gle/4pXxnKY8mFyp9XVS9",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://vietnaminternationalhalfmarathon.vn/co-cau-giai-thuong",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/giai-ban-marathon-quoc-te-viet-nam-2024",
+      "lastCheckedAt": "2026-09-23T18:32:37.951Z",
+      "lastChangedAt": "2026-09-23T18:32:37.951Z",
+      "extracted": {
+        "facts": {
+          "name": "GIẢI BÁN MARATHON QUỐC TẾ VIỆT NAM 2024 TÀI TRỢ BỞI HERBALIFE",
+          "date": "2024-01-01",
+          "venue": "Hà Nội, Việt Nam",
+          "organizer": "Liên Đoàn Điền Kinh Việt Nam",
+          "registrationStatus": "closed",
+          "fromPrice": 399000
+        },
+        "links": [
+          {
+            "url": "https://vietnaminternationalhalfmarathon.vn/co-cau-giai-thuong/",
+            "text": "quy dinh noi dung dong doi https vietnaminternationalhalfmarathon vn co cau giai thuong"
+          },
+          {
+            "url": "https://forms.gle/4pXxnKY8mFyp9XVS9",
+            "text": "quy dinh noi dung dong doi tai day"
+          }
+        ],
+        "organizer": {
+          "id": "lien-doan-dien-kinh-viet-nam",
+          "name": "Liên Đoàn Điền Kinh Việt Nam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

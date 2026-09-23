@@ -1,0 +1,97 @@
+{
+  "id": "78bbf1c5-3550-44b8-b216-82f15ee7c4ee",
+  "slug": "hdbank-green-marathon-2026",
+  "name": "GIẢI HDBank MARATHON XANH 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-09-19",
+  "endDate": "2026-09-20",
+  "seriesId": null,
+  "organizerId": "cong-ty-tnhh-dau-tu-thuong-mai-dich-vu-unique",
+  "organizer": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE",
+  "distances": [],
+  "location": {
+    "venue": "Xã Cần Giờ, TP. Hồ Chí Minh",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/hdbank-green-marathon-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1FmUZn8QUhO34yS53Td7iDaEtYFh4SKhx/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1gIM-rPhEDsf3BsKdg8rX7g9ANgj2DHNJ/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1GXIhK32l5_bXENgi3ayzqQdrBNSJlW_D/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1xORJsRPp0_1mEy2P9IL9Q3P-__fxEczf/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/hdbank-green-marathon-2026",
+      "lastCheckedAt": "2026-09-23T18:30:53.865Z",
+      "lastChangedAt": "2026-09-23T18:30:53.865Z",
+      "extracted": {
+        "facts": {
+          "name": "GIẢI HDBank MARATHON XANH 2026",
+          "date": "2026-09-19",
+          "endDate": "2026-09-20",
+          "venue": "Xã Cần Giờ, TP. Hồ Chí Minh",
+          "organizer": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 349000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1xORJsRPp0_1mEy2P9IL9Q3P-__fxEczf/view",
+            "text": "quy dinh tham du 1 quy dinh va dieu le giai hdbank marathon xanh 2026"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1FmUZn8QUhO34yS53Td7iDaEtYFh4SKhx/view",
+            "text": "quy dinh tham du 2 dieu le noi dung tiep suc dong doi ekiden 6x1000mgiai hdbank marathon xanh 2026"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1gIM-rPhEDsf3BsKdg8rX7g9ANgj2DHNJ/view",
+            "text": "quy dinh tham du 3 noi dung danh cho cap doi vo chong the couple run giai hdbank marathon xanh 2026"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1GXIhK32l5_bXENgi3ayzqQdrBNSJlW_D/view",
+            "text": "quy dinh tham du 4 quy dinh noi dung dong doi the team run hdbank green marathon nam 2026"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-tnhh-dau-tu-thuong-mai-dich-vu-unique",
+          "name": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

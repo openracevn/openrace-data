@@ -1,0 +1,59 @@
+{
+  "id": "b96375df-9315-41d3-bf6c-028d3f73df97",
+  "slug": "gia-lai-city-trail-giac-mo-dai-ngan-2026",
+  "name": "GIA LAI CITY TRAIL - GIẤC MƠ ĐẠI NGÀN 2026",
+  "types": [
+    "city_trail"
+  ],
+  "date": "2026-10-30",
+  "endDate": "2026-11-01",
+  "seriesId": null,
+  "organizerId": "vietrace365",
+  "organizer": "VIETRACE365",
+  "distances": [],
+  "location": {
+    "venue": "Gia Lai",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/gia-lai-city-trail-giac-mo-dai-ngan-2026"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/gia-lai-city-trail-giac-mo-dai-ngan-2026",
+      "lastCheckedAt": "2026-09-23T18:30:50.684Z",
+      "lastChangedAt": "2026-09-23T18:30:50.684Z",
+      "extracted": {
+        "facts": {
+          "name": "GIA LAI CITY TRAIL - GIẤC MƠ ĐẠI NGÀN 2026",
+          "date": "2026-10-30",
+          "endDate": "2026-11-01",
+          "venue": "Gia Lai",
+          "organizer": "VIETRACE365",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 448000
+        },
+        "links": [],
+        "organizer": {
+          "id": "vietrace365",
+          "name": "VIETRACE365"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

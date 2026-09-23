@@ -1,0 +1,69 @@
+{
+  "id": "ddda98fb-5837-4b4c-b986-9056b42d5025",
+  "slug": "giai-marathon-quoc-te-di-san-can-tho-quan-quan-21",
+  "name": "Giải Marathon Quốc tế Di sản Cần Thơ 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-12-20",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "cong-ty-dha-viet-nam",
+  "organizer": "Công ty DHA Việt Nam",
+  "distances": [],
+  "location": {
+    "venue": "Công viên Sông Hậu, phường Cái Khế, thành phố Cần Thơ",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/giai-marathon-quoc-te-di-san-can-tho-quan-quan-21"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1WfBjAjgv52hGsmJHtb4oTpaXSY_Ev1jm/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/giai-marathon-quoc-te-di-san-can-tho-quan-quan-21",
+      "lastCheckedAt": "2026-09-23T18:30:44.209Z",
+      "lastChangedAt": "2026-09-23T18:30:44.209Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Marathon Quốc tế Di sản Cần Thơ 2026",
+          "date": "2026-12-20",
+          "venue": "Công viên Sông Hậu, phường Cái Khế, thành phố Cần Thơ",
+          "organizer": "Công ty DHA Việt Nam",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 295000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1WfBjAjgv52hGsmJHtb4oTpaXSY_Ev1jm/view?usp=drive_link",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-dha-viet-nam",
+          "name": "Công ty DHA Việt Nam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

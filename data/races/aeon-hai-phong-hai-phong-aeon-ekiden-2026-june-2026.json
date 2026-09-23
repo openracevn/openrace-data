@@ -1,0 +1,69 @@
+{
+  "id": "eb4ee342-6334-4791-83a3-fa75ff6d04f1",
+  "slug": "aeon-hai-phong-hai-phong-aeon-ekiden-2026-june",
+  "name": "[AEON HẢI PHÒNG - HẢI PHÒNG] AEON EKIDEN 2026 | THÁNG 6",
+  "types": [
+    "other"
+  ],
+  "date": "2026-06-21",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "aeon-viet-nam",
+  "organizer": "AEON Việt Nam",
+  "distances": [],
+  "location": {
+    "venue": "AEON Hải Phòng, Hải Phòng",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/aeon-hai-phong-hai-phong-aeon-ekiden-2026-june"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1U46tywJYLCoZT8G-D3H_91dC8xwle8AL/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/aeon-hai-phong-hai-phong-aeon-ekiden-2026-june",
+      "lastCheckedAt": "2026-09-23T18:30:56.681Z",
+      "lastChangedAt": "2026-09-23T18:30:56.681Z",
+      "extracted": {
+        "facts": {
+          "name": "[AEON HẢI PHÒNG - HẢI PHÒNG] AEON EKIDEN 2026 | THÁNG 6",
+          "date": "2026-06-21",
+          "venue": "AEON Hải Phòng, Hải Phòng",
+          "organizer": "AEON Việt Nam",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 0
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1U46tywJYLCoZT8G-D3H_91dC8xwle8AL/view",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "aeon-viet-nam",
+          "name": "AEON Việt Nam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

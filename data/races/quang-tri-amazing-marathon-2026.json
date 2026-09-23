@@ -1,0 +1,69 @@
+{
+  "id": "13e8f5cb-90f0-4ed0-be8a-74f886303c51",
+  "slug": "quang-tri-amazing-marathon-2026",
+  "name": "Quang Tri Amazing Marathon 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-08-02",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "bolt-event",
+  "organizer": "BOLT EVENT",
+  "distances": [],
+  "location": {
+    "venue": "Phường Đồng Hới, Tỉnh Quảng Trị",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/quang-tri-amazing-marathon-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/19PXHxQJ5bORIfIvJ9cJklrrjLFlDzUel/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/quang-tri-amazing-marathon-2026",
+      "lastCheckedAt": "2026-09-23T18:31:06.393Z",
+      "lastChangedAt": "2026-09-23T18:31:06.393Z",
+      "extracted": {
+        "facts": {
+          "name": "Quang Tri Amazing Marathon 2026",
+          "date": "2026-08-02",
+          "venue": "Phường Đồng Hới, Tỉnh Quảng Trị",
+          "organizer": "BOLT EVENT",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 399000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/19PXHxQJ5bORIfIvJ9cJklrrjLFlDzUel/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "bolt-event",
+          "name": "BOLT EVENT"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

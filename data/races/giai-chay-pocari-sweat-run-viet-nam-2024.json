@@ -1,0 +1,96 @@
+{
+  "id": "b202cbf4-f7da-4254-a394-1ddc75622661",
+  "slug": "giai-chay-pocari-sweat-run-viet-nam-2024",
+  "name": "GIẢI CHẠY POCARI SWEAT RUN VIỆT NAM 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-11-01",
+  "endDate": "2024-11-03",
+  "seriesId": null,
+  "organizerId": "pocari-sweat-run-vietnam",
+  "organizer": "POCARI SWEAT RUN VIETNAM",
+  "distances": [],
+  "location": {
+    "venue": "The Metropole Thủ Thiêm, TP. Thủ Đức, TP. Hồ Chí Minh",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/giai-chay-pocari-sweat-run-viet-nam-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://facebook.com/actiup.net",
+      "kind": "facebook",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://facebook.com/pocarivietnam",
+      "kind": "facebook",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdjRZtYda2RbhHgVOKR_Rl_nZw7w1m5vEP1qS3BmCv4kKDg3w/viewform",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1aRBN2ofdY_VvTTnPbVhLtac_rAFjbfDP/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/giai-chay-pocari-sweat-run-viet-nam-2024",
+      "lastCheckedAt": "2026-09-23T18:32:10.628Z",
+      "lastChangedAt": "2026-09-23T18:32:10.628Z",
+      "extracted": {
+        "facts": {
+          "name": "GIẢI CHẠY POCARI SWEAT RUN VIỆT NAM 2024 ",
+          "date": "2024-11-01",
+          "endDate": "2024-11-03",
+          "venue": "The Metropole Thủ Thiêm, TP. Thủ Đức, TP. Hồ Chí Minh",
+          "organizer": "POCARI SWEAT RUN VIETNAM",
+          "registrationStatus": "closed",
+          "fromPrice": 390000
+        },
+        "links": [
+          {
+            "url": "https://docs.google.com/forms/d/e/1FAIpQLSdjRZtYda2RbhHgVOKR_Rl_nZw7w1m5vEP1qS3BmCv4kKDg3w/viewform",
+            "text": "bang gia ve chuong trinh khuyen mai tai day"
+          },
+          {
+            "url": "https://www.facebook.com/actiup.net",
+            "text": "chinh sach huy thay doi thong tin chuyen nhuong thay doi cu ly thay doi goi race kit bit ly actiup fanpage"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1aRBN2ofdY_VvTTnPbVhLtac_rAFjbfDP/view",
+            "text": "quy dinh tham du xem tai day"
+          },
+          {
+            "url": "https://www.facebook.com/pocarivietnam",
+            "text": "ban to chuc https www facebook com pocarivietnam"
+          }
+        ],
+        "organizer": {
+          "id": "pocari-sweat-run-vietnam",
+          "name": "POCARI SWEAT RUN VIETNAM"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

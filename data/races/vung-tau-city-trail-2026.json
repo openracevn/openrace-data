@@ -1,0 +1,70 @@
+{
+  "id": "b54dfd25-8254-40cb-9dc7-df93782402d9",
+  "slug": "vung-tau-city-trail",
+  "name": "Giải chạy Vũng Tàu City Trail 2026",
+  "types": [
+    "city_trail"
+  ],
+  "date": "2026-11-28",
+  "endDate": "2026-11-29",
+  "seriesId": null,
+  "organizerId": "vietnam-mtb-series",
+  "organizer": "Vietnam MTB Series",
+  "distances": [],
+  "location": {
+    "venue": "Nhà Truyền Thống Cách Mạng Thành Phố Vũng Tàu",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/vung-tau-city-trail"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1NlmkunBtqalMjKjI5dZyC6nM-GG5GhLp/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/vung-tau-city-trail",
+      "lastCheckedAt": "2026-09-23T18:30:39.797Z",
+      "lastChangedAt": "2026-09-23T18:30:39.797Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Vũng Tàu City Trail 2026",
+          "date": "2026-11-28",
+          "endDate": "2026-11-29",
+          "venue": "Nhà Truyền Thống Cách Mạng Thành Phố Vũng Tàu",
+          "organizer": "Vietnam MTB Series",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 350000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1NlmkunBtqalMjKjI5dZyC6nM-GG5GhLp/view?usp=drive_link",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "vietnam-mtb-series",
+          "name": "Vietnam MTB Series"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "7b24d57e-8dbc-469b-b289-ed9864e07a9e",
+  "slug": "den-hung-spirituality-marathon-2024-ve-nguon",
+  "name": "Đền Hùng Spirituality Marathon 2024 - \"Về nguồn\"",
+  "types": [
+    "other"
+  ],
+  "date": "2024-04-07",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "coffeerary-events",
+  "organizer": "Coffeerary Events",
+  "distances": [],
+  "location": {
+    "venue": "Khu di tích lịch sử Đền Hùng - Phú Thọ",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/den-hung-spirituality-marathon-2024-ve-nguon"
+    }
+  ],
+  "links": [
+    {
+      "url": "http://aims-worldrunning.org/",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/den-hung-spirituality-marathon-2024-ve-nguon",
+      "lastCheckedAt": "2026-09-23T18:32:36.339Z",
+      "lastChangedAt": "2026-09-23T18:32:36.339Z",
+      "extracted": {
+        "facts": {
+          "name": "Đền Hùng Spirituality Marathon 2024 - \"Về nguồn\"",
+          "date": "2024-04-07",
+          "venue": "Khu di tích lịch sử Đền Hùng - Phú Thọ",
+          "organizer": "Coffeerary Events",
+          "registrationStatus": "closed",
+          "fromPrice": 380000
+        },
+        "links": [
+          {
+            "url": "http://aims-worldrunning.org/",
+            "text": "quy dinh tham du http aims worldrunning org"
+          }
+        ],
+        "organizer": {
+          "id": "coffeerary-events",
+          "name": "Coffeerary Events"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

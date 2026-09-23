@@ -1,0 +1,78 @@
+{
+  "id": "b2d24c8b-0275-43c9-a598-809ed28ecf34",
+  "slug": "giai-ha-noi-marathon-techcombank-mua-thu-3",
+  "name": "Giải Marathon Quốc tế Hà Nội Techcombank Mùa thứ 3",
+  "types": [
+    "other"
+  ],
+  "date": "2024-09-14",
+  "endDate": "2024-09-15",
+  "seriesId": null,
+  "organizerId": "sunrise-events-vietnam",
+  "organizer": "Sunrise Events Vietnam",
+  "distances": [],
+  "location": {
+    "venue": "Hà Nội",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/giai-ha-noi-marathon-techcombank-mua-thu-3"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1QS_ICeSVAbch-JnMhpm0aHDTCr8cWf1a/view",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1fLe4dUKB3HeZXe2mZA1awdB4UfLa_Gcj/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/giai-ha-noi-marathon-techcombank-mua-thu-3",
+      "lastCheckedAt": "2026-09-23T18:32:35.551Z",
+      "lastChangedAt": "2026-09-23T18:32:35.551Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Marathon Quốc tế Hà Nội Techcombank Mùa thứ 3",
+          "date": "2024-09-14",
+          "endDate": "2024-09-15",
+          "venue": "Hà Nội",
+          "organizer": "Sunrise Events Vietnam",
+          "registrationStatus": "closed",
+          "fromPrice": 555000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1fLe4dUKB3HeZXe2mZA1awdB4UfLa_Gcj/view",
+            "text": "quy dinh tham du xem tai day"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1QS_ICeSVAbch-JnMhpm0aHDTCr8cWf1a/view?usp=sharing",
+            "text": "cau hoi thuong gap xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "sunrise-events-vietnam",
+          "name": "Sunrise Events Vietnam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

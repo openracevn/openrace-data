@@ -1,0 +1,70 @@
+{
+  "id": "4b8aa4ab-9a7f-4a90-99a2-9975bbcdfe9c",
+  "slug": "giai-boi-seastar-nha-trang-bay-lan-ii-2025",
+  "name": "Giải Bơi SeaStar Nha Trang Bay lần 2 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-06-20",
+  "endDate": "2025-06-22",
+  "seriesId": null,
+  "organizerId": "cong-ty-tnhh-dv-dl-tm-trung-thang",
+  "organizer": "CÔNG TY TNHH DV DL - TM TRUNG THẮNG",
+  "distances": [],
+  "location": {
+    "venue": "Nha Trang",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/giai-boi-seastar-nha-trang-bay-lan-II-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1FRDn60rEnb0mVogHqP4pTogNesfiDgQ0/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/giai-boi-seastar-nha-trang-bay-lan-II-2025",
+      "lastCheckedAt": "2026-09-23T18:31:39.278Z",
+      "lastChangedAt": "2026-09-23T18:31:39.278Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Bơi SeaStar Nha Trang Bay lần 2 2025",
+          "date": "2025-06-20",
+          "endDate": "2025-06-22",
+          "venue": "Nha Trang",
+          "organizer": "CÔNG TY TNHH DV DL - TM TRUNG THẮNG",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 500000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1FRDn60rEnb0mVogHqP4pTogNesfiDgQ0/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-tnhh-dv-dl-tm-trung-thang",
+          "name": "CÔNG TY TNHH DV DL - TM TRUNG THẮNG"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "fa08590c-44b2-4bb8-83c8-8e644229a158",
+  "slug": "gemadept-run-the-way-forward-2026",
+  "name": "GEMADEPT RUN HCMC 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-10-24",
+  "endDate": "2026-10-25",
+  "seriesId": null,
+  "organizerId": "gemadept",
+  "organizer": "GEMADEPT",
+  "distances": [],
+  "location": {
+    "venue": "Khu C13, Đường Tân Trào, Khu đô thị Phú Mỹ Hưng, Phường Tân Mỹ, TP. Hồ Chí Minh",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/gemadept-run-the-way-forward-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1jfilJNoiY4O-6rrM8y8e4_xNnsr24eW6/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/gemadept-run-the-way-forward-2026",
+      "lastCheckedAt": "2026-09-23T18:30:48.639Z",
+      "lastChangedAt": "2026-09-23T18:30:48.639Z",
+      "extracted": {
+        "facts": {
+          "name": "GEMADEPT RUN HCMC 2026",
+          "date": "2026-10-24",
+          "endDate": "2026-10-25",
+          "venue": "Khu C13, Đường Tân Trào, Khu đô thị Phú Mỹ Hưng, Phường Tân Mỹ, TP. Hồ Chí Minh",
+          "organizer": "GEMADEPT",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 488000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1jfilJNoiY4O-6rrM8y8e4_xNnsr24eW6/view",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "gemadept",
+          "name": "GEMADEPT"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

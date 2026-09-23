@@ -1,0 +1,58 @@
+{
+  "id": "d1e46f2f-54d4-40c1-9cf1-193aaa67c30e",
+  "slug": "cathay-run-2024",
+  "name": "CATHAY RUN 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-12-07",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "cathay-life-vietnam",
+  "organizer": "Cathay Life Vietnam",
+  "distances": [],
+  "location": {
+    "venue": "Công Viên Cảnh Đồi Hồ Bán Nguyệt, Quận 7, TP. Hồ Chí Minh",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/cathay-run-2024"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/cathay-run-2024",
+      "lastCheckedAt": "2026-09-23T18:31:57.796Z",
+      "lastChangedAt": "2026-09-23T18:31:57.796Z",
+      "extracted": {
+        "facts": {
+          "name": "CATHAY RUN 2024",
+          "date": "2024-12-07",
+          "venue": "Công Viên Cảnh Đồi Hồ Bán Nguyệt, Quận 7, TP. Hồ Chí Minh",
+          "organizer": "Cathay Life Vietnam",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 350000
+        },
+        "links": [],
+        "organizer": {
+          "id": "cathay-life-vietnam",
+          "name": "Cathay Life Vietnam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

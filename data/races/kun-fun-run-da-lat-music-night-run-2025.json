@@ -1,0 +1,59 @@
+{
+  "id": "2c20afc8-936f-4edb-9059-56dfb5a74893",
+  "slug": "kun-fun-run-da-lat-music-night-run-2025",
+  "name": "KUN FUN RUN ĐÀ LẠT 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-06-06",
+  "endDate": "2025-06-07",
+  "seriesId": null,
+  "organizerId": "nexus-sport-events",
+  "organizer": "Nexus Sport Events",
+  "distances": [],
+  "location": {
+    "venue": "Đà Lạt, Lâm Đồng",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/kun-fun-run-da-lat-music-night-run-2025"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/kun-fun-run-da-lat-music-night-run-2025",
+      "lastCheckedAt": "2026-09-23T18:31:31.233Z",
+      "lastChangedAt": "2026-09-23T18:31:31.233Z",
+      "extracted": {
+        "facts": {
+          "name": "KUN FUN RUN ĐÀ LẠT 2025",
+          "date": "2025-06-06",
+          "endDate": "2025-06-07",
+          "venue": "Đà Lạt, Lâm Đồng",
+          "organizer": "Nexus Sport Events",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 0
+        },
+        "links": [],
+        "organizer": {
+          "id": "nexus-sport-events",
+          "name": "Nexus Sport Events"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

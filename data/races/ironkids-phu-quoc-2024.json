@@ -1,0 +1,58 @@
+{
+  "id": "c8e8096b-e36c-4326-82ce-0295ee788dc6",
+  "slug": "ironkids-phu-quoc-2024",
+  "name": "IRONKIDS Phú Quốc 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-11-15",
+  "endDate": "2024-11-16",
+  "seriesId": null,
+  "organizerId": "sunrise-events-vietnam",
+  "organizer": "Sunrise Events Vietnam",
+  "distances": [],
+  "location": {
+    "venue": "Phú Quốc",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/ironkids-phu-quoc-2024"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/ironkids-phu-quoc-2024",
+      "lastCheckedAt": "2026-09-23T18:32:33.140Z",
+      "lastChangedAt": "2026-09-23T18:32:33.140Z",
+      "extracted": {
+        "facts": {
+          "name": "IRONKIDS Phú Quốc 2024",
+          "date": "2024-11-15",
+          "endDate": "2024-11-16",
+          "venue": "Phú Quốc",
+          "organizer": "Sunrise Events Vietnam",
+          "registrationStatus": "closed",
+          "fromPrice": 950000
+        },
+        "links": [],
+        "organizer": {
+          "id": "sunrise-events-vietnam",
+          "name": "Sunrise Events Vietnam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

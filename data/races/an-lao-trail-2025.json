@@ -1,0 +1,70 @@
+{
+  "id": "939f015a-6108-4460-a973-43c8440bd124",
+  "slug": "an-lao-trail-2025",
+  "name": "AN LÃO TRAIL - LẠC GIỮA MÂY NGÀN 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-05-02",
+  "endDate": "2025-05-03",
+  "seriesId": null,
+  "organizerId": "cong-ty-co-phan-secret-sport-events",
+  "organizer": "CÔNG TY CỔ PHẦN SECRET SPORT EVENTS",
+  "distances": [],
+  "location": {
+    "venue": "An Lão - Bình Định",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/an-lao-trail-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1qZR6Qo2ESLL8Pum2invLSYw18lQyOTi8/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/an-lao-trail-2025",
+      "lastCheckedAt": "2026-09-23T18:31:52.557Z",
+      "lastChangedAt": "2026-09-23T18:31:52.557Z",
+      "extracted": {
+        "facts": {
+          "name": "AN LÃO TRAIL - LẠC GIỮA MÂY NGÀN 2025",
+          "date": "2025-05-02",
+          "endDate": "2025-05-03",
+          "venue": "An Lão - Bình Định",
+          "organizer": "CÔNG TY CỔ PHẦN SECRET SPORT EVENTS",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 590000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1qZR6Qo2ESLL8Pum2invLSYw18lQyOTi8/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-co-phan-secret-sport-events",
+          "name": "CÔNG TY CỔ PHẦN SECRET SPORT EVENTS"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

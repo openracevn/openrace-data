@@ -1,0 +1,70 @@
+{
+  "id": "de374eca-e359-4edc-bfba-8ae63f0493b6",
+  "slug": "dak-lak-ultra-marathon-2025",
+  "name": "Ea Cuôr Kăp Backyard- Đắk Lắk Ultra Marathon 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-05-24",
+  "endDate": "2025-05-25",
+  "seriesId": null,
+  "organizerId": "4-miles-vietnam-backyard-ultra",
+  "organizer": "4 Miles & Vietnam Backyard Ultra",
+  "distances": [],
+  "location": {
+    "venue": "Hồ Ea Cuôr Kăp, hẻm 171 Nguyễn Thái Binh, Hoà Thắng, Buôn Ma Thuột, Dak Lak",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/dak-lak-ultra-marathon-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1v09l6p4vFuEI7ChssNWnftH8x0nSTw61/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/dak-lak-ultra-marathon-2025",
+      "lastCheckedAt": "2026-09-23T18:31:38.479Z",
+      "lastChangedAt": "2026-09-23T18:31:38.479Z",
+      "extracted": {
+        "facts": {
+          "name": "Ea Cuôr Kăp Backyard- Đắk Lắk Ultra Marathon 2025",
+          "date": "2025-05-24",
+          "endDate": "2025-05-25",
+          "venue": "Hồ Ea Cuôr Kăp, hẻm 171 Nguyễn Thái Binh, Hoà Thắng, Buôn Ma Thuột, Dak Lak",
+          "organizer": "4 Miles & Vietnam Backyard Ultra",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 350000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1v09l6p4vFuEI7ChssNWnftH8x0nSTw61/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "4-miles-vietnam-backyard-ultra",
+          "name": "4 Miles & Vietnam Backyard Ultra"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

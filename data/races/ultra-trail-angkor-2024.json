@@ -1,0 +1,57 @@
+{
+  "id": "f4ce22ff-6d11-4236-a389-14bc725d4fc3",
+  "slug": "ultra-trail-angkor-2024",
+  "name": "ANGKOR ULTRA TRAIL 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-01-27",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "sdporganisation",
+  "organizer": "SDPOrganisation",
+  "distances": [],
+  "location": {
+    "venue": "Siem Reap, Cambodia",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/ultra-trail-angkor-2024"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/ultra-trail-angkor-2024",
+      "lastCheckedAt": "2026-09-23T18:32:38.753Z",
+      "lastChangedAt": "2026-09-23T18:32:38.753Z",
+      "extracted": {
+        "facts": {
+          "name": "ANGKOR ULTRA TRAIL 2024",
+          "date": "2024-01-27",
+          "venue": "Siem Reap, Cambodia",
+          "organizer": "SDPOrganisation",
+          "registrationStatus": "closed",
+          "fromPrice": 916000
+        },
+        "links": [],
+        "organizer": {
+          "id": "sdporganisation",
+          "name": "SDPOrganisation"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

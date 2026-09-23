@@ -1,0 +1,70 @@
+{
+  "id": "a43a5fbd-ba48-4271-b292-ab1bd626f7b4",
+  "slug": "son-la-ultra-trail-2025",
+  "name": "SƠN LA ULTRA TRAIL 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-12-05",
+  "endDate": "2025-12-07",
+  "seriesId": null,
+  "organizerId": "cong-ty-tnhh-belove-mountain",
+  "organizer": "Công ty TNHH Belove Mountain",
+  "distances": [],
+  "location": {
+    "venue": "Thị Trấn Tà Xùa, Tỉnh Sơn La",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/son-la-ultra-trail-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1NdND7J8xdmKWGPJeOeyQZHku_aXXKEUC/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/son-la-ultra-trail-2025",
+      "lastCheckedAt": "2026-09-23T18:31:32.848Z",
+      "lastChangedAt": "2026-09-23T18:31:32.848Z",
+      "extracted": {
+        "facts": {
+          "name": "SƠN LA ULTRA TRAIL 2025",
+          "date": "2025-12-05",
+          "endDate": "2025-12-07",
+          "venue": "Thị Trấn Tà Xùa, Tỉnh Sơn La",
+          "organizer": "Công ty TNHH Belove Mountain",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 868000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1NdND7J8xdmKWGPJeOeyQZHku_aXXKEUC/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-tnhh-belove-mountain",
+          "name": "Công ty TNHH Belove Mountain"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

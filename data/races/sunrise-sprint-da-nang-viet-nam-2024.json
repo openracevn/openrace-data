@@ -1,0 +1,57 @@
+{
+  "id": "d81bc3a3-a40a-41fe-b73a-83a641add439",
+  "slug": "sunrise-sprint-da-nang-viet-nam-2024",
+  "name": "SUNRISE SPRINT Việt Nam 2024 tại Đà Nẵng",
+  "types": [
+    "other"
+  ],
+  "date": "2024-05-11",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "sunrise-events-vietnam",
+  "organizer": "Sunrise Events Vietnam",
+  "distances": [],
+  "location": {
+    "venue": "Đà Nẵng",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/sunrise-sprint-da-nang-viet-nam-2024"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/sunrise-sprint-da-nang-viet-nam-2024",
+      "lastCheckedAt": "2026-09-23T18:32:39.223Z",
+      "lastChangedAt": "2026-09-23T18:32:39.223Z",
+      "extracted": {
+        "facts": {
+          "name": "SUNRISE SPRINT Việt Nam 2024 tại Đà Nẵng",
+          "date": "2024-05-11",
+          "venue": "Đà Nẵng",
+          "organizer": "Sunrise Events Vietnam",
+          "registrationStatus": "closed",
+          "fromPrice": 2800000
+        },
+        "links": [],
+        "organizer": {
+          "id": "sunrise-events-vietnam",
+          "name": "Sunrise Events Vietnam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

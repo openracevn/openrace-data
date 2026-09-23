@@ -1,0 +1,70 @@
+{
+  "id": "2c5ddc15-2f55-48c4-8760-626e9c00b477",
+  "slug": "phan-thiet-marathon-2024",
+  "name": "Phan Thiết Marathon 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-11-16",
+  "endDate": "2024-11-17",
+  "seriesId": null,
+  "organizerId": "cong-ty-tnhh-stop-and-sports",
+  "organizer": "CÔNG TY TNHH STOP AND SPORTS",
+  "distances": [],
+  "location": {
+    "venue": "Novaworld Phan Thiết, Thành Phố Phan Thiết",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/phan-thiet-marathon-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/154xjUQ1vGKnNkLEF7wZ5U0U5DfWIwAur/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/phan-thiet-marathon-2024",
+      "lastCheckedAt": "2026-09-23T18:32:04.193Z",
+      "lastChangedAt": "2026-09-23T18:32:04.193Z",
+      "extracted": {
+        "facts": {
+          "name": "Phan Thiết Marathon 2024",
+          "date": "2024-11-16",
+          "endDate": "2024-11-17",
+          "venue": "Novaworld Phan Thiết, Thành Phố Phan Thiết",
+          "organizer": "CÔNG TY TNHH STOP AND SPORTS",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 315000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/154xjUQ1vGKnNkLEF7wZ5U0U5DfWIwAur/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-tnhh-stop-and-sports",
+          "name": "CÔNG TY TNHH STOP AND SPORTS"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

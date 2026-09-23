@@ -1,0 +1,70 @@
+{
+  "id": "d16ce97d-42fc-4c9b-9dcc-1249c05d9552",
+  "slug": "yen-tu-heritage-marathon-2025",
+  "name": "Yên Tử Heritage Marathon 2025 - Giải chạy Yên Tử \"Chạm vào vùng di sản\" 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-11-15",
+  "endDate": "2025-11-16",
+  "seriesId": null,
+  "organizerId": "ubnd-phuong-yen-tu-hoi-nha-bao-tinh-quang-ninh-great-race-vietnam",
+  "organizer": "UBND PHƯỜNG YÊN TỬ - HỘI NHÀ BÁO TỈNH QUẢNG NINH - GREAT RACE VIETNAM",
+  "distances": [],
+  "location": {
+    "venue": "Yên Tử, Quảng Ninh",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/yen-tu-heritage-marathon-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/17joefD3-BCYs3aREdMvYPNrtNt9bSJel/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/yen-tu-heritage-marathon-2025",
+      "lastCheckedAt": "2026-09-23T18:31:44.882Z",
+      "lastChangedAt": "2026-09-23T18:31:44.882Z",
+      "extracted": {
+        "facts": {
+          "name": "Yên Tử Heritage Marathon 2025 - Giải chạy Yên Tử \"Chạm vào vùng di sản\" 2025",
+          "date": "2025-11-15",
+          "endDate": "2025-11-16",
+          "venue": "Yên Tử, Quảng Ninh",
+          "organizer": "UBND PHƯỜNG YÊN TỬ - HỘI NHÀ BÁO TỈNH QUẢNG NINH - GREAT RACE VIETNAM",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 299000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/17joefD3-BCYs3aREdMvYPNrtNt9bSJel/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "ubnd-phuong-yen-tu-hoi-nha-bao-tinh-quang-ninh-great-race-vietnam",
+          "name": "UBND PHƯỜNG YÊN TỬ - HỘI NHÀ BÁO TỈNH QUẢNG NINH - GREAT RACE VIETNAM"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

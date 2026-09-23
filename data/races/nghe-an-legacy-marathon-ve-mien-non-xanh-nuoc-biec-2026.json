@@ -1,0 +1,70 @@
+{
+  "id": "ba8ac318-f17e-49b5-aa90-95d6901dcbf6",
+  "slug": "nghe-an-legacy-marathon-ve-mien-non-xanh-nuoc-biec",
+  "name": "NGHỆ AN LEGACY MARATHON - VỀ MIỀN NON XANH NƯỚC BIẾC",
+  "types": [
+    "other"
+  ],
+  "date": "2026-12-05",
+  "endDate": "2026-12-06",
+  "seriesId": null,
+  "organizerId": "cong-ty-zaha-vietnam",
+  "organizer": "Công ty Zaha Vietnam",
+  "distances": [],
+  "location": {
+    "venue": "Quảng trường Bình Minh, Cửa Lò, Nghệ An",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/nghe-an-legacy-marathon-ve-mien-non-xanh-nuoc-biec"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://docs.google.com/document/d/1mVz7MUD_SB8EPCUX0a9LqpxG4WOQ9elk/edit",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/nghe-an-legacy-marathon-ve-mien-non-xanh-nuoc-biec",
+      "lastCheckedAt": "2026-09-23T18:30:45.821Z",
+      "lastChangedAt": "2026-09-23T18:30:45.821Z",
+      "extracted": {
+        "facts": {
+          "name": "NGHỆ AN LEGACY MARATHON - VỀ MIỀN NON XANH NƯỚC BIẾC",
+          "date": "2026-12-05",
+          "endDate": "2026-12-06",
+          "venue": "Quảng trường Bình Minh, Cửa Lò, Nghệ An",
+          "organizer": "Công ty Zaha Vietnam",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 137000
+        },
+        "links": [
+          {
+            "url": "https://docs.google.com/document/d/1mVz7MUD_SB8EPCUX0a9LqpxG4WOQ9elk/edit?usp=drive_link&ouid=111350351941733978191&rtpof=true&sd=true",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-zaha-vietnam",
+          "name": "Công ty Zaha Vietnam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "24c3f06d-bfe2-459b-b557-cae0d2d1499c",
+  "slug": "chay-vi-giao-duc",
+  "name": "Chạy vì giáo dục",
+  "types": [
+    "other"
+  ],
+  "date": "2024-01-06",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "cong-ty-tnhh-tu-van-giao-duc-teach-for-viet-nam",
+  "organizer": "CÔNG TY TNHH TƯ VẤN GIÁO DỤC TEACH FOR VIET NAM",
+  "distances": [],
+  "location": {
+    "venue": "Khu đô thị Vạn Phúc - Thành Phố Hồ Chí Minh",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/chay-vi-giao-duc"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/chay-vi-giao-duc",
+      "lastCheckedAt": "2026-09-23T18:32:34.737Z",
+      "lastChangedAt": "2026-09-23T18:32:34.737Z",
+      "extracted": {
+        "facts": {
+          "name": "Chạy vì giáo dục",
+          "date": "2024-01-06",
+          "venue": "Khu đô thị Vạn Phúc - Thành Phố Hồ Chí Minh",
+          "organizer": "CÔNG TY TNHH TƯ VẤN GIÁO DỤC TEACH FOR VIET NAM",
+          "registrationStatus": "closed",
+          "fromPrice": 300000
+        },
+        "links": [],
+        "organizer": {
+          "id": "cong-ty-tnhh-tu-van-giao-duc-teach-for-viet-nam",
+          "name": "CÔNG TY TNHH TƯ VẤN GIÁO DỤC TEACH FOR VIET NAM"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

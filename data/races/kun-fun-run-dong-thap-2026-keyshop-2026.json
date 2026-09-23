@@ -1,0 +1,59 @@
+{
+  "id": "fc971dd0-a638-4f8a-94b1-f7c3935c52e0",
+  "slug": "kun-fun-run-dong-thap-2026-keyshop",
+  "name": "KEYSHOP | KUN FUN RUN ĐỒNG THÁP 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-10-09",
+  "endDate": "2026-10-10",
+  "seriesId": null,
+  "organizerId": "nexus-sport-events",
+  "organizer": "Nexus Sport Events",
+  "distances": [],
+  "location": {
+    "venue": "Quảng trường Văn Miếu, Phường Cao Lãnh, Tỉnh Đồng Tháp",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/kun-fun-run-dong-thap-2026-keyshop"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/kun-fun-run-dong-thap-2026-keyshop",
+      "lastCheckedAt": "2026-09-23T18:30:40.202Z",
+      "lastChangedAt": "2026-09-23T18:30:40.202Z",
+      "extracted": {
+        "facts": {
+          "name": "KEYSHOP | KUN FUN RUN ĐỒNG THÁP 2026",
+          "date": "2026-10-09",
+          "endDate": "2026-10-10",
+          "venue": "Quảng trường Văn Miếu, Phường Cao Lãnh, Tỉnh Đồng Tháp",
+          "organizer": "Nexus Sport Events",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 0
+        },
+        "links": [],
+        "organizer": {
+          "id": "nexus-sport-events",
+          "name": "Nexus Sport Events"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

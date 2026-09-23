@@ -1,0 +1,70 @@
+{
+  "id": "097873d9-2757-425e-a491-337397c610c7",
+  "slug": "con-dao-run-challenge-2025",
+  "name": "CÔN ĐẢO RUN CHALLENGE 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-06-06",
+  "endDate": "2025-06-07",
+  "seriesId": null,
+  "organizerId": "cong-ty-co-phan-secret-sport-events",
+  "organizer": "CÔNG TY CỔ PHẦN SECRET SPORT EVENTS",
+  "distances": [],
+  "location": {
+    "venue": "Côn Đảo - BRVT",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/con-dao-run-challenge-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1XZgiu6SyN01YHmNo4fxf8iGff0vcOzgl/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/con-dao-run-challenge-2025",
+      "lastCheckedAt": "2026-09-23T18:31:53.347Z",
+      "lastChangedAt": "2026-09-23T18:31:53.347Z",
+      "extracted": {
+        "facts": {
+          "name": "CÔN ĐẢO RUN CHALLENGE 2025",
+          "date": "2025-06-06",
+          "endDate": "2025-06-07",
+          "venue": "Côn Đảo - BRVT",
+          "organizer": "CÔNG TY CỔ PHẦN SECRET SPORT EVENTS",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 650000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1XZgiu6SyN01YHmNo4fxf8iGff0vcOzgl/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-co-phan-secret-sport-events",
+          "name": "CÔNG TY CỔ PHẦN SECRET SPORT EVENTS"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

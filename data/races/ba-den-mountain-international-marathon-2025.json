@@ -1,0 +1,70 @@
+{
+  "id": "e4278a43-e14b-4e77-ab92-1728d68dc2f1",
+  "slug": "ba-den-mountain-international-marathon-2025",
+  "name": "BA DEN MOUNTAIN INTERNATIONAL MARATHON 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-08-02",
+  "endDate": "2025-08-03",
+  "seriesId": null,
+  "organizerId": "nexus-sport-events",
+  "organizer": "Nexus Sport Events",
+  "distances": [],
+  "location": {
+    "venue": "Quảng trường Khu Du lịch Sun World Bà Đen, Tây Ninh",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/ba-den-mountain-international-marathon-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/19zXNdQUyMgGnNkiCqpniMLNofNmSM0RO/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/ba-den-mountain-international-marathon-2025",
+      "lastCheckedAt": "2026-09-23T18:31:38.908Z",
+      "lastChangedAt": "2026-09-23T18:31:38.908Z",
+      "extracted": {
+        "facts": {
+          "name": "BA DEN MOUNTAIN INTERNATIONAL MARATHON 2025",
+          "date": "2025-08-02",
+          "endDate": "2025-08-03",
+          "venue": "Quảng trường Khu Du lịch Sun World Bà Đen, Tây Ninh",
+          "organizer": "Nexus Sport Events",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 450000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/19zXNdQUyMgGnNkiCqpniMLNofNmSM0RO/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "nexus-sport-events",
+          "name": "Nexus Sport Events"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "43e036dc-5122-4eac-b0f4-7b01a43224ad",
+  "slug": "stop-and-run-marathon-binh-thuan-2024",
+  "name": "STOP AND RUN MARATHON BÌNH THUẬN 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-05-18",
+  "endDate": "2024-05-19",
+  "seriesId": null,
+  "organizerId": "cong-ty-tnhh-stop-and-sports",
+  "organizer": "CÔNG TY TNHH STOP AND SPORTS",
+  "distances": [],
+  "location": {
+    "venue": "KDL Bàu Trắng (Hòa Thắng, Bắc Bình, Bình Thuận)",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/stop-and-run-marathon-binh-thuan-2024"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/stop-and-run-marathon-binh-thuan-2024",
+      "lastCheckedAt": "2026-09-23T18:32:37.153Z",
+      "lastChangedAt": "2026-09-23T18:32:37.153Z",
+      "extracted": {
+        "facts": {
+          "name": "STOP AND RUN MARATHON BÌNH THUẬN 2024",
+          "date": "2024-05-18",
+          "endDate": "2024-05-19",
+          "venue": "KDL Bàu Trắng (Hòa Thắng, Bắc Bình, Bình Thuận)",
+          "organizer": "CÔNG TY TNHH STOP AND SPORTS",
+          "registrationStatus": "closed",
+          "fromPrice": 444000
+        },
+        "links": [],
+        "organizer": {
+          "id": "cong-ty-tnhh-stop-and-sports",
+          "name": "CÔNG TY TNHH STOP AND SPORTS"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

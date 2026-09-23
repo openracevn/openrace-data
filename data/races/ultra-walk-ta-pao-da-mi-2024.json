@@ -1,0 +1,59 @@
+{
+  "id": "9159cb7d-69c1-4e02-b622-abdc59f84978",
+  "slug": "ultra-walk-ta-pao-da-mi-2024",
+  "name": "Ultra Walk Tà Pao-Đa Mi 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-11-30",
+  "endDate": "2024-12-01",
+  "seriesId": null,
+  "organizerId": "cong-ty-co-phan-tropiad",
+  "organizer": "CÔNG TY CỔ PHẦN TROPIAD",
+  "distances": [],
+  "location": {
+    "venue": "Tánh Linh-Tà Pao- Đa Mi-Bảo Lâm",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/ultra-walk-ta-pao-da-mi-2024"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/ultra-walk-ta-pao-da-mi-2024",
+      "lastCheckedAt": "2026-09-23T18:32:04.609Z",
+      "lastChangedAt": "2026-09-23T18:32:04.609Z",
+      "extracted": {
+        "facts": {
+          "name": "Ultra Walk Tà Pao-Đa Mi 2024",
+          "date": "2024-11-30",
+          "endDate": "2024-12-01",
+          "venue": "Tánh Linh-Tà Pao- Đa Mi-Bảo Lâm",
+          "organizer": "CÔNG TY CỔ PHẦN TROPIAD",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 4350000
+        },
+        "links": [],
+        "organizer": {
+          "id": "cong-ty-co-phan-tropiad",
+          "name": "CÔNG TY CỔ PHẦN TROPIAD"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

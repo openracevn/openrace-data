@@ -1,0 +1,68 @@
+{
+  "id": "d56f0ea5-7e36-4b8c-a355-b5d7e77fe2ef",
+  "slug": "run-to-heart-2024",
+  "name": "Run To Heart 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-07-28",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "pr-events-company-limited",
+  "organizer": "PR EVENTS COMPANY LIMITED",
+  "distances": [],
+  "location": {
+    "venue": "Khu đô thị Vạn Phúc City, TP.Thủ Đức, TP.HCM",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/run-to-heart-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1QQLQvEUxxxNQ6x3RWsOLXuDu2_nyzoHE/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/run-to-heart-2024",
+      "lastCheckedAt": "2026-09-23T18:32:20.688Z",
+      "lastChangedAt": "2026-09-23T18:32:20.688Z",
+      "extracted": {
+        "facts": {
+          "name": "Run To Heart 2024",
+          "date": "2024-07-28",
+          "venue": "Khu đô thị Vạn Phúc City, TP.Thủ Đức, TP.HCM",
+          "organizer": "PR EVENTS COMPANY LIMITED",
+          "registrationStatus": "closed",
+          "fromPrice": 620000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1QQLQvEUxxxNQ6x3RWsOLXuDu2_nyzoHE/view",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "pr-events-company-limited",
+          "name": "PR EVENTS COMPANY LIMITED"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

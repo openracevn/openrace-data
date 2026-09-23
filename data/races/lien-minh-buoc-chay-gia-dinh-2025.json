@@ -1,0 +1,58 @@
+{
+  "id": "2a4fb44f-bb24-48ea-ac66-99d8b6048c01",
+  "slug": "lien-minh-buoc-chay-gia-dinh-2025",
+  "name": "Liên Minh Bước Chạy Gia Đình 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-11-09",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "yeah1",
+  "organizer": "YeaH1",
+  "distances": [],
+  "location": {
+    "venue": "TP. Hồ Chí Minh, Việt Nam",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/lien-minh-buoc-chay-gia-dinh-2025"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/lien-minh-buoc-chay-gia-dinh-2025",
+      "lastCheckedAt": "2026-09-23T18:31:15.969Z",
+      "lastChangedAt": "2026-09-23T18:31:15.969Z",
+      "extracted": {
+        "facts": {
+          "name": "Liên Minh Bước Chạy Gia Đình 2025",
+          "date": "2025-11-09",
+          "venue": "TP. Hồ Chí Minh, Việt Nam",
+          "organizer": "YeaH1",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 249000
+        },
+        "links": [],
+        "organizer": {
+          "id": "yeah1",
+          "name": "YeaH1"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

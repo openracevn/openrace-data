@@ -1,0 +1,57 @@
+{
+  "id": "03ab38eb-4f52-41d5-aaed-440854440f83",
+  "slug": "giai-chay-ban-marathon-thanh-pho-moi-binh-duong-2024",
+  "name": "GIẢI CHẠY BÁN MARATHON THÀNH PHỐ MỚI BÌNH DƯƠNG 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-04-14",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "cong-ty-co-phan-the-thao-huynh-thai-loc",
+  "organizer": "CÔNG TY CỔ PHẦN THỂ THAO HUỲNH THÁI LỘC",
+  "distances": [],
+  "location": {
+    "venue": "Trung tâm Triển lãm Quốc tế WTC EXPO, B11 đường Hùng Vương, Phường Hòa Phú, Thành phố Thủ Dầu Một, Bình Dương",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/giai-chay-ban-marathon-thanh-pho-moi-binh-duong-2024"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/giai-chay-ban-marathon-thanh-pho-moi-binh-duong-2024",
+      "lastCheckedAt": "2026-09-23T18:32:31.931Z",
+      "lastChangedAt": "2026-09-23T18:32:31.931Z",
+      "extracted": {
+        "facts": {
+          "name": "GIẢI CHẠY BÁN MARATHON THÀNH PHỐ MỚI BÌNH DƯƠNG 2024",
+          "date": "2024-04-14",
+          "venue": "Trung tâm Triển lãm Quốc tế WTC EXPO, B11 đường Hùng Vương, Phường Hòa Phú, Thành phố Thủ Dầu Một, Bình Dương",
+          "organizer": "CÔNG TY CỔ PHẦN THỂ THAO HUỲNH THÁI LỘC",
+          "registrationStatus": "closed",
+          "fromPrice": 300000
+        },
+        "links": [],
+        "organizer": {
+          "id": "cong-ty-co-phan-the-thao-huynh-thai-loc",
+          "name": "CÔNG TY CỔ PHẦN THỂ THAO HUỲNH THÁI LỘC"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

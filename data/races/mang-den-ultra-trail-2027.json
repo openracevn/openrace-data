@@ -1,0 +1,70 @@
+{
+  "id": "87255571-8845-43e2-a3f9-7422f28b50cc",
+  "slug": "mang-den-ultra-trail-2027",
+  "name": "Măng Đen Ultra Trail 2027",
+  "types": [
+    "other"
+  ],
+  "date": "2027-01-15",
+  "endDate": "2027-01-17",
+  "seriesId": null,
+  "organizerId": "ban-to-chuc-hoi-du-lich-mang-den-don-vi-van-hanh-pr-events",
+  "organizer": "Ban Tổ Chức: Hội Du Lịch Măng Đen - Đơn vị vận hành: PR Events",
+  "distances": [],
+  "location": {
+    "venue": "Xã Măng Đen - Quảng Ngãi",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/mang-den-ultra-trail-2027"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1Qih4_R1LRSfbyDyBL4RPx3FAHsaCjsv9/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/mang-den-ultra-trail-2027",
+      "lastCheckedAt": "2026-09-23T18:30:48.234Z",
+      "lastChangedAt": "2026-09-23T18:30:48.234Z",
+      "extracted": {
+        "facts": {
+          "name": "Măng Đen Ultra Trail 2027",
+          "date": "2027-01-15",
+          "endDate": "2027-01-17",
+          "venue": "Xã Măng Đen - Quảng Ngãi",
+          "organizer": "Ban Tổ Chức: Hội Du Lịch Măng Đen - Đơn vị vận hành: PR Events",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 739000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1Qih4_R1LRSfbyDyBL4RPx3FAHsaCjsv9/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "ban-to-chuc-hoi-du-lich-mang-den-don-vi-van-hanh-pr-events",
+          "name": "Ban Tổ Chức: Hội Du Lịch Măng Đen - Đơn vị vận hành: PR Events"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

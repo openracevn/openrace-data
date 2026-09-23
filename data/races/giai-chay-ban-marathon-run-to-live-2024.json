@@ -1,0 +1,57 @@
+{
+  "id": "be49c95e-d195-44e8-a318-d1033a8154c8",
+  "slug": "giai-chay-ban-marathon-run-to-live-2024",
+  "name": "GIẢI CHẠY BÁN MARATHON RUN TO LIVE 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-03-10",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "miracle-entertainment-group-bao-sai-gon-giai-phong-so-vhtt-ho-chi-minh",
+  "organizer": "Miracle Entertainment Group - Báo Sài Gòn Giải Phóng - Sở VHTT Hồ Chí Minh",
+  "distances": [],
+  "location": {
+    "venue": "METROPOLE THỦ THIÊM, THÀNH PHỐ THỦ ĐỨC",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/giai-chay-ban-marathon-run-to-live-2024"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/giai-chay-ban-marathon-run-to-live-2024",
+      "lastCheckedAt": "2026-09-23T18:32:33.538Z",
+      "lastChangedAt": "2026-09-23T18:32:33.538Z",
+      "extracted": {
+        "facts": {
+          "name": "GIẢI CHẠY BÁN MARATHON RUN TO LIVE 2024",
+          "date": "2024-03-10",
+          "venue": "METROPOLE THỦ THIÊM, THÀNH PHỐ THỦ ĐỨC",
+          "organizer": "Miracle Entertainment Group - Báo Sài Gòn Giải Phóng - Sở VHTT Hồ Chí Minh",
+          "registrationStatus": "closed",
+          "fromPrice": 499000
+        },
+        "links": [],
+        "organizer": {
+          "id": "miracle-entertainment-group-bao-sai-gon-giai-phong-so-vhtt-ho-chi-minh",
+          "name": "Miracle Entertainment Group - Báo Sài Gòn Giải Phóng - Sở VHTT Hồ Chí Minh"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

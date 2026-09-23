@@ -1,0 +1,58 @@
+{
+  "id": "96b56a3c-352f-4647-8afc-58fa5fe119cc",
+  "slug": "ultra-walk-nha-trang-da-lat-2024-vuot-deo-khanh-le",
+  "name": "Ultra Walk Nha Trang - Đà Lạt 2024 Vượt đèo Khánh Lê",
+  "types": [
+    "other"
+  ],
+  "date": "2024-03-30",
+  "endDate": "2024-03-31",
+  "seriesId": null,
+  "organizerId": "cong-ty-co-phan-tropiad",
+  "organizer": "CÔNG TY CỔ PHẦN TROPIAD",
+  "distances": [],
+  "location": {
+    "venue": "Nha Trang - Đà Lạt",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/ultra-walk-nha-trang-da-lat-2024-vuot-deo-khanh-le"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/ultra-walk-nha-trang-da-lat-2024-vuot-deo-khanh-le",
+      "lastCheckedAt": "2026-09-23T18:32:26.699Z",
+      "lastChangedAt": "2026-09-23T18:32:26.699Z",
+      "extracted": {
+        "facts": {
+          "name": "Ultra Walk Nha Trang - Đà Lạt 2024 Vượt đèo Khánh Lê",
+          "date": "2024-03-30",
+          "endDate": "2024-03-31",
+          "venue": "Nha Trang - Đà Lạt",
+          "organizer": "CÔNG TY CỔ PHẦN TROPIAD",
+          "registrationStatus": "closed",
+          "fromPrice": 4500000
+        },
+        "links": [],
+        "organizer": {
+          "id": "cong-ty-co-phan-tropiad",
+          "name": "CÔNG TY CỔ PHẦN TROPIAD"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

@@ -1,0 +1,114 @@
+{
+  "id": "d81deebf-5813-4f40-bfb6-477b617c21a2",
+  "slug": "vietnam-ultra-marathon-2026",
+  "name": "Vietnam Ultra Marathon 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-03-14",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "topas-travel",
+  "organizer": "TOPAS TRAVEL",
+  "distances": [],
+  "location": {
+    "venue": "Mai Châu, Hòa Bình",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/vietnam-ultra-marathon-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://google.com/maps/place/S%C3%A2n+C%E1%BB%99ng+%C4%90%E1%BB%93ng+B%E1%BA%A3n+L%C3%A1c/@20.6497772,105.0650161,932m/data=!3m2!1e3!4b1!4m6!3m5!1s0x313409d5ebb6dce7:0x1a09ebe4dec1971!8m2!3d20.6497722!4d105.0675964!16s%2Fg%2F11v039z8rn!5m1!1e1",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://vietnamtrailseries.com/vi/ultra-marathon/danh-sach-vdv-vum",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://vietnamtrailseries.com/vi/ultra-marathon/nhan-goi-so-chay-vum",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://vietnamtrailseries.com/wp-content/uploads/2025/07/VUM-2026_Childs-Indemnity-and-Consent-Form_VIE.pdf",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://vietnamtrailseries.com/wp-content/uploads/2025/07/VUM-2026_Indemnity_VIE.pdf",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://vietnamtrailseries.com/vi/ultra-marathon/do-dung-bat-buoc-vum",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/vietnam-ultra-marathon-2026",
+      "lastCheckedAt": "2026-09-23T18:31:23.695Z",
+      "lastChangedAt": "2026-09-23T18:31:23.695Z",
+      "extracted": {
+        "facts": {
+          "name": "Vietnam Ultra Marathon 2026",
+          "date": "2026-03-14",
+          "venue": "Mai Châu, Hòa Bình",
+          "organizer": "TOPAS TRAVEL",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 990000
+        },
+        "links": [
+          {
+            "url": "https://www.google.com/maps/place/S%C3%A2n+C%E1%BB%99ng+%C4%90%E1%BB%93ng+B%E1%BA%A3n+L%C3%A1c/@20.6497772,105.0650161,932m/data=!3m2!1e3!4b1!4m6!3m5!1s0x313409d5ebb6dce7:0x1a09ebe4dec1971!8m2!3d20.6497722!4d105.0675964!16s%2Fg%2F11v039z8rn!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDIxNy4wIKXMDSoASAFQAw%3D%3D",
+            "text": "thong tin race kit google maps san cong dong ban lac"
+          },
+          {
+            "url": "https://vietnamtrailseries.com/vi/ultra-marathon/danh-sach-vdv-vum/",
+            "text": "thong tin race kit tai day"
+          },
+          {
+            "url": "https://vietnamtrailseries.com/wp-content/uploads/2025/07/VUM-2026_Indemnity_VIE.pdf",
+            "text": "thong tin race kit tai day"
+          },
+          {
+            "url": "https://vietnamtrailseries.com/wp-content/uploads/2025/07/VUM-2026_Childs-Indemnity-and-Consent-Form_VIE.pdf",
+            "text": "thong tin race kit tai day"
+          },
+          {
+            "url": "https://vietnamtrailseries.com/vi/ultra-marathon/do-dung-bat-buoc-vum/",
+            "text": "quy dinh tham du do dung bat buoc"
+          },
+          {
+            "url": "https://vietnamtrailseries.com/vi/ultra-marathon/nhan-goi-so-chay-vum/",
+            "text": "chinh sach huy chuyen nhuong thay doi thong tin ca nhan cu ly tai day"
+          }
+        ],
+        "organizer": {
+          "id": "topas-travel",
+          "name": "TOPAS TRAVEL"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

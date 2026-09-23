@@ -1,0 +1,58 @@
+{
+  "id": "04f8485d-1aa8-4a24-a3b6-6c465b7ad919",
+  "slug": "sunrise-walk-in-tram-chim",
+  "name": "Sunrise Walk in Tram Chim",
+  "types": [
+    "other"
+  ],
+  "date": "2024-05-18",
+  "endDate": "2024-05-19",
+  "seriesId": null,
+  "organizerId": "cong-ty-co-phan-tropiad",
+  "organizer": "CÔNG TY CỔ PHẦN TROPIAD",
+  "distances": [],
+  "location": {
+    "venue": "Vườn quốc gia Tràm Chim",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/sunrise-walk-in-tram-chim"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/sunrise-walk-in-tram-chim",
+      "lastCheckedAt": "2026-09-23T18:32:18.263Z",
+      "lastChangedAt": "2026-09-23T18:32:18.263Z",
+      "extracted": {
+        "facts": {
+          "name": "Sunrise Walk in Tram Chim",
+          "date": "2024-05-18",
+          "endDate": "2024-05-19",
+          "venue": "Vườn quốc gia Tràm Chim",
+          "organizer": "CÔNG TY CỔ PHẦN TROPIAD",
+          "registrationStatus": "closed",
+          "fromPrice": 3000000
+        },
+        "links": [],
+        "organizer": {
+          "id": "cong-ty-co-phan-tropiad",
+          "name": "CÔNG TY CỔ PHẦN TROPIAD"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

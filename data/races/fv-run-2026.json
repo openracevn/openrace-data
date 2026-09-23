@@ -1,0 +1,70 @@
+{
+  "id": "7ead6477-4bac-4b22-8079-3bdd04b12a83",
+  "slug": "fv-run",
+  "name": "FV RUN - Run with Heart, Run for Hope",
+  "types": [
+    "other"
+  ],
+  "date": "2026-10-31",
+  "endDate": "2026-11-01",
+  "seriesId": null,
+  "organizerId": "benh-vien-fv-dong-to-chuc-quy-nang-buoc-tuoi-tho",
+  "organizer": "Bệnh viện FV - Đồng tổ chức: Quỹ Nâng Bước Tuổi Thơ",
+  "distances": [],
+  "location": {
+    "venue": "KĐT Phú Mỹ Hưng, Phường Tân Hưng, TP. Hồ Chí Minh.",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/fv-run"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1wt_c6s9ixA6kyGtabsVmB8UlDwjyP74P/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/fv-run",
+      "lastCheckedAt": "2026-09-23T18:30:45.444Z",
+      "lastChangedAt": "2026-09-23T18:30:45.444Z",
+      "extracted": {
+        "facts": {
+          "name": "FV RUN - Run with Heart, Run for Hope",
+          "date": "2026-10-31",
+          "endDate": "2026-11-01",
+          "venue": "KĐT Phú Mỹ Hưng, Phường Tân Hưng, TP. Hồ Chí Minh.",
+          "organizer": "Bệnh viện FV - Đồng tổ chức: Quỹ Nâng Bước Tuổi Thơ",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 250000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1wt_c6s9ixA6kyGtabsVmB8UlDwjyP74P/view?usp=drive_link",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "benh-vien-fv-dong-to-chuc-quy-nang-buoc-tuoi-tho",
+          "name": "Bệnh viện FV - Đồng tổ chức: Quỹ Nâng Bước Tuổi Thơ"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

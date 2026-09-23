@@ -1,0 +1,58 @@
+{
+  "id": "3ffa3f84-320d-4679-97c5-3375924db68f",
+  "slug": "the-5th-edition-of-the-techcombank-hanoi-international-marathon",
+  "name": "Giải Marathon Quốc tế Hà Nội Techcombank Mùa thứ 5",
+  "types": [
+    "other"
+  ],
+  "date": "2026-10-04",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "sunrise-events-vietnam",
+  "organizer": "Sunrise Events Vietnam",
+  "distances": [],
+  "location": {
+    "venue": "Hà Nội, Việt Nam",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/the-5th-edition-of-the-techcombank-hanoi-international-marathon"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/the-5th-edition-of-the-techcombank-hanoi-international-marathon",
+      "lastCheckedAt": "2026-09-23T18:31:09.931Z",
+      "lastChangedAt": "2026-09-23T18:31:09.931Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Marathon Quốc tế Hà Nội Techcombank Mùa thứ 5",
+          "date": "2026-10-04",
+          "venue": "Hà Nội, Việt Nam",
+          "organizer": "Sunrise Events Vietnam",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 290000
+        },
+        "links": [],
+        "organizer": {
+          "id": "sunrise-events-vietnam",
+          "name": "Sunrise Events Vietnam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

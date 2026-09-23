@@ -1,0 +1,68 @@
+{
+  "id": "e72ebc62-0832-4979-aa31-32412e19c380",
+  "slug": "tay-ho-half-marathon-2024",
+  "name": "TAY HO HALF MARATHON 2024 - POWERED BY BIM GROUP",
+  "types": [
+    "other"
+  ],
+  "date": "2024-04-14",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "vrace-cong-ty-co-phan-vu-media",
+  "organizer": "VRace (Công ty Cổ phần Vũ Media)",
+  "distances": [],
+  "location": {
+    "venue": "Không gian văn hóa sáng tạo Tây Hồ (phố đi bộ Trịnh Công Sơn trước đây), Tây Hồ, Hà Nội",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/tay-ho-half-marathon-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1w4ZAZWIqiRMhMigo0n8tOArNLjDsxwDL/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/tay-ho-half-marathon-2024",
+      "lastCheckedAt": "2026-09-23T18:32:37.622Z",
+      "lastChangedAt": "2026-09-23T18:32:37.622Z",
+      "extracted": {
+        "facts": {
+          "name": "TAY HO HALF MARATHON 2024 - POWERED BY BIM GROUP",
+          "date": "2024-04-14",
+          "venue": "Không gian văn hóa sáng tạo Tây Hồ (phố đi bộ Trịnh Công Sơn trước đây), Tây Hồ, Hà Nội",
+          "organizer": "VRace (Công ty Cổ phần Vũ Media)",
+          "registrationStatus": "closed",
+          "fromPrice": 499000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1w4ZAZWIqiRMhMigo0n8tOArNLjDsxwDL/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "vrace-cong-ty-co-phan-vu-media",
+          "name": "VRace (Công ty Cổ phần Vũ Media)"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

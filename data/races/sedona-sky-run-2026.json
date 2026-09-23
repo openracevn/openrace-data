@@ -1,0 +1,78 @@
+{
+  "id": "f7b90d61-379d-4113-a25b-1f50ec0f8f2d",
+  "slug": "sedona-sky-run-2026",
+  "name": "SEDONA SKYRUN 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-08-09",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "nexus-sport-events",
+  "organizer": "Nexus Sport Events",
+  "distances": [],
+  "location": {
+    "venue": "Tòa nhà Sedona Suites - 67 Lê Lợi, Phường Sài Gòn, Thành phố Hồ Chí Minh.",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/sedona-sky-run-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://facebook.com/sedonaskyrun",
+      "kind": "facebook",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1yUKDo7ZDfI4wGrSf_PI35QLOU8zQYmTx/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/sedona-sky-run-2026",
+      "lastCheckedAt": "2026-09-23T18:30:57.494Z",
+      "lastChangedAt": "2026-09-23T18:30:57.494Z",
+      "extracted": {
+        "facts": {
+          "name": "SEDONA SKYRUN 2026",
+          "date": "2026-08-09",
+          "venue": "Tòa nhà Sedona Suites - 67 Lê Lợi, Phường Sài Gòn, Thành phố Hồ Chí Minh.",
+          "organizer": "Nexus Sport Events",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 600000
+        },
+        "links": [
+          {
+            "url": "https://www.facebook.com/sedonaskyrun",
+            "text": "thong tin su kien https www facebook com sedonaskyrun"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1yUKDo7ZDfI4wGrSf_PI35QLOU8zQYmTx/view",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "nexus-sport-events",
+          "name": "Nexus Sport Events"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

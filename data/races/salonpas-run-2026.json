@@ -1,0 +1,70 @@
+{
+  "id": "fcbbf5cf-12ad-4e91-9993-4380628eec52",
+  "slug": "salonpas-run-2026",
+  "name": "Giải chạy bộ Salonpas 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-11-07",
+  "endDate": "2026-11-08",
+  "seriesId": null,
+  "organizerId": "cong-ty-tnhh-duoc-pham-hisamitsu-viet-nam",
+  "organizer": "CÔNG TY TNHH DƯỢC PHẨM HISAMITSU VIỆT NAM",
+  "distances": [],
+  "location": {
+    "venue": "Công viên Sáng Tạo, Phường An Khánh, Thành phố Hồ Chí Minh.",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/salonpas-run-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://salonpasrun.vn/thong-tin-giai",
+      "kind": "official",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/salonpas-run-2026",
+      "lastCheckedAt": "2026-09-23T18:30:47.837Z",
+      "lastChangedAt": "2026-09-23T18:30:47.837Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy bộ Salonpas 2026",
+          "date": "2026-11-07",
+          "endDate": "2026-11-08",
+          "venue": "Công viên Sáng Tạo, Phường An Khánh, Thành phố Hồ Chí Minh.",
+          "organizer": "CÔNG TY TNHH DƯỢC PHẨM HISAMITSU VIỆT NAM",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 120000
+        },
+        "links": [
+          {
+            "url": "https://salonpasrun.vn/thong-tin-giai/",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-tnhh-duoc-pham-hisamitsu-viet-nam",
+          "name": "CÔNG TY TNHH DƯỢC PHẨM HISAMITSU VIỆT NAM"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

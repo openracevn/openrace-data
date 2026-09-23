@@ -1,0 +1,59 @@
+{
+  "id": "30301adb-9e83-41c4-947b-99fc52e32069",
+  "slug": "ly-son-half-marathon-2025",
+  "name": "Lý Sơn Half Marathon 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-06-28",
+  "endDate": "2025-06-29",
+  "seriesId": null,
+  "organizerId": "uy-ban-nhan-dan-huyen-ly-son-cong-ty-co-phan-duong-chay-xanh",
+  "organizer": "Uỷ Ban Nhân Dân Huyện Lý Sơn & Công Ty Cổ Phần Đường Chạy Xanh",
+  "distances": [],
+  "location": {
+    "venue": "Huyện đảo Lý Sơn, tỉnh Quảng Ngãi",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/ly-son-half-marathon-2025"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/ly-son-half-marathon-2025",
+      "lastCheckedAt": "2026-09-23T18:31:34.863Z",
+      "lastChangedAt": "2026-09-23T18:31:34.863Z",
+      "extracted": {
+        "facts": {
+          "name": "Lý Sơn Half Marathon 2025",
+          "date": "2025-06-28",
+          "endDate": "2025-06-29",
+          "venue": "Huyện đảo Lý Sơn, tỉnh Quảng Ngãi",
+          "organizer": "Uỷ Ban Nhân Dân Huyện Lý Sơn & Công Ty Cổ Phần Đường Chạy Xanh",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 486000
+        },
+        "links": [],
+        "organizer": {
+          "id": "uy-ban-nhan-dan-huyen-ly-son-cong-ty-co-phan-duong-chay-xanh",
+          "name": "Uỷ Ban Nhân Dân Huyện Lý Sơn & Công Ty Cổ Phần Đường Chạy Xanh"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

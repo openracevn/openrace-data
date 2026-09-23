@@ -1,0 +1,69 @@
+{
+  "id": "dec39656-21e8-4986-a481-8f9a6371afa7",
+  "slug": "dalat-music-night-run-2024",
+  "name": "Đà Lạt Music Night Run 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-05-31",
+  "endDate": "2024-06-01",
+  "seriesId": null,
+  "organizerId": "nexus-sport-events",
+  "organizer": "Nexus Sport Events",
+  "distances": [],
+  "location": {
+    "venue": "Đà Lạt, Lâm Đồng, Việt Nam",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/dalat-music-night-run-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://dalat.musicrun.vn/quy-dinh-dieu-le",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/dalat-music-night-run-2024",
+      "lastCheckedAt": "2026-09-23T18:32:31.132Z",
+      "lastChangedAt": "2026-09-23T18:32:31.132Z",
+      "extracted": {
+        "facts": {
+          "name": "Đà Lạt Music Night Run 2024",
+          "date": "2024-05-31",
+          "endDate": "2024-06-01",
+          "venue": "Đà Lạt, Lâm Đồng, Việt Nam",
+          "organizer": "Nexus Sport Events",
+          "registrationStatus": "closed",
+          "fromPrice": 350000
+        },
+        "links": [
+          {
+            "url": "https://dalat.musicrun.vn/quy-dinh-dieu-le/",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "nexus-sport-events",
+          "name": "Nexus Sport Events"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

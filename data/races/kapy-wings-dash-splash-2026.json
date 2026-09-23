@@ -1,0 +1,58 @@
+{
+  "id": "16542c00-9250-4823-b076-c2fc75d0cef6",
+  "slug": "kapy-wings-dash-splash-2026",
+  "name": "Kapy Wings Dash Splash 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-03-21",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "the-lakes-race",
+  "organizer": "THE LAKES RACE",
+  "distances": [],
+  "location": {
+    "venue": "Lakeview Villas - Quận 9 - HCM",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/kapy-wings-dash-splash-2026"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/kapy-wings-dash-splash-2026",
+      "lastCheckedAt": "2026-09-23T18:31:07.983Z",
+      "lastChangedAt": "2026-09-23T18:31:07.983Z",
+      "extracted": {
+        "facts": {
+          "name": "Kapy Wings Dash Splash 2026",
+          "date": "2026-03-21",
+          "venue": "Lakeview Villas - Quận 9 - HCM",
+          "organizer": "THE LAKES RACE",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 200000
+        },
+        "links": [],
+        "organizer": {
+          "id": "the-lakes-race",
+          "name": "THE LAKES RACE"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

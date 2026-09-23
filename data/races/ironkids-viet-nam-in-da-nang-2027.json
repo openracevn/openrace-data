@@ -1,0 +1,58 @@
+{
+  "id": "bc227070-86c8-47fe-a830-664d3c91e86e",
+  "slug": "2027-ironkids-viet-nam-in-da-nang",
+  "name": "2027 IRONKIDS Viet Nam in Da Nang",
+  "types": [
+    "other"
+  ],
+  "date": "2027-05-08",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "sunrise-events-vietnam",
+  "organizer": "Sunrise Events Vietnam",
+  "distances": [],
+  "location": {
+    "venue": "Đà Nẵng, Việt Nam",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/2027-ironkids-viet-nam-in-da-nang"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/2027-ironkids-viet-nam-in-da-nang",
+      "lastCheckedAt": "2026-09-23T18:30:42.276Z",
+      "lastChangedAt": "2026-09-23T18:30:42.276Z",
+      "extracted": {
+        "facts": {
+          "name": "2027 IRONKIDS Viet Nam in Da Nang",
+          "date": "2027-05-08",
+          "venue": "Đà Nẵng, Việt Nam",
+          "organizer": "Sunrise Events Vietnam",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 980000
+        },
+        "links": [],
+        "organizer": {
+          "id": "sunrise-events-vietnam",
+          "name": "Sunrise Events Vietnam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

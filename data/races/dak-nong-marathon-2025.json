@@ -1,0 +1,59 @@
+{
+  "id": "ac6ab0ab-abc0-4895-8c94-9233f5e99775",
+  "slug": "dak-nong-marathon-2025",
+  "name": "ĐẮK NÔNG MARATHON 2025 CHINH PHỤC NAM TÂY NGUYÊN - KỶ NIỆM 100 NĂM BÁO CHÍ CÁCH MẠNG VIỆT NAM",
+  "types": [
+    "other"
+  ],
+  "date": "2025-05-31",
+  "endDate": "2025-06-01",
+  "seriesId": null,
+  "organizerId": "bao-dak-nong",
+  "organizer": "Báo Đắk Nông",
+  "distances": [],
+  "location": {
+    "venue": "Thành phố Gia Nghĩa - tỉnh Đăk Nông",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/dak-nong-marathon-2025"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/dak-nong-marathon-2025",
+      "lastCheckedAt": "2026-09-23T18:31:43.830Z",
+      "lastChangedAt": "2026-09-23T18:31:43.830Z",
+      "extracted": {
+        "facts": {
+          "name": "ĐẮK NÔNG MARATHON 2025 CHINH PHỤC NAM TÂY NGUYÊN - KỶ NIỆM 100 NĂM BÁO CHÍ CÁCH MẠNG VIỆT NAM",
+          "date": "2025-05-31",
+          "endDate": "2025-06-01",
+          "venue": "Thành phố Gia Nghĩa - tỉnh Đăk Nông",
+          "organizer": "Báo Đắk Nông",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 209000
+        },
+        "links": [],
+        "organizer": {
+          "id": "bao-dak-nong",
+          "name": "Báo Đắk Nông"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

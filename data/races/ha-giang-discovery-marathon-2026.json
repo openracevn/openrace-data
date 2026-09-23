@@ -1,0 +1,70 @@
+{
+  "id": "98cafd8a-51ad-459c-abff-5c788970019f",
+  "slug": "ha-giang-discovery-marathon-2026",
+  "name": "HÀ GIANG DISCOVERY MARATHON/ULTRA TRAIL HÀ GIANG 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-04-03",
+  "endDate": "2026-04-05",
+  "seriesId": null,
+  "organizerId": "race-jungle",
+  "organizer": "Race Jungle",
+  "distances": [],
+  "location": {
+    "venue": "Mèo Vạc, Tuyên Quang, Việt Nam",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/ha-giang-discovery-marathon-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://racejungle.com/pages/cam-ket-tham-gia",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/ha-giang-discovery-marathon-2026",
+      "lastCheckedAt": "2026-09-23T18:31:19.172Z",
+      "lastChangedAt": "2026-09-23T18:31:19.172Z",
+      "extracted": {
+        "facts": {
+          "name": "HÀ GIANG DISCOVERY MARATHON/ULTRA TRAIL HÀ GIANG 2026",
+          "date": "2026-04-03",
+          "endDate": "2026-04-05",
+          "venue": "Mèo Vạc, Tuyên Quang, Việt Nam",
+          "organizer": "Race Jungle",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 588000
+        },
+        "links": [
+          {
+            "url": "https://racejungle.com/pages/cam-ket-tham-gia",
+            "text": "quy dinh tham du tai day"
+          }
+        ],
+        "organizer": {
+          "id": "race-jungle",
+          "name": "Race Jungle"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "5a677267-2e08-41b0-a86f-11d1c010b2e0",
+  "slug": "save-turtles-run-2025",
+  "name": "Chạy Bộ Vì Rùa Biển 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-08-17",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "tap-doan-khach-san-akyn-khach-san-the-secret-con-dao",
+  "organizer": "Tập đoàn Khách sạn AKYN - Khách sạn The Secret Côn Đảo",
+  "distances": [],
+  "location": {
+    "venue": "Khách sạn The Secret Côn Đảo (08 Tôn Đức Thắng, huyện Côn Đảo, tỉnh Bà Rịa - Vũng Tàu)",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/save-turtles-run-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1Q5VE6RXHcRbMSH4OtRR6UmvDBnCGKQ6o/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/save-turtles-run-2025",
+      "lastCheckedAt": "2026-09-23T18:31:35.259Z",
+      "lastChangedAt": "2026-09-23T18:31:35.259Z",
+      "extracted": {
+        "facts": {
+          "name": "Chạy Bộ Vì Rùa Biển 2025",
+          "date": "2025-08-17",
+          "venue": "Khách sạn The Secret Côn Đảo (08 Tôn Đức Thắng, huyện Côn Đảo, tỉnh Bà Rịa - Vũng Tàu)",
+          "organizer": "Tập đoàn Khách sạn AKYN - Khách sạn The Secret Côn Đảo",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 500000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1Q5VE6RXHcRbMSH4OtRR6UmvDBnCGKQ6o/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "tap-doan-khach-san-akyn-khach-san-the-secret-con-dao",
+          "name": "Tập đoàn Khách sạn AKYN - Khách sạn The Secret Côn Đảo"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

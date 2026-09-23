@@ -1,0 +1,68 @@
+{
+  "id": "e23f0b96-4dda-4cc5-8a3a-be37b2f29b2e",
+  "slug": "aqua-warriors-halong-bay-2024",
+  "name": "AQUA WARRIORS HALONG BAY 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-04-14",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "bolt-event",
+  "organizer": "BOLT EVENT",
+  "distances": [],
+  "location": {
+    "venue": "Thành phố Hạ Long",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/aqua-warriors-halong-bay-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1ZphD8n9r4AY5BNSGnt25VzZ9ieoTsNN2/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/aqua-warriors-halong-bay-2024",
+      "lastCheckedAt": "2026-09-23T18:32:35.944Z",
+      "lastChangedAt": "2026-09-23T18:32:35.944Z",
+      "extracted": {
+        "facts": {
+          "name": "AQUA WARRIORS HALONG BAY 2024",
+          "date": "2024-04-14",
+          "venue": "Thành phố Hạ Long",
+          "organizer": "BOLT EVENT",
+          "registrationStatus": "closed",
+          "fromPrice": 399000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1ZphD8n9r4AY5BNSGnt25VzZ9ieoTsNN2/view?usp=sharing",
+            "text": "quy dinh tham du xem chi tiet tai day"
+          }
+        ],
+        "organizer": {
+          "id": "bolt-event",
+          "name": "BOLT EVENT"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

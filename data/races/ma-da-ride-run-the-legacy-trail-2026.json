@@ -1,0 +1,70 @@
+{
+  "id": "d63c2aa2-996c-4898-8167-4b8210558d07",
+  "slug": "ma-da-ride-run-the-legacy-trail",
+  "name": "MTB RIDE & RUN - MÃ ĐÀ THE LEGACY TRAIL",
+  "types": [
+    "other"
+  ],
+  "date": "2026-01-24",
+  "endDate": "2026-01-25",
+  "seriesId": null,
+  "organizerId": "vietnam-mtb-series",
+  "organizer": "Vietnam MTB Series",
+  "distances": [],
+  "location": {
+    "venue": "Hồ Bà Hào, Trị An, Đồng Nai",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/ma-da-ride-run-the-legacy-trail"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1vufTUcwtBjTVvp7nhEZ3vDb8bAjcIvql/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/ma-da-ride-run-the-legacy-trail",
+      "lastCheckedAt": "2026-09-23T18:31:21.190Z",
+      "lastChangedAt": "2026-09-23T18:31:21.190Z",
+      "extracted": {
+        "facts": {
+          "name": "MTB RIDE & RUN - MÃ ĐÀ THE LEGACY TRAIL",
+          "date": "2026-01-24",
+          "endDate": "2026-01-25",
+          "venue": "Hồ Bà Hào, Trị An, Đồng Nai",
+          "organizer": "Vietnam MTB Series",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 500000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1vufTUcwtBjTVvp7nhEZ3vDb8bAjcIvql/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "vietnam-mtb-series",
+          "name": "Vietnam MTB Series"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

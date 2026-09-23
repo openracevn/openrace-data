@@ -1,0 +1,70 @@
+{
+  "id": "b50b5f05-414b-412a-a260-46a0b5dbd9e4",
+  "slug": "lang-son-geopark-ultra-trail-2025",
+  "name": "Giải chạy địa hình Quốc tế “Lạng Sơn Geopark VTV8 Ultra Trail 2025”",
+  "types": [
+    "other"
+  ],
+  "date": "2025-12-27",
+  "endDate": "2025-12-28",
+  "seriesId": null,
+  "organizerId": "cong-ty-tnhh-mtv-thach-sanh",
+  "organizer": "Công ty TNHH MTV Thạch Sanh",
+  "distances": [],
+  "location": {
+    "venue": "Khu vực trung tâm (Xuất phát/Về đích, Expo) được đặt tại trung tâm xã Hữu Liên, tỉnh Lạng Sơn.",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/lang-son-geopark-ultra-trail-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://docs.google.com/document/d/1n8cUawWRZSz8_VqdK7FW8eXmNAeIbMsfpvLXkvNiXEY/edit",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/lang-son-geopark-ultra-trail-2025",
+      "lastCheckedAt": "2026-09-23T18:31:13.954Z",
+      "lastChangedAt": "2026-09-23T18:31:13.954Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy địa hình Quốc tế “Lạng Sơn Geopark VTV8 Ultra Trail 2025”",
+          "date": "2025-12-27",
+          "endDate": "2025-12-28",
+          "venue": "Khu vực trung tâm (Xuất phát/Về đích, Expo) được đặt tại trung tâm xã Hữu Liên, tỉnh Lạng Sơn.",
+          "organizer": "Công ty TNHH MTV Thạch Sanh",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 750000
+        },
+        "links": [
+          {
+            "url": "https://docs.google.com/document/d/1n8cUawWRZSz8_VqdK7FW8eXmNAeIbMsfpvLXkvNiXEY/edit?tab=t.0",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-tnhh-mtv-thach-sanh",
+          "name": "Công ty TNHH MTV Thạch Sanh"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

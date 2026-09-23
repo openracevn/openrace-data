@@ -1,0 +1,69 @@
+{
+  "id": "3166e26c-fe6e-461c-8ffd-2b3b1b2a0ab6",
+  "slug": "giai-marathon-lai-chau-lan-thu-ii-nam-2025-loi-goi-dai-ngan-buoc-chan-khat-vong",
+  "name": "GIẢI MARATHON LAI CHÂU LẦN THỨ II NĂM 2025 - LỜI GỌI ĐẠI NGÀN, BƯỚC CHÂN KHÁT VỌNG",
+  "types": [
+    "other"
+  ],
+  "date": "2025-11-30",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "vietrace365",
+  "organizer": "VIETRACE365",
+  "distances": [],
+  "location": {
+    "venue": "Quảng trường Nhân dân tỉnh Lai Châu",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/giai-marathon-lai-chau-lan-thu-ii-nam-2025-loi-goi-dai-ngan-buoc-chan-khat-vong"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1IrBVTuBAHyxzuax0d4HKnHdlOBv69kp3/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/giai-marathon-lai-chau-lan-thu-ii-nam-2025-loi-goi-dai-ngan-buoc-chan-khat-vong",
+      "lastCheckedAt": "2026-09-23T18:31:21.996Z",
+      "lastChangedAt": "2026-09-23T18:31:21.996Z",
+      "extracted": {
+        "facts": {
+          "name": "GIẢI MARATHON LAI CHÂU LẦN THỨ II NĂM 2025 - LỜI GỌI ĐẠI NGÀN, BƯỚC CHÂN KHÁT VỌNG",
+          "date": "2025-11-30",
+          "venue": "Quảng trường Nhân dân tỉnh Lai Châu",
+          "organizer": "VIETRACE365",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 399000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1IrBVTuBAHyxzuax0d4HKnHdlOBv69kp3/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "vietrace365",
+          "name": "VIETRACE365"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

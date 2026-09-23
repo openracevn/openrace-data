@@ -1,0 +1,68 @@
+{
+  "id": "2774bca7-251a-4f73-ba5e-4979062194b7",
+  "slug": "la-vuong-ultra-trail-2024",
+  "name": "Fleur De Lys La Vuông Trail 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-09-01",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "cong-ty-tnhh-fleur-de-lys-hospitality",
+  "organizer": "CÔNG TY TNHH FLEUR DE LYS HOSPITALITY",
+  "distances": [],
+  "location": {
+    "venue": "Cao nguyên La Vuông, xã Hoài Sơn, thị xã Hoài Nhơn, tỉnh Bình Định",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/la-vuong-ultra-trail-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1u88rx-QBmQfWvEs79az944bwFmM2Ac_p/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/la-vuong-ultra-trail-2024",
+      "lastCheckedAt": "2026-09-23T18:32:12.638Z",
+      "lastChangedAt": "2026-09-23T18:32:12.638Z",
+      "extracted": {
+        "facts": {
+          "name": "Fleur De Lys La Vuông Trail 2024",
+          "date": "2024-09-01",
+          "venue": "Cao nguyên La Vuông, xã Hoài Sơn, thị xã Hoài Nhơn, tỉnh Bình Định",
+          "organizer": "CÔNG TY TNHH FLEUR DE LYS HOSPITALITY",
+          "registrationStatus": "closed",
+          "fromPrice": 499000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1u88rx-QBmQfWvEs79az944bwFmM2Ac_p/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-tnhh-fleur-de-lys-hospitality",
+          "name": "CÔNG TY TNHH FLEUR DE LYS HOSPITALITY"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

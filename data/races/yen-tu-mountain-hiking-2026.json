@@ -1,0 +1,59 @@
+{
+  "id": "b927748a-d7c5-44a2-8849-eb75b6e165f8",
+  "slug": "yen-tu-mountain-hiking-2026",
+  "name": "Giải leo núi Yên Tử - Chinh phục đỉnh Phù Vân 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-04-18",
+  "endDate": "2026-04-19",
+  "seriesId": null,
+  "organizerId": "great-race-vietnam",
+  "organizer": "Great Race Vietnam",
+  "distances": [],
+  "location": {
+    "venue": "Di sản Văn hóa Thế giới Yên Tử, tỉnh Quảng Ninh",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/yen-tu-mountain-hiking-2026"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/yen-tu-mountain-hiking-2026",
+      "lastCheckedAt": "2026-09-23T18:31:04.718Z",
+      "lastChangedAt": "2026-09-23T18:31:04.718Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải leo núi Yên Tử - Chinh phục đỉnh Phù Vân 2026",
+          "date": "2026-04-18",
+          "endDate": "2026-04-19",
+          "venue": "Di sản Văn hóa Thế giới Yên Tử, tỉnh Quảng Ninh",
+          "organizer": "Great Race Vietnam",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 519000
+        },
+        "links": [],
+        "organizer": {
+          "id": "great-race-vietnam",
+          "name": "Great Race Vietnam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

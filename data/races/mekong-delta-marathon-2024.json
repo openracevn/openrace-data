@@ -1,0 +1,69 @@
+{
+  "id": "93a001ae-c002-4336-b392-99cfbba47e56",
+  "slug": "mekong-delta-marathon-2024",
+  "name": "GIẢI MARATHON QUỐC TẾ \"VIETCOMBANK MEKONG DELTA\" TỈNH HẬU GIANG LẦN THỨ V - NĂM 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-07-06",
+  "endDate": "2024-07-07",
+  "seriesId": null,
+  "organizerId": "nexus-sport-events",
+  "organizer": "Nexus Sport Events",
+  "distances": [],
+  "location": {
+    "venue": "Quảng trường Hoà Bình – TP. Vị Thanh, Hậu Giang",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/mekong-delta-marathon-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1TMFf7i-I6qNGJVX87wGPEaj2xMIvZadu/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/mekong-delta-marathon-2024",
+      "lastCheckedAt": "2026-09-23T18:32:20.338Z",
+      "lastChangedAt": "2026-09-23T18:32:20.338Z",
+      "extracted": {
+        "facts": {
+          "name": "GIẢI MARATHON QUỐC TẾ \"VIETCOMBANK MEKONG DELTA\" TỈNH HẬU GIANG LẦN THỨ V - NĂM 2024",
+          "date": "2024-07-06",
+          "endDate": "2024-07-07",
+          "venue": "Quảng trường Hoà Bình – TP. Vị Thanh, Hậu Giang",
+          "organizer": "Nexus Sport Events",
+          "registrationStatus": "closed",
+          "fromPrice": 350000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1TMFf7i-I6qNGJVX87wGPEaj2xMIvZadu/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "nexus-sport-events",
+          "name": "Nexus Sport Events"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

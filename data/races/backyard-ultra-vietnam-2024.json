@@ -1,0 +1,58 @@
+{
+  "id": "47d41b59-647a-419c-95ea-5fef6fc50ca9",
+  "slug": "backyard-ultra-vietnam",
+  "name": "BACKYARD ULTRA VIETNAM",
+  "types": [
+    "other"
+  ],
+  "date": "2024-06-01",
+  "endDate": "2024-06-02",
+  "seriesId": null,
+  "organizerId": "vietnam-mtb-series-tailwind-adventure-community",
+  "organizer": "Vietnam MTB Series & Tailwind Adventure Community",
+  "distances": [],
+  "location": {
+    "venue": "Mã Đà, Vĩnh Cửu, Đồng Nai",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/backyard-ultra-vietnam"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/backyard-ultra-vietnam",
+      "lastCheckedAt": "2026-09-23T18:32:17.454Z",
+      "lastChangedAt": "2026-09-23T18:32:17.454Z",
+      "extracted": {
+        "facts": {
+          "name": "BACKYARD ULTRA VIETNAM",
+          "date": "2024-06-01",
+          "endDate": "2024-06-02",
+          "venue": "Mã Đà, Vĩnh Cửu, Đồng Nai",
+          "organizer": "Vietnam MTB Series & Tailwind Adventure Community",
+          "registrationStatus": "closed",
+          "fromPrice": 1000000
+        },
+        "links": [],
+        "organizer": {
+          "id": "vietnam-mtb-series-tailwind-adventure-community",
+          "name": "Vietnam MTB Series & Tailwind Adventure Community"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

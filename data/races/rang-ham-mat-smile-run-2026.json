@@ -1,0 +1,79 @@
+{
+  "id": "67765baf-46d1-4177-a948-99c4f30f60d1",
+  "slug": "rang-ham-mat-smile-run-2026",
+  "name": "Răng Hàm Mặt Smile Run 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-05-23",
+  "endDate": "2026-05-24",
+  "seriesId": null,
+  "organizerId": "nexus-sport-events",
+  "organizer": "Nexus Sport Events",
+  "distances": [],
+  "location": {
+    "venue": "Công viên Sáng Tạo, Phường An Khánh, TP. Hồ Chí Minh",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/rang-ham-mat-smile-run-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://facebook.com/rhm.run",
+      "kind": "facebook",
+      "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://drive.google.com/file/d/10h7tfDD1VwB3PNamwJ3PBotGcHjrTNBD/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/rang-ham-mat-smile-run-2026",
+      "lastCheckedAt": "2026-09-23T18:31:02.737Z",
+      "lastChangedAt": "2026-09-23T18:31:02.737Z",
+      "extracted": {
+        "facts": {
+          "name": "Răng Hàm Mặt Smile Run 2026",
+          "date": "2026-05-23",
+          "endDate": "2026-05-24",
+          "venue": "Công viên Sáng Tạo, Phường An Khánh, TP. Hồ Chí Minh",
+          "organizer": "Nexus Sport Events",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 290000
+        },
+        "links": [
+          {
+            "url": "https://www.facebook.com/rhm.run",
+            "text": "he giai thuong danh cho nganh y rang ham mat https www facebook com rhm run"
+          },
+          {
+            "url": "https://drive.google.com/file/d/10h7tfDD1VwB3PNamwJ3PBotGcHjrTNBD/view?usp=drive_link",
+            "text": "quy dinh tham du view here"
+          }
+        ],
+        "organizer": {
+          "id": "nexus-sport-events",
+          "name": "Nexus Sport Events"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

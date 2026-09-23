@@ -1,0 +1,69 @@
+{
+  "id": "b3c91303-8166-4633-8850-d73e374a6fa3",
+  "slug": "hue-amazing-marathon-2026",
+  "name": "HUẾ AMAZING MARATHON 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-08-30",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "bolt-event",
+  "organizer": "BOLT EVENT",
+  "distances": [],
+  "location": {
+    "venue": "Huế, Việt Nam",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/hue-amazing-marathon-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1FWi_aTnC0c5e30WoRUz7WsfOrxeLKJ5b/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/hue-amazing-marathon-2026",
+      "lastCheckedAt": "2026-09-23T18:31:00.702Z",
+      "lastChangedAt": "2026-09-23T18:31:00.702Z",
+      "extracted": {
+        "facts": {
+          "name": "HUẾ AMAZING MARATHON 2026",
+          "date": "2026-08-30",
+          "venue": "Huế, Việt Nam",
+          "organizer": "BOLT EVENT",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 399000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1FWi_aTnC0c5e30WoRUz7WsfOrxeLKJ5b/view",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "bolt-event",
+          "name": "BOLT EVENT"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

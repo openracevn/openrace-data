@@ -1,0 +1,70 @@
+{
+  "id": "d1c04a11-04cb-4af7-9f7e-5ef27253e693",
+  "slug": "hanoi-mountain-trail-2026",
+  "name": "Hanoi Mountain Trail 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-04-18",
+  "endDate": "2026-04-19",
+  "seriesId": null,
+  "organizerId": "cong-ty-co-phan-kham-pha-khong-gioi-han-viet-nam-vud",
+  "organizer": "Công ty Cổ phần Khám phá Không giới hạn Việt Nam (VUD)",
+  "distances": [],
+  "location": {
+    "venue": "Hàm Lợn (Xã Trung Giã - Hà Nội)",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/hanoi-mountain-trail-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1pOmjfe6Vgv1bwxacB9CzyzIWsDD1xY2Q/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/hanoi-mountain-trail-2026",
+      "lastCheckedAt": "2026-09-23T18:31:08.330Z",
+      "lastChangedAt": "2026-09-23T18:31:08.330Z",
+      "extracted": {
+        "facts": {
+          "name": "Hanoi Mountain Trail 2026",
+          "date": "2026-04-18",
+          "endDate": "2026-04-19",
+          "venue": "Hàm Lợn (Xã Trung Giã - Hà Nội)",
+          "organizer": "Công ty Cổ phần Khám phá Không giới hạn Việt Nam (VUD)",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 699000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1pOmjfe6Vgv1bwxacB9CzyzIWsDD1xY2Q/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-co-phan-kham-pha-khong-gioi-han-viet-nam-vud",
+          "name": "Công ty Cổ phần Khám phá Không giới hạn Việt Nam (VUD)"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

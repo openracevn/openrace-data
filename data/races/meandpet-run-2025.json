@@ -1,0 +1,70 @@
+{
+  "id": "7825fc01-bc51-4e04-8b0b-4dffbebcd020",
+  "slug": "meandpet-run-2025",
+  "name": "Me&Pet Run 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-11-22",
+  "endDate": "2025-11-23",
+  "seriesId": null,
+  "organizerId": "greenhat",
+  "organizer": "GreenHat",
+  "distances": [],
+  "location": {
+    "venue": "Sân M2, Khu đô thị Sala, phường An Khánh, Thành phố Hồ Chí Minh",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/meandpet-run-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://mepetrun.vn/index.php/thong-tin-ve-giai",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/meandpet-run-2025",
+      "lastCheckedAt": "2026-09-23T18:31:24.405Z",
+      "lastChangedAt": "2026-09-23T18:31:24.405Z",
+      "extracted": {
+        "facts": {
+          "name": "Me&Pet Run 2025",
+          "date": "2025-11-22",
+          "endDate": "2025-11-23",
+          "venue": "Sân M2, Khu đô thị Sala, phường An Khánh, Thành phố Hồ Chí Minh",
+          "organizer": "GreenHat",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 299000
+        },
+        "links": [
+          {
+            "url": "https://mepetrun.vn/index.php/thong-tin-ve-giai/",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "greenhat",
+          "name": "GreenHat"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

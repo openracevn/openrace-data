@@ -1,0 +1,59 @@
+{
+  "id": "119a1b5d-a88c-4509-880c-b5f127b32fd6",
+  "slug": "yen-tu-heritage-marathon-2026",
+  "name": "Giải chạy Yên Tử Heritage Marathon - Chạm vào vùng di sản 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-11-28",
+  "endDate": "2026-11-29",
+  "seriesId": null,
+  "organizerId": "great-race-vietnam",
+  "organizer": "Great Race Vietnam",
+  "distances": [],
+  "location": {
+    "venue": "Di sản Văn hóa Thế giới Yên Tử, tỉnh Quảng Ninh",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/yen-tu-heritage-marathon-2026"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/yen-tu-heritage-marathon-2026",
+      "lastCheckedAt": "2026-09-23T18:30:51.053Z",
+      "lastChangedAt": "2026-09-23T18:30:51.053Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Yên Tử Heritage Marathon - Chạm vào vùng di sản 2026",
+          "date": "2026-11-28",
+          "endDate": "2026-11-29",
+          "venue": "Di sản Văn hóa Thế giới Yên Tử, tỉnh Quảng Ninh",
+          "organizer": "Great Race Vietnam",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 229000
+        },
+        "links": [],
+        "organizer": {
+          "id": "great-race-vietnam",
+          "name": "Great Race Vietnam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

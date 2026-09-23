@@ -1,0 +1,69 @@
+{
+  "id": "0eb0d740-833c-4089-90f4-5dd5dc9c94c4",
+  "slug": "aeon-tan-an-tay-ninh-aeon-ekiden-2026-september",
+  "name": "[AEON TÂN AN - TÂY NINH] AEON EKIDEN 2026 | THÁNG 9",
+  "types": [
+    "other"
+  ],
+  "date": "2026-09-20",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "aeon-viet-nam",
+  "organizer": "AEON Việt Nam",
+  "distances": [],
+  "location": {
+    "venue": "Aeon Tân An - Tây Ninh",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/aeon-tan-an-tay-ninh-aeon-ekiden-2026-september"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1U46tywJYLCoZT8G-D3H_91dC8xwle8AL/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/aeon-tan-an-tay-ninh-aeon-ekiden-2026-september",
+      "lastCheckedAt": "2026-09-23T18:30:54.337Z",
+      "lastChangedAt": "2026-09-23T18:30:54.337Z",
+      "extracted": {
+        "facts": {
+          "name": "[AEON TÂN AN - TÂY NINH] AEON EKIDEN 2026 | THÁNG 9",
+          "date": "2026-09-20",
+          "venue": "Aeon Tân An - Tây Ninh",
+          "organizer": "AEON Việt Nam",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 0
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1U46tywJYLCoZT8G-D3H_91dC8xwle8AL/view",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "aeon-viet-nam",
+          "name": "AEON Việt Nam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

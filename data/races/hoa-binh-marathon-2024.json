@@ -1,0 +1,72 @@
+{
+  "id": "d6355a88-de9c-48ed-b5e1-b268ddc3e191",
+  "slug": "hoa-binh-marathon-2024",
+  "name": "HÒA BÌNH MARATHON 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-03-03",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "vietrace365",
+  "organizer": "VIETRACE365",
+  "distances": [],
+  "location": {
+    "venue": "Trung tâm Văn hóa Thành phố Hòa Bình",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/hoa-binh-marathon-2024"
+    },
+    {
+      "site": "timve365",
+      "url": "https://timve365.vn/events/hoa-binh-marathon-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://timve365.vn/events/hoa-binh-marathon-2024",
+      "kind": "seller",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/hoa-binh-marathon-2024",
+      "lastCheckedAt": "2026-09-23T18:32:36.765Z",
+      "lastChangedAt": "2026-09-23T18:32:36.765Z",
+      "extracted": {
+        "facts": {
+          "name": "HÒA BÌNH MARATHON 2024",
+          "date": "2024-03-03",
+          "venue": "Trung tâm Văn hóa Thành phố Hòa Bình",
+          "organizer": "VIETRACE365",
+          "registrationStatus": "closed",
+          "fromPrice": 399000
+        },
+        "links": [
+          {
+            "url": "https://timve365.vn/events/hoa-binh-marathon-2024",
+            "text": "quy dinh tham du https timve365 vn events hoa binh marathon 2024"
+          }
+        ],
+        "organizer": {
+          "id": "vietrace365",
+          "name": "VIETRACE365"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

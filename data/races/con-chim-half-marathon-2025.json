@@ -1,0 +1,59 @@
+{
+  "id": "e224e776-ea66-442e-b7a0-22a6d991f2a3",
+  "slug": "con-chim-half-marathon-2025",
+  "name": "Cồn Chim Half Marathon 2025",
+  "types": [
+    "other"
+  ],
+  "date": "2025-08-02",
+  "endDate": "2025-08-03",
+  "seriesId": null,
+  "organizerId": "cong-ty-tnhh-stop-and-sports",
+  "organizer": "CÔNG TY TNHH STOP AND SPORTS",
+  "distances": [],
+  "location": {
+    "venue": "Cồn Chim - Xã Phước Sơn, Tuy Phước, Bình Định",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/con-chim-half-marathon-2025"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/con-chim-half-marathon-2025",
+      "lastCheckedAt": "2026-09-23T18:31:56.970Z",
+      "lastChangedAt": "2026-09-23T18:31:56.970Z",
+      "extracted": {
+        "facts": {
+          "name": "Cồn Chim Half Marathon 2025",
+          "date": "2025-08-02",
+          "endDate": "2025-08-03",
+          "venue": "Cồn Chim - Xã Phước Sơn, Tuy Phước, Bình Định",
+          "organizer": "CÔNG TY TNHH STOP AND SPORTS",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 190000
+        },
+        "links": [],
+        "organizer": {
+          "id": "cong-ty-tnhh-stop-and-sports",
+          "name": "CÔNG TY TNHH STOP AND SPORTS"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

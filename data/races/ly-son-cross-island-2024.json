@@ -1,0 +1,69 @@
+{
+  "id": "aa148665-22f1-4604-8958-d8039c41f2bd",
+  "slug": "ly-son-cross-island-2024",
+  "name": "Lý Sơn Cross Island 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-06-01",
+  "endDate": "2024-06-02",
+  "seriesId": null,
+  "organizerId": "cong-ty-co-phan-duong-chay-xanh",
+  "organizer": "CÔNG TY CỔ PHẦN ĐƯỜNG CHẠY XANH",
+  "distances": [],
+  "location": {
+    "venue": "Huyện Đảo Lý Sơn, tỉnh Quảng Ngãi",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/ly-son-cross-island-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1XoGDuACMURp2CJNPzH7vjKhf4ZrwQKzj/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/ly-son-cross-island-2024",
+      "lastCheckedAt": "2026-09-23T18:32:19.471Z",
+      "lastChangedAt": "2026-09-23T18:32:19.471Z",
+      "extracted": {
+        "facts": {
+          "name": "Lý Sơn Cross Island 2024",
+          "date": "2024-06-01",
+          "endDate": "2024-06-02",
+          "venue": "Huyện Đảo Lý Sơn, tỉnh Quảng Ngãi",
+          "organizer": "CÔNG TY CỔ PHẦN ĐƯỜNG CHẠY XANH",
+          "registrationStatus": "closed",
+          "fromPrice": 1345000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1XoGDuACMURp2CJNPzH7vjKhf4ZrwQKzj/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-co-phan-duong-chay-xanh",
+          "name": "CÔNG TY CỔ PHẦN ĐƯỜNG CHẠY XANH"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

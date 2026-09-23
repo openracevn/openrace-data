@@ -1,0 +1,69 @@
+{
+  "id": "40508c2b-6b9b-437a-9591-707d1fc2dd4b",
+  "slug": "mong-cai-half-marathon-2025",
+  "name": "Mong Cai Half Marathon 2025 Sắc Tím Biên Cương - Kết Nối Di Sản",
+  "types": [
+    "other"
+  ],
+  "date": "2025-05-18",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "great-race-vietnam",
+  "organizer": "Great Race Vietnam",
+  "distances": [],
+  "location": {
+    "venue": "Khu di tích lịch sử quốc gia Pò Hèn - Xã Hải Sơn - Thành Phố Móng Cái - Tỉnh Quảng Ninh - Việt Nam",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/mong-cai-half-marathon-2025"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1Yy8JLUjzJH4OXat5wnJlnoCH6rf7-15R/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/mong-cai-half-marathon-2025",
+      "lastCheckedAt": "2026-09-23T18:31:36.067Z",
+      "lastChangedAt": "2026-09-23T18:31:36.067Z",
+      "extracted": {
+        "facts": {
+          "name": "Mong Cai Half Marathon 2025 Sắc Tím Biên Cương - Kết Nối Di Sản",
+          "date": "2025-05-18",
+          "venue": "Khu di tích lịch sử quốc gia Pò Hèn - Xã Hải Sơn - Thành Phố Móng Cái - Tỉnh Quảng Ninh - Việt Nam",
+          "organizer": "Great Race Vietnam",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 249000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1Yy8JLUjzJH4OXat5wnJlnoCH6rf7-15R/view",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "great-race-vietnam",
+          "name": "Great Race Vietnam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

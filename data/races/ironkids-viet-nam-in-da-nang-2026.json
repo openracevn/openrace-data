@@ -1,0 +1,69 @@
+{
+  "id": "bffff5cc-8996-4f88-96cb-7a2a729a8d62",
+  "slug": "2026-ironkids-viet-nam-in-da-nang",
+  "name": "2026 IRONKIDS Viet Nam in Da Nang",
+  "types": [
+    "other"
+  ],
+  "date": "2026-05-09",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "sunrise-events-vietnam",
+  "organizer": "Sunrise Events Vietnam",
+  "distances": [],
+  "location": {
+    "venue": "Đà Nẵng, Việt Nam",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/2026-ironkids-viet-nam-in-da-nang"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1Xkv_EOGQ_Pp9UcPCooHRLu7ALXmuWjkt/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/2026-ironkids-viet-nam-in-da-nang",
+      "lastCheckedAt": "2026-09-23T18:31:17.576Z",
+      "lastChangedAt": "2026-09-23T18:31:17.576Z",
+      "extracted": {
+        "facts": {
+          "name": "2026 IRONKIDS Viet Nam in Da Nang",
+          "date": "2026-05-09",
+          "venue": "Đà Nẵng, Việt Nam",
+          "organizer": "Sunrise Events Vietnam",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 900000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1Xkv_EOGQ_Pp9UcPCooHRLu7ALXmuWjkt/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "sunrise-events-vietnam",
+          "name": "Sunrise Events Vietnam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

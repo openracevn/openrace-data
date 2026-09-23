@@ -1,0 +1,70 @@
+{
+  "id": "1866d85d-16f0-4648-8c6d-c7f453d65aed",
+  "slug": "son-tra-city-trail-2026",
+  "name": "SƠN TRÀ CITY TRAIL 2026",
+  "types": [
+    "city_trail"
+  ],
+  "date": "2026-12-26",
+  "endDate": "2026-12-27",
+  "seriesId": null,
+  "organizerId": "cong-ty-tnhh-belove-mountain",
+  "organizer": "Công ty TNHH Belove Mountain",
+  "distances": [],
+  "location": {
+    "venue": "Sơn Trà, Đà Nẵng",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/son-tra-city-trail-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1RrDm_fgMVfex1NT6JPA3H8oKtDA3b9SP/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/son-tra-city-trail-2026",
+      "lastCheckedAt": "2026-09-23T18:30:41.398Z",
+      "lastChangedAt": "2026-09-23T18:30:41.398Z",
+      "extracted": {
+        "facts": {
+          "name": "SƠN TRÀ CITY TRAIL 2026",
+          "date": "2026-12-26",
+          "endDate": "2026-12-27",
+          "venue": "Sơn Trà, Đà Nẵng",
+          "organizer": "Công ty TNHH Belove Mountain",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 466000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1RrDm_fgMVfex1NT6JPA3H8oKtDA3b9SP/view?usp=drive_link",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-tnhh-belove-mountain",
+          "name": "Công ty TNHH Belove Mountain"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

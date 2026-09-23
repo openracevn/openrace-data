@@ -1,0 +1,59 @@
+{
+  "id": "b6e170e8-701d-419e-90ec-1b5987d91ce9",
+  "slug": "tien-phong-marathon-dien-bien-discovery-2026",
+  "name": "TIỀN PHONG MARATHON ĐIỆN BIÊN DISCOVERY 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-12-31",
+  "endDate": "2027-01-02",
+  "seriesId": null,
+  "organizerId": "bao-tien-phong-va-so-vhttdl-tinh-dien-bien",
+  "organizer": "Báo Tiền Phong và Sở VHTTDL tỉnh Điện Biên",
+  "distances": [],
+  "location": {
+    "venue": "Phường Điện Biên Phủ, tỉnh Điện Biên",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/tien-phong-marathon-dien-bien-discovery-2026"
+    }
+  ],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/tien-phong-marathon-dien-bien-discovery-2026",
+      "lastCheckedAt": "2026-09-23T18:30:43.872Z",
+      "lastChangedAt": "2026-09-23T18:30:43.872Z",
+      "extracted": {
+        "facts": {
+          "name": "TIỀN PHONG MARATHON ĐIỆN BIÊN DISCOVERY 2026",
+          "date": "2026-12-31",
+          "endDate": "2027-01-02",
+          "venue": "Phường Điện Biên Phủ, tỉnh Điện Biên",
+          "organizer": "Báo Tiền Phong và Sở VHTTDL tỉnh Điện Biên",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 336000
+        },
+        "links": [],
+        "organizer": {
+          "id": "bao-tien-phong-va-so-vhttdl-tinh-dien-bien",
+          "name": "Báo Tiền Phong và Sở VHTTDL tỉnh Điện Biên"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

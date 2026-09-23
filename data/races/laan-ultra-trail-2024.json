@@ -1,0 +1,69 @@
+{
+  "id": "832bfb56-894b-481e-99aa-a4029c3e5442",
+  "slug": "laan-ultra-trail-2024",
+  "name": "LAAN ULTRA TRAIL 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-11-20",
+  "endDate": "2024-11-24",
+  "seriesId": null,
+  "organizerId": "laan-ultra-trail",
+  "organizer": "LAAN Ultra Trail",
+  "distances": [],
+  "location": {
+    "venue": "LAAN Retreat - Thôn Suối Cạn, Xã Lát, Huyện Lạc Dương, TP Đà Lạt",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/laan-ultra-trail-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1vPPshBpCju5ZbYYSZVQ9Ya-APrceucnF/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/laan-ultra-trail-2024",
+      "lastCheckedAt": "2026-09-23T18:32:15.854Z",
+      "lastChangedAt": "2026-09-23T18:32:15.854Z",
+      "extracted": {
+        "facts": {
+          "name": "LAAN ULTRA TRAIL 2024",
+          "date": "2024-11-20",
+          "endDate": "2024-11-24",
+          "venue": "LAAN Retreat - Thôn Suối Cạn, Xã Lát, Huyện Lạc Dương, TP Đà Lạt",
+          "organizer": "LAAN Ultra Trail",
+          "registrationStatus": "closed",
+          "fromPrice": 696000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1vPPshBpCju5ZbYYSZVQ9Ya-APrceucnF/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "laan-ultra-trail",
+          "name": "LAAN Ultra Trail"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

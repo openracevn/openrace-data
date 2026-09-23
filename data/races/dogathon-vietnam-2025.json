@@ -1,0 +1,69 @@
+{
+  "id": "ffc841d4-25f8-482e-8823-6517be4e566f",
+  "slug": "dogathon-vietnam",
+  "name": "Dogathon - Cuộc thi chạy cùng Boss",
+  "types": [
+    "other"
+  ],
+  "date": "2025-02-22",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "cong-ty-co-phan-su-kien-va-trien-lam-eventure",
+  "organizer": "Công Ty Cổ Phần Sự Kiện và Triển Lãm EVENTURE",
+  "distances": [],
+  "location": {
+    "venue": "Công viên Cảnh Đồi, Phú Mỹ Hưng, Quận 7, Thành phố Hồ Chí Minh",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/dogathon-vietnam"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1p2xjbGVcw0rP8qobM9HocxFyBycqR6Yl/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/dogathon-vietnam",
+      "lastCheckedAt": "2026-09-23T18:31:54.155Z",
+      "lastChangedAt": "2026-09-23T18:31:54.155Z",
+      "extracted": {
+        "facts": {
+          "name": "Dogathon - Cuộc thi chạy cùng Boss",
+          "date": "2025-02-22",
+          "venue": "Công viên Cảnh Đồi, Phú Mỹ Hưng, Quận 7, Thành phố Hồ Chí Minh",
+          "organizer": "Công Ty Cổ Phần Sự Kiện và Triển Lãm EVENTURE",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 500000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1p2xjbGVcw0rP8qobM9HocxFyBycqR6Yl/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-co-phan-su-kien-va-trien-lam-eventure",
+          "name": "Công Ty Cổ Phần Sự Kiện và Triển Lãm EVENTURE"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

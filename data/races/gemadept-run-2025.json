@@ -1,0 +1,70 @@
+{
+  "id": "dbbb28fe-0cd2-465b-8a87-0edad244d147",
+  "slug": "gemadept-run",
+  "name": "Giải chạy Gemadept Run",
+  "types": [
+    "other"
+  ],
+  "date": "2025-10-25",
+  "endDate": "2025-10-26",
+  "seriesId": null,
+  "organizerId": "gemadept",
+  "organizer": "GEMADEPT",
+  "distances": [],
+  "location": {
+    "venue": "Khu đô thị Sala, Phường An Khánh, TP. Hồ Chí Minh",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/gemadept-run"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1Qh_BbePfci7A3CEyGLA8hzbkmr48LJBc/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/gemadept-run",
+      "lastCheckedAt": "2026-09-23T18:31:24.014Z",
+      "lastChangedAt": "2026-09-23T18:31:24.014Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Gemadept Run",
+          "date": "2025-10-25",
+          "endDate": "2025-10-26",
+          "venue": "Khu đô thị Sala, Phường An Khánh, TP. Hồ Chí Minh",
+          "organizer": "GEMADEPT",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 390000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1Qh_BbePfci7A3CEyGLA8hzbkmr48LJBc/view",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "gemadept",
+          "name": "GEMADEPT"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

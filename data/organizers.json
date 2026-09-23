@@ -1,1 +1,577 @@
-[]
+[
+  {
+    "id": "4-miles-vietnam-backyard-ultra",
+    "name": "4 Miles & Vietnam Backyard Ultra",
+    "website": null
+  },
+  {
+    "id": "4miles",
+    "name": "4MILES",
+    "website": null
+  },
+  {
+    "id": "aeon-viet-nam",
+    "name": "AEON Việt Nam",
+    "website": null
+  },
+  {
+    "id": "artlive-a-virtual-art-campus",
+    "name": "artLIVE – a virtual art campus",
+    "website": null
+  },
+  {
+    "id": "ban-to-chuc-hoi-du-lich-mang-den-don-vi-van-hanh-pr-events",
+    "name": "Ban Tổ Chức: Hội Du Lịch Măng Đen - Đơn vị vận hành: PR Events",
+    "website": null
+  },
+  {
+    "id": "bao-dak-nong",
+    "name": "Báo Đắk Nông",
+    "website": null
+  },
+  {
+    "id": "bao-nguoi-lao-dong",
+    "name": "Báo Người Lao Động",
+    "website": null
+  },
+  {
+    "id": "bao-tien-phong",
+    "name": "Báo Tiền Phong",
+    "website": null
+  },
+  {
+    "id": "bao-tien-phong-va-so-vhttdl-tinh-dien-bien",
+    "name": "Báo Tiền Phong và Sở VHTTDL tỉnh Điện Biên",
+    "website": null
+  },
+  {
+    "id": "bao-xay-dung",
+    "name": "Báo Xây Dựng",
+    "website": null
+  },
+  {
+    "id": "benh-vien-fv-dong-to-chuc-quy-nang-buoc-tuoi-tho",
+    "name": "Bệnh viện FV - Đồng tổ chức: Quỹ Nâng Bước Tuổi Thơ",
+    "website": null
+  },
+  {
+    "id": "biji-viet-nam",
+    "name": "Biji Việt Nam",
+    "website": null
+  },
+  {
+    "id": "bolt-event",
+    "name": "BOLT EVENT",
+    "website": null
+  },
+  {
+    "id": "bozo-ventures",
+    "name": "BOZO VENTURES",
+    "website": null
+  },
+  {
+    "id": "btc-giai-marathon-nghe-an-2026-cua-lo-bien-xanh-vay-goi",
+    "name": "BTC Giải Marathon Nghệ An 2026 “Cửa Lò – Biển Xanh Vẫy Gọi”",
+    "website": null
+  },
+  {
+    "id": "capitaland-development",
+    "name": "CapitaLand Development",
+    "website": null
+  },
+  {
+    "id": "cathay-life-vietnam",
+    "name": "Cathay Life Vietnam",
+    "website": null
+  },
+  {
+    "id": "cau-lac-bo-doanh-nhan-hai-muoi-ba-muoi-clb-doanh-nhan-2030",
+    "name": "Câu lạc bộ Doanh nhân Hai Mươi Ba Mươi (CLB Doanh nhân 2030)",
+    "website": null
+  },
+  {
+    "id": "coffeerary-events",
+    "name": "Coffeerary Events",
+    "website": null
+  },
+  {
+    "id": "cong-dong-5h30-vui-khoe-moi-ngay-uy-ban-nhan-dan-huyen-chu-pah-cau-lac-bo-gia-la",
+    "name": "Cộng đồng 5h30 - Vui khỏe mỗi ngày, Ủy ban nhân dân huyện Chư Păh, Câu lạc bộ Gia Lai Marathon",
+    "website": null
+  },
+  {
+    "id": "cong-ty-co-phan-do-thi-amata-bien-hoa",
+    "name": "Công Ty Cổ Phần Đô Thị Amata Biên Hoà",
+    "website": null
+  },
+  {
+    "id": "cong-ty-co-phan-duong-chay-xanh",
+    "name": "CÔNG TY CỔ PHẦN ĐƯỜNG CHẠY XANH",
+    "website": null
+  },
+  {
+    "id": "cong-ty-co-phan-kham-pha-khong-gioi-han-viet-nam-vud",
+    "name": "Công ty Cổ phần Khám phá Không giới hạn Việt Nam (VUD)",
+    "website": null
+  },
+  {
+    "id": "cong-ty-co-phan-phong-nha-wild",
+    "name": "CÔNG TY CỔ PHẨN PHONG NHA WILD",
+    "website": null
+  },
+  {
+    "id": "cong-ty-co-phan-quang-cao-thuong-mai-sen-vang",
+    "name": "CÔNG TY CỔ PHẦN QUẢNG CÁO THƯƠNG MẠI SEN VÀNG",
+    "website": null
+  },
+  {
+    "id": "cong-ty-co-phan-secret-sport-events",
+    "name": "CÔNG TY CỔ PHẦN SECRET SPORT EVENTS",
+    "website": null
+  },
+  {
+    "id": "cong-ty-co-phan-su-kien-bolt-event",
+    "name": "Công ty Cổ phần sự kiện Bolt Event",
+    "website": null
+  },
+  {
+    "id": "cong-ty-co-phan-su-kien-va-trien-lam-eventure",
+    "name": "Công Ty Cổ Phần Sự Kiện và Triển Lãm EVENTURE",
+    "website": null
+  },
+  {
+    "id": "cong-ty-co-phan-the-thao-huynh-thai-loc",
+    "name": "CÔNG TY CỔ PHẦN THỂ THAO HUỲNH THÁI LỘC",
+    "website": null
+  },
+  {
+    "id": "cong-ty-co-phan-tropiad",
+    "name": "CÔNG TY CỔ PHẦN TROPIAD",
+    "website": null
+  },
+  {
+    "id": "cong-ty-dha-viet-nam",
+    "name": "Công ty DHA Việt Nam",
+    "website": null
+  },
+  {
+    "id": "cong-ty-tnhh-belove-mountain",
+    "name": "Công ty TNHH Belove Mountain",
+    "website": null
+  },
+  {
+    "id": "cong-ty-tnhh-content-share-viet-nam",
+    "name": "CÔNG TY TNHH CONTENT SHARE VIỆT NAM",
+    "website": null
+  },
+  {
+    "id": "cong-ty-tnhh-dau-tu-thuong-mai-dich-vu-unique",
+    "name": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE",
+    "website": null
+  },
+  {
+    "id": "cong-ty-tnhh-duoc-pham-hisamitsu-viet-nam",
+    "name": "CÔNG TY TNHH DƯỢC PHẨM HISAMITSU VIỆT NAM",
+    "website": null
+  },
+  {
+    "id": "cong-ty-tnhh-dv-dl-tm-trung-thang",
+    "name": "CÔNG TY TNHH DV DL - TM TRUNG THẮNG",
+    "website": null
+  },
+  {
+    "id": "cong-ty-tnhh-fleur-de-lys-hospitality",
+    "name": "Công ty TNHH Fleur de Lys Hospitality",
+    "website": null
+  },
+  {
+    "id": "cong-ty-tnhh-mtv-dao-tao-tu-van-the-thao-domingo",
+    "name": "CÔNG TY TNHH MTV ĐÀO TẠO - TƯ VẤN - THỂ THAO DOMINGO",
+    "website": null
+  },
+  {
+    "id": "cong-ty-tnhh-mtv-thach-sanh",
+    "name": "Công ty TNHH MTV Thạch Sanh",
+    "website": null
+  },
+  {
+    "id": "cong-ty-tnhh-mtv-trang-an-ninh-binh",
+    "name": "CÔNG TY TNHH MTV TRÀNG AN NINH BÌNH",
+    "website": null
+  },
+  {
+    "id": "cong-ty-tnhh-stop-and-sports",
+    "name": "CÔNG TY TNHH STOP AND SPORTS",
+    "website": null
+  },
+  {
+    "id": "cong-ty-tnhh-the-thao-win-viet-nam",
+    "name": "CÔNG TY TNHH THỂ THAO WIN VIỆT NAM",
+    "website": null
+  },
+  {
+    "id": "cong-ty-tnhh-thuong-mai-dich-vu-dao-tao-ki-nang-lif-up-academy",
+    "name": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ ĐÀO TẠO KĨ NĂNG LIF UP ACADEMY",
+    "website": null
+  },
+  {
+    "id": "cong-ty-tnhh-tu-van-giao-duc-teach-for-viet-nam",
+    "name": "CÔNG TY TNHH TƯ VẤN GIÁO DỤC TEACH FOR VIET NAM",
+    "website": null
+  },
+  {
+    "id": "cong-ty-tnhh-vietnam-safety-rescue-service-vsrs",
+    "name": "CÔNG TY TNHH VIETNAM SAFETY & RESCUE SERVICE (VSRS)",
+    "website": null
+  },
+  {
+    "id": "cong-ty-zaha-vietnam",
+    "name": "Công ty Zaha Vietnam",
+    "website": null
+  },
+  {
+    "id": "coteccons-bao-tuoi-tre-so-van-hoa-the-thao-va-du-lich-tinh-long-an",
+    "name": "Coteccons - Báo Tuổi Trẻ - Sở Văn Hoá, Thể Thao và Du lịch tỉnh Long An",
+    "website": null
+  },
+  {
+    "id": "da-hae-international-co-ltd",
+    "name": "DA HAE INTERNATIONAL CO., LTD",
+    "website": null
+  },
+  {
+    "id": "dai-truyen-hinh-viet-nam-vtv-cong-ty-co-phan-thanh-an-media",
+    "name": "Đài Truyền Hình Việt Nam (VTV) & Công ty Cổ phần Thành An Media",
+    "website": null
+  },
+  {
+    "id": "dai-truyen-hinh-viet-nam-vtv-cong-ty-co-phan-thanh-an-media-don-vi-dong-hanh-nga",
+    "name": "Đài Truyền hình Việt Nam (VTV), Công ty Cổ phần Thành An Media - Đơn vị đồng hành: Ngân hàng TMCP Lộc Phát Việt Nam (LPBank)",
+    "website": null
+  },
+  {
+    "id": "dai-truyen-hinh-viet-nam-vtv-lien-doan-dien-kinh-viet-nam-so-vhtt-kien-giang-lio",
+    "name": "Đài truyền hình Việt Nam VTV, Liên đoàn Điền kinh Việt Nam, Sở VHTT Kiên Giang, Lions Entertainment JSC, Công ty CP Thương mại và nội dung Số Việt - Vietcontent",
+    "website": null
+  },
+  {
+    "id": "don-vi-chi-dao-ubnd-tinh-dong-thap-don-vi-to-chuc-so-van-hoa-the-thao-va-du-lich",
+    "name": "Đơn vị chỉ đạo: UBND Tỉnh Đồng Tháp – Đơn vị tổ chức: Sở Văn hóa, Thể thao và Du lịch tỉnh Đồng Tháp & Nexus Sport Events – Đối tác chiến lược & Đơn vị đồng tổ chức: Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
+    "website": null
+  },
+  {
+    "id": "don-vi-to-chuc-hiep-hoi-the-thao-cand-viet-nam-phoi-hop-ubnd-tinh-lam-dong-don-v",
+    "name": "Đơn vị tổ chức: Hiệp hội Thể thao CAND Việt Nam phối hợp UBND tỉnh Lâm Đồng - Đơn vị đồng tổ chức - thực hiện: Công ty cổ phần truyền thông NEXUS",
+    "website": null
+  },
+  {
+    "id": "don-vi-to-chuc-hoi-nha-bao-viet-nam-hoi-nha-bao-tp-hcm-don-vi-thuc-hien-nexus-sp",
+    "name": "Đơn vị tổ chức: Hội Nhà báo Việt Nam & Hội Nhà báo TP.HCM - Đơn vị thực hiện: Nexus Sport Events - Nhà tài trợ chính: Agribank",
+    "website": null
+  },
+  {
+    "id": "don-vi-to-chuc-nexus-sport-events-doi-tac-chien-luoc-don-vi-dong-to-chuc-ngan-ha",
+    "name": "Đơn vị tổ chức: Nexus Sport Events – Đối tác chiến lược & Đơn vị đồng tổ chức: Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
+    "website": null
+  },
+  {
+    "id": "don-vi-to-chuc-ngan-hang-tmcp-viet-nam-thinh-vuong-vpbank",
+    "name": "Đơn vị tổ chức: Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
+    "website": null
+  },
+  {
+    "id": "gamuda-land",
+    "name": "Gamuda Land",
+    "website": null
+  },
+  {
+    "id": "gamuda-land-quy-nhip-tim-viet-nam-va-quy-vet-seo-cuoc-doi",
+    "name": "Gamuda Land & Quỹ Nhịp tim Việt Nam và Quỹ Vết sẹo cuộc đời",
+    "website": null
+  },
+  {
+    "id": "gamuda-land-viet-nam-phoi-hop-cung-nhip-tim-viet-nam",
+    "name": "Gamuda Land Việt Nam phối hợp cùng Nhịp Tim Việt Nam",
+    "website": null
+  },
+  {
+    "id": "gemadept",
+    "name": "GEMADEPT",
+    "website": null
+  },
+  {
+    "id": "great-race-vietnam",
+    "name": "Great Race Vietnam",
+    "website": null
+  },
+  {
+    "id": "greenhat",
+    "name": "GreenHat",
+    "website": null
+  },
+  {
+    "id": "hiep-hoi-thuong-mai-dien-tu-viet-nam-vecom-va-mang-luoi-quan-he-cong-chung-viet",
+    "name": "Hiệp hội Thương mại điện tử Việt Nam (VECOM) và Mạng lưới Quan hệ Công chúng Việt Nam (VNPR)",
+    "website": null
+  },
+  {
+    "id": "hoi-an-runners-community",
+    "name": "Hoi An Runners Community",
+    "website": null
+  },
+  {
+    "id": "hoi-du-lich-mang-den",
+    "name": "Hội Du Lịch Măng Đen",
+    "website": null
+  },
+  {
+    "id": "hoi-nguoi-khuyet-tat-thanh-pho-can-tho",
+    "name": "HỘI NGƯỜI KHUYẾT TẬT THÀNH PHỐ CẦN THƠ",
+    "website": null
+  },
+  {
+    "id": "laan-ultra-trail",
+    "name": "LAAN Ultra Trail",
+    "website": null
+  },
+  {
+    "id": "lien-doan-dien-kinh-viet-nam",
+    "name": "Liên Đoàn Điền Kinh Việt Nam",
+    "website": null
+  },
+  {
+    "id": "lien-doan-dien-kinh-viet-nam-bao-tien-phong-ubnd-tinh-quang-tri",
+    "name": "Liên đoàn Điền kinh Việt Nam - Báo Tiền Phong - UBND tỉnh Quảng Trị",
+    "website": null
+  },
+  {
+    "id": "lien-doan-dien-kinh-viet-nam-lien-doan-dien-kinh-lao-lien-doan-dien-kinh-campuch",
+    "name": "Liên đoàn Điền kinh Việt Nam, Liên đoàn Điền kinh Lào, Liên đoàn Điền kinh Campuchia tổ chức; Tập đoàn Công nghiệp - Viễn thông Quân đội (Viettel Group) đồng tổ chức và tài trợ; Hiệp hội Điền kinh Châu Á giám sát và tư vấn, Công ty Vietcontent thực hiện",
+    "website": null
+  },
+  {
+    "id": "lien-doan-dien-kinh-viet-nam-uy-ban-nhan-dan-thanh-pho-ha-noi-vietcontent",
+    "name": "Liên đoàn điền kinh Việt Nam - Ủy ban nhân dân Thành phố Hà Nội - VietContent",
+    "website": null
+  },
+  {
+    "id": "mang-luoi-ung-thu-vu-viet-nam-bcnv",
+    "name": "Mạng Lưới Ung Thu Vú Việt Nam - BCNV",
+    "website": null
+  },
+  {
+    "id": "miracle-entertainment-group-bao-sai-gon-giai-phong-so-vhtt-ho-chi-minh",
+    "name": "Miracle Entertainment Group - Báo Sài Gòn Giải Phóng - Sở VHTT Hồ Chí Minh",
+    "website": null
+  },
+  {
+    "id": "nexus-sport-events",
+    "name": "Nexus Sport Events",
+    "website": null
+  },
+  {
+    "id": "ngan-hang-tmcp-dau-tu-va-phat-trien-viet-nam",
+    "name": "Ngân hàng TMCP Đầu tư và Phát triển Việt Nam",
+    "website": null
+  },
+  {
+    "id": "pocari-sweat-run",
+    "name": "POCARI SWEAT RUN",
+    "website": null
+  },
+  {
+    "id": "pocari-sweat-run-vietnam",
+    "name": "POCARI SWEAT RUN VIETNAM",
+    "website": null
+  },
+  {
+    "id": "pr-events-company-limited",
+    "name": "PR EVENTS COMPANY LIMITED",
+    "website": null
+  },
+  {
+    "id": "race-jungle",
+    "name": "Race Jungle",
+    "website": null
+  },
+  {
+    "id": "sdpo-va-phoenix-voyages-sport-event",
+    "name": "SDPO và Phoenix Voyages Sport & Event",
+    "website": null
+  },
+  {
+    "id": "sdpo-va-phoenix-voyages-sports-events",
+    "name": "SDPO và Phoenix Voyages Sports & Events",
+    "website": null
+  },
+  {
+    "id": "sdporganisation",
+    "name": "SDPOrganisation",
+    "website": null
+  },
+  {
+    "id": "sedona-suites-ho-chi-minh-city",
+    "name": "Sedona Suites Ho Chi Minh City",
+    "website": null
+  },
+  {
+    "id": "setiabecamex",
+    "name": "SetiaBecamex",
+    "website": null
+  },
+  {
+    "id": "skechers-viet-nam",
+    "name": "Skechers Việt Nam",
+    "website": null
+  },
+  {
+    "id": "skechers-vietnam",
+    "name": "SKECHERS VIETNAM",
+    "website": null
+  },
+  {
+    "id": "skyrun-sports-sporting-republic",
+    "name": "Skyrun Sports / Sporting Republic",
+    "website": null
+  },
+  {
+    "id": "so-van-hoa-the-thao-va-du-lich-tinh-dak-lak-don-vi-to-chuc-cong-ty-tnhh-mot-than",
+    "name": "Sở Văn hóa, Thể thao và Du lịch tỉnh Đắk Lắk đơn vị tổ chức | Công ty TNHH Một thành viên Xuất nhập khẩu 2-9 Đắk Lắk đơn vị đồng tổ chức | Công ty TNHH Đầu Tư Tín Nhân đơn vị vận hành giải chạy",
+    "website": null
+  },
+  {
+    "id": "so-van-hoa-the-thao-va-du-lich-tinh-dak-lak-hoi-chay-bo-tinh-dak-lak-cong-ty-tnh",
+    "name": "Sở Văn hóa, Thể thao và Du lịch tỉnh Đắk Lắk - Hội Chạy bộ tỉnh Đắk Lắk - Công ty TNHH Đầu tư Tín Nhân.",
+    "website": null
+  },
+  {
+    "id": "so-vh-tt-tinh-quang-tri-bao-nong-nghiep-viet-nam",
+    "name": "Sở VH&TT tỉnh Quảng Trị & Báo Nông Nghiệp Việt Nam",
+    "website": null
+  },
+  {
+    "id": "sporting-republic",
+    "name": "Sporting Republic",
+    "website": null
+  },
+  {
+    "id": "sunrise-events-vietnam",
+    "name": "Sunrise Events Vietnam",
+    "website": null
+  },
+  {
+    "id": "suunto-viet-nam",
+    "name": "Suunto Việt Nam",
+    "website": null
+  },
+  {
+    "id": "tap-chi-nong-thon-viet",
+    "name": "Tạp chí Nông thôn Việt",
+    "website": null
+  },
+  {
+    "id": "tap-doan-khach-san-akyn-khach-san-the-secret-con-dao",
+    "name": "Tập đoàn Khách sạn AKYN - Khách sạn The Secret Côn Đảo",
+    "website": null
+  },
+  {
+    "id": "thanh-an-media",
+    "name": "Thanh An Media",
+    "website": null
+  },
+  {
+    "id": "the-lakes-race",
+    "name": "THE LAKES RACE",
+    "website": null
+  },
+  {
+    "id": "topas-travel",
+    "name": "TOPAS TRAVEL",
+    "website": null
+  },
+  {
+    "id": "trung-tam-van-hoa-the-thao-quan-7-mang-luoi-quan-he-cong-chung-viet-nam-vnpr-don",
+    "name": "Trung Tâm Văn Hóa - Thể Thao Quận 7 - Mạng Lưới Quan Hệ Công Chúng Việt Nam (VNPR) - Đơn vị triển khai thiện nguyện: Operation Smile",
+    "website": null
+  },
+  {
+    "id": "truong-dai-hoc-van-lang",
+    "name": "Trường Đại học Văn Lang",
+    "website": null
+  },
+  {
+    "id": "ttc-agris",
+    "name": "TTC AgriS",
+    "website": null
+  },
+  {
+    "id": "ubnd-huyen-cam-xuyen-hatinh-race-clb-htr-ha-tinh-runners",
+    "name": "UBND huyện Cẩm Xuyên - HATINH RACE - CLB HTR-Hà Tĩnh Runners",
+    "website": null
+  },
+  {
+    "id": "ubnd-phuong-tay-loc",
+    "name": "UBND Phường Tây Lộc",
+    "website": null
+  },
+  {
+    "id": "ubnd-phuong-yen-tu-hoi-nha-bao-tinh-quang-ninh-great-race-vietnam",
+    "name": "UBND PHƯỜNG YÊN TỬ - HỘI NHÀ BÁO TỈNH QUẢNG NINH - GREAT RACE VIETNAM",
+    "website": null
+  },
+  {
+    "id": "uy-ban-nhan-dan-dan-xa-quang-truc",
+    "name": "Ủy ban nhân dân dân xã Quảng Trực",
+    "website": null
+  },
+  {
+    "id": "uy-ban-nhan-dan-huyen-ly-son-cong-ty-co-phan-duong-chay-xanh",
+    "name": "Uỷ Ban Nhân Dân Huyện Lý Sơn & Công Ty Cổ Phần Đường Chạy Xanh",
+    "website": null
+  },
+  {
+    "id": "uy-ban-nhan-dan-huyen-ly-son-va-cong-ty-co-phan-duong-chay-xanh",
+    "name": "Ủy ban nhân dân Huyện Lý Sơn và Công Ty Cổ Phần Đường Chạy Xanh",
+    "website": null
+  },
+  {
+    "id": "uy-ban-nhan-dan-thanh-pho-ho-chi-minh-uy-ban-nhan-dan-quan-1-so-van-hoa-va-the-t",
+    "name": "Uỷ ban Nhân dân Thành phố Hồ Chí Minh - Uỷ ban Nhân dân Quận 1 - Sở Văn hoá và Thể thao Thành phố Hồ Chí Minh",
+    "website": null
+  },
+  {
+    "id": "viet-jungle",
+    "name": "VIET JUNGLE",
+    "website": null
+  },
+  {
+    "id": "vietnam-mtb-series",
+    "name": "Vietnam MTB Series",
+    "website": null
+  },
+  {
+    "id": "vietnam-mtb-series-tailwind-adventure-community",
+    "name": "Vietnam MTB Series & Tailwind Adventure Community",
+    "website": null
+  },
+  {
+    "id": "vietrace365",
+    "name": "VIETRACE365",
+    "website": null
+  },
+  {
+    "id": "vrace-cong-ty-co-phan-vu-media",
+    "name": "VRace (Công ty Cổ phần Vũ Media)",
+    "website": null
+  },
+  {
+    "id": "yeah1",
+    "name": "YeaH1",
+    "website": null
+  },
+  {
+    "id": "yok-don-national-park-and-rbg-service-company-limited",
+    "name": "Yok Don National Park and RBG Service Company Limited",
+    "website": null
+  }
+]

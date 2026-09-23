@@ -1,0 +1,68 @@
+{
+  "id": "8f626981-3079-4853-ab05-cc6def4babec",
+  "slug": "tay-loc-discovery-run",
+  "name": "Tay Loc Discovery Run 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-01-21",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "ubnd-phuong-tay-loc",
+  "organizer": "UBND Phường Tây Lộc",
+  "distances": [],
+  "location": {
+    "venue": "UBND Phường Tây Lộc - 134 Lê Đại Hành, Thành phố Huế, Thừa Thiên Huế",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/tay-loc-discovery-run"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1I6WyR1p2vDGL5VKay9t3NDxDV-XtZxDR/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/tay-loc-discovery-run",
+      "lastCheckedAt": "2026-09-23T18:32:29.916Z",
+      "lastChangedAt": "2026-09-23T18:32:29.916Z",
+      "extracted": {
+        "facts": {
+          "name": "Tay Loc Discovery Run 2024",
+          "date": "2024-01-21",
+          "venue": "UBND Phường Tây Lộc - 134 Lê Đại Hành, Thành phố Huế, Thừa Thiên Huế",
+          "organizer": "UBND Phường Tây Lộc",
+          "registrationStatus": "closed",
+          "fromPrice": 30000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1I6WyR1p2vDGL5VKay9t3NDxDV-XtZxDR/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "ubnd-phuong-tay-loc",
+          "name": "UBND Phường Tây Lộc"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

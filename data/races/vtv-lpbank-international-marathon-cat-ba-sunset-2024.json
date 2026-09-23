@@ -1,0 +1,69 @@
+{
+  "id": "b295b2e0-95cc-49a1-8b17-e3b9412505f6",
+  "slug": "vtv-lpbank-international-marathon-cat-ba-sunset-2024",
+  "name": "Giải Marathon Quốc Tế VTV LPBank - Sắc Màu Hoàng Hôn Cát Bà 2024",
+  "types": [
+    "other"
+  ],
+  "date": "2024-10-19",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "dai-truyen-hinh-viet-nam-vtv-cong-ty-co-phan-thanh-an-media",
+  "organizer": "Đài Truyền Hình Việt Nam (VTV) & Công ty Cổ phần Thành An Media",
+  "distances": [],
+  "location": {
+    "venue": "Đảo Cát Bà, Hải Phòng",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/vtv-lpbank-international-marathon-cat-ba-sunset-2024"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1WsZx795sl6BOn5m0_F_9d5r7OmLsiaPH/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/vtv-lpbank-international-marathon-cat-ba-sunset-2024",
+      "lastCheckedAt": "2026-09-23T18:32:03.794Z",
+      "lastChangedAt": "2026-09-23T18:32:03.794Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Marathon Quốc Tế VTV LPBank - Sắc Màu Hoàng Hôn Cát Bà 2024",
+          "date": "2024-10-19",
+          "venue": "Đảo Cát Bà, Hải Phòng",
+          "organizer": "Đài Truyền Hình Việt Nam (VTV) & Công ty Cổ phần Thành An Media",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 675000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1WsZx795sl6BOn5m0_F_9d5r7OmLsiaPH/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "dai-truyen-hinh-viet-nam-vtv-cong-ty-co-phan-thanh-an-media",
+          "name": "Đài Truyền Hình Việt Nam (VTV) & Công ty Cổ phần Thành An Media"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}

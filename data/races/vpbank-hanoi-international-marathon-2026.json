@@ -1,0 +1,69 @@
+{
+  "id": "18676989-f118-4e81-aae9-185036e837a3",
+  "slug": "vpbank-hanoi-international-marathon-2026",
+  "name": "VPBank Hanoi International Marathon 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-10-18",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": "don-vi-to-chuc-ngan-hang-tmcp-viet-nam-thinh-vuong-vpbank",
+  "organizer": "Đơn vị tổ chức: Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
+  "distances": [],
+  "location": {
+    "venue": "Thành phố Hà Nội",
+    "city": null
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/vpbank-hanoi-international-marathon-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://vpbankmarathon.com/quy-dinh",
+      "kind": "official",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/vpbank-hanoi-international-marathon-2026",
+      "lastCheckedAt": "2026-09-23T18:30:58.280Z",
+      "lastChangedAt": "2026-09-23T18:30:58.280Z",
+      "extracted": {
+        "facts": {
+          "name": "VPBank Hanoi International Marathon 2026",
+          "date": "2026-10-18",
+          "venue": "Thành phố Hà Nội",
+          "organizer": "Đơn vị tổ chức: Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 599000
+        },
+        "links": [
+          {
+            "url": "https://vpbankmarathon.com/quy-dinh",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "don-vi-to-chuc-ngan-hang-tmcp-viet-nam-thinh-vuong-vpbank",
+          "name": "Đơn vị tổ chức: Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T18:32:39.566Z",
+  "updatedAt": "2026-09-23T18:32:39.566Z"
+}
