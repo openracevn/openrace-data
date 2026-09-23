@@ -4,19 +4,21 @@
  *   npm run check -- --mode daily               # discover + refresh (the scheduled run)
  *   npm run check -- --mode discover            # only look for races we don't have yet
  *   npm run check -- --mode refresh             # only re-check known races that are due
- *   npm run check -- --mode race --race <id|url>  # re-check one race now, whatever its schedule
+ *   npm run check -- --mode race --race <id|slug|url>  # re-check one race now, whatever its schedule
  *
- * Options: --max-scrapes N (default 40; each extraction costs 5 Firecrawl credits), --dry-run.
+ * Options: --max-scrapes N (default 40; each extraction costs 5 Firecrawl credits), --dry-run,
+ * --preview <dir> (with --dry-run: also write the planned files under <dir> to inspect).
  *
  * Discovery scrapes the listing for links (1 credit), then extracts only URLs we
- * don't know yet, following each scraped page's related-event links. Refresh
+ * don't know yet. Refresh
  * re-extracts known races every REFRESH_DAYS until race day (see lib/checks.ts).
  * Everything lands in one commit: race files + index + state/checks.json.
  *
  * Selection reads the local checkout; the commit re-plans against the branch head.
  * Env: FIRECRAWL_API_KEY; GITHUB_TOKEN (PAT) + GITHUB_OWNER/REPO/BRANCH unless --dry-run.
  */
-import { appendFileSync, readFileSync } from "node:fs";
+import { appendFileSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { dirname, join } from "node:path";
 import {
   CHECKS_PATH,
   byStaleness,
@@ -47,9 +49,11 @@ const mode = (arg("mode") ?? "daily") as Mode;
 const raceArg = arg("race")?.trim();
 const maxScrapes = Number(arg("max-scrapes") ?? 40);
 const dryRun = args.includes("--dry-run");
+const previewDir = arg("preview");
 if (!MODES.includes(mode)) fail(`--mode must be one of ${MODES.join(", ")}`);
-if (mode === "race" && !raceArg) fail("--mode race needs --race <race id or URL>");
+if (mode === "race" && !raceArg) fail("--mode race needs --race <race id, slug or URL>");
 if (!Number.isInteger(maxScrapes) || maxScrapes < 1) fail("--max-scrapes must be a positive integer");
+if (previewDir && !dryRun) fail("--preview only works with --dry-run");
 
 const now = new Date();
 const today = vietnamDate(now);
@@ -122,26 +126,22 @@ async function extract(url: string): Promise<void> {
   if (normalized.ok) {
     runChecks.set(url, { lastCheckedAt: checkedAt, status: "ok" });
   } else {
-    // "What the page is" rejections stick; transient ones (flaky render, no date yet) are retried.
-    const sport = result.json.sport;
-    const permanent =
-      !knownUrls.has(url) &&
-      ((typeof sport === "string" && sport !== "running" && sport !== "none") || normalized.reason.startsWith("multisport"));
+    // "Not a sports event" sticks; transient rejections (flaky render, no date yet) are retried.
+    const permanent = !knownUrls.has(url) && result.json.pageKind === "non_sport";
     runChecks.set(url, { lastCheckedAt: checkedAt, status: "rejected", reason: normalized.reason, ...(permanent && { permanent }) });
     report.push(`· ${url}: ${normalized.reason}${permanent ? " (won't re-check)" : ""}`);
   }
-  if (discovering) enqueue(newEventUrls(result.links));
 }
 
 // 1. Work out what to scrape.
 if (mode === "race") {
-  const byId = index.find((e) => e.id === raceArg);
+  const byId = index.find((e) => e.id === raceArg || e.slug === raceArg);
   let urls = byId?.sourceUrls ?? [];
   if (!byId) {
     try {
       urls = [canonicalSourceUrl(raceArg!)];
     } catch {
-      fail(`"${raceArg}" is neither a race id in ${INDEX_PATH} nor a URL`);
+      fail(`"${raceArg}" is neither a race id or slug in ${INDEX_PATH} nor a URL`);
     }
     if (!sourceForUrl(urls[0]!)) fail(`${urls[0]} is not an event page from a known source`);
   }
@@ -168,12 +168,17 @@ if (mode === "daily" || mode === "refresh") {
     const text = await local.read(racePath(entry.id));
     if (text === null) continue;
     const race = RaceSchema.parse(JSON.parse(text));
-    for (const url of entry.sourceUrls) if (isRefreshDue(race.date, checks[url], today, now)) due.push(url);
+    for (const url of entry.sourceUrls) {
+      // No log entry (e.g. the race came in via sync-cli): fall back to the source's own last check.
+      const lastCheckedAt = race.sources.find((src) => src.url === url)?.lastCheckedAt;
+      const check = checks[url] ?? (lastCheckedAt ? { lastCheckedAt, status: "ok" as const } : undefined);
+      if (isRefreshDue(race.date, check, today, now)) due.push(url);
+    }
   }
   enqueue(due.sort(byStaleness(checks)));
 }
 
-// 2. Scrape. The queue grows while discovery follows related-event links.
+// 2. Scrape.
 for (let i = 0; i < queue.length; i++) await extract(queue[i]!);
 
 // 3. Commit races + index + check log as one commit.
@@ -183,6 +188,12 @@ let plan: SyncPlan;
 let commitSha: string | null = null;
 if (dryRun) {
   plan = await planSync(local, inputs, finishedAt);
+  if (previewDir) {
+    for (const [path, content] of Object.entries(plan.files)) {
+      mkdirSync(dirname(join(previewDir, path)), { recursive: true });
+      writeFileSync(join(previewDir, path), content);
+    }
+  }
 } else {
   const result = await syncToGitHub(
     {

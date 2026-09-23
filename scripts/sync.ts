@@ -20,8 +20,8 @@ import {
   type RaceSource,
   type SourceName,
 } from "./lib/schema.ts";
-import { canonicalSourceUrl, raceSlug } from "./lib/slug.ts";
-import { sourceForUrl } from "./lib/sources.ts";
+import { canonicalSourceUrl } from "./lib/slug.ts";
+import { SOURCES, sourceForUrl } from "./lib/sources.ts";
 
 export type SyncInput = {
   /** Source page URL the data was extracted from. */
@@ -37,7 +37,7 @@ export interface RaceStore {
   read(path: string): Promise<string | null>;
 }
 
-export type RaceChange = { id: string; kind: "added" | "updated"; fields: CanonicalField[] };
+export type RaceChange = { id: string; slug: string; kind: "added" | "updated"; fields: CanonicalField[] };
 export type Skipped = { url: string; reason: string };
 
 export type SyncPlan = {
@@ -47,13 +47,19 @@ export type SyncPlan = {
   skipped: Skipped[];
 };
 
-type Prepared = { input: SyncInput; url: string; source: SourceName; id: string };
+type Prepared = { input: SyncInput; url: string; source: SourceName; id: string; newSlug?: string };
 
-export async function planSync(store: RaceStore, inputs: readonly SyncInput[], now = new Date().toISOString()): Promise<SyncPlan> {
+export async function planSync(
+  store: RaceStore,
+  inputs: readonly SyncInput[],
+  now = new Date().toISOString(),
+  newId: () => string = () => crypto.randomUUID(),
+): Promise<SyncPlan> {
   const indexText = await store.read(INDEX_PATH);
   const index: IndexEntry[] = indexText ? IndexSchema.parse(JSON.parse(indexText)) : [];
   const indexById = new Map(index.map((e) => [e.id, e]));
   const idByUrl = new Map(index.flatMap((e) => e.sourceUrls.map((u) => [u, e.id] as const)));
+  const takenSlugs = new Set(index.map((e) => e.slug));
 
   const skipped: Skipped[] = [];
   const prepared: Prepared[] = [];
@@ -65,17 +71,21 @@ export async function planSync(store: RaceStore, inputs: readonly SyncInput[], n
       skipped.push({ url, reason: "not an event page from a known source" });
       continue;
     }
-    let id = idByUrl.get(url);
-    if (!id) {
-      const normalized = normalizeExtracted(input.extracted);
-      if (!normalized.ok) {
-        skipped.push({ url, reason: normalized.reason });
-        continue;
-      }
-      id = allocateId(raceSlug(normalized.race.name, normalized.race.date), indexById, idByUrl);
-      idByUrl.set(url, id);
+    const id = idByUrl.get(url);
+    if (id) {
+      prepared.push({ input, url, source, id });
+      continue;
     }
-    prepared.push({ input, url, source, id });
+    const normalized = normalizeExtracted(input.extracted);
+    if (!normalized.ok) {
+      skipped.push({ url, reason: normalized.reason });
+      continue;
+    }
+    const newSlug = allocateSlug(SOURCES[source].slugOf(new URL(url)), takenSlugs);
+    takenSlugs.add(newSlug);
+    const created = newId();
+    idByUrl.set(url, created);
+    prepared.push({ input, url, source, id: created, newSlug });
   }
 
   const existing = await Promise.all(
@@ -91,8 +101,9 @@ export async function planSync(store: RaceStore, inputs: readonly SyncInput[], n
   const changes: RaceChange[] = [];
   const nextIndex = new Map(indexById);
 
-  prepared.forEach(({ input, url, source, id }, i) => {
+  prepared.forEach(({ input, url, source, id, newSlug }, i) => {
     const prev = existing[i] ?? null;
+    const slug = prev?.slug ?? newSlug!;
     const prevSources = prev?.sources ?? [];
     const prevSource = prevSources.find((s) => s.name === source && s.url === url);
 
@@ -120,6 +131,7 @@ export async function planSync(store: RaceStore, inputs: readonly SyncInput[], n
 
     const record: Race = {
       id,
+      slug,
       ...canonical,
       sources,
       confidence: reconciled.confidence,
@@ -133,9 +145,9 @@ export async function planSync(store: RaceStore, inputs: readonly SyncInput[], n
     }
 
     files[racePath(id)] = serialize(record);
-    changes.push({ id, kind: prev ? "updated" : "added", fields });
+    changes.push({ id, slug, kind: prev ? "updated" : "added", fields });
     const urls = new Set([...(nextIndex.get(id)?.sourceUrls ?? []), url]);
-    nextIndex.set(id, { id, lastModified: now, sourceUrls: [...urls].sort() });
+    nextIndex.set(id, { id, slug, lastModified: now, sourceUrls: [...urls].sort() });
   });
 
   if (changes.length > 0) {
@@ -162,8 +174,7 @@ function dedupeByUrl(inputs: readonly SyncInput[], skipped: Skipped[]): SyncInpu
 }
 
 /** First free slug among base, base-2, base-3, ... */
-function allocateId(base: string, indexById: Map<string, IndexEntry>, idByUrl: Map<string, string>): string {
-  const taken = new Set([...indexById.keys(), ...idByUrl.values()]);
+function allocateSlug(base: string, taken: ReadonlySet<string>): string {
   if (!taken.has(base)) return base;
   for (let n = 2; ; n++) if (!taken.has(`${base}-${n}`)) return `${base}-${n}`;
 }
@@ -175,8 +186,8 @@ export function formatCommitMessage(plan: SyncPlan, context?: string): string {
   const lines = [
     `data: ${counts.join(", ")}`,
     "",
-    ...added.map((c) => `+ ${c.id}`),
-    ...updated.map((c) => `~ ${c.id}: ${c.fields.join(", ") || "confidence"}`),
+    ...added.map((c) => `+ ${c.slug} (${c.id})`),
+    ...updated.map((c) => `~ ${c.slug}: ${c.fields.join(", ") || "confidence"}`),
   ];
   if (context) lines.push("", context);
   return lines.join("\n");

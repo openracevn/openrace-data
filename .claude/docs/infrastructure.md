@@ -21,8 +21,7 @@ check.yml  (cron daily, or workflow_dispatch: mode = daily|discover|refresh|race
   │  2. discover: scrape the listing for links (1 credit); queue unknown /vi/event/<slug> pages
   │     refresh: queue known races with date ≥ today (VN) and last check ≥ 14 days ago
   │     race: queue the one race asked for
-  │  3. extract each page (5 credits), sequentially 6.5 s apart; discovery also queues
-  │     each page's related-event links
+  │  3. extract each page (5 credits), sequentially 6.5 s apart
   │  4. syncToGitHub: planSync against main HEAD + merge the check log → ONE commit
   │     (createTree → createCommit → updateRef force:false; retry ×3 if main moved)
   ▼
@@ -43,12 +42,12 @@ main.yml  (skipped entirely when only state/** changed)
 | `scripts/lib/checks.ts` | Check-log schema and schedule rules: `isRefreshDue` (14 days, until race day), `isCandidate` (unseen pages, or retry after 3 days; permanent rejections are skipped), `vietnamDate` |
 | `scripts/lib/firecrawl.ts` | `/v2/scrape` client: `links()` (1 credit), `extract()` (5 credits); pacing and retry on 429/5xx |
 | `scripts/lib/schema.ts` | zod schema for races and the index, `CANONICAL_FIELDS`, `serialize` (stable 2-space JSON + newline) |
-| `scripts/lib/extraction.ts` | `EXTRACTION_SCHEMA` / `EXTRACTION_PROMPT`; `normalizeExtracted` → canonical fields; multisport filter |
+| `scripts/lib/extraction.ts` | `EXTRACTION_SCHEMA` / `EXTRACTION_PROMPT`; `normalizeExtracted` → canonical fields, incl. `types` (name rules + model) |
 | `scripts/lib/diff.ts` | `changedFields`, and `stabilize` (ignores venue/organizer rewording) |
 | `scripts/lib/places.ts` | Vietnamese city/province → English display name + region; tries each comma-separated part |
 | `scripts/lib/reconcile.ts` | sources[] → canonical fields + confidence (MVP: highest-priority source wins) |
 | `scripts/lib/sources.ts` | Per source: hosts, listing URLs, the event-page test (`/vi/event/<slug>` only) |
-| `scripts/lib/slug.ts` | `raceSlug(name, date)`, `canonicalSourceUrl` |
+| `scripts/lib/slug.ts` | `canonicalSourceUrl` (the initial race slug comes from `SOURCES[x].slugOf`) |
 | `scripts/lib/github.ts` | Octokit: read files at a commit, write many files as one commit |
 | `scripts/sync.ts` | `planSync` (pure, testable), `syncToGitHub` (I/O + retry + `extraFiles` for the check log), `formatCommitMessage` |
 

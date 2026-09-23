@@ -5,6 +5,7 @@ import { INDEX_PATH, IndexSchema, RACES_DIR, RaceSchema, serialize, type Race } 
 
 const errors: string[] = [];
 const races = new Map<string, Race>();
+const slugOwner = new Map<string, string>();
 
 for (const file of readdirSync(RACES_DIR).filter((f) => f.endsWith(".json")).sort()) {
   const path = `${RACES_DIR}/${file}`;
@@ -24,6 +25,9 @@ for (const file of readdirSync(RACES_DIR).filter((f) => f.endsWith(".json")).sor
   if (`${parsed.data.id}.json` !== file) errors.push(`${path}: id "${parsed.data.id}" does not match filename`);
   if (serialize(json) !== text) errors.push(`${path}: not in canonical formatting (2-space JSON + trailing newline)`);
   races.set(parsed.data.id, parsed.data);
+  const owner = slugOwner.get(parsed.data.slug);
+  if (owner) errors.push(`${path}: slug "${parsed.data.slug}" is also used by ${owner}`);
+  else slugOwner.set(parsed.data.slug, parsed.data.id);
 }
 
 const index = IndexSchema.safeParse(JSON.parse(readFileSync(INDEX_PATH, "utf8")));
@@ -38,6 +42,7 @@ if (!index.success) {
       errors.push(`${INDEX_PATH}: "${entry.id}" has no file in ${RACES_DIR}`);
       continue;
     }
+    if (entry.slug !== race.slug) errors.push(`${INDEX_PATH}: "${entry.id}" slug != race slug`);
     if (entry.lastModified !== race.updatedAt) errors.push(`${INDEX_PATH}: "${entry.id}" lastModified != race updatedAt`);
     const urls = [...new Set(race.sources.map((s) => s.url))].sort();
     if (urls.join() !== entry.sourceUrls.join()) errors.push(`${INDEX_PATH}: "${entry.id}" sourceUrls != race sources`);

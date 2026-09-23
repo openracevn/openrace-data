@@ -25,9 +25,9 @@ export class Firecrawl {
     return this.scrape(url, ["links"]);
   }
 
-  /** Race extraction plus the page's links (5 credits: 1 + 4 for JSON). */
+  /** Race extraction (5 credits: 1 + 4 for JSON). */
   extract(url: string): Promise<ScrapeResult> {
-    return this.scrape(url, ["links", { type: "json", schema: EXTRACTION_SCHEMA, prompt: EXTRACTION_PROMPT }]);
+    return this.scrape(url, [{ type: "json", schema: EXTRACTION_SCHEMA, prompt: EXTRACTION_PROMPT }]);
   }
 
   private async scrape(url: string, formats: unknown[]): Promise<ScrapeResult> {

@@ -14,7 +14,7 @@ on:
         options: [daily, discover, refresh, race]
         default: daily
       race:
-        description: "For mode 'race': race id (e.g. tet-run-mien-nam-2027) or ActiUp event URL"
+        description: "For mode 'race': race id, slug (e.g. tet-run-mien-nam-2027) or ActiUp event URL"
         required: false
       max_scrapes:
         description: "Max pages to extract (5 Firecrawl credits each)"

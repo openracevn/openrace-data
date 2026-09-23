@@ -1,22 +1,39 @@
 import { foldVietnamese, resolvePlace } from "./places.ts";
-import { REGISTRATION_STATUSES, type CanonicalRace, type RegistrationStatus } from "./schema.ts";
+import { RACE_TYPES, REGISTRATION_STATUSES, type CanonicalRace, type RaceType, type RegistrationStatus } from "./schema.ts";
 
 /**
  * JSON schema handed to Firecrawl's `changeTracking` (json mode) format. Whatever
  * Firecrawl returns for it is stored verbatim as a source's `rawExtracted`, and
  * `normalizeExtracted` turns it into canonical race fields.
  */
-export const SPORTS = ["running", "multisport", "cycling", "swimming", "other", "none"] as const;
+/** sport = an endurance sports event; non_sport = concert, tour, hotel, conference; none = login, error or empty page. */
+export const PAGE_KINDS = ["sport", "non_sport", "none"] as const;
 
-const MULTISPORT_NAME = /\b(triathlon|duathlon|aquathlon|ironman|ironkids|festrival|70 3)\b/;
+// Names that settle a type regardless of what the model says (folded, lowercase).
+const TYPE_FROM_NAME: [RegExp, RaceType][] = [
+  [/\bcity trail\b/, "city_trail"],
+  [/\b(triathlon|ironman|festrival)\b/, "triathlon"],
+  [/\bduathlon\b/, "duathlon"],
+  [/\baquathlon\b/, "aquathlon"],
+  [/\bswimrun\b/, "swimrun"],
+];
 
 export const EXTRACTION_SCHEMA = {
   type: "object",
   properties: {
-    sport: {
+    pageKind: {
       type: "string",
-      enum: [...SPORTS],
-      description: "What kind of event this page describes. running = road race, trail race, marathon or ultra. multisport = triathlon, duathlon, aquathlon, Ironman. none = login, error or empty page.",
+      enum: [...PAGE_KINDS],
+      description: "sport = an endurance sports event (running, trail, multisport, swimming, cycling). non_sport = concert, tour, attraction, hotel or conference. none = login, error or empty page.",
+    },
+    types: {
+      type: "array",
+      items: { type: "string", enum: [...RACE_TYPES] },
+      description:
+        "Every format this event offers. road_run = road running (fun run, 10K, half, marathon); trail_run = trail or mountain running; " +
+        "city_trail = urban trail race through a city; obstacle_run = obstacle course race; triathlon = swim+bike+run; " +
+        "duathlon = run+bike+run; aquathlon = swim+run; aquabike = swim+bike; swimrun = alternating swim and run legs; " +
+        "swim = swimming only; road_cycle = road cycling; mtb = mountain biking; other = any other sport event.",
     },
     name: { type: "string", description: "Official event name exactly as written on the page. Do not translate it." },
     date: { type: "string", description: "Race day as YYYY-MM-DD. For multi-day events, the first race day." },
@@ -39,14 +56,14 @@ export const EXTRACTION_SCHEMA = {
     registrationUrl: { type: "string", description: "Absolute URL where runners register or buy a bib." },
     organizer: { type: "string", description: "Organizing company or body." },
   },
-  required: ["sport", "name", "date"],
+  required: ["pageKind", "name", "date"],
 } as const;
 
 export const EXTRACTION_PROMPT =
-  "Extract details of the running race described on this event page. The page is usually in Vietnamese: " +
+  "Extract details of the sports event (running, trail, triathlon, swimming, cycling, ...) described on this event page. The page is usually in Vietnamese: " +
   "convert dates such as \"21 - 22 tháng 11, 2026\" to YYYY-MM-DD, and prices such as \"350.000đ\" to plain numbers. " +
   "Ignore the \"Có thể bạn sẽ thích\" section: those are other events. " +
-  "If the page shows no event details (login, error or empty page), set sport to none and omit everything else. " +
+  "If the page shows no event details (login, error or empty page), set pageKind to none and omit everything else. " +
   "Only report what the page states; omit fields that are not stated. Never guess.";
 
 export type NormalizeResult =
@@ -54,12 +71,11 @@ export type NormalizeResult =
   | { ok: false; reason: string };
 
 export function normalizeExtracted(raw: Record<string, unknown>): NormalizeResult {
-  if (raw.sport !== "running") return { ok: false, reason: `not a running race (sport: ${JSON.stringify(raw.sport)})` };
+  if (raw.pageKind === "non_sport") return { ok: false, reason: "not a sports event" };
+  if (raw.pageKind !== "sport") return { ok: false, reason: `no event on the page (pageKind: ${JSON.stringify(raw.pageKind)})` };
 
   const name = str(raw.name);
   if (!name) return { ok: false, reason: "missing name" };
-  // The model still labels some multisport events "running"; their names give them away.
-  if (MULTISPORT_NAME.test(foldVietnamese(name))) return { ok: false, reason: `multisport event: ${name}` };
   const date = normalizeDate(raw.date);
   if (!date) return { ok: false, reason: `missing or unparseable date: ${JSON.stringify(raw.date)}` };
 
@@ -80,6 +96,7 @@ export function normalizeExtracted(raw: Record<string, unknown>): NormalizeResul
     ok: true,
     race: {
       name,
+      types: normalizeTypes(raw.types, name),
       date,
       distances: normalizeDistances(raw.distances),
       location: { venue: str(raw.venue), city: place.city, region: place.region },
@@ -94,6 +111,17 @@ export function normalizeExtracted(raw: Record<string, unknown>): NormalizeResul
       foreignerEligible: typeof raw.foreignerEligible === "boolean" ? raw.foreignerEligible : null,
     },
   };
+}
+
+/** Known values only, deduped, in RACE_TYPES order (stable diffs); name rules win; never empty. */
+function normalizeTypes(v: unknown, name: string): RaceType[] {
+  const types = new Set<RaceType>(Array.isArray(v) ? v.filter((t): t is RaceType => RACE_TYPES.includes(t)) : []);
+  const folded = foldVietnamese(name);
+  for (const [pattern, type] of TYPE_FROM_NAME) if (pattern.test(folded)) types.add(type);
+  // A city trail is its own format; the model tends to add plain trail_run as well.
+  if (types.has("city_trail")) types.delete("trail_run");
+  if (types.size === 0) types.add("other");
+  return RACE_TYPES.filter((t) => types.has(t));
 }
 
 function str(v: unknown): string | null {

@@ -4,14 +4,14 @@ import { isCandidate, isRefreshDue, vietnamDate, type Check } from "../scripts/l
 import { normalizeDistance, normalizeExtracted } from "../scripts/lib/extraction.ts";
 import { resolvePlace } from "../scripts/lib/places.ts";
 import { INDEX_PATH, RaceSchema, racePath, type IndexEntry, type Race } from "../scripts/lib/schema.ts";
-import { raceSlug } from "../scripts/lib/slug.ts";
 import { formatCommitMessage, planSync, type RaceStore, type SyncInput } from "../scripts/sync.ts";
 
 const URL_A = "https://actiup.net/vi/event/tay-ho-half-marathon-2026";
 const URL_B = "https://actiup.net/vi/event/da-lat-ultra-trail-2026";
 
 const extractedA = {
-  sport: "running",
+  pageKind: "sport",
+  types: ["road_run"],
   name: "Tay Ho Half Marathon 2026",
   date: "2026-11-15",
   distances: ["21.1K", "5 km", "10km"],
@@ -26,6 +26,11 @@ const extractedA = {
   foreignerEligible: true,
 };
 
+// Deterministic UUIDs so tests can name files; every planSync call gets fresh ones.
+let idCounter = 0;
+const nextId = () => `00000000-0000-4000-8000-${String(++idCounter).padStart(12, "0")}`;
+const plan = (store: RaceStore, inputs: SyncInput[], now?: string) => planSync(store, inputs, now, nextId);
+
 function memoryStore(files: Record<string, string> = {}): RaceStore & { files: Record<string, string> } {
   return { files, read: async (p) => files[p] ?? null };
 }
@@ -34,19 +39,23 @@ function input(url: string, extracted: Record<string, unknown>, checkedAt = "202
   return { url, extracted, checkedAt };
 }
 
-async function seeded(): Promise<RaceStore & { files: Record<string, string> }> {
+async function seeded(): Promise<RaceStore & { files: Record<string, string>; id: string }> {
   const store = memoryStore();
-  const plan = await planSync(store, [input(URL_A, extractedA, "2026-09-20T08:00:00.000Z")], "2026-09-20T08:00:05.000Z");
-  Object.assign(store.files, plan.files);
-  return store;
+  const first = await plan(store, [input(URL_A, extractedA, "2026-09-20T08:00:00.000Z")], "2026-09-20T08:00:05.000Z");
+  Object.assign(store.files, first.files);
+  return { ...store, id: first.changes[0]!.id };
 }
 
 describe("planSync", () => {
   it("creates a new race file and index entry", async () => {
-    const plan = await planSync(memoryStore(), [input(URL_A, extractedA)], "2026-09-23T10:00:05.000Z");
-    assert.deepEqual(plan.changes, [{ id: "tay-ho-half-marathon-2026", kind: "added", fields: [] }]);
+    const p = await plan(memoryStore(), [input(URL_A, extractedA)], "2026-09-23T10:00:05.000Z");
+    const id = p.changes[0]!.id;
+    assert.match(id, /^[0-9a-f-]{36}$/);
+    assert.deepEqual(p.changes, [{ id, slug: "tay-ho-half-marathon-2026", kind: "added", fields: [] }]);
 
-    const race = RaceSchema.parse(JSON.parse(plan.files[racePath("tay-ho-half-marathon-2026")]!));
+    const race = RaceSchema.parse(JSON.parse(p.files[racePath(id)]!));
+    assert.equal(race.slug, "tay-ho-half-marathon-2026");
+    assert.deepEqual(race.types, ["road_run"]);
     assert.deepEqual(race.distances, ["5km", "10km", "21km"]);
     assert.deepEqual(race.location, { venue: "Tay Ho Lake", city: "Hanoi", region: "north" });
     assert.equal(race.confidence, "single-sourced");
@@ -55,77 +64,94 @@ describe("planSync", () => {
     assert.deepEqual(race.sources[0]!.rawExtracted, extractedA);
     assert.equal(race.createdAt, race.updatedAt);
 
-    const index = JSON.parse(plan.files[INDEX_PATH]!) as IndexEntry[];
-    assert.deepEqual(index, [{ id: "tay-ho-half-marathon-2026", lastModified: "2026-09-23T10:00:05.000Z", sourceUrls: [URL_A] }]);
+    const index = JSON.parse(p.files[INDEX_PATH]!) as IndexEntry[];
+    assert.deepEqual(index, [{ id, slug: "tay-ho-half-marathon-2026", lastModified: "2026-09-23T10:00:05.000Z", sourceUrls: [URL_A] }]);
   });
 
   it("writes nothing when the extraction is unchanged", async () => {
     const store = await seeded();
-    const plan = await planSync(store, [input(URL_A, { ...extractedA, distances: ["5K", "10 km", "Half Marathon"] })]);
-    assert.deepEqual(plan.files, {});
-    assert.deepEqual(plan.changes, []);
+    const p = await plan(store, [input(URL_A, { ...extractedA, distances: ["5K", "10 km", "Half Marathon"] })]);
+    assert.deepEqual(p.files, {});
+    assert.deepEqual(p.changes, []);
   });
 
   it("updates changed fields and bumps updatedAt + source lastChangedAt", async () => {
     const store = await seeded();
-    const plan = await planSync(
+    const p = await plan(
       store,
       [input(URL_A, { ...extractedA, registrationStatus: "sold_out", priceMax: 900000 }, "2026-09-23T10:00:00.000Z")],
       "2026-09-23T10:00:05.000Z",
     );
-    assert.deepEqual(plan.changes, [{ id: "tay-ho-half-marathon-2026", kind: "updated", fields: ["priceMax", "registrationStatus"] }]);
-    const race = JSON.parse(plan.files[racePath("tay-ho-half-marathon-2026")]!) as Race;
+    assert.deepEqual(p.changes, [{ id: store.id, slug: "tay-ho-half-marathon-2026", kind: "updated", fields: ["priceMax", "registrationStatus"] }]);
+    const race = JSON.parse(p.files[racePath(store.id)]!) as Race;
     assert.equal(race.createdAt, "2026-09-20T08:00:05.000Z");
     assert.equal(race.updatedAt, "2026-09-23T10:00:05.000Z");
     assert.equal(race.sources[0]!.lastChangedAt, "2026-09-23T10:00:00.000Z");
     assert.equal(race.registrationStatus, "sold_out");
-    assert.match(formatCommitMessage(plan), /^data: 1 updated\n\n~ tay-ho-half-marathon-2026: priceMax, registrationStatus$/);
+    assert.match(formatCommitMessage(p), /^data: 1 updated\n\n~ tay-ho-half-marathon-2026: priceMax, registrationStatus$/);
   });
 
   it("ignores rewording of venue and organizer, but not a real move", async () => {
     const store = await seeded();
-    const reworded = await planSync(store, [input(URL_A, { ...extractedA, venue: "Tay Ho Lake area", organizer: "Tay Ho Sports JSC" })]);
+    const reworded = await plan(store, [input(URL_A, { ...extractedA, venue: "Tay Ho Lake area", organizer: "Tay Ho Sports JSC" })]);
     assert.deepEqual(reworded.files, {});
-    const withAddress = await planSync(store, [input(URL_A, { ...extractedA, venue: "Tay Ho Lake, Phường Tây Hồ, TP. Hà Nội" })]);
+    const withAddress = await plan(store, [input(URL_A, { ...extractedA, venue: "Tay Ho Lake, Phường Tây Hồ, TP. Hà Nội" })]);
     assert.deepEqual(withAddress.files, {});
-    const moved = await planSync(store, [input(URL_A, { ...extractedA, venue: "My Dinh Stadium" })]);
+    const moved = await plan(store, [input(URL_A, { ...extractedA, venue: "My Dinh Stadium" })]);
     assert.deepEqual(moved.changes[0]!.fields, ["location"]);
   });
 
-  it("keeps the id when a race is renamed", async () => {
+  it("keeps the id and slug when a race is renamed", async () => {
     const store = await seeded();
-    const plan = await planSync(store, [input(URL_A, { ...extractedA, name: "VPBank Tay Ho Half Marathon 2026" })]);
-    assert.deepEqual(Object.keys(plan.files).sort(), [INDEX_PATH, racePath("tay-ho-half-marathon-2026")]);
-    assert.deepEqual(plan.changes[0]!.fields, ["name"]);
+    const p = await plan(store, [input(URL_A, { ...extractedA, name: "VPBank Tay Ho Half Marathon 2026" })]);
+    assert.deepEqual(Object.keys(p.files).sort(), [INDEX_PATH, racePath(store.id)]);
+    assert.deepEqual(p.changes[0]!.fields, ["name"]);
+    assert.equal(p.changes[0]!.slug, "tay-ho-half-marathon-2026");
   });
 
-  it("batches several races into one plan and suffixes colliding slugs", async () => {
+  it("keeps a hand-edited slug on refresh", async () => {
     const store = await seeded();
-    const plan = await planSync(store, [
-      input(URL_B, { sport: "running", name: "Da Lat Ultra Trail", date: "2026-06-20", city: "Đà Lạt", distances: ["70km", "42km"] }),
-      input("https://actiup.net/vi/event/tay-ho-hm-other", extractedA),
+    const path = racePath(store.id);
+    const race = JSON.parse(store.files[path]!) as Race;
+    store.files[path] = JSON.stringify({ ...race, slug: "tay-ho-hm" });
+    const p = await plan(store, [input(URL_A, { ...extractedA, registrationStatus: "sold_out" })]);
+    assert.equal((JSON.parse(p.files[path]!) as Race).slug, "tay-ho-hm");
+  });
+
+  it("batches several races into one plan and deduplicates URLs", async () => {
+    const store = await seeded();
+    const p = await plan(store, [
+      input(URL_B, { pageKind: "sport", name: "Da Lat Ultra Trail", date: "2026-06-20", city: "Đà Lạt", distances: ["70km", "42km"] }),
+      input(`${URL_A}?ref=x#y`, extractedA), // same page as the seeded race, unchanged
+      input("https://actiup.net/vi/event/vung-tau-trail", { ...extractedA, name: "Vung Tau Trail" }),
     ]);
-    assert.deepEqual(
-      plan.changes.map((c) => c.id),
-      ["da-lat-ultra-trail-2026", "tay-ho-half-marathon-2026-2"],
-    );
-    const index = JSON.parse(plan.files[INDEX_PATH]!) as IndexEntry[];
-    assert.deepEqual(
-      index.map((e) => e.id),
-      ["da-lat-ultra-trail-2026", "tay-ho-half-marathon-2026", "tay-ho-half-marathon-2026-2"],
-    );
+    assert.deepEqual(p.changes.map((c) => [c.slug, c.kind]), [["da-lat-ultra-trail-2026", "added"], ["vung-tau-trail", "added"]]);
+    const index = JSON.parse(p.files[INDEX_PATH]!) as IndexEntry[];
+    assert.equal(new Set(index.map((e) => e.id)).size, 3);
+  });
+
+  it("suffixes a new race's slug when another race already uses it", async () => {
+    const store = await seeded();
+    const path = racePath(store.id);
+    const race = JSON.parse(store.files[path]!) as Race;
+    // The seeded race was hand-renamed to the slug the next new race would get.
+    store.files[path] = JSON.stringify({ ...race, slug: "da-lat-ultra-trail-2026" });
+    const index = JSON.parse(store.files[INDEX_PATH]!) as IndexEntry[];
+    store.files[INDEX_PATH] = JSON.stringify(index.map((e) => ({ ...e, slug: "da-lat-ultra-trail-2026" })));
+    const p = await plan(store, [input(URL_B, { pageKind: "sport", name: "Da Lat Ultra Trail", date: "2026-06-20" })]);
+    assert.equal(p.changes[0]!.slug, "da-lat-ultra-trail-2026-2");
   });
 
   it("skips non-event pages and unusable extractions", async () => {
-    const plan = await planSync(memoryStore(), [
+    const p = await plan(memoryStore(), [
       input("https://actiup.net/vi/events/sports", extractedA),
       input("https://actiup.net/vi/event/6ab0cd39c8f626a86b6342e8/tickets", extractedA),
       input("https://actiup.net/en/event/tay-ho-half-marathon-2026", extractedA),
-      input(URL_B, { sport: "cycling", name: "Cycling Tour", date: "2026-06-20" }),
-      input("https://actiup.net/vi/event/no-date", { sport: "running", name: "No Date Run" }),
+      input(URL_B, { pageKind: "non_sport", name: "Da Lat Music Night", date: "2026-06-20" }),
+      input("https://actiup.net/vi/event/no-date", { pageKind: "sport", name: "No Date Run" }),
     ]);
-    assert.deepEqual(plan.files, {});
-    assert.equal(plan.skipped.length, 5);
+    assert.deepEqual(p.files, {});
+    assert.equal(p.skipped.length, 5);
   });
 });
 
@@ -147,21 +173,28 @@ describe("normalization", () => {
     assert.deepEqual(resolvePlace("Atlantis"), { city: "Atlantis", region: null });
     const venue = "Quảng trường Văn Miếu, Phường Cao Lãnh, Tỉnh Đồng Tháp";
     for (const city of ["Cao Lãnh", "Đồng Tháp"]) {
-      const r = normalizeExtracted({ sport: "running", name: "X", date: "2026-10-09", city, venue });
+      const r = normalizeExtracted({ pageKind: "sport", name: "X", date: "2026-10-09", city, venue });
       assert.ok(r.ok && r.race.location.city === "Dong Thap" && r.race.location.region === "south", city);
     }
   });
 
-  it("rejects multisport events the model calls running", () => {
-    for (const name of ["Vietnam FesTRIval 2027", "2027 IRONKIDS Viet Nam in Da Nang", "IRONMAN 70.3 Đà Nẵng"]) {
-      assert.equal(normalizeExtracted({ sport: "running", name, date: "2027-03-21" }).ok, false, name);
-    }
-    assert.ok(normalizeExtracted({ sport: "running", name: "Tri Tôn Mountain Run", date: "2027-03-21" }).ok);
-    assert.ok(normalizeExtracted({ sport: "running", name: "Trail Running Tà Năng", date: "2027-03-21" }).ok);
+  it("keeps every sport and normalizes its types", () => {
+    const types = (raw: Record<string, unknown>) => {
+      const r = normalizeExtracted({ pageKind: "sport", date: "2027-03-21", ...raw });
+      assert.ok(r.ok);
+      return r.race.types;
+    };
+    assert.deepEqual(types({ name: "Vietnam FesTRIval 2027", types: ["aquathlon", "road_run"] }), ["road_run", "triathlon", "aquathlon"]);
+    assert.deepEqual(types({ name: "Sơn Trà City Trail 2026", types: ["trail_run"] }), ["city_trail"]);
+    assert.deepEqual(types({ name: "Vietnam MTB Series", types: ["mtb", "mtb", "bogus"] }), ["mtb"]);
+    assert.deepEqual(types({ name: "Open Water Swim", types: [] }), ["other"]);
+    assert.deepEqual(types({ name: "Tri Tôn Mountain Run", types: ["trail_run"] }), ["trail_run"]);
+    assert.equal(normalizeExtracted({ pageKind: "non_sport", name: "Music Night", date: "2027-03-21" }).ok, false);
+    assert.equal(normalizeExtracted({ pageKind: "none" }).ok, false);
   });
 
   it("parses DD/MM/YYYY dates and string prices", () => {
-    const r = normalizeExtracted({ sport: "running", name: "X", date: "5/1/2027", priceMin: "350.000đ", priceMax: "200000" });
+    const r = normalizeExtracted({ pageKind: "sport", name: "X", date: "5/1/2027", priceMin: "350.000đ", priceMax: "200000" });
     assert.ok(r.ok);
     assert.equal(r.race.date, "2027-01-05");
     assert.equal(r.race.priceMin, 200000);
@@ -169,10 +202,6 @@ describe("normalization", () => {
     assert.equal(r.race.registrationStatus, null);
   });
 
-  it("builds slugs from name and year", () => {
-    assert.equal(raceSlug("Tây Hồ Half Marathon", "2026-11-15"), "tay-ho-half-marathon-2026");
-    assert.equal(raceSlug("Tay Ho Half Marathon 2026", "2026-11-15"), "tay-ho-half-marathon-2026");
-  });
 });
 
 describe("check schedule", () => {

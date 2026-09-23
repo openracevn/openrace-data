@@ -6,6 +6,25 @@ export const INDEX_PATH = "data/index.json";
 export const REGIONS = ["north", "central", "south"] as const;
 export const REGISTRATION_STATUSES = ["open", "closing_soon", "sold_out", "closed"] as const;
 
+// Event formats, for filtering. A race can have several (e.g. a road 10K plus a
+// trail 21K). Distance classes (marathon, half, ultra) are not types: they follow
+// from `distances`. Adding values later is backwards compatible.
+export const RACE_TYPES = [
+  "road_run", //     road running: fun runs, 10K, half, marathon
+  "trail_run", //    trail / mountain running, including ultra trail
+  "city_trail", //   urban trail: stairs, parks, alleys through a city
+  "obstacle_run", // obstacle course race (OCR)
+  "triathlon", //    swim + bike + run
+  "duathlon", //     run + bike + run
+  "aquathlon", //    swim + run
+  "aquabike", //     swim + bike
+  "swimrun", //      alternating open-water swim and trail run legs
+  "swim", //         open-water or pool swimming
+  "road_cycle", //   road cycling: gran fondo, criterium, time trial
+  "mtb", //          mountain biking
+  "other", //        a sport event that fits none of the above
+] as const;
+
 // Only "single-sourced" is produced today. Multi-source reconciliation will add
 // values here (e.g. "multi-sourced", "conflicting"); adding enum members is
 // backwards compatible, so existing files never need migrating.
@@ -17,6 +36,8 @@ export const SOURCE_NAMES = ["actiup"] as const;
 const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "expected YYYY-MM-DD");
 const isoDateTime = z.iso.datetime();
 const slug = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, "expected kebab-case slug");
+// Permanent key: file name, index key, API key. Never derived from race data.
+const raceId = z.uuid();
 
 export const SourceSchema = z.object({
   name: z.enum(SOURCE_NAMES),
@@ -31,8 +52,12 @@ export const SourceSchema = z.object({
 // `null` means "unknown / not stated by any source", never "false" or "zero".
 export const RaceSchema = z
   .object({
-    id: slug,
+    id: raceId,
+    // URL slug for the frontend. Unique, and allowed to change (SEO); for now it's
+    // the source's own slug (ActiUp's /vi/event/<slug>). Never used as a key.
+    slug,
     name: z.string().min(1),
+    types: z.array(z.enum(RACE_TYPES)).min(1),
     date: isoDate,
     distances: z.array(z.string().min(1)),
     location: z.object({
@@ -58,10 +83,11 @@ export const RaceSchema = z
   });
 
 export const IndexEntrySchema = z.object({
-  id: slug,
+  id: raceId,
+  slug,
   lastModified: isoDateTime,
-  // Lets ingestion map a source URL to its existing slug without reading every
-  // race file, so a renamed race keeps its id instead of forking a new file.
+  // Lets ingestion map a source URL to its race without reading every race file,
+  // so a renamed race keeps its id instead of forking a new file.
   sourceUrls: z.array(z.url()),
 });
 
@@ -69,6 +95,7 @@ export const IndexSchema = z.array(IndexEntrySchema);
 
 export type Region = (typeof REGIONS)[number];
 export type RegistrationStatus = (typeof REGISTRATION_STATUSES)[number];
+export type RaceType = (typeof RACE_TYPES)[number];
 export type SourceName = (typeof SOURCE_NAMES)[number];
 export type RaceSource = z.infer<typeof SourceSchema>;
 export type Race = z.infer<typeof RaceSchema>;
@@ -78,6 +105,7 @@ export type IndexEntry = z.infer<typeof IndexEntrySchema>;
 // summaries and Discord notifications are all computed over these.
 export const CANONICAL_FIELDS = [
   "name",
+  "types",
   "date",
   "distances",
   "location",

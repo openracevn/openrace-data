@@ -12,7 +12,7 @@ import { RACES_DIR, type CanonicalField, type Race } from "./lib/schema.ts";
 
 const EMPTY_TREE = "4b825dc642cb6eb9a060e54bf8d69288fbee4904";
 const DISCORD_LIMIT = 2000;
-const SHOW_VALUES: CanonicalField[] = ["date", "priceMin", "priceMax", "registrationStatus", "foreignerEligible"];
+const SHOW_VALUES: CanonicalField[] = ["types", "date", "priceMin", "priceMax", "registrationStatus", "foreignerEligible"];
 
 const webhook = env("DISCORD_WEBHOOK_URL");
 if (!webhook) {
@@ -42,19 +42,20 @@ for (const line of diff) {
   const id = path.slice(RACES_DIR.length + 1, -".json".length);
   if (status === "A") {
     const r = readRace(after, path);
-    added.push(`➕ **${r?.name ?? id}** (${[r?.date, r?.location.city].filter(Boolean).join(", ")}) \`${id}\``);
+    added.push(`➕ **${r?.name ?? id}** (${[r?.date, r?.location.city].filter(Boolean).join(", ")}) \`${r?.slug ?? id}\``);
   } else if (status === "D") {
-    removed.push(`➖ \`${id}\``);
+    const r = readRace(before, path);
+    removed.push(`➖ ${r ? `**${r.name}** \`${r.slug}\`` : `\`${id}\``}`);
   } else {
     const a = readRace(before, path);
     const b = readRace(after, path);
     if (!a || !b) {
-      updated.push(`✏️ \`${id}\` (unparseable)`);
+      updated.push(`✏️ \`${b?.slug ?? id}\` (unparseable)`);
       continue;
     }
-    const fields = changedFields(a, b);
-    const detail = fields.map((f) => (SHOW_VALUES.includes(f) ? `${f} ${fmt(a[f])} → ${fmt(b[f])}` : f));
-    updated.push(`✏️ **${b.name}** \`${id}\`: ${detail.join(", ") || "sources/metadata only"}`);
+    const detail = changedFields(a, b).map((f) => (SHOW_VALUES.includes(f) ? `${f} ${fmt(a[f])} → ${fmt(b[f])}` : f));
+    if (a.slug !== b.slug) detail.unshift(`slug ${a.slug} → ${b.slug}`);
+    updated.push(`✏️ **${b.name}** \`${b.slug}\`: ${detail.join(", ") || "sources/metadata only"}`);
   }
 }
 

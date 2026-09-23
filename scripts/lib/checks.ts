@@ -5,7 +5,7 @@
  *
  * - New pages: scraped the first time they're discovered.
  * - Known races: re-checked every REFRESH_DAYS until race day, never after.
- * - Pages that aren't running races (cycling, triathlon, ...): never re-checked
+ * - Pages that aren't sports events (concerts, tours, hotels, ...): never re-checked
  *   automatically. Anything else that failed (flaky render, no date yet, scrape
  *   error) is retried after RETRY_DAYS.
  */
@@ -20,7 +20,7 @@ export const CheckSchema = z.object({
   lastCheckedAt: z.iso.datetime(),
   status: z.enum(["ok", "rejected", "error"]),
   reason: z.string().optional(),
-  /** Rejected for what the page is (not a running race), not for a transient problem. */
+  /** Rejected for what the page is (not a sports event), not for a transient problem. */
   permanent: z.boolean().optional(),
 });
 export const ChecksSchema = z.record(z.url(), CheckSchema);
