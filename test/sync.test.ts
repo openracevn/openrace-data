@@ -4,6 +4,7 @@ import { splitMessages } from "../scripts/lib/changes.ts";
 import type { StoredExtraction } from "../scripts/lib/reconcile.ts";
 import { INDEX_PATH, ORGANIZERS_PATH, RaceSchema, SERIES_PATH, racePath, type IndexEntry, type Race } from "../scripts/lib/schema.ts";
 import { parseSites, type SitesConfig } from "../scripts/lib/sites.ts";
+import { seriesName } from "../scripts/lib/series.ts";
 import { formatCommitMessage, nameSimilarity, planEdit, planRename, planSync, type RaceStore, type SyncInput } from "../scripts/sync.ts";
 
 const config: SitesConfig = parseSites(`
@@ -233,6 +234,50 @@ describe("planSync", () => {
     assert.equal(race.organizerId, null);
     assert.equal(race.organizer, long.trim().replace(/\s+/g, " "));
     assert.equal(p.files[ORGANIZERS_PATH], undefined);
+  });
+});
+
+describe("series from slugs", () => {
+  const edition = (year: number, slug = "dalat-ultra-trail") =>
+    actiupInput({ facts: { name: `Dalat Ultra Trail ${year}`, date: `${year}-03-20`, venue: "Thung Lũng Tình Yêu", organizer: "Vietnam MTB Series" } }, `https://actiup.net/vi/event/${slug}-${year}`);
+
+  it("groups editions in different years, and gives earlier editions the series when a new one appears", async () => {
+    const store = memoryStore();
+    apply(store, (await plan(store, [edition(2024)])).files);
+    assert.equal(readRace(store, "dalat-ultra-trail-2024", "2024-03-20").seriesId, null);
+    const p = await plan(store, [edition(2025)]);
+    apply(store, p.files);
+    assert.deepEqual(p.changes.map((c) => [c.slug, c.kind, c.fields]), [
+      ["dalat-ultra-trail-2025", "added", []],
+      ["dalat-ultra-trail-2024", "updated", ["seriesId"]],
+    ]);
+    assert.equal(readRace(store, "dalat-ultra-trail-2024", "2024-03-20").seriesId, "dalat-ultra-trail");
+    assert.equal(readRace(store, "dalat-ultra-trail-2025", "2025-03-20").seriesId, "dalat-ultra-trail");
+    assert.deepEqual(JSON.parse(store.files[SERIES_PATH]!), [{ id: "dalat-ultra-trail", name: "Dalat Ultra Trail", website: null, organizerId: null }]);
+    assert.equal(index(store).find((e) => e.slug === "dalat-ultra-trail-2024")!.seriesId, "dalat-ultra-trail");
+    // Nothing more to do on the next run.
+    assert.equal((await plan(store, [])).changes.length, 0);
+  });
+
+  it("names a series after its latest edition, without what changes each year", () => {
+    assert.equal(seriesName("Giải Aqua Warriors Vân Đồn năm 2026"), "Giải Aqua Warriors Vân Đồn");
+    assert.equal(seriesName("GIẢI VÔ ĐỊCH QUỐC GIA MARATHON BÁO TIỀN PHONG LẦN THỨ 67 NĂM 2026"), "GIẢI VÔ ĐỊCH QUỐC GIA MARATHON BÁO TIỀN PHONG");
+    assert.equal(seriesName("Dalat Ultra Trail 2026"), "Dalat Ultra Trail");
+  });
+
+  it("doesn't make a series of two events in the same year", async () => {
+    const p = await plan(memoryStore(), [edition(2026), actiupInput({ facts: { name: "Dalat Ultra Trail 2026 (2)", date: "2026-09-20" } }, "https://actiup.net/vi/event/dalat-ultra-trail-2026-2")]);
+    assert.ok(p.changes.every((c) => c.kind === "added"));
+    assert.equal(p.files[SERIES_PATH], undefined);
+  });
+
+  it("keeps the series a site names", async () => {
+    const store = memoryStore();
+    apply(store, (await plan(store, [officialInput()])).files);
+    const nextYear = { ...officialPage, name: "HCMC Marathon 2028", date: "2028-01-16", prices: [] };
+    apply(store, (await plan(store, [officialInput(official(nextYear), "2027-06-01T10:00:00.000Z")], "2027-06-01T10:00:05.000Z")).files);
+    assert.equal(readRace(store, "hcmc-marathon-2027").seriesId, "hcmc-marathon");
+    assert.equal(readRace(store, "hcmc-marathon-2028", "2028-01-16").seriesId, "hcmc-marathon");
   });
 });
 

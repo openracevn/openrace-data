@@ -80,7 +80,7 @@ if (!index.success) {
       errors.push(`${INDEX_PATH}: ${entry.id} has no race file`);
       continue;
     }
-    if (entry.slug !== race.slug || entry.name !== race.name || entry.date !== race.date || entry.lastModified !== race.updatedAt) {
+    if (entry.slug !== race.slug || entry.name !== race.name || entry.date !== race.date || entry.lastModified !== race.updatedAt || entry.seriesId !== race.seriesId) {
       errors.push(`${INDEX_PATH}: ${entry.id} is out of date with ${entry.file}`);
     }
     if (entry.file !== raceFileName(race.slug, race.date)) errors.push(`${INDEX_PATH}: ${entry.id} file should be ${raceFileName(race.slug, race.date)}`);

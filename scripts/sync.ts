@@ -28,6 +28,7 @@ import {
   type Series,
   type SourceRole,
 } from "./lib/schema.ts";
+import { inferSeries } from "./lib/series.ts";
 import { siteForUrl, type SitesConfig } from "./lib/sites.ts";
 import { canonicalSourceUrl, slugFromName } from "./lib/slug.ts";
 import { foldVietnamese } from "./lib/text.ts";
@@ -168,6 +169,16 @@ export async function planSync(
   const changes: RaceChange[] = [];
   const nextIndex = new Map(indexById);
 
+  // Series across all races (known and new), from their slugs; see lib/series.ts.
+  const inferred = inferSeries([
+    ...index.filter((e) => !groups.has(e.id)).map((e) => ({ id: e.id, slug: e.slug, name: e.name, date: e.date })),
+    ...[...groups.values()].map((g) => {
+      const last = g.items.at(-1)!;
+      return { id: g.id, slug: indexById.get(g.id)?.slug ?? g.newSlug!, name: last.name, date: last.date };
+    }),
+  ]);
+  const seriesRefs: StoredExtraction[] = [];
+
   for (const { id, newSlug, items } of groups.values()) {
     const prev = await loadRace(id);
     const slug = prev?.slug ?? newSlug!;
@@ -189,7 +200,7 @@ export async function planSync(
       sources = prevSource ? sources.map((s) => (s === prevSource ? nextSource : s)) : [...sources, nextSource];
     }
 
-    const composed = composeRace({ id, slug, prev, sources, overrides: prev?.overrides ?? {}, now, config, stabilizeAgainstPrev: true });
+    const composed = composeRace({ id, slug, prev, sources, overrides: prev?.overrides ?? {}, now, config, stabilizeAgainstPrev: true, series: inferred.get(id) });
     if ("error" in composed) {
       for (const { input } of items) skipped.push({ url: input.url, reason: composed.error });
       continue;
@@ -215,13 +226,31 @@ export async function planSync(
       ...(newFlags.length > 0 && { newFlags }),
       ...(shadowed.length > 0 && { shadowed }),
     });
+    seriesRefs.push(...seriesEntity(record, inferred.get(id)));
+  }
+
+  // Earlier editions join a series when a new edition appears (or leave one).
+  for (const entry of index) {
+    if (groups.has(entry.id) || (inferred.get(entry.id)?.id ?? null) === entry.seriesId) continue;
+    const prev = (await loadRace(entry.id))!;
+    const composed = composeRace({ id: entry.id, slug: prev.slug, prev, sources: prev.sources, overrides: prev.overrides, now, config, stabilizeAgainstPrev: true, series: inferred.get(entry.id) });
+    if ("error" in composed || composed.fields.length === 0) continue; // a site's own series wins
+    if (writeRace(files, nextIndex, composed.record)) continue;
+    changes.push({ id: entry.id, slug: prev.slug, kind: "updated", fields: composed.fields });
+    seriesRefs.push(...seriesEntity(composed.record, inferred.get(entry.id)));
   }
 
   if (changes.length > 0) {
     files[INDEX_PATH] = serializeIndex(nextIndex);
-    Object.assign(files, await plannedEntities(store, [...groups.values()].flatMap((g) => g.items.map((i) => i.input.extracted))));
+    Object.assign(files, await plannedEntities(store, [...[...groups.values()].flatMap((g) => g.items.map((i) => i.input.extracted)), ...seriesRefs]));
   }
   return { files, changes, skipped };
+}
+
+/** The series entry for a race whose series was inferred (not named by its site), with the race's organizer. */
+function seriesEntity(record: Race, inferred: EntityRef | undefined): StoredExtraction[] {
+  if (!inferred || record.seriesId !== inferred.id) return [];
+  return [{ series: inferred, ...(record.organizerId && record.organizer && { organizer: { id: record.organizerId, name: record.organizer } }) }];
 }
 
 /**
@@ -293,13 +322,16 @@ type ComposeArgs = {
   config: SitesConfig;
   /** Keep the previous wording of venue/city/organizer when a re-read only rewords it. */
   stabilizeAgainstPrev: boolean;
+  /** The series found from the races' slugs; used when no source names one. */
+  series?: EntityRef;
 };
 
 /** A race record from its sources, with OpenRace overrides on top, validated. */
 function composeRace(a: ComposeArgs): { record: Race; fields: CanonicalField[] } | { error: string } {
   const reconciled = reconcile(a.sources, a.config);
   if ("error" in reconciled) return { error: reconciled.error };
-  const derived = a.prev && a.stabilizeAgainstPrev ? stabilize(a.prev, reconciled.fields) : reconciled.fields;
+  const fields = { ...reconciled.fields, seriesId: reconciled.fields.seriesId ?? a.series?.id ?? null };
+  const derived = a.prev && a.stabilizeAgainstPrev ? stabilize(a.prev, fields) : fields;
   const canonical = applyOverrides(derived, a.overrides);
   const record: Race = {
     id: a.id,
@@ -337,6 +369,7 @@ function indexEntry(record: Race): IndexEntry {
     date: record.date,
     lastModified: record.updatedAt,
     file: raceFileName(record.slug, record.date),
+    seriesId: record.seriesId,
     sourceUrls: [...new Set(record.sources.map((s) => s.url))].sort(),
     linkUrls: [...new Set(record.links.filter((l) => l.kind === "official" || l.kind === "seller").map((l) => l.url))].sort(),
   };
@@ -361,7 +394,8 @@ export async function planEdit(store: RaceStore, race: string, edits: readonly E
     else throw new Error(`${prev.slug} has no override on ${edit.field}`);
   }
 
-  const composed = composeRace({ id: prev.id, slug: prev.slug, prev, sources: prev.sources, overrides, now, config, stabilizeAgainstPrev: false });
+  const series = inferSeries(index.map((e) => ({ id: e.id, slug: e.slug, name: e.name, date: e.date }))).get(prev.id);
+  const composed = composeRace({ id: prev.id, slug: prev.slug, prev, sources: prev.sources, overrides, now, config, stabilizeAgainstPrev: false, series });
   if ("error" in composed) throw new Error(composed.error);
   const { record, fields } = composed;
   if (deepEqual(record.overrides, prev.overrides) && fields.length === 0) return { files: {}, changes: [], skipped: [] };

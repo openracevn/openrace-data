@@ -32,6 +32,19 @@
         "type": "string",
         "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-\\d{4}\\.json$"
       },
+      "seriesId": {
+        "default": null,
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 120,
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
       "sourceUrls": {
         "type": "array",
         "items": {
@@ -54,6 +67,7 @@
       "date",
       "lastModified",
       "file",
+      "seriesId",
       "sourceUrls",
       "linkUrls"
     ],

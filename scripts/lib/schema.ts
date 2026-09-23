@@ -234,6 +234,8 @@ export const IndexEntrySchema = z.object({
   lastModified: isoDateTime,
   // The race's file in data/races (raceFileName), so readers don't need the naming rule.
   file: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*-\d{4}\.json$/, "expected <slug>-<year>.json"),
+  // The race's series, so series can be worked out without reading every race file.
+  seriesId: slug.nullable().default(null),
   // Lets ingestion map a source URL to its race without reading every race file,
   // so a renamed race keeps its id instead of forking a new file. One URL can
   // belong to several races: an official site serves a new edition every year.
