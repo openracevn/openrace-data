@@ -224,6 +224,16 @@ describe("planSync", () => {
     const p = await plan(store, [actiupInput(actiup({ date: "2027-01-16", name: "HCMC Marathon 2027" }))]);
     assert.match(formatCommitMessage(p), /~ hcmc-marathon-2027: \+actiup, .*⚠️ sources disagree on race day/);
   });
+
+  it("keeps a sentence-long organizer as text, without an organizer entry", async () => {
+    const long = `Đơn vị chỉ đạo: UBND Tỉnh Đồng Tháp – Đơn vị tổ chức: ${"Sở Văn hóa, Thể thao và Du lịch ".repeat(6)}`;
+    const extracted = { ...actiup({ organizer: long }), organizer: { id: "don-vi-chi-dao", name: long } };
+    const p = await plan(memoryStore(), [actiupInput(extracted)]);
+    const race = RaceSchema.parse(JSON.parse(p.files[racePath({ slug: "hcmc-marathon-2027", date: "2027-01-17" })]!));
+    assert.equal(race.organizerId, null);
+    assert.equal(race.organizer, long.trim().replace(/\s+/g, " "));
+    assert.equal(p.files[ORGANIZERS_PATH], undefined);
+  });
 });
 
 describe("OpenRace overrides and renames", () => {

@@ -11,6 +11,16 @@ export type EntityRef = { id: string; name: string; website?: string };
 export type SourceHints = { series?: EntityRef; organizer?: EntityRef };
 export type StoredExtraction = SourceExtraction & SourceHints;
 
+/**
+ * A usable series/organizer: a slug id and a name of at most 200 characters. Sites
+ * sometimes put a whole sentence in the organizer field ("Đơn vị chỉ đạo: ... –
+ * Đơn vị tổ chức: ..."); that stays the race's organizer text, not an entity.
+ */
+export function isEntityRef(h: unknown): h is EntityRef {
+  const r = h as EntityRef | undefined;
+  return typeof r?.id === "string" && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(r.id) && r.id.length <= 120 && typeof r.name === "string" && r.name.length > 0 && r.name.length <= 200;
+}
+
 export type Reconciled = { fields: CanonicalRace; confidence: Race["confidence"]; flags: string[] };
 
 // Facts that should be the same everywhere come from the race's own site first.
@@ -45,8 +55,7 @@ export function reconcile(sources: readonly RaceSource[], config: SitesConfig): 
     return null;
   };
   const withLocation = usable.find(({ facts }) => facts.venue !== null || facts.city !== null)?.facts;
-  const hints = (key: keyof SourceHints) =>
-    ranked.map((s) => (s.extracted as StoredExtraction)[key]).find((h): h is EntityRef => typeof h?.id === "string") ?? null;
+  const hints = (key: keyof SourceHints) => ranked.map((s) => (s.extracted as StoredExtraction)[key]).find(isEntityRef) ?? null;
 
   const prices: PriceTier[] = usable.flatMap(({ source, facts }) => facts.prices.map((t) => ({ ...t, site: source.site })));
   const { registrations, links } = relatedUrls(ranked, config);

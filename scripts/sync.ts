@@ -7,7 +7,7 @@
 import { changedFields, deepEqual, stabilize } from "./lib/diff.ts";
 import { GitHubRepo, isNotFastForward, type GitHubTarget } from "./lib/github.ts";
 import { normalizeExtraction } from "./lib/extraction.ts";
-import { applyOverrides, reconcile, type EntityRef, type StoredExtraction } from "./lib/reconcile.ts";
+import { applyOverrides, isEntityRef, reconcile, type EntityRef, type StoredExtraction } from "./lib/reconcile.ts";
 import {
   INDEX_PATH,
   IndexSchema,
@@ -233,7 +233,7 @@ async function plannedEntities(store: RaceStore, extractions: StoredExtraction[]
   const organizers = OrganizerListSchema.parse(JSON.parse((await store.read(ORGANIZERS_PATH)) ?? "[]"));
   const out: Record<string, string> = {};
   const add = <T extends { id: string }>(list: T[], ref: EntityRef | undefined, make: (r: EntityRef) => T): boolean => {
-    if (!ref || list.some((e) => e.id === ref.id)) return false;
+    if (!isEntityRef(ref) || list.some((e) => e.id === ref.id)) return false;
     list.push(make(ref));
     return true;
   };
@@ -242,7 +242,8 @@ async function plannedEntities(store: RaceStore, extractions: StoredExtraction[]
   for (const x of extractions) {
     organizersChanged = add<Organizer>(organizers, x.organizer, (r) => ({ id: r.id, name: r.name, website: r.website ?? null })) || organizersChanged;
     seriesChanged =
-      add<Series>(series, x.series, (r) => ({ id: r.id, name: r.name, website: r.website ?? null, organizerId: x.organizer?.id ?? null })) || seriesChanged;
+      add<Series>(series, x.series, (r) => ({ id: r.id, name: r.name, website: r.website ?? null, organizerId: isEntityRef(x.organizer) ? x.organizer.id : null })) ||
+      seriesChanged;
   }
   const byId = (a: { id: string }, b: { id: string }) => a.id.localeCompare(b.id);
   if (seriesChanged) out[SERIES_PATH] = serialize(series.sort(byId));
