@@ -27,7 +27,8 @@
 
 - [x] `OPENRACE_BOT_TOKEN` Actions secret set.
 - [x] First real runs, checker commits triggering `main.yml`, and Discord messages (2026-09-23).
-- [ ] `SYNC_WEBHOOK_URL` and `SYNC_SECRET`, once openrace-api is deployed. `notify-sync` already sends the header and loops until the API reports `remaining: 0` (2026-09-23).
+- [x] `SYNC_WEBHOOK_URL` and `SYNC_SECRET` set; openrace-api is deployed at `https://openrace-api.bmp.workers.dev` (2026-09-23).
+- [ ] openrace-api still needs its own `GITHUB_TOKEN` (read-only PAT on this repo). Until then its sync answers 502, so `notify-api` goes red on the next push that touches `data/`.
 
 ## Known gaps
 

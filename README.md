@@ -155,7 +155,7 @@ Repo secrets (Settings → Secrets and variables → Actions):
 | `FIRECRAWL_API_KEY` | Firecrawl API key |
 | `OPENRACE_BOT_TOKEN` | Fine-grained PAT with **Contents: read and write** on this repo only. It must not be the built-in `GITHUB_TOKEN`: pushes made with that token don't trigger `main.yml`, so validation and Discord would be skipped |
 | `DISCORD_WEBHOOK_URL` | Discord channel webhook (optional) |
-| `SYNC_WEBHOOK_URL` | openrace-api resync endpoint, `https://<api host>/internal/sync` (optional; leave unset until the API is deployed) |
+| `SYNC_WEBHOOK_URL` | openrace-api resync endpoint, currently `https://openrace-api.bmp.workers.dev/internal/sync` |
 | `SYNC_SECRET` | Shared secret sent as `X-Sync-Secret`; must equal openrace-api's `SYNC_SECRET`. Required once `SYNC_WEBHOOK_URL` is set |
 
 Run by hand: Actions → **Check races** → Run workflow → pick a mode (and a race for `race`). Tick *dry run* to see the plan without committing. Locally, `--dry-run --preview <dir>` also writes the planned files to `<dir>`.

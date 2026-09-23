@@ -8,8 +8,8 @@ Names and locations only. **Never write secret values into this repo.** Local va
 | `OPENRACE_BOT_TOKEN` (Actions) / `GITHUB_TOKEN` (local) | `check.ts`, `sync-cli.ts`, `renormalize.ts` (commits) | Actions secret; locally `GITHUB_TOKEN=$(gh auth token)` | **set** in Actions (2026-09-23) |
 | `GITHUB_OWNER` / `GITHUB_REPO` / `GITHUB_BRANCH` | `check.ts`, `sync-cli.ts` | derived from the repo in `check.yml`; `.env` locally | `openracevn` / `openrace-data` / `main` |
 | `DISCORD_WEBHOOK_URL` | `notify-discord` job | Actions secret, `.env` | **set** in both; messages confirmed in the channel |
-| `SYNC_WEBHOOK_URL` | `notify-api` job | Actions secret | not set on purpose: placeholder until openrace-api is deployed; the job logs "skipping" |
-| `SYNC_SECRET` | `notify-api` job (`X-Sync-Secret` header) | Actions secret; the same value as openrace-api's Worker secret `SYNC_SECRET` | **not set yet**; set it together with `SYNC_WEBHOOK_URL` (`notify-sync` exits 1 if the URL is set without it) |
+| `SYNC_WEBHOOK_URL` | `notify-api` job | Actions secret | **set** (2026-09-23): `https://openrace-api.bmp.workers.dev/internal/sync` |
+| `SYNC_SECRET` | `notify-api` job (`X-Sync-Secret` header) | Actions secret; the same value as openrace-api's Worker secret `SYNC_SECRET` | **set** (2026-09-23), random 32-byte hex, stored only in these two secrets. To rotate, set both from the same value (see openrace-api's `.claude/docs/local-dev.md`) |
 
 ## Notes
 
