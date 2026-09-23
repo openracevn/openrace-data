@@ -22,7 +22,7 @@
   "prices": [
     {
       "distance": null,
-      "tier": "Super Early Bird",
+      "tier": "70.3 - 56.50 · Super Early Bird",
       "kind": "super_early",
       "audience": null,
       "price": 3670000,
@@ -32,7 +32,7 @@
     },
     {
       "distance": null,
-      "tier": "Early Bird",
+      "tier": "70.3 - 56.50 · Early Bird",
       "kind": "early",
       "audience": null,
       "price": 4210000,
@@ -42,7 +42,7 @@
     },
     {
       "distance": null,
-      "tier": "Standard",
+      "tier": "70.3 - 56.50 · Standard",
       "kind": "regular",
       "audience": null,
       "price": 4750000,
@@ -52,8 +52,8 @@
     },
     {
       "distance": null,
-      "tier": "Super Early Bird",
-      "kind": "super_early",
+      "tier": "70.3 - 56.50 · TIẾP SỰC (RELAY TEAM) · Super Early Bird",
+      "kind": "group",
       "audience": null,
       "price": 4530000,
       "from": "2026-09-16",
@@ -62,8 +62,8 @@
     },
     {
       "distance": null,
-      "tier": "Early Bird",
-      "kind": "early",
+      "tier": "70.3 - 56.50 · TIẾP SỰC (RELAY TEAM) · Early Bird",
+      "kind": "group",
       "audience": null,
       "price": 5070000,
       "from": "2026-10-01",
@@ -72,8 +72,8 @@
     },
     {
       "distance": null,
-      "tier": "Standard",
-      "kind": "regular",
+      "tier": "70.3 - 56.50 · TIẾP SỰC (RELAY TEAM) · Standard",
+      "kind": "group",
       "audience": null,
       "price": 5830000,
       "from": "2026-12-01",
@@ -272,5 +272,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:52:52.246Z"
+  "updatedAt": "2026-09-23T18:57:28.842Z"
 }

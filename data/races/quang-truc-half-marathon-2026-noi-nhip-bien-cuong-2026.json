@@ -25,7 +25,7 @@
       "distance": "21km",
       "tier": "Early Bird",
       "kind": "early",
-      "audience": "resident",
+      "audience": null,
       "price": 649000,
       "from": "2026-09-09",
       "to": "2026-09-30",
@@ -35,7 +35,7 @@
       "distance": "10km",
       "tier": "Early Bird",
       "kind": "early",
-      "audience": "resident",
+      "audience": null,
       "price": 499000,
       "from": "2026-09-09",
       "to": "2026-09-30",
@@ -45,7 +45,7 @@
       "distance": "5km",
       "tier": "Early Bird",
       "kind": "early",
-      "audience": "resident",
+      "audience": null,
       "price": 399000,
       "from": "2026-09-09",
       "to": "2026-09-30",
@@ -55,168 +55,8 @@
       "distance": "1.5km",
       "tier": "Early Bird",
       "kind": "early",
-      "audience": "resident",
+      "audience": null,
       "price": 269000,
-      "from": "2026-09-09",
-      "to": "2026-09-30",
-      "site": "actiup"
-    },
-    {
-      "distance": "21km",
-      "tier": "Group 10-29",
-      "kind": "group",
-      "audience": "resident",
-      "price": 616050,
-      "from": "2026-09-09",
-      "to": "2026-09-30",
-      "site": "actiup"
-    },
-    {
-      "distance": "21km",
-      "tier": "Group 30-49",
-      "kind": "group",
-      "audience": "resident",
-      "price": 584100,
-      "from": "2026-09-09",
-      "to": "2026-09-30",
-      "site": "actiup"
-    },
-    {
-      "distance": "21km",
-      "tier": "Group 50-99",
-      "kind": "group",
-      "audience": "resident",
-      "price": 551500,
-      "from": "2026-09-09",
-      "to": "2026-09-30",
-      "site": "actiup"
-    },
-    {
-      "distance": "21km",
-      "tier": "Group 100",
-      "kind": "group",
-      "audience": "resident",
-      "price": 519200,
-      "from": "2026-09-09",
-      "to": "2026-09-30",
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "Group 10-29",
-      "kind": "group",
-      "audience": "resident",
-      "price": 474050,
-      "from": "2026-09-09",
-      "to": "2026-09-30",
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "Group 30-49",
-      "kind": "group",
-      "audience": "resident",
-      "price": 449100,
-      "from": "2026-09-09",
-      "to": "2026-09-30",
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "Group 50-99",
-      "kind": "group",
-      "audience": "resident",
-      "price": 424000,
-      "from": "2026-09-09",
-      "to": "2026-09-30",
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "Group 100",
-      "kind": "group",
-      "audience": "resident",
-      "price": 399200,
-      "from": "2026-09-09",
-      "to": "2026-09-30",
-      "site": "actiup"
-    },
-    {
-      "distance": "5km",
-      "tier": "Group 10-29",
-      "kind": "group",
-      "audience": "resident",
-      "price": 379050,
-      "from": "2026-09-09",
-      "to": "2026-09-30",
-      "site": "actiup"
-    },
-    {
-      "distance": "5km",
-      "tier": "Group 30-49",
-      "kind": "group",
-      "audience": "resident",
-      "price": 359100,
-      "from": "2026-09-09",
-      "to": "2026-09-30",
-      "site": "actiup"
-    },
-    {
-      "distance": "5km",
-      "tier": "Group 50-99",
-      "kind": "group",
-      "audience": "resident",
-      "price": 339000,
-      "from": "2026-09-09",
-      "to": "2026-09-30",
-      "site": "actiup"
-    },
-    {
-      "distance": "5km",
-      "tier": "Group 100",
-      "kind": "group",
-      "audience": "resident",
-      "price": 319200,
-      "from": "2026-09-09",
-      "to": "2026-09-30",
-      "site": "actiup"
-    },
-    {
-      "distance": "1.5km",
-      "tier": "Group 10-29",
-      "kind": "group",
-      "audience": "resident",
-      "price": 255050,
-      "from": "2026-09-09",
-      "to": "2026-09-30",
-      "site": "actiup"
-    },
-    {
-      "distance": "1.5km",
-      "tier": "Group 30-49",
-      "kind": "group",
-      "audience": "resident",
-      "price": 239100,
-      "from": "2026-09-09",
-      "to": "2026-09-30",
-      "site": "actiup"
-    },
-    {
-      "distance": "1.5km",
-      "tier": "Group 50-99",
-      "kind": "group",
-      "audience": "resident",
-      "price": 223000,
-      "from": "2026-09-09",
-      "to": "2026-09-30",
-      "site": "actiup"
-    },
-    {
-      "distance": "1.5km",
-      "tier": "Group 100",
-      "kind": "group",
-      "audience": "resident",
-      "price": 207200,
       "from": "2026-09-09",
       "to": "2026-09-30",
       "site": "actiup"
@@ -470,5 +310,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:52:52.246Z"
+  "updatedAt": "2026-09-23T18:57:28.842Z"
 }
