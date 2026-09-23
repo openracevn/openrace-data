@@ -1,0 +1,57 @@
+{
+  "id": "5f53b605-6f25-46fc-9663-44689aa41bd0",
+  "slug": "vietnam-festrival-2027",
+  "name": "Vietnam FesTRIval 2027",
+  "types": [
+    "triathlon"
+  ],
+  "date": "2027-03-21",
+  "distances": [
+    "56.5",
+    "70.3",
+    "Sprint"
+  ],
+  "location": {
+    "venue": "Bàu Trắng - Hòa Thắng - Lâm Đồng",
+    "city": "Lam Dong",
+    "region": "central"
+  },
+  "priceMin": 2590000,
+  "priceMax": null,
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrationUrl": "https://actiup.net/vi/event/6aa3b431d4ef308a8ab96e96/tickets",
+  "organizer": "CÔNG TY TNHH STOP AND SPORTS",
+  "foreignerEligible": null,
+  "sources": [
+    {
+      "name": "actiup",
+      "url": "https://actiup.net/vi/event/vietnam-festrival-2027",
+      "lastCheckedAt": "2026-09-23T12:38:41.947Z",
+      "lastChangedAt": "2026-09-23T12:38:41.947Z",
+      "rawExtracted": {
+        "pageKind": "sport",
+        "types": [
+          "triathlon"
+        ],
+        "name": "Vietnam FesTRIval 2027",
+        "date": "2027-03-21",
+        "distances": [
+          "70.3",
+          "56.5",
+          "Sprint"
+        ],
+        "venue": "Bàu Trắng - Hòa Thắng - Lâm Đồng",
+        "city": "Lâm Đồng",
+        "priceMin": 2590000,
+        "currency": "VND",
+        "registrationStatus": "open",
+        "registrationUrl": "https://actiup.net/vi/event/6aa3b431d4ef308a8ab96e96/tickets",
+        "organizer": "CÔNG TY TNHH STOP AND SPORTS"
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T12:38:41.948Z",
+  "updatedAt": "2026-09-23T12:38:41.948Z"
+}

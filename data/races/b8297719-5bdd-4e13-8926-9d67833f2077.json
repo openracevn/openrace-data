@@ -1,0 +1,59 @@
+{
+  "id": "b8297719-5bdd-4e13-8926-9d67833f2077",
+  "slug": "2026-international-run-for-a-green-da-lat",
+  "name": "Giải Chạy Quốc Tế Vì Đà Lạt Xanh 2026",
+  "types": [
+    "road_run"
+  ],
+  "date": "2026-11-21",
+  "distances": [
+    "1.5km",
+    "5km",
+    "10km",
+    "21km"
+  ],
+  "location": {
+    "venue": "Quảng trường Lâm Viên",
+    "city": "Da Lat",
+    "region": "central"
+  },
+  "priceMin": 200000,
+  "priceMax": null,
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrationUrl": "https://actiup.net/vi/event/6ab0cd39c8f626a86b6342e8/tickets",
+  "organizer": "DA HAE INTERNATIONAL CO., LTD",
+  "foreignerEligible": null,
+  "sources": [
+    {
+      "name": "actiup",
+      "url": "https://actiup.net/vi/event/2026-international-run-for-a-green-da-lat",
+      "lastCheckedAt": "2026-09-23T12:37:47.137Z",
+      "lastChangedAt": "2026-09-23T12:37:47.137Z",
+      "rawExtracted": {
+        "pageKind": "sport",
+        "types": [
+          "road_run"
+        ],
+        "name": "Giải Chạy Quốc Tế Vì Đà Lạt Xanh 2026",
+        "date": "2026-11-21",
+        "distances": [
+          "1.5km",
+          "5km",
+          "10km",
+          "21km"
+        ],
+        "venue": "Quảng trường Lâm Viên",
+        "city": "Đà Lạt",
+        "priceMin": 200000,
+        "currency": "VND",
+        "registrationStatus": "open",
+        "registrationUrl": "https://actiup.net/vi/event/6ab0cd39c8f626a86b6342e8/tickets",
+        "organizer": "DA HAE INTERNATIONAL CO., LTD"
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T12:38:41.948Z",
+  "updatedAt": "2026-09-23T12:38:41.948Z"
+}

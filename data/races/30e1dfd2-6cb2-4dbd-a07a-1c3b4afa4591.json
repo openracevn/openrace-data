@@ -1,0 +1,59 @@
+{
+  "id": "30e1dfd2-6cb2-4dbd-a07a-1c3b4afa4591",
+  "slug": "vung-tau-city-trail",
+  "name": "Giải chạy Vũng Tàu City Trail 2026",
+  "types": [
+    "city_trail"
+  ],
+  "date": "2026-11-28",
+  "distances": [
+    "7km",
+    "12km",
+    "25km",
+    "35km"
+  ],
+  "location": {
+    "venue": "Nhà Truyền Thống Cách Mạng Thành Phố Vũng Tàu",
+    "city": "Vung Tau",
+    "region": "south"
+  },
+  "priceMin": 350000,
+  "priceMax": null,
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrationUrl": "https://actiup.net/vi/event/6a9e6b3b7a7452317d81929c/tickets",
+  "organizer": "Vietnam MTB Series",
+  "foreignerEligible": null,
+  "sources": [
+    {
+      "name": "actiup",
+      "url": "https://actiup.net/vi/event/vung-tau-city-trail",
+      "lastCheckedAt": "2026-09-23T12:38:13.993Z",
+      "lastChangedAt": "2026-09-23T12:38:13.993Z",
+      "rawExtracted": {
+        "pageKind": "sport",
+        "types": [
+          "trail_run"
+        ],
+        "name": "Giải chạy Vũng Tàu City Trail 2026",
+        "date": "2026-11-28",
+        "distances": [
+          "7km",
+          "12km",
+          "25km",
+          "35km"
+        ],
+        "venue": "Nhà Truyền Thống Cách Mạng Thành Phố Vũng Tàu",
+        "city": "Vũng Tàu",
+        "priceMin": 350000,
+        "currency": "VND",
+        "registrationStatus": "open",
+        "registrationUrl": "https://actiup.net/vi/event/6a9e6b3b7a7452317d81929c/tickets",
+        "organizer": "Vietnam MTB Series"
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-23T12:38:41.948Z",
+  "updatedAt": "2026-09-23T12:38:41.948Z"
+}
