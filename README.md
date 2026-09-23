@@ -107,7 +107,7 @@ The schema lives in `scripts/lib/schema.ts` (zod). Notes:
 - **Guarantees** (checked by CI and before every commit):
   - Schema-valid files; unique slugs; `index.json` consistent with the race files.
   - Sanity bounds: distances look like distances (`10km`, `750m`, `100mi`, a bare number, or `Sprint`/`Olympic`/`70.3`/…); the race year is between 2015 and 3 years from now; prices are 0–100,000,000 VND; names contain no URLs or prices.
-- **Past races are included.** Filter on `date` for upcoming ones. Races are never deleted automatically.
+- **Past races are included, and races are never removed**, not even when they disappear from every source. The API serves them all; each consumer decides what to show (e.g. filter on `date`).
 - **Resync webhook** (`SYNC_WEBHOOK_URL`, sent after `validate` passes on a push that changed `data/`):
   ```json
   { "event": "openrace-data.push", "schemaVersion": 1, "repository": "openracevn/openrace-data",

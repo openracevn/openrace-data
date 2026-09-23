@@ -26,6 +26,7 @@
 
 - **`SCHEMA_VERSION`** in `schema.ts`, published as `x-schema-version` in `schema/*.schema.json` and in the resync payload. It's bumped only for breaking changes; consumers ignore unknown fields and enum values. The JSON Schema is generated, and `validate` fails if it's stale.
 - **Sanity bounds live in the zod schema** (distance shape, race year 2015..now+3, price ≤ 100M VND, no URL or price in names, createdAt ≤ updatedAt). So `planSync` refuses a bad record before committing, and CI refuses one pushed by hand. Normalization drops out-of-bounds values first (a bad distance or price becomes absent/null), so one bad field doesn't cost the whole race.
+- **Races that disappear from a source stay in the data, unchanged** (user decision, 2026-09-23). The API serves them; consumers decide whether to show them. `removed` in the resync payload only happens for a manual deletion.
 - **The resync payload lists changed race ids** (added/updated/removed + fields), from the same git diff as the Discord message (`lib/changes.ts`). The API doesn't need to diff commits.
 - **Discord lines link to the sources and the race file** (the user wants to check data by hand quickly). Long summaries are split into several messages, never mid-race.
 

@@ -140,6 +140,9 @@ async function extract(url: string): Promise<void> {
     return;
   }
   inputs.push({ url, extracted: result.json, checkedAt });
+  // Raw model output, for checking extraction quality in the run log (the race file
+  // only stores it when a canonical field changes).
+  console.log(`extracted ${url}\n  ${JSON.stringify(result.json)}`);
   const normalized = normalizeExtracted(result.json);
   if (normalized.ok) {
     runChecks.set(url, { lastCheckedAt: checkedAt, status: "ok" });
