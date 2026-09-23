@@ -71,6 +71,20 @@ sites:
     recipe: none # registration platform (HCMC Marathon)
     check: manual
 
+  - key: pace8
+    name: Pace8
+    kind: seller
+    url: https://pace8.vn/
+    recipe: none
+    check: manual
+
+  - key: cticket
+    name: CTicket
+    kind: seller
+    url: https://cticket.vn/
+    recipe: none # VPBank Hanoi Marathon
+    check: manual
+
   - key: truerace
     name: TrueRace
     kind: seller
@@ -127,3 +141,16 @@ sites:
     recipe: default
     check: quarterly
     series: { id: run-to-live, name: Run To Live }
+
+  # --- Race sites seen in the ActiUp study (.claude/docs/study/, 2026-09-24) ---
+  # Recognized in links (official) but not read yet: give each a paid check first
+  # (scripts/lib/recipes/README.md), then recipe: default and a cadence.
+  - { key: techcombank-hanoi-marathon, name: Techcombank Hanoi International Marathon, kind: race-site, url: "https://marathonhn.com/", recipe: none }
+  - { key: vpbank-hanoi-marathon, name: VPBank Hanoi International Marathon, kind: race-site, url: "https://vpbankmarathon.com/", recipe: none }
+  - { key: standard-chartered-hanoi-marathon, name: Standard Chartered Hanoi Marathon, kind: race-site, url: "https://hanoi-marathon.com/", recipe: none }
+  - { key: halong-bay-marathon, name: Global Gate Hạ Long ESG Marathon, kind: race-site, url: "https://halongbaymarathon.com/", recipe: none }
+  - { key: dat-sen-hong-marathon, name: VPBank Đất Sen Hồng Music Marathon, kind: race-site, url: "https://datsenhongmarathon.com/", recipe: none }
+  - { key: gemadept-run, name: Gemadept Run, kind: race-site, url: "https://gmdrun.gemadept.com.vn/", recipe: none }
+  - { key: gia-lai-city-trail, name: Gia Lai City Trail, kind: race-site, url: "https://gialaicitytrail.com/", recipe: none }
+  - { key: salonpas-run, name: Salonpas Run, kind: race-site, url: "https://salonpasrun.vn/", recipe: none }
+  - { key: fv-run, name: FV Run, kind: race-site, url: "https://fvrun.com.vn/", recipe: none }

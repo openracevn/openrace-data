@@ -9,6 +9,8 @@
 - **Scrape can't read images.** `images` returns URLs only, and `parsers` accepts only `pdf` in the API reference. An `"image"` parser (1 credit per image) is in an open docs PR (firecrawl-docs#1437); once it ships, the PDF step can go.
 - **Pricing:** Free is 1,000 credits per billing period. Hobby is $19/month (or $16/month billed yearly) for 5,000 credits, with extra 1,000 for $5. No rollover. Search is 2 credits per 10 results. Agent is dynamic, "most runs consume a few hundred credits", with 5 free runs a day (postponed).
 - **Credit balance (free):** `GET /v2/team/credit-usage`.
+- **ActiUp organizer:** use `merchant.merchant_name` (the short name). `merchant_public_name` is often empty, or a sentence like "Đơn vị tổ chức: …".
+- **ActiUp past events' images** are on `pix.raceez.com` (ActiUp's old name) without file extensions. They still load.
 - **ActiUp event detail API:** `GET https://api.actiup.net/v2/content/events/slug/<slug>`. It answers in **English unless `Accept-Language: vi`**. Fields: name, start/end date, place, `merchant_public_name`, `selling_type`, `close_registration_date`, `min_price`, and `details[]` (titled description sections). The listing's `limit` is capped at 30, and `offset` counts items.
 
 The sections below are the v1 notes (scrape + JSON on ActiUp/bibchung URLs), kept for the history of those decisions.

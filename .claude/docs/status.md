@@ -36,7 +36,8 @@ Free plan: 1,000 credits per billing period (23rd to 23rd). On 2026-09-24, 1,453
 - [ ] Backfill past races (`--past`), on a paid month.
 - [ ] openrace-api: read schema v2, then re-enable `notify-api` in `main.yml`.
 - [ ] Turn on the daily cron once the data is trusted.
-- [ ] Review the ActiUp 20-race study (`.claude/docs/study/`, written by another agent) and merge its findings.
+- [ ] Series for ActiUp races from slug stems across years (`dalat-ultra-trail-2024/2025/2026`); see the study review.
+- [ ] Paid check of the official race sites found in the ActiUp study (in `config/sites.yaml` with `recipe: none`), then switch them to `recipe: default`.
 
 ## Known gaps
 

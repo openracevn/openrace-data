@@ -5,7 +5,7 @@
  * - Listing: GET /v2/content/events/paging?event_type=sports&limit=30&offset=N
  *   `limit` is capped at 30, `offset` counts items, results are not sorted by date.
  * - Event:   GET /v2/content/events/slug/<slug>
- *   name, start/end date, place, organizer (merchant_public_name), sale status, and
+ *   name, start/end date, place, organizer (merchant.merchant_name), sale status, and
  *   the description as titled sections ("Chính sách giá vé", "Thông tin Race-kit", ...).
  *
  * Both answer in English unless asked for Vietnamese (Accept-Language: vi).
@@ -33,6 +33,7 @@ type Detail = {
     place?: string;
     short_place?: string;
     merchant_public_name?: string;
+    merchant?: { merchant_name?: string };
     currency?: string;
     selling_type?: string;
     close_registration_date?: string;
@@ -86,7 +87,9 @@ export const actiupRecipe: Recipe = {
     const named = images.filter((i) => PRICE_IMAGE.test(imageName(i.url)) || PRICE_IMAGE.test(foldVietnamese(i.alt)));
     const priceImages = [...new Map((inPriceSection.length > 0 ? inPriceSection : named).map((i) => [imageKey(i.url), i.url])).values()];
 
-    const organizer = str(e.merchant_public_name);
+    // merchant_name is the organizer's short name ("GreenHat", "GEMADEPT"); the public
+    // name is often empty or a sentence ("Đơn vị tổ chức: ... (VPBank)").
+    const organizer = str(e.merchant?.merchant_name) ?? str(e.merchant_public_name);
     const date = e.start_date.slice(0, 10);
     const endDate = e.end_date?.slice(0, 10);
     return {
