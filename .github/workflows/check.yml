@@ -1,11 +1,12 @@
 name: Check races
 
-# Daily: look for new races on ActiUp and re-check known races that are due
-# (every 14 days until race day; past races are never checked). Can also be run
-# by hand from the Actions tab, for one race or for discovery only.
+# Looks for new races and re-checks known races that are due (every 14 days until
+# race day; past races are never checked), or checks one race by URL.
+# Manual only for now (Actions tab → Run workflow). The daily schedule is off until
+# the data is trusted; to turn it back on, add:
+#   schedule:
+#     - cron: "17 0 * * *" # 07:17 in Vietnam
 on:
-  schedule:
-    - cron: "17 0 * * *" # 07:17 in Vietnam. GitHub may start scheduled runs late.
   workflow_dispatch:
     inputs:
       mode:
