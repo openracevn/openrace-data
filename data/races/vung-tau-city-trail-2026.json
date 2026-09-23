@@ -6,7 +6,7 @@
     "city_trail"
   ],
   "date": "2026-11-28",
-  "endDate": null,
+  "endDate": "2026-11-29",
   "seriesId": null,
   "organizerId": "vietnam-mtb-series",
   "organizer": "Vietnam MTB Series",
@@ -284,11 +284,6 @@
       ],
       "reason": "Firecrawl misreads the price image twice (rows shifted); checked by eye 2026-09-25",
       "at": "2026-09-23T19:02:41.369Z"
-    },
-    "endDate": {
-      "value": null,
-      "reason": "One-day race on 29/11/2026 (user confirmed); ActiUp's 28-29/11 span came from its wrong start day",
-      "at": "2026-09-23T19:15:22.265Z"
     }
   },
   "sources": [
@@ -463,5 +458,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T19:15:55.721Z"
+  "updatedAt": "2026-09-23T19:16:18.771Z"
 }
