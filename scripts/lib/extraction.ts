@@ -1,4 +1,4 @@
-import { resolvePlace } from "./places.ts";
+import { foldVietnamese, resolvePlace } from "./places.ts";
 import { REGISTRATION_STATUSES, type CanonicalRace, type RegistrationStatus } from "./schema.ts";
 
 /**
@@ -6,24 +6,30 @@ import { REGISTRATION_STATUSES, type CanonicalRace, type RegistrationStatus } fr
  * Firecrawl returns for it is stored verbatim as a source's `rawExtracted`, and
  * `normalizeExtracted` turns it into canonical race fields.
  */
+export const SPORTS = ["running", "multisport", "cycling", "swimming", "other", "none"] as const;
+
+const MULTISPORT_NAME = /\b(triathlon|duathlon|aquathlon|ironman|ironkids|festrival|70 3)\b/;
+
 export const EXTRACTION_SCHEMA = {
   type: "object",
   properties: {
-    isRunningRace: {
-      type: "boolean",
-      description: "True only if this page is a single running event (road race, trail race, marathon, ultra). False for listings, cycling, swimming, triathlon-only, or non-sport events.",
+    sport: {
+      type: "string",
+      enum: [...SPORTS],
+      description: "What kind of event this page describes. running = road race, trail race, marathon or ultra. multisport = triathlon, duathlon, aquathlon, Ironman. none = login, error or empty page.",
     },
-    name: { type: "string", description: "Official event name, in English if the page offers it." },
+    name: { type: "string", description: "Official event name exactly as written on the page. Do not translate it." },
     date: { type: "string", description: "Race day as YYYY-MM-DD. For multi-day events, the first race day." },
     distances: {
       type: "array",
       items: { type: "string" },
-      description: "Race distances offered, e.g. [\"5km\", \"10km\", \"21km\", \"42km\"].",
+      description: "Race distances offered, e.g. [\"5km\", \"10km\", \"21km\", \"42km\"]. Only distances the page explicitly lists for this race.",
     },
     venue: { type: "string", description: "Start/finish venue or area, if stated." },
     city: { type: "string", description: "City or province in Vietnam where the race takes place." },
-    priceMin: { type: "number", description: "Cheapest registration price as a plain number in the listed currency (no separators)." },
-    priceMax: { type: "number", description: "Most expensive registration price as a plain number in the listed currency." },
+    // ActiUp event pages only show a "Chỉ từ" (from) price; the full price list is
+    // behind a login. Asking for a max made the model copy the from price or invent one.
+    priceMin: { type: "number", description: "The \"Chỉ từ\" (from) price as a plain number in the listed currency, no separators. \"Miễn phí\" means 0." },
     currency: { type: "string", description: "ISO 4217 currency code of the prices, usually VND." },
     registrationStatus: {
       type: "string",
@@ -32,26 +38,28 @@ export const EXTRACTION_SCHEMA = {
     },
     registrationUrl: { type: "string", description: "Absolute URL where runners register or buy a bib." },
     organizer: { type: "string", description: "Organizing company or body." },
-    foreignerEligible: {
-      type: "boolean",
-      description: "Whether non-Vietnamese runners can register. Omit if the page does not say.",
-    },
   },
-  required: ["isRunningRace", "name", "date"],
+  required: ["sport", "name", "date"],
 } as const;
 
 export const EXTRACTION_PROMPT =
-  "Extract details of the running race described on this event page. Only report what the page states; omit fields that are not stated.";
+  "Extract details of the running race described on this event page. The page is usually in Vietnamese: " +
+  "convert dates such as \"21 - 22 tháng 11, 2026\" to YYYY-MM-DD, and prices such as \"350.000đ\" to plain numbers. " +
+  "Ignore the \"Có thể bạn sẽ thích\" section: those are other events. " +
+  "If the page shows no event details (login, error or empty page), set sport to none and omit everything else. " +
+  "Only report what the page states; omit fields that are not stated. Never guess.";
 
 export type NormalizeResult =
   | { ok: true; race: CanonicalRace }
   | { ok: false; reason: string };
 
 export function normalizeExtracted(raw: Record<string, unknown>): NormalizeResult {
-  if (raw.isRunningRace === false) return { ok: false, reason: "not a running race" };
+  if (raw.sport !== "running") return { ok: false, reason: `not a running race (sport: ${JSON.stringify(raw.sport)})` };
 
   const name = str(raw.name);
   if (!name) return { ok: false, reason: "missing name" };
+  // The model still labels some multisport events "running"; their names give them away.
+  if (MULTISPORT_NAME.test(foldVietnamese(name))) return { ok: false, reason: `multisport event: ${name}` };
   const date = normalizeDate(raw.date);
   if (!date) return { ok: false, reason: `missing or unparseable date: ${JSON.stringify(raw.date)}` };
 
@@ -59,7 +67,13 @@ export function normalizeExtracted(raw: Record<string, unknown>): NormalizeResul
   let priceMax = normalizePrice(raw.priceMax);
   if (priceMin !== null && priceMax !== null && priceMin > priceMax) [priceMin, priceMax] = [priceMax, priceMin];
 
-  const place = resolvePlace(str(raw.city));
+  // The model alternates between the town ("Cao Lãnh") and the province; venues usually
+  // end in the province ("…, Tỉnh Đồng Tháp"), so fall back to it for an unknown city.
+  let place = resolvePlace(str(raw.city));
+  if (place.region === null) {
+    const fromVenue = resolvePlace(str(raw.venue));
+    if (fromVenue.region !== null) place = fromVenue;
+  }
   const status = str(raw.registrationStatus);
 
   return {
@@ -118,13 +132,15 @@ function normalizeUrl(v: unknown): string | null {
 }
 
 /**
- * "21.1K", "Half Marathon", "10 km" -> "21km", "21km", "10km". Standard distances
+ * "21.1K", "Half Marathon", "10 km", "100 MILES" -> "21km", "21km", "10km", "100mi". Standard distances
  * are snapped so LLM wording drift between checks does not register as a change.
  */
 export function normalizeDistance(raw: string): string {
   const s = raw.trim().toLowerCase();
   if (/\bhalf\b|bán marathon|ban marathon/.test(s)) return "21km";
   if (/\b(full )?marathon\b/.test(s) && !/ultra/.test(s)) return "42km";
+  const mi = s.match(/(\d+(?:[.,]\d+)?)\s*(miles?|mi)\b/);
+  if (mi) return `${Number(mi[1]!.replace(",", "."))}mi`;
   const m = s.match(/(\d+(?:[.,]\d+)?)\s*(km|k)\b/);
   if (m) {
     const n = Number(m[1]!.replace(",", "."));

@@ -8,11 +8,11 @@ import { INDEX_PATH, RaceSchema, racePath, type IndexEntry, type Race } from "..
 import { raceSlug } from "../scripts/lib/slug.ts";
 import { formatCommitMessage, planSync, type RaceStore, type SyncInput } from "../scripts/sync.ts";
 
-const URL_A = "https://actiup.net/en/event/tay-ho-half-marathon-2026";
-const URL_B = "https://actiup.net/en/event/da-lat-ultra-trail-2026";
+const URL_A = "https://actiup.net/vi/event/tay-ho-half-marathon-2026";
+const URL_B = "https://actiup.net/vi/event/da-lat-ultra-trail-2026";
 
 const extractedA = {
-  isRunningRace: true,
+  sport: "running",
   name: "Tay Ho Half Marathon 2026",
   date: "2026-11-15",
   distances: ["21.1K", "5 km", "10km"],
@@ -22,7 +22,7 @@ const extractedA = {
   priceMax: 800000,
   currency: "VND",
   registrationStatus: "open",
-  registrationUrl: "https://actiup.net/en/event/tay-ho-half-marathon-2026/register",
+  registrationUrl: "https://actiup.net/vi/event/tay-ho-half-marathon-2026/register",
   organizer: "Tay Ho Sports",
   foreignerEligible: true,
 };
@@ -83,6 +83,16 @@ describe("planSync", () => {
     assert.match(formatCommitMessage(plan), /^data: 1 updated\n\n~ tay-ho-half-marathon-2026: priceMax, registrationStatus$/);
   });
 
+  it("ignores rewording of venue and organizer, but not a real move", async () => {
+    const store = await seeded();
+    const reworded = await planSync(store, [input(URL_A, { ...extractedA, venue: "Tay Ho Lake area", organizer: "Tay Ho Sports JSC" })]);
+    assert.deepEqual(reworded.files, {});
+    const withAddress = await planSync(store, [input(URL_A, { ...extractedA, venue: "Tay Ho Lake, Phường Tây Hồ, TP. Hà Nội" })]);
+    assert.deepEqual(withAddress.files, {});
+    const moved = await planSync(store, [input(URL_A, { ...extractedA, venue: "My Dinh Stadium" })]);
+    assert.deepEqual(moved.changes[0]!.fields, ["location"]);
+  });
+
   it("keeps the id when a race is renamed", async () => {
     const store = await seeded();
     const plan = await planSync(store, [input(URL_A, { ...extractedA, name: "VPBank Tay Ho Half Marathon 2026" })]);
@@ -93,8 +103,8 @@ describe("planSync", () => {
   it("batches several races into one plan and suffixes colliding slugs", async () => {
     const store = await seeded();
     const plan = await planSync(store, [
-      input(URL_B, { isRunningRace: true, name: "Da Lat Ultra Trail", date: "2026-06-20", city: "Đà Lạt", distances: ["70km", "42km"] }),
-      input("https://actiup.net/en/event/tay-ho-hm-other", extractedA),
+      input(URL_B, { sport: "running", name: "Da Lat Ultra Trail", date: "2026-06-20", city: "Đà Lạt", distances: ["70km", "42km"] }),
+      input("https://actiup.net/vi/event/tay-ho-hm-other", extractedA),
     ]);
     assert.deepEqual(
       plan.changes.map((c) => c.id),
@@ -109,12 +119,14 @@ describe("planSync", () => {
 
   it("skips non-event pages and unusable extractions", async () => {
     const plan = await planSync(memoryStore(), [
-      input("https://actiup.net/en/events/sports", extractedA),
-      input(URL_B, { isRunningRace: false, name: "Cycling Tour", date: "2026-06-20" }),
-      input("https://actiup.net/en/event/no-date", { isRunningRace: true, name: "No Date Run" }),
+      input("https://actiup.net/vi/events/sports", extractedA),
+      input("https://actiup.net/vi/event/6ab0cd39c8f626a86b6342e8/tickets", extractedA),
+      input("https://actiup.net/en/event/tay-ho-half-marathon-2026", extractedA),
+      input(URL_B, { sport: "cycling", name: "Cycling Tour", date: "2026-06-20" }),
+      input("https://actiup.net/vi/event/no-date", { sport: "running", name: "No Date Run" }),
     ]);
     assert.deepEqual(plan.files, {});
-    assert.equal(plan.skipped.length, 3);
+    assert.equal(plan.skipped.length, 5);
   });
 });
 
@@ -125,17 +137,32 @@ describe("normalization", () => {
     assert.equal(normalizeDistance("Full Marathon"), "42km");
     assert.equal(normalizeDistance("Ultra Marathon 70K"), "70km");
     assert.equal(normalizeDistance("12,5km"), "12.5km");
+    assert.equal(normalizeDistance("100MILES"), "100mi");
   });
 
   it("resolves Vietnamese city names to display name + region", () => {
     assert.deepEqual(resolvePlace("TP. Hồ Chí Minh"), { city: "Ho Chi Minh City", region: "south" });
     assert.deepEqual(resolvePlace("Đà Nẵng"), { city: "Da Nang", region: "central" });
     assert.deepEqual(resolvePlace("Tỉnh Lào Cai"), { city: "Lao Cai", region: "north" });
+    assert.deepEqual(resolvePlace("Thành Phố Đà Lạt, Tỉnh Lâm Đồng"), { city: "Da Lat", region: "central" });
     assert.deepEqual(resolvePlace("Atlantis"), { city: "Atlantis", region: null });
+    const venue = "Quảng trường Văn Miếu, Phường Cao Lãnh, Tỉnh Đồng Tháp";
+    for (const city of ["Cao Lãnh", "Đồng Tháp"]) {
+      const r = normalizeExtracted({ sport: "running", name: "X", date: "2026-10-09", city, venue });
+      assert.ok(r.ok && r.race.location.city === "Dong Thap" && r.race.location.region === "south", city);
+    }
+  });
+
+  it("rejects multisport events the model calls running", () => {
+    for (const name of ["Vietnam FesTRIval 2027", "2027 IRONKIDS Viet Nam in Da Nang", "IRONMAN 70.3 Đà Nẵng"]) {
+      assert.equal(normalizeExtracted({ sport: "running", name, date: "2027-03-21" }).ok, false, name);
+    }
+    assert.ok(normalizeExtracted({ sport: "running", name: "Tri Tôn Mountain Run", date: "2027-03-21" }).ok);
+    assert.ok(normalizeExtracted({ sport: "running", name: "Trail Running Tà Năng", date: "2027-03-21" }).ok);
   });
 
   it("parses DD/MM/YYYY dates and string prices", () => {
-    const r = normalizeExtracted({ name: "X", date: "5/1/2027", priceMin: "350.000đ", priceMax: "200000" });
+    const r = normalizeExtracted({ sport: "running", name: "X", date: "5/1/2027", priceMin: "350.000đ", priceMax: "200000" });
     assert.ok(r.ok);
     assert.equal(r.race.date, "2027-01-05");
     assert.equal(r.race.priceMin, 200000);

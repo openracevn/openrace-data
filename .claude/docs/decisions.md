@@ -16,6 +16,9 @@
 | `registrationStatus` is one of 4 values | Also allows `null` | We don't invent `open` when the page doesn't say. The same goes for venue, prices, organizer, etc. `null` means unknown |
 | `index.json` = slugs + lastModified | Plus `sourceUrls` | Lets ingestion map URL → slug without reading every file, so renamed races keep their id |
 | Discord on every push to main | Discord only when the push touches `data/` | User request, 2026-09-23 |
+| (unspecified) | ActiUp **Vietnamese** pages only (`/vi/event/<slug>`); names are stored as written, not translated | User request, 2026-09-23. One locale means no duplicates between the `/en/` and `/vi/` twins |
+| `priceMax`, `foreignerEligible` extracted | Kept in the schema but not asked of ActiUp, so they're always `null` | ActiUp event pages don't show them; the model invented values and flipped them between runs |
+| `isRunningRace` boolean | `sport` enum + multisport name check | The boolean labelled triathlons as running |
 | Resync webhook after every commit | Only when `data/` changed **and** validation passed | Keeps invalid data from reaching the API |
 
 ## Other choices

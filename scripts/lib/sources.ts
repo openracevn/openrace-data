@@ -9,7 +9,9 @@ type SourceConfig = {
 export const SOURCES: Record<SourceName, SourceConfig> = {
   actiup: {
     hosts: ["actiup.net"],
-    isEventPage: (u) => /^\/(en|vi)\/event\/[^/]+/.test(u.pathname),
+    // Vietnamese pages only, so an event can't enter twice via its /en/ twin. The
+    // /vi/event/<id>/tickets subpages sit behind a login and are not event pages.
+    isEventPage: (u) => /^\/vi\/event\/[^/]+\/?$/.test(u.pathname),
   },
 };
 

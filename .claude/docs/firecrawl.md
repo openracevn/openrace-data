@@ -21,13 +21,29 @@ Checked against docs.firecrawl.dev (`webhooks/overview`, `webhooks/events`, `web
 ## Monitor config (what `create-monitor.ts` sends)
 
 - `POST /v2/monitor` with `name`, `schedule` (`{text: "every 6 hours", timezone: "Asia/Ho_Chi_Minh"}`; the minimum interval is 5 min), and `targets` (1–50; types `scrape`, `crawl` or `search`).
-- We use one `crawl` target: `url: https://actiup.net/en/events/sports`, `crawlOptions: { includePaths: ["^/en/event/.+"], limit: 500 }`.
+- We use one `crawl` target: `url: https://actiup.net/vi/events/sports`, `crawlOptions: { includePaths: ["^/vi/event/[^/]+/?$"], limit: 500 }`.
 - `webhook: { url, events: ["monitor.check.completed"] }`. Custom `headers` and `metadata` are also supported but unused.
 - A `goal` (LLM judging) is optional for crawl targets and costs 1 credit per changed page. We don't set one.
 
 ## ActiUp specifics
 
-- Event URLs look like `https://actiup.net/en/event/<slug>` (with a `/vi/` twin).
-- The sitemap does **not** list event pages, only static pages and `/en/events/sports` / `/en/events/attractions`.
-- Listing pages are client-rendered Next.js; a plain `curl` finds no event links. Whether Firecrawl's crawl discovers them from the listing is **unverified**. Check the first check's page list.
-- ActiUp also lists non-running events (cycling, swimming, attractions). The extraction's `isRunningRace` flag filters them out.
+- **We use the Vietnamese pages** (`/vi/`), by decision on 2026-09-23. Event URLs are `https://actiup.net/vi/event/<slug>`, with an `/en/` twin that we ignore.
+- The sitemap does **not** list event pages.
+- **Discovery is verified** (2026-09-23, via the API):
+  - Firecrawl renders `/vi/events/sports` and finds 12 events.
+  - Each event page has a "Có thể bạn sẽ thích" block linking to other events (e.g. `lamdong-trail-2026` and `global-gate-halong-esg-marathon-2026`, which aren't on the listing), so a crawl reaches more.
+  - `/map` of actiup.net found ~41 event URLs across both locales, some of them past or non-sport events.
+- **Every card also links to `/vi/event/<objectId>/tickets`.** That page is a login wall, with no prices or distances. It's excluded in `includePaths` and in `isEventPage`.
+- **An event page shows:** name, date or date range ("21 - 22 tháng 11, 2026"), venue, organizer, a single **"Chỉ từ" (from) price**, and a free-text description. Distances appear only when the description mentions them, and there's no max price or foreigner rule. So we no longer ask for `priceMax` or `foreignerEligible`; they stay `null`.
+- **Rendering is occasionally flaky:** about 1 in 20 scrapes returned an empty (~200-char) page. On such a page the model once invented a whole race (`registrationUrl: example.com`). The prompt now asks for `sport: "none"` in that case, and it did so on the next flaky page.
+- ActiUp also lists triathlons (IRONKIDS, FesTRIval, Sunrise Sprint), cycling, swimming and attractions. The `sport` enum plus a name check (`MULTISPORT_NAME` in `extraction.ts`) filters them out.
+
+## Extraction test (2026-09-23): 10 pages, each scraped twice
+
+- **Cost:** 5 credits per page for scrape + JSON. **Rate limit:** 10 requests/min on the current plan.
+- **Result:** 8 running races, and both triathlons rejected.
+- **Drift:** on the second pass over unchanged pages, and after the fixes, 1 of 8 races would still commit: `lamdong-trail-2026` gained an `85km` distance, which is genuine model variance.
+- **Drift fixes, all in code:**
+  - `stabilize()` keeps the previous venue and organizer when only the wording changed.
+  - An unknown city falls back to the venue's province.
+  - Fields the page doesn't carry are no longer extracted.

@@ -4,7 +4,7 @@
  * commit. Pure planning (`planSync`) is separated from I/O so it can be tested
  * and reused by both the ingestion Worker and the local CLI.
  */
-import { changedFields } from "./lib/diff.ts";
+import { changedFields, stabilize } from "./lib/diff.ts";
 import { GitHubRepo, isNotFastForward, type GitHubTarget } from "./lib/github.ts";
 import { normalizeExtracted } from "./lib/extraction.ts";
 import { reconcile } from "./lib/reconcile.ts";
@@ -113,13 +113,14 @@ export async function planSync(store: RaceStore, inputs: readonly SyncInput[], n
       return;
     }
 
-    const fields = prev ? changedFields(prev, reconciled.fields) : [];
+    const canonical = prev ? stabilize(prev, reconciled.fields) : reconciled.fields;
+    const fields = prev ? changedFields(prev, canonical) : [];
     if (prev && fields.length === 0 && prev.confidence === reconciled.confidence) return;
     nextSource.lastChangedAt = input.checkedAt;
 
     const record: Race = {
       id,
-      ...reconciled.fields,
+      ...canonical,
       sources,
       confidence: reconciled.confidence,
       createdAt: prev?.createdAt ?? now,

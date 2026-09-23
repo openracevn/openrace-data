@@ -76,7 +76,7 @@ test/                    node:test suite
   "sources": [
     {
       "name": "actiup",
-      "url": "https://actiup.net/en/event/…",
+      "url": "https://actiup.net/vi/event/…",
       "lastCheckedAt": "2026-09-23T10:00:00.000Z",
       "lastChangedAt": "2026-09-20T08:00:00.000Z",
       "rawExtracted": { /* verbatim Firecrawl JSON extraction */ }
@@ -129,7 +129,7 @@ npm run monitor:create -- --create
 
 `GITHUB_TOKEN` must be a fine-grained PAT (or GitHub App token) with **Contents: read & write** on this repo. Commits pushed with the Actions `GITHUB_TOKEN` do not trigger workflows, so that token would silently skip the notifications.
 
-The monitor crawls `https://actiup.net/en/events/sports` and keeps `/en/event/…` pages. ActiUp renders its listings client-side and leaves event pages out of its sitemap, so check the first crawl's results and adjust `ACTIUP_START_URL` / `includePaths` if needed.
+The monitor crawls the Vietnamese listing `https://actiup.net/vi/events/sports` and keeps `/vi/event/<slug>` pages only. ActiUp leaves event pages out of its sitemap; the listing shows about 12 events, and each event page links to more ("Có thể bạn sẽ thích"), which is how the crawl reaches the rest. The `/vi/event/<id>/tickets` pages sit behind a login and are excluded, as are `/en/` twins, so an event can't enter twice.
 
 ## GitHub Actions
 

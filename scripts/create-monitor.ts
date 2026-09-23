@@ -19,10 +19,11 @@ const body = {
   targets: [
     {
       type: "crawl",
-      // Event listing pages are client-rendered and event URLs are not in
-      // ActiUp's sitemap, so crawl from the sports listing and keep event pages.
-      url: env("ACTIUP_START_URL") ?? "https://actiup.net/en/events/sports",
-      crawlOptions: { includePaths: ["^/en/event/.+"], limit: 500 },
+      // Event URLs are not in ActiUp's sitemap, so crawl from the (Vietnamese) sports
+      // listing. Event pages link to more events, which reaches past the listing's
+      // first screen. Skip /tickets subpages: they sit behind a login.
+      url: env("ACTIUP_START_URL") ?? "https://actiup.net/vi/events/sports",
+      crawlOptions: { includePaths: ["^/vi/event/[^/]+/?$"], limit: 500 },
       scrapeOptions: {
         formats: [{ type: "changeTracking", modes: ["json"], schema: EXTRACTION_SCHEMA, prompt: EXTRACTION_PROMPT }],
       },

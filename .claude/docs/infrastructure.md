@@ -15,7 +15,7 @@
 ## Data flow
 
 ```
-Firecrawl Monitor (crawl https://actiup.net/en/events/sports, keep /en/event/*)
+Firecrawl Monitor (crawl https://actiup.net/vi/events/sports, keep /vi/event/<slug>)
   │  POST monitor.check.completed   (X-Firecrawl-Signature: sha256=HMAC(body))
   ▼
 Worker  POST /webhooks/firecrawl
@@ -44,9 +44,9 @@ main.yml
 | --- | --- |
 | `scripts/lib/schema.ts` | zod schema for races and index, `CANONICAL_FIELDS`, `serialize` (stable 2-space JSON + newline) |
 | `scripts/lib/extraction.ts` | `EXTRACTION_SCHEMA` / `EXTRACTION_PROMPT` sent to Firecrawl; `normalizeExtracted` → canonical fields |
-| `scripts/lib/places.ts` | Vietnamese city/province → English display name + region (north/central/south) |
+| `scripts/lib/places.ts` | Vietnamese city/province → English display name + region (north/central/south); tries each comma-separated part |
 | `scripts/lib/reconcile.ts` | sources[] → canonical fields + confidence (MVP: highest-priority source wins) |
-| `scripts/lib/sources.ts` | host → source name, event-page URL test (`/(en\|vi)/event/…`) |
+| `scripts/lib/sources.ts` | host → source name, event-page URL test (`/vi/event/<slug>` only) |
 | `scripts/lib/slug.ts` | `raceSlug(name, date)`, `canonicalSourceUrl` |
 | `scripts/lib/github.ts` | Octokit: read files at a commit, write many files as one commit |
 | `scripts/sync.ts` | `planSync` (pure, testable), `syncToGitHub` (I/O + retry), `formatCommitMessage` |

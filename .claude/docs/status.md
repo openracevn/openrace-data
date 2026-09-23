@@ -18,7 +18,8 @@
 - [ ] Create a GitHub fine-grained PAT, then set the three Worker secrets.
 - [ ] `npm run worker:deploy` (not deployed yet, so there's no Worker URL).
 - [ ] `npm run monitor:create`: review the dry run, then `--create`.
-- [ ] First real check. Confirm that the crawl finds `/en/event/*` pages, that `snapshot.json` is populated, and that extraction quality is acceptable.
+- [x] Discovery and extraction checked through the API (see the extraction test in firecrawl.md).
+- [ ] First real **monitor** check: confirm the crawl follows the related-event links and that `snapshot.json` is populated.
 - [ ] First real Discord message (nothing has been posted to the channel yet).
 - [ ] `SYNC_WEBHOOK_URL`, once openrace-api exists.
 - [ ] Nothing has run end to end against real Firecrawl and GitHub.
@@ -26,7 +27,9 @@
 ## Known gaps
 
 - **`removed` pages are ignored.** A race that disappears from ActiUp keeps its file unchanged. Decide whether to mark it `closed`, flag it, or leave it.
-- **Only `/en/` pages.** A `/vi/` URL for the same event would create a duplicate race (with a `-2` slug) if it ever got crawled.
+- **Credits.** A monitor check re-scrapes every event page at about 5 credits each: 30–50 pages × 4 checks/day ≈ 600–1000 credits/day. Pick a plan or schedule before `monitor:create`.
+- **Distance drift.** The model sometimes lists a distance from the description and sometimes doesn't, which would cause occasional `distances` commits.
+- **Multi-day dates.** "21 - 22 tháng 11" stores the 21st, even if the race itself is on the 22nd.
 - **Workers subrequest limit.** Each changed race costs one GitHub read. The free plan caps at 50 subrequests, so a check with more than ~40 changed races fails. Use Workers Paid (1000) or move to a Queue.
 - **`waitUntil`** is capped at 30 s after the response.
 - **Multi-day events** store only the first race day.

@@ -117,9 +117,12 @@ const ADMIN_SUFFIX = /\s+(city|province)$/;
 
 export function resolvePlace(raw: string | null | undefined): { city: string | null; region: Region | null } {
   if (!raw || !raw.trim()) return { city: null, region: null };
-  const folded = foldVietnamese(raw);
-  const stripped = folded.replace(ADMIN_PREFIX, "").replace(ADMIN_SUFFIX, "");
-  const hit = PLACES[folded] ?? PLACES[stripped];
-  if (hit) return { ...hit };
+  // "Thành Phố Đà Lạt, Tỉnh Lâm Đồng": the whole string, then each part, most specific first.
+  // Also "Quảng trường Văn Miếu, Phường Cao Lãnh, Tỉnh Đồng Tháp" (a venue), which resolves by its last part.
+  for (const part of [raw, ...raw.split(",")]) {
+    const folded = foldVietnamese(part);
+    const hit = PLACES[folded] ?? PLACES[folded.replace(ADMIN_PREFIX, "").replace(ADMIN_SUFFIX, "")];
+    if (hit) return { ...hit };
+  }
   return { city: raw.trim(), region: null };
 }
