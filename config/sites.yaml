@@ -1,0 +1,121 @@
+# Sites OpenRace reads, and domains it recognizes in links. See .claude/docs/design-v2.md.
+#
+# key:        stable id, used in race files (sources[].site, prices[].site, registrations[].site)
+# kind:       seller    = sells tickets for many races (ActiUp, bibchung, 5bib, ...)
+#             hub       = an organizer's site listing many races (VnExpress Marathon)
+#             race-site = one race's own site; each year's edition replaces the last
+# url:        where the recipe starts
+# hosts:      domains that belong to the site (default: the host of url)
+# recipe:     how to read it: a file in scripts/lib/recipes/, "default" (generic
+#             race-site reader), or "none" (only recognized in links, never read)
+# check:      how often the scheduled run reads it: weekly | monthly | quarterly | yearly | manual
+# series / organizer: set on every race this site gives (race-sites and some hubs)
+#
+# Adding a race site is usually just an entry with recipe: default. Give it its own
+# recipe only when the default picks the wrong pages or images (see recipes/README.md).
+
+# Firecrawl credits the scheduled runs may spend per calendar month (UTC). The Free
+# plan has 1,000; paid reads stop at this cap and the run says so. Free checks go on.
+monthlyCredits: 900
+
+sites:
+  # --- Sellers ---
+  - key: actiup
+    name: ActiUp
+    kind: seller
+    url: https://actiup.net/vi/events/sports
+    recipe: actiup
+    check: weekly
+
+  - key: bibchung
+    name: bibchung
+    kind: seller
+    url: https://bibchung.pro/events
+    recipe: none # TODO: recipe (group price per tier; server-rendered, see firecrawl.md)
+    check: manual
+
+  - key: 5bib
+    name: 5BIB
+    kind: seller
+    url: https://5bib.com/
+    recipe: none
+    check: manual
+
+  - key: irace
+    name: iRace
+    kind: seller
+    url: https://irace.vn/
+    hosts: [irace.vn, ticket.irace.vn]
+    recipe: none
+    check: manual
+
+  - key: enjoysport
+    name: EnjoySport
+    kind: seller
+    url: https://enjoysport.vn/
+    recipe: none
+    check: manual
+
+  - key: timve365
+    name: timve365
+    kind: seller
+    url: https://timve365.vn/
+    recipe: none
+    check: manual
+
+  - key: truerace
+    name: TrueRace
+    kind: seller
+    url: https://truerace.org/
+    recipe: none
+    check: manual
+
+  # --- Hubs ---
+  - key: vnexpress-marathon
+    name: VnExpress Marathon
+    kind: hub
+    url: https://vm.vnexpress.net/
+    recipe: vnexpress-marathon
+    check: monthly
+    organizer: { id: vnexpress, name: VnExpress, website: https://vnexpress.net/ }
+
+  - key: vietnam-mtb-series
+    name: Vietnam Mountain Bike Series
+    kind: hub
+    url: https://vietnammtbseries.com/vi/series
+    recipe: none # TODO: recipe (/event/<slug-year>, dates + venue as text)
+    check: manual
+
+  # --- Race sites ---
+  - key: hcmc-marathon
+    name: HCMC Marathon
+    kind: race-site
+    url: https://hcmcmarathon.com/
+    recipe: default
+    check: quarterly
+    series: { id: hcmc-marathon, name: HCMC Marathon }
+    organizer: { id: pulse-active, name: Pulse Active, website: https://pulse.vn/ }
+
+  - key: halong-marathon
+    name: Hạ Long Heritage Marathon
+    kind: race-site
+    url: https://halongmarathon.com/
+    recipe: default
+    check: quarterly
+    series: { id: ha-long-heritage-marathon, name: Giải Marathon Quốc tế Di sản Hạ Long }
+
+  - key: lamdong-trail
+    name: Lamdong Trail
+    kind: race-site
+    url: https://lamdongtrail.vn/
+    recipe: default
+    check: quarterly
+    series: { id: lamdong-trail, name: Lamdong Trail }
+
+  - key: run-to-live
+    name: Run To Live
+    kind: race-site
+    url: https://runtolive.vn/
+    recipe: default
+    check: quarterly
+    series: { id: run-to-live, name: Run To Live }

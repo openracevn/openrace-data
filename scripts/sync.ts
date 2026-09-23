@@ -1,40 +1,49 @@
 /**
- * Diff/commit core. Given freshly extracted race data, works out which race
- * files (and the index) must change, then commits all of it to GitHub as one
- * commit. Pure planning (`planSync`) is separated from I/O so it can be tested
- * and reused by the scheduled checker (`check.ts`) and the manual CLI.
+ * Diff/commit core. Given what sources said about races, works out which race
+ * files (and the index, series and organizers) must change, then commits all of it
+ * to GitHub as one commit. Pure planning (`planSync`) is separated from I/O so it
+ * can be tested and reused by the checker (`check.ts`), hand edits and the CLI.
  */
 import { changedFields, deepEqual, stabilize } from "./lib/diff.ts";
 import { GitHubRepo, isNotFastForward, type GitHubTarget } from "./lib/github.ts";
-import { normalizeExtracted } from "./lib/extraction.ts";
-import { foldVietnamese } from "./lib/places.ts";
-import { SOURCE_PRIORITY, applyOverrides, reconcile } from "./lib/reconcile.ts";
+import { normalizeExtraction } from "./lib/extraction.ts";
+import { applyOverrides, reconcile, type EntityRef, type StoredExtraction } from "./lib/reconcile.ts";
 import {
   INDEX_PATH,
   IndexSchema,
+  ORGANIZERS_PATH,
+  OrganizerListSchema,
   RaceSchema,
   RACES_DIR,
+  SERIES_PATH,
+  SeriesListSchema,
   raceFileName,
   serialize,
   type CanonicalField,
   type IndexEntry,
+  type Organizer,
   type Overrides,
   type Race,
   type RaceSource,
-  type SourceName,
+  type Series,
+  type SourceRole,
 } from "./lib/schema.ts";
+import { siteForUrl, type SitesConfig } from "./lib/sites.ts";
 import { canonicalSourceUrl, slugFromName } from "./lib/slug.ts";
-import { SOURCES, sourceForUrl } from "./lib/sources.ts";
+import { foldVietnamese } from "./lib/text.ts";
 
 export type SyncInput = {
-  /** Source page URL the data was extracted from. */
+  /** Source page URL (canonicalized here). */
   url: string;
-  /** Raw extraction as returned by Firecrawl; stored verbatim as `rawExtracted`. */
-  extracted: Record<string, unknown>;
-  /** When the source was checked (ISO 8601). */
+  /** Site key from config/sites.yaml, or "openrace" for a race entered by hand. */
+  site: string;
+  role: SourceRole;
+  /** What the source said, stored verbatim as the source's `extracted`. */
+  extracted: StoredExtraction;
+  /** When the source was read (ISO 8601). */
   checkedAt: string;
-  /** Which source this is; defaults to the source the URL belongs to. openrace inputs may use any reference URL. */
-  source?: SourceName;
+  /** Slug for a new race (e.g. ActiUp's own slug); default: from the name. */
+  slugHint?: string;
 };
 
 export interface RaceStore {
@@ -49,8 +58,10 @@ export type RaceChange = {
   fields: CanonicalField[];
   /** The slug (and file name) before a hand rename. */
   renamedFrom?: string;
-  /** A page from another source joined this race. */
-  joined?: boolean;
+  /** Sites whose pages joined this race in this change. */
+  joined?: string[];
+  /** Flags raised in this change (see Race.flags). */
+  newFlags?: string[];
   /** Overridden fields whose source value changed (the override still wins). */
   shadowed?: CanonicalField[];
 };
@@ -63,30 +74,41 @@ export type SyncPlan = {
   skipped: Skipped[];
 };
 
-type Item = { input: SyncInput; url: string; source: SourceName };
-/** All inputs of one race in this run (e.g. its ActiUp and bibchung pages). */
+/** Races further apart than this are different editions, even on the same page (an official site serves a new edition every year). */
+export const EDITION_DAYS = 180;
+/** A page linked from a race (or linking to it) is that race when race days are this close. */
+const LINK_MATCH_DAYS = 7;
+const MATCH_THRESHOLD = 0.5;
+const DAY_MS = 86_400_000;
+
+type Item = { input: SyncInput; date: string; name: string };
 type Group = { id: string; newSlug?: string; items: Item[] };
 /** What matching needs to know about a race: known ones from the index, plus races created in this run. */
-type Candidate = { id: string; name: string; date: string; sources: Set<SourceName> };
+type Candidate = { id: string; name: string; date: string; sites: Set<string>; sourceUrls: Set<string>; linkUrls: Set<string> };
 
 export async function planSync(
   store: RaceStore,
   inputs: readonly SyncInput[],
+  config: SitesConfig,
   now = new Date().toISOString(),
   newId: () => string = () => crypto.randomUUID(),
 ): Promise<SyncPlan> {
-  const indexText = await store.read(INDEX_PATH);
-  const index: IndexEntry[] = indexText ? IndexSchema.parse(JSON.parse(indexText)) : [];
+  const index = await readIndex(store);
   const indexById = new Map(index.map((e) => [e.id, e]));
-  const idByUrl = new Map(index.flatMap((e) => e.sourceUrls.map((u) => [u, e.id] as const)));
   const takenSlugs = new Set(index.map((e) => e.slug));
   const takenFiles = new Set(index.map((e) => e.file));
   const candidates: Candidate[] = index.map((e) => ({
     id: e.id,
     name: e.name,
     date: e.date,
-    sources: new Set<SourceName>(e.sourceUrls.map((u) => sourceForUrl(u)).filter((x) => x !== null)),
+    sites: new Set(e.sourceUrls.map((u) => siteForUrl(config, u)?.key ?? "openrace")),
+    sourceUrls: new Set(e.sourceUrls),
+    linkUrls: new Set(e.linkUrls),
   }));
+  const loadRace = async (id: string): Promise<Race | null> => {
+    const entry = indexById.get(id);
+    return entry ? readRaceFile(store, entry) : null;
+  };
 
   const skipped: Skipped[] = [];
   const groups = new Map<string, Group>();
@@ -96,103 +118,136 @@ export async function planSync(
     groups.set(id, group);
   };
 
-  // Primary source first, so an ActiUp page creates the race a bibchung page then joins.
-  const ordered = dedupeByUrl(inputs, skipped)
-    .map((input) => ({ input, url: input.url, source: input.source ?? sourceForUrl(input.url) }))
-    .sort((a, b) => sourceRank(a.source) - sourceRank(b.source));
+  // Official sites first, so their page creates the race that seller pages then join.
+  const rank: Record<SourceRole, number> = { official: 0, seller: 1, reference: 2 };
+  const ordered = dedupeByUrl(inputs, skipped).sort((a, b) => rank[a.role] - rank[b.role]);
 
-  for (const { input, url, source } of ordered) {
-    if (!source) {
-      skipped.push({ url, reason: "not an event page from a known source" });
-      continue;
-    }
-    const known = idByUrl.get(url);
-    if (known) {
-      addToGroup(known, { input, url, source });
-      continue;
-    }
-    const normalized = normalizeExtracted(input.extracted);
+  for (const input of ordered) {
+    const normalized = normalizeExtraction(input.extracted);
     if (!normalized.ok) {
-      skipped.push({ url, reason: normalized.reason });
+      skipped.push({ url: input.url, reason: normalized.reason });
       continue;
     }
-    // The same race listed on another source joins that race instead of creating a new one.
-    const match = findMatch(candidates, source, normalized.race.name, normalized.race.date);
+    const { name, date } = normalized.facts;
+    const item: Item = { input, date, name };
+    const links = new Set(
+      (input.extracted.links ?? []).flatMap((l) => {
+        try {
+          return [canonicalSourceUrl(l.url)];
+        } catch {
+          return [];
+        }
+      }),
+    );
+    const match =
+      // 1. The same page, same edition.
+      nearest(candidates.filter((c) => c.sourceUrls.has(input.url)), date, EDITION_DAYS) ??
+      // 2. A page this one links to, or that links to this one.
+      nearest(
+        candidates.filter((c) => c.linkUrls.has(input.url) || [...c.sourceUrls].some((u) => links.has(u))),
+        date,
+        LINK_MATCH_DAYS,
+      ) ??
+      // 3. Another site's page for a race with nearly the same name on the same day.
+      findByName(candidates, input.site, name, date);
     if (match) {
-      match.sources.add(source);
-      idByUrl.set(url, match.id);
-      addToGroup(match.id, { input, url, source });
+      match.sites.add(input.site);
+      match.sourceUrls.add(input.url);
+      addToGroup(match.id, item);
       continue;
     }
-    const base = source === "openrace" ? slugFromName(normalized.race.name) : SOURCES[source].slugOf(new URL(url));
-    const newSlug = allocateSlug(base, normalized.race.date, takenSlugs, takenFiles);
+    const newSlug = allocateSlug(input.slugHint ?? slugFromName(name), date, takenSlugs, takenFiles);
     takenSlugs.add(newSlug);
-    takenFiles.add(raceFileName(newSlug, normalized.race.date));
+    takenFiles.add(raceFileName(newSlug, date));
     const id = newId();
-    idByUrl.set(url, id);
-    candidates.push({ id, name: normalized.race.name, date: normalized.race.date, sources: new Set([source]) });
-    addToGroup(id, { input, url, source }, newSlug);
+    candidates.push({ id, name, date, sites: new Set([input.site]), sourceUrls: new Set([input.url]), linkUrls: links });
+    addToGroup(id, item, newSlug);
   }
-
-  const planned = [...groups.values()];
-  const existing = await Promise.all(
-    planned.map(async ({ id }) => {
-      const entry = indexById.get(id);
-      if (!entry) return null;
-      return readRaceFile(store, entry);
-    }),
-  );
 
   const files: Record<string, string | null> = {};
   const changes: RaceChange[] = [];
   const nextIndex = new Map(indexById);
 
-  planned.forEach(({ id, newSlug, items }, i) => {
-    const prev = existing[i] ?? null;
+  for (const { id, newSlug, items } of groups.values()) {
+    const prev = await loadRace(id);
     const slug = prev?.slug ?? newSlug!;
     let sources = prev?.sources ?? [];
     const touched: RaceSource[] = [];
-    for (const { input, url, source } of items) {
-      const prevSource = sources.find((s) => s.name === source && s.url === url);
+    const joined: string[] = [];
+    for (const { input } of items) {
+      const prevSource = sources.find((s) => s.site === input.site && s.url === input.url);
       const nextSource: RaceSource = {
-        name: source,
-        url,
+        site: input.site,
+        role: input.role,
+        url: input.url,
         lastCheckedAt: input.checkedAt,
         lastChangedAt: prevSource?.lastChangedAt ?? input.checkedAt,
-        rawExtracted: input.extracted,
+        extracted: input.extracted,
       };
-      if (!prevSource || !deepEqual(prevSource.rawExtracted, input.extracted)) touched.push(nextSource);
+      if (!prevSource || !deepEqual(prevSource.extracted, input.extracted) || prevSource.role !== input.role) touched.push(nextSource);
+      if (!prevSource && prev) joined.push(input.site);
       sources = prevSource ? sources.map((s) => (s === prevSource ? nextSource : s)) : [...sources, nextSource];
     }
 
-    const composed = composeRace({ id, slug, prev, sources, overrides: prev?.overrides ?? {}, now, stabilizeAgainstPrev: true });
+    const composed = composeRace({ id, slug, prev, sources, overrides: prev?.overrides ?? {}, now, config, stabilizeAgainstPrev: true });
     if ("error" in composed) {
-      for (const { url } of items) skipped.push({ url, reason: composed.error });
-      return;
+      for (const { input } of items) skipped.push({ url: input.url, reason: composed.error });
+      continue;
     }
     const { record, fields } = composed;
-    const joined = prev ? sources.length !== prev.sources.length : false;
-    const shadowed = prev ? shadowedChanges(prev, sources) : [];
-    if (prev && fields.length === 0 && !joined && shadowed.length === 0 && prev.confidence === record.confidence) return;
+    const newFlags = record.flags.filter((f) => !prev?.flags.includes(f));
+    const shadowed = prev ? shadowedChanges(prev, sources, config) : [];
+    const flagsChanged = prev ? !deepEqual(prev.flags, record.flags) : false;
+    if (prev && fields.length === 0 && joined.length === 0 && shadowed.length === 0 && !flagsChanged && prev.confidence === record.confidence) continue;
     for (const source of touched) source.lastChangedAt = source.lastCheckedAt;
 
     const clash = writeRace(files, nextIndex, record);
     if (clash) {
-      for (const { url } of items) skipped.push({ url, reason: clash });
-      return;
+      for (const { input } of items) skipped.push({ url: input.url, reason: clash });
+      continue;
     }
     changes.push({
       id,
       slug,
       kind: prev ? "updated" : "added",
       fields,
-      ...(joined && { joined: true }),
+      ...(joined.length > 0 && { joined }),
+      ...(newFlags.length > 0 && { newFlags }),
       ...(shadowed.length > 0 && { shadowed }),
     });
-  });
+  }
 
-  if (changes.length > 0) files[INDEX_PATH] = serializeIndex(nextIndex);
+  if (changes.length > 0) {
+    files[INDEX_PATH] = serializeIndex(nextIndex);
+    Object.assign(files, await plannedEntities(store, [...groups.values()].flatMap((g) => g.items.map((i) => i.input.extracted))));
+  }
   return { files, changes, skipped };
+}
+
+/**
+ * New series and organizers named by this run's sources. Entries are only added,
+ * never changed: a name or website fixed by hand in series.json stays.
+ */
+async function plannedEntities(store: RaceStore, extractions: StoredExtraction[]): Promise<Record<string, string>> {
+  const series = SeriesListSchema.parse(JSON.parse((await store.read(SERIES_PATH)) ?? "[]"));
+  const organizers = OrganizerListSchema.parse(JSON.parse((await store.read(ORGANIZERS_PATH)) ?? "[]"));
+  const out: Record<string, string> = {};
+  const add = <T extends { id: string }>(list: T[], ref: EntityRef | undefined, make: (r: EntityRef) => T): boolean => {
+    if (!ref || list.some((e) => e.id === ref.id)) return false;
+    list.push(make(ref));
+    return true;
+  };
+  let seriesChanged = false;
+  let organizersChanged = false;
+  for (const x of extractions) {
+    organizersChanged = add<Organizer>(organizers, x.organizer, (r) => ({ id: r.id, name: r.name, website: r.website ?? null })) || organizersChanged;
+    seriesChanged =
+      add<Series>(series, x.series, (r) => ({ id: r.id, name: r.name, website: r.website ?? null, organizerId: x.organizer?.id ?? null })) || seriesChanged;
+  }
+  const byId = (a: { id: string }, b: { id: string }) => a.id.localeCompare(b.id);
+  if (seriesChanged) out[SERIES_PATH] = serialize(series.sort(byId));
+  if (organizersChanged) out[ORGANIZERS_PATH] = serialize(organizers.sort(byId));
+  return out;
 }
 
 /**
@@ -215,6 +270,11 @@ function serializeIndex(index: Map<string, IndexEntry>): string {
   return serialize([...index.values()].sort((a, b) => a.id.localeCompare(b.id)));
 }
 
+async function readIndex(store: RaceStore): Promise<IndexEntry[]> {
+  const text = await store.read(INDEX_PATH);
+  return text ? IndexSchema.parse(JSON.parse(text)) : [];
+}
+
 async function readRaceFile(store: RaceStore, entry: IndexEntry): Promise<Race> {
   const path = `${RACES_DIR}/${entry.file}`;
   const text = await store.read(path);
@@ -229,13 +289,14 @@ type ComposeArgs = {
   sources: RaceSource[];
   overrides: Overrides;
   now: string;
-  /** Keep the previous wording of venue/organizer when a re-check only rewords it. */
+  config: SitesConfig;
+  /** Keep the previous wording of venue/city/organizer when a re-read only rewords it. */
   stabilizeAgainstPrev: boolean;
 };
 
-/** A race record from its sources (merged by priority) with OpenRace overrides on top, validated. */
+/** A race record from its sources, with OpenRace overrides on top, validated. */
 function composeRace(a: ComposeArgs): { record: Race; fields: CanonicalField[] } | { error: string } {
-  const reconciled = reconcile(a.sources);
+  const reconciled = reconcile(a.sources, a.config);
   if ("error" in reconciled) return { error: reconciled.error };
   const derived = a.prev && a.stabilizeAgainstPrev ? stabilize(a.prev, reconciled.fields) : reconciled.fields;
   const canonical = applyOverrides(derived, a.overrides);
@@ -243,6 +304,7 @@ function composeRace(a: ComposeArgs): { record: Race; fields: CanonicalField[] }
     id: a.id,
     slug: a.slug,
     ...canonical,
+    flags: reconciled.flags,
     overrides: a.overrides,
     sources: a.sources,
     confidence: reconciled.confidence,
@@ -253,15 +315,15 @@ function composeRace(a: ComposeArgs): { record: Race; fields: CanonicalField[] }
   if (!valid.success) {
     return { error: `invalid record: ${valid.error.issues.map((e) => `${e.path.join(".")}: ${e.message}`).join("; ")}` };
   }
-  return { record, fields: a.prev ? changedFields(a.prev, canonical) : [] };
+  return { record: valid.data, fields: a.prev ? changedFields(a.prev, canonical) : [] };
 }
 
 /** Overridden fields whose value, as the sources alone would give it, differs between the old and new sources. */
-function shadowedChanges(prev: Race, sources: RaceSource[]): CanonicalField[] {
+function shadowedChanges(prev: Race, sources: RaceSource[], config: SitesConfig): CanonicalField[] {
   const fields = Object.keys(prev.overrides) as CanonicalField[];
   if (fields.length === 0) return [];
-  const before = reconcile(prev.sources);
-  const after = reconcile(sources);
+  const before = reconcile(prev.sources, config);
+  const after = reconcile(sources, config);
   if ("error" in before || "error" in after) return [];
   return fields.filter((f) => !deepEqual(before.fields[f], after.fields[f]));
 }
@@ -275,6 +337,7 @@ function indexEntry(record: Race): IndexEntry {
     lastModified: record.updatedAt,
     file: raceFileName(record.slug, record.date),
     sourceUrls: [...new Set(record.sources.map((s) => s.url))].sort(),
+    linkUrls: [...new Set(record.links.filter((l) => l.kind === "official" || l.kind === "seller").map((l) => l.url))].sort(),
   };
 }
 
@@ -287,7 +350,7 @@ export type Edit =
  * value equal to the current one still records the override, so later source
  * changes can't move it.
  */
-export async function planEdit(store: RaceStore, race: string, edits: readonly Edit[], now = new Date().toISOString()): Promise<SyncPlan> {
+export async function planEdit(store: RaceStore, race: string, edits: readonly Edit[], config: SitesConfig, now = new Date().toISOString()): Promise<SyncPlan> {
   const { index, prev } = await readRace(store, race);
 
   const overrides: Overrides = { ...prev.overrides };
@@ -297,7 +360,7 @@ export async function planEdit(store: RaceStore, race: string, edits: readonly E
     else throw new Error(`${prev.slug} has no override on ${edit.field}`);
   }
 
-  const composed = composeRace({ id: prev.id, slug: prev.slug, prev, sources: prev.sources, overrides, now, stabilizeAgainstPrev: false });
+  const composed = composeRace({ id: prev.id, slug: prev.slug, prev, sources: prev.sources, overrides, now, config, stabilizeAgainstPrev: false });
   if ("error" in composed) throw new Error(composed.error);
   const { record, fields } = composed;
   if (deepEqual(record.overrides, prev.overrides) && fields.length === 0) return { files: {}, changes: [], skipped: [] };
@@ -307,11 +370,7 @@ export async function planEdit(store: RaceStore, race: string, edits: readonly E
   const clash = writeRace(files, nextIndex, record);
   if (clash) throw new Error(clash);
   files[INDEX_PATH] = serializeIndex(nextIndex);
-  return {
-    files,
-    changes: [{ id: record.id, slug: record.slug, kind: "updated", fields }],
-    skipped: [],
-  };
+  return { files, changes: [{ id: record.id, slug: record.slug, kind: "updated", fields }], skipped: [] };
 }
 
 /**
@@ -333,42 +392,42 @@ export async function planRename(store: RaceStore, race: string, newSlug: string
   const clash = writeRace(files, nextIndex, record);
   if (clash) throw new Error(clash);
   files[INDEX_PATH] = serializeIndex(nextIndex);
-  return {
-    files,
-    changes: [{ id: record.id, slug: newSlug, kind: "updated", fields: [], renamedFrom: prev.slug }],
-    skipped: [],
-  };
+  return { files, changes: [{ id: record.id, slug: newSlug, kind: "updated", fields: [], renamedFrom: prev.slug }], skipped: [] };
 }
 
 async function readRace(store: RaceStore, race: string): Promise<{ index: IndexEntry[]; prev: Race }> {
-  const indexText = await store.read(INDEX_PATH);
-  const index: IndexEntry[] = indexText ? IndexSchema.parse(JSON.parse(indexText)) : [];
+  const index = await readIndex(store);
   const entry = index.find((e) => e.id === race || e.slug === race || e.file === race || e.file === `${race}.json`);
   if (!entry) throw new Error(`no race with id, slug or file name "${race}"`);
   return { index, prev: await readRaceFile(store, entry) };
 }
 
-function sourceRank(source: SourceName | null): number {
-  return source ? SOURCE_PRIORITY.indexOf(source) : Number.POSITIVE_INFINITY;
+/** The candidate with the closest race day, if within `maxDays`. */
+function nearest(candidates: Candidate[], date: string, maxDays: number): Candidate | null {
+  let best: Candidate | null = null;
+  let bestGap = maxDays * DAY_MS;
+  for (const c of candidates) {
+    const gap = Math.abs(Date.parse(c.date) - Date.parse(date));
+    if (gap <= bestGap) [best, bestGap] = [c, gap];
+  }
+  return best;
 }
 
 /**
- * The race another source already has for this page: race day within a day
+ * The race another site already has for this page: race day within a day
  * (multi-day events list different days), and a name that's mostly the same
  * ("Vũng Tàu City Trail 2026" vs "VungTau CityTrail 2026"). Best match wins.
  */
-function findMatch(candidates: Candidate[], source: SourceName, name: string, date: string): Candidate | null {
+function findByName(candidates: Candidate[], site: string, name: string, date: string): Candidate | null {
   let best: Candidate | null = null;
   let bestScore = MATCH_THRESHOLD;
   for (const c of candidates) {
-    if (c.sources.has(source) || Math.abs(Date.parse(c.date) - Date.parse(date)) > 86_400_000) continue;
+    if (c.sites.has(site) || Math.abs(Date.parse(c.date) - Date.parse(date)) > DAY_MS) continue;
     const score = nameSimilarity(c.name, name);
     if (score >= bestScore) [best, bestScore] = [c, score];
   }
   return best;
 }
-
-const MATCH_THRESHOLD = 0.5;
 
 /** Dice coefficient over character bigrams of the folded name, spaces removed. */
 export function nameSimilarity(a: string, b: string): number {
@@ -406,9 +465,10 @@ function dedupeByUrl(inputs: readonly SyncInput[], skipped: Skipped[]): SyncInpu
 
 /** First slug among base, base-2, base-3, ... that is free, and whose file name is free too. */
 function allocateSlug(base: string, date: string, takenSlugs: ReadonlySet<string>, takenFiles: ReadonlySet<string>): string {
+  const clean = base.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 100) || "race";
   const free = (slug: string) => !takenSlugs.has(slug) && !takenFiles.has(raceFileName(slug, date));
-  if (free(base)) return base;
-  for (let n = 2; ; n++) if (free(`${base}-${n}`)) return `${base}-${n}`;
+  if (free(clean)) return clean;
+  for (let n = 2; ; n++) if (free(`${clean}-${n}`)) return `${clean}-${n}`;
 }
 
 export function formatCommitMessage(plan: SyncPlan, context?: string): string {
@@ -418,11 +478,17 @@ export function formatCommitMessage(plan: SyncPlan, context?: string): string {
   const lines = [
     `data: ${counts.join(", ")}`,
     "",
-    ...added.map((c) => `+ ${c.slug} (${c.id})`),
-    ...updated.map(
-      (c) =>
-        `~ ${c.slug}: ${[...(c.renamedFrom ? [`slug (was ${c.renamedFrom})`] : []), ...(c.joined ? ["+source"] : []), ...c.fields, ...(c.shadowed ?? []).map((f) => `${f} changed at the source (override kept)`)].join(", ") || "confidence"}`,
-    ),
+    ...added.map((c) => `+ ${c.slug} (${c.id})${c.newFlags ? ` ⚠️ ${c.newFlags.join("; ")}` : ""}`),
+    ...updated.map((c) => {
+      const parts = [
+        ...(c.renamedFrom ? [`slug (was ${c.renamedFrom})`] : []),
+        ...(c.joined ?? []).map((s) => `+${s}`),
+        ...c.fields,
+        ...(c.shadowed ?? []).map((f) => `${f} changed at the source (override kept)`),
+        ...(c.newFlags ?? []).map((f) => `⚠️ ${f}`),
+      ];
+      return `~ ${c.slug}: ${parts.join(", ") || "sources/metadata"}`;
+    }),
   ];
   if (context) lines.push("", context);
   return lines.join("\n");
@@ -445,9 +511,9 @@ export type SyncOptions = {
   message?: string;
 };
 
-/** Extract inputs → one commit on the branch head (see commitToGitHub). */
-export async function syncToGitHub(target: GitHubTarget, inputs: readonly SyncInput[], opts: SyncOptions = {}): Promise<SyncResult> {
-  return commitToGitHub(target, (store) => planSync(store, inputs, opts.now), opts);
+/** Source inputs → one commit on the branch head (see commitToGitHub). */
+export async function syncToGitHub(target: GitHubTarget, inputs: readonly SyncInput[], config: SitesConfig, opts: SyncOptions = {}): Promise<SyncResult> {
+  return commitToGitHub(target, (store) => planSync(store, inputs, config, opts.now), opts);
 }
 
 /**

@@ -38,6 +38,13 @@
           "type": "string",
           "format": "uri"
         }
+      },
+      "linkUrls": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "format": "uri"
+        }
       }
     },
     "required": [
@@ -47,11 +54,12 @@
       "date",
       "lastModified",
       "file",
-      "sourceUrls"
+      "sourceUrls",
+      "linkUrls"
     ],
     "additionalProperties": false
   },
-  "$id": "https://openrace.vn/schema/v1/index.schema.json",
+  "$id": "https://openrace.vn/schema/v2/index.schema.json",
   "title": "OpenRace race index (data/index.json)",
-  "x-schema-version": 1
+  "x-schema-version": 2
 }

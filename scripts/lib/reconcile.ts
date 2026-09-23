@@ -1,44 +1,121 @@
-import { normalizeExtracted } from "./extraction.ts";
-import { CANONICAL_FIELDS, type CanonicalRace, type Overrides, type Race, type RaceSource, type SourceName } from "./schema.ts";
-
-// Highest priority first. ActiUp is the primary source for every field; bibchung
-// fills what ActiUp leaves empty (distances, price range) and is the only source
-// of the group price. openrace (a race we entered by hand) only fills what the
-// sites leave empty once a site lists the race; to force a value, use an override.
-export const SOURCE_PRIORITY: readonly SourceName[] = ["actiup", "bibchung", "openrace"];
-
-export type Reconciled = { fields: CanonicalRace; confidence: Race["confidence"] };
+import { canonicalSourceUrl } from "./slug.ts";
+import { normalizeExtraction, type SourceExtraction, type SourceFacts } from "./extraction.ts";
+import type { CanonicalRace, Link, Overrides, PriceTier, Race, RaceSource, Registration, SourceRole } from "./schema.ts";
+import { classifyLink, type SitesConfig } from "./sites.ts";
 
 /**
- * Derive canonical race fields from all of a race's sources: each field comes
- * from the highest-priority source that has a value for it.
- *
- * confidence: single-sourced (one usable source), multi-sourced (several, and
- * they agree on race day), conflicting (they disagree on race day).
+ * Hints a recipe or the site config attaches to a source: the series and organizer
+ * its races belong to (e.g. hcmcmarathon.com → series hcmc-marathon, Pulse Active).
  */
-export function reconcile(sources: readonly RaceSource[]): Reconciled | { error: string } {
-  const ranked = [...sources].sort((a, b) => SOURCE_PRIORITY.indexOf(a.name) - SOURCE_PRIORITY.indexOf(b.name));
-  const usable: CanonicalRace[] = [];
+export type EntityRef = { id: string; name: string; website?: string };
+export type SourceHints = { series?: EntityRef; organizer?: EntityRef };
+export type StoredExtraction = SourceExtraction & SourceHints;
+
+export type Reconciled = { fields: CanonicalRace; confidence: Race["confidence"]; flags: string[] };
+
+// Facts that should be the same everywhere come from the race's own site first.
+const ROLE_RANK: Record<SourceRole, number> = { official: 0, seller: 1, reference: 2 };
+
+/**
+ * Derive a race's fields from all its sources.
+ * - name, date, distances, location, ...: the first source that states them, official sites first.
+ * - prices: every source's tiers, each labeled with its site (sellers can differ).
+ * - registrations: every seller page, and seller links found on the pages.
+ * - links: every outbound link found on the pages, classified.
+ * confidence: single-sourced (one usable source), multi-sourced (several, agreeing on
+ * race day), conflicting (they disagree on race day; see flags).
+ */
+export function reconcile(sources: readonly RaceSource[], config: SitesConfig): Reconciled | { error: string } {
+  const ranked = [...sources].sort((a, b) => ROLE_RANK[a.role] - ROLE_RANK[b.role]);
+  const usable: { source: RaceSource; facts: SourceFacts }[] = [];
   const reasons: string[] = [];
   for (const source of ranked) {
-    const result = normalizeExtracted(source.rawExtracted);
-    if (result.ok) usable.push(result.race);
-    else reasons.push(`${source.name}: ${result.reason}`);
+    const result = normalizeExtraction(source.extracted);
+    if (result.ok) usable.push({ source, facts: result.facts });
+    else reasons.push(`${source.site}: ${result.reason}`);
   }
-  const [primary, ...rest] = usable;
+  const primary = usable[0];
   if (!primary) return { error: reasons.join("; ") || "no sources" };
 
-  const fields: CanonicalRace = { ...primary };
-  for (const field of CANONICAL_FIELDS) {
-    if (!isEmpty(field, fields[field])) continue;
-    const fill = rest.find((r) => !isEmpty(field, r[field]));
-    if (fill) (fields as Record<string, unknown>)[field] = fill[field];
-  }
-  if (fields.priceMin !== null && fields.priceMax !== null && fields.priceMin > fields.priceMax) fields.priceMax = null;
+  const first = <T>(read: (f: SourceFacts) => T | null, empty: (v: T) => boolean = () => false): T | null => {
+    for (const { facts } of usable) {
+      const v = read(facts);
+      if (v !== null && !empty(v)) return v;
+    }
+    return null;
+  };
+  const withLocation = usable.find(({ facts }) => facts.venue !== null || facts.city !== null)?.facts;
+  const hints = (key: keyof SourceHints) =>
+    ranked.map((s) => (s.extracted as StoredExtraction)[key]).find((h): h is EntityRef => typeof h?.id === "string") ?? null;
 
-  const confidence: Race["confidence"] =
-    usable.length === 1 ? "single-sourced" : usable.every((r) => r.date === primary.date) ? "multi-sourced" : "conflicting";
-  return { fields, confidence };
+  const prices: PriceTier[] = usable.flatMap(({ source, facts }) => facts.prices.map((t) => ({ ...t, site: source.site })));
+  const { registrations, links } = relatedUrls(ranked, config);
+
+  const fields: CanonicalRace = {
+    name: primary.facts.name,
+    types: first((f) => f.types, (t) => t.join() === "other") ?? primary.facts.types,
+    date: primary.facts.date,
+    endDate: primary.facts.endDate,
+    seriesId: hints("series")?.id ?? null,
+    organizerId: hints("organizer")?.id ?? null,
+    organizer: first((f) => f.organizer),
+    distances: first((f) => f.distances, (d) => d.length === 0) ?? [],
+    location: { venue: withLocation?.venue ?? null, city: withLocation?.city ?? null },
+    prices,
+    currency: primary.facts.currency,
+    // Sellers know best whether tickets are left.
+    registrationStatus:
+      usable.find(({ source, facts }) => source.role === "seller" && facts.registrationStatus !== null)?.facts.registrationStatus ??
+      first((f) => f.registrationStatus),
+    registrations,
+    links,
+  };
+
+  const flags: string[] = [];
+  const dates = new Map(usable.map(({ source, facts }) => [source.site, facts.date]));
+  if (new Set(dates.values()).size > 1) {
+    flags.push(`sources disagree on race day: ${[...dates].map(([site, d]) => `${site} ${d}`).join(", ")}`);
+  }
+  const official = usable.find(({ source }) => source.role === "official");
+  for (const { source, facts } of usable) {
+    if (!official || source === official.source || facts.distances.length === 0 || official.facts.distances.length === 0) continue;
+    if (facts.distances.join() !== official.facts.distances.join()) {
+      flags.push(`${source.site} lists distances ${facts.distances.join(", ")}; the official site ${official.facts.distances.join(", ")}`);
+    }
+  }
+
+  const confidence: Race["confidence"] = usable.length === 1 ? "single-sourced" : dates.size > 0 && new Set(dates.values()).size === 1 ? "multi-sourced" : "conflicting";
+  return { fields, confidence, flags };
+}
+
+/** Registrations and classified links from the sources' pages, deduped by URL. */
+function relatedUrls(sources: readonly RaceSource[], config: SitesConfig): { registrations: Registration[]; links: Link[] } {
+  const registrations = new Map<string, Registration>();
+  const links = new Map<string, Link>();
+  for (const source of sources) {
+    if (source.role === "seller") registrations.set(source.url, { site: source.site, url: source.url });
+  }
+  for (const source of sources) {
+    const foundOn = new URL(source.url).hostname.replace(/^www\./, "");
+    for (const raw of (source.extracted as StoredExtraction).links ?? []) {
+      let url: string;
+      try {
+        url = canonicalSourceUrl(raw.url);
+      } catch {
+        continue;
+      }
+      if (url === source.url || links.has(url)) continue;
+      const { kind, site } = classifyLink(config, url, raw.text);
+      // A page linking to its own site (menus, other pages) says nothing about the race.
+      if (site?.key === source.site) continue;
+      links.set(url, { url, kind, foundOn });
+      if (kind === "seller" && site && !registrations.has(url)) registrations.set(url, { site: site.key, url });
+    }
+  }
+  return {
+    registrations: [...registrations.values()],
+    links: [...links.values()].sort((a, b) => a.kind.localeCompare(b.kind) || a.url.localeCompare(b.url)),
+  };
 }
 
 /** The race's served fields: derived from the sources, then OpenRace overrides on top. */
@@ -48,14 +125,4 @@ export function applyOverrides(fields: CanonicalRace, overrides: Overrides): Can
     if (override) (out as Record<string, unknown>)[field] = override.value;
   }
   return out;
-}
-
-function isEmpty(field: string, value: unknown): boolean {
-  if (value === null || value === undefined) return true;
-  if (Array.isArray(value)) return value.length === 0 || (field === "types" && value.join() === "other");
-  if (field === "location") {
-    const loc = value as CanonicalRace["location"];
-    return loc.city === null && loc.venue === null;
-  }
-  return false;
 }

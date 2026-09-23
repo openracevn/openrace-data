@@ -1,64 +1,79 @@
 /**
- * Race checker, run by .github/workflows/check.yml (daily, or by hand).
+ * The race checker (design v2), run by .github/workflows/check.yml or by hand.
  *
- *   npm run check -- --mode daily               # discover + refresh (the scheduled run)
- *   npm run check -- --mode discover            # only look for races we don't have yet
- *   npm run check -- --mode refresh             # only re-check known races that are due
- *   npm run check -- --mode race --race <id|slug|url>  # re-check one race now, whatever its schedule
+ *   npm run check                               # every site that is due (the scheduled run)
+ *   npm run check -- --site <key>               # one site now, whatever its schedule
+ *   npm run check -- --race <url|id|slug>       # one race now
  *
- * Options: --max-scrapes N (default 40; each extraction costs 5 Firecrawl credits), --dry-run,
- * --preview <dir> (with --dry-run: also write the planned files under <dir> to inspect).
+ * Options:
+ *   --past            also races that already took place (backfill)
+ *   --limit N         at most N races per site (tests, small batches)
+ *   --max-credits N   Firecrawl credits this run may spend (default 250; the month's cap in config/sites.yaml also applies)
+ *   --free            no paid reads: only what's cached; reports what would be read
+ *   --dry-run         plan against the local checkout and don't commit (still reads, unless --free)
+ *   --preview <dir>   with --dry-run: write the planned files under <dir>
  *
- * Discovery scrapes the listing for links (1 credit), then extracts only URLs we
- * don't know yet. Refresh
- * re-extracts known races every REFRESH_DAYS until race day (see lib/checks.ts).
- * Everything lands in one commit: race files + index + state/checks.json.
+ * For each site: the recipe lists its races and takes a snapshot of each (free);
+ * a snapshot whose fingerprint didn't change since the last read is skipped;
+ * otherwise its pages (and, if they give no prices, its price images) are read
+ * with Firecrawl, cached by content. Everything lands in one commit: race files,
+ * index, series, organizers and state/.
  *
- * Committing runs read the current branch head on GitHub (no need to pull first);
- * --dry-run reads the local checkout and needs no GitHub token.
- * Env: FIRECRAWL_API_KEY; GITHUB_TOKEN (PAT) + GITHUB_OWNER/REPO/BRANCH unless --dry-run.
+ * Env: FIRECRAWL_API_KEY (unless --free); GITHUB_TOKEN (PAT) + GITHUB_OWNER/REPO/BRANCH
+ * unless --dry-run; DISCORD_WEBHOOK_URL for health alerts (optional).
  */
 import { appendFileSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
+import { env, requireEnv } from "./lib/env.ts";
+import { CREDITS_PER_READ, FirecrawlReader, type Reader } from "./lib/firecrawl.ts";
+import { GitHubRepo, type GitHubTarget } from "./lib/github.ts";
+import { createHttp } from "./lib/http.ts";
+import { READS_PATH, parseReadCache, pruneReadCache, readSnapshot, snapshotFingerprint, type ReadCache } from "./lib/read.ts";
+import { recipeFor } from "./lib/recipes/index.ts";
+import type { RaceRef, Recipe, RecipeContext } from "./lib/recipes/types.ts";
+import { INDEX_PATH, IndexSchema } from "./lib/schema.ts";
+import { loadSites, roleOf, siteForUrl, type Site } from "./lib/sites.ts";
+import { canonicalSourceUrl } from "./lib/slug.ts";
 import {
   CHECKS_PATH,
-  byStaleness,
-  isCandidate,
-  isRefreshDue,
+  CREDITS_PATH,
+  SITES_STATE_PATH,
+  isSiteDue,
+  monthKey,
   parseChecks,
-  serializeChecks,
+  parseCredits,
+  parseSitesState,
+  serializeSorted,
   vietnamDate,
   type Check,
-} from "./lib/checks.ts";
-import { env, requireEnv } from "./lib/env.ts";
-import { EXTRACTIONS, normalizeExtracted } from "./lib/extraction.ts";
-import { Firecrawl } from "./lib/firecrawl.ts";
-import { GitHubRepo, type GitHubTarget } from "./lib/github.ts";
-import { INDEX_PATH, IndexSchema, RaceSchema, racePath } from "./lib/schema.ts";
-import { canonicalSourceUrl } from "./lib/slug.ts";
-import { SOURCES, sourceForUrl } from "./lib/sources.ts";
+  type SiteState,
+} from "./lib/state.ts";
 import { formatCommitMessage, planSync, syncToGitHub, type RaceStore, type SyncInput, type SyncPlan } from "./sync.ts";
-
-const MODES = ["daily", "discover", "refresh", "race"] as const;
-type Mode = (typeof MODES)[number];
 
 const args = process.argv.slice(2);
 const arg = (name: string) => {
   const i = args.indexOf(`--${name}`);
   return i >= 0 ? args[i + 1] : undefined;
 };
-const mode = (arg("mode") ?? "daily") as Mode;
+const siteArg = arg("site");
 const raceArg = arg("race")?.trim();
-const maxScrapes = Number(arg("max-scrapes") ?? 40);
+const includePast = args.includes("--past");
+const limit = arg("limit") ? Number(arg("limit")) : Number.POSITIVE_INFINITY;
+const maxCredits = Number(arg("max-credits") ?? 250);
+const free = args.includes("--free");
 const dryRun = args.includes("--dry-run");
 const previewDir = arg("preview");
-if (!MODES.includes(mode)) fail(`--mode must be one of ${MODES.join(", ")}`);
-if (mode === "race" && !raceArg) fail("--mode race needs --race <race id, slug or URL>");
-if (!Number.isInteger(maxScrapes) || maxScrapes < 1) fail("--max-scrapes must be a positive integer");
+if (siteArg && raceArg) fail("use --site or --race, not both");
+if (!(limit > 0)) fail("--limit must be a positive number");
+if (!Number.isInteger(maxCredits) || maxCredits < 0) fail("--max-credits must be a whole number");
 if (previewDir && !dryRun) fail("--preview only works with --dry-run");
 
+const config = loadSites();
 const now = new Date();
 const today = vietnamDate(now);
+const month = monthKey(now);
+const http = createHttp();
+
 const local: RaceStore = {
   read: async (path) => {
     try {
@@ -69,7 +84,6 @@ const local: RaceStore = {
     }
   },
 };
-
 const target: GitHubTarget | null = dryRun
   ? null
   : {
@@ -78,8 +92,8 @@ const target: GitHubTarget | null = dryRun
       repo: env("GITHUB_REPO") ?? "openrace-data",
       branch: env("GITHUB_BRANCH") ?? "main",
     };
-// What to check is decided from the data it will commit on top of. The commit
-// itself still re-plans against the head at commit time.
+// What to check is decided from the data it will commit on top of; the commit
+// itself re-plans against the head at commit time.
 let current: RaceStore = local;
 if (target) {
   const repo = new GitHubRepo(target);
@@ -88,199 +102,190 @@ if (target) {
 
 const index = IndexSchema.parse(JSON.parse((await current.read(INDEX_PATH)) ?? "[]"));
 const checks = parseChecks(await current.read(CHECKS_PATH));
-const knownUrls = new Set(index.flatMap((e) => e.sourceUrls));
-const discovering = mode === "daily" || mode === "discover";
+const sitesState = parseSitesState(await current.read(SITES_STATE_PATH));
+const spentThisMonth = parseCredits(await current.read(CREDITS_PATH))[month] ?? 0;
+const readCache: ReadCache = parseReadCache(await current.read(READS_PATH));
 
-const firecrawl = new Firecrawl(requireEnv("FIRECRAWL_API_KEY"));
-const runChecks = new Map<string, Check>(); // this run's check log entries
+const budget = Math.max(0, Math.min(maxCredits, config.monthlyCredits - spentThisMonth));
+const reader: Reader = free
+  ? {
+      credits: 0,
+      readHtml: async () => ({ ok: false, error: "free run: not read", credits: 0, capped: true }),
+      readImage: async () => ({ ok: false, error: "free run: not read", credits: 0, capped: true }),
+    }
+  : new FirecrawlReader(requireEnv("FIRECRAWL_API_KEY"), budget);
+
+const runChecks = new Map<string, Check>();
+const runSites = new Map<string, SiteState>();
 const inputs: SyncInput[] = [];
-const queue: string[] = [];
-const queued = new Set<string>();
 const report: string[] = [];
-let scrapes = 0;
-let deferred = 0;
-let failures = 0;
+const alerts: string[] = [];
+const counts = { sites: 0, races: 0, unchanged: 0, read: 0, paidReads: 0, cachedReads: 0, deferred: 0, failed: 0, wouldSpend: 0 };
 
-/** Event pages among a page's links, canonicalized, that discovery should extract. */
-function newEventUrls(links: readonly string[]): string[] {
-  const out: string[] = [];
-  for (const link of links) {
-    let url: string;
+// 1. What to check.
+type Job = { site: Site; recipe: Recipe; refs?: RaceRef[] };
+const jobs: Job[] = [];
+if (raceArg) {
+  const entry = index.find((e) => e.id === raceArg || e.slug === raceArg);
+  let urls = entry?.sourceUrls ?? [];
+  if (!entry) {
     try {
-      url = canonicalSourceUrl(link);
+      urls = [canonicalSourceUrl(raceArg)];
     } catch {
+      fail(`"${raceArg}" is neither a race id or slug in ${INDEX_PATH} nor a URL`);
+    }
+  }
+  for (const url of urls) {
+    const site = siteForUrl(config, url);
+    const recipe = site && recipeFor(site);
+    if (!site || !recipe) {
+      if (!entry) fail(`${url} isn't on a site with a recipe (config/sites.yaml)`);
+      continue; // e.g. a hand-entered reference
+    }
+    const slugHint = site.recipe === "actiup" ? new URL(url).pathname.split("/")[3] : undefined;
+    jobs.push({ site, recipe, refs: [{ url, slugHint }] });
+  }
+  if (jobs.length === 0) fail(`${raceArg} has no source on a site with a recipe`);
+} else {
+  const sites = siteArg ? config.sites.filter((s) => s.key === siteArg) : config.sites.filter((s) => isSiteDue(s, sitesState[s.key], now));
+  if (siteArg && sites.length === 0) fail(`no site "${siteArg}" in config/sites.yaml`);
+  for (const site of sites) {
+    const recipe = recipeFor(site);
+    if (recipe) jobs.push({ site, recipe });
+    else if (siteArg) fail(`site ${site.key} has recipe: none`);
+  }
+}
+
+// 2. Discover, snapshot, read.
+for (const job of jobs) {
+  const { site, recipe } = job;
+  const ctx: RecipeContext = { site, config, http, today, includePast: includePast || !!raceArg };
+  counts.sites++;
+  let refs: RaceRef[];
+  try {
+    refs = job.refs ?? (await recipe.discover(ctx));
+  } catch (err) {
+    const failures = (sitesState[site.key]?.failures ?? 0) + 1;
+    runSites.set(site.key, { lastCheckedAt: now.toISOString(), status: "error", reason: (err as Error).message, failures });
+    report.push(`✗ site ${site.key}: ${(err as Error).message}`);
+    if (failures >= 2) alerts.push(`🚨 ${site.name} (${site.key}) failed ${failures} runs in a row: ${(err as Error).message}`);
+    continue;
+  }
+  refs = refs.filter((r) => !checks[r.url]?.permanent || !!raceArg).slice(0, limit);
+  let siteRead = 0;
+  for (const ref of refs) {
+    counts.races++;
+    const checkedAt = new Date().toISOString();
+    let snap;
+    try {
+      snap = await recipe.snapshot(ref, ctx);
+    } catch (err) {
+      runChecks.set(ref.url, { ...checks[ref.url], lastCheckedAt: checkedAt, status: "error", reason: (err as Error).message });
+      report.push(`✗ ${ref.url}: ${(err as Error).message}`);
+      counts.failed++;
       continue;
     }
-    if (sourceForUrl(url) && !knownUrls.has(url) && isCandidate(checks[url], now)) out.push(url);
+    const fp = snapshotFingerprint(snap);
+    const prev = checks[ref.url];
+    if (!raceArg && prev?.fingerprint === fp && prev.status !== "error") {
+      counts.unchanged++;
+      runChecks.set(ref.url, { ...prev, lastCheckedAt: checkedAt });
+      continue;
+    }
+    const outcome = await readSnapshot(snap, reader, http, readCache, now);
+    if (!outcome.ok) {
+      if (outcome.capped) {
+        counts.deferred++;
+        // Upper bound: every page, and up to 4 images if the pages give no prices.
+        const images = Math.min(snap.priceImages.length, 4);
+        const estimate = (snap.pages.length + images) * CREDITS_PER_READ;
+        counts.wouldSpend += estimate;
+        report.push(
+          free
+            ? `… ${ref.url}: would read ${snap.pages.length} page(s)${images ? ` + up to ${images} price image(s)` : ""}, ≤${estimate} credits`
+            : `… ${ref.url}: ${outcome.reason} (left for the next run)`,
+        );
+      } else {
+        counts.failed++;
+        runChecks.set(ref.url, { ...prev, lastCheckedAt: checkedAt, status: "error", reason: outcome.reason });
+        report.push(`✗ ${ref.url}: ${outcome.reason}`);
+      }
+      continue;
+    }
+    counts.read++;
+    siteRead++;
+    counts.paidReads += outcome.paidReads;
+    counts.cachedReads += outcome.cachedReads;
+    for (const note of outcome.notes) report.push(`· ${ref.url}: ${note}`);
+    inputs.push({ url: ref.url, site: site.key, role: roleOf(site), extracted: outcome.extraction, checkedAt, slugHint: snap.slugHint });
+    runChecks.set(ref.url, { lastCheckedAt: checkedAt, status: "ok", fingerprint: fp });
+    console.log(`read ${ref.url} (${outcome.paidReads} paid, ${outcome.cachedReads} cached)`);
+  }
+  runSites.set(site.key, { lastCheckedAt: now.toISOString(), status: "ok", failures: 0 });
+  report.push(`site ${site.key}: ${refs.length} race page(s), ${siteRead} read`);
+}
+
+// 3. Plan and commit: races + index + series/organizers + state, one commit.
+const finishedAt = new Date().toISOString();
+const credits = reader.credits;
+const context = `Checked by scripts/check.ts (${raceArg ? `race ${raceArg}` : siteArg ? `site ${siteArg}` : "due sites"}${includePast ? ", with past races" : ""}).`;
+
+async function stateFiles(store: RaceStore): Promise<Record<string, string>> {
+  const out: Record<string, string> = {};
+  if (runChecks.size > 0) {
+    const merged = parseChecks(await store.read(CHECKS_PATH));
+    for (const [url, check] of runChecks) merged[url] = check;
+    out[CHECKS_PATH] = serializeSorted(merged);
+  }
+  if (runSites.size > 0) {
+    const merged = parseSitesState(await store.read(SITES_STATE_PATH));
+    for (const [key, s] of runSites) merged[key] = s;
+    out[SITES_STATE_PATH] = serializeSorted(merged);
+  }
+  if (credits > 0) {
+    const merged = parseCredits(await store.read(CREDITS_PATH));
+    merged[month] = (merged[month] ?? 0) + credits;
+    out[CREDITS_PATH] = serializeSorted(merged);
+  }
+  if (counts.paidReads + counts.cachedReads > 0) {
+    const merged = { ...parseReadCache(await store.read(READS_PATH)), ...readCache };
+    out[READS_PATH] = serializeSorted(pruneReadCache(merged, now));
   }
   return out;
 }
 
-function enqueue(urls: readonly string[]): void {
-  for (const url of urls) {
-    if (queued.has(url)) continue;
-    queued.add(url);
-    queue.push(url);
-  }
-}
-
-async function extract(url: string): Promise<void> {
-  if (scrapes >= maxScrapes) {
-    deferred++;
-    return;
-  }
-  scrapes++;
-  const result = await firecrawl.extract(url, EXTRACTIONS[sourceForUrl(url)!]);
-  const checkedAt = new Date().toISOString();
-  if (!result.ok || !result.json) {
-    const reason = result.ok ? "no extraction returned" : result.error;
-    runChecks.set(url, { lastCheckedAt: checkedAt, status: "error", reason });
-    report.push(`✗ ${url}: ${reason}`);
-    failures++;
-    return;
-  }
-  inputs.push({ url, extracted: result.json, checkedAt });
-  // Raw model output, for checking extraction quality in the run log (the race file
-  // only stores it when a canonical field changes).
-  console.log(`extracted ${url}\n  ${JSON.stringify(result.json)}`);
-  const normalized = normalizeExtracted(result.json);
-  if (normalized.ok) {
-    runChecks.set(url, { lastCheckedAt: checkedAt, status: "ok" });
-  } else {
-    // "Not a sports event" sticks; transient rejections (flaky render, no date yet) are retried.
-    const permanent = !knownUrls.has(url) && result.json.pageKind === "non_sport";
-    runChecks.set(url, { lastCheckedAt: checkedAt, status: "rejected", reason: normalized.reason, ...(permanent && { permanent }) });
-    report.push(`· ${url}: ${normalized.reason}${permanent ? " (won't re-check)" : ""}`);
-  }
-}
-
-// 1. Work out what to scrape.
-if (mode === "race") {
-  const byId = index.find((e) => e.id === raceArg || e.slug === raceArg);
-  // openrace references (entered by hand) aren't scraped.
-  let urls = (byId?.sourceUrls ?? []).filter((u) => sourceForUrl(u) !== null);
-  if (byId && urls.length === 0) fail(`${byId.slug} has no scraped source (entered by hand); edit it with npm run edit`);
-  if (!byId) {
-    try {
-      urls = [canonicalSourceUrl(raceArg!)];
-    } catch {
-      fail(`"${raceArg}" is neither a race id or slug in ${INDEX_PATH} nor a URL`);
-    }
-    if (!sourceForUrl(urls[0]!)) fail(`${urls[0]} is not an event page from a known source`);
-  }
-  enqueue(urls);
-}
-
-const MAX_LISTING_PAGES = 10; // per source, when a listing is paginated
-
-if (discovering) {
-  for (const source of Object.values(SOURCES)) {
-    const listings = [...source.listings];
-    for (let i = 0; i < listings.length && i < MAX_LISTING_PAGES; i++) {
-      const listing = listings[i]!;
-      // ActiUp's listing renders client-side and occasionally comes back before its
-      // events load. A listing with no event links is a failed render, not "no new races".
-      let links: string[] = [];
-      let events: string[] = [];
-      let error = "no event links (page rendered without events)";
-      for (let attempt = 1; attempt <= 3 && events.length === 0; attempt++) {
-        const result = await firecrawl.links(listing);
-        if (!result.ok) {
-          error = result.error;
-          continue;
-        }
-        links = result.links;
-        events = links.filter((link) => {
-          try {
-            return sourceForUrl(canonicalSourceUrl(link)) !== null;
-          } catch {
-            return false;
-          }
-        });
-      }
-      if (events.length === 0) {
-        report.push(`✗ listing ${listing}: ${error}`);
-        failures++;
-        continue;
-      }
-      const fresh = newEventUrls(events);
-      report.push(`listing ${listing}: ${new Set(events.map((e) => canonicalSourceUrl(e))).size} events, ${fresh.length} new`);
-      enqueue(fresh);
-      // Follow pagination (bibchung: /events?page=2, ...).
-      for (const link of links) {
-        let u: URL;
-        try {
-          u = new URL(link);
-        } catch {
-          continue;
-        }
-        if (source.hosts.includes(u.hostname.replace(/^www\./, "")) && source.isListingPage?.(u) && !listings.includes(u.toString())) {
-          listings.push(u.toString());
-        }
-      }
-    }
-  }
-}
-
-if (mode === "daily" || mode === "refresh") {
-  const due: string[] = [];
-  for (const entry of index) {
-    const text = await current.read(racePath(entry));
-    if (text === null) continue;
-    const race = RaceSchema.parse(JSON.parse(text));
-    for (const url of entry.sourceUrls.filter((u) => sourceForUrl(u) !== null)) {
-      // No log entry (e.g. the race came in via sync-cli): fall back to the source's own last check.
-      const lastCheckedAt = race.sources.find((src) => src.url === url)?.lastCheckedAt;
-      const check = checks[url] ?? (lastCheckedAt ? { lastCheckedAt, status: "ok" as const } : undefined);
-      if (isRefreshDue(race.date, check, today, now)) due.push(url);
-    }
-  }
-  enqueue(due.sort(byStaleness(checks)));
-}
-
-// 2. Scrape.
-for (let i = 0; i < queue.length; i++) await extract(queue[i]!);
-
-// 3. Commit races + index + check log as one commit.
-const finishedAt = new Date().toISOString();
-const context = `Checked by scripts/check.ts (mode: ${mode}${raceArg ? `, race: ${raceArg}` : ""}).`;
 let plan: SyncPlan;
 let commitSha: string | null = null;
 if (dryRun) {
-  plan = await planSync(local, inputs, finishedAt);
+  plan = await planSync(local, inputs, config, finishedAt);
   if (previewDir) {
-    for (const [path, content] of Object.entries(plan.files)) {
+    for (const [path, content] of Object.entries({ ...plan.files, ...(await stateFiles(local)) })) {
       if (content === null) continue;
       mkdirSync(dirname(join(previewDir, path)), { recursive: true });
       writeFileSync(join(previewDir, path), content);
     }
   }
 } else {
-  const result = await syncToGitHub(
-    target!,
-    inputs,
-    {
-      now: finishedAt,
-      context,
-      bookkeepingMessage: `state: checked ${runChecks.size} page(s), no race changes\n\n${context}`,
-      extraFiles: async (store): Promise<Record<string, string>> => {
-        if (runChecks.size === 0) return {};
-        const merged = parseChecks(await store.read(CHECKS_PATH));
-        for (const [url, check] of runChecks) merged[url] = check;
-        return { [CHECKS_PATH]: serializeChecks(merged) };
-      },
-    },
-  );
+  const result = await syncToGitHub(target!, inputs, config, {
+    now: finishedAt,
+    context,
+    bookkeepingMessage: `state: checked ${runChecks.size} page(s), no race changes\n\n${context}`,
+    extraFiles: stateFiles,
+  });
   plan = result;
   commitSha = result.commitSha;
 }
 
-// 4. Report.
+// 4. Report, and alert on Discord when something needs a person.
+if (counts.deferred > 0 && !free) alerts.push(`💳 Credit cap reached: ${counts.deferred} race(s) left for the next run (month ${month}: ${spentThisMonth + credits} of ${config.monthlyCredits}).`);
+for (const s of plan.skipped) report.push(`· skipped ${s.url}: ${s.reason}`);
+
 const summary = [
-  `## Race check (${mode}${dryRun ? ", dry run" : ""})`,
+  `## Race check${dryRun ? " (dry run)" : ""}${free ? " (free: cached reads only)" : ""}`,
   "",
-  `- Pages extracted: ${scrapes} of max ${maxScrapes}${deferred ? ` (${deferred} left for the next run)` : ""}`,
-  `- Firecrawl credits: ${firecrawl.credits}`,
+  `- Sites: ${counts.sites} · race pages: ${counts.races} (${counts.unchanged} unchanged, ${counts.read} read, ${counts.deferred} ${free ? "to read" : "deferred"}, ${counts.failed} failed)`,
+  `- Reads: ${counts.paidReads} paid, ${counts.cachedReads} from cache · Firecrawl credits: ${credits} (month: ${spentThisMonth + credits} of ${config.monthlyCredits})`,
+  ...(free && counts.deferred > 0 ? [`- A paid run would read ${counts.deferred} race(s) for at most ${counts.wouldSpend} credits`] : []),
   `- Races: ${plan.changes.filter((c) => c.kind === "added").length} added, ${plan.changes.filter((c) => c.kind === "updated").length} updated`,
   `- Commit: ${commitSha ?? (dryRun ? "none (dry run)" : "none")}`,
   "",
@@ -291,8 +296,18 @@ console.log(summary);
 const summaryFile = env("GITHUB_STEP_SUMMARY");
 if (summaryFile) appendFileSync(summaryFile, `${summary}\n`);
 
-// Red run if nothing could be scraped at all (e.g. out of credits, bad key, listing never rendered).
-if (failures > 0 && inputs.length === 0) process.exitCode = 1;
+const webhook = env("DISCORD_WEBHOOK_URL");
+if (alerts.length > 0 && webhook && !dryRun) {
+  const res = await fetch(webhook, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ username: "OpenRace Data", content: `**Race check needs a look**\n${alerts.join("\n")}`.slice(0, 2000), allowed_mentions: { parse: [] } }),
+  });
+  if (!res.ok) console.error(`Discord alert failed: ${res.status}`);
+}
+
+// Red run if nothing could be read at all (bad key, every site down, ...).
+if (counts.failed > 0 && counts.read === 0 && counts.unchanged === 0) process.exitCode = 1;
 
 function fail(message: string): never {
   console.error(message);

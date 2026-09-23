@@ -2,15 +2,21 @@ import { z } from "zod";
 
 export const RACES_DIR = "data/races";
 export const INDEX_PATH = "data/index.json";
+export const SERIES_PATH = "data/series.json";
+export const ORGANIZERS_PATH = "data/organizers.json";
 
 /**
- * Version of the data contract (race files + index.json) that consumers such as
- * openrace-api code against. Bump it on a breaking change: removing or renaming a
- * field, narrowing a type, or changing a field's meaning. Additive changes (a new
- * field, a new enum value) don't bump it; consumers must ignore unknown fields and
- * tolerate unknown enum values. Published as JSON Schema under schema/ (npm run schema).
+ * Version of the data contract (race files, index.json, series.json,
+ * organizers.json) that consumers such as openrace-api code against. Bump it on a
+ * breaking change: removing or renaming a field, narrowing a type, or changing a
+ * field's meaning. Additive changes (a new field, a new enum value) don't bump it;
+ * consumers must ignore unknown fields and tolerate unknown enum values.
+ * Published as JSON Schema under schema/ (npm run schema).
+ *
+ * 2: design v2 (.claude/docs/design-v2.md): price tiers, series and organizers,
+ *    registrations, links, flags, location as written, sources keyed by site.
  */
-export const SCHEMA_VERSION = 1;
+export const SCHEMA_VERSION = 2;
 
 // Sanity bounds: values outside them are extraction mistakes, not races.
 export const MAX_PRICE = 100_000_000; // VND
@@ -26,7 +32,6 @@ export function isDistance(s: string): boolean {
   );
 }
 
-export const REGIONS = ["north", "central", "south"] as const;
 export const REGISTRATION_STATUSES = ["open", "closing_soon", "sold_out", "closed"] as const;
 
 // Event formats, for filtering. A race can have several (e.g. a road 10K plus a
@@ -48,26 +53,30 @@ export const RACE_TYPES = [
   "other", //        a sport event that fits none of the above
 ] as const;
 
-// single-sourced: one usable source. multi-sourced: several sources agree on race
-// day. conflicting: they disagree on race day (someone should look). See reconcile.ts.
-export const CONFIDENCE_LEVELS = ["single-sourced", "multi-sourced", "conflicting"] as const;
+// Normalized price tier. The label as written is kept in `tier`.
+export const TIER_KINDS = ["super_early", "early", "regular", "late", "group", "other"] as const;
 
-// Source names are stable keys; add new ones as ingestion sources are added.
-// actiup: primary. bibchung: group purchase at a discount (groupPriceMin), plus
-// distances and prices ActiUp hides behind its login. openrace: entered by us, for a
-// race no site lists (never scraped; its url is the reference we took it from).
-export const SOURCE_NAMES = ["actiup", "bibchung", "openrace"] as const;
-/** Sources we scrape (everything but openrace). */
-export const SCRAPED_SOURCES = ["actiup", "bibchung"] as const;
+// What a related URL is. `seller` links also show up in `registrations`.
+export const LINK_KINDS = ["official", "seller", "facebook", "rules", "results", "news", "other"] as const;
+
+// official: the race's own site (wins for date, distances and location).
+// seller: a ticket seller (ActiUp, bibchung, 5bib, ...). reference: entered by hand
+// by OpenRace (never scraped; its url is where we took the facts from).
+export const SOURCE_ROLES = ["official", "seller", "reference"] as const;
+
+// single-sourced: one usable source. multi-sourced: several sources agree on race
+// day. conflicting: they disagree on race day (see flags). See reconcile.ts.
+export const CONFIDENCE_LEVELS = ["single-sourced", "multi-sourced", "conflicting"] as const;
 
 const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "expected YYYY-MM-DD");
 const raceDate = isoDate.refine((d) => {
   const year = Number(d.slice(0, 4));
   return year >= MIN_RACE_YEAR && year <= new Date().getUTCFullYear() + MAX_YEARS_AHEAD;
 }, `race year must be between ${MIN_RACE_YEAR} and ${MAX_YEARS_AHEAD} years from now`);
-const price = z.number().int().nonnegative().max(MAX_PRICE).nullable();
 const isoDateTime = z.iso.datetime();
 const slug = z.string().max(120).regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, "expected kebab-case slug");
+// A site key from config/sites.yaml, or "openrace".
+const siteKey = slug;
 // No URLs or prices: those are extraction mistakes.
 const raceName = z
   .string()
@@ -77,33 +86,58 @@ const raceName = z
 // Permanent key: file name, index key, API key. Never derived from race data.
 const raceId = z.uuid();
 
+export const PriceTierSchema = z
+  .object({
+    // Normalized ("21km"); null when one price covers every distance.
+    distance: z.string().refine(isDistance, "not a distance").nullable(),
+    tier: z.string().min(1).max(80),
+    kind: z.enum(TIER_KINDS),
+    price: z.number().int().nonnegative().max(MAX_PRICE),
+    from: isoDate.nullable(),
+    to: isoDate.nullable(),
+    // The site whose page gave this price (sellers can differ, e.g. a group price).
+    site: siteKey,
+  })
+  .refine((t) => t.from === null || t.to === null || t.from <= t.to, { message: "from must be <= to", path: ["from"] });
+
+export const RegistrationSchema = z.object({ site: siteKey, url: z.url() });
+
+export const LinkSchema = z.object({
+  url: z.url(),
+  kind: z.enum(LINK_KINDS),
+  // Host of the page the link was found on.
+  foundOn: z.string().min(1),
+});
+
 // Fields that come from sources, or from an OpenRace override (everything except
 // bookkeeping). Diffs, commit summaries and Discord notifications use these.
 export const CANONICAL_FIELDS = [
   "name",
   "types",
   "date",
+  "endDate",
+  "seriesId",
+  "organizerId",
+  "organizer",
   "distances",
   "location",
-  "priceMin",
-  "priceMax",
-  "groupPriceMin",
+  "prices",
   "currency",
   "registrationStatus",
-  "registrationUrl",
-  "organizer",
-  "foreignerEligible",
+  "registrations",
+  "links",
 ] as const;
 
 export const SourceSchema = z.object({
-  name: z.enum(SOURCE_NAMES),
+  site: siteKey,
+  role: z.enum(SOURCE_ROLES),
   url: z.url(),
   lastCheckedAt: isoDateTime,
   lastChangedAt: isoDateTime,
-  // Verbatim Firecrawl extraction for this source (for openrace: the fields we entered).
-  // Canonical fields are derived from these, so reconciliation can be re-run later
-  // without re-scraping.
-  rawExtracted: z.record(z.string(), z.unknown()),
+  // What this source said, verbatim: facts read from the site's own data, and each
+  // page's and price image's extraction. Canonical fields are derived from these,
+  // so reconciliation can be re-run later without re-reading anything.
+  extracted: z.record(z.string(), z.unknown()),
 });
 
 /**
@@ -122,37 +156,38 @@ export const RaceSchema = z
   .object({
     id: raceId,
     // URL slug for the frontend. Unique, and allowed to change (SEO) with
-    // `npm run edit -- slug`; a new race starts with the source's own slug (ActiUp's
-    // /vi/event/<slug>). Names the file (see raceFileName). Never used as a key: `id` is.
+    // `npm run edit -- slug`. Names the file (see raceFileName). Never used as a key: `id` is.
     slug,
     name: raceName,
     types: z.array(z.enum(RACE_TYPES)).min(1),
     date: raceDate,
+    // Last race day of a multi-day event; null for a one-day race.
+    endDate: raceDate.nullable(),
+    seriesId: slug.nullable(),
+    organizerId: slug.nullable(),
+    // The organizer as a source writes it.
+    organizer: z.string().min(1).nullable(),
     distances: z.array(z.string().refine(isDistance, "not a distance")),
+    // As the source writes it; not normalized.
     location: z.object({
       venue: z.string().min(1).nullable(),
       city: z.string().min(1).nullable(),
-      region: z.enum(REGIONS).nullable(),
     }),
-    priceMin: price,
-    priceMax: price,
-    // Cheapest discounted (group) price on bibchung; null when the race isn't on bibchung.
-    groupPriceMin: price,
+    prices: z.array(PriceTierSchema),
     currency: z.string().regex(/^[A-Z]{3}$/, "expected an ISO 4217 code"),
     registrationStatus: z.enum(REGISTRATION_STATUSES).nullable(),
-    registrationUrl: z.url().nullable(),
-    organizer: z.string().min(1).nullable(),
-    foreignerEligible: z.boolean().nullable(),
+    registrations: z.array(RegistrationSchema),
+    links: z.array(LinkSchema),
+    // Things someone should look at (sources disagree, no prices close to race day, ...).
+    // Derived on every write; shown on Discord.
+    flags: z.array(z.string().min(1)),
     overrides: z.partialRecord(z.enum(CANONICAL_FIELDS), OverrideSchema),
     sources: z.array(SourceSchema).min(1),
     confidence: z.enum(CONFIDENCE_LEVELS),
     createdAt: isoDateTime,
     updatedAt: isoDateTime,
   })
-  .refine((r) => r.priceMin === null || r.priceMax === null || r.priceMin <= r.priceMax, {
-    message: "priceMin must be <= priceMax",
-    path: ["priceMin"],
-  })
+  .refine((r) => r.endDate === null || r.endDate >= r.date, { message: "endDate must be >= date", path: ["endDate"] })
   .refine((r) => r.createdAt <= r.updatedAt, { message: "createdAt must be <= updatedAt", path: ["updatedAt"] })
   .superRefine((r, ctx) => {
     for (const [field, override] of Object.entries(r.overrides)) {
@@ -161,6 +196,16 @@ export const RaceSchema = z
       }
     }
   });
+
+/** A series (recurring event, e.g. "HCMC Marathon") or an organizer. Keys are readable slugs. */
+export const EntitySchema = z.object({
+  id: slug,
+  name: z.string().min(1).max(200),
+  website: z.url().nullable(),
+});
+export const SeriesSchema = EntitySchema.extend({ organizerId: slug.nullable() });
+export const SeriesListSchema = z.array(SeriesSchema);
+export const OrganizerListSchema = z.array(EntitySchema);
 
 /** Structural equality for JSON values (object key order doesn't matter). */
 export function deepEqual(a: unknown, b: unknown): boolean {
@@ -185,22 +230,31 @@ export const IndexEntrySchema = z.object({
   // The race's file in data/races (raceFileName), so readers don't need the naming rule.
   file: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*-\d{4}\.json$/, "expected <slug>-<year>.json"),
   // Lets ingestion map a source URL to its race without reading every race file,
-  // so a renamed race keeps its id instead of forking a new file.
+  // so a renamed race keeps its id instead of forking a new file. One URL can
+  // belong to several races: an official site serves a new edition every year.
   sourceUrls: z.array(z.url()),
+  // Official and seller URLs the race's pages link to: a page at one of these
+  // URLs is this race (the strongest match across sites).
+  linkUrls: z.array(z.url()),
 });
 
 export const IndexSchema = z.array(IndexEntrySchema);
 
-export type Region = (typeof REGIONS)[number];
 export type RegistrationStatus = (typeof REGISTRATION_STATUSES)[number];
 export type RaceType = (typeof RACE_TYPES)[number];
-export type SourceName = (typeof SOURCE_NAMES)[number];
-export type ScrapedSourceName = (typeof SCRAPED_SOURCES)[number];
+export type TierKind = (typeof TIER_KINDS)[number];
+export type LinkKind = (typeof LINK_KINDS)[number];
+export type SourceRole = (typeof SOURCE_ROLES)[number];
+export type PriceTier = z.infer<typeof PriceTierSchema>;
+export type Registration = z.infer<typeof RegistrationSchema>;
+export type Link = z.infer<typeof LinkSchema>;
 export type RaceSource = z.infer<typeof SourceSchema>;
 export type Override = z.infer<typeof OverrideSchema>;
 export type Overrides = Race["overrides"];
 export type Race = z.infer<typeof RaceSchema>;
 export type IndexEntry = z.infer<typeof IndexEntrySchema>;
+export type Series = z.infer<typeof SeriesSchema>;
+export type Organizer = z.infer<typeof EntitySchema>;
 
 export type CanonicalField = (typeof CANONICAL_FIELDS)[number];
 // Every canonical field is a Race field.

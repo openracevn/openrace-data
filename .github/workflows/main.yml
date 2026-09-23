@@ -49,9 +49,12 @@ jobs:
       - run: npm run validate
 
   # Tell openrace-api to resync, only once the pushed data has validated.
+  # PAUSED (2026-09-24): data moved to schema v2 (.claude/docs/design-v2.md) and
+  # openrace-api doesn't read it yet. Re-enable by restoring the condition below
+  # once the API is updated: needs.changes.outputs.data_changed == 'true'
   notify-api:
     needs: [changes, validate]
-    if: needs.changes.outputs.data_changed == 'true'
+    if: false
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7

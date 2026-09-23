@@ -1,31 +1,41 @@
 name: Check races
 
-# Looks for new races and re-checks known races that are due (every 14 days until
-# race day; past races are never checked), or checks one race by URL.
+# Design v2 (.claude/docs/design-v2.md): reads the sites in config/sites.yaml with
+# their recipes, pays Firecrawl only for content that changed, and commits races +
+# state in one commit.
 # Manual only for now (Actions tab → Run workflow). The daily schedule is off until
-# the data is trusted; to turn it back on, add:
+# the data is trusted; to turn it on, add (each site is then read on its own cadence):
 #   schedule:
 #     - cron: "17 0 * * *" # 07:17 in Vietnam
 on:
   workflow_dispatch:
     inputs:
-      mode:
-        description: "daily = discover + refresh due races; discover = new races only; refresh = due races only; race = one race now"
-        type: choice
-        options: [daily, discover, refresh, race]
-        default: daily
-      race:
-        description: "For mode 'race': race id, slug (e.g. tet-run-mien-nam-2027) or ActiUp event URL"
+      site:
+        description: "Site key from config/sites.yaml (empty = every site that is due)"
         required: false
-      max_scrapes:
-        description: "Max pages to extract (5 Firecrawl credits each)"
-        default: "40"
+      race:
+        description: "One race instead: race id, slug or page URL"
+        required: false
+      past:
+        description: "Also races that already took place (backfill)"
+        type: boolean
+        default: false
+      limit:
+        description: "At most this many races per site (empty = all)"
+        required: false
+      max_credits:
+        description: "Firecrawl credits this run may spend (about 5 per page or image read)"
+        default: "250"
+      free:
+        description: "No paid reads: show what would be read and what it would cost"
+        type: boolean
+        default: false
       dry_run:
-        description: "Scrape and show the plan, but don't commit"
+        description: "Read and show the plan, but don't commit"
         type: boolean
         default: false
 
-# One run at a time; a second run waits instead of scraping the same pages.
+# One run at a time; a second run waits instead of reading the same pages.
 concurrency:
   group: check-races
   cancel-in-progress: false
@@ -36,7 +46,7 @@ permissions:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
@@ -52,12 +62,20 @@ jobs:
           GITHUB_OWNER: ${{ github.repository_owner }}
           GITHUB_REPO: ${{ github.event.repository.name }}
           GITHUB_BRANCH: ${{ github.event.repository.default_branch }}
-          MODE: ${{ inputs.mode || 'daily' }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          SITE: ${{ inputs.site }}
           RACE: ${{ inputs.race }}
-          MAX_SCRAPES: ${{ inputs.max_scrapes || '40' }}
+          PAST: ${{ inputs.past }}
+          LIMIT: ${{ inputs.limit }}
+          MAX_CREDITS: ${{ inputs.max_credits || '250' }}
+          FREE: ${{ inputs.free }}
           DRY_RUN: ${{ inputs.dry_run }}
         run: |
-          args=(--mode "$MODE" --max-scrapes "$MAX_SCRAPES")
+          args=(--max-credits "$MAX_CREDITS")
+          if [[ -n "$SITE" ]]; then args+=(--site "$SITE"); fi
           if [[ -n "$RACE" ]]; then args+=(--race "$RACE"); fi
+          if [[ -n "$LIMIT" ]]; then args+=(--limit "$LIMIT"); fi
+          if [[ "$PAST" == "true" ]]; then args+=(--past); fi
+          if [[ "$FREE" == "true" ]]; then args+=(--free); fi
           if [[ "$DRY_RUN" == "true" ]]; then args+=(--dry-run); fi
           npm run -s check -- "${args[@]}"

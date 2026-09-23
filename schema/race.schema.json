@@ -43,6 +43,52 @@
       "type": "string",
       "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
     },
+    "endDate": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "seriesId": {
+      "anyOf": [
+        {
+          "type": "string",
+          "maxLength": 120,
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "organizerId": {
+      "anyOf": [
+        {
+          "type": "string",
+          "maxLength": 120,
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "organizer": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
     "distances": {
       "type": "array",
       "items": {
@@ -73,65 +119,85 @@
               "type": "null"
             }
           ]
-        },
-        "region": {
-          "anyOf": [
-            {
-              "type": "string",
-              "enum": [
-                "north",
-                "central",
-                "south"
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
         }
       },
       "required": [
         "venue",
-        "city",
-        "region"
+        "city"
       ],
       "additionalProperties": false
     },
-    "priceMin": {
-      "anyOf": [
-        {
-          "type": "integer",
-          "minimum": 0,
-          "maximum": 100000000
+    "prices": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "distance": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "tier": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "super_early",
+              "early",
+              "regular",
+              "late",
+              "group",
+              "other"
+            ]
+          },
+          "price": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100000000
+          },
+          "from": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "to": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "site": {
+            "type": "string",
+            "maxLength": 120,
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
         },
-        {
-          "type": "null"
-        }
-      ]
-    },
-    "priceMax": {
-      "anyOf": [
-        {
-          "type": "integer",
-          "minimum": 0,
-          "maximum": 100000000
-        },
-        {
-          "type": "null"
-        }
-      ]
-    },
-    "groupPriceMin": {
-      "anyOf": [
-        {
-          "type": "integer",
-          "minimum": 0,
-          "maximum": 100000000
-        },
-        {
-          "type": "null"
-        }
-      ]
+        "required": [
+          "distance",
+          "tier",
+          "kind",
+          "price",
+          "from",
+          "to",
+          "site"
+        ],
+        "additionalProperties": false
+      }
     },
     "currency": {
       "type": "string",
@@ -153,33 +219,68 @@
         }
       ]
     },
-    "registrationUrl": {
-      "anyOf": [
-        {
-          "type": "string",
-          "format": "uri"
+    "registrations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "site": {
+            "type": "string",
+            "maxLength": 120,
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
         },
-        {
-          "type": "null"
-        }
-      ]
+        "required": [
+          "site",
+          "url"
+        ],
+        "additionalProperties": false
+      }
     },
-    "organizer": {
-      "anyOf": [
-        {
-          "type": "string",
-          "minLength": 1
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "official",
+              "seller",
+              "facebook",
+              "rules",
+              "results",
+              "news",
+              "other"
+            ]
+          },
+          "foundOn": {
+            "type": "string",
+            "minLength": 1
+          }
         },
-        {
-          "type": "null"
-        }
-      ]
+        "required": [
+          "url",
+          "kind",
+          "foundOn"
+        ],
+        "additionalProperties": false
+      }
     },
-    "foreignerEligible": {
-      "type": [
-        "boolean",
-        "null"
-      ]
+    "flags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
     },
     "overrides": {
       "type": "object",
@@ -189,16 +290,17 @@
           "name",
           "types",
           "date",
+          "endDate",
+          "seriesId",
+          "organizerId",
+          "organizer",
           "distances",
           "location",
-          "priceMin",
-          "priceMax",
-          "groupPriceMin",
+          "prices",
           "currency",
           "registrationStatus",
-          "registrationUrl",
-          "organizer",
-          "foreignerEligible"
+          "registrations",
+          "links"
         ]
       },
       "additionalProperties": {
@@ -229,12 +331,17 @@
       "items": {
         "type": "object",
         "properties": {
-          "name": {
+          "site": {
+            "type": "string",
+            "maxLength": 120,
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "role": {
             "type": "string",
             "enum": [
-              "actiup",
-              "bibchung",
-              "openrace"
+              "official",
+              "seller",
+              "reference"
             ]
           },
           "url": {
@@ -251,7 +358,7 @@
             "format": "date-time",
             "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
           },
-          "rawExtracted": {
+          "extracted": {
             "type": "object",
             "propertyNames": {
               "type": "string"
@@ -260,11 +367,12 @@
           }
         },
         "required": [
-          "name",
+          "site",
+          "role",
           "url",
           "lastCheckedAt",
           "lastChangedAt",
-          "rawExtracted"
+          "extracted"
         ],
         "additionalProperties": false
       }
@@ -294,16 +402,18 @@
     "name",
     "types",
     "date",
+    "endDate",
+    "seriesId",
+    "organizerId",
+    "organizer",
     "distances",
     "location",
-    "priceMin",
-    "priceMax",
-    "groupPriceMin",
+    "prices",
     "currency",
     "registrationStatus",
-    "registrationUrl",
-    "organizer",
-    "foreignerEligible",
+    "registrations",
+    "links",
+    "flags",
     "overrides",
     "sources",
     "confidence",
@@ -311,7 +421,7 @@
     "updatedAt"
   ],
   "additionalProperties": false,
-  "$id": "https://openrace.vn/schema/v1/race.schema.json",
-  "title": "OpenRace race (data/races/<slug>.json)",
-  "x-schema-version": 1
+  "$id": "https://openrace.vn/schema/v2/race.schema.json",
+  "title": "OpenRace race (data/races/<slug>-<year>.json)",
+  "x-schema-version": 2
 }

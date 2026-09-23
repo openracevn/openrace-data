@@ -1,4 +1,4 @@
-import { foldVietnamese } from "./places.ts";
+import { foldVietnamese } from "./text.ts";
 
 /** A slug from a race name, for races without a source slug (openrace): "Tết Run 2027" → "tet-run-2027". */
 export function slugFromName(name: string): string {

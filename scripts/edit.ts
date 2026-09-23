@@ -4,15 +4,16 @@
  *
  *   npm run edit -- set <race> <field> <value> --reason "<why>"
  *       Override a field; it wins over every source and survives re-checks.
- *       <value> is JSON (["21km","42km"], 450000, null, {"venue":…,"city":…,"region":…});
+ *       <value> is JSON (["21km","42km"], null, {"venue":…,"city":…}, [{"distance":"21km","tier":"Early Bird",…}]);
  *       anything that isn't JSON is taken as a string.
  *   npm run edit -- unset <race> <field>
  *       Remove the override; the field goes back to what the sources say.
  *   npm run edit -- add --url <reference> --json '<fields>' --reason "<why>"
  *       A race no site lists (source "openrace"). <reference> is where the info comes
  *       from (organizer page, Facebook post). <fields> are extraction-shaped:
- *       {"name","date","types","distances","venue","city","priceMin","priceMax",
- *        "registrationStatus","registrationUrl","organizer",…}; name and date required.
+ *       {"name","date","endDate","types","distances","venue","city","organizer",
+ *        "registrationStatus","prices":[{"distance","tier","from","to","price"}]};
+ *       name and date required.
  *       Re-running add with the same --url updates that race.
  *   npm run edit -- slug <race> <new-slug> [--reason "<why>"]
  *       Change a race's slug. Its file is renamed to data/races/<new-slug>.json and
@@ -24,8 +25,8 @@
 import { readFileSync } from "node:fs";
 import { env, requireEnv } from "./lib/env.ts";
 import { CANONICAL_FIELDS, type CanonicalField } from "./lib/schema.ts";
+import { loadSites, siteForUrl } from "./lib/sites.ts";
 import { canonicalSourceUrl } from "./lib/slug.ts";
-import { sourceForUrl } from "./lib/sources.ts";
 import { commitToGitHub, formatCommitMessage, planEdit, planRename, planSync, type RaceStore, type SyncPlan } from "./sync.ts";
 
 const VALUE_FLAGS = new Set(["--reason", "--url", "--json"]);
@@ -43,6 +44,7 @@ const flag = (name: string) => flags.get(name);
 const [command, race, field, rawValue] = positional;
 const reason = flag("reason");
 const now = new Date().toISOString();
+const config = loadSites();
 
 let planAt: (store: RaceStore) => Promise<SyncPlan>;
 let message: string;
@@ -54,10 +56,10 @@ if (command === "set" || command === "unset") {
     if (rawValue === undefined) fail("set needs a value");
     if (!reason) fail("set needs --reason: say why OpenRace overrides the sources");
     const value = parseValue(rawValue!);
-    planAt = (store) => planEdit(store, race!, [{ kind: "set", field: field as CanonicalField, value, reason: reason! }], now);
+    planAt = (store) => planEdit(store, race!, [{ kind: "set", field: field as CanonicalField, value, reason: reason! }], config, now);
     message = `edit: ${race}: set ${field} = ${JSON.stringify(value)}\n\nOpenRace override: ${reason}`;
   } else {
-    planAt = (store) => planEdit(store, race!, [{ kind: "unset", field: field as CanonicalField }], now);
+    planAt = (store) => planEdit(store, race!, [{ kind: "unset", field: field as CanonicalField }], config, now);
     message = `edit: ${race}: remove the ${field} override (back to the source value)${reason ? `\n\n${reason}` : ""}`;
   }
 } else if (command === "slug") {
@@ -76,11 +78,12 @@ if (command === "set" || command === "unset") {
   } catch {
     fail(`--url is not a URL: ${url}`);
   }
-  if (sourceForUrl(reference!)) fail(`${reference!} is a scraped source page; use npm run check -- --mode race --race <url>`);
+  const site = siteForUrl(config, reference!);
+  if (site && site.recipe !== "none") fail(`${reference!} is on ${site.key}, which is read automatically; use npm run check -- --race <url>`);
   const fields = parseValue(json!);
   if (typeof fields !== "object" || fields === null || Array.isArray(fields)) fail("--json must be an object");
-  const extracted = { pageKind: "sport", ...(fields as Record<string, unknown>), note: reason };
-  planAt = (store) => planSync(store, [{ url: reference!, extracted, checkedAt: now, source: "openrace" }], now);
+  const extracted = { facts: { ...(fields as Record<string, unknown>), note: reason } };
+  planAt = (store) => planSync(store, [{ url: reference!, site: "openrace", role: "reference", extracted, checkedAt: now }], config, now);
   message = ""; // generated from the plan below
 } else {
   fail("usage: npm run edit -- set|unset|add|slug … (see scripts/edit.ts)");

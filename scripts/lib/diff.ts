@@ -1,4 +1,4 @@
-import { foldVietnamese } from "./places.ts";
+import { foldVietnamese } from "./text.ts";
 import { CANONICAL_FIELDS, deepEqual, type CanonicalField, type CanonicalRace } from "./schema.ts";
 
 export { deepEqual };
@@ -9,15 +9,18 @@ export function changedFields(before: Partial<CanonicalRace>, after: Partial<Can
 }
 
 /**
- * The model rewords free text between checks ("Quảng trường Lâm Viên và khu vực Hồ
+ * The model rewords free text between reads ("Quảng trường Lâm Viên và khu vực Hồ
  * Xuân Hương" vs "Quảng trường Lâm Viên, bên Hồ Xuân Hương"). Keep the previous
- * venue/organizer when the new one shares most of its words, so rewording alone
+ * venue/city/organizer when the new one shares most of its words, so rewording alone
  * isn't a change.
  */
 export function stabilize(before: CanonicalRace, after: CanonicalRace): CanonicalRace {
-  const venue = sameText(before.location.venue, after.location.venue) ? before.location.venue : after.location.venue;
-  const organizer = sameText(before.organizer, after.organizer) ? before.organizer : after.organizer;
-  return { ...after, location: { ...after.location, venue }, organizer };
+  const keep = (a: string | null, b: string | null) => (sameText(a, b) ? a : b);
+  return {
+    ...after,
+    location: { venue: keep(before.location.venue, after.location.venue), city: keep(before.location.city, after.location.city) },
+    organizer: keep(before.organizer, after.organizer),
+  };
 }
 
 function sameText(a: string | null, b: string | null): boolean {
@@ -29,4 +32,3 @@ function sameText(a: string | null, b: string | null): boolean {
   // vs "Vinhomes Grand Park, Tp Thủ Đức, Tp Hồ Chí Minh").
   return shared / Math.max(wa.size, wb.size, 1) >= 0.6 || shared / Math.max(Math.min(wa.size, wb.size), 1) >= 0.8;
 }
-
