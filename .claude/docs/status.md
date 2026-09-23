@@ -23,6 +23,13 @@ Design v2 is being built (`design-v2.md`). The v1 race data was removed; data is
   - `check.yml` has v2 inputs (site / race / past / limit / max credits / free / dry run). Manual only.
   - `main.yml` validates and posts to Discord. **The openrace-api resync is paused** (`if: false`) until the API reads schema v2.
 
+## Data (2026-09-24)
+
+- **300 ActiUp races seeded with `--facts-only`** (0 credits; commit bf98deb, fix f459f9b): every sports event ActiUp lists, 2024–2027, 35 of them upcoming.
+  - **What they have:** name, dates, venue, organizer (113 organizers), sale status, and links.
+  - **What they don't have yet:** prices, distances and types (`other`), until a normal run reads them. `state/checks.json` marks them `facts`.
+- A normal run (`--site actiup`) reads the upcoming ones first, at about 10–15 credits per race. Past races wait for a paid month (`--past`).
+
 ## Firecrawl account
 
 Free plan: 1,000 credits per billing period (23rd to 23rd). On 2026-09-24, 1,453 were left before testing; the tests used about 185 (about 1,270 left). The cap in `config/sites.yaml` (`monthlyCredits: 900`) counts calendar months (UTC).
