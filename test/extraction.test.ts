@@ -4,8 +4,8 @@ import { normalizeDistance, normalizeExtraction, tierDate, tierKind } from "../s
 
 describe("price tiers", () => {
   it("maps tier labels to kinds", () => {
-    const kinds = ["Super Early Bird", "Early Bird", "EB", "Giá vé Tiêu chuẩn", "Regular", "Last call", "Late", "Vé nhóm", "Group 20-49", "Siêu sớm", "VIP Package"].map(tierKind);
-    assert.deepEqual(kinds, ["super_early", "early", "early", "regular", "regular", "late", "late", "group", "group", "super_early", "other"]);
+    const kinds = ["Super Early Bird", "Early Bird", "EB", "Giá vé Tiêu chuẩn", "Regular", "Last call", "Late", "Vé nhóm", "Group 20-49", "Siêu sớm", "VIP Package", "Supper Early Bird"].map(tierKind);
+    assert.deepEqual(kinds, ["super_early", "early", "early", "regular", "regular", "late", "late", "group", "group", "super_early", "other", "super_early"]);
   });
 
   it("gives tier dates without a year the race's year, or the year before when that's after race day", () => {

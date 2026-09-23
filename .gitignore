@@ -2,3 +2,6 @@ node_modules/
 .env
 .idea/
 *.log
+
+# Agent reads in progress (scripts/agent-read.ts)
+.agent-read/

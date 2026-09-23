@@ -19,6 +19,7 @@ Design v2 is being built (`design-v2.md`). The v1 race data was removed; data is
   - HCMC Marathon 2027: 48, including resident / non-resident.
   - Kept as `test/answers.test.ts`.
 - **Free dry runs against the live sites work:** ActiUp lists 41 upcoming races (≤425 credits to read them all the first time), VM 15 (≤85), and each race site ≤20–50.
+- **Agent reads (2026-09-25):** `npm run agent-read -- prepare | commit` and the `agent-read` skill (`.claude/skills/agent-read/SKILL.md`). An agent reads pages and price images itself, for free; same recipes, format, normalization and commit, and the fingerprint is recorded so Firecrawl runs skip the race. First used on Run For The Heart and Prenn Trail Summit 2026.
 - **Workflows:**
   - `check.yml` has v2 inputs (site / race / past / limit / max credits / free / dry run). Manual only.
   - `main.yml` validates, resyncs openrace-api when `data/` changed, and posts to Discord.
@@ -42,10 +43,9 @@ Free plan: 1,000 credits per billing period (23rd to 23rd). On 2026-09-24, 1,453
 
 ## Next
 
-- [ ] **On hold (user decided 2026-09-25 not to run more batches for now):** read the other 31 upcoming ActiUp races for prices, distances and types, in small batches (`--site actiup --limit 10`, about 10–15 credits per race). Then VM (15 races, ≤85 credits), then the race sites.
+- [ ] **Read the other 29 upcoming ActiUp races with the `agent-read` skill** (free, batches of 5–10). Firecrawl batches are on hold (user, 2026-09-25). Then VM (15 races) and the race sites the same way.
 - [ ] Paid check of the default recipe on Hạ Long, Lâm Đồng Trail and Run To Live (≤20–50 each), with their prices added to `test/answers.test.ts`.
 - [ ] Recipes: bibchung (group prices; server-rendered), vietnammtbseries (hub).
-- [ ] Agent skill for backfills without Firecrawl: same recipes, the agent reads pages and images and writes `extracted`, then `npm run sync`.
 - [ ] Backfill past races (`--past`), on a paid month.
 - [ ] Turn on the daily cron once the data is trusted.
 - [ ] openrace-api: a "price on sale today" (from `prices[]` by date) if the frontend wants it; route tests in the Workers runtime.

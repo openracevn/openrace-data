@@ -34,6 +34,8 @@ Report the differences field by field: ours vs the source.
 
 ## 3. Read it again with Firecrawl (costs credits; say so first)
 
+To read it for free instead (you read the pages and images yourself), use the `agent-read` skill: `npm run agent-read -- prepare --race <url|slug|id>`.
+
 ```bash
 npm run check -- --race <url|slug|id> --free --dry-run                          # free: what would be read, max cost
 npm run check -- --race <url|slug|id> --dry-run --preview /tmp/race              # paid, no commit; planned files in /tmp/race

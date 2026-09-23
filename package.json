@@ -15,6 +15,7 @@
     "check": "tsx scripts/check.ts",
     "edit": "tsx scripts/edit.ts",
     "sync": "tsx scripts/sync-cli.ts",
+    "agent-read": "tsx scripts/agent-read.ts",
     "renormalize": "tsx scripts/renormalize.ts",
     "notify:discord": "tsx scripts/notify-discord.ts",
     "notify:sync": "tsx scripts/notify-sync.ts"

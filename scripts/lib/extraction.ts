@@ -226,7 +226,8 @@ export function normalizeExtraction(raw: SourceExtraction | Record<string, unkno
 const NOT_AN_ENTRY_FEE = /\b(photos?|anh|vip|upgrade|nang cap|transfer|chuyen nhuong|doi cu ly|change|phi quan ly|admin|ship|shipping|van chuyen)\b/;
 
 const TIER_KIND_RULES: [RegExp, TierKind][] = [
-  [/\b(super ?early|super eb|seb|sieu som)\b/, "super_early"],
+  // "Supper Early Bird" is a common misspelling on posters (Run For The Heart 2026).
+  [/\b(supp?er ?early|super eb|seb|sieu som)\b/, "super_early"],
   [/\b(early|eb|som|uu dai som)\b/, "early"],
   [/\b(group|nhom|doan|bibchung)\b/, "group"],
   [/\b(late|last ?call|muon|tre|phut chot|sat ngay)\b/, "late"],

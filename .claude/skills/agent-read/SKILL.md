@@ -1,0 +1,115 @@
+---
+name: agent-read
+description: Read races for openrace-data without Firecrawl (free), with the agent reading the pages and price images itself. Use for backfills and batches when credits should be saved, e.g. "read the upcoming ActiUp races without Firecrawl", "backfill past races", "read these races by hand/agent", or when the user says not to spend credits but races still need prices, distances and types.
+---
+
+# Read races without Firecrawl (agent read)
+
+In scheduled runs, Firecrawl reads each race's pages and price images (about 5 credits each). Here **you** are the reader instead, for free. Everything else is the same code: the site's **recipe** picks the pages and images, you write what Firecrawl would have returned, and the usual normalization, validation and commit do the rest (`scripts/agent-read.ts`). Background: `.claude/docs/design-v2.md` ("Readers: Firecrawl or an agent"), `scripts/lib/recipes/README.md`.
+
+Any agent can follow this (Claude Code, Antigravity, ...). You need a shell in the repo, and a way to look at an image file.
+
+## Rules
+
+- **Free, but slow.** Nothing here spends Firecrawl credits. Work in batches of **5–10 races**, commit, then go on.
+- **Only write what the page or image shows.** Copy numbers exactly. Never guess, never work out a price, never fill a gap from another race. A wrong price is worse than no price.
+- **Follow the same instructions Firecrawl gets:** `<dir>/extraction.json` holds the prompt and JSON schema for pages (`page`) and for price images (`image`). The rules below are the ones that matter most.
+- Commits go straight to `main` with `GITHUB_TOKEN=$(gh auth token)`. Never hand-edit files in `data/`.
+- Races already read (by Firecrawl or an agent) are skipped by default. Don't re-read them unless the user asks (`--all`).
+
+## 1. Prepare (free)
+
+```bash
+git pull -q
+npm run agent-read -- prepare --site actiup --limit 10          # the next 10 unread upcoming races on a site
+npm run agent-read -- prepare --site actiup --past --limit 10   # past races too (backfill)
+npm run agent-read -- prepare --race <url|slug|id>              # one race
+```
+
+This clears and fills `.agent-read/` (gitignored), with one folder per race (`01-<slug>/`, ...):
+
+| File | What |
+| --- | --- |
+| `page-<n>.html` | The page's relevant HTML, exactly what Firecrawl would read |
+| `image-<n>.png/.jpg/...` | Price images the recipe picked, likeliest first (up to 4) |
+| `task.json` | The source (url, site), `facts` from the site's own data (trusted over what you read: name, dates, venue, organizer, sale status), links, and the snapshot's fingerprint |
+| `read.json` | **What you fill in**: `json` for every page and image, all `null` for now |
+
+## 2. Read each race
+
+### Look at the images
+
+Images are often large. Make a copy you can view, and look at every one:
+
+```bash
+cd .agent-read/01-<slug>
+for f in image-*; do sips -s format jpeg -Z 2000 "$f" --out "view-${f%.*}.jpg"; done     # macOS
+# elsewhere: magick "$f" -resize '2000x2000>' "view-${f%.*}.jpg"
+```
+
+For a dense or very wide table, crop to the table and look again at full size. Some images turn out not to be price tables (shirt sizes, schedules): their `json` stays `{"prices": []}`.
+
+### Page `json` (per `page-<n>.html`)
+
+```json
+{
+  "pageKind": "sport",
+  "types": ["road_run"],
+  "name": "Giải chạy Run For The Heart - Chạy vì trái tim 2026",
+  "date": "2026-12-06",
+  "distances": ["2KM", "5KM", "10KM"],
+  "venue": "Công viên Yên Sở",
+  "city": "Hà Nội",
+  "organizer": "Gamuda Land Việt Nam",
+  "currency": "VND",
+  "registrationStatus": "open",
+  "prices": []
+}
+```
+
+- `pageKind`: `sport` (running, trail, triathlon, swimming, cycling), `non_sport` (concert, tour, hotel, conference) or `none` (login, error or empty page; then leave out everything else).
+- `types`: every format offered: road_run, trail_run, city_trail, obstacle_run, triathlon, duathlon, aquathlon, aquabike, swimrun, swim, road_cycle, mtb, other.
+- Leave out any field the page doesn't state. `facts` in `task.json` already cover what the site states in structured form. Name as written, never translated. Dates as `YYYY-MM-DD`.
+- `prices`: only amounts written in the page text. If prices are only in images, `[]`.
+
+### Image `json` (per price image)
+
+```json
+{
+  "prices": [
+    { "distance": "10KM", "tier": "Early Bird", "from": "01/03", "to": "31/05/2026", "price": 1100000 }
+  ],
+  "distances": ["3KM", "10KM"],
+  "currency": "VND"
+}
+```
+
+One item per distance × tier. These rules come from real misreads (`scripts/lib/recipes/README.md`, lessons):
+
+- **Read each row straight across.** A price belongs to the distance on its own row. Check the last row too: busy images shift rows (Vũng Tàu City Trail).
+- **`tier`: the label as written**, typos included ("Supper Early Bird"). Slogans and decoration on the image are not tiers.
+- **`price`: a plain number** ("1.100.000 VND" → `1100000`). Only amounts printed as prices. **Never compute one from a percentage**: a group table of percentages only ("Nhóm 20-99: 5%") gives no prices.
+- **Group prices** (per person, by group size, printed as amounts): label them `"Group <size>"` ("Group 50+").
+- **Bundles and teams** (combo of several tickets, relay team): keep that in the label ("Combo 1 (2 tickets) Early Bird", "Relay team Early Bird").
+- **`audience`: only** when the table has separate prices for residents and non-residents (Việt Nam / Nước ngoài). "Cá nhân" (individual) is not an audience. Leave it out otherwise.
+- **`from` / `to`: the tier's sale dates, as shown.** `YYYY-MM-DD` when the year is printed, otherwise `DD/MM`; never add a year. "đến 22/10" (until) is only `to`. No dates shown: leave both out. Never use race day.
+- **Leave out** add-ons: photos, VIP upgrades, transfer or change fees, shipping, merchandise.
+
+Write the page and image `json` into `read.json` (keep its `url`s). An image you looked at that holds no prices: `{"prices": []}`. Leaving an image's `json` as `null` means it wasn't looked at, and it's dropped. Every page must be filled in.
+
+## 3. Check, then commit
+
+```bash
+npm run agent-read -- commit .agent-read                                     # dry run
+GITHUB_TOKEN=$(gh auth token) npm run agent-read -- commit .agent-read --commit
+```
+
+The dry run prints each race after normalization: name, dates, types, distances, and every price with its kind (`super_early`, `early`, `regular`, `late`, `group`, `other`) and dates. **Compare it with the images once more**, then look at the kinds. `group` must only be group, combo and team prices, because the API's "from" price leaves them out. `✗` lines are races that can't be committed yet (a page not read, or not a sports event): fix their `read.json` or leave them out.
+
+`--commit` makes one commit with the races and records each snapshot's fingerprint in `state/checks.json`. Scheduled Firecrawl runs then skip these races until their pages change. Main validates, resyncs openrace-api and posts to Discord.
+
+Then `rm -rf .agent-read` and go on with the next batch.
+
+## If something looks wrong afterwards
+
+A wrong value in a committed race: fix the reading and commit again (`prepare --race <slug>`, fix `read.json`, commit). Or, if the source itself is wrong, set an override with the `check-race` skill (step 5). If the normalized prices differ from what you wrote in a way that repeats (a kind, a date, a dropped tier), the cause is in `scripts/lib/extraction.ts`: fix it there with a test, as the `check-race` skill says (step 4).
