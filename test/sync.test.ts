@@ -165,6 +165,12 @@ describe("normalization", () => {
     assert.equal(normalizeDistance("100MILES"), "100mi");
   });
 
+  it("drops prices the model put in distances", () => {
+    const r = normalizeExtracted({ pageKind: "sport", name: "X", date: "2027-01-24", distances: ["Chỉ từ 678.000đ", "10km", "1.000 VND", "70.3", "Sprint"] });
+    assert.ok(r.ok);
+    assert.deepEqual(r.race.distances, ["10km", "70.3", "Sprint"]);
+  });
+
   it("resolves Vietnamese city names to display name + region", () => {
     assert.deepEqual(resolvePlace("TP. Hồ Chí Minh"), { city: "Ho Chi Minh City", region: "south" });
     assert.deepEqual(resolvePlace("Đà Nẵng"), { city: "Da Nang", region: "central" });

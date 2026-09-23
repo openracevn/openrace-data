@@ -13,6 +13,7 @@
     "validate": "tsx scripts/validate.ts",
     "check": "tsx scripts/check.ts",
     "sync": "tsx scripts/sync-cli.ts",
+    "renormalize": "tsx scripts/renormalize.ts",
     "notify:discord": "tsx scripts/notify-discord.ts",
     "notify:sync": "tsx scripts/notify-sync.ts"
   },

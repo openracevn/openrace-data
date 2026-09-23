@@ -179,10 +179,13 @@ export function normalizeDistance(raw: string): string {
   return raw.trim();
 }
 
+// Prices the model sometimes puts in `distances` ("Chỉ từ 678.000đ").
+const NOT_A_DISTANCE = /đ|vnd|chỉ từ|giá|\d{1,3}(?:[.,]\d{3}){1,}(?!\s*(?:km|k|m)\b)/i;
+
 function normalizeDistances(v: unknown): string[] {
   if (!Array.isArray(v)) return [];
   const out = new Set<string>();
-  for (const d of v) if (typeof d === "string" && d.trim()) out.add(normalizeDistance(d));
+  for (const d of v) if (typeof d === "string" && d.trim() && !NOT_A_DISTANCE.test(d)) out.add(normalizeDistance(d));
   return [...out].sort((a, b) => km(a) - km(b) || a.localeCompare(b));
 }
 

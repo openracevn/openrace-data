@@ -147,6 +147,7 @@ npm run validate
 npm run check -- --mode daily --max-scrapes 5 --dry-run    # live scrape, no commit
 npm run check -- --mode race --race <id|slug|url> --dry-run
 npm run sync -- inputs.json [--commit]   # commit hand-made extractions
+npm run renormalize [-- --commit]        # re-apply normalization to stored extractions (no scraping)
 ```
 
 ## Limits to know
