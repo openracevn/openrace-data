@@ -14,7 +14,8 @@
  * re-extracts known races every REFRESH_DAYS until race day (see lib/checks.ts).
  * Everything lands in one commit: race files + index + state/checks.json.
  *
- * Selection reads the local checkout; the commit re-plans against the branch head.
+ * Committing runs read the current branch head on GitHub (no need to pull first);
+ * --dry-run reads the local checkout and needs no GitHub token.
  * Env: FIRECRAWL_API_KEY; GITHUB_TOKEN (PAT) + GITHUB_OWNER/REPO/BRANCH unless --dry-run.
  */
 import { appendFileSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -32,6 +33,7 @@ import {
 import { env, requireEnv } from "./lib/env.ts";
 import { EXTRACTIONS, normalizeExtracted } from "./lib/extraction.ts";
 import { Firecrawl } from "./lib/firecrawl.ts";
+import { GitHubRepo, type GitHubTarget } from "./lib/github.ts";
 import { INDEX_PATH, IndexSchema, RaceSchema, racePath } from "./lib/schema.ts";
 import { canonicalSourceUrl } from "./lib/slug.ts";
 import { SOURCES, sourceForUrl } from "./lib/sources.ts";
@@ -68,8 +70,24 @@ const local: RaceStore = {
   },
 };
 
-const index = IndexSchema.parse(JSON.parse((await local.read(INDEX_PATH)) ?? "[]"));
-const checks = parseChecks(await local.read(CHECKS_PATH));
+const target: GitHubTarget | null = dryRun
+  ? null
+  : {
+      token: requireEnv("GITHUB_TOKEN"),
+      owner: env("GITHUB_OWNER") ?? "openracevn",
+      repo: env("GITHUB_REPO") ?? "openrace-data",
+      branch: env("GITHUB_BRANCH") ?? "main",
+    };
+// What to check is decided from the data it will commit on top of. The commit
+// itself still re-plans against the head at commit time.
+let current: RaceStore = local;
+if (target) {
+  const repo = new GitHubRepo(target);
+  current = repo.storeAt(await repo.headSha());
+}
+
+const index = IndexSchema.parse(JSON.parse((await current.read(INDEX_PATH)) ?? "[]"));
+const checks = parseChecks(await current.read(CHECKS_PATH));
 const knownUrls = new Set(index.flatMap((e) => e.sourceUrls));
 const discovering = mode === "daily" || mode === "discover";
 
@@ -202,7 +220,7 @@ if (discovering) {
 if (mode === "daily" || mode === "refresh") {
   const due: string[] = [];
   for (const entry of index) {
-    const text = await local.read(racePath(entry.id));
+    const text = await current.read(racePath(entry.id));
     if (text === null) continue;
     const race = RaceSchema.parse(JSON.parse(text));
     for (const url of entry.sourceUrls) {
@@ -233,12 +251,7 @@ if (dryRun) {
   }
 } else {
   const result = await syncToGitHub(
-    {
-      token: requireEnv("GITHUB_TOKEN"),
-      owner: env("GITHUB_OWNER") ?? "openracevn",
-      repo: env("GITHUB_REPO") ?? "openrace-data",
-      branch: env("GITHUB_BRANCH") ?? "main",
-    },
+    target!,
     inputs,
     {
       now: finishedAt,

@@ -150,6 +150,8 @@ If `DISCORD_WEBHOOK_URL` or `SYNC_WEBHOOK_URL` is unset, its step logs "skipping
 
 ```bash
 npm install && cp .env.example .env      # FIRECRAWL_API_KEY; GITHUB_TOKEN only for committing
+# Committing runs work on the latest main on GitHub, so no pull is needed. Your gh login works as the token:
+#   GITHUB_TOKEN=$(gh auth token) npm run check -- --mode race --race <url>
 npm test
 npm run typecheck
 npm run validate
