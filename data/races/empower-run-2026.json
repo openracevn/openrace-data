@@ -3,14 +3,18 @@
   "slug": "empower-run-2026",
   "name": "Hành Trình Tiếp Sức 2026",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2026-12-06",
   "endDate": null,
   "seriesId": null,
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
-  "distances": [],
+  "distances": [
+    "3km",
+    "5km",
+    "10km"
+  ],
   "location": {
     "venue": "Khu vực Hồ Tây và Phố đi bộ Trịnh Công Sơn",
     "city": null
@@ -38,7 +42,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/empower-run-2026",
-      "lastCheckedAt": "2026-09-23T18:30:45.023Z",
+      "lastCheckedAt": "2026-09-24T05:54:22.509Z",
       "lastChangedAt": "2026-09-23T18:30:45.023Z",
       "extracted": {
         "facts": {
@@ -50,6 +54,25 @@
           "registrationStatus": "open",
           "fromPrice": 159000
         },
+        "pages": [
+          {
+            "json": {
+              "date": "2026-12-06",
+              "distances": [
+                "3km",
+                "5km",
+                "10km"
+              ],
+              "name": "Hành Trình Tiếp Sức 2026",
+              "pageKind": "sport",
+              "prices": [],
+              "types": [
+                "road_run"
+              ]
+            },
+            "url": "https://actiup.net/vi/event/empower-run-2026"
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1E2-jnjPV-6vVNBy1RoZylqvhUVeKtO07/view?usp=sharing",
@@ -59,11 +82,12 @@
         "organizer": {
           "id": "cong-ty-dha-viet-nam",
           "name": "Công ty DHA Việt Nam"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T05:54:22.509Z"
 }

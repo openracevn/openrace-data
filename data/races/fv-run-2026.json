@@ -3,19 +3,185 @@
   "slug": "fv-run",
   "name": "FV RUN - Run with Heart, Run for Hope",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2026-10-31",
   "endDate": "2026-11-01",
   "seriesId": null,
   "organizerId": "benh-vien-fv-dong-to-chuc-quy-nang-buoc-tuoi-tho",
   "organizer": "Bệnh viện FV - Đồng tổ chức: Quỹ Nâng Bước Tuổi Thơ",
-  "distances": [],
+  "distances": [
+    "1km",
+    "5km",
+    "10km",
+    "21km"
+  ],
   "location": {
     "venue": "KĐT Phú Mỹ Hưng, Phường Tân Hưng, TP. Hồ Chí Minh.",
     "city": null
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 250000,
+      "from": "2026-07-29",
+      "to": null,
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 450000,
+      "from": "2026-07-30",
+      "to": "2026-09-14",
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 650000,
+      "from": "2026-09-15",
+      "to": "2026-10-11",
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 850000,
+      "from": "2026-10-12",
+      "to": "2026-10-25",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 350000,
+      "from": "2026-07-29",
+      "to": null,
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 550000,
+      "from": "2026-07-30",
+      "to": "2026-09-14",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 850000,
+      "from": "2026-09-15",
+      "to": "2026-10-11",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1050000,
+      "from": "2026-10-12",
+      "to": "2026-10-25",
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "HM · Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 550000,
+      "from": "2026-07-29",
+      "to": null,
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "HM · Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 750000,
+      "from": "2026-07-30",
+      "to": "2026-09-14",
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "HM · Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1050000,
+      "from": "2026-09-15",
+      "to": "2026-10-11",
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "HM · Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1350000,
+      "from": "2026-10-12",
+      "to": "2026-10-25",
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "Family Run (Tiếp sức 3x1000m) · Relay team Flash Sale",
+      "kind": "group",
+      "audience": null,
+      "price": 570000,
+      "from": "2026-07-29",
+      "to": null,
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "Family Run (Tiếp sức 3x1000m) · Relay team Early Bird",
+      "kind": "group",
+      "audience": null,
+      "price": 775000,
+      "from": "2026-07-30",
+      "to": "2026-09-14",
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "Family Run (Tiếp sức 3x1000m) · Relay team Regular",
+      "kind": "group",
+      "audience": null,
+      "price": 980000,
+      "from": "2026-09-15",
+      "to": "2026-10-11",
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "Family Run (Tiếp sức 3x1000m) · Relay team Late",
+      "kind": "group",
+      "audience": null,
+      "price": 1250000,
+      "from": "2026-10-12",
+      "to": "2026-10-25",
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -38,7 +204,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/fv-run",
-      "lastCheckedAt": "2026-09-23T18:30:45.444Z",
+      "lastCheckedAt": "2026-09-24T05:54:22.509Z",
       "lastChangedAt": "2026-09-23T18:30:45.444Z",
       "extracted": {
         "facts": {
@@ -51,6 +217,157 @@
           "registrationStatus": "open",
           "fromPrice": 250000
         },
+        "pages": [
+          {
+            "json": {
+              "date": "2026-10-31",
+              "distances": [
+                "Family Run (3 × 1 km)",
+                "5 km",
+                "10 km",
+                "21 km"
+              ],
+              "endDate": "2026-11-01",
+              "name": "FV RUN - Run with Heart, Run for Hope",
+              "pageKind": "sport",
+              "prices": [],
+              "types": [
+                "road_run"
+              ]
+            },
+            "url": "https://actiup.net/vi/event/fv-run"
+          }
+        ],
+        "images": [
+          {
+            "json": {
+              "prices": [
+                {
+                  "distance": "5KM",
+                  "tier": "Flash Sale",
+                  "from": "2026-07-29",
+                  "price": 250000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Early Bird",
+                  "from": "30/7",
+                  "to": "2026-09-14",
+                  "price": 450000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Regular",
+                  "from": "15/9",
+                  "to": "2026-10-11",
+                  "price": 650000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Late",
+                  "from": "12/10",
+                  "to": "2026-10-25",
+                  "price": 850000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Flash Sale",
+                  "from": "2026-07-29",
+                  "price": 350000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Early Bird",
+                  "from": "30/7",
+                  "to": "2026-09-14",
+                  "price": 550000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Regular",
+                  "from": "15/9",
+                  "to": "2026-10-11",
+                  "price": 850000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Late",
+                  "from": "12/10",
+                  "to": "2026-10-25",
+                  "price": 1050000
+                },
+                {
+                  "distance": "HM",
+                  "tier": "Flash Sale",
+                  "from": "2026-07-29",
+                  "price": 550000
+                },
+                {
+                  "distance": "HM",
+                  "tier": "Early Bird",
+                  "from": "30/7",
+                  "to": "2026-09-14",
+                  "price": 750000
+                },
+                {
+                  "distance": "HM",
+                  "tier": "Regular",
+                  "from": "15/9",
+                  "to": "2026-10-11",
+                  "price": 1050000
+                },
+                {
+                  "distance": "HM",
+                  "tier": "Late",
+                  "from": "12/10",
+                  "to": "2026-10-25",
+                  "price": 1350000
+                },
+                {
+                  "distance": "Family Run (Tiếp sức 3x1000m)",
+                  "tier": "Relay team Flash Sale",
+                  "from": "2026-07-29",
+                  "price": 570000
+                },
+                {
+                  "distance": "Family Run (Tiếp sức 3x1000m)",
+                  "tier": "Relay team Early Bird",
+                  "from": "30/7",
+                  "to": "2026-09-14",
+                  "price": 775000
+                },
+                {
+                  "distance": "Family Run (Tiếp sức 3x1000m)",
+                  "tier": "Relay team Regular",
+                  "from": "15/9",
+                  "to": "2026-10-11",
+                  "price": 980000
+                },
+                {
+                  "distance": "Family Run (Tiếp sức 3x1000m)",
+                  "tier": "Relay team Late",
+                  "from": "12/10",
+                  "to": "2026-10-25",
+                  "price": 1250000
+                }
+              ],
+              "distances": [
+                "5KM",
+                "10KM",
+                "HM",
+                "Family Run (Tiếp sức 3x1000m)"
+              ],
+              "currency": "VND"
+            },
+            "url": "https://pix.actiup.net/2026/07/28/1785236123797529/Ticket---Price-(3).jpg"
+          },
+          {
+            "json": {
+              "prices": []
+            },
+            "url": "https://pix.actiup.net/2026/07/28/1785213132189176/Ticket---Incentive.jpg"
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1wt_c6s9ixA6kyGtabsVmB8UlDwjyP74P/view?usp=drive_link",
@@ -60,11 +377,12 @@
         "organizer": {
           "id": "benh-vien-fv-dong-to-chuc-quy-nang-buoc-tuoi-tho",
           "name": "Bệnh viện FV - Đồng tổ chức: Quỹ Nâng Bước Tuổi Thơ"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T05:54:22.509Z"
 }

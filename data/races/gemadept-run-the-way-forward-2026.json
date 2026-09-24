@@ -3,19 +3,84 @@
   "slug": "gemadept-run-the-way-forward-2026",
   "name": "GEMADEPT RUN HCMC 2026",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2026-10-24",
   "endDate": "2026-10-25",
   "seriesId": null,
   "organizerId": "gemadept",
   "organizer": "GEMADEPT",
-  "distances": [],
+  "distances": [
+    "5km",
+    "10km",
+    "21km"
+  ],
   "location": {
     "venue": "Khu C13, Đường Tân Trào, Khu đô thị Phú Mỹ Hưng, Phường Tân Mỹ, TP. Hồ Chí Minh",
     "city": null
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1080000,
+      "from": "2026-07-01",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1180000,
+      "from": null,
+      "to": null,
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 860000,
+      "from": "2026-07-01",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 910000,
+      "from": null,
+      "to": null,
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 700000,
+      "from": "2026-07-01",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 750000,
+      "from": null,
+      "to": null,
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -38,7 +103,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/gemadept-run-the-way-forward-2026",
-      "lastCheckedAt": "2026-09-23T18:30:48.639Z",
+      "lastCheckedAt": "2026-09-24T06:43:09.238Z",
       "lastChangedAt": "2026-09-23T18:30:48.639Z",
       "extracted": {
         "facts": {
@@ -51,6 +116,88 @@
           "registrationStatus": "open",
           "fromPrice": 488000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/gemadept-run-the-way-forward-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "GEMADEPT RUN HCMC 2026",
+              "date": "2026-10-25",
+              "distances": [
+                "5KM",
+                "10KM",
+                "21KM"
+              ],
+              "prices": []
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/09/08/1788840317592079/1.-B%E1%BA%A2NG-GI%C3%81-V%C3%89_GHCM.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "21KM",
+                  "tier": "Regular",
+                  "from": "01/07",
+                  "to": "30/09",
+                  "price": 1080000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Late",
+                  "from": "01/10",
+                  "to": "11/09",
+                  "price": 1180000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Regular",
+                  "from": "01/07",
+                  "to": "30/09",
+                  "price": 860000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Late",
+                  "from": "01/10",
+                  "to": "11/09",
+                  "price": 910000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Regular",
+                  "from": "01/07",
+                  "to": "30/09",
+                  "price": 700000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Late",
+                  "from": "01/10",
+                  "to": "11/09",
+                  "price": 750000
+                }
+              ],
+              "distances": [
+                "5KM",
+                "10KM",
+                "21KM"
+              ],
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2026/05/30/1780137159097994/2.-%C4%90A%CC%A3%CC%86C-QUYE%CC%82%CC%80N-NHO%CC%81M.jpg",
+            "json": {
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1jfilJNoiY4O-6rrM8y8e4_xNnsr24eW6/view",
@@ -60,11 +207,12 @@
         "organizer": {
           "id": "gemadept",
           "name": "GEMADEPT"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:43:09.238Z"
 }

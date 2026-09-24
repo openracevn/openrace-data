@@ -3,14 +3,16 @@
   "slug": "2026-sunrise-sprint-viet-nam-in-phu-quoc",
   "name": "2026 SUNRISE SPRINT Viet Nam in Phu Quoc",
   "types": [
-    "other"
+    "triathlon"
   ],
   "date": "2026-11-14",
   "endDate": null,
   "seriesId": "sunrise-sprint-viet-nam-in-phu-quoc",
   "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
-  "distances": [],
+  "distances": [
+    "Sprint"
+  ],
   "location": {
     "venue": "Phú Quốc, Việt Nam",
     "city": null
@@ -38,7 +40,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/2026-sunrise-sprint-viet-nam-in-phu-quoc",
-      "lastCheckedAt": "2026-09-23T18:30:50.245Z",
+      "lastCheckedAt": "2026-09-24T06:43:09.238Z",
       "lastChangedAt": "2026-09-23T18:30:50.245Z",
       "extracted": {
         "facts": {
@@ -50,6 +52,19 @@
           "registrationStatus": "open",
           "fromPrice": 3000000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/2026-sunrise-sprint-viet-nam-in-phu-quoc",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "triathlon"
+              ],
+              "name": "2026 SUNRISE SPRINT Viet Nam in Phu Quoc",
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1HimQZZpSmGWU_Ux4ukOvZksQmzZpzIcs/view?usp=sharing",
@@ -59,11 +74,12 @@
         "organizer": {
           "id": "sunrise-events-vietnam",
           "name": "Sunrise Events Vietnam"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:43:09.238Z"
 }

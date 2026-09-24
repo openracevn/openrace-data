@@ -3,14 +3,21 @@
   "slug": "ultra-trail-cao-bang-2026",
   "name": "ULTRA TRAIL CAO BANG 2026",
   "types": [
-    "other"
+    "trail_run"
   ],
   "date": "2026-11-27",
   "endDate": "2026-11-29",
   "seriesId": "ultra-trail-cao-bang",
   "organizerId": "race-jungle",
   "organizer": "Race Jungle",
-  "distances": [],
+  "distances": [
+    "10km",
+    "25km",
+    "42km",
+    "70km",
+    "100km",
+    "160km"
+  ],
   "location": {
     "venue": "Bản Giốc, Cao Bằng, Việt Nam",
     "city": null
@@ -38,7 +45,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/ultra-trail-cao-bang-2026",
-      "lastCheckedAt": "2026-09-23T18:30:49.445Z",
+      "lastCheckedAt": "2026-09-24T06:43:09.238Z",
       "lastChangedAt": "2026-09-23T18:30:49.445Z",
       "extracted": {
         "facts": {
@@ -51,6 +58,27 @@
           "registrationStatus": "open",
           "fromPrice": 840000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/ultra-trail-cao-bang-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "trail_run"
+              ],
+              "name": "ULTRA TRAIL CAO BANG 2026",
+              "prices": [],
+              "distances": [
+                "160km",
+                "100km",
+                "70km",
+                "42km",
+                "25km",
+                "10km"
+              ]
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1RUdii2tITB54J5fiSoIP1h8Wes_pbrsr/view?usp=drive_link",
@@ -60,11 +88,12 @@
         "organizer": {
           "id": "race-jungle",
           "name": "Race Jungle"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:43:09.238Z"
 }

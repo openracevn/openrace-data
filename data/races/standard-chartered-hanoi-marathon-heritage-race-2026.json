@@ -3,7 +3,7 @@
   "slug": "standard-chartered-hanoi-marathon-heritage-race-2026",
   "name": "Standard Chartered Marathon Di sản Hà Nội 2026",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2026-11-07",
   "endDate": "2026-11-08",
@@ -38,7 +38,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/standard-chartered-hanoi-marathon-heritage-race-2026",
-      "lastCheckedAt": "2026-09-23T18:30:51.452Z",
+      "lastCheckedAt": "2026-09-24T06:43:09.238Z",
       "lastChangedAt": "2026-09-23T18:30:51.452Z",
       "extracted": {
         "facts": {
@@ -51,6 +51,27 @@
           "registrationStatus": "open",
           "fromPrice": 258000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/standard-chartered-hanoi-marathon-heritage-race-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Standard Chartered Marathon Di sản Hà Nội 2026",
+              "prices": []
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/03/03/1772507394252745/FlashSalePrice-SCHM26.jpg",
+            "json": {
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1dWhJOepPOz7srAJf7NGjD27KhBn6YTNo/view?usp=drive_link",
@@ -60,11 +81,12 @@
         "organizer": {
           "id": "cong-ty-dha-viet-nam",
           "name": "Công ty DHA Việt Nam"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:43:09.238Z"
 }

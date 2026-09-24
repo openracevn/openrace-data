@@ -3,19 +3,186 @@
   "slug": "giai-marathon-ca-mau-2026-cup-petrovietnam",
   "name": "GIẢI MARATHON - CÀ MAU 2026 CÚP PETROVIETNAM",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2026-11-15",
   "endDate": null,
   "seriesId": "giai-marathon-ca-mau-cup-petrovietnam",
   "organizerId": "vietrace365",
   "organizer": "VIETRACE365",
-  "distances": [],
+  "distances": [
+    "2km",
+    "5km",
+    "10km",
+    "21km",
+    "42km"
+  ],
   "location": {
     "venue": "Trung tâm hội nghị tỉnh Cà Mau, Phường An Xuyên, Tỉnh Cà Mau.",
     "city": null
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "VÉ HỒI LIVE STREAM",
+      "kind": "other",
+      "audience": null,
+      "price": 250000,
+      "from": null,
+      "to": "2026-07-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "VÉ HỒI LIVE STREAM",
+      "kind": "other",
+      "audience": null,
+      "price": 250000,
+      "from": null,
+      "to": "2026-07-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "VÉ HỒI LIVE STREAM",
+      "kind": "other",
+      "audience": null,
+      "price": 370000,
+      "from": null,
+      "to": "2026-07-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "VÉ HỒI LIVE STREAM",
+      "kind": "other",
+      "audience": null,
+      "price": 450000,
+      "from": null,
+      "to": "2026-07-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "SUPER EARLY BIRD",
+      "kind": "super_early",
+      "audience": null,
+      "price": 368000,
+      "from": "2026-07-30",
+      "to": "2026-08-31",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "SUPER EARLY BIRD",
+      "kind": "super_early",
+      "audience": null,
+      "price": 468000,
+      "from": "2026-07-30",
+      "to": "2026-08-31",
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "SUPER EARLY BIRD",
+      "kind": "super_early",
+      "audience": null,
+      "price": 568000,
+      "from": "2026-07-30",
+      "to": "2026-08-31",
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "SUPER EARLY BIRD",
+      "kind": "super_early",
+      "audience": null,
+      "price": 668000,
+      "from": "2026-07-30",
+      "to": "2026-08-31",
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 468000,
+      "from": "2026-09-01",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 568000,
+      "from": "2026-09-01",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 768000,
+      "from": "2026-09-01",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 868000,
+      "from": "2026-09-01",
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 568000,
+      "from": "2026-10-01",
+      "to": "2026-10-15",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 768000,
+      "from": "2026-10-01",
+      "to": "2026-10-15",
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 968000,
+      "from": "2026-10-01",
+      "to": "2026-10-15",
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 1068000,
+      "from": "2026-10-01",
+      "to": "2026-10-15",
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -32,7 +199,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/giai-marathon-ca-mau-2026-cup-petrovietnam",
-      "lastCheckedAt": "2026-09-23T18:30:44.623Z",
+      "lastCheckedAt": "2026-09-24T05:54:22.509Z",
       "lastChangedAt": "2026-09-23T18:30:44.623Z",
       "extracted": {
         "facts": {
@@ -44,15 +211,166 @@
           "registrationStatus": "open",
           "fromPrice": 368000
         },
+        "pages": [
+          {
+            "json": {
+              "distances": [
+                "2KM",
+                "5KM",
+                "10KM",
+                "21KM",
+                "42KM"
+              ],
+              "name": "GIẢI MARATHON - CÀ MAU 2026 CÚP PETROVIETNAM",
+              "pageKind": "sport",
+              "prices": [],
+              "types": [
+                "road_run"
+              ]
+            },
+            "url": "https://actiup.net/vi/event/giai-marathon-ca-mau-2026-cup-petrovietnam"
+          }
+        ],
+        "images": [
+          {
+            "json": {
+              "currency": "VND",
+              "distances": [
+                "5KM",
+                "10KM",
+                "21KM",
+                "42KM"
+              ],
+              "prices": [
+                {
+                  "distance": "5KM",
+                  "price": 250000,
+                  "tier": "VÉ HỒI LIVE STREAM",
+                  "to": "2026-07-30"
+                },
+                {
+                  "distance": "10KM",
+                  "price": 250000,
+                  "tier": "VÉ HỒI LIVE STREAM",
+                  "to": "2026-07-30"
+                },
+                {
+                  "distance": "21KM",
+                  "price": 370000,
+                  "tier": "VÉ HỒI LIVE STREAM",
+                  "to": "2026-07-30"
+                },
+                {
+                  "distance": "42KM",
+                  "price": 450000,
+                  "tier": "VÉ HỒI LIVE STREAM",
+                  "to": "2026-07-30"
+                },
+                {
+                  "distance": "5KM",
+                  "from": "2026-07-30",
+                  "price": 368000,
+                  "tier": "SUPER EARLY BIRD",
+                  "to": "2026-08-31"
+                },
+                {
+                  "distance": "10KM",
+                  "from": "2026-07-30",
+                  "price": 468000,
+                  "tier": "SUPER EARLY BIRD",
+                  "to": "2026-08-31"
+                },
+                {
+                  "distance": "21KM",
+                  "from": "2026-07-30",
+                  "price": 568000,
+                  "tier": "SUPER EARLY BIRD",
+                  "to": "2026-08-31"
+                },
+                {
+                  "distance": "42KM",
+                  "from": "2026-07-30",
+                  "price": 668000,
+                  "tier": "SUPER EARLY BIRD",
+                  "to": "2026-08-31"
+                },
+                {
+                  "distance": "5KM",
+                  "from": "2026-09-01",
+                  "price": 468000,
+                  "tier": "EARLY BIRD",
+                  "to": "2026-09-30"
+                },
+                {
+                  "distance": "10KM",
+                  "from": "2026-09-01",
+                  "price": 568000,
+                  "tier": "EARLY BIRD",
+                  "to": "2026-09-30"
+                },
+                {
+                  "distance": "21KM",
+                  "from": "2026-09-01",
+                  "price": 768000,
+                  "tier": "EARLY BIRD",
+                  "to": "2026-09-30"
+                },
+                {
+                  "distance": "42KM",
+                  "from": "2026-09-01",
+                  "price": 868000,
+                  "tier": "EARLY BIRD",
+                  "to": "2026-09-30"
+                },
+                {
+                  "distance": "5KM",
+                  "from": "2026-10-01",
+                  "price": 568000,
+                  "tier": "REGULAR",
+                  "to": "2026-10-15"
+                },
+                {
+                  "distance": "10KM",
+                  "from": "2026-10-01",
+                  "price": 768000,
+                  "tier": "REGULAR",
+                  "to": "2026-10-15"
+                },
+                {
+                  "distance": "21KM",
+                  "from": "2026-10-01",
+                  "price": 968000,
+                  "tier": "REGULAR",
+                  "to": "2026-10-15"
+                },
+                {
+                  "distance": "42KM",
+                  "from": "2026-10-01",
+                  "price": 1068000,
+                  "tier": "REGULAR",
+                  "to": "2026-10-15"
+                }
+              ]
+            },
+            "url": "https://pix.actiup.net/2026/08/07/1786092525539822/b%E1%BA%A3ng-gi%C3%A1-v%C3%A9-c%E1%BA%ADp-nh%E1%BA%ADt-07082026.jpg"
+          },
+          {
+            "json": {
+              "prices": []
+            },
+            "url": "https://pix.actiup.net/2026/08/07/1786092535635774/ch%C3%ADnh-s%C3%A1ch-nh%C3%B3m.jpg"
+          }
+        ],
         "links": [],
         "organizer": {
           "id": "vietrace365",
           "name": "VIETRACE365"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T05:54:22.509Z"
 }

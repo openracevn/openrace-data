@@ -3,19 +3,65 @@
   "slug": "tien-phong-marathon-dien-bien-discovery-2026",
   "name": "TIỀN PHONG MARATHON ĐIỆN BIÊN DISCOVERY 2026",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2026-12-31",
   "endDate": "2027-01-02",
   "seriesId": null,
   "organizerId": "bao-tien-phong-va-so-vhttdl-tinh-dien-bien",
   "organizer": "Báo Tiền Phong và Sở VHTTDL tỉnh Điện Biên",
-  "distances": [],
+  "distances": [
+    "5km",
+    "10km",
+    "21km",
+    "48km"
+  ],
   "location": {
     "venue": "Phường Điện Biên Phủ, tỉnh Điện Biên",
     "city": null
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "48km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 886000,
+      "from": null,
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 768000,
+      "from": null,
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 586000,
+      "from": null,
+      "to": "2026-09-30",
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 486000,
+      "from": null,
+      "to": "2026-09-30",
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -32,7 +78,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/tien-phong-marathon-dien-bien-discovery-2026",
-      "lastCheckedAt": "2026-09-23T18:30:43.872Z",
+      "lastCheckedAt": "2026-09-24T05:54:22.509Z",
       "lastChangedAt": "2026-09-23T18:30:43.872Z",
       "extracted": {
         "facts": {
@@ -45,15 +91,142 @@
           "registrationStatus": "open",
           "fromPrice": 336000
         },
+        "pages": [
+          {
+            "json": {
+              "name": "TIỀN PHONG MARATHON ĐIỆN BIÊN DISCOVERY 2026",
+              "pageKind": "sport",
+              "prices": [],
+              "types": [
+                "road_run"
+              ]
+            },
+            "url": "https://actiup.net/vi/event/tien-phong-marathon-dien-bien-discovery-2026"
+          }
+        ],
+        "images": [
+          {
+            "json": {
+              "currency": "VND",
+              "date": "2027-01-02",
+              "distances": [
+                "48KM",
+                "21.1KM",
+                "10KM",
+                "5KM"
+              ],
+              "prices": [
+                {
+                  "distance": "48KM",
+                  "price": 886000,
+                  "tier": "Early Bird",
+                  "to": "2026-09-30"
+                },
+                {
+                  "distance": "48KM",
+                  "price": 753100,
+                  "tier": "Group 50+",
+                  "to": "2026-09-30"
+                },
+                {
+                  "distance": "48KM",
+                  "price": 708800,
+                  "tier": "Group 100+",
+                  "to": "2026-09-30"
+                },
+                {
+                  "distance": "48KM",
+                  "price": 664500,
+                  "tier": "Group 200+",
+                  "to": "2026-09-30"
+                },
+                {
+                  "distance": "21.1KM",
+                  "price": 768000,
+                  "tier": "Early Bird",
+                  "to": "2026-09-30"
+                },
+                {
+                  "distance": "21.1KM",
+                  "price": 652800,
+                  "tier": "Group 50+",
+                  "to": "2026-09-30"
+                },
+                {
+                  "distance": "21.1KM",
+                  "price": 614400,
+                  "tier": "Group 100+",
+                  "to": "2026-09-30"
+                },
+                {
+                  "distance": "21.1KM",
+                  "price": 576000,
+                  "tier": "Group 200+",
+                  "to": "2026-09-30"
+                },
+                {
+                  "distance": "10KM",
+                  "price": 586000,
+                  "tier": "Early Bird",
+                  "to": "2026-09-30"
+                },
+                {
+                  "distance": "10KM",
+                  "price": 498100,
+                  "tier": "Group 50+",
+                  "to": "2026-09-30"
+                },
+                {
+                  "distance": "10KM",
+                  "price": 468800,
+                  "tier": "Group 100+",
+                  "to": "2026-09-30"
+                },
+                {
+                  "distance": "10KM",
+                  "price": 439500,
+                  "tier": "Group 200+",
+                  "to": "2026-09-30"
+                },
+                {
+                  "distance": "5KM",
+                  "price": 486000,
+                  "tier": "Early Bird",
+                  "to": "2026-09-30"
+                },
+                {
+                  "distance": "5KM",
+                  "price": 413100,
+                  "tier": "Group 50+",
+                  "to": "2026-09-30"
+                },
+                {
+                  "distance": "5KM",
+                  "price": 388800,
+                  "tier": "Group 100+",
+                  "to": "2026-09-30"
+                },
+                {
+                  "distance": "5KM",
+                  "price": 364500,
+                  "tier": "Group 200+",
+                  "to": "2026-09-30"
+                }
+              ]
+            },
+            "url": "https://pix.actiup.net/2026/08/11/1786433318382838/BA%CC%89NG-GIA%CC%81_EB.jpg"
+          }
+        ],
         "links": [],
         "organizer": {
           "id": "bao-tien-phong-va-so-vhttdl-tinh-dien-bien",
           "name": "Báo Tiền Phong và Sở VHTTDL tỉnh Điện Biên"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T05:54:22.509Z"
 }
