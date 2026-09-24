@@ -5,7 +5,8 @@
  *   npm run edit -- set <race> <field> <value> --reason "<why>"
  *       Override a field; it wins over every source and survives re-checks.
  *       <value> is JSON ([{"label":"21km","meters":21097,"type":"road_run","elevationGain":null}], 5, null, {"venue":…,"city":…}, [{"distance":"21km","tier":"Early Bird",…}]);
- *       Use courses for the full array and edition for the stated number. Anything that
+ *       Use courses for the full array, edition for the stated number, and geo for {"lat":…,"lng":…}.
+ *       A manual geo point resolves codes and travel times, so setting it uses the network. Anything that
  *       isn't JSON is taken as a string.
  *   npm run edit -- unset <race> <field>
  *       Remove the override; the field goes back to what the sources say.
@@ -25,12 +26,13 @@
  */
 import { readFileSync } from "node:fs";
 import { env, requireEnv } from "./lib/env.ts";
+import { manualGeo } from "./lib/geocode.ts";
 import { CANONICAL_FIELDS, type CanonicalField } from "./lib/schema.ts";
 import { loadSites, siteForUrl } from "./lib/sites.ts";
 import { canonicalSourceUrl } from "./lib/slug.ts";
 import { commitToGitHub, formatCommitMessage, planEdit, planRename, planSync, type RaceStore, type SyncPlan } from "./sync.ts";
 
-const EDITABLE_FIELDS: readonly string[] = CANONICAL_FIELDS.filter((field) => field !== "geo");
+const EDITABLE_FIELDS: readonly string[] = CANONICAL_FIELDS;
 const VALUE_FLAGS = new Set(["--reason", "--url", "--json"]);
 const flags = new Map<string, string>();
 const positional: string[] = [];
@@ -57,7 +59,7 @@ if (command === "set" || command === "unset") {
   if (command === "set") {
     if (rawValue === undefined) fail("set needs a value");
     if (!reason) fail("set needs --reason: say why OpenRace overrides the sources");
-    const value = parseValue(rawValue!);
+    const value = field === "geo" ? await manualGeoValue(parseValue(rawValue!)) : parseValue(rawValue!);
     planAt = (store) => planEdit(store, race!, [{ kind: "set", field: field as CanonicalField, value, reason: reason! }], config, now);
     message = `edit: ${race}: set ${field} = ${JSON.stringify(value)}\n\nOpenRace override: ${reason}`;
   } else {
@@ -135,6 +137,13 @@ function report(plan: SyncPlan, commitSha: string | null): void {
   console.log(command === "add" ? formatCommitMessage(plan) : message);
   for (const [path, content] of Object.entries(plan.files)) if (path.includes("/races/")) console.log(`\n${path}\n${content ?? "(deleted)"}`);
   console.log(commitSha ? `Committed ${commitSha}` : "Dry run: nothing committed.");
+}
+
+async function manualGeoValue(value: unknown): Promise<unknown> {
+  if (typeof value !== "object" || value === null || Array.isArray(value)) fail("geo must be an object with lat and lng");
+  const point = value as Record<string, unknown>;
+  if (typeof point.lat !== "number" || typeof point.lng !== "number") fail("geo must be an object with numeric lat and lng");
+  return manualGeo(point.lat, point.lng);
 }
 
 function parseValue(raw: string): unknown {

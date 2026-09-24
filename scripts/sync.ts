@@ -29,6 +29,7 @@ import {
   type Series,
   type SourceRole,
 } from "./lib/schema.ts";
+import { GEO_PATH, locationKey, parseGeoCache, type GeoCache } from "./lib/geo.ts";
 import { inferSeries } from "./lib/series.ts";
 import { siteForUrl, type SitesConfig } from "./lib/sites.ts";
 import { canonicalSourceUrl, slugFromName } from "./lib/slug.ts";
@@ -96,8 +97,10 @@ export async function planSync(
   config: SitesConfig,
   now = new Date().toISOString(),
   newId: () => string = () => crypto.randomUUID(),
+  geoCacheOverride?: GeoCache,
 ): Promise<SyncPlan> {
   const index = await readIndex(store);
+  const geoCache = geoCacheOverride ?? parseGeoCache(await store.read(GEO_PATH));
   const indexById = new Map(index.map((e) => [e.id, e]));
   const takenSlugs = new Set(index.map((e) => e.slug));
   const takenFiles = new Set(index.map((e) => e.file));
@@ -204,7 +207,7 @@ export async function planSync(
       sources = prevSource ? sources.map((s) => (s === prevSource ? nextSource : s)) : [...sources, nextSource];
     }
 
-    const composed = composeRace({ id, slug, prev, sources, overrides: prev?.overrides ?? {}, now, config, stabilizeAgainstPrev: true, series: inferred.get(id) });
+    const composed = composeRace({ id, slug, prev, sources, overrides: prev?.overrides ?? {}, now, config, geoCache, stabilizeAgainstPrev: true, series: inferred.get(id) });
     if ("error" in composed) {
       for (const { input } of items) skipped.push({ url: input.url, reason: composed.error });
       continue;
@@ -238,7 +241,7 @@ export async function planSync(
     if (groups.has(entry.id) || (inferred.get(entry.id)?.id ?? null) === entry.seriesId) continue;
     const prev = (await loadRace(entry.id))!;
     const migrationFields = legacyRaceFiles.has(prev) ? V3_MIGRATION_FIELDS : [];
-    const composed = composeRace({ id: entry.id, slug: prev.slug, prev, sources: prev.sources, overrides: prev.overrides, now, config, stabilizeAgainstPrev: true, series: inferred.get(entry.id) });
+    const composed = composeRace({ id: entry.id, slug: prev.slug, prev, sources: prev.sources, overrides: prev.overrides, now, config, geoCache, stabilizeAgainstPrev: true, series: inferred.get(entry.id) });
     if ("error" in composed || (migrationFields.length === 0 && composed.fields.length === 0)) continue; // a site's own series wins
     if (writeRace(files, nextIndex, composed.record)) continue;
     changes.push({ id: entry.id, slug: prev.slug, kind: "updated", fields: [...new Set([...migrationFields, ...composed.fields])] });
@@ -328,6 +331,7 @@ type ComposeArgs = {
   overrides: Overrides;
   now: string;
   config: SitesConfig;
+  geoCache: GeoCache;
   /** Keep the previous wording of venue/city/organizer when a re-read only rewords it. */
   stabilizeAgainstPrev: boolean;
   /** The series found from the races' slugs; used when no source names one. */
@@ -338,9 +342,11 @@ type ComposeArgs = {
 function composeRace(a: ComposeArgs): { record: Race; fields: CanonicalField[] } | { error: string } {
   const reconciled = reconcile(a.sources, a.config);
   if ("error" in reconciled) return { error: reconciled.error };
-  const fields = { ...reconciled.fields, seriesId: reconciled.fields.seriesId ?? a.series?.id ?? null };
-  const derived = a.prev && a.stabilizeAgainstPrev ? stabilize(a.prev, fields) : fields;
-  const canonical = applyOverrides(derived, a.overrides);
+  const reconciledFields = { ...reconciled.fields, seriesId: reconciled.fields.seriesId ?? a.series?.id ?? null };
+  const derived = a.prev && a.stabilizeAgainstPrev ? stabilize(a.prev, reconciledFields) : reconciledFields;
+  const key = isVirtualRace(derived.name, derived.types, derived.location.venue) ? null : locationKey(derived.location);
+  const fields = { ...derived, geo: key === null ? null : a.geoCache[key]?.geo ?? null };
+  const canonical = applyOverrides(fields, a.overrides);
   const record: Race = {
     id: a.id,
     slug: a.slug,
@@ -357,6 +363,10 @@ function composeRace(a: ComposeArgs): { record: Race; fields: CanonicalField[] }
     return { error: `invalid record: ${valid.error.issues.map((e) => `${e.path.join(".")}: ${e.message}`).join("; ")}` };
   }
   return { record: valid.data, fields: a.prev ? changedFields(a.prev, canonical) : [] };
+}
+
+function isVirtualRace(name: string, types: readonly string[], venue: string | null): boolean {
+  return types.some((type) => /virtual|online/.test(foldVietnamese(type))) || [name, venue].some((value) => value !== null && /virtual|online|truc tuyen/.test(foldVietnamese(value)));
 }
 
 /** Overridden fields whose value, as the sources alone would give it, differs between the old and new sources. */
@@ -392,8 +402,9 @@ export type Edit =
  * value equal to the current one still records the override, so later source
  * changes can't move it.
  */
-export async function planEdit(store: RaceStore, race: string, edits: readonly Edit[], config: SitesConfig, now = new Date().toISOString()): Promise<SyncPlan> {
+export async function planEdit(store: RaceStore, race: string, edits: readonly Edit[], config: SitesConfig, now = new Date().toISOString(), geoCacheOverride?: GeoCache): Promise<SyncPlan> {
   const { index, prev } = await readRace(store, race);
+  const geoCache = geoCacheOverride ?? parseGeoCache(await store.read(GEO_PATH));
 
   const overrides: Overrides = { ...prev.overrides };
   for (const edit of edits) {
@@ -403,7 +414,7 @@ export async function planEdit(store: RaceStore, race: string, edits: readonly E
   }
 
   const series = inferSeries(index.map((e) => ({ id: e.id, slug: e.slug, name: e.name, date: e.date }))).get(prev.id);
-  const composed = composeRace({ id: prev.id, slug: prev.slug, prev, sources: prev.sources, overrides, now, config, stabilizeAgainstPrev: false, series });
+  const composed = composeRace({ id: prev.id, slug: prev.slug, prev, sources: prev.sources, overrides, now, config, geoCache, stabilizeAgainstPrev: false, series });
   if ("error" in composed) throw new Error(composed.error);
   const { record, fields } = composed;
   if (deepEqual(record.overrides, prev.overrides) && fields.length === 0) return { files: {}, changes: [], skipped: [] };
@@ -552,11 +563,12 @@ export type SyncOptions = {
   bookkeepingMessage?: string;
   /** Full commit message, instead of the generated one. */
   message?: string;
+  geoCache?: GeoCache;
 };
 
 /** Source inputs → one commit on the branch head (see commitToGitHub). */
 export async function syncToGitHub(target: GitHubTarget, inputs: readonly SyncInput[], config: SitesConfig, opts: SyncOptions = {}): Promise<SyncResult> {
-  return commitToGitHub(target, (store) => planSync(store, inputs, config, opts.now), opts);
+  return commitToGitHub(target, (store) => planSync(store, inputs, config, opts.now, undefined, opts.geoCache), opts);
 }
 
 /**

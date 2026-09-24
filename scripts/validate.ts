@@ -4,6 +4,7 @@
  * parse and are in canonical formatting.
  */
 import { existsSync, readdirSync, readFileSync } from "node:fs";
+import { AdminUnitsSchema, GEO_PATH, GeoCacheSchema, PlacesListSchema } from "./lib/geo.ts";
 import { jsonSchemaFiles } from "./lib/jsonschema.ts";
 import { READS_PATH, ReadCacheSchema } from "./lib/read.ts";
 import {
@@ -103,6 +104,9 @@ checkState(CHECKS_PATH, ChecksSchema);
 checkState(SITES_STATE_PATH, SitesStateSchema);
 checkState(CREDITS_PATH, CreditsSchema);
 checkState(READS_PATH, ReadCacheSchema);
+checkState(GEO_PATH, GeoCacheSchema);
+checkData("data/places.json", PlacesListSchema);
+checkData("data/admin-units.json", AdminUnitsSchema);
 
 for (const [path, expected] of Object.entries(jsonSchemaFiles())) {
   const actual = existsSync(path) ? readFileSync(path, "utf8") : null;
@@ -140,5 +144,19 @@ function checkState(path: string, schema: z.ZodType<Record<string, unknown>>): v
     for (const issue of parsed.error.issues) errors.push(`${path}: ${issue.path.join(".")}: ${issue.message}`);
   } else if (serializeSorted(parsed.data) !== text) {
     errors.push(`${path}: not in canonical formatting (sorted keys, 2-space JSON + trailing newline)`);
+  }
+}
+
+function checkData(path: string, schema: z.ZodType): void {
+  if (!existsSync(path)) {
+    errors.push(`${path}: missing (run npm run geo)`);
+    return;
+  }
+  const text = readFileSync(path, "utf8");
+  const parsed = schema.safeParse(JSON.parse(text));
+  if (!parsed.success) {
+    for (const issue of parsed.error.issues) errors.push(`${path}: ${issue.path.join(".")}: ${issue.message}`);
+  } else if (serialize(parsed.data) !== text) {
+    errors.push(`${path}: not in canonical formatting (2-space JSON + trailing newline)`);
   }
 }

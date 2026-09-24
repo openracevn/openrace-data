@@ -31,12 +31,15 @@ import { appendFileSync, mkdirSync, readFileSync, writeFileSync } from "node:fs"
 import { dirname, join } from "node:path";
 import { env, requireEnv } from "./lib/env.ts";
 import { CREDITS_PER_READ, FirecrawlReader, type Reader } from "./lib/firecrawl.ts";
+import { normalizeExtraction } from "./lib/extraction.ts";
+import { enrichGeo, geoTargetFromExtraction, geoTargetFromRace, type GeoTarget } from "./lib/geocode.ts";
+import { GEO_PATH, parseGeoCache, type GeoCache, type GeoCacheEntry } from "./lib/geo.ts";
 import { GitHubRepo, type GitHubTarget } from "./lib/github.ts";
 import { createHttp } from "./lib/http.ts";
 import { READS_PATH, parseReadCache, pruneReadCache, readSnapshot, snapshotFingerprint, type ReadCache } from "./lib/read.ts";
 import { recipeFor } from "./lib/recipes/index.ts";
 import type { RaceRef, Recipe, RecipeContext } from "./lib/recipes/types.ts";
-import { INDEX_PATH, IndexSchema } from "./lib/schema.ts";
+import { INDEX_PATH, IndexSchema, RaceSchema, racePath, upgradeRace } from "./lib/schema.ts";
 import { loadSites, roleOf, siteForUrl, type Site } from "./lib/sites.ts";
 import { canonicalSourceUrl } from "./lib/slug.ts";
 import {
@@ -250,6 +253,38 @@ for (const job of jobs) {
   report.push(`site ${site.key}: ${refs.length} race page(s), ${siteRead} read`);
 }
 
+const geoTargets: GeoTarget[] = [];
+for (const input of inputs) {
+  const normalized = normalizeExtraction(input.extracted);
+  if (normalized.ok) {
+    const maps = geoTargetFromExtraction(input.extracted);
+    geoTargets.push({
+      id: input.url,
+      name: normalized.facts.name,
+      types: normalized.facts.types,
+      location: { venue: normalized.facts.venue, city: normalized.facts.city },
+      mapsUrls: maps?.mapsUrls ?? [],
+    });
+  }
+  const entry = index.find((candidate) => candidate.sourceUrls.includes(input.url));
+  if (!entry) continue;
+  const text = await current.read(racePath(entry));
+  if (text) geoTargets.push(geoTargetFromRace(RaceSchema.parse(upgradeRace(JSON.parse(text)))));
+}
+let geoCache: GeoCache = parseGeoCache(await current.read(GEO_PATH));
+const filledGeo = new Map<string, GeoCacheEntry>();
+await enrichGeo(geoTargets, geoCache, {
+  onEntry: (next, key) => {
+    geoCache = next;
+    filledGeo.set(key, next[key]!);
+  },
+  onError: (target, error) => {
+    const message = `geo lookup failed for ${target.name}: ${error.message}`;
+    report.push(message);
+    console.error(message);
+  },
+});
+
 // 3. Plan and commit: races + index + series/organizers + state, one commit.
 const finishedAt = new Date().toISOString();
 const credits = reader.credits;
@@ -257,6 +292,11 @@ const context = `Checked by scripts/check.ts (${raceArg ? `race ${raceArg}` : si
 
 async function stateFiles(store: RaceStore): Promise<Record<string, string>> {
   const out: Record<string, string> = {};
+  if (filledGeo.size > 0) {
+    const merged = parseGeoCache(await store.read(GEO_PATH));
+    for (const [key, entry] of filledGeo) merged[key] = entry;
+    out[GEO_PATH] = serializeSorted(merged);
+  }
   if (runChecks.size > 0) {
     const merged = parseChecks(await store.read(CHECKS_PATH));
     for (const [url, check] of runChecks) merged[url] = check;
@@ -282,7 +322,7 @@ async function stateFiles(store: RaceStore): Promise<Record<string, string>> {
 let plan: SyncPlan;
 let commitSha: string | null = null;
 if (dryRun) {
-  plan = await planSync(local, inputs, config, finishedAt);
+  plan = await planSync(local, inputs, config, finishedAt, undefined, geoCache);
   // Keep what was paid for: the next run (dry or not, once committed) reads it from the cache.
   if (counts.paidReads > 0) writeFileSync(READS_PATH, (await stateFiles(local))[READS_PATH]!);
   if (previewDir) {
@@ -298,6 +338,7 @@ if (dryRun) {
     context,
     bookkeepingMessage: `state: checked ${runChecks.size} page(s), no race changes\n\n${context}`,
     extraFiles: stateFiles,
+    geoCache,
   });
   plan = result;
   commitSha = result.commitSha;

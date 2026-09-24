@@ -5,6 +5,7 @@
  *
  * Env: DISCORD_WEBHOOK_URL, BEFORE_SHA, AFTER_SHA, GITHUB_REPOSITORY, GITHUB_SERVER_URL.
  */
+import { readFileSync } from "node:fs";
 import { EMPTY_TREE, git, raceDiff, splitMessages } from "./lib/changes.ts";
 import { env } from "./lib/env.ts";
 import { reconcile, type StoredExtraction } from "./lib/reconcile.ts";
@@ -15,6 +16,9 @@ const DISCORD_LIMIT = 2000;
 const MAX_LISTED = 15;
 const SHOW_VALUES: CanonicalField[] = ["types", "date", "endDate", "seriesId", "organizerId", "courses", "registrationStatus"];
 const config = loadSites();
+const provinceNames = new Map(
+  (JSON.parse(readFileSync("ref/units-2025.json", "utf8")) as { provinces: { code: string; name: string }[] }).provinces.map((province) => [province.code, province.name]),
+);
 
 const webhook = env("DISCORD_WEBHOOK_URL");
 if (!webhook) {
@@ -34,7 +38,7 @@ lines.push(`**${repo}** · ${commits.length} commit(s) pushed · <${link}>`);
 
 const added = diff.added.map(
   ({ id, path, race: r }) =>
-    `➕ **${r?.name ?? id}** (${[r?.date, r?.location.city ?? r?.location.venue, r && priceSummary(r)].filter(Boolean).join(", ")}) \`${r?.slug ?? id}\`${flagNotes(null, r)}${links(r, path, after)}`,
+    `➕ **${r?.name ?? id}** (${[r?.date, r?.location.city ?? r?.location.venue, r && priceSummary(r)].filter(Boolean).join(", ")}) \`${r?.slug ?? id}\` ${geoNote(r)}${flagNotes(null, r)}${links(r, path, after)}`,
 );
 const removed = diff.removed.map(({ id, path, race: r }) => `➖ ${r ? `**${r.name}** \`${r.slug}\`` : `\`${id}\``}${links(r, path, before)}`);
 const updated = diff.updated.map(({ id, path, before: a, after: b, fields }) => {
@@ -42,8 +46,10 @@ const updated = diff.updated.map(({ id, path, before: a, after: b, fields }) => 
   const setNow = (f: CanonicalField) => b.overrides?.[f] && a.overrides?.[f]?.at !== b.overrides[f]!.at;
   const removedNow = (f: CanonicalField) => a.overrides?.[f] && !b.overrides?.[f];
   const detail = fields.map((f) =>
-    setNow(f)
-      ? `✋ ${f} → ${fmt(b[f], f)} (OpenRace: ${b.overrides[f]!.reason})`
+    f === "geo"
+      ? geoNote(b)
+      : setNow(f)
+        ? `✋ ${f} → ${fmt(b[f], f)} (OpenRace: ${b.overrides[f]!.reason})`
       : removedNow(f)
         ? `${f} override removed → ${fmt(b[f], f)}`
         : SHOW_VALUES.includes(f)
@@ -122,6 +128,12 @@ function overrideNotes(a: Race, b: Race): string[] {
 function flagNotes(a: Race | null, b: Race | null): string {
   const fresh = (b?.flags ?? []).filter((f) => !(a?.flags ?? []).includes(f));
   return fresh.map((f) => `\n  ⚠️ ${f}`).join("");
+}
+
+function geoNote(race: Race | null): string {
+  if (!race?.geo) return "📍 not located";
+  const province = provinceNames.get(race.geo.current.province) ?? race.geo.current.province;
+  return `📍 ${province}${race.geo.precision === "province" ? " · 📍 approximate" : ""}`;
 }
 
 /** "3 tiers, 459,000–799,000 VND", or "no prices". */
