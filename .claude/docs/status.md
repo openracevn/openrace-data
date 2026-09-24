@@ -44,6 +44,7 @@ Free plan: 1,000 credits per billing period (23rd to 23rd). On 2026-09-24, 1,453
 
 ## Next
 
+- [ ] **MCP server: [plan 005](../plans/005-2026-09-24-mcp-server.md)** (path step 5). Then the frontend, after the API contract has been through real use (it isn't on the roadmap path yet: add it when that plan is written).
 - [ ] **Read the other 29 upcoming ActiUp races with the `agent-read` skill** (free, batches of 5–10). Firecrawl batches are on hold (user, 2026-09-24). Then VM (15 races) and the race sites the same way.
 - [ ] Paid check of the default recipe on Hạ Long, Lâm Đồng Trail and Run To Live (≤20–50 each), with their prices added to `test/answers.test.ts`.
 - [ ] Recipes: bibchung (group prices; server-rendered), vietnammtbseries (hub).
