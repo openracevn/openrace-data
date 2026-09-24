@@ -6,12 +6,17 @@ name: Main
 # would not). Pushes that only touch the check log are skipped entirely.
 # Run it by hand (Actions tab → Main → Run workflow) to resync the API without a
 # commit: it validates main, then calls the API (no Discord message).
+# It also runs daily at 00:40 UTC (07:40 in Vietnam), just after D1's daily write quota
+# resets, as a backup: a sync that failed (quota, outage) catches up. Unchanged files
+# cost the API nothing.
 on:
   push:
     branches: [main]
     paths-ignore:
       - "state/**"
   workflow_dispatch:
+  schedule:
+    - cron: "40 0 * * *"
 
 jobs:
   changes:
@@ -27,7 +32,7 @@ jobs:
         env:
           BEFORE: ${{ github.event.before }}
         run: |
-          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]] || [[ "$BEFORE" =~ ^0+$ ]] || ! git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" || "${{ github.event_name }}" == "schedule" ]] || [[ "$BEFORE" =~ ^0+$ ]] || ! git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
             echo "data_changed=true" >> "$GITHUB_OUTPUT"
           elif git diff --quiet "$BEFORE" "$GITHUB_SHA" -- data/; then
             echo "data_changed=false" >> "$GITHUB_OUTPUT"

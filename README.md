@@ -110,7 +110,7 @@ npm run typecheck && npm test && npm run validate
 
 GitHub Actions:
 - **Check races** (`check.yml`) runs the checker. It's manual only; the schedule is off until the data is trusted.
-- **Main** validates every push, resyncs openrace-api when `data/` changed, and posts data changes to Discord. Run it by hand for a full resync.
+- **Main** validates every push, resyncs openrace-api when `data/` changed, and posts data changes to Discord. It also runs daily at 07:40 in Vietnam as a backup sync (after D1's daily write quota resets). Run it by hand for a full resync, but not many times a day: D1's free plan allows 100,000 row writes a day.
 - **Stale races** (`stale.yml`) posts the stale upcoming races to Discord every Monday. Routine checks only touch `state/`, which Main ignores: the API's daily cron reads `state/freshness.json` itself.
 
 ## Limits to know

@@ -7,7 +7,7 @@ Plan 003 is built and live. The work was split into four stages (plan 004). Free
 - **openrace-data schema v3** (`SCHEMA_VERSION = 3`): `courses[]` with `meters`, `type` and `elevationGain` replace `distances[]`; `edition`; tier `inferred` (which of `from`/`to` OpenRace filled in); `geo` (point, source, precision, current and old admin codes, access, driving km and minutes from the 13 places, `near`). All 300 races rewritten (commit 3a6eae9), and 9 more located (a8d0702).
 - **Location:** 267 of 300 races located (maps link 1, Nominatim 257, place centre 9); 61 only to province precision; 33 with no point (islands such as Côn Đảo and Phú Quốc, races abroad, vague venues). Routing uses the public OSRM demo server (there's no ORS key yet): road km and minutes where it routes, straight-line km otherwise.
 - **Freshness:** `state/freshness.json` is written on every commit; weekly Discord line of stale upcoming races (`stale.yml`, Mondays). All 40 upcoming races are fresh today.
-- **openrace-api** (deployed, migration 0006, daily freshness cron at 03:00 in Vietnam): `/races` with `near`, `fromPlace`, `province`, `from`/`to` overlap, `at`, `maxPrice`, `group`, `audience`, `fresh`, `after`, `sort=price|distance_desc|distance_asc|travel_time|date`; per-course `priceAt`; `freshness` and `geo` on every race; `meta.excluded` counts; `/places`; series `editions`; `GET /` shows the last sync, the last freshness read and the stale count.
+- **openrace-api** (deployed, migration 0006, daily freshness cron at 07:30 in Vietnam): `/races` with `near`, `fromPlace`, `province`, `from`/`to` overlap, `at`, `maxPrice`, `group`, `audience`, `fresh`, `after`, `sort=price|distance_desc|distance_asc|travel_time|date`; per-course `priceAt`; `freshness` and `geo` on every race; `meta.excluded` counts; `/places`; series `editions`; `GET /` shows the last sync, the last freshness read and the stale count.
 
 ## The six questions (live, 2026-09-24)
 
@@ -82,6 +82,13 @@ GET /races?after=nha-trang-city-trail-2026&type=trail_run&sort=price&fromPlace=h
 - No ORS key: the public OSRM demo server, then straight-line km. Islands (special zones, except Vân Đồn) are `flight_or_ferry`, straight-line.
 - A venue naming one of the 13 places gets that place's centre (`source: "place"`, precision `province`) when Nominatim fails: Nominatim puts "Nha Trang" at sea.
 - API sync applies freshness, places and admin units only on a call that downloads no race files (the first v3 sync hit the free plan's CPU limit); 15 files per call.
+
+## After the first write-up
+
+- **A province-level point has no ward or old units** any more (they came from wherever the province's centre fell, e.g. Gia Lai → An Khê). 61 races rewritten (8719672).
+- The API no longer repeats the flat geo columns next to `geo`, and `/stats/by-distance` sorts by meters.
+- **D1's free plan allows 100,000 row writes a day, and today used them up** (migration, several full resyncs, admin units rewritten on every sync). The 61-race sync failed with a 500 until the quota resets at 00:00 UTC (07:00 in Vietnam). Now: unchanged reference files are skipped by hash, the API's cron runs at 07:30 in Vietnam (after the reset), and Main also runs daily at 07:40 in Vietnam as a backup sync, so the 61 races reach the API tomorrow morning without anyone doing anything.
+- Docs brought up to date in both repos (READMEs, sync and gotchas notes, history).
 
 ## For the user
 
