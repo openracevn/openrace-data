@@ -9,6 +9,13 @@ The `agent-read` skill, split up: **opencode (free models) does the reading, Cla
 
 The race-reading case of the global `opencode-delegate` skill (`~/.claude/skills/opencode-delegate/`), which has the general rules: free models only, guard the repo, verify cheaply, only Claude commits. Nothing here spends Firecrawl credits or paid model tokens. Read `.claude/skills/agent-read/SKILL.md` first: its reading rules still hold, and this skill only changes who does the reading.
 
+## Keep Claude's share small
+
+- **One batch per fresh Claude session.** Claude's cost is mostly re-reading its own conversation on every step. If this session already holds unrelated work, tell the user to `/clear` and ask again.
+- **20–30 races per batch.** Claude's checking barely grows with the batch; the workers do the extra. Stay at 10 for a site whose recipe or images are new to you.
+- **Don't read worker logs, pages or images unless the compare or the dry run points at them.** `tail` the log, read the compare, check the dry run.
+- Measured on the first batch (10 races): one worker used ~1.2M tokens read and ~18K written, about what Claude would spend reading the batch itself. Claude's recurring share was ~3K written, so roughly 3–5× less usage per batch once setup is done.
+
 ## Roles
 
 | Who | Does | Never |
@@ -32,7 +39,7 @@ Give A and B models from different families, so they don't make the same misread
 
 ```bash
 git pull -q
-npm run agent-read -- prepare --site actiup --limit 10
+npm run agent-read -- prepare --site actiup --limit 20
 .claude/skills/opencode-read/prep.sh      # read-b.json per race + view-image-<n>.jpg copies
 ```
 
@@ -92,4 +99,5 @@ Tell the user: races committed, how many were `OK` straight away, how many image
 
 ## Notes (update as you learn)
 
+- Keep worker B on page-only races for now. On Đắk Lắk the page reading was the real disagreement (types, a "from 5 km" read as a distance).
 - 2026-09-24, first run (10 ActiUp races, 12 images). A = muse-spark-1.3, B = mimo-v2.6-flash; each took about 10 min and both finished. After the compare: 4 OK, 4 FORMAT, 2 DIFF. mimo adds years to `from` dates (a FORMAT diff; keep A). **Both missed the same 3 Flash Sale cells (🔥 icon) on FV Run.** Found by opening the image, which is why the grid check exists. Neither labelled relay prices as "Relay team". Claude opened 1 image and fixed 2 races.
