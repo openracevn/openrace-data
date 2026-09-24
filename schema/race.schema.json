@@ -220,7 +220,8 @@
               "enum": [
                 "maps_link",
                 "nominatim",
-                "manual"
+                "manual",
+                "place"
               ]
             },
             "precision": {

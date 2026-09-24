@@ -132,7 +132,8 @@ export const PriceTierSchema = z
   })
   .refine((t) => t.from === null || t.to === null || t.from <= t.to, { message: "from must be <= to", path: ["from"] });
 
-export const GEO_SOURCES = ["maps_link", "nominatim", "manual"] as const;
+// place: the centre of a place in config/places.yaml the venue names (old city names).
+export const GEO_SOURCES = ["maps_link", "nominatim", "manual", "place"] as const;
 export const GEO_PRECISIONS = ["venue", "ward", "province"] as const;
 
 export const CourseSchema = z.object({

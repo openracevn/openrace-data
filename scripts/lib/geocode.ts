@@ -79,11 +79,26 @@ export function geoTargetFromExtraction(input: unknown): GeoTarget | null {
 
 async function lookupEntry(target: GeoTarget, key: string): Promise<GeoCacheEntry> {
   const point = await pointFor(target);
+  const located = point ? locate(point.lat, point.lng) : null;
+  if (point && located) {
+    const geo = await buildGeo(point.lat, point.lng, point.source, point.precision, located);
+    return { geo, query: point.query, at: new Date().toISOString() };
+  }
+  // Old city names ("Nha Trang", "Vũng Tàu") are no longer units: Nominatim finds nothing,
+  // or the centroid of the old boundary out at sea. A venue that names one of our places
+  // gets that place's centre, marked as coarse as a province.
+  const place = placeNamed(target.location);
+  if (place) {
+    const geo = await buildGeo(place.center[0], place.center[1], "place", "province");
+    return { geo, query: place.name, at: new Date().toISOString(), note: point ? "geocoded point outside the wards; used the place's centre" : "no point found; used the place's centre" };
+  }
   if (!point) return { geo: null, query: queries(target.location)[0] ?? key, at: new Date().toISOString(), note: "no point found" };
-  const located = locate(point.lat, point.lng);
-  if (!located) return { geo: null, query: point.query, at: new Date().toISOString(), note: "point outside Vietnam's wards" };
-  const geo = await buildGeo(point.lat, point.lng, point.source, point.precision, located);
-  return { geo, query: point.query, at: new Date().toISOString() };
+  return { geo: null, query: point.query, at: new Date().toISOString(), note: "point outside Vietnam's wards" };
+}
+
+function placeNamed(location: GeoTarget["location"]): Place | null {
+  const text = ` ${foldVietnamese([location.venue, location.city].filter(Boolean).join(" "))} `;
+  return loadPlaces().find((p) => text.includes(` ${foldVietnamese(p.name)} `)) ?? null;
 }
 
 async function buildGeo(lat: number, lng: number, source: Geo["source"], precision: Geo["precision"], located = locate(lat, lng)): Promise<Geo> {
@@ -232,7 +247,7 @@ function queries(location: GeoTarget["location"]): string[] {
 function precisionOf(addressType: unknown, type: unknown): Geo["precision"] {
   const value = typeof addressType === "string" ? addressType : typeof type === "string" ? type : "";
   if (["suburb", "quarter", "village", "town", "municipality"].includes(value)) return "ward";
-  if (["state", "province", "city", "county"].includes(value)) return "province";
+  if (["state", "province", "city", "county", "historic", "administrative"].includes(value)) return "province";
   return "venue";
 }
 
