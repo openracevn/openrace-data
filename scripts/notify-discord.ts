@@ -56,7 +56,11 @@ const updated = diff.updated.map(({ id, path, before: a, after: b, fields }) => 
   for (const s of b.sources) if (!a.sources.some((x) => x.url === s.url)) detail.unshift(`+${s.site}`);
   if (a.confidence !== b.confidence) detail.push(`confidence ${a.confidence} → ${b.confidence}`);
   detail.push(...overrideNotes(a, b));
-  return `✏️ **${b.name}** \`${b.slug}\`: ${detail.join(", ") || "sources/metadata only"}${flagNotes(a, b)}${links(b, path, after)}`;
+  const cleared = a.flags.filter((f) => !b.flags.includes(f));
+  if (cleared.length > 0) detail.push(`✅ cleared: ${cleared.join("; ")}`);
+  const flagged = b.flags.some((f) => !a.flags.includes(f));
+  const summary = detail.join(", ") || (flagged ? "flagged for a look" : "sources/metadata only");
+  return `✏️ **${b.name}** \`${b.slug}\`: ${summary}${flagNotes(a, b)}${links(b, path, after)}`;
 });
 
 if (added.length + updated.length + removed.length === 0) {
