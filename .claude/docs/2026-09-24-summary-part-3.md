@@ -87,7 +87,7 @@ GET /races?after=nha-trang-city-trail-2026&type=trail_run&sort=price&fromPlace=h
 
 - **A province-level point has no ward or old units** any more (they came from wherever the province's centre fell, e.g. Gia Lai → An Khê). 61 races rewritten (8719672).
 - The API no longer repeats the flat geo columns next to `geo`, and `/stats/by-distance` sorts by meters.
-- **D1's free plan allows 100,000 row writes a day, and today used them up** (migration, several full resyncs, admin units rewritten on every sync). The 61-race sync failed with a 500 until the quota resets at 00:00 UTC (07:00 in Vietnam). Now: unchanged reference files are skipped by hash, the API's cron runs at 07:30 in Vietnam (after the reset), and Main also runs daily at 07:40 in Vietnam as a backup sync, so the 61 races reach the API tomorrow morning without anyone doing anything.
+- **D1's free plan allows 100,000 row writes a day, and today used them up** (migration, several full resyncs, admin units rewritten on every sync). The 61-race sync failed with a 500 until the quota resets at 00:00 UTC (07:00 in Vietnam). Now: unchanged reference files are skipped by hash, the API's cron runs at 07:30 in Vietnam (after the reset), and Main also runs daily at 07:40 in Vietnam as a backup sync, so the 61 races would have reached the API the next morning by themselves. The user then upgraded the Cloudflare plan, and a manual resync synced them (6 calls, 61 updated). Series and organizers are also skipped by hash now; every reference file's hash is stored in `sync_state`.
 - Docs brought up to date in both repos (READMEs, sync and gotchas notes, history).
 
 ## For the user

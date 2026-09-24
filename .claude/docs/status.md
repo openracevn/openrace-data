@@ -24,7 +24,7 @@ Direction and the questions we're building toward: [roadmap.md](roadmap.md). Des
   - `check.yml` has v2 inputs (site / race / past / limit / max credits / free / dry run). Manual only.
   - `main.yml` validates, resyncs openrace-api when `data/` changed, and posts to Discord.
 - **openrace-api reads schema v2** (2026-09-24, openrace-api `65f6d00`): 300 races, 39 series and 113 organizers in production after a full resync (Main run 35907691347, 0 errors). `prices[]` plus a derived `priceFrom` (cheapest tier that isn't a group price); `/series` and `/organizers` endpoints. `region` is gone from the API.
-- **Schema v3 and the API (2026-09-24, plans 003 and 004):** `courses[]` with meters, `edition`, tier `inferred`, `geo` (267 of 300 located), `state/freshness.json`. openrace-api reads v3: price on a date, near / from a place, sorting, freshness on every race, daily freshness cron. See [summary part 3](2026-09-24-summary-part-3.md). The last 61-race geo fix (8719672) reaches the API after D1's write quota resets (backup sync 07:40 in Vietnam, 2026-09-25).
+- **Schema v3 and the API (2026-09-24, plans 003 and 004):** `courses[]` with meters, `edition`, tier `inferred`, `geo` (267 of 300 located), `state/freshness.json`. openrace-api reads v3: price on a date, near / from a place, sorting, freshness on every race, daily freshness cron. See [summary part 3](2026-09-24-summary-part-3.md). The 61-race geo fix (8719672) is in the API too (resynced after the user upgraded the Cloudflare plan).
 
 ## Data (2026-09-24)
 
