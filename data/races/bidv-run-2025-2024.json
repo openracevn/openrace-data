@@ -31,7 +31,9 @@
       "foundOn": "actiup.net"
     }
   ],
-  "flags": [],
+  "flags": [
+    "race spans 22 days (2024-11-02 to 2024-11-24); endDate may be the registration close"
+  ],
   "overrides": {},
   "sources": [
     {
@@ -66,5 +68,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T03:58:52.346Z"
 }
