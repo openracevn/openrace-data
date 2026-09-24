@@ -1,4 +1,4 @@
-# Status (end of 2026-09-25)
+# Status (end of 2026-09-24)
 
 Design v2 is being built (`design-v2.md`). The v1 race data was removed; data is rebuilt from scratch with the new pipeline.
 
@@ -19,11 +19,11 @@ Design v2 is being built (`design-v2.md`). The v1 race data was removed; data is
   - HCMC Marathon 2027: 48, including resident / non-resident.
   - Kept as `test/answers.test.ts`.
 - **Free dry runs against the live sites work:** ActiUp lists 41 upcoming races (≤425 credits to read them all the first time), VM 15 (≤85), and each race site ≤20–50.
-- **Agent reads (2026-09-25):** `npm run agent-read -- prepare | commit` and the `agent-read` skill (`.claude/skills/agent-read/SKILL.md`). An agent reads pages and price images itself, for free; same recipes, format, normalization and commit, and the fingerprint is recorded so Firecrawl runs skip the race. First used on Run For The Heart and Prenn Trail Summit 2026.
+- **Agent reads (2026-09-24):** `npm run agent-read -- prepare | commit` and the `agent-read` skill (`.claude/skills/agent-read/SKILL.md`). An agent reads pages and price images itself, for free; same recipes, format, normalization and commit, and the fingerprint is recorded so Firecrawl runs skip the race. First used on Run For The Heart and Prenn Trail Summit 2026.
 - **Workflows:**
   - `check.yml` has v2 inputs (site / race / past / limit / max credits / free / dry run). Manual only.
   - `main.yml` validates, resyncs openrace-api when `data/` changed, and posts to Discord.
-- **openrace-api reads schema v2** (2026-09-25, openrace-api `65f6d00`): 300 races, 39 series and 113 organizers in production after a full resync (Main run 35907691347, 0 errors). `prices[]` plus a derived `priceFrom` (cheapest tier that isn't a group price); `/series` and `/organizers` endpoints. `region` is gone from the API.
+- **openrace-api reads schema v2** (2026-09-24, openrace-api `65f6d00`): 300 races, 39 series and 113 organizers in production after a full resync (Main run 35907691347, 0 errors). `prices[]` plus a derived `priceFrom` (cheapest tier that isn't a group price); `/series` and `/organizers` endpoints. `region` is gone from the API.
 
 ## Data (2026-09-24)
 
@@ -31,7 +31,7 @@ Design v2 is being built (`design-v2.md`). The v1 race data was removed; data is
 - **300 ActiUp races seeded with `--facts-only`** (0 credits; commit bf98deb, fix f459f9b): every sports event ActiUp lists, 2024–2027, 35 of them upcoming.
   - **What they have:** name, dates, venue, organizer (113 organizers), sale status, and links.
   - **What they don't have yet:** prices, distances and types (`other`), until a normal run reads them. `state/checks.json` marks them `facts`.
-- **First paid batch (2026-09-25): 10 upcoming ActiUp races read, 100 credits** (commit ca25eed). Checked by eye against every price image. That found 5 error patterns, now fixed in normalization and replayed for free (9341f84, 9dd2444); see the lessons in `scripts/lib/recipes/README.md`. Known answers added: Sơn Trà City Trail, Quảng Trực, Đà Lạt Xanh 2026.
+- **First paid batch (2026-09-24): 10 upcoming ActiUp races read, 100 credits** (commit ca25eed). Checked by eye against every price image. That found 5 error patterns, now fixed in normalization and replayed for free (9341f84, 9dd2444); see the lessons in `scripts/lib/recipes/README.md`. Known answers added: Sơn Trà City Trail, Quảng Trực, Đà Lạt Xanh 2026.
   - **Vũng Tàu City Trail 2026: prices set by hand** (override, commit 26545c4). The model shifted the image's rows. A re-read with the new prompt (10 credits) shifted them again. The override stays until someone removes it (`npm run edit -- unset vung-tau-city-trail prices`), so later price changes on ActiUp won't show.
   - Tết Run Miền Nam 2027: the Early Bird starts on 2026-10-22, but the image only says "until 22/10".
   - No prices on ActiUp: Kun Fun Run Đồng Tháp, 2027 Sunrise Sprint and IRONKIDS Đà Nẵng.
@@ -39,16 +39,17 @@ Design v2 is being built (`design-v2.md`). The v1 race data was removed; data is
 
 ## Firecrawl account
 
-Free plan: 1,000 credits per billing period (23rd to 23rd). On 2026-09-24, 1,453 were left before testing; the tests used about 185. On 2026-09-25, the batch used 100 and the Vũng Tàu re-read 10 (about 1,160 left). The cap in `config/sites.yaml` (`monthlyCredits: 900`) counts calendar months (UTC).
+Free plan: 1,000 credits per billing period (23rd to 23rd). On 2026-09-24, 1,453 were left before testing; the tests used about 185; then the batch used 100 and the Vũng Tàu re-read 10 (about 1,160 left). The cap in `config/sites.yaml` (`monthlyCredits: 900`) counts calendar months (UTC).
 
 ## Next
 
-- [ ] **Read the other 29 upcoming ActiUp races with the `agent-read` skill** (free, batches of 5–10). Firecrawl batches are on hold (user, 2026-09-25). Then VM (15 races) and the race sites the same way.
+- [ ] **Read the other 29 upcoming ActiUp races with the `agent-read` skill** (free, batches of 5–10). Firecrawl batches are on hold (user, 2026-09-24). Then VM (15 races) and the race sites the same way.
 - [ ] Paid check of the default recipe on Hạ Long, Lâm Đồng Trail and Run To Live (≤20–50 each), with their prices added to `test/answers.test.ts`.
 - [ ] Recipes: bibchung (group prices; server-rendered), vietnammtbseries (hub).
 - [ ] Backfill past races (`--past`), on a paid month.
 - [ ] Turn on the daily cron once the data is trusted.
-- [ ] openrace-api: a "price on sale today" (from `prices[]` by date) if the frontend wants it; route tests in the Workers runtime.
+- [ ] **Schema v3 and the API: [plan 003](../plans/003-2026-09-24-schema-v3-geo-price.md).** Adds `courses[]` with meters, tier dates filled in, a `geo` block (point, current and old admin codes, driving distance from 13 places), `edition`, and API price on a date (`?at=`), `near`, `fromPlace` and sorting. It replaces "location as written, not normalized". Agreed 2026-09-24, not started.
+- [ ] openrace-api: route tests in the Workers runtime.
 - [ ] Paid check of the official race sites found in the ActiUp study (in `config/sites.yaml` with `recipe: none`), then switch them to `recipe: default`.
 
 ## Known gaps

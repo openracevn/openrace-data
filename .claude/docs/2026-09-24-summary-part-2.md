@@ -1,6 +1,6 @@
-# Day summary: 2026-09-25
+# Day summary: 2026-09-24 (part 2)
 
-Plan: [002](../plans/002-2026-09-25-prices-and-api.md). **The first 10 upcoming ActiUp races got prices, and openrace-api now reads schema v2 and is syncing again.** The user stopped reading after one batch to save credits. Current state: [status.md](status.md).
+Plan: [002](../plans/002-2026-09-24-prices-and-api.md). **The first 10 upcoming ActiUp races got prices, and openrace-api now reads schema v2 and is syncing again.** The user stopped reading after one batch to save credits. Current state: [status.md](status.md).
 
 ## Where we ended up
 

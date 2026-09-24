@@ -10,7 +10,7 @@
 | Main workflow | GitHub Actions | `.github/workflows/main.yml` | Validates pushes to `main`; when `data/` changed, notifies the API and Discord |
 | CI workflow | GitHub Actions | `.github/workflows/ci.yml` | Typecheck, tests and `validate` on pull requests |
 | Discord channel | Discord | `scripts/notify-discord.ts` | Human-readable change feed |
-| openrace-api | Cloudflare Worker + D1, `https://openrace-api.bmp.workers.dev` | separate repo (`../openrace-api`) | Receives the resync webhook, pulls changed race files plus series and organizers, serves the public API. Reads schema v2 since 2026-09-25 |
+| openrace-api | Cloudflare Worker + D1, `https://openrace-api.bmp.workers.dev` | separate repo (`../openrace-api`) | Receives the resync webhook, pulls changed race files plus series and organizers, serves the public API. Reads schema v2 since 2026-09-24 |
 
 ## Data flow
 

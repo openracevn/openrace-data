@@ -8,4 +8,5 @@ Work plans for a session or an agent, one file each: `NNN-YYYY-MM-DD-topic.md`.
 | # | Plan | Status |
 | --- | --- | --- |
 | 001 | [ActiUp 20-race study](001-2026-09-24-actiup-20-races-study.md) (for an external agent) | Done; reviewed in `.claude/docs/study/` |
-| 002 | [Upcoming prices, then openrace-api v2](002-2026-09-25-prices-and-api.md) | Part 1: 10 of 41 races read, then stopped by the user to save credits. Part 2 not started. Part 3 done. See `.claude/docs/2026-09-25-summary.md` |
+| 002 | [Upcoming prices, then openrace-api v2](002-2026-09-24-prices-and-api.md) | Part 1: 10 of 41 races read, then stopped by the user to save credits. Part 2 not started. Part 3 done. See `.claude/docs/2026-09-24-summary-part-2.md` |
+| 003 | [Schema v3: location, distances, price on a date, and the API](003-2026-09-24-schema-v3-geo-price.md) | Agreed in discussion; not started |

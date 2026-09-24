@@ -49,7 +49,7 @@ jobs:
       - run: npm run validate
 
   # Tell openrace-api to resync, only once the pushed data has validated.
-  # The API reads schema v2 since 2026-09-25 (openrace-api 65f6d00).
+  # The API reads schema v2 since 2026-09-24 (openrace-api 65f6d00).
   notify-api:
     needs: [changes, validate]
     if: needs.changes.outputs.data_changed == 'true'

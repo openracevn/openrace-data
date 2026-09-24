@@ -91,7 +91,7 @@ describe("known answers", () => {
     assert.deepEqual(sorted(prices("hcmc-marathon-2027")), sorted(expected));
   });
 
-  // 2026-09-25 batch: prices checked by eye against the ActiUp price images.
+  // 2026-09-24 batch: prices checked by eye against the ActiUp price images.
   it("Sơn Trà City Trail 2026 (ActiUp): 4 distances × 3 tiers; the model's \"Resident\" on every price is dropped", () => {
     const dates: [string, string, string][] = [
       ["super_early", "2026-09-03", "2026-10-10"],

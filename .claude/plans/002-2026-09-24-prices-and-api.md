@@ -1,4 +1,4 @@
-# Plan for 2026-09-25: read upcoming prices, then update openrace-api
+# Plan for 2026-09-24: read upcoming prices, then update openrace-api
 
 **For:** the next Claude Code session.
 **Read first:**
@@ -65,4 +65,4 @@ This is a separate repo (openrace-api, a Cloudflare Worker). Read its code first
 - Every upcoming ActiUp race has prices, or is known to have none on ActiUp.
 - Batch results were checked by eye, and at least one more race is in `test/answers.test.ts`.
 - openrace-api serves schema v2 and the resync is back on, or, if Part 3 didn't fit, the plan says what's left.
-- Docs, and a day summary for 2026-09-25, are written.
+- Docs, and a day summary for 2026-09-24, are written.

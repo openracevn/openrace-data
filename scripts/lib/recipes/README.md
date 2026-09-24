@@ -40,7 +40,7 @@ A `Snapshot` has:
 - **Prices can depend on the runner** (HCMC Marathon: Resident / Non-resident). Each tier has an `audience`.
 - **Image names can be mangled** (ActiUp: "giải thưởng", prizes, folds to "giai", close to "gia"). Prefer the page structure (a section title) over names.
 
-## Lessons from the first ActiUp batch (2026-09-25)
+## Lessons from the first ActiUp batch (2026-09-24)
 
 - **The model tags prices with an audience that isn't there** (every Sơn Trà price "Resident"; every Bắc Ninh price repeated for Resident and Non-resident). An audience is kept only when the same distance and tier kind has different resident and non-resident prices.
 - **It computes group prices from percentages** ("Nhóm 10-29: 5%"), and gets them wrong. Printed VND prices are round thousands, so a read whose group prices aren't loses its group prices.

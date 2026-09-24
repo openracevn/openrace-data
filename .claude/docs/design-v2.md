@@ -19,7 +19,7 @@ Once the core fields are trustworthy, we build queries on top, e.g. "I'm in Hà 
 - **Scale:** up to 100–150 races a year.
 - **Auto-commit everything.** The user doesn't review. They glance at Discord when they have time and fix mistakes by hand later. Checks before commit must do the reviewing.
 - **Breaking openrace-api is fine** during this refactor. It gets updated once the data side is stable.
-- **Location:** store what the site says (venue, city/province text). No lat/lng and no province normalization for now.
+- **Location:** store what the site says (venue, city/province text). No lat/lng and no province normalization for now. *(Superseded 2026-09-24: v3 keeps the text and adds a `geo` block with a point, current and old admin codes and distances from places. See [plan 003](../plans/003-2026-09-24-schema-v3-geo-price.md).)*
 - **Rebuild the data from scratch** with the new pipeline. Don't migrate the 5 existing race files.
 
 ## Data model
