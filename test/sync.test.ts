@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { splitMessages } from "../scripts/lib/changes.ts";
-import type { StoredExtraction } from "../scripts/lib/reconcile.ts";
+import { fieldFlags, type StoredExtraction } from "../scripts/lib/reconcile.ts";
 import { INDEX_PATH, ORGANIZERS_PATH, RaceSchema, SERIES_PATH, racePath, type IndexEntry, type Race } from "../scripts/lib/schema.ts";
 import { parseSites, type SitesConfig } from "../scripts/lib/sites.ts";
 import { seriesName } from "../scripts/lib/series.ts";
@@ -326,6 +326,14 @@ describe("helpers", () => {
   it("scores name similarity across spacing and diacritics", () => {
     assert.ok(nameSimilarity("Vũng Tàu City Trail 2026", "VungTau CityTrail 2026") > 0.8);
     assert.ok(nameSimilarity("Vũng Tàu City Trail 2026", "Đà Lạt Ultra Trail 2026") < 0.5);
+  });
+
+  it("flags a date range longer than any real event", () => {
+    const span = (date: string, endDate: string | null) => fieldFlags({ date, endDate } as Parameters<typeof fieldFlags>[0]);
+    // Đắk Lắk Backyard 2026: ActiUp's end_date was its registration close.
+    assert.deepEqual(span("2026-08-14", "2026-10-01"), ["race spans 48 days (2026-08-14 to 2026-10-01); endDate may be the registration close"]);
+    assert.deepEqual(span("2026-12-09", "2026-12-13"), []);
+    assert.deepEqual(span("2026-08-14", null), []);
   });
 
   it("splits Discord messages between lines, never over the limit", () => {

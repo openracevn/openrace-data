@@ -7,7 +7,7 @@
 import { changedFields, deepEqual, stabilize } from "./lib/diff.ts";
 import { GitHubRepo, isNotFastForward, type GitHubTarget } from "./lib/github.ts";
 import { normalizeExtraction } from "./lib/extraction.ts";
-import { applyOverrides, isEntityRef, reconcile, type EntityRef, type StoredExtraction } from "./lib/reconcile.ts";
+import { applyOverrides, fieldFlags, isEntityRef, reconcile, type EntityRef, type StoredExtraction } from "./lib/reconcile.ts";
 import {
   INDEX_PATH,
   IndexSchema,
@@ -337,7 +337,7 @@ function composeRace(a: ComposeArgs): { record: Race; fields: CanonicalField[] }
     id: a.id,
     slug: a.slug,
     ...canonical,
-    flags: reconciled.flags,
+    flags: [...reconciled.flags, ...fieldFlags(canonical)],
     overrides: a.overrides,
     sources: a.sources,
     confidence: reconciled.confidence,

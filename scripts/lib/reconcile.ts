@@ -128,6 +128,21 @@ function relatedUrls(sources: readonly RaceSource[], config: SitesConfig): { reg
   };
 }
 
+// Longer than any real multi-day event; sellers sometimes give the registration close as the end.
+const MAX_EVENT_DAYS = 7;
+
+/**
+ * Flags on the served fields (after overrides), so fixing the value by hand clears them.
+ * A long date range is usually a seller's registration period, and it would keep the race
+ * listed as upcoming long after race day.
+ */
+export function fieldFlags(fields: CanonicalRace): string[] {
+  if (!fields.endDate) return [];
+  const days = (Date.parse(fields.endDate) - Date.parse(fields.date)) / 86_400_000;
+  if (days > MAX_EVENT_DAYS) return [`race spans ${days} days (${fields.date} to ${fields.endDate}); endDate may be the registration close`];
+  return [];
+}
+
 /** The race's served fields: derived from the sources, then OpenRace overrides on top. */
 export function applyOverrides(fields: CanonicalRace, overrides: Overrides): CanonicalRace {
   const out: CanonicalRace = { ...fields };
