@@ -109,8 +109,10 @@ async function buildGeo(lat: number, lng: number, source: Geo["source"], precisi
     lng,
     source,
     precision,
-    current: located.current,
-    legacy: located.legacy,
+    // A province-level point is only somewhere in the province (often its centre), so the
+    // ward and old units it falls in say nothing about the race.
+    current: precision === "province" ? { province: located.current.province, ward: null } : located.current,
+    legacy: precision === "province" ? null : located.legacy,
     access: located.special ? "flight_or_ferry" : "road",
     fromPlaces: {},
   };

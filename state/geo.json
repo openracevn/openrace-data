@@ -1637,13 +1637,9 @@
       "precision": "province",
       "current": {
         "province": "92",
-        "ward": "31135"
+        "ward": null
       },
-      "legacy": {
-        "province": "92",
-        "district": "916",
-        "ward": "31135"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -2037,13 +2033,9 @@
       "precision": "province",
       "current": {
         "province": "68",
-        "ward": "25018"
+        "ward": null
       },
-      "legacy": {
-        "province": "68",
-        "district": "679",
-        "ward": "25018"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -2337,13 +2329,9 @@
       "precision": "province",
       "current": {
         "province": "37",
-        "ward": "14329"
+        "ward": null
       },
-      "legacy": {
-        "province": "37",
-        "district": "374",
-        "ward": "14329"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -2843,13 +2831,9 @@
       "precision": "province",
       "current": {
         "province": "79",
-        "ward": "27094"
+        "ward": null
       },
-      "legacy": {
-        "province": "79",
-        "district": "769",
-        "ward": "27118"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -3643,13 +3627,9 @@
       "precision": "province",
       "current": {
         "province": "79",
-        "ward": "26506"
+        "ward": null
       },
-      "legacy": {
-        "province": "77",
-        "district": "747",
-        "ward": "26512"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -3944,13 +3924,9 @@
       "precision": "province",
       "current": {
         "province": "40",
-        "ward": "17089"
+        "ward": null
       },
-      "legacy": {
-        "province": "40",
-        "district": "420",
-        "ward": "17095"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -4650,13 +4626,9 @@
       "precision": "province",
       "current": {
         "province": "48",
-        "ward": "20242"
+        "ward": null
       },
-      "legacy": {
-        "province": "48",
-        "district": "492",
-        "ward": "20242"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -4750,13 +4722,9 @@
       "precision": "province",
       "current": {
         "province": "48",
-        "ward": "20242"
+        "ward": null
       },
-      "legacy": {
-        "province": "48",
-        "district": "492",
-        "ward": "20242"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -5046,13 +5014,9 @@
       "precision": "province",
       "current": {
         "province": "79",
-        "ward": "27094"
+        "ward": null
       },
-      "legacy": {
-        "province": "79",
-        "district": "769",
-        "ward": "27118"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -5146,13 +5110,9 @@
       "precision": "province",
       "current": {
         "province": "68",
-        "ward": "25018"
+        "ward": null
       },
-      "legacy": {
-        "province": "68",
-        "district": "679",
-        "ward": "25018"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -5246,13 +5206,9 @@
       "precision": "province",
       "current": {
         "province": "37",
-        "ward": "14329"
+        "ward": null
       },
-      "legacy": {
-        "province": "37",
-        "district": "374",
-        "ward": "14329"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -5346,13 +5302,9 @@
       "precision": "province",
       "current": {
         "province": "31",
-        "ward": "11560"
+        "ward": null
       },
-      "legacy": {
-        "province": "31",
-        "district": "311",
-        "ward": "11578"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -6046,13 +5998,9 @@
       "precision": "province",
       "current": {
         "province": "82",
-        "ward": "28378"
+        "ward": null
       },
-      "legacy": {
-        "province": "82",
-        "district": "819",
-        "ward": "28369"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -6558,13 +6506,9 @@
       "precision": "province",
       "current": {
         "province": "52",
-        "ward": "23617"
+        "ward": null
       },
-      "legacy": {
-        "province": "64",
-        "district": "623",
-        "ward": "23635"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -6858,13 +6802,9 @@
       "precision": "province",
       "current": {
         "province": "01",
-        "ward": "00070"
+        "ward": null
       },
-      "legacy": {
-        "province": "01",
-        "district": "002",
-        "ward": "00058"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -6958,13 +6898,9 @@
       "precision": "province",
       "current": {
         "province": "01",
-        "ward": "00070"
+        "ward": null
       },
-      "legacy": {
-        "province": "01",
-        "district": "002",
-        "ward": "00058"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -7964,13 +7900,9 @@
       "precision": "province",
       "current": {
         "province": "46",
-        "ward": "19789"
+        "ward": null
       },
-      "legacy": {
-        "province": "46",
-        "district": "474",
-        "ward": "19783"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -8064,13 +7996,9 @@
       "precision": "province",
       "current": {
         "province": "46",
-        "ward": "19789"
+        "ward": null
       },
-      "legacy": {
-        "province": "46",
-        "district": "474",
-        "ward": "19783"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -8464,13 +8392,9 @@
       "precision": "province",
       "current": {
         "province": "51",
-        "ward": "21349"
+        "ward": null
       },
-      "legacy": {
-        "province": "51",
-        "district": "531",
-        "ward": "21349"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -9572,13 +9496,9 @@
       "precision": "province",
       "current": {
         "province": "52",
-        "ward": "23590"
+        "ward": null
       },
-      "legacy": {
-        "province": "64",
-        "district": "627",
-        "ward": "23746"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -9672,13 +9592,9 @@
       "precision": "province",
       "current": {
         "province": "79",
-        "ward": "27094"
+        "ward": null
       },
-      "legacy": {
-        "province": "79",
-        "district": "769",
-        "ward": "27118"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -9772,13 +9688,9 @@
       "precision": "province",
       "current": {
         "province": "01",
-        "ward": "00070"
+        "ward": null
       },
-      "legacy": {
-        "province": "01",
-        "district": "002",
-        "ward": "00058"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -10772,13 +10684,9 @@
       "precision": "province",
       "current": {
         "province": "37",
-        "ward": "14329"
+        "ward": null
       },
-      "legacy": {
-        "province": "37",
-        "district": "374",
-        "ward": "14329"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -10984,13 +10892,9 @@
       "precision": "province",
       "current": {
         "province": "20",
-        "ward": "06298"
+        "ward": null
       },
-      "legacy": {
-        "province": "20",
-        "district": "184",
-        "ward": "06283"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -11308,13 +11212,9 @@
       "precision": "province",
       "current": {
         "province": "15",
-        "ward": "02905"
+        "ward": null
       },
-      "legacy": {
-        "province": "10",
-        "district": "086",
-        "ward": "02938"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -12008,13 +11908,9 @@
       "precision": "province",
       "current": {
         "province": "56",
-        "ward": "22366"
+        "ward": null
       },
-      "legacy": {
-        "province": "56",
-        "district": "568",
-        "ward": "22363"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -12109,13 +12005,9 @@
       "precision": "province",
       "current": {
         "province": "56",
-        "ward": "22366"
+        "ward": null
       },
-      "legacy": {
-        "province": "56",
-        "district": "568",
-        "ward": "22363"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -12310,13 +12202,9 @@
       "precision": "province",
       "current": {
         "province": "56",
-        "ward": "22366"
+        "ward": null
       },
-      "legacy": {
-        "province": "56",
-        "district": "568",
-        "ward": "22363"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -13511,13 +13399,9 @@
       "precision": "province",
       "current": {
         "province": "40",
-        "ward": "16732"
+        "ward": null
       },
-      "legacy": {
-        "province": "40",
-        "district": "412",
-        "ward": "16732"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -13611,13 +13495,9 @@
       "precision": "province",
       "current": {
         "province": "11",
-        "ward": "03127"
+        "ward": null
       },
-      "legacy": {
-        "province": "11",
-        "district": "094",
-        "ward": "03145"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -13711,13 +13591,9 @@
       "precision": "province",
       "current": {
         "province": "44",
-        "ward": "18880"
+        "ward": null
       },
-      "legacy": {
-        "province": "44",
-        "district": "450",
-        "ward": "18880"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -14423,13 +14299,9 @@
       "precision": "province",
       "current": {
         "province": "92",
-        "ward": "31135"
+        "ward": null
       },
-      "legacy": {
-        "province": "92",
-        "district": "916",
-        "ward": "31135"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -14524,13 +14396,9 @@
       "precision": "province",
       "current": {
         "province": "44",
-        "ward": "18880"
+        "ward": null
       },
-      "legacy": {
-        "province": "44",
-        "district": "450",
-        "ward": "18880"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -14924,13 +14792,9 @@
       "precision": "province",
       "current": {
         "province": "80",
-        "ward": "25681"
+        "ward": null
       },
-      "legacy": {
-        "province": "72",
-        "district": "711",
-        "ward": "25705"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -16260,13 +16124,9 @@
       "precision": "province",
       "current": {
         "province": "56",
-        "ward": "22366"
+        "ward": null
       },
-      "legacy": {
-        "province": "56",
-        "district": "568",
-        "ward": "22363"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -16567,13 +16427,9 @@
       "precision": "province",
       "current": {
         "province": "01",
-        "ward": "00070"
+        "ward": null
       },
-      "legacy": {
-        "province": "01",
-        "district": "002",
-        "ward": "00058"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -16667,13 +16523,9 @@
       "precision": "province",
       "current": {
         "province": "79",
-        "ward": "27094"
+        "ward": null
       },
-      "legacy": {
-        "province": "79",
-        "district": "769",
-        "ward": "27118"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -17767,13 +17619,9 @@
       "precision": "province",
       "current": {
         "province": "14",
-        "ward": "04136"
+        "ward": null
       },
-      "legacy": {
-        "province": "14",
-        "district": "125",
-        "ward": "04136"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -17967,13 +17815,9 @@
       "precision": "province",
       "current": {
         "province": "68",
-        "ward": "24778"
+        "ward": null
       },
-      "legacy": {
-        "province": "68",
-        "district": "672",
-        "ward": "24775"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -18567,13 +18411,9 @@
       "precision": "province",
       "current": {
         "province": "31",
-        "ward": "11560"
+        "ward": null
       },
-      "legacy": {
-        "province": "31",
-        "district": "311",
-        "ward": "11578"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -18667,13 +18507,9 @@
       "precision": "province",
       "current": {
         "province": "79",
-        "ward": "27094"
+        "ward": null
       },
-      "legacy": {
-        "province": "79",
-        "district": "769",
-        "ward": "27118"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
@@ -21473,13 +21309,9 @@
       "precision": "province",
       "current": {
         "province": "68",
-        "ward": "24736"
+        "ward": null
       },
-      "legacy": {
-        "province": "67",
-        "district": "667",
-        "ward": "24736"
-      },
+      "legacy": null,
       "access": "road",
       "fromPlaces": {
         "hcmc": {
