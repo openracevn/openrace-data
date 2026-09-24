@@ -10,12 +10,35 @@
   "seriesId": null,
   "organizerId": "4miles",
   "organizer": "4MILES",
-  "distances": [],
+  "distances": [
+    "7km"
+  ],
   "location": {
     "venue": "Hồ du lịch sinh thái Ea Cuôr Kăp - Phường Tân Lập - Tỉnh Đắk Lắk",
     "city": null
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": null,
+      "tier": "RUNNER PACKAGE",
+      "kind": "other",
+      "audience": null,
+      "price": 1750000,
+      "from": null,
+      "to": null,
+      "site": "actiup"
+    },
+    {
+      "distance": "7km",
+      "tier": "COMMUNITY RUN",
+      "kind": "other",
+      "audience": null,
+      "price": 399000,
+      "from": null,
+      "to": null,
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -44,7 +67,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/dak-lak-ultra-vietnam-backyard-2026",
-      "lastCheckedAt": "2026-09-23T18:30:46.237Z",
+      "lastCheckedAt": "2026-09-24T05:54:22.509Z",
       "lastChangedAt": "2026-09-23T18:30:46.237Z",
       "extracted": {
         "facts": {
@@ -57,6 +80,43 @@
           "registrationStatus": "closed",
           "fromPrice": 399000
         },
+        "pages": [
+          {
+            "json": {
+              "distances": [],
+              "name": "Đắk Lắk Ultra - Vietnam Backyard 2026",
+              "pageKind": "sport",
+              "prices": [],
+              "types": [
+                "other"
+              ]
+            },
+            "url": "https://actiup.net/vi/event/dak-lak-ultra-vietnam-backyard-2026"
+          }
+        ],
+        "images": [
+          {
+            "json": {
+              "currency": "VND",
+              "date": "2026-08-14",
+              "distances": [
+                "7KM"
+              ],
+              "prices": [
+                {
+                  "price": 1750000,
+                  "tier": "RUNNER PACKAGE"
+                },
+                {
+                  "distance": "7KM",
+                  "price": 399000,
+                  "tier": "COMMUNITY RUN"
+                }
+              ]
+            },
+            "url": "https://pix.actiup.net/2026/07/12/1783830127441603/1JTA8C3F6_3GO9IU.jpeg"
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/18juXmVvohjC7Kq2HH5eJbsGRPpQOZ5Ta/view",
@@ -66,11 +126,12 @@
         "organizer": {
           "id": "4miles",
           "name": "4MILES"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T03:54:36.290Z"
+  "updatedAt": "2026-09-24T05:54:22.509Z"
 }

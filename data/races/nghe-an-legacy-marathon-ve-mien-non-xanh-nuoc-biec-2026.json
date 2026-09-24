@@ -3,14 +3,19 @@
   "slug": "nghe-an-legacy-marathon-ve-mien-non-xanh-nuoc-biec",
   "name": "NGHỆ AN LEGACY MARATHON - VỀ MIỀN NON XANH NƯỚC BIẾC",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2026-12-05",
   "endDate": "2026-12-06",
   "seriesId": null,
   "organizerId": "cong-ty-zaha-vietnam",
   "organizer": "Công ty Zaha Vietnam",
-  "distances": [],
+  "distances": [
+    "5km",
+    "10km",
+    "21km",
+    "42km"
+  ],
   "location": {
     "venue": "Quảng trường Bình Minh, Cửa Lò, Nghệ An",
     "city": null
@@ -38,7 +43,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/nghe-an-legacy-marathon-ve-mien-non-xanh-nuoc-biec",
-      "lastCheckedAt": "2026-09-23T18:30:45.821Z",
+      "lastCheckedAt": "2026-09-24T05:54:22.509Z",
       "lastChangedAt": "2026-09-23T18:30:45.821Z",
       "extracted": {
         "facts": {
@@ -51,6 +56,26 @@
           "registrationStatus": "open",
           "fromPrice": 137000
         },
+        "pages": [
+          {
+            "json": {
+              "date": "2026-12-06",
+              "distances": [
+                "42KM",
+                "21KM",
+                "10KM",
+                "5KM"
+              ],
+              "name": "NGHỆ AN LEGACY MARATHON - VỀ MIỀN NON XANH NƯỚC BIẾC",
+              "pageKind": "sport",
+              "prices": [],
+              "types": [
+                "road_run"
+              ]
+            },
+            "url": "https://actiup.net/vi/event/nghe-an-legacy-marathon-ve-mien-non-xanh-nuoc-biec"
+          }
+        ],
         "links": [
           {
             "url": "https://docs.google.com/document/d/1mVz7MUD_SB8EPCUX0a9LqpxG4WOQ9elk/edit?usp=drive_link&ouid=111350351941733978191&rtpof=true&sd=true",
@@ -60,11 +85,12 @@
         "organizer": {
           "id": "cong-ty-zaha-vietnam",
           "name": "Công ty Zaha Vietnam"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T05:54:22.509Z"
 }

@@ -3,19 +3,185 @@
   "slug": "vpbank-dat-sen-hong-music-marathon-2026",
   "name": "VPBank Đất Sen Hồng Music Marathon 2026",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2026-10-09",
   "endDate": "2026-10-11",
   "seriesId": "vpbank-dat-sen-hong-music-marathon",
   "organizerId": "don-vi-to-chuc-nexus-sport-events-doi-tac-chien-luoc-don-vi-dong-to-chuc-ngan-ha",
   "organizer": "Đơn vị tổ chức: Nexus Sport Events – Đối tác chiến lược & Đơn vị đồng tổ chức: Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
-  "distances": [],
+  "distances": [
+    "5km",
+    "10km",
+    "21km",
+    "42km"
+  ],
   "location": {
     "venue": "Đường Lý Thường Kiệt, Phường Cao Lãnh, Tỉnh Đồng Tháp (phía trước công viên Văn Miếu)",
     "city": null
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "FLASH SALE",
+      "kind": "other",
+      "audience": null,
+      "price": 260000,
+      "from": null,
+      "to": "2026-07-10",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "FLASH SALE",
+      "kind": "other",
+      "audience": null,
+      "price": 380000,
+      "from": null,
+      "to": "2026-07-10",
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "FLASH SALE",
+      "kind": "other",
+      "audience": null,
+      "price": 520000,
+      "from": null,
+      "to": "2026-07-10",
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "FLASH SALE",
+      "kind": "other",
+      "audience": null,
+      "price": 630000,
+      "from": null,
+      "to": "2026-07-10",
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 415000,
+      "from": "2026-07-11",
+      "to": "2026-08-12",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 555000,
+      "from": "2026-07-11",
+      "to": "2026-08-12",
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 695000,
+      "from": "2026-07-11",
+      "to": "2026-08-12",
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 835000,
+      "from": "2026-07-11",
+      "to": "2026-08-12",
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 575000,
+      "from": "2026-08-13",
+      "to": "2026-09-17",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 855000,
+      "from": "2026-08-13",
+      "to": "2026-09-17",
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 985000,
+      "from": "2026-08-13",
+      "to": "2026-09-17",
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 1135000,
+      "from": "2026-08-13",
+      "to": "2026-09-17",
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "LATE",
+      "kind": "late",
+      "audience": null,
+      "price": 845000,
+      "from": "2026-09-18",
+      "to": "2026-10-02",
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "LATE",
+      "kind": "late",
+      "audience": null,
+      "price": 1125000,
+      "from": "2026-09-18",
+      "to": "2026-10-02",
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "LATE",
+      "kind": "late",
+      "audience": null,
+      "price": 1345000,
+      "from": "2026-09-18",
+      "to": "2026-10-02",
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "LATE",
+      "kind": "late",
+      "audience": null,
+      "price": 1555000,
+      "from": "2026-09-18",
+      "to": "2026-10-02",
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -38,7 +204,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/vpbank-dat-sen-hong-music-marathon-2026",
-      "lastCheckedAt": "2026-09-23T18:30:46.637Z",
+      "lastCheckedAt": "2026-09-24T05:54:22.509Z",
       "lastChangedAt": "2026-09-23T18:30:46.637Z",
       "extracted": {
         "facts": {
@@ -51,6 +217,151 @@
           "registrationStatus": "open",
           "fromPrice": 260000
         },
+        "pages": [
+          {
+            "json": {
+              "date": "2026-10-09",
+              "endDate": "2026-10-11",
+              "name": "VPBank Đất Sen Hồng Music Marathon 2026",
+              "pageKind": "sport",
+              "prices": [],
+              "types": [
+                "road_run"
+              ]
+            },
+            "url": "https://actiup.net/vi/event/vpbank-dat-sen-hong-music-marathon-2026"
+          }
+        ],
+        "images": [
+          {
+            "json": {
+              "currency": "VND",
+              "distances": [
+                "5KM",
+                "10KM",
+                "HALF MARATHON",
+                "MARATHON"
+              ],
+              "prices": [
+                {
+                  "distance": "5KM",
+                  "price": 260000,
+                  "tier": "FLASH SALE",
+                  "to": "2026-07-10"
+                },
+                {
+                  "distance": "10KM",
+                  "price": 380000,
+                  "tier": "FLASH SALE",
+                  "to": "2026-07-10"
+                },
+                {
+                  "distance": "HALF MARATHON",
+                  "price": 520000,
+                  "tier": "FLASH SALE",
+                  "to": "2026-07-10"
+                },
+                {
+                  "distance": "MARATHON",
+                  "price": 630000,
+                  "tier": "FLASH SALE",
+                  "to": "2026-07-10"
+                },
+                {
+                  "distance": "5KM",
+                  "from": "11/7",
+                  "price": 415000,
+                  "tier": "EARLY BIRD",
+                  "to": "2026-08-12"
+                },
+                {
+                  "distance": "10KM",
+                  "from": "11/7",
+                  "price": 555000,
+                  "tier": "EARLY BIRD",
+                  "to": "2026-08-12"
+                },
+                {
+                  "distance": "HALF MARATHON",
+                  "from": "11/7",
+                  "price": 695000,
+                  "tier": "EARLY BIRD",
+                  "to": "2026-08-12"
+                },
+                {
+                  "distance": "MARATHON",
+                  "from": "11/7",
+                  "price": 835000,
+                  "tier": "EARLY BIRD",
+                  "to": "2026-08-12"
+                },
+                {
+                  "distance": "5KM",
+                  "from": "13/8",
+                  "price": 575000,
+                  "tier": "REGULAR",
+                  "to": "2026-09-17"
+                },
+                {
+                  "distance": "10KM",
+                  "from": "13/8",
+                  "price": 855000,
+                  "tier": "REGULAR",
+                  "to": "2026-09-17"
+                },
+                {
+                  "distance": "HALF MARATHON",
+                  "from": "13/8",
+                  "price": 985000,
+                  "tier": "REGULAR",
+                  "to": "2026-09-17"
+                },
+                {
+                  "distance": "MARATHON",
+                  "from": "13/8",
+                  "price": 1135000,
+                  "tier": "REGULAR",
+                  "to": "2026-09-17"
+                },
+                {
+                  "distance": "5KM",
+                  "from": "18/9",
+                  "price": 845000,
+                  "tier": "LATE",
+                  "to": "2026-10-02"
+                },
+                {
+                  "distance": "10KM",
+                  "from": "18/9",
+                  "price": 1125000,
+                  "tier": "LATE",
+                  "to": "2026-10-02"
+                },
+                {
+                  "distance": "HALF MARATHON",
+                  "from": "18/9",
+                  "price": 1345000,
+                  "tier": "LATE",
+                  "to": "2026-10-02"
+                },
+                {
+                  "distance": "MARATHON",
+                  "from": "18/9",
+                  "price": 1555000,
+                  "tier": "LATE",
+                  "to": "2026-10-02"
+                }
+              ]
+            },
+            "url": "https://pix.actiup.net/2026/07/10/1783621548081268/Price-list.jpg"
+          },
+          {
+            "json": {
+              "prices": []
+            },
+            "url": "https://pix.actiup.net/2026/07/10/1783621538350215/Group-discount.jpg"
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1v_ziPUQ4LqWNS8BWHtSGw9jGHt5qXoQs/view?usp=sharing",
@@ -60,11 +371,12 @@
         "organizer": {
           "id": "don-vi-to-chuc-nexus-sport-events-doi-tac-chien-luoc-don-vi-dong-to-chuc-ngan-ha",
           "name": "Đơn vị tổ chức: Nexus Sport Events – Đối tác chiến lược & Đơn vị đồng tổ chức: Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T05:54:22.509Z"
 }

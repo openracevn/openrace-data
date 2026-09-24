@@ -3,14 +3,18 @@
   "slug": "giai-marathon-quoc-te-di-san-can-tho-quan-quan-21",
   "name": "Giải Marathon Quốc tế Di sản Cần Thơ 2026",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2026-12-20",
   "endDate": null,
   "seriesId": null,
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
-  "distances": [],
+  "distances": [
+    "5km",
+    "10km",
+    "21km"
+  ],
   "location": {
     "venue": "Công viên Sông Hậu, phường Cái Khế, thành phố Cần Thơ",
     "city": null
@@ -38,7 +42,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/giai-marathon-quoc-te-di-san-can-tho-quan-quan-21",
-      "lastCheckedAt": "2026-09-23T18:30:44.209Z",
+      "lastCheckedAt": "2026-09-24T05:54:22.509Z",
       "lastChangedAt": "2026-09-23T18:30:44.209Z",
       "extracted": {
         "facts": {
@@ -50,6 +54,25 @@
           "registrationStatus": "open",
           "fromPrice": 295000
         },
+        "pages": [
+          {
+            "json": {
+              "date": "2026-12-20",
+              "distances": [
+                "5km",
+                "10km",
+                "21km"
+              ],
+              "name": "Giải Marathon Quốc tế Di sản Cần Thơ 2026",
+              "pageKind": "sport",
+              "prices": [],
+              "types": [
+                "road_run"
+              ]
+            },
+            "url": "https://actiup.net/vi/event/giai-marathon-quoc-te-di-san-can-tho-quan-quan-21"
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1WfBjAjgv52hGsmJHtb4oTpaXSY_Ev1jm/view?usp=drive_link",
@@ -59,11 +82,12 @@
         "organizer": {
           "id": "cong-ty-dha-viet-nam",
           "name": "Công ty DHA Việt Nam"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T05:54:22.509Z"
 }
