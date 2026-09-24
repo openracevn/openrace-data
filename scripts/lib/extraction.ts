@@ -7,8 +7,8 @@
  * stored verbatim as its `extracted` (see SourceExtraction) and normalized on read.
  */
 import { createHash } from "node:crypto";
-import { MAX_PRICE, MAX_YEARS_AHEAD, MIN_RACE_YEAR, RACE_TYPES, REGISTRATION_STATUSES, isDistance } from "./schema.ts";
-import type { Audience, RaceType, RegistrationStatus, TierKind } from "./schema.ts";
+import { MAX_PRICE, MAX_YEARS_AHEAD, MIN_RACE_YEAR, RACE_TYPES, REGISTRATION_STATUSES, courseMeters, isDistance } from "./schema.ts";
+import type { Audience, Course, RaceType, RegistrationStatus, TierKind } from "./schema.ts";
 import { foldVietnamese, str } from "./text.ts";
 
 /** sport = an endurance sports event; non_sport = concert, tour, hotel, conference; none = login, error or empty page. */
@@ -69,6 +69,28 @@ export const PAGE_EXTRACTION = {
       date: { type: "string", description: "Race day as YYYY-MM-DD. For multi-day events, the first day." },
       endDate: { type: "string", description: "Last race day as YYYY-MM-DD, only for multi-day events." },
       distances: { type: "array", items: { type: "string" }, description: "Race distances offered, as written (\"5km\", \"21KM\", \"Half Marathon\")." },
+      courses: {
+        type: "array",
+        description:
+          "Per distance, only what the page states: its format (e.g. the 70km is trail_run while the 5km is road_run) and elevation gain (D+). Omit a field that isn't stated.",
+        items: {
+          type: "object",
+          properties: {
+            distance: { type: "string", description: "Distance as written." },
+            type: { type: "string", enum: [...RACE_TYPES], description: "Format for this distance, if the page states it." },
+            elevationGain: { type: "number", description: "Elevation gain in metres, if the page states it." },
+          },
+          required: ["distance"],
+        },
+      },
+      edition: {
+        type: "number",
+        description: "The edition number if the page states it (\"lần thứ 5\", \"5th edition\", \"mùa 5\"). Omit otherwise; never count editions yourself.",
+      },
+      mapsUrl: {
+        type: "string",
+        description: "A Google Maps link or coordinates for the start/finish venue, exactly as on the page. Omit if none.",
+      },
       venue: { type: "string", description: "Start/finish venue or area, as written." },
       city: { type: "string", description: "City or province where the race takes place, as written." },
       organizer: { type: "string", description: "Organizing company or body, only if named. Never the event name." },
@@ -87,6 +109,7 @@ export const PAGE_EXTRACTION = {
     "Convert dates such as \"21 - 22 tháng 11, 2026\" or \"24/01/2027\" to YYYY-MM-DD. " +
     "If the page shows no event (login, error or empty page), set pageKind to none and omit everything else. " +
     "Only report what the page states; omit fields that are not stated. Never guess. " +
+    "Include the stated edition number, Maps link or coordinates, and per-distance format or elevation gain. " +
     "Prices must be written on the page as amounts; if the page shows prices only in images, return an empty prices list.",
 } as const;
 
@@ -140,7 +163,9 @@ export type SourceFacts = {
   types: RaceType[];
   date: string;
   endDate: string | null;
-  distances: string[];
+  courses: Course[];
+  edition: number | null;
+  mapsUrl: string | null;
   venue: string | null;
   city: string | null;
   organizer: string | null;
@@ -205,6 +230,9 @@ export function normalizeExtraction(raw: SourceExtraction | Record<string, unkno
     types,
     name,
   );
+  const courses = distances.map((label) => courseOf(label, layers, types));
+  const edition = first((l) => normalizeEdition(l.edition));
+  const mapsUrl = first((l) => str(l.mapsUrl));
   const status = first((l) => str(l.registrationStatus));
   const organizer = first((l) => str(l.organizer));
 
@@ -215,7 +243,9 @@ export function normalizeExtraction(raw: SourceExtraction | Record<string, unkno
       types,
       date,
       endDate,
-      distances,
+      courses,
+      edition,
+      mapsUrl,
       venue: first((l) => str(l.venue)),
       city: first((l) => str(l.city)),
       // The model sometimes fills the organizer with the event name.
@@ -390,6 +420,44 @@ function parseDayMonth(s: string): [string, string, string] | null {
   if (named && MONTHS.includes(named[2]!)) return [s, named[1]!, String(MONTHS.indexOf(named[2]!) + 1)];
   const thang = folded.match(/^(\d{1,2}) thang (\d{1,2})$/);
   return thang ? [s, thang[1]!, thang[2]!] : null;
+}
+
+function courseOf(label: string, layers: Record<string, unknown>[], types: RaceType[]): Course {
+  let type: RaceType | null = null;
+  let elevationGain: number | null = null;
+  for (const layer of layers) {
+    if (!Array.isArray(layer.courses)) continue;
+    for (const raw of layer.courses) {
+      if (!isRecord(raw)) continue;
+      const distance = str(raw.distance);
+      if (distance === null || normalizeDistance(distance) !== label) continue;
+      if (type === null) {
+        const stated = str(raw.type);
+        if (stated !== null && (RACE_TYPES as readonly string[]).includes(stated)) type = stated as RaceType;
+      }
+      if (elevationGain === null) elevationGain = normalizeElevationGain(raw.elevationGain);
+    }
+  }
+  return {
+    label,
+    meters: courseMeters(label),
+    type: type ?? (types.length === 1 && types[0] !== "other" ? types[0]! : null),
+    elevationGain,
+  };
+}
+
+function normalizeElevationGain(v: unknown): number | null {
+  if (typeof v !== "number" || !Number.isFinite(v)) return null;
+  const rounded = Math.round(v);
+  return rounded >= 0 && rounded <= 20_000 ? rounded : null;
+}
+
+function normalizeEdition(v: unknown): number | null {
+  return typeof v === "number" && Number.isInteger(v) && v >= 1 && v <= 200 ? v : null;
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
 }
 
 /** Known values only, deduped, in RACE_TYPES order (stable diffs); name rules win; never empty. */

@@ -89,10 +89,83 @@
         }
       ]
     },
-    "distances": {
+    "edition": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 200
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "courses": {
       "type": "array",
       "items": {
-        "type": "string"
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "meters": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "type": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "road_run",
+                  "trail_run",
+                  "city_trail",
+                  "obstacle_run",
+                  "triathlon",
+                  "duathlon",
+                  "aquathlon",
+                  "aquabike",
+                  "swimrun",
+                  "swim",
+                  "road_cycle",
+                  "mtb",
+                  "other"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "elevationGain": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 20000
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "label",
+          "meters",
+          "type",
+          "elevationGain"
+        ],
+        "additionalProperties": false
       }
     },
     "location": {
@@ -126,6 +199,171 @@
         "city"
       ],
       "additionalProperties": false
+    },
+    "geo": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "lat": {
+              "type": "number",
+              "minimum": 8,
+              "maximum": 24
+            },
+            "lng": {
+              "type": "number",
+              "minimum": 102,
+              "maximum": 110
+            },
+            "source": {
+              "type": "string",
+              "enum": [
+                "maps_link",
+                "nominatim",
+                "manual"
+              ]
+            },
+            "precision": {
+              "type": "string",
+              "enum": [
+                "venue",
+                "ward",
+                "province"
+              ]
+            },
+            "current": {
+              "type": "object",
+              "properties": {
+                "province": {
+                  "type": "string",
+                  "pattern": "^\\d{2}$"
+                },
+                "ward": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "pattern": "^\\d{5}$"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "province",
+                "ward"
+              ],
+              "additionalProperties": false
+            },
+            "legacy": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "province": {
+                      "type": "string",
+                      "pattern": "^\\d{2}$"
+                    },
+                    "district": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "pattern": "^\\d{3}$"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "ward": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "pattern": "^\\d{5}$"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "province",
+                    "district",
+                    "ward"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "access": {
+              "type": "string",
+              "enum": [
+                "road",
+                "flight_or_ferry"
+              ]
+            },
+            "fromPlaces": {
+              "type": "object",
+              "propertyNames": {
+                "type": "string"
+              },
+              "additionalProperties": {
+                "type": "object",
+                "properties": {
+                  "km": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "minutes": {
+                    "anyOf": [
+                      {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 9007199254740991
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "method": {
+                    "type": "string",
+                    "enum": [
+                      "road",
+                      "straight_line"
+                    ]
+                  }
+                },
+                "required": [
+                  "km",
+                  "minutes",
+                  "method"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "lat",
+            "lng",
+            "source",
+            "precision",
+            "current",
+            "legacy",
+            "access",
+            "fromPlaces"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
     },
     "prices": {
       "type": "array",
@@ -195,6 +433,16 @@
               }
             ]
           },
+          "inferred": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "from",
+                "to"
+              ]
+            }
+          },
           "site": {
             "type": "string",
             "maxLength": 120,
@@ -209,6 +457,7 @@
           "price",
           "from",
           "to",
+          "inferred",
           "site"
         ],
         "additionalProperties": false
@@ -309,8 +558,10 @@
           "seriesId",
           "organizerId",
           "organizer",
-          "distances",
+          "edition",
+          "courses",
           "location",
+          "geo",
           "prices",
           "currency",
           "registrationStatus",
@@ -421,8 +672,10 @@
     "seriesId",
     "organizerId",
     "organizer",
-    "distances",
+    "edition",
+    "courses",
     "location",
+    "geo",
     "prices",
     "currency",
     "registrationStatus",
@@ -436,7 +689,7 @@
     "updatedAt"
   ],
   "additionalProperties": false,
-  "$id": "https://openrace.vn/schema/v2/race.schema.json",
+  "$id": "https://openrace.vn/schema/v3/race.schema.json",
   "title": "OpenRace race (data/races/<slug>-<year>.json)",
-  "x-schema-version": 2
+  "x-schema-version": 3
 }

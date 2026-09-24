@@ -15,8 +15,9 @@ export const ORGANIZERS_PATH = "data/organizers.json";
  *
  * 2: design v2 (.claude/docs/design-v2.md): price tiers, series and organizers,
  *    registrations, links, flags, location as written, sources keyed by site.
+ * 3: courses[] replaces distances[], geo, edition, tier `inferred`.
  */
-export const SCHEMA_VERSION = 2;
+export const SCHEMA_VERSION = 3;
 
 // Sanity bounds: values outside them are extraction mistakes, not races.
 export const MAX_PRICE = 100_000_000; // VND
@@ -32,11 +33,36 @@ export function isDistance(s: string): boolean {
   );
 }
 
+export function courseMeters(label: string): number | null {
+  const normalized = label.trim().toLowerCase();
+  const named: Record<string, number | null> = {
+    "super sprint": 12_900,
+    sprint: 25_750,
+    olympic: 51_500,
+    standard: 51_500,
+    "5150": 51_500,
+    "70.3": 113_000,
+    half: 113_000,
+    "140.6": 226_000,
+    full: 226_000,
+    kids: null,
+  };
+  if (Object.hasOwn(named, normalized)) return named[normalized]!;
+  if (normalized === "21km") return 21_097;
+  if (normalized === "42km") return 42_195;
+  const withUnit = normalized.match(/^(\d+(?:\.\d+)?)(km|mi|m)$/);
+  const bare = normalized.match(/^\d+(?:\.\d+)?$/);
+  if (!withUnit && !bare) return null;
+  const value = Number(withUnit?.[1] ?? bare?.[0]);
+  const meters = withUnit ? (withUnit[2] === "km" ? value * 1_000 : withUnit[2] === "m" ? value : Math.round(value * 1_609.344)) : value * 1_000;
+  return Number.isSafeInteger(meters) && meters > 0 ? meters : null;
+}
+
 export const REGISTRATION_STATUSES = ["open", "closing_soon", "sold_out", "closed"] as const;
 
 // Event formats, for filtering. A race can have several (e.g. a road 10K plus a
 // trail 21K). Distance classes (marathon, half, ultra) are not types: they follow
-// from `distances`. Adding values later is backwards compatible.
+// from `courses`. Adding values later is backwards compatible.
 export const RACE_TYPES = [
   "road_run", //     road running: fun runs, 10K, half, marathon
   "trail_run", //    trail / mountain running, including ultra trail
@@ -63,7 +89,7 @@ export const AUDIENCES = ["resident", "non_resident"] as const;
 // What a related URL is. `seller` links also show up in `registrations`.
 export const LINK_KINDS = ["official", "seller", "facebook", "rules", "results", "news", "other"] as const;
 
-// official: the race's own site (wins for date, distances and location).
+// official: the race's own site (wins for date, courses and location).
 // seller: a ticket seller (ActiUp, bibchung, 5bib, ...). reference: entered by hand
 // by OpenRace (never scraped; its url is where we took the facts from).
 export const SOURCE_ROLES = ["official", "seller", "reference"] as const;
@@ -100,10 +126,48 @@ export const PriceTierSchema = z
     price: z.number().int().nonnegative().max(MAX_PRICE),
     from: isoDate.nullable(),
     to: isoDate.nullable(),
+    inferred: z.array(z.enum(["from", "to"])),
     // The site whose page gave this price (sellers can differ, e.g. a group price).
     site: siteKey,
   })
   .refine((t) => t.from === null || t.to === null || t.from <= t.to, { message: "from must be <= to", path: ["from"] });
+
+export const GEO_SOURCES = ["maps_link", "nominatim", "manual"] as const;
+export const GEO_PRECISIONS = ["venue", "ward", "province"] as const;
+
+export const CourseSchema = z.object({
+  label: z.string().refine(isDistance, "not a distance"),
+  meters: z.number().int().positive().nullable(),
+  type: z.enum(RACE_TYPES).nullable(),
+  elevationGain: z.number().int().nonnegative().max(20_000).nullable(),
+});
+
+export const GeoSchema = z.object({
+  lat: z.number().min(8).max(24),
+  lng: z.number().min(102).max(110),
+  source: z.enum(GEO_SOURCES),
+  precision: z.enum(GEO_PRECISIONS),
+  current: z.object({
+    province: z.string().regex(/^\d{2}$/),
+    ward: z.string().regex(/^\d{5}$/).nullable(),
+  }),
+  legacy: z
+    .object({
+      province: z.string().regex(/^\d{2}$/),
+      district: z.string().regex(/^\d{3}$/).nullable(),
+      ward: z.string().regex(/^\d{5}$/).nullable(),
+    })
+    .nullable(),
+  access: z.enum(["road", "flight_or_ferry"]),
+  fromPlaces: z.record(
+    z.string(),
+    z.object({
+      km: z.number().nonnegative(),
+      minutes: z.number().int().nonnegative().nullable(),
+      method: z.enum(["road", "straight_line"]),
+    }),
+  ),
+});
 
 export const RegistrationSchema = z.object({ site: siteKey, url: z.url() });
 
@@ -124,8 +188,10 @@ export const CANONICAL_FIELDS = [
   "seriesId",
   "organizerId",
   "organizer",
-  "distances",
+  "edition",
+  "courses",
   "location",
+  "geo",
   "prices",
   "currency",
   "registrationStatus",
@@ -172,12 +238,14 @@ export const RaceSchema = z
     organizerId: slug.nullable(),
     // The organizer as a source writes it.
     organizer: z.string().min(1).nullable(),
-    distances: z.array(z.string().refine(isDistance, "not a distance")),
+    edition: z.number().int().min(1).max(200).nullable(),
+    courses: z.array(CourseSchema),
     // As the source writes it; not normalized.
     location: z.object({
       venue: z.string().min(1).nullable(),
       city: z.string().min(1).nullable(),
     }),
+    geo: GeoSchema.nullable(),
     prices: z.array(PriceTierSchema),
     currency: z.string().regex(/^[A-Z]{3}$/, "expected an ISO 4217 code"),
     registrationStatus: z.enum(REGISTRATION_STATUSES).nullable(),
@@ -201,6 +269,51 @@ export const RaceSchema = z
       }
     }
   });
+
+export function upgradeRace(json: unknown): unknown {
+  if (!isRecord(json)) return json;
+  const upgraded: Record<string, unknown> = { ...json };
+  let changed = false;
+  if (Object.hasOwn(json, "distances")) {
+    delete upgraded.distances;
+    changed = true;
+  }
+  for (const [field, value] of [["courses", []], ["geo", null], ["edition", null]] as const) {
+    if (!Object.hasOwn(json, field)) {
+      upgraded[field] = value;
+      changed = true;
+    }
+  }
+  if (Array.isArray(json.prices)) {
+    const currentPrices = json.prices;
+    const prices = currentPrices.map(upgradePrice);
+    if (prices.some((price, i) => price !== currentPrices[i])) {
+      upgraded.prices = prices;
+      changed = true;
+    }
+  }
+  if (isRecord(json.overrides)) {
+    const pricesOverride = json.overrides.prices;
+    if (isRecord(pricesOverride) && Array.isArray(pricesOverride.value)) {
+      const currentPrices = pricesOverride.value;
+      const prices = currentPrices.map(upgradePrice);
+      if (prices.some((price, i) => price !== currentPrices[i])) {
+        upgraded.overrides = { ...json.overrides, prices: { ...pricesOverride, value: prices } };
+        changed = true;
+      }
+    }
+  }
+  return changed ? upgraded : json;
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+function upgradePrice(price: unknown): unknown {
+  if (!isRecord(price) || Object.hasOwn(price, "inferred")) return price;
+  return { ...price, inferred: [] };
+}
 
 /** A series (recurring event, e.g. "HCMC Marathon") or an organizer. Keys are readable slugs. */
 export const EntitySchema = z.object({
@@ -254,6 +367,8 @@ export type Audience = (typeof AUDIENCES)[number];
 export type LinkKind = (typeof LINK_KINDS)[number];
 export type SourceRole = (typeof SOURCE_ROLES)[number];
 export type PriceTier = z.infer<typeof PriceTierSchema>;
+export type Course = z.infer<typeof CourseSchema>;
+export type Geo = z.infer<typeof GeoSchema>;
 export type Registration = z.infer<typeof RegistrationSchema>;
 export type Link = z.infer<typeof LinkSchema>;
 export type RaceSource = z.infer<typeof SourceSchema>;

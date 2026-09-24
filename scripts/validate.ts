@@ -17,6 +17,7 @@ import {
   SeriesListSchema,
   raceFileName,
   serialize,
+  upgradeRace,
   type Race,
 } from "./lib/schema.ts";
 import { SITES_PATH, loadSites } from "./lib/sites.ts";
@@ -45,7 +46,7 @@ for (const file of readdirSync(RACES_DIR).filter((f) => f.endsWith(".json")).sor
     errors.push(`${path}: invalid JSON (${(err as Error).message})`);
     continue;
   }
-  const parsed = RaceSchema.safeParse(json);
+  const parsed = RaceSchema.safeParse(upgradeRace(json));
   if (!parsed.success) {
     for (const issue of parsed.error.issues) errors.push(`${path}: ${issue.path.join(".") || "(root)"}: ${issue.message}`);
     continue;

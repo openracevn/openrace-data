@@ -5,7 +5,7 @@
  */
 import { execFileSync } from "node:child_process";
 import { changedFields } from "./diff.ts";
-import { RACES_DIR, type CanonicalField, type Race } from "./schema.ts";
+import { RACES_DIR, RaceSchema, upgradeRace, type CanonicalField, type Race } from "./schema.ts";
 
 export const EMPTY_TREE = "4b825dc642cb6eb9a060e54bf8d69288fbee4904";
 
@@ -84,7 +84,8 @@ function resolveBase(sha: string | undefined, head: string): string {
 
 function readRace(rev: string, path: string): Race | null {
   try {
-    return JSON.parse(git("show", `${rev}:${path}`)) as Race;
+    const parsed = RaceSchema.safeParse(upgradeRace(JSON.parse(git("show", `${rev}:${path}`))));
+    return parsed.success ? parsed.data : null;
   } catch {
     return null;
   }

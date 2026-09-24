@@ -22,7 +22,7 @@ git pull -q
 python3 -c "import json,sys; q=sys.argv[1]; [print(e['id'], e['slug'], e['date'], e['name'], e['sourceUrls']) for e in json.load(open('data/index.json')) if q in e['id'] or q in e['slug'] or any(q in u for u in e['sourceUrls'] + e['linkUrls'])]" "<url, slug or id fragment>"
 ```
 
-Read `data/races/<file>`. Each `sources[]` entry has the site, its role (`official` wins for date, distances and location; `seller` pages keep their own prices) and the raw `extracted` (facts, page reads, image reads with their URLs). `flags` lists what needs a look. `state/checks.json` has each page's last check.
+Read `data/races/<file>`. Each `sources[]` entry has the site, its role (`official` wins for date, courses and location; `seller` pages keep their own prices) and the raw `extracted` (facts, page reads, image reads with their URLs). `flags` lists what needs a look. `state/checks.json` has each page's last check.
 
 ## 2. Look at the source (free)
 
@@ -70,11 +70,12 @@ GITHUB_TOKEN=$(gh auth token) npm run edit -- unset <race> <field>
 GITHUB_TOKEN=$(gh auth token) npm run edit -- slug <race> <new-slug>
 ```
 
-- Fields: name, types, date, endDate, seriesId, organizerId, organizer, distances, location, prices, currency, registrationStatus, registrations, links.
+- Fields: name, types, date, endDate, seriesId, organizerId, organizer, edition, courses, location, prices, currency, registrationStatus, registrations, links.
 - Values in canonical form (the schema checks them):
-  - distances: `["21km","42km"]`
+  - courses: `[{"label":"21km","meters":21097,"type":"road_run","elevationGain":null}]`
+  - edition: `5` or `null`
   - location: `{"venue":"…","city":"…"}`
-  - prices: `[{"distance":"21km","tier":"Early Bird","kind":"early","audience":null,"price":750000,"from":"2026-06-24","to":"2026-07-16","site":"openrace"}]`
+  - prices: `[{"distance":"21km","tier":"Early Bird","kind":"early","audience":null,"price":750000,"from":"2026-06-24","to":"2026-07-16","inferred":[],"site":"openrace"}]`
   - date: `"YYYY-MM-DD"`
 - `seriesId` and `organizerId` must exist in `data/series.json` / `data/organizers.json`. Add entries there by hand, sorted by id.
 - An override wins over every source. If a source later changes that field, Discord shows `⚠️ <field>: sources now say … (override kept)`.

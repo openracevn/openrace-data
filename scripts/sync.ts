@@ -19,6 +19,7 @@ import {
   SeriesListSchema,
   raceFileName,
   serialize,
+  upgradeRace,
   type CanonicalField,
   type IndexEntry,
   type Organizer,
@@ -81,6 +82,8 @@ export const EDITION_DAYS = 180;
 const LINK_MATCH_DAYS = 7;
 const MATCH_THRESHOLD = 0.5;
 const DAY_MS = 86_400_000;
+const V3_MIGRATION_FIELDS: CanonicalField[] = ["edition", "courses", "geo", "prices"];
+const legacyRaceFiles = new WeakSet<Race>();
 
 type Item = { input: SyncInput; date: string; name: string };
 type Group = { id: string; newSlug?: string; items: Item[] };
@@ -181,6 +184,7 @@ export async function planSync(
 
   for (const { id, newSlug, items } of groups.values()) {
     const prev = await loadRace(id);
+    const migrationFields = prev && legacyRaceFiles.has(prev) ? V3_MIGRATION_FIELDS : [];
     const slug = prev?.slug ?? newSlug!;
     let sources = prev?.sources ?? [];
     const touched: RaceSource[] = [];
@@ -209,7 +213,7 @@ export async function planSync(
     const newFlags = record.flags.filter((f) => !prev?.flags.includes(f));
     const shadowed = prev ? shadowedChanges(prev, sources, config) : [];
     const flagsChanged = prev ? !deepEqual(prev.flags, record.flags) : false;
-    if (prev && fields.length === 0 && joined.length === 0 && shadowed.length === 0 && !flagsChanged && prev.confidence === record.confidence) continue;
+    if (prev && migrationFields.length === 0 && fields.length === 0 && joined.length === 0 && shadowed.length === 0 && !flagsChanged && prev.confidence === record.confidence) continue;
     for (const source of touched) source.lastChangedAt = source.lastCheckedAt;
 
     const clash = writeRace(files, nextIndex, record);
@@ -221,7 +225,7 @@ export async function planSync(
       id,
       slug,
       kind: prev ? "updated" : "added",
-      fields,
+      fields: [...new Set([...migrationFields, ...fields])],
       ...(joined.length > 0 && { joined }),
       ...(newFlags.length > 0 && { newFlags }),
       ...(shadowed.length > 0 && { shadowed }),
@@ -233,10 +237,11 @@ export async function planSync(
   for (const entry of index) {
     if (groups.has(entry.id) || (inferred.get(entry.id)?.id ?? null) === entry.seriesId) continue;
     const prev = (await loadRace(entry.id))!;
+    const migrationFields = legacyRaceFiles.has(prev) ? V3_MIGRATION_FIELDS : [];
     const composed = composeRace({ id: entry.id, slug: prev.slug, prev, sources: prev.sources, overrides: prev.overrides, now, config, stabilizeAgainstPrev: true, series: inferred.get(entry.id) });
-    if ("error" in composed || composed.fields.length === 0) continue; // a site's own series wins
+    if ("error" in composed || (migrationFields.length === 0 && composed.fields.length === 0)) continue; // a site's own series wins
     if (writeRace(files, nextIndex, composed.record)) continue;
-    changes.push({ id: entry.id, slug: prev.slug, kind: "updated", fields: composed.fields });
+    changes.push({ id: entry.id, slug: prev.slug, kind: "updated", fields: [...new Set([...migrationFields, ...composed.fields])] });
     seriesRefs.push(...seriesEntity(composed.record, inferred.get(entry.id)));
   }
 
@@ -309,7 +314,10 @@ async function readRaceFile(store: RaceStore, entry: IndexEntry): Promise<Race> 
   const path = `${RACES_DIR}/${entry.file}`;
   const text = await store.read(path);
   if (text === null) throw new Error(`${path} is listed in ${INDEX_PATH} but missing`);
-  return RaceSchema.parse(JSON.parse(text));
+  const raw = JSON.parse(text);
+  const race = RaceSchema.parse(upgradeRace(raw));
+  if (typeof raw === "object" && raw !== null && !Array.isArray(raw) && Object.hasOwn(raw, "distances")) legacyRaceFiles.add(race);
+  return race;
 }
 
 type ComposeArgs = {

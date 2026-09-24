@@ -13,7 +13,7 @@ import { loadSites } from "./lib/sites.ts";
 
 const DISCORD_LIMIT = 2000;
 const MAX_LISTED = 15;
-const SHOW_VALUES: CanonicalField[] = ["types", "date", "endDate", "seriesId", "organizerId", "registrationStatus"];
+const SHOW_VALUES: CanonicalField[] = ["types", "date", "endDate", "seriesId", "organizerId", "courses", "registrationStatus"];
 const config = loadSites();
 
 const webhook = env("DISCORD_WEBHOOK_URL");
@@ -43,11 +43,11 @@ const updated = diff.updated.map(({ id, path, before: a, after: b, fields }) => 
   const removedNow = (f: CanonicalField) => a.overrides?.[f] && !b.overrides?.[f];
   const detail = fields.map((f) =>
     setNow(f)
-      ? `✋ ${f} → ${fmt(b[f])} (OpenRace: ${b.overrides[f]!.reason})`
+      ? `✋ ${f} → ${fmt(b[f], f)} (OpenRace: ${b.overrides[f]!.reason})`
       : removedNow(f)
-        ? `${f} override removed → ${fmt(b[f])}`
+        ? `${f} override removed → ${fmt(b[f], f)}`
         : SHOW_VALUES.includes(f)
-          ? `${f} ${fmt(a[f])} → ${fmt(b[f])}`
+          ? `${f} ${fmt(a[f], f)} → ${fmt(b[f], f)}`
           : f === "prices"
             ? `prices ${priceSummary(a)} → ${priceSummary(b)}`
             : f,
@@ -111,7 +111,7 @@ function overrideNotes(a: Race, b: Race): string[] {
   if (!("error" in derivedBefore) && !("error" in derivedAfter)) {
     for (const field of Object.keys(after) as CanonicalField[]) {
       if (!deepEqual(derivedBefore.fields[field], derivedAfter.fields[field])) {
-        notes.push(`⚠️ ${field}: sources now say ${fmt(derivedAfter.fields[field])} (override kept)`);
+        notes.push(`⚠️ ${field}: sources now say ${fmt(derivedAfter.fields[field], field)} (override kept)`);
       }
     }
   }
@@ -145,8 +145,14 @@ function links(r: Race | null, path: string, rev: string): string {
   return `\n  ↳ ${out.join(" · ")}`;
 }
 
-function fmt(v: unknown): string {
+function fmt(v: unknown, field?: CanonicalField): string {
   if (v === null || v === undefined) return "∅";
   if (typeof v === "number") return v.toLocaleString("en-US");
+  if (field === "courses" && Array.isArray(v)) {
+    return v
+      .map((course) => (typeof course === "object" && course !== null && "label" in course ? course.label : null))
+      .filter((label): label is string => typeof label === "string")
+      .join(", ");
+  }
   return typeof v === "object" && !Array.isArray(v) ? JSON.stringify(v) : String(v);
 }

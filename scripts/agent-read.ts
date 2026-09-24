@@ -205,7 +205,7 @@ async function commit() {
       continue;
     }
     const f = normalized.facts;
-    console.log(`\n## ${name}: ${f.name}, ${f.date}${f.endDate ? ` to ${f.endDate}` : ""} · ${f.types.join(", ")} · ${f.distances.join(", ") || "no distances"}`);
+    console.log(`\n## ${name}: ${f.name}, ${f.date}${f.endDate ? ` to ${f.endDate}` : ""} · ${f.types.join(", ")} · ${f.courses.map((course) => course.label).join(", ") || "no courses"}`);
     if (f.prices.length === 0) console.log("   no prices");
     for (const t of f.prices) {
       console.log(`   ${t.distance ?? "-"} · ${t.tier} (${t.kind}${t.audience ? `, ${t.audience}` : ""}) · ${t.price.toLocaleString("en")} · ${t.from ?? "?"} → ${t.to ?? "?"}`);

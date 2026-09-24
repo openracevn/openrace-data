@@ -73,7 +73,7 @@
     ],
     "additionalProperties": false
   },
-  "$id": "https://openrace.vn/schema/v2/index.schema.json",
+  "$id": "https://openrace.vn/schema/v3/index.schema.json",
   "title": "OpenRace race index (data/index.json)",
-  "x-schema-version": 2
+  "x-schema-version": 3
 }

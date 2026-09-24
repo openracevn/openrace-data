@@ -33,7 +33,7 @@
     ],
     "additionalProperties": false
   },
-  "$id": "https://openrace.vn/schema/v2/organizers.schema.json",
+  "$id": "https://openrace.vn/schema/v3/organizers.schema.json",
   "title": "OpenRace organizers (data/organizers.json)",
-  "x-schema-version": 2
+  "x-schema-version": 3
 }

@@ -46,7 +46,7 @@
     ],
     "additionalProperties": false
   },
-  "$id": "https://openrace.vn/schema/v2/series.schema.json",
+  "$id": "https://openrace.vn/schema/v3/series.schema.json",
   "title": "OpenRace series (data/series.json)",
-  "x-schema-version": 2
+  "x-schema-version": 3
 }

@@ -4,8 +4,9 @@
  *
  *   npm run edit -- set <race> <field> <value> --reason "<why>"
  *       Override a field; it wins over every source and survives re-checks.
- *       <value> is JSON (["21km","42km"], null, {"venue":…,"city":…}, [{"distance":"21km","tier":"Early Bird",…}]);
- *       anything that isn't JSON is taken as a string.
+ *       <value> is JSON ([{"label":"21km","meters":21097,"type":"road_run","elevationGain":null}], 5, null, {"venue":…,"city":…}, [{"distance":"21km","tier":"Early Bird",…}]);
+ *       Use courses for the full array and edition for the stated number. Anything that
+ *       isn't JSON is taken as a string.
  *   npm run edit -- unset <race> <field>
  *       Remove the override; the field goes back to what the sources say.
  *   npm run edit -- add --url <reference> --json '<fields>' --reason "<why>"
@@ -29,6 +30,7 @@ import { loadSites, siteForUrl } from "./lib/sites.ts";
 import { canonicalSourceUrl } from "./lib/slug.ts";
 import { commitToGitHub, formatCommitMessage, planEdit, planRename, planSync, type RaceStore, type SyncPlan } from "./sync.ts";
 
+const EDITABLE_FIELDS: readonly string[] = CANONICAL_FIELDS.filter((field) => field !== "geo");
 const VALUE_FLAGS = new Set(["--reason", "--url", "--json"]);
 const flags = new Map<string, string>();
 const positional: string[] = [];
@@ -51,7 +53,7 @@ let message: string;
 
 if (command === "set" || command === "unset") {
   if (!race || !field) fail(`usage: npm run edit -- ${command} <race> <field>${command === "set" ? " <value> --reason <why>" : ""}`);
-  if (!CANONICAL_FIELDS.includes(field as CanonicalField)) fail(`field must be one of: ${CANONICAL_FIELDS.join(", ")}`);
+  if (!EDITABLE_FIELDS.includes(field as CanonicalField)) fail(`field must be one of: ${EDITABLE_FIELDS.join(", ")}`);
   if (command === "set") {
     if (rawValue === undefined) fail("set needs a value");
     if (!reason) fail("set needs --reason: say why OpenRace overrides the sources");

@@ -12,7 +12,7 @@
  *   --free            no paid reads: only what's cached; reports what would be read
  *   --facts-only      no reads at all: create or update races from the site's free data only
  *                     (ActiUp's API: name, dates, place, organizer, sale status). Prices,
- *                     distances and types come with a later normal run, which still reads
+ *                     courses and types come with a later normal run, which still reads
  *                     these races. A race already read in full is left alone.
  *   --dry-run         plan against the local checkout and don't commit (still reads, unless --free;
  *                     what it paid for is kept in the local state/reads.json)

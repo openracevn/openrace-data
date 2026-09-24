@@ -28,7 +28,7 @@ const ROLE_RANK: Record<SourceRole, number> = { official: 0, seller: 1, referenc
 
 /**
  * Derive a race's fields from all its sources.
- * - name, date, distances, location, ...: the first source that states them, official sites first.
+ * - name, date, courses, location, ...: the first source that states them, official sites first.
  * - prices: every source's tiers, each labeled with its site (sellers can differ).
  * - registrations: every seller page, and seller links found on the pages.
  * - links: every outbound link found on the pages, classified.
@@ -56,8 +56,27 @@ export function reconcile(sources: readonly RaceSource[], config: SitesConfig): 
   };
   const withLocation = usable.find(({ facts }) => facts.venue !== null || facts.city !== null)?.facts;
   const hints = (key: keyof SourceHints) => ranked.map((s) => (s.extracted as StoredExtraction)[key]).find(isEntityRef) ?? null;
-
-  const prices: PriceTier[] = usable.flatMap(({ source, facts }) => facts.prices.map((t) => ({ ...t, site: source.site })));
+  const courseSource = usable.find(({ facts }) => facts.courses.length > 0);
+  const courses = (courseSource?.facts.courses ?? []).map((course) => ({
+    ...course,
+    type:
+      course.type ??
+      usable
+        .filter(({ source }) => source !== courseSource?.source)
+        .flatMap(({ facts }) => facts.courses)
+        .find((other) => other.label === course.label && other.type !== null)?.type ??
+      null,
+    elevationGain:
+      course.elevationGain ??
+      usable
+        .filter(({ source }) => source !== courseSource?.source)
+        .flatMap(({ facts }) => facts.courses)
+        .find((other) => other.label === course.label && other.elevationGain !== null)?.elevationGain ??
+      null,
+  }));
+  const rawPrices: PriceTier[] = usable.flatMap(({ source, facts }) =>
+    facts.prices.map((tier) => ({ ...tier, site: source.site, inferred: [] })),
+  );
   const { registrations, links } = relatedUrls(ranked, config);
 
   const fields: CanonicalRace = {
@@ -69,9 +88,11 @@ export function reconcile(sources: readonly RaceSource[], config: SitesConfig): 
     organizerId: hints("organizer")?.id ?? null,
     // An organizer named in the site list beats the model's reading of a page.
     organizer: hints("organizer")?.name ?? first((f) => f.organizer),
-    distances: first((f) => f.distances, (d) => d.length === 0) ?? [],
+    edition: first((f) => f.edition),
+    courses,
     location: { venue: withLocation?.venue ?? null, city: withLocation?.city ?? null },
-    prices,
+    geo: null,
+    prices: fillTierWindows(rawPrices, primary.facts.date),
     currency: primary.facts.currency,
     // Sellers know best whether tickets are left.
     registrationStatus:
@@ -88,14 +109,93 @@ export function reconcile(sources: readonly RaceSource[], config: SitesConfig): 
   }
   const official = usable.find(({ source }) => source.role === "official");
   for (const { source, facts } of usable) {
-    if (!official || source === official.source || facts.distances.length === 0 || official.facts.distances.length === 0) continue;
-    if (facts.distances.join() !== official.facts.distances.join()) {
-      flags.push(`${source.site} lists distances ${facts.distances.join(", ")}; the official site ${official.facts.distances.join(", ")}`);
+    const labels = facts.courses.map((course) => course.label);
+    const officialLabels = official?.facts.courses.map((course) => course.label) ?? [];
+    if (!official || source === official.source || labels.length === 0 || officialLabels.length === 0) continue;
+    if (labels.join() !== officialLabels.join()) {
+      flags.push(`${source.site} lists courses ${labels.join(", ")}; the official site ${officialLabels.join(", ")}`);
     }
   }
 
   const confidence: Race["confidence"] = usable.length === 1 ? "single-sourced" : dates.size > 0 && new Set(dates.values()).size === 1 ? "multi-sourced" : "conflicting";
   return { fields, confidence, flags };
+}
+
+const LADDER_RANK: Record<PriceTier["kind"], number> = {
+  super_early: 0,
+  early: 1,
+  regular: 2,
+  late: 3,
+  group: -1,
+  other: -1,
+};
+
+export function fillTierWindows(prices: readonly PriceTier[], raceDate: string): PriceTier[] {
+  const out = prices.map((tier) => ({ ...tier, inferred: [...(tier.inferred ?? [])] }));
+  const ladders = new Map<string, number[]>();
+  for (const [index, tier] of out.entries()) {
+    if (tier.kind === "group" || tier.kind === "other") continue;
+    const key = JSON.stringify([tier.site, tier.distance, tier.audience]);
+    const ladder = ladders.get(key) ?? [];
+    ladder.push(index);
+    ladders.set(key, ladder);
+  }
+  const touched = new Set<number>();
+  for (const indexes of ladders.values()) {
+    const ordered = [...indexes].sort((a, b) => {
+      const left = out[a]!;
+      const right = out[b]!;
+      return (
+        LADDER_RANK[left.kind] - LADDER_RANK[right.kind] ||
+        compareNullable(left.from, right.from, true) ||
+        compareNullable(left.to, right.to, false)
+      );
+    });
+    for (const [position, index] of ordered.entries()) {
+      const tier = out[index]!;
+      if (tier.from === null) {
+        const previous = position > 0 ? out[ordered[position - 1]!]! : null;
+        const candidate = previous?.to ? shiftDate(previous.to, 1) : null;
+        if (candidate !== null && candidate <= raceDate && (tier.to === null || candidate <= tier.to)) {
+          tier.from = candidate;
+          markInferred(tier, "from");
+          touched.add(index);
+        }
+      }
+      if (tier.to === null) {
+        const next = position + 1 < ordered.length ? out[ordered[position + 1]!]! : null;
+        const candidate = next ? (next.from === null ? null : shiftDate(next.from, -1)) : shiftDate(raceDate, 0);
+        if (candidate !== null && (tier.from === null || tier.from <= candidate)) {
+          tier.to = candidate;
+          markInferred(tier, "to");
+          touched.add(index);
+        }
+      }
+    }
+  }
+  for (const index of touched) {
+    const tier = out[index]!;
+    tier.inferred = (["from", "to"] as const).filter((field) => tier.inferred.includes(field));
+  }
+  return out;
+}
+
+function compareNullable(left: string | null, right: string | null, nullFirst: boolean): number {
+  if (left === right) return 0;
+  if (left === null) return nullFirst ? -1 : 1;
+  if (right === null) return nullFirst ? 1 : -1;
+  return left.localeCompare(right);
+}
+
+function shiftDate(date: string, days: number): string | null {
+  const match = date.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!match) return null;
+  const value = new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3])) + days * 86_400_000);
+  return `${value.getUTCFullYear()}-${String(value.getUTCMonth() + 1).padStart(2, "0")}-${String(value.getUTCDate()).padStart(2, "0")}`;
+}
+
+function markInferred(tier: PriceTier, field: "from" | "to"): void {
+  if (!tier.inferred.includes(field)) tier.inferred.push(field);
 }
 
 /** Registrations and classified links from the sources' pages, deduped by URL. */

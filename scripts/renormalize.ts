@@ -7,7 +7,7 @@
  */
 import { readFileSync } from "node:fs";
 import { env, requireEnv } from "./lib/env.ts";
-import { INDEX_PATH, IndexSchema, RaceSchema, racePath } from "./lib/schema.ts";
+import { INDEX_PATH, IndexSchema, RaceSchema, racePath, upgradeRace } from "./lib/schema.ts";
 import { loadSites } from "./lib/sites.ts";
 import { formatCommitMessage, planSync, syncToGitHub, type RaceStore, type SyncInput } from "./sync.ts";
 
@@ -27,7 +27,7 @@ const local: RaceStore = {
 const config = loadSites();
 const inputs: SyncInput[] = [];
 for (const entry of IndexSchema.parse(JSON.parse((await local.read(INDEX_PATH)) ?? "[]"))) {
-  const race = RaceSchema.parse(JSON.parse((await local.read(racePath(entry)))!));
+  const race = RaceSchema.parse(upgradeRace(JSON.parse((await local.read(racePath(entry)))!)));
   for (const s of race.sources) inputs.push({ url: s.url, site: s.site, role: s.role, extracted: s.extracted, checkedAt: s.lastCheckedAt });
 }
 

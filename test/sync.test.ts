@@ -106,13 +106,13 @@ describe("planSync", () => {
     assert.equal(p.changes[0]!.kind, "added");
     const race = readRace(store, "hcmc-marathon-2027");
     assert.equal(race.date, "2027-01-17");
-    assert.deepEqual(race.distances, ["10km", "21km", "42km"]);
+    assert.deepEqual(race.courses.map((course) => course.label), ["10km", "21km", "42km"]);
     assert.deepEqual(race.location, { venue: "30/4 Park, Le Duan", city: "TP. Hồ Chí Minh" });
     assert.equal(race.seriesId, "hcmc-marathon");
     assert.equal(race.organizerId, "pulse-active");
     assert.deepEqual(race.prices, [
-      { distance: "21km", tier: "Early Bird", kind: "early", audience: null, price: 1_050_000, from: "2026-06-23", to: "2026-08-15", site: "hcmc-marathon" },
-      { distance: "21km", tier: "Regular", kind: "regular", audience: null, price: 1_250_000, from: "2026-08-16", to: "2026-10-15", site: "hcmc-marathon" },
+      { distance: "21km", tier: "Early Bird", kind: "early", audience: null, price: 1_050_000, from: "2026-06-23", to: "2026-08-15", inferred: [], site: "hcmc-marathon" },
+      { distance: "21km", tier: "Regular", kind: "regular", audience: null, price: 1_250_000, from: "2026-08-16", to: "2026-10-15", inferred: [], site: "hcmc-marathon" },
     ]);
     assert.deepEqual(JSON.parse(store.files[SERIES_PATH]!), [{ id: "hcmc-marathon", name: "HCMC Marathon", website: null, organizerId: "pulse-active" }]);
     assert.deepEqual(JSON.parse(store.files[ORGANIZERS_PATH]!), [{ id: "pulse-active", name: "Pulse Active", website: null }]);
@@ -285,14 +285,15 @@ describe("OpenRace overrides and renames", () => {
   it("an override wins over the sources, survives a re-read, and can be removed", async () => {
     const store = memoryStore();
     apply(store, (await plan(store, [officialInput()])).files);
-    const set = await planEdit(store, "hcmc-marathon-2027", [{ kind: "set", field: "distances", value: ["42km", "21km", "10km", "5km"], reason: "5km announced on Facebook" }], config, LATER);
+    const courses = ["42km", "21km", "10km", "5km"].map((label) => ({ label, meters: label === "21km" ? 21_097 : label === "42km" ? 42_195 : Number(label.slice(0, -2)) * 1_000, type: "road_run" as const, elevationGain: null }));
+    const set = await planEdit(store, "hcmc-marathon-2027", [{ kind: "set", field: "courses", value: courses, reason: "5km announced on Facebook" }], config, LATER);
     apply(store, set.files);
-    assert.deepEqual(readRace(store, "hcmc-marathon-2027").distances, ["42km", "21km", "10km", "5km"]);
+    assert.deepEqual(readRace(store, "hcmc-marathon-2027").courses, courses);
     const reread = await plan(store, [officialInput(official(), "2026-10-01T10:00:00.000Z")]);
     assert.equal(reread.changes.length, 0);
-    const unset = await planEdit(store, "hcmc-marathon-2027", [{ kind: "unset", field: "distances" }], config, LATER);
+    const unset = await planEdit(store, "hcmc-marathon-2027", [{ kind: "unset", field: "courses" }], config, LATER);
     apply(store, unset.files);
-    assert.deepEqual(readRace(store, "hcmc-marathon-2027").distances, ["10km", "21km", "42km"]);
+    assert.deepEqual(readRace(store, "hcmc-marathon-2027").courses.map((course) => course.label), ["10km", "21km", "42km"]);
   });
 
   it("renames a slug: the file moves, the id stays, and re-reads keep it", async () => {
@@ -318,7 +319,7 @@ describe("OpenRace overrides and renames", () => {
     ]);
     assert.equal(p.changes[0]!.slug, "lang-chay-bo-2026");
     const race = RaceSchema.parse(JSON.parse(p.files[racePath({ slug: "lang-chay-bo-2026", date: "2026-12-06" })]!));
-    assert.deepEqual(race.prices, [{ distance: null, tier: "Vé", kind: "other", audience: null, price: 200000, from: null, to: null, site: "openrace" }]);
+    assert.deepEqual(race.prices, [{ distance: null, tier: "Vé", kind: "other", audience: null, price: 200000, from: null, to: null, inferred: [], site: "openrace" }]);
   });
 });
 

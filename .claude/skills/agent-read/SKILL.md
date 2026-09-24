@@ -1,6 +1,6 @@
 ---
 name: agent-read
-description: Read races for openrace-data without Firecrawl (free), with the agent reading the pages and price images itself. Use for backfills and batches when credits should be saved, e.g. "read the upcoming ActiUp races without Firecrawl", "backfill past races", "read these races by hand/agent", or when the user says not to spend credits but races still need prices, distances and types.
+description: Read races for openrace-data without Firecrawl (free), with the agent reading the pages and price images itself. Use for backfills and batches when credits should be saved, e.g. "read the upcoming ActiUp races without Firecrawl", "backfill past races", "read these races by hand/agent", or when the user says not to spend credits but races still need prices, courses and types.
 ---
 
 # Read races without Firecrawl (agent read)
@@ -58,6 +58,11 @@ For a dense or very wide table, crop to the table and look again at full size. S
   "name": "Giải chạy Run For The Heart - Chạy vì trái tim 2026",
   "date": "2026-12-06",
   "distances": ["2KM", "5KM", "10KM"],
+  "courses": [
+    { "distance": "2KM", "type": "road_run", "elevationGain": 65 }
+  ],
+  "edition": 5,
+  "mapsUrl": "https://maps.app.goo.gl/example",
   "venue": "Công viên Yên Sở",
   "city": "Hà Nội",
   "organizer": "Gamuda Land Việt Nam",
@@ -69,6 +74,9 @@ For a dense or very wide table, crop to the table and look again at full size. S
 
 - `pageKind`: `sport` (running, trail, triathlon, swimming, cycling), `non_sport` (concert, tour, hotel, conference) or `none` (login, error or empty page; then leave out everything else).
 - `types`: every format offered: road_run, trail_run, city_trail, obstacle_run, triathlon, duathlon, aquathlon, aquabike, swimrun, swim, road_cycle, mtb, other.
+- `courses`: per distance, only what the page states: its format (for example, the 70km is `trail_run` while the 5km is `road_run`) and elevation gain (D+). Omit a field that isn't stated.
+- `edition`: the edition number if the page states it ("lần thứ 5", "5th edition", "mùa 5"). Omit otherwise; never count editions yourself.
+- `mapsUrl`: a Google Maps link or coordinates for the start/finish venue, exactly as on the page. Omit if none.
 - Leave out any field the page doesn't state. `facts` in `task.json` already cover what the site states in structured form. Name as written, never translated. Dates as `YYYY-MM-DD`.
 - `prices`: only amounts written in the page text. If prices are only in images, `[]`.
 
@@ -104,7 +112,7 @@ npm run agent-read -- commit .agent-read                                     # d
 GITHUB_TOKEN=$(gh auth token) npm run agent-read -- commit .agent-read --commit
 ```
 
-The dry run prints each race after normalization: name, dates, types, distances, and every price with its kind (`super_early`, `early`, `regular`, `late`, `group`, `other`) and dates. **Compare it with the images once more**, then look at the kinds. `group` must only be group, combo and team prices, because the API's "from" price leaves them out. `✗` lines are races that can't be committed yet (a page not read, or not a sports event): fix their `read.json` or leave them out.
+The dry run prints each race after normalization: name, dates, types, courses, and every price with its kind (`super_early`, `early`, `regular`, `late`, `group`, `other`) and dates. **Compare it with the images once more**, then look at the kinds. `group` must only be group, combo and team prices, because the API's "from" price leaves them out. `✗` lines are races that can't be committed yet (a page not read, or not a sports event): fix their `read.json` or leave them out.
 
 `--commit` makes one commit with the races and records each snapshot's fingerprint in `state/checks.json`. Scheduled Firecrawl runs then skip these races until their pages change. Main validates, resyncs openrace-api and posts to Discord.
 

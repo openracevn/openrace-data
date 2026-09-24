@@ -71,7 +71,7 @@ describe("price tiers", () => {
     const result = normalizeExtraction({ facts: { name: "Giải Chạy Hồng – Pink Run 2026", date: "2026-11-01" }, images: [{ url: "x", json: { prices } }] });
     assert.ok(result.ok);
     assert.equal(result.facts.prices.length, 10);
-    assert.deepEqual(result.facts.distances, ["3km", "10km"]);
+    assert.deepEqual(result.facts.courses.map((course) => course.label), ["3km", "10km"]);
     assert.deepEqual(result.facts.prices[2], { distance: "3km", tier: "Super Early Bird", kind: "super_early", audience: null, price: 459000, from: "2026-07-08", to: "2026-07-18" });
     assert.deepEqual(result.facts.prices[9], { distance: "10km", tier: "Late", kind: "late", audience: null, price: 799000, from: "2026-09-21", to: "2026-10-05" });
   });
@@ -132,7 +132,7 @@ describe("normalizeExtraction", () => {
     assert.equal(result.facts.date, "2026-11-01");
     assert.equal(result.facts.venue, "Celadon City");
     assert.equal(result.facts.city, "TP. Hồ Chí Minh");
-    assert.deepEqual(result.facts.distances, ["3km", "10km"]);
+    assert.deepEqual(result.facts.courses.map((course) => course.label), ["3km", "10km"]);
     assert.deepEqual(result.facts.types, ["road_run"]);
   });
 
@@ -152,7 +152,7 @@ describe("normalizeExtraction", () => {
     const race = (name: string, types: string[], distances: string[]) => {
       const result = normalizeExtraction({ pages: [{ url: "x", json: { pageKind: "sport", name, date: "2027-11-21", types, distances } }] });
       assert.ok(result.ok);
-      return result.facts.distances;
+      return result.facts.courses.map((course) => course.label);
     };
     assert.deepEqual(race("SUNRISE SPRINT Viet Nam", ["triathlon"], ["750m", "20km", "5km"]), ["Sprint"]);
     assert.deepEqual(race("2027 IRONKIDS Viet Nam", ["aquathlon", "triathlon"], ["75 mét bơi và 1km chạy", "3km đạp"]), ["Kids"]);
