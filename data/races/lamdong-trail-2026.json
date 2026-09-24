@@ -3,19 +3,106 @@
   "slug": "lamdong-trail-2026",
   "name": "Lamdong Trail 2026",
   "types": [
-    "other"
+    "trail_run"
   ],
   "date": "2026-11-06",
   "endDate": "2026-11-08",
   "seriesId": null,
   "organizerId": "greenhat",
   "organizer": "GreenHat",
-  "distances": [],
+  "distances": [
+    "5km",
+    "15km",
+    "25km",
+    "55km",
+    "85km"
+  ],
   "location": {
     "venue": "TTC World - Thung Lũng Tình Yêu, số 03-05-07 đường Mai Anh Đào, phường Lâm Viên, Tp. Đà Lạt, Lâm Đồng",
     "city": null
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "85km",
+      "tier": "Late Comer",
+      "kind": "late",
+      "audience": null,
+      "price": 3150000,
+      "from": "2026-08-17",
+      "to": "2026-10-05",
+      "site": "actiup"
+    },
+    {
+      "distance": "55km",
+      "tier": "Late Comer",
+      "kind": "late",
+      "audience": null,
+      "price": 2550000,
+      "from": "2026-08-17",
+      "to": "2026-10-05",
+      "site": "actiup"
+    },
+    {
+      "distance": "25km",
+      "tier": "Late Comer",
+      "kind": "late",
+      "audience": null,
+      "price": 2050000,
+      "from": "2026-08-17",
+      "to": "2026-10-05",
+      "site": "actiup"
+    },
+    {
+      "distance": "15km",
+      "tier": "Late Comer",
+      "kind": "late",
+      "audience": null,
+      "price": 1400000,
+      "from": "2026-08-17",
+      "to": "2026-10-05",
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late Comer",
+      "kind": "late",
+      "audience": null,
+      "price": 950000,
+      "from": "2026-08-17",
+      "to": "2026-10-05",
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late Comer Kids Trail",
+      "kind": "late",
+      "audience": null,
+      "price": 950000,
+      "from": "2026-08-17",
+      "to": "2026-10-05",
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late Comer Family Trail (1 adult & 1 kid)",
+      "kind": "late",
+      "audience": null,
+      "price": 1800000,
+      "from": "2026-08-17",
+      "to": "2026-10-05",
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late Comer Family Trail (2 adults & 1 kid / 1 adult & 2 kids)",
+      "kind": "late",
+      "audience": null,
+      "price": 2700000,
+      "from": "2026-08-17",
+      "to": "2026-10-05",
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -38,7 +125,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/lamdong-trail-2026",
-      "lastCheckedAt": "2026-09-23T18:30:49.114Z",
+      "lastCheckedAt": "2026-09-24T06:43:09.238Z",
       "lastChangedAt": "2026-09-23T18:30:49.114Z",
       "extracted": {
         "facts": {
@@ -51,6 +138,98 @@
           "registrationStatus": "open",
           "fromPrice": 450000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/lamdong-trail-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "trail_run"
+              ],
+              "name": "Lamdong Trail 2026",
+              "prices": []
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/09/23/1790156366572704/1st-pic-B%E1%BA%A2NG-GI%C3%81-V%C3%89-update.png",
+            "json": {
+              "prices": [
+                {
+                  "distance": "85KM",
+                  "tier": "Late Comer",
+                  "from": "17/08",
+                  "to": "2026-10-05",
+                  "price": 3150000
+                },
+                {
+                  "distance": "55KM",
+                  "tier": "Late Comer",
+                  "from": "17/08",
+                  "to": "2026-10-05",
+                  "price": 2550000
+                },
+                {
+                  "distance": "25KM",
+                  "tier": "Late Comer",
+                  "from": "17/08",
+                  "to": "2026-10-05",
+                  "price": 2050000
+                },
+                {
+                  "distance": "15KM",
+                  "tier": "Late Comer",
+                  "from": "17/08",
+                  "to": "2026-10-05",
+                  "price": 1400000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Late Comer",
+                  "from": "17/08",
+                  "to": "2026-10-05",
+                  "price": 950000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Late Comer Kids Trail",
+                  "from": "17/08",
+                  "to": "2026-10-05",
+                  "price": 950000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Late Comer Family Trail (1 adult & 1 kid)",
+                  "from": "17/08",
+                  "to": "2026-10-05",
+                  "price": 1800000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Late Comer Family Trail (2 adults & 1 kid / 1 adult & 2 kids)",
+                  "from": "17/08",
+                  "to": "2026-10-05",
+                  "price": 2700000
+                }
+              ],
+              "distances": [
+                "5KM",
+                "15KM",
+                "25KM",
+                "55KM",
+                "85KM"
+              ],
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2026/04/16/1776328845567974/Cs-ve%CC%81-nho%CC%81m-(2).jpg",
+            "json": {
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1cWGbhMwxlc-5lVVF5CtPGG9VXkUerNLW/view",
@@ -60,11 +239,12 @@
         "organizer": {
           "id": "greenhat",
           "name": "GreenHat"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:43:09.238Z"
 }

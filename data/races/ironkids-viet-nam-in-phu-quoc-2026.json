@@ -3,14 +3,17 @@
   "slug": "2026-ironkids-viet-nam-in-phu-quoc",
   "name": "2026 IRONKIDS Viet Nam in Phu Quoc",
   "types": [
-    "other"
+    "triathlon",
+    "aquathlon"
   ],
   "date": "2026-11-14",
   "endDate": null,
   "seriesId": "ironkids-viet-nam-in-phu-quoc",
   "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
-  "distances": [],
+  "distances": [
+    "Kids"
+  ],
   "location": {
     "venue": "Phú Quốc, Việt Nam",
     "city": null
@@ -38,7 +41,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/2026-ironkids-viet-nam-in-phu-quoc",
-      "lastCheckedAt": "2026-09-23T18:30:49.853Z",
+      "lastCheckedAt": "2026-09-24T06:43:09.238Z",
       "lastChangedAt": "2026-09-23T18:30:49.853Z",
       "extracted": {
         "facts": {
@@ -50,6 +53,20 @@
           "registrationStatus": "open",
           "fromPrice": 950000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/2026-ironkids-viet-nam-in-phu-quoc",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "aquathlon",
+                "triathlon"
+              ],
+              "name": "2026 IRONKIDS Viet Nam in Phu Quoc",
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1Xkv_EOGQ_Pp9UcPCooHRLu7ALXmuWjkt/view?usp=sharing",
@@ -59,11 +76,12 @@
         "organizer": {
           "id": "sunrise-events-vietnam",
           "name": "Sunrise Events Vietnam"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:43:09.238Z"
 }

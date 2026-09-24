@@ -3,14 +3,19 @@
   "slug": "the-9th-edition-of-the-techcombank-ho-chi-minh-city-internationalmarathon",
   "name": "Giải Marathon Quốc tế Thành phố Hồ Chí Minh Techcombank Mùa thứ 9",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2026-12-06",
   "endDate": null,
   "seriesId": null,
   "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
-  "distances": [],
+  "distances": [
+    "5km",
+    "10km",
+    "21km",
+    "42km"
+  ],
   "location": {
     "venue": "Thành Phố Hồ Chí Minh",
     "city": null
@@ -32,7 +37,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/the-9th-edition-of-the-techcombank-ho-chi-minh-city-internationalmarathon",
-      "lastCheckedAt": "2026-09-23T18:30:51.858Z",
+      "lastCheckedAt": "2026-09-24T06:43:09.238Z",
       "lastChangedAt": "2026-09-23T18:30:51.858Z",
       "extracted": {
         "facts": {
@@ -44,15 +49,35 @@
           "registrationStatus": "open",
           "fromPrice": 390000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/the-9th-edition-of-the-techcombank-ho-chi-minh-city-internationalmarathon",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Giải Marathon Quốc tế Thành phố Hồ Chí Minh Techcombank Mùa thứ 9",
+              "distances": [
+                "5KM",
+                "10KM",
+                "21KM",
+                "42KM"
+              ],
+              "prices": []
+            }
+          }
+        ],
         "links": [],
         "organizer": {
           "id": "sunrise-events-vietnam",
           "name": "Sunrise Events Vietnam"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:43:09.238Z"
 }
