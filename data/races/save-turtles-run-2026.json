@@ -10,10 +10,103 @@
   "seriesId": "save-turtles-run",
   "organizerId": "tap-doan-khach-san-akyn-khach-san-the-secret-con-dao",
   "organizer": "Tập đoàn Khách sạn AKYN - Khách sạn The Secret Côn Đảo",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Khách sạn The Secret Côn Đảo - 08 Tôn Đức Thắng, Đặc Khu Côn Đảo, Thành phố Hồ Chí Minh",
     "city": null
+  },
+  "geo": {
+    "lat": 8.6856447,
+    "lng": 106.6128558,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "26732"
+    },
+    "legacy": null,
+    "access": "flight_or_ferry",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 232.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1374.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 838.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 485.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 413.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 175.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1352.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 871.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 191.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 633.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 469.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1546.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1364.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -54,5 +147,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

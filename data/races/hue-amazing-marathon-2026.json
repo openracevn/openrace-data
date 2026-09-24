@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "bolt-event",
   "organizer": "BOLT EVENT",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Huế, Việt Nam",
     "city": null
+  },
+  "geo": {
+    "lat": 16.4639321,
+    "lng": 107.5863388,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "46",
+      "ward": "19789"
+    },
+    "legacy": {
+      "province": "46",
+      "district": "474",
+      "ward": "19783"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 640.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 539.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 81.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 500.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 511.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 741,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 496.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 0.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": true
+      },
+      "vung-tau": {
+        "km": 682.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 346.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 425,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 761.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 501.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "cong-ty-tnhh-mtv-thach-sanh",
   "organizer": "Công ty TNHH MTV Thạch Sanh",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Khu vực trung tâm (Xuất phát/Về đích, Expo) được đặt tại trung tâm xã Hữu Liên, tỉnh Lạng Sơn.",
     "city": null
+  },
+  "geo": {
+    "lat": 21.8487579,
+    "lng": 106.6140692,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "20",
+      "ward": "06298"
+    },
+    "legacy": {
+      "province": "20",
+      "district": "184",
+      "ward": "06283"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1231.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 120.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 665.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1103.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1118.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1316.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 111.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 607.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1280,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 939.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1032.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 290.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 110.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -66,5 +163,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

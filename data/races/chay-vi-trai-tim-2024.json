@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "gamuda-land",
   "organizer": "Gamuda Land",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Công viên Yên Sở, Hoàng Mai, Hà Nội",
     "city": null
+  },
+  "geo": {
+    "lat": 20.9702018,
+    "lng": 105.8570072,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "01",
+      "ward": "00331"
+    },
+    "legacy": {
+      "province": "01",
+      "district": "008",
+      "ward": "00331"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1491.1,
+        "minutes": 1135,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 11.3,
+        "minutes": 16,
+        "method": "road",
+        "near": true
+      },
+      "da-nang": {
+        "km": 768.6,
+        "minutes": 624,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1272.4,
+        "minutes": 1010,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1399.9,
+        "minutes": 1128,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1602,
+        "minutes": 1255,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 116.2,
+        "minutes": 88,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 666.4,
+        "minutes": 541,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1582.1,
+        "minutes": 1217,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1080.4,
+        "minutes": 850,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1277.2,
+        "minutes": 1047,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 323.7,
+        "minutes": 263,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 160.8,
+        "minutes": 117,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -53,5 +150,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

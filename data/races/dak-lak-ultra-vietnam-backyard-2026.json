@@ -10,13 +10,20 @@
   "seriesId": null,
   "organizerId": "4miles",
   "organizer": "4MILES",
-  "distances": [
-    "7km"
+  "edition": null,
+  "courses": [
+    {
+      "label": "7km",
+      "meters": 7000,
+      "type": null,
+      "elevationGain": null
+    }
   ],
   "location": {
     "venue": "Hồ du lịch sinh thái Ea Cuôr Kăp - Phường Tân Lập - Tỉnh Đắk Lắk",
     "city": null
   },
+  "geo": null,
   "prices": [
     {
       "distance": null,
@@ -26,6 +33,7 @@
       "price": 1750000,
       "from": null,
       "to": null,
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -36,6 +44,7 @@
       "price": 399000,
       "from": null,
       "to": null,
+      "inferred": [],
       "site": "actiup"
     }
   ],
@@ -133,5 +142,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T05:54:22.509Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

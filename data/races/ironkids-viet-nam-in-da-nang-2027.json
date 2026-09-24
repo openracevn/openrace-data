@@ -11,12 +11,114 @@
   "seriesId": "ironkids-viet-nam-in-da-nang",
   "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
-  "distances": [
-    "Kids"
+  "edition": null,
+  "courses": [
+    {
+      "label": "Kids",
+      "meters": null,
+      "type": null,
+      "elevationGain": null
+    }
   ],
   "location": {
     "venue": "Đà Nẵng, Việt Nam",
     "city": "Đà Nẵng"
+  },
+  "geo": {
+    "lat": 16.0568518,
+    "lng": 108.212869,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "48",
+      "ward": "20242"
+    },
+    "legacy": {
+      "province": "48",
+      "district": "492",
+      "ward": "20242"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 859.3,
+        "minutes": 648,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 767.5,
+        "minutes": 612,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 1.9,
+        "minutes": 2,
+        "method": "road",
+        "near": true
+      },
+      "nha-trang": {
+        "km": 501.8,
+        "minutes": 396,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 629.2,
+        "minutes": 514,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1018.5,
+        "minutes": 776,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 801.6,
+        "minutes": 639,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 95.2,
+        "minutes": 84,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 900.7,
+        "minutes": 688,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 309.8,
+        "minutes": 236,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 520.7,
+        "minutes": 433,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1076,
+        "minutes": 848,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 851.3,
+        "minutes": 672,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -86,5 +188,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T03:58:52.346Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

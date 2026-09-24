@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "bozo-ventures",
   "organizer": "BOZO VENTURES",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Dalat Wonder Resort, Lâm Đồng",
     "city": null
+  },
+  "geo": {
+    "lat": 11.6614957,
+    "lng": 108.1335279,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "68",
+      "ward": "25018"
+    },
+    "legacy": {
+      "province": "68",
+      "district": "679",
+      "ward": "25018"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 185.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1069.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 489.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 132.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 45.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 313.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1032.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 537.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 185.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 263.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 112.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1271.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1039.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -102,5 +199,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

@@ -10,15 +10,132 @@
   "seriesId": null,
   "organizerId": "vietnam-mtb-series",
   "organizer": "Vietnam MTB Series",
-  "distances": [
-    "7km",
-    "12km",
-    "25km",
-    "35km"
+  "edition": null,
+  "courses": [
+    {
+      "label": "7km",
+      "meters": 7000,
+      "type": "city_trail",
+      "elevationGain": null
+    },
+    {
+      "label": "12km",
+      "meters": 12000,
+      "type": "city_trail",
+      "elevationGain": null
+    },
+    {
+      "label": "25km",
+      "meters": 25000,
+      "type": "city_trail",
+      "elevationGain": null
+    },
+    {
+      "label": "35km",
+      "meters": 35000,
+      "type": "city_trail",
+      "elevationGain": null
+    }
   ],
   "location": {
     "venue": "Nhà Truyền Thống Cách Mạng Thành Phố Vũng Tàu",
     "city": "Vũng Tàu"
+  },
+  "geo": {
+    "lat": 10.3479921,
+    "lng": 107.0730728,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "26506"
+    },
+    "legacy": {
+      "province": "77",
+      "district": "747",
+      "ward": "26506"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 96.3,
+        "minutes": 93,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1585,
+        "minutes": 1217,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 901.7,
+        "minutes": 689,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 408.1,
+        "minutes": 305,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 329,
+        "minutes": 245,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 261.8,
+        "minutes": 221,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1619.1,
+        "minutes": 1244,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 998.9,
+        "minutes": 764,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1.9,
+        "minutes": 3,
+        "method": "road",
+        "near": true
+      },
+      "quy-nhon": {
+        "km": 613.9,
+        "minutes": 468,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 414.3,
+        "minutes": 323,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1893.5,
+        "minutes": 1453,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1668.8,
+        "minutes": 1277,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [
     {
@@ -29,6 +146,7 @@
       "price": 350000,
       "from": "2026-09-18",
       "to": "2026-09-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -39,6 +157,7 @@
       "price": 550000,
       "from": "2026-09-19",
       "to": "2026-10-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -49,6 +168,7 @@
       "price": 650000,
       "from": "2026-10-19",
       "to": "2026-11-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -59,6 +179,7 @@
       "price": 450000,
       "from": "2026-09-18",
       "to": "2026-09-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -69,6 +190,7 @@
       "price": 650000,
       "from": "2026-09-19",
       "to": "2026-10-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -79,6 +201,7 @@
       "price": 750000,
       "from": "2026-10-19",
       "to": "2026-11-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -89,6 +212,7 @@
       "price": 550000,
       "from": "2026-09-18",
       "to": "2026-09-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -99,6 +223,7 @@
       "price": 750000,
       "from": "2026-09-19",
       "to": "2026-10-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -109,6 +234,7 @@
       "price": 850000,
       "from": "2026-10-19",
       "to": "2026-11-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -119,6 +245,7 @@
       "price": 750000,
       "from": "2026-09-18",
       "to": "2026-09-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -129,6 +256,7 @@
       "price": 850000,
       "from": "2026-09-19",
       "to": "2026-10-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -139,6 +267,7 @@
       "price": 1150000,
       "from": "2026-10-19",
       "to": "2026-11-15",
+      "inferred": [],
       "site": "actiup"
     }
   ],
@@ -169,7 +298,8 @@
           "price": 350000,
           "from": "2026-09-18",
           "to": "2026-09-18",
-          "site": "actiup"
+          "site": "actiup",
+          "inferred": []
         },
         {
           "distance": "7km",
@@ -179,7 +309,8 @@
           "price": 550000,
           "from": "2026-09-19",
           "to": "2026-10-18",
-          "site": "actiup"
+          "site": "actiup",
+          "inferred": []
         },
         {
           "distance": "7km",
@@ -189,7 +320,8 @@
           "price": 650000,
           "from": "2026-10-19",
           "to": "2026-11-15",
-          "site": "actiup"
+          "site": "actiup",
+          "inferred": []
         },
         {
           "distance": "12km",
@@ -199,7 +331,8 @@
           "price": 450000,
           "from": "2026-09-18",
           "to": "2026-09-18",
-          "site": "actiup"
+          "site": "actiup",
+          "inferred": []
         },
         {
           "distance": "12km",
@@ -209,7 +342,8 @@
           "price": 650000,
           "from": "2026-09-19",
           "to": "2026-10-18",
-          "site": "actiup"
+          "site": "actiup",
+          "inferred": []
         },
         {
           "distance": "12km",
@@ -219,7 +353,8 @@
           "price": 750000,
           "from": "2026-10-19",
           "to": "2026-11-15",
-          "site": "actiup"
+          "site": "actiup",
+          "inferred": []
         },
         {
           "distance": "25km",
@@ -229,7 +364,8 @@
           "price": 550000,
           "from": "2026-09-18",
           "to": "2026-09-18",
-          "site": "actiup"
+          "site": "actiup",
+          "inferred": []
         },
         {
           "distance": "25km",
@@ -239,7 +375,8 @@
           "price": 750000,
           "from": "2026-09-19",
           "to": "2026-10-18",
-          "site": "actiup"
+          "site": "actiup",
+          "inferred": []
         },
         {
           "distance": "25km",
@@ -249,7 +386,8 @@
           "price": 850000,
           "from": "2026-10-19",
           "to": "2026-11-15",
-          "site": "actiup"
+          "site": "actiup",
+          "inferred": []
         },
         {
           "distance": "35km",
@@ -259,7 +397,8 @@
           "price": 750000,
           "from": "2026-09-18",
           "to": "2026-09-18",
-          "site": "actiup"
+          "site": "actiup",
+          "inferred": []
         },
         {
           "distance": "35km",
@@ -269,7 +408,8 @@
           "price": 850000,
           "from": "2026-09-19",
           "to": "2026-10-18",
-          "site": "actiup"
+          "site": "actiup",
+          "inferred": []
         },
         {
           "distance": "35km",
@@ -279,7 +419,8 @@
           "price": 1150000,
           "from": "2026-10-19",
           "to": "2026-11-15",
-          "site": "actiup"
+          "site": "actiup",
+          "inferred": []
         }
       ],
       "reason": "Firecrawl misreads the price image twice (rows shifted); checked by eye 2026-09-25",
@@ -458,5 +599,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T19:16:18.771Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

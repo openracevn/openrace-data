@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "4-miles-vietnam-backyard-ultra",
   "organizer": "4 Miles & Vietnam Backyard Ultra",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Hồ Ea Cuôr Kăp, hẻm 171 Nguyễn Thái Binh, Hoà Thắng, Buôn Ma Thuột, Dak Lak",
     "city": null
+  },
+  "geo": {
+    "lat": 12.7095356,
+    "lng": 108.04832,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "66",
+      "ward": "24133"
+    },
+    "legacy": {
+      "province": "66",
+      "district": "643",
+      "ward": "24136"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 362.6,
+        "minutes": 269,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1268,
+        "minutes": 1032,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 513,
+        "minutes": 430,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 184.8,
+        "minutes": 174,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 184.4,
+        "minutes": 185,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 521.8,
+        "minutes": 396,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1302.1,
+        "minutes": 1059,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 595.7,
+        "minutes": 505,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 413.7,
+        "minutes": 332,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 259,
+        "minutes": 247,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 6.3,
+        "minutes": 9,
+        "method": "road",
+        "near": true
+      },
+      "sa-pa": {
+        "km": 1576.5,
+        "minutes": 1268,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1351.8,
+        "minutes": 1092,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -66,5 +163,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

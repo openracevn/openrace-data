@@ -10,14 +10,126 @@
   "seriesId": null,
   "organizerId": "gamuda-land-viet-nam-phoi-hop-cung-nhip-tim-viet-nam",
   "organizer": "Gamuda Land Việt Nam phối hợp cùng Nhịp Tim Việt Nam",
-  "distances": [
-    "2km",
-    "5km",
-    "10km"
+  "edition": null,
+  "courses": [
+    {
+      "label": "2km",
+      "meters": 2000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    }
   ],
   "location": {
     "venue": "Công viên Yên Sở, phường Yên Sở, TP. Hà Nội",
     "city": "Hà Nội"
+  },
+  "geo": {
+    "lat": 20.9601591,
+    "lng": 105.8559145,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "01",
+      "ward": "00340"
+    },
+    "legacy": {
+      "province": "06",
+      "district": "058",
+      "ward": "01855"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1487.2,
+        "minutes": 1131,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 9.8,
+        "minutes": 14,
+        "method": "road",
+        "near": true
+      },
+      "da-nang": {
+        "km": 764.7,
+        "minutes": 619,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1268.5,
+        "minutes": 1006,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1395.9,
+        "minutes": 1124,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1598.1,
+        "minutes": 1251,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 116.7,
+        "minutes": 89,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 662.5,
+        "minutes": 537,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1578.2,
+        "minutes": 1213,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1076.5,
+        "minutes": 846,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1273.3,
+        "minutes": 1043,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 321.5,
+        "minutes": 261,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 161.3,
+        "minutes": 118,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [
     {
@@ -28,6 +140,7 @@
       "price": 169000,
       "from": "2026-08-25",
       "to": "2026-10-13",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -38,6 +151,7 @@
       "price": 189000,
       "from": "2026-08-25",
       "to": "2026-10-13",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -48,6 +162,7 @@
       "price": 199000,
       "from": "2026-08-25",
       "to": "2026-10-13",
+      "inferred": [],
       "site": "actiup"
     }
   ],
@@ -159,5 +274,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T19:22:57.623Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

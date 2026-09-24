@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "cong-ty-tnhh-fleur-de-lys-hospitality",
   "organizer": "Công ty TNHH Fleur de Lys Hospitality",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Vườn Quốc Gia Kon Ka Kinh, Gia Lai, Việt Nam",
     "city": null
+  },
+  "geo": {
+    "lat": 14.3259547,
+    "lng": 108.378611,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "52",
+      "ward": "23644"
+    },
+    "legacy": {
+      "province": "64",
+      "district": "625",
+      "ward": "23641"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 691.1,
+        "minutes": 641,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1101.8,
+        "minutes": 958,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 346.7,
+        "minutes": 356,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 363.6,
+        "minutes": 413,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 491,
+        "minutes": 531,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 850.3,
+        "minutes": 769,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1136,
+        "minutes": 985,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 429.6,
+        "minutes": 431,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 740.1,
+        "minutes": 705,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 176.4,
+        "minutes": 258,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 311.4,
+        "minutes": 390,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1410.4,
+        "minutes": 1194,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1185.7,
+        "minutes": 1018,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -83,5 +180,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

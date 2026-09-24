@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "coffeerary-events",
   "organizer": "Coffeerary Events",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Bikini Beach, NovaWorld Phan Thiet, Bình Thuận",
     "city": null
+  },
+  "geo": {
+    "lat": 10.8211417,
+    "lng": 108.0288826,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "68",
+      "ward": "22954"
+    },
+    "legacy": {
+      "province": "60",
+      "district": "593",
+      "ward": "22966"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 170.4,
+        "minutes": 125,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1528.5,
+        "minutes": 1186,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 759,
+        "minutes": 583,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 265.3,
+        "minutes": 200,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 189.7,
+        "minutes": 141,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 335.9,
+        "minutes": 253,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1562.6,
+        "minutes": 1213,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 856.2,
+        "minutes": 658,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 142.7,
+        "minutes": 129,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 471.2,
+        "minutes": 362,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 347.7,
+        "minutes": 254,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1837,
+        "minutes": 1422,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1612.3,
+        "minutes": 1246,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

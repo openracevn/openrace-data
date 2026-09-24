@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "ttc-agris",
   "organizer": "TTC AgriS",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Trụ sở chính công ty CP Thành Thành Công - Biên Hoà, xã Tân Hưng, huyện Tân Châu, tỉnh Tây Ninh",
     "city": null
+  },
+  "geo": {
+    "lat": 11.5781941,
+    "lng": 106.3004097,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "80",
+      "ward": "25531"
+    },
+    "legacy": {
+      "province": "72",
+      "district": "706",
+      "ward": "25531"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 146.8,
+        "minutes": 126,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1393.8,
+        "minutes": 1055,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 826.1,
+        "minutes": 644,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 554.7,
+        "minutes": 416,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 356.6,
+        "minutes": 294,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 271.1,
+        "minutes": 239,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1428,
+        "minutes": 1082,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 856.7,
+        "minutes": 660,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 237.7,
+        "minutes": 208,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 584.6,
+        "minutes": 502,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 322.1,
+        "minutes": 256,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1702.4,
+        "minutes": 1291,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1477.7,
+        "minutes": 1115,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

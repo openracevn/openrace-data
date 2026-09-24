@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "pocari-sweat-run-vietnam",
   "organizer": "POCARI SWEAT RUN VIETNAM",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "The Metropole Thủ Thiêm, TP. Thủ Đức, TP. Hồ Chí Minh",
     "city": null
+  },
+  "geo": {
+    "lat": 10.7775,
+    "lng": 106.712432,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "27094"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "769",
+      "ward": "27118"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 3.4,
+        "minutes": 6,
+        "method": "road",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1494.5,
+        "minutes": 1132,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 861.2,
+        "minutes": 650,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 411.8,
+        "minutes": 295,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 295.4,
+        "minutes": 224,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 172.3,
+        "minutes": 137,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1528.6,
+        "minutes": 1159,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 943.9,
+        "minutes": 724,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 94.8,
+        "minutes": 87,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 617.7,
+        "minutes": 458,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 357.2,
+        "minutes": 262,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1803,
+        "minutes": 1368,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1578.3,
+        "minutes": 1192,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -92,5 +189,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "hiep-hoi-thuong-mai-dien-tu-viet-nam-vecom-va-mang-luoi-quan-he-cong-chung-viet",
   "organizer": "Hiệp hội Thương mại điện tử Việt Nam (VECOM) và Mạng lưới Quan hệ Công chúng Việt Nam (VNPR)",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Vinhomes Grand Park - Nguyễn Xiển, phường Long Thạnh Mỹ, Thành phố Thủ Đức",
     "city": null
+  },
+  "geo": {
+    "lat": 10.8477626,
+    "lng": 106.6167969,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "26785"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "761",
+      "ward": "26785"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 14.3,
+        "minutes": 16,
+        "method": "road",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1483.2,
+        "minutes": 1127,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 849.9,
+        "minutes": 644,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 427.3,
+        "minutes": 312,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 298.7,
+        "minutes": 230,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 171.2,
+        "minutes": 135,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1517.3,
+        "minutes": 1154,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 932.6,
+        "minutes": 719,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 110.4,
+        "minutes": 103,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 633.2,
+        "minutes": 474,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 346,
+        "minutes": 256,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1791.8,
+        "minutes": 1362,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1567,
+        "minutes": 1186,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

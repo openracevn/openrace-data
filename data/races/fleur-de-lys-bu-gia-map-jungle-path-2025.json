@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "cong-ty-tnhh-fleur-de-lys-hospitality",
   "organizer": "Công ty TNHH Fleur de Lys Hospitality",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Ban Quản lý Vườn Quốc gia Bù Gia Mập, tỉnh Bình Phước",
     "city": null
+  },
+  "geo": {
+    "lat": 11.8000378,
+    "lng": 106.9151381,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "75",
+      "ward": "25246"
+    },
+    "legacy": {
+      "province": "70",
+      "district": "698",
+      "ward": "25246"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 157,
+        "minutes": 125,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1413.6,
+        "minutes": 1081,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 741.1,
+        "minutes": 565,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 403.2,
+        "minutes": 339,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 271.6,
+        "minutes": 215,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 316.1,
+        "minutes": 252,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1447.8,
+        "minutes": 1108,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 823.8,
+        "minutes": 639,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 212.1,
+        "minutes": 205,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 499.5,
+        "minutes": 422,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 237.1,
+        "minutes": 177,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1722.2,
+        "minutes": 1316,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1497.5,
+        "minutes": 1140,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -66,5 +163,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

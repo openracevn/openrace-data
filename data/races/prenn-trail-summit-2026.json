@@ -10,19 +10,156 @@
   "seriesId": null,
   "organizerId": "cong-ty-tnhh-dau-tu-thuong-mai-dich-vu-unique",
   "organizer": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE",
-  "distances": [
-    "3km",
-    "10km",
-    "25km",
-    "55km",
-    "75km",
-    "103km",
-    "250km",
-    "100mi"
+  "edition": null,
+  "courses": [
+    {
+      "label": "3km",
+      "meters": 3000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "25km",
+      "meters": 25000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "55km",
+      "meters": 55000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "75km",
+      "meters": 75000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "103km",
+      "meters": 103000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "250km",
+      "meters": 250000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "100mi",
+      "meters": 160934,
+      "type": "trail_run",
+      "elevationGain": null
+    }
   ],
   "location": {
     "venue": "Chân đèo Prenn, Phường 3, Thành Phố Đà Lạt, Tỉnh Lâm Đồng",
     "city": "Lâm Đồng"
+  },
+  "geo": {
+    "lat": 11.6614957,
+    "lng": 108.1335279,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "68",
+      "ward": "25018"
+    },
+    "legacy": {
+      "province": "68",
+      "district": "679",
+      "ward": "25018"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 185.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1069.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 489.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 132.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 45.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 313.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1032.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 537.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 185.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 263.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 112.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1271.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1039.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
   },
   "prices": [
     {
@@ -33,6 +170,7 @@
       "price": 550000,
       "from": "2026-02-26",
       "to": "2026-02-28",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -43,6 +181,7 @@
       "price": 650000,
       "from": "2026-03-01",
       "to": "2026-05-31",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -53,6 +192,7 @@
       "price": 800000,
       "from": "2026-06-01",
       "to": "2026-10-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -63,6 +203,7 @@
       "price": 1050000,
       "from": "2026-10-16",
       "to": "2026-11-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -73,6 +214,7 @@
       "price": 850000,
       "from": "2026-02-26",
       "to": "2026-02-28",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -83,6 +225,7 @@
       "price": 1100000,
       "from": "2026-03-01",
       "to": "2026-05-31",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -93,6 +236,7 @@
       "price": 1350000,
       "from": "2026-06-01",
       "to": "2026-10-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -103,6 +247,7 @@
       "price": 1650000,
       "from": "2026-10-16",
       "to": "2026-11-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -113,6 +258,7 @@
       "price": 1250000,
       "from": "2026-02-26",
       "to": "2026-02-28",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -123,6 +269,7 @@
       "price": 1550000,
       "from": "2026-03-01",
       "to": "2026-05-31",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -133,6 +280,7 @@
       "price": 1850000,
       "from": "2026-06-01",
       "to": "2026-10-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -143,6 +291,7 @@
       "price": 2550000,
       "from": "2026-10-16",
       "to": "2026-11-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -153,6 +302,7 @@
       "price": 1850000,
       "from": "2026-02-26",
       "to": "2026-02-28",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -163,6 +313,7 @@
       "price": 2250000,
       "from": "2026-03-01",
       "to": "2026-05-31",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -173,6 +324,7 @@
       "price": 2650000,
       "from": "2026-06-01",
       "to": "2026-10-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -183,6 +335,7 @@
       "price": 3150000,
       "from": "2026-10-16",
       "to": "2026-11-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -193,6 +346,7 @@
       "price": 2300000,
       "from": "2026-02-26",
       "to": "2026-02-28",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -203,6 +357,7 @@
       "price": 2850000,
       "from": "2026-03-01",
       "to": "2026-05-31",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -213,6 +368,7 @@
       "price": 3450000,
       "from": "2026-06-01",
       "to": "2026-10-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -223,6 +379,7 @@
       "price": 3950000,
       "from": "2026-10-16",
       "to": "2026-11-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -233,6 +390,7 @@
       "price": 2900000,
       "from": "2026-02-26",
       "to": "2026-02-28",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -243,6 +401,7 @@
       "price": 3450000,
       "from": "2026-03-01",
       "to": "2026-05-31",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -253,6 +412,7 @@
       "price": 4100000,
       "from": "2026-06-01",
       "to": "2026-10-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -263,6 +423,7 @@
       "price": 4550000,
       "from": "2026-10-16",
       "to": "2026-11-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -273,6 +434,7 @@
       "price": 5950000,
       "from": "2026-02-26",
       "to": "2026-02-28",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -283,6 +445,7 @@
       "price": 6750000,
       "from": "2026-03-01",
       "to": "2026-05-31",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -293,6 +456,7 @@
       "price": 7350000,
       "from": "2026-06-01",
       "to": "2026-10-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -303,6 +467,7 @@
       "price": 7950000,
       "from": "2026-10-16",
       "to": "2026-11-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -313,6 +478,7 @@
       "price": 8050000,
       "from": "2026-02-26",
       "to": "2026-02-28",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -323,6 +489,7 @@
       "price": 9050000,
       "from": "2026-03-01",
       "to": "2026-05-31",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -333,6 +500,7 @@
       "price": 11050000,
       "from": "2026-06-01",
       "to": "2026-10-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -343,6 +511,7 @@
       "price": 12050000,
       "from": "2026-10-16",
       "to": "2026-11-30",
+      "inferred": [],
       "site": "actiup"
     }
   ],
@@ -673,5 +842,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T19:22:57.623Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

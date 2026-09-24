@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "greenhat",
   "organizer": "GreenHat",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Sân M2, Khu đô thị Sala, phường An Khánh, Thành phố Hồ Chí Minh",
     "city": null
+  },
+  "geo": {
+    "lat": 10.7718613,
+    "lng": 106.7247815,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "27094"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "769",
+      "ward": "27115"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 4.7,
+        "minutes": 7,
+        "method": "road",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1495.1,
+        "minutes": 1134,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 861.8,
+        "minutes": 651,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 410.2,
+        "minutes": 293,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 293.8,
+        "minutes": 222,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 172.7,
+        "minutes": 138,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1529.2,
+        "minutes": 1161,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 944.5,
+        "minutes": 726,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 93.3,
+        "minutes": 85,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 616.1,
+        "minutes": 456,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 357.8,
+        "minutes": 263,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1803.6,
+        "minutes": 1370,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1578.9,
+        "minutes": 1193,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -66,5 +163,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

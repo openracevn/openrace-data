@@ -10,15 +10,132 @@
   "seriesId": null,
   "organizerId": "da-hae-international-co-ltd",
   "organizer": "DA HAE INTERNATIONAL CO., LTD",
-  "distances": [
-    "1.5km",
-    "5km",
-    "10km",
-    "21km"
+  "edition": null,
+  "courses": [
+    {
+      "label": "1.5km",
+      "meters": 1500,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    }
   ],
   "location": {
     "venue": "Đà Lạt",
     "city": "Đà Lạt"
+  },
+  "geo": {
+    "lat": 11.9370479,
+    "lng": 108.4297981,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "68",
+      "ward": "24781"
+    },
+    "legacy": {
+      "province": "68",
+      "district": "672",
+      "ward": "24793"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 299.8,
+        "minutes": 229,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1400.2,
+        "minutes": 1117,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 630.7,
+        "minutes": 514,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 137,
+        "minutes": 130,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1.7,
+        "minutes": 3,
+        "method": "road",
+        "near": true
+      },
+      "can-tho": {
+        "km": 465.3,
+        "minutes": 358,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1434.3,
+        "minutes": 1144,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 727.9,
+        "minutes": 589,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 329.1,
+        "minutes": 245,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 342.9,
+        "minutes": 293,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 192.5,
+        "minutes": 180,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1708.7,
+        "minutes": 1353,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1484,
+        "minutes": 1177,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [
     {
@@ -29,6 +146,7 @@
       "price": 200000,
       "from": "2026-09-23",
       "to": "2026-10-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -39,6 +157,7 @@
       "price": 280000,
       "from": "2026-10-16",
       "to": "2026-10-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -49,6 +168,7 @@
       "price": 320000,
       "from": "2026-10-31",
       "to": "2026-11-12",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -59,6 +179,7 @@
       "price": 300000,
       "from": "2026-09-23",
       "to": "2026-10-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -69,6 +190,7 @@
       "price": 420000,
       "from": "2026-10-16",
       "to": "2026-10-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -79,6 +201,7 @@
       "price": 480000,
       "from": "2026-10-31",
       "to": "2026-11-12",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -89,6 +212,7 @@
       "price": 375000,
       "from": "2026-09-23",
       "to": "2026-10-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -99,6 +223,7 @@
       "price": 525000,
       "from": "2026-10-16",
       "to": "2026-10-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -109,6 +234,7 @@
       "price": 600000,
       "from": "2026-10-31",
       "to": "2026-11-12",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -119,6 +245,7 @@
       "price": 450000,
       "from": "2026-09-23",
       "to": "2026-10-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -129,6 +256,7 @@
       "price": 630000,
       "from": "2026-10-16",
       "to": "2026-10-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -139,6 +267,7 @@
       "price": 720000,
       "from": "2026-10-31",
       "to": "2026-11-12",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -149,6 +278,7 @@
       "price": 500000,
       "from": "2026-09-23",
       "to": "2026-10-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -159,6 +289,7 @@
       "price": 700000,
       "from": "2026-10-16",
       "to": "2026-10-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -169,6 +300,7 @@
       "price": 900000,
       "from": "2026-10-31",
       "to": "2026-11-12",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -179,6 +311,7 @@
       "price": 800000,
       "from": "2026-09-23",
       "to": "2026-10-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -189,6 +322,7 @@
       "price": 1000000,
       "from": "2026-10-16",
       "to": "2026-10-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -199,6 +333,7 @@
       "price": 1000000,
       "from": "2026-10-31",
       "to": "2026-11-12",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -209,6 +344,7 @@
       "price": 1100000,
       "from": "2026-09-23",
       "to": "2026-10-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -219,6 +355,7 @@
       "price": 1300000,
       "from": "2026-10-16",
       "to": "2026-10-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -229,6 +366,7 @@
       "price": 1500000,
       "from": "2026-10-31",
       "to": "2026-11-12",
+      "inferred": [],
       "site": "actiup"
     }
   ],
@@ -496,5 +634,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:57:28.842Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

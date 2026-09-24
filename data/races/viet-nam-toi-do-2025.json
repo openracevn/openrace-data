@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "cong-ty-zaha-vietnam",
   "organizer": "Công ty Zaha Vietnam",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Trung Tâm Triển Lãm Viêt Nam - Cổ Loa, Đông Anh, Hà Nội",
     "city": null
+  },
+  "geo": {
+    "lat": 21.1538329,
+    "lng": 105.8516744,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "01",
+      "ward": "00475"
+    },
+    "legacy": {
+      "province": "01",
+      "district": "017",
+      "ward": "00487"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1514.2,
+        "minutes": 1156,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 19.7,
+        "minutes": 22,
+        "method": "road",
+        "near": true
+      },
+      "da-nang": {
+        "km": 791.7,
+        "minutes": 644,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1295.5,
+        "minutes": 1031,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1422.9,
+        "minutes": 1149,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1625.1,
+        "minutes": 1275,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 113.9,
+        "minutes": 90,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 689.5,
+        "minutes": 561,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1605.2,
+        "minutes": 1238,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1103.5,
+        "minutes": 870,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1300.3,
+        "minutes": 1068,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 300.3,
+        "minutes": 238,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 170.6,
+        "minutes": 122,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

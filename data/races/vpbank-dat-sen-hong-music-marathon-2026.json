@@ -10,16 +10,38 @@
   "seriesId": "vpbank-dat-sen-hong-music-marathon",
   "organizerId": "don-vi-to-chuc-nexus-sport-events-doi-tac-chien-luoc-don-vi-dong-to-chuc-ngan-ha",
   "organizer": "Đơn vị tổ chức: Nexus Sport Events – Đối tác chiến lược & Đơn vị đồng tổ chức: Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
-  "distances": [
-    "5km",
-    "10km",
-    "21km",
-    "42km"
+  "edition": null,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
   ],
   "location": {
     "venue": "Đường Lý Thường Kiệt, Phường Cao Lãnh, Tỉnh Đồng Tháp (phía trước công viên Văn Miếu)",
     "city": null
   },
+  "geo": null,
   "prices": [
     {
       "distance": "5km",
@@ -29,6 +51,7 @@
       "price": 260000,
       "from": null,
       "to": "2026-07-10",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -39,6 +62,7 @@
       "price": 380000,
       "from": null,
       "to": "2026-07-10",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -49,6 +73,7 @@
       "price": 520000,
       "from": null,
       "to": "2026-07-10",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -59,6 +84,7 @@
       "price": 630000,
       "from": null,
       "to": "2026-07-10",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -69,6 +95,7 @@
       "price": 415000,
       "from": "2026-07-11",
       "to": "2026-08-12",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -79,6 +106,7 @@
       "price": 555000,
       "from": "2026-07-11",
       "to": "2026-08-12",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -89,6 +117,7 @@
       "price": 695000,
       "from": "2026-07-11",
       "to": "2026-08-12",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -99,6 +128,7 @@
       "price": 835000,
       "from": "2026-07-11",
       "to": "2026-08-12",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -109,6 +139,7 @@
       "price": 575000,
       "from": "2026-08-13",
       "to": "2026-09-17",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -119,6 +150,7 @@
       "price": 855000,
       "from": "2026-08-13",
       "to": "2026-09-17",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -129,6 +161,7 @@
       "price": 985000,
       "from": "2026-08-13",
       "to": "2026-09-17",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -139,6 +172,7 @@
       "price": 1135000,
       "from": "2026-08-13",
       "to": "2026-09-17",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -149,6 +183,7 @@
       "price": 845000,
       "from": "2026-09-18",
       "to": "2026-10-02",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -159,6 +194,7 @@
       "price": 1125000,
       "from": "2026-09-18",
       "to": "2026-10-02",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -169,6 +205,7 @@
       "price": 1345000,
       "from": "2026-09-18",
       "to": "2026-10-02",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -179,6 +216,7 @@
       "price": 1555000,
       "from": "2026-09-18",
       "to": "2026-10-02",
+      "inferred": [],
       "site": "actiup"
     }
   ],
@@ -378,5 +416,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T05:54:22.509Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

@@ -10,10 +10,107 @@
   "seriesId": "vtv-lpbank-international-marathon",
   "organizerId": "dai-truyen-hinh-viet-nam-vtv-cong-ty-co-phan-thanh-an-media-don-vi-dong-hanh-nga",
   "organizer": "Đài Truyền hình Việt Nam (VTV), Công ty Cổ phần Thành An Media - Đơn vị đồng hành: Ngân hàng TMCP Lộc Phát Việt Nam (LPBank)",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Đầm Vân Long, Ninh Bình",
     "city": null
+  },
+  "geo": {
+    "lat": 20.2572484,
+    "lng": 105.9718894,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "37",
+      "ward": "14329"
+    },
+    "legacy": {
+      "province": "37",
+      "district": "374",
+      "ward": "14329"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1057.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 86.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 523.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 955.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 961.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1136.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 99.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 455.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1108.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 799.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 872.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 319.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 138.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -66,5 +163,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

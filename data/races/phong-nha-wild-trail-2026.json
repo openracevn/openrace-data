@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "cong-ty-co-phan-phong-nha-wild",
   "organizer": "CÔNG TY CỔ PHẨN PHONG NHA WILD",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Vườn Quốc Gia Phong Nha - Kẻ Bàng, tỉnh Quảng Trị",
     "city": null
+  },
+  "geo": {
+    "lat": 17.5552645,
+    "lng": 106.1123041,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "44",
+      "ward": "19147"
+    },
+    "legacy": {
+      "province": "44",
+      "district": "455",
+      "ward": "19147"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1102.3,
+        "minutes": 840,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 506.5,
+        "minutes": 420,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 338.9,
+        "minutes": 276,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 842.7,
+        "minutes": 663,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 970.2,
+        "minutes": 781,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1213.2,
+        "minutes": 959,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 540.6,
+        "minutes": 447,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 236.7,
+        "minutes": 194,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1193.2,
+        "minutes": 922,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 650.7,
+        "minutes": 503,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 847.5,
+        "minutes": 700,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 815,
+        "minutes": 656,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 590.3,
+        "minutes": 479,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -66,5 +163,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

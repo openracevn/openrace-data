@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "great-race-vietnam",
   "organizer": "Great Race Vietnam",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Địa đạo Củ Chi, TP. Hồ Chí Minh",
     "city": null
+  },
+  "geo": {
+    "lat": 11.0630436,
+    "lng": 106.5291244,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "27511"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "783",
+      "ward": "27514"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 43.5,
+        "minutes": 46,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1465.1,
+        "minutes": 1126,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 831.2,
+        "minutes": 642,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 453.3,
+        "minutes": 339,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 313,
+        "minutes": 252,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 200.4,
+        "minutes": 165,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1499.3,
+        "minutes": 1153,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 913.9,
+        "minutes": 717,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 136.3,
+        "minutes": 131,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 589.6,
+        "minutes": 499,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 327.2,
+        "minutes": 254,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1773.7,
+        "minutes": 1362,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1549,
+        "minutes": 1186,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

@@ -10,10 +10,107 @@
   "seriesId": "vpbank-dat-sen-hong-music-marathon",
   "organizerId": null,
   "organizer": "Đơn vị chỉ đạo: UBND Tỉnh Đồng Tháp – Đơn vị tổ chức: Sở Văn hóa, Thể thao và Du lịch tỉnh Đồng Tháp & Nexus Sport Events – Đối tác chiến lược & Đơn vị đồng tổ chức: Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Quảng trường Văn Miếu, Phường Cao Lãnh, Tỉnh Đồng Tháp",
     "city": null
+  },
+  "geo": {
+    "lat": 10.4643135,
+    "lng": 105.6354223,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "82",
+      "ward": "29869"
+    },
+    "legacy": {
+      "province": "87",
+      "district": "866",
+      "ward": "29869"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 143.9,
+        "minutes": 118,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1561.3,
+        "minutes": 1209,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 978.4,
+        "minutes": 743,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 557.3,
+        "minutes": 414,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 435,
+        "minutes": 337,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 84.1,
+        "minutes": 71,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1595.4,
+        "minutes": 1236,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 1024.2,
+        "minutes": 814,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 240.4,
+        "minutes": 205,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 763.2,
+        "minutes": 576,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 474.5,
+        "minutes": 355,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1869.8,
+        "minutes": 1445,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1645.1,
+        "minutes": 1269,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

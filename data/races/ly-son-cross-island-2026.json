@@ -10,10 +10,103 @@
   "seriesId": "ly-son-cross-island",
   "organizerId": "cong-ty-co-phan-duong-chay-xanh",
   "organizer": "CÔNG TY CỔ PHẦN ĐƯỜNG CHẠY XANH",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Đặc khu Lý Sơn, tỉnh Quảng Ngãi",
     "city": null
+  },
+  "geo": {
+    "lat": 15.3717557,
+    "lng": 109.1189743,
+    "source": "nominatim",
+    "precision": "ward",
+    "current": {
+      "province": "51",
+      "ward": "21548"
+    },
+    "legacy": null,
+    "access": "flight_or_ferry",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 574.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 717.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 122.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 348.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 388.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 694.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 660.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 203.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 600.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 177.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 322.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 952.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 656.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -54,5 +147,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

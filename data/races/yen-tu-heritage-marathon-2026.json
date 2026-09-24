@@ -10,15 +10,132 @@
   "seriesId": "yen-tu-heritage-marathon",
   "organizerId": "great-race-vietnam",
   "organizer": "Great Race Vietnam",
-  "distances": [
-    "5km",
-    "10km",
-    "21km",
-    "42km"
+  "edition": null,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
   ],
   "location": {
     "venue": "Di sản Văn hóa Thế giới Yên Tử, tỉnh Quảng Ninh",
     "city": null
+  },
+  "geo": {
+    "lat": 17.2541355,
+    "lng": 106.4938221,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "44",
+      "ward": "19204"
+    },
+    "legacy": {
+      "province": "44",
+      "district": "456",
+      "ward": "19228"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1058.2,
+        "minutes": 828,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 540.7,
+        "minutes": 441,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 294.9,
+        "minutes": 265,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 798.7,
+        "minutes": 651,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 926.1,
+        "minutes": 770,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1169.1,
+        "minutes": 948,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 574.8,
+        "minutes": 468,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 192.6,
+        "minutes": 182,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1149.2,
+        "minutes": 910,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 606.7,
+        "minutes": 491,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 803.4,
+        "minutes": 688,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 849.2,
+        "minutes": 676,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 624.5,
+        "minutes": 500,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [
     {
@@ -29,6 +146,7 @@
       "price": 229000,
       "from": "2026-03-12",
       "to": "2026-04-24",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -39,6 +157,7 @@
       "price": 279000,
       "from": "2026-04-25",
       "to": "2026-07-23",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -49,6 +168,7 @@
       "price": 349000,
       "from": "2026-07-24",
       "to": "2026-09-22",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -59,6 +179,7 @@
       "price": 419000,
       "from": "2026-09-23",
       "to": "2026-11-02",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -69,6 +190,7 @@
       "price": 489000,
       "from": "2026-11-03",
       "to": "2026-11-13",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -79,6 +201,7 @@
       "price": 589000,
       "from": "2026-11-14",
       "to": "2026-11-21",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -89,6 +212,7 @@
       "price": 349000,
       "from": "2026-03-12",
       "to": "2026-04-24",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -99,6 +223,7 @@
       "price": 419000,
       "from": "2026-04-25",
       "to": "2026-07-23",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -109,6 +234,7 @@
       "price": 489000,
       "from": "2026-07-24",
       "to": "2026-09-22",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -119,6 +245,7 @@
       "price": 589000,
       "from": "2026-09-23",
       "to": "2026-11-02",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -129,6 +256,7 @@
       "price": 699000,
       "from": "2026-11-03",
       "to": "2026-11-13",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -139,6 +267,7 @@
       "price": 799000,
       "from": "2026-11-14",
       "to": "2026-11-21",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -149,6 +278,7 @@
       "price": 469000,
       "from": "2026-03-12",
       "to": "2026-04-24",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -159,6 +289,7 @@
       "price": 539000,
       "from": "2026-04-25",
       "to": "2026-07-23",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -169,6 +300,7 @@
       "price": 639000,
       "from": "2026-07-24",
       "to": "2026-09-22",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -179,6 +311,7 @@
       "price": 749000,
       "from": "2026-09-23",
       "to": "2026-11-02",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -189,6 +322,7 @@
       "price": 889000,
       "from": "2026-11-03",
       "to": "2026-11-13",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -199,6 +333,7 @@
       "price": 1029000,
       "from": "2026-11-14",
       "to": "2026-11-21",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -209,6 +344,7 @@
       "price": 579000,
       "from": "2026-03-12",
       "to": "2026-04-24",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -219,6 +355,7 @@
       "price": 679000,
       "from": "2026-04-25",
       "to": "2026-07-23",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -229,6 +366,7 @@
       "price": 789000,
       "from": "2026-07-24",
       "to": "2026-09-22",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -239,6 +377,7 @@
       "price": 929000,
       "from": "2026-09-23",
       "to": "2026-11-02",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -249,6 +388,7 @@
       "price": 1099000,
       "from": "2026-11-03",
       "to": "2026-11-13",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -259,6 +399,7 @@
       "price": 1279000,
       "from": "2026-11-14",
       "to": "2026-11-21",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -269,6 +410,7 @@
       "price": 699000,
       "from": "2026-03-12",
       "to": "2026-04-24",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -279,6 +421,7 @@
       "price": 799000,
       "from": "2026-04-25",
       "to": "2026-07-23",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -289,6 +432,7 @@
       "price": 939000,
       "from": "2026-07-24",
       "to": "2026-09-22",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -299,6 +443,7 @@
       "price": 1119000,
       "from": "2026-09-23",
       "to": "2026-11-02",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -309,6 +454,7 @@
       "price": 1329000,
       "from": "2026-11-03",
       "to": "2026-11-13",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -319,6 +465,7 @@
       "price": 1539000,
       "from": "2026-11-14",
       "to": "2026-11-21",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -329,6 +476,7 @@
       "price": 209000,
       "from": "2026-03-12",
       "to": "2026-04-24",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -339,6 +487,7 @@
       "price": 259000,
       "from": "2026-04-25",
       "to": "2026-07-23",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -349,6 +498,7 @@
       "price": 319000,
       "from": "2026-07-24",
       "to": "2026-09-22",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -359,6 +509,7 @@
       "price": 389000,
       "from": "2026-09-23",
       "to": "2026-11-02",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -369,6 +520,7 @@
       "price": 449000,
       "from": "2026-11-03",
       "to": "2026-11-13",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -379,6 +531,7 @@
       "price": 549000,
       "from": "2026-11-14",
       "to": "2026-11-21",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -389,6 +542,7 @@
       "price": 319000,
       "from": "2026-03-12",
       "to": "2026-04-24",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -399,6 +553,7 @@
       "price": 389000,
       "from": "2026-04-25",
       "to": "2026-07-23",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -409,6 +564,7 @@
       "price": 449000,
       "from": "2026-07-24",
       "to": "2026-09-22",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -419,6 +575,7 @@
       "price": 549000,
       "from": "2026-09-23",
       "to": "2026-11-02",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -429,6 +586,7 @@
       "price": 649000,
       "from": "2026-11-03",
       "to": "2026-11-13",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -439,6 +597,7 @@
       "price": 749000,
       "from": "2026-11-14",
       "to": "2026-11-21",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -449,6 +608,7 @@
       "price": 429000,
       "from": "2026-03-12",
       "to": "2026-04-24",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -459,6 +619,7 @@
       "price": 499000,
       "from": "2026-04-25",
       "to": "2026-07-23",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -469,6 +630,7 @@
       "price": 599000,
       "from": "2026-07-24",
       "to": "2026-09-22",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -479,6 +641,7 @@
       "price": 689000,
       "from": "2026-09-23",
       "to": "2026-11-02",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -489,6 +652,7 @@
       "price": 819000,
       "from": "2026-11-03",
       "to": "2026-11-13",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -499,6 +663,7 @@
       "price": 949000,
       "from": "2026-11-14",
       "to": "2026-11-21",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -509,6 +674,7 @@
       "price": 539000,
       "from": "2026-03-12",
       "to": "2026-04-24",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -519,6 +685,7 @@
       "price": 636000,
       "from": "2026-04-25",
       "to": "2026-07-23",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -529,6 +696,7 @@
       "price": 729000,
       "from": "2026-07-24",
       "to": "2026-09-22",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -539,6 +707,7 @@
       "price": 859000,
       "from": "2026-09-23",
       "to": "2026-11-02",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -549,6 +718,7 @@
       "price": 1026000,
       "from": "2026-11-03",
       "to": "2026-11-13",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -559,6 +729,7 @@
       "price": 1186000,
       "from": "2026-11-14",
       "to": "2026-11-21",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -569,6 +740,7 @@
       "price": 649000,
       "from": "2026-03-12",
       "to": "2026-04-24",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -579,6 +751,7 @@
       "price": 746000,
       "from": "2026-04-25",
       "to": "2026-07-23",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -589,6 +762,7 @@
       "price": 876000,
       "from": "2026-07-24",
       "to": "2026-09-22",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -599,6 +773,7 @@
       "price": 1039000,
       "from": "2026-09-23",
       "to": "2026-11-02",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -609,6 +784,7 @@
       "price": 1236000,
       "from": "2026-11-03",
       "to": "2026-11-13",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -619,6 +795,7 @@
       "price": 1429000,
       "from": "2026-11-14",
       "to": "2026-11-21",
+      "inferred": [],
       "site": "actiup"
     }
   ],
@@ -1112,5 +1289,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:43:09.238Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

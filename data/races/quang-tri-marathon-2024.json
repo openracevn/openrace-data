@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "so-vh-tt-tinh-quang-tri-bao-nong-nghiep-viet-nam",
   "organizer": "Sở VH&TT tỉnh Quảng Trị & Báo Nông Nghiệp Việt Nam",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Trung tâm Văn hóa - Điện ảnh tỉnh Quảng Trị, 1A Hùng Vương, Phường 5, Đông Hà, Quảng Trị",
     "city": null
+  },
+  "geo": {
+    "lat": 16.8134835,
+    "lng": 107.1033758,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "44",
+      "ward": "19351"
+    },
+    "legacy": {
+      "province": "45",
+      "district": "461",
+      "ward": "19348"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 956.3,
+        "minutes": 723,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 598.1,
+        "minutes": 477,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 172.1,
+        "minutes": 138,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 675.9,
+        "minutes": 525,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 803.3,
+        "minutes": 643,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1067.2,
+        "minutes": 843,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 632.2,
+        "minutes": 504,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 69.8,
+        "minutes": 56,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1047.3,
+        "minutes": 805,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 483.8,
+        "minutes": 365,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 680.6,
+        "minutes": 562,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 906.6,
+        "minutes": 713,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 681.9,
+        "minutes": 536,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -64,5 +161,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

@@ -10,10 +10,107 @@
   "seriesId": "quang-binh-international-marathon",
   "organizerId": "bolt-event",
   "organizer": "BOLT EVENT",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Quảng trường Hồ Chí Minh, đường Hùng Vương, phường Đồng Hới, tỉnh Quảng Trị",
     "city": null
+  },
+  "geo": {
+    "lat": 17.4598499,
+    "lng": 106.6122345,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "44",
+      "ward": "18880"
+    },
+    "legacy": {
+      "province": "44",
+      "district": "450",
+      "ward": "18880"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 743.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 404.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 231.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 643.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 644.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 830.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 376.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 152,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 792.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 495.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 554.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 614.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 391.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

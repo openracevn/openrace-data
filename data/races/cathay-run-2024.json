@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "cathay-life-vietnam",
   "organizer": "Cathay Life Vietnam",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Công Viên Cảnh Đồi Hồ Bán Nguyệt, Quận 7, TP. Hồ Chí Minh",
     "city": null
+  },
+  "geo": {
+    "lat": 10.73785,
+    "lng": 106.729695,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "27478"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "778",
+      "ward": "27478"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 6.9,
+        "minutes": 9,
+        "method": "road",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1500.2,
+        "minutes": 1139,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 866.9,
+        "minutes": 657,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 411.3,
+        "minutes": 296,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 294.9,
+        "minutes": 224,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 169.1,
+        "minutes": 133,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1534.3,
+        "minutes": 1166,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 949.6,
+        "minutes": 731,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 94.3,
+        "minutes": 88,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 617.2,
+        "minutes": 459,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 362.9,
+        "minutes": 269,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1808.7,
+        "minutes": 1375,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1584,
+        "minutes": 1199,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -54,5 +151,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

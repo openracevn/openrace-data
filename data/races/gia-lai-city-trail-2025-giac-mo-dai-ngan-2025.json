@@ -10,10 +10,107 @@
   "seriesId": "gia-lai-city-trail-giac-mo-dai-ngan",
   "organizerId": "vietrace365",
   "organizer": "VIETRACE365",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Khu di tích Thắng cảnh Biển Hồ, Đường Tôn Đức Thắng, xã Biển Hồ",
     "city": null
+  },
+  "geo": {
+    "lat": 14.0892083,
+    "lng": 108.0376129,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "52",
+      "ward": "23590"
+    },
+    "legacy": {
+      "province": "64",
+      "district": "627",
+      "ward": "23746"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 396.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 805.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 220.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 241,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 242.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 513,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 764.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 268.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 428.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 132.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 158.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1018.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 769.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -54,5 +151,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

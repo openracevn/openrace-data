@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "yok-don-national-park-and-rbg-service-company-limited",
   "organizer": "Yok Don National Park and RBG Service Company Limited",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Khu hành chính Vườn quốc gia Yok Đôn, xã Krông Na, huyện Buôn Đôn, tỉnh Đắk Lắk",
     "city": null
+  },
+  "geo": {
+    "lat": 12.8785691,
+    "lng": 107.7120405,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "66",
+      "ward": "24235"
+    },
+    "legacy": {
+      "province": "66",
+      "district": "647",
+      "ward": "24235"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 396,
+        "minutes": 342,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1265.8,
+        "minutes": 1063,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 510.8,
+        "minutes": 461,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 239.1,
+        "minutes": 264,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 231.9,
+        "minutes": 262,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 555.1,
+        "minutes": 469,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1299.9,
+        "minutes": 1090,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 593.5,
+        "minutes": 535,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 447,
+        "minutes": 405,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 307.5,
+        "minutes": 330,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 54.8,
+        "minutes": 95,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1574.3,
+        "minutes": 1299,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1349.6,
+        "minutes": 1123,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -64,5 +161,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

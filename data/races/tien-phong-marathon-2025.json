@@ -10,10 +10,107 @@
   "seriesId": "tien-phong-marathon",
   "organizerId": "lien-doan-dien-kinh-viet-nam-bao-tien-phong-ubnd-tinh-quang-tri",
   "organizer": "Liên đoàn Điền kinh Việt Nam - Báo Tiền Phong - UBND tỉnh Quảng Trị",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Đông Hà, Quảng Trị",
     "city": null
+  },
+  "geo": {
+    "lat": 16.802493,
+    "lng": 107.0953385,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "44",
+      "ward": "19351"
+    },
+    "legacy": {
+      "province": "45",
+      "district": "461",
+      "ward": "19348"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 956.3,
+        "minutes": 723,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 598.8,
+        "minutes": 477,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 172.7,
+        "minutes": 139,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 676.5,
+        "minutes": 525,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 803.9,
+        "minutes": 643,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1067.2,
+        "minutes": 843,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 632.9,
+        "minutes": 504,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 70.5,
+        "minutes": 56,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1047.2,
+        "minutes": 805,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 484.5,
+        "minutes": 365,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 681.2,
+        "minutes": 562,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 907.3,
+        "minutes": 713,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 682.6,
+        "minutes": 537,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -55,5 +152,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

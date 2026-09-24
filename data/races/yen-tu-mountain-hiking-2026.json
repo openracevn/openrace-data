@@ -10,10 +10,107 @@
   "seriesId": "yen-tu-mountain-hiking",
   "organizerId": "great-race-vietnam",
   "organizer": "Great Race Vietnam",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Di sản Văn hóa Thế giới Yên Tử, tỉnh Quảng Ninh",
     "city": null
+  },
+  "geo": {
+    "lat": 17.2541355,
+    "lng": 106.4938221,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "44",
+      "ward": "19204"
+    },
+    "legacy": {
+      "province": "44",
+      "district": "456",
+      "ward": "19228"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1058.2,
+        "minutes": 828,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 540.7,
+        "minutes": 441,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 294.9,
+        "minutes": 265,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 798.7,
+        "minutes": 651,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 926.1,
+        "minutes": 770,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1169.1,
+        "minutes": 948,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 574.8,
+        "minutes": 468,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 192.6,
+        "minutes": 182,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1149.2,
+        "minutes": 910,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 606.7,
+        "minutes": 491,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 803.4,
+        "minutes": 688,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 849.2,
+        "minutes": 676,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 624.5,
+        "minutes": 500,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -55,5 +152,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

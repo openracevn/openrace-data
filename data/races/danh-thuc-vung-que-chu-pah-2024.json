@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "cong-dong-5h30-vui-khoe-moi-ngay-uy-ban-nhan-dan-huyen-chu-pah-cau-lac-bo-gia-la",
   "organizer": "Cộng đồng 5h30 - Vui khỏe mỗi ngày, Ủy ban nhân dân huyện Chư Păh, Câu lạc bộ Gia Lai Marathon",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Huyện Chư Păh - Tỉnh Gia Lai",
     "city": null
+  },
+  "geo": {
+    "lat": 14.2219279,
+    "lng": 107.9708911,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "52",
+      "ward": "23728"
+    },
+    "legacy": {
+      "province": "64",
+      "district": "627",
+      "ward": "23728"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 546.7,
+        "minutes": 431,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1065.1,
+        "minutes": 848,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 310.1,
+        "minutes": 245,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 327.6,
+        "minutes": 303,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 375.1,
+        "minutes": 358,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 705.8,
+        "minutes": 559,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1099.2,
+        "minutes": 875,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 392.8,
+        "minutes": 320,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 595.6,
+        "minutes": 495,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 182.2,
+        "minutes": 175,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 207.1,
+        "minutes": 191,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1373.7,
+        "minutes": 1083,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1148.9,
+        "minutes": 907,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -55,5 +152,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

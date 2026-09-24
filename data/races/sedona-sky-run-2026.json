@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "nexus-sport-events",
   "organizer": "Nexus Sport Events",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Tòa nhà Sedona Suites - 67 Lê Lợi, Phường Sài Gòn, Thành phố Hồ Chí Minh.",
     "city": null
+  },
+  "geo": {
+    "lat": 10.7791966,
+    "lng": 106.6999282,
+    "source": "nominatim",
+    "precision": "ward",
+    "current": {
+      "province": "79",
+      "ward": "26740"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "760",
+      "ward": "26740"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1.7,
+        "minutes": 3,
+        "method": "road",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1493.8,
+        "minutes": 1131,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 860.5,
+        "minutes": 649,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 413.8,
+        "minutes": 298,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 297.4,
+        "minutes": 226,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 170.6,
+        "minutes": 136,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1527.9,
+        "minutes": 1158,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 943.2,
+        "minutes": 723,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 96.9,
+        "minutes": 89,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 619.7,
+        "minutes": 460,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 356.5,
+        "minutes": 261,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1802.3,
+        "minutes": 1367,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1577.6,
+        "minutes": 1191,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -74,5 +171,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

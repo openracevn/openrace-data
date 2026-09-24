@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "greenhat",
   "organizer": "GreenHat",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Công Viên 96, Phường Thạnh Mỹ Lợi, Quận 2, TP. Thủ Đức, TP.HCM",
     "city": null
+  },
+  "geo": {
+    "lat": 10.8273743,
+    "lng": 106.7060606,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "26905"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "765",
+      "ward": "26905"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 8.2,
+        "minutes": 10,
+        "method": "road",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1489.4,
+        "minutes": 1127,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 856.1,
+        "minutes": 644,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 416.8,
+        "minutes": 301,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 292.4,
+        "minutes": 225,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 176.1,
+        "minutes": 142,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1523.5,
+        "minutes": 1154,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 938.8,
+        "minutes": 719,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 99.9,
+        "minutes": 92,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 622.7,
+        "minutes": 463,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 352.1,
+        "minutes": 256,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1797.9,
+        "minutes": 1363,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1573.2,
+        "minutes": 1187,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

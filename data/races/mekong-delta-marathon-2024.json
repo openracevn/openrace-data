@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "nexus-sport-events",
   "organizer": "Nexus Sport Events",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Quảng trường Hoà Bình – TP. Vị Thanh, Hậu Giang",
     "city": null
+  },
+  "geo": {
+    "lat": 9.7941582,
+    "lng": 105.4840164,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "92",
+      "ward": "31333"
+    },
+    "legacy": {
+      "province": "93",
+      "district": "930",
+      "ward": "31324"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 212,
+        "minutes": 167,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1646.9,
+        "minutes": 1282,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 1061.7,
+        "minutes": 808,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 621.1,
+        "minutes": 459,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 504.7,
+        "minutes": 387,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 46.8,
+        "minutes": 36,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1681,
+        "minutes": 1309,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 1144.3,
+        "minutes": 882,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 304.2,
+        "minutes": 250,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 827,
+        "minutes": 622,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 557.7,
+        "minutes": 420,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1955.5,
+        "minutes": 1518,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1730.7,
+        "minutes": 1341,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

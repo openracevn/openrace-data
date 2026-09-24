@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "ubnd-phuong-tay-loc",
   "organizer": "UBND Phường Tây Lộc",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "UBND Phường Tây Lộc - 134 Lê Đại Hành, Thành phố Huế, Thừa Thiên Huế",
     "city": null
+  },
+  "geo": {
+    "lat": 16.467257,
+    "lng": 107.583223,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "46",
+      "ward": "19753"
+    },
+    "legacy": {
+      "province": "46",
+      "district": "475",
+      "ward": "19768"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 944.2,
+        "minutes": 725,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 666,
+        "minutes": 530,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 97.1,
+        "minutes": 87,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 600.9,
+        "minutes": 473,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 728.3,
+        "minutes": 591,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1103.4,
+        "minutes": 853,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 700.2,
+        "minutes": 557,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 1.1,
+        "minutes": 2,
+        "method": "road",
+        "near": true
+      },
+      "vung-tau": {
+        "km": 999.8,
+        "minutes": 765,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 408.9,
+        "minutes": 313,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 605.7,
+        "minutes": 510,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 974.6,
+        "minutes": 766,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 749.9,
+        "minutes": 590,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -64,5 +161,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

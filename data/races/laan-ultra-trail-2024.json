@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "laan-ultra-trail",
   "organizer": "LAAN Ultra Trail",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "LAAN Retreat - Thôn Suối Cạn, Xã Lát, Huyện Lạc Dương, TP Đà Lạt",
     "city": null
+  },
+  "geo": {
+    "lat": 11.9082632,
+    "lng": 108.4572089,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "68",
+      "ward": "24781"
+    },
+    "legacy": {
+      "province": "68",
+      "district": "672",
+      "ward": "24802"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 290.3,
+        "minutes": 222,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1403.2,
+        "minutes": 1118,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 633.7,
+        "minutes": 515,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 140,
+        "minutes": 132,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 8.4,
+        "minutes": 7,
+        "method": "road",
+        "near": true
+      },
+      "can-tho": {
+        "km": 455.8,
+        "minutes": 350,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1437.3,
+        "minutes": 1145,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 730.9,
+        "minutes": 590,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 319.7,
+        "minutes": 237,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 345.9,
+        "minutes": 294,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 207,
+        "minutes": 179,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1711.7,
+        "minutes": 1354,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1487,
+        "minutes": 1178,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

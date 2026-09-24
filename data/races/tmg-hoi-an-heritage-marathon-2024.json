@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "hoi-an-runners-community",
   "organizer": "Hoi An Runners Community",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Bãi Biển Cửa Đại, Thành Phố Hội An, Quảng Nam",
     "city": null
+  },
+  "geo": {
+    "lat": 15.8791656,
+    "lng": 108.323789,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "48",
+      "ward": "20410"
+    },
+    "legacy": {
+      "province": "49",
+      "district": "503",
+      "ward": "20404"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 849.6,
+        "minutes": 658,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 792.4,
+        "minutes": 632,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 30.2,
+        "minutes": 28,
+        "method": "road",
+        "near": true
+      },
+      "nha-trang": {
+        "km": 484.9,
+        "minutes": 384,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 612.3,
+        "minutes": 502,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1008.8,
+        "minutes": 785,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 826.5,
+        "minutes": 659,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 120.1,
+        "minutes": 104,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 883.7,
+        "minutes": 676,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 292.9,
+        "minutes": 223,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 535.2,
+        "minutes": 427,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1100.9,
+        "minutes": 867,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 876.2,
+        "minutes": 691,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

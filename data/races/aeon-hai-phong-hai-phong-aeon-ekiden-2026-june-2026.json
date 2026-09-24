@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "aeon-viet-nam",
   "organizer": "AEON Việt Nam",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "AEON Hải Phòng, Hải Phòng",
     "city": null
+  },
+  "geo": {
+    "lat": 20.8307573,
+    "lng": 106.6821753,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "31",
+      "ward": "11407"
+    },
+    "legacy": {
+      "province": "31",
+      "district": "305",
+      "ward": "11407"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1526.3,
+        "minutes": 1155,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 110.2,
+        "minutes": 82,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 803.8,
+        "minutes": 643,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1307.6,
+        "minutes": 1030,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1435,
+        "minutes": 1148,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1637.2,
+        "minutes": 1274,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 2.9,
+        "minutes": 4,
+        "method": "road",
+        "near": true
+      },
+      "hue": {
+        "km": 701.6,
+        "minutes": 560,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1617.3,
+        "minutes": 1237,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1115.6,
+        "minutes": 869,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1312.4,
+        "minutes": 1067,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 411.2,
+        "minutes": 325,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 55.1,
+        "minutes": 43,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

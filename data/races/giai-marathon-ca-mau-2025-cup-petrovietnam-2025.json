@@ -10,10 +10,107 @@
   "seriesId": "giai-marathon-ca-mau-cup-petrovietnam",
   "organizerId": "vietrace365",
   "organizer": "VIETRACE365",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Quảng trường Hùng Vương, phường Bạc Liêu, tỉnh Cà Mau",
     "city": null
+  },
+  "geo": {
+    "lat": 9.2940274,
+    "lng": 105.7248751,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "96",
+      "ward": "31825"
+    },
+    "legacy": {
+      "province": "95",
+      "district": "954",
+      "ward": "31822"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 269.8,
+        "minutes": 207,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1704.8,
+        "minutes": 1322,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 1119.5,
+        "minutes": 848,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 679,
+        "minutes": 499,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 562.6,
+        "minutes": 427,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 104.6,
+        "minutes": 76,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1738.9,
+        "minutes": 1349,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 1202.2,
+        "minutes": 922,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 362,
+        "minutes": 290,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 884.8,
+        "minutes": 661,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 615.5,
+        "minutes": 459,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 2013.3,
+        "minutes": 1558,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1788.6,
+        "minutes": 1381,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -54,5 +151,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

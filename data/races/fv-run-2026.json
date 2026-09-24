@@ -10,15 +10,132 @@
   "seriesId": null,
   "organizerId": "benh-vien-fv-dong-to-chuc-quy-nang-buoc-tuoi-tho",
   "organizer": "Bệnh viện FV - Đồng tổ chức: Quỹ Nâng Bước Tuổi Thơ",
-  "distances": [
-    "1km",
-    "5km",
-    "10km",
-    "21km"
+  "edition": null,
+  "courses": [
+    {
+      "label": "1km",
+      "meters": 1000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    }
   ],
   "location": {
     "venue": "KĐT Phú Mỹ Hưng, Phường Tân Hưng, TP. Hồ Chí Minh.",
     "city": null
+  },
+  "geo": {
+    "lat": 10.739937,
+    "lng": 106.7034261,
+    "source": "nominatim",
+    "precision": "ward",
+    "current": {
+      "province": "79",
+      "ward": "27475"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "778",
+      "ward": "27481"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 4.9,
+        "minutes": 6,
+        "method": "road",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1499.3,
+        "minutes": 1138,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 866,
+        "minutes": 656,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 414.8,
+        "minutes": 299,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 298.4,
+        "minutes": 227,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 166.7,
+        "minutes": 130,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1533.4,
+        "minutes": 1165,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 948.7,
+        "minutes": 730,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 97.8,
+        "minutes": 91,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 620.7,
+        "minutes": 462,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 362,
+        "minutes": 267,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1807.8,
+        "minutes": 1374,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1583.1,
+        "minutes": 1198,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [
     {
@@ -29,6 +146,7 @@
       "price": 250000,
       "from": "2026-07-29",
       "to": null,
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -39,6 +157,7 @@
       "price": 450000,
       "from": "2026-07-30",
       "to": "2026-09-14",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -49,6 +168,7 @@
       "price": 650000,
       "from": "2026-09-15",
       "to": "2026-10-11",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -59,6 +179,7 @@
       "price": 850000,
       "from": "2026-10-12",
       "to": "2026-10-25",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -69,6 +190,7 @@
       "price": 350000,
       "from": "2026-07-29",
       "to": null,
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -79,6 +201,7 @@
       "price": 550000,
       "from": "2026-07-30",
       "to": "2026-09-14",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -89,6 +212,7 @@
       "price": 850000,
       "from": "2026-09-15",
       "to": "2026-10-11",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -99,6 +223,7 @@
       "price": 1050000,
       "from": "2026-10-12",
       "to": "2026-10-25",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -109,6 +234,7 @@
       "price": 550000,
       "from": "2026-07-29",
       "to": null,
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -119,6 +245,7 @@
       "price": 750000,
       "from": "2026-07-30",
       "to": "2026-09-14",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -129,6 +256,7 @@
       "price": 1050000,
       "from": "2026-09-15",
       "to": "2026-10-11",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -139,6 +267,7 @@
       "price": 1350000,
       "from": "2026-10-12",
       "to": "2026-10-25",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -149,6 +278,7 @@
       "price": 570000,
       "from": "2026-07-29",
       "to": null,
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -159,6 +289,7 @@
       "price": 775000,
       "from": "2026-07-30",
       "to": "2026-09-14",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -169,6 +300,7 @@
       "price": 980000,
       "from": "2026-09-15",
       "to": "2026-10-11",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -179,6 +311,7 @@
       "price": 1250000,
       "from": "2026-10-12",
       "to": "2026-10-25",
+      "inferred": [],
       "site": "actiup"
     }
   ],
@@ -384,5 +517,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T05:54:22.509Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

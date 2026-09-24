@@ -10,16 +10,138 @@
   "seriesId": "giai-marathon-ca-mau-cup-petrovietnam",
   "organizerId": "vietrace365",
   "organizer": "VIETRACE365",
-  "distances": [
-    "2km",
-    "5km",
-    "10km",
-    "21km",
-    "42km"
+  "edition": null,
+  "courses": [
+    {
+      "label": "2km",
+      "meters": 2000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
   ],
   "location": {
     "venue": "Trung tâm hội nghị tỉnh Cà Mau, Phường An Xuyên, Tỉnh Cà Mau.",
     "city": null
+  },
+  "geo": {
+    "lat": 9.2913779,
+    "lng": 105.7255311,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "96",
+      "ward": "31825"
+    },
+    "legacy": {
+      "province": "95",
+      "district": "954",
+      "ward": "31816"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 270.1,
+        "minutes": 207,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1705.1,
+        "minutes": 1322,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 1119.8,
+        "minutes": 848,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 679.3,
+        "minutes": 499,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 562.9,
+        "minutes": 428,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 104.9,
+        "minutes": 77,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1739.2,
+        "minutes": 1349,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 1202.5,
+        "minutes": 923,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 362.3,
+        "minutes": 291,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 885.1,
+        "minutes": 662,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 615.8,
+        "minutes": 460,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 2013.6,
+        "minutes": 1558,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1788.9,
+        "minutes": 1382,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [
     {
@@ -30,6 +152,7 @@
       "price": 250000,
       "from": null,
       "to": "2026-07-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -40,6 +163,7 @@
       "price": 250000,
       "from": null,
       "to": "2026-07-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -50,6 +174,7 @@
       "price": 370000,
       "from": null,
       "to": "2026-07-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -60,6 +185,7 @@
       "price": 450000,
       "from": null,
       "to": "2026-07-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -70,6 +196,7 @@
       "price": 368000,
       "from": "2026-07-30",
       "to": "2026-08-31",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -80,6 +207,7 @@
       "price": 468000,
       "from": "2026-07-30",
       "to": "2026-08-31",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -90,6 +218,7 @@
       "price": 568000,
       "from": "2026-07-30",
       "to": "2026-08-31",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -100,6 +229,7 @@
       "price": 668000,
       "from": "2026-07-30",
       "to": "2026-08-31",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -110,6 +240,7 @@
       "price": 468000,
       "from": "2026-09-01",
       "to": "2026-09-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -120,6 +251,7 @@
       "price": 568000,
       "from": "2026-09-01",
       "to": "2026-09-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -130,6 +262,7 @@
       "price": 768000,
       "from": "2026-09-01",
       "to": "2026-09-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -140,6 +273,7 @@
       "price": 868000,
       "from": "2026-09-01",
       "to": "2026-09-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -150,6 +284,7 @@
       "price": 568000,
       "from": "2026-10-01",
       "to": "2026-10-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -160,6 +295,7 @@
       "price": 768000,
       "from": "2026-10-01",
       "to": "2026-10-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -170,6 +306,7 @@
       "price": 968000,
       "from": "2026-10-01",
       "to": "2026-10-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -180,6 +317,7 @@
       "price": 1068000,
       "from": "2026-10-01",
       "to": "2026-10-15",
+      "inferred": [],
       "site": "actiup"
     }
   ],
@@ -372,5 +510,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T05:54:22.509Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

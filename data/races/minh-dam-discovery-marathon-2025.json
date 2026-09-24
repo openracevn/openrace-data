@@ -10,10 +10,107 @@
   "seriesId": "minh-dam-discovery-marathon",
   "organizerId": "cong-ty-co-phan-secret-sport-events",
   "organizer": "CÔNG TY CỔ PHẦN SECRET SPORT EVENTS",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Phước Hải - BRVT",
     "city": null
+  },
+  "geo": {
+    "lat": 10.4266749,
+    "lng": 107.1838729,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "26542"
+    },
+    "legacy": {
+      "province": "77",
+      "district": "747",
+      "ward": "26542"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 88.2,
+        "minutes": 86,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1576.8,
+        "minutes": 1210,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 893.6,
+        "minutes": 682,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 399.9,
+        "minutes": 298,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 320.8,
+        "minutes": 237,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 253.7,
+        "minutes": 214,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1611,
+        "minutes": 1237,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 990.8,
+        "minutes": 757,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 15.1,
+        "minutes": 16,
+        "method": "road",
+        "near": true
+      },
+      "quy-nhon": {
+        "km": 605.8,
+        "minutes": 460,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 406.1,
+        "minutes": 316,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1885.4,
+        "minutes": 1446,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1660.7,
+        "minutes": 1270,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

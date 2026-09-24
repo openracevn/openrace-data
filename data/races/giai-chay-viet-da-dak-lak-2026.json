@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "so-van-hoa-the-thao-va-du-lich-tinh-dak-lak-hoi-chay-bo-tinh-dak-lak-cong-ty-tnh",
   "organizer": "Sở Văn hóa, Thể thao và Du lịch tỉnh Đắk Lắk - Hội Chạy bộ tỉnh Đắk Lắk - Công ty TNHH Đầu tư Tín Nhân.",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Đường Võ Nguyên Giáp, Phường Tân Lập, tỉnh Đắk Lắk",
     "city": null
+  },
+  "geo": {
+    "lat": 12.6655255,
+    "lng": 108.0765958,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "66",
+      "ward": "24121"
+    },
+    "legacy": {
+      "province": "66",
+      "district": "643",
+      "ward": "24118"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 361.2,
+        "minutes": 265,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1273.2,
+        "minutes": 1037,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 518.2,
+        "minutes": 435,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 186.4,
+        "minutes": 173,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 178.4,
+        "minutes": 177,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 520.4,
+        "minutes": 393,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1307.4,
+        "minutes": 1064,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 600.9,
+        "minutes": 510,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 412.3,
+        "minutes": 328,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 260.7,
+        "minutes": 245,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 4.9,
+        "minutes": 5,
+        "method": "road",
+        "near": true
+      },
+      "sa-pa": {
+        "km": 1581.8,
+        "minutes": 1273,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1357.1,
+        "minutes": 1097,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

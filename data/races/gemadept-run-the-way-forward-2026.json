@@ -10,14 +10,126 @@
   "seriesId": null,
   "organizerId": "gemadept",
   "organizer": "GEMADEPT",
-  "distances": [
-    "5km",
-    "10km",
-    "21km"
+  "edition": null,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    }
   ],
   "location": {
     "venue": "Khu C13, Đường Tân Trào, Khu đô thị Phú Mỹ Hưng, Phường Tân Mỹ, TP. Hồ Chí Minh",
     "city": null
+  },
+  "geo": {
+    "lat": 10.7258082,
+    "lng": 106.7238126,
+    "source": "nominatim",
+    "precision": "ward",
+    "current": {
+      "province": "79",
+      "ward": "27487"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "778",
+      "ward": "27487"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 8.1,
+        "minutes": 10,
+        "method": "road",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1501.2,
+        "minutes": 1140,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 867.9,
+        "minutes": 658,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 413.5,
+        "minutes": 298,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 297.1,
+        "minutes": 226,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 168,
+        "minutes": 132,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1535.3,
+        "minutes": 1167,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 950.6,
+        "minutes": 732,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 96.6,
+        "minutes": 89,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 619.4,
+        "minutes": 460,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 363.9,
+        "minutes": 270,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1809.7,
+        "minutes": 1376,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1585,
+        "minutes": 1200,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [
     {
@@ -28,6 +140,7 @@
       "price": 1080000,
       "from": "2026-07-01",
       "to": "2026-09-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -36,8 +149,12 @@
       "kind": "late",
       "audience": null,
       "price": 1180000,
-      "from": null,
-      "to": null,
+      "from": "2026-10-01",
+      "to": "2026-10-24",
+      "inferred": [
+        "from",
+        "to"
+      ],
       "site": "actiup"
     },
     {
@@ -48,6 +165,7 @@
       "price": 860000,
       "from": "2026-07-01",
       "to": "2026-09-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -56,8 +174,12 @@
       "kind": "late",
       "audience": null,
       "price": 910000,
-      "from": null,
-      "to": null,
+      "from": "2026-10-01",
+      "to": "2026-10-24",
+      "inferred": [
+        "from",
+        "to"
+      ],
       "site": "actiup"
     },
     {
@@ -68,6 +190,7 @@
       "price": 700000,
       "from": "2026-07-01",
       "to": "2026-09-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -76,8 +199,12 @@
       "kind": "late",
       "audience": null,
       "price": 750000,
-      "from": null,
-      "to": null,
+      "from": "2026-10-01",
+      "to": "2026-10-24",
+      "inferred": [
+        "from",
+        "to"
+      ],
       "site": "actiup"
     }
   ],
@@ -214,5 +341,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:43:09.238Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

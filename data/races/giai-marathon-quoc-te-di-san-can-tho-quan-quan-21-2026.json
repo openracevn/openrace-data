@@ -10,14 +10,126 @@
   "seriesId": null,
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
-  "distances": [
-    "5km",
-    "10km",
-    "21km"
+  "edition": null,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    }
   ],
   "location": {
     "venue": "Công viên Sông Hậu, phường Cái Khế, thành phố Cần Thơ",
     "city": null
+  },
+  "geo": {
+    "lat": 10.0456493,
+    "lng": 105.7928778,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "92",
+      "ward": "31120"
+    },
+    "legacy": {
+      "province": "92",
+      "district": "916",
+      "ward": "31117"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 172.7,
+        "minutes": 139,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1607.6,
+        "minutes": 1254,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 1022.4,
+        "minutes": 780,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 581.8,
+        "minutes": 431,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 465.4,
+        "minutes": 359,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1.8,
+        "minutes": 3,
+        "method": "road",
+        "near": true
+      },
+      "hai-phong": {
+        "km": 1641.8,
+        "minutes": 1281,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 1105.1,
+        "minutes": 854,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 264.9,
+        "minutes": 222,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 787.7,
+        "minutes": 593,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 518.4,
+        "minutes": 391,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1916.2,
+        "minutes": 1490,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1691.5,
+        "minutes": 1313,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -89,5 +201,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T05:54:22.509Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

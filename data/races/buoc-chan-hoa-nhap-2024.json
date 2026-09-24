@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "hoi-nguoi-khuyet-tat-thanh-pho-can-tho",
   "organizer": "HỘI NGƯỜI KHUYẾT TẬT THÀNH PHỐ CẦN THƠ",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Đường Sông Hậu, Phường Cái Khế, Quận Ninh Kiều, Thành phố Cần Thơ",
     "city": null
+  },
+  "geo": {
+    "lat": 10.0321481,
+    "lng": 105.7664361,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "92",
+      "ward": "31135"
+    },
+    "legacy": {
+      "province": "92",
+      "district": "916",
+      "ward": "31144"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 172.7,
+        "minutes": 139,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1607.6,
+        "minutes": 1254,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 1022.4,
+        "minutes": 780,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 581.8,
+        "minutes": 431,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 465.4,
+        "minutes": 359,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 3.4,
+        "minutes": 6,
+        "method": "road",
+        "near": true
+      },
+      "hai-phong": {
+        "km": 1641.7,
+        "minutes": 1281,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 1105,
+        "minutes": 854,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 264.9,
+        "minutes": 223,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 787.7,
+        "minutes": 594,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 518.4,
+        "minutes": 392,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1916.2,
+        "minutes": 1490,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1691.4,
+        "minutes": 1314,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -64,5 +161,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

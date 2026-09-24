@@ -10,10 +10,107 @@
   "seriesId": "mucangchai-ultra-trail",
   "organizerId": "viet-jungle",
   "organizer": "VIET JUNGLE",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Mù Cang Chải, Yên Bái, Việt Nam",
     "city": null
+  },
+  "geo": {
+    "lat": 21.8091042,
+    "lng": 104.5182832,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "15",
+      "ward": "04429"
+    },
+    "legacy": {
+      "province": "15",
+      "district": "136",
+      "ward": "04429"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1703.4,
+        "minutes": 1309,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 211.7,
+        "minutes": 199,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 980.9,
+        "minutes": 797,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1484.7,
+        "minutes": 1184,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1612.1,
+        "minutes": 1302,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1814.2,
+        "minutes": 1429,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 309,
+        "minutes": 270,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 878.7,
+        "minutes": 715,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1794.3,
+        "minutes": 1391,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1292.7,
+        "minutes": 1024,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1489.4,
+        "minutes": 1221,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 169,
+        "minutes": 181,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 365.7,
+        "minutes": 302,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -75,5 +172,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

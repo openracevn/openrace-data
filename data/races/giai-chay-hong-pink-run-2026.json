@@ -10,13 +10,120 @@
   "seriesId": null,
   "organizerId": "mang-luoi-ung-thu-vu-viet-nam-bcnv",
   "organizer": "Mạng Lưới Ung Thu Vú Việt Nam - BCNV",
-  "distances": [
-    "3km",
-    "10km"
+  "edition": null,
+  "courses": [
+    {
+      "label": "3km",
+      "meters": 3000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    }
   ],
   "location": {
     "venue": "Celadon City ,Thành Phố Hồ Chí Minh",
     "city": null
+  },
+  "geo": {
+    "lat": 10.8046953,
+    "lng": 106.6204799,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "27019"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "767",
+      "ward": "27010"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 11.5,
+        "minutes": 15,
+        "method": "road",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1490,
+        "minutes": 1133,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 856.7,
+        "minutes": 650,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 425,
+        "minutes": 311,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 305,
+        "minutes": 236,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 168,
+        "minutes": 134,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1524.1,
+        "minutes": 1160,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 939.3,
+        "minutes": 725,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 108,
+        "minutes": 103,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 630.9,
+        "minutes": 474,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 352.7,
+        "minutes": 262,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1798.5,
+        "minutes": 1368,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1573.8,
+        "minutes": 1192,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [
     {
@@ -25,8 +132,11 @@
       "kind": "regular",
       "audience": null,
       "price": 569000,
-      "from": null,
+      "from": "2026-08-01",
       "to": null,
+      "inferred": [
+        "from"
+      ],
       "site": "actiup"
     },
     {
@@ -35,8 +145,11 @@
       "kind": "regular",
       "audience": null,
       "price": 799000,
-      "from": null,
+      "from": "2026-08-01",
       "to": null,
+      "inferred": [
+        "from"
+      ],
       "site": "actiup"
     },
     {
@@ -47,6 +160,7 @@
       "price": 459000,
       "from": "2026-07-08",
       "to": "2026-07-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -57,6 +171,7 @@
       "price": 629000,
       "from": "2026-07-08",
       "to": "2026-07-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -67,6 +182,7 @@
       "price": 479000,
       "from": "2026-07-19",
       "to": "2026-07-31",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -77,6 +193,7 @@
       "price": 679000,
       "from": "2026-07-19",
       "to": "2026-07-31",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -87,6 +204,7 @@
       "price": 529000,
       "from": "2026-08-01",
       "to": "2026-09-20",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -97,6 +215,7 @@
       "price": 749000,
       "from": "2026-08-01",
       "to": "2026-09-20",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -107,6 +226,7 @@
       "price": 569000,
       "from": "2026-09-21",
       "to": "2026-10-05",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -117,6 +237,7 @@
       "price": 799000,
       "from": "2026-09-21",
       "to": "2026-10-05",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -127,6 +248,7 @@
       "price": 510000,
       "from": null,
       "to": null,
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -137,6 +259,7 @@
       "price": 720000,
       "from": null,
       "to": null,
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -147,6 +270,7 @@
       "price": 480000,
       "from": null,
       "to": null,
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -157,6 +281,7 @@
       "price": 680000,
       "from": null,
       "to": null,
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -167,6 +292,7 @@
       "price": 450000,
       "from": null,
       "to": null,
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -177,6 +303,7 @@
       "price": 640000,
       "from": null,
       "to": null,
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -187,6 +314,7 @@
       "price": 430000,
       "from": null,
       "to": null,
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -197,6 +325,7 @@
       "price": 600000,
       "from": null,
       "to": null,
+      "inferred": [],
       "site": "actiup"
     }
   ],
@@ -408,5 +537,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T05:54:22.509Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

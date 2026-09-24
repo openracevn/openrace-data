@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "vietnam-mtb-series",
   "organizer": "Vietnam MTB Series",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Tam Đảo, Vĩnh Phúc",
     "city": null
+  },
+  "geo": {
+    "lat": 21.3459316,
+    "lng": 105.607728,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "25",
+      "ward": "08869"
+    },
+    "legacy": {
+      "province": "26",
+      "district": "247",
+      "ward": "08878"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1567.5,
+        "minutes": 1167,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 56.5,
+        "minutes": 48,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 845,
+        "minutes": 655,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1348.8,
+        "minutes": 1042,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1476.2,
+        "minutes": 1160,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1678.4,
+        "minutes": 1286,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 153.8,
+        "minutes": 119,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 742.8,
+        "minutes": 572,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1658.5,
+        "minutes": 1249,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1156.8,
+        "minutes": 881,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1353.6,
+        "minutes": 1079,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 263.2,
+        "minutes": 215,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 210.5,
+        "minutes": 150,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -54,5 +151,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

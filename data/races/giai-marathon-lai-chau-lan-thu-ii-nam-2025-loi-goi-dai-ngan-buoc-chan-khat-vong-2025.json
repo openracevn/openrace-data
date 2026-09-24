@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "vietrace365",
   "organizer": "VIETRACE365",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Quảng trường Nhân dân tỉnh Lai Châu",
     "city": null
+  },
+  "geo": {
+    "lat": 22.3900903,
+    "lng": 103.474361,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "12",
+      "ward": "03408"
+    },
+    "legacy": {
+      "province": "12",
+      "district": "105",
+      "ward": "03387"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1883.8,
+        "minutes": 1398,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 384,
+        "minutes": 291,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 1161.3,
+        "minutes": 886,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1665.1,
+        "minutes": 1273,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1792.5,
+        "minutes": 1391,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1994.7,
+        "minutes": 1518,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 481.3,
+        "minutes": 362,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 1059.1,
+        "minutes": 803,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1974.8,
+        "minutes": 1480,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1473.1,
+        "minutes": 1113,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1669.9,
+        "minutes": 1310,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 68.8,
+        "minutes": 51,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 538,
+        "minutes": 394,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

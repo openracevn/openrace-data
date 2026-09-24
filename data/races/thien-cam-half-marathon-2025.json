@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "ubnd-huyen-cam-xuyen-hatinh-race-clb-htr-ha-tinh-runners",
   "organizer": "UBND huyện Cẩm Xuyên - HATINH RACE - CLB HTR-Hà Tĩnh Runners",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Khu du lịch biển Thiên Cầm, huyện Cẩm Xuyên, tỉnh Hà Tĩnh",
     "city": null
+  },
+  "geo": {
+    "lat": 18.1890423,
+    "lng": 106.0098506,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "42",
+      "ward": "18736"
+    },
+    "legacy": {
+      "province": "42",
+      "district": "446",
+      "ward": "18733"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1177.5,
+        "minutes": 913,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 368.7,
+        "minutes": 303,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 414.1,
+        "minutes": 349,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 917.9,
+        "minutes": 736,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1045.3,
+        "minutes": 854,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1288.3,
+        "minutes": 1032,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 402.9,
+        "minutes": 330,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 311.9,
+        "minutes": 266,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1268.4,
+        "minutes": 994,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 725.9,
+        "minutes": 576,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 922.7,
+        "minutes": 773,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 677.3,
+        "minutes": 539,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 452.6,
+        "minutes": 363,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -54,5 +151,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

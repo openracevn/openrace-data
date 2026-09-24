@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "race-jungle",
   "organizer": "Race Jungle",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Mèo Vạc, Tuyên Quang, Việt Nam",
     "city": null
+  },
+  "geo": {
+    "lat": 23.1633187,
+    "lng": 105.410444,
+    "source": "nominatim",
+    "precision": "ward",
+    "current": {
+      "province": "08",
+      "ward": "00769"
+    },
+    "legacy": {
+      "province": "02",
+      "district": "027",
+      "ward": "00769"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1869.4,
+        "minutes": 1419,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 374.9,
+        "minutes": 285,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 1146.9,
+        "minutes": 907,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1650.7,
+        "minutes": 1293,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1778.2,
+        "minutes": 1412,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1980.3,
+        "minutes": 1538,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 465.4,
+        "minutes": 352,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 1044.7,
+        "minutes": 824,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1960.4,
+        "minutes": 1500,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1458.7,
+        "minutes": 1133,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1655.5,
+        "minutes": 1330,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 380.2,
+        "minutes": 273,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 494.5,
+        "minutes": 354,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -66,5 +163,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

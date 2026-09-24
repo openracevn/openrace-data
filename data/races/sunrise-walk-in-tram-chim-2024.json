@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "cong-ty-co-phan-tropiad",
   "organizer": "CÔNG TY CỔ PHẦN TROPIAD",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Vườn quốc gia Tràm Chim",
     "city": null
+  },
+  "geo": {
+    "lat": 10.7298927,
+    "lng": 105.5001075,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "82",
+      "ward": "30010"
+    },
+    "legacy": {
+      "province": "87",
+      "district": "871",
+      "ward": "30010"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 152.3,
+        "minutes": 136,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1522.6,
+        "minutes": 1191,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 986.8,
+        "minutes": 761,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 565.7,
+        "minutes": 431,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 443.4,
+        "minutes": 355,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 128.4,
+        "minutes": 110,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1556.8,
+        "minutes": 1218,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 985.5,
+        "minutes": 796,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 248.8,
+        "minutes": 223,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 771.6,
+        "minutes": 594,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 482.9,
+        "minutes": 373,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1831.2,
+        "minutes": 1427,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1606.5,
+        "minutes": 1251,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -54,5 +151,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

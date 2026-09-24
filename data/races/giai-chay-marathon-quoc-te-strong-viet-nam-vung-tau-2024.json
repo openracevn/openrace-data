@@ -10,11 +10,13 @@
   "seriesId": null,
   "organizerId": "cong-ty-co-phan-quang-cao-thuong-mai-sen-vang",
   "organizer": "CÔNG TY CỔ PHẦN QUẢNG CÁO THƯƠNG MẠI SEN VÀNG",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Công viên Tam Giác và Nhà Truyền thống Cách Mạng TP. Vũng Tàu",
     "city": null
   },
+  "geo": null,
   "prices": [],
   "currency": "VND",
   "registrationStatus": "closed",
@@ -64,5 +66,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

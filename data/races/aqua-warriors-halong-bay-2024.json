@@ -10,10 +10,107 @@
   "seriesId": "aqua-warriors-halong-bay",
   "organizerId": "bolt-event",
   "organizer": "BOLT EVENT",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Thành phố Hạ Long",
     "city": null
+  },
+  "geo": {
+    "lat": 20.9379565,
+    "lng": 107.1275055,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "22",
+      "ward": "06652"
+    },
+    "legacy": {
+      "province": "22",
+      "district": "193",
+      "ward": "06664"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1581.4,
+        "minutes": 1193,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 163.5,
+        "minutes": 117,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 858.9,
+        "minutes": 681,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1362.7,
+        "minutes": 1068,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1490.2,
+        "minutes": 1186,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1692.3,
+        "minutes": 1312,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 58.2,
+        "minutes": 48,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 756.7,
+        "minutes": 598,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1672.4,
+        "minutes": 1275,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1170.7,
+        "minutes": 907,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1367.5,
+        "minutes": 1105,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 473,
+        "minutes": 362,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 6.2,
+        "minutes": 7,
+        "method": "road",
+        "near": true
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -64,5 +161,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

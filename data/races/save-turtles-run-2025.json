@@ -10,10 +10,107 @@
   "seriesId": "save-turtles-run",
   "organizerId": "tap-doan-khach-san-akyn-khach-san-the-secret-con-dao",
   "organizer": "Tập đoàn Khách sạn AKYN - Khách sạn The Secret Côn Đảo",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Khách sạn The Secret Côn Đảo (08 Tôn Đức Thắng, huyện Côn Đảo, tỉnh Bà Rịa - Vũng Tàu)",
     "city": null
+  },
+  "geo": {
+    "lat": 10.4908509,
+    "lng": 107.1842843,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "26560"
+    },
+    "legacy": {
+      "province": "77",
+      "district": "748",
+      "ward": "26560"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 75.8,
+        "minutes": 73,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1555.1,
+        "minutes": 1197,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 878.9,
+        "minutes": 668,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 385.3,
+        "minutes": 284,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 306.2,
+        "minutes": 223,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 241.3,
+        "minutes": 201,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1589.2,
+        "minutes": 1224,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 976.1,
+        "minutes": 743,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 22.3,
+        "minutes": 23,
+        "method": "road",
+        "near": true
+      },
+      "quy-nhon": {
+        "km": 591.1,
+        "minutes": 446,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 392.3,
+        "minutes": 303,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1863.6,
+        "minutes": 1433,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1638.9,
+        "minutes": 1257,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

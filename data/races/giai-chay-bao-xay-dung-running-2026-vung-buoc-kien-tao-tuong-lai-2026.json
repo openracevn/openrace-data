@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "bao-xay-dung",
   "organizer": "Báo Xây Dựng",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Phường Vũng Tàu - Thành phố Hồ Chí Minh",
     "city": null
+  },
+  "geo": {
+    "lat": 10.348189,
+    "lng": 107.0753349,
+    "source": "nominatim",
+    "precision": "ward",
+    "current": {
+      "province": "79",
+      "ward": "26506"
+    },
+    "legacy": {
+      "province": "77",
+      "district": "747",
+      "ward": "26506"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 96.2,
+        "minutes": 93,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1584.9,
+        "minutes": 1217,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 901.6,
+        "minutes": 689,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 407.9,
+        "minutes": 305,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 328.8,
+        "minutes": 245,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 261.7,
+        "minutes": 221,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1619,
+        "minutes": 1244,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 998.8,
+        "minutes": 764,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1.7,
+        "minutes": 3,
+        "method": "road",
+        "near": true
+      },
+      "quy-nhon": {
+        "km": 613.8,
+        "minutes": 468,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 414.1,
+        "minutes": 323,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1893.4,
+        "minutes": 1453,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1668.7,
+        "minutes": 1277,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

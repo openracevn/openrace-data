@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "bolt-event",
   "organizer": "BOLT EVENT",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Bãi biển Bảo Ninh, phường Đồng Hới, Tỉnh Quảng Trị",
     "city": null
+  },
+  "geo": {
+    "lat": 17.4655336,
+    "lng": 106.6441253,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "44",
+      "ward": "18880"
+    },
+    "legacy": {
+      "province": "44",
+      "district": "450",
+      "ward": "18889"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1048,
+        "minutes": 789,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 494.7,
+        "minutes": 401,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 270.8,
+        "minutes": 218,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 774.6,
+        "minutes": 605,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 902,
+        "minutes": 723,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1158.9,
+        "minutes": 908,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 528.9,
+        "minutes": 428,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 168.6,
+        "minutes": 135,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1139,
+        "minutes": 871,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 582.6,
+        "minutes": 445,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 779.3,
+        "minutes": 642,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 803.3,
+        "minutes": 637,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 578.5,
+        "minutes": 461,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

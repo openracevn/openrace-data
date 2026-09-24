@@ -10,10 +10,107 @@
   "seriesId": "dalat-ultra-trail",
   "organizerId": "vietnam-mtb-series",
   "organizer": "Vietnam MTB Series",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Thung Lũng Tình Yêu | 3, 5, 7 đường Mai Anh Đào, Phường Lâm Viên - Đà Lạt, tỉnh Lâm Đồng",
     "city": null
+  },
+  "geo": {
+    "lat": 11.9752442,
+    "lng": 108.4731291,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "68",
+      "ward": "24778"
+    },
+    "legacy": {
+      "province": "68",
+      "district": "672",
+      "ward": "24775"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 235.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1044.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 455.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 83.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 5.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": true
+      },
+      "can-tho": {
+        "km": 364,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1004.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 508.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 236.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 216.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 90.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1252.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1009.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -66,5 +163,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

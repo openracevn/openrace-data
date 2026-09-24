@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "the-lakes-race",
   "organizer": "THE LAKES RACE",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Hồ Đá - Bình Dương",
     "city": null
+  },
+  "geo": {
+    "lat": 11.2603292,
+    "lng": 106.5555371,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "25792"
+    },
+    "legacy": {
+      "province": "74",
+      "district": "720",
+      "ward": "25804"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 65.5,
+        "minutes": 61,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1438.1,
+        "minutes": 1091,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 804.8,
+        "minutes": 609,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 473.4,
+        "minutes": 351,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 335.3,
+        "minutes": 258,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 224.7,
+        "minutes": 189,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1472.2,
+        "minutes": 1118,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 887.5,
+        "minutes": 683,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 156.5,
+        "minutes": 143,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 563.2,
+        "minutes": 466,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 300.8,
+        "minutes": 221,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1746.6,
+        "minutes": 1327,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1521.9,
+        "minutes": 1151,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -54,5 +151,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

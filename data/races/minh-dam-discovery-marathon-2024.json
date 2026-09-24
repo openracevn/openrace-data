@@ -10,11 +10,13 @@
   "seriesId": "minh-dam-discovery-marathon",
   "organizerId": "cong-ty-co-phan-secret-sport-events",
   "organizer": "CÔNG TY CỔ PHẦN SECRET SPORT EVENTS",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Long Hải - BRVT",
     "city": null
   },
+  "geo": null,
   "prices": [],
   "currency": "VND",
   "registrationStatus": "closed",
@@ -53,5 +55,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

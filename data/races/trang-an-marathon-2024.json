@@ -10,10 +10,107 @@
   "seriesId": "trang-an-marathon",
   "organizerId": "vrace-cong-ty-co-phan-vu-media",
   "organizer": "VRace (Công ty Cổ phần Vũ Media)",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Cố đô Hoa Lư, Trường Yên, Hoa Lư, Ninh Bình",
     "city": null
+  },
+  "geo": {
+    "lat": 20.2895968,
+    "lng": 105.8891242,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "37",
+      "ward": "14533"
+    },
+    "legacy": {
+      "province": "37",
+      "district": "374",
+      "ward": "14533"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1411.5,
+        "minutes": 1071,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 91,
+        "minutes": 81,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 689.1,
+        "minutes": 559,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1192.9,
+        "minutes": 946,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1320.3,
+        "minutes": 1064,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1522.4,
+        "minutes": 1191,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 131.8,
+        "minutes": 108,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 586.8,
+        "minutes": 476,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1502.5,
+        "minutes": 1153,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1000.9,
+        "minutes": 786,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1197.6,
+        "minutes": 983,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 401.2,
+        "minutes": 326,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 181.5,
+        "minutes": 141,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -64,5 +161,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

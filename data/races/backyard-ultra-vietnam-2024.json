@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "vietnam-mtb-series-tailwind-adventure-community",
   "organizer": "Vietnam MTB Series & Tailwind Adventure Community",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Mã Đà, Vĩnh Cửu, Đồng Nai",
     "city": null
+  },
+  "geo": {
+    "lat": 11.2427506,
+    "lng": 107.0531443,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "75",
+      "ward": "26170"
+    },
+    "legacy": {
+      "province": "75",
+      "district": "735",
+      "ward": "26200"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 65.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1095.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 550.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 258.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 170,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 192.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1068.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 583.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 99.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 367.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 191.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1279.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1079.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -54,5 +151,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

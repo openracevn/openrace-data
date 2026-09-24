@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": null,
   "organizer": "Liên đoàn Điền kinh Việt Nam, Liên đoàn Điền kinh Lào, Liên đoàn Điền kinh Campuchia tổ chức; Tập đoàn Công nghiệp - Viễn thông Quân đội (Viettel Group) đồng tổ chức và tài trợ; Hiệp hội Điền kinh Châu Á giám sát và tư vấn, Công ty Vietcontent thực hiện",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Khu liên hợp thể thao Quốc gia, Mỹ Đình, Quận Nam Từ Liêm, Thành phố Hà Nội",
     "city": null
+  },
+  "geo": {
+    "lat": 21.0205027,
+    "lng": 105.7639271,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "01",
+      "ward": "00592"
+    },
+    "legacy": {
+      "province": "01",
+      "district": "019",
+      "ward": "00625"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1500,
+        "minutes": 1144,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 12.8,
+        "minutes": 16,
+        "method": "road",
+        "near": true
+      },
+      "da-nang": {
+        "km": 777.6,
+        "minutes": 632,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1281.4,
+        "minutes": 1018,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1408.8,
+        "minutes": 1137,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1610.9,
+        "minutes": 1263,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 118.2,
+        "minutes": 99,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 675.3,
+        "minutes": 549,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1591,
+        "minutes": 1225,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1089.3,
+        "minutes": 858,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1286.1,
+        "minutes": 1056,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 311.4,
+        "minutes": 249,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 171.7,
+        "minutes": 129,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -75,5 +172,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

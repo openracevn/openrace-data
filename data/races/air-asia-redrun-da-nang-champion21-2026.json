@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Công viên Biển Đông, Đà Nẵng",
     "city": null
+  },
+  "geo": {
+    "lat": 16.0683513,
+    "lng": 108.2459339,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "48",
+      "ward": "20275"
+    },
+    "legacy": {
+      "province": "48",
+      "district": "493",
+      "ward": "20275"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 863.3,
+        "minutes": 652,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 771.1,
+        "minutes": 615,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 3.5,
+        "minutes": 4,
+        "method": "road",
+        "near": true
+      },
+      "nha-trang": {
+        "km": 505.8,
+        "minutes": 399,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 633.3,
+        "minutes": 518,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1022.5,
+        "minutes": 779,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 805.2,
+        "minutes": 642,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 98.8,
+        "minutes": 88,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 904.7,
+        "minutes": 691,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 313.8,
+        "minutes": 239,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 524.7,
+        "minutes": 437,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1079.6,
+        "minutes": 851,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 854.9,
+        "minutes": 675,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

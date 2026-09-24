@@ -10,11 +10,13 @@
   "seriesId": null,
   "organizerId": "cong-ty-tnhh-dv-dl-tm-trung-thang",
   "organizer": "CÔNG TY TNHH DV DL - TM TRUNG THẮNG",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Nha Trang",
     "city": null
   },
+  "geo": null,
   "prices": [],
   "currency": "VND",
   "registrationStatus": "closed",
@@ -64,5 +66,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "topas-travel",
   "organizer": "TOPAS TRAVEL",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Mai Châu, Hòa Bình",
     "city": null
+  },
+  "geo": {
+    "lat": 20.6497772,
+    "lng": 105.0650161,
+    "source": "maps_link",
+    "precision": "venue",
+    "current": {
+      "province": "25",
+      "ward": "05251"
+    },
+    "legacy": {
+      "province": "17",
+      "district": "156",
+      "ward": "05248"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1478.9,
+        "minutes": 1120,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 140.2,
+        "minutes": 116,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 756.4,
+        "minutes": 608,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1260.2,
+        "minutes": 995,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1387.7,
+        "minutes": 1113,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1589.8,
+        "minutes": 1239,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 260.8,
+        "minutes": 196,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 654.2,
+        "minutes": 525,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1569.9,
+        "minutes": 1202,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1068.2,
+        "minutes": 834,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1265,
+        "minutes": 1032,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 367.9,
+        "minutes": 303,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 305.4,
+        "minutes": 225,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -110,5 +207,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

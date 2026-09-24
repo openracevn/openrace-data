@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "lien-doan-dien-kinh-viet-nam-uy-ban-nhan-dan-thanh-pho-ha-noi-vietcontent",
   "organizer": "Liên đoàn điền kinh Việt Nam - Ủy ban nhân dân Thành phố Hà Nội - VietContent",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Hồ Thiền Quang, Hà Nội",
     "city": null
+  },
+  "geo": {
+    "lat": 21.0184311,
+    "lng": 105.8457655,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "01",
+      "ward": "00256"
+    },
+    "legacy": {
+      "province": "01",
+      "district": "007",
+      "ward": "00241"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1493.2,
+        "minutes": 1135,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1.5,
+        "minutes": 2,
+        "method": "road",
+        "near": true
+      },
+      "da-nang": {
+        "km": 770.7,
+        "minutes": 624,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1274.5,
+        "minutes": 1010,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1401.9,
+        "minutes": 1128,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1604.1,
+        "minutes": 1255,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 116.4,
+        "minutes": 86,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 668.5,
+        "minutes": 541,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1584.2,
+        "minutes": 1217,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1082.5,
+        "minutes": 850,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1279.3,
+        "minutes": 1047,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 315.6,
+        "minutes": 255,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 161,
+        "minutes": 115,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

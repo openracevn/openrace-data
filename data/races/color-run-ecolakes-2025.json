@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "setiabecamex",
   "organizer": "SetiaBecamex",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Phố đi bộ - ẩm thực EcoLakes Walk, EcoLakes Mỹ Phước, Khu phố 6, Phường Thới Hòa, Thành phố Hồ Chí Minh",
     "city": null
+  },
+  "geo": {
+    "lat": 11.0967709,
+    "lng": 106.6501512,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "25846"
+    },
+    "legacy": {
+      "province": "74",
+      "district": "721",
+      "ward": "25846"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 45.5,
+        "minutes": 39,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1448.4,
+        "minutes": 1099,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 815.1,
+        "minutes": 617,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 432,
+        "minutes": 329,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 301.5,
+        "minutes": 239,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 204.7,
+        "minutes": 167,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1482.5,
+        "minutes": 1126,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 897.8,
+        "minutes": 691,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 136.5,
+        "minutes": 121,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 573.5,
+        "minutes": 474,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 311.1,
+        "minutes": 229,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1756.9,
+        "minutes": 1335,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1532.2,
+        "minutes": 1159,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

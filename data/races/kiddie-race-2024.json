@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "artlive-a-virtual-art-campus",
   "organizer": "artLIVE – a virtual art campus",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Thảo Cầm Viên - TP HCM",
     "city": null
+  },
+  "geo": {
+    "lat": 10.7896064,
+    "lng": 106.7045903,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "26740"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "760",
+      "ward": "26737"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 2.9,
+        "minutes": 4,
+        "method": "road",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1492.3,
+        "minutes": 1129,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 859,
+        "minutes": 647,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 413.8,
+        "minutes": 298,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 297.4,
+        "minutes": 226,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 171.3,
+        "minutes": 137,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1526.4,
+        "minutes": 1156,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 941.7,
+        "minutes": 721,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 96.9,
+        "minutes": 89,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 619.7,
+        "minutes": 460,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 355,
+        "minutes": 259,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1800.8,
+        "minutes": 1365,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1576.1,
+        "minutes": 1189,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -73,5 +170,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

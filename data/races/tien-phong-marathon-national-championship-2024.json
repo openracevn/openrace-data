@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "bao-tien-phong",
   "organizer": "Báo Tiền Phong",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Thành phố Tuy Hòa, Phú Yên, Việt Nam",
     "city": null
+  },
+  "geo": {
+    "lat": 13.1998999,
+    "lng": 109.2390033,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "66",
+      "ward": "22153"
+    },
+    "legacy": {
+      "province": "54",
+      "district": "559",
+      "ward": "22153"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 540.3,
+        "minutes": 393,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1148.6,
+        "minutes": 899,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 379.1,
+        "minutes": 297,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 134.5,
+        "minutes": 108,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 262,
+        "minutes": 227,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 705.8,
+        "minutes": 521,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1182.8,
+        "minutes": 926,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 476.4,
+        "minutes": 372,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 533.4,
+        "minutes": 401,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 87.3,
+        "minutes": 73,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 188.3,
+        "minutes": 186,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1457.2,
+        "minutes": 1135,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1232.5,
+        "minutes": 959,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -54,5 +151,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

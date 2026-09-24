@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "capitaland-development",
   "organizer": "CapitaLand Development",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "OCEAN CITY @VINHOMES OCEAN PARK 1, Huyện Gia Lâm, Thành phố Hà Nội",
     "city": null
+  },
+  "geo": {
+    "lat": 21.0237594,
+    "lng": 105.9397851,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "01",
+      "ward": "00565"
+    },
+    "legacy": {
+      "province": "01",
+      "district": "018",
+      "ward": "00565"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1499.1,
+        "minutes": 1142,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 12.4,
+        "minutes": 14,
+        "method": "road",
+        "near": true
+      },
+      "da-nang": {
+        "km": 776.7,
+        "minutes": 630,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1280.5,
+        "minutes": 1016,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1407.9,
+        "minutes": 1135,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1610,
+        "minutes": 1261,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 94.2,
+        "minutes": 73,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 674.4,
+        "minutes": 547,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1590.1,
+        "minutes": 1223,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1088.4,
+        "minutes": 856,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1285.2,
+        "minutes": 1053,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 319.5,
+        "minutes": 256,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 153.3,
+        "minutes": 107,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

@@ -10,10 +10,107 @@
   "seriesId": "vtv-lpbank-international-marathon",
   "organizerId": "thanh-an-media",
   "organizer": "Thanh An Media",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Flamingo Đại Lải Resort - Ngọc Thanh, Phúc Yên, Vĩnh Phúc",
     "city": null
+  },
+  "geo": {
+    "lat": 21.3317225,
+    "lng": 105.7130123,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "25",
+      "ward": "08746"
+    },
+    "legacy": {
+      "province": "26",
+      "district": "244",
+      "ward": "08746"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1539.3,
+        "minutes": 1181,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 49.4,
+        "minutes": 52,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 816.8,
+        "minutes": 669,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1320.6,
+        "minutes": 1055,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1448,
+        "minutes": 1174,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1650.2,
+        "minutes": 1300,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 146.7,
+        "minutes": 123,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 714.6,
+        "minutes": 586,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1630.3,
+        "minutes": 1262,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1128.6,
+        "minutes": 895,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1325.4,
+        "minutes": 1092,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 280.9,
+        "minutes": 236,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 203.4,
+        "minutes": 155,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

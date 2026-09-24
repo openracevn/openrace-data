@@ -10,10 +10,107 @@
   "seriesId": "cat-tien-jungle-paths",
   "organizerId": "race-jungle",
   "organizer": "Race Jungle",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Vườn Quốc gia Cát Tiên, Tân Phú, Đồng Nai",
     "city": null
+  },
+  "geo": {
+    "lat": 11.2679691,
+    "lng": 107.4298962,
+    "source": "nominatim",
+    "precision": "ward",
+    "current": {
+      "province": "75",
+      "ward": "26116"
+    },
+    "legacy": {
+      "province": "75",
+      "district": "734",
+      "ward": "26116"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 124.6,
+        "minutes": 93,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1543.9,
+        "minutes": 1195,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 770.4,
+        "minutes": 594,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 306,
+        "minutes": 261,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 174.5,
+        "minutes": 136,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 290.1,
+        "minutes": 222,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1578,
+        "minutes": 1222,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 853.1,
+        "minutes": 669,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 140.5,
+        "minutes": 119,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 511.9,
+        "minutes": 423,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 267.4,
+        "minutes": 206,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1852.4,
+        "minutes": 1431,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1627.7,
+        "minutes": 1255,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -64,5 +161,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

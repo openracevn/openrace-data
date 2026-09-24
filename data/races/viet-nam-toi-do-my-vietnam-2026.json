@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "cong-ty-zaha-vietnam",
   "organizer": "Công ty Zaha Vietnam",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Trung tâm triển lãm Quốc gia, Vinhomes Global Gate, Đông Anh, Hà Nội",
     "city": null
+  },
+  "geo": {
+    "lat": 21.0952325,
+    "lng": 105.8581859,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "01",
+      "ward": "00454"
+    },
+    "legacy": {
+      "province": "01",
+      "district": "017",
+      "ward": "00511"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1506.5,
+        "minutes": 1148,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 12,
+        "minutes": 14,
+        "method": "road",
+        "near": true
+      },
+      "da-nang": {
+        "km": 784,
+        "minutes": 636,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1287.8,
+        "minutes": 1022,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1415.2,
+        "minutes": 1141,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1617.4,
+        "minutes": 1267,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 106.2,
+        "minutes": 82,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 681.8,
+        "minutes": 553,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1597.5,
+        "minutes": 1229,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1095.8,
+        "minutes": 862,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1292.5,
+        "minutes": 1060,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 307.2,
+        "minutes": 245,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 162.9,
+        "minutes": 114,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -55,5 +152,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

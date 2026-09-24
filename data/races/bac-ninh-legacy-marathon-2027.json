@@ -10,15 +10,132 @@
   "seriesId": "bac-ninh-legacy-marathon",
   "organizerId": "cong-ty-zaha-vietnam",
   "organizer": "Công ty Zaha Vietnam",
-  "distances": [
-    "5km",
-    "10km",
-    "21km",
-    "42km"
+  "edition": null,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
   ],
   "location": {
     "venue": "Quảng trường Trung tâm Văn hóa Kinh Bắc",
     "city": "Bắc Ninh"
+  },
+  "geo": {
+    "lat": 21.1784838,
+    "lng": 106.0562047,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "24",
+      "ward": "09187"
+    },
+    "legacy": {
+      "province": "27",
+      "district": "256",
+      "ward": "09172"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1521.7,
+        "minutes": 1162,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 29.3,
+        "minutes": 33,
+        "method": "road",
+        "near": true
+      },
+      "da-nang": {
+        "km": 799.3,
+        "minutes": 650,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1303.1,
+        "minutes": 1036,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1430.5,
+        "minutes": 1155,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1632.6,
+        "minutes": 1281,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 100,
+        "minutes": 80,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 697,
+        "minutes": 567,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1612.7,
+        "minutes": 1243,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1111,
+        "minutes": 876,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1307.8,
+        "minutes": 1073,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 320.2,
+        "minutes": 258,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 158.4,
+        "minutes": 118,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [
     {
@@ -29,6 +146,7 @@
       "price": 350000,
       "from": "2026-07-07",
       "to": "2027-01-10",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -39,6 +157,7 @@
       "price": 350000,
       "from": "2026-07-07",
       "to": "2027-01-10",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -49,6 +168,7 @@
       "price": 450000,
       "from": "2026-07-07",
       "to": "2027-01-10",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -59,6 +179,7 @@
       "price": 450000,
       "from": "2026-07-07",
       "to": "2027-01-10",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -68,7 +189,10 @@
       "audience": null,
       "price": 400000,
       "from": null,
-      "to": null,
+      "to": "2027-01-10",
+      "inferred": [
+        "to"
+      ],
       "site": "actiup"
     },
     {
@@ -78,7 +202,10 @@
       "audience": null,
       "price": 400000,
       "from": null,
-      "to": null,
+      "to": "2027-01-10",
+      "inferred": [
+        "to"
+      ],
       "site": "actiup"
     },
     {
@@ -88,7 +215,10 @@
       "audience": null,
       "price": 500000,
       "from": null,
-      "to": null,
+      "to": "2027-01-10",
+      "inferred": [
+        "to"
+      ],
       "site": "actiup"
     },
     {
@@ -98,7 +228,10 @@
       "audience": null,
       "price": 500000,
       "from": null,
-      "to": null,
+      "to": "2027-01-10",
+      "inferred": [
+        "to"
+      ],
       "site": "actiup"
     }
   ],
@@ -332,5 +465,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:57:28.842Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

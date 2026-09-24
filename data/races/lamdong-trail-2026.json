@@ -10,16 +10,138 @@
   "seriesId": null,
   "organizerId": "greenhat",
   "organizer": "GreenHat",
-  "distances": [
-    "5km",
-    "15km",
-    "25km",
-    "55km",
-    "85km"
+  "edition": null,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "15km",
+      "meters": 15000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "25km",
+      "meters": 25000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "55km",
+      "meters": 55000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "85km",
+      "meters": 85000,
+      "type": "trail_run",
+      "elevationGain": null
+    }
   ],
   "location": {
     "venue": "TTC World - Thung Lũng Tình Yêu, số 03-05-07 đường Mai Anh Đào, phường Lâm Viên, Tp. Đà Lạt, Lâm Đồng",
     "city": null
+  },
+  "geo": {
+    "lat": 11.9458436,
+    "lng": 108.4575864,
+    "source": "nominatim",
+    "precision": "ward",
+    "current": {
+      "province": "68",
+      "ward": "24778"
+    },
+    "legacy": {
+      "province": "68",
+      "district": "672",
+      "ward": "24778"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 298.7,
+        "minutes": 228,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1396.1,
+        "minutes": 1113,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 626.6,
+        "minutes": 510,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 133,
+        "minutes": 127,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 2.3,
+        "minutes": 3,
+        "method": "road",
+        "near": true
+      },
+      "can-tho": {
+        "km": 464.2,
+        "minutes": 356,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1430.2,
+        "minutes": 1140,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 723.8,
+        "minutes": 585,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 328.1,
+        "minutes": 244,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 338.9,
+        "minutes": 289,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 193.6,
+        "minutes": 182,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1704.6,
+        "minutes": 1349,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1479.9,
+        "minutes": 1173,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [
     {
@@ -30,6 +152,7 @@
       "price": 3150000,
       "from": "2026-08-17",
       "to": "2026-10-05",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -40,6 +163,7 @@
       "price": 2550000,
       "from": "2026-08-17",
       "to": "2026-10-05",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -50,6 +174,7 @@
       "price": 2050000,
       "from": "2026-08-17",
       "to": "2026-10-05",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -60,6 +185,7 @@
       "price": 1400000,
       "from": "2026-08-17",
       "to": "2026-10-05",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -70,6 +196,7 @@
       "price": 950000,
       "from": "2026-08-17",
       "to": "2026-10-05",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -80,6 +207,7 @@
       "price": 950000,
       "from": "2026-08-17",
       "to": "2026-10-05",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -90,6 +218,7 @@
       "price": 1800000,
       "from": "2026-08-17",
       "to": "2026-10-05",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -100,6 +229,7 @@
       "price": 2700000,
       "from": "2026-08-17",
       "to": "2026-10-05",
+      "inferred": [],
       "site": "actiup"
     }
   ],
@@ -246,5 +376,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:43:09.238Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

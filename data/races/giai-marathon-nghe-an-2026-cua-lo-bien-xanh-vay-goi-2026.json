@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "btc-giai-marathon-nghe-an-2026-cua-lo-bien-xanh-vay-goi",
   "organizer": "BTC Giải Marathon Nghệ An 2026 “Cửa Lò – Biển Xanh Vẫy Gọi”",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Phường Cửa Lò, tỉnh Nghệ An",
     "city": null
+  },
+  "geo": {
+    "lat": 18.7960216,
+    "lng": 105.7273264,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "40",
+      "ward": "16732"
+    },
+    "legacy": {
+      "province": "40",
+      "district": "412",
+      "ward": "16732"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 898.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 248.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 403.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 818.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 815.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 974.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 249,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 326,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 950.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 671.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 725,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 439.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 278.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -55,5 +152,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

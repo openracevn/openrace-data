@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "don-vi-to-chuc-nexus-sport-events-doi-tac-chien-luoc-don-vi-dong-to-chuc-ngan-ha",
   "organizer": "Đơn vị tổ chức: Nexus Sport Events – Đối tác chiến lược & Đơn vị đồng tổ chức: Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "TP. Hồ Chí Minh, Việt Nam",
     "city": null
+  },
+  "geo": {
+    "lat": 10.7737261,
+    "lng": 106.7166008,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "79",
+      "ward": "27094"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "769",
+      "ward": "27118"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1144,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 610.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 315.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 228.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 130.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1119.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 639.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 62.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 430.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 254.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1321.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1132.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

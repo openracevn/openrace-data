@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "suunto-viet-nam",
   "organizer": "Suunto Việt Nam",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Sân Vận Động Gia Định, Hồ Chí Minh",
     "city": null
+  },
+  "geo": {
+    "lat": 10.8149042,
+    "lng": 106.7023485,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "26929"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "765",
+      "ward": "26917"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 7.4,
+        "minutes": 10,
+        "method": "road",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1491.4,
+        "minutes": 1130,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 858.1,
+        "minutes": 647,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 415.7,
+        "minutes": 302,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 294.5,
+        "minutes": 228,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 175.3,
+        "minutes": 142,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1525.5,
+        "minutes": 1157,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 940.8,
+        "minutes": 722,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 98.7,
+        "minutes": 93,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 621.5,
+        "minutes": 464,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 354.1,
+        "minutes": 259,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1799.9,
+        "minutes": 1366,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1575.2,
+        "minutes": 1189,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -54,5 +151,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

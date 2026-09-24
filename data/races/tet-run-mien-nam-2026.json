@@ -10,10 +10,107 @@
   "seriesId": "tet-run-mien-nam",
   "organizerId": "cong-ty-co-phan-duong-chay-xanh",
   "organizer": "CÔNG TY CỔ PHẦN ĐƯỜNG CHẠY XANH",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Vinhomes Grand Park, TP. Thủ Đức",
     "city": null
+  },
+  "geo": {
+    "lat": 10.8395793,
+    "lng": 106.8421165,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "26833"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "769",
+      "ward": "26833"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 23.8,
+        "minutes": 28,
+        "method": "road",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1500.4,
+        "minutes": 1140,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 841,
+        "minutes": 656,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 412.2,
+        "minutes": 302,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 283.8,
+        "minutes": 222,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 187.9,
+        "minutes": 155,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1534.5,
+        "minutes": 1167,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 923.7,
+        "minutes": 731,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 95.3,
+        "minutes": 93,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 618.1,
+        "minutes": 464,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 337,
+        "minutes": 268,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1808.9,
+        "minutes": 1376,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1584.2,
+        "minutes": 1200,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

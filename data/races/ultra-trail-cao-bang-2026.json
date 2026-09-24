@@ -10,17 +10,144 @@
   "seriesId": "ultra-trail-cao-bang",
   "organizerId": "race-jungle",
   "organizer": "Race Jungle",
-  "distances": [
-    "10km",
-    "25km",
-    "42km",
-    "70km",
-    "100km",
-    "160km"
+  "edition": null,
+  "courses": [
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "25km",
+      "meters": 25000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "70km",
+      "meters": 70000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "100km",
+      "meters": 100000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "160km",
+      "meters": 160000,
+      "type": "trail_run",
+      "elevationGain": null
+    }
   ],
   "location": {
     "venue": "Bản Giốc, Cao Bằng, Việt Nam",
     "city": null
+  },
+  "geo": {
+    "lat": 22.8539003,
+    "lng": 106.7232867,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "04",
+      "ward": "01501"
+    },
+    "legacy": {
+      "province": "04",
+      "district": "047",
+      "ward": "01495"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1805.9,
+        "minutes": 1377,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 319.6,
+        "minutes": 251,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 1083.4,
+        "minutes": 865,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1587.2,
+        "minutes": 1251,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1714.6,
+        "minutes": 1370,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1916.7,
+        "minutes": 1496,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 380.3,
+        "minutes": 276,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 981.2,
+        "minutes": 782,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1896.8,
+        "minutes": 1458,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1395.2,
+        "minutes": 1091,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1591.9,
+        "minutes": 1288,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 518,
+        "minutes": 371,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 352.2,
+        "minutes": 259,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -95,5 +222,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:43:09.238Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "vrace-cong-ty-co-phan-vu-media",
   "organizer": "VRace (Công ty Cổ phần Vũ Media)",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Không gian văn hóa sáng tạo Tây Hồ (phố đi bộ Trịnh Công Sơn trước đây), Tây Hồ, Hà Nội",
     "city": null
+  },
+  "geo": {
+    "lat": 21.0627805,
+    "lng": 105.8184637,
+    "source": "nominatim",
+    "precision": "ward",
+    "current": {
+      "province": "01",
+      "ward": "00103"
+    },
+    "legacy": {
+      "province": "01",
+      "district": "003",
+      "ward": "00100"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1500.3,
+        "minutes": 1146,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 7,
+        "minutes": 11,
+        "method": "road",
+        "near": true
+      },
+      "da-nang": {
+        "km": 777.8,
+        "minutes": 634,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1281.6,
+        "minutes": 1020,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1409,
+        "minutes": 1139,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1611.1,
+        "minutes": 1265,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 118.9,
+        "minutes": 90,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 675.5,
+        "minutes": 551,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1591.2,
+        "minutes": 1227,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1089.6,
+        "minutes": 860,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1286.3,
+        "minutes": 1057,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 310.8,
+        "minutes": 250,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 163.5,
+        "minutes": 119,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -64,5 +161,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

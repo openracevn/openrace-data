@@ -10,16 +10,138 @@
   "seriesId": "mang-den-ultra-trail",
   "organizerId": "ban-to-chuc-hoi-du-lich-mang-den-don-vi-van-hanh-pr-events",
   "organizer": "Ban Tổ Chức: Hội Du Lịch Măng Đen - Đơn vị vận hành: PR Events",
-  "distances": [
-    "15km",
-    "25km",
-    "50km",
-    "70km",
-    "100km"
+  "edition": null,
+  "courses": [
+    {
+      "label": "15km",
+      "meters": 15000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "25km",
+      "meters": 25000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "50km",
+      "meters": 50000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "70km",
+      "meters": 70000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "100km",
+      "meters": 100000,
+      "type": "trail_run",
+      "elevationGain": null
+    }
   ],
   "location": {
     "venue": "Xã Măng Đen - Quảng Ngãi",
     "city": null
+  },
+  "geo": {
+    "lat": 14.6014606,
+    "lng": 108.2916225,
+    "source": "nominatim",
+    "precision": "ward",
+    "current": {
+      "province": "51",
+      "ward": "23473"
+    },
+    "legacy": {
+      "province": "62",
+      "district": "613",
+      "ward": "23473"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 619.2,
+        "minutes": 482,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1029.3,
+        "minutes": 802,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 274.2,
+        "minutes": 200,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 400.2,
+        "minutes": 354,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 447.6,
+        "minutes": 409,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 778.4,
+        "minutes": 610,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1063.5,
+        "minutes": 829,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 357,
+        "minutes": 275,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 668.1,
+        "minutes": 546,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 261.4,
+        "minutes": 197,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 279.7,
+        "minutes": 242,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1337.9,
+        "minutes": 1038,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1113.2,
+        "minutes": 862,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [
     {
@@ -30,6 +152,7 @@
       "price": 739000,
       "from": "2026-06-17",
       "to": "2026-06-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -40,6 +163,7 @@
       "price": 1130000,
       "from": "2026-06-19",
       "to": "2026-09-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -50,6 +174,7 @@
       "price": 1450000,
       "from": "2026-09-19",
       "to": "2026-11-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -60,6 +185,7 @@
       "price": 2050000,
       "from": "2026-11-19",
       "to": "2026-12-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -70,6 +196,7 @@
       "price": 939000,
       "from": "2026-06-17",
       "to": "2026-06-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -80,6 +207,7 @@
       "price": 1430000,
       "from": "2026-06-19",
       "to": "2026-09-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -90,6 +218,7 @@
       "price": 1950000,
       "from": "2026-09-19",
       "to": "2026-11-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -100,6 +229,7 @@
       "price": 2650000,
       "from": "2026-11-19",
       "to": "2026-12-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -110,6 +240,7 @@
       "price": 1339000,
       "from": "2026-06-17",
       "to": "2026-06-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -120,6 +251,7 @@
       "price": 1830000,
       "from": "2026-06-19",
       "to": "2026-09-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -130,6 +262,7 @@
       "price": 2450000,
       "from": "2026-09-19",
       "to": "2026-11-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -140,6 +273,7 @@
       "price": 3350000,
       "from": "2026-11-19",
       "to": "2026-12-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -150,6 +284,7 @@
       "price": 1639000,
       "from": "2026-06-17",
       "to": "2026-06-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -160,6 +295,7 @@
       "price": 2230000,
       "from": "2026-06-19",
       "to": "2026-09-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -170,6 +306,7 @@
       "price": 2950000,
       "from": "2026-09-19",
       "to": "2026-11-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -180,6 +317,7 @@
       "price": 4050000,
       "from": "2026-11-19",
       "to": "2026-12-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -190,6 +328,7 @@
       "price": 2039000,
       "from": "2026-06-17",
       "to": "2026-06-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -200,6 +339,7 @@
       "price": 3230000,
       "from": "2026-06-19",
       "to": "2026-09-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -210,6 +350,7 @@
       "price": 4250000,
       "from": "2026-09-19",
       "to": "2026-11-18",
+      "inferred": [],
       "site": "actiup"
     },
     {
@@ -220,6 +361,7 @@
       "price": 5350000,
       "from": "2026-11-19",
       "to": "2026-12-18",
+      "inferred": [],
       "site": "actiup"
     }
   ],
@@ -450,5 +592,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:43:09.238Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

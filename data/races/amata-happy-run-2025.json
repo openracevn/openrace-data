@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "cong-ty-co-phan-do-thi-amata-bien-hoa",
   "organizer": "Công Ty Cổ Phần Đô Thị Amata Biên Hoà",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "KCN AMATA, Phường Long Bình, Tỉnh Đồng Nai",
     "city": null
+  },
+  "geo": {
+    "lat": 11.4253075,
+    "lng": 106.6029314,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "75",
+      "ward": "25432"
+    },
+    "legacy": {
+      "province": "70",
+      "district": "697",
+      "ward": "25432"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 85.7,
+        "minutes": 66,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1412.8,
+        "minutes": 1069,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 779.9,
+        "minutes": 588,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 493.6,
+        "minutes": 356,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 310.4,
+        "minutes": 238,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 244.9,
+        "minutes": 194,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1446.9,
+        "minutes": 1096,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 862.6,
+        "minutes": 663,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 176.7,
+        "minutes": 148,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 538.4,
+        "minutes": 446,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 276,
+        "minutes": 200,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1721.3,
+        "minutes": 1305,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1496.6,
+        "minutes": 1129,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

@@ -10,10 +10,107 @@
   "seriesId": null,
   "organizerId": "nexus-sport-events",
   "organizer": "Nexus Sport Events",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "TP. Mỹ Tho, Tiền Giang",
     "city": null
+  },
+  "geo": {
+    "lat": 10.3582555,
+    "lng": 106.359556,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "82",
+      "ward": "28249"
+    },
+    "legacy": {
+      "province": "82",
+      "district": "815",
+      "ward": "28252"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 71.7,
+        "minutes": 59,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1554.7,
+        "minutes": 1182,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 921.4,
+        "minutes": 700,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 480.8,
+        "minutes": 351,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 364.4,
+        "minutes": 279,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 107.3,
+        "minutes": 88,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1588.8,
+        "minutes": 1209,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 1004.1,
+        "minutes": 774,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 163.9,
+        "minutes": 142,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 686.7,
+        "minutes": 513,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 417.4,
+        "minutes": 311,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1863.2,
+        "minutes": 1418,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1638.5,
+        "minutes": 1242,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -66,5 +163,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

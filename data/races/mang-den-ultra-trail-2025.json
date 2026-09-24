@@ -10,10 +10,107 @@
   "seriesId": "mang-den-ultra-trail",
   "organizerId": "hoi-du-lich-mang-den",
   "organizer": "Hội Du Lịch Măng Đen",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Thị trấn Măng Đen , huyện Kon Plông, tỉnh Kon Tum",
     "city": null
+  },
+  "geo": {
+    "lat": 14.6699512,
+    "lng": 108.0288466,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "51",
+      "ward": "23504"
+    },
+    "legacy": {
+      "province": "62",
+      "district": "615",
+      "ward": "23503"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 615.4,
+        "minutes": 493,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1034.6,
+        "minutes": 834,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 279.6,
+        "minutes": 232,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 396.4,
+        "minutes": 364,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 443.8,
+        "minutes": 419,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 774.6,
+        "minutes": 620,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1068.7,
+        "minutes": 861,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 362.3,
+        "minutes": 306,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 664.4,
+        "minutes": 556,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 244.4,
+        "minutes": 231,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 275.9,
+        "minutes": 253,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1343.1,
+        "minutes": 1070,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1118.4,
+        "minutes": 894,
+        "method": "road",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -66,5 +163,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }

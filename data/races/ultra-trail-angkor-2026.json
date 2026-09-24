@@ -10,10 +10,107 @@
   "seriesId": "ultra-trail-angkor",
   "organizerId": "sdpo-va-phoenix-voyages-sports-events",
   "organizer": "SDPO và Phoenix Voyages Sports & Events",
-  "distances": [],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Siem Reap, Cambodia",
     "city": null
+  },
+  "geo": {
+    "lat": 21.0216685,
+    "lng": 105.8482517,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "01",
+      "ward": "00082"
+    },
+    "legacy": {
+      "province": "01",
+      "district": "002",
+      "ward": "00082"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1143.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 0.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": true
+      },
+      "da-nang": {
+        "km": 605.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1039.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1046.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1221.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 89.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 539,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1194.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 881.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 957.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 253.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 128.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
   },
   "prices": [],
   "currency": "VND",
@@ -65,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:41:20.492Z"
+  "updatedAt": "2026-09-24T06:49:38.787Z"
 }
