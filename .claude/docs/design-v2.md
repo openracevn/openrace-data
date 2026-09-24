@@ -1,5 +1,7 @@
 # Design v2: source-agnostic, self-maintaining race data
 
+> **Schema v3 (2026-09-24)** changed parts of this design: `distances` became `courses[]` (with meters, type, elevation), location gained a `geo` block (point, current and old admin codes, distance from 13 places), tiers gained `inferred`, races gained `edition`, and freshness is in `state/freshness.json`. See [plan 003](../plans/003-2026-09-24-schema-v3-geo-price.md) and [plan 004](../plans/004-2026-09-24-plan-003-build-spec.md). The rest still holds.
+
 Agreed with the user on 2026-09-23/24. **Build status (2026-09-24):** steps 1–3 are built: schema, pipeline, and the ActiUp, VnExpress Marathon and default race-site recipes, with 82 of 82 prices right in paid checks. See `status.md`. It replaces the ActiUp-centred design in `decisions.md` where the two disagree (noted in "What changes from v1"). Build against this doc, and update it when a decision changes.
 
 ## Goals

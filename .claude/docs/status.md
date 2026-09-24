@@ -24,13 +24,14 @@ Direction and the questions we're building toward: [roadmap.md](roadmap.md). Des
   - `check.yml` has v2 inputs (site / race / past / limit / max credits / free / dry run). Manual only.
   - `main.yml` validates, resyncs openrace-api when `data/` changed, and posts to Discord.
 - **openrace-api reads schema v2** (2026-09-24, openrace-api `65f6d00`): 300 races, 39 series and 113 organizers in production after a full resync (Main run 35907691347, 0 errors). `prices[]` plus a derived `priceFrom` (cheapest tier that isn't a group price); `/series` and `/organizers` endpoints. `region` is gone from the API.
+- **Schema v3 and the API (2026-09-24, plans 003 and 004):** `courses[]` with meters, `edition`, tier `inferred`, `geo` (267 of 300 located), `state/freshness.json`. openrace-api reads v3: price on a date, near / from a place, sorting, freshness on every race, daily freshness cron. See [summary part 3](2026-09-24-summary-part-3.md).
 
 ## Data (2026-09-24)
 
 - **Series from slugs across years:** 39 series, 92 races (commit 2f7a6bf). Renamed events aren't linked; set `seriesId` by hand with an override.
 - **300 ActiUp races seeded with `--facts-only`** (0 credits; commit bf98deb, fix f459f9b): every sports event ActiUp lists, 2024–2027, 35 of them upcoming.
   - **What they have:** name, dates, venue, organizer (113 organizers), sale status, and links.
-  - **What they don't have yet:** prices, distances and types (`other`), until a normal run reads them. `state/checks.json` marks them `facts`.
+  - **What they don't have yet:** prices, courses and types (`other`), until a normal run reads them. `state/checks.json` marks them `facts`.
 - **First paid batch (2026-09-24): 10 upcoming ActiUp races read, 100 credits** (commit ca25eed). Checked by eye against every price image. That found 5 error patterns, now fixed in normalization and replayed for free (9341f84, 9dd2444); see the lessons in `scripts/lib/recipes/README.md`. Known answers added: Sơn Trà City Trail, Quảng Trực, Đà Lạt Xanh 2026.
   - **Vũng Tàu City Trail 2026: prices set by hand** (override, commit 26545c4). The model shifted the image's rows. A re-read with the new prompt (10 credits) shifted them again. The override stays until someone removes it (`npm run edit -- unset vung-tau-city-trail prices`), so later price changes on ActiUp won't show.
   - Tết Run Miền Nam 2027: the Early Bird starts on 2026-10-22, but the image only says "until 22/10".
