@@ -344,6 +344,8 @@ export const IndexEntrySchema = z.object({
   // without reading every race file.
   name: raceName,
   date: raceDate,
+  // The race's last day, for freshness (final after it, and never checked again).
+  endDate: raceDate.nullable().default(null),
   lastModified: isoDateTime,
   // The race's file in data/races (raceFileName), so readers don't need the naming rule.
   file: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*-\d{4}\.json$/, "expected <slug>-<year>.json"),

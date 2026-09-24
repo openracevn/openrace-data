@@ -24,6 +24,7 @@ if (!file) {
 }
 
 const now = new Date().toISOString();
+const config = loadSites();
 const raw = JSON.parse(readFileSync(file, "utf8")) as Array<Partial<SyncInput>>;
 const inputs: SyncInput[] = raw.map((r) => ({
   url: String(r.url),
@@ -42,8 +43,8 @@ const result = await syncToGitHub(
     branch: env("GITHUB_BRANCH") ?? "main",
   },
   inputs,
-  loadSites(),
-  { dryRun: !commit, context: "Manual sync via scripts/sync-cli.ts", now },
+  config,
+  { dryRun: !commit, context: "Manual sync via scripts/sync-cli.ts", now, config },
 );
 
 if (result.changes.length === 0) console.log("No changes.");

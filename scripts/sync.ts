@@ -5,9 +5,11 @@
  * can be tested and reused by the checker (`check.ts`), hand edits and the CLI.
  */
 import { changedFields, deepEqual, stabilize } from "./lib/diff.ts";
+import { FRESHNESS_PATH, buildFreshness } from "./lib/freshness.ts";
 import { GitHubRepo, isNotFastForward, type GitHubTarget } from "./lib/github.ts";
 import { normalizeExtraction } from "./lib/extraction.ts";
 import { applyOverrides, fieldFlags, isEntityRef, reconcile, type EntityRef, type StoredExtraction } from "./lib/reconcile.ts";
+import { CHECKS_PATH, parseChecks, serializeSorted } from "./lib/state.ts";
 import {
   INDEX_PATH,
   IndexSchema,
@@ -375,6 +377,7 @@ function indexEntry(record: Race): IndexEntry {
     slug: record.slug,
     name: record.name,
     date: record.date,
+    endDate: record.endDate,
     lastModified: record.updatedAt,
     file: raceFileName(record.slug, record.date),
     seriesId: record.seriesId,
@@ -540,6 +543,8 @@ export function formatCommitMessage(plan: SyncPlan, context?: string): string {
 export type SyncResult = SyncPlan & { commitSha: string | null };
 
 export type SyncOptions = {
+  /** Site list, for the freshness cadences. Every commit also writes state/freshness.json. */
+  config: SitesConfig;
   context?: string;
   dryRun?: boolean;
   now?: string;
@@ -555,8 +560,22 @@ export type SyncOptions = {
 };
 
 /** Source inputs → one commit on the branch head (see commitToGitHub). */
-export async function syncToGitHub(target: GitHubTarget, inputs: readonly SyncInput[], config: SitesConfig, opts: SyncOptions = {}): Promise<SyncResult> {
-  return commitToGitHub(target, (store) => planSync(store, inputs, config, opts.now), opts);
+export async function syncToGitHub(target: GitHubTarget, inputs: readonly SyncInput[], config: SitesConfig, opts: SyncOptions): Promise<SyncResult> {
+  return commitToGitHub(target, (store) => planSync(store, inputs, config, opts.now), { ...opts, config });
+}
+
+/**
+ * state/freshness.json for a commit: how fresh each race was when it landed, from
+ * the index after the commit's race changes (plan.files) and state/checks.json
+ * after the commit's extraFiles (written by check.ts). Every commit through
+ * commitToGitHub carries it, so check, agent-read, renormalize and edit all write
+ * it from this one place.
+ */
+export async function freshnessFile(store: RaceStore, plan: SyncPlan, extra: Record<string, string>, config: SitesConfig, now: Date): Promise<Record<string, string>> {
+  const indexText = plan.files[INDEX_PATH] ?? (await store.read(INDEX_PATH));
+  const index = IndexSchema.parse(JSON.parse(indexText ?? "[]"));
+  const checks = parseChecks(extra[CHECKS_PATH] ?? (await store.read(CHECKS_PATH)));
+  return { [FRESHNESS_PATH]: serializeSorted(buildFreshness(index, checks, config, now)) };
 }
 
 /**
@@ -567,9 +586,10 @@ export async function syncToGitHub(target: GitHubTarget, inputs: readonly SyncIn
 export async function commitToGitHub(
   target: GitHubTarget,
   planAt: (store: RaceStore) => Promise<SyncPlan>,
-  opts: SyncOptions = {},
+  opts: SyncOptions,
 ): Promise<SyncResult> {
   const repo = new GitHubRepo(target);
+  const now = opts.now ? new Date(opts.now) : new Date();
   for (let attempt = 1; ; attempt++) {
     const head = await repo.headSha();
     const store = repo.storeAt(head);
@@ -577,10 +597,11 @@ export async function commitToGitHub(
     const extra = opts.extraFiles ? await opts.extraFiles(store) : {};
     const unchanged = plan.changes.length === 0 && Object.keys(extra).length === 0;
     if (unchanged || opts.dryRun) return { ...plan, commitSha: null };
+    const files = { ...plan.files, ...extra, ...(await freshnessFile(store, plan, extra, opts.config, now)) };
     const message =
       opts.message ?? (plan.changes.length > 0 ? formatCommitMessage(plan, opts.context) : (opts.bookkeepingMessage ?? "state: update"));
     try {
-      const commitSha = await repo.commitFiles(head, { ...plan.files, ...extra }, message);
+      const commitSha = await repo.commitFiles(head, files, message);
       return { ...plan, commitSha };
     } catch (err) {
       if (attempt >= 3 || !isNotFastForward(err)) throw err;

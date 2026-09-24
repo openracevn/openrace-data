@@ -238,7 +238,7 @@ async function commit() {
     },
     inputs,
     config,
-    { now: checkedAt, context, extraFiles: checksFile, bookkeepingMessage: `state: agent read ${inputs.length} page(s), no race changes\n\n${context}` },
+    { now: checkedAt, context, extraFiles: checksFile, bookkeepingMessage: `state: agent read ${inputs.length} page(s), no race changes\n\n${context}`, config },
   );
   console.log(`\n${result.changes.length ? formatCommitMessage(result) : "No race changes."}`);
   for (const s of result.skipped) console.log(`skipped ${s.url}: ${s.reason}`);

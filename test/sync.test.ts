@@ -1,11 +1,12 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { splitMessages } from "../scripts/lib/changes.ts";
+import { FRESHNESS_PATH, FreshnessSchema } from "../scripts/lib/freshness.ts";
 import { fieldFlags, type StoredExtraction } from "../scripts/lib/reconcile.ts";
 import { INDEX_PATH, ORGANIZERS_PATH, RaceSchema, SERIES_PATH, racePath, type IndexEntry, type Race } from "../scripts/lib/schema.ts";
 import { parseSites, type SitesConfig } from "../scripts/lib/sites.ts";
 import { seriesName } from "../scripts/lib/series.ts";
-import { formatCommitMessage, nameSimilarity, planEdit, planRename, planSync, type RaceStore, type SyncInput } from "../scripts/sync.ts";
+import { formatCommitMessage, freshnessFile, nameSimilarity, planEdit, planRename, planSync, type RaceStore, type SyncInput } from "../scripts/sync.ts";
 
 const config: SitesConfig = parseSites(`
 monthlyCredits: 900
@@ -118,6 +119,22 @@ describe("planSync", () => {
     assert.deepEqual(JSON.parse(store.files[ORGANIZERS_PATH]!), [{ id: "pulse-active", name: "Pulse Active", website: null }]);
     assert.equal(race.confidence, "single-sourced");
     assert.deepEqual(race.flags, []);
+  });
+
+  it("a planned commit also writes state/freshness.json, with an entry for the synced race", async () => {
+    const store = memoryStore();
+    const p = await plan(store, [officialInput()]);
+    apply(store, p.files);
+    const extra = await freshnessFile(store, p, {}, config, new Date("2026-09-24T03:00:00Z"));
+    const race = readRace(store, "hcmc-marathon-2027");
+    const fresh = FreshnessSchema.parse(JSON.parse(extra[FRESHNESS_PATH]!));
+    assert.deepEqual(fresh[race.id], {
+      lastCheckedAt: null,
+      lastChangedAt: race.updatedAt,
+      cadence: "quarterly",
+      dueAt: null,
+      final: false,
+    });
   });
 
   it("writes nothing when a re-read says the same", async () => {

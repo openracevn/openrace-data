@@ -42,7 +42,7 @@ const result = commit
       },
       inputs,
       config,
-      { context },
+      { context, config },
     )
   : { ...(await planSync(local, inputs, config)), commitSha: null };
 

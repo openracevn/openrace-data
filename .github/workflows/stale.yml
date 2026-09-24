@@ -1,0 +1,24 @@
+name: Stale races
+
+# Every Monday 08:00 in Vietnam: a Discord line with the upcoming races whose
+# freshness is stale, so someone reads them before the data is too old to trust.
+# No page reads and no Firecrawl credits: it only reads the committed
+# state/freshness.json written by the check run.
+on:
+  schedule:
+    - cron: "0 1 * * 1"
+  workflow_dispatch:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run notify:stale
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}

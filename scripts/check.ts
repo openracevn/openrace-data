@@ -298,6 +298,7 @@ if (dryRun) {
     context,
     bookkeepingMessage: `state: checked ${runChecks.size} page(s), no race changes\n\n${context}`,
     extraFiles: stateFiles,
+    config,
   });
   plan = result;
   commitSha = result.commitSha;

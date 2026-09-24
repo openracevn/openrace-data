@@ -120,7 +120,9 @@ async function run(): Promise<void> {
       branch: env("GITHUB_BRANCH") ?? "main",
     },
     planAt!,
-    command === "add" ? { context: `Entered by hand (openrace): ${reason}` } : { message: message! },
+    command === "add"
+      ? { config, context: `Entered by hand (openrace): ${reason}` }
+      : { config, message: message! },
   );
   report(result, result.commitSha);
 }

@@ -4,6 +4,7 @@
  * parse and are in canonical formatting.
  */
 import { existsSync, readdirSync, readFileSync } from "node:fs";
+import { FRESHNESS_PATH, FreshnessSchema } from "./lib/freshness.ts";
 import { jsonSchemaFiles } from "./lib/jsonschema.ts";
 import { READS_PATH, ReadCacheSchema } from "./lib/read.ts";
 import {
@@ -103,6 +104,7 @@ checkState(CHECKS_PATH, ChecksSchema);
 checkState(SITES_STATE_PATH, SitesStateSchema);
 checkState(CREDITS_PATH, CreditsSchema);
 checkState(READS_PATH, ReadCacheSchema);
+checkState(FRESHNESS_PATH, FreshnessSchema);
 
 for (const [path, expected] of Object.entries(jsonSchemaFiles())) {
   const actual = existsSync(path) ? readFileSync(path, "utf8") : null;
