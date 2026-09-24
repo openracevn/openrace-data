@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "center": {
+        "type": "array",
+        "prefixItems": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "number"
+          }
+        ],
+        "items": false,
+        "minItems": 2,
+        "maxItems": 2
+      },
+      "radiusKm": {
+        "type": "number",
+        "minimum": 0
+      }
+    },
+    "required": [
+      "id",
+      "name",
+      "center",
+      "radiusKm"
+    ],
+    "additionalProperties": false
+  },
+  "$id": "https://openrace.vn/schema/v3/places.schema.json",
+  "title": "OpenRace places (data/places.json)",
+  "x-schema-version": 3
+}

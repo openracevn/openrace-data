@@ -12,6 +12,8 @@
     "test": "node --import tsx --test test/*.test.ts",
     "validate": "tsx scripts/validate.ts",
     "schema": "tsx scripts/schema.ts",
+    "geo:ref": "tsx scripts/geo-ref.ts",
+    "geo": "tsx scripts/geo.ts",
     "check": "tsx scripts/check.ts",
     "edit": "tsx scripts/edit.ts",
     "sync": "tsx scripts/sync-cli.ts",

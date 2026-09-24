@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "current": {
+      "type": "object",
+      "properties": {
+        "provinces": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string",
+                "pattern": "^\\d{2}$"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "code",
+              "name"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "provinces"
+      ],
+      "additionalProperties": false
+    },
+    "legacy": {
+      "type": "object",
+      "properties": {
+        "provinces": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string",
+                "pattern": "^\\d{2}$"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "code",
+              "name"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "districts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string",
+                "pattern": "^\\d{3}$"
+              },
+              "province": {
+                "type": "string",
+                "pattern": "^\\d{2}$"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "code",
+              "province",
+              "name"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "provinces",
+        "districts"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "current",
+    "legacy"
+  ],
+  "additionalProperties": false,
+  "$id": "https://openrace.vn/schema/v3/admin-units.schema.json",
+  "title": "OpenRace administrative units (data/admin-units.json)",
+  "x-schema-version": 3
+}

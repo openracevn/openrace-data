@@ -165,6 +165,7 @@ export const GeoSchema = z.object({
       km: z.number().nonnegative(),
       minutes: z.number().int().nonnegative().nullable(),
       method: z.enum(["road", "straight_line"]),
+      near: z.boolean(),
     }),
   ),
 });

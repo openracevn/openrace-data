@@ -1,0 +1,119 @@
+[
+  {
+    "id": "hcmc",
+    "name": "TP. Hồ Chí Minh",
+    "center": [
+      10.7725,
+      106.698
+    ],
+    "radiusKm": 30
+  },
+  {
+    "id": "ha-noi",
+    "name": "Hà Nội",
+    "center": [
+      21.0285,
+      105.8522
+    ],
+    "radiusKm": 30
+  },
+  {
+    "id": "da-nang",
+    "name": "Đà Nẵng",
+    "center": [
+      16.0612,
+      108.2272
+    ],
+    "radiusKm": 25
+  },
+  {
+    "id": "nha-trang",
+    "name": "Nha Trang",
+    "center": [
+      12.2388,
+      109.1967
+    ],
+    "radiusKm": 25
+  },
+  {
+    "id": "da-lat",
+    "name": "Đà Lạt",
+    "center": [
+      11.9404,
+      108.4419
+    ],
+    "radiusKm": 25
+  },
+  {
+    "id": "can-tho",
+    "name": "Cần Thơ",
+    "center": [
+      10.034,
+      105.788
+    ],
+    "radiusKm": 25
+  },
+  {
+    "id": "hai-phong",
+    "name": "Hải Phòng",
+    "center": [
+      20.8449,
+      106.6881
+    ],
+    "radiusKm": 25
+  },
+  {
+    "id": "hue",
+    "name": "Huế",
+    "center": [
+      16.4637,
+      107.5909
+    ],
+    "radiusKm": 25
+  },
+  {
+    "id": "vung-tau",
+    "name": "Vũng Tàu",
+    "center": [
+      10.346,
+      107.0843
+    ],
+    "radiusKm": 20
+  },
+  {
+    "id": "quy-nhon",
+    "name": "Quy Nhơn",
+    "center": [
+      13.7765,
+      109.2237
+    ],
+    "radiusKm": 20
+  },
+  {
+    "id": "buon-ma-thuot",
+    "name": "Buôn Ma Thuột",
+    "center": [
+      12.6667,
+      108.0378
+    ],
+    "radiusKm": 20
+  },
+  {
+    "id": "sa-pa",
+    "name": "Sa Pa",
+    "center": [
+      22.3364,
+      103.8438
+    ],
+    "radiusKm": 20
+  },
+  {
+    "id": "ha-long",
+    "name": "Hạ Long",
+    "center": [
+      20.9517,
+      107.08
+    ],
+    "radiusKm": 25
+  }
+]

@@ -5,6 +5,7 @@
  * a tier's from <= to, the race-year window) are enforced here, not there.
  */
 import { z } from "zod";
+import { AdminUnitsSchema, PlacesListSchema } from "./geo.ts";
 import { IndexSchema, OrganizerListSchema, RaceSchema, SCHEMA_VERSION, SeriesListSchema, serialize } from "./schema.ts";
 
 export const SCHEMA_DIR = "schema";
@@ -22,5 +23,7 @@ export function jsonSchemaFiles(): Record<string, string> {
     [`${SCHEMA_DIR}/index.schema.json`]: file("index.schema.json", "OpenRace race index (data/index.json)", IndexSchema),
     [`${SCHEMA_DIR}/series.schema.json`]: file("series.schema.json", "OpenRace series (data/series.json)", SeriesListSchema),
     [`${SCHEMA_DIR}/organizers.schema.json`]: file("organizers.schema.json", "OpenRace organizers (data/organizers.json)", OrganizerListSchema),
+    [`${SCHEMA_DIR}/places.schema.json`]: file("places.schema.json", "OpenRace places (data/places.json)", PlacesListSchema),
+    [`${SCHEMA_DIR}/admin-units.schema.json`]: file("admin-units.schema.json", "OpenRace administrative units (data/admin-units.json)", AdminUnitsSchema),
   };
 }

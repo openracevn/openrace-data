@@ -21,12 +21,14 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { env, requireEnv } from "./lib/env.ts";
+import { enrichGeo, geoTargetFromExtraction, geoTargetFromRace, type GeoTarget } from "./lib/geocode.ts";
+import { GEO_PATH, parseGeoCache, type GeoCache, type GeoCacheEntry } from "./lib/geo.ts";
 import { IMAGE_EXTRACTION, PAGE_EXTRACTION, normalizeExtraction } from "./lib/extraction.ts";
 import { createHttp } from "./lib/http.ts";
 import { snapshotFingerprint } from "./lib/read.ts";
 import { recipeFor } from "./lib/recipes/index.ts";
 import type { RaceRef, Recipe, RecipeContext, Snapshot } from "./lib/recipes/types.ts";
-import { INDEX_PATH, IndexSchema } from "./lib/schema.ts";
+import { INDEX_PATH, IndexSchema, RaceSchema, racePath, upgradeRace } from "./lib/schema.ts";
 import { loadSites, roleOf, siteForUrl, type Site } from "./lib/sites.ts";
 import { canonicalSourceUrl } from "./lib/slug.ts";
 import { CHECKS_PATH, parseChecks, serializeSorted, vietnamDate } from "./lib/state.ts";
@@ -216,14 +218,48 @@ async function commit() {
   for (const p of problems) console.log(`\n✗ ${p}`);
   if (inputs.length === 0) fail("\nnothing to commit");
 
+  const index = IndexSchema.parse(JSON.parse((await local.read(INDEX_PATH)) ?? "[]"));
+  const geoTargets: GeoTarget[] = [];
+  for (const input of inputs) {
+    const normalized = normalizeExtraction(input.extracted);
+    if (normalized.ok) {
+      geoTargets.push({
+        id: input.url,
+        name: normalized.facts.name,
+        types: normalized.facts.types,
+        location: { venue: normalized.facts.venue, city: normalized.facts.city },
+        mapsUrls: geoTargetFromExtraction(input.extracted)?.mapsUrls ?? [],
+      });
+    }
+    const entry = index.find((candidate) => candidate.sourceUrls.includes(input.url));
+    if (!entry) continue;
+    const text = await local.read(racePath(entry));
+    if (text) geoTargets.push(geoTargetFromRace(RaceSchema.parse(upgradeRace(JSON.parse(text)))));
+  }
+  let geoCache: GeoCache = parseGeoCache(await local.read(GEO_PATH));
+  const filledGeo = new Map<string, GeoCacheEntry>();
+  await enrichGeo(geoTargets, geoCache, {
+    onEntry: (next, key) => {
+      geoCache = next;
+      filledGeo.set(key, next[key]!);
+    },
+    onError: (target, error) => console.error(`geo lookup failed for ${target.name}: ${error.message}`),
+  });
+
   const context = `Read by an agent (scripts/agent-read.ts), not Firecrawl: ${inputs.length} race page(s).`;
   const checksFile = async (store: RaceStore) => {
     const checks = parseChecks(await store.read(CHECKS_PATH));
     for (const [url, fingerprint] of fingerprints) checks[url] = { lastCheckedAt: checkedAt, status: "ok", fingerprint };
-    return { [CHECKS_PATH]: serializeSorted(checks) };
+    const files: Record<string, string> = { [CHECKS_PATH]: serializeSorted(checks) };
+    if (filledGeo.size > 0) {
+      const geo = parseGeoCache(await store.read(GEO_PATH));
+      for (const [key, entry] of filledGeo) geo[key] = entry;
+      files[GEO_PATH] = serializeSorted(geo);
+    }
+    return files;
   };
   if (!doCommit) {
-    const plan = await planSync(local, inputs, config, checkedAt);
+    const plan = await planSync(local, inputs, config, checkedAt, undefined, geoCache);
     console.log(`\n${plan.changes.length ? formatCommitMessage(plan) : "No race changes."}`);
     for (const s of plan.skipped) console.log(`skipped ${s.url}: ${s.reason}`);
     console.log("\nDry run: re-run with --commit to write (GITHUB_TOKEN=$(gh auth token)).");
@@ -238,7 +274,7 @@ async function commit() {
     },
     inputs,
     config,
-    { now: checkedAt, context, extraFiles: checksFile, bookkeepingMessage: `state: agent read ${inputs.length} page(s), no race changes\n\n${context}`, config },
+    { now: checkedAt, context, extraFiles: checksFile, bookkeepingMessage: `state: agent read ${inputs.length} page(s), no race changes\n\n${context}`, config, geoCache },
   );
   console.log(`\n${result.changes.length ? formatCommitMessage(result) : "No race changes."}`);
   for (const s of result.skipped) console.log(`skipped ${s.url}: ${s.reason}`);

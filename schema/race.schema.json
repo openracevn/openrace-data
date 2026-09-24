@@ -337,12 +337,16 @@
                       "road",
                       "straight_line"
                     ]
+                  },
+                  "near": {
+                    "type": "boolean"
                   }
                 },
                 "required": [
                   "km",
                   "minutes",
-                  "method"
+                  "method",
+                  "near"
                 ],
                 "additionalProperties": false
               }
