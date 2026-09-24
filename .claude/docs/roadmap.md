@@ -8,6 +8,8 @@ Day-to-day tasks live in [status.md](status.md); how things are built lives in [
 
 **The trustworthy source for races in Vietnam.** People (and other systems) use OpenRace because its data is correct, complete and current, and because they can see why they can trust it.
 
+**Focus on data, not people.** OpenRace is about races, not runners, organizers or users.
+
 ## How we earn trust (principles no plan may weaken)
 
 1. **Every fact traces to a source.** Each race keeps its source links and what each source said (`sources[].extracted`). Nothing is invented.
@@ -61,10 +63,14 @@ Old place names ("Nha Trang", "Bình Dương") must keep working after the 2025 
 
 - **Selling tickets, or tracking ticket quotas or sold-out tiers.** We record tiers and their dates only.
 - **Scraping GPX files.** GPX is added by hand by the user, later.
-- *To confirm with the user:* user accounts and social features (reviews, comments); races outside Vietnam; race results and timing.
+- **User accounts and social features** (profiles, reviews, comments).
+- **Races outside Vietnam.**
+- **Race results and timing** (finish times, rankings, live tracking).
+- **Anything about or for people rather than races:** paid listings or sponsored ranking, organizers editing their own races (their site is a source; corrections are our overrides), personal data about runners.
 
 ## Change log
 
 Deliberate changes of direction, newest first.
 
+- **2026-09-24:** Non-goals confirmed: accounts and social features, races outside Vietnam, results and timing, and anything about people rather than races ("focus on data, not people").
 - **2026-09-24:** Location is normalized after all. Races get a point, current and old admin codes, and driving distance from 13 fixed places (was "location as written, no lat/lng"). Scheduled runs may use free services (was "Firecrawl only"). Plan 003.
