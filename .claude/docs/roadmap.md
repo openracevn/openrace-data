@@ -32,7 +32,7 @@ Day-to-day tasks live in [status.md](status.md); how things are built lives in [
    - share of races with GPX
    - price trends by year
    - deeper stats once there's enough history (backfill)
-5. **Open it up.** A public API and an MCP server, then act as a data provider for others (for example Firecrawl's provider catalogue, other apps).
+5. **Open it up.** A public API and an MCP server, then act as a data provider for others (for example Firecrawl's provider catalogue, other apps). *API built; MCP server built ([plan 005](../plans/005-2026-09-24-mcp-server.md), live 2026-09-24).*
 
 ## Questions OpenRace should answer
 

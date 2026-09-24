@@ -25,6 +25,7 @@ Direction and the questions we're building toward: [roadmap.md](roadmap.md). Des
   - `main.yml` validates, resyncs openrace-api when `data/` changed, and posts to Discord.
 - **openrace-api reads schema v2** (2026-09-24, openrace-api `65f6d00`): 300 races, 39 series and 113 organizers in production after a full resync (Main run 35907691347, 0 errors). `prices[]` plus a derived `priceFrom` (cheapest tier that isn't a group price); `/series` and `/organizers` endpoints. `region` is gone from the API.
 - **Schema v3 and the API (2026-09-24, plans 003 and 004):** `courses[]` with meters, `edition`, tier `inferred`, `geo` (267 of 300 located), `state/freshness.json`. openrace-api reads v3: price on a date, near / from a place, sorting, freshness on every race, daily freshness cron. See [summary part 3](2026-09-24-summary-part-3.md). The 61-race geo fix (8719672) is in the API too (resynced after the user upgraded the Cloudflare plan).
+- **The MCP server (2026-09-24, [plan 005](../plans/005-2026-09-24-mcp-server.md)), path step 5:** deployed, `openracevn/openrace-mcp`, stateless Streamable HTTP over a service binding to openrace-api. Five tools (`search_races`, `get_race`, `list_places`, `find_series`, `get_series`) answer the roadmap's six questions in one or two calls — checked live by `scripts/eval.ts` and by hand through the deployed server. `https://openrace-mcp.bmp.workers.dev` (`GET /` lists connect instructions and tools), inspector at `https://openrace-inspector.pages.dev`. openrace-api got a small companion change: an `X-MCP-Secret` bypass (`source = mcp-upstream` in the metrics, so a tool call isn't double-counted), and `src/lib/arg-summary.ts` (copied into both repos) writes `blob8`, a coarsened "what people ask" summary, on `/races` and every MCP tool call. Not yet done: step 5 of the plan itself ("try it with a real assistant" — a live Claude session asking the six questions in Vietnamese and English) and step 6 (turning that into a contract-changes list for openrace-api) — see the plan file for a running note on both.
 
 ## Data (2026-09-24)
 
@@ -44,7 +45,7 @@ Free plan: 1,000 credits per billing period (23rd to 23rd). On 2026-09-24, 1,453
 
 ## Next
 
-- [ ] **MCP server: [plan 005](../plans/005-2026-09-24-mcp-server.md)** (path step 5). Then the frontend, after the API contract has been through real use (it isn't on the roadmap path yet: add it when that plan is written).
+- [ ] **MCP server: [plan 005](../plans/005-2026-09-24-mcp-server.md)** (path step 5) — deployed and working (see above); left: try it with a real assistant in Vietnamese and English, and write up the contract list for openrace-api. Then the frontend, after the API contract has been through real use (it isn't on the roadmap path yet: add it when that plan is written).
 - [ ] **Read the other 29 upcoming ActiUp races with the `agent-read` skill** (free, batches of 5–10). Firecrawl batches are on hold (user, 2026-09-24). Then VM (15 races) and the race sites the same way.
 - [ ] Paid check of the default recipe on Hạ Long, Lâm Đồng Trail and Run To Live (≤20–50 each), with their prices added to `test/answers.test.ts`.
 - [ ] Recipes: bibchung (group prices; server-rendered), vietnammtbseries (hub).
