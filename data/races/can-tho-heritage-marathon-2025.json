@@ -16,7 +16,102 @@
     "venue": "Quảng trường công viên Sông Hậu - TP Cần Thơ",
     "city": null
   },
-  "geo": null,
+  "geo": {
+    "lat": 10.034,
+    "lng": 105.788,
+    "source": "place",
+    "precision": "province",
+    "current": {
+      "province": "92",
+      "ward": "31135"
+    },
+    "legacy": {
+      "province": "92",
+      "district": "916",
+      "ward": "31135"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 129,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1222.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 720.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 445.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 359,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 0,
+        "minutes": null,
+        "method": "straight_line",
+        "near": true
+      },
+      "hai-phong": {
+        "km": 1206,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 741.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 146,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 559.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 381.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1383.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1221.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
   "prices": [],
   "currency": "VND",
   "registrationStatus": "closed",
@@ -67,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-09-24T06:56:51.849Z"
 }
