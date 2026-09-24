@@ -4,6 +4,7 @@ Work plans for a session or an agent, one file each: `NNN-YYYY-MM-DD-topic.md`.
 
 - `NNN` is a running number (001, 002, ...). A new plan takes the highest number + 1. Numbers are never reused.
 - The date is the day the plan is for.
+- **Every plan has a "Roadmap fit" section** near the top: which roadmap question or path step it serves (`.claude/docs/roadmap.md`), and any tension with a trust principle, constraint or non-goal. If there is tension, the user confirms it and it goes in the roadmap's change log before the plan is built.
 
 | # | Plan | Status |
 | --- | --- | --- |

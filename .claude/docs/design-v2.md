@@ -14,7 +14,7 @@ Once the core fields are trustworthy, we build queries on top, e.g. "I'm in Hà 
 ## Constraints (user decisions)
 
 - **Any source, not just ActiUp.** Small company races mostly appear on aggregators (ActiUp, bibchung, 5bib, iRace...). Big annual races run their own sites (VnExpress Marathon, HCMC Marathon, Hạ Long...).
-- **Scheduled runs use Firecrawl only.** No other API keys (no Claude API, no geocoding). An agent (Claude Code, Antigravity...) can do backfills by hand through a skill. Both paths must write the same format.
+- **Scheduled runs use Firecrawl only.** No other API keys (no Claude API, no geocoding). *(Changed 2026-09-24: free services are allowed in scheduled runs, keyless or with a free key: Nominatim for geocoding and OpenRouteService for driving distance, both cached. Paid APIs and the Claude API are still out. See [plan 003](../plans/003-2026-09-24-schema-v3-geo-price.md).)* An agent (Claude Code, Antigravity...) can do backfills by hand through a skill. Both paths must write the same format.
 - **Budget:** about $20 in the first month (Firecrawl Hobby, 5,000 credits, for the backfill), then **≤ $5/month**, which in practice means the **Free plan: 1,000 credits/month** (pay-as-you-go top-ups need a paid plan). Minimize credits everywhere.
 - **Scale:** up to 100–150 races a year.
 - **Auto-commit everything.** The user doesn't review. They glance at Discord when they have time and fix mistakes by hand later. Checks before commit must do the reviewing.

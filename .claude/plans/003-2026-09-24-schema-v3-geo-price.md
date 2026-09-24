@@ -19,6 +19,14 @@ The API must answer questions like these:
 | All races under 300k at today's tier | price per distance on a given date |
 | How many times has Lâm Đồng Trail been held? | series + edition number |
 | Sort upcoming races by price, by longest or by shortest distance | one price per race on a date + distance as a number |
+| When was this race last checked? Can I trust it? | freshness per race in the API |
+
+## Roadmap fit
+
+- **Serves** path step 2 (the questions people ask) and step 3 (freshness visible in the API). It is also groundwork for step 4 (stats): admin codes and region, `courses[].meters` and `elevationGain`.
+- **Changes direction:** location is normalized, and scheduled runs may use free services. Confirmed by the user and recorded in the roadmap's change log (2026-09-24).
+- **Trust principles:** keeps venue text and sources as written. Inferred tier dates are marked `inferred`. Unknown prices never count as cheap. Stale data is flagged, not hidden.
+- **Out of scope:** GPX (added by hand by the user, later) and ticket quotas (non-goal).
 
 ## Decisions (agreed 2026-09-24)
 
@@ -69,6 +77,33 @@ The API must answer questions like these:
 - Driving km and minutes from every place, via an OpenRouteService matrix request (free key; OpenRace is non-commercial for now). One request covers about 230 races × 15 places (3,500 pairs per request).
 - Islands (Phú Quốc, Côn Đảo, Cát Bà, Lý Sơn) have no road route: `access: "flight_or_ferry"`, straight-line km instead.
 - Points with only province precision are flagged and left out of distance sorting.
+
+**Freshness** (trust principle 2: fresh, and visibly fresh)
+- Today the truth is `state/checks.json` (last check per source URL). Race files only change when a canonical field changes, so they don't record routine checks. That's deliberate, to avoid a commit and a Discord post on every check. `main.yml` ignores pushes that only touch `state/`, so the API never sees them.
+- The check run also writes **`state/freshness.json`**, keyed by race id:
+
+  ```json
+  "<race id>": {
+    "lastCheckedAt": "2026-09-24T03:00:00Z",   // newest check over the race's sources
+    "lastChangedAt": "2026-09-20T10:00:00Z",   // the race file's updatedAt
+    "cadence": "weekly",                       // from its sources' `check` in config/sites.yaml; the most frequent wins
+    "dueAt": "2026-10-01",
+    "final": false                             // true after race day: never checked again, and never stale
+  }
+  ```
+
+- **The API reads it on a daily Worker cron trigger** (free, one GitHub request a day) and on every sync. Each race returns:
+
+  ```json
+  "freshness": { "lastCheckedAt": "…", "lastChangedAt": "…", "cadence": "weekly", "status": "fresh | due | stale | final" }
+  ```
+
+  - `stale` = more than 2× the cadence since the last check.
+  - Stale races are flagged, never hidden. `?fresh=true` filters them out.
+- `GET /` shows the last sync time and commit (closes the openrace-api open item), and how many upcoming races are stale.
+- Answers that depend on prices (`priceAt`, `maxPrice`, sort by price) carry the race's freshness, so a price read long ago is visibly old.
+- **While the daily cron is off** (path step 3), most races will honestly show `due` or `stale`. That's expected, and the count tells us when the data is ready for the cron.
+- Discord: a weekly line with the stale upcoming races.
 
 **History**
 - New race field `edition` (the organizer's stated number, "lần thứ 5"). The API answers "5th edition (4 on record)", or "N on record" when there's no stated number.
@@ -127,6 +162,12 @@ The frontend must show "© OpenStreetMap contributors" (ODbL).
 4. Run it over all races; list the ones with no point or only province precision so the user can set them with `npm run edit`.
 5. Discord: show the resolved province/ward, and flag races whose point is approximate.
 
+## Part 2b: openrace-data, freshness
+
+1. The check run (and `agent-read -- commit`, and `npm run edit`) writes `state/freshness.json` for every race it touched. A one-off script builds it for all races from `state/checks.json`, the race files and `config/sites.yaml`.
+2. Tests: cadence from several sources (the most frequent wins), `final` after race day (Vietnam date), `dueAt`, and `stale` at 2× cadence.
+3. Discord: the weekly stale-races line.
+
 ## Part 3: openrace-api
 
 1. D1 migration:
@@ -145,13 +186,18 @@ The frontend must show "© OpenStreetMap contributors" (ODbL).
    - `after=<series or race>`: races after that race's date
 
    Each race returns `courses[].priceAt = { price, tier, kind, validTo, next, status: on_sale | not_yet_open | ended | no_price }`.
-4. Series: an edition count per series (stated `edition` or "N on record").
-5. Keep D1 rows read low:
+4. Freshness:
+   - a `freshness` column (or table) filled from `state/freshness.json`
+   - a daily cron trigger in `wrangler.toml` that re-reads the file
+   - `freshness` on every race and `?fresh=true`
+   - last sync time and commit, plus the stale count, on `GET /`
+5. Series: an edition count per series (stated `edition` or "N on record").
+6. Keep D1 rows read low:
    - filter on the indexed date first
    - use `race_place` for distance sorting
    - cache responses at the edge, with the `at` date in the cache key (data changes only at sync)
-6. Update the OpenAPI docs and tests; deploy; run a full resync (Actions → Main); it must report no rejected files.
+7. Update the OpenAPI docs and tests; deploy; run a full resync (Actions → Main); it must report no rejected files.
 
 ## Check at the end
 
-Run the five questions from the goal against the deployed API and paste the requests and answers into the day summary. Races without prices or points are expected while the data fill is ongoing; the answers must say how many races were left out and why.
+Run the six questions from the goal against the deployed API and paste the requests and answers into the day summary. Races without prices or points are expected while the data fill is ongoing; the answers must say how many races were left out and why.
