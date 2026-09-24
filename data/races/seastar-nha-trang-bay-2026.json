@@ -23,13 +23,9 @@
     "precision": "province",
     "current": {
       "province": "56",
-      "ward": "22366"
+      "ward": null
     },
-    "legacy": {
-      "province": "56",
-      "district": "568",
-      "ward": "22363"
-    },
+    "legacy": null,
     "access": "road",
     "fromPlaces": {
       "hcmc": {
@@ -163,5 +159,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:56:51.849Z"
+  "updatedAt": "2026-09-24T07:11:10.278Z"
 }
