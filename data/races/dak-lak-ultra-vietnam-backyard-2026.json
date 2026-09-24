@@ -6,7 +6,7 @@
     "other"
   ],
   "date": "2026-08-14",
-  "endDate": "2026-10-01",
+  "endDate": "2026-08-16",
   "seriesId": null,
   "organizerId": "4miles",
   "organizer": "4MILES",
@@ -32,7 +32,13 @@
     }
   ],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "endDate": {
+      "value": "2026-08-16",
+      "reason": "Race runs 14-16/08/2026 (confirmed by OpenRace); ActiUp's end_date 2026-10-01 is its registration close date",
+      "at": "2026-09-24T03:54:36.290Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -66,5 +72,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-23T18:32:39.566Z"
+  "updatedAt": "2026-09-24T03:54:36.290Z"
 }
