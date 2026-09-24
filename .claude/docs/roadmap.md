@@ -22,7 +22,7 @@ Day-to-day tasks live in [status.md](status.md); how things are built lives in [
 ## The path
 
 1. **Trusted data.** Any source (sellers, hubs, race sites), recipes, agent-read, price tiers, series and organizers. *Built (design v2).*
-2. **Questions people ask** (table below): schema v3 and API queries. *[Plan 003](../plans/003-2026-09-24-schema-v3-geo-price.md).*
+2. **Questions people ask** (table below): schema v3 and API queries. *Built: [plan 003](../plans/003-2026-09-24-schema-v3-geo-price.md), live 2026-09-24.*
 3. **Fresh without effort.** Freshness in the API (plan 003), then the daily cron once the data is trusted.
 4. **Stats from the data:**
    - trail races per year
@@ -40,12 +40,12 @@ A new question goes in this table first. When it gets built, it gets a plan and 
 
 | Question | Needs | Status |
 | --- | --- | --- |
-| I'm in Nha Trang 1–15/12: which races are nearby on those days? | `geo`, places list, date overlap (`date`..`endDate`) | [plan 003](../plans/003-2026-09-24-schema-v3-geo-price.md) |
-| I just finished VMM: next trail run, cheapest first, close to HCMC | type, "after this race", price on a date, driving time from a place | plan 003 |
-| All races under 300k at today's tier | price per distance on a date | plan 003 |
-| How many times has Lâm Đồng Trail been held? | series, `edition`, past editions backfilled | plan 003 (schema) + data fill |
-| Sort upcoming races by price, longest or shortest distance | `courses[].meters`, price on a date | plan 003 |
-| When was this race's data last checked? Can I trust it? | freshness per race in the API | plan 003 |
+| I'm in Nha Trang 1–15/12: which races are nearby on those days? | `geo`, places list, date overlap (`date`..`endDate`) | Built ([plan 003](../plans/003-2026-09-24-schema-v3-geo-price.md)) |
+| I just finished VMM: next trail run, cheapest first, close to HCMC | type, "after this race", price on a date, driving time from a place | Built (plan 003) |
+| All races under 300k at today's tier | price per distance on a date | Built (plan 003) |
+| How many times has Lâm Đồng Trail been held? | series, `edition`, past editions backfilled | Built (plan 003); past editions: data fill |
+| Sort upcoming races by price, longest or shortest distance | `courses[].meters`, price on a date | Built (plan 003) |
+| When was this race's data last checked? Can I trust it? | freshness per race in the API | Built (plan 003) |
 | How many trail races a year? North vs South? Distance distribution? | backfill, `types`, `courses`, admin codes / region | Later (path step 4) |
 | Elevation gain and share of races with GPX | `courses[].elevationGain`; GPX files added by hand by the user | Later (GPX is manual, not scraped) |
 

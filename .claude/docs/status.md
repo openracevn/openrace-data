@@ -48,7 +48,7 @@ Free plan: 1,000 credits per billing period (23rd to 23rd). On 2026-09-24, 1,453
 - [ ] Recipes: bibchung (group prices; server-rendered), vietnammtbseries (hub).
 - [ ] Backfill past races (`--past`), on a paid month.
 - [ ] Turn on the daily cron once the data is trusted.
-- [ ] **Schema v3 and the API: [plan 003](../plans/003-2026-09-24-schema-v3-geo-price.md).** Adds `courses[]` with meters, tier dates filled in, a `geo` block (point, current and old admin codes, driving distance from 13 places), `edition`, freshness per race (`state/freshness.json` → API), and API price on a date (`?at=`), `near`, `fromPlace` and sorting. It replaces "location as written, not normalized". Agreed 2026-09-24, not started.
+- [x] **Schema v3 and the API: [plan 003](../plans/003-2026-09-24-schema-v3-geo-price.md), done and live 2026-09-24** ([summary](2026-09-24-summary-part-3.md)). Left for the user: review `config/places.yaml`, an ORS key (optional), 33 races without a point. Adds `courses[]` with meters, tier dates filled in, a `geo` block (point, current and old admin codes, driving distance from 13 places), `edition`, freshness per race (`state/freshness.json` → API), and API price on a date (`?at=`), `near`, `fromPlace` and sorting. It replaces "location as written, not normalized". 
 - [ ] openrace-api: route tests in the Workers runtime.
 - [ ] Paid check of the official race sites found in the ActiUp study (in `config/sites.yaml` with `recipe: none`), then switch them to `recipe: default`.
 
