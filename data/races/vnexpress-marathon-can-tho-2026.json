@@ -14,7 +14,7 @@
   "courses": [],
   "location": {
     "venue": null,
-    "city": null
+    "city": "Cần Thơ"
   },
   "geo": null,
   "prices": [],
@@ -22,7 +22,9 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
-  "flags": [],
+  "flags": [
+    "location: no source states a city; guessed \"Cần Thơ\" from the race's name"
+  ],
   "overrides": {},
   "sources": [
     {
@@ -66,5 +68,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T04:11:49.673Z",
-  "updatedAt": "2026-09-25T04:11:49.673Z"
+  "updatedAt": "2026-09-25T04:23:50.794Z"
 }
