@@ -180,20 +180,6 @@
       }
     },
     {
-      "site": "openrace",
-      "role": "reference",
-      "url": "https://ccifv.org/en/events/upcoming/event-details/event/andros-lakes-race.html",
-      "lastCheckedAt": "2026-09-25T06:52:28.701Z",
-      "lastChangedAt": "2026-09-25T06:52:28.701Z",
-      "extracted": {
-        "facts": {
-          "name": "Andros Lakes Race",
-          "date": "2025-06-01",
-          "note": "race-research: CCIFV (French Chamber of Commerce Vietnam) event listing corroborating the date (Sunday 1 June 2025), matching ActiUp."
-        }
-      }
-    },
-    {
       "site": "ccifv-org",
       "role": "reference",
       "url": "https://ccifv.org/en/events/upcoming/event-details/event/andros-lakes-race.html",
@@ -210,5 +196,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T08:01:45.042Z"
+  "updatedAt": "2026-09-25T08:02:31.648Z"
 }
