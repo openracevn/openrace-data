@@ -639,7 +639,7 @@
     "name": "Lamdong Trail 2026",
     "date": "2026-11-06",
     "endDate": "2026-11-08",
-    "lastModified": "2026-09-25T05:01:22.419Z",
+    "lastModified": "2026-09-25T06:44:22.797Z",
     "file": "lamdong-trail-2026.json",
     "seriesId": "lamdong-trail",
     "sourceUrls": [
@@ -729,7 +729,7 @@
     "name": "VnExpress Marathon Hue 2026",
     "date": "2026-04-19",
     "endDate": null,
-    "lastModified": "2026-09-25T04:23:50.794Z",
+    "lastModified": "2026-09-25T06:44:22.797Z",
     "file": "vnexpress-marathon-hue-2026.json",
     "seriesId": "vnexpress-marathon-hue",
     "sourceUrls": [
@@ -2213,7 +2213,7 @@
     "name": "VnExpress Marathon Ho Chi Minh City Midnight 2026",
     "date": "2026-03-22",
     "endDate": null,
-    "lastModified": "2026-09-25T04:23:50.794Z",
+    "lastModified": "2026-09-25T06:44:22.797Z",
     "file": "vnexpress-marathon-ho-chi-minh-2026.json",
     "seriesId": "vnexpress-marathon-ho-chi-minh",
     "sourceUrls": [
@@ -2800,6 +2800,20 @@
     "linkUrls": []
   },
   {
+    "id": "a194be66-7d9f-4529-b731-0574498e3161",
+    "slug": "the-lakes-race-2019-first-edition",
+    "name": "The Lakes Race 2019 (first edition)",
+    "date": "2019-07-06",
+    "endDate": null,
+    "lastModified": "2026-09-25T06:44:22.797Z",
+    "file": "the-lakes-race-2019-first-edition-2019.json",
+    "seriesId": null,
+    "sourceUrls": [
+      "https://app.irace.vn/the-lakes-race"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "a2c7ac83-1771-46a9-b83c-ecf3afb1ae49",
     "slug": "vnexpress-marathon-all-star",
     "name": "VnExpress Marathon All-Star 2026",
@@ -3311,7 +3325,7 @@
     "name": "VnExpress Da Nang International Marathon Herbalife Cup 2026",
     "date": "2026-07-19",
     "endDate": null,
-    "lastModified": "2026-09-25T04:23:50.794Z",
+    "lastModified": "2026-09-25T06:44:22.797Z",
     "file": "vnexpress-marathon-da-nang-2026.json",
     "seriesId": "vnexpress-marathon-da-nang",
     "sourceUrls": [

@@ -1,0 +1,48 @@
+{
+  "id": "a194be66-7d9f-4529-b731-0574498e3161",
+  "slug": "the-lakes-race-2019-first-edition",
+  "name": "The Lakes Race 2019 (first edition)",
+  "types": [
+    "other"
+  ],
+  "date": "2019-07-06",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": null,
+  "organizer": null,
+  "edition": null,
+  "courses": [],
+  "location": {
+    "venue": "Hồ Đá, Khu đô thị Đại học Quốc gia TP.HCM, Thủ Đức",
+    "city": "Hồ Chí Minh"
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "openrace",
+      "role": "reference",
+      "url": "https://app.irace.vn/the-lakes-race",
+      "lastCheckedAt": "2026-09-25T06:44:22.797Z",
+      "lastChangedAt": "2026-09-25T06:44:22.797Z",
+      "extracted": {
+        "facts": {
+          "name": "The Lakes Race 2019 (first edition)",
+          "date": "2019-07-06",
+          "venue": "Hồ Đá, Khu đô thị Đại học Quốc gia TP.HCM, Thủ Đức",
+          "city": "Hồ Chí Minh",
+          "note": "race-research: page for the 2019-10-20 edition (Vol 2) recaps the first edition (06/07/2019, 125 orphans invited via 'Cuộc đua trẻ em') in passing; also recapped on https://irace.vn/su-kien/run-for-orphans-the-lakes-race/. No dedicated Vol 1 page found; no distances or prices stated for this edition."
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-25T06:44:22.797Z",
+  "updatedAt": "2026-09-25T06:44:22.797Z"
+}

@@ -316,7 +316,7 @@
   },
   "2613e225-e81b-4986-9aca-39812ec1970b": {
     "lastCheckedAt": "2026-09-25T05:01:22.419Z",
-    "lastChangedAt": "2026-09-25T05:01:22.419Z",
+    "lastChangedAt": "2026-09-25T06:44:22.797Z",
     "cadence": "weekly",
     "dueAt": "2026-10-02",
     "final": false
@@ -358,7 +358,7 @@
   },
   "29e3a9ee-4afb-44d7-b65d-e5e432c928a8": {
     "lastCheckedAt": "2026-09-25T04:11:49.673Z",
-    "lastChangedAt": "2026-09-25T04:23:50.794Z",
+    "lastChangedAt": "2026-09-25T06:44:22.797Z",
     "cadence": "monthly",
     "dueAt": "2026-10-25",
     "final": true
@@ -1100,7 +1100,7 @@
   },
   "7cb60f63-7b75-407e-b898-bbc9455f8c08": {
     "lastCheckedAt": "2026-09-25T04:11:49.673Z",
-    "lastChangedAt": "2026-09-25T04:23:50.794Z",
+    "lastChangedAt": "2026-09-25T06:44:22.797Z",
     "cadence": "monthly",
     "dueAt": "2026-10-25",
     "final": true
@@ -1392,6 +1392,13 @@
     "dueAt": "2026-10-02",
     "final": false
   },
+  "a194be66-7d9f-4529-b731-0574498e3161": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-09-25T06:44:22.797Z",
+    "cadence": "manual",
+    "dueAt": null,
+    "final": true
+  },
   "a2c7ac83-1771-46a9-b83c-ecf3afb1ae49": {
     "lastCheckedAt": "2026-09-25T04:11:49.673Z",
     "lastChangedAt": "2026-09-25T04:11:49.673Z",
@@ -1646,7 +1653,7 @@
   },
   "bef840e9-9ceb-404d-bb19-49fd0efd0072": {
     "lastCheckedAt": "2026-09-25T04:11:49.673Z",
-    "lastChangedAt": "2026-09-25T04:23:50.794Z",
+    "lastChangedAt": "2026-09-25T06:44:22.797Z",
     "cadence": "monthly",
     "dueAt": "2026-10-25",
     "final": true
