@@ -8,6 +8,14 @@ describe("price tiers", () => {
     assert.deepEqual(kinds, ["super_early", "early", "early", "regular", "regular", "late", "late", "group", "group", "super_early", "other", "super_early"]);
   });
 
+  it("doesn't read 'Trẻ em' (child) as 'late' (folds to the same 'tre')", () => {
+    // lamdong-trail-2026: this exact label was misclassified "late" instead of "regular".
+    assert.equal(tierKind("Family Trail Run 5Km (1 Người lớn + 1 Trẻ em) REGULAR"), "regular");
+    assert.equal(tierKind("Trẻ em"), "other");
+    // A genuinely late tier that happens to mention a child should still read "late".
+    assert.equal(tierKind("Đăng ký trễ - trẻ em"), "late");
+  });
+
   it("gives tier dates without a year the race's year, or the year before when that's after race day", () => {
     assert.equal(tierDate("08/7", "2026-11-01"), "2026-07-08");
     assert.equal(tierDate("21/9", "2026-11-01"), "2026-09-21");

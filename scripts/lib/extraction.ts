@@ -266,7 +266,10 @@ const TIER_KIND_RULES: [RegExp, TierKind][] = [
   [/\b(supp?er ?early|super eb|seb|sieu som)\b/, "super_early"],
   [/\b(early|eb|som|uu dai som)\b/, "early"],
   [/\b(group|nhom|doan|bibchung)\b/, "group"],
-  [/\b(late|last ?call|muon|tre|phut chot|sat ngay)\b/, "late"],
+  // "tre" (folded "trễ", late) collides with "trẻ em" (child) after diacritic
+  // folding — a family/kids tier label like "REGULAR ... Trẻ em" would otherwise
+  // match "late" before ever reaching the "regular" rule below (lamdong-trail-2026).
+  [/\b(late|last ?call|muon|tre(?!\s*em)|phut chot|sat ngay)\b/, "late"],
   [/\b(regular|standard|normal|general|official|tieu chuan|thuong|chinh thuc|pho thong)\b/, "regular"],
 ];
 
