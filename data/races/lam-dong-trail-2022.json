@@ -7,7 +7,7 @@
   ],
   "date": "2022-11-11",
   "endDate": "2022-11-13",
-  "seriesId": "lam-dong-trail",
+  "seriesId": "lamdong-trail",
   "organizerId": null,
   "organizer": "VietnamJoy",
   "edition": null,
@@ -54,7 +54,13 @@
   "registrations": [],
   "links": [],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "seriesId": {
+      "value": "lamdong-trail",
+      "reason": "unify with existing series lamdong-trail (matches data/series.json and the 2026 edition), the add command auto-derived a different hyphenation",
+      "at": "2026-09-25T08:01:51.268Z"
+    }
+  },
   "sources": [
     {
       "site": "irace",
@@ -89,5 +95,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T08:00:46.737Z",
-  "updatedAt": "2026-09-25T08:00:46.737Z"
+  "updatedAt": "2026-09-25T08:01:51.268Z"
 }
