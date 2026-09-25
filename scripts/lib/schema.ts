@@ -79,6 +79,17 @@ export const RACE_TYPES = [
   "other", //        a sport event that fits none of the above
 ] as const;
 
+// Composite formats include their component disciplines, for loose type
+// filtering (e.g. a `swim` filter also returns triathlon races). Strict
+// filtering ignores this map and matches `types` literally.
+export const RACE_TYPE_COMPONENTS: Partial<Record<(typeof RACE_TYPES)[number], (typeof RACE_TYPES)[number][]>> = {
+  triathlon: ["swim", "road_cycle", "road_run"],
+  duathlon: ["road_cycle", "road_run"],
+  aquathlon: ["swim", "road_run"],
+  aquabike: ["swim", "road_cycle"],
+  swimrun: ["swim", "trail_run"],
+};
+
 // Normalized price tier. The label as written is kept in `tier`.
 export const TIER_KINDS = ["super_early", "early", "regular", "late", "group", "other"] as const;
 
