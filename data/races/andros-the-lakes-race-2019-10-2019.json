@@ -1,7 +1,7 @@
 {
   "id": "a194be66-7d9f-4529-b731-0574498e3161",
   "slug": "andros-the-lakes-race-2019-10",
-  "name": "Run For Orphans - The Lakes Race 2019",
+  "name": "Giải Chạy Bộ Run For Orphans - The Lakes Race 2019",
   "types": [
     "other"
   ],
@@ -39,23 +39,6 @@
   "flags": [],
   "overrides": {},
   "sources": [
-    {
-      "site": "openrace",
-      "role": "reference",
-      "url": "https://app.irace.vn/the-lakes-race",
-      "lastCheckedAt": "2026-09-25T06:44:50.269Z",
-      "lastChangedAt": "2026-09-25T06:44:22.797Z",
-      "extracted": {
-        "facts": {
-          "name": "Run For Orphans - The Lakes Race 2019",
-          "date": "2019-10-20",
-          "edition": 2,
-          "venue": "Hồ Đá, Khu đô thị Đại học Quốc gia TP.HCM, Thủ Đức",
-          "city": "Hồ Chí Minh",
-          "note": "race-research: iRace's own event page for the second edition (Vol 2), stating the date, venue and edition explicitly."
-        }
-      }
-    },
     {
       "site": "openrace",
       "role": "reference",
@@ -97,5 +80,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T06:44:22.797Z",
-  "updatedAt": "2026-09-25T06:57:20.301Z"
+  "updatedAt": "2026-09-25T07:31:45.163Z"
 }
