@@ -144,7 +144,15 @@
     }
   ],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "types": {
+      "value": [
+        "road_run"
+      ],
+      "reason": "iRace/yeuchaybo/official site all confirm this is a road half-marathon race; actiup only had it as 'other'",
+      "at": "2026-09-25T08:24:44.313Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -201,5 +209,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T08:20:48.700Z"
+  "updatedAt": "2026-09-25T08:24:44.313Z"
 }
