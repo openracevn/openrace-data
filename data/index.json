@@ -1536,6 +1536,20 @@
     "linkUrls": []
   },
   {
+    "id": "50f07c99-ec62-485f-9ecb-c583b1f3447e",
+    "slug": "giai-half-trail-marathon-ho-da-2019-the-lake-race",
+    "name": "Giải Half Trail Marathon Hồ Đá 2019 (The Lake Race)",
+    "date": "2019-04-07",
+    "endDate": null,
+    "lastModified": "2026-09-25T06:47:41.570Z",
+    "file": "giai-half-trail-marathon-ho-da-2019-the-lake-race-2019.json",
+    "seriesId": null,
+    "sourceUrls": [
+      "http://web.archive.org/web/20210625025336/https://www.123go.vn/lakesrace"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "50f3d3dc-f691-4e9f-8eb0-0b67c0482f05",
     "slug": "mang-den-lala-trail-2026",
     "name": "Măng Đen LaLa Trail 2026",
@@ -2805,9 +2819,9 @@
     "name": "Run For Orphans - The Lakes Race 2019",
     "date": "2019-10-20",
     "endDate": null,
-    "lastModified": "2026-09-25T06:47:23.201Z",
+    "lastModified": "2026-09-25T06:47:41.570Z",
     "file": "andros-the-lakes-race-2019-10-2019.json",
-    "seriesId": null,
+    "seriesId": "andros-the-lakes-race",
     "sourceUrls": [
       "https://app.irace.vn/the-lakes-race",
       "https://tiki.vn/giai-chay-bo-run-for-orphans-the-lakes-race-2019-p25618012.html"
