@@ -11,7 +11,38 @@
   "organizerId": null,
   "organizer": null,
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "15km",
+      "meters": 15000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "25km",
+      "meters": 25000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "45km",
+      "meters": 45000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "75km",
+      "meters": 75000,
+      "type": "trail_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Thung Lũng Tình Yêu, Thành phố Đà Lạt, Lâm Đồng",
     "city": "Đà Lạt, Lâm Đồng"
@@ -28,6 +59,42 @@
       "value": "lamdong-trail",
       "reason": "unify with existing series lamdong-trail",
       "at": "2026-09-25T08:03:47.870Z"
+    },
+    "courses": {
+      "value": [
+        {
+          "label": "5km",
+          "meters": 5000,
+          "type": "trail_run",
+          "elevationGain": null
+        },
+        {
+          "label": "15km",
+          "meters": 15000,
+          "type": "trail_run",
+          "elevationGain": null
+        },
+        {
+          "label": "25km",
+          "meters": 25000,
+          "type": "trail_run",
+          "elevationGain": null
+        },
+        {
+          "label": "45km",
+          "meters": 45000,
+          "type": "trail_run",
+          "elevationGain": null
+        },
+        {
+          "label": "75km",
+          "meters": 75000,
+          "type": "trail_run",
+          "elevationGain": null
+        }
+      ],
+      "reason": "app.irace.vn/lam-dong-trail-2023 lists course start times for 15km, 25km, 45km, 75km plus Kids Trail 5km",
+      "at": "2026-09-25T08:05:19.210Z"
     }
   },
   "sources": [
@@ -56,5 +123,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T08:03:04.937Z",
-  "updatedAt": "2026-09-25T08:03:47.870Z"
+  "updatedAt": "2026-09-25T08:05:19.210Z"
 }
