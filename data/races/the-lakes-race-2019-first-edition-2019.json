@@ -17,7 +17,21 @@
     "city": "Hồ Chí Minh"
   },
   "geo": null,
-  "prices": [],
+  "prices": [
+    {
+      "distance": null,
+      "tier": "unspecified · Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 500000,
+      "from": null,
+      "to": "2019-10-20",
+      "inferred": [
+        "to"
+      ],
+      "site": "openrace"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": null,
   "registrations": [],
@@ -41,9 +55,30 @@
           "note": "race-research: iRace's own event page for the second edition (Vol 2), stating the date, venue and edition explicitly."
         }
       }
+    },
+    {
+      "site": "openrace",
+      "role": "reference",
+      "url": "https://tiki.vn/giai-chay-bo-run-for-orphans-the-lakes-race-2019-p25618012.html",
+      "lastCheckedAt": "2026-09-25T06:45:06.553Z",
+      "lastChangedAt": "2026-09-25T06:45:06.553Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Chạy Bộ Run For Orphans - The Lakes Race 2019",
+          "date": "2019-10-20",
+          "prices": [
+            {
+              "distance": "unspecified",
+              "tier": "Standard",
+              "price": 500000
+            }
+          ],
+          "note": "race-research: Tiki resale listing for the same 2019-10-20 edition, corroborating date and stating the ticket price (500,000 VND, single tier, no distance breakdown given)."
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-25T06:44:22.797Z",
-  "updatedAt": "2026-09-25T06:44:50.269Z"
+  "updatedAt": "2026-09-25T06:45:06.553Z"
 }
