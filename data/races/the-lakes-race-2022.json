@@ -10,7 +10,7 @@
   "seriesId": "andros-the-lakes-race",
   "organizerId": null,
   "organizer": "Athlete Trotter",
-  "edition": null,
+  "edition": 4,
   "courses": [
     {
       "label": "1.8km",
@@ -56,9 +56,9 @@
   "flags": [],
   "overrides": {
     "edition": {
-      "value": null,
-      "reason": "race-research correction: the edition number I entered when adding this race's source was inferred by counting (the source recaps editions 1-3 by name but never numbers this 2022 race itself), which breaks this skill's own rule against inferring editions. Overriding to null since it's baked into the source's own extracted facts and 'unset' only removes overrides, not source data.",
-      "at": "2026-09-25T06:54:26.477Z"
+      "value": 4,
+      "reason": "race-research: the organizer's own 'Previous Editions' page (androslakesrace.com, via Wayback Machine) lists 'Fourth Edition - May 2022', confirming this race is Edition 4 (matches the 2021-05-16 date raceez.com had announced, evidently pushed a year).",
+      "at": "2026-09-25T07:12:01.917Z"
     },
     "seriesId": {
       "value": "andros-the-lakes-race",
@@ -119,5 +119,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T06:48:59.089Z",
-  "updatedAt": "2026-09-25T06:57:44.067Z"
+  "updatedAt": "2026-09-25T07:12:01.917Z"
 }
