@@ -76,9 +76,26 @@
           "note": "race-research: Tiki resale listing for the same 2019-10-20 edition, corroborating date and stating the ticket price (500,000 VND, single tier, no distance breakdown given)."
         }
       }
+    },
+    {
+      "site": "irace",
+      "role": "reference",
+      "url": "https://app.irace.vn/the-lakes-race",
+      "lastCheckedAt": "2026-09-25T06:57:20.301Z",
+      "lastChangedAt": "2026-09-25T06:57:20.301Z",
+      "extracted": {
+        "facts": {
+          "name": "Run For Orphans - The Lakes Race 2019",
+          "date": "2019-10-20",
+          "edition": 2,
+          "venue": "Hồ Đá, Khu đô thị Đại học Quốc gia TP.HCM, Thủ Đức",
+          "city": "Hồ Chí Minh",
+          "note": "race-research: retag — this URL is now recognized as the iRace site (config/sites.yaml), was previously tagged 'openrace' before the edit.ts fix."
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T06:44:22.797Z",
-  "updatedAt": "2026-09-25T06:47:41.570Z"
+  "updatedAt": "2026-09-25T06:57:20.301Z"
 }
