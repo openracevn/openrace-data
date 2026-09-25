@@ -144,7 +144,15 @@
     }
   ],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "types": {
+      "value": [
+        "swim"
+      ],
+      "reason": "iRace/yeuchaybo/xongon all describe this as an open-water swim race (giải bơi vượt biển), actiup only had it as 'other'",
+      "at": "2026-09-25T08:15:35.788Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -201,5 +209,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T08:14:12.195Z"
+  "updatedAt": "2026-09-25T08:15:35.788Z"
 }
