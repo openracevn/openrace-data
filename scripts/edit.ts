@@ -11,12 +11,17 @@
  *   npm run edit -- unset <race> <field>
  *       Remove the override; the field goes back to what the sources say.
  *   npm run edit -- add --url <reference> --json '<fields>' --reason "<why>"
- *       A race no site lists (source "openrace"). <reference> is where the info comes
- *       from (organizer page, Facebook post). <fields> are extraction-shaped:
+ *       A race no site lists. <reference> is where the info comes from (organizer
+ *       page, a ticket reseller's page, a news article, Facebook post). If <reference>
+ *       is a recognized site (config/sites.yaml) with recipe "none", the source is
+ *       tagged with that site's key (e.g. "irace"); otherwise it's tagged "openrace".
+ *       <fields> are extraction-shaped:
  *       {"name","date","endDate","types","distances","venue","city","organizer",
  *        "registrationStatus","prices":[{"distance","tier","from","to","price"}]};
  *       name and date required.
- *       Re-running add with the same --url updates that race.
+ *       Re-running add with the SAME --url updates that race — never reuse a URL for a
+ *       different edition/date, it will overwrite the first one instead of creating a
+ *       second race.
  *   npm run edit -- slug <race> <new-slug> [--reason "<why>"]
  *       Change a race's slug. Its file is renamed to data/races/<new-slug>.json and
  *       the index follows; the id stays, so the API updates the same race.
@@ -87,7 +92,7 @@ if (command === "set" || command === "unset") {
   const fields = parseValue(json!);
   if (typeof fields !== "object" || fields === null || Array.isArray(fields)) fail("--json must be an object");
   const extracted = { facts: { ...(fields as Record<string, unknown>), note: reason } };
-  planAt = (store) => planSync(store, [{ url: reference!, site: "openrace", role: "reference", extracted, checkedAt: now }], config, now);
+  planAt = (store) => planSync(store, [{ url: reference!, site: site?.key ?? "openrace", role: "reference", extracted, checkedAt: now }], config, now);
   message = ""; // generated from the plan below
 } else {
   fail("usage: npm run edit -- set|unset|add|slug … (see scripts/edit.ts)");
