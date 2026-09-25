@@ -46,6 +46,17 @@ for e in races:
 
 Read each matching file in `data/races/`. Note what's missing: which years have no file, whether `seriesId`/`edition` are set consistently, what `sources[]` already cover.
 
+## 1.5. Always check Wayback Machine for the race's own official site
+
+Do this **even when the live site looks empty or "Coming Soon"** — organizer sites get overwritten every year for the next edition, so a page like "Previous Editions" (with every past date, sometimes an exact edition count) often only survives in an old snapshot, not on the live site. This is usually the single best source available: it's the organizer speaking about its own history, not a third party's guess.
+
+```bash
+curl -s "http://archive.org/wayback/available?url=<the race's own domain>" | python3 -m json.tool   # closest snapshot, if any
+curl -sL -A 'Mozilla/5.0' "http://web.archive.org/<snapshot url from above>" -o raw.html
+```
+
+Check the site's nav for a history/past-editions/results page and fetch that too, not just the homepage — that's usually where the real edition list lives. Do this early (step 1.5, before the wider web search in step 2) since it can answer most of step 2's questions (how many editions, which dates, edition numbers) in one page, from the best possible source. Also try Wayback on any *other* candidate URL that comes back dead or blocked during step 3 — don't give up on a source just because the live fetch fails.
+
 ## 2. Discover editions and sources (Claude, WebSearch — judgment, don't delegate)
 
 Search in Vietnamese and English, varying the phrasing (organizers rarely use the same word twice):
@@ -114,9 +125,13 @@ GITHUB_TOKEN=$(gh auth token) npm run edit -- set <slug> edition <n> --reason "<
 
 Drop `--dry-run` and prefix `GITHUB_TOKEN=$(gh auth token)` once the dry run looks right.
 
-## Known tool limitation
+## Known tool limitations
 
-Re-running `add` on the same URL only replaces the stored source if its **`site` tag** is unchanged (`sync.ts` matches by `site` + `url` together). If `config/sites.yaml` gains a new recognized site *after* you've already added a source from it as plain `openrace`, re-running the same `add` call to pick up the new tag creates a **second, duplicate source entry** instead of replacing the first (both hold the same facts, so it doesn't change any shown value — just clutters `sources[]`). No clean command removes a stale source today. If you hit this, say so plainly rather than hand-editing the file; it's a real gap in `edit.ts`, not something to route around.
+- **Re-running `add` on the same URL only replaces the stored source if its `site` tag is unchanged** (`sync.ts` matches by `site` + `url` together). If `config/sites.yaml` gains a new recognized site *after* you've already added a source from it as plain `openrace`, re-running the same `add` call to pick up the new tag creates a **second, duplicate source entry** instead of replacing the first (both hold the same facts, so it doesn't change any shown value — just clutters `sources[]`). No clean command removes a stale source today. If you hit this, say so plainly rather than hand-editing the file; it's a real gap in `edit.ts`, not something to route around.
+
+- **A second hand-added source on an existing race can silently create a duplicate race instead of joining it**, when both that source and an earlier one on the same race fall back to the generic `openrace` site tag. `sync.ts`'s name-matching rule (step "another site's page for a race with nearly the same name on the same day") explicitly **skips** a candidate that already has a source on the same site — so two different `openrace`-tagged sources on what should be one race compete instead of merging, and a same-day but differently-worded name easily won't clear the similarity threshold either. This bit twice in the Andros pilot (two Wayback-Machine sources, both generic-tagged) and is now *partly* mitigated: `hostOf()` unwraps a Wayback URL to the site it archived, so registering the race's own domain in `config/sites.yaml` (even with `recipe: none`, since the live site may be dead) gives its archived pages their own distinct tag instead of colliding with other `openrace` sources. **Even so: prefer `npm run edit -- set <existing-race> <field> <value> --reason "citing <url>"` over a second `add`** whenever the race already exists and you're just confirming/correcting a fact — `set` targets the race by id/slug directly, so it can't misfire into a duplicate the way name-matching can. Save `add` for a genuinely new race, or a source on a newly-registered, distinct site key. **After any `add` on an existing race, check the output names the race you expected** (same slug/id) — if it prints a brand-new slug instead, it duplicated; revert (`git revert`, since these commit straight to `main`) rather than leaving the stray race behind.
+
+- **`registrationStatus` now includes `"cancelled"`** (distinct from `"closed"`, which just means registration ended) and **`data/series.json` entries have a `description` field** (hand-written, `null` by default) for exactly this kind of series-level finding — edition count, gaps, why a year is missing — that doesn't belong to any one race's `sources[]`. Update it (directly, like the rest of `series.json`) whenever a run changes the picture materially, the same way this pilot did after finding the organizer's own edition list.
 
 ## 6. Clean up and report
 
