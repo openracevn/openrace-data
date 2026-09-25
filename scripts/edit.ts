@@ -25,6 +25,10 @@
  *   npm run edit -- slug <race> <new-slug> [--reason "<why>"]
  *       Change a race's slug. Its file is renamed to data/races/<new-slug>.json and
  *       the index follows; the id stays, so the API updates the same race.
+ *   npm run edit -- drop-source <race> <site> <url> [--reason "<why>"]
+ *       Remove one source, found by its exact site + url. For the duplicate left
+ *       behind when a hand-added source's site tag changed after re-running add
+ *       (see add above) — there's no other way to clear a stale source.
  *
  * <race> is a race id or slug. Add --dry-run to see the result without committing
  * (reads the local checkout). Committing needs GITHUB_TOKEN (e.g. $(gh auth token)).
@@ -35,7 +39,7 @@ import { manualGeo } from "./lib/geocode.ts";
 import { CANONICAL_FIELDS, type CanonicalField } from "./lib/schema.ts";
 import { loadSites, siteForUrl } from "./lib/sites.ts";
 import { canonicalSourceUrl } from "./lib/slug.ts";
-import { commitToGitHub, formatCommitMessage, planEdit, planRename, planSync, type RaceStore, type SyncPlan } from "./sync.ts";
+import { commitToGitHub, formatCommitMessage, planDropSource, planEdit, planRename, planSync, type RaceStore, type SyncPlan } from "./sync.ts";
 
 const EDITABLE_FIELDS: readonly string[] = CANONICAL_FIELDS;
 const VALUE_FLAGS = new Set(["--reason", "--url", "--json"]);
@@ -76,6 +80,12 @@ if (command === "set" || command === "unset") {
   if (!race || !newSlug) fail("usage: npm run edit -- slug <race> <new-slug> [--reason <why>]");
   planAt = (store) => planRename(store, race!, newSlug!, now);
   message = `edit: ${race}: slug → ${newSlug}${reason ? `\n\n${reason}` : ""}`;
+} else if (command === "drop-source") {
+  const site = field;
+  const url = rawValue;
+  if (!race || !site || !url) fail("usage: npm run edit -- drop-source <race> <site> <url> [--reason <why>]");
+  planAt = (store) => planDropSource(store, race!, site!, url!, config, now);
+  message = `edit: ${race}: drop stale source ${site} ${url}${reason ? `\n\n${reason}` : ""}`;
 } else if (command === "add") {
   const url = flag("url");
   const json = flag("json");
@@ -95,7 +105,7 @@ if (command === "set" || command === "unset") {
   planAt = (store) => planSync(store, [{ url: reference!, site: site?.key ?? "openrace", role: "reference", extracted, checkedAt: now }], config, now);
   message = ""; // generated from the plan below
 } else {
-  fail("usage: npm run edit -- set|unset|add|slug … (see scripts/edit.ts)");
+  fail("usage: npm run edit -- set|unset|add|slug|drop-source … (see scripts/edit.ts)");
 }
 
 const local: RaceStore = {

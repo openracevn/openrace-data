@@ -435,6 +435,33 @@ export async function planEdit(store: RaceStore, race: string, edits: readonly E
 }
 
 /**
+ * Remove one stale source (found by its site + url) from a race, found by id or
+ * slug. For a duplicate left behind when a hand-added source's site tag changed
+ * (sync.ts matches an existing source by site + url together, so re-adding the
+ * same url under a new tag creates a second entry instead of replacing the first)
+ * — there's no other way to clear it, since sources are never hand-edited.
+ */
+export async function planDropSource(store: RaceStore, race: string, site: string, url: string, config: SitesConfig, now = new Date().toISOString(), geoCacheOverride?: GeoCache): Promise<SyncPlan> {
+  const { index, prev } = await readRace(store, race);
+  const geoCache = geoCacheOverride ?? parseGeoCache(await store.read(GEO_PATH));
+
+  const sources = prev.sources.filter((s) => !(s.site === site && s.url === url));
+  if (sources.length === prev.sources.length) throw new Error(`${prev.slug} has no source ${site} ${url}`);
+
+  const series = inferSeries(index.map((e) => ({ id: e.id, slug: e.slug, name: e.name, date: e.date }))).get(prev.id);
+  const composed = composeRace({ id: prev.id, slug: prev.slug, prev, sources, overrides: prev.overrides, now, config, geoCache, stabilizeAgainstPrev: false, series });
+  if ("error" in composed) throw new Error(composed.error);
+  const { record, fields } = composed;
+
+  const files: Record<string, string | null> = {};
+  const nextIndex = new Map(index.map((e) => [e.id, e]));
+  const clash = writeRace(files, nextIndex, record);
+  if (clash) throw new Error(clash);
+  files[INDEX_PATH] = serializeIndex(nextIndex);
+  return { files, changes: [{ id: record.id, slug: record.slug, kind: "updated", fields }], skipped: [] };
+}
+
+/**
  * Give a race (found by id or slug) a new slug: its file moves to the new name and
  * the index follows, in one change. The id stays, so the API updates the same race.
  * Ingestion never changes a slug; this is the only way it moves.
