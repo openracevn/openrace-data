@@ -101,6 +101,26 @@ export function siteForUrl(config: SitesConfig, url: string): Site | null {
   return null;
 }
 
+/** A URL's host, as a valid site-key slug (dots to hyphens: "123go.vn" -> "123go-vn"). */
+function hostSlug(url: string): string {
+  return hostOf(url)
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+/**
+ * The site key a hand-added source should be tagged with: a registered site's key
+ * if one matches, otherwise a slug of the URL's own host — never a generic
+ * placeholder. The domain is always right there in the URL; throwing it away
+ * and using one shared label for every unrecognized source hid where a fact
+ * actually came from (found the hard way in race-research: every one-off
+ * reference source showed as "openrace" regardless of whether it was Tiki,
+ * 123go.vn or an archived page).
+ */
+export function siteKeyForUrl(config: SitesConfig, url: string): string {
+  return siteForUrl(config, url)?.key ?? hostSlug(url);
+}
+
 const FACEBOOK = /(^|\.)(facebook\.com|fb\.com|fb\.me|m\.me)$/;
 const RULES_TEXT = /quy (dinh|che)|dieu le|the le|rules|regulation|waiver|mien tru/;
 const RESULTS_TEXT = /ket qua|result/;

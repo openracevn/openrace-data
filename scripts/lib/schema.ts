@@ -116,7 +116,7 @@ const raceDate = isoDate.refine((d) => {
 }, `race year must be between ${MIN_RACE_YEAR} and ${MAX_YEARS_AHEAD} years from now`);
 const isoDateTime = z.iso.datetime();
 const slug = z.string().max(120).regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, "expected kebab-case slug");
-// A site key from config/sites.yaml, or "openrace".
+// A site key from config/sites.yaml, or a slug of the source's own host if none matches.
 const siteKey = slug;
 // No URLs or prices: those are extraction mistakes.
 const raceName = z

@@ -14,7 +14,8 @@
  *       A race no site lists. <reference> is where the info comes from (organizer
  *       page, a ticket reseller's page, a news article, Facebook post). If <reference>
  *       is a recognized site (config/sites.yaml) with recipe "none", the source is
- *       tagged with that site's key (e.g. "irace"); otherwise it's tagged "openrace".
+ *       tagged with that site's key (e.g. "irace"); otherwise it's tagged with a slug
+ *       of its own host (e.g. "tiki-vn") — never a generic placeholder.
  *       <fields> are extraction-shaped:
  *       {"name","date","endDate","types","distances","venue","city","organizer",
  *        "registrationStatus","prices":[{"distance","tier","from","to","price"}]};
@@ -37,7 +38,7 @@ import { readFileSync } from "node:fs";
 import { env, requireEnv } from "./lib/env.ts";
 import { manualGeo } from "./lib/geocode.ts";
 import { CANONICAL_FIELDS, type CanonicalField } from "./lib/schema.ts";
-import { loadSites, siteForUrl } from "./lib/sites.ts";
+import { loadSites, siteForUrl, siteKeyForUrl } from "./lib/sites.ts";
 import { canonicalSourceUrl } from "./lib/slug.ts";
 import { commitToGitHub, formatCommitMessage, planDropSource, planEdit, planRename, planSync, type RaceStore, type SyncPlan } from "./sync.ts";
 
@@ -102,7 +103,7 @@ if (command === "set" || command === "unset") {
   const fields = parseValue(json!);
   if (typeof fields !== "object" || fields === null || Array.isArray(fields)) fail("--json must be an object");
   const extracted = { facts: { ...(fields as Record<string, unknown>), note: reason } };
-  planAt = (store) => planSync(store, [{ url: reference!, site: site?.key ?? "openrace", role: "reference", extracted, checkedAt: now }], config, now);
+  planAt = (store) => planSync(store, [{ url: reference!, site: siteKeyForUrl(config, reference!), role: "reference", extracted, checkedAt: now }], config, now);
   message = ""; // generated from the plan below
 } else {
   fail("usage: npm run edit -- set|unset|add|slug|drop-source … (see scripts/edit.ts)");

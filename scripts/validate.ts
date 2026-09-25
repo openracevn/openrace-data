@@ -66,8 +66,22 @@ for (const file of readdirSync(RACES_DIR).filter((f) => f.endsWith(".json")).sor
   const owner = slugOwner.get(race.slug);
   if (owner) errors.push(`${path}: slug "${race.slug}" is also used by ${owner}`);
   else slugOwner.set(race.slug, race.id);
-  for (const site of new Set([...race.sources.map((s) => s.site), ...race.prices.map((p) => p.site), ...race.registrations.map((r) => r.site)])) {
-    if (site !== "openrace" && siteKeys.size > 0 && !siteKeys.has(site)) errors.push(`${path}: site "${site}" is not in ${SITES_PATH}`);
+  // Only official/seller sources, and registrations (always a recognized seller, found
+  // either as a source or as a link on a page), must be a registered site. A reference
+  // source is always hand-added and tagged with a slug of its own host when it isn't a
+  // registered site, which is expected, not an error.
+  for (const source of race.sources) {
+    if (source.role !== "reference" && siteKeys.size > 0 && !siteKeys.has(source.site)) {
+      errors.push(`${path}: site "${source.site}" (role ${source.role}) is not in ${SITES_PATH}`);
+    }
+  }
+  for (const site of new Set(race.registrations.map((r) => r.site))) {
+    if (siteKeys.size > 0 && !siteKeys.has(site)) errors.push(`${path}: registration site "${site}" is not in ${SITES_PATH}`);
+  }
+  // prices[].site is always copied from one of the race's own sources.
+  const sourceSites = new Set(race.sources.map((s) => s.site));
+  for (const site of new Set(race.prices.map((p) => p.site))) {
+    if (!sourceSites.has(site)) errors.push(`${path}: price site "${site}" isn't any of this race's own sources`);
   }
 }
 

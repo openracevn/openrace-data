@@ -33,14 +33,14 @@ import {
 } from "./lib/schema.ts";
 import { GEO_PATH, locationKey, parseGeoCache, type GeoCache } from "./lib/geo.ts";
 import { inferSeries } from "./lib/series.ts";
-import { siteForUrl, type SitesConfig } from "./lib/sites.ts";
+import { siteKeyForUrl, type SitesConfig } from "./lib/sites.ts";
 import { canonicalSourceUrl, slugFromName } from "./lib/slug.ts";
 import { foldVietnamese } from "./lib/text.ts";
 
 export type SyncInput = {
   /** Source page URL (canonicalized here). */
   url: string;
-  /** Site key from config/sites.yaml, or "openrace" for a race entered by hand. */
+  /** Site key from config/sites.yaml, or a slug of the URL's own host for a race entered by hand. */
   site: string;
   role: SourceRole;
   /** What the source said, stored verbatim as the source's `extracted`. */
@@ -114,7 +114,7 @@ export async function planSync(
     id: e.id,
     name: e.name,
     date: e.date,
-    sites: new Set(e.sourceUrls.map((u) => siteForUrl(config, u)?.key ?? "openrace")),
+    sites: new Set(e.sourceUrls.map((u) => siteKeyForUrl(config, u))),
     sourceUrls: new Set(e.sourceUrls),
     linkUrls: new Set(e.linkUrls),
   }));

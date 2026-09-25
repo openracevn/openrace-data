@@ -7,7 +7,7 @@
  *
  * inputs.json: [{ "url", "site", "role", "extracted": { facts?, pages?, images?, links?, series?, organizer? },
  *                 "checkedAt"?, "slugHint"? }]
- * `site` is a key from config/sites.yaml (or "openrace"); `role` is official | seller | reference;
+ * `site` is a key from config/sites.yaml, or a slug of the source's own host if none matches; `role` is official | seller | reference;
  * `checkedAt` defaults to now. See lib/extraction.ts (SourceExtraction) for `extracted`.
  */
 import { readFileSync } from "node:fs";
