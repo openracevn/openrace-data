@@ -46,39 +46,6 @@
       "from": "2019-02-21",
       "to": "2019-03-20",
       "inferred": [],
-      "site": "openrace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Regular Birds",
-      "kind": "regular",
-      "audience": null,
-      "price": 500000,
-      "from": "2019-02-21",
-      "to": "2019-03-20",
-      "inferred": [],
-      "site": "openrace"
-    },
-    {
-      "distance": "21km",
-      "tier": "Regular Birds",
-      "kind": "regular",
-      "audience": null,
-      "price": 800000,
-      "from": "2019-02-21",
-      "to": "2019-03-20",
-      "inferred": [],
-      "site": "openrace"
-    },
-    {
-      "distance": "3km",
-      "tier": "Regular Birds",
-      "kind": "regular",
-      "audience": null,
-      "price": 350000,
-      "from": "2019-02-21",
-      "to": "2019-03-20",
-      "inferred": [],
       "site": "123go-vn"
     },
     {
@@ -122,49 +89,6 @@
     }
   },
   "sources": [
-    {
-      "site": "openrace",
-      "role": "reference",
-      "url": "http://web.archive.org/web/20210625025336/https://www.123go.vn/lakesrace",
-      "lastCheckedAt": "2026-09-25T06:47:41.570Z",
-      "lastChangedAt": "2026-09-25T06:47:41.570Z",
-      "extracted": {
-        "facts": {
-          "name": "Giải Half Trail Marathon Hồ Đá 2019 (The Lake Race)",
-          "date": "2019-04-07",
-          "venue": "Hồ Đá, Đông Hòa, Dĩ An, Bình Dương",
-          "distances": [
-            "3km",
-            "10km",
-            "21km"
-          ],
-          "prices": [
-            {
-              "distance": "3km",
-              "tier": "Regular Birds",
-              "from": "21/02",
-              "to": "20/03/2019",
-              "price": 350000
-            },
-            {
-              "distance": "10km",
-              "tier": "Regular Birds",
-              "from": "21/02",
-              "to": "20/03/2019",
-              "price": 500000
-            },
-            {
-              "distance": "21km",
-              "tier": "Regular Birds",
-              "from": "21/02",
-              "to": "20/03/2019",
-              "price": 800000
-            }
-          ],
-          "note": "race-research: archived ticket page (123go.vn, via Wayback Machine, live site now dead) for a Hồ Đá race dated 07/04/2019 — GIẢI HALF TRAIL MARATHON HỒ ĐÁ 2019, 3/10/21km, full price table. NOT confidently the same as 'Vol 1' of The Lakes Race: later recap pages (Vol 2's and Vol 4's own pages) instead say the first edition was 06/07/2019 with 125 orphans from unnamed centers, while this page names 100+ children from Trung Tâm Nhân Đạo Quê Hương and Trung Tâm Từ Thiện Linh Xuân and uses a different race name and distance set. Left unlinked to the andros-the-lakes-race series and edition until a source resolves which is right, or whether these are two separate 2019 events at the same venue."
-        }
-      }
-    },
     {
       "site": "123go-vn",
       "role": "reference",
@@ -210,7 +134,7 @@
       }
     }
   ],
-  "confidence": "multi-sourced",
+  "confidence": "single-sourced",
   "createdAt": "2026-09-25T06:47:41.570Z",
-  "updatedAt": "2026-09-25T08:00:27.447Z"
+  "updatedAt": "2026-09-25T08:00:45.854Z"
 }
