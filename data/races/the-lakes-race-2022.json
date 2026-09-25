@@ -7,7 +7,7 @@
   ],
   "date": "2022-05-15",
   "endDate": null,
-  "seriesId": null,
+  "seriesId": "andros-the-lakes-race",
   "organizerId": null,
   "organizer": "Athlete Trotter",
   "edition": null,
@@ -59,6 +59,11 @@
       "value": null,
       "reason": "race-research correction: the edition number I entered when adding this race's source was inferred by counting (the source recaps editions 1-3 by name but never numbers this 2022 race itself), which breaks this skill's own rule against inferring editions. Overriding to null since it's baked into the source's own extracted facts and 'unset' only removes overrides, not source data.",
       "at": "2026-09-25T06:54:26.477Z"
+    },
+    "seriesId": {
+      "value": "andros-the-lakes-race",
+      "reason": "race-research: same series as the other editions.",
+      "at": "2026-09-25T06:55:03.609Z"
     }
   },
   "sources": [
@@ -90,5 +95,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T06:48:59.089Z",
-  "updatedAt": "2026-09-25T06:54:26.477Z"
+  "updatedAt": "2026-09-25T06:55:03.609Z"
 }
