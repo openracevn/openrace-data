@@ -1471,9 +1471,9 @@
     "name": "Giải Marathon Quốc tế Di sản Hạ Long 2024",
     "date": "2024-11-17",
     "endDate": null,
-    "lastModified": "2026-09-24T06:49:38.787Z",
+    "lastModified": "2026-09-25T05:03:56.536Z",
     "file": "giai-marathon-quoc-te-di-san-ha-long-2024.json",
-    "seriesId": null,
+    "seriesId": "giai-marathon-quoc-te-di-san-ha-long",
     "sourceUrls": [
       "https://actiup.net/vi/event/giai-marathon-quoc-te-di-san-ha-long-2024"
     ],
@@ -4088,6 +4088,20 @@
     "seriesId": "tay-ho-half-marathon",
     "sourceUrls": [
       "https://actiup.net/vi/event/tay-ho-half-marathon-2024"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "e86c01ad-4888-4466-9249-081cdd3add8d",
+    "slug": "giai-marathon-quoc-te-di-san-ha-long-2026",
+    "name": "Giải Marathon Quốc tế Di sản Hạ Long 2026",
+    "date": "2026-11-20",
+    "endDate": "2026-11-22",
+    "lastModified": "2026-09-25T05:03:56.536Z",
+    "file": "giai-marathon-quoc-te-di-san-ha-long-2026.json",
+    "seriesId": "ha-long-heritage-marathon",
+    "sourceUrls": [
+      "https://halongmarathon.com/"
     ],
     "linkUrls": []
   },
