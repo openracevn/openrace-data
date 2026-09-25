@@ -103,7 +103,7 @@ describe("vnexpress-marathon recipe", () => {
     const http = fakeHttp({ "https://vm.vnexpress.net/ha-noi-2026": fixture("vm-ha-noi-2026.html") });
     // Checked alone (--race): no name from the hub; the page's own menu gives it.
     const snap = await vnexpressMarathonRecipe.snapshot({ url: "https://vm.vnexpress.net/ha-noi-2026" }, ctx("vnexpress-marathon", http));
-    assert.deepEqual(snap.facts, { name: "VnExpress Marathon Hanoi Midnight 2026", date: "2026-11-29" });
+    assert.deepEqual(snap.facts, { name: "VnExpress Marathon Hanoi Midnight 2026", date: "2026-11-29", city: "Hà Nội" });
     assert.equal(snap.slugHint, "vnexpress-marathon-ha-noi");
     const html = snap.pages[0]!.html;
     assert.match(html, /NGÀY THI ĐẤU: 29\/11\/2026/);
@@ -112,6 +112,14 @@ describe("vnexpress-marathon recipe", () => {
     assert.doesNotMatch(html, /Hải Phòng 2023/);
     assert.deepEqual(snap.hints?.series, { id: "vnexpress-marathon-ha-noi", name: "VnExpress Marathon Hà Nội" });
     assert.equal(snap.hints?.organizer?.id, "vnexpress");
+  });
+
+  it("takes the city from the slug when a sponsor prefixes it and the page has no ticket section yet", async () => {
+    // long-chau-can-tho-2026: banner names the sponsor ("Long Châu"), not the city,
+    // and .ticket-policy isn't published yet — the slug is the only city signal.
+    const http = fakeHttp({ "https://vm.vnexpress.net/long-chau-can-tho-2026": fixture("vm-long-chau-can-tho-2026.html") });
+    const snap = await vnexpressMarathonRecipe.snapshot({ url: "https://vm.vnexpress.net/long-chau-can-tho-2026" }, ctx("vnexpress-marathon", http));
+    assert.deepEqual(snap.facts, { name: "VnExpress Marathon Long Châu Family Day 2026", date: "2026-06-28", city: "Cần Thơ" });
   });
 });
 

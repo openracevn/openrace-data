@@ -1,7 +1,7 @@
 // Written by the supervisor for plan 004 stage C. Don't edit: make the code pass it.
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { haversineKm, isNear, loadPlaces, locate, locationKey, parseMapsUrl } from "../scripts/lib/geo.ts";
+import { guessCityFromText, haversineKm, isNear, loadPlaces, locate, locationKey, parseMapsUrl } from "../scripts/lib/geo.ts";
 
 describe("point to admin units (committed ref files, no network)", () => {
   it("HCMC District 1: Bến Thành market", () => {
@@ -97,5 +97,22 @@ describe("keys and links", () => {
     assert.deepEqual(parseMapsUrl("https://www.google.com/maps/place/X/data=!3d16.0612!4d108.2272"), [16.0612, 108.2272]);
     assert.deepEqual(parseMapsUrl("12.2388, 109.1967"), [12.2388, 109.1967]);
     assert.equal(parseMapsUrl("https://maps.app.goo.gl/abc123"), null);
+  });
+});
+
+describe("guessCityFromText: a province name found in a race's own name (last resort)", () => {
+  it("matches a current province's short name, accent- and case-insensitive", () => {
+    assert.equal(guessCityFromText("VnExpress Marathon Ho Chi Minh City Midnight 2026"), "Hồ Chí Minh");
+    assert.equal(guessCityFromText("Giải Marathon Quốc tế Hà Nội Techcombank Mùa thứ 5"), "Hà Nội");
+  });
+
+  it("doesn't match a district, ward or pre-2025 province that no longer has its own code", () => {
+    // Nha Trang is a ward of Khánh Hòa now, not one of the 34 current provinces.
+    assert.equal(guessCityFromText("VnExpress Marathon Nha Trang 2026"), null);
+  });
+
+  it("returns null for no text or no match", () => {
+    assert.equal(guessCityFromText(null), null);
+    assert.equal(guessCityFromText("Galaxy Run 2026"), null);
   });
 });

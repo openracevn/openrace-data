@@ -11,4 +11,5 @@ for d in */; do
     else magick "$f" -resize '2000x2000>' "$d/view-$b.jpg"; fi
   done
 done
-echo "$(ls -d */ | wc -l | tr -d ' ') race(s), $(ls */view-*.jpg 2>/dev/null | wc -l | tr -d ' ') image(s) ready"
+views=(*/view-*.jpg)
+echo "$(ls -d */ | wc -l | tr -d ' ') race(s), ${#views[@]} image(s) ready"

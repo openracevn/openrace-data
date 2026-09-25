@@ -142,6 +142,33 @@ export function isNear(geo: Pick<Geo, "lat" | "lng" | "legacy">, place: Place): 
   return haversineKm([geo.lat, geo.lng], place.center) <= place.radiusKm || (geo.legacy?.district !== null && geo.legacy?.district !== undefined && place.legacy.districts.includes(geo.legacy.district));
 }
 
+let provinceNames: { short: string; folded: string }[] | undefined;
+// Just the 34 provinces' short names (cheap: no ward geometries), for guessCityFromText.
+// Separate cache from loadReferences so a name guess never pays for the gzipped wards.
+function loadProvinceNames(): { short: string; folded: string }[] {
+  if (!provinceNames) {
+    const { provinces } = JSON.parse(readFileSync("ref/units-2025.json", "utf8")) as { provinces: CurrentProvince[] };
+    if (!Array.isArray(provinces)) throw new Error("invalid reference data in ref/units-2025.json");
+    provinceNames = provinces.map((p) => ({ short: p.short, folded: foldVietnamese(p.short) })).sort((a, b) => b.folded.length - a.folded.length);
+  }
+  return provinceNames;
+}
+
+/**
+ * A current province's name found as a whole word/phrase in text (a race's name,
+ * say), diacritic- and case-insensitive. Last resort when no source states a city:
+ * catches a race whose name carries the place but whose page never labels it as one
+ * (e.g. a title that drops the city a banner states elsewhere). Only the 34 current
+ * provinces are known, so a race named only for a district, ward or older city
+ * (Nha Trang, Vũng Tàu, Quy Nhơn, ...) still won't resolve; a recipe that knows a
+ * site's own layout (e.g. its URL slugs) can do better than this guess.
+ */
+export function guessCityFromText(text: string | null): string | null {
+  if (!text) return null;
+  const folded = ` ${foldVietnamese(text)} `;
+  return loadProvinceNames().find((p) => folded.includes(` ${p.folded} `))?.short ?? null;
+}
+
 function loadReferences(): References {
   if (references) return references;
   const current = JSON.parse(readFileSync("ref/units-2025.json", "utf8")) as { provinces: CurrentProvince[]; wards: CurrentWard[] };

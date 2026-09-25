@@ -1,3 +1,4 @@
+import { guessCityFromText } from "./geo.ts";
 import { canonicalSourceUrl } from "./slug.ts";
 import { normalizeExtraction, type SourceExtraction, type SourceFacts } from "./extraction.ts";
 import type { CanonicalRace, Link, Overrides, PriceTier, Race, RaceSource, Registration, SourceRole } from "./schema.ts";
@@ -55,6 +56,10 @@ export function reconcile(sources: readonly RaceSource[], config: SitesConfig): 
     return null;
   };
   const withLocation = usable.find(({ facts }) => facts.venue !== null || facts.city !== null)?.facts;
+  // No source states a city: last resort, look for a current province's name in the
+  // race's own name (a title that drops the city a page states elsewhere still won't
+  // catch it here; that needs the recipe to know where the site puts it).
+  const guessedCity = !withLocation ? guessCityFromText(primary.facts.name) : null;
   const hints = (key: keyof SourceHints) => ranked.map((s) => (s.extracted as StoredExtraction)[key]).find(isEntityRef) ?? null;
   const courseSource = usable.find(({ facts }) => facts.courses.length > 0);
   const courses = (courseSource?.facts.courses ?? []).map((course) => ({
@@ -90,7 +95,7 @@ export function reconcile(sources: readonly RaceSource[], config: SitesConfig): 
     organizer: hints("organizer")?.name ?? first((f) => f.organizer),
     edition: first((f) => f.edition),
     courses,
-    location: { venue: withLocation?.venue ?? null, city: withLocation?.city ?? null },
+    location: { venue: withLocation?.venue ?? null, city: withLocation?.city ?? guessedCity },
     geo: null,
     prices: fillTierWindows(rawPrices, primary.facts.date),
     currency: primary.facts.currency,
@@ -103,6 +108,7 @@ export function reconcile(sources: readonly RaceSource[], config: SitesConfig): 
   };
 
   const flags: string[] = [];
+  if (guessedCity) flags.push(`location: no source states a city; guessed "${guessedCity}" from the race's name`);
   const dates = new Map(usable.map(({ source, facts }) => [source.site, facts.date]));
   if (new Set(dates.values()).size > 1) {
     flags.push(`sources disagree on race day: ${[...dates].map(([site, d]) => `${site} ${d}`).join(", ")}`);

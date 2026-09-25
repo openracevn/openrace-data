@@ -18,6 +18,32 @@ import type { RaceRef, Recipe, RecipeContext, Snapshot } from "./types.ts";
 const RACE_PAGE = /^https:\/\/vm\.vnexpress\.net\/([a-z0-9-]+)-(20\d\d)\/?$/;
 const CONTENT = ["#slideshow", ".ticket-policy"];
 
+// A branded edition's slug prefixes the city with a sponsor name (long-chau-can-tho):
+// the banner then names the sponsor, not the city, and .ticket-policy may not exist
+// yet, so the city has nowhere else to come from. Slugs seen so far (2026-09-25).
+const CITY_SLUGS: Record<string, string> = {
+  "can-tho": "Cần Thơ",
+  "ha-noi": "Hà Nội",
+  "hai-phong": "Hải Phòng",
+  "da-nang": "Đà Nẵng",
+  "ha-long": "Hạ Long",
+  "ho-chi-minh": "Hồ Chí Minh",
+  hue: "Huế",
+  "nha-trang": "Nha Trang",
+  "nghe-an": "Nghệ An",
+  "quy-nhon": "Quy Nhơn",
+  "vung-tau": "Vũng Tàu",
+  "can-gio": "Cần Giờ",
+};
+
+/** The city a race's slug names, matching the longest known city slug it ends with. */
+function cityFromSlug(slug: string): string | undefined {
+  const key = Object.keys(CITY_SLUGS)
+    .sort((a, b) => b.length - a.length)
+    .find((k) => slug === k || slug.endsWith(`-${k}`));
+  return key && CITY_SLUGS[key];
+}
+
 export const vnexpressMarathonRecipe: Recipe = {
   async discover(ctx: RecipeContext): Promise<RaceRef[]> {
     const url = ctx.site.url;
@@ -59,12 +85,13 @@ export const vnexpressMarathonRecipe: Recipe = {
     // 2026"; the banner text alone drops the brand), race day is in the banner.
     const name = str(root.querySelector("title")?.textContent);
     const day = content.textContent.match(/NGÀY THI ĐẤU:?\s*(\d{1,2}\/\d{1,2}\/20\d\d)/i)?.[1];
+    const city = m?.[1] && cityFromSlug(m[1]);
     return {
       url: ref.url,
       pages: [{ url: ref.url, html: cleanContent(content, ref.url) }],
       priceImages: pickPriceImages(pageImages(content, ref.url)),
       links: externalLinks(pageLinks(content, ref.url), "vm.vnexpress.net"),
-      facts: { ...(name && { name }), ...(day && { date: normalizeDate(day) }) },
+      facts: { ...(name && { name }), ...(day && { date: normalizeDate(day) }), ...(city && { city }) },
       hints: { series, organizer: ctx.site.organizer },
       slugHint: ref.slugHint ?? (m ? `vnexpress-marathon-${m[1]}` : undefined),
     };
