@@ -91,9 +91,25 @@
           "note": "race-research: iRace's own sales page for the same 2023-06-04 race, stating distances (no base prices printed in the static page; the price table renders client-side)."
         }
       }
+    },
+    {
+      "site": "ticketgo",
+      "role": "reference",
+      "url": "https://ticketgo.vn/blog/giai-chay-bo-andros-the-lakes-race-2023",
+      "lastCheckedAt": "2026-09-25T06:58:04.748Z",
+      "lastChangedAt": "2026-09-25T06:58:04.748Z",
+      "extracted": {
+        "facts": {
+          "name": "Andros The Lakes Race 2023",
+          "date": "2023-06-04",
+          "venue": "Hồ Đá, Khu đô thị Đại học Quốc gia TP.HCM, Thủ Đức",
+          "city": "Hồ Chí Minh",
+          "note": "race-research: retag to the TicketGo site key."
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T06:49:26.358Z",
-  "updatedAt": "2026-09-25T06:50:54.600Z"
+  "updatedAt": "2026-09-25T06:58:04.748Z"
 }
