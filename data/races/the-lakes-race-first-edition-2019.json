@@ -1,0 +1,48 @@
+{
+  "id": "d41201ec-ce37-4676-b1f2-c9c60cdbf243",
+  "slug": "the-lakes-race-first-edition",
+  "name": "The Lakes Race (First Edition)",
+  "types": [
+    "other"
+  ],
+  "date": "2019-04-07",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": null,
+  "organizer": null,
+  "edition": 1,
+  "courses": [],
+  "location": {
+    "venue": "Hồ Đá, Đông Hòa, Dĩ An, Bình Dương",
+    "city": null
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "openrace",
+      "role": "reference",
+      "url": "http://web.archive.org/web/20250212015802/https://androslakesrace.com/previous-editions.html",
+      "lastCheckedAt": "2026-09-25T07:11:24.103Z",
+      "lastChangedAt": "2026-09-25T07:11:24.103Z",
+      "extracted": {
+        "facts": {
+          "name": "The Lakes Race (First Edition)",
+          "date": "2019-04-07",
+          "edition": 1,
+          "venue": "Hồ Đá, Đông Hòa, Dĩ An, Bình Dương",
+          "note": "race-research: the race's OWN official site (androslakesrace.com, now 'Coming Soon' live — found via Wayback Machine, archived 2025-02-12) has a 'Previous Editions' page listing all six editions to date by name and month, confirming 'First Edition - April 2019' matches this race exactly (123go.vn gave the exact day, 07/04/2019; this page confirms it's officially Edition 1, resolving the earlier doubt about whether it belongs to this series at all)."
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-25T07:11:24.103Z",
+  "updatedAt": "2026-09-25T07:11:24.103Z"
+}
