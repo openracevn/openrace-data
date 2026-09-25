@@ -48,7 +48,284 @@
     "city": "Đà Lạt, Lâm Đồng"
   },
   "geo": null,
-  "prices": [],
+  "prices": [
+    {
+      "distance": "85km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1599000,
+      "from": "2025-04-03",
+      "to": "2025-06-02",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "55km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1289000,
+      "from": "2025-04-03",
+      "to": "2025-06-02",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "25km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 795000,
+      "from": "2025-04-03",
+      "to": "2025-06-02",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "15km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 595000,
+      "from": "2025-04-03",
+      "to": "2025-06-02",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 395000,
+      "from": "2025-04-03",
+      "to": "2025-06-02",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "5km",
+      "tier": "Kids Trail Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 395000,
+      "from": "2025-04-03",
+      "to": "2025-06-02",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "85km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2150000,
+      "from": "2025-06-03",
+      "to": "2025-09-02",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "55km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1800000,
+      "from": "2025-06-03",
+      "to": "2025-09-02",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "25km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1350000,
+      "from": "2025-06-03",
+      "to": "2025-09-02",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "15km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 795000,
+      "from": "2025-06-03",
+      "to": "2025-09-02",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 600000,
+      "from": "2025-06-03",
+      "to": "2025-09-02",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "5km",
+      "tier": "Kids Trail Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 600000,
+      "from": "2025-06-03",
+      "to": "2025-09-02",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "85km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2650000,
+      "from": "2025-09-03",
+      "to": "2025-10-25",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "55km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2050000,
+      "from": "2025-09-03",
+      "to": "2025-10-25",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "25km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1550000,
+      "from": "2025-09-03",
+      "to": "2025-10-25",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "15km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 950000,
+      "from": "2025-09-03",
+      "to": "2025-10-25",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 750000,
+      "from": "2025-09-03",
+      "to": "2025-10-25",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "5km",
+      "tier": "Kids Trail Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 750000,
+      "from": "2025-09-03",
+      "to": "2025-10-25",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "85km",
+      "tier": "Late Comer",
+      "kind": "late",
+      "audience": null,
+      "price": 2850000,
+      "from": "2025-10-26",
+      "to": null,
+      "inferred": [
+        "from"
+      ],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "55km",
+      "tier": "Late Comer",
+      "kind": "late",
+      "audience": null,
+      "price": 2350000,
+      "from": "2025-10-26",
+      "to": null,
+      "inferred": [
+        "from"
+      ],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "25km",
+      "tier": "Late Comer",
+      "kind": "late",
+      "audience": null,
+      "price": 1850000,
+      "from": "2025-10-26",
+      "to": null,
+      "inferred": [
+        "from"
+      ],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "15km",
+      "tier": "Late Comer",
+      "kind": "late",
+      "audience": null,
+      "price": 1275000,
+      "from": "2025-10-26",
+      "to": null,
+      "inferred": [
+        "from"
+      ],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late Comer",
+      "kind": "late",
+      "audience": null,
+      "price": 950000,
+      "from": "2025-10-26",
+      "to": null,
+      "inferred": [
+        "from"
+      ],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "5km",
+      "tier": "Kids Trail Late Comer",
+      "kind": "late",
+      "audience": null,
+      "price": 950000,
+      "from": "2025-10-26",
+      "to": null,
+      "inferred": [
+        "from"
+      ],
+      "site": "lamdong-trail"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": null,
   "registrations": [],
@@ -59,6 +336,288 @@
       "value": "lamdong-trail",
       "reason": "unify with existing series lamdong-trail",
       "at": "2026-09-25T08:05:43.698Z"
+    },
+    "prices": {
+      "value": [
+        {
+          "distance": "85km",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 1599000,
+          "from": "2025-04-03",
+          "to": "2025-06-02",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "55km",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 1289000,
+          "from": "2025-04-03",
+          "to": "2025-06-02",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "25km",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 795000,
+          "from": "2025-04-03",
+          "to": "2025-06-02",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "15km",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 595000,
+          "from": "2025-04-03",
+          "to": "2025-06-02",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "5km",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 395000,
+          "from": "2025-04-03",
+          "to": "2025-06-02",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "5km",
+          "tier": "Kids Trail Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 395000,
+          "from": "2025-04-03",
+          "to": "2025-06-02",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "85km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 2150000,
+          "from": "2025-06-03",
+          "to": "2025-09-02",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "55km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 1800000,
+          "from": "2025-06-03",
+          "to": "2025-09-02",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "25km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 1350000,
+          "from": "2025-06-03",
+          "to": "2025-09-02",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "15km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 795000,
+          "from": "2025-06-03",
+          "to": "2025-09-02",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "5km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 600000,
+          "from": "2025-06-03",
+          "to": "2025-09-02",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "5km",
+          "tier": "Kids Trail Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 600000,
+          "from": "2025-06-03",
+          "to": "2025-09-02",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "85km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 2650000,
+          "from": "2025-09-03",
+          "to": "2025-10-25",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "55km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 2050000,
+          "from": "2025-09-03",
+          "to": "2025-10-25",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "25km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 1550000,
+          "from": "2025-09-03",
+          "to": "2025-10-25",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "15km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 950000,
+          "from": "2025-09-03",
+          "to": "2025-10-25",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "5km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 750000,
+          "from": "2025-09-03",
+          "to": "2025-10-25",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "5km",
+          "tier": "Kids Trail Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 750000,
+          "from": "2025-09-03",
+          "to": "2025-10-25",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "85km",
+          "tier": "Late Comer",
+          "kind": "late",
+          "audience": null,
+          "price": 2850000,
+          "from": "2025-10-26",
+          "to": null,
+          "inferred": [
+            "from"
+          ],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "55km",
+          "tier": "Late Comer",
+          "kind": "late",
+          "audience": null,
+          "price": 2350000,
+          "from": "2025-10-26",
+          "to": null,
+          "inferred": [
+            "from"
+          ],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "25km",
+          "tier": "Late Comer",
+          "kind": "late",
+          "audience": null,
+          "price": 1850000,
+          "from": "2025-10-26",
+          "to": null,
+          "inferred": [
+            "from"
+          ],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "15km",
+          "tier": "Late Comer",
+          "kind": "late",
+          "audience": null,
+          "price": 1275000,
+          "from": "2025-10-26",
+          "to": null,
+          "inferred": [
+            "from"
+          ],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "5km",
+          "tier": "Late Comer",
+          "kind": "late",
+          "audience": null,
+          "price": 950000,
+          "from": "2025-10-26",
+          "to": null,
+          "inferred": [
+            "from"
+          ],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "5km",
+          "tier": "Kids Trail Late Comer",
+          "kind": "late",
+          "audience": null,
+          "price": 950000,
+          "from": "2025-10-26",
+          "to": null,
+          "inferred": [
+            "from"
+          ],
+          "site": "lamdong-trail"
+        }
+      ],
+      "reason": "lamdongtrail.vn's own distance/ page (Wayback snapshot 2025-10-06, during the 2025 registration window; the live page has since been overwritten for 2026): Super Early Bird/Early Bird/Regular/Late Comer tiers, first three with explicit date windows shown on the page; Late Comer's start date (26.10) inferred as the day after Regular's stated end (25.10), its end date left unknown",
+      "at": "2026-09-25T08:23:26.763Z"
     }
   },
   "sources": [
@@ -94,5 +653,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T08:03:59.469Z",
-  "updatedAt": "2026-09-25T08:05:43.698Z"
+  "updatedAt": "2026-09-25T08:23:26.763Z"
 }
