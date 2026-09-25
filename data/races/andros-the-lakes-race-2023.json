@@ -11,7 +11,32 @@
   "organizerId": null,
   "organizer": null,
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "2km",
+      "meters": 2000,
+      "type": null,
+      "elevationGain": null
+    },
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": null,
+      "elevationGain": null
+    },
+    {
+      "label": "15km",
+      "meters": 15000,
+      "type": null,
+      "elevationGain": null
+    },
+    {
+      "label": "600m",
+      "meters": 600,
+      "type": null,
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Hồ Đá, Khu đô thị Đại học Quốc gia TP.HCM, Thủ Đức",
     "city": "Hồ Chí Minh"
@@ -40,9 +65,29 @@
           "note": "race-research: TicketGo blog post for the 2023 edition, stating exact date and venue."
         }
       }
+    },
+    {
+      "site": "openrace",
+      "role": "reference",
+      "url": "https://ticket.irace.vn/the-lakes-race-run-for-orphans-2023",
+      "lastCheckedAt": "2026-09-25T06:49:48.049Z",
+      "lastChangedAt": "2026-09-25T06:49:48.049Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Andros The Lakes Race 2023",
+          "date": "2023-06-04",
+          "distances": [
+            "600m",
+            "2km",
+            "5km",
+            "15km"
+          ],
+          "note": "race-research: iRace's own sales page for the same 2023-06-04 race, stating distances (no base prices printed in the static page; the price table renders client-side)."
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-25T06:49:26.358Z",
-  "updatedAt": "2026-09-25T06:49:26.358Z"
+  "updatedAt": "2026-09-25T06:49:48.049Z"
 }
