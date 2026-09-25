@@ -107,9 +107,29 @@
           "note": "race-research: retag to the TicketGo site key."
         }
       }
+    },
+    {
+      "site": "irace",
+      "role": "reference",
+      "url": "https://ticket.irace.vn/the-lakes-race-run-for-orphans-2023",
+      "lastCheckedAt": "2026-09-25T06:58:23.412Z",
+      "lastChangedAt": "2026-09-25T06:58:23.412Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Andros The Lakes Race 2023",
+          "date": "2023-06-04",
+          "distances": [
+            "600m",
+            "2km",
+            "5km",
+            "15km"
+          ],
+          "note": "race-research: retag to the iRace site key."
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T06:49:26.358Z",
-  "updatedAt": "2026-09-25T06:58:04.748Z"
+  "updatedAt": "2026-09-25T06:58:23.412Z"
 }
