@@ -408,6 +408,20 @@
     "linkUrls": []
   },
   {
+    "id": "1786dc83-99e6-4250-ab74-7aab0de11eb6",
+    "slug": "vnexpress-marathon-long-chau",
+    "name": "VnExpress Marathon Long Châu Family Day 2026",
+    "date": "2026-01-11",
+    "endDate": null,
+    "lastModified": "2026-09-25T05:01:22.419Z",
+    "file": "vnexpress-marathon-long-chau-2026.json",
+    "seriesId": "vnexpress-marathon-long-chau",
+    "sourceUrls": [
+      "https://vm.vnexpress.net/long-chau-2026"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "17961a00-1748-4ef0-942f-28989f23509a",
     "slug": "vtv-phu-quoc-marathon-2025-combo",
     "name": "VTV PHÚ QUỐC MARATHON 2025 - BIB CHẠY VÀ COMBO BIB CHẠY + LƯU TRÚ + VÉ CA NHẠC",
@@ -536,6 +550,20 @@
     "linkUrls": []
   },
   {
+    "id": "239b75b1-b4d4-45b7-8e8d-f6712160ab28",
+    "slug": "vnexpress-marathon-hai-phong",
+    "name": "VnExpress Marathon Hai Phong 2026",
+    "date": "2026-12-27",
+    "endDate": null,
+    "lastModified": "2026-09-25T05:01:22.419Z",
+    "file": "vnexpress-marathon-hai-phong-2026.json",
+    "seriesId": "vnexpress-marathon-hai-phong",
+    "sourceUrls": [
+      "https://vm.vnexpress.net/hai-phong-2026"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "241567cb-4b9f-47af-91b6-07d6f94f3167",
     "slug": "social-run-buoc-chan-gan-ket",
     "name": "Social Run - Bước chân gắn kết",
@@ -560,6 +588,20 @@
     "seriesId": "brah-yang-trail-summit",
     "sourceUrls": [
       "https://actiup.net/vi/event/brah-yang-trail-summit-2025"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "24762d46-dc3d-4918-b9fc-55dd46cfffb1",
+    "slug": "vnexpress-marathon-ha-noi",
+    "name": "VnExpress Marathon Hanoi Midnight 2026",
+    "date": "2026-11-29",
+    "endDate": null,
+    "lastModified": "2026-09-25T05:01:22.419Z",
+    "file": "vnexpress-marathon-ha-noi-2026.json",
+    "seriesId": "vnexpress-marathon-ha-noi",
+    "sourceUrls": [
+      "https://vm.vnexpress.net/ha-noi-2026"
     ],
     "linkUrls": []
   },
@@ -597,13 +639,19 @@
     "name": "Lamdong Trail 2026",
     "date": "2026-11-06",
     "endDate": "2026-11-08",
-    "lastModified": "2026-09-24T06:49:38.787Z",
+    "lastModified": "2026-09-25T05:01:22.419Z",
     "file": "lamdong-trail-2026.json",
-    "seriesId": null,
+    "seriesId": "lamdong-trail",
     "sourceUrls": [
-      "https://actiup.net/vi/event/lamdong-trail-2026"
+      "https://actiup.net/vi/event/lamdong-trail-2026",
+      "https://lamdongtrail.vn/"
     ],
-    "linkUrls": []
+    "linkUrls": [
+      "https://5bib.com/vi/events/lamdong-trail-2026_208",
+      "https://actiup.net/vi/event/lamdong-trail-2026",
+      "https://enjoysport.vn/event/lam-dong-trail",
+      "https://ticket.irace.vn/lamdong-trail-2026"
+    ]
   },
   {
     "id": "274c0a28-80cb-48bb-b9da-006e12910dac",
@@ -2202,6 +2250,20 @@
     "linkUrls": []
   },
   {
+    "id": "810e7c27-7f4a-4c60-a49a-5e7d3af667f7",
+    "slug": "vnexpress-marathon-nghe-an",
+    "name": "VnExpress Marathon Grand Tour Nghe An 2026",
+    "date": "2026-09-27",
+    "endDate": null,
+    "lastModified": "2026-09-25T05:01:22.419Z",
+    "file": "vnexpress-marathon-nghe-an-2026.json",
+    "seriesId": "vnexpress-marathon-nghe-an",
+    "sourceUrls": [
+      "https://vm.vnexpress.net/nghe-an-2026"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "812522dc-18fc-4f15-8b66-9ba134327d99",
     "slug": "phu-thuan-open-trail-running-race-2026",
     "name": "Giải chạy địa hình Phú Thuận mở rộng 2026",
@@ -2286,6 +2348,22 @@
     "linkUrls": []
   },
   {
+    "id": "85373fd2-93ad-4101-b584-5c7d970d124a",
+    "slug": "hcmc-marathon-2027",
+    "name": "HCMC Marathon 2027",
+    "date": "2027-01-17",
+    "endDate": null,
+    "lastModified": "2026-09-25T05:01:22.419Z",
+    "file": "hcmc-marathon-2027.json",
+    "seriesId": "hcmc-marathon",
+    "sourceUrls": [
+      "https://hcmcmarathon.com/"
+    ],
+    "linkUrls": [
+      "https://in.njuko.com/ho-chi-minh-city-marathon-2027"
+    ]
+  },
+  {
     "id": "87255571-8845-43e2-a3f9-7422f28b50cc",
     "slug": "mang-den-ultra-trail-2027",
     "name": "Măng Đen Ultra Trail 2027",
@@ -2366,6 +2444,20 @@
     "seriesId": null,
     "sourceUrls": [
       "https://actiup.net/vi/event/amata-happy-run-2025"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "8d103a62-e07f-43ea-9913-bc77a7c4049f",
+    "slug": "vnexpress-marathon-quy-nhon",
+    "name": "VnExpress Marathon Quy Nhon 2026",
+    "date": "2026-09-13",
+    "endDate": null,
+    "lastModified": "2026-09-25T05:01:22.419Z",
+    "file": "vnexpress-marathon-quy-nhon-2026.json",
+    "seriesId": "vnexpress-marathon-quy-nhon",
+    "sourceUrls": [
+      "https://vm.vnexpress.net/quy-nhon-2026"
     ],
     "linkUrls": []
   },
@@ -2890,6 +2982,20 @@
     "linkUrls": []
   },
   {
+    "id": "b44c4c63-4299-4b46-9a5b-f275ae8d7832",
+    "slug": "mini-game-kun-fun-run-dong-thap-2026",
+    "name": "MINIGAME | KUN FUN RUN ĐỒNG THÁP 2026",
+    "date": "2026-10-09",
+    "endDate": "2026-10-10",
+    "lastModified": "2026-09-25T05:01:22.419Z",
+    "file": "mini-game-kun-fun-run-dong-thap-2026.json",
+    "seriesId": null,
+    "sourceUrls": [
+      "https://actiup.net/vi/event/mini-game-kun-fun-run-dong-thap-2026"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "b50b5f05-414b-412a-a260-46a0b5dbd9e4",
     "slug": "lang-son-geopark-ultra-trail-2025",
     "name": "Giải chạy địa hình Quốc tế “Lạng Sơn Geopark VTV8 Ultra Trail 2025”",
@@ -3378,6 +3484,20 @@
     "seriesId": "vietnam-festrival",
     "sourceUrls": [
       "https://actiup.net/vi/event/vietnam-festrival-2026"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "cdda5fec-fbbc-4b6a-b982-f93ac0d82b30",
+    "slug": "giai-chay-run-to-live-2027-chay-vi-cuoc-song-tot-dep-hon",
+    "name": "Giải chạy Run To Live 2027 – Chạy vì cuộc sống tốt đẹp hơn",
+    "date": "2027-04-11",
+    "endDate": null,
+    "lastModified": "2026-09-25T05:01:22.419Z",
+    "file": "giai-chay-run-to-live-2027-chay-vi-cuoc-song-tot-dep-hon-2027.json",
+    "seriesId": "run-to-live",
+    "sourceUrls": [
+      "https://runtolive.vn/"
     ],
     "linkUrls": []
   },

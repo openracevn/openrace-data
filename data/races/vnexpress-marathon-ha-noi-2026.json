@@ -1,0 +1,485 @@
+{
+  "id": "24762d46-dc3d-4918-b9fc-55dd46cfffb1",
+  "slug": "vnexpress-marathon-ha-noi",
+  "name": "VnExpress Marathon Hanoi Midnight 2026",
+  "types": [
+    "road_run"
+  ],
+  "date": "2026-11-29",
+  "endDate": null,
+  "seriesId": "vnexpress-marathon-ha-noi",
+  "organizerId": "vnexpress",
+  "organizer": "VnExpress",
+  "edition": null,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": null,
+    "city": "Hà Nội"
+  },
+  "geo": {
+    "lat": 21.0283334,
+    "lng": 105.854041,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "01",
+      "ward": null
+    },
+    "legacy": null,
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1144,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 0.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": true
+      },
+      "da-nang": {
+        "km": 606.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1040.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1047.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1222.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 89,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 539.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1195.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 882,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 958.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 253.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 127.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 420000,
+      "from": "2026-09-04",
+      "to": "2026-09-24",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 500000,
+      "from": "2026-09-25",
+      "to": "2026-10-15",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 620000,
+      "from": "2026-10-16",
+      "to": "2026-11-06",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 790000,
+      "from": "2026-11-07",
+      "to": "2026-11-19",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 480000,
+      "from": "2026-09-04",
+      "to": "2026-09-24",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 620000,
+      "from": "2026-09-25",
+      "to": "2026-10-15",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 790000,
+      "from": "2026-10-16",
+      "to": "2026-11-06",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 950000,
+      "from": "2026-11-07",
+      "to": "2026-11-19",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 660000,
+      "from": "2026-09-04",
+      "to": "2026-09-24",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 790000,
+      "from": "2026-09-25",
+      "to": "2026-10-15",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 950000,
+      "from": "2026-10-16",
+      "to": "2026-11-06",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1150000,
+      "from": "2026-11-07",
+      "to": "2026-11-19",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 780000,
+      "from": "2026-09-04",
+      "to": "2026-09-24",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 950000,
+      "from": "2026-09-25",
+      "to": "2026-10-15",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1150000,
+      "from": "2026-10-16",
+      "to": "2026-11-06",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1350000,
+      "from": "2026-11-07",
+      "to": "2026-11-19",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    }
+  ],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "vnexpress-marathon",
+      "role": "official",
+      "url": "https://vm.vnexpress.net/ha-noi-2026",
+      "lastCheckedAt": "2026-09-25T05:01:22.419Z",
+      "lastChangedAt": "2026-09-25T05:01:22.419Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Marathon Hanoi Midnight 2026",
+          "date": "2026-11-29",
+          "city": "Hà Nội"
+        },
+        "pages": [
+          {
+            "url": "https://vm.vnexpress.net/ha-noi-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "VnExpress Marathon Hanoi Midnight 2026",
+              "date": "2026-11-29",
+              "distances": [
+                "5 km",
+                "10 km",
+                "21 km",
+                "42 km"
+              ],
+              "currency": "VND",
+              "registrationStatus": "open",
+              "prices": [
+                {
+                  "distance": "5 km",
+                  "tier": "Super Early Bird",
+                  "from": "2026-09-04",
+                  "to": "2026-09-24",
+                  "price": 420000
+                },
+                {
+                  "distance": "5 km",
+                  "tier": "Early Bird",
+                  "from": "2026-09-25",
+                  "to": "2026-10-15",
+                  "price": 500000
+                },
+                {
+                  "distance": "5 km",
+                  "tier": "Regular",
+                  "from": "2026-10-16",
+                  "to": "2026-11-06",
+                  "price": 620000
+                },
+                {
+                  "distance": "5 km",
+                  "tier": "Late",
+                  "from": "2026-11-07",
+                  "to": "2026-11-19",
+                  "price": 790000
+                },
+                {
+                  "distance": "10 km",
+                  "tier": "Super Early Bird",
+                  "from": "2026-09-04",
+                  "to": "2026-09-24",
+                  "price": 480000
+                },
+                {
+                  "distance": "10 km",
+                  "tier": "Early Bird",
+                  "from": "2026-09-25",
+                  "to": "2026-10-15",
+                  "price": 620000
+                },
+                {
+                  "distance": "10 km",
+                  "tier": "Regular",
+                  "from": "2026-10-16",
+                  "to": "2026-11-06",
+                  "price": 790000
+                },
+                {
+                  "distance": "10 km",
+                  "tier": "Late",
+                  "from": "2026-11-07",
+                  "to": "2026-11-19",
+                  "price": 950000
+                },
+                {
+                  "distance": "21 km",
+                  "tier": "Super Early Bird",
+                  "from": "2026-09-04",
+                  "to": "2026-09-24",
+                  "price": 660000
+                },
+                {
+                  "distance": "21 km",
+                  "tier": "Early Bird",
+                  "from": "2026-09-25",
+                  "to": "2026-10-15",
+                  "price": 790000
+                },
+                {
+                  "distance": "21 km",
+                  "tier": "Regular",
+                  "from": "2026-10-16",
+                  "to": "2026-11-06",
+                  "price": 950000
+                },
+                {
+                  "distance": "21 km",
+                  "tier": "Late",
+                  "from": "2026-11-07",
+                  "to": "2026-11-19",
+                  "price": 1150000
+                },
+                {
+                  "distance": "42 km",
+                  "tier": "Super Early Bird",
+                  "from": "2026-09-04",
+                  "to": "2026-09-24",
+                  "price": 780000
+                },
+                {
+                  "distance": "42 km",
+                  "tier": "Early Bird",
+                  "from": "2026-09-25",
+                  "to": "2026-10-15",
+                  "price": 950000
+                },
+                {
+                  "distance": "42 km",
+                  "tier": "Regular",
+                  "from": "2026-10-16",
+                  "to": "2026-11-06",
+                  "price": 1150000
+                },
+                {
+                  "distance": "42 km",
+                  "tier": "Late",
+                  "from": "2026-11-07",
+                  "to": "2026-11-19",
+                  "price": 1350000
+                }
+              ]
+            }
+          }
+        ],
+        "links": [],
+        "series": {
+          "id": "vnexpress-marathon-ha-noi",
+          "name": "VnExpress Marathon Hà Nội"
+        },
+        "organizer": {
+          "id": "vnexpress",
+          "name": "VnExpress",
+          "website": "https://vnexpress.net/"
+        },
+        "readBy": "agent"
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-25T05:01:22.419Z",
+  "updatedAt": "2026-09-25T05:01:22.419Z"
+}

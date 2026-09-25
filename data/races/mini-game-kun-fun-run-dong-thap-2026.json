@@ -1,0 +1,182 @@
+{
+  "id": "b44c4c63-4299-4b46-9a5b-f275ae8d7832",
+  "slug": "mini-game-kun-fun-run-dong-thap-2026",
+  "name": "MINIGAME | KUN FUN RUN ĐỒNG THÁP 2026",
+  "types": [
+    "road_run"
+  ],
+  "date": "2026-10-09",
+  "endDate": "2026-10-10",
+  "seriesId": null,
+  "organizerId": "nexus-sport-events",
+  "organizer": "Nexus Sport Events",
+  "edition": null,
+  "courses": [],
+  "location": {
+    "venue": "Quảng trường Văn Miếu, Phường Cao Lãnh, Tỉnh Đồng Tháp",
+    "city": null
+  },
+  "geo": {
+    "lat": 10.4643135,
+    "lng": 105.6354223,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "82",
+      "ward": "29869"
+    },
+    "legacy": {
+      "province": "87",
+      "district": "866",
+      "ward": "29869"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 143.9,
+        "minutes": 118,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1561.3,
+        "minutes": 1209,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 978.4,
+        "minutes": 743,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 557.3,
+        "minutes": 414,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 435,
+        "minutes": 337,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 84.1,
+        "minutes": 71,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1595.4,
+        "minutes": 1236,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 1024.2,
+        "minutes": 814,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 240.4,
+        "minutes": 205,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 763.2,
+        "minutes": 576,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 474.5,
+        "minutes": 355,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1869.8,
+        "minutes": 1445,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1645.1,
+        "minutes": 1269,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/mini-game-kun-fun-run-dong-thap-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/13cQYP93BKDDnExMhCivF8ykczu6p8K8n/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/mini-game-kun-fun-run-dong-thap-2026",
+      "lastCheckedAt": "2026-09-25T05:01:22.419Z",
+      "lastChangedAt": "2026-09-25T05:01:22.419Z",
+      "extracted": {
+        "facts": {
+          "name": "MINIGAME | KUN FUN RUN ĐỒNG THÁP 2026",
+          "date": "2026-10-09",
+          "endDate": "2026-10-10",
+          "venue": "Quảng trường Văn Miếu, Phường Cao Lãnh, Tỉnh Đồng Tháp",
+          "organizer": "Nexus Sport Events",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 0
+        },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/mini-game-kun-fun-run-dong-thap-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "MINIGAME | KUN FUN RUN ĐỒNG THÁP 2026",
+              "venue": "phường Cao Lãnh, tỉnh Đồng Tháp",
+              "prices": []
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/13cQYP93BKDDnExMhCivF8ykczu6p8K8n/view?usp=drive_link",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "nexus-sport-events",
+          "name": "Nexus Sport Events"
+        },
+        "readBy": "agent"
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-25T05:01:22.419Z",
+  "updatedAt": "2026-09-25T05:01:22.419Z"
+}

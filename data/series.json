@@ -78,6 +78,12 @@
     "organizerId": "cong-ty-dha-viet-nam"
   },
   {
+    "id": "hcmc-marathon",
+    "name": "HCMC Marathon",
+    "website": null,
+    "organizerId": "pulse-active"
+  },
+  {
     "id": "ironkids-viet-nam-in-da-nang",
     "name": "IRONKIDS Viet Nam in Da Nang",
     "website": null,
@@ -88,6 +94,12 @@
     "name": "IRONKIDS Viet Nam in Phu Quoc",
     "website": null,
     "organizerId": "sunrise-events-vietnam"
+  },
+  {
+    "id": "lamdong-trail",
+    "name": "Lamdong Trail",
+    "website": null,
+    "organizerId": null
   },
   {
     "id": "ly-son-cross-island",
@@ -124,6 +136,12 @@
     "name": "QUANG TRI INTERNATIONAL MARATHON",
     "website": null,
     "organizerId": "bolt-event"
+  },
+  {
+    "id": "run-to-live",
+    "name": "Run To Live",
+    "website": null,
+    "organizerId": null
   },
   {
     "id": "save-turtles-run",
@@ -240,6 +258,18 @@
     "organizerId": "vnexpress"
   },
   {
+    "id": "vnexpress-marathon-ha-noi",
+    "name": "VnExpress Marathon Hà Nội",
+    "website": null,
+    "organizerId": "vnexpress"
+  },
+  {
+    "id": "vnexpress-marathon-hai-phong",
+    "name": "VnExpress Marathon Hải Phòng",
+    "website": null,
+    "organizerId": "vnexpress"
+  },
+  {
     "id": "vnexpress-marathon-ho-chi-minh",
     "name": "VnExpress Marathon Hồ Chí Minh",
     "website": null,
@@ -252,14 +282,32 @@
     "organizerId": "vnexpress"
   },
   {
+    "id": "vnexpress-marathon-long-chau",
+    "name": "VnExpress Marathon Long Châu",
+    "website": null,
+    "organizerId": "vnexpress"
+  },
+  {
     "id": "vnexpress-marathon-long-chau-can-tho",
     "name": "VnExpress Marathon Long Châu Cần Thơ",
     "website": null,
     "organizerId": "vnexpress"
   },
   {
+    "id": "vnexpress-marathon-nghe-an",
+    "name": "VnExpress Marathon Nghệ An",
+    "website": null,
+    "organizerId": "vnexpress"
+  },
+  {
     "id": "vnexpress-marathon-nha-trang",
     "name": "VnExpress Marathon Nha Trang",
+    "website": null,
+    "organizerId": "vnexpress"
+  },
+  {
+    "id": "vnexpress-marathon-quy-nhon",
+    "name": "VnExpress Marathon Quy Nhơn",
     "website": null,
     "organizerId": "vnexpress"
   },

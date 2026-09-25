@@ -1,0 +1,162 @@
+{
+  "id": "810e7c27-7f4a-4c60-a49a-5e7d3af667f7",
+  "slug": "vnexpress-marathon-nghe-an",
+  "name": "VnExpress Marathon Grand Tour Nghe An 2026",
+  "types": [
+    "road_run"
+  ],
+  "date": "2026-09-27",
+  "endDate": null,
+  "seriesId": "vnexpress-marathon-nghe-an",
+  "organizerId": "vnexpress",
+  "organizer": "VnExpress",
+  "edition": null,
+  "courses": [],
+  "location": {
+    "venue": null,
+    "city": "Nghệ An"
+  },
+  "geo": {
+    "lat": 19.1976001,
+    "lng": 105.060676,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "40",
+      "ward": null
+    },
+    "legacy": null,
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 953.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 219.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 483.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 891.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 884.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1021.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 249.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 405.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1008,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 748.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 792.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 371.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 287.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "vnexpress-marathon",
+      "role": "official",
+      "url": "https://vm.vnexpress.net/nghe-an-2026",
+      "lastCheckedAt": "2026-09-25T05:01:22.419Z",
+      "lastChangedAt": "2026-09-25T05:01:22.419Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Marathon Grand Tour Nghe An 2026",
+          "date": "2026-09-27",
+          "city": "Nghệ An"
+        },
+        "pages": [
+          {
+            "url": "https://vm.vnexpress.net/nghe-an-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "VnExpress Marathon Grand Tour Nghe An 2026",
+              "date": "2026-09-27",
+              "prices": []
+            }
+          }
+        ],
+        "links": [],
+        "series": {
+          "id": "vnexpress-marathon-nghe-an",
+          "name": "VnExpress Marathon Nghệ An"
+        },
+        "organizer": {
+          "id": "vnexpress",
+          "name": "VnExpress",
+          "website": "https://vnexpress.net/"
+        },
+        "readBy": "agent"
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-25T05:01:22.419Z",
+  "updatedAt": "2026-09-25T05:01:22.419Z"
+}

@@ -1,0 +1,881 @@
+{
+  "id": "85373fd2-93ad-4101-b584-5c7d970d124a",
+  "slug": "hcmc-marathon-2027",
+  "name": "HCMC Marathon 2027",
+  "types": [
+    "road_run"
+  ],
+  "date": "2027-01-17",
+  "endDate": null,
+  "seriesId": "hcmc-marathon",
+  "organizerId": "pulse-active",
+  "organizer": "Pulse Active",
+  "edition": null,
+  "courses": [
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "30/4 Park, Le Duan",
+    "city": null
+  },
+  "geo": {
+    "lat": 10.8749397,
+    "lng": 106.7120611,
+    "source": "maps_link",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "25987"
+    },
+    "legacy": {
+      "province": "74",
+      "district": "725",
+      "ward": "25987"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 14.6,
+        "minutes": 15,
+        "method": "road",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1483.4,
+        "minutes": 1123,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 850.1,
+        "minutes": 640,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 422.5,
+        "minutes": 305,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 288.5,
+        "minutes": 222,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 183,
+        "minutes": 148,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1517.5,
+        "minutes": 1150,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 932.8,
+        "minutes": 715,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 105.6,
+        "minutes": 97,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 628.4,
+        "minutes": 468,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 346.1,
+        "minutes": 252,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1791.9,
+        "minutes": 1359,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1567.2,
+        "minutes": 1183,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
+  "prices": [
+    {
+      "distance": "42km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": "resident",
+      "price": 810000,
+      "from": "2026-06-23",
+      "to": "2026-06-23",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": "resident",
+      "price": 1020000,
+      "from": "2026-06-24",
+      "to": "2026-07-16",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Normal Rate",
+      "kind": "regular",
+      "audience": "resident",
+      "price": 1450000,
+      "from": "2026-07-17",
+      "to": "2026-09-04",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": "resident",
+      "price": 1925000,
+      "from": "2026-09-05",
+      "to": "2026-11-05",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": "non_resident",
+      "price": 1250000,
+      "from": "2026-06-23",
+      "to": "2026-06-23",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": "non_resident",
+      "price": 1550000,
+      "from": "2026-06-24",
+      "to": "2026-07-16",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Normal Rate",
+      "kind": "regular",
+      "audience": "non_resident",
+      "price": 1950000,
+      "from": "2026-07-17",
+      "to": "2026-09-04",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": "non_resident",
+      "price": 2450000,
+      "from": "2026-09-05",
+      "to": "2026-11-05",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": "resident",
+      "price": 720000,
+      "from": "2026-06-23",
+      "to": "2026-06-23",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": "resident",
+      "price": 930000,
+      "from": "2026-06-24",
+      "to": "2026-07-16",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Normal Rate",
+      "kind": "regular",
+      "audience": "resident",
+      "price": 1350000,
+      "from": "2026-07-17",
+      "to": "2026-09-04",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": "resident",
+      "price": 1595000,
+      "from": "2026-09-05",
+      "to": "2026-11-05",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": "non_resident",
+      "price": 1100000,
+      "from": "2026-06-23",
+      "to": "2026-06-23",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": "non_resident",
+      "price": 1350000,
+      "from": "2026-06-24",
+      "to": "2026-07-16",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Normal Rate",
+      "kind": "regular",
+      "audience": "non_resident",
+      "price": 1700000,
+      "from": "2026-07-17",
+      "to": "2026-09-04",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": "non_resident",
+      "price": 2100000,
+      "from": "2026-09-05",
+      "to": "2026-11-05",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": "resident",
+      "price": 610000,
+      "from": "2026-06-23",
+      "to": "2026-06-23",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": "resident",
+      "price": 750000,
+      "from": "2026-06-24",
+      "to": "2026-07-16",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Normal Rate",
+      "kind": "regular",
+      "audience": "resident",
+      "price": 990000,
+      "from": "2026-07-17",
+      "to": "2026-09-04",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": "resident",
+      "price": 1210000,
+      "from": "2026-09-05",
+      "to": "2026-11-05",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": "non_resident",
+      "price": 900000,
+      "from": "2026-06-23",
+      "to": "2026-06-23",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": "non_resident",
+      "price": 1150000,
+      "from": "2026-06-24",
+      "to": "2026-07-16",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Normal Rate",
+      "kind": "regular",
+      "audience": "non_resident",
+      "price": 1350000,
+      "from": "2026-07-17",
+      "to": "2026-09-04",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": "non_resident",
+      "price": 1600000,
+      "from": "2026-09-05",
+      "to": "2026-11-05",
+      "inferred": [],
+      "site": "hcmc-marathon"
+    }
+  ],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "njuko",
+      "url": "https://in.njuko.com/ho-chi-minh-city-marathon-2027"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://facebook.com/hcmcmarathon",
+      "kind": "facebook",
+      "foundOn": "hcmcmarathon.com"
+    },
+    {
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSeinw43HjtEtbz6e3ZqVEAzH0XYyRs_zPMOONLn7ArtXBaN0Q/viewform",
+      "kind": "other",
+      "foundOn": "hcmcmarathon.com"
+    },
+    {
+      "url": "https://forms.gle/w6AGQhmfvwATpYHu9",
+      "kind": "other",
+      "foundOn": "hcmcmarathon.com"
+    },
+    {
+      "url": "https://google.com/maps/place/April+30th+Park/@10.8749397,106.7120611,62234m/data=!3m1!1e3!4m6!3m5!1s0x31752f6570c90b25:0x788f1a06c37e1848!8m2!3d10.7791212!4d106.6969563!16s%2Fg%2F11jh_fqq8y",
+      "kind": "other",
+      "foundOn": "hcmcmarathon.com"
+    },
+    {
+      "url": "https://instagram.com/hcmcmarathon",
+      "kind": "other",
+      "foundOn": "hcmcmarathon.com"
+    },
+    {
+      "url": "https://share.google/3Q1SNJ1Gjrd8uHjpR",
+      "kind": "other",
+      "foundOn": "hcmcmarathon.com"
+    },
+    {
+      "url": "https://youtube.com/@PulseActive",
+      "kind": "other",
+      "foundOn": "hcmcmarathon.com"
+    },
+    {
+      "url": "https://in.njuko.com/ho-chi-minh-city-marathon-2027",
+      "kind": "seller",
+      "foundOn": "hcmcmarathon.com"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "hcmc-marathon",
+      "role": "official",
+      "url": "https://hcmcmarathon.com/",
+      "lastCheckedAt": "2026-09-25T05:01:22.419Z",
+      "lastChangedAt": "2026-09-25T05:01:22.419Z",
+      "extracted": {
+        "pages": [
+          {
+            "url": "https://hcmcmarathon.com/",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "HCMC Marathon 2027",
+              "date": "2027-01-17",
+              "distances": [
+                "42KM",
+                "21KM",
+                "10KM"
+              ],
+              "venue": "30/4 Park, Le Duan",
+              "registrationStatus": "open",
+              "prices": []
+            }
+          },
+          {
+            "url": "https://hcmcmarathon.com/42km/",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "HCMC Marathon 2027",
+              "date": "2027-01-17",
+              "distances": [
+                "42KM"
+              ],
+              "courses": [
+                {
+                  "distance": "42KM",
+                  "type": "road_run"
+                }
+              ],
+              "venue": "30th April Park, Le Duan Street, Saigon Ward, HCMC",
+              "mapsUrl": "https://www.google.com/maps/place/April+30th+Park/@10.8749397,106.7120611,62234m/data=!3m1!1e3!4m6!3m5!1s0x31752f6570c90b25:0x788f1a06c37e1848!8m2!3d10.7791212!4d106.6969563!16s%2Fg%2F11jh_fqq8y?entry=ttu&g_ep=EgoyMDI2MDYwNy4wIKXMDSoASAFQAw%3D%3D",
+              "registrationStatus": "open",
+              "prices": []
+            }
+          },
+          {
+            "url": "https://hcmcmarathon.com/21km/",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "HCMC Marathon 2027",
+              "date": "2027-01-17",
+              "distances": [
+                "21KM"
+              ],
+              "courses": [
+                {
+                  "distance": "21KM",
+                  "type": "road_run"
+                }
+              ],
+              "venue": "30th April Park, Le Duan Street, Saigon Ward, HCMC",
+              "mapsUrl": "https://www.google.com/maps/place/April+30th+Park/@10.8749397,106.7120611,62234m/data=!3m1!1e3!4m6!3m5!1s0x31752f6570c90b25:0x788f1a06c37e1848!8m2!3d10.7791212!4d106.6969563!16s%2Fg%2F11jh_fqq8y?entry=ttu&g_ep=EgoyMDI2MDYwNy4wIKXMDSoASAFQAw%3D%3D",
+              "registrationStatus": "open",
+              "prices": []
+            }
+          },
+          {
+            "url": "https://hcmcmarathon.com/10km/",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "HCMC Marathon 2027",
+              "date": "2027-01-17",
+              "distances": [
+                "10KM"
+              ],
+              "courses": [
+                {
+                  "distance": "10KM",
+                  "type": "road_run"
+                }
+              ],
+              "venue": "30th April Park, Le Duan Street, Saigon Ward, HCMC",
+              "mapsUrl": "https://www.google.com/maps/place/April+30th+Park/@10.8749397,106.7120611,62234m/data=!3m1!1e3!4m6!3m5!1s0x31752f6570c90b25:0x788f1a06c37e1848!8m2!3d10.7791212!4d106.6969563!16s%2Fg%2F11jh_fqq8y?entry=ttu&g_ep=EgoyMDI2MDYwNy4wIKXMDSoASAFQAw%3D%3D",
+              "registrationStatus": "open",
+              "prices": []
+            }
+          },
+          {
+            "url": "https://hcmcmarathon.com/raceinfotest/",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "HCMC Marathon 2027",
+              "date": "2027-01-17",
+              "distances": [
+                "Marathon",
+                "Half Marathon",
+                "10km"
+              ],
+              "venue": "30th April Park, Le Duan Street, Sai Gon Ward, Ho Chi Minh City",
+              "registrationStatus": "open",
+              "prices": []
+            }
+          },
+          {
+            "url": "https://hcmcmarathon.com/register/",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "distances": [
+                "42KM",
+                "21KM",
+                "10KM"
+              ],
+              "prices": []
+            }
+          },
+          {
+            "url": "https://hcmcmarathon.com/group-registration/",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "HCMC Marathon 2027",
+              "distances": [
+                "42K",
+                "21K",
+                "10K"
+              ],
+              "registrationStatus": "open",
+              "prices": []
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://hcmcmarathon.com/wp-content/uploads/2026/06/HM27-FEE_EN_42KM-scaled-scaled-scaled-scaled-scaled-scaled-scaled-scaled-2048x1024.png",
+            "json": {
+              "prices": [
+                {
+                  "distance": "42KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Resident",
+                  "from": "23/06",
+                  "to": "23/06",
+                  "price": 810000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Early Bird",
+                  "audience": "Resident",
+                  "from": "24/06",
+                  "to": "16/07",
+                  "price": 1020000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Normal Rate",
+                  "audience": "Resident",
+                  "from": "17/07",
+                  "to": "04/09",
+                  "price": 1450000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Late",
+                  "audience": "Resident",
+                  "from": "05/09",
+                  "to": "05/11",
+                  "price": 1925000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Non-Resident",
+                  "from": "23/06",
+                  "to": "23/06",
+                  "price": 1250000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Early Bird",
+                  "audience": "Non-Resident",
+                  "from": "24/06",
+                  "to": "16/07",
+                  "price": 1550000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Normal Rate",
+                  "audience": "Non-Resident",
+                  "from": "17/07",
+                  "to": "04/09",
+                  "price": 1950000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Late",
+                  "audience": "Non-Resident",
+                  "from": "05/09",
+                  "to": "05/11",
+                  "price": 2450000
+                }
+              ],
+              "distances": [
+                "42KM"
+              ],
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://hcmcmarathon.com/wp-content/uploads/2026/06/HM27-FEE_EN_21KM-scaled-scaled-scaled-scaled-scaled-scaled-scaled-scaled-2048x1024.png",
+            "json": {
+              "prices": [
+                {
+                  "distance": "21KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Resident",
+                  "from": "23/06",
+                  "to": "23/06",
+                  "price": 720000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Early Bird",
+                  "audience": "Resident",
+                  "from": "24/06",
+                  "to": "16/07",
+                  "price": 930000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Normal Rate",
+                  "audience": "Resident",
+                  "from": "17/07",
+                  "to": "04/09",
+                  "price": 1350000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Late",
+                  "audience": "Resident",
+                  "from": "05/09",
+                  "to": "05/11",
+                  "price": 1595000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Non-Resident",
+                  "from": "23/06",
+                  "to": "23/06",
+                  "price": 1100000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Early Bird",
+                  "audience": "Non-Resident",
+                  "from": "24/06",
+                  "to": "16/07",
+                  "price": 1350000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Normal Rate",
+                  "audience": "Non-Resident",
+                  "from": "17/07",
+                  "to": "04/09",
+                  "price": 1700000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Late",
+                  "audience": "Non-Resident",
+                  "from": "05/09",
+                  "to": "05/11",
+                  "price": 2100000
+                }
+              ],
+              "distances": [
+                "21KM"
+              ],
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://hcmcmarathon.com/wp-content/uploads/2026/06/HM27-FEE_EN_10KM-1-scaled-scaled-scaled-scaled-scaled-2048x1024.png",
+            "json": {
+              "prices": [
+                {
+                  "distance": "10KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Resident",
+                  "from": "23/06",
+                  "to": "23/06",
+                  "price": 610000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Early Bird",
+                  "audience": "Resident",
+                  "from": "24/06",
+                  "to": "16/07",
+                  "price": 750000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Normal Rate",
+                  "audience": "Resident",
+                  "from": "17/07",
+                  "to": "04/09",
+                  "price": 990000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Late",
+                  "audience": "Resident",
+                  "from": "05/09",
+                  "to": "05/11",
+                  "price": 1210000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Non-Resident",
+                  "from": "23/06",
+                  "to": "23/06",
+                  "price": 900000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Early Bird",
+                  "audience": "Non-Resident",
+                  "from": "24/06",
+                  "to": "16/07",
+                  "price": 1150000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Normal Rate",
+                  "audience": "Non-Resident",
+                  "from": "17/07",
+                  "to": "04/09",
+                  "price": 1350000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Late",
+                  "audience": "Non-Resident",
+                  "from": "05/09",
+                  "to": "05/11",
+                  "price": 1600000
+                }
+              ],
+              "distances": [
+                "10KM"
+              ],
+              "currency": "VND"
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://www.instagram.com/hcmcmarathon/",
+            "text": "instagram"
+          },
+          {
+            "url": "https://www.facebook.com/hcmcmarathon",
+            "text": "facebook"
+          },
+          {
+            "url": "https://www.youtube.com/@PulseActive",
+            "text": "youtube"
+          },
+          {
+            "url": "https://in.njuko.com/ho-chi-minh-city-marathon-2027?currentPage=select-competition",
+            "text": "register now"
+          },
+          {
+            "url": "https://www.google.com/maps/place/April+30th+Park/@10.8749397,106.7120611,62234m/data=!3m1!1e3!4m6!3m5!1s0x31752f6570c90b25:0x788f1a06c37e1848!8m2!3d10.7791212!4d106.6969563!16s%2Fg%2F11jh_fqq8y?entry=ttu&g_ep=EgoyMDI2MDYwNy4wIKXMDSoASAFQAw%3D%3D",
+            "text": "google maps"
+          },
+          {
+            "url": "https://share.google/3Q1SNJ1Gjrd8uHjpR",
+            "text": "google maps"
+          },
+          {
+            "url": "https://forms.gle/w6AGQhmfvwATpYHu9",
+            "text": "here"
+          },
+          {
+            "url": "https://docs.google.com/forms/d/e/1FAIpQLSeinw43HjtEtbz6e3ZqVEAzH0XYyRs_zPMOONLn7ArtXBaN0Q/viewform",
+            "text": "register group now"
+          }
+        ],
+        "series": {
+          "id": "hcmc-marathon",
+          "name": "HCMC Marathon"
+        },
+        "organizer": {
+          "id": "pulse-active",
+          "name": "Pulse Active",
+          "website": "https://pulse.vn/"
+        },
+        "readBy": "agent"
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-25T05:01:22.419Z",
+  "updatedAt": "2026-09-25T05:01:22.419Z"
+}
