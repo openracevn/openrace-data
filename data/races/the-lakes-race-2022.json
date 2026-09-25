@@ -1,0 +1,88 @@
+{
+  "id": "18ba0108-b05a-41ab-a3eb-f46474176aeb",
+  "slug": "the-lakes-race-2022",
+  "name": "The Lakes Race 2022",
+  "types": [
+    "other"
+  ],
+  "date": "2022-05-15",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": null,
+  "organizer": "Athlete Trotter",
+  "edition": 4,
+  "courses": [
+    {
+      "label": "1.8km",
+      "meters": 1800,
+      "type": null,
+      "elevationGain": null
+    },
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": null,
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": null,
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": null,
+      "elevationGain": null
+    },
+    {
+      "label": "600m",
+      "meters": 600,
+      "type": null,
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Hồ Đá, Thủ Đức",
+    "city": "Hồ Chí Minh"
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "openrace",
+      "role": "reference",
+      "url": "https://irace.vn/su-kien/run-for-orphans-the-lakes-race",
+      "lastCheckedAt": "2026-09-25T06:48:59.089Z",
+      "lastChangedAt": "2026-09-25T06:48:59.089Z",
+      "extracted": {
+        "facts": {
+          "name": "The Lakes Race 2022",
+          "date": "2022-05-15",
+          "edition": 4,
+          "venue": "Hồ Đá, Thủ Đức",
+          "city": "Hồ Chí Minh",
+          "organizer": "Athlete Trotter",
+          "distances": [
+            "600m",
+            "1.8K",
+            "5K",
+            "10K",
+            "21K"
+          ],
+          "note": "race-research: iRace's own event page for the 2022 edition (the 4th; a 5th edition had been planned for 2021-05-16 per raceez.com but was pushed to 2022, per this page's own recap of editions 1-3 plus this one — one edition, not two). States date, venue, distances, organizer."
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-25T06:48:59.089Z",
+  "updatedAt": "2026-09-25T06:48:59.089Z"
+}
