@@ -7,7 +7,7 @@
   ],
   "date": "2024-11-08",
   "endDate": "2024-11-10",
-  "seriesId": "lam-dong-trail",
+  "seriesId": "lamdong-trail",
   "organizerId": "greenhat",
   "organizer": "GreenHat",
   "edition": null,
@@ -129,7 +129,13 @@
     }
   ],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "seriesId": {
+      "value": "lamdong-trail",
+      "reason": "unify with existing series lamdong-trail (matches data/series.json and the 2026 edition)",
+      "at": "2026-09-25T08:02:01.870Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -162,5 +168,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T08:00:46.737Z"
+  "updatedAt": "2026-09-25T08:02:01.870Z"
 }
