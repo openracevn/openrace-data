@@ -3,7 +3,7 @@
   "slug": "vpbank-hanoi-international-marathon-2026",
   "name": "VPBank Hanoi International Marathon 2026",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2026-10-18",
   "endDate": null,
@@ -11,7 +11,32 @@
   "organizerId": "don-vi-to-chuc-ngan-hang-tmcp-viet-nam-thinh-vuong-vpbank",
   "organizer": "Đơn vị tổ chức: Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Thành phố Hà Nội",
     "city": null
@@ -131,7 +156,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/vpbank-hanoi-international-marathon-2026",
-      "lastCheckedAt": "2026-09-23T18:30:58.280Z",
+      "lastCheckedAt": "2026-09-25T04:03:37.715Z",
       "lastChangedAt": "2026-09-23T18:30:58.280Z",
       "extracted": {
         "facts": {
@@ -143,6 +168,27 @@
           "registrationStatus": "closed",
           "fromPrice": 599000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/vpbank-hanoi-international-marathon-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "VPBank Hanoi International Marathon 2026",
+              "date": "2026-10-25",
+              "distances": [
+                "42km",
+                "21km",
+                "10km",
+                "5km"
+              ],
+              "organizer": "VPBank",
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://vpbankmarathon.com/quy-dinh",
@@ -152,11 +198,12 @@
         "organizer": {
           "id": "don-vi-to-chuc-ngan-hang-tmcp-viet-nam-thinh-vuong-vpbank",
           "name": "Đơn vị tổ chức: Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T07:11:10.278Z"
+  "updatedAt": "2026-09-25T04:03:37.715Z"
 }

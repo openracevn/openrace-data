@@ -3,7 +3,7 @@
   "slug": "cuc-phuong-jungle-paths-2026",
   "name": "CUC PHUONG JUNGLE PATHS 2026",
   "types": [
-    "other"
+    "trail_run"
   ],
   "date": "2026-12-25",
   "endDate": "2026-12-27",
@@ -11,7 +11,38 @@
   "organizerId": "race-jungle",
   "organizer": "Race Jungle",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "trail_run",
+      "elevationGain": 200
+    },
+    {
+      "label": "25km",
+      "meters": 25000,
+      "type": "trail_run",
+      "elevationGain": 700
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "trail_run",
+      "elevationGain": 1200
+    },
+    {
+      "label": "75km",
+      "meters": 75000,
+      "type": "trail_run",
+      "elevationGain": 2500
+    },
+    {
+      "label": "100km",
+      "meters": 100000,
+      "type": "trail_run",
+      "elevationGain": 3500
+    }
+  ],
   "location": {
     "venue": "Vườn Quốc gia Cúc Phương, Ninh Bình, Việt Nam",
     "city": null
@@ -135,7 +166,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/cuc-phuong-jungle-paths-2026",
-      "lastCheckedAt": "2026-09-23T18:30:53.064Z",
+      "lastCheckedAt": "2026-09-25T04:03:37.715Z",
       "lastChangedAt": "2026-09-23T18:30:53.064Z",
       "extracted": {
         "facts": {
@@ -148,6 +179,54 @@
           "registrationStatus": "open",
           "fromPrice": 840000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/cuc-phuong-jungle-paths-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "trail_run"
+              ],
+              "name": "CUC PHUONG JUNGLE PATHS 2026",
+              "distances": [
+                "10KM",
+                "25KM",
+                "42KM",
+                "75KM",
+                "100KM"
+              ],
+              "courses": [
+                {
+                  "distance": "10KM",
+                  "type": "trail_run",
+                  "elevationGain": 200
+                },
+                {
+                  "distance": "25KM",
+                  "type": "trail_run",
+                  "elevationGain": 700
+                },
+                {
+                  "distance": "42KM",
+                  "type": "trail_run",
+                  "elevationGain": 1200
+                },
+                {
+                  "distance": "75KM",
+                  "type": "trail_run",
+                  "elevationGain": 2500
+                },
+                {
+                  "distance": "100KM",
+                  "type": "trail_run",
+                  "elevationGain": 3500
+                }
+              ],
+              "organizer": "Race Jungle",
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1FxrT3Zf-17e7pEUrD2zZgAIKGt5JE_9C/view",
@@ -157,11 +236,12 @@
         "organizer": {
           "id": "race-jungle",
           "name": "Race Jungle"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-09-25T04:03:37.715Z"
 }

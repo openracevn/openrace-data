@@ -3,7 +3,7 @@
   "slug": "test-run-2026-speed-your-pr",
   "name": "TEST RUN 2026 - SPEED YOUR PR",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2026-09-27",
   "endDate": null,
@@ -11,7 +11,20 @@
   "organizerId": "nexus-sport-events",
   "organizer": "Nexus Sport Events",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Công viên SOHO - The Global City, P. Bình Trưng, TP. Hồ Chí Minh",
     "city": null
@@ -112,7 +125,30 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Giá vé",
+      "kind": "other",
+      "audience": null,
+      "price": 99000,
+      "from": "2026-09-09",
+      "to": "2026-09-19",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Giá vé",
+      "kind": "other",
+      "audience": null,
+      "price": 99000,
+      "from": "2026-09-09",
+      "to": "2026-09-19",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -135,7 +171,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/test-run-2026-speed-your-pr",
-      "lastCheckedAt": "2026-09-23T18:30:53.472Z",
+      "lastCheckedAt": "2026-09-25T04:03:37.715Z",
       "lastChangedAt": "2026-09-23T18:30:53.472Z",
       "extracted": {
         "facts": {
@@ -147,6 +183,47 @@
           "registrationStatus": "closed",
           "fromPrice": 99000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/test-run-2026-speed-your-pr",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "TEST RUN 2026 - SPEED YOUR PR",
+              "prices": []
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/09/09/1788920254044328/Price-list-(1).png",
+            "json": {
+              "prices": [
+                {
+                  "distance": "5KM",
+                  "tier": "Giá vé",
+                  "from": "2026-09-09",
+                  "to": "2026-09-19",
+                  "price": 99000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Giá vé",
+                  "from": "2026-09-09",
+                  "to": "2026-09-19",
+                  "price": 99000
+                }
+              ],
+              "distances": [
+                "5KM",
+                "10KM"
+              ],
+              "currency": "VND"
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1Dh60Sea18SQdwY_JniUpKPp5qxNw2cZM/view?usp=drive_link",
@@ -156,11 +233,12 @@
         "organizer": {
           "id": "nexus-sport-events",
           "name": "Nexus Sport Events"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-09-25T04:03:37.715Z"
 }

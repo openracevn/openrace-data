@@ -3,7 +3,7 @@
   "slug": "global-gate-halong-esg-marathon-2026",
   "name": "GLOBAL GATE HẠ LONG ESG++ MARATHON 2026",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2026-10-10",
   "endDate": "2026-10-11",
@@ -11,7 +11,32 @@
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "3km",
+      "meters": 3000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Global Gate Hạ Long",
     "city": null
@@ -114,7 +139,7 @@
   },
   "prices": [],
   "currency": "VND",
-  "registrationStatus": "open",
+  "registrationStatus": "closed",
   "registrations": [
     {
       "site": "actiup",
@@ -135,7 +160,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/global-gate-halong-esg-marathon-2026",
-      "lastCheckedAt": "2026-09-23T18:30:47.025Z",
+      "lastCheckedAt": "2026-09-25T04:03:37.715Z",
       "lastChangedAt": "2026-09-23T18:30:47.025Z",
       "extracted": {
         "facts": {
@@ -145,9 +170,30 @@
           "venue": "Global Gate Hạ Long",
           "organizer": "Công ty DHA Việt Nam",
           "currency": "VND",
-          "registrationStatus": "open",
+          "registrationStatus": "closed",
           "fromPrice": 180000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/global-gate-halong-esg-marathon-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "GLOBAL GATE HẠ LONG ESG++ MARATHON 2026",
+              "date": "2026-10-11",
+              "distances": [
+                "42km",
+                "21km",
+                "10km",
+                "3km"
+              ],
+              "venue": "Global Gate Hạ Long",
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/12KRxjkDPbyCZwQzsQKDyEaXQ7W7JC-AI/view",
@@ -157,11 +203,12 @@
         "organizer": {
           "id": "cong-ty-dha-viet-nam",
           "name": "Công ty DHA Việt Nam"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-09-25T04:03:37.715Z"
 }

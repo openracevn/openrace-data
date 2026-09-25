@@ -3,7 +3,7 @@
   "slug": "lao-cai-marathon-2026-dong-chay-bien-cuong",
   "name": "LÀO CAI MARATHON 2026 - DÒNG CHẢY BIÊN CƯƠNG",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2026-10-18",
   "endDate": null,
@@ -11,13 +11,165 @@
   "organizerId": "viet-jungle",
   "organizer": "VIET JUNGLE",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "5.5km",
+      "meters": 5500,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10.5km",
+      "meters": 10500,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "TBU",
     "city": null
   },
   "geo": null,
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5.5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 350000,
+      "from": "2026-06-09",
+      "to": "2026-06-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5.5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 480000,
+      "from": "2026-06-16",
+      "to": "2026-08-16",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5.5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 650000,
+      "from": "2026-08-17",
+      "to": "2026-09-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5.5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 850000,
+      "from": "2026-09-16",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10.5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 430000,
+      "from": "2026-06-09",
+      "to": "2026-06-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10.5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 580000,
+      "from": "2026-06-16",
+      "to": "2026-08-16",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10.5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 750000,
+      "from": "2026-08-17",
+      "to": "2026-09-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10.5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 950000,
+      "from": "2026-09-16",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 500000,
+      "from": "2026-06-09",
+      "to": "2026-06-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 680000,
+      "from": "2026-06-16",
+      "to": "2026-08-16",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 850000,
+      "from": "2026-08-17",
+      "to": "2026-09-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1250000,
+      "from": "2026-09-16",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -40,7 +192,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/lao-cai-marathon-2026-dong-chay-bien-cuong",
-      "lastCheckedAt": "2026-09-23T18:30:55.920Z",
+      "lastCheckedAt": "2026-09-25T04:03:37.715Z",
       "lastChangedAt": "2026-09-23T18:30:55.920Z",
       "extracted": {
         "facts": {
@@ -52,6 +204,129 @@
           "registrationStatus": "closed",
           "fromPrice": 350000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/lao-cai-marathon-2026-dong-chay-bien-cuong",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "LÀO CAI MARATHON 2026 - DÒNG CHẢY BIÊN CƯƠNG",
+              "date": "2026-10-18",
+              "distances": [
+                "5.5km",
+                "10.5km",
+                "21km"
+              ],
+              "prices": []
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/06/09/1780995376079103/02-B%E1%BA%A3ng-gi%C3%A1-v%C3%A9.png",
+            "json": {
+              "prices": [
+                {
+                  "distance": "5.5KM",
+                  "tier": "Super Early Bird",
+                  "from": "09/06",
+                  "to": "15/06",
+                  "price": 350000
+                },
+                {
+                  "distance": "5.5KM",
+                  "tier": "Early Bird",
+                  "from": "16/06",
+                  "to": "16/08",
+                  "price": 480000
+                },
+                {
+                  "distance": "5.5KM",
+                  "tier": "Regular",
+                  "from": "17/08",
+                  "to": "15/09",
+                  "price": 650000
+                },
+                {
+                  "distance": "5.5KM",
+                  "tier": "Late",
+                  "from": "16/09",
+                  "to": "30/09",
+                  "price": 850000
+                },
+                {
+                  "distance": "10.5KM",
+                  "tier": "Super Early Bird",
+                  "from": "09/06",
+                  "to": "15/06",
+                  "price": 430000
+                },
+                {
+                  "distance": "10.5KM",
+                  "tier": "Early Bird",
+                  "from": "16/06",
+                  "to": "16/08",
+                  "price": 580000
+                },
+                {
+                  "distance": "10.5KM",
+                  "tier": "Regular",
+                  "from": "17/08",
+                  "to": "15/09",
+                  "price": 750000
+                },
+                {
+                  "distance": "10.5KM",
+                  "tier": "Late",
+                  "from": "16/09",
+                  "to": "30/09",
+                  "price": 950000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Super Early Bird",
+                  "from": "09/06",
+                  "to": "15/06",
+                  "price": 500000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Early Bird",
+                  "from": "16/06",
+                  "to": "16/08",
+                  "price": 680000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Regular",
+                  "from": "17/08",
+                  "to": "15/09",
+                  "price": 850000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Late",
+                  "from": "16/09",
+                  "to": "30/09",
+                  "price": 1250000
+                }
+              ],
+              "distances": [
+                "5.5KM",
+                "10.5KM",
+                "21KM"
+              ]
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2026/06/05/1780631595216266/Untitled-1-03.png",
+            "json": {
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1dT42OM0Jx4Qow1s14eaWdHkJNMWN2qil/view",
@@ -61,11 +336,12 @@
         "organizer": {
           "id": "viet-jungle",
           "name": "VIET JUNGLE"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-09-25T04:03:37.715Z"
 }

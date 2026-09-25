@@ -3,15 +3,28 @@
   "slug": "gemadept-run-hai-phong-city-2026",
   "name": "Gemadept Run Hải Phòng 2026",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2026-10-10",
   "endDate": null,
   "seriesId": null,
   "organizerId": "gemadept",
   "organizer": "GEMADEPT",
-  "edition": null,
-  "courses": [],
+  "edition": 2,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "TP Hải Phòng, Việt Nam",
     "city": null
@@ -108,7 +121,52 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 750000,
+      "from": "2026-08-16",
+      "to": "2026-09-14",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 950000,
+      "from": "2026-09-15",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 580000,
+      "from": "2026-08-16",
+      "to": "2026-09-14",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 750000,
+      "from": "2026-09-15",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -131,7 +189,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/gemadept-run-hai-phong-city-2026",
-      "lastCheckedAt": "2026-09-23T18:30:54.658Z",
+      "lastCheckedAt": "2026-09-25T04:03:37.715Z",
       "lastChangedAt": "2026-09-23T18:30:54.658Z",
       "extracted": {
         "facts": {
@@ -143,6 +201,73 @@
           "registrationStatus": "closed",
           "fromPrice": 250000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/gemadept-run-hai-phong-city-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Gemadept Run Hải Phòng 2026",
+              "date": "2026-10-10",
+              "distances": [
+                "5K",
+                "10K"
+              ],
+              "edition": 2,
+              "prices": []
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/09/08/1788841118953163/1.-B%E1%BA%A2NG-GI%C3%81_GHP.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "10KM",
+                  "tier": "Regular",
+                  "from": "16/08",
+                  "to": "14/09",
+                  "price": 750000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Late",
+                  "from": "15/09",
+                  "to": "30/09",
+                  "price": 950000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Regular",
+                  "from": "16/08",
+                  "to": "14/09",
+                  "price": 580000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Late",
+                  "from": "15/09",
+                  "to": "30/09",
+                  "price": 750000
+                }
+              ],
+              "distances": [
+                "10KM",
+                "5KM"
+              ],
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2026/07/29/1785313346655620/2.-%C4%90A%CC%A3%CC%86C-QUYE%CC%82%CC%80N.jpg",
+            "json": {
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1NQHHmMrVXz4Dt2musrbYeEQg-M7dxUNF/view?usp=drive_link",
@@ -152,11 +277,12 @@
         "organizer": {
           "id": "gemadept",
           "name": "GEMADEPT"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T07:11:10.278Z"
+  "updatedAt": "2026-09-25T04:03:37.715Z"
 }

@@ -3,7 +3,7 @@
   "slug": "halong-bay-heritage-marathon-2026",
   "name": "Halong Bay Heritage Marathon 2026",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2026-11-22",
   "endDate": null,
@@ -11,7 +11,32 @@
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Ha Long, Vietnam",
     "city": null
@@ -112,7 +137,52 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 288000,
+      "from": "2026-01-15",
+      "to": "2026-01-17",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 388000,
+      "from": "2026-01-15",
+      "to": "2026-01-17",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 488000,
+      "from": "2026-01-15",
+      "to": "2026-01-17",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 588000,
+      "from": "2026-01-15",
+      "to": "2026-01-17",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -135,7 +205,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/halong-bay-heritage-marathon-2026",
-      "lastCheckedAt": "2026-09-23T18:30:52.268Z",
+      "lastCheckedAt": "2026-09-25T04:03:37.715Z",
       "lastChangedAt": "2026-09-23T18:30:52.268Z",
       "extracted": {
         "facts": {
@@ -147,6 +217,63 @@
           "registrationStatus": "open",
           "fromPrice": 288000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/halong-bay-heritage-marathon-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Halong Bay Heritage Marathon 2026",
+              "prices": []
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/01/13/1768290130052028/FS.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "5KM",
+                  "tier": "Flash Sale",
+                  "from": "2026-01-15",
+                  "to": "2026-01-17",
+                  "price": 288000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Flash Sale",
+                  "from": "2026-01-15",
+                  "to": "2026-01-17",
+                  "price": 388000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Flash Sale",
+                  "from": "2026-01-15",
+                  "to": "2026-01-17",
+                  "price": 488000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Flash Sale",
+                  "from": "2026-01-15",
+                  "to": "2026-01-17",
+                  "price": 588000
+                }
+              ],
+              "distances": [
+                "5KM",
+                "10KM",
+                "21KM",
+                "42KM"
+              ],
+              "currency": "VND"
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1X9FOPRR8VfwfSr2f7mcYfWObqJmsf9QS/view?usp=sharing",
@@ -156,11 +283,12 @@
         "organizer": {
           "id": "cong-ty-dha-viet-nam",
           "name": "Công ty DHA Việt Nam"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-09-25T04:03:37.715Z"
 }
