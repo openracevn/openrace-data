@@ -1,0 +1,92 @@
+{
+  "id": "b6c2e1c1-bce5-413d-a034-15bd5f0b22fd",
+  "slug": "lam-dong-trail-2025",
+  "name": "Lam Dong Trail 2025",
+  "types": [
+    "trail_run"
+  ],
+  "date": "2025-11-07",
+  "endDate": "2025-11-09",
+  "seriesId": "lam-dong-trail",
+  "organizerId": null,
+  "organizer": null,
+  "edition": null,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "15km",
+      "meters": 15000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "25km",
+      "meters": 25000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "55km",
+      "meters": 55000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "85km",
+      "meters": 85000,
+      "type": "trail_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Thung Lũng Tình Yêu - TTC World, Đà Lạt, Lâm Đồng",
+    "city": "Đà Lạt, Lâm Đồng"
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "irace",
+      "role": "reference",
+      "url": "https://irace.vn/su-kien/lam-dong-trail",
+      "lastCheckedAt": "2026-09-25T08:03:59.469Z",
+      "lastChangedAt": "2026-09-25T08:03:59.469Z",
+      "extracted": {
+        "facts": {
+          "name": "Lam Dong Trail 2025",
+          "date": "2025-11-07",
+          "endDate": "2025-11-09",
+          "types": [
+            "trail_run"
+          ],
+          "distances": [
+            "5km",
+            "15km",
+            "25km",
+            "55km",
+            "85km"
+          ],
+          "venue": "Thung Lũng Tình Yêu - TTC World, Đà Lạt, Lâm Đồng",
+          "city": "Đà Lạt, Lâm Đồng",
+          "seriesId": "lamdong-trail",
+          "currency": "VND",
+          "note": "iRace event page (Wayback snapshot 2025-07-11, since overwritten to show the 2026 listing): Lâm Đồng Trail 2025 held 07-09/11/2025, venue Thung Lũng Tình Yêu - TTC World, distances 5/15/25/55/85km (85km course debuted this edition per lamdongtrail.vn's own preview article)"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-25T08:03:59.469Z",
+  "updatedAt": "2026-09-25T08:03:59.469Z"
+}
