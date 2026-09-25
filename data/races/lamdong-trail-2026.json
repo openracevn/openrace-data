@@ -385,6 +385,105 @@
       "to": "2026-10-05",
       "inferred": [],
       "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 650000,
+      "from": "2026-04-22",
+      "to": "2026-06-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "15km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 850000,
+      "from": "2026-04-22",
+      "to": "2026-06-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "25km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1450000,
+      "from": "2026-04-22",
+      "to": "2026-06-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "55km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1950000,
+      "from": "2026-04-22",
+      "to": "2026-06-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "85km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2350000,
+      "from": "2026-04-22",
+      "to": "2026-06-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Kid Trail (5Km) Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 650000,
+      "from": "2026-04-22",
+      "to": "2026-06-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "5km Family (1 người lớn + 1 trẻ em) Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1200000,
+      "from": "2026-04-22",
+      "to": "2026-06-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "5km Family (1 người lớn + 2 trẻ em) Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1800000,
+      "from": "2026-04-22",
+      "to": "2026-06-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "5km Family (2 người lớn + 1 trẻ em) Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1800000,
+      "from": "2026-04-22",
+      "to": "2026-06-10",
+      "inferred": [],
+      "site": "irace"
     }
   ],
   "currency": "VND",
@@ -729,10 +828,109 @@
           "to": "2026-10-05",
           "inferred": [],
           "site": "actiup"
+        },
+        {
+          "distance": "5km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 650000,
+          "from": "2026-04-22",
+          "to": "2026-06-10",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "15km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 850000,
+          "from": "2026-04-22",
+          "to": "2026-06-10",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "25km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 1450000,
+          "from": "2026-04-22",
+          "to": "2026-06-10",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "55km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 1950000,
+          "from": "2026-04-22",
+          "to": "2026-06-10",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "85km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 2350000,
+          "from": "2026-04-22",
+          "to": "2026-06-10",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "5km",
+          "tier": "Kid Trail (5Km) Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 650000,
+          "from": "2026-04-22",
+          "to": "2026-06-10",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "5km",
+          "tier": "5km Family (1 người lớn + 1 trẻ em) Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 1200000,
+          "from": "2026-04-22",
+          "to": "2026-06-10",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "5km",
+          "tier": "5km Family (1 người lớn + 2 trẻ em) Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 1800000,
+          "from": "2026-04-22",
+          "to": "2026-06-10",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "5km",
+          "tier": "5km Family (2 người lớn + 1 trẻ em) Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 1800000,
+          "from": "2026-04-22",
+          "to": "2026-06-10",
+          "inferred": [],
+          "site": "irace"
         }
       ],
-      "reason": "fix: two Family Trail Run 5Km REGULAR entries were tagged kind: 'late' despite their own tier text and date window (2026-06-11 to 2026-08-16, the Regular window) saying REGULAR — a mislabel from the original agent-read pass. Found while building openrace-web's new price matrix, which surfaced it as split/duplicate rows",
-      "at": "2026-09-25T12:01:05.169Z"
+      "reason": "add irace.vn's Early Bird tier (22/04-10/06/2026) on top of the existing 22 Regular/Late entries; prices is already overridden from an earlier kind-label fix, so 'add' alone won't auto-union a new source's prices into it — set with the full combined list instead",
+      "at": "2026-09-25T12:08:25.109Z"
     }
   },
   "sources": [
@@ -1488,5 +1686,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T12:07:59.424Z"
+  "updatedAt": "2026-09-25T12:08:25.109Z"
 }
