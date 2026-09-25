@@ -24,6 +24,9 @@ Background: `.claude/docs/roadmap.md` (trust principles — every fact traces to
 - **Only write what a source states.** Never guess an edition number, a date, or a price from pattern ("it's usually in May") — a gap stays a gap, and a genuine uncertainty (conflicting dates, a "planned" edition that may have been postponed) becomes a `flags` entry and `confidence: "conflicting"`, not a silent pick.
 - Commits go straight to `main` (schedule is off). `main.yml` posts every change to Discord — that notification is the review step, so your reconciled judgment is enough to commit; you don't need to ask before committing well-sourced findings, only before something genuinely uncertain.
 - Never hand-edit files in `data/`. Everything goes through `npm run edit -- add|set`.
+- **Never reuse the same URL as the primary `--url` for two different editions.** `edit -- add` joins by "same page, same edition" first — a second `add` with a URL already used for another race **overwrites that race's fields** instead of creating a new one (found the hard way on Andros: a page that recaps an older edition in passing must not be cited as that edition's own source; only cite a page as the source for the edition it's actually, primarily about).
+- **Don't infer an edition number from position or sequence** ("this is between Vol 6 and Vol 8, so it must be Vol 7") — that's the same guessing the rule above already forbids, just dressed as arithmetic. Only set `edition` when a source's own text states the number. If a wrong inferred edition already got written into a race's own `add` (not as an override), `unset` won't remove it — it only clears overrides. Correct it with `npm run edit -- set <race> edition null --reason "..."` (an explicit override to null).
+- **Don't spawn parallel Claude subagents to research multiple editions at once.** A subagent here runs on Claude by default (not opencode's free models), so it raises your usage rather than saving it, and it reintroduces exactly the URL-collision and cross-edition consistency risks above — one editon's page can be the source of a fact about another, which only a single reconciling pass catches. What does parallelize for free: run **discovery and fetching as batched tool calls in one turn** (already fast, no extra cost), and for a large batch of sources, run a **few parallel opencode extraction workers** on separate output files (same split as `opencode-read`'s worker A/B) — that's real, free wall-clock savings. Commits stay sequential and Claude-only regardless of batch size.
 
 ## 1. See what we already have (free)
 
@@ -110,6 +113,10 @@ GITHUB_TOKEN=$(gh auth token) npm run edit -- set <slug> edition <n> --reason "<
 - If you can't tell which is right, don't override. `flags` isn't a hand-settable field (`reconcile.ts` generates it, `edit.ts` doesn't accept it) — so add the source, put the disagreement in its `--reason`, and say so plainly to the user. A genuinely unresolved conflict is worth surfacing, not silently picking a side.
 
 Drop `--dry-run` and prefix `GITHUB_TOKEN=$(gh auth token)` once the dry run looks right.
+
+## Known tool limitation
+
+Re-running `add` on the same URL only replaces the stored source if its **`site` tag** is unchanged (`sync.ts` matches by `site` + `url` together). If `config/sites.yaml` gains a new recognized site *after* you've already added a source from it as plain `openrace`, re-running the same `add` call to pick up the new tag creates a **second, duplicate source entry** instead of replacing the first (both hold the same facts, so it doesn't change any shown value — just clutters `sources[]`). No clean command removes a stale source today. If you hit this, say so plainly rather than hand-editing the file; it's a real gap in `edit.ts`, not something to route around.
 
 ## 6. Clean up and report
 
