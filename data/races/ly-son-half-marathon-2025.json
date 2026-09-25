@@ -127,7 +127,173 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "21km",
+      "tier": "SUPER EARLY BIRD",
+      "kind": "super_early",
+      "audience": null,
+      "price": 586000,
+      "from": "2025-04-16",
+      "to": null,
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "SUPER EARLY BIRD",
+      "kind": "super_early",
+      "audience": null,
+      "price": 486000,
+      "from": "2025-04-16",
+      "to": null,
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "SUPER EARLY BIRD",
+      "kind": "super_early",
+      "audience": null,
+      "price": 386000,
+      "from": "2025-04-16",
+      "to": null,
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "EARLY BIRD GIAI ĐOẠN 1",
+      "kind": "early",
+      "audience": null,
+      "price": 686000,
+      "from": null,
+      "to": "2025-05-07",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "EARLY BIRD GIAI ĐOẠN 1",
+      "kind": "early",
+      "audience": null,
+      "price": 586000,
+      "from": null,
+      "to": "2025-05-07",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "EARLY BIRD GIAI ĐOẠN 1",
+      "kind": "early",
+      "audience": null,
+      "price": 486000,
+      "from": null,
+      "to": "2025-05-07",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "EARLY BIRD GIAI ĐOẠN 2",
+      "kind": "early",
+      "audience": null,
+      "price": 786000,
+      "from": "2025-05-08",
+      "to": "2025-05-28",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "EARLY BIRD GIAI ĐOẠN 2",
+      "kind": "early",
+      "audience": null,
+      "price": 686000,
+      "from": "2025-05-08",
+      "to": "2025-05-28",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "EARLY BIRD GIAI ĐOẠN 2",
+      "kind": "early",
+      "audience": null,
+      "price": 586000,
+      "from": "2025-05-08",
+      "to": "2025-05-28",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 986000,
+      "from": "2025-05-29",
+      "to": "2025-06-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 886000,
+      "from": "2025-05-29",
+      "to": "2025-06-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 786000,
+      "from": "2025-05-29",
+      "to": "2025-06-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "LATE",
+      "kind": "late",
+      "audience": null,
+      "price": 1186000,
+      "from": "2025-06-13",
+      "to": "2025-06-20",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "LATE",
+      "kind": "late",
+      "audience": null,
+      "price": 1086000,
+      "from": "2025-06-13",
+      "to": "2025-06-20",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "LATE",
+      "kind": "late",
+      "audience": null,
+      "price": 886000,
+      "from": "2025-06-13",
+      "to": "2025-06-20",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -176,7 +342,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/ly-son-half-marathon-2025",
-      "lastCheckedAt": "2026-09-23T18:31:34.863Z",
+      "lastCheckedAt": "2026-09-25T08:42:58.682Z",
       "lastChangedAt": "2026-09-23T18:31:34.863Z",
       "extracted": {
         "facts": {
@@ -189,11 +355,139 @@
           "registrationStatus": "closed",
           "fromPrice": 486000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/ly-son-half-marathon-2025",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Lý Sơn Half Marathon 2025",
+              "prices": []
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2025/04/17/1744890874917181/price-lshm25.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "21KM",
+                  "tier": "SUPER EARLY BIRD",
+                  "from": "2025-04-16",
+                  "price": 586000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "SUPER EARLY BIRD",
+                  "from": "2025-04-16",
+                  "price": 486000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "SUPER EARLY BIRD",
+                  "from": "2025-04-16",
+                  "price": 386000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "EARLY BIRD GIAI ĐOẠN 1",
+                  "to": "2025-05-07",
+                  "price": 686000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "EARLY BIRD GIAI ĐOẠN 1",
+                  "to": "2025-05-07",
+                  "price": 586000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "EARLY BIRD GIAI ĐOẠN 1",
+                  "to": "2025-05-07",
+                  "price": 486000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "EARLY BIRD GIAI ĐOẠN 2",
+                  "from": "2025-05-08",
+                  "to": "2025-05-28",
+                  "price": 786000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "EARLY BIRD GIAI ĐOẠN 2",
+                  "from": "2025-05-08",
+                  "to": "2025-05-28",
+                  "price": 686000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "EARLY BIRD GIAI ĐOẠN 2",
+                  "from": "2025-05-08",
+                  "to": "2025-05-28",
+                  "price": 586000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "REGULAR",
+                  "from": "2025-05-29",
+                  "to": "2025-06-12",
+                  "price": 986000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "REGULAR",
+                  "from": "2025-05-29",
+                  "to": "2025-06-12",
+                  "price": 886000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "REGULAR",
+                  "from": "2025-05-29",
+                  "to": "2025-06-12",
+                  "price": 786000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "LATE",
+                  "from": "2025-06-13",
+                  "to": "2025-06-20",
+                  "price": 1186000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "LATE",
+                  "from": "2025-06-13",
+                  "to": "2025-06-20",
+                  "price": 1086000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "LATE",
+                  "from": "2025-06-13",
+                  "to": "2025-06-20",
+                  "price": 886000
+                }
+              ],
+              "distances": [
+                "5KM",
+                "10KM",
+                "21KM"
+              ],
+              "currency": "VND"
+            }
+          }
+        ],
         "links": [],
         "organizer": {
           "id": "uy-ban-nhan-dan-huyen-ly-son-cong-ty-co-phan-duong-chay-xanh",
           "name": "Uỷ Ban Nhân Dân Huyện Lý Sơn & Công Ty Cổ Phần Đường Chạy Xanh"
-        }
+        },
+        "readBy": "agent"
       }
     },
     {
@@ -223,5 +517,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T08:25:11.306Z"
+  "updatedAt": "2026-09-25T08:42:58.682Z"
 }

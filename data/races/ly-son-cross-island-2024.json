@@ -127,7 +127,47 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1979000,
+      "from": null,
+      "to": "2024-06-01",
+      "inferred": [
+        "to"
+      ],
+      "site": "actiup"
+    },
+    {
+      "distance": "1km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1579000,
+      "from": null,
+      "to": "2024-06-01",
+      "inferred": [
+        "to"
+      ],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1779000,
+      "from": null,
+      "to": "2024-06-01",
+      "inferred": [
+        "to"
+      ],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -182,7 +222,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/ly-son-cross-island-2024",
-      "lastCheckedAt": "2026-09-23T18:32:19.471Z",
+      "lastCheckedAt": "2026-09-25T08:42:58.682Z",
       "lastChangedAt": "2026-09-23T18:32:19.471Z",
       "extracted": {
         "facts": {
@@ -194,6 +234,49 @@
           "registrationStatus": "closed",
           "fromPrice": 1345000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/ly-son-cross-island-2024",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "swim"
+              ],
+              "name": "Lý Sơn Cross Island 2024",
+              "prices": []
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://pix.raceez.com/2024/04/10/content_actiup_1description_vi",
+            "json": {
+              "prices": [
+                {
+                  "distance": "5KM",
+                  "tier": "Regular",
+                  "price": 1979000
+                },
+                {
+                  "distance": "1KM",
+                  "tier": "Regular",
+                  "price": 1579000
+                },
+                {
+                  "distance": "2KM",
+                  "tier": "Regular",
+                  "price": 1779000
+                }
+              ],
+              "distances": [
+                "1KM",
+                "2KM",
+                "5KM"
+              ],
+              "currency": "VND"
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1XoGDuACMURp2CJNPzH7vjKhf4ZrwQKzj/view?usp=sharing",
@@ -203,7 +286,8 @@
         "organizer": {
           "id": "cong-ty-co-phan-duong-chay-xanh",
           "name": "CÔNG TY CỔ PHẦN ĐƯỜNG CHẠY XANH"
-        }
+        },
+        "readBy": "agent"
       }
     },
     {
@@ -233,5 +317,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T08:30:43.681Z"
+  "updatedAt": "2026-09-25T08:42:58.682Z"
 }

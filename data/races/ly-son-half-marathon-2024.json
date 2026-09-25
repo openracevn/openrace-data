@@ -127,7 +127,140 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "EARLY BIRD - CHẶNG 1",
+      "kind": "early",
+      "audience": null,
+      "price": 268000,
+      "from": "2024-05-22",
+      "to": "2024-06-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "EARLY BIRD - CHẶNG 1",
+      "kind": "early",
+      "audience": null,
+      "price": 468000,
+      "from": "2024-05-22",
+      "to": "2024-06-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "EARLY BIRD - CHẶNG 1",
+      "kind": "early",
+      "audience": null,
+      "price": 586000,
+      "from": "2024-05-22",
+      "to": "2024-06-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "EARLY BIRD - CHẶNG 2",
+      "kind": "early",
+      "audience": null,
+      "price": 368000,
+      "from": "2024-06-13",
+      "to": "2024-07-04",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "EARLY BIRD - CHẶNG 2",
+      "kind": "early",
+      "audience": null,
+      "price": 568000,
+      "from": "2024-06-13",
+      "to": "2024-07-04",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "EARLY BIRD - CHẶNG 2",
+      "kind": "early",
+      "audience": null,
+      "price": 686000,
+      "from": "2024-06-13",
+      "to": "2024-07-04",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 568000,
+      "from": "2024-07-05",
+      "to": "2024-07-22",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 668000,
+      "from": "2024-07-05",
+      "to": "2024-07-22",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 786000,
+      "from": "2024-07-05",
+      "to": "2024-07-22",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "LATE (GIỚI HẠN)",
+      "kind": "late",
+      "audience": null,
+      "price": 668000,
+      "from": "2024-07-23",
+      "to": "2024-07-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "LATE (GIỚI HẠN)",
+      "kind": "late",
+      "audience": null,
+      "price": 768000,
+      "from": "2024-07-23",
+      "to": "2024-07-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "LATE (GIỚI HẠN)",
+      "kind": "late",
+      "audience": null,
+      "price": 886000,
+      "from": "2024-07-23",
+      "to": "2024-07-31",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -182,7 +315,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/ly-son-half-marathon-2024",
-      "lastCheckedAt": "2026-09-23T18:32:14.641Z",
+      "lastCheckedAt": "2026-09-25T08:42:58.682Z",
       "lastChangedAt": "2026-09-23T18:32:14.641Z",
       "extracted": {
         "facts": {
@@ -194,6 +327,118 @@
           "registrationStatus": "closed",
           "fromPrice": 268000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/ly-son-half-marathon-2024",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Lý Sơn Half Marathon 2024",
+              "prices": []
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://pix.raceez.com/2024/05/16/content_actiup_1description_vi",
+            "json": {
+              "prices": [
+                {
+                  "distance": "5KM",
+                  "tier": "EARLY BIRD - CHẶNG 1",
+                  "from": "2024-05-22",
+                  "to": "2024-06-12",
+                  "price": 268000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "EARLY BIRD - CHẶNG 1",
+                  "from": "2024-05-22",
+                  "to": "2024-06-12",
+                  "price": 468000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "EARLY BIRD - CHẶNG 1",
+                  "from": "2024-05-22",
+                  "to": "2024-06-12",
+                  "price": 586000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "EARLY BIRD - CHẶNG 2",
+                  "from": "2024-06-13",
+                  "to": "2024-07-04",
+                  "price": 368000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "EARLY BIRD - CHẶNG 2",
+                  "from": "2024-06-13",
+                  "to": "2024-07-04",
+                  "price": 568000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "EARLY BIRD - CHẶNG 2",
+                  "from": "2024-06-13",
+                  "to": "2024-07-04",
+                  "price": 686000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "REGULAR",
+                  "from": "2024-07-05",
+                  "to": "2024-07-22",
+                  "price": 568000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "REGULAR",
+                  "from": "2024-07-05",
+                  "to": "2024-07-22",
+                  "price": 668000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "REGULAR",
+                  "from": "2024-07-05",
+                  "to": "2024-07-22",
+                  "price": 786000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "LATE (GIỚI HẠN)",
+                  "from": "2024-07-23",
+                  "to": "2024-07-31",
+                  "price": 668000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "LATE (GIỚI HẠN)",
+                  "from": "2024-07-23",
+                  "to": "2024-07-31",
+                  "price": 768000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "LATE (GIỚI HẠN)",
+                  "from": "2024-07-23",
+                  "to": "2024-07-31",
+                  "price": 886000
+                }
+              ],
+              "distances": [
+                "5KM",
+                "10KM",
+                "21KM"
+              ],
+              "currency": "VND"
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://www.facebook.com/LysonHM?mibextid=LQQJ4d",
@@ -203,7 +448,8 @@
         "organizer": {
           "id": "uy-ban-nhan-dan-huyen-ly-son-va-cong-ty-co-phan-duong-chay-xanh",
           "name": "Ủy ban nhân dân Huyện Lý Sơn và Công Ty Cổ Phần Đường Chạy Xanh"
-        }
+        },
+        "readBy": "agent"
       }
     },
     {
@@ -233,5 +479,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T08:24:52.996Z"
+  "updatedAt": "2026-09-25T08:42:58.682Z"
 }

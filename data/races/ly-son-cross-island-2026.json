@@ -127,7 +127,74 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "1km",
+      "tier": "SUPER EARLY BIRD",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1190000,
+      "from": "2026-03-10",
+      "to": null,
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "SUPER EARLY BIRD",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1490000,
+      "from": "2026-03-10",
+      "to": null,
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "SUPER EARLY BIRD",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1690000,
+      "from": "2026-03-10",
+      "to": null,
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1km",
+      "tier": "EARLY BIRD - giai đoạn 1",
+      "kind": "early",
+      "audience": null,
+      "price": 1440000,
+      "from": null,
+      "to": "2026-03-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "EARLY BIRD - giai đoạn 1",
+      "kind": "early",
+      "audience": null,
+      "price": 1690000,
+      "from": null,
+      "to": "2026-03-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "EARLY BIRD - giai đoạn 1",
+      "kind": "early",
+      "audience": null,
+      "price": 1890000,
+      "from": null,
+      "to": "2026-03-31",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -176,7 +243,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/ly-son-cross-island-2026",
-      "lastCheckedAt": "2026-09-23T18:31:05.117Z",
+      "lastCheckedAt": "2026-09-25T08:42:58.682Z",
       "lastChangedAt": "2026-09-23T18:31:05.117Z",
       "extracted": {
         "facts": {
@@ -188,11 +255,136 @@
           "registrationStatus": "closed",
           "fromPrice": 1440000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/ly-son-cross-island-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "swim"
+              ],
+              "name": "Lý Sơn Cross Island 2026",
+              "prices": []
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/03/11/1773199786623448/BA%CC%89NG-GIA%CC%81_seb_eb1.png",
+            "json": {
+              "prices": [
+                {
+                  "distance": "1KM",
+                  "tier": "SUPER EARLY BIRD",
+                  "from": "2026-03-10",
+                  "price": 1190000
+                },
+                {
+                  "distance": "2KM",
+                  "tier": "SUPER EARLY BIRD",
+                  "from": "2026-03-10",
+                  "price": 1490000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "SUPER EARLY BIRD",
+                  "from": "2026-03-10",
+                  "price": 1690000
+                },
+                {
+                  "distance": "1KM",
+                  "tier": "EARLY BIRD - giai đoạn 1",
+                  "to": "2026-03-31",
+                  "price": 1440000
+                },
+                {
+                  "distance": "2KM",
+                  "tier": "EARLY BIRD - giai đoạn 1",
+                  "to": "2026-03-31",
+                  "price": 1690000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "EARLY BIRD - giai đoạn 1",
+                  "to": "2026-03-31",
+                  "price": 1890000
+                },
+                {
+                  "distance": "1KM",
+                  "tier": "Group 20-39",
+                  "to": "2026-03-31",
+                  "price": 1296000
+                },
+                {
+                  "distance": "1KM",
+                  "tier": "Group 40-79",
+                  "to": "2026-03-31",
+                  "price": 1224000
+                },
+                {
+                  "distance": "1KM",
+                  "tier": "Group 80+",
+                  "to": "2026-03-31",
+                  "price": 1152000
+                },
+                {
+                  "distance": "2KM",
+                  "tier": "Group 20-39",
+                  "to": "2026-03-31",
+                  "price": 1521000
+                },
+                {
+                  "distance": "2KM",
+                  "tier": "Group 40-79",
+                  "to": "2026-03-31",
+                  "price": 1436500
+                },
+                {
+                  "distance": "2KM",
+                  "tier": "Group 80+",
+                  "to": "2026-03-31",
+                  "price": 1352000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Group 20-39",
+                  "to": "2026-03-31",
+                  "price": 1701000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Group 40-79",
+                  "to": "2026-03-31",
+                  "price": 1606500
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Group 80+",
+                  "to": "2026-03-31",
+                  "price": 1512000
+                }
+              ],
+              "distances": [
+                "1KM",
+                "2KM",
+                "5KM"
+              ],
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2026/03/11/1773199799487611/CHI%CC%81NH-SA%CC%81CH-HO%CC%82%CC%83-TRO%CC%9B%CC%A3-CA%CC%81C-CLB.png",
+            "json": {
+              "prices": []
+            }
+          }
+        ],
         "links": [],
         "organizer": {
           "id": "cong-ty-co-phan-duong-chay-xanh",
           "name": "CÔNG TY CỔ PHẦN ĐƯỜNG CHẠY XANH"
-        }
+        },
+        "readBy": "agent"
       }
     },
     {
@@ -221,5 +413,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T08:30:43.681Z"
+  "updatedAt": "2026-09-25T08:42:58.682Z"
 }
