@@ -3,354 +3,413 @@
     "id": "andros-the-lakes-race",
     "name": "Andros Lakes Race",
     "website": null,
-    "organizerId": "the-lakes-race"
+    "organizerId": "the-lakes-race",
+    "description": "8 editions per the organizer (iRace explicitly labels 2026 as the 8th): 2019-07-06 (Vol 1), 2019-10-20 (Vol 2), 2020-11-15 (Vol 3), 2022-05-15 (unnumbered by its own source), 2023-06-04 (Vol 5), 2024-05-26 (Vol 6), 2025-06-01 (unnumbered by its own source), 2026-04-18/19 (Vol 8). No 2021 race: Vol 4 was planned for 2021-05-16 (raceez.com) but held in 2022 instead, most likely a Covid-era postponement — no source states a formal cancellation, so that word is not used here. Vol 1 (2019-07-06) is attested only in passing by other editions' own pages, not by a page of its own, so it has no separate race record in this dataset — a genuine gap, not an omission."
   },
   {
     "id": "aqua-warriors-halong-bay",
     "name": "AQUA WARRIORS HALONG BAY",
     "website": null,
-    "organizerId": "bolt-event"
+    "organizerId": "bolt-event",
+    "description": null
   },
   {
     "id": "aqua-warriors-van-don",
     "name": "Giải Aqua Warriors Vân Đồn",
     "website": null,
-    "organizerId": "cong-ty-co-phan-su-kien-bolt-event"
+    "organizerId": "cong-ty-co-phan-su-kien-bolt-event",
+    "description": null
   },
   {
     "id": "bac-ninh-legacy-marathon",
     "name": "Giải chạy Bắc Ninh Dấu chân Miền Quan họ",
     "website": null,
-    "organizerId": "cong-ty-zaha-vietnam"
+    "organizerId": "cong-ty-zaha-vietnam",
+    "description": null
   },
   {
     "id": "brah-yang-trail-summit",
     "name": "BRĂH YÀNG TRAIL SUMMIT",
     "website": null,
-    "organizerId": "cong-ty-tnhh-dau-tu-thuong-mai-dich-vu-unique"
+    "organizerId": "cong-ty-tnhh-dau-tu-thuong-mai-dich-vu-unique",
+    "description": null
   },
   {
     "id": "cat-tien-jungle-paths",
     "name": "CAT TIEN JUNGLE PATHS",
     "website": null,
-    "organizerId": "race-jungle"
+    "organizerId": "race-jungle",
+    "description": null
   },
   {
     "id": "cuc-phuong-jungle-paths",
     "name": "CUC PHUONG JUNGLE PATHS",
     "website": null,
-    "organizerId": "race-jungle"
+    "organizerId": "race-jungle",
+    "description": null
   },
   {
     "id": "dalat-music-night-run",
     "name": "Da Lat Music Night Run",
     "website": null,
-    "organizerId": "nexus-sport-events"
+    "organizerId": "nexus-sport-events",
+    "description": null
   },
   {
     "id": "dalat-ultra-trail",
     "name": "Giải siêu marathon địa hình Dalat Ultra Trail",
     "website": null,
-    "organizerId": "vietnam-mtb-series"
+    "organizerId": "vietnam-mtb-series",
+    "description": null
   },
   {
     "id": "gemadept-run",
     "name": "Giải chạy Gemadept Run",
     "website": null,
-    "organizerId": "gemadept"
+    "organizerId": "gemadept",
+    "description": null
   },
   {
     "id": "gia-lai-city-trail-giac-mo-dai-ngan",
     "name": "GIA LAI CITY TRAIL - GIẤC MƠ ĐẠI NGÀN",
     "website": null,
-    "organizerId": "vietrace365"
+    "organizerId": "vietrace365",
+    "description": null
   },
   {
     "id": "giai-marathon-ca-mau-cup-petrovietnam",
     "name": "GIẢI MARATHON - CÀ MAU CÚP PETROVIETNAM",
     "website": null,
-    "organizerId": "vietrace365"
+    "organizerId": "vietrace365",
+    "description": null
   },
   {
     "id": "giai-marathon-quoc-te-di-san-ha-long",
     "name": "Giải Marathon Quốc tế Di sản Hạ Long",
     "website": null,
-    "organizerId": "cong-ty-dha-viet-nam"
+    "organizerId": "cong-ty-dha-viet-nam",
+    "description": null
   },
   {
     "id": "ha-long-heritage-marathon",
     "name": "Giải Marathon Quốc tế Di sản Hạ Long",
     "website": null,
-    "organizerId": null
+    "organizerId": null,
+    "description": null
   },
   {
     "id": "halong-bay-heritage-marathon",
     "name": "Halong Bay Heritage Marathon",
     "website": null,
-    "organizerId": "cong-ty-dha-viet-nam"
+    "organizerId": "cong-ty-dha-viet-nam",
+    "description": null
   },
   {
     "id": "hcmc-marathon",
     "name": "HCMC Marathon",
     "website": null,
-    "organizerId": "pulse-active"
+    "organizerId": "pulse-active",
+    "description": null
   },
   {
     "id": "ironkids-viet-nam-in-da-nang",
     "name": "IRONKIDS Viet Nam in Da Nang",
     "website": null,
-    "organizerId": "sunrise-events-vietnam"
+    "organizerId": "sunrise-events-vietnam",
+    "description": null
   },
   {
     "id": "ironkids-viet-nam-in-phu-quoc",
     "name": "IRONKIDS Viet Nam in Phu Quoc",
     "website": null,
-    "organizerId": "sunrise-events-vietnam"
+    "organizerId": "sunrise-events-vietnam",
+    "description": null
   },
   {
     "id": "lamdong-trail",
     "name": "Lamdong Trail",
     "website": null,
-    "organizerId": null
+    "organizerId": null,
+    "description": null
   },
   {
     "id": "ly-son-cross-island",
     "name": "Lý Sơn Cross Island",
     "website": null,
-    "organizerId": "cong-ty-co-phan-duong-chay-xanh"
+    "organizerId": "cong-ty-co-phan-duong-chay-xanh",
+    "description": null
   },
   {
     "id": "ly-son-half-marathon",
     "name": "Lý Sơn Half Marathon",
     "website": null,
-    "organizerId": "uy-ban-nhan-dan-huyen-ly-son-cong-ty-co-phan-duong-chay-xanh"
+    "organizerId": "uy-ban-nhan-dan-huyen-ly-son-cong-ty-co-phan-duong-chay-xanh",
+    "description": null
   },
   {
     "id": "mang-den-ultra-trail",
     "name": "Măng Đen Ultra Trail",
     "website": null,
-    "organizerId": "ban-to-chuc-hoi-du-lich-mang-den-don-vi-van-hanh-pr-events"
+    "organizerId": "ban-to-chuc-hoi-du-lich-mang-den-don-vi-van-hanh-pr-events",
+    "description": null
   },
   {
     "id": "minh-dam-discovery-marathon",
     "name": "MINH ĐẠM DISCOVERY MARATHON",
     "website": null,
-    "organizerId": "cong-ty-co-phan-secret-sport-events"
+    "organizerId": "cong-ty-co-phan-secret-sport-events",
+    "description": null
   },
   {
     "id": "mucangchai-ultra-trail",
     "name": "MUCANGCHAI ULTRA TRAIL",
     "website": null,
-    "organizerId": "viet-jungle"
+    "organizerId": "viet-jungle",
+    "description": null
   },
   {
     "id": "quang-binh-international-marathon",
     "name": "QUANG TRI INTERNATIONAL MARATHON",
     "website": null,
-    "organizerId": "bolt-event"
+    "organizerId": "bolt-event",
+    "description": null
   },
   {
     "id": "run-to-live",
     "name": "Run To Live",
     "website": null,
-    "organizerId": null
+    "organizerId": null,
+    "description": null
   },
   {
     "id": "save-turtles-run",
     "name": "Chạy Bộ Vì Rùa Biển",
     "website": null,
-    "organizerId": "tap-doan-khach-san-akyn-khach-san-the-secret-con-dao"
+    "organizerId": "tap-doan-khach-san-akyn-khach-san-the-secret-con-dao",
+    "description": null
   },
   {
     "id": "sedona-skyrun",
     "name": "SEDONA SKYRUN",
     "website": null,
-    "organizerId": "sedona-suites-ho-chi-minh-city"
+    "organizerId": "sedona-suites-ho-chi-minh-city",
+    "description": null
   },
   {
     "id": "skechers-friendship-walk",
     "name": "Skechers Friendship Walk",
     "website": null,
-    "organizerId": "skechers-vietnam"
+    "organizerId": "skechers-vietnam",
+    "description": null
   },
   {
     "id": "song-hong-half-marathon",
     "name": "SONG HONG HALF MARATHON",
     "website": null,
-    "organizerId": "sporting-republic"
+    "organizerId": "sporting-republic",
+    "description": null
   },
   {
     "id": "standard-chartered-hanoi-marathon-heritage-race",
     "name": "Standard Chartered Marathon Di sản Hà Nội",
     "website": null,
-    "organizerId": "cong-ty-dha-viet-nam"
+    "organizerId": "cong-ty-dha-viet-nam",
+    "description": null
   },
   {
     "id": "sunrise-sprint-viet-nam-in-da-nang",
     "name": "SUNRISE SPRINT Viet Nam in Da Nang",
     "website": null,
-    "organizerId": "sunrise-events-vietnam"
+    "organizerId": "sunrise-events-vietnam",
+    "description": null
   },
   {
     "id": "sunrise-sprint-viet-nam-in-phu-quoc",
     "name": "SUNRISE SPRINT Viet Nam in Phu Quoc",
     "website": null,
-    "organizerId": "sunrise-events-vietnam"
+    "organizerId": "sunrise-events-vietnam",
+    "description": null
   },
   {
     "id": "tay-ho-half-marathon",
     "name": "TAY HO HALF MARATHON - POWERED BY BIM GROUP",
     "website": null,
-    "organizerId": "vrace-cong-ty-co-phan-vu-media"
+    "organizerId": "vrace-cong-ty-co-phan-vu-media",
+    "description": null
   },
   {
     "id": "tet-run-mien-nam",
     "name": "TẾT RUN MIỀN NAM",
     "website": null,
-    "organizerId": "cong-ty-co-phan-duong-chay-xanh"
+    "organizerId": "cong-ty-co-phan-duong-chay-xanh",
+    "description": null
   },
   {
     "id": "tien-phong-marathon",
     "name": "GIẢI VÔ ĐỊCH QUỐC GIA MARATHON BÁO TIỀN PHONG",
     "website": null,
-    "organizerId": "bao-tien-phong"
+    "organizerId": "bao-tien-phong",
+    "description": null
   },
   {
     "id": "trang-an-marathon",
     "name": "Trang An Marathon",
     "website": null,
-    "organizerId": "vrace-cong-ty-co-phan-vu-media"
+    "organizerId": "vrace-cong-ty-co-phan-vu-media",
+    "description": null
   },
   {
     "id": "ultra-trail-angkor",
     "name": "Ultra Trail Angkor",
     "website": null,
-    "organizerId": "sdpo-va-phoenix-voyages-sport-event"
+    "organizerId": "sdpo-va-phoenix-voyages-sport-event",
+    "description": null
   },
   {
     "id": "ultra-trail-cao-bang",
     "name": "ULTRA TRAIL CAO BANG",
     "website": null,
-    "organizerId": "race-jungle"
+    "organizerId": "race-jungle",
+    "description": null
   },
   {
     "id": "vietnam-festrival",
     "name": "Vietnam FesTRIval",
     "website": null,
-    "organizerId": "cong-ty-tnhh-stop-and-sports"
+    "organizerId": "cong-ty-tnhh-stop-and-sports",
+    "description": null
   },
   {
     "id": "vnexpress-marathon-all-star",
     "name": "VnExpress Marathon All Star",
     "website": null,
-    "organizerId": "vnexpress"
+    "organizerId": "vnexpress",
+    "description": null
   },
   {
     "id": "vnexpress-marathon-can-gio",
     "name": "VnExpress Marathon Cần Giờ",
     "website": null,
-    "organizerId": "vnexpress"
+    "organizerId": "vnexpress",
+    "description": null
   },
   {
     "id": "vnexpress-marathon-can-tho",
     "name": "VnExpress Marathon Cần Thơ",
     "website": null,
-    "organizerId": "vnexpress"
+    "organizerId": "vnexpress",
+    "description": null
   },
   {
     "id": "vnexpress-marathon-da-nang",
     "name": "VnExpress Marathon Đà Nẵng",
     "website": null,
-    "organizerId": "vnexpress"
+    "organizerId": "vnexpress",
+    "description": null
   },
   {
     "id": "vnexpress-marathon-galaxy-run",
     "name": "VnExpress Marathon Galaxy Run",
     "website": null,
-    "organizerId": "vnexpress"
+    "organizerId": "vnexpress",
+    "description": null
   },
   {
     "id": "vnexpress-marathon-ha-noi",
     "name": "VnExpress Marathon Hà Nội",
     "website": null,
-    "organizerId": "vnexpress"
+    "organizerId": "vnexpress",
+    "description": null
   },
   {
     "id": "vnexpress-marathon-hai-phong",
     "name": "VnExpress Marathon Hải Phòng",
     "website": null,
-    "organizerId": "vnexpress"
+    "organizerId": "vnexpress",
+    "description": null
   },
   {
     "id": "vnexpress-marathon-ho-chi-minh",
     "name": "VnExpress Marathon Hồ Chí Minh",
     "website": null,
-    "organizerId": "vnexpress"
+    "organizerId": "vnexpress",
+    "description": null
   },
   {
     "id": "vnexpress-marathon-hue",
     "name": "VnExpress Marathon Huế",
     "website": null,
-    "organizerId": "vnexpress"
+    "organizerId": "vnexpress",
+    "description": null
   },
   {
     "id": "vnexpress-marathon-long-chau",
     "name": "VnExpress Marathon Long Châu",
     "website": null,
-    "organizerId": "vnexpress"
+    "organizerId": "vnexpress",
+    "description": null
   },
   {
     "id": "vnexpress-marathon-long-chau-can-tho",
     "name": "VnExpress Marathon Long Châu Cần Thơ",
     "website": null,
-    "organizerId": "vnexpress"
+    "organizerId": "vnexpress",
+    "description": null
   },
   {
     "id": "vnexpress-marathon-nghe-an",
     "name": "VnExpress Marathon Nghệ An",
     "website": null,
-    "organizerId": "vnexpress"
+    "organizerId": "vnexpress",
+    "description": null
   },
   {
     "id": "vnexpress-marathon-nha-trang",
     "name": "VnExpress Marathon Nha Trang",
     "website": null,
-    "organizerId": "vnexpress"
+    "organizerId": "vnexpress",
+    "description": null
   },
   {
     "id": "vnexpress-marathon-quy-nhon",
     "name": "VnExpress Marathon Quy Nhơn",
     "website": null,
-    "organizerId": "vnexpress"
+    "organizerId": "vnexpress",
+    "description": null
   },
   {
     "id": "vnexpress-marathon-vung-tau",
     "name": "VnExpress Marathon Vũng Tàu",
     "website": null,
-    "organizerId": "vnexpress"
+    "organizerId": "vnexpress",
+    "description": null
   },
   {
     "id": "vpbank-dat-sen-hong-music-marathon",
     "name": "VPBank Đất Sen Hồng Music Marathon",
     "website": null,
-    "organizerId": null
+    "organizerId": null,
+    "description": null
   },
   {
     "id": "vtv-lpbank-international-marathon",
     "name": "VTV LPBANK INTERNATIONAL MARATHON",
     "website": null,
-    "organizerId": "dai-truyen-hinh-viet-nam-vtv-cong-ty-co-phan-thanh-an-media-don-vi-dong-hanh-nga"
+    "organizerId": "dai-truyen-hinh-viet-nam-vtv-cong-ty-co-phan-thanh-an-media-don-vi-dong-hanh-nga",
+    "description": null
   },
   {
     "id": "yen-tu-heritage-marathon",
     "name": "Giải chạy Yên Tử Heritage Marathon - Chạm vào vùng di sản",
     "website": null,
-    "organizerId": "great-race-vietnam"
+    "organizerId": "great-race-vietnam",
+    "description": null
   },
   {
     "id": "yen-tu-mountain-hiking",
     "name": "Giải leo núi Yên Tử - Chinh phục đỉnh Phù Vân",
     "website": null,
-    "organizerId": "great-race-vietnam"
+    "organizerId": "great-race-vietnam",
+    "description": null
   }
 ]

@@ -58,7 +58,7 @@ export function courseMeters(label: string): number | null {
   return Number.isSafeInteger(meters) && meters > 0 ? meters : null;
 }
 
-export const REGISTRATION_STATUSES = ["open", "closing_soon", "sold_out", "closed"] as const;
+export const REGISTRATION_STATUSES = ["open", "closing_soon", "sold_out", "closed", "cancelled"] as const;
 
 // Event formats, for filtering. A race can have several (e.g. a road 10K plus a
 // trail 21K). Distance classes (marathon, half, ultra) are not types: they follow
@@ -334,7 +334,14 @@ export const EntitySchema = z.object({
   name: z.string().min(1).max(200),
   website: z.url().nullable(),
 });
-export const SeriesSchema = EntitySchema.extend({ organizerId: slug.nullable() });
+export const SeriesSchema = EntitySchema.extend({
+  organizerId: slug.nullable(),
+  // Hand-written, not derived from any race's sources: what's known about the
+  // series as a whole (edition count, gaps, why a year is missing) that doesn't
+  // belong to one race. Kept honest the same way a race's flags are: state
+  // what's confirmed and what isn't, never fill a gap with a guess.
+  description: z.string().max(2000).nullable(),
+});
 export const SeriesListSchema = z.array(SeriesSchema);
 export const OrganizerListSchema = z.array(EntitySchema);
 

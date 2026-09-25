@@ -98,7 +98,7 @@ export const PAGE_EXTRACTION = {
       registrationStatus: {
         type: "string",
         enum: [...REGISTRATION_STATUSES],
-        description: "open = can register; closing_soon = ends soon or few slots left; sold_out = all slots taken (hết vé); closed = registration ended.",
+        description: "open = can register; closing_soon = ends soon or few slots left; sold_out = all slots taken (hết vé); closed = registration ended (the race happened or its window passed); cancelled = the race itself was called off or postponed with no new date, not just registration ending (hủy, tạm hoãn với no rescheduled date).",
       },
       prices: PRICES_PROPERTY,
     },

@@ -36,13 +36,25 @@
             "type": "null"
           }
         ]
+      },
+      "description": {
+        "anyOf": [
+          {
+            "type": "string",
+            "maxLength": 2000
+          },
+          {
+            "type": "null"
+          }
+        ]
       }
     },
     "required": [
       "id",
       "name",
       "website",
-      "organizerId"
+      "organizerId",
+      "description"
     ],
     "additionalProperties": false
   },

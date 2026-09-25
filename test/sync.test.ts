@@ -115,7 +115,7 @@ describe("planSync", () => {
       { distance: "21km", tier: "Early Bird", kind: "early", audience: null, price: 1_050_000, from: "2026-06-23", to: "2026-08-15", inferred: [], site: "hcmc-marathon" },
       { distance: "21km", tier: "Regular", kind: "regular", audience: null, price: 1_250_000, from: "2026-08-16", to: "2026-10-15", inferred: [], site: "hcmc-marathon" },
     ]);
-    assert.deepEqual(JSON.parse(store.files[SERIES_PATH]!), [{ id: "hcmc-marathon", name: "HCMC Marathon", website: null, organizerId: "pulse-active" }]);
+    assert.deepEqual(JSON.parse(store.files[SERIES_PATH]!), [{ id: "hcmc-marathon", name: "HCMC Marathon", website: null, organizerId: "pulse-active", description: null }]);
     assert.deepEqual(JSON.parse(store.files[ORGANIZERS_PATH]!), [{ id: "pulse-active", name: "Pulse Active", website: null }]);
     assert.equal(race.confidence, "single-sourced");
     assert.deepEqual(race.flags, []);
@@ -270,7 +270,7 @@ describe("series from slugs", () => {
     ]);
     assert.equal(readRace(store, "dalat-ultra-trail-2024", "2024-03-20").seriesId, "dalat-ultra-trail");
     assert.equal(readRace(store, "dalat-ultra-trail-2025", "2025-03-20").seriesId, "dalat-ultra-trail");
-    assert.deepEqual(JSON.parse(store.files[SERIES_PATH]!), [{ id: "dalat-ultra-trail", name: "Dalat Ultra Trail", website: null, organizerId: null }]);
+    assert.deepEqual(JSON.parse(store.files[SERIES_PATH]!), [{ id: "dalat-ultra-trail", name: "Dalat Ultra Trail", website: null, organizerId: null, description: null }]);
     assert.equal(index(store).find((e) => e.slug === "dalat-ultra-trail-2024")!.seriesId, "dalat-ultra-trail");
     // Nothing more to do on the next run.
     assert.equal((await plan(store, [])).changes.length, 0);

@@ -285,7 +285,7 @@ async function plannedEntities(store: RaceStore, extractions: StoredExtraction[]
   for (const x of extractions) {
     organizersChanged = add<Organizer>(organizers, x.organizer, (r) => ({ id: r.id, name: r.name, website: r.website ?? null })) || organizersChanged;
     seriesChanged =
-      add<Series>(series, x.series, (r) => ({ id: r.id, name: r.name, website: r.website ?? null, organizerId: isEntityRef(x.organizer) ? x.organizer.id : null })) ||
+      add<Series>(series, x.series, (r) => ({ id: r.id, name: r.name, website: r.website ?? null, organizerId: isEntityRef(x.organizer) ? x.organizer.id : null, description: null })) ||
       seriesChanged;
   }
   const byId = (a: { id: string }, b: { id: string }) => a.id.localeCompare(b.id);
