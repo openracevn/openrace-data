@@ -70,6 +70,8 @@ GITHUB_TOKEN=$(gh auth token) npm run edit -- unset <race> <field>
 GITHUB_TOKEN=$(gh auth token) npm run edit -- slug <race> <new-slug>
 ```
 
+Setting `prices` by hand: every entry's `site` must equal one of the race's existing `sources[].site` values, or `npm run validate` rejects the whole file — and a validate failure blocks GitHub Actions' `notify-api` job on *every* subsequent push, not just this one, silently stalling the production API's sync until someone notices. Check `sources[].site` on the race first, and run `npm run validate` right after any hand-set `prices`.
+
 - Fields: name, types, date, endDate, seriesId, organizerId, organizer, edition, courses, location, prices, currency, registrationStatus, registrations, links.
 - Values in canonical form (the schema checks them):
   - courses: `[{"label":"21km","meters":21097,"type":"road_run","elevationGain":null}]`
@@ -91,4 +93,4 @@ Drop `--dry-run` and prefix `GITHUB_TOKEN=$(gh auth token)` to commit. If the ra
 
 ## Types
 
-road_run, trail_run, city_trail, obstacle_run, triathlon, duathlon, aquathlon, aquabike, swimrun, swim, road_cycle, mtb, other.
+road_run, trail_run, city_trail, obstacle_run, triathlon, duathlon, aquathlon, aquabike, swimrun, open_water_swim, pool_swim, swim, road_cycle, mtb, other.
