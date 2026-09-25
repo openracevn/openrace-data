@@ -1,0 +1,54 @@
+{
+  "id": "945e4a09-963e-421b-aafa-dc6d1668ded8",
+  "slug": "lam-dong-trail-2023",
+  "name": "Lam Dong Trail 2023",
+  "types": [
+    "trail_run"
+  ],
+  "date": "2023-11-10",
+  "endDate": "2023-11-12",
+  "seriesId": "lam-dong-trail",
+  "organizerId": null,
+  "organizer": null,
+  "edition": null,
+  "courses": [],
+  "location": {
+    "venue": "Thung Lũng Tình Yêu, Thành phố Đà Lạt, Lâm Đồng",
+    "city": "Đà Lạt, Lâm Đồng"
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "irace",
+      "role": "reference",
+      "url": "https://app.irace.vn/lam-dong-trail-2023",
+      "lastCheckedAt": "2026-09-25T08:03:04.937Z",
+      "lastChangedAt": "2026-09-25T08:03:04.937Z",
+      "extracted": {
+        "facts": {
+          "name": "Lam Dong Trail 2023",
+          "date": "2023-11-10",
+          "endDate": "2023-11-12",
+          "types": [
+            "trail_run"
+          ],
+          "venue": "Thung Lũng Tình Yêu, Thành phố Đà Lạt, Lâm Đồng",
+          "city": "Đà Lạt, Lâm Đồng",
+          "seriesId": "lamdong-trail",
+          "currency": "VND",
+          "note": "iRace results page: Lâm Đồng Trail 2023 held 10-12/11/2023, venue Thung Lũng Tình Yêu, ~2000 participants, registration closed 25/10/2023"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-25T08:03:04.937Z",
+  "updatedAt": "2026-09-25T08:03:04.937Z"
+}
