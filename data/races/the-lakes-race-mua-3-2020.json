@@ -1,0 +1,73 @@
+{
+  "id": "497cdbcf-f1b5-41ad-a5fd-07d1c736720d",
+  "slug": "the-lakes-race-mua-3",
+  "name": "The Lakes Race (Mùa 3)",
+  "types": [
+    "other"
+  ],
+  "date": "2020-11-15",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": null,
+  "organizer": null,
+  "edition": 3,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": null,
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": null,
+      "elevationGain": null
+    },
+    {
+      "label": "15km",
+      "meters": 15000,
+      "type": null,
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Hồ Đá – Làng Đại học Thủ Đức",
+    "city": "Hồ Chí Minh"
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "openrace",
+      "role": "reference",
+      "url": "https://ezland.vn/the-lakes-race-chay-vi-mot-tuong-lai-tot-hon-cho-tre-mo-coi",
+      "lastCheckedAt": "2026-09-25T06:48:34.476Z",
+      "lastChangedAt": "2026-09-25T06:48:34.476Z",
+      "extracted": {
+        "facts": {
+          "name": "The Lakes Race (Mùa 3)",
+          "date": "2020-11-15",
+          "edition": 3,
+          "venue": "Hồ Đá – Làng Đại học Thủ Đức",
+          "city": "Hồ Chí Minh",
+          "distances": [
+            "5km",
+            "10km",
+            "15km"
+          ],
+          "note": "race-research: EZLand article on the third edition (Mùa 3), explicit date, venue and distances."
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-25T06:48:34.476Z",
+  "updatedAt": "2026-09-25T06:48:34.476Z"
+}
