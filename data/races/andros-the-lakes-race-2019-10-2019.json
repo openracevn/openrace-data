@@ -30,6 +30,19 @@
         "to"
       ],
       "site": "openrace"
+    },
+    {
+      "distance": null,
+      "tier": "unspecified · Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 500000,
+      "from": null,
+      "to": "2019-10-20",
+      "inferred": [
+        "to"
+      ],
+      "site": "tiki-vn"
     }
   ],
   "currency": "VND",
@@ -76,9 +89,30 @@
           "note": "race-research: retag — this URL is now recognized as the iRace site (config/sites.yaml), was previously tagged 'openrace' before the edit.ts fix."
         }
       }
+    },
+    {
+      "site": "tiki-vn",
+      "role": "reference",
+      "url": "https://tiki.vn/giai-chay-bo-run-for-orphans-the-lakes-race-2019-p25618012.html",
+      "lastCheckedAt": "2026-09-25T08:01:00.241Z",
+      "lastChangedAt": "2026-09-25T08:01:00.241Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Chạy Bộ Run For Orphans - The Lakes Race 2019",
+          "date": "2019-10-20",
+          "prices": [
+            {
+              "distance": "unspecified",
+              "tier": "Standard",
+              "price": 500000
+            }
+          ],
+          "note": "cleanup: retag off openrace to the real host."
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T06:44:22.797Z",
-  "updatedAt": "2026-09-25T07:31:45.163Z"
+  "updatedAt": "2026-09-25T08:01:00.241Z"
 }
