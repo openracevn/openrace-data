@@ -13,3 +13,4 @@ Work plans for a session or an agent, one file each: `NNN-YYYY-MM-DD-topic.md`.
 | 003 | [Schema v3: location, distances, price on a date, and the API](003-2026-09-24-schema-v3-geo-price.md) | Done and live; see `.claude/docs/2026-09-24-summary-part-3.md` |
 | 004 | [Build spec for plan 003](004-2026-09-24-plan-003-build-spec.md) (opencode workers, supervised) | Done (stages A–D) |
 | 005 | [MCP server](005-2026-09-24-mcp-server.md) (new repo openrace-mcp, small API changes) | Written; next session |
+| 006 | [One source of truth for race type values](006-2026-09-25-shared-race-type-values.md) (across openrace-data, openrace-api, openrace-web) | Written; not started |
