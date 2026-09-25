@@ -3,7 +3,7 @@
   "slug": "ly-son-cross-island-2026",
   "name": "Lý Sơn Cross Island 2026",
   "types": [
-    "other"
+    "swim"
   ],
   "date": "2026-06-07",
   "endDate": null,
@@ -11,7 +11,26 @@
   "organizerId": "cong-ty-co-phan-duong-chay-xanh",
   "organizer": "CÔNG TY CỔ PHẦN ĐƯỜNG CHẠY XANH",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "1km",
+      "meters": 1000,
+      "type": "swim",
+      "elevationGain": null
+    },
+    {
+      "label": "2km",
+      "meters": 2000,
+      "type": "swim",
+      "elevationGain": null
+    },
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "swim",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Đặc khu Lý Sơn, tỉnh Quảng Ngãi",
     "city": null
@@ -143,9 +162,32 @@
           "name": "CÔNG TY CỔ PHẦN ĐƯỜNG CHẠY XANH"
         }
       }
+    },
+    {
+      "site": "irace",
+      "role": "reference",
+      "url": "https://ticket.irace.vn/ly-son-cross-island-2026",
+      "lastCheckedAt": "2026-09-25T08:14:57.816Z",
+      "lastChangedAt": "2026-09-25T08:14:57.816Z",
+      "extracted": {
+        "facts": {
+          "name": "Lý Sơn Cross Island 2026",
+          "date": "2026-06-07",
+          "types": [
+            "swim"
+          ],
+          "distances": [
+            "1km",
+            "2km",
+            "5km"
+          ],
+          "venue": "Đặc khu Lý Sơn, tỉnh Quảng Ngãi",
+          "note": "iRace listing confirms this is an open-water swim event with 1km/2km/5km distances, corroborating actiup"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-09-25T08:14:57.816Z"
 }
