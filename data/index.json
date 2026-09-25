@@ -299,9 +299,9 @@
     "name": "Lâm Đồng Trail 2024",
     "date": "2024-11-08",
     "endDate": "2024-11-10",
-    "lastModified": "2026-09-24T06:49:38.787Z",
+    "lastModified": "2026-09-25T08:00:46.737Z",
     "file": "lam-dong-trail-2024.json",
-    "seriesId": null,
+    "seriesId": "lam-dong-trail",
     "sourceUrls": [
       "https://actiup.net/vi/event/lam-dong-trail-2024"
     ],
@@ -1422,6 +1422,20 @@
     "seriesId": "quang-binh-international-marathon",
     "sourceUrls": [
       "https://actiup.net/vi/event/quang-binh-international-marathon-2025"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "471cf8da-274b-42d7-8793-0fe7786a7d56",
+    "slug": "lam-dong-trail-2022",
+    "name": "Lam Dong Trail 2022",
+    "date": "2022-11-11",
+    "endDate": "2022-11-13",
+    "lastModified": "2026-09-25T08:00:46.737Z",
+    "file": "lam-dong-trail-2022.json",
+    "seriesId": "lam-dong-trail",
+    "sourceUrls": [
+      "https://app.irace.vn/lam-dong-trail-2022"
     ],
     "linkUrls": []
   },

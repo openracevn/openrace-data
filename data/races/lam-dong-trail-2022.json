@@ -1,0 +1,93 @@
+{
+  "id": "471cf8da-274b-42d7-8793-0fe7786a7d56",
+  "slug": "lam-dong-trail-2022",
+  "name": "Lam Dong Trail 2022",
+  "types": [
+    "trail_run"
+  ],
+  "date": "2022-11-11",
+  "endDate": "2022-11-13",
+  "seriesId": "lam-dong-trail",
+  "organizerId": null,
+  "organizer": "VietnamJoy",
+  "edition": null,
+  "courses": [
+    {
+      "label": "3km",
+      "meters": 3000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "45km",
+      "meters": 45000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "70km",
+      "meters": 70000,
+      "type": "trail_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Thành phố Đà Lạt, Lâm Đồng",
+    "city": "Đà Lạt, Lâm Đồng"
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "irace",
+      "role": "reference",
+      "url": "https://app.irace.vn/lam-dong-trail-2022",
+      "lastCheckedAt": "2026-09-25T08:00:46.737Z",
+      "lastChangedAt": "2026-09-25T08:00:46.737Z",
+      "extracted": {
+        "facts": {
+          "name": "Lam Dong Trail 2022",
+          "date": "2022-11-11",
+          "endDate": "2022-11-13",
+          "types": [
+            "trail_run"
+          ],
+          "distances": [
+            "3km",
+            "10km",
+            "21km",
+            "45km",
+            "70km"
+          ],
+          "venue": "Thành phố Đà Lạt, Lâm Đồng",
+          "city": "Đà Lạt, Lâm Đồng",
+          "organizer": "VietnamJoy",
+          "seriesId": "lamdong-trail",
+          "currency": "VND",
+          "note": "iRace results page: Lâm Đồng Trail 2022 held 11-13/11/2022, organized with Sở VHDL&TT Lâm Đồng; tuoitre.vn news article corroborates dates and ~2500 participants"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-25T08:00:46.737Z",
+  "updatedAt": "2026-09-25T08:00:46.737Z"
+}
