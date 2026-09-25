@@ -7,7 +7,7 @@
   ],
   "date": "2026-04-19",
   "endDate": null,
-  "seriesId": null,
+  "seriesId": "andros-the-lakes-race",
   "organizerId": "the-lakes-race",
   "organizer": "THE LAKES RACE",
   "edition": 8,
@@ -168,7 +168,13 @@
   "flags": [
     "sources disagree on race day: actiup 2026-04-19, openrace 2026-04-18"
   ],
-  "overrides": {},
+  "overrides": {
+    "seriesId": {
+      "value": "andros-the-lakes-race",
+      "reason": "race-research: same series as the 2019-2025 editions (andros-the-lakes-race); this race was missing seriesId, apparently just not set when it was seeded (a pre-existing gap, not something this research introduced).",
+      "at": "2026-09-25T06:52:20.549Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -222,5 +228,5 @@
   ],
   "confidence": "conflicting",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T06:51:40.719Z"
+  "updatedAt": "2026-09-25T06:52:20.549Z"
 }
