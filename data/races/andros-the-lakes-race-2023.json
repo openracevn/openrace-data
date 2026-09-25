@@ -10,7 +10,7 @@
   "seriesId": "andros-the-lakes-race",
   "organizerId": null,
   "organizer": null,
-  "edition": null,
+  "edition": 5,
   "courses": [
     {
       "label": "2km",
@@ -48,7 +48,13 @@
   "registrations": [],
   "links": [],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "edition": {
+      "value": 5,
+      "reason": "race-research: chay365.com's recap article states this is the 5th edition ('lần thứ 5 giải được tổ chức'); the article itself gives no exact race day (only its publish date 04/06/2023), so it wasn't added as a formal source, but the edition number and Dĩ An/Bình Dương naming are corroborated there (https://chay365.com/andros-the-lakes-race-mot-hoat-dong-nhan-van/).",
+      "at": "2026-09-25T06:50:54.600Z"
+    }
+  },
   "sources": [
     {
       "site": "openrace",
@@ -89,5 +95,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T06:49:26.358Z",
-  "updatedAt": "2026-09-25T06:49:48.049Z"
+  "updatedAt": "2026-09-25T06:50:54.600Z"
 }
