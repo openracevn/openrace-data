@@ -1366,9 +1366,127 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "irace",
+      "role": "reference",
+      "url": "https://ticket.irace.vn/lamdong-trail-2026",
+      "lastCheckedAt": "2026-09-25T12:07:59.424Z",
+      "lastChangedAt": "2026-09-25T12:07:59.424Z",
+      "extracted": {
+        "facts": {
+          "name": "Lamdong Trail 2026",
+          "date": "2026-11-06",
+          "types": [
+            "trail_run"
+          ],
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Early Bird",
+              "kind": "early",
+              "audience": null,
+              "price": 650000,
+              "from": "2026-04-22",
+              "to": "2026-06-10",
+              "inferred": [],
+              "site": "irace"
+            },
+            {
+              "distance": "15km",
+              "tier": "Early Bird",
+              "kind": "early",
+              "audience": null,
+              "price": 850000,
+              "from": "2026-04-22",
+              "to": "2026-06-10",
+              "inferred": [],
+              "site": "irace"
+            },
+            {
+              "distance": "25km",
+              "tier": "Early Bird",
+              "kind": "early",
+              "audience": null,
+              "price": 1450000,
+              "from": "2026-04-22",
+              "to": "2026-06-10",
+              "inferred": [],
+              "site": "irace"
+            },
+            {
+              "distance": "55km",
+              "tier": "Early Bird",
+              "kind": "early",
+              "audience": null,
+              "price": 1950000,
+              "from": "2026-04-22",
+              "to": "2026-06-10",
+              "inferred": [],
+              "site": "irace"
+            },
+            {
+              "distance": "85km",
+              "tier": "Early Bird",
+              "kind": "early",
+              "audience": null,
+              "price": 2350000,
+              "from": "2026-04-22",
+              "to": "2026-06-10",
+              "inferred": [],
+              "site": "irace"
+            },
+            {
+              "distance": "5km",
+              "tier": "Kid Trail (5Km) Early Bird",
+              "kind": "early",
+              "audience": null,
+              "price": 650000,
+              "from": "2026-04-22",
+              "to": "2026-06-10",
+              "inferred": [],
+              "site": "irace"
+            },
+            {
+              "distance": "5km",
+              "tier": "5km Family (1 người lớn + 1 trẻ em) Early Bird",
+              "kind": "early",
+              "audience": null,
+              "price": 1200000,
+              "from": "2026-04-22",
+              "to": "2026-06-10",
+              "inferred": [],
+              "site": "irace"
+            },
+            {
+              "distance": "5km",
+              "tier": "5km Family (1 người lớn + 2 trẻ em) Early Bird",
+              "kind": "early",
+              "audience": null,
+              "price": 1800000,
+              "from": "2026-04-22",
+              "to": "2026-06-10",
+              "inferred": [],
+              "site": "irace"
+            },
+            {
+              "distance": "5km",
+              "tier": "5km Family (2 người lớn + 1 trẻ em) Early Bird",
+              "kind": "early",
+              "audience": null,
+              "price": 1800000,
+              "from": "2026-04-22",
+              "to": "2026-06-10",
+              "inferred": [],
+              "site": "irace"
+            }
+          ],
+          "note": "user-supplied table read from ticket.irace.vn/lamdong-trail-2026: adds the missing Early Bird tier (22/04-10/06/2026) our other sources (lamdongtrail.vn, actiup) don't show; its Regular/Late numbers match our existing lamdong-trail-tagged prices exactly, corroborating the source"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T12:01:05.169Z"
+  "updatedAt": "2026-09-25T12:07:59.424Z"
 }
