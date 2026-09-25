@@ -48,7 +48,173 @@
     "city": "Đà Lạt, Lâm Đồng"
   },
   "geo": null,
-  "prices": [],
+  "prices": [
+    {
+      "distance": "70km",
+      "tier": "Early Birds",
+      "kind": "early",
+      "audience": null,
+      "price": 1999000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "70km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2399000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "70km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2599000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "45km",
+      "tier": "Early Birds",
+      "kind": "early",
+      "audience": null,
+      "price": 1599000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "45km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1999000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "45km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2299000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Birds",
+      "kind": "early",
+      "audience": null,
+      "price": 1199000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1599000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1999000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Birds",
+      "kind": "early",
+      "audience": null,
+      "price": 699000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 899000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1099000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "3km",
+      "tier": "Kids Trail Early Birds",
+      "kind": "early",
+      "audience": null,
+      "price": 450000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "3km",
+      "tier": "Kids Trail Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 550000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "3km",
+      "tier": "Kids Trail Late",
+      "kind": "late",
+      "audience": null,
+      "price": 650000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": null,
   "registrations": [],
@@ -59,6 +225,177 @@
       "value": "lamdong-trail",
       "reason": "unify with existing series lamdong-trail (matches data/series.json and the 2026 edition), the add command auto-derived a different hyphenation",
       "at": "2026-09-25T08:01:51.268Z"
+    },
+    "prices": {
+      "value": [
+        {
+          "distance": "70km",
+          "tier": "Early Birds",
+          "kind": "early",
+          "audience": null,
+          "price": 1999000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "70km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 2399000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "70km",
+          "tier": "Late",
+          "kind": "late",
+          "audience": null,
+          "price": 2599000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "45km",
+          "tier": "Early Birds",
+          "kind": "early",
+          "audience": null,
+          "price": 1599000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "45km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 1999000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "45km",
+          "tier": "Late",
+          "kind": "late",
+          "audience": null,
+          "price": 2299000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "21km",
+          "tier": "Early Birds",
+          "kind": "early",
+          "audience": null,
+          "price": 1199000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "21km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 1599000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "21km",
+          "tier": "Late",
+          "kind": "late",
+          "audience": null,
+          "price": 1999000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "10km",
+          "tier": "Early Birds",
+          "kind": "early",
+          "audience": null,
+          "price": 699000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "10km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 899000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "10km",
+          "tier": "Late",
+          "kind": "late",
+          "audience": null,
+          "price": 1099000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "3km",
+          "tier": "Kids Trail Early Birds",
+          "kind": "early",
+          "audience": null,
+          "price": 450000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "3km",
+          "tier": "Kids Trail Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 550000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "3km",
+          "tier": "Kids Trail Late",
+          "kind": "late",
+          "audience": null,
+          "price": 650000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "irace"
+        }
+      ],
+      "reason": "iRace ticket price image (app.irace.vn/lam-dong-trail-2022, wp-content/uploads/2022/10/1.png, fetched via Wayback+Firecrawl JS render to find the image URL, then read directly): Early Birds/Regular/Late tiers, no explicit date windows shown in the image",
+      "at": "2026-09-25T08:22:42.080Z"
     }
   },
   "sources": [
@@ -95,5 +432,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T08:00:46.737Z",
-  "updatedAt": "2026-09-25T08:01:51.268Z"
+  "updatedAt": "2026-09-25T08:22:42.080Z"
 }
