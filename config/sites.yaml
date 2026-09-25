@@ -45,7 +45,29 @@ sites:
     name: iRace
     kind: seller
     url: https://irace.vn/
-    hosts: [irace.vn, ticket.irace.vn]
+    hosts: [irace.vn, ticket.irace.vn, app.irace.vn]
+    recipe: none
+    check: manual
+
+  - key: ticketbox
+    name: TicketBox
+    kind: seller
+    url: https://ticketbox.vn/
+    hosts: [ticketbox.vn, beta.ticketbox.vn]
+    recipe: none
+    check: manual
+
+  - key: raceez
+    name: Raceez
+    kind: seller
+    url: https://raceez.com/
+    recipe: none
+    check: manual
+
+  - key: ticketgo
+    name: TicketGo
+    kind: seller
+    url: https://ticketgo.vn/
     recipe: none
     check: manual
 
