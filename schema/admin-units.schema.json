@@ -17,11 +17,20 @@
               "name": {
                 "type": "string",
                 "minLength": 1
+              },
+              "region": {
+                "type": "string",
+                "enum": [
+                  "north",
+                  "central",
+                  "south"
+                ]
               }
             },
             "required": [
               "code",
-              "name"
+              "name",
+              "region"
             ],
             "additionalProperties": false
           }

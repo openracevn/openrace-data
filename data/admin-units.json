@@ -3,139 +3,173 @@
     "provinces": [
       {
         "code": "01",
-        "name": "Thành phố Hà Nội"
+        "name": "Thành phố Hà Nội",
+        "region": "north"
       },
       {
         "code": "04",
-        "name": "Tỉnh Cao Bằng"
+        "name": "Tỉnh Cao Bằng",
+        "region": "north"
       },
       {
         "code": "08",
-        "name": "Tỉnh Tuyên Quang"
+        "name": "Tỉnh Tuyên Quang",
+        "region": "north"
       },
       {
         "code": "11",
-        "name": "Tỉnh Điện Biên"
+        "name": "Tỉnh Điện Biên",
+        "region": "north"
       },
       {
         "code": "12",
-        "name": "Tỉnh Lai Châu"
+        "name": "Tỉnh Lai Châu",
+        "region": "north"
       },
       {
         "code": "14",
-        "name": "Tỉnh Sơn La"
+        "name": "Tỉnh Sơn La",
+        "region": "north"
       },
       {
         "code": "15",
-        "name": "Tỉnh Lào Cai"
+        "name": "Tỉnh Lào Cai",
+        "region": "north"
       },
       {
         "code": "19",
-        "name": "Tỉnh Thái Nguyên"
+        "name": "Tỉnh Thái Nguyên",
+        "region": "north"
       },
       {
         "code": "20",
-        "name": "Tỉnh Lạng Sơn"
+        "name": "Tỉnh Lạng Sơn",
+        "region": "north"
       },
       {
         "code": "22",
-        "name": "Tỉnh Quảng Ninh"
+        "name": "Tỉnh Quảng Ninh",
+        "region": "north"
       },
       {
         "code": "24",
-        "name": "Tỉnh Bắc Ninh"
+        "name": "Tỉnh Bắc Ninh",
+        "region": "north"
       },
       {
         "code": "25",
-        "name": "Tỉnh Phú Thọ"
+        "name": "Tỉnh Phú Thọ",
+        "region": "north"
       },
       {
         "code": "31",
-        "name": "Thành phố Hải Phòng"
+        "name": "Thành phố Hải Phòng",
+        "region": "north"
       },
       {
         "code": "33",
-        "name": "Tỉnh Hưng Yên"
+        "name": "Tỉnh Hưng Yên",
+        "region": "north"
       },
       {
         "code": "37",
-        "name": "Tỉnh Ninh Bình"
+        "name": "Tỉnh Ninh Bình",
+        "region": "north"
       },
       {
         "code": "38",
-        "name": "Tỉnh Thanh Hóa"
+        "name": "Tỉnh Thanh Hóa",
+        "region": "central"
       },
       {
         "code": "40",
-        "name": "Tỉnh Nghệ An"
+        "name": "Tỉnh Nghệ An",
+        "region": "central"
       },
       {
         "code": "42",
-        "name": "Tỉnh Hà Tĩnh"
+        "name": "Tỉnh Hà Tĩnh",
+        "region": "central"
       },
       {
         "code": "44",
-        "name": "Tỉnh Quảng Trị"
+        "name": "Tỉnh Quảng Trị",
+        "region": "central"
       },
       {
         "code": "46",
-        "name": "Thành phố Huế"
+        "name": "Thành phố Huế",
+        "region": "central"
       },
       {
         "code": "48",
-        "name": "Thành phố Đà Nẵng"
+        "name": "Thành phố Đà Nẵng",
+        "region": "central"
       },
       {
         "code": "51",
-        "name": "Tỉnh Quảng Ngãi"
+        "name": "Tỉnh Quảng Ngãi",
+        "region": "central"
       },
       {
         "code": "52",
-        "name": "Tỉnh Gia Lai"
+        "name": "Tỉnh Gia Lai",
+        "region": "south"
       },
       {
         "code": "56",
-        "name": "Tỉnh Khánh Hòa"
+        "name": "Tỉnh Khánh Hòa",
+        "region": "central"
       },
       {
         "code": "66",
-        "name": "Tỉnh Đắk Lắk"
+        "name": "Tỉnh Đắk Lắk",
+        "region": "south"
       },
       {
         "code": "68",
-        "name": "Tỉnh Lâm Đồng"
+        "name": "Tỉnh Lâm Đồng",
+        "region": "south"
       },
       {
         "code": "75",
-        "name": "Tỉnh Đồng Nai"
+        "name": "Tỉnh Đồng Nai",
+        "region": "south"
       },
       {
         "code": "79",
-        "name": "Thành phố Hồ Chí Minh"
+        "name": "Thành phố Hồ Chí Minh",
+        "region": "south"
       },
       {
         "code": "80",
-        "name": "Tỉnh Tây Ninh"
+        "name": "Tỉnh Tây Ninh",
+        "region": "south"
       },
       {
         "code": "82",
-        "name": "Tỉnh Đồng Tháp"
+        "name": "Tỉnh Đồng Tháp",
+        "region": "south"
       },
       {
         "code": "86",
-        "name": "Tỉnh Vĩnh Long"
+        "name": "Tỉnh Vĩnh Long",
+        "region": "south"
       },
       {
         "code": "91",
-        "name": "Tỉnh An Giang"
+        "name": "Tỉnh An Giang",
+        "region": "south"
       },
       {
         "code": "92",
-        "name": "Thành phố Cần Thơ"
+        "name": "Thành phố Cần Thơ",
+        "region": "south"
       },
       {
         "code": "96",
-        "name": "Tỉnh Cà Mau"
+        "name": "Tỉnh Cà Mau",
+        "region": "south"
       }
     ]
   },

@@ -29,13 +29,22 @@
       "radiusKm": {
         "type": "number",
         "minimum": 0
+      },
+      "region": {
+        "type": "string",
+        "enum": [
+          "north",
+          "central",
+          "south"
+        ]
       }
     },
     "required": [
       "id",
       "name",
       "center",
-      "radiusKm"
+      "radiusKm",
+      "region"
     ],
     "additionalProperties": false
   },

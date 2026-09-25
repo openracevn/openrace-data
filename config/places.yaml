@@ -15,76 +15,89 @@ places:
     name: TP. Hồ Chí Minh
     center: [10.7725, 106.6980] # Bến Thành market, District 1
     radiusKm: 30
+    region: south
     legacy: { districts: ["760"] } # Quận 1
 
   - id: ha-noi
     name: Hà Nội
     center: [21.0285, 105.8522] # Hoàn Kiếm lake
     radiusKm: 30
+    region: north
     legacy: { districts: ["002"] } # Quận Hoàn Kiếm
 
   - id: da-nang
     name: Đà Nẵng
     center: [16.0612, 108.2272] # Dragon Bridge
     radiusKm: 25
+    region: central
     legacy: { districts: ["492"] } # Quận Hải Châu
 
   - id: nha-trang
     name: Nha Trang
     center: [12.2388, 109.1967]
     radiusKm: 25
+    region: central
     legacy: { districts: ["568"] } # Thành phố Nha Trang
 
   - id: da-lat
     name: Đà Lạt
     center: [11.9404, 108.4419] # Xuân Hương lake
     radiusKm: 25
+    region: south
     legacy: { districts: ["672"] } # Thành phố Đà Lạt
 
   - id: can-tho
     name: Cần Thơ
     center: [10.0340, 105.7880] # Ninh Kiều wharf
     radiusKm: 25
+    region: south
     legacy: { districts: ["916"] } # Quận Ninh Kiều
 
   - id: hai-phong
     name: Hải Phòng
     center: [20.8449, 106.6881] # Nhà hát lớn
     radiusKm: 25
+    region: north
     legacy: { districts: ["303"] } # Quận Hồng Bàng
 
   - id: hue
     name: Huế
     center: [16.4637, 107.5909]
     radiusKm: 25
+    region: central
     legacy: { districts: ["474", "475"] } # Quận Thuận Hóa, Quận Phú Xuân (the old Huế city)
 
   - id: vung-tau
     name: Vũng Tàu
     center: [10.3460, 107.0843]
     radiusKm: 20
+    region: south
     legacy: { districts: ["747"] } # Thành phố Vũng Tàu
 
   - id: quy-nhon
     name: Quy Nhơn
     center: [13.7765, 109.2237]
     radiusKm: 20
+    region: south
     legacy: { districts: ["540"] } # Thành phố Quy Nhơn
 
   - id: buon-ma-thuot
     name: Buôn Ma Thuột
     center: [12.6667, 108.0378]
     radiusKm: 20
+    region: south
     legacy: { districts: ["643"] } # Thành phố Buôn Ma Thuột
 
   - id: sa-pa
     name: Sa Pa
     center: [22.3364, 103.8438]
     radiusKm: 20
+    region: north
     legacy: { districts: ["088"] } # Thị xã Sa Pa
 
   - id: ha-long
     name: Hạ Long
     center: [20.9517, 107.0800]
     radiusKm: 25
+    region: north
     legacy: { districts: ["193"] } # Thành phố Hạ Long

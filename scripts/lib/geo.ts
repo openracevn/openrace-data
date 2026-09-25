@@ -5,12 +5,19 @@ import { z } from "zod";
 import { foldVietnamese } from "./text.ts";
 import { GeoSchema, type Geo } from "./schema.ts";
 
+// Three-way province grouping (path step 4's "North vs Central vs South" stat, and
+// openrace-web's region -> hub filter). Central Highlands provinces are folded into
+// "south" (see ref/regions.json for the full 34-province mapping and its rationale).
+export const REGIONS = ["north", "central", "south"] as const;
+export type Region = (typeof REGIONS)[number];
+
 const coordinate = z.number().finite();
 export const PlaceSchema = z.object({
   id: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
   name: z.string().min(1),
   center: z.tuple([coordinate, coordinate]),
   radiusKm: coordinate.nonnegative(),
+  region: z.enum(REGIONS),
   legacy: z.object({ districts: z.array(z.string().regex(/^\d{3}$/)) }),
 });
 const PlacesFileSchema = z.object({ places: z.array(PlaceSchema) });
@@ -22,11 +29,14 @@ export const PlacesListSchema = z.array(
     name: PlaceSchema.shape.name,
     center: PlaceSchema.shape.center,
     radiusKm: PlaceSchema.shape.radiusKm,
+    region: PlaceSchema.shape.region,
   }),
 );
 
 export const AdminUnitsSchema = z.object({
-  current: z.object({ provinces: z.array(z.object({ code: z.string().regex(/^\d{2}$/), name: z.string().min(1) })) }),
+  current: z.object({
+    provinces: z.array(z.object({ code: z.string().regex(/^\d{2}$/), name: z.string().min(1), region: z.enum(REGIONS) })),
+  }),
   legacy: z.object({
     provinces: z.array(z.object({ code: z.string().regex(/^\d{2}$/), name: z.string().min(1) })),
     districts: z.array(z.object({ code: z.string().regex(/^\d{3}$/), province: z.string().regex(/^\d{2}$/), name: z.string().min(1) })),

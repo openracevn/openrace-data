@@ -1,7 +1,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { enrichGeo, geoTargetFromRace, type GeoTarget } from "./lib/geocode.ts";
-import { loadPlaces, locationKey, parseGeoCache, type AdminUnits } from "./lib/geo.ts";
+import { loadPlaces, locationKey, parseGeoCache, type AdminUnits, type Region } from "./lib/geo.ts";
 import { INDEX_PATH, IndexSchema, RaceSchema, serialize, upgradeRace } from "./lib/schema.ts";
 import { serializeSorted } from "./lib/state.ts";
 
@@ -46,7 +46,7 @@ function write(path: string, content: string): void {
 }
 
 function placesData() {
-  return loadPlaces().map(({ id, name, center, radiusKm }) => ({ id, name, center, radiusKm }));
+  return loadPlaces().map(({ id, name, center, radiusKm, region }) => ({ id, name, center, radiusKm, region }));
 }
 
 function adminUnitsData(): AdminUnits {
@@ -55,9 +55,19 @@ function adminUnitsData(): AdminUnits {
     provinces: { code: string; name: string }[];
     districts: { code: string; province: string; name: string }[];
   };
+  const regions = JSON.parse(readFileSync("ref/regions.json", "utf8")) as { code: string; region: Region }[];
+  const regionByCode = new Map(regions.map(({ code, region }) => [code, region]));
   const byCode = (a: { code: string }, b: { code: string }) => a.code.localeCompare(b.code);
   return {
-    current: { provinces: current.provinces.map(({ code, name }) => ({ code, name })).sort(byCode) },
+    current: {
+      provinces: current.provinces
+        .map(({ code, name }) => {
+          const region = regionByCode.get(code);
+          if (!region) throw new Error(`ref/regions.json is missing province ${code} (${name})`);
+          return { code, name, region };
+        })
+        .sort(byCode),
+    },
     legacy: {
       provinces: legacy.provinces.map(({ code, name }) => ({ code, name })).sort(byCode),
       districts: legacy.districts.map(({ code, province, name }) => ({ code, province, name })).sort(byCode),

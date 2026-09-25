@@ -6,7 +6,8 @@
       10.7725,
       106.698
     ],
-    "radiusKm": 30
+    "radiusKm": 30,
+    "region": "south"
   },
   {
     "id": "ha-noi",
@@ -15,7 +16,8 @@
       21.0285,
       105.8522
     ],
-    "radiusKm": 30
+    "radiusKm": 30,
+    "region": "north"
   },
   {
     "id": "da-nang",
@@ -24,7 +26,8 @@
       16.0612,
       108.2272
     ],
-    "radiusKm": 25
+    "radiusKm": 25,
+    "region": "central"
   },
   {
     "id": "nha-trang",
@@ -33,7 +36,8 @@
       12.2388,
       109.1967
     ],
-    "radiusKm": 25
+    "radiusKm": 25,
+    "region": "central"
   },
   {
     "id": "da-lat",
@@ -42,7 +46,8 @@
       11.9404,
       108.4419
     ],
-    "radiusKm": 25
+    "radiusKm": 25,
+    "region": "south"
   },
   {
     "id": "can-tho",
@@ -51,7 +56,8 @@
       10.034,
       105.788
     ],
-    "radiusKm": 25
+    "radiusKm": 25,
+    "region": "south"
   },
   {
     "id": "hai-phong",
@@ -60,7 +66,8 @@
       20.8449,
       106.6881
     ],
-    "radiusKm": 25
+    "radiusKm": 25,
+    "region": "north"
   },
   {
     "id": "hue",
@@ -69,7 +76,8 @@
       16.4637,
       107.5909
     ],
-    "radiusKm": 25
+    "radiusKm": 25,
+    "region": "central"
   },
   {
     "id": "vung-tau",
@@ -78,7 +86,8 @@
       10.346,
       107.0843
     ],
-    "radiusKm": 20
+    "radiusKm": 20,
+    "region": "south"
   },
   {
     "id": "quy-nhon",
@@ -87,7 +96,8 @@
       13.7765,
       109.2237
     ],
-    "radiusKm": 20
+    "radiusKm": 20,
+    "region": "south"
   },
   {
     "id": "buon-ma-thuot",
@@ -96,7 +106,8 @@
       12.6667,
       108.0378
     ],
-    "radiusKm": 20
+    "radiusKm": 20,
+    "region": "south"
   },
   {
     "id": "sa-pa",
@@ -105,7 +116,8 @@
       22.3364,
       103.8438
     ],
-    "radiusKm": 20
+    "radiusKm": 20,
+    "region": "north"
   },
   {
     "id": "ha-long",
@@ -114,6 +126,7 @@
       20.9517,
       107.08
     ],
-    "radiusKm": 25
+    "radiusKm": 25,
+    "region": "north"
   }
 ]
