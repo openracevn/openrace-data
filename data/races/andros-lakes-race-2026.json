@@ -166,7 +166,7 @@
   ],
   "links": [],
   "flags": [
-    "sources disagree on race day: actiup 2026-04-19, openrace 2026-04-18"
+    "sources disagree on race day: actiup 2026-04-19, openrace 2026-04-18, irace 2026-04-18"
   ],
   "overrides": {
     "seriesId": {
@@ -224,9 +224,35 @@
           "note": "race-research: iRace's own sales page, titled 'Andros Lakes Race (8th) - 2026' (edition 8, matching ActiUp's page for the same race). Its own date reads 2026-04-18, one day off ActiUp's 2026-04-19 — a genuine cross-source conflict, left for the flag rather than picked."
         }
       }
+    },
+    {
+      "site": "irace",
+      "role": "reference",
+      "url": "https://irace.vn/su-kien/the-lakes-race-run-4-orphans",
+      "lastCheckedAt": "2026-09-25T06:59:05.947Z",
+      "lastChangedAt": "2026-09-25T06:59:05.947Z",
+      "extracted": {
+        "facts": {
+          "name": "Andros Lakes Race (8th) - 2026",
+          "date": "2026-04-18",
+          "edition": 8,
+          "venue": "Hồ Đá Thủ Đức",
+          "city": "Hồ Chí Minh",
+          "distances": [
+            "500m",
+            "1km",
+            "1.8km",
+            "2.2km",
+            "6K",
+            "10K",
+            "21K"
+          ],
+          "note": "race-research: retag to the iRace site key."
+        }
+      }
     }
   ],
   "confidence": "conflicting",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T06:52:20.549Z"
+  "updatedAt": "2026-09-25T06:59:05.947Z"
 }
