@@ -4,5 +4,6 @@ node_modules/
 *.log
 ref/.cache/
 
-# Agent reads in progress (scripts/agent-read.ts)
+# Agent reads in progress (scripts/agent-read.ts), and past batches kept as an audit trail
 .agent-read/
+.agent-read-archive/

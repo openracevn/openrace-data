@@ -97,10 +97,17 @@ git fetch -q && git worktree add -q --detach "$W" origin/main
 cp -R .agent-read "$W/" && ln -s "$PWD/node_modules" "$W/node_modules"
 (cd "$W" && npm run agent-read -- commit .agent-read)                                        # dry run
 (cd "$W" && GITHUB_TOKEN=$(gh auth token) npm run agent-read -- commit .agent-read --commit)
-git worktree remove --force "$W"; rm -rf .agent-read
+git worktree remove --force "$W"
 ```
 
 In the dry run, check names, dates, types and price kinds (`group` only for group, combo and team prices), as `agent-read` step 3 says. The changed fields should be only `types, distances, prices`. Anything else (`geo`, `courses`, ...) means the code isn't `main`'s: stop.
+
+**After a successful commit, archive `.agent-read` instead of deleting it** — it's gitignored either way, but the user wants past batches kept as an audit trail (what a batch actually read, not a cache: the next `prepare` always re-fetches live content, and the real skip-if-unchanged logic is the fingerprint in `state/checks.json`, independent of this folder):
+
+```bash
+mkdir -p .agent-read-archive
+mv .agent-read ".agent-read-archive/$(date +%F)-<short-description-of-the-batch>"
+```
 
 Tell the user: races committed, how many were `OK` straight away, how many images you had to look at, and anything left out.
 
