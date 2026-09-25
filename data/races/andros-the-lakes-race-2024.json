@@ -200,9 +200,32 @@
           "note": "race-research: iRace's own sales page for this race, explicitly labelled Vol 6, corroborating date and giving a fuller distance list than ActiUp."
         }
       }
+    },
+    {
+      "site": "irace",
+      "role": "reference",
+      "url": "https://ticket.irace.vn/the-lakes-race-vol-6",
+      "lastCheckedAt": "2026-09-25T06:58:43.536Z",
+      "lastChangedAt": "2026-09-25T06:58:43.536Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Andros The Lakes Race - Vol 6",
+          "date": "2024-05-26",
+          "edition": 6,
+          "venue": "Hồ Đá, Bình Dương",
+          "distances": [
+            "600m",
+            "2km",
+            "5km",
+            "15km",
+            "25km"
+          ],
+          "note": "race-research: retag to the iRace site key."
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T06:51:23.853Z"
+  "updatedAt": "2026-09-25T06:58:43.536Z"
 }
