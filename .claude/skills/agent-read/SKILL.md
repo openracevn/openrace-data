@@ -95,7 +95,7 @@ For a dense or very wide table, crop to the table and look again at full size. S
 One item per distance × tier. These rules come from real misreads (`scripts/lib/recipes/README.md`, lessons):
 
 - **Read each row straight across.** A price belongs to the distance on its own row. Check the last row too: busy images shift rows (Vũng Tàu City Trail).
-- **`tier`: the label as written**, typos included ("Supper Early Bird"). Slogans and decoration on the image are not tiers.
+- **`tier`: the label as written**, typos included ("Supper Early Bird"). Slogans and decoration on the image are not tiers. Don't try to reword a kids/family variant to match how another source phrased the same combo ("2 adults + 1 kid" vs "2 người lớn + 1 trẻ em") — write exactly what this source says; `openrace-web` groups variant rows by parsed meaning downstream (see its `.claude/docs/price-tier-variant-grouping.md`), not by matching text across sources.
 - **`price`: a plain number** ("1.100.000 VND" → `1100000`). Only amounts printed as prices. **Never compute one from a percentage**: a group table of percentages only ("Nhóm 20-99: 5%") gives no prices.
 - **Group prices** (per person, by group size, printed as amounts): label them `"Group <size>"` ("Group 50+").
 - **Bundles and teams** (combo of several tickets, relay team): keep that in the label ("Combo 1 (2 tickets) Early Bird", "Relay team Early Bird").
