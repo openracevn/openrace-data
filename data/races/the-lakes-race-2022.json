@@ -10,7 +10,7 @@
   "seriesId": null,
   "organizerId": null,
   "organizer": "Athlete Trotter",
-  "edition": 4,
+  "edition": null,
   "courses": [
     {
       "label": "1.8km",
@@ -54,7 +54,13 @@
   "registrations": [],
   "links": [],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "edition": {
+      "value": null,
+      "reason": "race-research correction: the edition number I entered when adding this race's source was inferred by counting (the source recaps editions 1-3 by name but never numbers this 2022 race itself), which breaks this skill's own rule against inferring editions. Overriding to null since it's baked into the source's own extracted facts and 'unset' only removes overrides, not source data.",
+      "at": "2026-09-25T06:54:26.477Z"
+    }
+  },
   "sources": [
     {
       "site": "openrace",
@@ -84,5 +90,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T06:48:59.089Z",
-  "updatedAt": "2026-09-25T06:48:59.089Z"
+  "updatedAt": "2026-09-25T06:54:26.477Z"
 }
