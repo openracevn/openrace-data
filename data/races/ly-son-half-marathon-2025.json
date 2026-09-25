@@ -145,6 +145,30 @@
       ],
       "reason": "iRace/yeuchaybo/official site all confirm this is a road half-marathon race; actiup only had it as 'other'",
       "at": "2026-09-25T08:25:02.019Z"
+    },
+    "courses": {
+      "value": [
+        {
+          "label": "5km",
+          "meters": 5000,
+          "type": "road_run",
+          "elevationGain": null
+        },
+        {
+          "label": "10km",
+          "meters": 10000,
+          "type": "road_run",
+          "elevationGain": null
+        },
+        {
+          "label": "21km",
+          "meters": 21097,
+          "type": "road_run",
+          "elevationGain": null
+        }
+      ],
+      "reason": "confirmed 5km/10km/21km distances from iRace/yeuchaybo/official site",
+      "at": "2026-09-25T08:25:11.306Z"
     }
   },
   "sources": [
@@ -199,5 +223,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T08:25:02.019Z"
+  "updatedAt": "2026-09-25T08:25:11.306Z"
 }
