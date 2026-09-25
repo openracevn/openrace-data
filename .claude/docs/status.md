@@ -45,6 +45,7 @@ Free plan: 1,000 credits per billing period (23rd to 23rd). On 2026-09-24, 1,453
 
 ## Next
 
+- [ ] **race-research follow-ups from the 2026-09-25 pilot** ([summary](2026-09-25-summary-race-research.md)): 4 races (`the-lakes-race-mua-3-2020`, `andros-the-lakes-race-2025`, `giai-half-trail-marathon-ho-da-2019-the-lake-race-2019`, `andros-the-lakes-race-2019-10-2019`) still have a source tagged `openrace` from before the domain-slug fix — needs `add` (new tag) + `drop-source` (old one) per race, same as the 6 already cleaned up. Also: run `agent-read` on the 3 ActiUp-backed Andros races (2024/2025/2026) for their actual prices, which race-research correctly declined to fetch itself.
 - [ ] **MCP server: [plan 005](../plans/005-2026-09-24-mcp-server.md)** (path step 5) — deployed and working (see above); left: try it with a real assistant in Vietnamese and English, and write up the contract list for openrace-api. Then the frontend, after the API contract has been through real use (it isn't on the roadmap path yet: add it when that plan is written).
 - [ ] **Read the other 29 upcoming ActiUp races with the `agent-read` skill** (free, batches of 5–10). Firecrawl batches are on hold (user, 2026-09-24). Then VM (15 races) and the race sites the same way.
 - [ ] Paid check of the default recipe on Hạ Long, Lâm Đồng Trail and Run To Live (≤20–50 each), with their prices added to `test/answers.test.ts`.
