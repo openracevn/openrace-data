@@ -1,11 +1,15 @@
 ---
 name: race-research
-description: Deep, multi-source research on one race — find every edition (past and current) and every independent source (the race's own site, old ticket resellers like iRace/TicketBox/Raceez, news and blog coverage), add missing editions, and cross-check races we already track beyond what agent-read/check-race read from their one primary source. Use when the user names a race and asks to "study" it, find its full history, check how many editions it's really had, or double-check it against other sources. Facebook is never a source here, only a link. Not for a normal re-check of a race's current listing (use check-race) or for reading a recipe site's regular pages (use agent-read).
+description: Deep, multi-source research on one race — a finder and completeness auditor, not a one-shot backfill. Find every edition (past and current) and every independent source (the race's own site, old ticket resellers like iRace/TicketBox/Raceez, news and blog coverage), add missing editions, and re-audit editions we already track — sources, price, date, distances — beyond what agent-read/check-race read from their one primary source. Use when the user names a race and asks to "study" it, find its full history, check how many editions it's really had, double-check it against other sources, or re-run research to deepen trust in what's already there. Facebook is never a source here, only a link. Not for a normal re-check of a race's current listing (use check-race) or for reading a recipe site's regular pages (use agent-read) — this skill calls those in when a found/audited race turns out to be on a site they cover.
 ---
 
 # Research a race across the whole web
 
 `check-race` and `agent-read` read **one race's current listing on one known site** (a recipe). This skill goes wider: given a race by name, it searches the open web for every edition that's ever been run and every independent account of it, so gaps in our data (missing past editions, an unverified price, a wrong venue) get filled or confirmed from sources outside the usual pipeline. It is manual/agent-driven research, not a recipe — there is no site to automate here, each source is different and read once.
+
+**This is a finder, not a one-shot backfill.** Its job is to notice a race/edition exists and get it into the database — then, once found, hand off the actual full collection to `agent-read`/`check-race` whenever the race turns out to be on a site they already cover, since those read prices (including from images) properly and this skill's own `curl`-based fetching can't. Only for a source with no recipe at all (a dead reseller, an archived page) does this skill do the full collection itself.
+
+**Every run should make the data more trustworthy than the last one**, not just look for what's new. Re-running this on a race you've already researched should re-walk every existing edition — not only check for a new one — since a later run may turn up a source that resolves an old gap or conflict (this is exactly how Andros's Edition 1 went from "doubted, unlinked" to "confirmed" mid-session, from a source found on a *later* pass).
 
 This is slower and costs more of your usage per race than agent-read, because judgment (which source to trust, is this a new edition or the same one postponed) can't be delegated. Use it on request, per race — not as a batch job across the whole catalog.
 
@@ -28,9 +32,9 @@ Background: `.claude/docs/roadmap.md` (trust principles — every fact traces to
 - **Don't infer an edition number from position or sequence** ("this is between Vol 6 and Vol 8, so it must be Vol 7") — that's the same guessing the rule above already forbids, just dressed as arithmetic. Only set `edition` when a source's own text states the number. If a wrong inferred edition already got written into a race's own `add` (not as an override), `unset` won't remove it — it only clears overrides. Correct it with `npm run edit -- set <race> edition null --reason "..."` (an explicit override to null).
 - **Don't spawn parallel Claude subagents to research multiple editions at once.** A subagent here runs on Claude by default (not opencode's free models), so it raises your usage rather than saving it, and it reintroduces exactly the URL-collision and cross-edition consistency risks above — one editon's page can be the source of a fact about another, which only a single reconciling pass catches. What does parallelize for free: run **discovery and fetching as batched tool calls in one turn** (already fast, no extra cost), and for a large batch of sources, run a **few parallel opencode extraction workers** on separate output files (same split as `opencode-read`'s worker A/B) — that's real, free wall-clock savings. Commits stay sequential and Claude-only regardless of batch size.
 
-## 1. See what we already have (free)
+## 1. See what we already have, and audit every existing edition (free)
 
-Same as `check-race` step 1, but widen it to the whole series/organizer, not just one slug:
+Same as `check-race` step 1, but widen it to the whole series/organizer, not just one slug — and treat **every** matching race as needing a look, not just the ones with obvious gaps:
 
 ```bash
 git pull -q
@@ -44,7 +48,31 @@ for e in races:
 "
 ```
 
-Read each matching file in `data/races/`. Note what's missing: which years have no file, whether `seriesId`/`edition` are set consistently, what `sources[]` already cover.
+Read each matching file in `data/races/`. For each one, check against this list — any of these is a reason to keep researching that specific edition, not just note it and move on:
+
+- **`prices: []`** — especially on a race whose date is upcoming or recent, where a price plausibly exists somewhere.
+- **`date` missing or only approximate** (you know the month/year but not the day) — the one field that's never allowed to stay a guess.
+- **`courses: []` / no distances** — the format/distance list is unknown even though the race clearly happened.
+- **`edition: null`** while sibling editions in the same series *are* numbered — a source stating the number may exist even if you haven't found it yet.
+- **`seriesId: null`** despite an obvious match to an existing series by name/organizer/venue.
+- **`confidence: "single-sourced"`** — one source is thin; a second one (even just corroborating) is worth finding.
+- **`confidence: "conflicting"` or non-empty `flags`** — an open disagreement a newer or different source might resolve.
+
+Also check: is there a new edition this year or next that isn't tracked yet? That's still part of step 1, not the only part of it.
+
+## 1.1. Hand off to agent-read/check-race when a recipe applies
+
+Before doing anything yourself for a race or gap found in step 1, check whether its source is on a site `config/sites.yaml` already has a recipe for (ActiUp, VnExpress Marathon, a race-site — `recipe` not `none`). If so, **this skill's job for that race is done once it's found** — the actual collection (courses, and prices especially, which are often images or JS-rendered and this skill's plain `curl` fetch can't read) belongs to:
+
+```bash
+npm run agent-read -- prepare --race <url|slug|id>      # free — use this by default
+# or, only if the user wants to spend Firecrawl credits:
+npm run check -- --race <url|slug|id> --free --dry-run  # shows cost first, per check-race's own rule
+```
+
+This is why the 2024–2026 Andros races still had no prices after the first race-research pass: they're all on ActiUp (a recipe site), and this skill tried to read their price images itself with `curl` instead of handing off — `curl` just gets the static HTML, never the image, so the price silently came back empty. Don't repeat that: **a recipe-covered gap gets handed off, not DIY'd.**
+
+Only fetch and extract a source yourself (steps 2–5 below) when **no recipe applies at all** — a dead ticket reseller, an archived page, a news article. And even then: if that source has a price image, download it and actually look at it (same as `agent-read`'s own rule — a wrong price is worse than no price, but no price when one was visible is a miss, not a safe default).
 
 ## 1.5. Always check Wayback Machine for the race's own official site
 
@@ -141,4 +169,4 @@ rm -rf .race-research/<slug>
 
 (gitignored, but same as agent-read: keep the folder around if the user wants an audit trail beyond the committed `sources[]`, otherwise remove it.)
 
-Tell the user: how many editions found vs. tracked before, which are still gaps (unfindable — say so plainly, don't force a guess), what was delegated to opencode vs. done by hand, and anything flagged as conflicting.
+Tell the user: how many editions found vs. tracked before, which are still gaps (unfindable — say so plainly, don't force a guess), what was delegated to opencode vs. done by hand, what was handed off to `agent-read`/`check-race` (and whether that handoff was actually run, or is left for the user to trigger), and anything flagged as conflicting.
