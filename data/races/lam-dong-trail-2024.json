@@ -3,7 +3,7 @@
   "slug": "lam-dong-trail-2024",
   "name": "Lâm Đồng Trail 2024",
   "types": [
-    "other"
+    "trail_run"
   ],
   "date": "2024-11-08",
   "endDate": "2024-11-10",
@@ -201,6 +201,13 @@
       ],
       "reason": "lamdongtrail.vn's own recap article (archive.org/web/20260519193022/.../ket-thuc-thanh-cong-giai-chay-lamdong-trail-2024/, live page now overwritten for 2026): 8-10/11/2024, ~2000 participants, distances 5/15/25/45/75km + kid trail. lamdongtrail.vn is a recipe site so this archived page can't be added as a formal edit -- add source",
       "at": "2026-09-25T08:02:28.959Z"
+    },
+    "types": {
+      "value": [
+        "trail_run"
+      ],
+      "reason": "confirmed trail_run per lamdongtrail.vn recap (5/15/25/45/75km trail distances) and actiup listing",
+      "at": "2026-09-25T08:02:54.039Z"
     }
   },
   "sources": [
@@ -235,5 +242,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T08:02:28.959Z"
+  "updatedAt": "2026-09-25T08:02:54.039Z"
 }
