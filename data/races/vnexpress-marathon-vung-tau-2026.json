@@ -14,9 +14,104 @@
   "courses": [],
   "location": {
     "venue": null,
-    "city": null
+    "city": "Vũng Tàu"
   },
-  "geo": null,
+  "geo": {
+    "lat": 10.348189,
+    "lng": 107.0753349,
+    "source": "nominatim",
+    "precision": "ward",
+    "current": {
+      "province": "79",
+      "ward": "26506"
+    },
+    "legacy": {
+      "province": "77",
+      "district": "747",
+      "ward": "26506"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 96.2,
+        "minutes": 93,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1584.9,
+        "minutes": 1217,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 901.6,
+        "minutes": 689,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 407.9,
+        "minutes": 305,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 328.8,
+        "minutes": 245,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 261.7,
+        "minutes": 221,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1619,
+        "minutes": 1244,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 998.8,
+        "minutes": 764,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1.7,
+        "minutes": 3,
+        "method": "road",
+        "near": true
+      },
+      "quy-nhon": {
+        "km": 613.8,
+        "minutes": 468,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 414.1,
+        "minutes": 323,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1893.4,
+        "minutes": 1453,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1668.7,
+        "minutes": 1277,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
   "prices": [],
   "currency": "VND",
   "registrationStatus": null,
@@ -29,12 +124,13 @@
       "site": "vnexpress-marathon",
       "role": "official",
       "url": "https://vm.vnexpress.net/vung-tau-2026",
-      "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+      "lastCheckedAt": "2026-09-25T04:28:29.753Z",
       "lastChangedAt": "2026-09-25T04:11:49.673Z",
       "extracted": {
         "facts": {
           "name": "VnExpress Vung Tau International Half Marathon Herbalife Cup",
-          "date": "2026-08-30"
+          "date": "2026-08-30",
+          "city": "Vũng Tàu"
         },
         "pages": [
           {
@@ -66,5 +162,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T04:11:49.673Z",
-  "updatedAt": "2026-09-25T04:11:49.673Z"
+  "updatedAt": "2026-09-25T04:28:29.753Z"
 }
