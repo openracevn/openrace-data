@@ -1,7 +1,7 @@
 {
   "id": "a194be66-7d9f-4529-b731-0574498e3161",
   "slug": "andros-the-lakes-race-2019-10",
-  "name": "Giải Chạy Bộ Run For Orphans - The Lakes Race 2019",
+  "name": "Run For Orphans - The Lakes Race 2019",
   "types": [
     "other"
   ],
@@ -29,19 +29,6 @@
       "inferred": [
         "to"
       ],
-      "site": "openrace"
-    },
-    {
-      "distance": null,
-      "tier": "unspecified · Standard",
-      "kind": "regular",
-      "audience": null,
-      "price": 500000,
-      "from": null,
-      "to": "2019-10-20",
-      "inferred": [
-        "to"
-      ],
       "site": "tiki-vn"
     }
   ],
@@ -52,27 +39,6 @@
   "flags": [],
   "overrides": {},
   "sources": [
-    {
-      "site": "openrace",
-      "role": "reference",
-      "url": "https://tiki.vn/giai-chay-bo-run-for-orphans-the-lakes-race-2019-p25618012.html",
-      "lastCheckedAt": "2026-09-25T06:45:06.553Z",
-      "lastChangedAt": "2026-09-25T06:45:06.553Z",
-      "extracted": {
-        "facts": {
-          "name": "Giải Chạy Bộ Run For Orphans - The Lakes Race 2019",
-          "date": "2019-10-20",
-          "prices": [
-            {
-              "distance": "unspecified",
-              "tier": "Standard",
-              "price": 500000
-            }
-          ],
-          "note": "race-research: Tiki resale listing for the same 2019-10-20 edition, corroborating date and stating the ticket price (500,000 VND, single tier, no distance breakdown given)."
-        }
-      }
-    },
     {
       "site": "irace",
       "role": "reference",
@@ -114,5 +80,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T06:44:22.797Z",
-  "updatedAt": "2026-09-25T08:01:00.241Z"
+  "updatedAt": "2026-09-25T08:01:18.371Z"
 }
