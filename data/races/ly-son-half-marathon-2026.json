@@ -42,7 +42,13 @@
   "registrations": [],
   "links": [],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "seriesId": {
+      "value": "ly-son-half-marathon",
+      "reason": "same series as ly-son-half-marathon-2024/2025",
+      "at": "2026-09-25T08:18:16.912Z"
+    }
+  },
   "sources": [
     {
       "site": "pace8",
@@ -72,5 +78,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T08:17:52.523Z",
-  "updatedAt": "2026-09-25T08:17:52.523Z"
+  "updatedAt": "2026-09-25T08:18:16.912Z"
 }
