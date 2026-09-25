@@ -63,7 +63,8 @@ export const PAGE_EXTRACTION = {
           "Every format this event offers. road_run = road running (fun run, 10K, half, marathon); trail_run = trail or mountain running; " +
           "city_trail = urban trail race through a city; obstacle_run = obstacle course race; triathlon = swim+bike+run; " +
           "duathlon = run+bike+run; aquathlon = swim+run; aquabike = swim+bike; swimrun = alternating swim and run legs; " +
-          "swim = swimming only; road_cycle = road cycling; mtb = mountain biking; other = any other sport event.",
+          "open_water_swim = swimming in a lake, river or sea; pool_swim = swimming in a pool; swim = swimming and the page doesn't say open-water or pool; " +
+          "road_cycle = road cycling; mtb = mountain biking; other = any other sport event.",
       },
       name: { type: "string", description: "Official event name exactly as written. Do not translate it." },
       date: { type: "string", description: "Race day as YYYY-MM-DD. For multi-day events, the first day." },

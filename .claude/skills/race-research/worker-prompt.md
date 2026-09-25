@@ -31,7 +31,7 @@ Rules (same as `agent-read`'s reading rules — read `.claude/skills/agent-read/
 - `edition`: only if the page states an edition/vol/season number ("lần thứ 5", "vol 5", "mùa 5", "season 5"). Never count or infer it.
 - Dates: `YYYY-MM-DD` when the file gives a year; if only day/month is given for a price tier's `from`/`to`, use `DD/MM` and never add a year.
 - `prices`: one item per distance × tier, amount as a plain number (`"1.100.000 VND"` → `1100000`). Only amounts printed as prices — never computed from a percentage or a discount label alone. If the file has no price table, `"prices": []`.
-- `types`: from `road_run, trail_run, city_trail, obstacle_run, triathlon, duathlon, aquathlon, aquabike, swimrun, swim, road_cycle, mtb, other`.
+- `types`: from `road_run, trail_run, city_trail, obstacle_run, triathlon, duathlon, aquathlon, aquabike, swimrun, open_water_swim, pool_swim, swim, road_cycle, mtb, other`.
 - If a file is not actually about this race (wrong race, an ad, a login/error page, or too little text to extract anything), write `{ "file": "...", "skip": "<why>" }` instead of facts.
 
 When every file is done, end with one line per file: `<file>: extracted` or `<file>: skip, <why>`.

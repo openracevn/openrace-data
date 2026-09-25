@@ -73,7 +73,7 @@ For a dense or very wide table, crop to the table and look again at full size. S
 ```
 
 - `pageKind`: `sport` (running, trail, triathlon, swimming, cycling), `non_sport` (concert, tour, hotel, conference) or `none` (login, error or empty page; then leave out everything else).
-- `types`: every format offered: road_run, trail_run, city_trail, obstacle_run, triathlon, duathlon, aquathlon, aquabike, swimrun, swim, road_cycle, mtb, other.
+- `types`: every format offered: road_run, trail_run, city_trail, obstacle_run, triathlon, duathlon, aquathlon, aquabike, swimrun, open_water_swim, pool_swim, swim, road_cycle, mtb, other.
 - `courses`: per distance, only what the page states: its format (for example, the 70km is `trail_run` while the 5km is `road_run`) and elevation gain (D+). Omit a field that isn't stated.
 - `edition`: the edition number if the page states it ("lần thứ 5", "5th edition", "mùa 5"). Omit otherwise; never count editions yourself.
 - `mapsUrl`: a Google Maps link or coordinates for the start/finish venue, exactly as on the page. Omit if none.

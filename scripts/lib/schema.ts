@@ -73,21 +73,34 @@ export const RACE_TYPES = [
   "aquathlon", //    swim + run
   "aquabike", //     swim + bike
   "swimrun", //      alternating open-water swim and trail run legs
-  "swim", //         open-water or pool swimming
+  "open_water_swim", // lake, river or sea swimming
+  "pool_swim", //    pool swimming
+  "swim", //         swimming when a source doesn't say open-water or pool
   "road_cycle", //   road cycling: gran fondo, criterium, time trial
   "mtb", //          mountain biking
   "other", //        a sport event that fits none of the above
 ] as const;
 
 // Composite formats include their component disciplines, for loose type
-// filtering (e.g. a `swim` filter also returns triathlon races). Strict
-// filtering ignores this map and matches `types` literally.
+// filtering (e.g. a `swim` filter also returns triathlon races). Their swim leg
+// is always the generic `swim` here, never `open_water_swim`/`pool_swim` — we
+// don't track which one it is per composite race. Strict filtering ignores this
+// map and matches `types` literally.
 export const RACE_TYPE_COMPONENTS: Partial<Record<(typeof RACE_TYPES)[number], (typeof RACE_TYPES)[number][]>> = {
   triathlon: ["swim", "road_cycle", "road_run"],
   duathlon: ["road_cycle", "road_run"],
   aquathlon: ["swim", "road_run"],
   aquabike: ["swim", "road_cycle"],
   swimrun: ["swim", "trail_run"],
+};
+
+// `open_water_swim` and `pool_swim` are subtypes of the generic `swim`: a loose
+// filter for `swim` also matches races (and composite legs) tagged with either.
+// The reverse isn't true — filtering by `open_water_swim` doesn't pull in a
+// composite's generic swim leg, since we don't know which kind it is.
+export const RACE_TYPE_PARENTS: Partial<Record<(typeof RACE_TYPES)[number], (typeof RACE_TYPES)[number]>> = {
+  open_water_swim: "swim",
+  pool_swim: "swim",
 };
 
 // Normalized price tier. The label as written is kept in `tier`.

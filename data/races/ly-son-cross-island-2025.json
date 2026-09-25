@@ -3,7 +3,7 @@
   "slug": "ly-son-cross-island-2025",
   "name": "Lý Sơn Cross Island 2025",
   "types": [
-    "swim"
+    "open_water_swim"
   ],
   "date": "2025-06-07",
   "endDate": "2025-06-08",
@@ -15,19 +15,19 @@
     {
       "label": "1km",
       "meters": 1000,
-      "type": "swim",
+      "type": "open_water_swim",
       "elevationGain": null
     },
     {
       "label": "2km",
       "meters": 2000,
-      "type": "swim",
+      "type": "open_water_swim",
       "elevationGain": null
     },
     {
       "label": "5km",
       "meters": 5000,
-      "type": "swim",
+      "type": "open_water_swim",
       "elevationGain": null
     }
   ],
@@ -147,34 +147,34 @@
   "overrides": {
     "types": {
       "value": [
-        "swim"
+        "open_water_swim"
       ],
-      "reason": "iRace/yeuchaybo/xongon all describe this as an open-water swim race (giải bơi vượt biển), actiup only had it as 'other'",
-      "at": "2026-09-25T08:15:53.242Z"
+      "reason": "iRace/yeuchaybo/xongon all describe this as an open-water swim race (giải bơi vượt biển), actiup only had it as 'other' (open_water_swim added as a distinct race type 2026-09-25, refining the earlier generic swim tag)",
+      "at": "2026-09-25T08:30:43.681Z"
     },
     "courses": {
       "value": [
         {
           "label": "1km",
           "meters": 1000,
-          "type": "swim",
+          "type": "open_water_swim",
           "elevationGain": null
         },
         {
           "label": "2km",
           "meters": 2000,
-          "type": "swim",
+          "type": "open_water_swim",
           "elevationGain": null
         },
         {
           "label": "5km",
           "meters": 5000,
-          "type": "swim",
+          "type": "open_water_swim",
           "elevationGain": null
         }
       ],
       "reason": "iRace event page lists distances 1km, 2km, 5km for this swim race",
-      "at": "2026-09-25T08:16:05.009Z"
+      "at": "2026-09-25T08:30:43.681Z"
     }
   },
   "sources": [
@@ -234,5 +234,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T08:16:05.009Z"
+  "updatedAt": "2026-09-25T08:30:43.681Z"
 }
