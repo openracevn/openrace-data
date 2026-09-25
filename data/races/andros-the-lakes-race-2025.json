@@ -10,7 +10,7 @@
   "seriesId": "andros-the-lakes-race",
   "organizerId": "the-lakes-race",
   "organizer": "THE LAKES RACE",
-  "edition": null,
+  "edition": 7,
   "courses": [],
   "location": {
     "venue": "Hồ Đá - Bình Dương",
@@ -134,7 +134,13 @@
     }
   ],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "edition": {
+      "value": 7,
+      "reason": "race-research: the race's own official site (androslakesrace.com, archived 2025-02-12) announces this exact race: 'Next Edition on June, 01st, 2025 ... For our 7th edition, we will invite 500 orphans'. http://web.archive.org/web/20250212015802/https://androslakesrace.com/",
+      "at": "2026-09-25T07:14:55.229Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -185,5 +191,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T06:53:46.346Z"
+  "updatedAt": "2026-09-25T07:14:55.229Z"
 }
