@@ -44,14 +44,14 @@
     }
   ],
   "location": {
-    "venue": "TTC World - Thung Lũng Tình Yêu, số 03-05-07 đường Mai Anh Đào, phường Lâm Viên, Tp. Đà Lạt, Lâm Đồng",
+    "venue": "Thung Lũng Tình Yêu",
     "city": "Đà Lạt, Lâm Đồng"
   },
   "geo": {
-    "lat": 11.9458436,
-    "lng": 108.4575864,
+    "lat": 11.9781853,
+    "lng": 108.4499229,
     "source": "nominatim",
-    "precision": "ward",
+    "precision": "venue",
     "current": {
       "province": "68",
       "ward": "24778"
@@ -59,85 +59,85 @@
     "legacy": {
       "province": "68",
       "district": "672",
-      "ward": "24778"
+      "ward": "24772"
     },
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 298.7,
-        "minutes": 228,
+        "km": 303,
+        "minutes": 233,
         "method": "road",
         "near": false
       },
       "ha-noi": {
-        "km": 1396.1,
-        "minutes": 1113,
+        "km": 1400.4,
+        "minutes": 1118,
         "method": "road",
         "near": false
       },
       "da-nang": {
-        "km": 626.6,
-        "minutes": 510,
+        "km": 630.9,
+        "minutes": 515,
         "method": "road",
         "near": false
       },
       "nha-trang": {
-        "km": 133,
-        "minutes": 127,
+        "km": 137.2,
+        "minutes": 132,
         "method": "road",
         "near": false
       },
       "da-lat": {
-        "km": 2.3,
-        "minutes": 3,
+        "km": 5.8,
+        "minutes": 7,
         "method": "road",
         "near": true
       },
       "can-tho": {
-        "km": 464.2,
-        "minutes": 356,
+        "km": 468.5,
+        "minutes": 361,
         "method": "road",
         "near": false
       },
       "hai-phong": {
-        "km": 1430.2,
-        "minutes": 1140,
+        "km": 1434.5,
+        "minutes": 1145,
         "method": "road",
         "near": false
       },
       "hue": {
-        "km": 723.8,
-        "minutes": 585,
+        "km": 728.1,
+        "minutes": 590,
         "method": "road",
         "near": false
       },
       "vung-tau": {
-        "km": 328.1,
-        "minutes": 244,
+        "km": 332.4,
+        "minutes": 248,
         "method": "road",
         "near": false
       },
       "quy-nhon": {
-        "km": 338.9,
-        "minutes": 289,
+        "km": 343.1,
+        "minutes": 294,
         "method": "road",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 193.6,
-        "minutes": 182,
+        "km": 189.6,
+        "minutes": 177,
         "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 1704.6,
-        "minutes": 1349,
+        "km": 1708.9,
+        "minutes": 1354,
         "method": "road",
         "near": false
       },
       "ha-long": {
-        "km": 1479.9,
-        "minutes": 1173,
+        "km": 1484.2,
+        "minutes": 1178,
         "method": "road",
         "near": false
       }
@@ -202,7 +202,7 @@
     {
       "distance": "5km",
       "tier": "Family Trail Run 5Km (1 Người lớn + 1 Trẻ em) REGULAR",
-      "kind": "late",
+      "kind": "regular",
       "audience": null,
       "price": 1400000,
       "from": "2026-06-11",
@@ -213,7 +213,7 @@
     {
       "distance": "5km",
       "tier": "Family Trail Run 5Km (2 Người lớn + 1 Trẻ em hoặc 1 người lớn + 2 Trẻ em) REGULA",
-      "kind": "late",
+      "kind": "regular",
       "audience": null,
       "price": 2100000,
       "from": "2026-06-11",
@@ -485,7 +485,256 @@
     }
   ],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "prices": {
+      "value": [
+        {
+          "distance": "85km",
+          "tier": "REGULAR",
+          "kind": "regular",
+          "audience": null,
+          "price": 2900000,
+          "from": "2026-06-11",
+          "to": "2026-08-16",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "55km",
+          "tier": "REGULAR",
+          "kind": "regular",
+          "audience": null,
+          "price": 2250000,
+          "from": "2026-06-11",
+          "to": "2026-08-16",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "25km",
+          "tier": "REGULAR",
+          "kind": "regular",
+          "audience": null,
+          "price": 1700000,
+          "from": "2026-06-11",
+          "to": "2026-08-16",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "15km",
+          "tier": "REGULAR",
+          "kind": "regular",
+          "audience": null,
+          "price": 1050000,
+          "from": "2026-06-11",
+          "to": "2026-08-16",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "5km",
+          "tier": "REGULAR",
+          "kind": "regular",
+          "audience": null,
+          "price": 750000,
+          "from": "2026-06-11",
+          "to": "2026-08-16",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "5km",
+          "tier": "Family Trail Run 5Km (1 Người lớn + 1 Trẻ em) REGULAR",
+          "kind": "regular",
+          "audience": null,
+          "price": 1400000,
+          "from": "2026-06-11",
+          "to": "2026-08-16",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "5km",
+          "tier": "Family Trail Run 5Km (2 Người lớn + 1 Trẻ em hoặc 1 người lớn + 2 Trẻ em) REGULA",
+          "kind": "regular",
+          "audience": null,
+          "price": 2100000,
+          "from": "2026-06-11",
+          "to": "2026-08-16",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "85km",
+          "tier": "LATE COMER",
+          "kind": "late",
+          "audience": null,
+          "price": 3150000,
+          "from": "2026-08-17",
+          "to": "2026-10-05",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "55km",
+          "tier": "LATE COMER",
+          "kind": "late",
+          "audience": null,
+          "price": 2550000,
+          "from": "2026-08-17",
+          "to": "2026-10-05",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "25km",
+          "tier": "LATE COMER",
+          "kind": "late",
+          "audience": null,
+          "price": 2050000,
+          "from": "2026-08-17",
+          "to": "2026-10-05",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "15km",
+          "tier": "LATE COMER",
+          "kind": "late",
+          "audience": null,
+          "price": 1400000,
+          "from": "2026-08-17",
+          "to": "2026-10-05",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "5km",
+          "tier": "LATE COMER",
+          "kind": "late",
+          "audience": null,
+          "price": 950000,
+          "from": "2026-08-17",
+          "to": "2026-10-05",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "5km",
+          "tier": "Family Trail Run 5Km (1 Người lớn + 1 Trẻ em) LATE COMER",
+          "kind": "late",
+          "audience": null,
+          "price": 1800000,
+          "from": "2026-08-17",
+          "to": "2026-10-05",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "5km",
+          "tier": "Family Trail Run 5Km (2 Người lớn + 1 Trẻ em hoặc 1 người lớn + 2 Trẻ em) LATE C",
+          "kind": "late",
+          "audience": null,
+          "price": 2700000,
+          "from": "2026-08-17",
+          "to": "2026-10-05",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "85km",
+          "tier": "Late Comer",
+          "kind": "late",
+          "audience": null,
+          "price": 3150000,
+          "from": "2026-08-17",
+          "to": "2026-10-05",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "55km",
+          "tier": "Late Comer",
+          "kind": "late",
+          "audience": null,
+          "price": 2550000,
+          "from": "2026-08-17",
+          "to": "2026-10-05",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "25km",
+          "tier": "Late Comer",
+          "kind": "late",
+          "audience": null,
+          "price": 2050000,
+          "from": "2026-08-17",
+          "to": "2026-10-05",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "15km",
+          "tier": "Late Comer",
+          "kind": "late",
+          "audience": null,
+          "price": 1400000,
+          "from": "2026-08-17",
+          "to": "2026-10-05",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "5km",
+          "tier": "Late Comer",
+          "kind": "late",
+          "audience": null,
+          "price": 950000,
+          "from": "2026-08-17",
+          "to": "2026-10-05",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "5km",
+          "tier": "Late Comer Kids Trail",
+          "kind": "late",
+          "audience": null,
+          "price": 950000,
+          "from": "2026-08-17",
+          "to": "2026-10-05",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "5km",
+          "tier": "Late Comer Family Trail (1 adult & 1 kid)",
+          "kind": "late",
+          "audience": null,
+          "price": 1800000,
+          "from": "2026-08-17",
+          "to": "2026-10-05",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "5km",
+          "tier": "Late Comer Family Trail (2 adults & 1 kid / 1 adult & 2 kids)",
+          "kind": "late",
+          "audience": null,
+          "price": 2700000,
+          "from": "2026-08-17",
+          "to": "2026-10-05",
+          "inferred": [],
+          "site": "actiup"
+        }
+      ],
+      "reason": "fix: two Family Trail Run 5Km REGULAR entries were tagged kind: 'late' despite their own tier text and date window (2026-06-11 to 2026-08-16, the Regular window) saying REGULAR — a mislabel from the original agent-read pass. Found while building openrace-web's new price matrix, which surfaced it as split/duplicate rows",
+      "at": "2026-09-25T12:01:05.169Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -1121,5 +1370,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T06:44:22.797Z"
+  "updatedAt": "2026-09-25T12:01:05.169Z"
 }
