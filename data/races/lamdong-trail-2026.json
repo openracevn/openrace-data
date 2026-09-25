@@ -484,6 +484,17 @@
       "to": "2026-06-10",
       "inferred": [],
       "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Kid Trail (5Km) Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 750000,
+      "from": "2026-06-11",
+      "to": "2026-08-16",
+      "inferred": [],
+      "site": "irace"
     }
   ],
   "currency": "VND",
@@ -927,10 +938,21 @@
           "to": "2026-06-10",
           "inferred": [],
           "site": "irace"
+        },
+        {
+          "distance": "5km",
+          "tier": "Kid Trail (5Km) Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 750000,
+          "from": "2026-06-11",
+          "to": "2026-08-16",
+          "inferred": [],
+          "site": "irace"
         }
       ],
-      "reason": "add irace.vn's Early Bird tier (22/04-10/06/2026) on top of the existing 22 Regular/Late entries; prices is already overridden from an earlier kind-label fix, so 'add' alone won't auto-union a new source's prices into it — set with the full combined list instead",
-      "at": "2026-09-25T12:08:25.109Z"
+      "reason": "ticket.irace.vn/lamdong-trail-2026 (user-supplied): Kid Trail (5Km) Regular tier was missing (750,000 VND, same window as the other Regular-tier entries) — no other source had it either",
+      "at": "2026-09-25T12:18:52.270Z"
     }
   },
   "sources": [
@@ -1686,5 +1708,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T12:08:25.109Z"
+  "updatedAt": "2026-09-25T12:18:52.270Z"
 }
