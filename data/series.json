@@ -126,18 +126,11 @@
     "description": null
   },
   {
-    "id": "lam-dong-trail",
-    "name": "Lâm Đồng Trail",
-    "website": null,
-    "organizerId": null,
-    "description": null
-  },
-  {
     "id": "lamdong-trail",
     "name": "Lamdong Trail",
-    "website": null,
+    "website": "https://lamdongtrail.vn/",
     "organizerId": null,
-    "description": null
+    "description": "5 editions found so far, all in Đà Lạt: 2022 (2022-11-11/13, organizer VietnamJoy with Sở VHDL&TT Lâm Đồng, distances 3/10/21/45/70km, this appears to be the inaugural edition per iRace/tuoitre.vn coverage), 2023 (2023-11-10/12, 5/15/25/45/75km), 2024 (2024-11-08/10, 5/15/25/45/75km, organizer now GreenHat), 2025 (2025-11-07/09, 5/15/25/55/85km, the 85km course debuted this year), 2026 (2026-11-06/08, 5/15/25/55/85km, currently open for registration). No edition numbers ('lần thứ N') found stated by any source, so `edition` is left null on every race. Dates for 2022-2025 sourced from iRace (app.irace.vn results pages / irace.vn event pages, some via Wayback Machine since irace.vn overwrites its event URL each year) and lamdongtrail.vn's own recap articles (via Wayback, since the live site is overwritten for the current edition)."
   },
   {
     "id": "ly-son-cross-island",
