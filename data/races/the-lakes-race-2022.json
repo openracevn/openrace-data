@@ -91,9 +91,33 @@
           "note": "race-research: iRace's own event page for the 2022 edition (the 4th; a 5th edition had been planned for 2021-05-16 per raceez.com but was pushed to 2022, per this page's own recap of editions 1-3 plus this one — one edition, not two). States date, venue, distances, organizer."
         }
       }
+    },
+    {
+      "site": "irace",
+      "role": "reference",
+      "url": "https://irace.vn/su-kien/run-for-orphans-the-lakes-race",
+      "lastCheckedAt": "2026-09-25T06:57:44.067Z",
+      "lastChangedAt": "2026-09-25T06:57:44.067Z",
+      "extracted": {
+        "facts": {
+          "name": "The Lakes Race 2022",
+          "date": "2022-05-15",
+          "venue": "Hồ Đá, Thủ Đức",
+          "city": "Hồ Chí Minh",
+          "organizer": "Athlete Trotter",
+          "distances": [
+            "600m",
+            "1.8K",
+            "5K",
+            "10K",
+            "21K"
+          ],
+          "note": "race-research: retag to the iRace site key."
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-25T06:48:59.089Z",
-  "updatedAt": "2026-09-25T06:55:03.609Z"
+  "updatedAt": "2026-09-25T06:57:44.067Z"
 }
