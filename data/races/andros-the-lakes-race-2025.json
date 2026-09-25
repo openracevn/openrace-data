@@ -10,7 +10,7 @@
   "seriesId": "andros-the-lakes-race",
   "organizerId": "the-lakes-race",
   "organizer": "THE LAKES RACE",
-  "edition": null,
+  "edition": 7,
   "courses": [],
   "location": {
     "venue": "Hồ Đá - Bình Dương",
@@ -134,7 +134,13 @@
     }
   ],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "edition": {
+      "value": 7,
+      "reason": "race-research: consistent with Vol 6 (2024, iRace explicit) and Vol 8 (2026, iRace explicit) either side of it; no page for 2025 itself states 'Vol 7' explicitly, so this is inferred from the sequence, not copied from a source — flagging that distinction here.",
+      "at": "2026-09-25T06:53:23.281Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -185,5 +191,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T06:52:28.701Z"
+  "updatedAt": "2026-09-25T06:53:23.281Z"
 }
