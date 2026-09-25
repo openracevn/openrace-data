@@ -164,6 +164,15 @@ sites:
     check: quarterly
     series: { id: run-to-live, name: Run To Live }
 
+  - key: androslakesrace
+    name: Andros Lakes Race (official site)
+    kind: race-site
+    url: https://androslakesrace.com/
+    recipe: none # live site is "Coming Soon"; only useful via Wayback Machine snapshots (race-research)
+    check: manual
+    series: { id: andros-the-lakes-race, name: Andros Lakes Race }
+    organizer: { id: the-lakes-race, name: THE LAKES RACE }
+
   # --- Race sites seen in the ActiUp study (.claude/docs/study/, 2026-09-24) ---
   # Recognized in links (official) but not read yet: give each a paid check first
   # (scripts/lib/recipes/README.md), then recipe: default and a cadence.

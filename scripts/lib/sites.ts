@@ -71,8 +71,19 @@ export function roleOf(site: Site): SourceRole {
   return site.kind === "seller" ? "seller" : "official";
 }
 
+// A Wayback Machine URL (http://web.archive.org/web/<timestamp>/<original-url>) wraps
+// a snapshot of another site; recognize the site it's a snapshot OF, not archive.org
+// itself, so an old edition found only via Wayback still gets its real site's key
+// (race-research leans on this a lot — old organizer/reseller pages are often dead).
+const WAYBACK = /^(?:web\.)?archive\.org$/;
+
 export function hostOf(url: string): string {
-  return new URL(url).hostname.replace(/^www\./, "").toLowerCase();
+  const u = new URL(url);
+  if (WAYBACK.test(u.hostname.toLowerCase())) {
+    const original = u.pathname.match(/^\/web\/[^/]+\/(https?:\/\/.+)$/i)?.[1];
+    if (original) return hostOf(original);
+  }
+  return u.hostname.replace(/^www\./, "").toLowerCase();
 }
 
 /** The configured site a URL belongs to (its host, or a parent domain of it), or null. */
