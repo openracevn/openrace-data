@@ -1,0 +1,67 @@
+{
+  "id": "dda9bc90-bf5c-4ac8-a2d0-44c929d2462c",
+  "slug": "vnexpress-marathon-long-chau-can-tho",
+  "name": "VnExpress Marathon Long Châu Family Day 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-06-28",
+  "endDate": null,
+  "seriesId": "vnexpress-marathon-long-chau-can-tho",
+  "organizerId": "vnexpress",
+  "organizer": "VnExpress",
+  "edition": null,
+  "courses": [],
+  "location": {
+    "venue": null,
+    "city": null
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "vnexpress-marathon",
+      "role": "official",
+      "url": "https://vm.vnexpress.net/long-chau-can-tho-2026",
+      "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+      "lastChangedAt": "2026-09-25T04:11:49.673Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Marathon Long Châu Family Day 2026",
+          "date": "2026-06-28"
+        },
+        "pages": [
+          {
+            "url": "https://vm.vnexpress.net/long-chau-can-tho-2026",
+            "json": {
+              "pageKind": "sport",
+              "name": "Long Châu Ngày Hội Gia Đình Cần Thơ",
+              "date": "2026-06-28",
+              "prices": []
+            }
+          }
+        ],
+        "links": [],
+        "series": {
+          "id": "vnexpress-marathon-long-chau-can-tho",
+          "name": "VnExpress Marathon Long Châu Cần Thơ"
+        },
+        "organizer": {
+          "id": "vnexpress",
+          "name": "VnExpress",
+          "website": "https://vnexpress.net/"
+        },
+        "readBy": "agent"
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-25T04:11:49.673Z",
+  "updatedAt": "2026-09-25T04:11:49.673Z"
+}

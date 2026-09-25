@@ -1,0 +1,70 @@
+{
+  "id": "bef840e9-9ceb-404d-bb19-49fd0efd0072",
+  "slug": "vnexpress-marathon-da-nang",
+  "name": "VnExpress Da Nang International Marathon Herbalife Cup 2026",
+  "types": [
+    "road_run"
+  ],
+  "date": "2026-07-19",
+  "endDate": null,
+  "seriesId": "vnexpress-marathon-da-nang",
+  "organizerId": "vnexpress",
+  "organizer": "VnExpress",
+  "edition": null,
+  "courses": [],
+  "location": {
+    "venue": null,
+    "city": null
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "vnexpress-marathon",
+      "role": "official",
+      "url": "https://vm.vnexpress.net/da-nang-2026",
+      "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+      "lastChangedAt": "2026-09-25T04:11:49.673Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Da Nang International Marathon Herbalife Cup 2026",
+          "date": "2026-07-19"
+        },
+        "pages": [
+          {
+            "url": "https://vm.vnexpress.net/da-nang-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "VnExpress Da Nang International Marathon Herbalife Cup 2026",
+              "date": "2026-07-19",
+              "prices": []
+            }
+          }
+        ],
+        "links": [],
+        "series": {
+          "id": "vnexpress-marathon-da-nang",
+          "name": "VnExpress Marathon Đà Nẵng"
+        },
+        "organizer": {
+          "id": "vnexpress",
+          "name": "VnExpress",
+          "website": "https://vnexpress.net/"
+        },
+        "readBy": "agent"
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-25T04:11:49.673Z",
+  "updatedAt": "2026-09-25T04:11:49.673Z"
+}

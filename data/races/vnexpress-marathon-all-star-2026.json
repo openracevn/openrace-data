@@ -1,0 +1,70 @@
+{
+  "id": "a2c7ac83-1771-46a9-b83c-ecf3afb1ae49",
+  "slug": "vnexpress-marathon-all-star",
+  "name": "VnExpress Marathon All-Star 2026",
+  "types": [
+    "road_run"
+  ],
+  "date": "2026-02-08",
+  "endDate": null,
+  "seriesId": "vnexpress-marathon-all-star",
+  "organizerId": "vnexpress",
+  "organizer": "VnExpress",
+  "edition": null,
+  "courses": [],
+  "location": {
+    "venue": null,
+    "city": null
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "vnexpress-marathon",
+      "role": "official",
+      "url": "https://vm.vnexpress.net/all-star-2026",
+      "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+      "lastChangedAt": "2026-09-25T04:11:49.673Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Marathon All-Star 2026",
+          "date": "2026-02-08"
+        },
+        "pages": [
+          {
+            "url": "https://vm.vnexpress.net/all-star-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "VnExpress Marathon All-Star 2026",
+              "date": "2026-02-08",
+              "prices": []
+            }
+          }
+        ],
+        "links": [],
+        "series": {
+          "id": "vnexpress-marathon-all-star",
+          "name": "VnExpress Marathon All Star"
+        },
+        "organizer": {
+          "id": "vnexpress",
+          "name": "VnExpress",
+          "website": "https://vnexpress.net/"
+        },
+        "readBy": "agent"
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-25T04:11:49.673Z",
+  "updatedAt": "2026-09-25T04:11:49.673Z"
+}

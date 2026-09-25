@@ -1239,5 +1239,55 @@
   "https://actiup.net/vi/event/yok-don-national-park-trail": {
     "lastCheckedAt": "2026-09-23T18:32:13.838Z",
     "status": "facts"
+  },
+  "https://vm.vnexpress.net/all-star-2026": {
+    "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+    "status": "ok",
+    "fingerprint": "17688896ac81d1999469208a8aba00ba"
+  },
+  "https://vm.vnexpress.net/can-gio-2026": {
+    "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+    "status": "ok",
+    "fingerprint": "9e5f2d7d93bf7e539c45acfa3917faf9"
+  },
+  "https://vm.vnexpress.net/can-tho-2026": {
+    "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+    "status": "ok",
+    "fingerprint": "5757911c603308eb5ef9991d12e6e8fe"
+  },
+  "https://vm.vnexpress.net/da-nang-2026": {
+    "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+    "status": "ok",
+    "fingerprint": "722e0c1639f841a25c8d024cab01f5d0"
+  },
+  "https://vm.vnexpress.net/galaxy-run-2026": {
+    "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+    "status": "ok",
+    "fingerprint": "99c1eb7ccbc928f6b077d7a52fa6a652"
+  },
+  "https://vm.vnexpress.net/ho-chi-minh-2026": {
+    "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+    "status": "ok",
+    "fingerprint": "0fb18c74572640d3c748035c44efba31"
+  },
+  "https://vm.vnexpress.net/hue-2026": {
+    "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+    "status": "ok",
+    "fingerprint": "c09cb976a315d954d4722bb553a55da6"
+  },
+  "https://vm.vnexpress.net/long-chau-can-tho-2026": {
+    "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+    "status": "ok",
+    "fingerprint": "c417c91e96f9637bf6b0d9518ab8abd9"
+  },
+  "https://vm.vnexpress.net/nha-trang-2026": {
+    "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+    "status": "ok",
+    "fingerprint": "66b9d0bf8d217f5d2af9faa7e3af667d"
+  },
+  "https://vm.vnexpress.net/vung-tau-2026": {
+    "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+    "status": "ok",
+    "fingerprint": "047eeb60b04498e58f69d4142800fdcb"
   }
 }

@@ -1,0 +1,70 @@
+{
+  "id": "3786720e-90d9-42d7-8da7-3d5d0e978102",
+  "slug": "vnexpress-marathon-can-tho",
+  "name": "VnExpress Marathon Can Tho 2026",
+  "types": [
+    "road_run"
+  ],
+  "date": "2026-05-10",
+  "endDate": null,
+  "seriesId": "vnexpress-marathon-can-tho",
+  "organizerId": "vnexpress",
+  "organizer": "VnExpress",
+  "edition": null,
+  "courses": [],
+  "location": {
+    "venue": null,
+    "city": null
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "vnexpress-marathon",
+      "role": "official",
+      "url": "https://vm.vnexpress.net/can-tho-2026",
+      "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+      "lastChangedAt": "2026-09-25T04:11:49.673Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Marathon Can Tho 2026",
+          "date": "2026-05-10"
+        },
+        "pages": [
+          {
+            "url": "https://vm.vnexpress.net/can-tho-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "VnExpress Marathon Can Tho 2026",
+              "date": "2026-05-10",
+              "prices": []
+            }
+          }
+        ],
+        "links": [],
+        "series": {
+          "id": "vnexpress-marathon-can-tho",
+          "name": "VnExpress Marathon Cần Thơ"
+        },
+        "organizer": {
+          "id": "vnexpress",
+          "name": "VnExpress",
+          "website": "https://vnexpress.net/"
+        },
+        "readBy": "agent"
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-25T04:11:49.673Z",
+  "updatedAt": "2026-09-25T04:11:49.673Z"
+}

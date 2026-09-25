@@ -1,0 +1,70 @@
+{
+  "id": "5477a6c4-9193-4f91-b846-cb2018ceeaff",
+  "slug": "vnexpress-marathon-vung-tau",
+  "name": "VnExpress Vung Tau International Half Marathon Herbalife Cup",
+  "types": [
+    "road_run"
+  ],
+  "date": "2026-08-30",
+  "endDate": null,
+  "seriesId": "vnexpress-marathon-vung-tau",
+  "organizerId": "vnexpress",
+  "organizer": "VnExpress",
+  "edition": null,
+  "courses": [],
+  "location": {
+    "venue": null,
+    "city": null
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "vnexpress-marathon",
+      "role": "official",
+      "url": "https://vm.vnexpress.net/vung-tau-2026",
+      "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+      "lastChangedAt": "2026-09-25T04:11:49.673Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Vung Tau International Half Marathon Herbalife Cup",
+          "date": "2026-08-30"
+        },
+        "pages": [
+          {
+            "url": "https://vm.vnexpress.net/vung-tau-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "VnExpress Vung Tau International Half Marathon Herbalife Cup",
+              "date": "2026-08-30",
+              "prices": []
+            }
+          }
+        ],
+        "links": [],
+        "series": {
+          "id": "vnexpress-marathon-vung-tau",
+          "name": "VnExpress Marathon Vũng Tàu"
+        },
+        "organizer": {
+          "id": "vnexpress",
+          "name": "VnExpress",
+          "website": "https://vnexpress.net/"
+        },
+        "readBy": "agent"
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-25T04:11:49.673Z",
+  "updatedAt": "2026-09-25T04:11:49.673Z"
+}

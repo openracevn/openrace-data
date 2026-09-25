@@ -1,0 +1,70 @@
+{
+  "id": "5e090b5a-50f0-4c92-88e4-1a2c3289a4ce",
+  "slug": "vnexpress-marathon-galaxy-run",
+  "name": "Galaxy Run 2026",
+  "types": [
+    "road_run"
+  ],
+  "date": "2026-06-21",
+  "endDate": null,
+  "seriesId": "vnexpress-marathon-galaxy-run",
+  "organizerId": "vnexpress",
+  "organizer": "VnExpress",
+  "edition": null,
+  "courses": [],
+  "location": {
+    "venue": null,
+    "city": null
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "vnexpress-marathon",
+      "role": "official",
+      "url": "https://vm.vnexpress.net/galaxy-run-2026",
+      "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+      "lastChangedAt": "2026-09-25T04:11:49.673Z",
+      "extracted": {
+        "facts": {
+          "name": "Galaxy Run 2026",
+          "date": "2026-06-21"
+        },
+        "pages": [
+          {
+            "url": "https://vm.vnexpress.net/galaxy-run-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Galaxy Run 2026",
+              "date": "2026-06-21",
+              "prices": []
+            }
+          }
+        ],
+        "links": [],
+        "series": {
+          "id": "vnexpress-marathon-galaxy-run",
+          "name": "VnExpress Marathon Galaxy Run"
+        },
+        "organizer": {
+          "id": "vnexpress",
+          "name": "VnExpress",
+          "website": "https://vnexpress.net/"
+        },
+        "readBy": "agent"
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-25T04:11:49.673Z",
+  "updatedAt": "2026-09-25T04:11:49.673Z"
+}

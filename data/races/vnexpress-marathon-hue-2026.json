@@ -1,0 +1,70 @@
+{
+  "id": "29e3a9ee-4afb-44d7-b65d-e5e432c928a8",
+  "slug": "vnexpress-marathon-hue",
+  "name": "VnExpress Marathon Hue 2026",
+  "types": [
+    "road_run"
+  ],
+  "date": "2026-04-19",
+  "endDate": null,
+  "seriesId": "vnexpress-marathon-hue",
+  "organizerId": "vnexpress",
+  "organizer": "VnExpress",
+  "edition": null,
+  "courses": [],
+  "location": {
+    "venue": null,
+    "city": null
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "vnexpress-marathon",
+      "role": "official",
+      "url": "https://vm.vnexpress.net/hue-2026",
+      "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+      "lastChangedAt": "2026-09-25T04:11:49.673Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Marathon Hue 2026",
+          "date": "2026-04-19"
+        },
+        "pages": [
+          {
+            "url": "https://vm.vnexpress.net/hue-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "VnExpress Marathon Hue 2026",
+              "date": "2026-04-19",
+              "prices": []
+            }
+          }
+        ],
+        "links": [],
+        "series": {
+          "id": "vnexpress-marathon-hue",
+          "name": "VnExpress Marathon Huế"
+        },
+        "organizer": {
+          "id": "vnexpress",
+          "name": "VnExpress",
+          "website": "https://vnexpress.net/"
+        },
+        "readBy": "agent"
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-25T04:11:49.673Z",
+  "updatedAt": "2026-09-25T04:11:49.673Z"
+}
