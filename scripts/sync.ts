@@ -83,7 +83,11 @@ export type SyncPlan = {
 export const EDITION_DAYS = 180;
 /** A page linked from a race (or linking to it) is that race when race days are this close. */
 const LINK_MATCH_DAYS = 7;
-const MATCH_THRESHOLD = 0.5;
+// 0.5 let races that only share generic Vietnamese race-naming words ("Giải", "Quốc tế", a
+// year) match across cities and dates a day apart (Hạ Long Marathon vs. Đà Lạt Xanh, 0.533).
+// A genuine near-duplicate name (a typo or spacing difference on the same race) scores much
+// higher, e.g. "Vũng Tàu City Trail 2026" vs. "VungTau CityTrail 2026" scores 1.0.
+const MATCH_THRESHOLD = 0.65;
 const DAY_MS = 86_400_000;
 const V3_MIGRATION_FIELDS: CanonicalField[] = ["edition", "courses", "geo", "prices"];
 const legacyRaceFiles = new WeakSet<Race>();
