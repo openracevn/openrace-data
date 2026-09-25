@@ -143,7 +143,272 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "75km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 2099000,
+      "from": "2024-01-26",
+      "to": "2024-02-06",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "75km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2599000,
+      "from": "2024-02-07",
+      "to": "2024-05-04",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "75km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 3099000,
+      "from": "2024-05-05",
+      "to": "2024-10-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "75km",
+      "tier": "Late Comer",
+      "kind": "late",
+      "audience": null,
+      "price": 3599000,
+      "from": "2024-10-16",
+      "to": "2024-10-20",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "45km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1699000,
+      "from": "2024-01-26",
+      "to": "2024-02-06",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "45km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2099000,
+      "from": "2024-02-07",
+      "to": "2024-05-04",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "45km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2499000,
+      "from": "2024-05-05",
+      "to": "2024-10-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "45km",
+      "tier": "Late Comer",
+      "kind": "late",
+      "audience": null,
+      "price": 2899000,
+      "from": "2024-10-16",
+      "to": "2024-10-20",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "25km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1099000,
+      "from": "2024-01-26",
+      "to": "2024-02-06",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "25km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1599000,
+      "from": "2024-02-07",
+      "to": "2024-05-04",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "25km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2299000,
+      "from": "2024-05-05",
+      "to": "2024-10-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "25km",
+      "tier": "Late Comer",
+      "kind": "late",
+      "audience": null,
+      "price": 2499000,
+      "from": "2024-10-16",
+      "to": "2024-10-20",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "15km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 899000,
+      "from": "2024-01-26",
+      "to": "2024-02-06",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "15km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1099000,
+      "from": "2024-02-07",
+      "to": "2024-05-04",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "15km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1499000,
+      "from": "2024-05-05",
+      "to": "2024-10-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "15km",
+      "tier": "Late Comer",
+      "kind": "late",
+      "audience": null,
+      "price": 1999000,
+      "from": "2024-10-16",
+      "to": "2024-10-20",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 499000,
+      "from": "2024-01-26",
+      "to": "2024-02-06",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 699000,
+      "from": "2024-02-07",
+      "to": "2024-05-04",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 899000,
+      "from": "2024-05-05",
+      "to": "2024-10-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late Comer",
+      "kind": "late",
+      "audience": null,
+      "price": 999000,
+      "from": "2024-10-16",
+      "to": "2024-10-20",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Kid Trail Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 499000,
+      "from": "2024-01-26",
+      "to": "2024-02-06",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Kid Trail Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 699000,
+      "from": "2024-02-07",
+      "to": "2024-05-04",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Kid Trail Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 899000,
+      "from": "2024-05-05",
+      "to": "2024-10-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Kid Trail Late Comer",
+      "kind": "late",
+      "audience": null,
+      "price": 999000,
+      "from": "2024-10-16",
+      "to": "2024-10-20",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -208,6 +473,276 @@
       ],
       "reason": "confirmed trail_run per lamdongtrail.vn recap (5/15/25/45/75km trail distances) and actiup listing",
       "at": "2026-09-25T08:02:54.039Z"
+    },
+    "prices": {
+      "value": [
+        {
+          "distance": "75km",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 2099000,
+          "from": "2024-01-26",
+          "to": "2024-02-06",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "75km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 2599000,
+          "from": "2024-02-07",
+          "to": "2024-05-04",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "75km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 3099000,
+          "from": "2024-05-05",
+          "to": "2024-10-15",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "75km",
+          "tier": "Late Comer",
+          "kind": "late",
+          "audience": null,
+          "price": 3599000,
+          "from": "2024-10-16",
+          "to": "2024-10-20",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "45km",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 1699000,
+          "from": "2024-01-26",
+          "to": "2024-02-06",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "45km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 2099000,
+          "from": "2024-02-07",
+          "to": "2024-05-04",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "45km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 2499000,
+          "from": "2024-05-05",
+          "to": "2024-10-15",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "45km",
+          "tier": "Late Comer",
+          "kind": "late",
+          "audience": null,
+          "price": 2899000,
+          "from": "2024-10-16",
+          "to": "2024-10-20",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "25km",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 1099000,
+          "from": "2024-01-26",
+          "to": "2024-02-06",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "25km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 1599000,
+          "from": "2024-02-07",
+          "to": "2024-05-04",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "25km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 2299000,
+          "from": "2024-05-05",
+          "to": "2024-10-15",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "25km",
+          "tier": "Late Comer",
+          "kind": "late",
+          "audience": null,
+          "price": 2499000,
+          "from": "2024-10-16",
+          "to": "2024-10-20",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "15km",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 899000,
+          "from": "2024-01-26",
+          "to": "2024-02-06",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "15km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 1099000,
+          "from": "2024-02-07",
+          "to": "2024-05-04",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "15km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 1499000,
+          "from": "2024-05-05",
+          "to": "2024-10-15",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "15km",
+          "tier": "Late Comer",
+          "kind": "late",
+          "audience": null,
+          "price": 1999000,
+          "from": "2024-10-16",
+          "to": "2024-10-20",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "5km",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 499000,
+          "from": "2024-01-26",
+          "to": "2024-02-06",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "5km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 699000,
+          "from": "2024-02-07",
+          "to": "2024-05-04",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "5km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 899000,
+          "from": "2024-05-05",
+          "to": "2024-10-15",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "5km",
+          "tier": "Late Comer",
+          "kind": "late",
+          "audience": null,
+          "price": 999000,
+          "from": "2024-10-16",
+          "to": "2024-10-20",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "5km",
+          "tier": "Kid Trail Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 499000,
+          "from": "2024-01-26",
+          "to": "2024-02-06",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "5km",
+          "tier": "Kid Trail Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 699000,
+          "from": "2024-02-07",
+          "to": "2024-05-04",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "5km",
+          "tier": "Kid Trail Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 899000,
+          "from": "2024-05-05",
+          "to": "2024-10-15",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "5km",
+          "tier": "Kid Trail Late Comer",
+          "kind": "late",
+          "audience": null,
+          "price": 999000,
+          "from": "2024-10-16",
+          "to": "2024-10-20",
+          "inferred": [],
+          "site": "actiup"
+        }
+      ],
+      "reason": "ActiUp ticket price image (pix.raceez.com/2024/09/12/content_actiup_1description_vi, found via ActiUp's own public content API GET api.actiup.net/v2/content/events/slug/lam-dong-trail-2024, no Firecrawl needed): Super Early Bird/Early Bird/Regular/Late Comer tiers with explicit date windows; Regular-tier prices cross-checked and matched lamdongtrail.vn's own 20/05/2024 promo blog post exactly",
+      "at": "2026-09-25T08:23:14.293Z"
     }
   },
   "sources": [
@@ -242,5 +777,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T08:02:54.039Z"
+  "updatedAt": "2026-09-25T08:23:14.293Z"
 }
