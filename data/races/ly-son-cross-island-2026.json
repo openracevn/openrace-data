@@ -145,6 +145,30 @@
       ],
       "reason": "iRace/yeuchaybo/xongon all describe this as an open-water swim race (giải bơi vượt biển), actiup only had it as 'other'",
       "at": "2026-09-25T08:16:13.017Z"
+    },
+    "courses": {
+      "value": [
+        {
+          "label": "1km",
+          "meters": 1000,
+          "type": "swim",
+          "elevationGain": null
+        },
+        {
+          "label": "2km",
+          "meters": 2000,
+          "type": "swim",
+          "elevationGain": null
+        },
+        {
+          "label": "5km",
+          "meters": 5000,
+          "type": "swim",
+          "elevationGain": null
+        }
+      ],
+      "reason": "iRace event page lists distances 1km, 2km, 5km for this swim race",
+      "at": "2026-09-25T08:16:21.557Z"
     }
   },
   "sources": [
@@ -197,5 +221,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T08:16:13.017Z"
+  "updatedAt": "2026-09-25T08:16:21.557Z"
 }
