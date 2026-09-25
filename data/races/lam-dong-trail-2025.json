@@ -7,7 +7,7 @@
   ],
   "date": "2025-11-07",
   "endDate": "2025-11-09",
-  "seriesId": "lam-dong-trail",
+  "seriesId": "lamdong-trail",
   "organizerId": null,
   "organizer": null,
   "edition": null,
@@ -54,7 +54,13 @@
   "registrations": [],
   "links": [],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "seriesId": {
+      "value": "lamdong-trail",
+      "reason": "unify with existing series lamdong-trail",
+      "at": "2026-09-25T08:05:43.698Z"
+    }
+  },
   "sources": [
     {
       "site": "irace",
@@ -88,5 +94,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T08:03:59.469Z",
-  "updatedAt": "2026-09-25T08:03:59.469Z"
+  "updatedAt": "2026-09-25T08:05:43.698Z"
 }
