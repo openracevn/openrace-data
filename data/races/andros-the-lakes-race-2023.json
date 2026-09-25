@@ -1,7 +1,7 @@
 {
   "id": "85d66292-1156-4d73-a037-15b7a1ba5c21",
   "slug": "andros-the-lakes-race-2023",
-  "name": "Andros The Lakes Race 2023",
+  "name": "Giải chạy Andros The Lakes Race 2023",
   "types": [
     "other"
   ],
@@ -56,22 +56,6 @@
     }
   },
   "sources": [
-    {
-      "site": "openrace",
-      "role": "reference",
-      "url": "https://ticketgo.vn/blog/giai-chay-bo-andros-the-lakes-race-2023",
-      "lastCheckedAt": "2026-09-25T06:49:26.358Z",
-      "lastChangedAt": "2026-09-25T06:49:26.358Z",
-      "extracted": {
-        "facts": {
-          "name": "Andros The Lakes Race 2023",
-          "date": "2023-06-04",
-          "venue": "Hồ Đá, Khu đô thị Đại học Quốc gia TP.HCM, Thủ Đức",
-          "city": "Hồ Chí Minh",
-          "note": "race-research: TicketGo blog post for the 2023 edition, stating exact date and venue."
-        }
-      }
-    },
     {
       "site": "openrace",
       "role": "reference",
@@ -131,5 +115,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T06:49:26.358Z",
-  "updatedAt": "2026-09-25T06:58:23.412Z"
+  "updatedAt": "2026-09-25T07:32:01.180Z"
 }
