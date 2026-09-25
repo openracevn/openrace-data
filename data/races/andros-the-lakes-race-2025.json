@@ -9,7 +9,7 @@
   "endDate": null,
   "seriesId": "andros-the-lakes-race",
   "organizerId": "the-lakes-race",
-  "organizer": "THE LAKES RACE",
+  "organizer": "Athlete Trotter",
   "edition": 7,
   "courses": [],
   "location": {
@@ -139,6 +139,11 @@
       "value": 7,
       "reason": "race-research: the race's own official site (androslakesrace.com, archived 2025-02-12) announces this exact race: 'Next Edition on June, 01st, 2025 ... For our 7th edition, we will invite 500 orphans'. http://web.archive.org/web/20250212015802/https://androslakesrace.com/",
       "at": "2026-09-25T07:14:55.229Z"
+    },
+    "organizer": {
+      "value": "Athlete Trotter",
+      "reason": "race-research: same official site names Athlete Trotter (business ID 3702736678) as the organizer running the series throughout, not just a 2022 one-off as I'd hedged earlier.",
+      "at": "2026-09-25T07:15:03.759Z"
     }
   },
   "sources": [
@@ -191,5 +196,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T07:14:55.229Z"
+  "updatedAt": "2026-09-25T07:15:03.759Z"
 }
