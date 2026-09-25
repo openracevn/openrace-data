@@ -7,7 +7,7 @@
   ],
   "date": "2019-04-07",
   "endDate": null,
-  "seriesId": null,
+  "seriesId": "andros-the-lakes-race",
   "organizerId": null,
   "organizer": null,
   "edition": null,
@@ -76,7 +76,13 @@
   "registrations": [],
   "links": [],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "seriesId": {
+      "value": "andros-the-lakes-race",
+      "reason": "race-research: confirmed as Edition 1 of this series by the organizer's own 'Previous Editions' page (see the source just added).",
+      "at": "2026-09-25T07:11:41.975Z"
+    }
+  },
   "sources": [
     {
       "site": "openrace",
@@ -124,5 +130,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T06:47:41.570Z",
-  "updatedAt": "2026-09-25T06:47:41.570Z"
+  "updatedAt": "2026-09-25T07:11:41.975Z"
 }
