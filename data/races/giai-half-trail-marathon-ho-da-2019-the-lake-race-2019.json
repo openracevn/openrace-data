@@ -10,7 +10,7 @@
   "seriesId": "andros-the-lakes-race",
   "organizerId": null,
   "organizer": null,
-  "edition": null,
+  "edition": 1,
   "courses": [
     {
       "label": "3km",
@@ -81,6 +81,11 @@
       "value": "andros-the-lakes-race",
       "reason": "race-research: confirmed as Edition 1 of this series by the organizer's own 'Previous Editions' page (see the source just added).",
       "at": "2026-09-25T07:11:41.975Z"
+    },
+    "edition": {
+      "value": 1,
+      "reason": "race-research: the race's own official site (androslakesrace.com, archived 2025-02-12 via Wayback Machine — live site now 'Coming Soon') has a 'Previous Editions' page listing 'First Edition - April 2019', confirming this race (123go.vn gave the exact day, 07/04/2019) is Edition 1 of this series, resolving earlier doubt about whether it even belonged to it. See http://web.archive.org/web/20250212015802/https://androslakesrace.com/previous-editions.html (not added as a formal source: it would collide with the existing 123go.vn source under the current 'openrace' site tag, both being unrecognized sites — see the skill's known limitation).",
+      "at": "2026-09-25T07:14:46.947Z"
     }
   },
   "sources": [
@@ -130,5 +135,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T06:47:41.570Z",
-  "updatedAt": "2026-09-25T07:11:41.975Z"
+  "updatedAt": "2026-09-25T07:14:46.947Z"
 }
