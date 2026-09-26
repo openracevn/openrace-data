@@ -493,9 +493,29 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "vnexpress-marathon",
+      "role": "reference",
+      "url": "https://web.archive.org/web/20220407000110/https://vm.vnexpress.net/quy-nhon-2022",
+      "lastCheckedAt": "2026-09-26T14:22:41.550Z",
+      "lastChangedAt": "2026-09-26T14:22:41.550Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Marathon Sparkling Quy Nhon 2022",
+          "date": "2022-06-12",
+          "distances": [
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "note": "Wayback snapshot of the live page before its .ticket-policy was removed; carries the full price table (already recorded as an override) plus this edition's distances"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-26T13:56:47.748Z",
-  "updatedAt": "2026-09-26T14:12:16.919Z"
+  "updatedAt": "2026-09-26T14:22:41.550Z"
 }
