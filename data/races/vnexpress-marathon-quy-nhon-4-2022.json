@@ -11,7 +11,32 @@
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
   "edition": 3,
-  "courses": [],
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": null,
     "city": "Quy Nhơn"
@@ -385,6 +410,36 @@
       ],
       "reason": "Wayback snapshot 20220407000110 of vm.vnexpress.net/quy-nhon-2022 (live page's .ticket-policy is gone; this snapshot from before the race still has it)",
       "at": "2026-09-26T14:09:18.338Z"
+    },
+    "courses": {
+      "value": [
+        {
+          "label": "5km",
+          "meters": 5000,
+          "type": "road_run",
+          "elevationGain": null
+        },
+        {
+          "label": "10km",
+          "meters": 10000,
+          "type": "road_run",
+          "elevationGain": null
+        },
+        {
+          "label": "21km",
+          "meters": 21097,
+          "type": "road_run",
+          "elevationGain": null
+        },
+        {
+          "label": "42km",
+          "meters": 42195,
+          "type": "road_run",
+          "elevationGain": null
+        }
+      ],
+      "reason": "Wayback snapshot's ticket-policy price table lists the same 5/10/21/42km distances as this edition's price tiers (already recorded), confirming the course set",
+      "at": "2026-09-26T14:12:16.919Z"
     }
   },
   "sources": [
@@ -442,5 +497,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-26T13:56:47.748Z",
-  "updatedAt": "2026-09-26T14:09:18.338Z"
+  "updatedAt": "2026-09-26T14:12:16.919Z"
 }
