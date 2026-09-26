@@ -1,7 +1,7 @@
 {
   "id": "b44c4c63-4299-4b46-9a5b-f275ae8d7832",
   "slug": "mini-game-kun-fun-run-dong-thap-2026",
-  "name": "MINIGAME | KUN FUN RUN ĐỒNG THÁP 2026",
+  "name": "KUN FUN RUN ĐỒNG THÁP 2026",
   "types": [
     "road_run"
   ],
@@ -14,7 +14,7 @@
   "courses": [],
   "location": {
     "venue": "Quảng trường Văn Miếu, Phường Cao Lãnh, Tỉnh Đồng Tháp",
-    "city": null
+    "city": "Đồng Tháp"
   },
   "geo": {
     "lat": 10.4643135,
@@ -135,11 +135,11 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/mini-game-kun-fun-run-dong-thap-2026",
-      "lastCheckedAt": "2026-09-25T05:01:22.419Z",
+      "lastCheckedAt": "2026-09-26T05:24:22.076Z",
       "lastChangedAt": "2026-09-25T05:01:22.419Z",
       "extracted": {
         "facts": {
-          "name": "MINIGAME | KUN FUN RUN ĐỒNG THÁP 2026",
+          "name": "KUN FUN RUN ĐỒNG THÁP 2026",
           "date": "2026-10-09",
           "endDate": "2026-10-10",
           "venue": "Quảng trường Văn Miếu, Phường Cao Lãnh, Tỉnh Đồng Tháp",
@@ -156,8 +156,10 @@
               "types": [
                 "road_run"
               ],
-              "name": "MINIGAME | KUN FUN RUN ĐỒNG THÁP 2026",
+              "name": "KUN FUN RUN ĐỒNG THÁP 2026",
               "venue": "phường Cao Lãnh, tỉnh Đồng Tháp",
+              "city": "Đồng Tháp",
+              "organizer": "KUN",
               "prices": []
             }
           }
@@ -178,5 +180,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T05:01:22.419Z",
-  "updatedAt": "2026-09-25T05:01:22.419Z"
+  "updatedAt": "2026-09-26T05:24:22.076Z"
 }

@@ -121,7 +121,13 @@
       "url": "https://actiup.net/vi/event/kun-fun-run-dong-thap-2026-keyshop"
     }
   ],
-  "links": [],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/13cQYP93BKDDnExMhCivF8ykczu6p8K8n/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
   "flags": [],
   "overrides": {},
   "sources": [
@@ -129,7 +135,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/kun-fun-run-dong-thap-2026-keyshop",
-      "lastCheckedAt": "2026-09-23T18:50:53.523Z",
+      "lastCheckedAt": "2026-09-26T05:24:22.076Z",
       "lastChangedAt": "2026-09-23T18:30:40.202Z",
       "extracted": {
         "facts": {
@@ -150,30 +156,29 @@
               "types": [
                 "road_run"
               ],
-              "name": "KUN FUN RUN ĐỒNG THÁP 2026",
-              "date": "2026-11-21",
-              "endDate": "2026-11-22",
-              "distances": [
-                "Quần áo chạy cho trẻ em"
-              ],
+              "name": "KEYSHOP | KUN FUN RUN ĐỒNG THÁP 2026",
               "venue": "phường Cao Lãnh, tỉnh Đồng Tháp",
               "city": "Đồng Tháp",
-              "organizer": "thương hiệu KUN",
-              "currency": "VND",
-              "registrationStatus": "open",
+              "organizer": "KUN",
               "prices": []
             }
           }
         ],
-        "links": [],
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/13cQYP93BKDDnExMhCivF8ykczu6p8K8n/view?usp=drive_link",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
         "organizer": {
           "id": "nexus-sport-events",
           "name": "Nexus Sport Events"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-09-26T05:24:22.076Z"
 }

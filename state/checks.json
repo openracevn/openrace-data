@@ -456,7 +456,7 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/global-gate-halong-esg-marathon-2026": {
-    "lastCheckedAt": "2026-09-25T04:03:37.715Z",
+    "lastCheckedAt": "2026-09-26T05:24:22.076Z",
     "status": "ok",
     "fingerprint": "173dc2b7a4fd5fe52cdfaf3cd05853b8"
   },
@@ -570,9 +570,9 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/kun-fun-run-dong-thap-2026-keyshop": {
-    "lastCheckedAt": "2026-09-23T18:50:53.523Z",
+    "lastCheckedAt": "2026-09-26T05:24:22.076Z",
     "status": "ok",
-    "fingerprint": "6a5a3a56aa51b8597de6fa261890a1a5"
+    "fingerprint": "aa0c6c9346cbcb6bed3e40a77a5713c9"
   },
   "https://actiup.net/vi/event/ky-son-win-vietnam-mountain": {
     "lastCheckedAt": "2026-09-23T18:32:30.809Z",
@@ -687,9 +687,9 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/mini-game-kun-fun-run-dong-thap-2026": {
-    "lastCheckedAt": "2026-09-25T05:01:22.419Z",
+    "lastCheckedAt": "2026-09-26T05:24:22.076Z",
     "status": "ok",
-    "fingerprint": "82c50e7eba07153a80433ad3fbd9bdc1"
+    "fingerprint": "33c4d1285bed241d10f6fcbd4692cb04"
   },
   "https://actiup.net/vi/event/mitsubishi-motors-tam-dao-city-trail-2025": {
     "lastCheckedAt": "2026-09-23T18:31:49.408Z",
@@ -981,7 +981,7 @@
     "fingerprint": "b63c872d85639d0c847297297c7f5836"
   },
   "https://actiup.net/vi/event/the-5th-edition-of-the-techcombank-hanoi-international-marathon": {
-    "lastCheckedAt": "2026-09-25T04:03:37.715Z",
+    "lastCheckedAt": "2026-09-26T05:24:22.076Z",
     "status": "ok",
     "fingerprint": "4ba727d11dfd293ca78de0da49230668"
   },
@@ -1270,6 +1270,11 @@
     "status": "ok",
     "fingerprint": "22ca47fb7111c2fdab74dccadbbae0ee"
   },
+  "https://ticket.irace.vn/vnexpress-marathon-grand-tour-nghe-an-2026": {
+    "lastCheckedAt": "2026-09-26T05:36:57.420Z",
+    "status": "ok",
+    "fingerprint": "2124f77ea97a84fee404b0f75e506201"
+  },
   "https://vm.vnexpress.net/all-star-2026": {
     "lastCheckedAt": "2026-09-25T04:11:49.673Z",
     "status": "ok",
@@ -1326,9 +1331,9 @@
     "fingerprint": "24845f0dfd19378102fe9f0e6574f860"
   },
   "https://vm.vnexpress.net/nghe-an-2026": {
-    "lastCheckedAt": "2026-09-25T05:01:22.419Z",
+    "lastCheckedAt": "2026-09-26T05:38:00.505Z",
     "status": "ok",
-    "fingerprint": "124a648ebc515da6e3ec123464d5b608"
+    "fingerprint": "eeb68468b31efc788411cc04c442c84a"
   },
   "https://vm.vnexpress.net/nha-trang-2026": {
     "lastCheckedAt": "2026-09-25T04:28:29.753Z",

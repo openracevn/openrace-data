@@ -11,14 +11,39 @@
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
-    "venue": null,
+    "venue": "Quảng trường Hồ Chí Minh, số 2 đường Vương Thúc Mậu, thành phố Vinh, tỉnh Nghệ An",
     "city": "Nghệ An"
   },
   "geo": {
-    "lat": 19.1976001,
-    "lng": 105.060676,
+    "lat": 18.7358406,
+    "lng": 105.6906101,
     "source": "nominatim",
     "precision": "province",
     "current": {
@@ -29,90 +54,235 @@
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 953.2,
+        "km": 892.1,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "ha-noi": {
-        "km": 219.7,
+        "km": 255.5,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "da-nang": {
-        "km": 483.9,
+        "km": 401.1,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "nha-trang": {
-        "km": 891.3,
+        "km": 814.2,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "da-lat": {
-        "km": 884.4,
+        "km": 811.1,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "can-tho": {
-        "km": 1021.9,
+        "km": 967.7,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "hai-phong": {
-        "km": 249.9,
+        "km": 256.7,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "hue": {
-        "km": 405.1,
+        "km": 323.1,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "vung-tau": {
-        "km": 1008,
+        "km": 944.9,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "quy-nhon": {
-        "km": 748.5,
+        "km": 668,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 792.8,
+        "km": 720.1,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "sa-pa": {
-        "km": 371.2,
+        "km": 444.1,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "ha-long": {
-        "km": 287.3,
+        "km": 286,
         "minutes": null,
         "method": "straight_line",
         "near": false
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 340000,
+      "from": "2026-08-04",
+      "to": "2026-08-19",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 440000,
+      "from": "2026-08-20",
+      "to": "2026-09-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 440000,
+      "from": "2026-08-04",
+      "to": "2026-08-19",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 560000,
+      "from": "2026-08-20",
+      "to": "2026-09-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 560000,
+      "from": "2026-08-04",
+      "to": "2026-08-19",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 720000,
+      "from": "2026-08-20",
+      "to": "2026-09-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 720000,
+      "from": "2026-08-04",
+      "to": "2026-08-19",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 920000,
+      "from": "2026-08-20",
+      "to": "2026-09-15",
+      "inferred": [],
+      "site": "irace"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": null,
-  "registrations": [],
-  "links": [],
+  "registrations": [
+    {
+      "site": "irace",
+      "url": "https://ticket.irace.vn/vnexpress-marathon-grand-tour-nghe-an-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://facebook.com/sharer/sharer.php",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "http://online.gov.vn/Home/WebDetails/51414",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    }
+  ],
   "flags": [],
   "overrides": {},
   "sources": [
@@ -120,7 +290,7 @@
       "site": "vnexpress-marathon",
       "role": "official",
       "url": "https://vm.vnexpress.net/nghe-an-2026",
-      "lastCheckedAt": "2026-09-25T05:01:22.419Z",
+      "lastCheckedAt": "2026-09-26T05:38:00.505Z",
       "lastChangedAt": "2026-09-25T05:01:22.419Z",
       "extracted": {
         "facts": {
@@ -140,6 +310,14 @@
               "date": "2026-09-27",
               "prices": []
             }
+          },
+          {
+            "url": "https://vm.vnexpress.net/nghe-an-2026/thong-tin-cuoc-dua",
+            "json": {
+              "pageKind": "sport",
+              "venue": "Quảng trường Hồ Chí Minh, số 2 đường Vương Thúc Mậu, thành phố Vinh, tỉnh Nghệ An",
+              "prices": []
+            }
           }
         ],
         "links": [],
@@ -154,9 +332,223 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://ticket.irace.vn/vnexpress-marathon-grand-tour-nghe-an-2026",
+      "lastCheckedAt": "2026-09-26T05:36:57.420Z",
+      "lastChangedAt": "2026-09-26T05:36:57.420Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy VnExpress Marathon Grand Tour Nghe An 2026",
+          "venue": "Nghệ An",
+          "organizer": "VnExpress Marathon"
+        },
+        "pages": [
+          {
+            "url": "https://ticket.irace.vn/vnexpress-marathon-grand-tour-nghe-an-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Giải chạy VnExpress Marathon Grand Tour Nghe An 2026",
+              "date": "2026-09-27",
+              "distances": [
+                "5km",
+                "10km",
+                "21km",
+                "42km"
+              ],
+              "prices": [
+                {
+                  "distance": "5km",
+                  "tier": "Super Early Bird",
+                  "from": "04/08",
+                  "to": "19/08",
+                  "price": 340000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Early Bird",
+                  "from": "20/08",
+                  "to": "15/09",
+                  "price": 440000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Super Early Bird",
+                  "from": "04/08",
+                  "to": "19/08",
+                  "price": 440000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Early Bird",
+                  "from": "20/08",
+                  "to": "15/09",
+                  "price": 560000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Super Early Bird",
+                  "from": "04/08",
+                  "to": "19/08",
+                  "price": 560000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Early Bird",
+                  "from": "20/08",
+                  "to": "15/09",
+                  "price": 720000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Super Early Bird",
+                  "from": "04/08",
+                  "to": "19/08",
+                  "price": 720000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Early Bird",
+                  "from": "20/08",
+                  "to": "15/09",
+                  "price": 920000
+                }
+              ]
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://app.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://irace.vn/ban-ve/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ban ve su kien"
+          },
+          {
+            "url": "https://irace.vn/myfoto/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "tim hinh su kien"
+          },
+          {
+            "url": "https://irace.vn/doanh-nghiep/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "to chuc su kien"
+          },
+          {
+            "url": "https://irace.vn/affiliate/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kiem tien cung irace vn"
+          },
+          {
+            "url": "https://irace.vn/thiet-ke-huy-chuong/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huy chuong"
+          },
+          {
+            "url": "https://irace.vn/san-xuat-qua-tang-phu-kien-the-thao/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "quan ao phu kien"
+          },
+          {
+            "url": "https://irace.vn/about-us/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ve irace"
+          },
+          {
+            "url": "https://irace.vn/bao-chi/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "bao chi viet"
+          },
+          {
+            "url": "https://irace.vn/hoi-dap/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "hoi dap"
+          },
+          {
+            "url": "https://irace.vn/thong-tin/huong-dan/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huong dan su dung"
+          },
+          {
+            "url": "https://irace.vn/kien-thuc-tap-luyen/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kien thuc chay bo"
+          },
+          {
+            "url": "https://tools.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "cong cu tinh toan"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "shop the thao"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "dinh duong"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "phu kien"
+          },
+          {
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://ticket.irace.vn/vnexpress-marathon-grand-tour-nghe-an-2026",
+            "text": "chia se tren facebook"
+          },
+          {
+            "url": "http://online.gov.vn/Home/WebDetails/51414",
+            "text": ""
+          },
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/feed/",
+            "text": ""
+          },
+          {
+            "url": "https://www.youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+            "text": ""
+          },
+          {
+            "url": "https://play.google.com/store/apps/details?id=com.irace.app",
+            "text": ""
+          },
+          {
+            "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/chinh-sach-bao-mat/",
+            "text": "chinh sach bao mat"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-thanh-toan/",
+            "text": "dieu khoan thanh toan"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-su-dung/",
+            "text": "dieu khoan su dung"
+          },
+          {
+            "url": "https://irace.vn/tuyen-dung/",
+            "text": "tuyen dung"
+          },
+          {
+            "url": "https://irace.vn/lien-he/",
+            "text": "lien he"
+          }
+        ],
+        "organizer": {
+          "id": "vnexpress-marathon",
+          "name": "VnExpress Marathon"
+        },
+        "readBy": "agent"
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-25T05:01:22.419Z",
-  "updatedAt": "2026-09-25T05:01:22.419Z"
+  "updatedAt": "2026-09-26T05:38:00.505Z"
 }
