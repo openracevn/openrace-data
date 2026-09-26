@@ -1,0 +1,202 @@
+{
+  "id": "88fb0464-d184-4f3f-a4f3-57362bb5c294",
+  "slug": "vnexpress-marathon-ho-chi-minh-3",
+  "name": "VPBank VnExpress Marathon Ho Chi Minh City Midnight 2024",
+  "types": [
+    "road_run"
+  ],
+  "date": "2024-03-03",
+  "endDate": null,
+  "seriesId": "vnexpress-marathon-ho-chi-minh",
+  "organizerId": "vnexpress",
+  "organizer": "VnExpress",
+  "edition": 2,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": null,
+    "city": "Hồ Chí Minh"
+  },
+  "geo": {
+    "lat": 10.7737261,
+    "lng": 106.7166008,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "79",
+      "ward": null
+    },
+    "legacy": null,
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1144,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 610.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 315.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 228.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 130.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1119.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 639.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 62.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 430.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 254.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1321.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1132.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "vnexpress-marathon",
+      "role": "official",
+      "url": "https://vm.vnexpress.net/ho-chi-minh-2024",
+      "lastCheckedAt": "2026-09-26T14:42:18.015Z",
+      "lastChangedAt": "2026-09-26T14:42:18.015Z",
+      "extracted": {
+        "facts": {
+          "name": "VPBank VnExpress Marathon Ho Chi Minh City Midnight 2024",
+          "date": "2024-03-03",
+          "city": "Hồ Chí Minh"
+        },
+        "pages": [
+          {
+            "url": "https://vm.vnexpress.net/ho-chi-minh-2024",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "VPBank VnExpress Marathon Ho Chi Minh City Midnight 2024",
+              "date": "2024-03-03",
+              "distances": [
+                "5km",
+                "10km",
+                "21km",
+                "42km"
+              ],
+              "city": "Hồ Chí Minh",
+              "prices": []
+            }
+          },
+          {
+            "url": "https://vm.vnexpress.net/ho-chi-minh-2024/thong-tin-cuoc-dua",
+            "json": {
+              "pageKind": "sport",
+              "edition": 2,
+              "prices": []
+            }
+          }
+        ],
+        "links": [],
+        "series": {
+          "id": "vnexpress-marathon-ho-chi-minh",
+          "name": "VnExpress Marathon Hồ Chí Minh"
+        },
+        "organizer": {
+          "id": "vnexpress",
+          "name": "VnExpress",
+          "website": "https://vnexpress.net/"
+        },
+        "readBy": "agent"
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-26T14:42:18.015Z",
+  "updatedAt": "2026-09-26T14:42:18.015Z"
+}

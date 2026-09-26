@@ -938,6 +938,20 @@
     "linkUrls": []
   },
   {
+    "id": "2e80f9ec-a25b-4997-89b7-30bfb2558c56",
+    "slug": "vnexpress-marathon-ho-chi-minh-4",
+    "name": "VPBank VnExpress Marathon Ho Chi Minh City Midnight 2025",
+    "date": "2025-02-23",
+    "endDate": null,
+    "lastModified": "2026-09-26T14:42:18.015Z",
+    "file": "vnexpress-marathon-ho-chi-minh-4-2025.json",
+    "seriesId": "vnexpress-marathon-ho-chi-minh",
+    "sourceUrls": [
+      "https://vm.vnexpress.net/ho-chi-minh-2025"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "2e889f1a-96f6-4261-ad07-ee921bb3199a",
     "slug": "giai-marathon-ca-mau-2026-cup-petrovietnam",
     "name": "GIẢI MARATHON - CÀ MAU 2026 CÚP PETROVIETNAM",
@@ -2577,6 +2591,20 @@
     "linkUrls": []
   },
   {
+    "id": "88fb0464-d184-4f3f-a4f3-57362bb5c294",
+    "slug": "vnexpress-marathon-ho-chi-minh-3",
+    "name": "VPBank VnExpress Marathon Ho Chi Minh City Midnight 2024",
+    "date": "2024-03-03",
+    "endDate": null,
+    "lastModified": "2026-09-26T14:42:18.015Z",
+    "file": "vnexpress-marathon-ho-chi-minh-3-2024.json",
+    "seriesId": "vnexpress-marathon-ho-chi-minh",
+    "sourceUrls": [
+      "https://vm.vnexpress.net/ho-chi-minh-2024"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "89f691ee-328a-4b67-bdbf-e9cb57e6e182",
     "slug": "vnexpress-marathon-can-gio",
     "name": "VnExpress Marathon Green Paradise Can Gio 2026",
@@ -2760,6 +2788,20 @@
       "https://actiup.net/vi/event/lao-cai-marathon-2026-dong-chay-bien-cuong",
       "https://irace.vn/su-kien/lao-cai-marathon",
       "https://ticket.irace.vn/lao-cai-marathon-2026"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "909f4f4e-5355-4a85-8a59-6552c97b6ef2",
+    "slug": "vnexpress-marathon-ho-chi-minh-2",
+    "name": "VnExpress Marathon Ho Chi Minh City Midnight",
+    "date": "2023-02-12",
+    "endDate": null,
+    "lastModified": "2026-09-26T14:42:18.015Z",
+    "file": "vnexpress-marathon-ho-chi-minh-2-2023.json",
+    "seriesId": "vnexpress-marathon-ho-chi-minh",
+    "sourceUrls": [
+      "https://vm.vnexpress.net/ho-chi-minh-2023"
     ],
     "linkUrls": []
   },
