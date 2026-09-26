@@ -176,9 +176,73 @@
     {
       "site": "actiup",
       "url": "https://actiup.net/vi/event/lao-cai-marathon-2026-dong-chay-bien-cuong"
+    },
+    {
+      "site": "irace",
+      "url": "https://irace.vn/su-kien/lao-cai-marathon"
     }
   ],
   "links": [
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://google.com/calendar/event",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/bot-bo-sung-nang-luong-tailwind-caffeinated-endurance-fuel-2-lan-dung",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/creatine-monohydrate-scitec-nutrition-300g",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/gel-nang-luong-agri-boost-endurance-45g",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/gel-uong-bo-sung-hammer-nutrition-hammer-gel-33g",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/gel-uong-bo-sung-nang-luong-gu-energy-gel",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/sua-tang-can-labrada-muscle-mass-gainer",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
     {
       "url": "https://drive.google.com/file/d/1dT42OM0Jx4Qow1s14eaWdHkJNMWN2qil/view",
       "kind": "rules",
@@ -348,9 +412,115 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://irace.vn/su-kien/lao-cai-marathon",
+      "lastCheckedAt": "2026-09-26T12:34:42.184Z",
+      "lastChangedAt": "2026-09-26T12:34:42.184Z",
+      "extracted": {
+        "facts": {
+          "name": "Lào Cai Marathon 2026 - Dòng Chảy Biên Cương",
+          "venue": "Lào Cai",
+          "organizer": "TNHH Việt Jungle"
+        },
+        "pages": [
+          {
+            "url": "https://irace.vn/su-kien/lao-cai-marathon",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "LÀO CAI MARATHON 2026 – DÒNG CHẢY BIÊN CƯƠNG",
+              "date": "2026-10-18",
+              "distances": [
+                "5.5km",
+                "10.5km",
+                "21km"
+              ],
+              "venue": "Lào Cai",
+              "city": "Lào Cai",
+              "prices": []
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": "facebook facebook"
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn/",
+            "text": "instagram instagram"
+          },
+          {
+            "url": "https://app.irace.vn/",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=iRace&utm_medium=Menu&utm_campaign=Menu",
+            "text": "sports shop"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=iRace&utm_medium=Menu&utm_campaign=Menu",
+            "text": "nutritions"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=iRace&utm_medium=Menu&utm_campaign=Menu",
+            "text": "accessories"
+          },
+          {
+            "url": "https://ticket.irace.vn/",
+            "text": "su kien tai viet nam"
+          },
+          {
+            "url": "https://ticket.irace.vn/orders",
+            "text": "ve chay offline"
+          },
+          {
+            "url": "https://app.irace.vn/my-orders",
+            "text": "ve chay online"
+          },
+          {
+            "url": "https://ticket.irace.vn/lao-cai-marathon-2026?ref=iRace",
+            "text": "09thang 611 0611 06lao cai marathon 2026 dong chay bien cuonggiai chay lao cai marathon duoc dinh huong xay dung la su k"
+          },
+          {
+            "url": "https://www.google.com/calendar/event?action=TEMPLATE&text=L%C3%A0o%20Cai%20Marathon%202026%20-%20D%C3%B2ng%20Ch%E1%BA%A3y%20Bi%C3%AAn%20C%C6%B0%C6%A1ng&dates=20260609T040600Z/20260609T040600Z&ctz=Asia%2FSaigon&details=L%C3%A0o%20Cai%20Marathon%202026%20-%20D%C3%B2ng%20Ch%E1%BA%A3y%20Bi%C3%AAn%20C%C6%B0%C6%A1ng&location=L%C3%A0o%20Cai%20L%C3%A0o%20Cai",
+            "text": "them vao google calendar them vao google calendar"
+          },
+          {
+            "url": "https://ifitness.vn/products/gel-uong-bo-sung-hammer-nutrition-hammer-gel-33g?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "text": "mua ngay"
+          },
+          {
+            "url": "https://ifitness.vn/products/gel-uong-bo-sung-nang-luong-gu-energy-gel?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "text": "mua ngay"
+          },
+          {
+            "url": "https://ifitness.vn/products/gel-nang-luong-agri-boost-endurance-45g?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "text": "mua ngay"
+          },
+          {
+            "url": "https://ifitness.vn/products/bot-bo-sung-nang-luong-tailwind-caffeinated-endurance-fuel-2-lan-dung?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "text": "mua ngay"
+          },
+          {
+            "url": "https://ifitness.vn/products/creatine-monohydrate-scitec-nutrition-300g?ref=iRace&utm_source=iRace&utm_medium=Banner&utm_campaign=Topbanner&utm_content=%22Monohydrate-Scitec",
+            "text": ""
+          },
+          {
+            "url": "https://ifitness.vn/products/sua-tang-can-labrada-muscle-mass-gainer?ref=iRace&utm_source=iRace&utm_medium=Banner&utm_campaign=Topbanner&utm_content=%22Muscle-Mass-Gainer",
+            "text": ""
+          }
+        ],
+        "readBy": "agent"
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T12:26:08.760Z"
+  "updatedAt": "2026-09-26T12:34:42.184Z"
 }
