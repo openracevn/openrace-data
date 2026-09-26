@@ -45,6 +45,8 @@ Free plan: 1,000 credits per billing period (23rd to 23rd). On 2026-09-24, 1,453
 
 ## Next
 
+- [ ] **[Plan 010](../plans/010-2026-09-26-agent-read-process-hardening.md)** (not yet built): a written source-finding order, a duplicate-race guard in `agent-read`'s dry run, a real "attach source to an existing race" operation, and a price pre-fill for irace's text-table pages. Written after backfilling plan 008 hit a duplicate race and a local-edit-has-no-effect trap ([summary](2026-09-26-summary-agent-read-backfill.md)).
+- [ ] **Plan 008: 16 of 21 upcoming races with missing price/distances/location still unattempted** ([list](../plans/008-2026-09-26-upcoming-races-missing-data.md)); 5 attempted, 3 filled, 2 (Kun Fun Run Đồng Tháp ×2) have no source anywhere yet.
 - [ ] **race-research follow-up from the 2026-09-25 pilot** ([summary](2026-09-25-summary-race-research.md)): run `agent-read` on the 3 ActiUp-backed Andros races (2024/2025/2026) for their actual prices, which race-research correctly declined to fetch itself. (The `openrace`-tagged-source cleanup is done — 0 races left with that tag, dataset-wide.)
 - [ ] **MCP server: [plan 005](../plans/005-2026-09-24-mcp-server.md)** (path step 5) — deployed and working (see above); left: try it with a real assistant in Vietnamese and English, and write up the contract list for openrace-api. Then the frontend, after the API contract has been through real use (it isn't on the roadmap path yet: add it when that plan is written).
 - [ ] **Read the other 29 upcoming ActiUp races with the `agent-read` skill** (free, batches of 5–10). Firecrawl batches are on hold (user, 2026-09-24). Then VM (15 races) and the race sites the same way.

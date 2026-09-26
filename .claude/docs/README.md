@@ -11,6 +11,7 @@ Working notes on how openrace-data is wired up. Read these before changing inges
 | [firecrawl.md](firecrawl.md) | Firecrawl API facts verified against their docs, and the traps behind the current design |
 | [decisions.md](decisions.md) | Design decisions and deliberate departures from the original spec |
 | [status.md](status.md) | What's live, what isn't, known gaps, next steps |
+| [2026-09-26-summary-agent-read-backfill.md](2026-09-26-summary-agent-read-backfill.md) | Backfilling plan 008: 2 recipe fixes (vnexpress-marathon venue subpage, irace `#bang-gia`/`irace.vn` fallback, plan 009 built), a duplicate race caught and fixed, plan 010 written for the process gaps that cost the most time |
 | [2026-09-25-summary-race-research.md](2026-09-25-summary-race-research.md) | The `race-research` skill built and piloted on Andros The Lakes Race: 5 editions found via Wayback Machine, 4 real code fixes, workflow redesigned mid-session into a finder that hands off to agent-read/check-race |
 | [2026-09-24-summary-part-2.md](2026-09-24-summary-part-2.md) | Day summary, part 2: first price batch, openrace-api on schema v2, agent-read |
 | [2026-09-24-summary-part-3.md](2026-09-24-summary-part-3.md) | Day summary, part 3: schema v3 and the API live (plans 003 and 004), the six questions answered |
