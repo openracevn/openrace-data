@@ -38,7 +38,7 @@
     }
   ],
   "location": {
-    "venue": null,
+    "venue": "Quảng trường Nguyễn Tất Thành, thành phố Quy Nhơn, tỉnh Bình Định",
     "city": "Quy Nhơn"
   },
   "geo": {
@@ -528,6 +528,14 @@
       ],
       "reason": "Wayback snapshot's ticket-policy price table lists the same 5/10/21/42km distances as this edition's price tiers (already recorded), confirming the course set",
       "at": "2026-09-26T14:12:27.291Z"
+    },
+    "location": {
+      "value": {
+        "venue": "Quảng trường Nguyễn Tất Thành, thành phố Quy Nhơn, tỉnh Bình Định",
+        "city": "Quy Nhơn"
+      },
+      "reason": "Wayback snapshot 20240518044843 of vm.vnexpress.net/quy-nhon-2024 states the venue in its schedule section (Expo 21-22/06/2024, Raceday 23/06/2024, both at this square); live page's tab is JS-rendered and this content is gone",
+      "at": "2026-09-26T14:16:40.365Z"
     }
   },
   "sources": [
@@ -585,5 +593,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-26T13:58:07.150Z",
-  "updatedAt": "2026-09-26T14:12:27.291Z"
+  "updatedAt": "2026-09-26T14:16:40.365Z"
 }
