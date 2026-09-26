@@ -4,7 +4,9 @@
  * normalization and commit as scripts/check.ts. The skill that drives it:
  * .claude/skills/agent-read/SKILL.md.
  *
- *   npm run agent-read -- prepare --race <url|id|slug> [--out <dir>]
+ *   npm run agent-read -- prepare --race <url|id|slug> [--race <url|id|slug> ...] [--out <dir>]
+ *       Repeat --race for a hand-picked batch (a curated list of slugs, not a whole site);
+ *       each is numbered in order into the same <dir>, skipping ones with no recipe.
  *   npm run agent-read -- prepare --site <key> [--past] [--limit N] [--all] [--out <dir>]
  *       Free. Runs the recipe and saves, per race, what Firecrawl would be given:
  *       <dir>/<nn>-<slug>/page-<n>.html (the cleaned HTML), image-<n>.<ext> (price images),
@@ -57,6 +59,14 @@ const arg = (name: string) => {
   const i = args.indexOf(`--${name}`);
   return i >= 0 ? args[i + 1] : undefined;
 };
+const argAll = (name: string) => {
+  const values: string[] = [];
+  for (let i = 0; i < args.length; i++) {
+    const value = args[i] === `--${name}` ? args[i + 1] : undefined;
+    if (value !== undefined) values.push(value);
+  }
+  return values;
+};
 const local: RaceStore = {
   read: async (path) => (existsSync(path) ? readFileSync(path, "utf8") : null),
 };
@@ -64,14 +74,16 @@ const local: RaceStore = {
 const command = args[0];
 if (command === "prepare") await prepare();
 else if (command === "commit") await commit();
-else fail("usage: npm run agent-read -- prepare (--race <url|id|slug> | --site <key>) [...] | commit <dir> [--commit]");
+else fail("usage: npm run agent-read -- prepare (--race <url|id|slug> [--race ...] | --site <key>) [...] | commit <dir> [--commit]");
 
 async function prepare() {
-  const raceArg = arg("race")?.trim();
+  const raceArgs = argAll("race")
+    .map((s) => s.trim())
+    .filter(Boolean);
   const siteArg = arg("site");
   const out = arg("out") ?? ".agent-read";
   const limit = arg("limit") ? Number(arg("limit")) : Number.POSITIVE_INFINITY;
-  if (!raceArg === !siteArg) fail("use --race or --site");
+  if ((raceArgs.length > 0) === !!siteArg) fail("use --race (repeatable) or --site");
   if (!(limit > 0)) fail("--limit must be a positive number");
 
   const config = loadSites();
@@ -81,24 +93,30 @@ async function prepare() {
   const index = IndexSchema.parse(JSON.parse((await local.read(INDEX_PATH)) ?? "[]"));
 
   const jobs: { site: Site; recipe: Recipe; refs?: RaceRef[] }[] = [];
-  if (raceArg) {
-    const entry = index.find((e) => e.id === raceArg || e.slug === raceArg);
-    let urls = entry?.sourceUrls ?? [];
-    if (!entry) {
-      try {
-        urls = [canonicalSourceUrl(raceArg)];
-      } catch {
-        fail(`"${raceArg}" is neither a race id or slug in ${INDEX_PATH} nor a URL`);
+  if (raceArgs.length > 0) {
+    for (const raceArg of raceArgs) {
+      const entry = index.find((e) => e.id === raceArg || e.slug === raceArg);
+      let urls = entry?.sourceUrls ?? [];
+      if (!entry) {
+        try {
+          urls = [canonicalSourceUrl(raceArg)];
+        } catch {
+          console.log(`✗ "${raceArg}" is neither a race id or slug in ${INDEX_PATH} nor a URL`);
+          continue;
+        }
       }
+      let added = 0;
+      for (const url of urls) {
+        const site = siteForUrl(config, url);
+        const recipe = site && recipeFor(site);
+        if (!site || !recipe) continue; // e.g. a hand-entered reference
+        const slugHint = site.recipe === "actiup" ? new URL(url).pathname.split("/")[3] : undefined;
+        jobs.push({ site, recipe, refs: [{ url, slugHint }] });
+        added++;
+      }
+      if (added === 0) console.log(`✗ ${raceArg} has no source on a site with a recipe`);
     }
-    for (const url of urls) {
-      const site = siteForUrl(config, url);
-      const recipe = site && recipeFor(site);
-      if (!site || !recipe) continue; // e.g. a hand-entered reference
-      const slugHint = site.recipe === "actiup" ? new URL(url).pathname.split("/")[3] : undefined;
-      jobs.push({ site, recipe, refs: [{ url, slugHint }] });
-    }
-    if (jobs.length === 0) fail(`${raceArg} has no source on a site with a recipe`);
+    if (jobs.length === 0) fail("no race resolved to a source with a recipe");
   } else {
     const site = config.sites.find((s) => s.key === siteArg);
     const recipe = site && recipeFor(site);
@@ -114,9 +132,9 @@ async function prepare() {
   let n = 0;
   let skipped = 0;
   for (const { site, recipe, refs: given } of jobs) {
-    const ctx: RecipeContext = { site, config, http, today, includePast: args.includes("--past") || !!raceArg };
+    const ctx: RecipeContext = { site, config, http, today, includePast: args.includes("--past") || raceArgs.length > 0 };
     let refs = given ?? (await recipe.discover(ctx));
-    if (!raceArg) {
+    if (raceArgs.length === 0) {
       const before = refs.length;
       refs = refs.filter((r) => !checks[r.url]?.permanent && (args.includes("--all") || !checks[r.url]?.fingerprint));
       skipped += before - refs.length;

@@ -42,6 +42,8 @@ If local `main` has diverged from `origin/main` (unpushed commits, or code chang
 ```bash
 git pull -q
 npm run agent-read -- prepare --site actiup --limit 20
+# or a hand-picked batch (a curated list of slugs, not a whole site): repeat --race
+npm run agent-read -- prepare --race <a> --race <b> --race <c> ...
 .claude/skills/opencode-read/prep.sh      # read-b.json per race + view-image-<n>.jpg copies
 ```
 

@@ -25,6 +25,7 @@ git pull -q
 npm run agent-read -- prepare --site actiup --limit 10          # the next 10 unread upcoming races on a site
 npm run agent-read -- prepare --site actiup --past --limit 10   # past races too (backfill)
 npm run agent-read -- prepare --race <url|slug|id>              # one race
+npm run agent-read -- prepare --race <a> --race <b> --race <c>  # a hand-picked batch (repeat --race)
 ```
 
 This clears and fills `.agent-read/` (gitignored), with one folder per race (`01-<slug>/`, ...):
