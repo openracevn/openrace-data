@@ -171,9 +171,24 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "vnexpress-marathon",
+      "role": "reference",
+      "url": "https://web.archive.org/web/20191213022320/https://vm.vnexpress.net/quy-nhon-2019",
+      "lastCheckedAt": "2026-09-26T14:23:06.364Z",
+      "lastChangedAt": "2026-09-26T14:23:06.364Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Marathon Luminous Quy Nhơn 2019",
+          "date": "2019-06-09",
+          "venue": "Quảng trường Nguyễn Tất Thành, thành phố Quy Nhơn, tỉnh Bình Định",
+          "note": "Wayback snapshot of the live page while its route-info tab still had content; live page's JS-rendered tabs are now empty. States race-kit/expo venue and describes the course"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-26T13:55:17.963Z",
-  "updatedAt": "2026-09-26T14:16:29.004Z"
+  "updatedAt": "2026-09-26T14:23:06.364Z"
 }
