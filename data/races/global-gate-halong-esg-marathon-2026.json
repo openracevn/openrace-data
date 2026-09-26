@@ -137,23 +137,266 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "3km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 180000,
+      "from": "2026-07-07",
+      "to": "2026-07-13",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "3km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 250000,
+      "from": "2026-07-14",
+      "to": "2026-07-23",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "3km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 350000,
+      "from": "2026-07-24",
+      "to": "2026-09-02",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "3km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 380000,
+      "from": "2026-09-03",
+      "to": "2026-09-22",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 300000,
+      "from": "2026-07-07",
+      "to": "2026-07-13",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 330000,
+      "from": "2026-07-14",
+      "to": "2026-07-23",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 430000,
+      "from": "2026-07-24",
+      "to": "2026-09-02",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 480000,
+      "from": "2026-09-03",
+      "to": "2026-09-22",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 360000,
+      "from": "2026-07-07",
+      "to": "2026-07-13",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 380000,
+      "from": "2026-07-14",
+      "to": "2026-07-23",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 490000,
+      "from": "2026-07-24",
+      "to": "2026-09-02",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 580000,
+      "from": "2026-09-03",
+      "to": "2026-09-22",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 420000,
+      "from": "2026-07-07",
+      "to": "2026-07-13",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 450000,
+      "from": "2026-07-14",
+      "to": "2026-07-23",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 590000,
+      "from": "2026-07-24",
+      "to": "2026-09-02",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 680000,
+      "from": "2026-09-03",
+      "to": "2026-09-22",
+      "inferred": [],
+      "site": "irace"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
     {
       "site": "actiup",
       "url": "https://actiup.net/vi/event/global-gate-halong-esg-marathon-2026"
+    },
+    {
+      "site": "irace",
+      "url": "https://irace.vn/su-kien/global-gate-ha-long-esg-marathon"
     }
   ],
   "links": [
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "http://dhavietnam.vn/",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://google.com/calendar/event",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/scitec-nutrition",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/creatine-monohydrate-scitec-nutrition-300g",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/sua-tang-suc-manh-suc-ben-applied-nutrition-creatine-monohydrate-250g-1",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/sua-tang-suc-manh-suc-ben-creatine-monohydrate-300g",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/sua-tang-suc-manh-suc-ben-metabolic-creatine-6-pineapple-mango-225g",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
     {
       "url": "https://drive.google.com/file/d/12KRxjkDPbyCZwQzsQKDyEaXQ7W7JC-AI/view",
       "kind": "rules",
       "foundOn": "actiup.net"
     }
   ],
-  "flags": [],
+  "flags": [
+    "sources disagree on race day: actiup 2026-10-10, irace 2026-10-11"
+  ],
   "overrides": {},
   "sources": [
     {
@@ -207,9 +450,230 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://irace.vn/su-kien/global-gate-ha-long-esg-marathon",
+      "lastCheckedAt": "2026-09-26T05:57:31.541Z",
+      "lastChangedAt": "2026-09-26T05:57:31.541Z",
+      "extracted": {
+        "facts": {
+          "name": "Global Gate Halong ESG++ Marathon 2026",
+          "venue": "VinHomes Global Gate (Hạ Long Xanh)",
+          "organizer": "DHA Viet Nam"
+        },
+        "pages": [
+          {
+            "url": "https://irace.vn/su-kien/global-gate-ha-long-esg-marathon",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "date": "2026-10-11",
+              "distances": [
+                "3km",
+                "10km",
+                "21km",
+                "42km"
+              ],
+              "prices": [
+                {
+                  "distance": "3km",
+                  "tier": "Flash Sale",
+                  "from": "07/07",
+                  "to": "13/07",
+                  "price": 180000
+                },
+                {
+                  "distance": "3km",
+                  "tier": "Super Early Bird",
+                  "from": "14/07",
+                  "to": "23/07",
+                  "price": 250000
+                },
+                {
+                  "distance": "3km",
+                  "tier": "Early Bird",
+                  "from": "24/07",
+                  "to": "02/09",
+                  "price": 350000
+                },
+                {
+                  "distance": "3km",
+                  "tier": "Regular",
+                  "from": "03/09",
+                  "to": "22/09",
+                  "price": 380000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Flash Sale",
+                  "from": "07/07",
+                  "to": "13/07",
+                  "price": 300000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Super Early Bird",
+                  "from": "14/07",
+                  "to": "23/07",
+                  "price": 330000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Early Bird",
+                  "from": "24/07",
+                  "to": "02/09",
+                  "price": 430000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Regular",
+                  "from": "03/09",
+                  "to": "22/09",
+                  "price": 480000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Flash Sale",
+                  "from": "07/07",
+                  "to": "13/07",
+                  "price": 360000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Super Early Bird",
+                  "from": "14/07",
+                  "to": "23/07",
+                  "price": 380000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Early Bird",
+                  "from": "24/07",
+                  "to": "02/09",
+                  "price": 490000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Regular",
+                  "from": "03/09",
+                  "to": "22/09",
+                  "price": 580000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Flash Sale",
+                  "from": "07/07",
+                  "to": "13/07",
+                  "price": 420000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Super Early Bird",
+                  "from": "14/07",
+                  "to": "23/07",
+                  "price": 450000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Early Bird",
+                  "from": "24/07",
+                  "to": "02/09",
+                  "price": 590000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Regular",
+                  "from": "03/09",
+                  "to": "22/09",
+                  "price": 680000
+                }
+              ]
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": "facebook facebook"
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn/",
+            "text": "instagram instagram"
+          },
+          {
+            "url": "https://app.irace.vn/",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=iRace&utm_medium=Menu&utm_campaign=Menu",
+            "text": "sports shop"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=iRace&utm_medium=Menu&utm_campaign=Menu",
+            "text": "nutritions"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=iRace&utm_medium=Menu&utm_campaign=Menu",
+            "text": "accessories"
+          },
+          {
+            "url": "https://ticket.irace.vn/",
+            "text": "su kien tai viet nam"
+          },
+          {
+            "url": "https://ticket.irace.vn/orders",
+            "text": "ve chay offline"
+          },
+          {
+            "url": "https://app.irace.vn/my-orders",
+            "text": "ve chay online"
+          },
+          {
+            "url": "https://ticket.irace.vn/global-gate-ha-long-esg-marathon-2026?ref=iRace",
+            "text": "11thang 1004 0010 00global gate halong esg marathon 2026day khong chi la noi de hoan thanh mot cuoc dua day la noi nhung"
+          },
+          {
+            "url": "https://www.google.com/calendar/event?action=TEMPLATE&text=Global%20Gate%20Halong%20ESG%2B%2B%20Marathon%202026&dates=20261010T210000Z/20261011T030000Z&ctz=Asia%2FSaigon&details=Global%20Gate%20Halong%20ESG%2B%2B%20Marathon%202026&location=VinHomes%20Global%20Gate%20%28H%E1%BA%A1%20Long%20Xanh%29%20M%E1%BA%AFm%20Ngo%C3%A0i%2C%20TP%2C%20QL18%2C%20H%E1%BA%A1%20Long%2C%20Qu%E1%BA%A3ng%20Ninh%2001160%2C%20Vi%E1%BB%87t%20Nam",
+            "text": "them vao google calendar them vao google calendar"
+          },
+          {
+            "url": "https://ifitness.vn/products/creatine-monohydrate-scitec-nutrition-300g?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "text": "mua ngay"
+          },
+          {
+            "url": "https://ifitness.vn/products/sua-tang-suc-manh-suc-ben-metabolic-creatine-6-pineapple-mango-225g?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "text": "mua ngay"
+          },
+          {
+            "url": "https://ifitness.vn/products/sua-tang-suc-manh-suc-ben-creatine-monohydrate-300g?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "text": "mua ngay"
+          },
+          {
+            "url": "https://ifitness.vn/products/sua-tang-suc-manh-suc-ben-applied-nutrition-creatine-monohydrate-250g-1?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "text": "mua ngay"
+          },
+          {
+            "url": "https://ifitness.vn/products/creatine-monohydrate-scitec-nutrition-300g?ref=iRace&utm_source=iRace&utm_medium=Banner&utm_campaign=Topbanner&utm_content=%22Monohydrate-Scitec",
+            "text": ""
+          },
+          {
+            "url": "https://ifitness.vn/collections/scitec-nutrition?utm_source=iRace.vn&utm_medium=Banner&utm_campaign=Top&utm_content=Scitec",
+            "text": ""
+          },
+          {
+            "url": "http://dhavietnam.vn/",
+            "text": "dha viet nam"
+          }
+        ],
+        "readBy": "agent"
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "conflicting",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T05:24:22.076Z"
+  "updatedAt": "2026-09-26T05:57:31.541Z"
 }

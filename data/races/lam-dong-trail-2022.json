@@ -217,7 +217,12 @@
   ],
   "currency": "VND",
   "registrationStatus": null,
-  "registrations": [],
+  "registrations": [
+    {
+      "site": "irace",
+      "url": "https://app.irace.vn/lam-dong-trail-2022"
+    }
+  ],
   "links": [],
   "flags": [],
   "overrides": {
@@ -432,5 +437,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T08:00:46.737Z",
-  "updatedAt": "2026-09-25T08:22:42.080Z"
+  "updatedAt": "2026-09-26T05:57:31.541Z"
 }
