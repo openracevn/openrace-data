@@ -155,6 +155,17 @@ describe("irace recipe", () => {
     assert.doesNotMatch(html, /Giảm giá/);
     assert.doesNotMatch(html, /<img/);
   });
+
+  it("falls back to #bang-gia's text table once registration closes and #personal is gone", async () => {
+    const http = fakeHttp({
+      "https://ticket.irace.vn/vnexpress-marathon-grand-tour-nghe-an-2026": fixture("irace-vnexpress-marathon-grand-tour-nghe-an-2026.html"),
+    });
+    const snap = await iraceRecipe.snapshot({ url: "https://ticket.irace.vn/vnexpress-marathon-grand-tour-nghe-an-2026" }, ctx("irace", http));
+    const html = snap.pages[0]!.html;
+    assert.match(html, /Super Early Bird/);
+    assert.match(html, /340\.000đ/);
+    assert.match(html, /920\.000đ/);
+  });
 });
 
 describe("default recipe (race sites)", () => {

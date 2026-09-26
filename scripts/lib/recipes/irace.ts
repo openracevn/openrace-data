@@ -14,8 +14,16 @@
  *     images, the reason this recipe exists.
  *   - `#group`: group-size discounts as percentages, not prices — out of scope (see
  *     recipes/README.md's ActiUp lessons).
- *   - `#bang-gia`: reproduces the same old irace.vn poster images ActiUp OCRs;
- *     skipped, since `#personal` already gives the same prices as text.
+ *   - `#bang-gia`: normally reproduces the same old irace.vn poster images ActiUp
+ *     OCRs, skipped while `#personal` is there since it already gives the same
+ *     prices as text. But once a race's registration closes (checked 2026-09-26,
+ *     VnExpress Marathon Grand Tour Nghệ An 2026, one day before race day),
+ *     `#personal` disappears and `#bang-gia` becomes the only price table left, this
+ *     time as a real HTML table, not images. Its wrapping `<div id="bang-gia">` is
+ *     itself unreadable there (the page's `<h2 class="card-header">Bảng giá</h4>`
+ *     mismatches tags, and the parser drops the id fixing it up), so the fallback
+ *     looks for the `<table>` itself, wherever it lands — skipping an unrelated
+ *     empty cart-summary table the same page also has.
  *   - a `script[type=application/ld+json]` schema.org Event block: name, venue
  *     (`location.name`) and organizer (name + a `/organizers/<slug>` url), read as
  *     free facts. Its `startDate`/`endDate` are unreliable for multi-day races (both
@@ -30,6 +38,9 @@ const RACE_PAGE = /^https:\/\/ticket\.irace\.vn\/([a-z0-9-]+)\/?$/;
 // Site paths that look like a slug but aren't a race: account/category/organizer pages.
 const NOT_A_RACE = /^(tickets|my-account|categories|organizers|api|embed|add-event-to-calendar)$/;
 const CONTENT = [".name", ".wrap-info", "#personal"];
+// A price amount ("340.000đ"), to tell the real #bang-gia table apart from the
+// unrelated empty cart-summary table the same page has (headers only, no đ amounts).
+const PRICE_AMOUNT = /\d[\d.,]*\s*đ(?!\p{L})/u;
 
 type EventLd = {
   "@type"?: string;
@@ -58,6 +69,9 @@ export const iraceRecipe: Recipe = {
     const html = await ctx.http.text(ref.url);
     const root = parseHtml(html);
     const parts = CONTENT.map((sel) => root.querySelector(sel)).filter((el) => el !== null);
+    if (!root.querySelector("#personal")) {
+      parts.push(...root.querySelectorAll("table").filter((t) => PRICE_AMOUNT.test(t.textContent)));
+    }
     if (parts.length === 0) throw new Error(`${ref.url}: no ${CONTENT.join(" or ")} (layout changed?)`);
     const content = parseHtml(`<main>${parts.map((el) => el.outerHTML).join("")}</main>`);
 
