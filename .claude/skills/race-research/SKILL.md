@@ -56,6 +56,7 @@ for e in races:
 
 Read each matching file in `data/races/`. For each one, check against this list — any of these is a reason to keep researching that specific edition, not just note it and move on:
 
+- **`prices: []`, no distances, or no venue on a *past* race** — before accepting the gap, check Wayback for a snapshot of that exact race page taken while registration was likely still open (before race day, ideally in its sale window) — see step 1.5. A live page that now shows nothing is not proof nothing was ever there; organizer sites routinely strip price tables, distance lists and venue details off a race page once it's over. This applies even to a race that's already tracked with sources — a missing price/distance/venue on an *existing* race is exactly the kind of gap this step exists to close, not just a newly-found edition.
 - **`prices: []`** — especially on a race whose date is upcoming or recent, where a price plausibly exists somewhere.
 - **`date` missing or only approximate** (you know the month/year but not the day) — the one field that's never allowed to stay a guess.
 - **`courses: []` / no distances** — the format/distance list is unknown even though the race clearly happened.
@@ -80,18 +81,27 @@ This is why the 2024–2026 Andros races still had no prices after the first rac
 
 Only fetch and extract a source yourself (steps 2–5 below) when **no recipe applies at all** — a dead ticket reseller, an archived page, a news article. And even then: if that source has a price image, download it and actually look at it (same as `agent-read`'s own rule — a wrong price is worse than no price, but no price when one was visible is a miss, not a safe default).
 
-## 1.5. Always check Wayback Machine for the race's own official site
+## 1.5. Always check Wayback Machine — for the site's history AND for each race page's missing fields
 
-Do this **even when the live site looks empty or "Coming Soon"** — organizer sites get overwritten every year for the next edition, so a page like "Previous Editions" (with every past date, sometimes an exact edition count) often only survives in an old snapshot, not on the live site. This is usually the single best source available: it's the organizer speaking about its own history, not a third party's guess.
+Two different uses, both mandatory, not just one:
+
+**(a) The site overall**, to find editions. Do this **even when the live site looks empty or "Coming Soon"** — organizer sites get overwritten every year for the next edition, so a page like "Previous Editions" (with every past date, sometimes an exact edition count) often only survives in an old snapshot, not on the live site. This is usually the single best source available: it's the organizer speaking about its own history, not a third party's guess.
+
+**(b) Each individual race page that's live but missing price, distances, or venue** (flagged in step 1's checklist) — a page can resolve fine and still have lost data. Organizer pages strip their price table, distance list and venue block once a race is over or registration closes; the *live* page being reachable proves nothing about what it showed months earlier. For a **past** race with any of these gaps, pull the CDX listing for that exact race page and fetch a snapshot from *during its sale window* (before race day, ideally a few weeks into registration when a price table is most likely present) — not just the closest/first snapshot. Price is a field future features depend on, so don't accept `prices: []` on a past race without having tried this.
 
 ```bash
 mkdir -p .race-research/<slug>/raw
 curl -s "http://archive.org/wayback/available?url=<the race's own domain>" -o .race-research/<slug>/raw/00-wayback-available.json
 python3 -m json.tool .race-research/<slug>/raw/00-wayback-available.json   # closest snapshot, if any
 curl -sL -A 'Mozilla/5.0' "http://web.archive.org/<snapshot url from above>" -o .race-research/<slug>/raw/01-wayback-<year>.html
+
+# (b) per-page check for a specific race missing price/distances/venue:
+curl -s "https://web.archive.org/cdx/search/cdx?url=<the exact race page URL>&output=json" -o .race-research/<slug>/raw/00-cdx-<page>.json
+python3 -m json.tool .race-research/<slug>/raw/00-cdx-<page>.json   # pick a timestamp before race day, inside the likely sale window
+curl -sL -A 'Mozilla/5.0' "http://web.archive.org/web/<timestamp>/<the exact race page URL>" -o .race-research/<slug>/raw/wayback-<page>-<timestamp>.html
 ```
 
-Save the CDX listing too if you use it to pick a snapshot (`curl ... "https://web.archive.org/cdx/search/cdx?url=<domain>&output=json" -o .race-research/<slug>/raw/00-cdx-<domain>.json`) — it's how you'll remember which snapshots you already tried and ruled out, so a later run doesn't re-poll the same dead ends. Same for every snapshot you fetch even if it turns out empty or unhelpful (see the "save everything" rule above) — the file that found nothing is proof you checked that timestamp, not wasted effort.
+Save the CDX listing too if you use it to pick a snapshot — it's how you'll remember which snapshots you already tried and ruled out, so a later run doesn't re-poll the same dead ends. Same for every snapshot you fetch even if it turns out empty or unhelpful (see the "save everything" rule above) — the file that found nothing is proof you checked that timestamp, not wasted effort. If a snapshot recovers a price table, distances, or a venue the live page has since dropped: it's a formal source, `add`-able even on a recipe-covered site (see the Wayback rule above) — don't just note it in a `--reason` string.
 
 Check the site's nav for a history/past-editions/results page and fetch that too, not just the homepage — that's usually where the real edition list lives. Do this early (step 1.5, before the wider web search in step 2) since it can answer most of step 2's questions (how many editions, which dates, edition numbers) in one page, from the best possible source. Also try Wayback on any *other* candidate URL that comes back dead or blocked during step 3 — don't give up on a source just because the live fetch fails.
 
