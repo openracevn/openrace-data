@@ -11,7 +11,26 @@
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": null,
     "city": "Quy Nhơn"
@@ -154,9 +173,33 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "vnexpress-net",
+      "role": "reference",
+      "url": "https://vnexpress.net/moc-thoi-gian-vnexpress-marathon-quy-nhon-2026-5118250.html",
+      "lastCheckedAt": "2026-09-26T14:00:04.895Z",
+      "lastChangedAt": "2026-09-26T14:00:04.895Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Marathon Quy Nhơn 2026",
+          "date": "2026-09-13",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "5km",
+            "10km",
+            "21km"
+          ],
+          "venue": "Quảng trường Nguyễn Tất Thành, đường An Dương Vương, phường Quy Nhơn",
+          "city": "Quy Nhơn",
+          "note": "VnExpress news article states 'Mùa thứ 7 của giải lâu đời nhất hệ thống' (7th season of the system's oldest race), venue and distances for the 2026 edition, filling gaps the official vm.vnexpress.net page didn't state"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-25T05:01:22.419Z",
-  "updatedAt": "2026-09-25T05:01:22.419Z"
+  "updatedAt": "2026-09-26T14:00:04.895Z"
 }
