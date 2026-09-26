@@ -134,6 +134,8 @@ The dry run prints each race after normalization: name, dates, types, courses, a
 
 `--commit` makes one commit with the races and records each snapshot's fingerprint in `state/checks.json`. Scheduled Firecrawl runs then skip these races until their pages change. Main validates, resyncs openrace-api and posts to Discord.
 
+This commit goes straight to `main` via the GitHub API (`scripts/lib/github.ts`), not your local git — `git log` in your checkout won't show it until you `git pull`. Trust the command's own printed commit SHA, not local git state.
+
 Then `rm -rf .agent-read` and go on with the next batch.
 
 ## If something looks wrong afterwards

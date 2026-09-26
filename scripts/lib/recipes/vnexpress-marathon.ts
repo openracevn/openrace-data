@@ -12,6 +12,18 @@
  *   opens on the "Địa điểm" (venue) tab, whose text (`.tab-item.active`) names the
  *   start/finish venue. Read alongside the race page when it exists (not every
  *   edition has it yet).
+ *
+ * Notes from race-research on Nha Trang (2026-09-26), likely true for every city:
+ * - The same `/thong-tin-cuoc-dua` intro paragraph states the edition as prose
+ *   ("tổ chức lần đầu tiên" = 1st, "lần thứ hai" = 2nd, "Lần thứ N" from 3 up) —
+ *   check it for `edition` before assuming a past race doesn't state one.
+ * - A past edition's `.ticket-policy` disappears once its sale period ends — an old
+ *   race with `prices: []` here is not a recoverable gap, the source itself dropped it.
+ * - Wayback's `available` API is unreliable for finding which city-years exist (it
+ *   missed a currently-live 2024 page entirely); discover editions from the live
+ *   homepage's nav links instead, and search news (e.g. "<city> <year> lùi lịch") for
+ *   a year with no page — it may have been postponed into the next year's edition
+ *   rather than skipped (Nha Trang 2021 → became the 2022 race).
  */
 import { normalizeDate } from "../extraction.ts";
 import { absoluteUrl, cleanContent, pageImages, pageLinks, parseHtml } from "../html.ts";
