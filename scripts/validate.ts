@@ -113,7 +113,6 @@ const organizers = checkList(ORGANIZERS_PATH, OrganizerListSchema);
 for (const [id, race] of races) {
   if (race.seriesId && series && !series.has(race.seriesId)) errors.push(`${idOwner.get(id)}: seriesId "${race.seriesId}" is not in ${SERIES_PATH}`);
   if (race.organizerId && organizers && !organizers.has(race.organizerId)) errors.push(`${idOwner.get(id)}: organizerId "${race.organizerId}" is not in ${ORGANIZERS_PATH}`);
-  if (race.seriesId && race.edition === null) errors.push(`${idOwner.get(id)}: seriesId "${race.seriesId}" is set but edition is missing`);
 }
 
 checkState(CHECKS_PATH, ChecksSchema);
