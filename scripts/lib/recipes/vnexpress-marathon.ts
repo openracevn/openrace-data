@@ -8,6 +8,10 @@
  *   × distances, then a group-discount table. No OCR needed.
  * - Every page starts with a menu of all editions; it changes whenever a race is
  *   added, so only the banner and the ticket section are read (and fingerprinted).
+ * - `/<slug>-<year>/thong-tin-cuoc-dua` is a separate page (checked 2026-09-26): it
+ *   opens on the "Địa điểm" (venue) tab, whose text (`.tab-item.active`) names the
+ *   start/finish venue. Read alongside the race page when it exists (not every
+ *   edition has it yet).
  */
 import { normalizeDate } from "../extraction.ts";
 import { absoluteUrl, cleanContent, pageImages, pageLinks, parseHtml } from "../html.ts";
@@ -86,11 +90,29 @@ export const vnexpressMarathonRecipe: Recipe = {
     const name = str(root.querySelector("title")?.textContent);
     const day = content.textContent.match(/NGÀY THI ĐẤU:?\s*(\d{1,2}\/\d{1,2}\/20\d\d)/i)?.[1];
     const city = m?.[1] && cityFromSlug(m[1]);
+
+    const pages = [{ url: ref.url, html: cleanContent(content, ref.url) }];
+    const images = pageImages(content, ref.url);
+    const links = pageLinks(content, ref.url);
+    const infoUrl = `${ref.url}/thong-tin-cuoc-dua`;
+    try {
+      const infoRoot = parseHtml(await ctx.http.text(infoUrl));
+      const venueTab = infoRoot.querySelector(".tab-item.active");
+      if (venueTab) {
+        const infoContent = parseHtml(`<main>${venueTab.outerHTML}</main>`);
+        pages.push({ url: infoUrl, html: cleanContent(infoContent, infoUrl) });
+        images.push(...pageImages(infoContent, infoUrl));
+        links.push(...pageLinks(infoContent, infoUrl));
+      }
+    } catch {
+      // Not every edition has this page yet; the race page alone still has name, date, price.
+    }
+
     return {
       url: ref.url,
-      pages: [{ url: ref.url, html: cleanContent(content, ref.url) }],
-      priceImages: pickPriceImages(pageImages(content, ref.url)),
-      links: externalLinks(pageLinks(content, ref.url), "vm.vnexpress.net"),
+      pages: pages.filter((p) => p.html.length > 0),
+      priceImages: pickPriceImages(images),
+      links: externalLinks(links, "vm.vnexpress.net"),
       facts: { ...(name && { name }), ...(day && { date: normalizeDate(day) }), ...(city && { city }) },
       hints: { series, organizer: ctx.site.organizer },
       slugHint: ref.slugHint ?? (m ? `vnexpress-marathon-${m[1]}` : undefined),
