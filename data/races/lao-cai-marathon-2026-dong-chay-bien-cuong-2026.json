@@ -9,7 +9,7 @@
   "endDate": null,
   "seriesId": null,
   "organizerId": "cong-ty-tnhh-viet-jungle",
-  "organizer": "VIET JUNGLE",
+  "organizer": "Công ty TNHH VIỆT JUNGLE",
   "edition": null,
   "courses": [
     {
@@ -26,7 +26,7 @@
     }
   ],
   "location": {
-    "venue": "TBU",
+    "venue": "Quảng trường Tráng A Pao, phường Lào Cai, tỉnh Lào Cai",
     "city": "Lào Cai"
   },
   "geo": {
@@ -372,11 +372,11 @@
   "overrides": {
     "location": {
       "value": {
-        "venue": "TBU",
+        "venue": "Quảng trường Tráng A Pao, phường Lào Cai, tỉnh Lào Cai",
         "city": "Lào Cai"
       },
-      "reason": "ActiUp venue field is TBU, but event description states it takes place in Lào Cai province",
-      "at": "2026-09-26T12:26:08.760Z"
+      "reason": "ticket.irace.vn structured data + #personal table gives real venue; ActiUp's own venue field is TBU",
+      "at": "2026-09-26T12:47:05.480Z"
     }
   },
   "sources": [
@@ -802,5 +802,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T12:46:14.409Z"
+  "updatedAt": "2026-09-26T12:47:05.480Z"
 }
