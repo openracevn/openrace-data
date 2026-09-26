@@ -108,13 +108,373 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 380000,
+      "from": "2025-03-19",
+      "to": "2025-04-03",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 520000,
+      "from": "2025-04-04",
+      "to": "2025-04-17",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 650000,
+      "from": "2025-04-18",
+      "to": "2025-05-15",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 790000,
+      "from": "2025-05-16",
+      "to": "2025-05-29",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 540000,
+      "from": "2025-03-19",
+      "to": "2025-04-03",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 680000,
+      "from": "2025-04-04",
+      "to": "2025-04-17",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 790000,
+      "from": "2025-04-18",
+      "to": "2025-05-15",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 990000,
+      "from": "2025-05-16",
+      "to": "2025-05-29",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 720000,
+      "from": "2025-03-19",
+      "to": "2025-04-03",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 880000,
+      "from": "2025-04-04",
+      "to": "2025-04-17",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 990000,
+      "from": "2025-04-18",
+      "to": "2025-05-15",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1290000,
+      "from": "2025-05-16",
+      "to": "2025-05-29",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 860000,
+      "from": "2025-03-19",
+      "to": "2025-04-03",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1060000,
+      "from": "2025-04-04",
+      "to": "2025-04-17",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1250000,
+      "from": "2025-04-18",
+      "to": "2025-05-15",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1490000,
+      "from": "2025-05-16",
+      "to": "2025-05-29",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [],
   "links": [],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "prices": {
+      "value": [
+        {
+          "distance": "5km",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 380000,
+          "from": "2025-03-19",
+          "to": "2025-04-03",
+          "inferred": [],
+          "site": "vnexpress-marathon"
+        },
+        {
+          "distance": "5km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 520000,
+          "from": "2025-04-04",
+          "to": "2025-04-17",
+          "inferred": [],
+          "site": "vnexpress-marathon"
+        },
+        {
+          "distance": "5km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 650000,
+          "from": "2025-04-18",
+          "to": "2025-05-15",
+          "inferred": [],
+          "site": "vnexpress-marathon"
+        },
+        {
+          "distance": "5km",
+          "tier": "Late",
+          "kind": "late",
+          "audience": null,
+          "price": 790000,
+          "from": "2025-05-16",
+          "to": "2025-05-29",
+          "inferred": [],
+          "site": "vnexpress-marathon"
+        },
+        {
+          "distance": "10km",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 540000,
+          "from": "2025-03-19",
+          "to": "2025-04-03",
+          "inferred": [],
+          "site": "vnexpress-marathon"
+        },
+        {
+          "distance": "10km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 680000,
+          "from": "2025-04-04",
+          "to": "2025-04-17",
+          "inferred": [],
+          "site": "vnexpress-marathon"
+        },
+        {
+          "distance": "10km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 790000,
+          "from": "2025-04-18",
+          "to": "2025-05-15",
+          "inferred": [],
+          "site": "vnexpress-marathon"
+        },
+        {
+          "distance": "10km",
+          "tier": "Late",
+          "kind": "late",
+          "audience": null,
+          "price": 990000,
+          "from": "2025-05-16",
+          "to": "2025-05-29",
+          "inferred": [],
+          "site": "vnexpress-marathon"
+        },
+        {
+          "distance": "21km",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 720000,
+          "from": "2025-03-19",
+          "to": "2025-04-03",
+          "inferred": [],
+          "site": "vnexpress-marathon"
+        },
+        {
+          "distance": "21km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 880000,
+          "from": "2025-04-04",
+          "to": "2025-04-17",
+          "inferred": [],
+          "site": "vnexpress-marathon"
+        },
+        {
+          "distance": "21km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 990000,
+          "from": "2025-04-18",
+          "to": "2025-05-15",
+          "inferred": [],
+          "site": "vnexpress-marathon"
+        },
+        {
+          "distance": "21km",
+          "tier": "Late",
+          "kind": "late",
+          "audience": null,
+          "price": 1290000,
+          "from": "2025-05-16",
+          "to": "2025-05-29",
+          "inferred": [],
+          "site": "vnexpress-marathon"
+        },
+        {
+          "distance": "42km",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 860000,
+          "from": "2025-03-19",
+          "to": "2025-04-03",
+          "inferred": [],
+          "site": "vnexpress-marathon"
+        },
+        {
+          "distance": "42km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 1060000,
+          "from": "2025-04-04",
+          "to": "2025-04-17",
+          "inferred": [],
+          "site": "vnexpress-marathon"
+        },
+        {
+          "distance": "42km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 1250000,
+          "from": "2025-04-18",
+          "to": "2025-05-15",
+          "inferred": [],
+          "site": "vnexpress-marathon"
+        },
+        {
+          "distance": "42km",
+          "tier": "Late",
+          "kind": "late",
+          "audience": null,
+          "price": 1490000,
+          "from": "2025-05-16",
+          "to": "2025-05-29",
+          "inferred": [],
+          "site": "vnexpress-marathon"
+        }
+      ],
+      "reason": "Wayback snapshot 20250530221043 of vm.vnexpress.net/quy-nhon-2025 (live page's .ticket-policy is gone; this snapshot from before the race still has it); Super Early Bird tier matches prices reported in bvhttdl.gov.vn's 2025-03-20 article",
+      "at": "2026-09-26T14:10:04.642Z"
+    }
+  },
   "sources": [
     {
       "site": "vnexpress-marathon",
@@ -170,5 +530,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-26T13:58:41.473Z",
-  "updatedAt": "2026-09-26T13:58:41.473Z"
+  "updatedAt": "2026-09-26T14:10:04.642Z"
 }
