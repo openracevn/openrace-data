@@ -13357,6 +13357,102 @@
     "query": "Yên Bái, Việt Nam",
     "at": "2026-09-24T06:47:45.711Z"
   },
+  "nghe an | ": {
+    "geo": {
+      "lat": 19.1976001,
+      "lng": 105.060676,
+      "source": "nominatim",
+      "precision": "province",
+      "current": {
+        "province": "40",
+        "ward": null
+      },
+      "legacy": null,
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 953.2,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "ha-noi": {
+          "km": 219.7,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "da-nang": {
+          "km": 483.9,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 891.3,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "da-lat": {
+          "km": 884.4,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "can-tho": {
+          "km": 1021.9,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 249.9,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "hue": {
+          "km": 405.1,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 1008,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 748.5,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 792.8,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 371.2,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "ha-long": {
+          "km": 287.3,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        }
+      }
+    },
+    "query": "Nghệ An",
+    "at": "2026-09-26T05:36:57.748Z"
+  },
   "nha hat do thanh pho nha trang | ": {
     "geo": {
       "lat": 12.2388,
