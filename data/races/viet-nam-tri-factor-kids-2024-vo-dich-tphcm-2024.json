@@ -3,7 +3,7 @@
   "slug": "viet-nam-tri-factor-kids-2024-vo-dich-tphcm",
   "name": "VIET NAM TRI FACTOR KIDS x GIẢI VÔ ĐỊCH TP HỒ CHÍ MINH MỞ RỘNG 2024",
   "types": [
-    "other"
+    "triathlon"
   ],
   "date": "2024-10-19",
   "endDate": "2024-10-20",
@@ -39,7 +39,15 @@
     }
   ],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "types": {
+      "value": [
+        "triathlon"
+      ],
+      "reason": "inferred: same Tri Factor series/organizer as the confirmed triathlon edition (viet-nam-tri-factor-hcmc-triathlon-championship-2025), kids edition; no source states an explicit type",
+      "at": "2026-09-26T13:31:08.468Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -77,5 +85,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-09-26T13:31:08.468Z"
 }
