@@ -1,0 +1,568 @@
+{
+  "id": "90146658-3052-4fb5-8831-a3967334a875",
+  "slug": "vnexpress-marathon-quy-nhon-5",
+  "name": "VnExpress Marathon Sparkling Quy Nhon 2023",
+  "types": [
+    "road_run"
+  ],
+  "date": "2023-06-11",
+  "endDate": null,
+  "seriesId": "vnexpress-marathon-quy-nhon",
+  "organizerId": "vnexpress",
+  "organizer": "VnExpress",
+  "edition": 4,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": null,
+    "city": "Quy Nhơn"
+  },
+  "geo": {
+    "lat": 13.7549672,
+    "lng": 109.1767596,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "52",
+      "ward": null
+    },
+    "legacy": null,
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 427.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 882.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 276,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 168.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 216.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 554.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 831.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 346,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 442.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 5.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": true
+      },
+      "buon-ma-thuot": {
+        "km": 172.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1108,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 830.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 390000,
+      "from": "2022-08-15",
+      "to": "2022-08-25",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 490000,
+      "from": "2022-08-26",
+      "to": "2022-10-23",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 590000,
+      "from": "2022-10-24",
+      "to": "2023-04-09",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 720000,
+      "from": "2023-04-10",
+      "to": "2023-05-24",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "5km",
+      "tier": "Super Late",
+      "kind": "late",
+      "audience": null,
+      "price": 720000,
+      "from": "2023-05-25",
+      "to": "2023-06-05",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 620000,
+      "from": "2022-08-15",
+      "to": "2022-08-25",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 760000,
+      "from": "2022-08-26",
+      "to": "2022-10-23",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 920000,
+      "from": "2022-10-24",
+      "to": "2023-04-09",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1100000,
+      "from": "2023-04-10",
+      "to": "2023-05-24",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1150000,
+      "from": "2023-05-25",
+      "to": "2023-06-05",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 750000,
+      "from": "2022-08-15",
+      "to": "2022-08-25",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 920000,
+      "from": "2022-08-26",
+      "to": "2022-10-23",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1100000,
+      "from": "2022-10-24",
+      "to": "2023-04-09",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1300000,
+      "from": "2023-04-10",
+      "to": "2023-05-24",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1375000,
+      "from": "2023-05-25",
+      "to": "2023-06-05",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 890000,
+      "from": "2022-08-15",
+      "to": "2022-08-25",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1090000,
+      "from": "2022-08-26",
+      "to": "2022-10-23",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1300000,
+      "from": "2022-10-24",
+      "to": "2023-04-09",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1500000,
+      "from": "2023-04-10",
+      "to": "2023-05-24",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Super Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1590000,
+      "from": "2023-05-25",
+      "to": "2023-06-05",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    }
+  ],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "vnexpress-marathon",
+      "role": "official",
+      "url": "https://vm.vnexpress.net/quy-nhon-2023",
+      "lastCheckedAt": "2026-09-26T13:57:30.128Z",
+      "lastChangedAt": "2026-09-26T13:57:30.128Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Marathon Sparkling Quy Nhon 2023",
+          "date": "2023-06-11",
+          "city": "Quy Nhơn"
+        },
+        "pages": [
+          {
+            "url": "https://vm.vnexpress.net/quy-nhon-2023",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "VnExpress Marathon Sparkling Quy Nhon 2023",
+              "date": "2023-06-11",
+              "city": "Quy Nhơn",
+              "currency": "VND",
+              "registrationStatus": "closed",
+              "distances": [
+                "5 km",
+                "10 km",
+                "21 km",
+                "42 km"
+              ],
+              "prices": [
+                {
+                  "distance": "5 km",
+                  "tier": "Super Early Bird",
+                  "from": "2022-08-15",
+                  "to": "2022-08-25",
+                  "price": 390000
+                },
+                {
+                  "distance": "5 km",
+                  "tier": "Early Bird",
+                  "from": "2022-08-26",
+                  "to": "2022-10-23",
+                  "price": 490000
+                },
+                {
+                  "distance": "5 km",
+                  "tier": "Regular",
+                  "from": "2022-10-24",
+                  "to": "2023-04-09",
+                  "price": 590000
+                },
+                {
+                  "distance": "5 km",
+                  "tier": "Late",
+                  "from": "2023-04-10",
+                  "to": "2023-05-24",
+                  "price": 720000
+                },
+                {
+                  "distance": "5 km",
+                  "tier": "Super Late",
+                  "from": "2023-05-25",
+                  "to": "2023-06-05",
+                  "price": 720000
+                },
+                {
+                  "distance": "10 km",
+                  "tier": "Super Early Bird",
+                  "from": "2022-08-15",
+                  "to": "2022-08-25",
+                  "price": 620000
+                },
+                {
+                  "distance": "10 km",
+                  "tier": "Early Bird",
+                  "from": "2022-08-26",
+                  "to": "2022-10-23",
+                  "price": 760000
+                },
+                {
+                  "distance": "10 km",
+                  "tier": "Regular",
+                  "from": "2022-10-24",
+                  "to": "2023-04-09",
+                  "price": 920000
+                },
+                {
+                  "distance": "10 km",
+                  "tier": "Late",
+                  "from": "2023-04-10",
+                  "to": "2023-05-24",
+                  "price": 1100000
+                },
+                {
+                  "distance": "10 km",
+                  "tier": "Super Late",
+                  "from": "2023-05-25",
+                  "to": "2023-06-05",
+                  "price": 1150000
+                },
+                {
+                  "distance": "21 km",
+                  "tier": "Super Early Bird",
+                  "from": "2022-08-15",
+                  "to": "2022-08-25",
+                  "price": 750000
+                },
+                {
+                  "distance": "21 km",
+                  "tier": "Early Bird",
+                  "from": "2022-08-26",
+                  "to": "2022-10-23",
+                  "price": 920000
+                },
+                {
+                  "distance": "21 km",
+                  "tier": "Regular",
+                  "from": "2022-10-24",
+                  "to": "2023-04-09",
+                  "price": 1100000
+                },
+                {
+                  "distance": "21 km",
+                  "tier": "Late",
+                  "from": "2023-04-10",
+                  "to": "2023-05-24",
+                  "price": 1300000
+                },
+                {
+                  "distance": "21 km",
+                  "tier": "Super Late",
+                  "from": "2023-05-25",
+                  "to": "2023-06-05",
+                  "price": 1375000
+                },
+                {
+                  "distance": "42 km",
+                  "tier": "Super Early Bird",
+                  "from": "2022-08-15",
+                  "to": "2022-08-25",
+                  "price": 890000
+                },
+                {
+                  "distance": "42 km",
+                  "tier": "Early Bird",
+                  "from": "2022-08-26",
+                  "to": "2022-10-23",
+                  "price": 1090000
+                },
+                {
+                  "distance": "42 km",
+                  "tier": "Regular",
+                  "from": "2022-10-24",
+                  "to": "2023-04-09",
+                  "price": 1300000
+                },
+                {
+                  "distance": "42 km",
+                  "tier": "Late",
+                  "from": "2023-04-10",
+                  "to": "2023-05-24",
+                  "price": 1500000
+                },
+                {
+                  "distance": "42 km",
+                  "tier": "Super Late",
+                  "from": "2023-05-25",
+                  "to": "2023-06-05",
+                  "price": 1590000
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://vm.vnexpress.net/quy-nhon-2023/thong-tin-cuoc-dua",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "edition": 4
+            }
+          }
+        ],
+        "links": [],
+        "series": {
+          "id": "vnexpress-marathon-quy-nhon",
+          "name": "VnExpress Marathon Quy Nhơn"
+        },
+        "organizer": {
+          "id": "vnexpress",
+          "name": "VnExpress",
+          "website": "https://vnexpress.net/"
+        },
+        "readBy": "agent"
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-26T13:57:30.128Z",
+  "updatedAt": "2026-09-26T13:57:30.128Z"
+}
