@@ -133,7 +133,60 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 668000,
+      "from": null,
+      "to": "2026-10-18",
+      "inferred": [
+        "to"
+      ],
+      "site": "vpbank-hanoi-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 988000,
+      "from": null,
+      "to": "2026-10-18",
+      "inferred": [
+        "to"
+      ],
+      "site": "vpbank-hanoi-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 1268000,
+      "from": null,
+      "to": "2026-10-18",
+      "inferred": [
+        "to"
+      ],
+      "site": "vpbank-hanoi-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 1668000,
+      "from": null,
+      "to": "2026-10-18",
+      "inferred": [
+        "to"
+      ],
+      "site": "vpbank-hanoi-marathon"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -201,9 +254,57 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "vpbank-hanoi-marathon",
+      "role": "reference",
+      "url": "https://vpbankmarathon.com/quy-dinh",
+      "lastCheckedAt": "2026-09-26T06:29:12.475Z",
+      "lastChangedAt": "2026-09-26T06:29:12.475Z",
+      "extracted": {
+        "facts": {
+          "name": "VPBank Hanoi International Marathon 2026",
+          "date": "2026-10-18",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "venue": "Thành phố Hà Nội",
+          "organizer": "VPBank",
+          "registrationStatus": "closed",
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Standard",
+              "price": 668000
+            },
+            {
+              "distance": "10km",
+              "tier": "Standard",
+              "price": 988000
+            },
+            {
+              "distance": "21km",
+              "tier": "Standard",
+              "price": 1268000
+            },
+            {
+              "distance": "42km",
+              "tier": "Standard",
+              "price": 1668000
+            }
+          ],
+          "note": "Official race site vpbankmarathon.com/quy-dinh lists final (Standard) per-distance BIB prices; no dates printed for this tier"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T04:03:37.715Z"
+  "updatedAt": "2026-09-26T06:29:12.475Z"
 }
