@@ -27,16 +27,6 @@ export type Reconciled = { fields: CanonicalRace; confidence: Race["confidence"]
 // Facts that should be the same everywhere come from the race's own site first.
 const ROLE_RANK: Record<SourceRole, number> = { official: 0, seller: 1, reference: 2 };
 
-// Within the same role, some sellers give more specific facts than others:
-// ticket.irace.vn's own event page beats irace.vn's blog-style write-up, and both
-// beat ActiUp, whose venue/organizer fields are frequently left "TBU" by organizers.
-// Sites not listed here keep their original (insertion) order, between irace and ActiUp.
-function siteRank(source: RaceSource): number {
-  if (source.site === "irace") return source.url.includes("ticket.irace.vn") ? 0 : 1;
-  if (source.site === "actiup") return 3;
-  return 2;
-}
-
 /**
  * Derive a race's fields from all its sources.
  * - name, date, courses, location, ...: the first source that states them, official sites first.
@@ -47,7 +37,7 @@ function siteRank(source: RaceSource): number {
  * race day), conflicting (they disagree on race day; see flags).
  */
 export function reconcile(sources: readonly RaceSource[], config: SitesConfig): Reconciled | { error: string } {
-  const ranked = [...sources].sort((a, b) => ROLE_RANK[a.role] - ROLE_RANK[b.role] || siteRank(a) - siteRank(b));
+  const ranked = [...sources].sort((a, b) => ROLE_RANK[a.role] - ROLE_RANK[b.role]);
   const usable: { source: RaceSource; facts: SourceFacts }[] = [];
   const reasons: string[] = [];
   for (const source of ranked) {
