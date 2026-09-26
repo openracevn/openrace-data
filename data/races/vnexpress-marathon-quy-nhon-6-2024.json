@@ -1,0 +1,174 @@
+{
+  "id": "81594924-472a-4d05-a9fc-593b1422e632",
+  "slug": "vnexpress-marathon-quy-nhon-6",
+  "name": "VnExpress Marathon Quy Nhon 2024",
+  "types": [
+    "road_run"
+  ],
+  "date": "2024-06-23",
+  "endDate": null,
+  "seriesId": "vnexpress-marathon-quy-nhon",
+  "organizerId": "vnexpress",
+  "organizer": "VnExpress",
+  "edition": 5,
+  "courses": [],
+  "location": {
+    "venue": null,
+    "city": "Quy Nhơn"
+  },
+  "geo": {
+    "lat": 13.7549672,
+    "lng": 109.1767596,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "52",
+      "ward": null
+    },
+    "legacy": null,
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 427.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 882.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 276,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 168.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 216.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 554.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 831.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 346,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 442.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 5.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": true
+      },
+      "buon-ma-thuot": {
+        "km": 172.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1108,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 830.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "vnexpress-marathon",
+      "role": "official",
+      "url": "https://vm.vnexpress.net/quy-nhon-2024",
+      "lastCheckedAt": "2026-09-26T13:58:07.150Z",
+      "lastChangedAt": "2026-09-26T13:58:07.150Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Marathon Quy Nhon 2024",
+          "date": "2024-06-23",
+          "city": "Quy Nhơn"
+        },
+        "pages": [
+          {
+            "url": "https://vm.vnexpress.net/quy-nhon-2024",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "VnExpress Marathon Quy Nhon 2024",
+              "date": "2024-06-23",
+              "city": "Quy Nhơn",
+              "registrationStatus": "closed",
+              "prices": []
+            }
+          },
+          {
+            "url": "https://vm.vnexpress.net/quy-nhon-2024/thong-tin-cuoc-dua",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "edition": 5
+            }
+          }
+        ],
+        "links": [],
+        "series": {
+          "id": "vnexpress-marathon-quy-nhon",
+          "name": "VnExpress Marathon Quy Nhơn"
+        },
+        "organizer": {
+          "id": "vnexpress",
+          "name": "VnExpress",
+          "website": "https://vnexpress.net/"
+        },
+        "readBy": "agent"
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-26T13:58:07.150Z",
+  "updatedAt": "2026-09-26T13:58:07.150Z"
+}
