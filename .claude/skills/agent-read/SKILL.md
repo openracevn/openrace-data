@@ -136,7 +136,14 @@ The dry run prints each race after normalization: name, dates, types, courses, a
 
 This commit goes straight to `main` via the GitHub API (`scripts/lib/github.ts`), not your local git — `git log` in your checkout won't show it until you `git pull`. Trust the command's own printed commit SHA, not local git state.
 
-Then `rm -rf .agent-read` and go on with the next batch.
+**Never `rm -rf .agent-read`.** It's the only copy of the raw pages and price images this batch actually read; the committed race JSON keeps only the extracted facts, not the source. Archive it instead, every time, without asking (both directories are gitignored, so this never touches what's committed or pushed):
+
+```bash
+mkdir -p .agent-read-archive
+mv .agent-read .agent-read-archive/<YYYY-MM-DD>-<slug-or-topic>
+```
+
+Then go on with the next batch.
 
 ## If something looks wrong afterwards
 

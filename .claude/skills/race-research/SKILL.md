@@ -31,6 +31,11 @@ Background: `.claude/docs/roadmap.md` (trust principles — every fact traces to
 - Never hand-edit files in `data/`. Everything goes through `npm run edit -- add|set`.
 - **Never reuse the same URL as the primary `--url` for two different editions.** `edit -- add` joins by "same page, same edition" first — a second `add` with a URL already used for another race **overwrites that race's fields** instead of creating a new one (found the hard way on Andros: a page that recaps an older edition in passing must not be cited as that edition's own source; only cite a page as the source for the edition it's actually, primarily about).
 - **Don't infer an edition number from position or sequence** ("this is between Vol 6 and Vol 8, so it must be Vol 7") — that's the same guessing the rule above already forbids, just dressed as arithmetic. Only set `edition` when a source's own text states the number. If a wrong inferred edition already got written into a race's own `add` (not as an override), `unset` won't remove it — it only clears overrides. Correct it with `npm run edit -- set <race> edition null --reason "..."` (an explicit override to null).
+- **Save everything you fetch or search, not just what ends up cited.** This research costs real tokens and (when Firecrawl is involved) real money — a dead end is still paid for, so don't let it vanish. Concretely, before you read or decide anything:
+  - **Every `curl`** (a candidate source, a Wayback snapshot, a CDX listing) writes its raw output to a file with `-o` first — never pipe straight into `python3`/`grep` for a look and move on. This includes ones that turn out empty, unhelpful, or superseded by a better snapshot (a 2022 Wayback snapshot that found nothing new is exactly as save-worthy as one that found the price table — it's proof you checked, and the next run shouldn't have to re-check it blind).
+  - **Every `WebSearch` call** appends its query and full returned result (titles, URLs, snippets) to `.race-research/<slug>/search-log.md` — a WebSearch result is not a file, so if you don't write it down it only exists in this conversation and is gone once the session ends or compacts. Do this right after the call, before judging whether the hit was useful.
+  - **If a WebSearch snippet becomes load-bearing for a written fact, still `curl` the actual page** and save it — a snippet is secondhand and can be wrong or stale; don't cite through a paraphrase you never fetched. (Found the hard way on VM Quy Nhơn 2026-09-26: a 2025 price corroboration was written up from a WebSearch summary of bvhttdl.gov.vn's article, and the article itself was never actually fetched or saved — the fact is probably right, but there's no raw copy to check it against.)
+  - This applies even to things that don't make it into `data/races/*.json` at all — a race candidate you researched and ruled out, a source that turned out unusable, a search that came back empty. All of it goes in the archive at cleanup (see step 6); none of it gets thrown away.
 - **Don't spawn parallel Claude subagents to research multiple editions at once.** A subagent here runs on Claude by default (not opencode's free models), so it raises your usage rather than saving it, and it reintroduces exactly the URL-collision and cross-edition consistency risks above — one editon's page can be the source of a fact about another, which only a single reconciling pass catches. What does parallelize for free: run **discovery and fetching as batched tool calls in one turn** (already fast, no extra cost), and for a large batch of sources, run a **few parallel opencode extraction workers** on separate output files (same split as `opencode-read`'s worker A/B) — that's real, free wall-clock savings. Commits stay sequential and Claude-only regardless of batch size.
 
 ## 1. See what we already have, and audit every existing edition (free)
@@ -80,9 +85,13 @@ Only fetch and extract a source yourself (steps 2–5 below) when **no recipe ap
 Do this **even when the live site looks empty or "Coming Soon"** — organizer sites get overwritten every year for the next edition, so a page like "Previous Editions" (with every past date, sometimes an exact edition count) often only survives in an old snapshot, not on the live site. This is usually the single best source available: it's the organizer speaking about its own history, not a third party's guess.
 
 ```bash
-curl -s "http://archive.org/wayback/available?url=<the race's own domain>" | python3 -m json.tool   # closest snapshot, if any
-curl -sL -A 'Mozilla/5.0' "http://web.archive.org/<snapshot url from above>" -o raw.html
+mkdir -p .race-research/<slug>/raw
+curl -s "http://archive.org/wayback/available?url=<the race's own domain>" -o .race-research/<slug>/raw/00-wayback-available.json
+python3 -m json.tool .race-research/<slug>/raw/00-wayback-available.json   # closest snapshot, if any
+curl -sL -A 'Mozilla/5.0' "http://web.archive.org/<snapshot url from above>" -o .race-research/<slug>/raw/01-wayback-<year>.html
 ```
+
+Save the CDX listing too if you use it to pick a snapshot (`curl ... "https://web.archive.org/cdx/search/cdx?url=<domain>&output=json" -o .race-research/<slug>/raw/00-cdx-<domain>.json`) — it's how you'll remember which snapshots you already tried and ruled out, so a later run doesn't re-poll the same dead ends. Same for every snapshot you fetch even if it turns out empty or unhelpful (see the "save everything" rule above) — the file that found nothing is proof you checked that timestamp, not wasted effort.
 
 Check the site's nav for a history/past-editions/results page and fetch that too, not just the homepage — that's usually where the real edition list lives. Do this early (step 1.5, before the wider web search in step 2) since it can answer most of step 2's questions (how many editions, which dates, edition numbers) in one page, from the best possible source. Also try Wayback on any *other* candidate URL that comes back dead or blocked during step 3 — don't give up on a source just because the live fetch fails.
 
@@ -101,12 +110,14 @@ site:timve365.vn <race name>
 "<race name>" giải chạy
 ```
 
+After **every** `WebSearch` call, append the query and the full returned result (every title, URL and snippet, not just the ones you'll act on) to `.race-research/<slug>/search-log.md` before doing anything else with it — a WebSearch result isn't a file, so this is the only copy that survives past this conversation. A quick heredoc or Write call per search is enough; don't wait until "the useful ones" are sorted out, since the point is not losing the ones that weren't.
+
 For each hit, note: claimed date, claimed edition/vol number, venue, organizer, and whether it's the race's own site, a reseller, or news/blog coverage. Watch for:
 - **A "planned" edition that never happened, or happened later** (Covid postponements are common — Vietnam 2020–2022). Don't count a planned-then-moved date as two editions.
 - **The same edition covered by several pages** (a reseller ticket page and a news recap) — these become multiple `sources[]` entries on the *same* race, not separate races.
 - Conflicting dates or vol numbers across sources — keep both, this becomes a `flags` entry and `confidence: "conflicting"`.
 
-Write down what you found before fetching anything, e.g. in a scratch note: one line per candidate edition with its best date guess and the URLs that support it.
+Write down what you found before fetching anything, e.g. in a scratch note: one line per candidate edition with its best date guess and the URLs that support it. **If a fact you're about to write down came from a search snippet and not a page you've actually fetched, fetch and save that page now** — a snippet is secondhand and can be stale or wrong; don't let a written fact's only backing be a paraphrase that was never checked against the source.
 
 ## 3. Fetch each source (Claude, `curl` — not WebFetch) then delegate extraction
 
@@ -170,10 +181,13 @@ Drop `--dry-run` and prefix `GITHUB_TOKEN=$(gh auth token)` once the dry run loo
 
 ## 6. Clean up and report
 
+**Never `rm -rf .race-research/<slug>`.** This folder (`raw/`, `search-log.md`, worker logs) is the only copy of everything you fetched or searched, including the dead ends that never made it into `sources[]` — deleting it after commit throws away paid-for research the committed JSON doesn't retain (this happened for real on VM Nha Trang, 2026-09-26; the user had to ask what was kept before it came up, and by then it was already gone). Archive instead, every time, without asking:
+
 ```bash
-rm -rf .race-research/<slug>
+mkdir -p .agent-read-archive
+mv .race-research/<slug> .agent-read-archive/<YYYY-MM-DD>-<slug>
 ```
 
-(gitignored, but same as agent-read: keep the folder around if the user wants an audit trail beyond the committed `sources[]`, otherwise remove it.)
+Both directories are gitignored (`.race-research/`, `.agent-read-archive/`), so this never touches what gets committed or pushed — it's purely local, and purely for a human (or a later run) to go back and check your work against the raw pages. Only skip the archive if the user explicitly says to discard a batch.
 
 Tell the user: how many editions found vs. tracked before, which are still gaps (unfindable — say so plainly, don't force a guess), what was delegated to opencode vs. done by hand, what was handed off to `agent-read`/`check-race` (and whether that handoff was actually run, or is left for the user to trigger), and anything flagged as conflicting.
