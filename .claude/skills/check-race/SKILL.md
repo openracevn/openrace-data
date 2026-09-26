@@ -31,7 +31,7 @@ Read `data/races/<file>`. Each `sources[]` entry has the site, its role (`offici
 - **Other sites:** `curl -sL -A 'Mozilla/5.0' <url>`. To see what the recipe would read: `npm run check -- --race <url> --free --dry-run`.
 - **Price images:** download one and look at it (Read the file). Compare every tier: distance, label, audience (resident / non-resident), price, dates.
 
-Report the differences field by field: ours vs the source.
+Report the differences field by field: ours vs the source. When sources disagree and neither is `official`, trust `ticket.irace.vn` over `irace.vn`'s write-up over ActiUp — ActiUp's own fields are often left as placeholder text (`TBU`, empty) by organizers, and irace.vn's blog-style page is often thinner than ticket.irace.vn's own event fields.
 
 **A field (venue, city, price, ...) is missing, TBU or null on the known source — this is a hard stop, not a judgment call.** Do not write an override or infer the value from surrounding text (e.g. "the description names a province, so set city to that") until you've worked this checklist (plan 010, free unless noted). Seeing `TBU` in ActiUp's own `place` field is not confirmation the value is unknown everywhere — it only means ActiUp doesn't have it:
 1. A subpage on the *same* site (e.g. `/thong-tin-cuoc-dua` — an info/price tab the recipe may not read; worth a recipe fix if found).
