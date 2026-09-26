@@ -3,7 +3,7 @@
   "slug": "andros-the-lakes-race-2023",
   "name": "Giải chạy Andros The Lakes Race 2023",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2023-06-04",
   "endDate": null,
@@ -58,6 +58,13 @@
       "value": 5,
       "reason": "race-research: chay365.com's recap article states this is the 5th edition ('lần thứ 5 giải được tổ chức'); the article itself gives no exact race day (only its publish date 04/06/2023), so it wasn't added as a formal source, but the edition number and Dĩ An/Bình Dương naming are corroborated there (https://chay365.com/andros-the-lakes-race-mot-hoat-dong-nhan-van/).",
       "at": "2026-09-25T06:50:54.600Z"
+    },
+    "types": {
+      "value": [
+        "road_run"
+      ],
+      "reason": "inferred from race name/price-tier text (giải chạy); no source states an explicit type",
+      "at": "2026-09-26T13:11:14.080Z"
     }
   },
   "sources": [
@@ -100,5 +107,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T06:49:26.358Z",
-  "updatedAt": "2026-09-26T06:00:49.115Z"
+  "updatedAt": "2026-09-26T13:11:14.080Z"
 }
