@@ -33,7 +33,7 @@
   ],
   "location": {
     "venue": "TBU",
-    "city": null
+    "city": "Lào Cai"
   },
   "geo": null,
   "prices": [
@@ -186,7 +186,16 @@
     }
   ],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "location": {
+      "value": {
+        "venue": "TBU",
+        "city": "Lào Cai"
+      },
+      "reason": "ActiUp venue field is TBU, but event description states it takes place in Lào Cai province",
+      "at": "2026-09-26T12:26:08.760Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -343,5 +352,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T04:03:37.715Z"
+  "updatedAt": "2026-09-26T12:26:08.760Z"
 }
