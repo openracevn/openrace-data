@@ -354,6 +354,9 @@ export const SeriesSchema = EntitySchema.extend({
   // belong to one race. Kept honest the same way a race's flags are: state
   // what's confirmed and what isn't, never fill a gap with a guess.
   description: z.string().max(2000).nullable(),
+  // The series' real-world total edition count, as researched (not derived from
+  // how many race rows happen to exist on record). Null until researched.
+  statedEditionCount: z.number().int().min(1).max(200).nullable().default(null),
 });
 export const SeriesListSchema = z.array(SeriesSchema);
 export const OrganizerListSchema = z.array(EntitySchema);
