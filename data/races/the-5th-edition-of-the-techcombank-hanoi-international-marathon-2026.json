@@ -145,16 +145,153 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "42km",
+      "tier": "TIER 3",
+      "kind": "other",
+      "audience": null,
+      "price": 1300000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "TIER 3",
+      "kind": "other",
+      "audience": null,
+      "price": 1130000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "TIER 3",
+      "kind": "other",
+      "audience": null,
+      "price": 960000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "TIER 3",
+      "kind": "other",
+      "audience": null,
+      "price": 700000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "3km",
+      "tier": "KIDSRUN TIER 3",
+      "kind": "other",
+      "audience": null,
+      "price": 510000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "KIDSRUN TIER 3",
+      "kind": "other",
+      "audience": null,
+      "price": 510000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
     {
       "site": "actiup",
       "url": "https://actiup.net/vi/event/the-5th-edition-of-the-techcombank-hanoi-international-marathon"
+    },
+    {
+      "site": "irace",
+      "url": "https://irace.vn/su-kien/techcombank-ha-noi-marathon"
     }
   ],
-  "links": [],
+  "links": [
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://google.com/calendar/event",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/bo-dung-cu-hit-dat-va-tap-luyen-the-thao-chuyen-nghiep-livefit",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/sua-tang-can-labrada-muscle-mass-gainer",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/sua-tang-suc-manh-applied-nutrition-abe-pre-workout-315g",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/sua-uong-truoc-khi-tap-elite-labs-usa-pre-cut-white-raspberry",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/vien-uong-dot-mo-khong-chat-kich-thich-nutrex-lipo-6-black-stim-free-60-vien",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/vien-uong-giam-mo-cat-net-ultra-ripped-capsules-ephedra-free-90-vien",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://v2.sunriseevents.com.ph/",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    }
+  ],
   "flags": [],
   "overrides": {},
   "sources": [
@@ -344,7 +481,7 @@
       }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T04:03:37.715Z"
+  "updatedAt": "2026-09-26T06:00:49.115Z"
 }
