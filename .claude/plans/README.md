@@ -15,3 +15,5 @@ Work plans for a session or an agent, one file each: `NNN-YYYY-MM-DD-topic.md`.
 | 005 | [MCP server](005-2026-09-24-mcp-server.md) (new repo openrace-mcp, small API changes) | Written; next session |
 | 006 | [One source of truth for race type values](006-2026-09-25-shared-race-type-values.md) (across openrace-data, openrace-api, openrace-web) | Written; not started |
 | 007 | [North/Central/South region as a filterable field](007-2026-09-25-region-filter.md) (across openrace-data, openrace-api, openrace-mcp, openrace-web) | openrace-data steps done: `region` on `data/admin-units.json` provinces and `data/places.json` hubs; openrace-api/mcp/web still to do |
+| 008 | [Upcoming races missing price/distances/location](008-2026-09-26-upcoming-races-missing-data.md) (opencode workers, supervised) | List built (21 races); not started |
+| 009 | [Prefer ticket.irace.vn as a price source](009-2026-09-26-prefer-irace-price-source.md) | Written; not started |
