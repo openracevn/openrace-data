@@ -10,8 +10,33 @@
   "seriesId": "vnexpress-marathon-ho-chi-minh",
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
-  "edition": null,
-  "courses": [],
+  "edition": 4,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": null,
     "city": "Hồ Chí Minh"
@@ -108,7 +133,184 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "SEB",
+      "kind": "super_early",
+      "audience": null,
+      "price": 480000,
+      "from": "2025-12-10",
+      "to": "2025-12-30",
+      "inferred": [],
+      "site": "vnexpress-net"
+    },
+    {
+      "distance": "5km",
+      "tier": "EB",
+      "kind": "early",
+      "audience": null,
+      "price": 560000,
+      "from": "2025-12-30",
+      "to": "2026-01-20",
+      "inferred": [],
+      "site": "vnexpress-net"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 690000,
+      "from": "2026-01-21",
+      "to": "2026-02-12",
+      "inferred": [],
+      "site": "vnexpress-net"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 890000,
+      "from": "2026-02-13",
+      "to": "2026-03-05",
+      "inferred": [],
+      "site": "vnexpress-net"
+    },
+    {
+      "distance": "10km",
+      "tier": "SEB",
+      "kind": "super_early",
+      "audience": null,
+      "price": 680000,
+      "from": "2025-12-10",
+      "to": "2025-12-30",
+      "inferred": [],
+      "site": "vnexpress-net"
+    },
+    {
+      "distance": "10km",
+      "tier": "EB",
+      "kind": "early",
+      "audience": null,
+      "price": 790000,
+      "from": "2025-12-30",
+      "to": "2026-01-20",
+      "inferred": [],
+      "site": "vnexpress-net"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 990000,
+      "from": "2026-01-21",
+      "to": "2026-02-12",
+      "inferred": [],
+      "site": "vnexpress-net"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1200000,
+      "from": "2026-02-13",
+      "to": "2026-03-05",
+      "inferred": [],
+      "site": "vnexpress-net"
+    },
+    {
+      "distance": "21km",
+      "tier": "SEB",
+      "kind": "super_early",
+      "audience": null,
+      "price": 890000,
+      "from": "2025-12-10",
+      "to": "2025-12-30",
+      "inferred": [],
+      "site": "vnexpress-net"
+    },
+    {
+      "distance": "21km",
+      "tier": "EB",
+      "kind": "early",
+      "audience": null,
+      "price": 1050000,
+      "from": "2025-12-30",
+      "to": "2026-01-20",
+      "inferred": [],
+      "site": "vnexpress-net"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1250000,
+      "from": "2026-01-21",
+      "to": "2026-02-12",
+      "inferred": [],
+      "site": "vnexpress-net"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1500000,
+      "from": "2026-02-13",
+      "to": "2026-03-05",
+      "inferred": [],
+      "site": "vnexpress-net"
+    },
+    {
+      "distance": "42km",
+      "tier": "SEB",
+      "kind": "super_early",
+      "audience": null,
+      "price": 990000,
+      "from": "2025-12-10",
+      "to": "2025-12-30",
+      "inferred": [],
+      "site": "vnexpress-net"
+    },
+    {
+      "distance": "42km",
+      "tier": "EB",
+      "kind": "early",
+      "audience": null,
+      "price": 1150000,
+      "from": "2025-12-30",
+      "to": "2026-01-20",
+      "inferred": [],
+      "site": "vnexpress-net"
+    },
+    {
+      "distance": "42km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1450000,
+      "from": "2026-01-21",
+      "to": "2026-02-12",
+      "inferred": [],
+      "site": "vnexpress-net"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1800000,
+      "from": "2026-02-13",
+      "to": "2026-03-05",
+      "inferred": [],
+      "site": "vnexpress-net"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": null,
   "registrations": [],
@@ -155,9 +357,147 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "vnexpress-net",
+      "role": "reference",
+      "url": "https://vnexpress.net/vnexpress-marathon-ho-chi-minh-city-midnight-2026-mo-dang-ky-4992142.html",
+      "lastCheckedAt": "2026-09-26T14:43:42.720Z",
+      "lastChangedAt": "2026-09-26T14:43:42.720Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Marathon Ho Chi Minh City Midnight 2026",
+          "date": "2026-03-22",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "edition": 4,
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "SEB",
+              "from": "10/12",
+              "to": "30/12",
+              "price": 480000
+            },
+            {
+              "distance": "5km",
+              "tier": "EB",
+              "from": "30/12",
+              "to": "2026-01-20",
+              "price": 560000
+            },
+            {
+              "distance": "5km",
+              "tier": "Regular",
+              "from": "21/1",
+              "to": "2026-02-12",
+              "price": 690000
+            },
+            {
+              "distance": "5km",
+              "tier": "Late",
+              "from": "13/2",
+              "to": "2026-03-05",
+              "price": 890000
+            },
+            {
+              "distance": "10km",
+              "tier": "SEB",
+              "from": "10/12",
+              "to": "30/12",
+              "price": 680000
+            },
+            {
+              "distance": "10km",
+              "tier": "EB",
+              "from": "30/12",
+              "to": "2026-01-20",
+              "price": 790000
+            },
+            {
+              "distance": "10km",
+              "tier": "Regular",
+              "from": "21/1",
+              "to": "2026-02-12",
+              "price": 990000
+            },
+            {
+              "distance": "10km",
+              "tier": "Late",
+              "from": "13/2",
+              "to": "2026-03-05",
+              "price": 1200000
+            },
+            {
+              "distance": "21km",
+              "tier": "SEB",
+              "from": "10/12",
+              "to": "30/12",
+              "price": 890000
+            },
+            {
+              "distance": "21km",
+              "tier": "EB",
+              "from": "30/12",
+              "to": "2026-01-20",
+              "price": 1050000
+            },
+            {
+              "distance": "21km",
+              "tier": "Regular",
+              "from": "21/1",
+              "to": "2026-02-12",
+              "price": 1250000
+            },
+            {
+              "distance": "21km",
+              "tier": "Late",
+              "from": "13/2",
+              "to": "2026-03-05",
+              "price": 1500000
+            },
+            {
+              "distance": "42km",
+              "tier": "SEB",
+              "from": "10/12",
+              "to": "30/12",
+              "price": 990000
+            },
+            {
+              "distance": "42km",
+              "tier": "EB",
+              "from": "30/12",
+              "to": "2026-01-20",
+              "price": 1150000
+            },
+            {
+              "distance": "42km",
+              "tier": "Regular",
+              "from": "21/1",
+              "to": "2026-02-12",
+              "price": 1450000
+            },
+            {
+              "distance": "42km",
+              "tier": "Late",
+              "from": "13/2",
+              "to": "2026-03-05",
+              "price": 1800000
+            }
+          ],
+          "note": "vnexpress.net news article states edition (mùa thứ tư), distances, and full super-early-bird/early-bird/regular/late price table for the 2026 race, none of which the official vm.vnexpress.net page carries yet"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-25T04:11:49.673Z",
-  "updatedAt": "2026-09-25T06:44:22.797Z"
+  "updatedAt": "2026-09-26T14:43:42.720Z"
 }
