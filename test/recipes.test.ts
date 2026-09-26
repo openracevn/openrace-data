@@ -166,6 +166,44 @@ describe("irace recipe", () => {
     assert.match(html, /340\.000đ/);
     assert.match(html, /920\.000đ/);
   });
+
+  it("reads a race only listed on irace.vn's older su-kien pages, added by hand", async () => {
+    const http = fakeHttp({
+      "https://irace.vn/su-kien/techcombank-ha-noi-marathon/": fixture("irace-su-kien-techcombank-ha-noi-marathon.html"),
+    });
+    const snap = await iraceRecipe.snapshot({ url: "https://irace.vn/su-kien/techcombank-ha-noi-marathon/" }, ctx("irace", http));
+    // location/organizer are arrays on irace.vn, unlike ticket.irace.vn's single object.
+    assert.deepEqual(snap.facts, {
+      name: "Techcombank Hanoi International Marathon 2026",
+      venue: "Hà Nội",
+      organizer: "Sunrise Events Vietnam",
+    });
+    assert.equal(snap.slugHint, "techcombank-ha-noi-marathon");
+    const html = snap.pages[0]!.html;
+    assert.match(html, /1\.300\.000đ/);
+    assert.match(html, /700\.000đ/);
+    // The date, alongside the price table, since it's not in facts (see the ticket.irace.vn test below).
+    assert.match(html, /04\/10\/2026/);
+  });
+
+  it("falls back to a bare price table if irace.vn's .eventon_desc_in container isn't there", async () => {
+    const html = `<!DOCTYPE html><html><body><table><tr><td>5km</td><td>200.000đ</td></tr></table></body></html>`;
+    const http = fakeHttp({ "https://irace.vn/su-kien/some-other-race/": html });
+    const snap = await iraceRecipe.snapshot({ url: "https://irace.vn/su-kien/some-other-race/" }, ctx("irace", http));
+    assert.match(snap.pages[0]!.html, /200\.000đ/);
+  });
+
+  it("keeps a link to the same race's ticket.irace.vn page found on its irace.vn su-kien page", async () => {
+    const http = fakeHttp({
+      "https://irace.vn/su-kien/global-gate-ha-long-esg-marathon/": fixture("irace-su-kien-global-gate-ha-long-esg-marathon.html"),
+    });
+    const snap = await iraceRecipe.snapshot({ url: "https://irace.vn/su-kien/global-gate-ha-long-esg-marathon/" }, ctx("irace", http));
+    assert.ok(snap.links.some((l) => l.url.startsWith("https://ticket.irace.vn/global-gate-ha-long-esg-marathon-2026")));
+    const html = snap.pages[0]!.html;
+    assert.match(html, /Flash Sale/);
+    assert.match(html, /180\.000đ/);
+    assert.match(html, /680\.000đ/);
+  });
 });
 
 describe("default recipe (race sites)", () => {
