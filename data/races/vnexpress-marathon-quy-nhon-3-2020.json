@@ -1,0 +1,424 @@
+{
+  "id": "7ef0425d-0da8-4bad-9d38-c5447ee9e025",
+  "slug": "vnexpress-marathon-quy-nhon-3",
+  "name": "VnExpress Marathon Quy Nhơn 2020",
+  "types": [
+    "road_run"
+  ],
+  "date": "2020-07-26",
+  "endDate": null,
+  "seriesId": "vnexpress-marathon-quy-nhon",
+  "organizerId": "vnexpress",
+  "organizer": "VnExpress",
+  "edition": 2,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": null,
+    "city": "Quy Nhơn"
+  },
+  "geo": {
+    "lat": 13.7549672,
+    "lng": 109.1767596,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "52",
+      "ward": null
+    },
+    "legacy": null,
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 427.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 882.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 276,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 168.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 216.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 554.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 831.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 346,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 442.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 5.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": true
+      },
+      "buon-ma-thuot": {
+        "km": 172.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1108,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 830.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 250000,
+      "from": "2019-11-12",
+      "to": "2019-12-10",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 300000,
+      "from": "2019-12-11",
+      "to": "2020-02-02",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 400000,
+      "from": "2020-02-03",
+      "to": "2020-07-03",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 500000,
+      "from": "2019-11-12",
+      "to": "2019-12-10",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 650000,
+      "from": "2019-12-11",
+      "to": "2020-02-02",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 800000,
+      "from": "2020-02-03",
+      "to": "2020-07-03",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 600000,
+      "from": "2019-11-12",
+      "to": "2019-12-10",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 750000,
+      "from": "2019-12-11",
+      "to": "2020-02-02",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 950000,
+      "from": "2020-02-03",
+      "to": "2020-07-03",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 750000,
+      "from": "2019-11-12",
+      "to": "2019-12-10",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 900000,
+      "from": "2019-12-11",
+      "to": "2020-02-02",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1100000,
+      "from": "2020-02-03",
+      "to": "2020-07-03",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    }
+  ],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "vnexpress-marathon",
+      "role": "official",
+      "url": "https://vm.vnexpress.net/quy-nhon-2020",
+      "lastCheckedAt": "2026-09-26T13:56:16.148Z",
+      "lastChangedAt": "2026-09-26T13:56:16.148Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Marathon Quy Nhơn 2020",
+          "date": "2020-07-26",
+          "city": "Quy Nhơn"
+        },
+        "pages": [
+          {
+            "url": "https://vm.vnexpress.net/quy-nhon-2020",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "VnExpress Marathon Quy Nhơn 2020",
+              "date": "2020-07-26",
+              "city": "Quy Nhơn",
+              "currency": "VND",
+              "registrationStatus": "closed",
+              "distances": [
+                "5 km",
+                "10 km",
+                "21 km",
+                "42 km"
+              ],
+              "prices": [
+                {
+                  "distance": "5 km",
+                  "tier": "Super Early Bird",
+                  "from": "2019-11-12",
+                  "to": "2019-12-10",
+                  "price": 250000
+                },
+                {
+                  "distance": "5 km",
+                  "tier": "Early Bird",
+                  "from": "2019-12-11",
+                  "to": "2020-02-02",
+                  "price": 300000
+                },
+                {
+                  "distance": "5 km",
+                  "tier": "Regular",
+                  "from": "2020-02-03",
+                  "to": "2020-07-03",
+                  "price": 400000
+                },
+                {
+                  "distance": "10 km",
+                  "tier": "Super Early Bird",
+                  "from": "2019-11-12",
+                  "to": "2019-12-10",
+                  "price": 500000
+                },
+                {
+                  "distance": "10 km",
+                  "tier": "Early Bird",
+                  "from": "2019-12-11",
+                  "to": "2020-02-02",
+                  "price": 650000
+                },
+                {
+                  "distance": "10 km",
+                  "tier": "Regular",
+                  "from": "2020-02-03",
+                  "to": "2020-07-03",
+                  "price": 800000
+                },
+                {
+                  "distance": "21 km",
+                  "tier": "Super Early Bird",
+                  "from": "2019-11-12",
+                  "to": "2019-12-10",
+                  "price": 600000
+                },
+                {
+                  "distance": "21 km",
+                  "tier": "Early Bird",
+                  "from": "2019-12-11",
+                  "to": "2020-02-02",
+                  "price": 750000
+                },
+                {
+                  "distance": "21 km",
+                  "tier": "Regular",
+                  "from": "2020-02-03",
+                  "to": "2020-07-03",
+                  "price": 950000
+                },
+                {
+                  "distance": "42 km",
+                  "tier": "Super Early Bird",
+                  "from": "2019-11-12",
+                  "to": "2019-12-10",
+                  "price": 750000
+                },
+                {
+                  "distance": "42 km",
+                  "tier": "Early Bird",
+                  "from": "2019-12-11",
+                  "to": "2020-02-02",
+                  "price": 900000
+                },
+                {
+                  "distance": "42 km",
+                  "tier": "Regular",
+                  "from": "2020-02-03",
+                  "to": "2020-07-03",
+                  "price": 1100000
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://vm.vnexpress.net/quy-nhon-2020/thong-tin-cuoc-dua",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "edition": 2
+            }
+          }
+        ],
+        "links": [],
+        "series": {
+          "id": "vnexpress-marathon-quy-nhon",
+          "name": "VnExpress Marathon Quy Nhơn"
+        },
+        "organizer": {
+          "id": "vnexpress",
+          "name": "VnExpress",
+          "website": "https://vnexpress.net/"
+        },
+        "readBy": "agent"
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-26T13:56:16.148Z",
+  "updatedAt": "2026-09-26T13:56:16.148Z"
+}
