@@ -581,9 +581,29 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "vnexpress-marathon",
+      "role": "reference",
+      "url": "https://web.archive.org/web/20250530221043/https://vm.vnexpress.net/quy-nhon-2025",
+      "lastCheckedAt": "2026-09-26T14:23:52.090Z",
+      "lastChangedAt": "2026-09-26T14:23:52.090Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Marathon Quy Nhon 2025",
+          "date": "2025-06-15",
+          "distances": [
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "note": "Wayback snapshot of the live page before its .ticket-policy was removed; carries the full price table (already recorded as an override) plus distances; corroborates bvhttdl.gov.vn's 2025-03-20 article on the Super Early Bird tier"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-26T13:58:41.473Z",
-  "updatedAt": "2026-09-26T14:12:35.323Z"
+  "updatedAt": "2026-09-26T14:23:52.090Z"
 }
