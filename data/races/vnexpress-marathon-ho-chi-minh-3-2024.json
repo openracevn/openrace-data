@@ -133,7 +133,140 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 759000,
+      "from": "2024-01-02",
+      "to": "2024-01-23",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 899000,
+      "from": "2024-01-24",
+      "to": "2024-02-06",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1099000,
+      "from": "2024-02-07",
+      "to": "2024-02-22",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 999000,
+      "from": "2024-01-02",
+      "to": "2024-01-23",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1199000,
+      "from": "2024-01-24",
+      "to": "2024-02-06",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1399000,
+      "from": "2024-02-07",
+      "to": "2024-02-22",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1199000,
+      "from": "2024-01-02",
+      "to": "2024-01-23",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1399000,
+      "from": "2024-01-24",
+      "to": "2024-02-06",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1699000,
+      "from": "2024-02-07",
+      "to": "2024-02-22",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1399000,
+      "from": "2024-01-02",
+      "to": "2024-01-23",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1699000,
+      "from": "2024-01-24",
+      "to": "2024-02-06",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2099000,
+      "from": "2024-02-07",
+      "to": "2024-02-22",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": null,
   "registrations": [
@@ -399,9 +532,118 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "vnexpress-marathon",
+      "role": "reference",
+      "url": "http://web.archive.org/web/20240121174818/https://vm.vnexpress.net/ho-chi-minh-2024",
+      "lastCheckedAt": "2026-09-26T14:55:38.014Z",
+      "lastChangedAt": "2026-09-26T14:55:38.014Z",
+      "extracted": {
+        "facts": {
+          "name": "VPBank VnExpress Marathon Ho Chi Minh City Midnight 2024",
+          "date": "2024-03-03",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Early Bird",
+              "from": "02/01/2024",
+              "to": "23/01/2024",
+              "price": 759000
+            },
+            {
+              "distance": "5km",
+              "tier": "Regular",
+              "from": "24/01/2024",
+              "to": "06/02/2024",
+              "price": 899000
+            },
+            {
+              "distance": "5km",
+              "tier": "Late",
+              "from": "07/02/2024",
+              "to": "22/02/2024",
+              "price": 1099000
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "from": "02/01/2024",
+              "to": "23/01/2024",
+              "price": 999000
+            },
+            {
+              "distance": "10km",
+              "tier": "Regular",
+              "from": "24/01/2024",
+              "to": "06/02/2024",
+              "price": 1199000
+            },
+            {
+              "distance": "10km",
+              "tier": "Late",
+              "from": "07/02/2024",
+              "to": "22/02/2024",
+              "price": 1399000
+            },
+            {
+              "distance": "21km",
+              "tier": "Early Bird",
+              "from": "02/01/2024",
+              "to": "23/01/2024",
+              "price": 1199000
+            },
+            {
+              "distance": "21km",
+              "tier": "Regular",
+              "from": "24/01/2024",
+              "to": "06/02/2024",
+              "price": 1399000
+            },
+            {
+              "distance": "21km",
+              "tier": "Late",
+              "from": "07/02/2024",
+              "to": "22/02/2024",
+              "price": 1699000
+            },
+            {
+              "distance": "42km",
+              "tier": "Early Bird",
+              "from": "02/01/2024",
+              "to": "23/01/2024",
+              "price": 1399000
+            },
+            {
+              "distance": "42km",
+              "tier": "Regular",
+              "from": "24/01/2024",
+              "to": "06/02/2024",
+              "price": 1699000
+            },
+            {
+              "distance": "42km",
+              "tier": "Late",
+              "from": "07/02/2024",
+              "to": "22/02/2024",
+              "price": 2099000
+            }
+          ],
+          "note": "Wayback snapshot (2024-01-21, during the Early Bird sale window) of the official race page, before the live page's price table was removed after the event; recovers full EB/Regular/Late tiers the live page no longer shows"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-26T14:42:18.015Z",
-  "updatedAt": "2026-09-26T14:47:24.175Z"
+  "updatedAt": "2026-09-26T14:55:38.014Z"
 }
