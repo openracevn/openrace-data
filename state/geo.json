@@ -8647,6 +8647,106 @@
     "query": "Trị An, Đồng Nai",
     "at": "2026-09-24T06:47:10.807Z"
   },
+  "ho chi minh | ho chi minh": {
+    "geo": {
+      "lat": 10.8025936,
+      "lng": 106.744579,
+      "source": "nominatim",
+      "precision": "venue",
+      "current": {
+        "province": "79",
+        "ward": "27094"
+      },
+      "legacy": {
+        "province": "79",
+        "district": "769",
+        "ward": "27088"
+      },
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 9.4,
+          "minutes": 11,
+          "method": "road",
+          "near": true
+        },
+        "ha-noi": {
+          "km": 1495.7,
+          "minutes": 1133,
+          "method": "road",
+          "near": false
+        },
+        "da-nang": {
+          "km": 862.4,
+          "minutes": 651,
+          "method": "road",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 409.5,
+          "minutes": 293,
+          "method": "road",
+          "near": false
+        },
+        "da-lat": {
+          "km": 293.1,
+          "minutes": 221,
+          "method": "road",
+          "near": false
+        },
+        "can-tho": {
+          "km": 178.4,
+          "minutes": 144,
+          "method": "road",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 1529.8,
+          "minutes": 1160,
+          "method": "road",
+          "near": false
+        },
+        "hue": {
+          "km": 945.1,
+          "minutes": 725,
+          "method": "road",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 92.5,
+          "minutes": 85,
+          "method": "road",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 615.4,
+          "minutes": 456,
+          "method": "road",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 358.4,
+          "minutes": 263,
+          "method": "road",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 1804.2,
+          "minutes": 1369,
+          "method": "road",
+          "near": false
+        },
+        "ha-long": {
+          "km": 1579.5,
+          "minutes": 1193,
+          "method": "road",
+          "near": false
+        }
+      }
+    },
+    "query": "Hồ Chí Minh, Hồ Chí Minh",
+    "at": "2026-09-26T14:47:26.182Z"
+  },
   "ho da binh duong | ": {
     "geo": {
       "lat": 11.2603292,
@@ -20536,6 +20636,106 @@
     },
     "query": "TP Hải Phòng, Việt Nam",
     "at": "2026-09-24T06:35:10.541Z"
+  },
+  "tp ho chi minh | ho chi minh": {
+    "geo": {
+      "lat": 10.7984664,
+      "lng": 106.7232864,
+      "source": "nominatim",
+      "precision": "venue",
+      "current": {
+        "province": "79",
+        "ward": "26956"
+      },
+      "legacy": {
+        "province": "79",
+        "district": "765",
+        "ward": "26956"
+      },
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 9,
+          "minutes": 11,
+          "method": "road",
+          "near": true
+        },
+        "ha-noi": {
+          "km": 1495.3,
+          "minutes": 1133,
+          "method": "road",
+          "near": false
+        },
+        "da-nang": {
+          "km": 862,
+          "minutes": 651,
+          "method": "road",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 411.1,
+          "minutes": 294,
+          "method": "road",
+          "near": false
+        },
+        "da-lat": {
+          "km": 294.7,
+          "minutes": 223,
+          "method": "road",
+          "near": false
+        },
+        "can-tho": {
+          "km": 178,
+          "minutes": 144,
+          "method": "road",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 1529.4,
+          "minutes": 1160,
+          "method": "road",
+          "near": false
+        },
+        "hue": {
+          "km": 944.7,
+          "minutes": 725,
+          "method": "road",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 94.1,
+          "minutes": 86,
+          "method": "road",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 617,
+          "minutes": 457,
+          "method": "road",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 358,
+          "minutes": 263,
+          "method": "road",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 1803.8,
+          "minutes": 1369,
+          "method": "road",
+          "near": false
+        },
+        "ha-long": {
+          "km": 1579.1,
+          "minutes": 1193,
+          "method": "road",
+          "near": false
+        }
+      }
+    },
+    "query": "Tp.Hồ Chí Minh, Hồ Chí Minh",
+    "at": "2026-09-26T14:47:27.448Z"
   },
   "tp ho chi minh viet nam | ": {
     "geo": {

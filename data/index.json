@@ -943,13 +943,16 @@
     "name": "VPBank VnExpress Marathon Ho Chi Minh City Midnight 2025",
     "date": "2025-02-23",
     "endDate": null,
-    "lastModified": "2026-09-26T14:42:18.015Z",
+    "lastModified": "2026-09-26T14:47:24.175Z",
     "file": "vnexpress-marathon-ho-chi-minh-4-2025.json",
     "seriesId": "vnexpress-marathon-ho-chi-minh",
     "sourceUrls": [
+      "https://ticket.irace.vn/vpbank-vnexpress-marathon-ho-chi-minh-city-midnight-2025",
       "https://vm.vnexpress.net/ho-chi-minh-2025"
     ],
-    "linkUrls": []
+    "linkUrls": [
+      "https://vm.vnexpress.net/ho-chi-minh-2025/thong-tin-cuoc-dua/dieu-le"
+    ]
   },
   {
     "id": "2e889f1a-96f6-4261-ad07-ee921bb3199a",
@@ -2597,10 +2600,11 @@
     "name": "VPBank VnExpress Marathon Ho Chi Minh City Midnight 2024",
     "date": "2024-03-03",
     "endDate": null,
-    "lastModified": "2026-09-26T14:42:18.015Z",
+    "lastModified": "2026-09-26T14:47:24.175Z",
     "file": "vnexpress-marathon-ho-chi-minh-3-2024.json",
     "seriesId": "vnexpress-marathon-ho-chi-minh",
     "sourceUrls": [
+      "https://ticket.irace.vn/vpbank-vnexpress-marathon-ho-chi-minh-city-midnight-2024",
       "https://vm.vnexpress.net/ho-chi-minh-2024"
     ],
     "linkUrls": []
