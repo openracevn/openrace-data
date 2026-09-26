@@ -27,13 +27,32 @@ Read `data/races/<file>`. Each `sources[]` entry has the site, its role (`offici
 ## 2. Look at the source (free)
 
 - **ActiUp:** `curl -s -H "Accept-Language: vi" https://api.actiup.net/v2/content/events/slug/<slug>` gives name, dates, place, organizer (`merchant_public_name`), `selling_type` and the description sections. Prices are usually an image in the "Chính sách giá vé" section.
-- **`ticket.irace.vn` (preferred when available, free, no image cost):** `curl -sL -A 'Mozilla/5.0' https://ticket.irace.vn/<slug>`. Its `#personal` table has the same tiers as ActiUp/irace.vn, but as text — no OCR needed.
+- **`ticket.irace.vn` (preferred when available, free, no image cost):** slugs are **not** shared across sites — don't guess `https://ticket.irace.vn/<actiup-slug>` and treat a 404 as "not on irace". Web-search `<race name> irace` (or `<race name> ticket.irace.vn`) to find its real slug first, then `curl -sL -A 'Mozilla/5.0' https://ticket.irace.vn/<found-slug>`. Its `#personal` table has the same tiers as ActiUp/irace.vn, but as text — no OCR needed.
 - **Other sites:** `curl -sL -A 'Mozilla/5.0' <url>`. To see what the recipe would read: `npm run check -- --race <url> --free --dry-run`.
 - **Price images:** download one and look at it (Read the file). Compare every tier: distance, label, audience (resident / non-resident), price, dates.
 
 Report the differences field by field: ours vs the source.
 
-**No price/venue on the known source(s):** before saying "no source available", check in this order (plan 010, free unless noted): a subpage on the *same* site (e.g. `/thong-tin-cuoc-dua` — an info/price tab the recipe may not read; worth a recipe fix if found) → `ticket.irace.vn/<slug>` (real HTML table, no OCR) → `irace.vn/su-kien/<slug>` (usually a text table too, `.eventon_desc_in`, but never auto-discovered — find it by search) → ActiUp/irace.vn's old poster images last (Firecrawl OCR credits, or your own eyes). Once found, attach it with the `agent-read` skill's `--race <existing-race-id-or-slug>@<new-url>` rather than a bare `--race <url>`, so a same-day near-duplicate name doesn't risk creating a second race instead of joining this one.
+**A field (venue, city, price, ...) is missing, TBU or null on the known source — this is a hard stop, not a judgment call.** Do not write an override or infer the value from surrounding text (e.g. "the description names a province, so set city to that") until you've worked this checklist (plan 010, free unless noted). Seeing `TBU` in ActiUp's own `place` field is not confirmation the value is unknown everywhere — it only means ActiUp doesn't have it:
+1. A subpage on the *same* site (e.g. `/thong-tin-cuoc-dua` — an info/price tab the recipe may not read; worth a recipe fix if found).
+2. Web-search `<race name> irace` to get the real `ticket.irace.vn/<slug>` (never assume the ActiUp slug matches), then read its `#personal` table — real HTML, no OCR.
+3. `irace.vn/su-kien/<slug>` (usually a text table too, `.eventon_desc_in`, found the same way — by search, never assumed).
+4. ActiUp/irace.vn's old poster images last (Firecrawl OCR credits, or your own eyes).
+
+Only after all four turn up nothing does "no source has this" become true, and only then does step 5 (override) or leaving the field as-is apply. Once a new source is found, attach it with the `agent-read` skill's `--race <existing-race-id-or-slug>@<new-url>` rather than a bare `--race <url>`, so a same-day near-duplicate name doesn't risk creating a second race instead of joining this one.
+
+**Log every checklist run, hit or miss.** Write `.agent-read-archive/<date>-<race-slug>-source-check/attempts.json`, one entry per checklist step actually tried (skip steps that didn't apply, e.g. no subpage exists to check):
+
+```json
+[
+  {"step": "subpage", "action": "curl .../thong-tin-cuoc-dua", "result": "not found" },
+  {"step": "ticket.irace.vn", "action": "web search '<race name> irace'", "result": "found https://ticket.irace.vn/<slug>, no venue in #personal table" },
+  {"step": "irace.vn/su-kien", "action": "web search '<race name> irace.vn su-kien'", "result": "no page found" },
+  {"step": "poster images", "action": "read <image-url>", "result": "venue not shown" }
+]
+```
+
+This is the only record of what was checked and came up empty — without it, the next session (or a future look at why a field is still missing) can't tell "nobody checked irace.vn" from "irace.vn was checked and has nothing," and re-does the same dead-end search. Write it even when the checklist finds nothing and the field is left blank; it's not conditional on ending in an override.
 
 ## 3. Read it again with Firecrawl (costs credits; say so first)
 
