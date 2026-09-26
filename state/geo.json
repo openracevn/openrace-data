@@ -16037,6 +16037,102 @@
     "query": "phường Đồng Hới, tỉnh Quảng Trị",
     "at": "2026-09-24T06:44:48.126Z"
   },
+  "quang truong ho chi minh so 2 duong vuong thuc mau thanh pho vinh tinh nghe an | nghe an": {
+    "geo": {
+      "lat": 18.7358406,
+      "lng": 105.6906101,
+      "source": "nominatim",
+      "precision": "province",
+      "current": {
+        "province": "40",
+        "ward": null
+      },
+      "legacy": null,
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 892.1,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "ha-noi": {
+          "km": 255.5,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "da-nang": {
+          "km": 401.1,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 814.2,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "da-lat": {
+          "km": 811.1,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "can-tho": {
+          "km": 967.7,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 256.7,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "hue": {
+          "km": 323.1,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 944.9,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 668,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 720.1,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 444.1,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "ha-long": {
+          "km": 286,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        }
+      }
+    },
+    "query": "thành phố Vinh, tỉnh Nghệ An",
+    "at": "2026-09-26T05:38:03.697Z"
+  },
   "quang truong hoa binh tp vi thanh hau giang | ": {
     "geo": {
       "lat": 9.7941582,

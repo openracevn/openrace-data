@@ -38,12 +38,12 @@
     }
   ],
   "location": {
-    "venue": null,
+    "venue": "Quảng trường Hồ Chí Minh, số 2 đường Vương Thúc Mậu, thành phố Vinh, tỉnh Nghệ An",
     "city": "Nghệ An"
   },
   "geo": {
-    "lat": 19.1976001,
-    "lng": 105.060676,
+    "lat": 18.7358406,
+    "lng": 105.6906101,
     "source": "nominatim",
     "precision": "province",
     "current": {
@@ -54,79 +54,79 @@
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 953.2,
+        "km": 892.1,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "ha-noi": {
-        "km": 219.7,
+        "km": 255.5,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "da-nang": {
-        "km": 483.9,
+        "km": 401.1,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "nha-trang": {
-        "km": 891.3,
+        "km": 814.2,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "da-lat": {
-        "km": 884.4,
+        "km": 811.1,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "can-tho": {
-        "km": 1021.9,
+        "km": 967.7,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "hai-phong": {
-        "km": 249.9,
+        "km": 256.7,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "hue": {
-        "km": 405.1,
+        "km": 323.1,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "vung-tau": {
-        "km": 1008,
+        "km": 944.9,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "quy-nhon": {
-        "km": 748.5,
+        "km": 668,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 792.8,
+        "km": 720.1,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "sa-pa": {
-        "km": 371.2,
+        "km": 444.1,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "ha-long": {
-        "km": 287.3,
+        "km": 286,
         "minutes": null,
         "method": "straight_line",
         "near": false
@@ -290,7 +290,7 @@
       "site": "vnexpress-marathon",
       "role": "official",
       "url": "https://vm.vnexpress.net/nghe-an-2026",
-      "lastCheckedAt": "2026-09-25T05:01:22.419Z",
+      "lastCheckedAt": "2026-09-26T05:38:00.505Z",
       "lastChangedAt": "2026-09-25T05:01:22.419Z",
       "extracted": {
         "facts": {
@@ -308,6 +308,14 @@
               ],
               "name": "VnExpress Marathon Grand Tour Nghe An 2026",
               "date": "2026-09-27",
+              "prices": []
+            }
+          },
+          {
+            "url": "https://vm.vnexpress.net/nghe-an-2026/thong-tin-cuoc-dua",
+            "json": {
+              "pageKind": "sport",
+              "venue": "Quảng trường Hồ Chí Minh, số 2 đường Vương Thúc Mậu, thành phố Vinh, tỉnh Nghệ An",
               "prices": []
             }
           }
@@ -542,5 +550,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T05:01:22.419Z",
-  "updatedAt": "2026-09-26T05:36:57.420Z"
+  "updatedAt": "2026-09-26T05:38:00.505Z"
 }
