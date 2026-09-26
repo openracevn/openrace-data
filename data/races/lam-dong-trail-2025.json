@@ -328,7 +328,12 @@
   ],
   "currency": "VND",
   "registrationStatus": null,
-  "registrations": [],
+  "registrations": [
+    {
+      "site": "irace",
+      "url": "https://irace.vn/su-kien/lam-dong-trail"
+    }
+  ],
   "links": [],
   "flags": [],
   "overrides": {
@@ -653,5 +658,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T08:03:59.469Z",
-  "updatedAt": "2026-09-25T08:31:26.326Z"
+  "updatedAt": "2026-09-26T05:57:31.541Z"
 }

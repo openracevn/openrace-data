@@ -486,7 +486,7 @@
     "name": "The Lakes Race 2022",
     "date": "2022-05-15",
     "endDate": null,
-    "lastModified": "2026-09-25T07:32:26.093Z",
+    "lastModified": "2026-09-26T05:57:31.541Z",
     "file": "the-lakes-race-2022.json",
     "seriesId": "andros-the-lakes-race",
     "sourceUrls": [
@@ -500,7 +500,7 @@
     "name": "Andros Lakes Race 2026",
     "date": "2026-04-19",
     "endDate": null,
-    "lastModified": "2026-09-25T07:31:52.256Z",
+    "lastModified": "2026-09-26T05:57:31.541Z",
     "file": "andros-lakes-race-2026.json",
     "seriesId": "andros-the-lakes-race",
     "sourceUrls": [
@@ -1433,7 +1433,7 @@
     "name": "Lam Dong Trail 2022",
     "date": "2022-11-11",
     "endDate": "2022-11-13",
-    "lastModified": "2026-09-25T08:22:42.080Z",
+    "lastModified": "2026-09-26T05:57:31.541Z",
     "file": "lam-dong-trail-2022.json",
     "seriesId": "lamdong-trail",
     "sourceUrls": [
@@ -1615,11 +1615,12 @@
     "name": "GLOBAL GATE HẠ LONG ESG++ MARATHON 2026",
     "date": "2026-10-10",
     "endDate": "2026-10-11",
-    "lastModified": "2026-09-26T05:24:22.076Z",
+    "lastModified": "2026-09-26T05:57:31.541Z",
     "file": "global-gate-halong-esg-marathon-2026.json",
     "seriesId": null,
     "sourceUrls": [
-      "https://actiup.net/vi/event/global-gate-halong-esg-marathon-2026"
+      "https://actiup.net/vi/event/global-gate-halong-esg-marathon-2026",
+      "https://irace.vn/su-kien/global-gate-ha-long-esg-marathon"
     ],
     "linkUrls": []
   },
@@ -2703,7 +2704,7 @@
     "name": "Lam Dong Trail 2023",
     "date": "2023-11-10",
     "endDate": "2023-11-12",
-    "lastModified": "2026-09-25T08:23:00.169Z",
+    "lastModified": "2026-09-26T05:57:31.541Z",
     "file": "lam-dong-trail-2023.json",
     "seriesId": "lamdong-trail",
     "sourceUrls": [
@@ -3195,7 +3196,7 @@
     "name": "Lam Dong Trail 2025",
     "date": "2025-11-07",
     "endDate": "2025-11-09",
-    "lastModified": "2026-09-25T08:31:26.326Z",
+    "lastModified": "2026-09-26T05:57:31.541Z",
     "file": "lam-dong-trail-2025.json",
     "seriesId": "lamdong-trail",
     "sourceUrls": [
@@ -3426,6 +3427,20 @@
     "seriesId": null,
     "sourceUrls": [
       "https://actiup.net/vi/event/giai-chay-ban-marathon-run-to-live-2024"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "be9c9ed6-75fb-4cdb-b535-f6e316fcf651",
+    "slug": "techcombank-ha-noi-marathon",
+    "name": "Techcombank Hanoi International Marathon 2026",
+    "date": "2026-10-04",
+    "endDate": null,
+    "lastModified": "2026-09-26T05:57:31.541Z",
+    "file": "techcombank-ha-noi-marathon-2026.json",
+    "seriesId": null,
+    "sourceUrls": [
+      "https://irace.vn/su-kien/techcombank-ha-noi-marathon"
     ],
     "linkUrls": []
   },

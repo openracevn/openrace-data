@@ -22047,6 +22047,103 @@
     "query": "Vinh, Tỉnh Nghệ An",
     "at": "2026-09-24T06:34:44.630Z"
   },
+  "vinhomes global gate ha long xanh | ": {
+    "geo": {
+      "lat": 20.9517,
+      "lng": 107.08,
+      "source": "place",
+      "precision": "province",
+      "current": {
+        "province": "22",
+        "ward": null
+      },
+      "legacy": null,
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 1132.6,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "ha-noi": {
+          "km": 127.8,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "da-nang": {
+          "km": 557.1,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 994.7,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "da-lat": {
+          "km": 1012.5,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "can-tho": {
+          "km": 1221.8,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 42.4,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "hue": {
+          "km": 501.9,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 1179.3,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 829.6,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 926.9,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 368.2,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "ha-long": {
+          "km": 0,
+          "minutes": null,
+          "method": "straight_line",
+          "near": true
+        }
+      }
+    },
+    "query": "Hạ Long",
+    "at": "2026-09-26T05:57:31.975Z",
+    "note": "no point found; used the place's centre"
+  },
   "vinhomes grand park nguyen xien phuong long thanh my thanh pho thu duc | ": {
     "geo": {
       "lat": 10.8477626,

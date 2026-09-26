@@ -239,14 +239,14 @@
   },
   "18ba0108-b05a-41ab-a3eb-f46474176aeb": {
     "lastCheckedAt": null,
-    "lastChangedAt": "2026-09-25T07:32:26.093Z",
+    "lastChangedAt": "2026-09-26T05:57:31.541Z",
     "cadence": "weekly",
     "dueAt": null,
     "final": true
   },
   "18bb2e3f-fa10-411e-acb7-c76588ea35af": {
     "lastCheckedAt": "2026-09-23T18:31:08.741Z",
-    "lastChangedAt": "2026-09-25T07:31:52.256Z",
+    "lastChangedAt": "2026-09-26T05:57:31.541Z",
     "cadence": "weekly",
     "dueAt": "2026-10-01",
     "final": true
@@ -708,7 +708,7 @@
   },
   "471cf8da-274b-42d7-8793-0fe7786a7d56": {
     "lastCheckedAt": null,
-    "lastChangedAt": "2026-09-25T08:22:42.080Z",
+    "lastChangedAt": "2026-09-26T05:57:31.541Z",
     "cadence": "weekly",
     "dueAt": null,
     "final": true
@@ -798,8 +798,8 @@
     "final": true
   },
   "51c06828-9f8c-4dea-bd60-98b4120d9687": {
-    "lastCheckedAt": "2026-09-26T05:24:22.076Z",
-    "lastChangedAt": "2026-09-26T05:24:22.076Z",
+    "lastCheckedAt": "2026-09-26T05:57:31.541Z",
+    "lastChangedAt": "2026-09-26T05:57:31.541Z",
     "cadence": "weekly",
     "dueAt": "2026-10-03",
     "final": false
@@ -1338,7 +1338,7 @@
   },
   "945e4a09-963e-421b-aafa-dc6d1668ded8": {
     "lastCheckedAt": null,
-    "lastChangedAt": "2026-09-25T08:23:00.169Z",
+    "lastChangedAt": "2026-09-26T05:57:31.541Z",
     "cadence": "weekly",
     "dueAt": null,
     "final": true
@@ -1583,7 +1583,7 @@
   },
   "b6c2e1c1-bce5-413d-a034-15bd5f0b22fd": {
     "lastCheckedAt": null,
-    "lastChangedAt": "2026-09-25T08:31:26.326Z",
+    "lastChangedAt": "2026-09-26T05:57:31.541Z",
     "cadence": "weekly",
     "dueAt": null,
     "final": true
@@ -1699,6 +1699,13 @@
     "cadence": "weekly",
     "dueAt": "2026-10-01",
     "final": true
+  },
+  "be9c9ed6-75fb-4cdb-b535-f6e316fcf651": {
+    "lastCheckedAt": "2026-09-26T05:57:31.541Z",
+    "lastChangedAt": "2026-09-26T05:57:31.541Z",
+    "cadence": "weekly",
+    "dueAt": "2026-10-03",
+    "final": false
   },
   "bea28b99-9688-4fc4-beac-a211e4447055": {
     "lastCheckedAt": "2026-09-23T18:31:52.148Z",
