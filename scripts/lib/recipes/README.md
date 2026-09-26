@@ -23,6 +23,7 @@ A `Snapshot` has:
 | --- | --- | --- |
 | `actiup` | actiup.net | Public API: listing (30 per request) and event detail, with `Accept-Language: vi`. The price section's images are OCR'd |
 | `vnexpress-marathon` | vm.vnexpress.net | Hub: races at `/<city>-<year>`. Only the banner (`#slideshow`) and the ticket table (`.ticket-policy`) are read |
+| `irace` | ticket.irace.vn | Seller: races on sale now, listed on the home page. The price table (`#personal`) is a real HTML table — text, no OCR, unlike ActiUp/irace.vn's price images |
 | `default` | any race's own site | Home page plus up to 6 subpages that look like fees, distances, race info or registration. Images named like a price table |
 
 ## Adding a site

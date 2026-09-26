@@ -27,6 +27,7 @@ Read `data/races/<file>`. Each `sources[]` entry has the site, its role (`offici
 ## 2. Look at the source (free)
 
 - **ActiUp:** `curl -s -H "Accept-Language: vi" https://api.actiup.net/v2/content/events/slug/<slug>` gives name, dates, place, organizer (`merchant_public_name`), `selling_type` and the description sections. Prices are usually an image in the "Chính sách giá vé" section.
+- **`ticket.irace.vn` (preferred when available, free, no image cost):** `curl -sL -A 'Mozilla/5.0' https://ticket.irace.vn/<slug>`. Its `#personal` table has the same tiers as ActiUp/irace.vn, but as text — no OCR needed.
 - **Other sites:** `curl -sL -A 'Mozilla/5.0' <url>`. To see what the recipe would read: `npm run check -- --race <url> --free --dry-run`.
 - **Price images:** download one and look at it (Read the file). Compare every tier: distance, label, audience (resident / non-resident), price, dates.
 

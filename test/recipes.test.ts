@@ -10,6 +10,7 @@ import { cleanContent, pageImages, pageLinks, parseHtml } from "../scripts/lib/h
 import type { Http } from "../scripts/lib/http.ts";
 import { actiupRecipe } from "../scripts/lib/recipes/actiup.ts";
 import { defaultRecipe, pickPriceImages, pickSubpages } from "../scripts/lib/recipes/default.ts";
+import { iraceRecipe } from "../scripts/lib/recipes/irace.ts";
 import type { RecipeContext } from "../scripts/lib/recipes/types.ts";
 import { vnexpressMarathonRecipe } from "../scripts/lib/recipes/vnexpress-marathon.ts";
 import { classifyLink, loadSites } from "../scripts/lib/sites.ts";
@@ -120,6 +121,39 @@ describe("vnexpress-marathon recipe", () => {
     const http = fakeHttp({ "https://vm.vnexpress.net/long-chau-can-tho-2026": fixture("vm-long-chau-can-tho-2026.html") });
     const snap = await vnexpressMarathonRecipe.snapshot({ url: "https://vm.vnexpress.net/long-chau-can-tho-2026" }, ctx("vnexpress-marathon", http));
     assert.deepEqual(snap.facts, { name: "VnExpress Marathon Long Châu Family Day 2026", date: "2026-06-28", city: "Cần Thơ" });
+  });
+});
+
+describe("irace recipe", () => {
+  it("lists races on sale from the home page's cards, with their names", async () => {
+    const http = fakeHttp({ "https://ticket.irace.vn/": fixture("irace-home.html") });
+    const refs = await iraceRecipe.discover(ctx("irace", http));
+    assert.ok(refs.length > 5);
+    assert.ok(refs.every((r) => r.url.startsWith("https://ticket.irace.vn/") && r.slugHint));
+    const lamdong = refs.find((r) => r.slugHint === "lamdong-trail-2026");
+    assert.equal(lamdong?.name, "Giải chạy Lâm Đồng Trail 2026");
+    // Chrome, not race cards: my-account, categories, organizer pages.
+    assert.ok(refs.every((r) => !/\/(tickets|my-account|categories|organizers|api)(\/|$)/.test(r.url)));
+  });
+
+  it("reads Lâm Đồng Trail's price table as text, not an image, plus free facts from its JSON-LD", async () => {
+    const http = fakeHttp({ "https://ticket.irace.vn/lamdong-trail-2026": fixture("irace-lamdong-trail-2026.html") });
+    const snap = await iraceRecipe.snapshot({ url: "https://ticket.irace.vn/lamdong-trail-2026" }, ctx("irace", http));
+    assert.deepEqual(snap.facts, {
+      name: "Giải chạy Lâm Đồng Trail 2026",
+      venue: "TTC World - Thung Lũng Tình Yêu, số 03-05-07 đường Mai Anh Đào, phường Lâm Viên, Tp. Đà Lạt, Lâm Đồng",
+      organizer: "GreenHat | Ban tổ chức sự kiện",
+    });
+    assert.deepEqual(snap.hints, { organizer: { id: "greenhat", name: "GreenHat | Ban tổ chức sự kiện" } });
+    assert.equal(snap.slugHint, "lamdong-trail-2026");
+    assert.deepEqual(snap.priceImages, []);
+    const html = snap.pages[0]!.html;
+    assert.match(html, /Early Bird/);
+    assert.match(html, /950\.000đ/);
+    // The individual price table (#personal), not group discounts (#group) or the
+    // old irace.vn poster images reproduced under "Bảng giá".
+    assert.doesNotMatch(html, /Giảm giá/);
+    assert.doesNotMatch(html, /<img/);
   });
 });
 

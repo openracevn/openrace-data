@@ -44,10 +44,10 @@ sites:
   - key: irace
     name: iRace
     kind: seller
-    url: https://irace.vn/
+    url: https://ticket.irace.vn/
     hosts: [irace.vn, ticket.irace.vn, app.irace.vn]
-    recipe: none
-    check: manual
+    recipe: irace
+    check: weekly
 
   - key: ticketbox
     name: TicketBox

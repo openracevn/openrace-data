@@ -1,0 +1,2444 @@
+<script>
+  const APP_URL = "https://ticket.irace.vn";
+  const LANG = "vi";
+  const COPIED = "Đã sao chép";
+  const IS_LOGIN = "0" - 0;
+</script>
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+
+    <meta name="csrf-token" content="SHRUc07IFeRcWEVHWoeOJyMB5r4KhvndYAlFFrQK">
+
+    <link href="https://ticket.irace.vn/assets/images/favicon.png" rel="icon">
+
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+          href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap"
+          rel="stylesheet"
+          type="text/css"
+      />
+    </noscript>
+
+    <!-- Bootstrap Css -->
+<link href="https://ticket.irace.vn/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<!-- Icons Css -->
+<link href="https://ticket.irace.vn/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+<!-- App Css-->
+<link href="https://ticket.irace.vn/assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+<link href="https://ticket.irace.vn/assets/libs/toastr/toastr.min.css" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/web.css?id=055e95b59a9f88c7e82f55136dbcc262" rel="stylesheet" type="text/css" />
+
+
+
+    <link href="/assets/css/event.css?id=45c5fdff8f35d256b70df8ecd167c02a" rel="stylesheet" type="text/css" />
+
+    
+        
+
+
+    <style>
+
+    :root {
+        /* HEADER */
+        --ir-header-background: #ffffff;
+        --ir-header-text-color: #161616;
+        --ir-background-header-card: #1456f0;
+
+        /* CARD */
+        --ir-background-card: #ffffff;
+        --ir-border-card: 1px solid #eff0f2;
+
+        /* MODAL */
+        --ir-bs-icon-close: url(https://ticket.irace.vn/assets/images/vip/icon-close-default.svg);
+        --bs-modal-bg: #fff;
+
+        /* COLOR */
+        --ir-primary-color: #BB5C17;
+        --ir-secondary-color: #161616;
+        --ir-hover-color: #1456f0;
+        --ir-hover-text-color: #ffffff;
+        --ir-danger-color: #006738;
+        --ir-menu-hover-color: #BB5C17;
+        --ir-danger-gradient-color: #006738;
+        --ir-background-btn-hot: #d31027;
+        --ir-text-btn-hot: #fff;
+        --ir-contract-text: #1a1823;
+
+        /* BACKGROUND */
+        --ir-nav-background-mobile: #fff;
+        --ir-background-dropdown: #f9f6fa;
+        --ir-background-section: #ffffff;
+        --ir-background-all: #f9f6fa;
+
+        /* BORDER/BOX */
+        --ir-box-shadow: 0 2px 3px rgba(52, 58, 64, 0.06);
+        --ir-border-color-all: #eff0f2;
+
+        /* BUTTON */
+        --ir-btn-text-color: #fff;
+        --ir-btn-background-color: #bb5c17;
+        --ir-red: #d31027;
+
+    }
+
+</style>
+
+
+            <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V82QSG0Q3P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V82QSG0Q3P');
+
+</script>
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "nqjxgh6w0v");
+</script>    
+    
+<!-- Primary Meta Tags -->
+<title>Giải chạy Lâm Đồng Trail 2026</title>
+<meta name="title" content="Giải chạy Lâm Đồng Trail 2026">
+<meta name="description" content="Lamdong Trail là giải chạy trail tổ chức thường niên tại Đà Lạt – Lâm Đồng, được thiết kế để runner chạy chill giữa đại ngàn, nhưng vẫn đầy thử thách của địa hình cao nguyên đa dạng. Cảm nhận sự thay đổi rõ rệt của thiên nhiên đổi mùa, 1 ngày chạy có đủ trải nghiệm của 4 mùa trong năm. Đường chạy đi qua rừng thông, đồi cà phê, bản làng, đất đỏ bazan và đặc biệt là những đoạn đường hoa dã quỳ vàng chỉ nở rộ vào thời điểm diễn ra giải. Sau nhiều mùa tổ chức, Lamdong Trail đã trở thành lựa chọn của những runner muốn vừa thử thách bản thân, vừa tận hưởng trọn vẹn thiên nhiên – thay vì chỉ đuổi theo thành tích.">
+
+<meta property="fb:app_id" content="1471552772992011" />
+
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ticket.irace.vn/lamdong-trail-2026">
+<meta property="og:title" content="Giải chạy Lâm Đồng Trail 2026">
+<meta property="og:description" content="Lamdong Trail là giải chạy trail tổ chức thường niên tại Đà Lạt – Lâm Đồng, được thiết kế để runner chạy chill giữa đại ngàn, nhưng vẫn đầy thử thách của địa hình cao nguyên đa dạng. Cảm nhận sự thay đổi rõ rệt của thiên nhiên đổi mùa, 1 ngày chạy có đủ trải nghiệm của 4 mùa trong năm. Đường chạy đi qua rừng thông, đồi cà phê, bản làng, đất đỏ bazan và đặc biệt là những đoạn đường hoa dã quỳ vàng chỉ nở rộ vào thời điểm diễn ra giải. Sau nhiều mùa tổ chức, Lamdong Trail đã trở thành lựa chọn của những runner muốn vừa thử thách bản thân, vừa tận hưởng trọn vẹn thiên nhiên – thay vì chỉ đuổi theo thành tích.">
+<meta property="og:image" content="https://app.irace.vn/uploads/2026/04/69e090c3d1600.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://ticket.irace.vn/lamdong-trail-2026">
+<meta property="twitter:title" content="Giải chạy Lâm Đồng Trail 2026">
+<meta property="twitter:description" content="Lamdong Trail là giải chạy trail tổ chức thường niên tại Đà Lạt – Lâm Đồng, được thiết kế để runner chạy chill giữa đại ngàn, nhưng vẫn đầy thử thách của địa hình cao nguyên đa dạng. Cảm nhận sự thay đổi rõ rệt của thiên nhiên đổi mùa, 1 ngày chạy có đủ trải nghiệm của 4 mùa trong năm. Đường chạy đi qua rừng thông, đồi cà phê, bản làng, đất đỏ bazan và đặc biệt là những đoạn đường hoa dã quỳ vàng chỉ nở rộ vào thời điểm diễn ra giải. Sau nhiều mùa tổ chức, Lamdong Trail đã trở thành lựa chọn của những runner muốn vừa thử thách bản thân, vừa tận hưởng trọn vẹn thiên nhiên – thay vì chỉ đuổi theo thành tích.">
+<meta property="twitter:image" content="https://app.irace.vn/uploads/2026/04/69e090c3d1600.png">
+
+
+<link rel="canonical" href="https://ticket.irace.vn/lamdong-trail-2026" />
+<script type="application/ld+json">
+        {"@context":"https:\/\/schema.org","@type":"Event","name":"Gi\u1ea3i ch\u1ea1y L\u00e2m \u0110\u1ed3ng Trail 2026","description":null,"image":"https:\/\/app.irace.vn\/uploads\/2026\/04\/69e090c3d1600.png","startDate":"2026-11-06 03:00:00","endDate":"2026-11-06 03:00:00","eventStatus":"https:\/\/schema.org\/EventScheduled","eventAttendanceMode":"https:\/\/schema.org\/OfflineEventAttendanceMode","location":{"@type":"Place","name":"TTC World - Thung L\u0169ng T\u00ecnh Y\u00eau, s\u1ed1 03-05-07 \u0111\u01b0\u1eddng Mai Anh \u0110\u00e0o, ph\u01b0\u1eddng L\u00e2m Vi\u00ean, Tp. \u0110\u00e0 L\u1ea1t, L\u00e2m \u0110\u1ed3ng","address":{"@type":"PostalAddress","streetAddress":"","addressLocality":"L\u00e2m \u0110\u1ed3ng","postalCode":"","addressCountry":"VN"}},"offers":[{"@type":"Offer","name":"5km","price":950000,"priceCurrency":"VND","validFrom":"2026-08-17","url":"https:\/\/ticket.irace.vn\/lamdong-trail-2026","availability":"https:\/\/schema.org\/InStock"},{"@type":"Offer","name":"15km","price":1400000,"priceCurrency":"VND","validFrom":"2026-08-17","url":"https:\/\/ticket.irace.vn\/lamdong-trail-2026","availability":"https:\/\/schema.org\/InStock"},{"@type":"Offer","name":"25km","price":2050000,"priceCurrency":"VND","validFrom":"2026-08-17","url":"https:\/\/ticket.irace.vn\/lamdong-trail-2026","availability":"https:\/\/schema.org\/InStock"},{"@type":"Offer","name":"55km","price":2550000,"priceCurrency":"VND","validFrom":"2026-08-17","url":"https:\/\/ticket.irace.vn\/lamdong-trail-2026","availability":"https:\/\/schema.org\/InStock"},{"@type":"Offer","name":"85km","price":3150000,"priceCurrency":"VND","validFrom":"2026-08-17","url":"https:\/\/ticket.irace.vn\/lamdong-trail-2026","availability":"https:\/\/schema.org\/InStock"},{"@type":"Offer","name":"Kid Trail (5Km)","price":950000,"priceCurrency":"VND","validFrom":"2026-08-17","url":"https:\/\/ticket.irace.vn\/lamdong-trail-2026","availability":"https:\/\/schema.org\/InStock"},{"@type":"Offer","name":"5km Family (1 ng\u01b0\u1eddi l\u1edbn + 1 tr\u1ebb em)","price":1800000,"priceCurrency":"VND","validFrom":"2026-08-17","url":"https:\/\/ticket.irace.vn\/lamdong-trail-2026","availability":"https:\/\/schema.org\/InStock"},{"@type":"Offer","name":"5km Family (1 ng\u01b0\u1eddi l\u1edbn + 2 tr\u1ebb em)","price":2700000,"priceCurrency":"VND","validFrom":"2026-08-17","url":"https:\/\/ticket.irace.vn\/lamdong-trail-2026","availability":"https:\/\/schema.org\/InStock"},{"@type":"Offer","name":"5km Family (2 ng\u01b0\u1eddi l\u1edbn + 1 tr\u1ebb em)","price":2700000,"priceCurrency":"VND","validFrom":"2026-08-17","url":"https:\/\/ticket.irace.vn\/lamdong-trail-2026","availability":"https:\/\/schema.org\/InStock"}],"organizer":{"@type":"Organization","name":"GreenHat | Ban t\u1ed5 ch\u1ee9c s\u1ef1 ki\u1ec7n","url":"https:\/\/ticket.irace.vn\/organizers\/greenhat"}}    </script>
+
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org/", 
+        "@type": "BreadcrumbList", 
+        "itemListElement": [{
+            "@type": "ListItem", 
+            "position": 1, 
+            "name": "Home Page",
+            "item": "https://ticket.irace.vn/"  
+        },{
+            "@type": "ListItem", 
+            "position": 2, 
+            "name": "Event Detail",
+            "item": "https://ticket.irace.vn/lamdong-trail-2026"
+        }]
+        }
+    </script>
+
+    
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://ticket.irace.vn/lamdong-trail-2026"
+            },
+            "headline": "Giải chạy Lâm Đồng Trail 2026",
+            "image": "https://app.irace.vn/uploads/2026/04/69e090c3d1600.png",
+            "author": {
+                "@type": "Person",
+                "name": "iRace",
+                "url": "https://irace.vn/"
+            },  
+            "publisher": {
+                "@type": "Organization",
+                "name": "iRace",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "https://irace.vn/wp-content/uploads/2020/08/irace-logo-500-180-300x99.png"
+                }
+            },
+            "datePublished": "2026-04-16T14:04:58+07:00",
+            "dateModified": "2026-09-26T09:22:21+07:00"
+        }
+
+    </script>
+
+
+
+</head>
+
+<body data-layout="horizontal" data-topbar="dark">
+    <!-- Begin page -->
+    <div id="layout-wrapper" class="ticket-irace-vn-layout">
+        
+        
+        <header id="page-topbar" class="">
+  <div class="navbar-header container">
+      <div class="d-flex">
+
+          <div class="navbar-brand-box d-flex align-items-center">
+
+                            <a href="https://ticket.irace.vn" class="logo logo-light" title="Trang chủ">
+                    <img src="https://app.irace.vn/uploads/2026/04/69e090c3d3b34.png" data-width="150" alt="Trang chủ">
+                </a>
+            
+          </div>
+
+      </div>
+
+      <div class="d-flex align-items-center h-100">
+
+          <div class="topnav">
+
+  <nav class="navbar navbar-light navbar-expand-xl topnav-menu">      
+    <div class="collapse navbar-collapse active" id="topnav-menu-content">
+        <ul class="navbar-nav active">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle arrow-none" href="#">
+                    <span>Mua Vé Sự Kiện</span> <div class="arrow-down"></div>
+                </a>
+                <div class="dropdown-menu">
+                    <a href='https://app.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item">Virtual Race</a>
+                    <a href='https://ticket.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item">Sự kiện tại Việt Nam</a>
+                    
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle arrow-none" href="#">
+                    <span>Dịch vụ</span> <div class="arrow-down"></div>
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href='https://irace.vn/ban-ve/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item" target="_blank">Bán Vé Sự Kiện</a>
+                    <a href='https://irace.vn/myfoto/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item" target="_blank">Tìm Hình Sự Kiện</a>
+                    <a href='https://irace.vn/doanh-nghiep/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item" target="_blank">Tổ Chức Sự Kiện</a>
+                    <a href='https://irace.vn/affiliate/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item" target="_blank">Kiếm Tiền cùng iRace.vn</a>
+
+                    <div class="dropdown dropdown-child">
+                        <a class="dropdown-item dropdown-toggle arrow-none" href="#" target="_blank">
+                            <span>Sản Xuất Vật Phẩm</span> <div class="arrow-down"></div>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="https://irace.vn/thiet-ke-huy-chuong/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu" class="dropdown-item" target="_blank">Huy chương</a>
+                            <a href="https://irace.vn/san-xuat-qua-tang-phu-kien-the-thao/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu" class="dropdown-item" target="_blank">Quần áo, Phụ kiện</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle arrow-none" href="#">
+                  <span>Thông Tin</span> <div class="arrow-down"></div>
+              </a>
+              <div class="dropdown-menu">
+                  <a href='https://irace.vn/about-us/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item" target="_blank">Về iRace</a>
+                  <a href='https://irace.vn/bao-chi/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item" target="_blank">Báo chí viết</a>
+                  <a href='https://irace.vn/hoi-dap/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item" target="_blank">Hỏi đáp</a>
+                  <a href='https://irace.vn/thong-tin/huong-dan/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item" target="_blank">Hướng dẫn sử dụng</a>
+                  <a href='https://irace.vn/kien-thuc-tap-luyen/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item" target="_blank">Kiến thức chạy bộ</a>
+                  <a href="https://tools.irace.vn?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu" class="dropdown-item" target="_blank">Công cụ tính toán</a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle arrow-none" href="https://ifitness.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu">
+                  <span>Shop Thể Thao</span> <div class="arrow-down"></div>
+              </a>
+              <div class="dropdown-menu">
+                  <a href='https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item">Dinh Dưỡng</a>
+                  <a href='https://ifitness.vn/collections/phu-kien-the-thao?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item">Phụ Kiện</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link nav-link-ticket" href="https://ticket.irace.vn/tickets">
+                    <i class="mdi mdi-ticket align-middle me-0"></i>
+                    <span>Danh sách vé</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+  </nav>
+
+</div>
+          <div class="dropdown d-inline-block language-switch d-none">
+
+            <button type="button" class="btn header-item noti-icon" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="https://ticket.irace.vn/assets/images/flags/vi.png" alt="Header Language" width="23" height="16">
+            </button>
+
+            <div class="dropdown-menu dropdown-menu-end">
+                <a href="https://ticket.irace.vn/api/lang/en" class="dropdown-item notify-item language" data-lang="eng">
+                    <img src="https://ticket.irace.vn/assets/images/flags/en.png" alt="user-image" class="me-1" width="23" height="16"> <span class="align-middle">English</span>
+                </a>
+            </div>
+
+          </div>
+
+          <div class="dropdown d-inline-block language-switch">
+
+            <button type="button" class="btn header-item noti-icon btn-languge" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="https://ticket.irace.vn/assets/images/flags/vi.png" alt="Header Language" width="23" height="16">
+            </button>
+
+            <div class="dropdown-menu dropdown-menu-end">
+                <a href="https://ticket.irace.vn/api/lang/en" class="dropdown-item notify-item language" data-lang="eng">
+                    <img src="https://ticket.irace.vn/assets/images/flags/en.png" alt="user-image" class="me-1" width="23" height="16"> <span class="align-middle">English</span>
+                </a>
+            </div>
+
+          </div>
+
+          <button type="button" class="btn btn-sm px-2 font-size-16 d-block d-xl-none header-item" data-bs-toggle="collapse" id="horimenu-btn" data-bs-target="#topnav-menu-content">
+            <i class="fa fa-fw fa-bars"></i>
+          </button>
+
+          <div class="wrap-display-desktop wrap-btn-login">
+
+            
+                <div class="dropdown d-inline-block">
+                    <button class="btn header-item user text-start d-flex align-items-center">
+                        <a class="btn btn-primary" href="https://ticket.irace.vn/my-account">Đăng nhập</a>
+                    </button>
+                </div>
+
+            
+          </div>
+
+      </div>
+  </div>
+
+</header>
+
+        
+        <div class="main-content">
+            <div class="page-content page-event-detail">
+                
+    <script src="https://sp.zalo.me/plugins/sdk.js"></script>
+
+
+    <input type="hidden" name="event_id" value="288">
+    <input type="hidden" name="event_uuid" value="a18e3ebb-62c4-4f59-95fa-355a01c31d7d">
+
+    <input type="hidden" name="_token" value="SHRUc07IFeRcWEVHWoeOJyMB5r4KhvndYAlFFrQK" autocomplete="off">
+    <div class="main-banner-event container">
+    <div class="card overflow-hidden">
+        <img src="https://app.irace.vn/uploads/2026/04/69e090c3d1600.png">
+    </div>
+</div>
+    <div class="event-info container my-3">
+
+  <div class="row row-info">
+
+    <div class="col-md-7 col-xl-8 col-12 left">
+
+      <div class="card bg-section">
+        <div class="card-body ">
+            <div class="d-flex align-items-center flex-mb-md">
+                                  <div class="flex-shrink-0 img-logo me-4">
+                      <img src="https://app.irace.vn/uploads/2026/04/69e090c3cc13e.png" class="logo img-fluid">
+                  </div>
+                                <div class="flex-grow-1">
+
+                    <div class="list-tags mb-2 d-flex">
+                        <div>
+                                                            <button type="button" class="btn btn-sm btn-success me-1">Đang mở</button>
+                                                                                                                            <a style="border: 1px solid transparent !important ;" href="https://ticket.irace.vn/categories/trail" class="btn btn-sm btn-primary  me-1 mt-1 ">Trail</a>
+                                                                    <a style="border: 1px solid transparent !important ;" href="https://ticket.irace.vn/categories/ultra-marathon" class="btn btn-sm btn-danger  me-1 mt-1 ">Ultra Marathon</a>
+                                                                    <a style="border: 1px solid transparent !important ;" href="https://ticket.irace.vn/categories/fun-run" class="btn btn-sm btn-secondary  me-1 mt-1 ">Fun Run</a>
+                                                                    <a style="border: 1px solid transparent !important ;" href="https://ticket.irace.vn/categories/giai-tri" class="btn btn-sm btn-dark  me-1 mt-1 ">Giải trí</a>
+                                                                    <a style="border: 1px solid transparent !important ;" href="https://ticket.irace.vn/categories/half-marathon" class="btn btn-sm btn-info  me-1 mt-1 ">Half Marathon</a>
+                                                                    <a style="border: 1px solid transparent !important ;" href="https://ticket.irace.vn/categories/quarter-marathon" class="btn btn-sm btn-dark ">Quarter Marathon</a>
+                                                                                    </div>
+                                                    <div class="card-share-social ms-auto">
+                                <div class="share-icons">
+    <span>Chia sẻ:</span>
+    
+
+    <a title="Chia sẻ trên Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://ticket.irace.vn/lamdong-trail-2026" target="_blank">
+        <img src="https://ticket.irace.vn/assets/images/facebook.png" alt="Facebook">
+    </a>
+
+    <a title="Chia sẻ trên Zalo" data-bs-toggle="modal" data-bs-target="#modal-share-zalo">
+        <img src="https://ticket.irace.vn/assets/images/zalo.png" alt="Zalo">
+    </a>
+
+    <a title="Embed code" href="https://ticket.irace.vn/embed/lamdong-trail-2026" target="_blank">
+        <img src="https://ticket.irace.vn/assets/images/embed.png" alt="Embed">
+    </a>
+
+    <a title="Sao chép link" data-copy="https://ticket.irace.vn/lamdong-trail-2026">
+        <img src="https://ticket.irace.vn/assets/images/link.png" alt="Link">
+    </a>
+
+            <a title="Add to Calendar" href="https://ticket.irace.vn/add-event-to-calendar/a18e3ebb-62c4-4f59-95fa-355a01c31d7d?type=google" target="_blank">
+            <img src="https://ticket.irace.vn/assets/images/google-calendar.png" alt="Google Calendar">
+        </a>
+    
+</div>                            </div>
+                                            </div>
+
+                    <h1 class="name">Giải chạy Lâm Đồng Trail 2026</h1>
+
+                    <div class="wrap-info">
+                        <div class="item-info"><i class='bx bx-calendar'></i> 06 - 08/11/2026</div>
+                        <div class="item-info mt-1"><i class='bx bx-map' ></i> TTC World - Thung Lũng Tình Yêu, số 03-05-07 đường Mai Anh Đào, phường Lâm Viên, Tp. Đà Lạt, Lâm Đồng</div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+          <div class="col-md-5 col-xl-4 col-12 right">
+
+        <div class="card bg-section">
+
+          <div class="card-body">
+
+            
+                    <div class="text-center">Thời gian còn lại:</div>
+
+                    <div id="count-down-event" data-time="2026-10-05 23:59:59" ></div>
+
+                    <hr>
+
+                    <div class="text-center wrap-price">
+                                                    Từ 950.000đ
+                                            </div>
+
+                    <div class="row row-btns mt-3">
+
+                        
+                                                            <div class="col-6 mb-2 mb-md-0">
+                                    <a class="btn btn-danger d-block btn-show-modal-personal">Mua cá nhân</a>
+                                </div>
+
+                                <div class="col-6">
+                                    <a class="btn btn-danger d-block btn-show-modal-group">Mua nhóm</a>
+                                </div>
+                            
+                        
+                    </div>
+
+                    
+          </div>
+        </div>
+
+      </div>
+    
+  </div>
+
+</div>
+
+            <div class="event-menu container">
+
+  <div class="row">
+
+    <div class="col-12">
+
+        <nav class="navbar navbar-light navbar-expand-lg topnav-menu topnav-menu-event-detail">
+          <div class="collapse navbar-collapse">
+              <ul class="navbar-nav">
+
+                                    <li class="nav-item">
+                        <a class="nav-link" data-id="gioi-thieu">
+                            <span>Giới thiệu</span>
+                        </a>
+                    </li>
+                
+                                      <li class="nav-item">
+                      <a class="nav-link" data-id="personal">
+                        <span>Mua cá nhân</span>
+                      </a>
+                    </li>
+                  
+                                      <li class="nav-item">
+                        <a class="nav-link" data-id="group">
+                            <span>Mua nhóm</span>
+                        </a>
+                    </li>
+                  
+                                                                                                                                    <li class="nav-item">
+                            <a class="nav-link" data-id="bang-gia">
+                                <span>Bảng giá</span>
+                            </a>
+                          </li>
+                                                                                              <li class="nav-item">
+                            <a class="nav-link" data-id="racekit">
+                                <span>Racekit</span>
+                            </a>
+                          </li>
+                                                                                              <li class="nav-item">
+                            <a class="nav-link" data-id="giai-thuong">
+                                <span>Giải thưởng</span>
+                            </a>
+                          </li>
+                                                                                              <li class="nav-item">
+                            <a class="nav-link" data-id="ban-do">
+                                <span>Bản đồ</span>
+                            </a>
+                          </li>
+                                                                                              <li class="nav-item">
+                            <a class="nav-link" data-id="lich-trinh">
+                                <span>Lịch trình</span>
+                            </a>
+                          </li>
+                                                                                              <li class="nav-item">
+                            <a class="nav-link" data-id="quy-dinh">
+                                <span>Quy định</span>
+                            </a>
+                          </li>
+                                                                                                          
+              </ul>
+          </div>
+        </nav>
+
+    </div>
+  </div>
+
+
+
+</div>
+    
+    <div class="event-description container">
+
+    <div class="row">
+
+        <div class="col-12 col-xl-8">
+
+            
+            <div class="row">
+
+    <div class="col-12">
+
+                    <div class="card bg-section" id="gioi-thieu">
+                <h2 class="card-header">Giới thiệu</h2>
+                <div class="card-body">
+                    <p class="card-text"><!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p><strong>Lamdong Trail</strong> l&agrave; giải chạy trail tổ chức thường ni&ecirc;n tại Đ&agrave; Lạt &ndash; L&acirc;m Đồng, được thiết kế để runner chạy chill giữa đại ng&agrave;n, nhưng vẫn đầy thử th&aacute;ch của địa h&igrave;nh cao nguy&ecirc;n đa dạng. Cảm nhận sự thay đổi r&otilde; rệt của thi&ecirc;n nhi&ecirc;n đổi m&ugrave;a, 1 ng&agrave;y chạy c&oacute; đủ trải nghiệm của 4 m&ugrave;a trong năm. Đường chạy đi qua rừng th&ocirc;ng, đồi c&agrave; ph&ecirc;, bản l&agrave;ng, đất đỏ bazan v&agrave; đặc biệt l&agrave; những đoạn đường hoa d&atilde; quỳ v&agrave;ng chỉ nở rộ v&agrave;o thời điểm diễn ra giải. Sau nhiều m&ugrave;a tổ chức, Lamdong Trail đ&atilde; trở th&agrave;nh lựa chọn của những runner muốn vừa thử th&aacute;ch bản th&acirc;n, vừa tận hưởng trọn vẹn thi&ecirc;n nhi&ecirc;n &ndash; thay v&igrave; chỉ đuổi theo th&agrave;nh t&iacute;ch.</p>
+</body>
+</html></p>
+                </div>
+            </div>
+        
+                                    <div class="card bg-section" id="personal" >
+
+    <h2 class="card-header">Mua cá nhân</h2>
+      
+    <div class="card-body">
+
+        <div class="table-responsive">
+
+    <table class="table table-bordered table-price">
+        <thead>
+            <tr>
+                <th>Loại vé</th>
+
+                
+                    <th class="expired-price">
+
+                        Early Bird
+
+                        <br>
+                        <small><i>(22/04 - 10/06)</i></small>
+
+                    </th>
+                
+                    <th class="expired-price">
+
+                        Regular
+
+                        <br>
+                        <small><i>(11/06 - 16/08)</i></small>
+
+                    </th>
+                
+                    <th class="current-period">
+
+                        Late
+
+                        <br>
+                        <small><i>(17/08 - 05/10)</i></small>
+
+                    </th>
+                            </tr>
+
+        </thead>
+
+        <tbody>
+                            <tr>
+                    <th>5km</th>
+
+                    
+                        <td class="expired-price">
+                            650.000đ
+                        </td>
+
+                    
+                        <td class="expired-price">
+                            750.000đ
+                        </td>
+
+                    
+                        <td class="current-period">
+                            950.000đ
+                        </td>
+
+                                    </tr>
+                            <tr>
+                    <th>15km</th>
+
+                    
+                        <td class="expired-price">
+                            850.000đ
+                        </td>
+
+                    
+                        <td class="expired-price">
+                            1.050.000đ
+                        </td>
+
+                    
+                        <td class="current-period">
+                            1.400.000đ
+                        </td>
+
+                                    </tr>
+                            <tr>
+                    <th>25km</th>
+
+                    
+                        <td class="expired-price">
+                            1.450.000đ
+                        </td>
+
+                    
+                        <td class="expired-price">
+                            1.700.000đ
+                        </td>
+
+                    
+                        <td class="current-period">
+                            2.050.000đ
+                        </td>
+
+                                    </tr>
+                            <tr>
+                    <th>55km</th>
+
+                    
+                        <td class="expired-price">
+                            1.950.000đ
+                        </td>
+
+                    
+                        <td class="expired-price">
+                            2.250.000đ
+                        </td>
+
+                    
+                        <td class="current-period">
+                            2.550.000đ
+                        </td>
+
+                                    </tr>
+                            <tr>
+                    <th>85km</th>
+
+                    
+                        <td class="expired-price">
+                            2.350.000đ
+                        </td>
+
+                    
+                        <td class="expired-price">
+                            2.900.000đ
+                        </td>
+
+                    
+                        <td class="current-period">
+                            3.150.000đ
+                        </td>
+
+                                    </tr>
+                            <tr>
+                    <th>Kid Trail (5Km)</th>
+
+                    
+                        <td class="expired-price">
+                            650.000đ
+                        </td>
+
+                    
+                        <td class="expired-price">
+                            750.000đ
+                        </td>
+
+                    
+                        <td class="current-period">
+                            950.000đ
+                        </td>
+
+                                    </tr>
+                            <tr>
+                    <th>5km Family (1 người lớn + 1 trẻ em)</th>
+
+                    
+                        <td class="expired-price">
+                            1.200.000đ
+                        </td>
+
+                    
+                        <td class="expired-price">
+                            1.400.000đ
+                        </td>
+
+                    
+                        <td class="current-period">
+                            1.800.000đ
+                        </td>
+
+                                    </tr>
+                            <tr>
+                    <th>5km Family (1 người lớn + 2 trẻ em)</th>
+
+                    
+                        <td class="expired-price">
+                            1.800.000đ
+                        </td>
+
+                    
+                        <td class="expired-price">
+                            2.100.000đ
+                        </td>
+
+                    
+                        <td class="current-period">
+                            2.700.000đ
+                        </td>
+
+                                    </tr>
+                            <tr>
+                    <th>5km Family (2 người lớn + 1 trẻ em)</th>
+
+                    
+                        <td class="expired-price">
+                            1.800.000đ
+                        </td>
+
+                    
+                        <td class="expired-price">
+                            2.100.000đ
+                        </td>
+
+                    
+                        <td class="current-period">
+                            2.700.000đ
+                        </td>
+
+                                    </tr>
+                                    
+        </tbody>
+    </table>
+</div>
+        
+            <div class="row mt-3 wrap-price-personal">
+                
+                
+                    
+                    <div class="item-catalog col-md-4 col-6">
+
+                        <div class="card text-center">
+
+                            <div class="catalog-title">5km</div>
+
+                            <div class="wrap-bottom">
+                        
+                                                                    <div class="price">950.000đ</div>
+                                
+                                <hr class="hr-css"/>
+
+                                <div class="btn-buy-now-personal " data-id="36331">
+                                    <a class="btn btn-primary">Mua ngay</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                
+                    
+                    <div class="item-catalog col-md-4 col-6">
+
+                        <div class="card text-center">
+
+                            <div class="catalog-title">15km</div>
+
+                            <div class="wrap-bottom">
+                        
+                                                                    <div class="price">1.400.000đ</div>
+                                
+                                <hr class="hr-css"/>
+
+                                <div class="btn-buy-now-personal " data-id="36333">
+                                    <a class="btn btn-primary">Mua ngay</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                
+                    
+                    <div class="item-catalog col-md-4 col-6">
+
+                        <div class="card text-center">
+
+                            <div class="catalog-title">25km</div>
+
+                            <div class="wrap-bottom">
+                        
+                                                                    <div class="price">2.050.000đ</div>
+                                
+                                <hr class="hr-css"/>
+
+                                <div class="btn-buy-now-personal " data-id="36334">
+                                    <a class="btn btn-primary">Mua ngay</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                
+                    
+                    <div class="item-catalog col-md-4 col-6">
+
+                        <div class="card text-center">
+
+                            <div class="catalog-title">55km</div>
+
+                            <div class="wrap-bottom">
+                        
+                                                                    <div class="price">2.550.000đ</div>
+                                
+                                <hr class="hr-css"/>
+
+                                <div class="btn-buy-now-personal " data-id="36336">
+                                    <a class="btn btn-primary">Mua ngay</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                
+                    
+                    <div class="item-catalog col-md-4 col-6">
+
+                        <div class="card text-center">
+
+                            <div class="catalog-title">85km</div>
+
+                            <div class="wrap-bottom">
+                        
+                                                                    <div class="price">3.150.000đ</div>
+                                
+                                <hr class="hr-css"/>
+
+                                <div class="btn-buy-now-personal " data-id="36335">
+                                    <a class="btn btn-primary">Mua ngay</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                
+                    
+                    <div class="item-catalog col-md-4 col-6">
+
+                        <div class="card text-center">
+
+                            <div class="catalog-title">Kid Trail (5Km)</div>
+
+                            <div class="wrap-bottom">
+                        
+                                                                    <div class="price">950.000đ</div>
+                                
+                                <hr class="hr-css"/>
+
+                                <div class="btn-buy-now-personal " data-id="36332">
+                                    <a class="btn btn-primary">Mua ngay</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                
+                    
+                    <div class="item-catalog col-md-4 col-6">
+
+                        <div class="card text-center">
+
+                            <div class="catalog-title">5km Family (1 người lớn + 1 trẻ em)</div>
+
+                            <div class="wrap-bottom">
+                        
+                                                                    <div class="price">1.800.000đ</div>
+                                
+                                <hr class="hr-css"/>
+
+                                <div class="btn-buy-now-personal " data-id="36340">
+                                    <a class="btn btn-primary">Mua ngay</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                
+                    
+                    <div class="item-catalog col-md-4 col-6">
+
+                        <div class="card text-center">
+
+                            <div class="catalog-title">5km Family (1 người lớn + 2 trẻ em)</div>
+
+                            <div class="wrap-bottom">
+                        
+                                                                    <div class="price">2.700.000đ</div>
+                                
+                                <hr class="hr-css"/>
+
+                                <div class="btn-buy-now-personal " data-id="36344">
+                                    <a class="btn btn-primary">Mua ngay</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                
+                    
+                    <div class="item-catalog col-md-4 col-6">
+
+                        <div class="card text-center">
+
+                            <div class="catalog-title">5km Family (2 người lớn + 1 trẻ em)</div>
+
+                            <div class="wrap-bottom">
+                        
+                                                                    <div class="price">2.700.000đ</div>
+                                
+                                <hr class="hr-css"/>
+
+                                <div class="btn-buy-now-personal " data-id="36348">
+                                    <a class="btn btn-primary">Mua ngay</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                                            
+
+            </div>
+
+        
+    </div>
+
+</div>            
+                            <div class="card bg-section" id="group">
+
+    <h2 class="card-header">Mua nhóm</h2>
+
+    <div class="card-body">
+
+        <input type="hidden" name="is_have_group_discount" value="1">
+
+        <div class="table-responsive">
+
+            <table class="table table-bordered table-price table-discount-group">
+                <thead>
+                    <tr>
+                                                <th>Số người</th>
+                        <th>Giảm giá</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    
+                        
+                        
+                        <tr class="item-discount-group text-center" data-min="10" data-max="20" data-discount_type="percent" data-amount="10" data-from_date="" data-to_date="">
+
+                            
+                            <td>
+                                                                    <span>10 - 20</span>
+                                                            </td>
+
+                            <td>
+                                10%
+                            </td>
+                        </tr>
+
+                    
+                        
+                        
+                        <tr class="item-discount-group text-center" data-min="21" data-max="30" data-discount_type="percent" data-amount="15" data-from_date="" data-to_date="">
+
+                            
+                            <td>
+                                                                    <span>21 - 30</span>
+                                                            </td>
+
+                            <td>
+                                15%
+                            </td>
+                        </tr>
+
+                    
+                        
+                        
+                        <tr class="item-discount-group text-center" data-min="31" data-max="999999999" data-discount_type="percent" data-amount="20" data-from_date="" data-to_date="">
+
+                            
+                            <td>
+                                                                    <span> ≥ 31</span>
+                                                            </td>
+
+                            <td>
+                                20%
+                            </td>
+                        </tr>
+
+                                    </tbody>
+            </table>
+
+        </div>
+
+    
+
+        
+            <div class="text-end">
+                                    <a class="btn btn-primary btn-show-modal-group">Mua ngay</a>
+                            </div>
+
+        
+    </div>
+
+</div>                    
+        
+                            
+                
+                                                                <div class="card" id="bang-gia">
+                        <h2 class="card-header">Bảng giá</h4>
+                        <div class="card-body">
+                            <p class="card-text"><!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p><img src="https://irace.vn/wp-content/uploads/2026/09/1st-pic-BANG-GIA-VE-update.webp" alt="Gi&aacute; v&eacute;" style="display: block; margin-left: auto; margin-right: auto;" caption="false" /><img src="https://irace.vn/wp-content/uploads/2026/04/Cs-ve-nhom.jpg" alt="Đăng k&yacute; nh&oacute;m" /></p>
+<p><img src="https://irace.vn/wp-content/uploads/2026/04/Cs-VDV-1.webp" alt="Ch&iacute;nh s&aacute;ch mua v&eacute;" style="display: block; margin-left: auto; margin-right: auto;" caption="false" /></p>
+<ol></ol>
+<p></p>
+</body>
+</html></p>
+                        </div>
+                    </div>
+                
+                
+                                                                <div class="card" id="racekit">
+                        <h2 class="card-header">Racekit</h4>
+                        <div class="card-body">
+                            <p class="card-text"><!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p><img src="https://irace.vn/wp-content/uploads/2026/06/Size-ao.webp" alt="Size &aacute;o" /></p>
+<p><img src="https://irace.vn/wp-content/uploads/2026/06/RACEKIT.webp" alt="Racekit" caption="false" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+</body>
+</html></p>
+                        </div>
+                    </div>
+                
+                
+                                                                <div class="card" id="giai-thuong">
+                        <h2 class="card-header">Giải thưởng</h4>
+                        <div class="card-body">
+                            <p class="card-text"><!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; text-align: center; width: 100%;">
+<thead>
+<tr>
+<th rowspan="1" scope="col">Nội dung</th>
+<th scope="col">85Km</th>
+<th scope="col">55Km</th>
+<th scope="col">25Km</th>
+<th scope="col">15Km</th>
+<th scope="col">5Km<br /> <em>(Từ 18 tuổi trở l&ecirc;n)</em></th>
+<th rowspan="1" scope="col">Kỷ niệm chương</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nhất</strong><br /> (Nam/Nữ)</td>
+<td>23.000.000 VND</td>
+<td>11.000.000 VND</td>
+<td>5.500.000 VND</td>
+<td>3.000.000 VND</td>
+<td>1.500.000 VND</td>
+<td>C&oacute;</td>
+</tr>
+<tr>
+<td><strong>Nh&igrave;</strong><br /> (Nam/Nữ)</td>
+<td>17.000.000 VND</td>
+<td>8.000.000 VND</td>
+<td>4.000.000 VND</td>
+<td>2.000.000 VND</td>
+<td>1.000.000 VND</td>
+<td>C&oacute;</td>
+</tr>
+<tr>
+<td><strong>Ba</strong><br /> (Nam/Nữ)</td>
+<td>11.000.000 VND</td>
+<td>5.000.000 VND</td>
+<td>3.000.000 VND</td>
+<td>1.000.000 VND</td>
+<td>500.000 VND</td>
+<td>C&oacute;</td>
+</tr>
+<tr>
+<td><strong>Tổng cộng</strong></td>
+<td><strong>102.000.000 VND</strong></td>
+<td><strong>48.000.000 VND</strong></td>
+<td><strong>25.000.000 VND</strong></td>
+<td><strong>12.000.000 VND</strong></td>
+<td><strong>6.000.000 VND</strong></td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p><em>Lưu &yacute;: Đ&atilde; bao gồm thuế thu nhập c&aacute; nh&acirc;n.</em></p>
+</body>
+</html></p>
+                        </div>
+                    </div>
+                
+                
+                                                                                                    <div class="card" id="ban-do">
+                        <h2 class="card-header">Bản đồ</h4>
+                        <div class="card-body">
+                            <p class="card-text"><!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p><img src="https://irace.vn/wp-content/uploads/2026/06/5km.webp" alt="" /></p>
+<p><img src="https://irace.vn/wp-content/uploads/2026/06/15km.webp" alt="Bản đồ đường chạy" /></p>
+<p><img src="https://irace.vn/wp-content/uploads/2026/06/25km.webp" alt="" /></p>
+<p><img src="https://irace.vn/wp-content/uploads/2026/06/55km.webp" alt="" /></p>
+<p><img src="https://irace.vn/wp-content/uploads/2026/06/85km.webp" alt="" /></p>
+</body>
+</html></p>
+                        </div>
+                    </div>
+                
+                
+                                                                <div class="card" id="lich-trinh">
+                        <h2 class="card-header">Lịch trình</h4>
+                        <div class="card-body">
+                            <p class="card-text"><!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p><img src="https://irace.vn/wp-content/uploads/2026/06/Race-Schedule_page-0001.webp" alt="Lịch t&igrave;nh sự kiện" /></p>
+</body>
+</html></p>
+                        </div>
+                    </div>
+                
+                
+                                                                <div class="card" id="quy-dinh">
+                        <h2 class="card-header">Quy định</h4>
+                        <div class="card-body">
+                            <p class="card-text"><!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p>Đọc tại <a href="https://drive.google.com/file/d/1uZe9SDXHjmEP-SbFNUIT33X74xPiyarL/view?usp=drive_link" target="_blank" rel="noopener">đ&acirc;y</a></p>
+</body>
+</html></p>
+                        </div>
+                    </div>
+                
+                
+                                            
+                
+                            
+        
+        
+        
+
+        
+                    <div class="card bg-section">
+                <h2 class="card-header">Các sự kiện khác</h4>
+                <div class="card-body">
+                    <div id="slide-orther-event" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                <div class="row">
+                                            <div class="col-12 col-md-6">
+                            <div class="card event-item">
+                                <a href="https://ticket.irace.vn/ultra-trail-cao-bang-2026" target="_blank">
+                                    <img class="card-img-top img-fluid" src="https://app.irace.vn/uploads/2026/04/69d78ca8625d5.png">
+                                    <div class="card-body">
+                                        <h3 class="card-title text-center">Giải chạy Ultra Trail Cao Bang 2026</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                                            <div class="col-12 col-md-6">
+                            <div class="card event-item">
+                                <a href="https://ticket.irace.vn/marathon-quoc-te-di-san-can-tho-2026" target="_blank">
+                                    <img class="card-img-top img-fluid" src="https://app.irace.vn/uploads/2026/08/6a7989aa689f8.png">
+                                    <div class="card-body">
+                                        <h3 class="card-title text-center">Giải chạy Marathon Quốc tế Di sản Cần Thơ 2026</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+                    <div class="carousel-item ">
+                <div class="row">
+                                            <div class="col-12 col-md-6">
+                            <div class="card event-item">
+                                <a href="https://ticket.irace.vn/vung-tau-city-trail-2026" target="_blank">
+                                    <img class="card-img-top img-fluid" src="https://app.irace.vn/uploads/2026/09/6aa913952a85f.jpeg">
+                                    <div class="card-body">
+                                        <h3 class="card-title text-center">Giải chạy Vung Tau City Trail 2026</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                                            <div class="col-12 col-md-6">
+                            <div class="card event-item">
+                                <a href="https://ticket.irace.vn/pink-run-2026" target="_blank">
+                                    <img class="card-img-top img-fluid" src="https://app.irace.vn/uploads/2026/07/6a4f7210ea87e.png">
+                                    <div class="card-body">
+                                        <h3 class="card-title text-center">Giải chạy Pink Run 2026</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+                    <div class="carousel-item ">
+                <div class="row">
+                                            <div class="col-12 col-md-6">
+                            <div class="card event-item">
+                                <a href="https://ticket.irace.vn/quoc-te-vi-da-lat-xanh-2026" target="_blank">
+                                    <img class="card-img-top img-fluid" src="https://app.irace.vn/uploads/2026/09/6ab0e1324a85b.png">
+                                    <div class="card-body">
+                                        <h3 class="card-title text-center">Giải Chạy Quốc Tế vì Đà Lạt Xanh 2026</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                                            <div class="col-12 col-md-6">
+                            <div class="card event-item">
+                                <a href="https://ticket.irace.vn/gia-lai-city-trail-giac-mo-dai-ngan-2026" target="_blank">
+                                    <img class="card-img-top img-fluid" src="https://app.irace.vn/uploads/2026/03/69be3ed398094.png">
+                                    <div class="card-body">
+                                        <h3 class="card-title text-center">Giải chạy GIA LAI CITY TRAIL - GIẤC MƠ ĐẠI NGÀN 2026</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+            </div>
+
+            <a class="carousel-control carousel-control-prev" href="#slide-orther-event" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control carousel-control-next" href="#slide-orther-event" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+                </div>
+            </div>
+        
+
+    </div>
+
+</div>
+
+        </div>
+
+                                    <div class=" col-xl-4 col-12">
+                    <div class="sidebar-right">
+
+    <div class="card bg-section">
+
+        <div class="card-header text-center">
+            <h4 class="card-title mb-0">Giải chạy Lâm Đồng Trail 2026</h4>
+        </div>
+
+        <div class="card-body">
+
+            <div class="wrap-info d-none">
+                <div><i class='bx bx-calendar'></i> 06 - 08/11/2026</div>
+                <div class="mt-1"><i class='bx bx-map' ></i> TTC World - Thung Lũng Tình Yêu, số 03-05-07 đường Mai Anh Đào, phường Lâm Viên, Tp. Đà Lạt, Lâm Đồng</div>
+            </div>
+
+            
+                                    <div class="text-center wrap-price">
+                                                    Từ 950.000đ
+                                            </div>
+                
+                <div class="row row-btns mt-3">
+
+                    
+                                                    <div class="col-6">
+                                <a class="btn btn-danger d-block btn-show-modal-personal">Mua cá nhân</a>
+                            </div>
+
+                            <div class="col-6">
+                                <a class="btn btn-danger d-block btn-show-modal-group">Mua nhóm</a>
+                            </div>
+                        
+                    
+                </div>
+
+                
+                <div class="card mt-4">
+                    <div class="card-body p-3">
+                        <div class="share-icons">
+    <span>Chia sẻ:</span>
+    
+
+    <a title="Chia sẻ trên Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://ticket.irace.vn/lamdong-trail-2026" target="_blank">
+        <img src="https://ticket.irace.vn/assets/images/facebook.png" alt="Facebook">
+    </a>
+
+    <a title="Chia sẻ trên Zalo" data-bs-toggle="modal" data-bs-target="#modal-share-zalo">
+        <img src="https://ticket.irace.vn/assets/images/zalo.png" alt="Zalo">
+    </a>
+
+    <a title="Embed code" href="https://ticket.irace.vn/embed/lamdong-trail-2026" target="_blank">
+        <img src="https://ticket.irace.vn/assets/images/embed.png" alt="Embed">
+    </a>
+
+    <a title="Sao chép link" data-copy="https://ticket.irace.vn/lamdong-trail-2026">
+        <img src="https://ticket.irace.vn/assets/images/link.png" alt="Link">
+    </a>
+
+            <a title="Add to Calendar" href="https://ticket.irace.vn/add-event-to-calendar/a18e3ebb-62c4-4f59-95fa-355a01c31d7d?type=google" target="_blank">
+            <img src="https://ticket.irace.vn/assets/images/google-calendar.png" alt="Google Calendar">
+        </a>
+    
+</div>                    </div>
+                </div>
+
+            
+        </div>
+
+    </div>
+
+            <div class="wrap-event-coupons">
+
+        <div class="main-title">
+            <span>Ưu đãi dành cho bạn</span>
+        </div>
+
+        <ul >
+                            <li data-code="LDT_VUITRUNGTHU">
+                    <img src="https://ticket.irace.vn/assets/images/gift-voucher.png" alt="Gift">
+                    <div class="info">
+                        <div class="description">Voucher 25% mừng lễ Trung thu</div>
+                                                    <div class="notes">Chỉ áp dụng mua vé lẻ, không áp dụng theo nhóm</div>
+                                                <div class="expired">
+                            <span>HSD: 23:59:00, 26/09/2026</span>
+                                                    </div>
+                    </div>
+                </li>
+                    </ul>
+
+    </div>
+
+    
+</div>                </div>
+                    
+    </div>
+
+</div>
+
+
+    <div id="modal-personal-buy" class="modal fade" tabindex="-1" role="dialog">
+    <input type="hidden" name="_token" value="SHRUc07IFeRcWEVHWoeOJyMB5r4KhvndYAlFFrQK" autocomplete="off">    <div class="modal-dialog modal-xl bg-section">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title text-uppercase">Mua cá nhân</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+
+                
+                    <div>Giai đoạn hiện tại là: <b>Late</b></div>
+
+                    <div class="row mt-3 wrap-price-personal">
+
+                                        
+                        
+                                            
+                            <div class="item-catalog col-lg-3 col-6">
+                
+                                <div class="card text-center">
+                
+                                <div class="catalog-title">5km</div>
+                
+                                <div class="wrap-bottom">
+
+                                    <div class="price">950.000đ</div>
+                
+                                    <hr class="hr-css"/>
+                
+                                    <div class="btn-buy-now-personal " data-id="36331">
+                                        <a class="btn btn-primary">
+                                            <i class="mdi mdi-hand-pointing-right"></i>
+                                            Mua ngay
+                                        </a>
+                                    </div>
+                
+                                </div>
+                
+                                </div>
+                            </div>
+                
+                        
+                                            
+                            <div class="item-catalog col-lg-3 col-6">
+                
+                                <div class="card text-center">
+                
+                                <div class="catalog-title">15km</div>
+                
+                                <div class="wrap-bottom">
+
+                                    <div class="price">1.400.000đ</div>
+                
+                                    <hr class="hr-css"/>
+                
+                                    <div class="btn-buy-now-personal " data-id="36333">
+                                        <a class="btn btn-primary">
+                                            <i class="mdi mdi-hand-pointing-right"></i>
+                                            Mua ngay
+                                        </a>
+                                    </div>
+                
+                                </div>
+                
+                                </div>
+                            </div>
+                
+                        
+                                            
+                            <div class="item-catalog col-lg-3 col-6">
+                
+                                <div class="card text-center">
+                
+                                <div class="catalog-title">25km</div>
+                
+                                <div class="wrap-bottom">
+
+                                    <div class="price">2.050.000đ</div>
+                
+                                    <hr class="hr-css"/>
+                
+                                    <div class="btn-buy-now-personal " data-id="36334">
+                                        <a class="btn btn-primary">
+                                            <i class="mdi mdi-hand-pointing-right"></i>
+                                            Mua ngay
+                                        </a>
+                                    </div>
+                
+                                </div>
+                
+                                </div>
+                            </div>
+                
+                        
+                                            
+                            <div class="item-catalog col-lg-3 col-6">
+                
+                                <div class="card text-center">
+                
+                                <div class="catalog-title">55km</div>
+                
+                                <div class="wrap-bottom">
+
+                                    <div class="price">2.550.000đ</div>
+                
+                                    <hr class="hr-css"/>
+                
+                                    <div class="btn-buy-now-personal " data-id="36336">
+                                        <a class="btn btn-primary">
+                                            <i class="mdi mdi-hand-pointing-right"></i>
+                                            Mua ngay
+                                        </a>
+                                    </div>
+                
+                                </div>
+                
+                                </div>
+                            </div>
+                
+                        
+                                            
+                            <div class="item-catalog col-lg-3 col-6">
+                
+                                <div class="card text-center">
+                
+                                <div class="catalog-title">85km</div>
+                
+                                <div class="wrap-bottom">
+
+                                    <div class="price">3.150.000đ</div>
+                
+                                    <hr class="hr-css"/>
+                
+                                    <div class="btn-buy-now-personal " data-id="36335">
+                                        <a class="btn btn-primary">
+                                            <i class="mdi mdi-hand-pointing-right"></i>
+                                            Mua ngay
+                                        </a>
+                                    </div>
+                
+                                </div>
+                
+                                </div>
+                            </div>
+                
+                        
+                                            
+                            <div class="item-catalog col-lg-3 col-6">
+                
+                                <div class="card text-center">
+                
+                                <div class="catalog-title">Kid Trail (5Km)</div>
+                
+                                <div class="wrap-bottom">
+
+                                    <div class="price">950.000đ</div>
+                
+                                    <hr class="hr-css"/>
+                
+                                    <div class="btn-buy-now-personal " data-id="36332">
+                                        <a class="btn btn-primary">
+                                            <i class="mdi mdi-hand-pointing-right"></i>
+                                            Mua ngay
+                                        </a>
+                                    </div>
+                
+                                </div>
+                
+                                </div>
+                            </div>
+                
+                        
+                                            
+                            <div class="item-catalog col-lg-3 col-6">
+                
+                                <div class="card text-center">
+                
+                                <div class="catalog-title">5km Family (1 người lớn + 1 trẻ em)</div>
+                
+                                <div class="wrap-bottom">
+
+                                    <div class="price">1.800.000đ</div>
+                
+                                    <hr class="hr-css"/>
+                
+                                    <div class="btn-buy-now-personal " data-id="36340">
+                                        <a class="btn btn-primary">
+                                            <i class="mdi mdi-hand-pointing-right"></i>
+                                            Mua ngay
+                                        </a>
+                                    </div>
+                
+                                </div>
+                
+                                </div>
+                            </div>
+                
+                        
+                                            
+                            <div class="item-catalog col-lg-3 col-6">
+                
+                                <div class="card text-center">
+                
+                                <div class="catalog-title">5km Family (1 người lớn + 2 trẻ em)</div>
+                
+                                <div class="wrap-bottom">
+
+                                    <div class="price">2.700.000đ</div>
+                
+                                    <hr class="hr-css"/>
+                
+                                    <div class="btn-buy-now-personal " data-id="36344">
+                                        <a class="btn btn-primary">
+                                            <i class="mdi mdi-hand-pointing-right"></i>
+                                            Mua ngay
+                                        </a>
+                                    </div>
+                
+                                </div>
+                
+                                </div>
+                            </div>
+                
+                        
+                                            
+                            <div class="item-catalog col-lg-3 col-6">
+                
+                                <div class="card text-center">
+                
+                                <div class="catalog-title">5km Family (2 người lớn + 1 trẻ em)</div>
+                
+                                <div class="wrap-bottom">
+
+                                    <div class="price">2.700.000đ</div>
+                
+                                    <hr class="hr-css"/>
+                
+                                    <div class="btn-buy-now-personal " data-id="36348">
+                                        <a class="btn btn-primary">
+                                            <i class="mdi mdi-hand-pointing-right"></i>
+                                            Mua ngay
+                                        </a>
+                                    </div>
+                
+                                </div>
+                
+                                </div>
+                            </div>
+                
+                                                    
+                
+                    </div>
+
+                
+            </div>
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    <div id="modal-group-buy" class="modal fade" tabindex="-1" role="dialog">
+    <input type="hidden" name="_token" value="SHRUc07IFeRcWEVHWoeOJyMB5r4KhvndYAlFFrQK" autocomplete="off">    <div class="modal-dialog modal-xl bg-section">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-uppercase">Mua nhóm</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+              
+              
+                <div class="row">
+
+                    
+                    <div class="col-md-6 col-12">
+                    <div class="card active">
+                      <label class="card-header">
+                        <input class="form-check-input" type="radio" name="group_buy_type" checked>
+                        <span class="ms-2">Trưởng nhóm thanh toán</span>
+                      </label>
+                      <div class="card-body">
+                        <ul>
+                                                            <li>Trưởng nhóm chọn cự ly, số lượng cần đăng ký.</li>
+                                                            <li>Trưởng nhóm thanh toán tiền cho đơn hàng.</li>
+                                                            <li>Trưởng nhóm nhập thông tin cho các thành viên.</li>
+                                                            <li>Trưởng nhóm xác nhận các thành viên trong nhóm đã nhập đầy đủ thông tin.</li>
+                                                    </ul>
+
+                        <div class="my-2 alert alert-danger">
+                            ❌<i class="ms-1">Trưởng nhóm có trách nhiệm cập nhật đủ và xác nhận thông tin thành viên của nhóm trong thời gian hợp lệ. iRace không chịu trách nhiệm đảm bảo quyền lợi cho nhóm nếu cập nhật thông tin trễ hạn.</i>
+                        </div>
+      
+                        <table class="table table-bordered table-catalogs">
+                            <tr>
+                                <th>Loại vé</th>
+                                <th>Đơn giá</th>
+                                <th>Số lượng</th>
+                                <th>Số tiền</th>
+                            </tr>
+      
+                          
+                            
+                            
+                            <tr class="item-catalog" data-id="36331" data-catalog_id="1" data-price="950000">
+                              <td>
+                                <span class="catalog-title">5km</span>
+                            </td>
+                              <td class="text-center unit-price">950.000đ</td>
+                              <td>
+                                <div class="wrap-input-quantity">
+                                  <button class="btn btn-primary sub-button">
+                                    <i class='bx bx-minus'></i>
+                                  </button>   
+                                  <input class="form-control" name="quantity" type="number" value="0"> 
+                                  <button class="btn btn-primary add-button">
+                                    <i class='bx bx-plus'></i>
+                                  </button>
+                                </div>
+                              </td>
+                              <td class="text-end sub-total">0đ</td>
+                            </tr>
+                            
+                          
+                            
+                            
+                            <tr class="item-catalog" data-id="36333" data-catalog_id="34" data-price="1400000">
+                              <td>
+                                <span class="catalog-title">15km</span>
+                            </td>
+                              <td class="text-center unit-price">1.400.000đ</td>
+                              <td>
+                                <div class="wrap-input-quantity">
+                                  <button class="btn btn-primary sub-button">
+                                    <i class='bx bx-minus'></i>
+                                  </button>   
+                                  <input class="form-control" name="quantity" type="number" value="0"> 
+                                  <button class="btn btn-primary add-button">
+                                    <i class='bx bx-plus'></i>
+                                  </button>
+                                </div>
+                              </td>
+                              <td class="text-end sub-total">0đ</td>
+                            </tr>
+                            
+                          
+                            
+                            
+                            <tr class="item-catalog" data-id="36334" data-catalog_id="69" data-price="2050000">
+                              <td>
+                                <span class="catalog-title">25km</span>
+                            </td>
+                              <td class="text-center unit-price">2.050.000đ</td>
+                              <td>
+                                <div class="wrap-input-quantity">
+                                  <button class="btn btn-primary sub-button">
+                                    <i class='bx bx-minus'></i>
+                                  </button>   
+                                  <input class="form-control" name="quantity" type="number" value="0"> 
+                                  <button class="btn btn-primary add-button">
+                                    <i class='bx bx-plus'></i>
+                                  </button>
+                                </div>
+                              </td>
+                              <td class="text-end sub-total">0đ</td>
+                            </tr>
+                            
+                          
+                            
+                            
+                            <tr class="item-catalog" data-id="36336" data-catalog_id="487" data-price="2550000">
+                              <td>
+                                <span class="catalog-title">55km</span>
+                            </td>
+                              <td class="text-center unit-price">2.550.000đ</td>
+                              <td>
+                                <div class="wrap-input-quantity">
+                                  <button class="btn btn-primary sub-button">
+                                    <i class='bx bx-minus'></i>
+                                  </button>   
+                                  <input class="form-control" name="quantity" type="number" value="0"> 
+                                  <button class="btn btn-primary add-button">
+                                    <i class='bx bx-plus'></i>
+                                  </button>
+                                </div>
+                              </td>
+                              <td class="text-end sub-total">0đ</td>
+                            </tr>
+                            
+                          
+                            
+                            
+                            <tr class="item-catalog" data-id="36335" data-catalog_id="142" data-price="3150000">
+                              <td>
+                                <span class="catalog-title">85km</span>
+                            </td>
+                              <td class="text-center unit-price">3.150.000đ</td>
+                              <td>
+                                <div class="wrap-input-quantity">
+                                  <button class="btn btn-primary sub-button">
+                                    <i class='bx bx-minus'></i>
+                                  </button>   
+                                  <input class="form-control" name="quantity" type="number" value="0"> 
+                                  <button class="btn btn-primary add-button">
+                                    <i class='bx bx-plus'></i>
+                                  </button>
+                                </div>
+                              </td>
+                              <td class="text-end sub-total">0đ</td>
+                            </tr>
+                            
+                          
+                            
+                            
+                            <tr class="item-catalog" data-id="36332" data-catalog_id="32" data-price="950000">
+                              <td>
+                                <span class="catalog-title">Kid Trail (5Km)</span>
+                            </td>
+                              <td class="text-center unit-price">950.000đ</td>
+                              <td>
+                                <div class="wrap-input-quantity">
+                                  <button class="btn btn-primary sub-button">
+                                    <i class='bx bx-minus'></i>
+                                  </button>   
+                                  <input class="form-control" name="quantity" type="number" value="0"> 
+                                  <button class="btn btn-primary add-button">
+                                    <i class='bx bx-plus'></i>
+                                  </button>
+                                </div>
+                              </td>
+                              <td class="text-end sub-total">0đ</td>
+                            </tr>
+                            
+                          
+                            
+                            
+                            <tr class="item-catalog" data-id="36340" data-catalog_id="454" data-price="1800000">
+                              <td>
+                                <span class="catalog-title">5km Family (1 người lớn + 1 trẻ em)</span>
+                            </td>
+                              <td class="text-center unit-price">1.800.000đ</td>
+                              <td>
+                                <div class="wrap-input-quantity">
+                                  <button class="btn btn-primary sub-button">
+                                    <i class='bx bx-minus'></i>
+                                  </button>   
+                                  <input class="form-control" name="quantity" type="number" value="0"> 
+                                  <button class="btn btn-primary add-button">
+                                    <i class='bx bx-plus'></i>
+                                  </button>
+                                </div>
+                              </td>
+                              <td class="text-end sub-total">0đ</td>
+                            </tr>
+                            
+                          
+                            
+                            
+                            <tr class="item-catalog" data-id="36344" data-catalog_id="455" data-price="2700000">
+                              <td>
+                                <span class="catalog-title">5km Family (1 người lớn + 2 trẻ em)</span>
+                            </td>
+                              <td class="text-center unit-price">2.700.000đ</td>
+                              <td>
+                                <div class="wrap-input-quantity">
+                                  <button class="btn btn-primary sub-button">
+                                    <i class='bx bx-minus'></i>
+                                  </button>   
+                                  <input class="form-control" name="quantity" type="number" value="0"> 
+                                  <button class="btn btn-primary add-button">
+                                    <i class='bx bx-plus'></i>
+                                  </button>
+                                </div>
+                              </td>
+                              <td class="text-end sub-total">0đ</td>
+                            </tr>
+                            
+                          
+                            
+                            
+                            <tr class="item-catalog" data-id="36348" data-catalog_id="456" data-price="2700000">
+                              <td>
+                                <span class="catalog-title">5km Family (2 người lớn + 1 trẻ em)</span>
+                            </td>
+                              <td class="text-center unit-price">2.700.000đ</td>
+                              <td>
+                                <div class="wrap-input-quantity">
+                                  <button class="btn btn-primary sub-button">
+                                    <i class='bx bx-minus'></i>
+                                  </button>   
+                                  <input class="form-control" name="quantity" type="number" value="0"> 
+                                  <button class="btn btn-primary add-button">
+                                    <i class='bx bx-plus'></i>
+                                  </button>
+                                </div>
+                              </td>
+                              <td class="text-end sub-total">0đ</td>
+                            </tr>
+                            
+                                
+                        </table>
+
+                        <div class="text-end mt-2 mb-1">
+
+                            <div class="sub-total-group d-none row mb-1">
+                                <div class="col-9">
+                                    <span>Tạm tính: </span>
+                                </div>
+                                <div class="col-3 text-end">
+                                    <b>0đ</b>
+                                </div>
+                            </div>
+
+                            <div class="discount-group d-none row mb-1">
+                                <div class="col-9">
+                                    <span>Giảm giá: </span>
+                                    <span class="discount-title"></span>
+                                </div>
+                                <div class="col-3 text-end">
+                                    <b>0đ</b>
+                                </div>
+                            </div>
+
+                            <div class="total-payment-group row mb-1">
+                                <div class="col-9">
+                                    <span>Thanh toán: </span>
+                                </div>
+                                <div class="col-3 text-end">
+                                    <b class="font-size-18 text-danger">0đ</b>
+                                </div>
+                            </div>
+
+                            <div class="mt-2">
+                                <a class="btn btn-primary btn-buy-now-group disabled">Đăng ký ngay</a>
+                            </div>
+                        </div>
+      
+                      </div>
+                    </div>  
+                    </div>
+
+                    
+                    
+                        <div class="col-md-6 col-12">
+
+                            <div class="card">
+
+                                <label class="card-header">
+                                    <input class="form-check-input" type="radio" name="group_buy_type">
+                                    <span class="ms-2">Thành viên thanh toán</span>
+                                </label>
+
+                                <div class="card-body">
+                                    <ul>
+                                                                                    <li>Trưởng nhóm tạo đơn hàng nhóm với giá 0đ.</li>
+                                                                                    <li>Trưởng nhóm gửi link đăng ký cho các thành viên.</li>
+                                                                                    <li>Thành viên nhận link từ nhóm trưởng, chọn cự ly, nhập thông tin và thanh toán số tiền tương ứng.</li>
+                                                                                    <li>Trưởng nhóm chọn đóng đơn hàng khi các thành viên trong nhóm đăng ký xong. Hệ thống sẽ tính tổng số lượng của đơn hàng và tính tiền giảm giá (nếu đủ điều kiện). Tiền giảm giá sẽ được hoàn về tài khoản của nhóm trưởng/thành viên.</li>
+                                                                            </ul>
+
+                                    <div class="text-end mt-2 mb-1">
+                                        <div class="mt-2">
+                                            <a class="btn btn-primary btn-collect-group">Đăng ký ngay</a>
+                                        </div>
+                                    </div>
+                
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    
+                </div>
+
+              
+            </div>
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    
+    <div id="modal-join-code-catalog" class="modal fade">
+    <div class="modal-dialog">
+        <form class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel">Nhập mã tham gia</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+              <input id="input_join_code_catalog" required class="form-control" placeholder="Mã tham gia">
+            </div>
+
+            <div class="modal-footer">
+                <button type="button"  class="btn btn-light" data-bs-dismiss="modal">Đóng</button>
+                <button id="submit_join_code" type="submit" class="btn btn-primary ">Xác nhận</button>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+    <div id="modal-share-zalo" class="modal fade">
+    <div class="modal-dialog">
+        <form class="modal-content" style="background-color: #ecf0f1;">
+            <div class="modal-header" style="border-color: #ddd;">
+                <h5 class="modal-title" id="myModalLabel">Chia sẻ qua Zalo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <p>Bạn có thể đăng lên nhật ký hoặc gửi tin nhắn cho bạn bè, người thân của mình!</p>
+                <div class="zalo-share-button text-center" style="cursor: pointer;"
+                    data-href="https://ticket.irace.vn/lamdong-trail-2026"
+                    data-oaid="3558148553958026677"
+                    data-layout="4"
+                    data-color="blue"
+                    data-callback="shareZaloSuccess"
+                    data-customize="true">
+                    <img src="https://ticket.irace.vn/assets/images/zalo.png" width="40" class="me-1">
+                    <span>Chia sẻ ngay!</span>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+    <div id="modal-add-to-calendar" class="modal fade">
+    <div class="modal-dialog" style="max-width: 580px;">
+        <form class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel">Thêm vào lịch</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body text-center">
+                <div class="row d-flex">
+                    <div class="col-6">
+                        <a class="card d-block mb-0" href="https://ticket.irace.vn/add-event-to-calendar/a18e3ebb-62c4-4f59-95fa-355a01c31d7d?type=google" target="_blank">
+                            <div class="card-body">
+                                <img src="https://ticket.irace.vn/assets/images/google-calendar.png" alt="Google" width="50">
+                                <small class="d-block mt-3">Click để thêm vào <b>Google Calendar</b></small>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a class="card d-block mb-0" href="https://ticket.irace.vn/add-event-to-calendar/a18e3ebb-62c4-4f59-95fa-355a01c31d7d?type=ics">
+                            <div class="card-body">
+                                <img src="https://ticket.irace.vn/assets/images/apple-calendar.png" alt="Apple" width="50">
+                                <small class="d-block mt-3">Click để thêm vào <b>Apple Calendar</b></small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+            </div>
+
+            <footer class="footer footer-layout" style="left: 0">
+        <div class="footer-top">
+            <div class="container h-100 d-flex align-items-center justify-content-between">
+                <a href="http://online.gov.vn/Home/WebDetails/51414" target="_blank">
+                    <img class="image-notifi" src="https://ticket.irace.vn/assets/images/dathongbao.png" alt="notifi">
+                </a>
+                <div class="info-company">
+                    <p class="mb-1 company-name">CÔNG TY CỔ PHẦN IRACE &nbsp; -
+                        <a class="link" href="tel:0902316831">Hotline: 0902.31.68.31</a>-
+                        <a class="link" href="mailto:support@irace.vn">Email: support@irace.vn</a>
+                    </p>
+                    <p class="mb-1" style="filter: contrast(0.75)">B-00.02 Sarica, KĐT Sala, Đường D9, P. An Khánh, TP. HCM</p>
+                    <p class="m-0" style="filter: contrast(0.75)">Mã số doanh nghiệp: 0315105285 do Sở Kế hoạch và Đầu tư TP.HCM cấp lần 2 ngày 12/04/19</p>
+                </div>
+                <div class="container-contact">
+                    <div class="footer-socials">
+                        <a href="https://www.fb.com/irace.vn" target="_blank">
+                            <img src="https://ticket.irace.vn/assets/images/face-book.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/irace.vn" target="_blank">
+                            <img src="https://ticket.irace.vn/assets/images/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://irace.vn/feed/" target="_blank">
+                            <img src="https://ticket.irace.vn/assets/images/wifi.png" alt="Feed">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA" target="_blank">
+                            <img src="https://ticket.irace.vn/assets/images/youtube.png" alt="Youtube">
+                        </a>
+                    </div>
+
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 0;">
+                        <div>
+                            <img src="https://ticket.irace.vn/assets/images/app/irace-onelink-s.png" style="width: 100px; height: 100px; display: block;" alt="QR Code">
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                            <a href="https://play.google.com/store/apps/details?id=com.irace.app" target="_blank" style="display: inline-block;">
+                                <img src="https://ticket.irace.vn/assets/images/app/download-google-play-vi.png" style="height: 40px; width: auto;" alt="Google Play">
+                            </a>
+                            <a href="https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517" target="_blank" style="display: inline-block;">
+                                <img src="https://ticket.irace.vn/assets/images/app/download-apple-store-vi.png" style="height: 40px; width: auto;" alt="App Store">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-lg-3 col-12 text-irace">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script> iRace.vn - Made by Vietnam
+                    </div>
+
+                    <div class="col-lg-9 col-12">
+                        <div class="text-lg-end policy">
+
+                                                            <a href="https://irace.vn/chinh-sach-bao-mat/" target="_blank">Chính sách bảo mật</a>
+                                <a href="https://irace.vn/dieu-khoan-thanh-toan/" target="_blank">Điều khoản thanh
+                                    toán</a>
+                                <a href="https://irace.vn/dieu-khoan-su-dung/" target="_blank">Điều khoản sử dụng</a>
+                                <a href="https://irace.vn/tuyen-dung/" target="_blank">Tuyển dụng</a>
+                                <a href="https://irace.vn/lien-he/" target="_blank">Liên hệ</a>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+            <a href="javascript:void(0)" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+        </div>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="https://ticket.irace.vn/assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://ticket.irace.vn/assets/libs/feather-icons/feather.min.js"></script>
+    <script src="https://ticket.irace.vn/assets/js/jquery-3.6.3.min.js"></script>
+    <script src="https://ticket.irace.vn/assets/libs/toastr/toastr.min.js"></script>
+    <script src="https://ticket.irace.vn/assets/libs/loadingoverlay/loadingoverlay.min.js"></script>
+    <script src="/assets/js/web.js?id=5a3300d8670b6ce127a8917e0bcd80b9"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=explicit&hl=vi" async defer></script>
+
+    
+<script>
+    let JOIN_CODE;
+    const CSRF_TOKEN = $('input[name=_token]').val();
+    const EVENT_ID = $('input[name=event_id]').val() - 0;
+    const EVENT_UUID = "a18e3ebb-62c4-4f59-95fa-355a01c31d7d";
+    const COUNT_GROUP_DISCOUNT_PEOPLE_BY = "athlete";
+
+</script>
+
+<script src="/assets/js/event.js?id=cf54faf14c65c73cf13bc787a2b1a8da"></script>
+<script src="https://ticket.irace.vn/assets/js/jquery.countdown.min.js"></script>
+
+
+<script>
+
+  var currentPriceId;
+  var purchaseType;
+  var buyCodeCatalog = null;
+  let statusCheckCode = false;
+
+  if ($('#count-down-event').length) {
+
+    const TEXT_DAYS = "Ngày";
+    const TEXT_HOURS = "Giờ";
+    const TEXT_MINUTES = "Phút";
+    const TEXT_SECONDS = "Giây";
+
+    var datetime = $("#count-down-event").data("time");
+    if (datetime) {
+      $("#count-down-event").countdown(datetime, function (event) {
+          $(this).html(
+              event.strftime(
+                  "" +
+                      "<div class='wrap-item'><div class='item'><div class='number'>%D</div> <div class='text'>" + TEXT_DAYS +"</div></div></div> " +
+                      "<div class='wrap-item'><div class='item'><div class='number'>%H</div> <div class='text'>"+ TEXT_HOURS +"</div></div></div> " +
+                      "<div class='wrap-item'><div class='item'><div class='number'>%M</div> <div class='text'>"+ TEXT_MINUTES +"</div></div></div> " +
+                      "<div class='wrap-item'><div class='item'><div class='number'>%S</div> <div class='text'>"+ TEXT_SECONDS +"</div></div></div> "
+              )
+          );
+      });
+    }
+  }
+
+    $('.btn-buy-now-personal').click(function() {
+        currentPriceId = $(this).data('id');
+        purchaseType = 'personal';
+        buyCodeCatalog = null;
+
+        if ($(this).hasClass('is_required_access_code')) {
+            return $('#modal-join-code-catalog').modal('show');
+        }
+
+        if ($('#modal-join-code').length && !statusCheckCode) {
+            return $('#modal-join-code').modal('show');
+        }
+
+        checkoutPersonal();
+    });
+
+
+    $('#modal-join-code-catalog').submit(function(e) {
+        e.preventDefault();
+        buyCodeCatalog = $('#input_join_code_catalog').val();
+        checkoutPersonal();
+    });
+
+    $('#modal-join-code form').submit(function(e) {
+        e.preventDefault();
+        checkJoinCode();
+    });
+
+  function checkoutPersonal() {
+
+    if (!currentPriceId) {
+        return $('#modal-personal-buy').modal('show');
+    }
+
+    $.LoadingOverlay('show');
+
+    var data = {
+        type: 'personal',
+        event_id: EVENT_ID,
+        id: currentPriceId,
+        join_code: JOIN_CODE,
+        buy_code_catalog: buyCodeCatalog,
+        _token: CSRF_TOKEN
+    };
+
+    var url = APP_URL + '/api/checkout/init';
+    $.post(url, data, function(res) {
+        window.location.href = res.data;
+    }).fail(function(xhr, status, error) {
+        toastr.error(xhr.responseJSON.message);
+    }).always(function() {
+        $.LoadingOverlay("hide");
+    });
+  }
+
+  function checkJoinCode() {
+
+      let urlCheckCode =  APP_URL + '/api/checkout/check-join-code';
+
+      JOIN_CODE = $('#input_join_code').val();
+      let data = {
+        event_id: EVENT_ID,
+        join_code: JOIN_CODE,
+        _token: CSRF_TOKEN
+      };
+
+      $.LoadingOverlay('show');
+
+      $.post(urlCheckCode, data, function(res) {
+          statusCheckCode = true;
+          $('#modal-join-code').modal('hide');
+          if (purchaseType == 'personal') {
+            checkoutPersonal();
+          } else {
+            $('#modal-group-buy').modal('show');
+          }
+
+      }).fail(function(xhr, status, error) {
+          toastr.error(xhr.responseJSON.message);
+      }).always(function() {
+          $.LoadingOverlay("hide");
+      });
+
+  }
+
+    $('.btn-show-modal-group').click(function(event) {
+
+        purchaseType = 'group';
+
+        if ($('#modal-join-code').length && !statusCheckCode) {
+            return $('#modal-join-code').modal('show');
+        }
+
+        $('#modal-group-buy').modal('show');
+
+    });
+
+    $('.btn-show-modal-personal').click(function(event) {
+
+        purchaseType = 'personal';
+        currentPriceId = null;
+
+        if ($('#modal-join-code').length && !statusCheckCode) {
+            return $('#modal-join-code').modal('show');
+        }
+
+        $('#modal-personal-buy').modal('show');
+
+    });
+
+
+
+  var click_menu = false;
+
+  $('.topnav-menu-event-detail .nav-link').click(function() {
+    click_menu = true;
+    var id = $(this).data('id');
+    $('.topnav-menu-event-detail .nav-link.active').removeClass('active');
+    $(this).addClass('active');
+    location.hash = '#' + id;
+    $('html, body').animate({
+      scrollTop: $("#" + id).offset().top - 70
+    }, 100);
+    setTimeout(function() {
+      click_menu = false;
+    }, 1000);
+  });
+
+  setTimeout(function() {
+    var hash = location.hash;
+    if (hash) {
+      click_menu = true;
+      var tab_id = hash.replace('#', '', hash);
+      $('.topnav-menu-event-detail').find('.nav-link[data-id="'+ tab_id +'"]').click();
+    }
+  }, 1000);
+
+
+  $(document).on("scroll", function(e) {
+    try {
+      if (!click_menu) {
+        var scrollPos = $(document).scrollTop();
+        $('.topnav-menu-event-detail .nav-link').each(function () {
+          var id = $(this).data('id');
+          var element = $('#' + id);
+          var position = element.offset().top;
+
+          if (position - 70 <= scrollPos && position + element.height() > scrollPos + 70) {
+            $(this).addClass("active");
+          } else {
+            $(this).removeClass("active");
+          }
+
+        });
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  });
+
+  if ($(window).width() < 768) {
+    var currentScroll = 0
+
+    $(window).scroll(function() {
+
+      var scrollPos = $(document).scrollTop();
+      const sidebar = $(".sidebar-mobile");
+      const menu = $("#count-down-event");
+
+      currentScroll = scrollPos;
+
+      var scrollMenu = menu.offset().top;
+
+      if (scrollPos - 70 > scrollMenu) {
+        sidebar.addClass('show-sidebar');
+        sidebar.removeClass('un-sidebar');
+      } else {
+        sidebar.removeClass('show-sidebar');
+        sidebar.addClass('un-sidebar');
+      }
+    });
+  }
+
+    $('#modal-share-zalo').on('hide.bs.modal', function () {
+        ZaloSocialSDK.reload();
+    });
+
+    function shareZaloSuccess() {
+        toastr.success('Chia sẻ thành công');
+        setTimeout(function() {
+            $('#modal-share-zalo').modal('hide');
+        }, 1000);
+    }
+
+</script>
+
+
+
+</body>
+
+</html>
+

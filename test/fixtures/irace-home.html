@@ -1,0 +1,2447 @@
+<script>
+  const APP_URL = "https://ticket.irace.vn";
+  const LANG = "vi";
+  const COPIED = "Đã sao chép";
+  const IS_LOGIN = "0" - 0;
+</script>
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+
+    <meta name="csrf-token" content="p2lFo7GpTdZxo43hA3pMPRQ3rjgvwe01P7UCVYjY">
+
+    <link href="https://ticket.irace.vn/assets/images/favicon.png" rel="icon">
+
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+          href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap"
+          rel="stylesheet"
+          type="text/css"
+      />
+    </noscript>
+
+    <!-- Bootstrap Css -->
+<link href="https://ticket.irace.vn/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<!-- Icons Css -->
+<link href="https://ticket.irace.vn/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+<!-- App Css-->
+<link href="https://ticket.irace.vn/assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+<link href="https://ticket.irace.vn/assets/libs/toastr/toastr.min.css" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/web.css?id=055e95b59a9f88c7e82f55136dbcc262" rel="stylesheet" type="text/css" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+    <style>
+
+    :root {
+        /* HEADER */
+        --ir-header-background: #ffffff;
+        --ir-header-text-color: #161616;
+        --ir-background-header-card: #1456f0;
+
+        /* CARD */
+        --ir-background-card: #ffffff;
+        --ir-border-card: 1px solid #eff0f2;
+
+        /* MODAL */
+        --ir-bs-icon-close: url(https://ticket.irace.vn/assets/images/vip/icon-close-default.svg);
+        --bs-modal-bg: #fff;
+
+        /* COLOR */
+        --ir-primary-color: #1456f0;
+        --ir-secondary-color: #161616;
+        --ir-hover-color: #1456f0;
+        --ir-hover-text-color: #ffffff;
+        --ir-danger-color: #e1665d;
+        --ir-menu-hover-color: #1456f0;
+        --ir-danger-gradient-color: linear-gradient(to right, #d31027 0%, #ea384d 51%, #ff0000 100%);
+        --ir-background-btn-hot: #d31027;
+        --ir-text-btn-hot: #fff;
+        --ir-contract-text: #1a1823;
+
+        /* BACKGROUND */
+        --ir-nav-background-mobile: #fff;
+        --ir-background-dropdown: #f9f6fa;
+        --ir-background-section: #ffffff;
+        --ir-background-all: #f9f6fa;
+
+        /* BORDER/BOX */
+        --ir-box-shadow: 0 2px 3px rgba(52, 58, 64, 0.06);
+        --ir-border-color-all: #eff0f2;
+
+        /* BUTTON */
+        --ir-btn-text-color: #fff;
+        --ir-btn-background-color: linear-gradient(90deg, rgb(36, 91, 219) 0%, rgb(51, 112, 255) 100%);
+        --ir-red: #d31027;
+
+    }
+
+</style>
+
+
+            <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V82QSG0Q3P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V82QSG0Q3P');
+
+</script>
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "nqjxgh6w0v");
+</script>    
+        <!-- Primary Meta Tags -->
+<title>Ticket.iRace.vn - Cổng bán vé các sự kiện thể thao hot nhất hiện nay</title>
+<meta name="title" content="Ticket.iRace.vn - Cổng bán vé các sự kiện thể thao hot nhất hiện nay">
+<meta name="description" content="Nằm trong hệ sinh thái của iRace, ticket.irace.vn là cổng bán vé các sự kiện thể thao hot nhất hiện nay. Nơi để BTC theo dõi tình trạng bán vé của mình">
+
+<meta property="fb:app_id" content="1471552772992011" />
+
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ticket.irace.vn">
+<meta property="og:title" content="Ticket.iRace.vn - Cổng bán vé các sự kiện thể thao hot nhất hiện nay">
+<meta property="og:description" content="Nằm trong hệ sinh thái của iRace, ticket.irace.vn là cổng bán vé các sự kiện thể thao hot nhất hiện nay. Nơi để BTC theo dõi tình trạng bán vé của mình">
+<meta property="og:image" content="https://irace.vn/wp-content/uploads/2020/08/baner-irace-1.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://ticket.irace.vn">
+<meta property="twitter:title" content="Ticket.iRace.vn - Cổng bán vé các sự kiện thể thao hot nhất hiện nay">
+<meta property="twitter:description" content="Nằm trong hệ sinh thái của iRace, ticket.irace.vn là cổng bán vé các sự kiện thể thao hot nhất hiện nay. Nơi để BTC theo dõi tình trạng bán vé của mình">
+<meta property="twitter:image" content="https://irace.vn/wp-content/uploads/2020/08/baner-irace-1.png">
+
+
+<link rel="canonical" href="https://ticket.irace.vn" />
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Ticket.iRace.vn",
+            "url": "https://ticket.irace.vn/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://ticket.irace.vn/?name={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+        
+    </script>
+
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org/",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "HomePage",
+            "item": "https://ticket.irace.vn/"
+        }]
+        }
+    </script>
+
+
+
+</head>
+
+<body data-layout="horizontal" data-topbar="dark">
+    <!-- Begin page -->
+    <div id="layout-wrapper" class="ticket-irace-vn-layout">
+        
+                
+        <header id="page-topbar" class="position-sticky">
+  <div class="navbar-header container">
+      <div class="d-flex">
+
+          <div class="navbar-brand-box d-flex align-items-center">
+
+                            <h1 class="m-0">
+                    <a href="https://ticket.irace.vn" class="logo logo-light" title="Trang chủ">
+                        <img src="https://ticket.irace.vn/assets/images/logo.png" data-width="150" alt="Trang chủ">
+                    </a>
+                </h1>
+            
+          </div>
+
+      </div>
+
+      <div class="d-flex align-items-center h-100">
+
+          <div class="topnav">
+
+  <nav class="navbar navbar-light navbar-expand-xl topnav-menu">      
+    <div class="collapse navbar-collapse active" id="topnav-menu-content">
+        <ul class="navbar-nav active">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle arrow-none" href="#">
+                    <span>Mua Vé Sự Kiện</span> <div class="arrow-down"></div>
+                </a>
+                <div class="dropdown-menu">
+                    <a href='https://app.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item">Virtual Race</a>
+                    <a href='https://ticket.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item">Sự kiện tại Việt Nam</a>
+                    
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle arrow-none" href="#">
+                    <span>Dịch vụ</span> <div class="arrow-down"></div>
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href='https://irace.vn/ban-ve/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item" target="_blank">Bán Vé Sự Kiện</a>
+                    <a href='https://irace.vn/myfoto/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item" target="_blank">Tìm Hình Sự Kiện</a>
+                    <a href='https://irace.vn/doanh-nghiep/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item" target="_blank">Tổ Chức Sự Kiện</a>
+                    <a href='https://irace.vn/affiliate/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item" target="_blank">Kiếm Tiền cùng iRace.vn</a>
+
+                    <div class="dropdown dropdown-child">
+                        <a class="dropdown-item dropdown-toggle arrow-none" href="#" target="_blank">
+                            <span>Sản Xuất Vật Phẩm</span> <div class="arrow-down"></div>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="https://irace.vn/thiet-ke-huy-chuong/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu" class="dropdown-item" target="_blank">Huy chương</a>
+                            <a href="https://irace.vn/san-xuat-qua-tang-phu-kien-the-thao/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu" class="dropdown-item" target="_blank">Quần áo, Phụ kiện</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle arrow-none" href="#">
+                  <span>Thông Tin</span> <div class="arrow-down"></div>
+              </a>
+              <div class="dropdown-menu">
+                  <a href='https://irace.vn/about-us/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item" target="_blank">Về iRace</a>
+                  <a href='https://irace.vn/bao-chi/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item" target="_blank">Báo chí viết</a>
+                  <a href='https://irace.vn/hoi-dap/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item" target="_blank">Hỏi đáp</a>
+                  <a href='https://irace.vn/thong-tin/huong-dan/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item" target="_blank">Hướng dẫn sử dụng</a>
+                  <a href='https://irace.vn/kien-thuc-tap-luyen/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item" target="_blank">Kiến thức chạy bộ</a>
+                  <a href="https://tools.irace.vn?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu" class="dropdown-item" target="_blank">Công cụ tính toán</a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle arrow-none" href="https://ifitness.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu">
+                  <span>Shop Thể Thao</span> <div class="arrow-down"></div>
+              </a>
+              <div class="dropdown-menu">
+                  <a href='https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item">Dinh Dưỡng</a>
+                  <a href='https://ifitness.vn/collections/phu-kien-the-thao?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu' class="dropdown-item">Phụ Kiện</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link nav-link-ticket" href="https://ticket.irace.vn/tickets">
+                    <i class="mdi mdi-ticket align-middle me-0"></i>
+                    <span>Danh sách vé</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+  </nav>
+
+</div>
+          <div class="dropdown d-inline-block language-switch d-none">
+
+            <button type="button" class="btn header-item noti-icon" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="https://ticket.irace.vn/assets/images/flags/vi.png" alt="Header Language" width="23" height="16">
+            </button>
+
+            <div class="dropdown-menu dropdown-menu-end">
+                <a href="https://ticket.irace.vn/api/lang/en" class="dropdown-item notify-item language" data-lang="eng">
+                    <img src="https://ticket.irace.vn/assets/images/flags/en.png" alt="user-image" class="me-1" width="23" height="16"> <span class="align-middle">English</span>
+                </a>
+            </div>
+
+          </div>
+
+          <div class="dropdown d-inline-block language-switch">
+
+            <button type="button" class="btn header-item noti-icon btn-languge" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="https://ticket.irace.vn/assets/images/flags/vi.png" alt="Header Language" width="23" height="16">
+            </button>
+
+            <div class="dropdown-menu dropdown-menu-end">
+                <a href="https://ticket.irace.vn/api/lang/en" class="dropdown-item notify-item language" data-lang="eng">
+                    <img src="https://ticket.irace.vn/assets/images/flags/en.png" alt="user-image" class="me-1" width="23" height="16"> <span class="align-middle">English</span>
+                </a>
+            </div>
+
+          </div>
+
+          <button type="button" class="btn btn-sm px-2 font-size-16 d-block d-xl-none header-item" data-bs-toggle="collapse" id="horimenu-btn" data-bs-target="#topnav-menu-content">
+            <i class="fa fa-fw fa-bars"></i>
+          </button>
+
+          <div class="wrap-display-desktop wrap-btn-login">
+
+            
+                <div class="dropdown d-inline-block">
+                    <button class="btn header-item user text-start d-flex align-items-center">
+                        <a class="btn btn-primary" href="https://ticket.irace.vn/my-account">Đăng nhập</a>
+                    </button>
+                </div>
+
+            
+          </div>
+
+      </div>
+  </div>
+
+</header>
+
+        
+        <div class="main-content main-home-page">
+            <div class="page-content">
+                
+<div class="container container-home-page">
+
+    
+    <div class="wrapper-slide" style="margin-bottom: 22px">
+      <div class="row">
+          <div class="col-12 col-lg-8">
+              <div id="slide-home-page" class="carousel slide"  data-bs-ride="carousel" >
+
+                  <ol class="carousel-indicators list-unstyled mb-0">
+                                                  <li data-bs-target="#slide-home-page" data-bs-slide-to="0" class=" active"></li>
+                                                  <li data-bs-target="#slide-home-page" data-bs-slide-to="1" class=""></li>
+                                                  <li data-bs-target="#slide-home-page" data-bs-slide-to="2" class=""></li>
+                                        </ol>
+
+                  <div class="carousel-inner" role="listbox">
+                                                <div class="carousel-item  active">
+                              <a href="https://ticket.irace.vn/vung-tau-city-trail-2026" title="Vung Tau City Trail 2026">
+                                  <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/banner_qc/2026/09/18/banner-qc-ygail-image.png?v=100124">
+                              </a>
+                          </div>
+                                                <div class="carousel-item ">
+                              <a href="https://ticket.irace.vn/vnexpress-marathon-quy-nhon-2026" title="VnExpress Marathon Quy Nhon 2026">
+                                  <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/banner_qc/2026/08/01/banner-qc-wdmym-image.png?v=104550">
+                              </a>
+                          </div>
+                                                <div class="carousel-item ">
+                              <a href="https://ticket.irace.vn/vietnam-festrival-2027" title="Vietnam FesTRIval lần 5">
+                                  <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/banner_qc/2026/09/18/banner-qc-hxngh-image.jpeg?v=100345">
+                              </a>
+                          </div>
+                      
+                      <a class="carousel-control carousel-control-prev" href="#slide-home-page" role="button" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control carousel-control-next" href="#slide-home-page" role="button" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+
+                      <div class="col-4 wrapper-image-right">
+
+                              <div class="image-right">
+                    <a href="https://ticket.irace.vn/pink-run-2026" title="Pink Run 2026">
+                        <img src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/banner_qc/2026/07/21/banner-qc-obk6k-image.png?v=103024">
+                    </a>
+                </div>
+              
+                              <div class="image-right">
+                    <a href="https://ticket.irace.vn/trang-an-marathon-2026" title="Trang An Marathon 2026">
+                        <img src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/banner_qc/2026/09/26/banner-qc-vrnaz-image.png?v=095106">
+                    </a>
+                </div>
+              
+            </div>
+          
+      </div>
+  </div>
+
+
+    <div class="card container-filter-event bg-section">
+
+    <div class="card-body">
+
+        <div class="row">
+
+            <div class="item-filter col-12 col-md-3 container-input-search">
+                <input class="form-control" name="name" placeholder="Nhập tên sự kiện" value="">
+                <i class='bx bx-search-alt-2'></i>
+            </div>
+
+            <div class="item-filter col-12 col-md-3">
+                <select class="form-select" id="filter-distances">
+                    <option value="" selected>- Cự ly -</option>
+                                            <option data-subtext="(5km)" value="fr">Fun Run</option>
+                                            <option data-subtext="(10km)" value="rf">Run Fun</option>
+                                            <option data-subtext="(21km)" value="hm">Half Marathon</option>
+                                            <option data-subtext="(42.195km)" value="fm">Full Marathon</option>
+                                            <option data-subtext="(&gt;42.195km)" value="um">Ultra Marathon</option>
+                                            <option data-subtext="(&gt;100km)" value="sum">Super Ultra Marathon</option>
+                                    </select>
+            </div>
+
+            <div class="item-filter col-12 col-md-3">
+                <select class="form-select" id="filter-location">
+                    <option value="" selected>- Địa điểm -</option>
+                                            <option data-subtext="(1)" value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
+                                            <option data-subtext="(1)" value="Bắc Ninh">Bắc Ninh</option>
+                                            <option data-subtext="(1)" value="Cao Bằng">Cao Bằng</option>
+                                            <option data-subtext="(1)" value="Cà Mau">Cà Mau</option>
+                                            <option data-subtext="(1)" value="Cần Thơ">Cần Thơ</option>
+                                            <option data-subtext="(1)" value="Gia Lai">Gia Lai</option>
+                                            <option data-subtext="(4)" value="Hà Nội">Hà Nội</option>
+                                            <option data-subtext="(2)" value="Hải Phòng">Hải Phòng</option>
+                                            <option data-subtext="(1)" value="Hồ Chí Minh">Hồ Chí Minh</option>
+                                            <option data-subtext="(4)" value="Lâm Đồng">Lâm Đồng</option>
+                                            <option data-subtext="(1)" value="Nghệ An">Nghệ An</option>
+                                            <option data-subtext="(2)" value="Ninh Bình">Ninh Bình</option>
+                                            <option data-subtext="(2)" value="Quảng Ninh">Quảng Ninh</option>
+                                            <option data-subtext="(1)" value="Đà Nẵng">Đà Nẵng</option>
+                                    </select>
+            </div>
+
+            
+                <div class="item-filter col-12 col-md-3">
+                    <select class="form-select" id="filter-datetime">
+                        <option value="" selected>- Thời gian -</option>
+                                                    <option data-subtext="(13)" value="11/2026">11/2026</option>
+                                                    <option data-subtext="(1)" value="10/2026">10/2026</option>
+                                                    <option data-subtext="(7)" value="12/2026">12/2026</option>
+                                                    <option data-subtext="(1)" value="01/2027">01/2027</option>
+                                                    <option data-subtext="(1)" value="03/2027">03/2027</option>
+                                            </select>
+                </div>
+
+            
+        </div>
+
+    </div>
+
+</div>
+    
+    <div id="box-events" style="scroll-margin-top: 100px;"></div>
+
+    
+        
+            
+
+            
+        
+        
+        <div class="card card-item-event bg-section" id="event-sport">
+
+            <div class="card-header d-flex">
+
+                <h2 class="card-title-top d-flex align-items-center gap-2">
+                    <a href="#event-sport"><i class='bx bx-run'></i> Thể thao</a>
+                </h2>
+
+                
+            </div>
+
+
+            <div class="card-body">
+                <div class="row list-events">
+                                            <div class="col-12 col-lg-4 col-sm-6 wrap-item-event">
+  <!-- Simple card -->
+  <div class="card item-event">
+      
+      <a href="https://ticket.irace.vn/quoc-te-vi-da-lat-xanh-2026" class="card-img-top bg-cover lazy-bg" style="background-image: url(https://ticket.irace.vn/assets/images/loading.gif)" data-bgimg="https://app.irace.vn/uploads/2026/09/6ab0e1324a85b.png"></a>
+
+              <div class="container-badge">
+          <img src="https://ticket.irace.vn/assets/images/badge/new.png" alt="new">
+        </div>
+      
+      <div class="card-body bg-card">
+
+          
+
+          <h3>
+            <a href="https://ticket.irace.vn/quoc-te-vi-da-lat-xanh-2026" class="card-title">Giải Chạy Quốc Tế vì Đà Lạt Xanh 2026</a>
+          </h3>
+
+          <div class="card-info">
+            <div class="item-info">
+                <i class='bx bx-calendar'></i>
+                22/11/2026
+            </div>
+            <div class="item-info">
+                <i class='bx bx-map'></i>
+                Lâm Đồng
+            </div>
+          </div>
+      </div>
+
+                    <div class="card-footer">
+
+                                    
+                                                                        <div class="price">Từ <span class="text text-primary">200.000đ</span></div>
+                        
+                                    
+                
+                    
+                        <a href="https://ticket.irace.vn/quoc-te-vi-da-lat-xanh-2026" class="btn btn-primary">Đăng ký</a>
+
+                    
+                
+            </div>
+          </div>
+</div>
+                                            <div class="col-12 col-lg-4 col-sm-6 wrap-item-event">
+  <!-- Simple card -->
+  <div class="card item-event">
+      
+      <a href="https://ticket.irace.vn/vung-tau-city-trail-2026" class="card-img-top bg-cover lazy-bg" style="background-image: url(https://ticket.irace.vn/assets/images/loading.gif)" data-bgimg="https://app.irace.vn/uploads/2026/09/6aa913952a85f.jpeg"></a>
+
+              <div class="container-badge">
+          <img src="https://ticket.irace.vn/assets/images/badge/new.png" alt="new">
+        </div>
+      
+      <div class="card-body bg-card">
+
+          
+
+          <h3>
+            <a href="https://ticket.irace.vn/vung-tau-city-trail-2026" class="card-title">Giải chạy Vung Tau City Trail 2026</a>
+          </h3>
+
+          <div class="card-info">
+            <div class="item-info">
+                <i class='bx bx-calendar'></i>
+                29/11/2026
+            </div>
+            <div class="item-info">
+                <i class='bx bx-map'></i>
+                Bà Rịa - Vũng Tàu
+            </div>
+          </div>
+      </div>
+
+                    <div class="card-footer">
+
+                                    
+                                                                        <div class="price">Từ <span class="text text-primary">550.000đ</span></div>
+                        
+                                    
+                
+                    
+                        <a href="https://ticket.irace.vn/vung-tau-city-trail-2026" class="btn btn-primary">Đăng ký</a>
+
+                    
+                
+            </div>
+          </div>
+</div>
+                                            <div class="col-12 col-lg-4 col-sm-6 wrap-item-event">
+  <!-- Simple card -->
+  <div class="card item-event">
+      
+      <a href="https://ticket.irace.vn/vietnam-festrival-2027" class="card-img-top bg-cover lazy-bg" style="background-image: url(https://ticket.irace.vn/assets/images/loading.gif)" data-bgimg="https://app.irace.vn/uploads/2026/09/6aa27e893d770.jpeg"></a>
+
+              <div class="container-badge">
+          <img src="https://ticket.irace.vn/assets/images/badge/new.png" alt="new">
+        </div>
+      
+      <div class="card-body bg-card">
+
+          
+
+          <h3>
+            <a href="https://ticket.irace.vn/vietnam-festrival-2027" class="card-title">Vietnam FesTRIval lần 5</a>
+          </h3>
+
+          <div class="card-info">
+            <div class="item-info">
+                <i class='bx bx-calendar'></i>
+                21/03/2027
+            </div>
+            <div class="item-info">
+                <i class='bx bx-map'></i>
+                Lâm Đồng
+            </div>
+          </div>
+      </div>
+
+                    <div class="card-footer">
+
+                                    
+                                                                        <div class="price">Từ <span class="text text-primary">2.590.000đ</span></div>
+                        
+                                    
+                
+                    
+                        <a href="https://ticket.irace.vn/vietnam-festrival-2027" class="btn btn-primary">Đăng ký</a>
+
+                    
+                
+            </div>
+          </div>
+</div>
+                                            <div class="col-12 col-lg-4 col-sm-6 wrap-item-event">
+  <!-- Simple card -->
+  <div class="card item-event">
+      
+      <a href="https://ticket.irace.vn/quang-truc-half-marathon-2026" class="card-img-top bg-cover lazy-bg" style="background-image: url(https://ticket.irace.vn/assets/images/loading.gif)" data-bgimg="https://app.irace.vn/uploads/2026/09/6a9e767e8cf2d.png"></a>
+
+              <div class="container-badge">
+          <img src="https://ticket.irace.vn/assets/images/badge/new.png" alt="new">
+        </div>
+      
+      <div class="card-body bg-card">
+
+          
+
+          <h3>
+            <a href="https://ticket.irace.vn/quang-truc-half-marathon-2026" class="card-title">Giải chạy Quảng Trực Half Marathon 2026 - Nối nhịp biên cương</a>
+          </h3>
+
+          <div class="card-info">
+            <div class="item-info">
+                <i class='bx bx-calendar'></i>
+                14-15/11/2026
+            </div>
+            <div class="item-info">
+                <i class='bx bx-map'></i>
+                Lâm Đồng
+            </div>
+          </div>
+      </div>
+
+                    <div class="card-footer">
+
+                                    
+                                                                        <div class="price">Từ <span class="text text-primary">269.000đ</span></div>
+                        
+                                    
+                
+                    
+                        <a href="https://ticket.irace.vn/quang-truc-half-marathon-2026" class="btn btn-primary">Đăng ký</a>
+
+                    
+                
+            </div>
+          </div>
+</div>
+                                            <div class="col-12 col-lg-4 col-sm-6 wrap-item-event">
+  <!-- Simple card -->
+  <div class="card item-event">
+      
+      <a href="https://ticket.irace.vn/deep-c-run-royale-2026" class="card-img-top bg-cover lazy-bg" style="background-image: url(https://ticket.irace.vn/assets/images/loading.gif)" data-bgimg="https://app.irace.vn/uploads/2026/09/6a9a910781f05.png"></a>
+
+              <div class="container-badge">
+          <img src="https://ticket.irace.vn/assets/images/badge/new.png" alt="new">
+        </div>
+      
+      <div class="card-body bg-card">
+
+          
+
+          <h3>
+            <a href="https://ticket.irace.vn/deep-c-run-royale-2026" class="card-title">Giải chạy DEEP C RUN ROYALE 2026</a>
+          </h3>
+
+          <div class="card-info">
+            <div class="item-info">
+                <i class='bx bx-calendar'></i>
+                29/11/2026
+            </div>
+            <div class="item-info">
+                <i class='bx bx-map'></i>
+                Hải Phòng
+            </div>
+          </div>
+      </div>
+
+                    <div class="card-footer">
+
+                                    
+                                                                        <div class="price">Từ <span class="text text-primary">150.000đ</span></div>
+                        
+                                    
+                
+                    
+                        <a href="https://ticket.irace.vn/deep-c-run-royale-2026" class="btn btn-primary">Đăng ký</a>
+
+                    
+                
+            </div>
+          </div>
+</div>
+                                            <div class="col-12 col-lg-4 col-sm-6 wrap-item-event">
+  <!-- Simple card -->
+  <div class="card item-event">
+      
+      <a href="https://ticket.irace.vn/vnexpress-marathon-hanoi-midnight-2026" class="card-img-top bg-cover lazy-bg" style="background-image: url(https://ticket.irace.vn/assets/images/loading.gif)" data-bgimg="https://app.irace.vn/uploads/2026/09/6a9a295d4e601.png"></a>
+
+              <div class="container-badge">
+          <img src="https://ticket.irace.vn/assets/images/badge/new.png" alt="new">
+        </div>
+      
+      <div class="card-body bg-card">
+
+          
+
+          <h3>
+            <a href="https://ticket.irace.vn/vnexpress-marathon-hanoi-midnight-2026" class="card-title">Giải chạy VnExpress Marathon Hanoi Midnight 2026 Powered by PUMA</a>
+          </h3>
+
+          <div class="card-info">
+            <div class="item-info">
+                <i class='bx bx-calendar'></i>
+                29/11/2026
+            </div>
+            <div class="item-info">
+                <i class='bx bx-map'></i>
+                Hà Nội
+            </div>
+          </div>
+      </div>
+
+                    <div class="card-footer">
+
+                                    
+                                                                        <div class="price">Từ <span class="text text-primary">500.000đ</span></div>
+                        
+                                    
+                
+                    
+                        <a href="https://ticket.irace.vn/vnexpress-marathon-hanoi-midnight-2026" class="btn btn-primary">Đăng ký</a>
+
+                    
+                
+            </div>
+          </div>
+</div>
+                                            <div class="col-12 col-lg-4 col-sm-6 wrap-item-event">
+  <!-- Simple card -->
+  <div class="card item-event">
+      
+      <a href="https://ticket.irace.vn/vnexpress-marathon-hai-phong-2026" class="card-img-top bg-cover lazy-bg" style="background-image: url(https://ticket.irace.vn/assets/images/loading.gif)" data-bgimg="https://app.irace.vn/uploads/2026/08/6a910089d8bcc.png"></a>
+
+      
+      <div class="card-body bg-card">
+
+          
+
+          <h3>
+            <a href="https://ticket.irace.vn/vnexpress-marathon-hai-phong-2026" class="card-title">Giải chạy VnExpress Marathon Hai Phong 2026</a>
+          </h3>
+
+          <div class="card-info">
+            <div class="item-info">
+                <i class='bx bx-calendar'></i>
+                27/12/2026
+            </div>
+            <div class="item-info">
+                <i class='bx bx-map'></i>
+                Hải Phòng
+            </div>
+          </div>
+      </div>
+
+                    <div class="card-footer">
+
+                                    
+                                                                        <div class="price">Từ <span class="text text-primary">400.000đ</span></div>
+                        
+                                    
+                
+                    
+                        <a href="https://ticket.irace.vn/vnexpress-marathon-hai-phong-2026" class="btn btn-primary">Đăng ký</a>
+
+                    
+                
+            </div>
+          </div>
+</div>
+                                            <div class="col-12 col-lg-4 col-sm-6 wrap-item-event">
+  <!-- Simple card -->
+  <div class="card item-event">
+      
+      <a href="https://ticket.irace.vn/son-tra-city-trail-2026" class="card-img-top bg-cover lazy-bg" style="background-image: url(https://ticket.irace.vn/assets/images/loading.gif)" data-bgimg="https://app.irace.vn/uploads/2026/08/6a8f9d1361b05.png"></a>
+
+              <div class="container-badge">
+          <img src="https://ticket.irace.vn/assets/images/badge/new.png" alt="new">
+        </div>
+      
+      <div class="card-body bg-card">
+
+          
+
+          <h3>
+            <a href="https://ticket.irace.vn/son-tra-city-trail-2026" class="card-title">Giải chạy Sơn Trà City Trail 2026</a>
+          </h3>
+
+          <div class="card-info">
+            <div class="item-info">
+                <i class='bx bx-calendar'></i>
+                27/12/2026
+            </div>
+            <div class="item-info">
+                <i class='bx bx-map'></i>
+                Đà Nẵng
+            </div>
+          </div>
+      </div>
+
+                    <div class="card-footer">
+
+                                    
+                                                                        <div class="price">Từ <span class="text text-primary">466.000đ</span></div>
+                        
+                                    
+                
+                    
+                        <a href="https://ticket.irace.vn/son-tra-city-trail-2026" class="btn btn-primary">Đăng ký</a>
+
+                    
+                
+            </div>
+          </div>
+</div>
+                                            <div class="col-12 col-lg-4 col-sm-6 wrap-item-event">
+  <!-- Simple card -->
+  <div class="card item-event">
+      
+      <a href="https://ticket.irace.vn/bac-ninh-legacy-marathon-2027" class="card-img-top bg-cover lazy-bg" style="background-image: url(https://ticket.irace.vn/assets/images/loading.gif)" data-bgimg="https://app.irace.vn/uploads/2026/08/6a8e8eb643768.png"></a>
+
+      
+      <div class="card-body bg-card">
+
+          
+
+          <h3>
+            <a href="https://ticket.irace.vn/bac-ninh-legacy-marathon-2027" class="card-title">Giải chạy Bắc Ninh Legacy Marathon 2027</a>
+          </h3>
+
+          <div class="card-info">
+            <div class="item-info">
+                <i class='bx bx-calendar'></i>
+                10/01/2027
+            </div>
+            <div class="item-info">
+                <i class='bx bx-map'></i>
+                Bắc Ninh
+            </div>
+          </div>
+      </div>
+
+                    <div class="card-footer">
+
+                                    
+                                                                        <div class="price">Từ <span class="text text-primary">400.000đ</span></div>
+                        
+                                    
+                
+                    
+                        <a href="https://ticket.irace.vn/bac-ninh-legacy-marathon-2027" class="btn btn-primary">Đăng ký</a>
+
+                    
+                
+            </div>
+          </div>
+</div>
+                                            <div class="col-12 col-lg-4 col-sm-6 wrap-item-event">
+  <!-- Simple card -->
+  <div class="card item-event">
+      
+      <a href="https://ticket.irace.vn/run-for-the-heart-2026" class="card-img-top bg-cover lazy-bg" style="background-image: url(https://ticket.irace.vn/assets/images/loading.gif)" data-bgimg="https://app.irace.vn/uploads/2026/08/6a868e8968f9c.jpeg"></a>
+
+      
+      <div class="card-body bg-card">
+
+          
+
+          <h3>
+            <a href="https://ticket.irace.vn/run-for-the-heart-2026" class="card-title">Giải chạy Run For The Heart - Chạy vì trái tim 2026</a>
+          </h3>
+
+          <div class="card-info">
+            <div class="item-info">
+                <i class='bx bx-calendar'></i>
+                06/12/2026
+            </div>
+            <div class="item-info">
+                <i class='bx bx-map'></i>
+                Hà Nội
+            </div>
+          </div>
+      </div>
+
+                    <div class="card-footer">
+
+                                    
+                                                                        <div class="price">Từ <span class="text text-primary">169.000đ</span></div>
+                        
+                                    
+                
+                    
+                        <a href="https://ticket.irace.vn/run-for-the-heart-2026" class="btn btn-primary">Đăng ký</a>
+
+                    
+                
+            </div>
+          </div>
+</div>
+                                            <div class="col-12 col-lg-4 col-sm-6 wrap-item-event">
+  <!-- Simple card -->
+  <div class="card item-event">
+      
+      <a href="https://ticket.irace.vn/marathon-quoc-te-di-san-can-tho-2026" class="card-img-top bg-cover lazy-bg" style="background-image: url(https://ticket.irace.vn/assets/images/loading.gif)" data-bgimg="https://app.irace.vn/uploads/2026/08/6a7989aa689f8.png"></a>
+
+      
+      <div class="card-body bg-card">
+
+          
+
+          <h3>
+            <a href="https://ticket.irace.vn/marathon-quoc-te-di-san-can-tho-2026" class="card-title">Giải chạy Marathon Quốc tế Di sản Cần Thơ 2026</a>
+          </h3>
+
+          <div class="card-info">
+            <div class="item-info">
+                <i class='bx bx-calendar'></i>
+                20/12/2026
+            </div>
+            <div class="item-info">
+                <i class='bx bx-map'></i>
+                Cần Thơ
+            </div>
+          </div>
+      </div>
+
+                    <div class="card-footer">
+
+                                    
+                                                                        <div class="price">Từ <span class="text text-primary">450.000đ</span></div>
+                        
+                                    
+                
+                    
+                        <a href="https://ticket.irace.vn/marathon-quoc-te-di-san-can-tho-2026" class="btn btn-primary">Đăng ký</a>
+
+                    
+                
+            </div>
+          </div>
+</div>
+                                            <div class="col-12 col-lg-4 col-sm-6 wrap-item-event">
+  <!-- Simple card -->
+  <div class="card item-event">
+      
+      <a href="https://ticket.irace.vn/giai-marathon-ca-mau-2026" class="card-img-top bg-cover lazy-bg" style="background-image: url(https://ticket.irace.vn/assets/images/loading.gif)" data-bgimg="https://app.irace.vn/uploads/2026/09/6a9a7a520f240.jpeg"></a>
+
+      
+      <div class="card-body bg-card">
+
+          
+
+          <h3>
+            <a href="https://ticket.irace.vn/giai-marathon-ca-mau-2026" class="card-title">Giải chạy Marathon - Cà Mau 2026 Cúp PETROVIETNAM</a>
+          </h3>
+
+          <div class="card-info">
+            <div class="item-info">
+                <i class='bx bx-calendar'></i>
+                15/11/2026
+            </div>
+            <div class="item-info">
+                <i class='bx bx-map'></i>
+                Cà Mau
+            </div>
+          </div>
+      </div>
+
+                    <div class="card-footer">
+
+                                    
+                                                                        <div class="price">Từ <span class="text text-primary">468.000đ</span></div>
+                        
+                                    
+                
+                    
+                        <a href="https://ticket.irace.vn/giai-marathon-ca-mau-2026" class="btn btn-primary">Đăng ký</a>
+
+                    
+                
+            </div>
+          </div>
+</div>
+                                            <div class="col-12 col-lg-4 col-sm-6 wrap-item-event">
+  <!-- Simple card -->
+  <div class="card item-event">
+      
+      <a href="https://ticket.irace.vn/hanh-trinh-tiep-suc-2026" class="card-img-top bg-cover lazy-bg" style="background-image: url(https://ticket.irace.vn/assets/images/loading.gif)" data-bgimg="https://app.irace.vn/uploads/2026/08/6a6dbf4376133.png"></a>
+
+      
+      <div class="card-body bg-card">
+
+          
+
+          <h3>
+            <a href="https://ticket.irace.vn/hanh-trinh-tiep-suc-2026" class="card-title">Giải chạy Hành Trình Tiếp Sức 2026</a>
+          </h3>
+
+          <div class="card-info">
+            <div class="item-info">
+                <i class='bx bx-calendar'></i>
+                06/12/2026
+            </div>
+            <div class="item-info">
+                <i class='bx bx-map'></i>
+                Hà Nội
+            </div>
+          </div>
+      </div>
+
+                    <div class="card-footer">
+
+                                    
+                                                                        <div class="price">Từ <span class="text text-primary">299.000đ</span></div>
+                        
+                                    
+                
+                    
+                        <a href="https://ticket.irace.vn/hanh-trinh-tiep-suc-2026" class="btn btn-primary">Đăng ký</a>
+
+                    
+                
+            </div>
+          </div>
+</div>
+                                            <div class="col-12 col-lg-4 col-sm-6 wrap-item-event">
+  <!-- Simple card -->
+  <div class="card item-event">
+      
+      <a href="https://ticket.irace.vn/pink-run-2026" class="card-img-top bg-cover lazy-bg" style="background-image: url(https://ticket.irace.vn/assets/images/loading.gif)" data-bgimg="https://app.irace.vn/uploads/2026/07/6a4f7210ea87e.png"></a>
+
+      
+      <div class="card-body bg-card">
+
+          
+
+          <h3>
+            <a href="https://ticket.irace.vn/pink-run-2026" class="card-title">Giải chạy Pink Run 2026</a>
+          </h3>
+
+          <div class="card-info">
+            <div class="item-info">
+                <i class='bx bx-calendar'></i>
+                01/11/2026
+            </div>
+            <div class="item-info">
+                <i class='bx bx-map'></i>
+                Hồ Chí Minh
+            </div>
+          </div>
+      </div>
+
+                    <div class="card-footer">
+
+                                    
+                                                                        <div class="price">Từ <span class="text text-primary">569.000đ</span></div>
+                        
+                                    
+                
+                    
+                        <a href="https://ticket.irace.vn/pink-run-2026" class="btn btn-primary">Đăng ký</a>
+
+                    
+                
+            </div>
+          </div>
+</div>
+                                            <div class="col-12 col-lg-4 col-sm-6 wrap-item-event">
+  <!-- Simple card -->
+  <div class="card item-event">
+      
+      <a href="https://ticket.irace.vn/nghe-an-legacy-marathon-2026" class="card-img-top bg-cover lazy-bg" style="background-image: url(https://ticket.irace.vn/assets/images/loading.gif)" data-bgimg="https://app.irace.vn/uploads/2026/07/6a4f6456acfa1.png"></a>
+
+      
+      <div class="card-body bg-card">
+
+          
+
+          <h3>
+            <a href="https://ticket.irace.vn/nghe-an-legacy-marathon-2026" class="card-title">Giải chạy Nghệ An Legacy Marathon – Dấu chân quê Bác năm 2026</a>
+          </h3>
+
+          <div class="card-info">
+            <div class="item-info">
+                <i class='bx bx-calendar'></i>
+                06/12/2026
+            </div>
+            <div class="item-info">
+                <i class='bx bx-map'></i>
+                Nghệ An
+            </div>
+          </div>
+      </div>
+
+                    <div class="card-footer">
+
+                                    
+                                                                        <div class="price">Từ <span class="text text-primary">400.000đ</span></div>
+                        
+                                    
+                
+                    
+                        <a href="https://ticket.irace.vn/nghe-an-legacy-marathon-2026" class="btn btn-primary">Đăng ký</a>
+
+                    
+                
+            </div>
+          </div>
+</div>
+                                            <div class="col-12 col-lg-4 col-sm-6 wrap-item-event">
+  <!-- Simple card -->
+  <div class="card item-event">
+      
+      <a href="https://ticket.irace.vn/lamdong-trail-2026" class="card-img-top bg-cover lazy-bg" style="background-image: url(https://ticket.irace.vn/assets/images/loading.gif)" data-bgimg="https://app.irace.vn/uploads/2026/04/69e090c3cff09.png"></a>
+
+              <div class="container-badge">
+          <img src="https://ticket.irace.vn/assets/images/badge/hot.png" alt="hot">
+        </div>
+      
+      <div class="card-body bg-card">
+
+          
+
+          <h3>
+            <a href="https://ticket.irace.vn/lamdong-trail-2026" class="card-title">Giải chạy Lâm Đồng Trail 2026</a>
+          </h3>
+
+          <div class="card-info">
+            <div class="item-info">
+                <i class='bx bx-calendar'></i>
+                06 - 08/11/2026
+            </div>
+            <div class="item-info">
+                <i class='bx bx-map'></i>
+                Lâm Đồng
+            </div>
+          </div>
+      </div>
+
+                    <div class="card-footer">
+
+                                    
+                                                                        <div class="price">Từ <span class="text text-primary">950.000đ</span></div>
+                        
+                                    
+                
+                    
+                        <a href="https://ticket.irace.vn/lamdong-trail-2026" class="btn btn-primary btn-hot">Đăng ký
+                            <img src="https://ticket.irace.vn/assets/images/flame.png">
+                        </a>
+
+                    
+                
+            </div>
+          </div>
+</div>
+                                            <div class="col-12 col-lg-4 col-sm-6 wrap-item-event">
+  <!-- Simple card -->
+  <div class="card item-event">
+      
+      <a href="https://ticket.irace.vn/ultra-trail-cao-bang-2026" class="card-img-top bg-cover lazy-bg" style="background-image: url(https://ticket.irace.vn/assets/images/loading.gif)" data-bgimg="https://app.irace.vn/uploads/2026/04/69d78ca8625d5.png"></a>
+
+      
+      <div class="card-body bg-card">
+
+          
+
+          <h3>
+            <a href="https://ticket.irace.vn/ultra-trail-cao-bang-2026" class="card-title">Giải chạy Ultra Trail Cao Bang 2026</a>
+          </h3>
+
+          <div class="card-info">
+            <div class="item-info">
+                <i class='bx bx-calendar'></i>
+                27-28-29/11/2026
+            </div>
+            <div class="item-info">
+                <i class='bx bx-map'></i>
+                Cao Bằng
+            </div>
+          </div>
+      </div>
+
+                    <div class="card-footer">
+
+                                    
+                                                                        <div class="price">Từ <span class="text text-primary">1.232.000đ</span></div>
+                        
+                                    
+                
+                    
+                        <a href="https://ticket.irace.vn/ultra-trail-cao-bang-2026" class="btn btn-primary">Đăng ký</a>
+
+                    
+                
+            </div>
+          </div>
+</div>
+                                            <div class="col-12 col-lg-4 col-sm-6 wrap-item-event">
+  <!-- Simple card -->
+  <div class="card item-event">
+      
+      <a href="https://ticket.irace.vn/gia-lai-city-trail-giac-mo-dai-ngan-2026" class="card-img-top bg-cover lazy-bg" style="background-image: url(https://ticket.irace.vn/assets/images/loading.gif)" data-bgimg="https://app.irace.vn/uploads/2026/03/69be3ed398094.png"></a>
+
+      
+      <div class="card-body bg-card">
+
+          
+
+          <h3>
+            <a href="https://ticket.irace.vn/gia-lai-city-trail-giac-mo-dai-ngan-2026" class="card-title">Giải chạy GIA LAI CITY TRAIL - GIẤC MƠ ĐẠI NGÀN 2026</a>
+          </h3>
+
+          <div class="card-info">
+            <div class="item-info">
+                <i class='bx bx-calendar'></i>
+                30/10 - 01/11/2026
+            </div>
+            <div class="item-info">
+                <i class='bx bx-map'></i>
+                Gia Lai
+            </div>
+          </div>
+      </div>
+
+                    <div class="card-footer">
+
+                                    
+                                                                        <div class="price">Từ <span class="text text-primary">648.000đ</span></div>
+                        
+                                    
+                
+                    
+                        <a href="https://ticket.irace.vn/gia-lai-city-trail-giac-mo-dai-ngan-2026" class="btn btn-primary">Đăng ký</a>
+
+                    
+                
+            </div>
+          </div>
+</div>
+                                            <div class="col-12 col-lg-4 col-sm-6 wrap-item-event">
+  <!-- Simple card -->
+  <div class="card item-event">
+      
+      <a href="https://ticket.irace.vn/yen-tu-heritage-marathon-2026" class="card-img-top bg-cover lazy-bg" style="background-image: url(https://ticket.irace.vn/assets/images/loading.gif)" data-bgimg="https://app.irace.vn/uploads/2026/03/69b279ff830f4.png"></a>
+
+      
+      <div class="card-body bg-card">
+
+          
+
+          <h3>
+            <a href="https://ticket.irace.vn/yen-tu-heritage-marathon-2026" class="card-title">Giải chạy Yên Tử Heritage Marathon 2026</a>
+          </h3>
+
+          <div class="card-info">
+            <div class="item-info">
+                <i class='bx bx-calendar'></i>
+                28-29/11/2026
+            </div>
+            <div class="item-info">
+                <i class='bx bx-map'></i>
+                Quảng Ninh
+            </div>
+          </div>
+      </div>
+
+                    <div class="card-footer">
+
+                                    
+                                                                        <div class="price">Từ <span class="text text-primary">419.000đ</span></div>
+                        
+                                    
+                
+                    
+                        <a href="https://ticket.irace.vn/yen-tu-heritage-marathon-2026" class="btn btn-primary">Đăng ký</a>
+
+                    
+                
+            </div>
+          </div>
+</div>
+                                            <div class="col-12 col-lg-4 col-sm-6 wrap-item-event">
+  <!-- Simple card -->
+  <div class="card item-event">
+      
+      <a href="https://ticket.irace.vn/standard-chartered-marathon-di-san-ha-noi-2026" class="card-img-top bg-cover lazy-bg" style="background-image: url(https://ticket.irace.vn/assets/images/loading.gif)" data-bgimg="https://app.irace.vn/uploads/2026/03/69a5103cb19f5.png"></a>
+
+      
+      <div class="card-body bg-card">
+
+          
+
+          <h3>
+            <a href="https://ticket.irace.vn/standard-chartered-marathon-di-san-ha-noi-2026" class="card-title">Giải chạy Standard Chartered Marathon Di sản Hà Nội 2026</a>
+          </h3>
+
+          <div class="card-info">
+            <div class="item-info">
+                <i class='bx bx-calendar'></i>
+                08/11/2026
+            </div>
+            <div class="item-info">
+                <i class='bx bx-map'></i>
+                Hà Nội
+            </div>
+          </div>
+      </div>
+
+                    <div class="card-footer">
+
+                                    
+                                                                        <div class="price">Từ <span class="text text-primary">900.000đ</span></div>
+                        
+                                    
+                
+                    
+                        <a href="https://ticket.irace.vn/standard-chartered-marathon-di-san-ha-noi-2026" class="btn btn-primary">Đăng ký</a>
+
+                    
+                
+            </div>
+          </div>
+</div>
+                                            <div class="col-12 col-lg-4 col-sm-6 wrap-item-event">
+  <!-- Simple card -->
+  <div class="card item-event">
+      
+      <a href="https://ticket.irace.vn/giai-marathon-quoc-te-di-san-ha-long-2026" class="card-img-top bg-cover lazy-bg" style="background-image: url(https://ticket.irace.vn/assets/images/loading.gif)" data-bgimg="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/events/2026/01/12/event-giai-marathon-quoc-te-di-san-ha-long-2026-thumb.jpeg?v=145302"></a>
+
+      
+      <div class="card-body bg-card">
+
+          
+
+          <h3>
+            <a href="https://ticket.irace.vn/giai-marathon-quoc-te-di-san-ha-long-2026" class="card-title">Giải Marathon Quốc tế Di sản Hạ Long 2026</a>
+          </h3>
+
+          <div class="card-info">
+            <div class="item-info">
+                <i class='bx bx-calendar'></i>
+                22/11/2026
+            </div>
+            <div class="item-info">
+                <i class='bx bx-map'></i>
+                Quảng Ninh
+            </div>
+          </div>
+      </div>
+
+                    <div class="card-footer">
+
+                                    
+                                                                        <div class="price">Từ <span class="text text-primary">900.000đ</span></div>
+                        
+                                    
+                
+                    
+                        <a href="https://ticket.irace.vn/giai-marathon-quoc-te-di-san-ha-long-2026" class="btn btn-primary">Đăng ký</a>
+
+                    
+                
+            </div>
+          </div>
+</div>
+                                            <div class="col-12 col-lg-4 col-sm-6 wrap-item-event">
+  <!-- Simple card -->
+  <div class="card item-event">
+      
+      <a href="https://ticket.irace.vn/trang-an-marathon-2026" class="card-img-top bg-cover lazy-bg" style="background-image: url(https://ticket.irace.vn/assets/images/loading.gif)" data-bgimg="https://app.irace.vn/uploads/2026/09/6ab73307c73a0.png"></a>
+
+              <div class="container-badge">
+          <img src="https://ticket.irace.vn/assets/images/badge/hot.png" alt="hot">
+        </div>
+      
+      <div class="card-body bg-card">
+
+          
+
+          <h3>
+            <a href="https://ticket.irace.vn/trang-an-marathon-2026" class="card-title">Giải chạy Trang An Marathon 2026</a>
+          </h3>
+
+          <div class="card-info">
+            <div class="item-info">
+                <i class='bx bx-calendar'></i>
+                15/11/2026
+            </div>
+            <div class="item-info">
+                <i class='bx bx-map'></i>
+                Ninh Bình
+            </div>
+          </div>
+      </div>
+
+                    <div class="card-footer">
+
+                                    
+                                                                        <div class="price">Từ <span class="text text-primary">659.000đ</span></div>
+                        
+                                    
+                
+                    
+                        <a href="https://ticket.irace.vn/trang-an-marathon-2026" class="btn btn-primary btn-hot">Đăng ký
+                            <img src="https://ticket.irace.vn/assets/images/flame.png">
+                        </a>
+
+                    
+                
+            </div>
+          </div>
+</div>
+                                            <div class="col-12 col-lg-4 col-sm-6 wrap-item-event">
+  <!-- Simple card -->
+  <div class="card item-event">
+      
+      <a href="https://ticket.irace.vn/cuc-phuong-jungle-paths-2026" class="card-img-top bg-cover lazy-bg" style="background-image: url(https://ticket.irace.vn/assets/images/loading.gif)" data-bgimg="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/events/2026/01/22/event-cuc-phuong-jungle-paths-2026-thumb.png?v=143102"></a>
+
+      
+      <div class="card-body bg-card">
+
+          
+
+          <h3>
+            <a href="https://ticket.irace.vn/cuc-phuong-jungle-paths-2026" class="card-title">Giải chạy Cuc Phuong Jungle Paths 2026</a>
+          </h3>
+
+          <div class="card-info">
+            <div class="item-info">
+                <i class='bx bx-calendar'></i>
+                26-27/12/2026
+            </div>
+            <div class="item-info">
+                <i class='bx bx-map'></i>
+                Ninh Bình
+            </div>
+          </div>
+      </div>
+
+                    <div class="card-footer">
+
+                                    
+                                                                        <div class="price">Từ <span class="text text-primary">1.232.000đ</span></div>
+                        
+                                    
+                
+                    
+                        <a href="https://ticket.irace.vn/cuc-phuong-jungle-paths-2026" class="btn btn-primary">Đăng ký</a>
+
+                    
+                
+            </div>
+          </div>
+</div>
+                                    </div>
+            </div>
+
+        </div>
+
+    
+        
+         
+        
+         
+
+    
+    
+            <div class="row list-organizers mt-md-5">
+  <div class="col-lg-12">
+      <div class="card bg-section">
+        <div class="card-header align-items-center">
+              <h2 class="card-title text-center text-uppercase">
+                <b>Ban tổ chức</b>
+              </h2>
+          </div>
+          <div class="card-body">
+              <div class="row gallery-wrapper">
+                  <div id="carousel-organizer" class="carousel slide pb-3" data-bs-ride="carousel">
+                    <ol class="carousel-indicators m-0">
+                                                    <li data-bs-target="#carousel-organizer" data-bs-slide-to="0" class=" active "></li>    
+                                                    <li data-bs-target="#carousel-organizer" data-bs-slide-to="1" class=""></li>    
+                                                    <li data-bs-target="#carousel-organizer" data-bs-slide-to="2" class=""></li>    
+                                                    <li data-bs-target="#carousel-organizer" data-bs-slide-to="3" class=""></li>    
+                                                    <li data-bs-target="#carousel-organizer" data-bs-slide-to="4" class=""></li>    
+                                            </ol>
+                    <div class="carousel-inner" role="listbox">
+                                                    <div class="carousel-item  active ">
+                                <div class="row w-100 m-0">
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/irace" target="_blank" title="iRace.vn | Nền tảng tổ chức và bán vé sự kiện online #1 Việt Nam">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/09/17/organizers-irace-logo.png?v=144424" alt="iRace.vn | Nền tảng tổ chức và bán vé sự kiện online #1 Việt Nam" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/hanoi-eventmore" target="_blank" title="Hanoi EVENTMORE | Ban tổ chức sự kiện">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/08/24/organizers-hanoi-eventmore-ban-to-chuc-su-kien-logo.png?v=154729" alt="Hanoi EVENTMORE | Ban tổ chức sự kiện" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/sen-vang" target="_blank" title="Sen Vàng | Ban tổ chức giải">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/05/08/organizers-sen-vang-logo.png?v=170038" alt="Sen Vàng | Ban tổ chức giải" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/dha" target="_blank" title="DHA Vietnam | Ban tổ chức sự kiện">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-dha-logo.png?v=161652" alt="DHA Vietnam | Ban tổ chức sự kiện" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/domingo-sport" target="_blank" title="Domingo Sport | Ban tổ chức sự kiện">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-domingo-sport-logo.png?v=161555" alt="Domingo Sport | Ban tổ chức sự kiện" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/vietrace365" target="_blank" title="VietRace365  | Ban tổ chức sự kiện">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-vietrace365-logo.png?v=161655" alt="VietRace365  | Ban tổ chức sự kiện" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/viettel" target="_blank" title="Viettel Telecom | Ban tổ chức sự kiện">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-viettel-logo.png?v=161713" alt="Viettel Telecom | Ban tổ chức sự kiện" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/win-vietnam" target="_blank" title="Win Vietnam Marathon">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/03/21/organizers-win-vietnam-logo.png?v=173754" alt="Win Vietnam Marathon" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/yeah1" target="_blank" title="Yeah1 | Ban tổ chức sự kiện">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/05/04/organizers-yeah1-ban-to-chuc-su-kien-logo.png?v=105415" alt="Yeah1 | Ban tổ chức sự kiện" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/cong-ty-cp-zaha-viet-nam" target="_blank" title="Công ty CP Zaha Việt Nam">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2025/01/08/organizers-cong-ty-cp-zaha-viet-nam-logo.png?v=143752" alt="Công ty CP Zaha Việt Nam" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/viet-challenge-tour" target="_blank" title="Viet Challenge Tour | Ban tổ chức Tour">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/06/19/organizers-viet-challenge-tour-ban-to-chuc-tour-logo.jpg?v=180558" alt="Viet Challenge Tour | Ban tổ chức Tour" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/cambodia-event-organizer" target="_blank" title="Cambodia Event Organizer | Ban tổ chức sự kiện">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-cambodia-event-organizer-logo.png?v=161701" alt="Cambodia Event Organizer | Ban tổ chức sự kiện" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/aia" target="_blank" title="AIA | Ban tổ chức sự kiện">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-aia-logo.png?v=161701" alt="AIA | Ban tổ chức sự kiện" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/vnpr" target="_blank" title="Vietnam Public Relations Network (VNPR)">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-vnpr-logo.png?v=161707" alt="Vietnam Public Relations Network (VNPR)" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/loneiros" target="_blank" title="L&#039;Oneiros">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/11/19/organizers-l-oneiros-logo.png?v=143151" alt="L&#039;Oneiros" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                                                        </div>
+                            </div>
+                                                    <div class="carousel-item ">
+                                <div class="row w-100 m-0">
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/trung-thang-travel" target="_blank" title="Trung Thắng Travel">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/01/08/organizers-trung-thang-travel-logo.jpeg?v=165621" alt="Trung Thắng Travel" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/eventure" target="_blank" title="Eventure">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/11/05/organizers-eventure-logo.png?v=174536" alt="Eventure" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/sec" target="_blank" title="SEC Sport Events | Ban tổ chức sự kiện">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/06/18/organizers-sec-logo.png?v=154657" alt="SEC Sport Events | Ban tổ chức sự kiện" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/race-jungle" target="_blank" title="Race Jungle | Ban tổ chức giải">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/06/19/organizers-race-jungle-ban-to-chuc-giai-logo.jpg?v=204950" alt="Race Jungle | Ban tổ chức giải" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/hopebox" target="_blank" title="HopeBox | Ban tổ chức sự kiện">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-hopebox-logo.png?v=161708" alt="HopeBox | Ban tổ chức sự kiện" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/kong-forest" target="_blank" title="Kong Forest">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-kong-forest-logo.png?v=161714" alt="Kong Forest" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/fdl-run-series" target="_blank" title="FDL Run Series | Ban tổ chức giải">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/11/29/organizers-fdl-run-series-logo.png?v=112705" alt="FDL Run Series | Ban tổ chức giải" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/coffeerary" target="_blank" title="Coffeerary | Ban tổ chức sự kiện chạy bộ">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-coffeerary-logo.png?v=161704" alt="Coffeerary | Ban tổ chức sự kiện chạy bộ" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/alooo-event" target="_blank" title="CÔNG TY TNHH ALOOO EVENT">
+                                                        <img class="img-fluid mx-auto" src="https://app.irace.vn/storage/photos/organizers/2026/07/14/93.png" alt="CÔNG TY TNHH ALOOO EVENT" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/biji-vietnam" target="_blank" title="Biji Vietnam Sport - Thể Thao Việt">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-biji-vietnam-logo.png?v=161658" alt="Biji Vietnam Sport - Thể Thao Việt" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/greenhat" target="_blank" title="GreenHat | Ban tổ chức sự kiện">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-greenhat-logo.png?v=161652" alt="GreenHat | Ban tổ chức sự kiện" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/thanh-an-media" target="_blank" title="Thanh An Media">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2025/07/12/organizers-thanh-an-media-logo.png?v=163420" alt="Thanh An Media" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/tripu" target="_blank" title="TripU | Ban tổ chức sự kiện">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/05/20/organizers-tripu-logo.png?v=142633" alt="TripU | Ban tổ chức sự kiện" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/tropiad" target="_blank" title="Tropiad | Ban tổ chức sự kiện">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/08/05/organizers-tropiad-logo.png?v=161142" alt="Tropiad | Ban tổ chức sự kiện" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/amazing-events" target="_blank" title="Cambodia Amazing Events | Ban tổ chức sự kiện">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-amazing-events-logo.png?v=161702" alt="Cambodia Amazing Events | Ban tổ chức sự kiện" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                                                        </div>
+                            </div>
+                                                    <div class="carousel-item ">
+                                <div class="row w-100 m-0">
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/ly-son-cross-island" target="_blank" title="Lý Sơn Cross Island">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/03/09/organizers-ly-son-cross-island-logo.png?v=110359" alt="Lý Sơn Cross Island" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/bao-nguoi-lao-dong" target="_blank" title="Báo Người Lao Động">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/01/04/organizers-bao-nguoi-lao-dong-logo.jpeg?v=174124" alt="Báo Người Lao Động" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/1brand" target="_blank" title="1Brand">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2025/03/18/organizers-1brand-logo.png?v=181957" alt="1Brand" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/bcnv" target="_blank" title="BCNV - Mạng lưới ung thư vú Việt Nam">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/08/15/organizers-bcnv-mang-luoi-ung-thu-vu-viet-nam-logo.png?v=145917" alt="BCNV - Mạng lưới ung thư vú Việt Nam" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/teelakow" target="_blank" title="TeeLaKow | Ban tổ chức sự kiện">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/03/27/organizers-teelakow-logo.png?v=174502" alt="TeeLaKow | Ban tổ chức sự kiện" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/bao-nong-nghiep-viet-nam" target="_blank" title="Báo Nông Nghiệp Việt Nam">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/02/29/organizers-bao-nong-nghiep-viet-nam-logo.png?v=093507" alt="Báo Nông Nghiệp Việt Nam" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/vietnam-mtb-series" target="_blank" title="Vietnam MTB Series">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-vietnam-mtb-series-logo.png?v=161704" alt="Vietnam MTB Series" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/vnexpress-marathon" target="_blank" title="VnExpress Marathon">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-vnexpress-marathon-logo.png?v=161655" alt="VnExpress Marathon" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/canchamvietnam" target="_blank" title="CanCham Vietnam">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2026/01/16/organizers-canchamvietnam-logo.png?v=141802" alt="CanCham Vietnam" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/content-share" target="_blank" title="Content Share">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2025/08/01/organizers-content-share-logo.png?v=110802" alt="Content Share" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/laan-ultra-trail" target="_blank" title="Laan Ultra Trail">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-laan-ultra-trail-logo.png?v=161659" alt="Laan Ultra Trail" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/ubnd-nghi-xuan" target="_blank" title="UBND Nghi Xuân">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-ubnd-nghi-xuan-logo.png?v=161707" alt="UBND Nghi Xuân" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/athlete-trotter" target="_blank" title="Athlete Trotter | Ban tổ chức giải">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/01/03/organizers-athlete-trotter-logo.jpeg?v=175449" alt="Athlete Trotter | Ban tổ chức giải" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/bdrc" target="_blank" title="Binh Duong Running Club (BDRC)">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/19/organizers-bdrc-logo.png?v=175704" alt="Binh Duong Running Club (BDRC)" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/vietnam-expeditions" target="_blank" title="Vietnam Expeditions">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2025/10/11/organizers-vietnam-expeditions-logo.png?v=172102" alt="Vietnam Expeditions" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                                                        </div>
+                            </div>
+                                                    <div class="carousel-item ">
+                                <div class="row w-100 m-0">
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/klang-adventure" target="_blank" title="K’lang Adventure | Ban tổ chức sự kiện">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-klang-adventure-logo.png?v=161710" alt="K’lang Adventure | Ban tổ chức sự kiện" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/capitaland" target="_blank" title="CapitaLand | Ban tổ chức giải">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/09/26/organizers-capitaland-logo.png?v=151910" alt="CapitaLand | Ban tổ chức giải" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/superman-night-run" target="_blank" title="SUPERMAN NIGHT RUN | Ban tổ chức sự kiện">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-superman-night-run-logo.png?v=161710" alt="SUPERMAN NIGHT RUN | Ban tổ chức sự kiện" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/setiabecamex" target="_blank" title="Công ty Cổ phần SetiaBecamex | Ban tổ chức giải">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/05/14/organizers-setiabecamex-logo.png?v=160213" alt="Công ty Cổ phần SetiaBecamex | Ban tổ chức giải" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/coteccons" target="_blank" title="Coteccons">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/07/08/organizers-coteccons-logo.png?v=103111" alt="Coteccons" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/nexus-sport-events" target="_blank" title="Nexus Sport Events | Ban tổ chức sự kiện">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-nexus-sport-events-logo.png?v=161713" alt="Nexus Sport Events | Ban tổ chức sự kiện" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/blm" target="_blank" title="Be Love Mountain">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2025/05/07/organizers-blm-logo.jpg?v=173655" alt="Be Love Mountain" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/delta-engagement-marketing" target="_blank" title="Delta Engagement Marketing">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/07/23/organizers-delta-engagement-marketing-logo.png?v=151154" alt="Delta Engagement Marketing" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/vumedia" target="_blank" title="VuMedia  | Ban tổ chức sự kiện">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-vumedia-logo.png?v=161655" alt="VuMedia  | Ban tổ chức sự kiện" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/so-van-hoa-the-thao-khanh-hoa" target="_blank" title="Sở Văn Hóa Thể Thao Khánh Hòa">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/07/10/organizers-so-van-hoa-the-thao-khanh-hoa-logo.png?v=182749" alt="Sở Văn Hóa Thể Thao Khánh Hòa" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/ubnd-quan-1" target="_blank" title="UBND Quận 1">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/08/12/organizers-ubnd-quan-1-logo.png?v=142409" alt="UBND Quận 1" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/vietpro-media" target="_blank" title="CÔNG TY CỔ PHẦN PHÁT TRIỂN TRUYỀN THÔNG VIETPRO">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2026/02/11/organizers-vietpro-media-logo.png?v=164202" alt="CÔNG TY CỔ PHẦN PHÁT TRIỂN TRUYỀN THÔNG VIETPRO" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/vtv-dai-truyen-hinh-viet-nam" target="_blank" title="VTV - Đài Truyền hình Việt Nam">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/08/10/organizers-vtv-dai-truyen-hinh-viet-nam-logo.png?v=112105" alt="VTV - Đài Truyền hình Việt Nam" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/ubnd-huyen-cam-xuyen" target="_blank" title="UBND huyện Cẩm Xuyên">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/12/30/organizers-ubnd-huyen-cam-xuyen-logo.png?v=173529" alt="UBND huyện Cẩm Xuyên" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/artlive-a-virtual-art-campus" target="_blank" title="artLIVE – a virtual art campus">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/02/06/organizers-artlive-a-virtual-art-campus-logo.png?v=083634" alt="artLIVE – a virtual art campus" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                                                        </div>
+                            </div>
+                                                    <div class="carousel-item ">
+                                <div class="row w-100 m-0">
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/son-kim" target="_blank" title="Peak Event | Ban tổ chức sự kiện">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-son-kim-logo.png?v=161649" alt="Peak Event | Ban tổ chức sự kiện" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/great-race-solution" target="_blank" title="Great Race Solution">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/06/17/organizers-great-race-solution-logo.png?v=155026" alt="Great Race Solution" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/frv" target="_blank" title="FRV - Formula Racing Vietnam | Ban tổ chức sự kiện">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-frv-logo.png?v=161705" alt="FRV - Formula Racing Vietnam | Ban tổ chức sự kiện" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/stop-and-sports" target="_blank" title="Stop And Sports">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-stop-and-sports-logo.png?v=161658" alt="Stop And Sports" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/cong-ty-phat-trien-chay-bo-viet-nam" target="_blank" title="CÔNG TY PHÁT TRIỂN CHẠY BỘ VIỆT NAM">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/26/organizers-cong-ty-phat-trien-chay-bo-viet-nam-logo.png?v=151406" alt="CÔNG TY PHÁT TRIỂN CHẠY BỘ VIỆT NAM" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/diamond-network" target="_blank" title="Diamond Network | Ban tổ chức giải">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/04/15/organizers-diamond-network-logo.png?v=175540" alt="Diamond Network | Ban tổ chức giải" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/vpbank" target="_blank" title="VPBANK | Ban tổ chức sự kiện">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-vpbank-logo.png?v=161649" alt="VPBANK | Ban tổ chức sự kiện" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/vud" target="_blank" title="Công ty Cổ phần Khám phá Không giới hạn Việt Nam (VUD)">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2024/02/29/organizers-vud-logo.png?v=093858" alt="Công ty Cổ phần Khám phá Không giới hạn Việt Nam (VUD)" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6">
+                                            <div class="gallery-box card">
+                                                <div class="gallery-container">
+                                                    <a class="image-popup" href="https://ticket.irace.vn/organizers/techcombank" target="_blank" title="Techcombank | Ban tổ chức sự kiện">
+                                                        <img class="img-fluid mx-auto" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/organizers/2023/12/16/organizers-techcombank-logo.png?v=161649" alt="Techcombank | Ban tổ chức sự kiện" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                                                                                                                                            <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6"></div>
+                                                                                    <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6"></div>
+                                                                                    <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6"></div>
+                                                                                    <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6"></div>
+                                                                                    <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6"></div>
+                                                                                    <div class="element-item col-xl-20p col-md-3 col-sm-4 col-6"></div>
+                                                                                                            </div>
+                            </div>
+                                            </div>
+                    <a class="carousel-control-prev" href="#carousel-organizer" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-organizer" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+</div>
+    
+  <div id="modal-homepage-banner-qc" class="modal fade" tabindex="-1" aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class='bx bx-x'></i>
+                </button>
+                <a class="d-block" href="https://ticket.irace.vn/trang-an-marathon-2026" title="Trang An Marathon 2026">
+                    <img class="banner-preview" src="https://irace-web.s3.ap-southeast-1.amazonaws.com/photos/banner_qc/2026/09/26/banner-qc-l2ugy-image.png?v=095145" alt="Trang An Marathon 2026">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+            </div>
+
+            <footer class="footer footer-layout" style="left: 0">
+        <div class="footer-top">
+            <div class="container h-100 d-flex align-items-center justify-content-between">
+                <a href="http://online.gov.vn/Home/WebDetails/51414" target="_blank">
+                    <img class="image-notifi" src="https://ticket.irace.vn/assets/images/dathongbao.png" alt="notifi">
+                </a>
+                <div class="info-company">
+                    <p class="mb-1 company-name">CÔNG TY CỔ PHẦN IRACE &nbsp; -
+                        <a class="link" href="tel:0902316831">Hotline: 0902.31.68.31</a>-
+                        <a class="link" href="mailto:support@irace.vn">Email: support@irace.vn</a>
+                    </p>
+                    <p class="mb-1" style="filter: contrast(0.75)">B-00.02 Sarica, KĐT Sala, Đường D9, P. An Khánh, TP. HCM</p>
+                    <p class="m-0" style="filter: contrast(0.75)">Mã số doanh nghiệp: 0315105285 do Sở Kế hoạch và Đầu tư TP.HCM cấp lần 2 ngày 12/04/19</p>
+                </div>
+                <div class="container-contact">
+                    <div class="footer-socials">
+                        <a href="https://www.fb.com/irace.vn" target="_blank">
+                            <img src="https://ticket.irace.vn/assets/images/face-book.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/irace.vn" target="_blank">
+                            <img src="https://ticket.irace.vn/assets/images/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://irace.vn/feed/" target="_blank">
+                            <img src="https://ticket.irace.vn/assets/images/wifi.png" alt="Feed">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA" target="_blank">
+                            <img src="https://ticket.irace.vn/assets/images/youtube.png" alt="Youtube">
+                        </a>
+                    </div>
+
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 0;">
+                        <div>
+                            <img src="https://ticket.irace.vn/assets/images/app/irace-onelink-s.png" style="width: 100px; height: 100px; display: block;" alt="QR Code">
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                            <a href="https://play.google.com/store/apps/details?id=com.irace.app" target="_blank" style="display: inline-block;">
+                                <img src="https://ticket.irace.vn/assets/images/app/download-google-play-vi.png" style="height: 40px; width: auto;" alt="Google Play">
+                            </a>
+                            <a href="https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517" target="_blank" style="display: inline-block;">
+                                <img src="https://ticket.irace.vn/assets/images/app/download-apple-store-vi.png" style="height: 40px; width: auto;" alt="App Store">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-lg-3 col-12 text-irace">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script> iRace.vn - Made by Vietnam
+                    </div>
+
+                    <div class="col-lg-9 col-12">
+                        <div class="text-lg-end policy">
+
+                                                            <a href="https://irace.vn/chinh-sach-bao-mat/" target="_blank">Chính sách bảo mật</a>
+                                <a href="https://irace.vn/dieu-khoan-thanh-toan/" target="_blank">Điều khoản thanh
+                                    toán</a>
+                                <a href="https://irace.vn/dieu-khoan-su-dung/" target="_blank">Điều khoản sử dụng</a>
+                                <a href="https://irace.vn/tuyen-dung/" target="_blank">Tuyển dụng</a>
+                                <a href="https://irace.vn/lien-he/" target="_blank">Liên hệ</a>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+            <a href="javascript:void(0)" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+        </div>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="https://ticket.irace.vn/assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://ticket.irace.vn/assets/libs/feather-icons/feather.min.js"></script>
+    <script src="https://ticket.irace.vn/assets/js/jquery-3.6.3.min.js"></script>
+    <script src="https://ticket.irace.vn/assets/libs/toastr/toastr.min.js"></script>
+    <script src="https://ticket.irace.vn/assets/libs/loadingoverlay/loadingoverlay.min.js"></script>
+    <script src="/assets/js/web.js?id=5a3300d8670b6ce127a8917e0bcd80b9"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=explicit&hl=vi" async defer></script>
+
+    
+<script src="https://ticket.irace.vn/assets/js/bglazyload.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<script>
+
+    $.fn.selectpicker.Constructor.BootstrapVersion = '5';
+
+
+    if ($('.swiper-trending').length) {
+        initSliderTrending();
+    }
+
+    function initSliderTrending() {
+        var isMobileScreen = false || window.innerWidth <= 768;
+
+        new Swiper('.swiper-trending', {
+            initialSlide: 0,
+            loop: true,
+            centeredSlides: true,
+            slidesPerView: 1.2,
+            spaceBetween: 10,
+            touchAngle: 45,
+            nested: true,
+            touchReleaseOnEdges: true,
+            watchOverflow: true,
+            keyboard: {
+                enabled: true,
+                onlyInViewport: true
+            },
+
+            autoplay: isMobileScreen ? false : {
+                delay: 3500,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true
+            },
+
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2
+                },
+                992: {
+                    slidesPerView: 3
+                }
+            }
+        });
+    }
+
+    $('.list-menu-event-mobile-homepage .nav-link').on('click', function(e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        if ($(target).length) {
+            $('html, body').animate({
+                scrollTop: $(target).offset().top - 70
+            }, 300);
+        }
+    });
+
+    $(window).on('load', function() {
+
+        $('.lazy-bg').bglazyload();
+
+        showSalePopup();
+
+        var f_type = "latest";
+
+        if (f_type) {
+            $('.sortby .dropdown-menu .dropdown-item').each(function() {
+                var href = $(this).attr('href');
+                if (href.includes(f_type)) {
+                    const text = $(this).text();
+                    $(this).addClass('blue').removeAttr('href');
+                    $('.sortby .dropdown-toggle').html(`Sắp xếp theo: ${text} <i class="mdi mdi-chevron-down"></i>`);
+                }
+            });
+        }
+
+
+        if ($('.container-filter-event').length) {
+
+            $('#filter-distances').selectpicker({
+                noneSelectedText: "Chọn cự ly",
+                liveSearchPlaceholder: "Chọn cự ly",
+                liveSearch: true,
+                showSubtext: true,
+                noneResultsText: "Không tìm thấy kết quả"
+            });
+
+            $('#filter-distances').on('changed.bs.select', filter);
+
+            $('#filter-location').selectpicker({
+                noneSelectedText: "Chọn địa điểm",
+                liveSearchPlaceholder: "Chọn địa điểm",
+                liveSearch: true,
+                showSubtext: true,
+                noneResultsText: "Không tìm thấy kết quả"
+            });
+
+            $('#filter-location').on('changed.bs.select', filter);
+
+            $('#filter-datetime').selectpicker({
+                noneSelectedText: "Chọn thời gian",
+                liveSearchPlaceholder: "Chọn thời gian",
+                liveSearch: true,
+                showSubtext: true,
+                noneResultsText: "Không tìm thấy kết quả"
+            });
+
+            $('#filter-datetime').on('changed.bs.select', filter);
+
+        }
+
+    });
+
+    function showSalePopup() {
+        if ($('#modal-homepage-banner-qc').length) {
+            if (!farm.getCookie('banner_ads')) {
+                $('#modal-homepage-banner-qc').modal('show');
+                farm.setCookie('banner_ads', 'displayed', 1);
+            }
+        }
+    }
+
+    $('.container-filter-event input[name=name]').on('change', filter);
+    $('.container-filter-event input[name=name]').keypress(function(e) {
+        if (e.which == 13) filter();
+    });
+
+
+    function filter() {
+
+        var obj = {};
+
+        var name = $('.container-filter-event input[name=name]').val();
+        if (name) obj.name = name;
+
+        var catalogs = $('#filter-distances').val();
+        if (catalogs && catalogs.length) {
+            obj.catalogs = catalogs;
+        }
+
+        var locations = $('#filter-location').val();
+        if (locations && locations.length) {
+            obj.locations = locations;
+        }
+
+        var datetimes = $('#filter-datetime').val();
+        if (datetimes && datetimes.length) {
+            obj.datetimes = datetimes;
+        }
+
+        var url = APP_URL + '/search?' + $.param(obj);
+        window.location.href = url;
+    }
+
+</script>
+
+
+
+</body>
+
+</html>
+

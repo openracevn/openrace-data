@@ -16,6 +16,7 @@ Any agent can follow this (Claude Code, Antigravity, ...). You need a shell in t
 - **Follow the same instructions Firecrawl gets:** `<dir>/extraction.json` holds the prompt and JSON schema for pages (`page`) and for price images (`image`). The rules below are the ones that matter most.
 - Commits go straight to `main` with `GITHUB_TOKEN=$(gh auth token)`. Never hand-edit files in `data/`.
 - Races already read (by Firecrawl or an agent) are skipped by default. Don't re-read them unless the user asks (`--all`).
+- **`ticket.irace.vn` (recipe `irace`) has no price images to OCR**: its price table is already text in `page-<n>.html` (`#personal`), read like any other page's `json`. Prefer it over ActiUp/irace.vn's price images when a race has (or can get) a `ticket.irace.vn` page — free either way, but no image to look at.
 
 ## 1. Prepare (free)
 
