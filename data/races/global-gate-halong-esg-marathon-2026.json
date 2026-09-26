@@ -39,7 +39,7 @@
   ],
   "location": {
     "venue": "Global Gate Hạ Long",
-    "city": null
+    "city": "Hạ Long"
   },
   "geo": {
     "lat": 21.0893397,
@@ -160,7 +160,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/global-gate-halong-esg-marathon-2026",
-      "lastCheckedAt": "2026-09-25T04:03:37.715Z",
+      "lastCheckedAt": "2026-09-26T05:24:22.076Z",
       "lastChangedAt": "2026-09-23T18:30:47.025Z",
       "extracted": {
         "facts": {
@@ -190,6 +190,7 @@
                 "3km"
               ],
               "venue": "Global Gate Hạ Long",
+              "city": "Hạ Long",
               "prices": []
             }
           }
@@ -210,5 +211,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T04:03:37.715Z"
+  "updatedAt": "2026-09-26T05:24:22.076Z"
 }
