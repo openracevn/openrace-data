@@ -168,6 +168,20 @@
     "linkUrls": []
   },
   {
+    "id": "0a2a61d8-6591-435c-a357-6a055e412244",
+    "slug": "vnexpress-marathon-nha-trang-4",
+    "name": "VnExpress Marathon Nha Trang 2024",
+    "date": "2024-08-11",
+    "endDate": null,
+    "lastModified": "2026-09-26T13:37:21.014Z",
+    "file": "vnexpress-marathon-nha-trang-4-2024.json",
+    "seriesId": "vnexpress-marathon-nha-trang",
+    "sourceUrls": [
+      "https://vm.vnexpress.net/nha-trang-2024"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "0a70cbbc-6b5e-4fd9-a911-b9952675cd2f",
     "slug": "tmg-hoi-an-heritage-marathon",
     "name": "TMG Hoi An Heritage Marathon",
@@ -1346,6 +1360,20 @@
     "linkUrls": []
   },
   {
+    "id": "43e8b475-3e49-4bf5-af0f-05f452405869",
+    "slug": "vnexpress-marathon-nha-trang-5",
+    "name": "VnExpress Marathon Libera Nha Trang 2025",
+    "date": "2025-08-24",
+    "endDate": null,
+    "lastModified": "2026-09-26T13:37:21.014Z",
+    "file": "vnexpress-marathon-nha-trang-5-2025.json",
+    "seriesId": "vnexpress-marathon-nha-trang",
+    "sourceUrls": [
+      "https://vm.vnexpress.net/nha-trang-2025"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "443a3d35-2b38-4a2f-b837-a9cbbf13f093",
     "slug": "mekong-delta-marathon-hau-giang-2025",
     "name": "GIẢI MARATHON QUỐC TẾ MEKONG DELTA MARATHON TỈNH HẬU GIANG LẦN THỨ VI",
@@ -1905,6 +1933,20 @@
     "seriesId": null,
     "sourceUrls": [
       "https://actiup.net/vi/event/suunto-run"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "63695720-2dbf-41c7-83e5-df67e302ef8e",
+    "slug": "vnexpress-marathon-nha-trang-2",
+    "name": "VnExpress Marathon Marvelous Nha Trang 2022",
+    "date": "2022-08-28",
+    "endDate": null,
+    "lastModified": "2026-09-26T13:37:21.014Z",
+    "file": "vnexpress-marathon-nha-trang-2-2022.json",
+    "seriesId": "vnexpress-marathon-nha-trang",
+    "sourceUrls": [
+      "https://vm.vnexpress.net/nha-trang-2022"
     ],
     "linkUrls": []
   },
@@ -3586,6 +3628,20 @@
     "seriesId": "tay-ho-half-marathon",
     "sourceUrls": [
       "https://actiup.net/vi/event/tay-ho-half-marathon-2025"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "cc435875-869f-4156-ba29-68437a578b39",
+    "slug": "vnexpress-marathon-nha-trang-3",
+    "name": "VnExpress Marathon Marvelous Nha Trang 2023",
+    "date": "2023-08-13",
+    "endDate": null,
+    "lastModified": "2026-09-26T13:37:21.014Z",
+    "file": "vnexpress-marathon-nha-trang-3-2023.json",
+    "seriesId": "vnexpress-marathon-nha-trang",
+    "sourceUrls": [
+      "https://vm.vnexpress.net/nha-trang-2023"
     ],
     "linkUrls": []
   },

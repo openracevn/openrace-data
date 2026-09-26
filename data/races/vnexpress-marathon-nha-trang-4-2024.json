@@ -1,0 +1,169 @@
+{
+  "id": "0a2a61d8-6591-435c-a357-6a055e412244",
+  "slug": "vnexpress-marathon-nha-trang-4",
+  "name": "VnExpress Marathon Nha Trang 2024",
+  "types": [
+    "road_run"
+  ],
+  "date": "2024-08-11",
+  "endDate": null,
+  "seriesId": "vnexpress-marathon-nha-trang",
+  "organizerId": "vnexpress",
+  "organizer": "VnExpress",
+  "edition": 3,
+  "courses": [],
+  "location": {
+    "venue": null,
+    "city": "Nha Trang"
+  },
+  "geo": {
+    "lat": 12.2388,
+    "lng": 109.1967,
+    "source": "place",
+    "precision": "province",
+    "current": {
+      "province": "56",
+      "ward": null
+    },
+    "legacy": null,
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 317.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1040.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 437.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 0,
+        "minutes": null,
+        "method": "straight_line",
+        "near": true
+      },
+      "da-lat": {
+        "km": 88.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 445.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 993.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 500.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 312,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 171,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 134.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1258,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 994.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "vnexpress-marathon",
+      "role": "official",
+      "url": "https://vm.vnexpress.net/nha-trang-2024",
+      "lastCheckedAt": "2026-09-26T13:37:21.014Z",
+      "lastChangedAt": "2026-09-26T13:37:21.014Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Marathon Nha Trang 2024",
+          "date": "2024-08-11",
+          "city": "Nha Trang"
+        },
+        "pages": [
+          {
+            "url": "https://vm.vnexpress.net/nha-trang-2024",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "VnExpress Marathon Nha Trang 2024",
+              "date": "2024-08-11",
+              "city": "Nha Trang",
+              "prices": []
+            }
+          },
+          {
+            "url": "https://vm.vnexpress.net/nha-trang-2024/thong-tin-cuoc-dua",
+            "json": {
+              "edition": 3
+            }
+          }
+        ],
+        "links": [],
+        "series": {
+          "id": "vnexpress-marathon-nha-trang",
+          "name": "VnExpress Marathon Nha Trang"
+        },
+        "organizer": {
+          "id": "vnexpress",
+          "name": "VnExpress",
+          "website": "https://vnexpress.net/"
+        },
+        "readBy": "agent"
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-26T13:37:21.014Z",
+  "updatedAt": "2026-09-26T13:37:21.014Z"
+}
