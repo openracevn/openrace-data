@@ -3,7 +3,7 @@
   "slug": "can-tho-heritage-marathon-2025",
   "name": "GIẢI MARATHON QUỐC TẾ DI SẢN CẦN THƠ 2025",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2025-12-21",
   "endDate": null,
@@ -125,7 +125,15 @@
     }
   ],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "types": {
+      "value": [
+        "road_run"
+      ],
+      "reason": "inferred from race name/price-tier text (marathon); no source states an explicit type",
+      "at": "2026-09-26T13:12:26.292Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -158,5 +166,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T07:11:10.278Z"
+  "updatedAt": "2026-09-26T13:12:26.292Z"
 }
