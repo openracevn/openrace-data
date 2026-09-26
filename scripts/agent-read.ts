@@ -7,6 +7,12 @@
  *   npm run agent-read -- prepare --race <url|id|slug> [--race <url|id|slug> ...] [--out <dir>]
  *       Repeat --race for a hand-picked batch (a curated list of slugs, not a whole site);
  *       each is numbered in order into the same <dir>, skipping ones with no recipe.
+ *   npm run agent-read -- prepare --race <existing-race-id-or-slug>@<new-url> [--out <dir>]
+ *       Attach a new source URL to a race you already know exists (found by hand),
+ *       instead of letting `commit`'s matching decide by name/date. Use this once the
+ *       matching's duplicate-race warning (a "+" line's "possible duplicate of ...")
+ *       tells you the new page is the same race scoring under its threshold — steers
+ *       the match itself rather than merging two files after the fact.
  *   npm run agent-read -- prepare --site <key> [--past] [--limit N] [--all] [--out <dir>]
  *       Free. Runs the recipe and saves, per race, what Firecrawl would be given:
  *       <dir>/<nn>-<slug>/page-<n>.html (the cleaned HTML), image-<n>.<ext> (price images),
@@ -45,6 +51,7 @@ type Task = {
   role: SyncInput["role"];
   fingerprint: string;
   slugHint?: string;
+  matchId?: string;
   facts?: Record<string, unknown>;
   links: Snapshot["links"];
   hints?: Snapshot["hints"];
@@ -92,16 +99,28 @@ async function prepare() {
   const checks = parseChecks(await local.read(CHECKS_PATH));
   const index = IndexSchema.parse(JSON.parse((await local.read(INDEX_PATH)) ?? "[]"));
 
-  const jobs: { site: Site; recipe: Recipe; refs?: RaceRef[] }[] = [];
+  const jobs: { site: Site; recipe: Recipe; refs?: RaceRef[]; matchId?: string }[] = [];
   if (raceArgs.length > 0) {
     for (const raceArg of raceArgs) {
-      const entry = index.find((e) => e.id === raceArg || e.slug === raceArg);
+      const at = raceArg.indexOf("@");
+      const attachTo = at > 0 ? raceArg.slice(0, at) : undefined;
+      const arg = attachTo ? raceArg.slice(at + 1) : raceArg;
+      let matchId: string | undefined;
+      if (attachTo) {
+        const target = index.find((e) => e.id === attachTo || e.slug === attachTo);
+        if (!target) {
+          console.log(`✗ "${attachTo}@..." has no race with id or slug "${attachTo}" in ${INDEX_PATH}`);
+          continue;
+        }
+        matchId = target.id;
+      }
+      const entry = !attachTo ? index.find((e) => e.id === arg || e.slug === arg) : undefined;
       let urls = entry?.sourceUrls ?? [];
       if (!entry) {
         try {
-          urls = [canonicalSourceUrl(raceArg)];
+          urls = [canonicalSourceUrl(arg)];
         } catch {
-          console.log(`✗ "${raceArg}" is neither a race id or slug in ${INDEX_PATH} nor a URL`);
+          console.log(`✗ "${arg}" is neither a race id or slug in ${INDEX_PATH} nor a URL`);
           continue;
         }
       }
@@ -111,7 +130,7 @@ async function prepare() {
         const recipe = site && recipeFor(site);
         if (!site || !recipe) continue; // e.g. a hand-entered reference
         const slugHint = site.recipe === "actiup" ? new URL(url).pathname.split("/")[3] : undefined;
-        jobs.push({ site, recipe, refs: [{ url, slugHint }] });
+        jobs.push({ site, recipe, refs: [{ url, slugHint }], matchId });
         added++;
       }
       if (added === 0) console.log(`✗ ${raceArg} has no source on a site with a recipe`);
@@ -131,7 +150,7 @@ async function prepare() {
 
   let n = 0;
   let skipped = 0;
-  for (const { site, recipe, refs: given } of jobs) {
+  for (const { site, recipe, refs: given, matchId } of jobs) {
     const ctx: RecipeContext = { site, config, http, today, includePast: args.includes("--past") || raceArgs.length > 0 };
     let refs = given ?? (await recipe.discover(ctx));
     if (raceArgs.length === 0) {
@@ -173,6 +192,7 @@ async function prepare() {
         role: roleOf(site),
         fingerprint: snapshotFingerprint(snap),
         ...(snap.slugHint && { slugHint: snap.slugHint }),
+        ...(matchId && { matchId }),
         ...(snap.facts && { facts: snap.facts }),
         links: snap.links,
         ...(snap.hints && { hints: snap.hints }),
@@ -180,7 +200,10 @@ async function prepare() {
         pages,
         images,
       };
-      const read: Read = { pages: pages.map((p) => ({ url: p.url, json: null })), images: images.map((i) => ({ url: i.url, json: null })) };
+      const read: Read = {
+        pages: pages.map((p, i) => ({ url: p.url, json: i === 0 && snap.pricesDraft?.length ? { prices: snap.pricesDraft } : null })),
+        images: images.map((i) => ({ url: i.url, json: null })),
+      };
       writeFileSync(join(dir, "task.json"), `${JSON.stringify(task, null, 2)}\n`);
       writeFileSync(join(dir, "read.json"), `${JSON.stringify(read, null, 2)}\n`);
       console.log(`${name}: ${pages.length} page(s), ${images.length} image(s) · ${ref.url}`);
@@ -230,7 +253,7 @@ async function commit() {
     for (const t of f.prices) {
       console.log(`   ${t.distance ?? "-"} · ${t.tier} (${t.kind}${t.audience ? `, ${t.audience}` : ""}) · ${t.price.toLocaleString("en")} · ${t.from ?? "?"} → ${t.to ?? "?"}`);
     }
-    inputs.push({ url: task.url, site: task.site, role: task.role, extracted, checkedAt, slugHint: task.slugHint });
+    inputs.push({ url: task.url, site: task.site, role: task.role, extracted, checkedAt, slugHint: task.slugHint, matchId: task.matchId });
     fingerprints.set(task.url, task.fingerprint);
   }
   for (const p of problems) console.log(`\n✗ ${p}`);

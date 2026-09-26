@@ -50,4 +50,13 @@ export type Snapshot = {
   facts?: Record<string, unknown>;
   hints?: SourceHints;
   slugHint?: string;
+  /**
+   * A draft `prices` array parsed straight from a page's own HTML `<table>` (see
+   * `recipes/irace.ts`'s `parsePriceTable`), for agent-read to pre-fill into
+   * `read.json`'s first page instead of `null`. Still just a draft: the agent
+   * verifies every row against the table before trusting it (plan 010).
+   */
+  pricesDraft?: PriceDraft[];
 };
+
+export type PriceDraft = { distance: string; tier: string; from: string | null; to: string | null; price: number };

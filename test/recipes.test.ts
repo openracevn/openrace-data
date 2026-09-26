@@ -154,6 +154,13 @@ describe("irace recipe", () => {
     // old irace.vn poster images reproduced under "Bảng giá".
     assert.doesNotMatch(html, /Giảm giá/);
     assert.doesNotMatch(html, /<img/);
+    // A draft prices array parsed straight from #personal's table (plan 010's
+    // price pre-fill), for agent-read to pre-fill read.json with instead of null.
+    assert.ok(snap.pricesDraft && snap.pricesDraft.length > 0);
+    assert.deepEqual(
+      snap.pricesDraft!.find((t) => t.distance === "5km" && t.tier === "Late"),
+      { distance: "5km", tier: "Late", from: "17/08", to: "05/10", price: 950_000 },
+    );
   });
 
   it("falls back to #bang-gia's text table once registration closes and #personal is gone", async () => {
@@ -165,6 +172,7 @@ describe("irace recipe", () => {
     assert.match(html, /Super Early Bird/);
     assert.match(html, /340\.000đ/);
     assert.match(html, /920\.000đ/);
+    assert.ok(snap.pricesDraft?.some((t) => t.tier === "Super Early Bird" && t.price === 340_000));
   });
 
   it("reads a race only listed on irace.vn's older su-kien pages, added by hand", async () => {
@@ -203,6 +211,10 @@ describe("irace recipe", () => {
     assert.match(html, /Flash Sale/);
     assert.match(html, /180\.000đ/);
     assert.match(html, /680\.000đ/);
+    assert.deepEqual(
+      snap.pricesDraft!.find((t) => t.distance === "42km" && t.tier === "Regular"),
+      { distance: "42km", tier: "Regular", from: "03/09", to: "22/09", price: 680_000 },
+    );
   });
 });
 

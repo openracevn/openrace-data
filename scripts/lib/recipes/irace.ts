@@ -48,10 +48,11 @@
  *     site, not an `/organizers/<slug>` page, so no organizer hint comes from it.
  */
 import { cleanContent, pageLinks, parseHtml } from "../html.ts";
+import type { HTMLElement } from "node-html-parser";
 import { hostOf } from "../sites.ts";
 import { str } from "../text.ts";
 import { externalLinks } from "./default.ts";
-import type { RaceRef, Recipe, RecipeContext, Snapshot } from "./types.ts";
+import type { PriceDraft, RaceRef, Recipe, RecipeContext, Snapshot } from "./types.ts";
 
 const RACE_PAGE = /^https:\/\/(?:ticket\.irace\.vn\/([a-z0-9-]+)|irace\.vn\/su-kien\/([a-z0-9-]+))\/?$/;
 // Site paths that look like a slug but aren't a race: account/category/organizer pages.
@@ -76,6 +77,56 @@ type EventLd = {
   organizer?: EventLdOrganizer | EventLdOrganizer[];
 };
 const first = <T>(v: T | T[] | undefined): T | undefined => (Array.isArray(v) ? v[0] : v);
+
+// A tier header's own text, with a "(from - to)" date range at the end (parens, any
+// dash character): "Early Bird<br><small><i>(22/04 - 10/06)</i></small>" on
+// ticket.irace.vn, "Flash Sale<br>(07/07 – 13/07)" on irace.vn — same shape, just
+// without the <small><i> wrapper.
+const TIER_DATES = /\(([^()]*)\)\s*$/;
+
+/** A cell's own text, with <br> kept as a break (so a name and a date range below it don't run together) and every other tag dropped. */
+function cellText(el: HTMLElement): string {
+  return el.innerHTML
+    .replace(/<br\s*\/?>/gi, "\n")
+    .replace(/<[^>]+>/g, "")
+    .replace(/&#8211;|&#8212;/g, "-")
+    .trim();
+}
+
+/**
+ * A price table already picked out by `snapshot` (`#personal`, `#bang-gia`, or
+ * `.eventon_desc_in`'s own `<table>`): one column per tier (name + optional sale
+ * dates in its header), one row per distance. Both page shapes verified 2026-09-26
+ * share this layout exactly; see this file's header comment.
+ */
+export function parsePriceTable(table: HTMLElement): PriceDraft[] {
+  const headRow = table.querySelector("thead tr") ?? table.querySelector("tr");
+  if (!headRow) return [];
+  const tiers = headRow
+    .querySelectorAll("th, td")
+    .slice(1)
+    .map((th) => {
+      const text = cellText(th);
+      const m = text.match(TIER_DATES);
+      const name = (m ? text.slice(0, m.index) : text).replace(/\n/g, " ").trim();
+      const range = m ? m[1]!.split(/\n?\s*[-–—]\s*/).map((s) => s.trim()).filter(Boolean) : [];
+      return { name, from: range[0] ?? null, to: range[1] ?? null };
+    });
+  const bodyRows = table.querySelectorAll("tbody tr");
+  const rows: PriceDraft[] = [];
+  for (const tr of bodyRows.length > 0 ? bodyRows : table.querySelectorAll("tr").slice(1)) {
+    const cells = tr.querySelectorAll("th, td");
+    if (cells.length < 2) continue;
+    const distance = cellText(cells[0]!).replace(/\n/g, " ").trim();
+    for (let i = 1; i < cells.length && i - 1 < tiers.length; i++) {
+      const digits = cellText(cells[i]!).replace(/[^\d]/g, "");
+      if (!digits) continue;
+      const tier = tiers[i - 1]!;
+      rows.push({ distance, tier: tier.name, from: tier.from, to: tier.to, price: Number(digits) });
+    }
+  }
+  return rows;
+}
 
 export const iraceRecipe: Recipe = {
   async discover(ctx: RecipeContext): Promise<RaceRef[]> {
@@ -104,6 +155,8 @@ export const iraceRecipe: Recipe = {
     }
     if (parts.length === 0) throw new Error(`${ref.url}: no ${[...CONTENT, LEGACY_DESC].join(" or ")} (layout changed?)`);
     const content = parseHtml(`<main>${parts.map((el) => el.outerHTML).join("")}</main>`);
+    const priceTable = content.querySelector("table");
+    const pricesDraft = priceTable ? parsePriceTable(priceTable) : [];
 
     const event = readEventLd(html);
     const venue = str(first(event?.location)?.name);
@@ -124,6 +177,7 @@ export const iraceRecipe: Recipe = {
       },
       hints: organizerName && organizerSlug ? { organizer: { id: organizerSlug, name: organizerName } } : {},
       slugHint: ref.slugHint ?? m?.[1] ?? m?.[2],
+      ...(pricesDraft.length > 0 && { pricesDraft }),
     };
   },
 };

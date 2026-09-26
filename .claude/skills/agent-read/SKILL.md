@@ -17,6 +17,21 @@ Any agent can follow this (Claude Code, Antigravity, ...). You need a shell in t
 - Commits go straight to `main` with `GITHUB_TOKEN=$(gh auth token)`. Never hand-edit files in `data/`.
 - Races already read (by Firecrawl or an agent) are skipped by default. Don't re-read them unless the user asks (`--all`).
 - **`ticket.irace.vn` (recipe `irace`) has no price images to OCR**: its price table is already text in `page-<n>.html` (`#personal`), read like any other page's `json`. Prefer it over ActiUp/irace.vn's price images when a race has (or can get) a `ticket.irace.vn` page — free either way, but no image to look at.
+- **A race with no price/venue on its known source(s): check in this order** before treating it as "no source available" (plan 010):
+  1. A subpage on the *same* site — the recipe may only read one page; look for an info/price tab (e.g. `/thong-tin-cuoc-dua`). Free. If found, it's worth fixing the recipe to read it, not just a one-off read.
+  2. `ticket.irace.vn/<slug>` — free, a real HTML text table, no OCR.
+  3. `irace.vn/su-kien/<slug>` — free, usually a text table too (`.eventon_desc_in`), but never auto-discovered; find it by search. Attaching it to a race you've already found by hand: `npm run agent-read -- prepare --race <existing-race-id-or-slug>@<new-url>` (see "Attaching a new source" below) — don't just `--race <url>` and hope the matching finds it.
+  4. ActiUp / irace.vn's old poster images — last: costs Firecrawl OCR credits, or your own eyes on the image here.
+
+## Attaching a new source to a race you've already identified
+
+`commit`'s dry run flags an added race (`+`) with a same-day, similarly-named existing race it scored under the merge threshold for (`⚠️ possible duplicate of "..."`). When you already know — from steps above, or from that warning — that a new URL belongs to a race already in `data/index.json`, don't let the automatic name/date matching decide: attach it directly.
+
+```bash
+npm run agent-read -- prepare --race <existing-race-id-or-slug>@<new-url>
+```
+
+This reads the new URL as usual, but the source is forced onto that race's group at commit time, regardless of how its name or date compares. If the id/slug before `@` doesn't resolve, or a `matchId` doesn't match any race at commit time, the source is skipped with a clear reason instead of silently becoming a new race or falling through to the name/date guess.
 
 ## 1. Prepare (free)
 
@@ -35,7 +50,7 @@ This clears and fills `.agent-read/` (gitignored), with one folder per race (`01
 | `page-<n>.html` | The page's relevant HTML, exactly what Firecrawl would read |
 | `image-<n>.png/.jpg/...` | Price images the recipe picked, likeliest first (up to 4) |
 | `task.json` | The source (url, site), `facts` from the site's own data (trusted over what you read: name, dates, venue, organizer, sale status), links, and the snapshot's fingerprint |
-| `read.json` | **What you fill in**: `json` for every page and image, all `null` for now |
+| `read.json` | **What you fill in**: `json` for every page and image. `ticket.irace.vn`/`irace.vn`'s price table is pre-filled as `{"prices": [...]}` (plan 010) — everything else starts `null` |
 
 ## 2. Read each race
 
@@ -81,6 +96,7 @@ For a dense or very wide table, crop to the table and look again at full size. S
 - `mapsUrl`: a Google Maps link or coordinates for the start/finish venue, exactly as on the page. Omit if none.
 - Leave out any field the page doesn't state. `facts` in `task.json` already cover what the site states in structured form. Name as written, never translated. Dates as `YYYY-MM-DD`.
 - `prices`: only amounts written in the page text. If prices are only in images, `[]`.
+- **`ticket.irace.vn`/`irace.vn`'s `prices` is already pre-filled** from the page's own `<table>` (not typed by hand): check every row against `page-<n>.html`'s table before touching anything else, exactly like an image you looked at — a parser can misjudge a header or a merged cell same as a person can misread a photo. Then add the rest of the page's fields (`pageKind`, `name`, `date`, `types`, ...) around it as usual.
 
 ### Image `json` (per price image)
 

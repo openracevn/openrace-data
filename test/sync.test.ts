@@ -215,6 +215,43 @@ describe("planSync", () => {
     assert.equal(p.changes[0]!.slug, "tay-ho-half-marathon-2026");
   });
 
+  it("warns on an added race that scores close to an existing one on the same day, without merging it", async () => {
+    const store = memoryStore();
+    apply(store, (await plan(store, [officialInput()])).files);
+    // Same race day, a name that's mostly the same but reworded enough to fall under
+    // MATCH_THRESHOLD — the real case this guards (techcombank-ha-noi-marathon, plan 010).
+    const p = await plan(store, [actiupInput(actiup({ name: "Ho Chi Minh Marathon Festival 2027" }), OTHER)]);
+    assert.equal(p.changes[0]!.kind, "added");
+    assert.match(p.changes[0]!.dupWarning!, /possible duplicate of "HCMC Marathon 2027"/);
+    assert.match(formatCommitMessage(p), /⚠️ possible duplicate of/);
+  });
+
+  it("doesn't warn on an added race with only generic same-day similarity", async () => {
+    const store = memoryStore();
+    apply(store, (await plan(store, [officialInput()])).files);
+    const p = await plan(store, [actiupInput(actiup({ name: "Đà Lạt Xanh 2027" }), OTHER)]);
+    assert.equal(p.changes[0]!.dupWarning, undefined);
+  });
+
+  it("attaches a source to an existing race by matchId, bypassing name/date matching", async () => {
+    const store = memoryStore();
+    apply(store, (await plan(store, [officialInput()])).files);
+    const id = index(store)[0]!.id;
+    // A name/date matching alone wouldn't merge this (different day), but a human
+    // has already decided it's the same race.
+    const input = actiupInput(actiup({ name: "A Completely Different Title", date: "2027-03-01" }), OTHER);
+    const p = await plan(store, [{ ...input, matchId: id }]);
+    assert.equal(p.changes.length, 1);
+    assert.equal(p.changes[0]!.kind, "updated");
+    assert.equal(p.changes[0]!.id, id);
+  });
+
+  it("skips a source with a matchId that doesn't exist", async () => {
+    const p = await plan(memoryStore(), [{ ...actiupInput(actiup({})), matchId: "no-such-id" }]);
+    assert.equal(p.changes.length, 0);
+    assert.match(p.skipped[0]!.reason, /matchId no-such-id: no such race/);
+  });
+
   it("ignores rewording of venue and organizer between reads, but not a real move", async () => {
     const store = memoryStore();
     apply(store, (await plan(store, [actiupInput(actiup({}))])).files);

@@ -49,6 +49,15 @@ export type SyncInput = {
   checkedAt: string;
   /** Slug for a new race (e.g. ActiUp's own slug); default: from the name. */
   slugHint?: string;
+  /**
+   * Force this source onto an existing race (found by id), bypassing the
+   * name/date matching below. Set when a human has already decided the two
+   * pages are the same race — e.g. a same-day near-duplicate the automatic
+   * matcher scored under MATCH_THRESHOLD (see the duplicate-race warning on
+   * added races). If no candidate has this id, the input is skipped rather
+   * than silently falling back to automatic matching or creating a new race.
+   */
+  matchId?: string;
 };
 
 export interface RaceStore {
@@ -69,6 +78,8 @@ export type RaceChange = {
   newFlags?: string[];
   /** Overridden fields whose source value changed (the override still wins). */
   shadowed?: CanonicalField[];
+  /** A new race's name/date came close to an existing race's, under MATCH_THRESHOLD — worth a human look before this ships as a real "+". */
+  dupWarning?: string;
 };
 export type Skipped = { url: string; reason: string };
 
@@ -125,6 +136,7 @@ export async function planSync(
 
   const skipped: Skipped[] = [];
   const groups = new Map<string, Group>();
+  const dupWarnings = new Map<string, string>();
   const addToGroup = (id: string, item: Item, newSlug?: string) => {
     const group = groups.get(id) ?? { id, newSlug, items: [] };
     group.items.push(item);
@@ -152,6 +164,17 @@ export async function planSync(
         }
       }),
     );
+    if (input.matchId) {
+      const forced = candidates.find((c) => c.id === input.matchId);
+      if (!forced) {
+        skipped.push({ url: input.url, reason: `matchId ${input.matchId}: no such race` });
+        continue;
+      }
+      forced.sites.add(input.site);
+      forced.sourceUrls.add(input.url);
+      addToGroup(forced.id, item);
+      continue;
+    }
     const match =
       // 1. The same page, same edition.
       nearest(candidates.filter((c) => c.sourceUrls.has(input.url)), date, EDITION_DAYS) ??
@@ -173,6 +196,11 @@ export async function planSync(
     takenSlugs.add(newSlug);
     takenFiles.add(raceFileName(newSlug, date));
     const id = newId();
+    // Below MATCH_THRESHOLD (else it would have matched above), but still worth a look:
+    // a genuine near-duplicate name (a typo or wording difference) scores much higher
+    // than two unrelated races that only share generic Vietnamese race-naming words.
+    const near = nearestByName(candidates, input.site, name, date);
+    if (near && near.score >= 0.4) dupWarnings.set(id, `possible duplicate of "${near.name}" (name similarity ${near.score.toFixed(3)}, same day) — attach with matchId instead of adding a new race if so`);
     candidates.push({ id, name, date, sites: new Set([input.site]), sourceUrls: new Set([input.url]), linkUrls: links });
     addToGroup(id, item, newSlug);
   }
@@ -238,6 +266,7 @@ export async function planSync(
       ...(joined.length > 0 && { joined }),
       ...(newFlags.length > 0 && { newFlags }),
       ...(shadowed.length > 0 && { shadowed }),
+      ...(!prev && dupWarnings.has(id) && { dupWarning: dupWarnings.get(id) }),
     });
     seriesRefs.push(...seriesEntity(record, inferred.get(id)));
   }
@@ -514,14 +543,20 @@ function nearest(candidates: Candidate[], date: string, maxDays: number): Candid
  * ("Vũng Tàu City Trail 2026" vs "VungTau CityTrail 2026"). Best match wins.
  */
 function findByName(candidates: Candidate[], site: string, name: string, date: string): Candidate | null {
+  const near = nearestByName(candidates, site, name, date);
+  return near && near.score >= MATCH_THRESHOLD ? near.candidate : null;
+}
+
+/** The closest same-day, different-site name match, whatever its score (see findByName for the threshold that decides an actual merge). */
+function nearestByName(candidates: Candidate[], site: string, name: string, date: string): { candidate: Candidate; name: string; score: number } | null {
   let best: Candidate | null = null;
-  let bestScore = MATCH_THRESHOLD;
+  let bestScore = 0;
   for (const c of candidates) {
     if (c.sites.has(site) || Math.abs(Date.parse(c.date) - Date.parse(date)) > DAY_MS) continue;
     const score = nameSimilarity(c.name, name);
-    if (score >= bestScore) [best, bestScore] = [c, score];
+    if (score > bestScore) [best, bestScore] = [c, score];
   }
-  return best;
+  return best ? { candidate: best, name: best.name, score: bestScore } : null;
 }
 
 /** Dice coefficient over character bigrams of the folded name, spaces removed. */
@@ -573,7 +608,7 @@ export function formatCommitMessage(plan: SyncPlan, context?: string): string {
   const lines = [
     `data: ${counts.join(", ")}`,
     "",
-    ...added.map((c) => `+ ${c.slug} (${c.id})${c.newFlags ? ` ⚠️ ${c.newFlags.join("; ")}` : ""}`),
+    ...added.map((c) => `+ ${c.slug} (${c.id})${c.newFlags ? ` ⚠️ ${c.newFlags.join("; ")}` : ""}${c.dupWarning ? ` ⚠️ ${c.dupWarning}` : ""}`),
     ...updated.map((c) => {
       const parts = [
         ...(c.renamedFrom ? [`slug (was ${c.renamedFrom})`] : []),

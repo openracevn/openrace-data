@@ -33,6 +33,8 @@ Read `data/races/<file>`. Each `sources[]` entry has the site, its role (`offici
 
 Report the differences field by field: ours vs the source.
 
+**No price/venue on the known source(s):** before saying "no source available", check in this order (plan 010, free unless noted): a subpage on the *same* site (e.g. `/thong-tin-cuoc-dua` — an info/price tab the recipe may not read; worth a recipe fix if found) → `ticket.irace.vn/<slug>` (real HTML table, no OCR) → `irace.vn/su-kien/<slug>` (usually a text table too, `.eventon_desc_in`, but never auto-discovered — find it by search) → ActiUp/irace.vn's old poster images last (Firecrawl OCR credits, or your own eyes). Once found, attach it with the `agent-read` skill's `--race <existing-race-id-or-slug>@<new-url>` rather than a bare `--race <url>`, so a same-day near-duplicate name doesn't risk creating a second race instead of joining this one.
+
 ## 3. Read it again with Firecrawl (costs credits; say so first)
 
 To read it for free instead (you read the pages and images yourself), use the `agent-read` skill: `npm run agent-read -- prepare --race <url|slug|id>`.
