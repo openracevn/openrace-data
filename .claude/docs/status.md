@@ -60,6 +60,7 @@ Free plan: 1,000 credits per billing period (23rd to 23rd). On 2026-09-24, 1,453
 
 ## Known gaps
 
+- **A red `validate` silently stops `notify-api` for everyone** until someone checks CI, not just for the push that broke it. Hit 2026-09-26: `ddf9551` (added `statedEditionCount` to series) left two test fixtures stale, so `npm test` failed on every push afterward; a correct, unrelated location fix for `lao-cai-marathon-2026-dong-chay-bien-cuong` sat on `main` with `notify-api` skipped until the tests were fixed (`a65e461`) and `main.yml` was re-run by hand (`workflow_dispatch`). See [infrastructure.md](infrastructure.md#traps). Worth a follow-up: alert (Discord?) when `validate` fails on `main`, since right now nothing announces it.
 - **Race sites are one edition at a time:** the site's current edition only. Past editions need the Wayback Machine or a seller's old page.
 - **Only PNG and JPEG images can be OCR'd** (pdf-lib). WebP and GIF are skipped, with a note in the run report.
 - **Series across renamed events** ("Chạy Vì Trái Tim" → "Run for the Heart") aren't detected.

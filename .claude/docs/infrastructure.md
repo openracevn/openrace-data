@@ -34,6 +34,11 @@ main.yml  (skipped entirely when only state/** changed)
   └─ notify-discord   needs changes only, only if data/ changed → Discord summary from git diff
 ```
 
+## Traps
+
+- **A script's "Committed `<sha>`" doesn't touch your local checkout.** `check.ts`, `agent-read.ts` and `edit.ts` all write through `scripts/lib/github.ts` (Octokit `createTree`/`createCommit`/`updateRef` against GitHub directly), not local git. `git status`/`git log` in your working copy stay exactly as they were until you `git pull` — reading a race file locally right after a "Committed" message will show the pre-commit content and can look like the write silently failed.
+- **`notify-api` is gated on `validate` (typecheck + `npm test` + `npm run validate`), and the gate fails closed and quiet.** If `validate` is red for any reason — even one unrelated to the data just pushed — `notify-api` shows as `skipped`, not `failed`, in the Actions run, and the API just never hears about the change. A single broken test can silently stop every data push from reaching production until someone runs `gh run list --branch main` and notices. Recovery once `validate` is green again: `gh workflow run main.yml` (workflow_dispatch resyncs current `main` without needing a new commit) — a rerun of the old failed run (`gh run rerun`) replays the *old* broken tree and won't help.
+
 ## Code map
 
 | Path | Role |
