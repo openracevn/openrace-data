@@ -10,12 +10,17 @@
  *       isn't JSON is taken as a string.
  *   npm run edit -- unset <race> <field>
  *       Remove the override; the field goes back to what the sources say.
- *   npm run edit -- add --url <reference> --json '<fields>' --reason "<why>"
+ *   npm run edit -- add --url [<race>@]<reference> --json '<fields>' --reason "<why>"
  *       A race no site lists. <reference> is where the info comes from (organizer
  *       page, a ticket reseller's page, a news article, Facebook post). If <reference>
  *       is a recognized site (config/sites.yaml) with recipe "none", the source is
  *       tagged with that site's key (e.g. "irace"); otherwise it's tagged with a slug
- *       of its own host (e.g. "tiki-vn") — never a generic placeholder.
+ *       of its own host (e.g. "tiki-vn") — never a generic placeholder. A Wayback
+ *       Machine snapshot (web.archive.org/web/<timestamp>/<original-url>) is tagged
+ *       with the site it's a snapshot OF and is accepted even when that site is
+ *       recipe-covered — a recipe only ever reads the live page, so a snapshot
+ *       holding content the live page has since dropped (an expired price table, a
+ *       JS-only tab a plain fetch can't render) is new information, not a re-read.
  *       <fields> are extraction-shaped:
  *       {"name","date","endDate","types","distances","venue","city","organizer",
  *        "registrationStatus","prices":[{"distance","tier","from","to","price"}]};
@@ -23,6 +28,10 @@
  *       Re-running add with the SAME --url updates that race — never reuse a URL for a
  *       different edition/date, it will overwrite the first one instead of creating a
  *       second race.
+ *       Prefix --url with "<race-id-or-slug>@" to force the source onto that exact
+ *       race, bypassing name/date matching — use this for a Wayback snapshot (or any
+ *       reference) whose race you've already identified, so a same-day near-duplicate
+ *       or a thin/generic page can't get scored into the wrong race or a new one.
  *   npm run edit -- slug <race> <new-slug> [--reason "<why>"]
  *       Change a race's slug. Its file is renamed to data/races/<new-slug>.json and
  *       the index follows; the id stays, so the API updates the same race.
@@ -37,8 +46,8 @@
 import { readFileSync } from "node:fs";
 import { env, requireEnv } from "./lib/env.ts";
 import { manualGeo } from "./lib/geocode.ts";
-import { CANONICAL_FIELDS, type CanonicalField } from "./lib/schema.ts";
-import { loadSites, siteForUrl, siteKeyForUrl } from "./lib/sites.ts";
+import { INDEX_PATH, IndexSchema, type CanonicalField, CANONICAL_FIELDS } from "./lib/schema.ts";
+import { isWaybackUrl, loadSites, siteForUrl, siteKeyForUrl } from "./lib/sites.ts";
 import { canonicalSourceUrl } from "./lib/slug.ts";
 import { commitToGitHub, formatCommitMessage, planDropSource, planEdit, planRename, planSync, type RaceStore, type SyncPlan } from "./sync.ts";
 
@@ -88,10 +97,23 @@ if (command === "set" || command === "unset") {
   planAt = (store) => planDropSource(store, race!, site!, url!, config, now);
   message = `edit: ${race}: drop stale source ${site} ${url}${reason ? `\n\n${reason}` : ""}`;
 } else if (command === "add") {
-  const url = flag("url");
+  let url = flag("url");
   const json = flag("json");
-  if (!url || !json) fail("usage: npm run edit -- add --url <reference> --json '<fields>' --reason <why>");
+  if (!url || !json) fail("usage: npm run edit -- add --url [<race>@]<reference> --json '<fields>' --reason <why>");
   if (!reason) fail("add needs --reason: where does this race come from?");
+  // "<race-id-or-slug>@<url>" forces the source onto that race by id, bypassing
+  // name/date matching — for a Wayback snapshot etc. where the match is already
+  // known and shouldn't be left to the fuzzy matcher (see matchId in sync.ts).
+  let matchId: string | undefined;
+  const at = url!.indexOf("@");
+  if (at > 0 && /^https?:\/\//i.test(url!.slice(at + 1))) {
+    const attachTo = url!.slice(0, at);
+    const index = IndexSchema.parse(JSON.parse(readFileSync(INDEX_PATH, "utf8")));
+    const target = index.find((e) => e.id === attachTo || e.slug === attachTo);
+    if (!target) fail(`"${attachTo}@..." has no race with id or slug "${attachTo}" in ${INDEX_PATH}`);
+    matchId = target!.id;
+    url = url!.slice(at + 1);
+  }
   let reference: string;
   try {
     reference = canonicalSourceUrl(url!);
@@ -99,11 +121,17 @@ if (command === "set" || command === "unset") {
     fail(`--url is not a URL: ${url}`);
   }
   const site = siteForUrl(config, reference!);
-  if (site && site.recipe !== "none") fail(`${reference!} is on ${site.key}, which is read automatically; use npm run check -- --race <url>`);
+  // A recipe only ever reads the live page; a Wayback snapshot can hold real
+  // content the live page has since dropped (an expired price table, a
+  // JS-only venue tab a plain fetch can't render), so it isn't "read
+  // automatically" the way the live URL is and add shouldn't refuse it.
+  if (site && site.recipe !== "none" && !isWaybackUrl(reference!))
+    fail(`${reference!} is on ${site.key}, which is read automatically; use npm run check -- --race <url>`);
   const fields = parseValue(json!);
   if (typeof fields !== "object" || fields === null || Array.isArray(fields)) fail("--json must be an object");
   const extracted = { facts: { ...(fields as Record<string, unknown>), note: reason } };
-  planAt = (store) => planSync(store, [{ url: reference!, site: siteKeyForUrl(config, reference!), role: "reference", extracted, checkedAt: now }], config, now);
+  planAt = (store) =>
+    planSync(store, [{ url: reference!, site: siteKeyForUrl(config, reference!), role: "reference", extracted, checkedAt: now, ...(matchId && { matchId }) }], config, now);
   message = ""; // generated from the plan below
 } else {
   fail("usage: npm run edit -- set|unset|add|slug|drop-source … (see scripts/edit.ts)");

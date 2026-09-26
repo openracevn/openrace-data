@@ -86,6 +86,21 @@ export function hostOf(url: string): string {
   return u.hostname.replace(/^www\./, "").toLowerCase();
 }
 
+/**
+ * A Wayback Machine snapshot URL. Recipes only ever fetch the live page, so a
+ * snapshot can hold real, otherwise-lost content (a price table since removed
+ * from the live page, a venue tab a plain fetch can't render) even when the
+ * page it snapshots is on a recipe-covered site — it's not "read automatically"
+ * the way the live URL is, so `edit -- add` shouldn't refuse it on that basis.
+ */
+export function isWaybackUrl(url: string): boolean {
+  try {
+    return WAYBACK.test(new URL(url).hostname.toLowerCase());
+  } catch {
+    return false;
+  }
+}
+
 /** The configured site a URL belongs to (its host, or a parent domain of it), or null. */
 export function siteForUrl(config: SitesConfig, url: string): Site | null {
   let host: string;

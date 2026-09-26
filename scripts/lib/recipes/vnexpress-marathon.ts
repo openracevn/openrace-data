@@ -8,10 +8,18 @@
  *   × distances, then a group-discount table. No OCR needed.
  * - Every page starts with a menu of all editions; it changes whenever a race is
  *   added, so only the banner and the ticket section are read (and fingerprinted).
- * - `/<slug>-<year>/thong-tin-cuoc-dua` is a separate page (checked 2026-09-26): it
- *   opens on the "Địa điểm" (venue) tab, whose text (`.tab-item.active`) names the
- *   start/finish venue. Read alongside the race page when it exists (not every
- *   edition has it yet).
+ * - `/<slug>-<year>/thong-tin-cuoc-dua` is a separate page: its `.tab-item.active` is
+ *   the "Giới thiệu chung" (about) tab — an intro paragraph, not the venue. Read
+ *   alongside the race page when it exists (not every edition has it yet).
+ * - Corrected 2026-09-26 (was wrong above until VM Quy Nhơn's race-research pass
+ *   caught it): the venue itself is on `/thong-tin-cuoc-dua/dia-diem`, a *client-side*
+ *   route — the server returns the same about-tab HTML for it (SPA fallback), so a
+ *   plain fetch of that URL never gets the venue text either. Firecrawl's JS-rendered
+ *   `check` should get it fine; `agent-read`'s plain fetch and this file's `snapshot()`
+ *   cannot. A Wayback Machine snapshot sometimes has it baked into the static HTML
+ *   anyway (unclear why — maybe Archive.org's crawler executes more JS than a plain
+ *   `curl`); worth checking a snapshot from near race day if the venue matters and the
+ *   live site can't give it.
  *
  * Notes from race-research on Nha Trang (2026-09-26), likely true for every city:
  * - The same `/thong-tin-cuoc-dua` intro paragraph states the edition as prose
@@ -19,6 +27,11 @@
  *   check it for `edition` before assuming a past race doesn't state one.
  * - A past edition's `.ticket-policy` disappears once its sale period ends — an old
  *   race with `prices: []` here is not a recoverable gap, the source itself dropped it.
+ *   Check a Wayback snapshot from before the sale period ended (not just any snapshot —
+ *   several tried on VM Quy Nhơn 2026-09-26 had the same empty/thin content as the live
+ *   page); a snapshot with the full price table also formally `add`s as a source now
+ *   (see the recipe-site rule in race-research's SKILL.md) — don't just cite the
+ *   snapshot URL in a `--reason` string, that's not a source a human can click into.
  * - Wayback's `available` API is unreliable for finding which city-years exist (it
  *   missed a currently-live 2024 page entirely); discover editions from the live
  *   homepage's nav links instead, and search news (e.g. "<city> <year> lùi lịch") for
