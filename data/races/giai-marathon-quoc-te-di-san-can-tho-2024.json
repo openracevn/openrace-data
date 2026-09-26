@@ -3,7 +3,7 @@
   "slug": "giai-marathon-quoc-te-di-san-can-tho-2024",
   "name": "Giải Marathon Quốc tế Di sản Cần Thơ 2024",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2024-12-22",
   "endDate": null,
@@ -125,7 +125,15 @@
     }
   ],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "types": {
+      "value": [
+        "road_run"
+      ],
+      "reason": "inferred from race name/price-tier text (marathon); no source states an explicit type",
+      "at": "2026-09-26T13:21:53.036Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -157,5 +165,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T07:11:10.278Z"
+  "updatedAt": "2026-09-26T13:21:53.036Z"
 }

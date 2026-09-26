@@ -3,7 +3,7 @@
   "slug": "lang-son-geopark-ultra-trail-2025",
   "name": "Giải chạy địa hình Quốc tế “Lạng Sơn Geopark VTV8 Ultra Trail 2025”",
   "types": [
-    "other"
+    "trail_run"
   ],
   "date": "2025-12-27",
   "endDate": "2025-12-28",
@@ -125,7 +125,15 @@
     }
   ],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "types": {
+      "value": [
+        "trail_run"
+      ],
+      "reason": "inferred from race name/price-tier text (trail); no source states an explicit type",
+      "at": "2026-09-26T13:21:53.036Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -159,5 +167,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T07:11:10.278Z"
+  "updatedAt": "2026-09-26T13:21:53.036Z"
 }

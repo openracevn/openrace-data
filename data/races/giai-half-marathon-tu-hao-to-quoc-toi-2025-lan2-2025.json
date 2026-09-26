@@ -3,7 +3,7 @@
   "slug": "giai-half-marathon-tu-hao-to-quoc-toi-2025-lan2",
   "name": "Giải Half Marathon Tự Hào Tổ Quốc Tôi 2025 - Lần 2",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2025-04-12",
   "endDate": "2025-04-13",
@@ -134,7 +134,15 @@
     }
   ],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "types": {
+      "value": [
+        "road_run"
+      ],
+      "reason": "inferred from race name/price-tier text (marathon); no source states an explicit type",
+      "at": "2026-09-26T13:21:53.036Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -172,5 +180,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-09-26T13:21:53.036Z"
 }

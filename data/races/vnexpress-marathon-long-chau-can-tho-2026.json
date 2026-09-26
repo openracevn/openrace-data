@@ -3,7 +3,7 @@
   "slug": "vnexpress-marathon-long-chau-can-tho",
   "name": "VnExpress Marathon Long Châu Family Day 2026",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2026-06-28",
   "endDate": null,
@@ -114,7 +114,15 @@
   "registrations": [],
   "links": [],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "types": {
+      "value": [
+        "road_run"
+      ],
+      "reason": "inferred from race name/price-tier text (marathon); no source states an explicit type",
+      "at": "2026-09-26T13:21:53.036Z"
+    }
+  },
   "sources": [
     {
       "site": "vnexpress-marathon",
@@ -155,5 +163,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T04:11:49.673Z",
-  "updatedAt": "2026-09-25T04:28:29.753Z"
+  "updatedAt": "2026-09-26T13:21:53.036Z"
 }

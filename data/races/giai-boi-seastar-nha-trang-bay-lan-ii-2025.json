@@ -3,7 +3,7 @@
   "slug": "giai-boi-seastar-nha-trang-bay-lan-ii-2025",
   "name": "Giải Bơi SeaStar Nha Trang Bay lần 2 2025",
   "types": [
-    "other"
+    "open_water_swim"
   ],
   "date": "2025-06-20",
   "endDate": "2025-06-22",
@@ -125,7 +125,15 @@
     }
   ],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "types": {
+      "value": [
+        "open_water_swim"
+      ],
+      "reason": "inferred from race name/price-tier text (giải bơi); no source states an explicit type",
+      "at": "2026-09-26T13:21:53.036Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -159,5 +167,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T07:11:10.278Z"
+  "updatedAt": "2026-09-26T13:21:53.036Z"
 }

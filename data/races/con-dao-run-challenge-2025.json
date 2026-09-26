@@ -3,7 +3,7 @@
   "slug": "con-dao-run-challenge-2025",
   "name": "CÔN ĐẢO RUN CHALLENGE 2025",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2025-06-06",
   "endDate": "2025-06-07",
@@ -34,7 +34,15 @@
     }
   ],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "types": {
+      "value": [
+        "road_run"
+      ],
+      "reason": "inferred from race name/price-tier text (run); no source states an explicit type",
+      "at": "2026-09-26T13:21:53.036Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -68,5 +76,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-09-26T13:21:53.036Z"
 }

@@ -3,7 +3,7 @@
   "slug": "dat-sen-hong-marathon-dong-thap-2024",
   "name": "Giải Marathon Đất Sen Hồng - Đồng Tháp 2024 Cúp Masterise Homes",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2024-10-12",
   "endDate": "2024-10-13",
@@ -129,7 +129,15 @@
     }
   ],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "types": {
+      "value": [
+        "road_run"
+      ],
+      "reason": "inferred from race name/price-tier text (marathon); no source states an explicit type",
+      "at": "2026-09-26T13:21:53.036Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -162,5 +170,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-09-26T13:21:53.036Z"
 }
