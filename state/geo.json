@@ -16731,6 +16731,102 @@
     "at": "2026-09-24T06:55:55.840Z",
     "note": "no point found"
   },
+  "quang truong trang a pao phuong lao cai tinh lao cai | lao cai": {
+    "geo": {
+      "lat": 22.4877525,
+      "lng": 103.9787232,
+      "source": "nominatim",
+      "precision": "province",
+      "current": {
+        "province": "15",
+        "ward": null
+      },
+      "legacy": null,
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 1334.4,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "ha-noi": {
+          "km": 252.5,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "da-nang": {
+          "km": 842.1,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 1266.6,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "da-lat": {
+          "km": 1264.7,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "can-tho": {
+          "km": 1398.1,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 334.3,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "hue": {
+          "km": 769.4,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 1390,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 1115.6,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 1173.5,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 21.8,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "ha-long": {
+          "km": 363,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        }
+      }
+    },
+    "query": "phường Lào Cai, tỉnh Lào Cai",
+    "at": "2026-09-26T12:46:16.587Z"
+  },
   "quang truong trung tam van hoa kinh bac | bac ninh": {
     "geo": {
       "lat": 21.1784838,

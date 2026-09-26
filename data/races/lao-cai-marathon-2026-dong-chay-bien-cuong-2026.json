@@ -1,26 +1,20 @@
 {
   "id": "90417f03-b99a-4207-a81d-194b10b5f5b4",
   "slug": "lao-cai-marathon-2026-dong-chay-bien-cuong",
-  "name": "LÀO CAI MARATHON 2026 - DÒNG CHẢY BIÊN CƯƠNG",
+  "name": "Giải chạy Lào Cai Marathon 2026 - Dòng Chảy Biên Cương",
   "types": [
     "road_run"
   ],
   "date": "2026-10-18",
   "endDate": null,
   "seriesId": null,
-  "organizerId": "viet-jungle",
+  "organizerId": "cong-ty-tnhh-viet-jungle",
   "organizer": "VIET JUNGLE",
   "edition": null,
   "courses": [
     {
       "label": "5.5km",
       "meters": 5500,
-      "type": "road_run",
-      "elevationGain": null
-    },
-    {
-      "label": "10.5km",
-      "meters": 10500,
       "type": "road_run",
       "elevationGain": null
     },
@@ -35,7 +29,98 @@
     "venue": "TBU",
     "city": "Lào Cai"
   },
-  "geo": null,
+  "geo": {
+    "lat": 22.4877525,
+    "lng": 103.9787232,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "15",
+      "ward": null
+    },
+    "legacy": null,
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1334.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 252.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 842.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1266.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1264.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1398.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 334.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 769.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1390,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1115.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1173.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 21.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 363,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
   "prices": [
     {
       "distance": "5.5km",
@@ -174,19 +259,43 @@
   "registrationStatus": "closed",
   "registrations": [
     {
-      "site": "actiup",
-      "url": "https://actiup.net/vi/event/lao-cai-marathon-2026-dong-chay-bien-cuong"
+      "site": "irace",
+      "url": "https://ticket.irace.vn/lao-cai-marathon-2026"
     },
     {
       "site": "irace",
       "url": "https://irace.vn/su-kien/lao-cai-marathon"
+    },
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/lao-cai-marathon-2026-dong-chay-bien-cuong"
     }
   ],
   "links": [
     {
+      "url": "https://facebook.com/sharer/sharer.php",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
       "url": "https://fb.com/irace.vn",
       "kind": "facebook",
-      "foundOn": "irace.vn"
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "http://online.gov.vn/Home/WebDetails/51414",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1UHbV5qQQlwknUIF0yl11Nr_LH8mPGacA/view",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
     },
     {
       "url": "https://google.com/calendar/event",
@@ -196,17 +305,17 @@
     {
       "url": "https://ifitness.vn/",
       "kind": "other",
-      "foundOn": "irace.vn"
+      "foundOn": "ticket.irace.vn"
     },
     {
       "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
       "kind": "other",
-      "foundOn": "irace.vn"
+      "foundOn": "ticket.irace.vn"
     },
     {
       "url": "https://ifitness.vn/collections/phu-kien-the-thao",
       "kind": "other",
-      "foundOn": "irace.vn"
+      "foundOn": "ticket.irace.vn"
     },
     {
       "url": "https://ifitness.vn/products/bot-bo-sung-nang-luong-tailwind-caffeinated-endurance-fuel-2-lan-dung",
@@ -241,7 +350,17 @@
     {
       "url": "https://instagram.com/irace.vn",
       "kind": "other",
-      "foundOn": "irace.vn"
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
     },
     {
       "url": "https://drive.google.com/file/d/1dT42OM0Jx4Qow1s14eaWdHkJNMWN2qil/view",
@@ -518,9 +637,170 @@
         ],
         "readBy": "agent"
       }
+    },
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://ticket.irace.vn/lao-cai-marathon-2026",
+      "lastCheckedAt": "2026-09-26T12:46:14.409Z",
+      "lastChangedAt": "2026-09-26T12:46:14.409Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Lào Cai Marathon 2026 - Dòng Chảy Biên Cương",
+          "venue": "Quảng trường Tráng A Pao, phường Lào Cai, tỉnh Lào Cai",
+          "organizer": "Công ty TNHH VIỆT JUNGLE"
+        },
+        "pages": [
+          {
+            "url": "https://ticket.irace.vn/lao-cai-marathon-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Giải chạy Lào Cai Marathon 2026 - Dòng Chảy Biên Cương",
+              "date": "2026-10-18",
+              "distances": [
+                "5.5km",
+                "21km"
+              ],
+              "venue": "Quảng trường Tráng A Pao, phường Lào Cai, tỉnh Lào Cai",
+              "city": "Lào Cai",
+              "prices": []
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://app.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://irace.vn/ban-ve/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ban ve su kien"
+          },
+          {
+            "url": "https://irace.vn/myfoto/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "tim hinh su kien"
+          },
+          {
+            "url": "https://irace.vn/doanh-nghiep/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "to chuc su kien"
+          },
+          {
+            "url": "https://irace.vn/affiliate/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kiem tien cung irace vn"
+          },
+          {
+            "url": "https://irace.vn/thiet-ke-huy-chuong/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huy chuong"
+          },
+          {
+            "url": "https://irace.vn/san-xuat-qua-tang-phu-kien-the-thao/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "quan ao phu kien"
+          },
+          {
+            "url": "https://irace.vn/about-us/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ve irace"
+          },
+          {
+            "url": "https://irace.vn/bao-chi/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "bao chi viet"
+          },
+          {
+            "url": "https://irace.vn/hoi-dap/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "hoi dap"
+          },
+          {
+            "url": "https://irace.vn/thong-tin/huong-dan/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huong dan su dung"
+          },
+          {
+            "url": "https://irace.vn/kien-thuc-tap-luyen/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kien thuc chay bo"
+          },
+          {
+            "url": "https://tools.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "cong cu tinh toan"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "shop the thao"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "dinh duong"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "phu kien"
+          },
+          {
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://ticket.irace.vn/lao-cai-marathon-2026",
+            "text": "chia se tren facebook"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1UHbV5qQQlwknUIF0yl11Nr_LH8mPGacA/view?usp=drive_link",
+            "text": "tai day"
+          },
+          {
+            "url": "http://online.gov.vn/Home/WebDetails/51414",
+            "text": ""
+          },
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/feed/",
+            "text": ""
+          },
+          {
+            "url": "https://www.youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+            "text": ""
+          },
+          {
+            "url": "https://play.google.com/store/apps/details?id=com.irace.app",
+            "text": ""
+          },
+          {
+            "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/chinh-sach-bao-mat/",
+            "text": "chinh sach bao mat"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-thanh-toan/",
+            "text": "dieu khoan thanh toan"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-su-dung/",
+            "text": "dieu khoan su dung"
+          },
+          {
+            "url": "https://irace.vn/tuyen-dung/",
+            "text": "tuyen dung"
+          },
+          {
+            "url": "https://irace.vn/lien-he/",
+            "text": "lien he"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-tnhh-viet-jungle",
+          "name": "Công ty TNHH VIỆT JUNGLE"
+        },
+        "readBy": "agent"
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T12:34:42.184Z"
+  "updatedAt": "2026-09-26T12:46:14.409Z"
 }

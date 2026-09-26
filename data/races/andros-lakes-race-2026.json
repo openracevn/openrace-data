@@ -1,11 +1,11 @@
 {
   "id": "18bb2e3f-fa10-411e-acb7-c76588ea35af",
   "slug": "andros-lakes-race-2026",
-  "name": "Andros Lakes Race 2026",
+  "name": "Andros Lakes Race (8th) - 2026",
   "types": [
     "other"
   ],
-  "date": "2026-04-19",
+  "date": "2026-04-18",
   "endDate": null,
   "seriesId": "andros-the-lakes-race",
   "organizerId": "the-lakes-race",
@@ -56,121 +56,26 @@
     }
   ],
   "location": {
-    "venue": "Hồ Đá - Bình Dương",
-    "city": null
+    "venue": "Hồ Đá Thủ Đức",
+    "city": "Hồ Chí Minh"
   },
-  "geo": {
-    "lat": 11.2603292,
-    "lng": 106.5555371,
-    "source": "nominatim",
-    "precision": "venue",
-    "current": {
-      "province": "79",
-      "ward": "25792"
-    },
-    "legacy": {
-      "province": "74",
-      "district": "720",
-      "ward": "25804"
-    },
-    "access": "road",
-    "fromPlaces": {
-      "hcmc": {
-        "km": 65.5,
-        "minutes": 61,
-        "method": "road",
-        "near": false
-      },
-      "ha-noi": {
-        "km": 1438.1,
-        "minutes": 1091,
-        "method": "road",
-        "near": false
-      },
-      "da-nang": {
-        "km": 804.8,
-        "minutes": 609,
-        "method": "road",
-        "near": false
-      },
-      "nha-trang": {
-        "km": 473.4,
-        "minutes": 351,
-        "method": "road",
-        "near": false
-      },
-      "da-lat": {
-        "km": 335.3,
-        "minutes": 258,
-        "method": "road",
-        "near": false
-      },
-      "can-tho": {
-        "km": 224.7,
-        "minutes": 189,
-        "method": "road",
-        "near": false
-      },
-      "hai-phong": {
-        "km": 1472.2,
-        "minutes": 1118,
-        "method": "road",
-        "near": false
-      },
-      "hue": {
-        "km": 887.5,
-        "minutes": 683,
-        "method": "road",
-        "near": false
-      },
-      "vung-tau": {
-        "km": 156.5,
-        "minutes": 143,
-        "method": "road",
-        "near": false
-      },
-      "quy-nhon": {
-        "km": 563.2,
-        "minutes": 466,
-        "method": "road",
-        "near": false
-      },
-      "buon-ma-thuot": {
-        "km": 300.8,
-        "minutes": 221,
-        "method": "road",
-        "near": false
-      },
-      "sa-pa": {
-        "km": 1746.6,
-        "minutes": 1327,
-        "method": "road",
-        "near": false
-      },
-      "ha-long": {
-        "km": 1521.9,
-        "minutes": 1151,
-        "method": "road",
-        "near": false
-      }
-    }
-  },
+  "geo": null,
   "prices": [],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
     {
-      "site": "actiup",
-      "url": "https://actiup.net/vi/event/andros-lakes-race-2026"
-    },
-    {
       "site": "irace",
       "url": "https://irace.vn/su-kien/the-lakes-race-run-4-orphans"
+    },
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/andros-lakes-race-2026"
     }
   ],
   "links": [],
   "flags": [
-    "sources disagree on race day: actiup 2026-04-19, irace 2026-04-18"
+    "sources disagree on race day: irace 2026-04-18, actiup 2026-04-19"
   ],
   "overrides": {
     "seriesId": {
@@ -232,5 +137,5 @@
   ],
   "confidence": "conflicting",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T05:57:31.541Z"
+  "updatedAt": "2026-09-26T12:46:14.409Z"
 }

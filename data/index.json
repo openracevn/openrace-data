@@ -498,10 +498,10 @@
   {
     "id": "18bb2e3f-fa10-411e-acb7-c76588ea35af",
     "slug": "andros-lakes-race-2026",
-    "name": "Andros Lakes Race 2026",
-    "date": "2026-04-19",
+    "name": "Andros Lakes Race (8th) - 2026",
+    "date": "2026-04-18",
     "endDate": null,
-    "lastModified": "2026-09-26T05:57:31.541Z",
+    "lastModified": "2026-09-26T12:46:14.409Z",
     "file": "andros-lakes-race-2026.json",
     "seriesId": "andros-the-lakes-race",
     "sourceUrls": [
@@ -656,7 +656,7 @@
     "name": "Lamdong Trail 2026",
     "date": "2026-11-06",
     "endDate": "2026-11-08",
-    "lastModified": "2026-09-25T12:18:52.270Z",
+    "lastModified": "2026-09-26T12:46:14.409Z",
     "file": "lamdong-trail-2026.json",
     "seriesId": "lamdong-trail",
     "sourceUrls": [
@@ -2634,15 +2634,16 @@
   {
     "id": "90417f03-b99a-4207-a81d-194b10b5f5b4",
     "slug": "lao-cai-marathon-2026-dong-chay-bien-cuong",
-    "name": "LÀO CAI MARATHON 2026 - DÒNG CHẢY BIÊN CƯƠNG",
+    "name": "Giải chạy Lào Cai Marathon 2026 - Dòng Chảy Biên Cương",
     "date": "2026-10-18",
     "endDate": null,
-    "lastModified": "2026-09-26T12:34:42.184Z",
+    "lastModified": "2026-09-26T12:46:14.409Z",
     "file": "lao-cai-marathon-2026-dong-chay-bien-cuong-2026.json",
     "seriesId": null,
     "sourceUrls": [
       "https://actiup.net/vi/event/lao-cai-marathon-2026-dong-chay-bien-cuong",
-      "https://irace.vn/su-kien/lao-cai-marathon"
+      "https://irace.vn/su-kien/lao-cai-marathon",
+      "https://ticket.irace.vn/lao-cai-marathon-2026"
     ],
     "linkUrls": []
   },
