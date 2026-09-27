@@ -10,7 +10,7 @@
   "seriesId": "vpbank-dat-sen-hong-music-marathon",
   "organizerId": "don-vi-to-chuc-nexus-sport-events-doi-tac-chien-luoc-don-vi-dong-to-chuc-ngan-ha",
   "organizer": "Đơn vị tổ chức: Nexus Sport Events – Đối tác chiến lược & Đơn vị đồng tổ chức: Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
-  "edition": null,
+  "edition": 5,
   "courses": [
     {
       "label": "5km",
@@ -236,7 +236,13 @@
     }
   ],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "edition": {
+      "value": 5,
+      "reason": "tuoitre.vn ('Mùa giải thứ 5') and irace.vn's event page ('Mùa Sen Hồng thứ 5 đã chính thức trở lại') both state this is the 5th edition.",
+      "at": "2026-09-27T02:28:56.947Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -416,5 +422,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-09-27T02:28:56.947Z"
 }
