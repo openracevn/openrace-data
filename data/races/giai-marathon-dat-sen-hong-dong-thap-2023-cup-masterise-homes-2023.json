@@ -10,7 +10,7 @@
   "seriesId": "vpbank-dat-sen-hong-music-marathon",
   "organizerId": null,
   "organizer": "Tỉnh Ủy – Ủy ban Nhân dân tỉnh Đồng Tháp (chỉ đạo); Sở Văn hoá, Thể thao và Du lịch tỉnh Đồng Tháp và Công ty Cổ phần Truyền thông Nexus (tổ chức)",
-  "edition": null,
+  "edition": 2,
   "courses": [
     {
       "label": "5km",
@@ -55,6 +55,11 @@
       "value": "vpbank-dat-sen-hong-music-marathon",
       "reason": "Same annual series as the 2022, 2024, 2025 and 2026 editions.",
       "at": "2026-09-27T02:25:40.864Z"
+    },
+    "edition": {
+      "value": 2,
+      "reason": "A thanhnien.vn article about the 2024 edition (raw file 10-thanhnien-2024-10000.html) states the 2024 turnout 'tăng đột biến gần gấp đôi so với mùa giải lần 2' (nearly doubled vs season 2) while calling 2024 itself 'lần 3' — placing the immediately-preceding annual edition (2023) as lần 2. No source states 2023's number directly on its own page.",
+      "at": "2026-09-27T02:26:02.319Z"
     }
   },
   "sources": [
@@ -113,5 +118,5 @@
   ],
   "confidence": "conflicting",
   "createdAt": "2026-09-27T02:24:23.189Z",
-  "updatedAt": "2026-09-27T02:25:40.864Z"
+  "updatedAt": "2026-09-27T02:26:02.319Z"
 }
