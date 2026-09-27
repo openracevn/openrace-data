@@ -11,13 +11,204 @@
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Cung Quy hoạch, Hội chợ và Triển lãm Tỉnh Quảng Ninh",
     "city": null
   },
   "geo": null,
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Early Bird (Kids)",
+      "kind": "early",
+      "audience": null,
+      "price": 250000,
+      "from": "2023-12-25",
+      "to": "2024-05-01",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Standard (Kids)",
+      "kind": "regular",
+      "audience": null,
+      "price": 300000,
+      "from": "2024-05-02",
+      "to": "2024-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late (Kids)",
+      "kind": "late",
+      "audience": null,
+      "price": 360000,
+      "from": "2024-10-01",
+      "to": "2024-10-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 750000,
+      "from": "2023-12-25",
+      "to": "2024-05-01",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 875000,
+      "from": "2024-05-02",
+      "to": "2024-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1000000,
+      "from": "2024-10-01",
+      "to": "2024-10-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1125000,
+      "from": "2023-12-25",
+      "to": "2024-05-01",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 1250000,
+      "from": "2024-05-02",
+      "to": "2024-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1375000,
+      "from": "2024-10-01",
+      "to": "2024-10-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1375000,
+      "from": "2023-12-25",
+      "to": "2024-05-01",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 1875000,
+      "from": "2024-05-02",
+      "to": "2024-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2000000,
+      "from": "2024-10-01",
+      "to": "2024-10-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1625000,
+      "from": "2023-12-25",
+      "to": "2024-05-01",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 2125000,
+      "from": "2024-05-02",
+      "to": "2024-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2375000,
+      "from": "2024-10-01",
+      "to": "2024-10-15",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -53,7 +244,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/giai-marathon-quoc-te-di-san-ha-long-2024",
-      "lastCheckedAt": "2026-09-23T18:32:24.712Z",
+      "lastCheckedAt": "2026-09-27T03:09:11.499Z",
       "lastChangedAt": "2026-09-23T18:32:24.712Z",
       "extracted": {
         "facts": {
@@ -64,6 +255,145 @@
           "registrationStatus": "closed",
           "fromPrice": 250000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/giai-marathon-quoc-te-di-san-ha-long-2024",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Giải Marathon Quốc tế Di sản Hạ Long 2024",
+              "date": "2024-11-17",
+              "venue": "Cung Quy hoạch, Hội chợ và Triển lãm Tỉnh Quảng Ninh",
+              "organizer": "Công ty DHA Việt Nam",
+              "registrationStatus": "closed",
+              "prices": []
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://pix.raceez.com/2024/03/29/content_actiup_1description_vi_20240329155253.",
+            "json": {
+              "prices": [
+                {
+                  "distance": "5km",
+                  "tier": "Early Bird (Kids)",
+                  "from": "2023-12-25",
+                  "to": "2024-05-01",
+                  "price": 250000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Standard (Kids)",
+                  "from": "2024-05-02",
+                  "to": "2024-09-30",
+                  "price": 300000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Late (Kids)",
+                  "from": "2024-10-01",
+                  "to": "2024-10-15",
+                  "price": 360000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Early Bird",
+                  "from": "2023-12-25",
+                  "to": "2024-05-01",
+                  "price": 750000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Standard",
+                  "from": "2024-05-02",
+                  "to": "2024-09-30",
+                  "price": 875000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Late",
+                  "from": "2024-10-01",
+                  "to": "2024-10-15",
+                  "price": 1000000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Early Bird",
+                  "from": "2023-12-25",
+                  "to": "2024-05-01",
+                  "price": 1125000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Standard",
+                  "from": "2024-05-02",
+                  "to": "2024-09-30",
+                  "price": 1250000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Late",
+                  "from": "2024-10-01",
+                  "to": "2024-10-15",
+                  "price": 1375000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Early Bird",
+                  "from": "2023-12-25",
+                  "to": "2024-05-01",
+                  "price": 1375000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Standard",
+                  "from": "2024-05-02",
+                  "to": "2024-09-30",
+                  "price": 1875000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Late",
+                  "from": "2024-10-01",
+                  "to": "2024-10-15",
+                  "price": 2000000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Early Bird",
+                  "from": "2023-12-25",
+                  "to": "2024-05-01",
+                  "price": 1625000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Standard",
+                  "from": "2024-05-02",
+                  "to": "2024-09-30",
+                  "price": 2125000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Late",
+                  "from": "2024-10-01",
+                  "to": "2024-10-15",
+                  "price": 2375000
+                }
+              ],
+              "distances": [
+                "5km",
+                "10km",
+                "21km",
+                "42km"
+              ],
+              "currency": "VND",
+              "note": "Image's own printed dates say 'Early Bird 25.12.2023-01.05.2024' but 'Standard 02.05-30.09.2023' and 'Late 01.10-15.10.2023' (year not updated on 2 of 3 columns); read here as 2024 throughout since the race is 2024-11-17 and a Late window ending 2023-10-15 (13 months before race day) makes no sense, while the corrected 2024 reading lines up with race day. Numbers are identical to ticket.irace.vn's 2023 table (Wayback) -- may be a reused graphic, not necessarily wrong."
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1PwVQp08zw7yf39sMVGmAUZR9Q5fAVY8l/view?usp=sharing",
@@ -73,11 +403,12 @@
         "organizer": {
           "id": "cong-ty-dha-viet-nam",
           "name": "Công ty DHA Việt Nam"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-27T02:36:47.734Z"
+  "updatedAt": "2026-09-27T03:09:11.499Z"
 }
