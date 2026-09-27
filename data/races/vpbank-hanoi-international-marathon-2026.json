@@ -302,9 +302,34 @@
           "note": "Official race site vpbankmarathon.com/quy-dinh lists final (Standard) per-distance BIB prices; no dates printed for this tier"
         }
       }
+    },
+    {
+      "site": "vpbank-hanoi-marathon",
+      "role": "reference",
+      "url": "https://vpbankmarathon.com/vi",
+      "lastCheckedAt": "2026-09-27T02:29:01.901Z",
+      "lastChangedAt": "2026-09-27T02:29:01.901Z",
+      "extracted": {
+        "facts": {
+          "name": "VPBank Hanoi International Marathon 2026",
+          "date": "2026-10-18",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "venue": "Hồ Hoàn Kiếm, Hà Nội",
+          "organizer": "Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
+          "note": "Official vpbankmarathon.com Vietnamese homepage: 'Giải chạy năm nay là mùa giải thứ 7 do VPBank tổ chức' (this year's race is the 7th season VPBank has organized), diễn ra 18/10/2026 — matches the already-tracked date and corroborates the edition-6 claim found for 2025"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-27T02:22:22.611Z"
+  "updatedAt": "2026-09-27T02:29:01.901Z"
 }
