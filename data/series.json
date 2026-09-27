@@ -450,10 +450,10 @@
   {
     "id": "vpbank-hanoi-international-marathon",
     "name": "VPBank Hanoi International Marathon",
-    "website": null,
+    "website": "https://vpbankmarathon.com/",
     "organizerId": null,
-    "description": null,
-    "statedEditionCount": null
+    "description": "4 editions tracked (2023-10-08, 2024-10-13, 2025-10-26, 2026-10-18), all found via race-research, none previously in our data. VPBank's own homepage (vpbankmarathon.com) calls 2026 'mùa giải thứ 7' (the 7th season it has organized) and Báo Thanh Niên independently called 2025 'the 6th edition' — the two agree on the sequence, so edition is set 6/7 on those two races, but that count implies a start around 2020, which conflicts with a 2023-03-16 Báo Quân đội Nhân dân announcement describing VPIM as a brand-new race launching that October. Left unresolved: this VPIM series is distinct in our data from the older 'Hanoi Marathon / Hanoi International Heritage Marathon' lineage (2018-2022, later renamed Standard Chartered Hanoi Marathon Heritage Race per Wikipedia) — same city and VPBank sponsorship history, different October vs November race dates, so treated as a separate series rather than merged, but the two could genuinely be the same organizing lineage under a discontinuity in VPBank's own counting.",
+    "statedEditionCount": 7
   },
   {
     "id": "vtv-lpbank-international-marathon",
