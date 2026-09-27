@@ -75,9 +75,35 @@
           "note": "Official vpbankmarathon.com 'Mùa giải 2025' recap page: VPIM 2025 stats (11,000 runners, 25 countries, 30+ landmarks) and confirms the event is VPBank's own; race day per Báo Thanh Niên/VTV news coverage of the same edition was 2025-10-26 (event weekend 24-26/10)"
         }
       }
+    },
+    {
+      "site": "vietnam-vn",
+      "role": "reference",
+      "url": "https://vietnam.vn/en/vpbank-hanoi-international-marathon-2025-giai-chay-lan-toa-tinh-than-song-khoe-song-thinh-vuong",
+      "lastCheckedAt": "2026-09-27T02:27:46.043Z",
+      "lastChangedAt": "2026-09-27T02:27:46.043Z",
+      "extracted": {
+        "facts": {
+          "name": "VPBank Hanoi International Marathon 2025",
+          "date": "2025-10-26",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "venue": "Hồ Hoàn Kiếm, Hà Nội",
+          "city": "Hà Nội",
+          "organizer": "Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
+          "note": "Báo Thanh Niên (via vietnam.vn), 2025-10-26: confirms race day and states 'this year's race, the 6th edition organized by VPBank' — corroborates official site's own 'mùa giải thứ 7' claim for 2026"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-27T02:23:40.614Z",
-  "updatedAt": "2026-09-27T02:23:40.614Z"
+  "updatedAt": "2026-09-27T02:27:46.043Z"
 }
