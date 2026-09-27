@@ -112,7 +112,19 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": null,
+      "tier": "Miễn phí",
+      "kind": "other",
+      "audience": null,
+      "price": 0,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -143,7 +155,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/aeon-hue-hue-aeon-ekiden-2026-july",
-      "lastCheckedAt": "2026-09-23T18:30:55.465Z",
+      "lastCheckedAt": "2026-09-27T02:15:30.856Z",
       "lastChangedAt": "2026-09-23T18:30:55.465Z",
       "extracted": {
         "facts": {
@@ -153,8 +165,30 @@
           "organizer": "AEON Việt Nam",
           "currency": "VND",
           "registrationStatus": "closed",
-          "fromPrice": 0
+          "fromPrice": 0,
+          "prices": [
+            {
+              "tier": "Miễn phí",
+              "price": 0
+            }
+          ]
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/aeon-hue-hue-aeon-ekiden-2026-july",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "[AEON HUẾ - HUẾ] AEON EKIDEN 2026 | THÁNG 7",
+              "venue": "AEON Huế - Huế",
+              "city": null,
+              "organizer": null,
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1U46tywJYLCoZT8G-D3H_91dC8xwle8AL/view",
@@ -164,11 +198,12 @@
         "organizer": {
           "id": "aeon-viet-nam",
           "name": "AEON Việt Nam"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:10:24.684Z"
+  "updatedAt": "2026-09-27T02:15:30.856Z"
 }
