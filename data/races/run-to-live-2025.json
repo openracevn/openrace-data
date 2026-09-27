@@ -10,7 +10,7 @@
   "seriesId": "run-to-live",
   "organizerId": "miracle-entertainment-group-bao-sai-gon-giai-phong-so-vhtt-ho-chi-minh",
   "organizer": "Báo Sài Gòn Giải Phóng; Sở Văn hóa, Thể thao Thành phố Hồ Chí Minh; Công ty Miracle Entertainment Group; Ban Quản lý phát triển đô thị Thủ Thiêm",
-  "edition": null,
+  "edition": 2,
   "courses": [
     {
       "label": "1km",
@@ -264,6 +264,11 @@
       "value": "run-to-live",
       "reason": "same series as the runtolive.vn 2027 edition (giai-chay-run-to-live-2027-...), organizer roster and venue match",
       "at": "2026-09-27T08:09:36.139Z"
+    },
+    "edition": {
+      "value": 2,
+      "reason": "nhandan.vn 2025 article states this is 'Run To Live mùa 2' (season 2)",
+      "at": "2026-09-27T08:09:46.104Z"
     }
   },
   "sources": [
@@ -477,5 +482,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-27T08:06:39.781Z",
-  "updatedAt": "2026-09-27T08:09:36.139Z"
+  "updatedAt": "2026-09-27T08:09:46.104Z"
 }
