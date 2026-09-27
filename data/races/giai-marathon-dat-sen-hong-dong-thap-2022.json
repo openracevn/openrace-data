@@ -10,7 +10,7 @@
   "seriesId": "vpbank-dat-sen-hong-music-marathon",
   "organizerId": null,
   "organizer": "Tỉnh Ủy – Ủy ban Nhân dân tỉnh Đồng Tháp (chỉ đạo); Sở Văn hoá, Thể thao và Du lịch tỉnh Đồng Tháp, Công ty Cổ phần Truyền thông Nexus và Công ty Cổ phần Văn hóa Tổng hợp Bến Thành (tổ chức)",
-  "edition": null,
+  "edition": 1,
   "courses": [
     {
       "label": "5km",
@@ -661,9 +661,26 @@
           "note": "Organizer's own official site (dongthapmarathon.com, config/sites.yaml key dat-sen-hong-marathon, recipe: none), snapshot from during registration; live site is now dead (connection refused). Confirms the 2022 edition — earliest one found for this series, and the only one with a genuine machine-readable price table."
         }
       }
+    },
+    {
+      "site": "baocantho-com-vn",
+      "role": "reference",
+      "url": "https://baocantho.com.vn/dong-thap-to-chuc-giai-marathon-dat-sen-hong-lan-thu-i-a151306.html",
+      "lastCheckedAt": "2026-09-27T02:44:40.571Z",
+      "lastChangedAt": "2026-09-27T02:44:40.571Z",
+      "extracted": {
+        "facts": {
+          "name": "Đồng Tháp: Tổ chức Giải Marathon Đất Sen Hồng lần thứ I",
+          "date": "2022-11-26",
+          "edition": 1,
+          "venue": "Cao Lãnh, Đồng Tháp",
+          "city": "Đồng Tháp",
+          "note": "Báo Cần Thơ Online article explicitly states 'Giải Marathon Đất Sen Hồng lần thứ I' — confirms 2022 is the series' first edition."
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-27T02:23:28.320Z",
-  "updatedAt": "2026-09-27T02:23:59.388Z"
+  "updatedAt": "2026-09-27T02:44:40.571Z"
 }
