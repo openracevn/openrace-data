@@ -10,7 +10,7 @@
   "seriesId": "vpbank-dat-sen-hong-music-marathon",
   "organizerId": "vpbank",
   "organizer": "VPBANK | Ban tổ chức sự kiện",
-  "edition": null,
+  "edition": 4,
   "courses": [
     {
       "label": "5km",
@@ -313,6 +313,138 @@
       "to": "2025-10-06",
       "inferred": [],
       "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 385000,
+      "from": "2025-06-27",
+      "to": "2025-08-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 515000,
+      "from": "2025-06-27",
+      "to": "2025-08-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 645000,
+      "from": "2025-06-27",
+      "to": "2025-08-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 775000,
+      "from": "2025-06-27",
+      "to": "2025-08-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 535000,
+      "from": "2025-08-11",
+      "to": "2025-09-20",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 795000,
+      "from": "2025-08-11",
+      "to": "2025-09-20",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 925000,
+      "from": "2025-08-11",
+      "to": "2025-09-20",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1055000,
+      "from": "2025-08-11",
+      "to": "2025-09-20",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 785000,
+      "from": "2025-09-21",
+      "to": "2025-10-06",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1045000,
+      "from": "2025-09-21",
+      "to": "2025-10-06",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1315000,
+      "from": "2025-09-21",
+      "to": "2025-10-06",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1555000,
+      "from": "2025-09-21",
+      "to": "2025-10-06",
+      "inferred": [],
+      "site": "irace"
     }
   ],
   "currency": "VND",
@@ -792,9 +924,112 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "irace",
+      "role": "reference",
+      "url": "http://web.archive.org/web/20250810131447/https://ticket.irace.vn/vpbank-dat-sen-hong-music-marathon-2025",
+      "lastCheckedAt": "2026-09-27T02:52:25.807Z",
+      "lastChangedAt": "2026-09-27T02:52:25.807Z",
+      "extracted": {
+        "facts": {
+          "name": "VPBank Đất Sen Hồng Music Marathon 2025",
+          "date": "2025-10-12",
+          "edition": 4,
+          "venue": "Quảng trường Văn Miếu, Phường Cao Lãnh, Tỉnh Đồng Tháp",
+          "currency": "VND",
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Early Bird",
+              "from": "27/06",
+              "to": "10/08",
+              "price": 385000
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "from": "27/06",
+              "to": "10/08",
+              "price": 515000
+            },
+            {
+              "distance": "21km",
+              "tier": "Early Bird",
+              "from": "27/06",
+              "to": "10/08",
+              "price": 645000
+            },
+            {
+              "distance": "42km",
+              "tier": "Early Bird",
+              "from": "27/06",
+              "to": "10/08",
+              "price": 775000
+            },
+            {
+              "distance": "5km",
+              "tier": "Regular",
+              "from": "11/08",
+              "to": "20/09",
+              "price": 535000
+            },
+            {
+              "distance": "10km",
+              "tier": "Regular",
+              "from": "11/08",
+              "to": "20/09",
+              "price": 795000
+            },
+            {
+              "distance": "21km",
+              "tier": "Regular",
+              "from": "11/08",
+              "to": "20/09",
+              "price": 925000
+            },
+            {
+              "distance": "42km",
+              "tier": "Regular",
+              "from": "11/08",
+              "to": "20/09",
+              "price": 1055000
+            },
+            {
+              "distance": "5km",
+              "tier": "Late",
+              "from": "21/09",
+              "to": "06/10",
+              "price": 785000
+            },
+            {
+              "distance": "10km",
+              "tier": "Late",
+              "from": "21/09",
+              "to": "06/10",
+              "price": 1045000
+            },
+            {
+              "distance": "21km",
+              "tier": "Late",
+              "from": "21/09",
+              "to": "06/10",
+              "price": 1315000
+            },
+            {
+              "distance": "42km",
+              "tier": "Late",
+              "from": "21/09",
+              "to": "06/10",
+              "price": 1555000
+            }
+          ],
+          "note": "Wayback snapshot of ticket.irace.vn (2025-08-10, during the sale window) states 'Bước sang mùa giải thứ 4' — confirms 2025 is the series' 4th edition. Its price table (Early Bird/Regular/Late × 5/10/21/42km) also exactly matches actiup's prices, a strong corroboration."
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-27T02:43:40.147Z"
+  "updatedAt": "2026-09-27T02:52:25.807Z"
 }
