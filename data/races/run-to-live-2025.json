@@ -248,7 +248,9 @@
       "foundOn": "irace.vn"
     }
   ],
-  "flags": [],
+  "flags": [
+    "sources disagree on race day: irace 2025-03-09, nhandan-vn 2025-03-09, pace8 2025-03-13"
+  ],
   "overrides": {
     "organizer": {
       "value": "Báo Sài Gòn Giải Phóng; Sở Văn hóa, Thể thao Thành phố Hồ Chí Minh; Công ty Miracle Entertainment Group; Ban Quản lý phát triển đô thị Thủ Thiêm",
@@ -478,9 +480,29 @@
           "note": "corroborates 2025 (mùa 2) date range and full organizer list; irace.vn source had no organizer field"
         }
       }
+    },
+    {
+      "site": "pace8",
+      "role": "reference",
+      "url": "https://pace8.vn/su-kien/dat-truoc-run-to-live-2025",
+      "lastCheckedAt": "2026-09-27T08:12:30.848Z",
+      "lastChangedAt": "2026-09-27T08:12:30.848Z",
+      "extracted": {
+        "facts": {
+          "name": "Run To Live 2025",
+          "date": "2025-03-13",
+          "organizer": "Báo Sài Gòn Giải Phóng",
+          "distances": [
+            "5km",
+            "10km",
+            "21km"
+          ],
+          "note": "reseller corroborates organizer (Báo Sài Gòn Giải Phóng) and 5/10/21km distances; its own schema.org date (2025-03-13/14) conflicts with irace.vn/nhandan.vn's 2025-03-09 — keeping the two-source date as shown, flagging the conflict here rather than overriding"
+        }
+      }
     }
   ],
-  "confidence": "multi-sourced",
+  "confidence": "conflicting",
   "createdAt": "2026-09-27T08:06:39.781Z",
-  "updatedAt": "2026-09-27T08:09:46.104Z"
+  "updatedAt": "2026-09-27T08:12:30.848Z"
 }
