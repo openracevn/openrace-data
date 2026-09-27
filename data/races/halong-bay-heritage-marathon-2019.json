@@ -42,7 +42,228 @@
     "city": null
   },
   "geo": null,
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Special Offer",
+      "kind": "other",
+      "audience": null,
+      "price": 8,
+      "from": "2019-01-26",
+      "to": "2019-02-23",
+      "inferred": [],
+      "site": "halong-marathon"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 8,
+      "from": "2019-02-24",
+      "to": "2019-05-24",
+      "inferred": [],
+      "site": "halong-marathon"
+    },
+    {
+      "distance": "5km",
+      "tier": "Standard Rate",
+      "kind": "regular",
+      "audience": null,
+      "price": 10,
+      "from": "2019-05-25",
+      "to": "2019-07-24",
+      "inferred": [],
+      "site": "halong-marathon"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late Registration",
+      "kind": "late",
+      "audience": null,
+      "price": 10,
+      "from": "2019-07-25",
+      "to": "2019-10-26",
+      "inferred": [],
+      "site": "halong-marathon"
+    },
+    {
+      "distance": "5km",
+      "tier": "Special Offer",
+      "kind": "other",
+      "audience": null,
+      "price": 10,
+      "from": "2019-01-26",
+      "to": "2019-02-23",
+      "inferred": [],
+      "site": "halong-marathon"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 15,
+      "from": "2019-02-24",
+      "to": "2019-05-24",
+      "inferred": [],
+      "site": "halong-marathon"
+    },
+    {
+      "distance": "5km",
+      "tier": "Standard Rate",
+      "kind": "regular",
+      "audience": null,
+      "price": 18,
+      "from": "2019-05-25",
+      "to": "2019-07-24",
+      "inferred": [],
+      "site": "halong-marathon"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late Registration",
+      "kind": "late",
+      "audience": null,
+      "price": 20,
+      "from": "2019-07-25",
+      "to": "2019-10-26",
+      "inferred": [],
+      "site": "halong-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Special Offer",
+      "kind": "other",
+      "audience": null,
+      "price": 20,
+      "from": "2019-01-26",
+      "to": "2019-02-23",
+      "inferred": [],
+      "site": "halong-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 30,
+      "from": "2019-02-24",
+      "to": "2019-05-24",
+      "inferred": [],
+      "site": "halong-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Standard Rate",
+      "kind": "regular",
+      "audience": null,
+      "price": 40,
+      "from": "2019-05-25",
+      "to": "2019-07-24",
+      "inferred": [],
+      "site": "halong-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late Registration",
+      "kind": "late",
+      "audience": null,
+      "price": 45,
+      "from": "2019-07-25",
+      "to": "2019-10-26",
+      "inferred": [],
+      "site": "halong-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Special Offer",
+      "kind": "other",
+      "audience": null,
+      "price": 35,
+      "from": "2019-01-26",
+      "to": "2019-02-23",
+      "inferred": [],
+      "site": "halong-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 55,
+      "from": "2019-02-24",
+      "to": "2019-05-24",
+      "inferred": [],
+      "site": "halong-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Standard Rate",
+      "kind": "regular",
+      "audience": null,
+      "price": 75,
+      "from": "2019-05-25",
+      "to": "2019-07-24",
+      "inferred": [],
+      "site": "halong-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late Registration",
+      "kind": "late",
+      "audience": null,
+      "price": 80,
+      "from": "2019-07-25",
+      "to": "2019-10-26",
+      "inferred": [],
+      "site": "halong-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Special Offer",
+      "kind": "other",
+      "audience": null,
+      "price": 55,
+      "from": "2019-01-26",
+      "to": "2019-02-23",
+      "inferred": [],
+      "site": "halong-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 75,
+      "from": "2019-02-24",
+      "to": "2019-05-24",
+      "inferred": [],
+      "site": "halong-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Standard Rate",
+      "kind": "regular",
+      "audience": null,
+      "price": 90,
+      "from": "2019-05-25",
+      "to": "2019-07-24",
+      "inferred": [],
+      "site": "halong-marathon"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late Registration",
+      "kind": "late",
+      "audience": null,
+      "price": 95,
+      "from": "2019-07-25",
+      "to": "2019-10-26",
+      "inferred": [],
+      "site": "halong-marathon"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": null,
   "registrations": [],
@@ -73,9 +294,176 @@
           "note": "Wayback snapshot of halongmarathon.com, 2019-09-15: 'NEXT RACE 11/24/2019' countdown; distances per site-wide 42/21/10/5km pattern"
         }
       }
+    },
+    {
+      "site": "halong-marathon",
+      "role": "reference",
+      "url": "http://web.archive.org/web/20190712092947/http://halongmarathon.com/175/registration-fees.html",
+      "lastCheckedAt": "2026-09-27T03:16:09.361Z",
+      "lastChangedAt": "2026-09-27T03:16:09.361Z",
+      "extracted": {
+        "facts": {
+          "name": "Halong Bay Heritage Marathon 2019",
+          "date": "2019-11-24",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "5km (child)",
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "currency": "USD",
+          "prices": [
+            {
+              "distance": "5km (child)",
+              "tier": "Special Offer",
+              "from": "26/01",
+              "to": "23/02",
+              "price": 8
+            },
+            {
+              "distance": "5km (child)",
+              "tier": "Early Bird",
+              "from": "24/02",
+              "to": "24/05",
+              "price": 8
+            },
+            {
+              "distance": "5km (child)",
+              "tier": "Standard Rate",
+              "from": "25/05",
+              "to": "24/07",
+              "price": 10
+            },
+            {
+              "distance": "5km (child)",
+              "tier": "Late Registration",
+              "from": "25/07",
+              "to": "26/10",
+              "price": 10
+            },
+            {
+              "distance": "5km",
+              "tier": "Special Offer",
+              "from": "26/01",
+              "to": "23/02",
+              "price": 10
+            },
+            {
+              "distance": "5km",
+              "tier": "Early Bird",
+              "from": "24/02",
+              "to": "24/05",
+              "price": 15
+            },
+            {
+              "distance": "5km",
+              "tier": "Standard Rate",
+              "from": "25/05",
+              "to": "24/07",
+              "price": 18
+            },
+            {
+              "distance": "5km",
+              "tier": "Late Registration",
+              "from": "25/07",
+              "to": "26/10",
+              "price": 20
+            },
+            {
+              "distance": "10km",
+              "tier": "Special Offer",
+              "from": "26/01",
+              "to": "23/02",
+              "price": 20
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "from": "24/02",
+              "to": "24/05",
+              "price": 30
+            },
+            {
+              "distance": "10km",
+              "tier": "Standard Rate",
+              "from": "25/05",
+              "to": "24/07",
+              "price": 40
+            },
+            {
+              "distance": "10km",
+              "tier": "Late Registration",
+              "from": "25/07",
+              "to": "26/10",
+              "price": 45
+            },
+            {
+              "distance": "21km",
+              "tier": "Special Offer",
+              "from": "26/01",
+              "to": "23/02",
+              "price": 35
+            },
+            {
+              "distance": "21km",
+              "tier": "Early Bird",
+              "from": "24/02",
+              "to": "24/05",
+              "price": 55
+            },
+            {
+              "distance": "21km",
+              "tier": "Standard Rate",
+              "from": "25/05",
+              "to": "24/07",
+              "price": 75
+            },
+            {
+              "distance": "21km",
+              "tier": "Late Registration",
+              "from": "25/07",
+              "to": "26/10",
+              "price": 80
+            },
+            {
+              "distance": "42km",
+              "tier": "Special Offer",
+              "from": "26/01",
+              "to": "23/02",
+              "price": 55
+            },
+            {
+              "distance": "42km",
+              "tier": "Early Bird",
+              "from": "24/02",
+              "to": "24/05",
+              "price": 75
+            },
+            {
+              "distance": "42km",
+              "tier": "Standard Rate",
+              "from": "25/05",
+              "to": "24/07",
+              "price": 90
+            },
+            {
+              "distance": "42km",
+              "tier": "Late Registration",
+              "from": "25/07",
+              "to": "26/10",
+              "price": 95
+            }
+          ],
+          "note": "Wayback snapshot of halongmarathon.com's Registration Fees page (2019-07-12), which embeds the 'REGISTRATION FEES 2019' price image (Google-hosted, itself archived by Wayback) — read by eye. Prices are in USD."
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-27T02:46:27.823Z",
-  "updatedAt": "2026-09-27T02:46:27.823Z"
+  "updatedAt": "2026-09-27T03:16:09.361Z"
 }
