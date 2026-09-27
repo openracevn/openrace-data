@@ -1,16 +1,16 @@
 {
-  "id": "24a47fa1-3f51-4af1-b6b2-35240a8749a2",
-  "slug": "techcombank-ho-chi-minh-city-international-marathon-2019",
-  "name": "Techcombank Ho Chi Minh City International Marathon 2019",
+  "id": "98c6b160-fb72-428b-80b1-f594ecfacde2",
+  "slug": "techcombank-ho-chi-minh-city-international-marathon-2023",
+  "name": "Techcombank Ho Chi Minh City International Marathon 2023",
   "types": [
     "road_run"
   ],
-  "date": "2019-12-08",
+  "date": "2023-12-10",
   "endDate": null,
   "seriesId": "techcombank-ho-chi-minh-city-international-marathon",
   "organizerId": null,
   "organizer": "Sunrise Events Vietnam",
-  "edition": 3,
+  "edition": 6,
   "courses": [
     {
       "label": "5km",
@@ -51,15 +51,15 @@
   "overrides": {},
   "sources": [
     {
-      "site": "scribd-com",
+      "site": "tuoitre-vn",
       "role": "reference",
-      "url": "https://scribd.com/document/458961099/Program-Booklet-Techcombank-Ho-Chi-Minh-City-International-Marathon-2019",
-      "lastCheckedAt": "2026-09-27T08:04:23.006Z",
-      "lastChangedAt": "2026-09-27T08:04:23.006Z",
+      "url": "https://tuoitre.vn/techcombank-marathon-2023-dat-ki-luc-voi-hon-15-000-nguoi-tham-du-20231212201906577.htm",
+      "lastCheckedAt": "2026-09-27T08:06:02.251Z",
+      "lastChangedAt": "2026-09-27T08:06:02.251Z",
       "extracted": {
         "facts": {
-          "name": "Techcombank Ho Chi Minh City International Marathon 2019",
-          "date": "2019-12-08",
+          "name": "Techcombank Ho Chi Minh City International Marathon 2023",
+          "date": "2023-12-10",
           "types": [
             "road_run"
           ],
@@ -72,13 +72,13 @@
           "venue": "Thành Phố Hồ Chí Minh",
           "city": "Ho Chi Minh City",
           "organizer": "Sunrise Events Vietnam",
-          "edition": 3,
-          "note": "3rd edition program booklet: over 10,000 athletes, race day 2019-12-08"
+          "edition": 6,
+          "note": "6th edition ('lần thứ 6'), race day 2023-12-10, record 15,000+ participants, 700+ international athletes from 91 countries"
         }
       }
     }
   ],
   "confidence": "single-sourced",
-  "createdAt": "2026-09-27T08:04:23.006Z",
+  "createdAt": "2026-09-27T08:06:02.251Z",
   "updatedAt": "2026-09-27T08:06:02.251Z"
 }

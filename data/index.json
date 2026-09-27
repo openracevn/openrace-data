@@ -672,9 +672,9 @@
     "name": "Techcombank Ho Chi Minh City International Marathon 2019",
     "date": "2019-12-08",
     "endDate": null,
-    "lastModified": "2026-09-27T08:04:23.006Z",
+    "lastModified": "2026-09-27T08:06:02.251Z",
     "file": "techcombank-ho-chi-minh-city-international-marathon-2019.json",
-    "seriesId": null,
+    "seriesId": "techcombank-ho-chi-minh-city-international-marathon",
     "sourceUrls": [
       "https://scribd.com/document/458961099/Program-Booklet-Techcombank-Ho-Chi-Minh-City-International-Marathon-2019"
     ],
@@ -3072,6 +3072,20 @@
     "seriesId": null,
     "sourceUrls": [
       "https://actiup.net/vi/event/vlu-run-2025"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "98c6b160-fb72-428b-80b1-f594ecfacde2",
+    "slug": "techcombank-ho-chi-minh-city-international-marathon-2023",
+    "name": "Techcombank Ho Chi Minh City International Marathon 2023",
+    "date": "2023-12-10",
+    "endDate": null,
+    "lastModified": "2026-09-27T08:06:02.251Z",
+    "file": "techcombank-ho-chi-minh-city-international-marathon-2023.json",
+    "seriesId": "techcombank-ho-chi-minh-city-international-marathon",
+    "sourceUrls": [
+      "https://tuoitre.vn/techcombank-marathon-2023-dat-ki-luc-voi-hon-15-000-nguoi-tham-du-20231212201906577.htm"
     ],
     "linkUrls": []
   },
