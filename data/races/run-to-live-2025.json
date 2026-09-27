@@ -1,0 +1,444 @@
+{
+  "id": "4e3e6ba7-d691-4c59-b27c-f316c6b01c74",
+  "slug": "run-to-live",
+  "name": "Run To Live 2025",
+  "types": [
+    "road_run"
+  ],
+  "date": "2025-03-09",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": null,
+  "organizer": null,
+  "edition": null,
+  "courses": [
+    {
+      "label": "1km",
+      "meters": 1000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "METROPOLE THỦ THIÊM",
+    "city": null
+  },
+  "geo": null,
+  "prices": [
+    {
+      "distance": null,
+      "tier": "SUPER EARLY BIRD · 5KM",
+      "kind": "super_early",
+      "audience": null,
+      "price": 549000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "SUPER EARLY BIRD · 10KM",
+      "kind": "super_early",
+      "audience": null,
+      "price": 599000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "SUPER EARLY BIRD · 21KM",
+      "kind": "super_early",
+      "audience": null,
+      "price": 819000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "EARLY BIRD · 5KM",
+      "kind": "early",
+      "audience": null,
+      "price": 619000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "EARLY BIRD · 10KM",
+      "kind": "early",
+      "audience": null,
+      "price": 849000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "EARLY BIRD · 21KM",
+      "kind": "early",
+      "audience": null,
+      "price": 1009000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "REGULAR · 5KM",
+      "kind": "regular",
+      "audience": null,
+      "price": 719000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "REGULAR · 10KM",
+      "kind": "regular",
+      "audience": null,
+      "price": 899000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "REGULAR · 21KM",
+      "kind": "regular",
+      "audience": null,
+      "price": 1189000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "LATE · 5KM",
+      "kind": "late",
+      "audience": null,
+      "price": 849000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "LATE · 10KM",
+      "kind": "late",
+      "audience": null,
+      "price": 1149000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "LATE · 21KM",
+      "kind": "late",
+      "audience": null,
+      "price": 1449000,
+      "from": null,
+      "to": "2025-03-09",
+      "inferred": [
+        "to"
+      ],
+      "site": "irace"
+    }
+  ],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [
+    {
+      "site": "irace",
+      "url": "https://irace.vn/su-kien/run-to-live"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://google.com/calendar/event",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/mung-ngay-phu-nu-viet-nam-20-10",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/creatine-monohydrate-scitec-nutrition-300g",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/sua-tang-hieu-suat-scitec-bcaa-xpress",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/sua-tang-suc-manh-applied-nutrition-abe-pre-workout-315g",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/sua-uong-truoc-khi-tap-elite-labs-usa-pre-cut-white-raspberry",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/sua-uong-truoc-khi-tap-vaporx5-next-gen-pre-workout-228g",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    }
+  ],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://irace.vn/su-kien/run-to-live",
+      "lastCheckedAt": "2026-09-27T08:06:39.781Z",
+      "lastChangedAt": "2026-09-27T08:06:39.781Z",
+      "extracted": {
+        "facts": {
+          "name": "Run To Live 2025",
+          "venue": "METROPOLE THỦ THIÊM"
+        },
+        "pages": [
+          {
+            "url": "https://irace.vn/su-kien/run-to-live",
+            "json": {
+              "pageKind": "sport",
+              "name": "Run To Live 2025",
+              "date": "2025-03-09",
+              "types": [
+                "road_run"
+              ],
+              "distances": [
+                "1km",
+                "5km",
+                "10km",
+                "21km"
+              ],
+              "venue": "METROPOLE THỦ THIÊM, Tp. Thủ Đức",
+              "prices": [
+                {
+                  "distance": "SUPER EARLY BIRD",
+                  "tier": "5KM",
+                  "from": null,
+                  "to": null,
+                  "price": 549000
+                },
+                {
+                  "distance": "SUPER EARLY BIRD",
+                  "tier": "10KM",
+                  "from": null,
+                  "to": null,
+                  "price": 599000
+                },
+                {
+                  "distance": "SUPER EARLY BIRD",
+                  "tier": "21KM",
+                  "from": null,
+                  "to": null,
+                  "price": 819000
+                },
+                {
+                  "distance": "EARLY BIRD",
+                  "tier": "5KM",
+                  "from": null,
+                  "to": null,
+                  "price": 619000
+                },
+                {
+                  "distance": "EARLY BIRD",
+                  "tier": "10KM",
+                  "from": null,
+                  "to": null,
+                  "price": 849000
+                },
+                {
+                  "distance": "EARLY BIRD",
+                  "tier": "21KM",
+                  "from": null,
+                  "to": null,
+                  "price": 1009000
+                },
+                {
+                  "distance": "REGULAR",
+                  "tier": "5KM",
+                  "from": null,
+                  "to": null,
+                  "price": 719000
+                },
+                {
+                  "distance": "REGULAR",
+                  "tier": "10KM",
+                  "from": null,
+                  "to": null,
+                  "price": 899000
+                },
+                {
+                  "distance": "REGULAR",
+                  "tier": "21KM",
+                  "from": null,
+                  "to": null,
+                  "price": 1189000
+                },
+                {
+                  "distance": "LATE",
+                  "tier": "5KM",
+                  "from": null,
+                  "to": null,
+                  "price": 849000
+                },
+                {
+                  "distance": "LATE",
+                  "tier": "10KM",
+                  "from": null,
+                  "to": null,
+                  "price": 1149000
+                },
+                {
+                  "distance": "LATE",
+                  "tier": "21KM",
+                  "from": null,
+                  "to": null,
+                  "price": 1449000
+                }
+              ]
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": "facebook facebook"
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn/",
+            "text": "instagram instagram"
+          },
+          {
+            "url": "https://app.irace.vn/",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=iRace&utm_medium=Menu&utm_campaign=Menu",
+            "text": "sports shop"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=iRace&utm_medium=Menu&utm_campaign=Menu",
+            "text": "nutritions"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=iRace&utm_medium=Menu&utm_campaign=Menu",
+            "text": "accessories"
+          },
+          {
+            "url": "https://ticket.irace.vn/",
+            "text": "su kien tai viet nam"
+          },
+          {
+            "url": "https://ticket.irace.vn/orders",
+            "text": "ve chay offline"
+          },
+          {
+            "url": "https://app.irace.vn/my-orders",
+            "text": "ve chay online"
+          },
+          {
+            "url": "https://www.google.com/calendar/event?action=TEMPLATE&text=Run%20To%20Live%202025&dates=20250308T213000Z/20250309T013000Z&ctz=Asia%2FSaigon&details=Run%20To%20Live%202025&location=METROPOLE%20TH%E1%BB%A6%20THI%C3%8AM%20METROPOLE%20TH%E1%BB%A6%20THI%C3%8AM%2C%20TH%C3%80NH%20PH%E1%BB%90%20TH%E1%BB%A6%20%C4%90%E1%BB%A8C%2C%20THA%CC%80NH%20PH%C3%94%CC%81%20H%C3%94%CC%80%20CHI%CC%81%20MINH",
+            "text": "them vao google calendar them vao google calendar"
+          },
+          {
+            "url": "https://ifitness.vn/products/sua-uong-truoc-khi-tap-vaporx5-next-gen-pre-workout-228g?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "text": "mua ngay"
+          },
+          {
+            "url": "https://ifitness.vn/products/creatine-monohydrate-scitec-nutrition-300g?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "text": "mua ngay"
+          },
+          {
+            "url": "https://ifitness.vn/products/sua-uong-truoc-khi-tap-elite-labs-usa-pre-cut-white-raspberry?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "text": "mua ngay"
+          },
+          {
+            "url": "https://ifitness.vn/products/sua-tang-suc-manh-applied-nutrition-abe-pre-workout-315g?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "text": "mua ngay"
+          },
+          {
+            "url": "https://ifitness.vn/collections/mung-ngay-phu-nu-viet-nam-20-10?utm_source=iRace.vn&utm_medium=Banner&utm_campaign=Top&utm_content=Optivita",
+            "text": ""
+          },
+          {
+            "url": "https://ifitness.vn/products/sua-tang-hieu-suat-scitec-bcaa-xpress?ref=iRace&utm_source=iRace&utm_medium=Banner&utm_campaign=Topbanner&utm_content=%22Bcaa-Xpress%22",
+            "text": ""
+          }
+        ],
+        "readBy": "agent"
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-27T08:06:39.781Z",
+  "updatedAt": "2026-09-27T08:06:39.781Z"
+}
