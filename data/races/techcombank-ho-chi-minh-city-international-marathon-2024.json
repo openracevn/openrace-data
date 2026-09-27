@@ -1,0 +1,84 @@
+{
+  "id": "c673fffa-a2eb-4150-a6c0-d32f9ff74cfe",
+  "slug": "techcombank-ho-chi-minh-city-international-marathon-2024",
+  "name": "Techcombank Ho Chi Minh City International Marathon 2024",
+  "types": [
+    "road_run"
+  ],
+  "date": "2024-12-08",
+  "endDate": null,
+  "seriesId": "techcombank-ho-chi-minh-city-international-marathon",
+  "organizerId": null,
+  "organizer": "Sunrise Events Vietnam",
+  "edition": 7,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Thành Phố Hồ Chí Minh",
+    "city": "Ho Chi Minh City"
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "vietnamnews-vn",
+      "role": "reference",
+      "url": "https://vietnamnews.vn/sports/1688542/techcombank-hcm-city-international-marathon-kicks-off-with-record-of-participants.html",
+      "lastCheckedAt": "2026-09-27T08:06:33.905Z",
+      "lastChangedAt": "2026-09-27T08:06:33.905Z",
+      "extracted": {
+        "facts": {
+          "name": "Techcombank Ho Chi Minh City International Marathon 2024",
+          "date": "2024-12-08",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "venue": "Thành Phố Hồ Chí Minh",
+          "city": "Ho Chi Minh City",
+          "organizer": "Sunrise Events Vietnam",
+          "edition": 7,
+          "note": "7th edition ('lần thứ 7'), race day 2024-12-08 (activities Dec 6-8), near 18,000 athletes from 64 countries"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-27T08:06:33.905Z",
+  "updatedAt": "2026-09-27T08:06:33.905Z"
+}
