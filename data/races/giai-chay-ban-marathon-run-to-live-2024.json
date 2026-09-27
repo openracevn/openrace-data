@@ -10,7 +10,7 @@
   "seriesId": "run-to-live",
   "organizerId": "miracle-entertainment-group-bao-sai-gon-giai-phong-so-vhtt-ho-chi-minh",
   "organizer": "Miracle Entertainment Group - Báo Sài Gòn Giải Phóng - Sở VHTT Hồ Chí Minh",
-  "edition": null,
+  "edition": 1,
   "courses": [
     {
       "label": "21km",
@@ -142,6 +142,11 @@
       "value": "run-to-live",
       "reason": "same series as run-to-live-2025 and the 2027 edition",
       "at": "2026-09-27T08:10:40.079Z"
+    },
+    "edition": {
+      "value": 1,
+      "reason": "nhandan.vn 2024 article states 'lần thứ nhất' (edition 1)",
+      "at": "2026-09-27T08:10:48.324Z"
     }
   },
   "sources": [
@@ -189,5 +194,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-27T08:10:40.079Z"
+  "updatedAt": "2026-09-27T08:10:48.324Z"
 }
