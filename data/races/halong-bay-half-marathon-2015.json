@@ -7,7 +7,7 @@
   ],
   "date": "2015-11-28",
   "endDate": null,
-  "seriesId": null,
+  "seriesId": "halong-bay-heritage-marathon",
   "organizerId": null,
   "organizer": "Công ty DHA Việt Nam",
   "edition": null,
@@ -36,7 +36,13 @@
   "registrations": [],
   "links": [],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "seriesId": {
+      "value": "halong-bay-heritage-marathon",
+      "reason": "first edition of the same annual race (renamed Halong Bay Half Marathon -> Halong Bay Heritage Marathon -> Giải Marathon Quốc tế Di sản Hạ Long over the years); unify with all other editions",
+      "at": "2026-09-27T02:47:42.617Z"
+    }
+  },
   "sources": [
     {
       "site": "halong-marathon",
@@ -63,5 +69,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-27T02:44:22.383Z",
-  "updatedAt": "2026-09-27T02:44:22.383Z"
+  "updatedAt": "2026-09-27T02:47:42.617Z"
 }
