@@ -231,9 +231,33 @@
           "name": "Nexus Sport Events"
         }
       }
+    },
+    {
+      "site": "truerace",
+      "role": "reference",
+      "url": "https://truerace.org/2024-dat-sen-hong-marathon-dong-thap",
+      "lastCheckedAt": "2026-09-27T02:26:57.808Z",
+      "lastChangedAt": "2026-09-27T02:26:57.808Z",
+      "extracted": {
+        "facts": {
+          "name": "Đất Sen Hồng Marathon Đồng Tháp 2024 - Cúp Masterise Homes",
+          "date": "2024-10-12",
+          "endDate": "2024-10-13",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "note": "TrueRace listing (recipe: none in config/sites.yaml), corroborates the 2024 edition's date and distances."
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-27T02:26:43.666Z"
+  "updatedAt": "2026-09-27T02:26:57.808Z"
 }
