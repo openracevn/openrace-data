@@ -22,6 +22,7 @@ Any agent can follow this (Claude Code, Antigravity, ...). You need a shell in t
   2. `ticket.irace.vn/<slug>` — free, a real HTML text table, no OCR.
   3. `irace.vn/su-kien/<slug>` — free, usually a text table too (`.eventon_desc_in`), but never auto-discovered; find it by search. Attaching it to a race you've already found by hand: `npm run agent-read -- prepare --race <existing-race-id-or-slug>@<new-url>` (see "Attaching a new source" below) — don't just `--race <url>` and hope the matching finds it.
   4. ActiUp / irace.vn's old poster images — last: costs Firecrawl OCR credits, or your own eyes on the image here.
+- **Before assuming a race has "no price": check `facts.prices` in `task.json` first.** ActiUp's own `price_type: "free"` field means the recipe already filled `facts.prices` with `{tier: "Miễn phí", price: 0}` — there's no image to look at, it's genuinely free, not unread. `min_price: 0` alone (with `price_type` unset/other) does *not* mean free — leave that one as missing. See `scripts/lib/recipes/README.md`'s "genuinely free race" note (2026-09-27).
 
 ## Attaching a new source to a race you've already identified
 
