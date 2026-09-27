@@ -112,7 +112,19 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": null,
+      "tier": "Miễn phí",
+      "kind": "other",
+      "audience": null,
+      "price": 0,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -135,7 +147,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/mini-game-kun-fun-run-dong-thap-2026",
-      "lastCheckedAt": "2026-09-26T05:24:22.076Z",
+      "lastCheckedAt": "2026-09-27T02:12:42.973Z",
       "lastChangedAt": "2026-09-25T05:01:22.419Z",
       "extracted": {
         "facts": {
@@ -146,7 +158,13 @@
           "organizer": "Nexus Sport Events",
           "currency": "VND",
           "registrationStatus": "open",
-          "fromPrice": 0
+          "fromPrice": 0,
+          "prices": [
+            {
+              "tier": "Miễn phí",
+              "price": 0
+            }
+          ]
         },
         "pages": [
           {
@@ -180,5 +198,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T05:01:22.419Z",
-  "updatedAt": "2026-09-26T05:24:22.076Z"
+  "updatedAt": "2026-09-27T02:12:42.973Z"
 }
