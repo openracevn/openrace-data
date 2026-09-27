@@ -435,7 +435,7 @@
   },
   "2b93d23b-f232-42b1-abf1-1d1bbc80b7ac": {
     "lastCheckedAt": null,
-    "lastChangedAt": "2026-09-27T08:04:53.237Z",
+    "lastChangedAt": "2026-09-27T08:05:25.233Z",
     "cadence": "manual",
     "dueAt": null,
     "final": true
@@ -1621,6 +1621,13 @@
     "lastChangedAt": "2026-09-26T13:21:53.036Z",
     "cadence": "weekly",
     "dueAt": "2026-10-01",
+    "final": true
+  },
+  "af047737-4b02-4b4b-9fbe-d322fe38345c": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-09-27T08:05:25.233Z",
+    "cadence": "manual",
+    "dueAt": null,
     "final": true
   },
   "afebce30-f862-4e5c-a8b3-bd76e7e43046": {

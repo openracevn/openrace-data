@@ -1,16 +1,16 @@
 {
-  "id": "2b93d23b-f232-42b1-abf1-1d1bbc80b7ac",
-  "slug": "giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-mua-4",
-  "name": "Giải Marathon Quốc tế Thành phố Hồ Chí Minh Techcombank Mùa 4",
+  "id": "af047737-4b02-4b4b-9fbe-d322fe38345c",
+  "slug": "giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-mua-5",
+  "name": "Giải Marathon Quốc tế Thành phố Hồ Chí Minh Techcombank Mùa 5",
   "types": [
     "road_run"
   ],
-  "date": "2021-04-11",
+  "date": "2022-12-11",
   "endDate": null,
   "seriesId": "giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-mua",
   "organizerId": null,
   "organizer": "Sunrise Events Vietnam",
-  "edition": 4,
+  "edition": 5,
   "courses": [
     {
       "label": "5km",
@@ -51,15 +51,15 @@
   "overrides": {},
   "sources": [
     {
-      "site": "thuonghieucongluan-com-vn",
+      "site": "techcombank-com",
       "role": "reference",
-      "url": "https://thuonghieucongluan.com.vn/giai-marathon-quoc-te-tphcm-techcombank-mua-4-thu-hut-13-117-van-dong-vien-a131782.html",
-      "lastCheckedAt": "2026-09-27T08:04:53.237Z",
-      "lastChangedAt": "2026-09-27T08:04:53.237Z",
+      "url": "https://techcombank.com/thong-tin/thong-bao/giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-an-tuong-mua-5",
+      "lastCheckedAt": "2026-09-27T08:05:25.233Z",
+      "lastChangedAt": "2026-09-27T08:05:25.233Z",
       "extracted": {
         "facts": {
-          "name": "Giải Marathon Quốc tế Thành phố Hồ Chí Minh Techcombank Mùa 4",
-          "date": "2021-04-11",
+          "name": "Giải Marathon Quốc tế Thành phố Hồ Chí Minh Techcombank Mùa 5",
+          "date": "2022-12-11",
           "types": [
             "road_run"
           ],
@@ -72,13 +72,13 @@
           "venue": "Thành Phố Hồ Chí Minh",
           "city": "Ho Chi Minh City",
           "organizer": "Sunrise Events Vietnam",
-          "edition": 4,
-          "note": "4th edition ('mùa 4'): originally scheduled Dec 2020, postponed for Covid-19, actually held 2021-04-11 (activities from 04-09), 13,117 athletes, distances 42/21/10/5km"
+          "edition": 5,
+          "note": "Official Techcombank announcement: 5th edition ('Mùa thứ 5'), diễn ra 09-11/12/2022, marking the marathon's 5-year anniversary since 2017"
         }
       }
     }
   ],
   "confidence": "single-sourced",
-  "createdAt": "2026-09-27T08:04:53.237Z",
+  "createdAt": "2026-09-27T08:05:25.233Z",
   "updatedAt": "2026-09-27T08:05:25.233Z"
 }

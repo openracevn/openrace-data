@@ -893,9 +893,9 @@
     "name": "Giải Marathon Quốc tế Thành phố Hồ Chí Minh Techcombank Mùa 4",
     "date": "2021-04-11",
     "endDate": null,
-    "lastModified": "2026-09-27T08:04:53.237Z",
+    "lastModified": "2026-09-27T08:05:25.233Z",
     "file": "giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-mua-4-2021.json",
-    "seriesId": null,
+    "seriesId": "giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-mua",
     "sourceUrls": [
       "https://thuonghieucongluan.com.vn/giai-marathon-quoc-te-tphcm-techcombank-mua-4-thu-hut-13-117-van-dong-vien-a131782.html"
     ],
@@ -3298,6 +3298,20 @@
     "seriesId": null,
     "sourceUrls": [
       "https://actiup.net/vi/event/dak-nong-marathon-2025"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "af047737-4b02-4b4b-9fbe-d322fe38345c",
+    "slug": "giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-mua-5",
+    "name": "Giải Marathon Quốc tế Thành phố Hồ Chí Minh Techcombank Mùa 5",
+    "date": "2022-12-11",
+    "endDate": null,
+    "lastModified": "2026-09-27T08:05:25.233Z",
+    "file": "giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-mua-5-2022.json",
+    "seriesId": "giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-mua",
+    "sourceUrls": [
+      "https://techcombank.com/thong-tin/thong-bao/giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-an-tuong-mua-5"
     ],
     "linkUrls": []
   },
