@@ -112,7 +112,19 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": null,
+      "tier": "Miễn phí",
+      "kind": "other",
+      "audience": null,
+      "price": 0,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -137,7 +149,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/aeon-binh-tan-ho-chi-minh-aeon-ekiden-2025-september",
-      "lastCheckedAt": "2026-09-23T18:31:22.801Z",
+      "lastCheckedAt": "2026-09-27T02:15:30.856Z",
       "lastChangedAt": "2026-09-23T18:31:22.801Z",
       "extracted": {
         "facts": {
@@ -147,17 +159,40 @@
           "organizer": "AEON Việt Nam",
           "currency": "VND",
           "registrationStatus": "closed",
-          "fromPrice": 0
+          "fromPrice": 0,
+          "prices": [
+            {
+              "tier": "Miễn phí",
+              "price": 0
+            }
+          ]
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/aeon-binh-tan-ho-chi-minh-aeon-ekiden-2025-september",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "[AEON BÌNH TÂN - HỒ CHÍ MINH] AEON EKIDEN 2025 | THÁNG 9",
+              "venue": "Aeon Bình Tân, Hồ Chí Minh",
+              "city": null,
+              "organizer": null,
+              "prices": []
+            }
+          }
+        ],
         "links": [],
         "organizer": {
           "id": "aeon-viet-nam",
           "name": "AEON Việt Nam"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:09:52.388Z"
+  "updatedAt": "2026-09-27T02:15:30.856Z"
 }

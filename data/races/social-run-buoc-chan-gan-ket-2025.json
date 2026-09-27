@@ -112,7 +112,19 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": null,
+      "tier": "Miễn phí",
+      "kind": "other",
+      "audience": null,
+      "price": 0,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -137,7 +149,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/social-run-buoc-chan-gan-ket",
-      "lastCheckedAt": "2026-09-23T18:31:20.784Z",
+      "lastCheckedAt": "2026-09-27T02:15:30.856Z",
       "lastChangedAt": "2026-09-23T18:31:20.784Z",
       "extracted": {
         "facts": {
@@ -147,17 +159,40 @@
           "organizer": "Suunto Việt Nam",
           "currency": "VND",
           "registrationStatus": "closed",
-          "fromPrice": 0
+          "fromPrice": 0,
+          "prices": [
+            {
+              "tier": "Miễn phí",
+              "price": 0
+            }
+          ]
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/social-run-buoc-chan-gan-ket",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Social Run - Bước chân gắn kết",
+              "venue": "Trước Quảng Trường Beso – Thiso Mall Sala, Nguyễn Cơ Thạch, Thủ Đức",
+              "city": null,
+              "organizer": null,
+              "prices": []
+            }
+          }
+        ],
         "links": [],
         "organizer": {
           "id": "suunto-viet-nam",
           "name": "Suunto Việt Nam"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-27T02:15:30.856Z"
 }

@@ -11,7 +11,20 @@
   "organizerId": "suunto-viet-nam",
   "organizer": "Suunto Việt Nam",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "1km",
+      "meters": 1000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "800m",
+      "meters": 800,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Sân Vận Động Gia Định, Hồ Chí Minh",
     "city": null
@@ -112,7 +125,30 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "800m",
+      "tier": "Miễn phí",
+      "kind": "other",
+      "audience": null,
+      "price": 0,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1km",
+      "tier": "Miễn phí",
+      "kind": "other",
+      "audience": null,
+      "price": 0,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -137,7 +173,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/suunto-run",
-      "lastCheckedAt": "2026-09-23T18:31:27.214Z",
+      "lastCheckedAt": "2026-09-27T02:15:30.856Z",
       "lastChangedAt": "2026-09-23T18:31:27.214Z",
       "extracted": {
         "facts": {
@@ -147,17 +183,64 @@
           "organizer": "Suunto Việt Nam",
           "currency": "VND",
           "registrationStatus": "closed",
-          "fromPrice": 0
+          "fromPrice": 0,
+          "prices": [
+            {
+              "tier": "Miễn phí",
+              "price": 0
+            }
+          ]
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/suunto-run",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Suunto Run",
+              "venue": "Sân Vận Động Gia Định, Hồ Chí Minh",
+              "city": null,
+              "organizer": null,
+              "prices": []
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2025/06/23/1750658512415626/VIE.png",
+            "json": {
+              "imageKind": "price",
+              "distances": [
+                "800m",
+                "1km"
+              ],
+              "prices": [
+                {
+                  "distance": "800m",
+                  "tier": "Miễn phí",
+                  "price": 0
+                },
+                {
+                  "distance": "1km",
+                  "tier": "Miễn phí",
+                  "price": 0
+                }
+              ]
+            }
+          }
+        ],
         "links": [],
         "organizer": {
           "id": "suunto-viet-nam",
           "name": "Suunto Việt Nam"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-27T02:15:30.856Z"
 }

@@ -17,7 +17,19 @@
     "city": null
   },
   "geo": null,
-  "prices": [],
+  "prices": [
+    {
+      "distance": null,
+      "tier": "Miễn phí",
+      "kind": "other",
+      "audience": null,
+      "price": 0,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -48,7 +60,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/aeon-tan-an-tay-ninh-aeon-ekiden-2026-september",
-      "lastCheckedAt": "2026-09-23T18:30:54.337Z",
+      "lastCheckedAt": "2026-09-27T02:15:30.856Z",
       "lastChangedAt": "2026-09-23T18:30:54.337Z",
       "extracted": {
         "facts": {
@@ -58,8 +70,30 @@
           "organizer": "AEON Việt Nam",
           "currency": "VND",
           "registrationStatus": "closed",
-          "fromPrice": 0
+          "fromPrice": 0,
+          "prices": [
+            {
+              "tier": "Miễn phí",
+              "price": 0
+            }
+          ]
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/aeon-tan-an-tay-ninh-aeon-ekiden-2026-september",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "[AEON TÂN AN - TÂY NINH] AEON EKIDEN 2026 | THÁNG 9",
+              "venue": "Aeon Tân An - Tây Ninh",
+              "city": null,
+              "organizer": null,
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1U46tywJYLCoZT8G-D3H_91dC8xwle8AL/view",
@@ -69,11 +103,12 @@
         "organizer": {
           "id": "aeon-viet-nam",
           "name": "AEON Việt Nam"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:10:32.898Z"
+  "updatedAt": "2026-09-27T02:15:30.856Z"
 }
