@@ -404,6 +404,226 @@
       "kind": "other",
       "audience": null,
       "price": 288000,
+      "from": "2026-01-12",
+      "to": "2026-01-17",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 388000,
+      "from": "2026-01-12",
+      "to": "2026-01-17",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 488000,
+      "from": "2026-01-12",
+      "to": "2026-01-17",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 588000,
+      "from": "2026-01-12",
+      "to": "2026-01-17",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "SEB",
+      "kind": "super_early",
+      "audience": null,
+      "price": 368000,
+      "from": "2026-01-18",
+      "to": "2026-03-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "SEB",
+      "kind": "super_early",
+      "audience": null,
+      "price": 488000,
+      "from": "2026-01-18",
+      "to": "2026-03-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "SEB",
+      "kind": "super_early",
+      "audience": null,
+      "price": 668000,
+      "from": "2026-01-18",
+      "to": "2026-03-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "SEB",
+      "kind": "super_early",
+      "audience": null,
+      "price": 768000,
+      "from": "2026-01-18",
+      "to": "2026-03-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "EB",
+      "kind": "early",
+      "audience": null,
+      "price": 500000,
+      "from": "2026-03-16",
+      "to": "2026-05-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "EB",
+      "kind": "early",
+      "audience": null,
+      "price": 650000,
+      "from": "2026-03-16",
+      "to": "2026-05-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "EB",
+      "kind": "early",
+      "audience": null,
+      "price": 850000,
+      "from": "2026-03-16",
+      "to": "2026-05-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "EB",
+      "kind": "early",
+      "audience": null,
+      "price": 950000,
+      "from": "2026-03-16",
+      "to": "2026-05-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "ST",
+      "kind": "other",
+      "audience": null,
+      "price": 700000,
+      "from": "2026-06-01",
+      "to": "2026-08-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "ST",
+      "kind": "other",
+      "audience": null,
+      "price": 1100000,
+      "from": "2026-06-01",
+      "to": "2026-08-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "ST",
+      "kind": "other",
+      "audience": null,
+      "price": 1300000,
+      "from": "2026-06-01",
+      "to": "2026-08-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "ST",
+      "kind": "other",
+      "audience": null,
+      "price": 1500000,
+      "from": "2026-06-01",
+      "to": "2026-08-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 900000,
+      "from": "2026-09-01",
+      "to": "2026-10-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1500000,
+      "from": "2026-09-01",
+      "to": "2026-10-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2000000,
+      "from": "2026-09-01",
+      "to": "2026-10-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2300000,
+      "from": "2026-09-01",
+      "to": "2026-10-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 288000,
       "from": "2026-01-15",
       "to": "2026-01-17",
       "inferred": [],
@@ -446,6 +666,10 @@
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
+    {
+      "site": "irace",
+      "url": "https://ticket.irace.vn/giai-marathon-quoc-te-di-san-ha-long-2026"
+    },
     {
       "site": "actiup",
       "url": "https://actiup.net/vi/event/halong-bay-heritage-marathon-2026"
@@ -599,7 +823,7 @@
     }
   ],
   "flags": [
-    "sources disagree on race day: halong-marathon 2026-11-20, actiup 2026-11-22"
+    "sources disagree on race day: halong-marathon 2026-11-20, irace 2026-11-22, actiup 2026-11-22"
   ],
   "overrides": {
     "seriesId": {
@@ -1227,9 +1451,188 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://ticket.irace.vn/giai-marathon-quoc-te-di-san-ha-long-2026",
+      "lastCheckedAt": "2026-09-27T02:38:00.142Z",
+      "lastChangedAt": "2026-09-27T02:38:00.143Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Marathon Quốc tế Di sản Hạ Long 2026",
+          "date": "2026-11-22",
+          "venue": "Cung quy hoạch, hội chợ và triển lãm tỉnh Quảng Ninh"
+        },
+        "pages": [
+          {
+            "url": "https://ticket.irace.vn/giai-marathon-quoc-te-di-san-ha-long-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Giải Marathon Quốc tế Di sản Hạ Long 2026",
+              "date": "2026-11-22",
+              "distances": [
+                "5km",
+                "10km",
+                "21km",
+                "42km"
+              ],
+              "venue": "Cung quy hoạch, hội chợ và triển lãm tỉnh Quảng Ninh",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "prices": [
+                {
+                  "distance": "5km",
+                  "tier": "Flash Sale",
+                  "from": "12/01",
+                  "to": "17/01",
+                  "price": 288000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Flash Sale",
+                  "from": "12/01",
+                  "to": "17/01",
+                  "price": 388000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Flash Sale",
+                  "from": "12/01",
+                  "to": "17/01",
+                  "price": 488000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Flash Sale",
+                  "from": "12/01",
+                  "to": "17/01",
+                  "price": 588000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "SEB",
+                  "from": "18/01",
+                  "to": "15/03",
+                  "price": 368000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "SEB",
+                  "from": "18/01",
+                  "to": "15/03",
+                  "price": 488000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "SEB",
+                  "from": "18/01",
+                  "to": "15/03",
+                  "price": 668000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "SEB",
+                  "from": "18/01",
+                  "to": "15/03",
+                  "price": 768000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "EB",
+                  "from": "16/03",
+                  "to": "31/05",
+                  "price": 500000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "EB",
+                  "from": "16/03",
+                  "to": "31/05",
+                  "price": 650000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "EB",
+                  "from": "16/03",
+                  "to": "31/05",
+                  "price": 850000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "EB",
+                  "from": "16/03",
+                  "to": "31/05",
+                  "price": 950000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "ST",
+                  "from": "01/06",
+                  "to": "31/08",
+                  "price": 700000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "ST",
+                  "from": "01/06",
+                  "to": "31/08",
+                  "price": 1100000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "ST",
+                  "from": "01/06",
+                  "to": "31/08",
+                  "price": 1300000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "ST",
+                  "from": "01/06",
+                  "to": "31/08",
+                  "price": 1500000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Late",
+                  "from": "01/09",
+                  "to": "15/10",
+                  "price": 900000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Late",
+                  "from": "01/09",
+                  "to": "15/10",
+                  "price": 1500000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Late",
+                  "from": "01/09",
+                  "to": "15/10",
+                  "price": 2000000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Late",
+                  "from": "01/09",
+                  "to": "15/10",
+                  "price": 2300000
+                }
+              ]
+            }
+          }
+        ],
+        "readBy": "agent"
+      }
     }
   ],
   "confidence": "conflicting",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-27T02:36:30.147Z"
+  "updatedAt": "2026-09-27T02:38:00.707Z"
 }
