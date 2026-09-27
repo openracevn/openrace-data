@@ -20,7 +20,7 @@ openrace-data holds one JSON file per race edition (`data/races/<slug>-<year>.js
 
 ```bash
 git pull -q
-python3 -c "import json,sys; q=sys.argv[1]; [print(e['id'], e['slug'], e['date'], e['name'], e['sourceUrls']) for e in json.load(open('data/index.json')) if q in e['id'] or q in e['slug'] or any(q in u for u in e['sourceUrls'] + e['linkUrls'])]" "<url, slug or id fragment>"
+npm run find -- "<url, slug or id fragment>"
 ```
 
 Read `data/races/<file>`. Each `sources[]` entry has the site, its role (`official` wins for date, courses and location; `seller` pages keep their own prices) and the raw `extracted` (facts, page reads, image reads with their URLs). `flags` lists what needs a look. `state/checks.json` has each page's last check.
@@ -34,26 +34,24 @@ Read `data/races/<file>`. Each `sources[]` entry has the site, its role (`offici
 
 Report the differences field by field: ours vs the source. When sources disagree and neither is `official`, trust `ticket.irace.vn` over `irace.vn`'s write-up over ActiUp — ActiUp's own fields are often left as placeholder text (`TBU`, empty) by organizers, and irace.vn's blog-style page is often thinner than ticket.irace.vn's own event fields.
 
-**A field (venue, city, price, ...) is missing, TBU or null on the known source — this is a hard stop, not a judgment call.** Do not write an override or infer the value from surrounding text (e.g. "the description names a province, so set city to that") until you've worked this checklist (plan 010, free unless noted). Seeing `TBU` in ActiUp's own `place` field is not confirmation the value is unknown everywhere — it only means ActiUp doesn't have it:
-1. A subpage on the *same* site (e.g. `/thong-tin-cuoc-dua` — an info/price tab the recipe may not read; worth a recipe fix if found).
-2. Web-search `<race name> irace` to get the real `ticket.irace.vn/<slug>` (never assume the ActiUp slug matches), then read its `#personal` table — real HTML, no OCR.
-3. `irace.vn/su-kien/<slug>` (usually a text table too, `.eventon_desc_in`, found the same way — by search, never assumed).
-4. ActiUp/irace.vn's old poster images last (Firecrawl OCR credits, or your own eyes).
+**A field (venue, city, price, ...) is missing, TBU or null on the known source — this is a hard stop, not a judgment call.** Do not write an override or infer the value from surrounding text (e.g. "the description names a province, so set city to that") until seven tiers have been worked (plan 013, free unless noted). Seeing `TBU` in ActiUp's own `place` field is not confirmation the value is unknown everywhere — it only means ActiUp doesn't have it:
 
-Only after all four turn up nothing does "no source has this" become true, and only then does step 5 (override) or leaving the field as-is apply. Once a new source is found, attach it with the `agent-read` skill's `--race <existing-race-id-or-slug>@<new-url>` rather than a bare `--race <url>`, so a same-day near-duplicate name doesn't risk creating a second race instead of joining this one.
-
-**Log every checklist run, hit or miss.** Write `.agent-read-archive/<date>-<race-slug>-source-check/attempts.json`, one entry per checklist step actually tried (skip steps that didn't apply, e.g. no subpage exists to check):
-
-```json
-[
-  {"step": "subpage", "action": "curl .../thong-tin-cuoc-dua", "result": "not found" },
-  {"step": "ticket.irace.vn", "action": "web search '<race name> irace'", "result": "found https://ticket.irace.vn/<slug>, no venue in #personal table" },
-  {"step": "irace.vn/su-kien", "action": "web search '<race name> irace.vn su-kien'", "result": "no page found" },
-  {"step": "poster images", "action": "read <image-url>", "result": "venue not shown" }
-]
+```bash
+npm run find-sources -- <race url|slug|id>                    # tiers 1-6: every missing field
+npm run find-sources -- <race url|slug|id> --field prices      # one field only
 ```
 
-This is the only record of what was checked and came up empty — without it, the next session (or a future look at why a field is still missing) can't tell "nobody checked irace.vn" from "irace.vn was checked and has nothing," and re-does the same dead-end search. Write it even when the checklist finds nothing and the field is left blank; it's not conditional on ending in an override.
+This runs, in order — checking `.agent-read-archive/` first so nothing already fetched is re-fetched, then trying a Wayback snapshot of a tier before moving on, never skipping straight past an empty live fetch — irace (`ticket.irace.vn`/`irace.vn/su-kien`, free HTML text, preferred: no OCR), irace's Wayback, the race's own/organizer site (plus a same-site info/price subpage), that site's Wayback, ActiUp (an API read; its price is usually an image, saved here but not read by the script), and ActiUp's Wayback. Only when its summary says none of 1–6 resolved the field does tier 7 apply: web-search by hand (`WebSearch`, varying phrasing — `<race name> irace`, `<race name> lần thứ`, etc.), saving each promising hit into `.agent-read-archive/<date>-<race-slug>-source-check/web-search-hit-<n>/` and its queries/results into `search-log.md` there (the same folder `find-sources.ts` already wrote tiers 1–6 into).
+
+Only after all seven tiers turn up nothing does "no source has this" become true, and only then does step 5 (override) or leaving the field as-is apply. Once a new source is found, attach it with the `agent-read` skill's `--race <existing-race-id-or-slug>@<new-url>` rather than a bare `--race <url>`, so a same-day near-duplicate name doesn't risk creating a second race instead of joining this one.
+
+**`find-sources.ts` writes `attempts.json` itself for tiers 1–6** (one entry per tier actually tried, skipping a tier with no known URL for this race) — you only add entries by hand for tier 7 (web search), same shape:
+
+```json
+{"step": "web-search", "action": "WebSearch '<race name> irace'", "result": "found https://ticket.irace.vn/<slug>, no venue in #personal table" }
+```
+
+Its own printed summary — which tier resolved it, or "none of 1–6 — try a web search" — is the check for whether 1–6 are truly exhausted, not something to track by hand. This is the only record of what was checked and came up empty — without it, the next session can't tell "nobody checked irace.vn" from "irace.vn was checked and has nothing," and re-does the same dead-end search.
 
 ## 3. Read it again with Firecrawl (costs credits; say so first)
 

@@ -44,15 +44,10 @@ Same as `check-race` step 1, but widen it to the whole series/organizer, not jus
 
 ```bash
 git pull -q
-python3 -c "
-import json
-races = json.load(open('data/index.json'))
-q = '<race name fragment, lowercase>'
-for e in races:
-    if q in e['name'].lower() or q in e['slug']:
-        print(e['id'], e['slug'], e['date'], e['name'], e['sourceUrls'])
-"
+npm run find -- "<race name fragment>"
 ```
+
+**Check `.agent-read-archive/` before re-fetching anything.** A batch's raw pages are archived there (`.agent-read-archive/<date>-<topic>/`, see the memory rule on archiving instead of deleting), including plain `curl`/Wayback fetches this skill saved outside the normal agent-read flow. Re-fetching a URL you already have archived wastes a request and risks a subtly different (or since-changed) copy replacing the one your commit was actually based on — read the archived file first (`.agent-read-archive/<date>-<topic>/<year>/page-2.html`, `.../wayback/<year>-<timestamp>.html`, ...) and only hit the network for a URL or a page section (e.g. a different tab) you don't already have saved.
 
 Read each matching file in `data/races/`. For each one, check against this list — any of these is a reason to keep researching that specific edition, not just note it and move on:
 
@@ -82,6 +77,8 @@ This is why the 2024–2026 Andros races still had no prices after the first rac
 Only fetch and extract a source yourself (steps 2–5 below) when **no recipe applies at all** — a dead ticket reseller, an archived page, a news article. And even then: if that source has a price image, download it and actually look at it (same as `agent-read`'s own rule — a wrong price is worse than no price, but no price when one was visible is a miss, not a safe default).
 
 ## 1.5. Always check Wayback Machine — for the site's history AND for each race page's missing fields
+
+`check-race`/`agent-read`'s `npm run find-sources -- <race url|slug|id>` runs this same irace-before-main-site-before-ActiUp order, with a Wayback fallback at every tier, for a single race/field (plan 013) — it can be called here too, for a specific gap in step 1's checklist, instead of hand-rolling the same `curl`/CDX sequence. This step's own wider, non-tiered fetching (site history, per-page checks beyond the six fixed tiers) still applies below.
 
 Two different uses, both mandatory, not just one:
 
@@ -184,8 +181,6 @@ Drop `--dry-run` and prefix `GITHUB_TOKEN=$(gh auth token)` once the dry run loo
 - **Re-running `add` on the same URL only replaces the stored source if its `site` tag is unchanged** (`sync.ts` matches by `site` + `url` together). If `config/sites.yaml` gains a new recognized site *after* you've already added a source from it as plain `openrace`, re-running the same `add` call to pick up the new tag creates a **second, duplicate source entry** instead of replacing the first (both hold the same facts, so it doesn't change any shown value — just clutters `sources[]`). No clean command removes a stale source today. If you hit this, say so plainly rather than hand-editing the file; it's a real gap in `edit.ts`, not something to route around.
 
 - **A second hand-added source on an existing race can silently create a duplicate race instead of joining it**, when both that source and an earlier one on the same race fall back to the generic `openrace` site tag, or when the new source's page is too thin/generic to clear the name-similarity threshold. `sync.ts`'s name-matching rule (step "another site's page for a race with nearly the same name on the same day") also explicitly **skips** a candidate that already has a source on the same site. Fixed 2026-09-26: `edit -- add --url "<race-id-or-slug>@<url>"` now forces the source onto that exact race by id, bypassing name/date matching entirely (mirrors `agent-read prepare --race <id>@<url>`) — use this prefix whenever you already know which race a source belongs to, which in practice is every case in this skill (you found the edition, you're just attaching one more source to it). This is the reliable fix; `hostOf()` unwrapping a Wayback URL to its archived site's tag (registering the race's own domain in `config/sites.yaml`, even `recipe: none`) still helps but is secondary now. **After any `add` on an existing race, check the output names the race you expected** (same slug/id) — if it prints a brand-new slug instead, it duplicated; revert (`git revert`, since these commit straight to `main`) rather than leaving the stray race behind.
-
-- **Check `.agent-read-archive/` before re-fetching anything.** A batch's raw pages are archived there (`.agent-read-archive/<date>-<topic>/`, see the memory rule on archiving instead of deleting), including plain `curl`/Wayback fetches this skill saved outside the normal agent-read flow. Re-fetching a URL you already have archived wastes a request and risks a subtly different (or since-changed) copy replacing the one your commit was actually based on — read the archived file first (`.agent-read-archive/<date>-<topic>/<year>/page-2.html`, `.../wayback/<year>-<timestamp>.html`, ...) and only hit the network for a URL or a page section (e.g. a different tab) you don't already have saved.
 
 - **Commits from `edit.ts`/`agent-read.ts`/`check.ts` go straight to `main` via the GitHub API (`scripts/lib/github.ts`), never through your local git.** Your local checkout won't show the commit — `git log` looks unchanged — until you `git pull`. Don't mistake this lag for a failed commit; check the command's own printed commit SHA, then `git pull` before your next local git command.
 

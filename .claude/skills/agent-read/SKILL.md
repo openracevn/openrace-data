@@ -17,11 +17,13 @@ Any agent can follow this (Claude Code, Antigravity, ...). You need a shell in t
 - Commits go straight to `main` with `GITHUB_TOKEN=$(gh auth token)`. Never hand-edit files in `data/`.
 - Races already read (by Firecrawl or an agent) are skipped by default. Don't re-read them unless the user asks (`--all`).
 - **`ticket.irace.vn` (recipe `irace`) has no price images to OCR**: its price table is already text in `page-<n>.html` (`#personal`), read like any other page's `json`. Prefer it over ActiUp/irace.vn's price images when a race has (or can get) a `ticket.irace.vn` page — free either way, but no image to look at.
-- **A race with no price/venue on its known source(s): check in this order** before treating it as "no source available" (plan 010):
-  1. A subpage on the *same* site — the recipe may only read one page; look for an info/price tab (e.g. `/thong-tin-cuoc-dua`). Free. If found, it's worth fixing the recipe to read it, not just a one-off read.
-  2. `ticket.irace.vn/<slug>` — free, a real HTML text table, no OCR.
-  3. `irace.vn/su-kien/<slug>` — free, usually a text table too (`.eventon_desc_in`), but never auto-discovered; find it by search. Attaching it to a race you've already found by hand: `npm run agent-read -- prepare --race <existing-race-id-or-slug>@<new-url>` (see "Attaching a new source" below) — don't just `--race <url>` and hope the matching finds it.
-  4. ActiUp / irace.vn's old poster images — last: costs Firecrawl OCR credits, or your own eyes on the image here.
+- **A race with no price/venue on its known source(s): run the fixed tier order** before treating it as "no source available" (plan 013):
+
+  ```bash
+  npm run find-sources -- <race url|slug|id>
+  ```
+
+  This tries, in order, checking `.agent-read-archive/` first and a Wayback snapshot of each tier before moving on: irace (`ticket.irace.vn`/`irace.vn/su-kien` — free HTML text, no OCR, preferred), irace's Wayback, the race's own/organizer site (plus a same-site info/price subpage, e.g. `/thong-tin-cuoc-dua` — if found, worth fixing the recipe to read it, not just a one-off read), that site's Wayback, ActiUp (its price is usually an image; the script saves it here but doesn't read it), and ActiUp's Wayback. If `irace.vn/su-kien/<slug>` isn't already a known source, it isn't auto-discovered — find it by search and attach it: `npm run agent-read -- prepare --race <existing-race-id-or-slug>@<new-url>` (see "Attaching a new source" below) — don't just `--race <url>` and hope the matching finds it. Only once the script's summary says none of tiers 1–6 resolved the field does a web search by hand (tier 7, same as `check-race`'s skill) apply.
 - **Before assuming a race has "no price": check `facts.prices` in `task.json` first.** ActiUp's own `price_type: "free"` field means the recipe already filled `facts.prices` with `{tier: "Miễn phí", price: 0}` — there's no image to look at, it's genuinely free, not unread. `min_price: 0` alone (with `price_type` unset/other) does *not* mean free — leave that one as missing. See `scripts/lib/recipes/README.md`'s "genuinely free race" note (2026-09-27).
 
 ## Attaching a new source to a race you've already identified

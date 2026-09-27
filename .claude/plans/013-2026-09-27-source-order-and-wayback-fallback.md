@@ -163,50 +163,53 @@ This checks out against the actual skill files:
 
 ## Changes
 
-- `.claude/skills/check-race/SKILL.md` step 2:
-  - Replace the four-item checklist (lines 37-41) with the seven-tier order above
-    (including the web-search tier), and update the "hard stop" paragraph (line 37,
-    "Only after all four turn up nothing does 'no source has this' become true") to
-    say seven, not four.
-  - Add a rule near the top of "Rules" (near line 17): a tier's Wayback fallback is
-    mandatory, not conditional, whenever the live fetch at that tier is empty/missing
-    the field — don't advance to the next tier without it. Same for tier 7: a null
-    field doesn't become "no source has this" without a web search first.
-  - Add an explicit **step 0 of the checklist**: before fetching anything, check
-    `.agent-read-archive/` for an existing copy of this race's tiers (any prior
-    `<date>-<race-slug>-source-check/` folder, or a prior `agent-read`/`race-research`
-    archive for the same slug) and read what's there first.
-  - Every tier's `curl`/download saves its raw output into
-    `.agent-read-archive/<date>-<race-slug>-source-check/<tier>/` (see structure above),
-    alongside the existing `attempts.json` — not just a narrated result. Tier 7's
-    `WebSearch` calls go to `search-log.md` in the same folder, same convention as
-    `race-research`.
-  - Update the `attempts.json` example (lines 45-56) to include a Wayback step per
-    tier that needed one (e.g. `{"step": "irace-wayback", "action": "...", "result":
-    "..."}`), a `"web-search"` step, and to note the sibling raw file each entry
-    corresponds to.
+- New `scripts/find-race.ts` and `scripts/find-sources.ts` (see the two bullets above)
+  plus `"find"` and `"find-sources"` entries in `package.json`, next to
+  `validate`/`renormalize`/`gaps`.
+- `.claude/skills/check-race/SKILL.md` step 1 and step 2:
+  - Step 1: replace the inline `python3 -c "..."` one-liner with
+    `npm run find -- <url, slug or id fragment>`.
+  - Step 2: replace the four-item checklist (lines 37-41) with:
+    `npm run find-sources -- <race url|slug|id>` to run tiers 1–6 (archive check,
+    irace, irace Wayback, main site, main site Wayback, ActiUp, ActiUp Wayback,
+    stopping early on a hit, everything saved and logged automatically) — then, only
+    if it reports none of 1–6 resolved the field, tier 7: web search by hand (`WebSearch`,
+    varying phrasing as `race-research` step 2 does), saving each promising hit into
+    the same `.agent-read-archive/<date>-<race-slug>-source-check/web-search-hit-<n>/`
+    folder and its queries/results into `search-log.md` there.
+  - Update the "hard stop" paragraph (line 37, "Only after all four turn up nothing
+    does 'no source has this' become true") to say seven tiers, and to point at
+    `find-sources.ts`'s own summary output as the check for whether 1–6 are truly
+    exhausted, rather than an agent tracking that by hand.
+  - `find-sources.ts` writes `attempts.json` itself for tiers 1–6; the skill only adds
+    entries by hand for tier 7 (web search), same shape as today's example.
 - `.claude/skills/agent-read/SKILL.md`:
-  - Replace the "check in this order" list (lines 20-24) with the same seven tiers.
-  - Add the same "Wayback fallback is mandatory per tier" and "web search before giving
-    up" rules to its "Rules" section.
-  - Add the same "check the archive before fetching" step, early (near its own
-    "Rules" section, before step 1's `prepare` commands) — for any ad hoc Wayback or
-    web-search lookup this plan adds; the normal recipe-driven `.agent-read/` flow is
-    unaffected.
+  - Replace the "check in this order" list (lines 20-24) with: run
+    `npm run find-sources -- <race url|slug|id>` for tiers 1–6, then tier 7 (web
+    search) by hand if it reports nothing, same as `check-race` above.
+  - Note that the normal recipe-driven `.agent-read/` flow (`prepare`/`commit`) is
+    unaffected — `find-sources.ts` is for the ad hoc "this field is still missing,
+    where else could it be" case the current "check in this order" list already covers.
 - `.claude/skills/race-research/SKILL.md`:
-  - Step 1.5: add a one-line cross-reference noting this is the same irace-before-
-    main-site-before-ActiUp order `check-race`/`agent-read` use, so a race-research
-    pass and a single-race check don't quietly disagree on source preference.
+  - Step 1: replace its own inline `python3 -c "..."` block with
+    `npm run find -- <race name fragment>` (same script as `check-race`, wider query).
+  - Step 1.5: add a one-line cross-reference noting `find-sources.ts` runs this same
+    irace-before-main-site-before-ActiUp order for a single race/field, so a
+    race-research pass and a single-race check don't quietly disagree on source
+    preference — this skill can call it too for a specific gap (step 1's checklist)
+    instead of hand-rolling the same `curl`/CDX sequence.
   - Promote the existing "Check `.agent-read-archive/` before re-fetching anything"
     note (currently under "Known tool limitations", line 188) up to step 1 or 1.5, as
-    a first step rather than an aside — content unchanged, position only.
+    a first step rather than an aside — content unchanged, position only. (This is
+    also just what `find-sources.ts` already does automatically for tiers 1–6; the
+    promoted note now mainly covers this skill's own wider, non-tiered fetching.)
   - No other structural change — its raw-saving and Wayback discipline (steps 1.5, and
     the "save everything" rule) are already ahead of the other two skills; this plan
-    brings them up to it, not the reverse.
+    brings them up to it via the shared script, not the reverse.
 - `scripts/lib/recipes/README.md`: add a short note in the site table or nearby prose
   naming this same order as the reason irace is preferred over ActiUp, linking back to
-  plan 009's rationale (HTML text vs. image OCR) so it's not just implicit in the
-  skills.
+  plan 009's rationale (HTML text vs. image OCR), and pointing at `find-sources.ts` as
+  where the order is actually enforced (not just documented).
 
 ## Open questions
 

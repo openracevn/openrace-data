@@ -26,6 +26,8 @@ A `Snapshot` has:
 | `irace` | ticket.irace.vn, irace.vn | Seller: `ticket.irace.vn` races on sale now, listed on the home page — `#personal`'s price table is real HTML, no OCR. Falls back to `#bang-gia`'s table once registration closes. `irace.vn/su-kien/<slug>` (the older WordPress site) is never discovered, only added by hand — its `.eventon_desc_in` container has the same kind of text price table. Both shapes share one column-per-tier, row-per-distance layout, so `parsePriceTable` (this file's `irace.ts`) drafts `read.json`'s `prices` from it for agent-read (plan 010) — still checked by eye, not trusted blind |
 | `default` | any race's own site | Home page plus up to 6 subpages that look like fees, distances, race info or registration. Images named like a price table |
 
+**`irace` is preferred over `actiup`** when a race has (or can get) a `ticket.irace.vn`/`irace.vn/su-kien` page: its price table is real HTML text, no OCR needed, while ActiUp's (and `irace.vn`'s own write-up's) prices are images — Firecrawl credits or an agent's own token-expensive image read (plan 009). `scripts/find-sources.ts` (plan 013) is where this order is actually enforced, not just documented here: given a race and a missing field, it tries irace before the race's own/organizer site before ActiUp, with a Wayback fallback at each tier, before falling back to a manual web search (`npm run find-sources -- <race url|slug|id>`).
+
 ## Adding a site
 
 1. Add it to `config/sites.yaml` with `recipe: default`.
