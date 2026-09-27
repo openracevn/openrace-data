@@ -12,6 +12,7 @@ Direction and the questions we're building toward: [roadmap.md](roadmap.md). Des
   - `actiup`: public API, price-section images;
   - `vnexpress-marathon`: banner + ticket table only;
   - `default`: race sites, home + subpages + price images.
+- **FX cache** ([plan 014](../plans/014-2026-09-27-vnd-currency-conversion.md)): `data/fx/rates.json`, committed, one official World Bank rate (LCU per US$) per calendar year per currency, refreshed by hand with `npm run fx:ref` — never during `sync`/`renormalize`. Every race's `currency` is `"VND"`; a source priced in another currency gets each tier converted at its own sale-window year (`priceOriginal`/`fxRate` on the tier), or flagged (not guessed) if that year isn't cached yet. `MIN_PRICE` (10,000 VND) flags a raw VND tier priced implausibly low.
 - **`npm run gaps`** ([plan 012](../plans/012-2026-09-27-gaps-report-script.md)): read-only report of missing data — no usable location, no organizerId, no prices (upcoming vs. past), existing flags/conflicting confidence, and series with a year gap between editions. Not a CI gate; always exits 0.
 - **Reading:** Firecrawl Parse on our own cleaned HTML, or a price image wrapped in a PDF (OCR); about 5 credits each. Cached by content hash in `state/reads.json`. Unchanged snapshots are skipped by fingerprint.
 - **Paid end-to-end checks** (2026-09-24), every price compared by eye with the page or image: **82 of 82 correct.**

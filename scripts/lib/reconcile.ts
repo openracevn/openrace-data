@@ -1,7 +1,8 @@
 import { guessCityFromText } from "./geo.ts";
 import { canonicalSourceUrl } from "./slug.ts";
+import { vndRate } from "./fx.ts";
 import { normalizeExtraction, type SourceExtraction, type SourceFacts } from "./extraction.ts";
-import type { CanonicalRace, Link, Overrides, PriceTier, Race, RaceSource, Registration, SourceRole } from "./schema.ts";
+import { MIN_PRICE, type CanonicalRace, type Link, type Overrides, type PriceTier, type Race, type RaceSource, type Registration, type SourceRole } from "./schema.ts";
 import { classifyLink, type SitesConfig } from "./sites.ts";
 
 /**
@@ -89,9 +90,8 @@ export function reconcile(sources: readonly RaceSource[], config: SitesConfig): 
         .find((other) => other.label === course.label && other.elevationGain !== null)?.elevationGain ??
       null,
   }));
-  const rawPrices: PriceTier[] = usable.flatMap(({ source, facts }) =>
-    facts.prices.map((tier) => ({ ...tier, site: source.site, inferred: [] })),
-  );
+  const fxFlags: string[] = [];
+  const rawPrices: PriceTier[] = usable.flatMap(({ source, facts }) => convertTiers(source, facts, primary.facts.date, fxFlags));
   const { registrations, links } = relatedUrls(ranked, config);
 
   const fields: CanonicalRace = {
@@ -108,7 +108,9 @@ export function reconcile(sources: readonly RaceSource[], config: SitesConfig): 
     location: { venue: withLocation?.venue ?? null, city: withLocation?.city ?? guessedCity },
     geo: null,
     prices: fillTierWindows(rawPrices, primary.facts.date),
-    currency: primary.facts.currency,
+    // One currency for every race; a source's own currency is preserved per tier
+    // in priceOriginal/fxRate when it wasn't VND (see convertTiers).
+    currency: "VND",
     // Sellers know best whether tickets are left.
     registrationStatus:
       usable.find(({ source, facts }) => source.role === "seller" && facts.registrationStatus !== null)?.facts.registrationStatus ??
@@ -117,7 +119,12 @@ export function reconcile(sources: readonly RaceSource[], config: SitesConfig): 
     links,
   };
 
-  const flags: string[] = [];
+  const flags: string[] = [...fxFlags];
+  for (const tier of fields.prices) {
+    if (tier.price > 0 && tier.price < MIN_PRICE && !tier.priceOriginal) {
+      flags.push(`${tier.site}: ${tier.distance ?? "price"} price ${tier.price} VND is below the plausible floor (${MIN_PRICE}) — check the source`);
+    }
+  }
   if (guessedCity) flags.push(`location: no source states a city; guessed "${guessedCity}" from the race's name`);
   const dates = new Map(usable.map(({ source, facts }) => [source.site, facts.date]));
   if (new Set(dates.values()).size > 1) {
@@ -135,6 +142,36 @@ export function reconcile(sources: readonly RaceSource[], config: SitesConfig): 
 
   const confidence: Race["confidence"] = usable.length === 1 ? "single-sourced" : dates.size > 0 && new Set(dates.values()).size === 1 ? "multi-sourced" : "conflicting";
   return { fields, confidence, flags };
+}
+
+/**
+ * A source's tiers, converted to VND at each tier's own sale-window rate (its `from`,
+ * falling back to the race date) when the source's currency isn't VND. A tier whose
+ * date has no cached rate is dropped (never guessed) and flagged instead — run
+ * `npm run fx:ref` to refresh the cache.
+ */
+function convertTiers(source: RaceSource, facts: SourceFacts, raceDate: string, flags: string[]): PriceTier[] {
+  const out: PriceTier[] = [];
+  for (const tier of facts.prices) {
+    if (facts.currency === "VND") {
+      out.push({ ...tier, site: source.site, inferred: [] });
+      continue;
+    }
+    const fx = vndRate(facts.currency, tier.from ?? raceDate);
+    if (!fx) {
+      flags.push(`${source.site}: prices stated in ${facts.currency}, no VND rate cached for ${tier.from ?? raceDate} — needs scripts/fx-ref.ts run`);
+      continue;
+    }
+    out.push({
+      ...tier,
+      site: source.site,
+      inferred: [],
+      price: Math.round(tier.price * fx.rate),
+      priceOriginal: { currency: facts.currency, amount: tier.price },
+      fxRate: fx,
+    });
+  }
+  return out;
 }
 
 const LADDER_RANK: Record<PriceTier["kind"], number> = {

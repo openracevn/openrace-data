@@ -21,6 +21,9 @@ export const SCHEMA_VERSION = 3;
 
 // Sanity bounds: values outside them are extraction mistakes, not races.
 export const MAX_PRICE = 100_000_000; // VND
+// A real entry fee is never this low (it's either 0/free, or a real fee starting
+// around here); a raw VND tier under this is an extraction mistake, not a price.
+export const MIN_PRICE = 10_000; // VND
 export const MIN_RACE_YEAR = 2015;
 export const MAX_YEARS_AHEAD = 3;
 
@@ -153,6 +156,17 @@ export const PriceTierSchema = z
     inferred: z.array(z.enum(["from", "to"])),
     // The site whose page gave this price (sellers can differ, e.g. a group price).
     site: siteKey,
+    // Set only when this tier was converted from a non-VND source: the figure and
+    // currency as the source stated it, and the rate used (scripts/lib/fx.ts), so
+    // the original number is never lost even after conversion.
+    priceOriginal: z
+      .object({ currency: z.string().regex(/^[A-Z]{3}$/), amount: z.number() })
+      .nullable()
+      .optional(),
+    fxRate: z
+      .object({ rate: z.number().positive(), asOf: z.string() })
+      .nullable()
+      .optional(),
   })
   .refine((t) => t.from === null || t.to === null || t.from <= t.to, { message: "from must be <= to", path: ["from"] });
 

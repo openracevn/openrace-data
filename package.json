@@ -16,6 +16,7 @@
     "find-sources": "tsx scripts/find-sources.ts",
     "schema": "tsx scripts/schema.ts",
     "geo:ref": "tsx scripts/geo-ref.ts",
+    "fx:ref": "tsx scripts/fx-ref.ts",
     "geo": "tsx scripts/geo.ts",
     "check": "tsx scripts/check.ts",
     "edit": "tsx scripts/edit.ts",

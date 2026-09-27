@@ -456,6 +456,54 @@
             "type": "string",
             "maxLength": 120,
             "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "priceOriginal": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "currency": {
+                    "type": "string",
+                    "pattern": "^[A-Z]{3}$"
+                  },
+                  "amount": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "currency",
+                  "amount"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "fxRate": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "rate": {
+                    "type": "number",
+                    "exclusiveMinimum": 0
+                  },
+                  "asOf": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "rate",
+                  "asOf"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
           }
         },
         "required": [
