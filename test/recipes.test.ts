@@ -89,6 +89,13 @@ describe("actiup recipe", () => {
     assert.deepEqual(snap.links.map((l) => classifyLink(config, l.url, l.text).kind), ["rules"]);
     assert.equal(snap.hints?.organizer?.id, "mang-luoi-ung-thu-vu-viet-nam-bcnv");
   });
+
+  it("records a free event's fee as a Miễn phí tier, not just fromPrice", async () => {
+    const http = fakeHttp({ "https://api.actiup.net/v2/content/events/slug/mini-game-kun-fun-run-dong-thap-2026": fixture("actiup-event-mini-game-kun-fun-run-dong-thap-2026.json") });
+    const snap = await actiupRecipe.snapshot({ url: "https://actiup.net/vi/event/mini-game-kun-fun-run-dong-thap-2026", slugHint: "mini-game-kun-fun-run-dong-thap-2026" }, ctx("actiup", http));
+    assert.deepEqual(snap.facts?.prices, [{ tier: "Miễn phí", price: 0 }]);
+    assert.equal(snap.facts?.fromPrice, 0);
+  });
 });
 
 describe("vnexpress-marathon recipe", () => {

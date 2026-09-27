@@ -38,6 +38,7 @@ type Detail = {
     selling_type?: string;
     close_registration_date?: string;
     min_price?: number;
+    price_type?: string;
     event_type?: string;
     details?: { title: string; description: string }[];
   };
@@ -112,6 +113,8 @@ export const actiupRecipe: Recipe = {
         ...(registrationStatus(e, ctx.today) && { registrationStatus: registrationStatus(e, ctx.today) }),
         // The "Chỉ từ" (from) price; not a tier, kept for reference.
         ...(typeof e.min_price === "number" && { fromPrice: e.min_price }),
+        // ActiUp marks the event free itself (no price image to read for it).
+        ...(e.price_type === "free" && { prices: [{ tier: "Miễn phí", price: 0 }] }),
       },
       hints: organizer ? { organizer: { id: slugFromName(organizer), name: organizer } } : {},
       slugHint: e.event_slug,
