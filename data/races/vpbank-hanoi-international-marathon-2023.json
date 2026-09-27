@@ -1,0 +1,83 @@
+{
+  "id": "1719705f-a790-4469-bf42-a0779260d6bc",
+  "slug": "vpbank-hanoi-international-marathon-2023",
+  "name": "VPBank Hanoi International Marathon 2023",
+  "types": [
+    "road_run"
+  ],
+  "date": "2023-10-08",
+  "endDate": null,
+  "seriesId": "vpbank-hanoi-international-marathon",
+  "organizerId": null,
+  "organizer": "Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
+  "edition": null,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Phố đi bộ Hồ Gươm, Hà Nội",
+    "city": "Hà Nội"
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "vietnam-vn",
+      "role": "reference",
+      "url": "https://vietnam.vn/en/vpbank-hanoi-international-marathon-2023-giai-chay-moi-dang-cap",
+      "lastCheckedAt": "2026-09-27T02:22:22.611Z",
+      "lastChangedAt": "2026-09-27T02:22:22.611Z",
+      "extracted": {
+        "facts": {
+          "name": "VPBank Hanoi International Marathon 2023",
+          "date": "2023-10-08",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "venue": "Phố đi bộ Hồ Gươm, Hà Nội",
+          "city": "Hà Nội",
+          "organizer": "Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
+          "note": "Báo Quân đội Nhân dân (via vietnam.vn), 2023-03-16: official announcement of VPBank Hanoi International Marathon (VPIM) 2023, race day Sunday 2023-10-08, 4 distances starting from phố đi bộ Hồ Gươm — a previously untracked edition found via race-research"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-27T02:22:22.611Z",
+  "updatedAt": "2026-09-27T02:22:22.611Z"
+}

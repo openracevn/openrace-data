@@ -409,6 +409,20 @@
     "linkUrls": []
   },
   {
+    "id": "1719705f-a790-4469-bf42-a0779260d6bc",
+    "slug": "vpbank-hanoi-international-marathon-2023",
+    "name": "VPBank Hanoi International Marathon 2023",
+    "date": "2023-10-08",
+    "endDate": null,
+    "lastModified": "2026-09-27T02:22:22.611Z",
+    "file": "vpbank-hanoi-international-marathon-2023.json",
+    "seriesId": "vpbank-hanoi-international-marathon",
+    "sourceUrls": [
+      "https://vietnam.vn/en/vpbank-hanoi-international-marathon-2023-giai-chay-moi-dang-cap"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "176334e2-8591-4af9-9fdf-e4fff208cdb3",
     "slug": "tmg-hoi-an-heritage-half-marathon-2025",
     "name": "TMG HỘI AN HERITAGE HALF MARATHON 2025",
@@ -470,9 +484,9 @@
     "name": "VPBank Hanoi International Marathon 2026",
     "date": "2026-10-18",
     "endDate": null,
-    "lastModified": "2026-09-26T06:29:12.475Z",
+    "lastModified": "2026-09-27T02:22:22.611Z",
     "file": "vpbank-hanoi-international-marathon-2026.json",
-    "seriesId": null,
+    "seriesId": "vpbank-hanoi-international-marathon",
     "sourceUrls": [
       "https://actiup.net/vi/event/vpbank-hanoi-international-marathon-2026",
       "https://vpbankmarathon.com/quy-dinh"

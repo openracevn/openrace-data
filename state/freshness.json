@@ -202,6 +202,13 @@
     "dueAt": "2026-10-01",
     "final": true
   },
+  "1719705f-a790-4469-bf42-a0779260d6bc": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-09-27T02:22:22.611Z",
+    "cadence": "manual",
+    "dueAt": null,
+    "final": true
+  },
   "176334e2-8591-4af9-9fdf-e4fff208cdb3": {
     "lastCheckedAt": "2026-09-23T18:31:22.396Z",
     "lastChangedAt": "2026-09-26T13:21:53.036Z",
@@ -232,7 +239,7 @@
   },
   "18676989-f118-4e81-aae9-185036e837a3": {
     "lastCheckedAt": "2026-09-25T04:03:37.715Z",
-    "lastChangedAt": "2026-09-26T06:29:12.475Z",
+    "lastChangedAt": "2026-09-27T02:22:22.611Z",
     "cadence": "weekly",
     "dueAt": "2026-10-02",
     "final": false
