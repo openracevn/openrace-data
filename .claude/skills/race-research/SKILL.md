@@ -200,4 +200,19 @@ mv .race-research/<slug> .agent-read-archive/<YYYY-MM-DD>-<slug>
 
 Both directories are gitignored (`.race-research/`, `.agent-read-archive/`), so this never touches what gets committed or pushed — it's purely local, and purely for a human (or a later run) to go back and check your work against the raw pages. Only skip the archive if the user explicitly says to discard a batch.
 
-Tell the user: how many editions found vs. tracked before, which are still gaps (unfindable — say so plainly, don't force a guess), what was delegated to opencode vs. done by hand, what was handed off to `agent-read`/`check-race` (and whether that handoff was actually run, or is left for the user to trigger), and anything flagged as conflicting.
+Report to the user as a table, one row per edition (found or already tracked), in this shape:
+
+| Ed. | Race | Date | Prices | Courses | Sources | Status |
+|---|---|---|---|---|---|---|
+| 3 | some-race-slug-2024 | 2024-10-12/13 | ✅ 16 tiers | ✅ 5/10/21/42km | 2 | edition stated ("lần thứ 3") |
+| 4? | some-race-slug-2025 | 2025-10-12 | ✅ 16 tiers | ✅ 5/10/21/42km | 2 | edition unconfirmed — no source found |
+
+- `Ed.` — the edition number if a source states it; `N?` if you inferred it from context (e.g. an article comparing to "last season") rather than a direct statement on that edition's own page; leave blank if genuinely unknown.
+- `Prices`/`Courses` — ✅ with a short count/summary, or ❌ **missing** (a real gap) — never leave these cells implying data that isn't there.
+- `Sources` — count of `sources[]` entries on that race.
+- `Status` — one short phrase: how the edition number was confirmed, any conflict flagged, what's still unconfirmed, or what was delegated/handed off.
+
+After the table, add short sections only when they apply:
+- **Missing:** gaps that are real dead ends (unfindable, not just unchecked) — say so plainly, don't force a guess.
+- **Noted:** anything flagged as conflicting, and any `series.json` update (edition count, description).
+- **Findings:** anything a plain gap/status list wouldn't convey — a caught extraction error, a stale/duplicate source discovered, what was delegated to opencode vs. done by hand, what was handed off to `agent-read`/`check-race` (and whether that handoff was actually run, or is left for the user to trigger).
