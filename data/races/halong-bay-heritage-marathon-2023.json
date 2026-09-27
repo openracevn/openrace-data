@@ -11,13 +11,204 @@
   "organizerId": "dha",
   "organizer": "DHA Vietnam | Ban tổ chức sự kiện",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Fair and Exhibition of Quang Ninh Province",
     "city": null
   },
   "geo": null,
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 250000,
+      "from": "2023-05-14",
+      "to": "2023-05-29",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 300000,
+      "from": "2023-05-30",
+      "to": "2023-07-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 360000,
+      "from": "2023-08-01",
+      "to": "2023-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 750000,
+      "from": "2023-05-14",
+      "to": "2023-05-29",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 875000,
+      "from": "2023-05-30",
+      "to": "2023-07-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1000000,
+      "from": "2023-08-01",
+      "to": "2023-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1125000,
+      "from": "2023-05-14",
+      "to": "2023-05-29",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1250000,
+      "from": "2023-05-30",
+      "to": "2023-07-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1375000,
+      "from": "2023-08-01",
+      "to": "2023-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1375000,
+      "from": "2023-05-14",
+      "to": "2023-05-29",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1875000,
+      "from": "2023-05-30",
+      "to": "2023-07-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2000000,
+      "from": "2023-08-01",
+      "to": "2023-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1625000,
+      "from": "2023-05-14",
+      "to": "2023-05-29",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2125000,
+      "from": "2023-05-30",
+      "to": "2023-07-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2375000,
+      "from": "2023-08-01",
+      "to": "2023-10-31",
+      "inferred": [],
+      "site": "irace"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -242,9 +433,140 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "irace",
+      "role": "reference",
+      "url": "https://web.archive.org/web/20230528131834/https://ticket.irace.vn/halong-bay-heritage-marathon-2023",
+      "lastCheckedAt": "2026-09-27T02:54:44.988Z",
+      "lastChangedAt": "2026-09-27T02:54:44.988Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Halong Bay Heritage Marathon 2023",
+          "date": "2023-11-19",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "5km (Kid)",
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "prices": [
+            {
+              "distance": "5km (Kid)",
+              "tier": "Early Bird",
+              "from": "14/05",
+              "to": "29/05",
+              "price": 250000
+            },
+            {
+              "distance": "5km (Kid)",
+              "tier": "Regular",
+              "from": "30/05",
+              "to": "31/07",
+              "price": 300000
+            },
+            {
+              "distance": "5km (Kid)",
+              "tier": "Late",
+              "from": "01/08",
+              "to": "31/10",
+              "price": 360000
+            },
+            {
+              "distance": "5km",
+              "tier": "Early Bird",
+              "from": "14/05",
+              "to": "29/05",
+              "price": 750000
+            },
+            {
+              "distance": "5km",
+              "tier": "Regular",
+              "from": "30/05",
+              "to": "31/07",
+              "price": 875000
+            },
+            {
+              "distance": "5km",
+              "tier": "Late",
+              "from": "01/08",
+              "to": "31/10",
+              "price": 1000000
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "from": "14/05",
+              "to": "29/05",
+              "price": 1125000
+            },
+            {
+              "distance": "10km",
+              "tier": "Regular",
+              "from": "30/05",
+              "to": "31/07",
+              "price": 1250000
+            },
+            {
+              "distance": "10km",
+              "tier": "Late",
+              "from": "01/08",
+              "to": "31/10",
+              "price": 1375000
+            },
+            {
+              "distance": "21km",
+              "tier": "Early Bird",
+              "from": "14/05",
+              "to": "29/05",
+              "price": 1375000
+            },
+            {
+              "distance": "21km",
+              "tier": "Regular",
+              "from": "30/05",
+              "to": "31/07",
+              "price": 1875000
+            },
+            {
+              "distance": "21km",
+              "tier": "Late",
+              "from": "01/08",
+              "to": "31/10",
+              "price": 2000000
+            },
+            {
+              "distance": "42km",
+              "tier": "Early Bird",
+              "from": "14/05",
+              "to": "29/05",
+              "price": 1625000
+            },
+            {
+              "distance": "42km",
+              "tier": "Regular",
+              "from": "30/05",
+              "to": "31/07",
+              "price": 2125000
+            },
+            {
+              "distance": "42km",
+              "tier": "Late",
+              "from": "01/08",
+              "to": "31/10",
+              "price": 2375000
+            }
+          ],
+          "note": "Wayback snapshot of ticket.irace.vn's #personal price table (2023-05-28, during its Early Bird window) — the live page has since dropped it (registration closed). Full tier history: Early Bird 14/05-29/05, Regular 30/05-31/07, Late 01/08-31/10."
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-27T02:49:56.839Z",
-  "updatedAt": "2026-09-27T02:49:56.839Z"
+  "updatedAt": "2026-09-27T02:54:44.988Z"
 }
