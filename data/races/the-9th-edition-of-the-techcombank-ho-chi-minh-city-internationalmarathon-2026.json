@@ -133,7 +133,74 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1690000,
+      "from": null,
+      "to": "2026-01-30",
+      "inferred": [],
+      "site": "marathonhcmc-com"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1370000,
+      "from": null,
+      "to": "2026-01-30",
+      "inferred": [],
+      "site": "marathonhcmc-com"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1080000,
+      "from": null,
+      "to": "2026-01-30",
+      "inferred": [],
+      "site": "marathonhcmc-com"
+    },
+    {
+      "distance": "42km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 2085000,
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "marathonhcmc-com"
+    },
+    {
+      "distance": "21km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 1685000,
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "marathonhcmc-com"
+    },
+    {
+      "distance": "10km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 1375000,
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "marathonhcmc-com"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -199,9 +266,67 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "marathonhcmc-com",
+      "role": "reference",
+      "url": "https://marathonhcmc.com/en/blog/th-edition-registration-fee",
+      "lastCheckedAt": "2026-09-27T08:10:13.934Z",
+      "lastChangedAt": "2026-09-27T08:10:13.934Z",
+      "extracted": {
+        "facts": {
+          "name": "Techcombank Ho Chi Minh City International Marathon 2026",
+          "date": "2026-12-06",
+          "prices": [
+            {
+              "distance": "42km",
+              "tier": "Early Bird",
+              "price": 1690000,
+              "from": null,
+              "to": "2026-01-30"
+            },
+            {
+              "distance": "21km",
+              "tier": "Early Bird",
+              "price": 1370000,
+              "from": null,
+              "to": "2026-01-30"
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "price": 1080000,
+              "from": null,
+              "to": "2026-01-30"
+            },
+            {
+              "distance": "42km",
+              "tier": "Standard",
+              "price": 2085000,
+              "from": "2026-04-01",
+              "to": "2026-09-30"
+            },
+            {
+              "distance": "21km",
+              "tier": "Standard",
+              "price": 1685000,
+              "from": "2026-04-01",
+              "to": "2026-09-30"
+            },
+            {
+              "distance": "10km",
+              "tier": "Standard",
+              "price": 1375000,
+              "from": "2026-04-01",
+              "to": "2026-09-30"
+            }
+          ],
+          "note": "Official race-site price table images (read by agent): Early Bird (by 2026-01-30) and Standard (2026-04-01 to 2026-09-30) individual registration fees for the 9th edition"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-27T08:08:35.131Z"
+  "updatedAt": "2026-09-27T08:10:13.934Z"
 }
