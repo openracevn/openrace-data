@@ -416,9 +416,24 @@
           "note": "Wayback snapshot (2026-06-26, Super Early Bird window) of the official race page, before the live page's price table was removed after the 2026-08-30 event; recovers full SEB/EB/Regular/Late tiers for 5/10/21km the live page no longer shows"
         }
       }
+    },
+    {
+      "site": "vnexpress-net",
+      "role": "reference",
+      "url": "https://vnexpress.net/vnexpress-marathon-vung-tau-2026-mo-dang-ky-5089743.html",
+      "lastCheckedAt": "2026-09-27T02:04:10.736Z",
+      "lastChangedAt": "2026-09-27T02:04:10.736Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Vung Tau International Half Marathon Herbalife Cup",
+          "date": "2026-08-30",
+          "city": "Vũng Tàu",
+          "note": "VnExpress news article announcing registration opening; states this is the first VnExpress Marathon held in Vũng Tàu ('lần đầu tổ chức tại Vũng Tàu') and gives planned start/finish in central Vũng Tàu city"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T04:11:49.673Z",
-  "updatedAt": "2026-09-27T02:03:40.114Z"
+  "updatedAt": "2026-09-27T02:04:10.736Z"
 }
