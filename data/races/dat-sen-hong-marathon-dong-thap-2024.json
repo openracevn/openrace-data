@@ -137,7 +137,184 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 199000,
+      "from": "2024-05-25",
+      "to": "2024-05-27",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 299000,
+      "from": "2024-05-25",
+      "to": "2024-05-27",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 399000,
+      "from": "2024-05-25",
+      "to": "2024-05-27",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 499000,
+      "from": "2024-05-25",
+      "to": "2024-05-27",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 319000,
+      "from": "2024-05-27",
+      "to": "2024-07-27",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 429000,
+      "from": "2024-05-27",
+      "to": "2024-07-27",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 539000,
+      "from": "2024-05-27",
+      "to": "2024-07-27",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 649000,
+      "from": "2024-05-27",
+      "to": "2024-07-27",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 439000,
+      "from": "2024-07-28",
+      "to": "2024-09-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 659000,
+      "from": "2024-07-28",
+      "to": "2024-09-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 769000,
+      "from": "2024-07-28",
+      "to": "2024-09-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 989000,
+      "from": "2024-07-28",
+      "to": "2024-09-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 649000,
+      "from": "2024-09-16",
+      "to": "2024-10-09",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 869000,
+      "from": "2024-09-16",
+      "to": "2024-10-09",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1099000,
+      "from": "2024-09-16",
+      "to": "2024-10-09",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1299000,
+      "from": "2024-09-16",
+      "to": "2024-10-09",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -208,7 +385,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/dat-sen-hong-marathon-dong-thap-2024",
-      "lastCheckedAt": "2026-09-23T18:32:14.237Z",
+      "lastCheckedAt": "2026-09-27T02:30:59.135Z",
       "lastChangedAt": "2026-09-23T18:32:14.237Z",
       "extracted": {
         "facts": {
@@ -220,6 +397,165 @@
           "registrationStatus": "closed",
           "fromPrice": 199000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/dat-sen-hong-marathon-dong-thap-2024",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Giải Marathon Đất Sen Hồng - Đồng Tháp 2024 Cúp Masterise Homes",
+              "date": "2024-10-12",
+              "endDate": "2024-10-13",
+              "distances": [
+                "5km",
+                "10km",
+                "21km",
+                "42km"
+              ],
+              "venue": "TP. Cao Lãnh, tỉnh Đồng Tháp",
+              "organizer": "Nexus Sport Events",
+              "currency": "VND",
+              "registrationStatus": "closed",
+              "prices": []
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://pix.raceez.com/2024/09/23/content_actiup_2description_vi_20240923165404.",
+            "json": {
+              "currency": "VND",
+              "distances": [
+                "5KM",
+                "10KM",
+                "21KM",
+                "42KM"
+              ],
+              "prices": [
+                {
+                  "distance": "5KM",
+                  "tier": "Flash Sale",
+                  "from": "25/05/2024",
+                  "to": "27/05/2024",
+                  "price": 199000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Flash Sale",
+                  "from": "25/05/2024",
+                  "to": "27/05/2024",
+                  "price": 299000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Flash Sale",
+                  "from": "25/05/2024",
+                  "to": "27/05/2024",
+                  "price": 399000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Flash Sale",
+                  "from": "25/05/2024",
+                  "to": "27/05/2024",
+                  "price": 499000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Early Bird",
+                  "from": "27/05/2024",
+                  "to": "27/07/2024",
+                  "price": 319000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Early Bird",
+                  "from": "27/05/2024",
+                  "to": "27/07/2024",
+                  "price": 429000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Early Bird",
+                  "from": "27/05/2024",
+                  "to": "27/07/2024",
+                  "price": 539000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Early Bird",
+                  "from": "27/05/2024",
+                  "to": "27/07/2024",
+                  "price": 649000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Regular",
+                  "from": "28/07/2024",
+                  "to": "15/09/2024",
+                  "price": 439000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Regular",
+                  "from": "28/07/2024",
+                  "to": "15/09/2024",
+                  "price": 659000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Regular",
+                  "from": "28/07/2024",
+                  "to": "15/09/2024",
+                  "price": 769000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Regular",
+                  "from": "28/07/2024",
+                  "to": "15/09/2024",
+                  "price": 989000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Late",
+                  "from": "16/09/2024",
+                  "to": "09/10/2024",
+                  "price": 649000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Late",
+                  "from": "16/09/2024",
+                  "to": "09/10/2024",
+                  "price": 869000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Late",
+                  "from": "16/09/2024",
+                  "to": "09/10/2024",
+                  "price": 1099000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Late",
+                  "from": "16/09/2024",
+                  "to": "09/10/2024",
+                  "price": 1299000
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://pix.raceez.com/2024/09/23/content_actiup_2description_vi_20240923165413.",
+            "json": {
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/11kQQQ0CNTifawgSdQx2bGFFDCD2EqPlE/view",
@@ -229,7 +565,8 @@
         "organizer": {
           "id": "nexus-sport-events",
           "name": "Nexus Sport Events"
-        }
+        },
+        "readBy": "agent"
       }
     },
     {
@@ -259,5 +596,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-27T02:26:57.808Z"
+  "updatedAt": "2026-09-27T02:30:59.135Z"
 }
