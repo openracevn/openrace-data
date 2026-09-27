@@ -7,7 +7,7 @@
   ],
   "date": "2022-11-26",
   "endDate": "2022-11-27",
-  "seriesId": null,
+  "seriesId": "vpbank-dat-sen-hong-music-marathon",
   "organizerId": null,
   "organizer": "Tỉnh Ủy – Ủy ban Nhân dân tỉnh Đồng Tháp (chỉ đạo); Sở Văn hoá, Thể thao và Du lịch tỉnh Đồng Tháp, Công ty Cổ phần Truyền thông Nexus và Công ty Cổ phần Văn hóa Tổng hợp Bến Thành (tổ chức)",
   "edition": null,
@@ -401,7 +401,13 @@
   "registrations": [],
   "links": [],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "seriesId": {
+      "value": "vpbank-dat-sen-hong-music-marathon",
+      "reason": "Same series as the later VPBank Đất Sen Hồng Music Marathon editions (2023-2026); the organizer's own site confirms this is the earliest edition of the annual Cao Lãnh race.",
+      "at": "2026-09-27T02:23:59.388Z"
+    }
+  },
   "sources": [
     {
       "site": "dongthapmarathon-com",
@@ -659,5 +665,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-27T02:23:28.320Z",
-  "updatedAt": "2026-09-27T02:23:28.320Z"
+  "updatedAt": "2026-09-27T02:23:59.388Z"
 }
