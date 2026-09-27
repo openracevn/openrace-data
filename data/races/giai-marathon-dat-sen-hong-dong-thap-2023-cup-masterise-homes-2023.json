@@ -47,7 +47,9 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
-  "flags": [],
+  "flags": [
+    "sources disagree on race day: dongthapmarathon-com 2023-10-14, yeuchaybo-com 2023-10-15"
+  ],
   "overrides": {},
   "sources": [
     {
@@ -76,9 +78,34 @@
           "note": "Organizer's own official site (dongthapmarathon.com), snapshot ~2.5 weeks before race day. NOTE: this page's 'THÔNG TIN GIÁ VÉ' price block is byte-identical to the 2022 snapshot's, including explicit 2022 tier dates (30.09.2022-14.10.2022 etc.) — a stale/un-updated widget on the org's own site, not real 2023 prices, so prices are deliberately left empty here."
         }
       }
+    },
+    {
+      "site": "yeuchaybo-com",
+      "role": "reference",
+      "url": "https://yeuchaybo.com/events/dat-sen-hong-marathon-dong-thap",
+      "lastCheckedAt": "2026-09-27T02:25:10.361Z",
+      "lastChangedAt": "2026-09-27T02:25:10.361Z",
+      "extracted": {
+        "facts": {
+          "name": "Đất Sen Hồng Marathon – Đồng Tháp 2023",
+          "date": "2023-10-15",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "venue": "Công viên Văn Miếu - Cao Lãnh",
+          "city": "Đồng Tháp",
+          "note": "Corroborating third-party event listing for the 2023 edition (date, venue, distances match the organizer's own site)."
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "conflicting",
   "createdAt": "2026-09-27T02:24:23.189Z",
-  "updatedAt": "2026-09-27T02:24:23.189Z"
+  "updatedAt": "2026-09-27T02:25:10.361Z"
 }
