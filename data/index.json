@@ -749,9 +749,9 @@
     "name": "Giải Marathon Quốc tế Thành phố Hồ Chí Minh Techcombank 2017",
     "date": "2017-11-26",
     "endDate": null,
-    "lastModified": "2026-09-27T08:02:59.717Z",
+    "lastModified": "2026-09-27T08:03:24.126Z",
     "file": "giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-2017.json",
-    "seriesId": null,
+    "seriesId": "giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank",
     "sourceUrls": [
       "https://dantri.com.vn/kinh-doanh/hao-huc-dem-nguoc-toi-giai-marathon-quoc-te-tphcm-techcombank-2017-2017111811573242.htm",
       "https://giaoduc.net.vn/dieu-dang-nho-ve-giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-2017-post181761.gd"
@@ -1917,6 +1917,20 @@
     "seriesId": null,
     "sourceUrls": [
       "https://actiup.net/vi/event/plaskidz-2024"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "5bb696e0-0986-4621-9b86-27455ad66b75",
+    "slug": "giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-2018",
+    "name": "Giải Marathon Quốc tế Thành phố Hồ Chí Minh Techcombank 2018",
+    "date": "2018-12-02",
+    "endDate": null,
+    "lastModified": "2026-09-27T08:03:24.126Z",
+    "file": "giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-2018.json",
+    "seriesId": "giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank",
+    "sourceUrls": [
+      "https://techcombank.com/thong-tin/thong-bao/giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-2018"
     ],
     "linkUrls": []
   },
