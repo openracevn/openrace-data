@@ -60,7 +60,140 @@
     "city": "Hồ Chí Minh"
   },
   "geo": null,
-  "prices": [],
+  "prices": [
+    {
+      "distance": "21km",
+      "tier": "Early Birds",
+      "kind": "early",
+      "audience": null,
+      "price": 700000,
+      "from": "2026-01-21",
+      "to": "2026-01-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Birds",
+      "kind": "early",
+      "audience": null,
+      "price": 600000,
+      "from": "2026-01-21",
+      "to": "2026-01-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Birds",
+      "kind": "early",
+      "audience": null,
+      "price": 500000,
+      "from": "2026-01-21",
+      "to": "2026-01-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "Early Birds (Kids & Babies)",
+      "kind": "early",
+      "audience": null,
+      "price": 400000,
+      "from": "2026-01-21",
+      "to": "2026-01-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular Birds",
+      "kind": "regular",
+      "audience": null,
+      "price": 850000,
+      "from": "2026-02-01",
+      "to": "2026-03-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular Birds",
+      "kind": "regular",
+      "audience": null,
+      "price": 750000,
+      "from": "2026-02-01",
+      "to": "2026-03-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular Birds",
+      "kind": "regular",
+      "audience": null,
+      "price": 650000,
+      "from": "2026-02-01",
+      "to": "2026-03-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "Regular Birds (Kids & Babies)",
+      "kind": "regular",
+      "audience": null,
+      "price": 500000,
+      "from": "2026-02-01",
+      "to": "2026-03-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late Birds",
+      "kind": "late",
+      "audience": null,
+      "price": 1000000,
+      "from": "2026-03-16",
+      "to": "2026-03-26",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late Birds",
+      "kind": "late",
+      "audience": null,
+      "price": 900000,
+      "from": "2026-03-16",
+      "to": "2026-03-26",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late Birds",
+      "kind": "late",
+      "audience": null,
+      "price": 800000,
+      "from": "2026-03-16",
+      "to": "2026-03-26",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "Late Birds (Kids & Babies)",
+      "kind": "late",
+      "audience": null,
+      "price": 600000,
+      "from": "2026-03-16",
+      "to": "2026-03-26",
+      "inferred": [],
+      "site": "irace"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -82,6 +215,144 @@
       "value": "andros-the-lakes-race",
       "reason": "race-research: same series as the 2019-2025 editions (andros-the-lakes-race); this race was missing seriesId, apparently just not set when it was seeded (a pre-existing gap, not something this research introduced).",
       "at": "2026-09-25T06:52:20.549Z"
+    },
+    "prices": {
+      "value": [
+        {
+          "distance": "21km",
+          "tier": "Early Birds",
+          "kind": "early",
+          "audience": null,
+          "price": 700000,
+          "from": "2026-01-21",
+          "to": "2026-01-31",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "10km",
+          "tier": "Early Birds",
+          "kind": "early",
+          "audience": null,
+          "price": 600000,
+          "from": "2026-01-21",
+          "to": "2026-01-31",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "5km",
+          "tier": "Early Birds",
+          "kind": "early",
+          "audience": null,
+          "price": 500000,
+          "from": "2026-01-21",
+          "to": "2026-01-31",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": null,
+          "tier": "Early Birds (Kids & Babies)",
+          "kind": "early",
+          "audience": null,
+          "price": 400000,
+          "from": "2026-01-21",
+          "to": "2026-01-31",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "21km",
+          "tier": "Regular Birds",
+          "kind": "regular",
+          "audience": null,
+          "price": 850000,
+          "from": "2026-02-01",
+          "to": "2026-03-15",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "10km",
+          "tier": "Regular Birds",
+          "kind": "regular",
+          "audience": null,
+          "price": 750000,
+          "from": "2026-02-01",
+          "to": "2026-03-15",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "5km",
+          "tier": "Regular Birds",
+          "kind": "regular",
+          "audience": null,
+          "price": 650000,
+          "from": "2026-02-01",
+          "to": "2026-03-15",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": null,
+          "tier": "Regular Birds (Kids & Babies)",
+          "kind": "regular",
+          "audience": null,
+          "price": 500000,
+          "from": "2026-02-01",
+          "to": "2026-03-15",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "21km",
+          "tier": "Late Birds",
+          "kind": "late",
+          "audience": null,
+          "price": 1000000,
+          "from": "2026-03-16",
+          "to": "2026-03-26",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "10km",
+          "tier": "Late Birds",
+          "kind": "late",
+          "audience": null,
+          "price": 900000,
+          "from": "2026-03-16",
+          "to": "2026-03-26",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "5km",
+          "tier": "Late Birds",
+          "kind": "late",
+          "audience": null,
+          "price": 800000,
+          "from": "2026-03-16",
+          "to": "2026-03-26",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": null,
+          "tier": "Late Birds (Kids & Babies)",
+          "kind": "late",
+          "audience": null,
+          "price": 600000,
+          "from": "2026-03-16",
+          "to": "2026-03-26",
+          "inferred": [],
+          "site": "irace"
+        }
+      ],
+      "reason": "irace.vn price table image (ticket-fees.webp) on the source page, checked directly against the image",
+      "at": "2026-09-27T03:01:57.285Z"
     }
   },
   "sources": [
@@ -137,5 +408,5 @@
   ],
   "confidence": "conflicting",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T12:46:14.409Z"
+  "updatedAt": "2026-09-27T03:01:57.285Z"
 }
