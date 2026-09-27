@@ -1,0 +1,67 @@
+{
+  "id": "e2921f11-b131-4dbd-9766-ff77eb1b36d1",
+  "slug": "halong-bay-half-marathon-2015",
+  "name": "Halong Bay Half Marathon 2015",
+  "types": [
+    "road_run"
+  ],
+  "date": "2015-11-28",
+  "endDate": null,
+  "seriesId": null,
+  "organizerId": null,
+  "organizer": "Công ty DHA Việt Nam",
+  "edition": null,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": null,
+    "city": null
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "halong-marathon",
+      "role": "reference",
+      "url": "https://web.archive.org/web/20150801154523/http://halongmarathon.com",
+      "lastCheckedAt": "2026-09-27T02:44:22.383Z",
+      "lastChangedAt": "2026-09-27T02:44:22.383Z",
+      "extracted": {
+        "facts": {
+          "name": "Halong Bay Half Marathon 2015",
+          "date": "2015-11-28",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "5km",
+            "21km"
+          ],
+          "organizer": "Công ty DHA Việt Nam",
+          "note": "Wayback snapshot of halongmarathon.com, 2015-08-01: 'Saturday November 28th 2015' countdown, distances 21km/5km, name 'Halong Bay Half Marathon'"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-27T02:44:22.383Z",
+  "updatedAt": "2026-09-27T02:44:22.383Z"
+}
