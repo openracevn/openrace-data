@@ -249,7 +249,13 @@
     }
   ],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "organizer": {
+      "value": "Báo Sài Gòn Giải Phóng; Sở Văn hóa, Thể thao Thành phố Hồ Chí Minh; Công ty Miracle Entertainment Group; Ban Quản lý phát triển đô thị Thủ Thiêm",
+      "reason": "nhandan.vn news article states full 2025 organizer roster; irace.vn source had no organizer field",
+      "at": "2026-09-27T08:09:08.195Z"
+    }
+  },
   "sources": [
     {
       "site": "irace",
@@ -461,5 +467,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-27T08:06:39.781Z",
-  "updatedAt": "2026-09-27T08:08:19.789Z"
+  "updatedAt": "2026-09-27T08:09:08.195Z"
 }
