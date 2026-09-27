@@ -38,8 +38,8 @@
     }
   ],
   "location": {
-    "venue": "Thành phố Hà Nội",
-    "city": null
+    "venue": "Hồ Hoàn Kiếm, Hà Nội",
+    "city": "Hà Nội"
   },
   "geo": {
     "lat": 21.0283334,
@@ -208,6 +208,14 @@
       "value": 7,
       "reason": "Official vpbankmarathon.com homepage: 'mùa giải thứ 7 do VPBank tổ chức' — matches sequence with 2025's independently-sourced 'edition 6' (Báo Thanh Niên)",
       "at": "2026-09-27T02:30:25.067Z"
+    },
+    "location": {
+      "value": {
+        "venue": "Hồ Hoàn Kiếm, Hà Nội",
+        "city": "Hà Nội"
+      },
+      "reason": "actiup's venue 'Thành phố Hà Nội' is province-level only; vpbankmarathon.com's own homepage and 2025 recap page, plus irace.vn and news coverage of the 2023-2025 editions, all give the specific start/finish area as Hồ Hoàn Kiếm (Hoan Kiem Lake) — consistent with every other tracked VPIM edition",
+      "at": "2026-09-27T02:30:49.580Z"
     }
   },
   "sources": [
@@ -337,5 +345,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-27T02:30:25.067Z"
+  "updatedAt": "2026-09-27T02:30:49.580Z"
 }
