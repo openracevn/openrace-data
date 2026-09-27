@@ -69,9 +69,24 @@
           "note": "1st edition recap: race day 2017-11-26, HCMC, distances marathon 42.195km/half 21.1km/10km (no 5km stated for this edition)"
         }
       }
+    },
+    {
+      "site": "dantri-com-vn",
+      "role": "reference",
+      "url": "https://dantri.com.vn/kinh-doanh/hao-huc-dem-nguoc-toi-giai-marathon-quoc-te-tphcm-techcombank-2017-2017111811573242.htm",
+      "lastCheckedAt": "2026-09-27T08:02:59.717Z",
+      "lastChangedAt": "2026-09-27T08:02:59.717Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Marathon Quốc tế Thành phố Hồ Chí Minh Techcombank 2017",
+          "date": "2017-11-26",
+          "organizer": "Sunrise Events Vietnam",
+          "note": "Pre-race countdown article corroborating 2017 edition (over 5,000-6,000 runners expected, 44 countries)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-27T08:01:56.212Z",
-  "updatedAt": "2026-09-27T08:01:56.212Z"
+  "updatedAt": "2026-09-27T08:02:59.717Z"
 }
