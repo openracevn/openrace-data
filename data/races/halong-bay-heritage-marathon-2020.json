@@ -48,220 +48,380 @@
       "tier": "Special Offer",
       "kind": "other",
       "audience": null,
-      "price": 12,
+      "price": 276603,
       "from": "2019-12-25",
       "to": "2020-01-20",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 12
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "5km",
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 15,
+      "price": 348126,
       "from": "2020-01-21",
       "to": "2020-06-28",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 15
+      },
+      "fxRate": {
+        "rate": 23208.37,
+        "asOf": "2020"
+      }
     },
     {
       "distance": "5km",
       "tier": "Standard Rate",
       "kind": "regular",
       "audience": null,
-      "price": 15,
+      "price": 348126,
       "from": "2020-06-29",
       "to": "2020-08-24",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 15
+      },
+      "fxRate": {
+        "rate": 23208.37,
+        "asOf": "2020"
+      }
     },
     {
       "distance": "5km",
       "tier": "Late Registration",
       "kind": "late",
       "audience": null,
-      "price": 15,
+      "price": 348126,
       "from": "2020-08-25",
       "to": "2020-10-26",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 15
+      },
+      "fxRate": {
+        "rate": 23208.37,
+        "asOf": "2020"
+      }
     },
     {
       "distance": "5km",
       "tier": "Special Offer",
       "kind": "other",
       "audience": null,
-      "price": 15,
+      "price": 345754,
       "from": "2019-12-25",
       "to": "2020-01-20",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 15
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "5km",
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 20,
+      "price": 464167,
       "from": "2020-01-21",
       "to": "2020-06-28",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 20
+      },
+      "fxRate": {
+        "rate": 23208.37,
+        "asOf": "2020"
+      }
     },
     {
       "distance": "5km",
       "tier": "Standard Rate",
       "kind": "regular",
       "audience": null,
-      "price": 25,
+      "price": 580209,
       "from": "2020-06-29",
       "to": "2020-08-24",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 25
+      },
+      "fxRate": {
+        "rate": 23208.37,
+        "asOf": "2020"
+      }
     },
     {
       "distance": "5km",
       "tier": "Late Registration",
       "kind": "late",
       "audience": null,
-      "price": 30,
+      "price": 696251,
       "from": "2020-08-25",
       "to": "2020-10-26",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 30
+      },
+      "fxRate": {
+        "rate": 23208.37,
+        "asOf": "2020"
+      }
     },
     {
       "distance": "10km",
       "tier": "Special Offer",
       "kind": "other",
       "audience": null,
-      "price": 22,
+      "price": 507105,
       "from": "2019-12-25",
       "to": "2020-01-20",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 22
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "10km",
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 30,
+      "price": 696251,
       "from": "2020-01-21",
       "to": "2020-06-28",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 30
+      },
+      "fxRate": {
+        "rate": 23208.37,
+        "asOf": "2020"
+      }
     },
     {
       "distance": "10km",
       "tier": "Standard Rate",
       "kind": "regular",
       "audience": null,
-      "price": 40,
+      "price": 928335,
       "from": "2020-06-29",
       "to": "2020-08-24",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 40
+      },
+      "fxRate": {
+        "rate": 23208.37,
+        "asOf": "2020"
+      }
     },
     {
       "distance": "10km",
       "tier": "Late Registration",
       "kind": "late",
       "audience": null,
-      "price": 45,
+      "price": 1044377,
       "from": "2020-08-25",
       "to": "2020-10-26",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 45
+      },
+      "fxRate": {
+        "rate": 23208.37,
+        "asOf": "2020"
+      }
     },
     {
       "distance": "21km",
       "tier": "Special Offer",
       "kind": "other",
       "audience": null,
-      "price": 38,
+      "price": 875909,
       "from": "2019-12-25",
       "to": "2020-01-20",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 38
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "21km",
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 55,
+      "price": 1276460,
       "from": "2020-01-21",
       "to": "2020-06-28",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 55
+      },
+      "fxRate": {
+        "rate": 23208.37,
+        "asOf": "2020"
+      }
     },
     {
       "distance": "21km",
       "tier": "Standard Rate",
       "kind": "regular",
       "audience": null,
-      "price": 75,
+      "price": 1740628,
       "from": "2020-06-29",
       "to": "2020-08-24",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 75
+      },
+      "fxRate": {
+        "rate": 23208.37,
+        "asOf": "2020"
+      }
     },
     {
       "distance": "21km",
       "tier": "Late Registration",
       "kind": "late",
       "audience": null,
-      "price": 80,
+      "price": 1856670,
       "from": "2020-08-25",
       "to": "2020-10-26",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 80
+      },
+      "fxRate": {
+        "rate": 23208.37,
+        "asOf": "2020"
+      }
     },
     {
       "distance": "42km",
       "tier": "Special Offer",
       "kind": "other",
       "audience": null,
-      "price": 48,
+      "price": 1106412,
       "from": "2019-12-25",
       "to": "2020-01-20",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 48
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "42km",
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 65,
+      "price": 1508544,
       "from": "2020-01-21",
       "to": "2020-06-28",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 65
+      },
+      "fxRate": {
+        "rate": 23208.37,
+        "asOf": "2020"
+      }
     },
     {
       "distance": "42km",
       "tier": "Standard Rate",
       "kind": "regular",
       "audience": null,
-      "price": 85,
+      "price": 1972711,
       "from": "2020-06-29",
       "to": "2020-08-24",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 85
+      },
+      "fxRate": {
+        "rate": 23208.37,
+        "asOf": "2020"
+      }
     },
     {
       "distance": "42km",
       "tier": "Late Registration",
       "kind": "late",
       "audience": null,
-      "price": 95,
+      "price": 2204795,
       "from": "2020-08-25",
       "to": "2020-10-26",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 95
+      },
+      "fxRate": {
+        "rate": 23208.37,
+        "asOf": "2020"
+      }
     }
   ],
   "currency": "VND",
@@ -465,5 +625,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-27T02:46:50.958Z",
-  "updatedAt": "2026-09-27T02:56:59.722Z"
+  "updatedAt": "2026-09-27T07:40:37.298Z"
 }

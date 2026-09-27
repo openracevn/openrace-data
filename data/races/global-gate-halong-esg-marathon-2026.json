@@ -1,12 +1,12 @@
 {
   "id": "51c06828-9f8c-4dea-bd60-98b4120d9687",
   "slug": "global-gate-halong-esg-marathon-2026",
-  "name": "GLOBAL GATE HẠ LONG ESG++ MARATHON 2026",
+  "name": "Global Gate Halong ESG++ Marathon 2026",
   "types": [
     "road_run"
   ],
-  "date": "2026-10-10",
-  "endDate": "2026-10-11",
+  "date": "2026-10-11",
+  "endDate": null,
   "seriesId": null,
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
@@ -39,7 +39,7 @@
   ],
   "location": {
     "venue": "Global Gate Hạ Long",
-    "city": "Hạ Long"
+    "city": null
   },
   "geo": {
     "lat": 21.0893397,
@@ -319,12 +319,12 @@
   "registrationStatus": "closed",
   "registrations": [
     {
-      "site": "actiup",
-      "url": "https://actiup.net/vi/event/global-gate-halong-esg-marathon-2026"
-    },
-    {
       "site": "irace",
       "url": "https://irace.vn/su-kien/global-gate-ha-long-esg-marathon"
+    },
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/global-gate-halong-esg-marathon-2026"
     }
   ],
   "links": [
@@ -395,7 +395,7 @@
     }
   ],
   "flags": [
-    "sources disagree on race day: actiup 2026-10-10, irace 2026-10-11"
+    "sources disagree on race day: irace 2026-10-11, actiup 2026-10-10"
   ],
   "overrides": {},
   "sources": [
@@ -675,5 +675,5 @@
   ],
   "confidence": "conflicting",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T05:57:31.541Z"
+  "updatedAt": "2026-09-27T07:40:37.298Z"
 }

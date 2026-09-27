@@ -143,55 +143,87 @@
       "tier": "Standard",
       "kind": "regular",
       "audience": null,
-      "price": 20,
+      "price": 490114,
       "from": null,
       "to": "2022-11-13",
       "inferred": [
         "to"
       ],
-      "site": "justrunlah-com"
+      "site": "justrunlah-com",
+      "priceOriginal": {
+        "currency": "EUR",
+        "amount": 20
+      },
+      "fxRate": {
+        "rate": 24505.72,
+        "asOf": "2022"
+      }
     },
     {
       "distance": "10km",
       "tier": "Standard",
       "kind": "regular",
       "audience": null,
-      "price": 30,
+      "price": 735172,
       "from": null,
       "to": "2022-11-13",
       "inferred": [
         "to"
       ],
-      "site": "justrunlah-com"
+      "site": "justrunlah-com",
+      "priceOriginal": {
+        "currency": "EUR",
+        "amount": 30
+      },
+      "fxRate": {
+        "rate": 24505.72,
+        "asOf": "2022"
+      }
     },
     {
       "distance": "21km",
       "tier": "Standard",
       "kind": "regular",
       "audience": null,
-      "price": 40,
+      "price": 980229,
       "from": null,
       "to": "2022-11-13",
       "inferred": [
         "to"
       ],
-      "site": "justrunlah-com"
+      "site": "justrunlah-com",
+      "priceOriginal": {
+        "currency": "EUR",
+        "amount": 40
+      },
+      "fxRate": {
+        "rate": 24505.72,
+        "asOf": "2022"
+      }
     },
     {
       "distance": "42km",
       "tier": "Standard",
       "kind": "regular",
       "audience": null,
-      "price": 49,
+      "price": 1200780,
       "from": null,
       "to": "2022-11-13",
       "inferred": [
         "to"
       ],
-      "site": "justrunlah-com"
+      "site": "justrunlah-com",
+      "priceOriginal": {
+        "currency": "EUR",
+        "amount": 49
+      },
+      "fxRate": {
+        "rate": 24505.72,
+        "asOf": "2022"
+      }
     }
   ],
-  "currency": "EUR",
+  "currency": "VND",
   "registrationStatus": null,
   "registrations": [],
   "links": [],
@@ -257,5 +289,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-27T02:50:56.279Z",
-  "updatedAt": "2026-09-27T03:13:09.913Z"
+  "updatedAt": "2026-09-27T07:40:37.298Z"
 }

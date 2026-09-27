@@ -1,15 +1,15 @@
 {
   "id": "61b7b828-8172-4215-a4bc-84463e951219",
   "slug": "standard-chartered-hanoi-marathon-heritage-race-2026",
-  "name": "Standard Chartered Marathon Di sản Hà Nội 2026",
+  "name": "Giải chạy Standard Chartered Marathon Di sản Hà Nội 2026",
   "types": [
     "road_run"
   ],
-  "date": "2026-11-07",
-  "endDate": "2026-11-08",
+  "date": "2026-11-08",
+  "endDate": null,
   "seriesId": "standard-chartered-hanoi-marathon-heritage-race",
-  "organizerId": "cong-ty-dha-viet-nam",
-  "organizer": "Công ty DHA Việt Nam",
+  "organizerId": "dha",
+  "organizer": "DHA Vietnam | Ban tổ chức sự kiện",
   "edition": null,
   "courses": [
     {
@@ -189,12 +189,12 @@
   "registrationStatus": "open",
   "registrations": [
     {
-      "site": "actiup",
-      "url": "https://actiup.net/vi/event/standard-chartered-hanoi-marathon-heritage-race-2026"
-    },
-    {
       "site": "irace",
       "url": "https://ticket.irace.vn/standard-chartered-marathon-di-san-ha-noi-2026"
+    },
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/standard-chartered-hanoi-marathon-heritage-race-2026"
     }
   ],
   "links": [
@@ -260,7 +260,7 @@
     }
   ],
   "flags": [
-    "sources disagree on race day: actiup 2026-11-07, irace 2026-11-08"
+    "sources disagree on race day: irace 2026-11-08, actiup 2026-11-07"
   ],
   "overrides": {},
   "sources": [
@@ -513,5 +513,5 @@
   ],
   "confidence": "conflicting",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T06:31:20.332Z"
+  "updatedAt": "2026-09-27T07:40:37.298Z"
 }

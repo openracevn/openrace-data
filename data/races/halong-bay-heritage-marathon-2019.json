@@ -48,220 +48,380 @@
       "tier": "Special Offer",
       "kind": "other",
       "audience": null,
-      "price": 8,
+      "price": 184402,
       "from": "2019-01-26",
       "to": "2019-02-23",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 8
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "5km",
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 8,
+      "price": 184402,
       "from": "2019-02-24",
       "to": "2019-05-24",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 8
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "5km",
       "tier": "Standard Rate",
       "kind": "regular",
       "audience": null,
-      "price": 10,
+      "price": 230502,
       "from": "2019-05-25",
       "to": "2019-07-24",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 10
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "5km",
       "tier": "Late Registration",
       "kind": "late",
       "audience": null,
-      "price": 10,
+      "price": 230502,
       "from": "2019-07-25",
       "to": "2019-10-26",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 10
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "5km",
       "tier": "Special Offer",
       "kind": "other",
       "audience": null,
-      "price": 10,
+      "price": 230502,
       "from": "2019-01-26",
       "to": "2019-02-23",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 10
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "5km",
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 15,
+      "price": 345754,
       "from": "2019-02-24",
       "to": "2019-05-24",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 15
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "5km",
       "tier": "Standard Rate",
       "kind": "regular",
       "audience": null,
-      "price": 18,
+      "price": 414904,
       "from": "2019-05-25",
       "to": "2019-07-24",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 18
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "5km",
       "tier": "Late Registration",
       "kind": "late",
       "audience": null,
-      "price": 20,
+      "price": 461005,
       "from": "2019-07-25",
       "to": "2019-10-26",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 20
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "10km",
       "tier": "Special Offer",
       "kind": "other",
       "audience": null,
-      "price": 20,
+      "price": 461005,
       "from": "2019-01-26",
       "to": "2019-02-23",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 20
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "10km",
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 30,
+      "price": 691507,
       "from": "2019-02-24",
       "to": "2019-05-24",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 30
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "10km",
       "tier": "Standard Rate",
       "kind": "regular",
       "audience": null,
-      "price": 40,
+      "price": 922010,
       "from": "2019-05-25",
       "to": "2019-07-24",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 40
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "10km",
       "tier": "Late Registration",
       "kind": "late",
       "audience": null,
-      "price": 45,
+      "price": 1037261,
       "from": "2019-07-25",
       "to": "2019-10-26",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 45
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "21km",
       "tier": "Special Offer",
       "kind": "other",
       "audience": null,
-      "price": 35,
+      "price": 806758,
       "from": "2019-01-26",
       "to": "2019-02-23",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 35
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "21km",
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 55,
+      "price": 1267763,
       "from": "2019-02-24",
       "to": "2019-05-24",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 55
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "21km",
       "tier": "Standard Rate",
       "kind": "regular",
       "audience": null,
-      "price": 75,
+      "price": 1728768,
       "from": "2019-05-25",
       "to": "2019-07-24",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 75
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "21km",
       "tier": "Late Registration",
       "kind": "late",
       "audience": null,
-      "price": 80,
+      "price": 1844019,
       "from": "2019-07-25",
       "to": "2019-10-26",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 80
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "42km",
       "tier": "Special Offer",
       "kind": "other",
       "audience": null,
-      "price": 55,
+      "price": 1267763,
       "from": "2019-01-26",
       "to": "2019-02-23",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 55
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "42km",
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 75,
+      "price": 1728768,
       "from": "2019-02-24",
       "to": "2019-05-24",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 75
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "42km",
       "tier": "Standard Rate",
       "kind": "regular",
       "audience": null,
-      "price": 90,
+      "price": 2074522,
       "from": "2019-05-25",
       "to": "2019-07-24",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 90
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     },
     {
       "distance": "42km",
       "tier": "Late Registration",
       "kind": "late",
       "audience": null,
-      "price": 95,
+      "price": 2189773,
       "from": "2019-07-25",
       "to": "2019-10-26",
       "inferred": [],
-      "site": "halong-marathon"
+      "site": "halong-marathon",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 95
+      },
+      "fxRate": {
+        "rate": 23050.24,
+        "asOf": "2019"
+      }
     }
   ],
   "currency": "VND",
@@ -465,5 +625,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-27T02:46:27.823Z",
-  "updatedAt": "2026-09-27T03:16:09.361Z"
+  "updatedAt": "2026-09-27T07:40:37.298Z"
 }
