@@ -137,8 +137,61 @@
       }
     }
   },
-  "prices": [],
-  "currency": "VND",
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 20,
+      "from": null,
+      "to": "2022-11-13",
+      "inferred": [
+        "to"
+      ],
+      "site": "justrunlah-com"
+    },
+    {
+      "distance": "10km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 30,
+      "from": null,
+      "to": "2022-11-13",
+      "inferred": [
+        "to"
+      ],
+      "site": "justrunlah-com"
+    },
+    {
+      "distance": "21km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 40,
+      "from": null,
+      "to": "2022-11-13",
+      "inferred": [
+        "to"
+      ],
+      "site": "justrunlah-com"
+    },
+    {
+      "distance": "42km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 49,
+      "from": null,
+      "to": "2022-11-13",
+      "inferred": [
+        "to"
+      ],
+      "site": "justrunlah-com"
+    }
+  ],
+  "currency": "EUR",
   "registrationStatus": null,
   "registrations": [],
   "links": [],
@@ -149,7 +202,7 @@
       "site": "justrunlah-com",
       "role": "reference",
       "url": "https://justrunlah.com/race/halong-bay-heritage-marathon-2022",
-      "lastCheckedAt": "2026-09-27T02:50:56.279Z",
+      "lastCheckedAt": "2026-09-27T03:13:09.913Z",
       "lastChangedAt": "2026-09-27T02:50:56.279Z",
       "extracted": {
         "facts": {
@@ -166,12 +219,43 @@
           ],
           "venue": "Thành phố Hạ Long",
           "organizer": "Công ty DHA Việt Nam",
-          "note": "JustRunLah race listing: 'Date: 13 November 2022, Venue: Thành phố Hạ Long, Categories: Full Marathon, Half Marathon, 10 km, 5 km'; entry fees shown in EUR (international tier) not recorded as VND prices"
+          "currency": "EUR",
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Standard",
+              "from": null,
+              "to": null,
+              "price": 20
+            },
+            {
+              "distance": "10km",
+              "tier": "Standard",
+              "from": null,
+              "to": null,
+              "price": 30
+            },
+            {
+              "distance": "21km",
+              "tier": "Standard",
+              "from": null,
+              "to": null,
+              "price": 40
+            },
+            {
+              "distance": "42km",
+              "tier": "Standard",
+              "from": null,
+              "to": null,
+              "price": 49
+            }
+          ],
+          "note": "JustRunLah race listing: 'Date: 13 November 2022, Categories: Full Marathon, Half Marathon, 10 km, 5 km, Entry fees: 5.00 KM - 20 EUR, 10.00 KM - 30 EUR, 21.10 KM - 40 EUR, 42.20 KM - 49 EUR'. No irace or halongmarathon.com price source found for 2022 (irace has no page for this year; halongmarathon.com's own 'Phí Đăng Ký' article's price images were never archived by Wayback). Single flat fee, no stated validity window, and it's in EUR (an international-facing listing), not VND."
         }
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-27T02:50:56.279Z",
-  "updatedAt": "2026-09-27T02:50:56.279Z"
+  "updatedAt": "2026-09-27T03:13:09.913Z"
 }
