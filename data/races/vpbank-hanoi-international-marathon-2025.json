@@ -10,7 +10,7 @@
   "seriesId": "vpbank-hanoi-international-marathon",
   "organizerId": null,
   "organizer": "Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
-  "edition": null,
+  "edition": 6,
   "courses": [
     {
       "label": "5km",
@@ -48,7 +48,13 @@
   "registrations": [],
   "links": [],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "edition": {
+      "value": 6,
+      "reason": "Báo Thanh Niên (vietnam.vn, 2025-10-26): 'this year's race, the 6th edition organized by VPBank' — matches vpbankmarathon.com's own 'mùa giải thứ 7' claim for the following year (2026)",
+      "at": "2026-09-27T02:28:23.973Z"
+    }
+  },
   "sources": [
     {
       "site": "vpbank-hanoi-marathon",
@@ -105,5 +111,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-27T02:23:40.614Z",
-  "updatedAt": "2026-09-27T02:27:46.043Z"
+  "updatedAt": "2026-09-27T02:28:23.973Z"
 }
