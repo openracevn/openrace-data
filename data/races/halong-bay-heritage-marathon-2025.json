@@ -11,7 +11,32 @@
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Ha Long, Vietnam",
     "city": null
@@ -112,7 +137,140 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 500000,
+      "from": "2025-05-31",
+      "to": "2025-06-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird Group 2",
+      "kind": "early",
+      "audience": null,
+      "price": 400000,
+      "from": "2025-05-31",
+      "to": "2025-06-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird Group 5",
+      "kind": "early",
+      "audience": null,
+      "price": 375000,
+      "from": "2025-05-31",
+      "to": "2025-06-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 650000,
+      "from": "2025-05-31",
+      "to": "2025-06-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird Group 2",
+      "kind": "early",
+      "audience": null,
+      "price": 520000,
+      "from": "2025-05-31",
+      "to": "2025-06-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird Group 5",
+      "kind": "early",
+      "audience": null,
+      "price": 487500,
+      "from": "2025-05-31",
+      "to": "2025-06-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 850000,
+      "from": "2025-05-31",
+      "to": "2025-06-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird Group 2",
+      "kind": "early",
+      "audience": null,
+      "price": 680000,
+      "from": "2025-05-31",
+      "to": "2025-06-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird Group 5",
+      "kind": "early",
+      "audience": null,
+      "price": 637500,
+      "from": "2025-05-31",
+      "to": "2025-06-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 950000,
+      "from": "2025-05-31",
+      "to": "2025-06-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird Group 2",
+      "kind": "early",
+      "audience": null,
+      "price": 760000,
+      "from": "2025-05-31",
+      "to": "2025-06-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird Group 5",
+      "kind": "early",
+      "audience": null,
+      "price": 712500,
+      "from": "2025-05-31",
+      "to": "2025-06-30",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -143,7 +301,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/halong-bay-heritage-marathon-2025",
-      "lastCheckedAt": "2026-09-23T18:31:48.522Z",
+      "lastCheckedAt": "2026-09-27T03:06:58.870Z",
       "lastChangedAt": "2026-09-23T18:31:48.522Z",
       "extracted": {
         "facts": {
@@ -155,6 +313,124 @@
           "registrationStatus": "closed",
           "fromPrice": 300000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/halong-bay-heritage-marathon-2025",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Halong Bay Heritage Marathon 2025",
+              "date": "2025-11-23",
+              "venue": "Ha Long, Vietnam",
+              "organizer": "Công ty DHA Việt Nam",
+              "currency": "VND",
+              "registrationStatus": "closed",
+              "prices": []
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2025/06/09/1749457598497211/HBHM25-update.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "5km",
+                  "tier": "Early Bird",
+                  "from": "2025-05-31",
+                  "to": "2025-06-30",
+                  "price": 500000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Early Bird Group 2",
+                  "from": "2025-05-31",
+                  "to": "2025-06-30",
+                  "price": 400000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Early Bird Group 5",
+                  "from": "2025-05-31",
+                  "to": "2025-06-30",
+                  "price": 375000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Early Bird",
+                  "from": "2025-05-31",
+                  "to": "2025-06-30",
+                  "price": 650000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Early Bird Group 2",
+                  "from": "2025-05-31",
+                  "to": "2025-06-30",
+                  "price": 520000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Early Bird Group 5",
+                  "from": "2025-05-31",
+                  "to": "2025-06-30",
+                  "price": 487500
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Early Bird",
+                  "from": "2025-05-31",
+                  "to": "2025-06-30",
+                  "price": 850000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Early Bird Group 2",
+                  "from": "2025-05-31",
+                  "to": "2025-06-30",
+                  "price": 680000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Early Bird Group 5",
+                  "from": "2025-05-31",
+                  "to": "2025-06-30",
+                  "price": 637500
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Early Bird",
+                  "from": "2025-05-31",
+                  "to": "2025-06-30",
+                  "price": 950000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Early Bird Group 2",
+                  "from": "2025-05-31",
+                  "to": "2025-06-30",
+                  "price": 760000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Early Bird Group 5",
+                  "from": "2025-05-31",
+                  "to": "2025-06-30",
+                  "price": 712500
+                }
+              ],
+              "distances": [
+                "5km",
+                "10km",
+                "21km",
+                "42km"
+              ],
+              "currency": "VND"
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1thbJHyubukFJhweAHZfhTPTR5qLi9GEm/view?usp=sharing",
@@ -164,11 +440,12 @@
         "organizer": {
           "id": "cong-ty-dha-viet-nam",
           "name": "Công ty DHA Việt Nam"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-27T03:06:58.870Z"
 }
