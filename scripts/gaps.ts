@@ -1,0 +1,72 @@
+/**
+ * Read-only report of missing data across data/races/*.json: no usable location, no
+ * organizer, no prices (split upcoming/past), existing flags/low confidence, and series
+ * with a year gap between their earliest and latest edition. Not a CI gate (see
+ * validate.ts for that) — always exits 0.
+ *
+ *   npm run gaps
+ */
+import { readdirSync, readFileSync } from "node:fs";
+import { RACES_DIR, RaceSchema, SERIES_PATH, SeriesListSchema, upgradeRace, type Race } from "./lib/schema.ts";
+
+const races: Race[] = [];
+for (const file of readdirSync(RACES_DIR).filter((f) => f.endsWith(".json")).sort()) {
+  const parsed = RaceSchema.safeParse(upgradeRace(JSON.parse(readFileSync(`${RACES_DIR}/${file}`, "utf8"))));
+  if (parsed.success) races.push(parsed.data);
+}
+
+const seriesNames = new Map<string, string>();
+try {
+  for (const s of SeriesListSchema.parse(JSON.parse(readFileSync(SERIES_PATH, "utf8")))) seriesNames.set(s.id, s.name);
+} catch {
+  // Report still works without series.json; names just fall back to ids.
+}
+
+const today = new Date().toISOString().slice(0, 10);
+
+const noLocation = races.filter((r) => !r.location.city && !r.location.venue);
+const noOrganizer = races.filter((r) => !r.organizerId);
+const noPricesUpcoming = races.filter((r) => r.date >= today && r.prices.length === 0);
+const noPricesPast = races.filter((r) => r.date < today && r.prices.length === 0);
+const flagged = races.filter((r) => r.flags.length > 0 || r.confidence === "conflicting");
+
+const byYearGap = seriesYearGaps(races);
+
+report("No usable location (city and venue both null)", noLocation, (r) => r.slug);
+report("No organizerId", noOrganizer, (r) => r.slug);
+report(`No prices, upcoming (date >= ${today})`, noPricesUpcoming, (r) => `${r.slug} (${r.date})`);
+report("No prices, past (informational — may be free or unpriced)", noPricesPast, (r) => `${r.slug} (${r.date})`);
+report("Flagged or conflicting confidence", flagged, (r) => `${r.slug} (confidence: ${r.confidence}, flags: ${r.flags.join("; ") || "none"})`);
+
+console.log(`\nSeries with a year gap: ${byYearGap.length}`);
+for (const { seriesId, years } of byYearGap.slice(0, 10)) {
+  console.log(`  - ${seriesNames.get(seriesId) ?? seriesId} (${seriesId}): editions in ${years.join(", ")}`);
+}
+
+console.log(`\n${races.length} race(s) checked.`);
+
+function report(title: string, list: Race[], describe: (r: Race) => string): void {
+  console.log(`\n${title}: ${list.length} / ${races.length}`);
+  for (const r of list.slice(0, 10)) console.log(`  - ${describe(r)}`);
+  if (list.length > 10) console.log(`  ... and ${list.length - 10} more`);
+}
+
+/** Series with 2+ editions where the year sequence has a hole between the earliest and latest. */
+function seriesYearGaps(races: Race[]): { seriesId: string; years: number[] }[] {
+  const bySeriesYears = new Map<string, Set<number>>();
+  for (const r of races) {
+    if (!r.seriesId) continue;
+    const years = bySeriesYears.get(r.seriesId) ?? new Set<number>();
+    years.add(Number(r.date.slice(0, 4)));
+    bySeriesYears.set(r.seriesId, years);
+  }
+  const gaps: { seriesId: string; years: number[] }[] = [];
+  for (const [seriesId, yearSet] of bySeriesYears) {
+    const years = [...yearSet].sort((a, b) => a - b);
+    if (years.length < 2) continue;
+    const min = Math.min(...years);
+    const max = Math.max(...years);
+    if (years.length !== max - min + 1) gaps.push({ seriesId, years });
+  }
+  return gaps.sort((a, b) => a.seriesId.localeCompare(b.seriesId));
+}
