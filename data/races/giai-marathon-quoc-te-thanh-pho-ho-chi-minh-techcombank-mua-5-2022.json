@@ -7,7 +7,7 @@
   ],
   "date": "2022-12-11",
   "endDate": null,
-  "seriesId": "giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-mua",
+  "seriesId": "techcombank-ho-chi-minh-city-international-marathon",
   "organizerId": null,
   "organizer": "Sunrise Events Vietnam",
   "edition": 5,
@@ -48,7 +48,13 @@
   "registrations": [],
   "links": [],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "seriesId": {
+      "value": "techcombank-ho-chi-minh-city-international-marathon",
+      "reason": "unify series id across all editions of this race",
+      "at": "2026-09-27T08:08:20.242Z"
+    }
+  },
   "sources": [
     {
       "site": "techcombank-com",
@@ -80,5 +86,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-27T08:05:25.233Z",
-  "updatedAt": "2026-09-27T08:05:25.233Z"
+  "updatedAt": "2026-09-27T08:08:20.242Z"
 }
