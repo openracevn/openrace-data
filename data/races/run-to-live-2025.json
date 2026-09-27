@@ -8,7 +8,7 @@
   "date": "2025-03-09",
   "endDate": null,
   "seriesId": null,
-  "organizerId": null,
+  "organizerId": "miracle-entertainment-group-bao-sai-gon-giai-phong-so-vhtt-ho-chi-minh",
   "organizer": "Báo Sài Gòn Giải Phóng; Sở Văn hóa, Thể thao Thành phố Hồ Chí Minh; Công ty Miracle Entertainment Group; Ban Quản lý phát triển đô thị Thủ Thiêm",
   "edition": null,
   "courses": [
@@ -254,6 +254,11 @@
       "value": "Báo Sài Gòn Giải Phóng; Sở Văn hóa, Thể thao Thành phố Hồ Chí Minh; Công ty Miracle Entertainment Group; Ban Quản lý phát triển đô thị Thủ Thiêm",
       "reason": "nhandan.vn news article states full 2025 organizer roster; irace.vn source had no organizer field",
       "at": "2026-09-27T08:09:08.195Z"
+    },
+    "organizerId": {
+      "value": "miracle-entertainment-group-bao-sai-gon-giai-phong-so-vhtt-ho-chi-minh",
+      "reason": "same organizing partnership as the 2024 edition (Miracle Entertainment Group + Báo SGGP + Sở VHTT), per nhandan.vn 2025 article",
+      "at": "2026-09-27T08:09:22.508Z"
     }
   },
   "sources": [
@@ -467,5 +472,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-27T08:06:39.781Z",
-  "updatedAt": "2026-09-27T08:09:08.195Z"
+  "updatedAt": "2026-09-27T08:09:22.508Z"
 }
