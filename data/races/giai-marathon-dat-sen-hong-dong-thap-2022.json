@@ -1,0 +1,663 @@
+{
+  "id": "c9a9acfb-e0af-4f83-99d1-13dedba60a54",
+  "slug": "giai-marathon-dat-sen-hong-dong-thap-2022",
+  "name": "Giải Marathon Đất Sen Hồng - Đồng Tháp 2022",
+  "types": [
+    "road_run"
+  ],
+  "date": "2022-11-26",
+  "endDate": "2022-11-27",
+  "seriesId": null,
+  "organizerId": null,
+  "organizer": "Tỉnh Ủy – Ủy ban Nhân dân tỉnh Đồng Tháp (chỉ đạo); Sở Văn hoá, Thể thao và Du lịch tỉnh Đồng Tháp, Công ty Cổ phần Truyền thông Nexus và Công ty Cổ phần Văn hóa Tổng hợp Bến Thành (tổ chức)",
+  "edition": null,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Thành phố Cao Lãnh, tỉnh Đồng Tháp",
+    "city": "Đồng Tháp"
+  },
+  "geo": null,
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "FLASH SALE",
+      "kind": "other",
+      "audience": null,
+      "price": 190000,
+      "from": "2022-09-29",
+      "to": "2022-09-29",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "10km",
+      "tier": "FLASH SALE",
+      "kind": "other",
+      "audience": null,
+      "price": 290000,
+      "from": "2022-09-29",
+      "to": "2022-09-29",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "21km",
+      "tier": "FLASH SALE",
+      "kind": "other",
+      "audience": null,
+      "price": 390000,
+      "from": "2022-09-29",
+      "to": "2022-09-29",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "42km",
+      "tier": "FLASH SALE",
+      "kind": "other",
+      "audience": null,
+      "price": 490000,
+      "from": "2022-09-29",
+      "to": "2022-09-29",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "5km",
+      "tier": "NHÓM - FLASH SALE",
+      "kind": "group",
+      "audience": null,
+      "price": 170000,
+      "from": "2022-09-29",
+      "to": "2022-10-05",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "10km",
+      "tier": "NHÓM - FLASH SALE",
+      "kind": "group",
+      "audience": null,
+      "price": 220000,
+      "from": "2022-09-29",
+      "to": "2022-10-05",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "21km",
+      "tier": "NHÓM - FLASH SALE",
+      "kind": "group",
+      "audience": null,
+      "price": 320000,
+      "from": "2022-09-29",
+      "to": "2022-10-05",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "42km",
+      "tier": "NHÓM - FLASH SALE",
+      "kind": "group",
+      "audience": null,
+      "price": 420000,
+      "from": "2022-09-29",
+      "to": "2022-10-05",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "5km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 290000,
+      "from": "2022-09-30",
+      "to": "2022-10-14",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "10km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 390000,
+      "from": "2022-09-30",
+      "to": "2022-10-14",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "21km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 490000,
+      "from": "2022-09-30",
+      "to": "2022-10-14",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "42km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 590000,
+      "from": "2022-09-30",
+      "to": "2022-10-14",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "5km",
+      "tier": "NHÓM - EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 220000,
+      "from": "2022-09-30",
+      "to": "2022-10-14",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "10km",
+      "tier": "NHÓM - EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 320000,
+      "from": "2022-09-30",
+      "to": "2022-10-14",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "21km",
+      "tier": "NHÓM - EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 420000,
+      "from": "2022-09-30",
+      "to": "2022-10-14",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "42km",
+      "tier": "NHÓM - EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 520000,
+      "from": "2022-09-30",
+      "to": "2022-10-14",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "5km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 590000,
+      "from": "2022-10-15",
+      "to": "2022-11-14",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "10km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 690000,
+      "from": "2022-10-15",
+      "to": "2022-11-14",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "21km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 790000,
+      "from": "2022-10-15",
+      "to": "2022-11-14",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "42km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 890000,
+      "from": "2022-10-15",
+      "to": "2022-11-14",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "5km",
+      "tier": "NHÓM - REGULAR",
+      "kind": "group",
+      "audience": null,
+      "price": 350000,
+      "from": "2022-10-15",
+      "to": "2022-11-14",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "10km",
+      "tier": "NHÓM - REGULAR",
+      "kind": "group",
+      "audience": null,
+      "price": 550000,
+      "from": "2022-10-15",
+      "to": "2022-11-14",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "21km",
+      "tier": "NHÓM - REGULAR",
+      "kind": "group",
+      "audience": null,
+      "price": 650000,
+      "from": "2022-10-15",
+      "to": "2022-11-14",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "42km",
+      "tier": "NHÓM - REGULAR",
+      "kind": "group",
+      "audience": null,
+      "price": 850000,
+      "from": "2022-10-15",
+      "to": "2022-11-14",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "5km",
+      "tier": "LATE",
+      "kind": "late",
+      "audience": null,
+      "price": 690000,
+      "from": "2022-11-15",
+      "to": "2022-11-25",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "10km",
+      "tier": "LATE",
+      "kind": "late",
+      "audience": null,
+      "price": 890000,
+      "from": "2022-11-15",
+      "to": "2022-11-25",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "21km",
+      "tier": "LATE",
+      "kind": "late",
+      "audience": null,
+      "price": 990000,
+      "from": "2022-11-15",
+      "to": "2022-11-25",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "42km",
+      "tier": "LATE",
+      "kind": "late",
+      "audience": null,
+      "price": 1290000,
+      "from": "2022-11-15",
+      "to": "2022-11-25",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "5km",
+      "tier": "NHÓM - LATE",
+      "kind": "group",
+      "audience": null,
+      "price": 550000,
+      "from": "2022-11-15",
+      "to": "2022-11-25",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "10km",
+      "tier": "NHÓM - LATE",
+      "kind": "group",
+      "audience": null,
+      "price": 650000,
+      "from": "2022-11-15",
+      "to": "2022-11-25",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "21km",
+      "tier": "NHÓM - LATE",
+      "kind": "group",
+      "audience": null,
+      "price": 950000,
+      "from": "2022-11-15",
+      "to": "2022-11-25",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    },
+    {
+      "distance": "42km",
+      "tier": "NHÓM - LATE",
+      "kind": "group",
+      "audience": null,
+      "price": 1200000,
+      "from": "2022-11-15",
+      "to": "2022-11-25",
+      "inferred": [],
+      "site": "dongthapmarathon-com"
+    }
+  ],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "dongthapmarathon-com",
+      "role": "reference",
+      "url": "http://web.archive.org/web/20221007131850/https://dongthapmarathon.com",
+      "lastCheckedAt": "2026-09-27T02:23:28.320Z",
+      "lastChangedAt": "2026-09-27T02:23:28.320Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Marathon Đất Sen Hồng - Đồng Tháp 2022",
+          "date": "2022-11-26",
+          "endDate": "2022-11-27",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "venue": "Thành phố Cao Lãnh, tỉnh Đồng Tháp",
+          "city": "Đồng Tháp",
+          "organizer": "Tỉnh Ủy – Ủy ban Nhân dân tỉnh Đồng Tháp (chỉ đạo); Sở Văn hoá, Thể thao và Du lịch tỉnh Đồng Tháp, Công ty Cổ phần Truyền thông Nexus và Công ty Cổ phần Văn hóa Tổng hợp Bến Thành (tổ chức)",
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "FLASH SALE",
+              "from": "2022-09-29",
+              "to": "2022-09-29",
+              "price": 190000
+            },
+            {
+              "distance": "10km",
+              "tier": "FLASH SALE",
+              "from": "2022-09-29",
+              "to": "2022-09-29",
+              "price": 290000
+            },
+            {
+              "distance": "21km",
+              "tier": "FLASH SALE",
+              "from": "2022-09-29",
+              "to": "2022-09-29",
+              "price": 390000
+            },
+            {
+              "distance": "42km",
+              "tier": "FLASH SALE",
+              "from": "2022-09-29",
+              "to": "2022-09-29",
+              "price": 490000
+            },
+            {
+              "distance": "5km",
+              "tier": "NHÓM - FLASH SALE",
+              "from": "2022-09-29",
+              "to": "2022-10-05",
+              "price": 170000
+            },
+            {
+              "distance": "10km",
+              "tier": "NHÓM - FLASH SALE",
+              "from": "2022-09-29",
+              "to": "2022-10-05",
+              "price": 220000
+            },
+            {
+              "distance": "21km",
+              "tier": "NHÓM - FLASH SALE",
+              "from": "2022-09-29",
+              "to": "2022-10-05",
+              "price": 320000
+            },
+            {
+              "distance": "42km",
+              "tier": "NHÓM - FLASH SALE",
+              "from": "2022-09-29",
+              "to": "2022-10-05",
+              "price": 420000
+            },
+            {
+              "distance": "5km",
+              "tier": "EARLY BIRD",
+              "from": "2022-09-30",
+              "to": "2022-10-14",
+              "price": 290000
+            },
+            {
+              "distance": "10km",
+              "tier": "EARLY BIRD",
+              "from": "2022-09-30",
+              "to": "2022-10-14",
+              "price": 390000
+            },
+            {
+              "distance": "21km",
+              "tier": "EARLY BIRD",
+              "from": "2022-09-30",
+              "to": "2022-10-14",
+              "price": 490000
+            },
+            {
+              "distance": "42km",
+              "tier": "EARLY BIRD",
+              "from": "2022-09-30",
+              "to": "2022-10-14",
+              "price": 590000
+            },
+            {
+              "distance": "5km",
+              "tier": "NHÓM - EARLY BIRD",
+              "from": "2022-09-30",
+              "to": "2022-10-14",
+              "price": 220000
+            },
+            {
+              "distance": "10km",
+              "tier": "NHÓM - EARLY BIRD",
+              "from": "2022-09-30",
+              "to": "2022-10-14",
+              "price": 320000
+            },
+            {
+              "distance": "21km",
+              "tier": "NHÓM - EARLY BIRD",
+              "from": "2022-09-30",
+              "to": "2022-10-14",
+              "price": 420000
+            },
+            {
+              "distance": "42km",
+              "tier": "NHÓM - EARLY BIRD",
+              "from": "2022-09-30",
+              "to": "2022-10-14",
+              "price": 520000
+            },
+            {
+              "distance": "5km",
+              "tier": "REGULAR",
+              "from": "2022-10-15",
+              "to": "2022-11-14",
+              "price": 590000
+            },
+            {
+              "distance": "10km",
+              "tier": "REGULAR",
+              "from": "2022-10-15",
+              "to": "2022-11-14",
+              "price": 690000
+            },
+            {
+              "distance": "21km",
+              "tier": "REGULAR",
+              "from": "2022-10-15",
+              "to": "2022-11-14",
+              "price": 790000
+            },
+            {
+              "distance": "42km",
+              "tier": "REGULAR",
+              "from": "2022-10-15",
+              "to": "2022-11-14",
+              "price": 890000
+            },
+            {
+              "distance": "5km",
+              "tier": "NHÓM - REGULAR",
+              "from": "2022-10-15",
+              "to": "2022-11-14",
+              "price": 350000
+            },
+            {
+              "distance": "10km",
+              "tier": "NHÓM - REGULAR",
+              "from": "2022-10-15",
+              "to": "2022-11-14",
+              "price": 550000
+            },
+            {
+              "distance": "21km",
+              "tier": "NHÓM - REGULAR",
+              "from": "2022-10-15",
+              "to": "2022-11-14",
+              "price": 650000
+            },
+            {
+              "distance": "42km",
+              "tier": "NHÓM - REGULAR",
+              "from": "2022-10-15",
+              "to": "2022-11-14",
+              "price": 850000
+            },
+            {
+              "distance": "5km",
+              "tier": "LATE",
+              "from": "2022-11-15",
+              "to": "2022-11-25",
+              "price": 690000
+            },
+            {
+              "distance": "10km",
+              "tier": "LATE",
+              "from": "2022-11-15",
+              "to": "2022-11-25",
+              "price": 890000
+            },
+            {
+              "distance": "21km",
+              "tier": "LATE",
+              "from": "2022-11-15",
+              "to": "2022-11-25",
+              "price": 990000
+            },
+            {
+              "distance": "42km",
+              "tier": "LATE",
+              "from": "2022-11-15",
+              "to": "2022-11-25",
+              "price": 1290000
+            },
+            {
+              "distance": "5km",
+              "tier": "NHÓM - LATE",
+              "from": "2022-11-15",
+              "to": "2022-11-25",
+              "price": 550000
+            },
+            {
+              "distance": "10km",
+              "tier": "NHÓM - LATE",
+              "from": "2022-11-15",
+              "to": "2022-11-25",
+              "price": 650000
+            },
+            {
+              "distance": "21km",
+              "tier": "NHÓM - LATE",
+              "from": "2022-11-15",
+              "to": "2022-11-25",
+              "price": 950000
+            },
+            {
+              "distance": "42km",
+              "tier": "NHÓM - LATE",
+              "from": "2022-11-15",
+              "to": "2022-11-25",
+              "price": 1200000
+            }
+          ],
+          "note": "Organizer's own official site (dongthapmarathon.com, config/sites.yaml key dat-sen-hong-marathon, recipe: none), snapshot from during registration; live site is now dead (connection refused). Confirms the 2022 edition — earliest one found for this series, and the only one with a genuine machine-readable price table."
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-27T02:23:28.320Z",
+  "updatedAt": "2026-09-27T02:23:28.320Z"
+}
