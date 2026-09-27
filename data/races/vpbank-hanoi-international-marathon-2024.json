@@ -1,0 +1,83 @@
+{
+  "id": "f2117724-dabd-46ee-a4fa-3f19d0473e67",
+  "slug": "vpbank-hanoi-international-marathon-2024",
+  "name": "VPBank Hanoi International Marathon 2024",
+  "types": [
+    "road_run"
+  ],
+  "date": "2024-10-13",
+  "endDate": null,
+  "seriesId": "vpbank-hanoi-international-marathon",
+  "organizerId": null,
+  "organizer": "Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
+  "edition": null,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Quảng trường Đông Kinh Nghĩa Thục, Hà Nội",
+    "city": "Hà Nội"
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "en-vietnamplus-vn",
+      "role": "reference",
+      "url": "https://en.vietnamplus.vn/some-11000-join-vpbank-hanoi-international-marathon-2024-post298216.vnp",
+      "lastCheckedAt": "2026-09-27T02:22:59.760Z",
+      "lastChangedAt": "2026-09-27T02:22:59.760Z",
+      "extracted": {
+        "facts": {
+          "name": "VPBank Hanoi International Marathon 2024",
+          "date": "2024-10-13",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "venue": "Quảng trường Đông Kinh Nghĩa Thục, Hà Nội",
+          "city": "Hà Nội",
+          "organizer": "Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
+          "note": "VietnamPlus/VNA, 2024-10-13: news coverage of VPBank Hanoi International Marathon 2024, race day Sunday 2024-10-13 at Dong Kinh Nghia Thuc Square, 4 distances, ~11,000 runners from 20 countries — a previously untracked edition found via race-research"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-27T02:22:59.760Z",
+  "updatedAt": "2026-09-27T02:22:59.760Z"
+}
