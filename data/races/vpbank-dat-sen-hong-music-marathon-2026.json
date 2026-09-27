@@ -418,9 +418,35 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "tuoitre-vn",
+      "role": "reference",
+      "url": "https://tuoitre.vn/gan-12000-van-dong-vien-dang-ky-vpbank-dat-sen-hong-music-marathon-2026-100260818162047376.htm",
+      "lastCheckedAt": "2026-09-27T02:29:11.152Z",
+      "lastChangedAt": "2026-09-27T02:29:11.152Z",
+      "extracted": {
+        "facts": {
+          "name": "VPBank Đất Sen Hồng Music Marathon 2026",
+          "date": "2026-10-09",
+          "endDate": "2026-10-11",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "venue": "quảng trường Văn Miếu, phường Cao Lãnh, tỉnh Đồng Tháp",
+          "city": "Đồng Tháp",
+          "note": "News corroboration: confirms date, venue, distances and states this is 'Mùa giải thứ 5'."
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-27T02:28:56.947Z"
+  "updatedAt": "2026-09-27T02:29:11.152Z"
 }
