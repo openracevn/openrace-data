@@ -7,7 +7,7 @@
   ],
   "date": "2023-10-14",
   "endDate": "2023-10-15",
-  "seriesId": null,
+  "seriesId": "vpbank-dat-sen-hong-music-marathon",
   "organizerId": null,
   "organizer": "Tỉnh Ủy – Ủy ban Nhân dân tỉnh Đồng Tháp (chỉ đạo); Sở Văn hoá, Thể thao và Du lịch tỉnh Đồng Tháp và Công ty Cổ phần Truyền thông Nexus (tổ chức)",
   "edition": null,
@@ -50,7 +50,13 @@
   "flags": [
     "sources disagree on race day: dongthapmarathon-com 2023-10-14, yeuchaybo-com 2023-10-15"
   ],
-  "overrides": {},
+  "overrides": {
+    "seriesId": {
+      "value": "vpbank-dat-sen-hong-music-marathon",
+      "reason": "Same annual series as the 2022, 2024, 2025 and 2026 editions.",
+      "at": "2026-09-27T02:25:40.864Z"
+    }
+  },
   "sources": [
     {
       "site": "dongthapmarathon-com",
@@ -107,5 +113,5 @@
   ],
   "confidence": "conflicting",
   "createdAt": "2026-09-27T02:24:23.189Z",
-  "updatedAt": "2026-09-27T02:25:10.361Z"
+  "updatedAt": "2026-09-27T02:25:40.864Z"
 }
