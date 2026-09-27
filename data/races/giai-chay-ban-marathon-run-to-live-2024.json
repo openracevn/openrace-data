@@ -11,7 +11,14 @@
   "organizerId": "miracle-entertainment-group-bao-sai-gon-giai-phong-so-vhtt-ho-chi-minh",
   "organizer": "Miracle Entertainment Group - Báo Sài Gòn Giải Phóng - Sở VHTT Hồ Chí Minh",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": null,
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "METROPOLE THỦ THIÊM, THÀNH PHỐ THỦ ĐỨC",
     "city": null
@@ -154,9 +161,28 @@
           "name": "Miracle Entertainment Group - Báo Sài Gòn Giải Phóng - Sở VHTT Hồ Chí Minh"
         }
       }
+    },
+    {
+      "site": "nhandan-vn",
+      "role": "reference",
+      "url": "https://nhandan.vn/6000-van-dong-vien-tranh-tai-tai-giai-chay-bo-run-to-live-post799379.html",
+      "lastCheckedAt": "2026-09-27T08:10:13.932Z",
+      "lastChangedAt": "2026-09-27T08:10:13.932Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Run To Live-Chạy vì cuộc sống lần thứ nhất năm 2024",
+          "date": "2024-03-10",
+          "venue": "đường Trần Bạch Đằng (đoạn từ R12 đến N13), phường Thủ Thiêm, thành phố Thủ Đức, Thành phố Hồ Chí Minh",
+          "organizer": "Báo Sài Gòn Giải Phóng, Sở Văn hóa và Thể thao Thành phố Hồ Chí Minh, Công ty Miracle Entertainment Group",
+          "distances": [
+            "21km"
+          ],
+          "note": "states this is edition 1 ('lần thứ nhất năm 2024'), corroborates organizer and venue"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-27T08:10:13.932Z"
 }
