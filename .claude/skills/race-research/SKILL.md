@@ -152,6 +152,8 @@ opencode run --auto -m opencode/muse-spark-1.3-contributor-free \
 
 ## 5. Write it (Claude only — commits, decisions)
 
+**Before adding a newly-found past edition, run step 1.5(b) on it first, not just on races already in step 1's audit list.** A past edition you just found in step 2 is exactly as liable to have lost its price/distance/venue off the live page as one you already tracked — "new to us" isn't an exemption from the Wayback check. Concretely: pull the CDX listing for its primary source page, fetch a snapshot from inside its sale window, and only accept `prices: []` on it after that's come up empty. (Found the hard way on VPIM: three past editions — 2023, 2024, 2025 — were added straight from news-article sources with empty prices, and only checked against Wayback after the user separately asked "no wayback for prices?" — one of the three, 2023, did have a recoverable price table.)
+
 **A missing edition** (no existing race file):
 
 ```bash
