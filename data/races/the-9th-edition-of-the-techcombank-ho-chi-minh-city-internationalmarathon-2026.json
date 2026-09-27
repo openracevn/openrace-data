@@ -10,7 +10,7 @@
   "seriesId": "techcombank-ho-chi-minh-city-international-marathon",
   "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
-  "edition": null,
+  "edition": 9,
   "courses": [
     {
       "label": "5km",
@@ -149,6 +149,11 @@
       "value": "techcombank-ho-chi-minh-city-international-marathon",
       "reason": "unify series id: 9th edition of same race series",
       "at": "2026-09-27T08:08:27.713Z"
+    },
+    "edition": {
+      "value": 9,
+      "reason": "actiup/official site both state Mùa thứ 9 / 9th edition",
+      "at": "2026-09-27T08:08:35.131Z"
     }
   },
   "sources": [
@@ -198,5 +203,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-27T08:08:27.713Z"
+  "updatedAt": "2026-09-27T08:08:35.131Z"
 }
