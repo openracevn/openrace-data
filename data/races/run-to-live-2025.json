@@ -9,7 +9,7 @@
   "endDate": null,
   "seriesId": null,
   "organizerId": null,
-  "organizer": null,
+  "organizer": "Báo Sài Gòn Giải Phóng; Sở Văn hóa, Thể thao Thành phố Hồ Chí Minh; Công ty Miracle Entertainment Group; Ban Quản lý phát triển đô thị Thủ Thiêm",
   "edition": null,
   "courses": [
     {
@@ -436,9 +436,30 @@
         ],
         "readBy": "agent"
       }
+    },
+    {
+      "site": "nhandan-vn",
+      "role": "reference",
+      "url": "https://nhandan.vn/khoang-10-nghin-van-dong-vien-tham-gia-giai-chay-run-to-live-mua-2-post833791.html",
+      "lastCheckedAt": "2026-09-27T08:08:19.789Z",
+      "lastChangedAt": "2026-09-27T08:08:19.789Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy bán marathon Run To Live 2025",
+          "date": "2025-03-09",
+          "venue": "Metropole Thủ Thiêm, thành phố Thủ Đức, Thành phố Hồ Chí Minh",
+          "organizer": "Báo Sài Gòn Giải Phóng; Sở Văn hóa, Thể thao Thành phố Hồ Chí Minh; Công ty Miracle Entertainment Group; Ban Quản lý phát triển đô thị Thủ Thiêm",
+          "distances": [
+            "5km",
+            "10km",
+            "21km"
+          ],
+          "note": "corroborates 2025 (mùa 2) date range and full organizer list; irace.vn source had no organizer field"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-27T08:06:39.781Z",
-  "updatedAt": "2026-09-27T08:06:39.781Z"
+  "updatedAt": "2026-09-27T08:08:19.789Z"
 }
