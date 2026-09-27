@@ -49,7 +49,7 @@ All three can be filtered on.
 | `registrations` | Every place to buy a ticket, see below |
 | `links` | Every related URL, see below |
 | `registrationStatus` | Derived from tier dates plus "sold out" / "hết vé" text. No extra scrape |
-| `currency` | As the site gives it. No conversion |
+| `currency` | Always `"VND"` (superseded by [plan 014](../plans/014-2026-09-27-vnd-currency-conversion.md)): a non-VND source is converted per tier at its own historical rate, original figure kept in `priceOriginal`/`fxRate` |
 | `overrides`, `sources`, `confidence`, timestamps | As now; `sources` carry the raw extractions (evidence) |
 
 ### Prices: every tier, with dates
