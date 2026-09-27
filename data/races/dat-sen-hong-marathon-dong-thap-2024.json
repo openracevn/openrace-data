@@ -10,7 +10,7 @@
   "seriesId": "vpbank-dat-sen-hong-music-marathon",
   "organizerId": "nexus-sport-events",
   "organizer": "Nexus Sport Events",
-  "edition": null,
+  "edition": 3,
   "courses": [],
   "location": {
     "venue": "TP. Cao Lãnh, tỉnh Đồng Tháp",
@@ -141,6 +141,11 @@
       "value": "vpbank-dat-sen-hong-music-marathon",
       "reason": "Same annual series as the 2022, 2023, 2025 and 2026 editions.",
       "at": "2026-09-27T02:26:14.902Z"
+    },
+    "edition": {
+      "value": 3,
+      "reason": "irace.vn's own ticket page for this race (ticket.irace.vn/dat-sen-hong-marathon-dong-thap-2024) states 'Giải đấu được tổ chức lần thứ 3'; a thanhnien.vn article on the same race also calls it 'lần 3 năm 2024'.",
+      "at": "2026-09-27T02:26:28.768Z"
     }
   },
   "sources": [
@@ -175,5 +180,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-27T02:26:14.902Z"
+  "updatedAt": "2026-09-27T02:26:28.768Z"
 }
