@@ -7,7 +7,7 @@
   ],
   "date": "2024-10-12",
   "endDate": "2024-10-13",
-  "seriesId": null,
+  "seriesId": "vpbank-dat-sen-hong-music-marathon",
   "organizerId": "nexus-sport-events",
   "organizer": "Nexus Sport Events",
   "edition": null,
@@ -136,6 +136,11 @@
       ],
       "reason": "inferred from race name/price-tier text (marathon); no source states an explicit type",
       "at": "2026-09-26T13:21:53.036Z"
+    },
+    "seriesId": {
+      "value": "vpbank-dat-sen-hong-music-marathon",
+      "reason": "Same annual series as the 2022, 2023, 2025 and 2026 editions.",
+      "at": "2026-09-27T02:26:14.902Z"
     }
   },
   "sources": [
@@ -170,5 +175,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-27T02:26:14.902Z"
 }
