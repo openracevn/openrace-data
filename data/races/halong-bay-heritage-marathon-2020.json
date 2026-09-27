@@ -1,0 +1,81 @@
+{
+  "id": "f4d2047d-dc42-4ebc-bda4-432de73229a9",
+  "slug": "halong-bay-heritage-marathon-2020",
+  "name": "Halong Bay Heritage Marathon 2020",
+  "types": [
+    "road_run"
+  ],
+  "date": "2020-11-22",
+  "endDate": null,
+  "seriesId": "halong-bay-heritage-marathon",
+  "organizerId": null,
+  "organizer": "Công ty DHA Việt Nam",
+  "edition": null,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": null,
+    "city": null
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "halong-marathon",
+      "role": "reference",
+      "url": "https://web.archive.org/web/20201028200924/http://halongmarathon.com",
+      "lastCheckedAt": "2026-09-27T02:46:50.958Z",
+      "lastChangedAt": "2026-09-27T02:46:50.958Z",
+      "extracted": {
+        "facts": {
+          "name": "Halong Bay Heritage Marathon 2020",
+          "date": "2020-11-22",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "organizer": "Công ty DHA Việt Nam",
+          "note": "Wayback snapshot of halongmarathon.com, 2020-10-28: 'NEXT RACE 11/22/2020' countdown, distances Marathon/Half Marathon/10km/5km"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-27T02:46:50.958Z",
+  "updatedAt": "2026-09-27T02:46:50.958Z"
+}
