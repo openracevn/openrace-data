@@ -1,0 +1,177 @@
+{
+  "id": "9c880234-44d9-4e11-8af2-95c6273dd9dc",
+  "slug": "halong-bay-heritage-marathon-2022",
+  "name": "Halong Bay Heritage Marathon 2022",
+  "types": [
+    "road_run"
+  ],
+  "date": "2022-11-13",
+  "endDate": null,
+  "seriesId": "halong-bay-heritage-marathon",
+  "organizerId": null,
+  "organizer": "Công ty DHA Việt Nam",
+  "edition": null,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Thành phố Hạ Long",
+    "city": null
+  },
+  "geo": {
+    "lat": 20.9379565,
+    "lng": 107.1275055,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "22",
+      "ward": "06652"
+    },
+    "legacy": {
+      "province": "22",
+      "district": "193",
+      "ward": "06664"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1581.4,
+        "minutes": 1193,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 163.5,
+        "minutes": 117,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 858.9,
+        "minutes": 681,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1362.7,
+        "minutes": 1068,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1490.2,
+        "minutes": 1186,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1692.3,
+        "minutes": 1312,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 58.2,
+        "minutes": 48,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 756.7,
+        "minutes": 598,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1672.4,
+        "minutes": 1275,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1170.7,
+        "minutes": 907,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1367.5,
+        "minutes": 1105,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 473,
+        "minutes": 362,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 6.2,
+        "minutes": 7,
+        "method": "road",
+        "near": true
+      }
+    }
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "justrunlah-com",
+      "role": "reference",
+      "url": "https://justrunlah.com/race/halong-bay-heritage-marathon-2022",
+      "lastCheckedAt": "2026-09-27T02:50:56.279Z",
+      "lastChangedAt": "2026-09-27T02:50:56.279Z",
+      "extracted": {
+        "facts": {
+          "name": "Halong Bay Heritage Marathon 2022",
+          "date": "2022-11-13",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "venue": "Thành phố Hạ Long",
+          "organizer": "Công ty DHA Việt Nam",
+          "note": "JustRunLah race listing: 'Date: 13 November 2022, Venue: Thành phố Hạ Long, Categories: Full Marathon, Half Marathon, 10 km, 5 km'; entry fees shown in EUR (international tier) not recorded as VND prices"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-27T02:50:56.279Z",
+  "updatedAt": "2026-09-27T02:50:56.279Z"
+}
