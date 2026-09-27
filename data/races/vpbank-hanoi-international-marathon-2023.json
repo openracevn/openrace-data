@@ -39,10 +39,143 @@
   ],
   "location": {
     "venue": "Phố đi bộ Hồ Gươm, Hà Nội",
-    "city": "Hà Nội"
+    "city": null
   },
   "geo": null,
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 399000,
+      "from": "2023-05-04",
+      "to": "2023-05-17",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 499000,
+      "from": "2023-05-04",
+      "to": "2023-05-17",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 699000,
+      "from": "2023-05-04",
+      "to": "2023-05-17",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 799000,
+      "from": "2023-05-04",
+      "to": "2023-05-17",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 668000,
+      "from": "2023-05-18",
+      "to": "2023-06-28",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 988000,
+      "from": "2023-05-18",
+      "to": "2023-06-28",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 1268000,
+      "from": "2023-05-18",
+      "to": "2023-06-28",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 1688000,
+      "from": "2023-05-18",
+      "to": "2023-06-28",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 988000,
+      "from": "2023-06-29",
+      "to": "2023-07-12",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1268000,
+      "from": "2023-06-29",
+      "to": "2023-07-12",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1688000,
+      "from": "2023-06-29",
+      "to": "2023-07-12",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2168000,
+      "from": "2023-06-29",
+      "to": "2023-07-12",
+      "inferred": [],
+      "site": "irace"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": null,
   "registrations": [],
@@ -75,9 +208,110 @@
           "note": "Báo Quân đội Nhân dân (via vietnam.vn), 2023-03-16: official announcement of VPBank Hanoi International Marathon (VPIM) 2023, race day Sunday 2023-10-08, 4 distances starting from phố đi bộ Hồ Gươm — a previously untracked edition found via race-research"
         }
       }
+    },
+    {
+      "site": "irace",
+      "role": "reference",
+      "url": "http://web.archive.org/web/20230928170856/https://ticket.irace.vn/vpbank-hanoi-international-marathon",
+      "lastCheckedAt": "2026-09-27T02:39:33.647Z",
+      "lastChangedAt": "2026-09-27T02:39:33.647Z",
+      "extracted": {
+        "facts": {
+          "name": "VPBank Hanoi International Marathon 2023",
+          "date": "2023-10-08",
+          "venue": "Phố đi bộ Hồ Hoàn Kiếm, Hà Nội",
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Early Bird",
+              "from": "2023-05-04",
+              "to": "2023-05-17",
+              "price": 399000
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "from": "2023-05-04",
+              "to": "2023-05-17",
+              "price": 499000
+            },
+            {
+              "distance": "21km",
+              "tier": "Early Bird",
+              "from": "2023-05-04",
+              "to": "2023-05-17",
+              "price": 699000
+            },
+            {
+              "distance": "42km",
+              "tier": "Early Bird",
+              "from": "2023-05-04",
+              "to": "2023-05-17",
+              "price": 799000
+            },
+            {
+              "distance": "5km",
+              "tier": "Standard",
+              "from": "2023-05-18",
+              "to": "2023-06-28",
+              "price": 668000
+            },
+            {
+              "distance": "10km",
+              "tier": "Standard",
+              "from": "2023-05-18",
+              "to": "2023-06-28",
+              "price": 988000
+            },
+            {
+              "distance": "21km",
+              "tier": "Standard",
+              "from": "2023-05-18",
+              "to": "2023-06-28",
+              "price": 1268000
+            },
+            {
+              "distance": "42km",
+              "tier": "Standard",
+              "from": "2023-05-18",
+              "to": "2023-06-28",
+              "price": 1688000
+            },
+            {
+              "distance": "5km",
+              "tier": "Late",
+              "from": "2023-06-29",
+              "to": "2023-07-12",
+              "price": 988000
+            },
+            {
+              "distance": "10km",
+              "tier": "Late",
+              "from": "2023-06-29",
+              "to": "2023-07-12",
+              "price": 1268000
+            },
+            {
+              "distance": "21km",
+              "tier": "Late",
+              "from": "2023-06-29",
+              "to": "2023-07-12",
+              "price": 1688000
+            },
+            {
+              "distance": "42km",
+              "tier": "Late",
+              "from": "2023-06-29",
+              "to": "2023-07-12",
+              "price": 2168000
+            }
+          ],
+          "note": "Wayback snapshot of iRace.vn's VPIM ticket page, 2023-09-28 (11 days before the 2023-10-08 race, inside its sale window): confirms venue (phố đi bộ hồ Hoàn Kiếm) and gives the full Early Bird/Standard/Late price table for all 4 distances. Note: the same page's content is unchanged in later 2024 and 2025 crawls (iRace never updated it), so it is NOT used as a source for those years' prices — only for 2023, whose sale window it actually falls within."
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-27T02:22:22.611Z",
-  "updatedAt": "2026-09-27T02:22:22.611Z"
+  "updatedAt": "2026-09-27T02:39:33.647Z"
 }
