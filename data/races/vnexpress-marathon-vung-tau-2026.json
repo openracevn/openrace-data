@@ -10,7 +10,7 @@
   "seriesId": "vnexpress-marathon-vung-tau",
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
-  "edition": null,
+  "edition": 1,
   "courses": [
     {
       "label": "5km",
@@ -270,7 +270,13 @@
   "registrations": [],
   "links": [],
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "edition": {
+      "value": 1,
+      "reason": "vnexpress.net article (mo-dang-ky-5089743) states this is the first time VnExpress Marathon is held in Vũng Tàu: 'Giải chạy VnExpress Marathon lần đầu tổ chức tại Vũng Tàu vào ngày 30/8/2026' (meta description), and the 12th city in the series",
+      "at": "2026-09-27T02:04:36.102Z"
+    }
+  },
   "sources": [
     {
       "site": "vnexpress-marathon",
@@ -435,5 +441,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T04:11:49.673Z",
-  "updatedAt": "2026-09-27T02:04:10.736Z"
+  "updatedAt": "2026-09-27T02:04:36.102Z"
 }
