@@ -11,7 +11,7 @@
   "seriesId": "gia-lai-city-trail-giac-mo-dai-ngan",
   "organizerId": null,
   "organizer": "VIETRACE365",
-  "edition": null,
+  "edition": 1,
   "courses": [
     {
       "label": "5km",
@@ -323,7 +323,13 @@
   "links": [],
   "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "edition": {
+      "value": 1,
+      "reason": "Organizer site (gialaicitytrail.com 2024 snapshot) says Mùa 1 is 2023; Báo Gia Lai calls 2024 the second and 2023 the first",
+      "at": "2026-09-28T16:33:39.616Z"
+    }
+  },
   "sources": [
     {
       "site": "timve365",
@@ -505,5 +511,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:29:34.804Z",
-  "updatedAt": "2026-09-28T16:32:08.077Z"
+  "updatedAt": "2026-09-28T16:33:39.616Z"
 }
