@@ -527,9 +527,35 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "pocarisweatrun-com-vn",
+      "role": "reference",
+      "url": "https://pocarisweatrun.com.vn/en/home",
+      "lastCheckedAt": "2026-09-28T16:25:09.273Z",
+      "lastChangedAt": "2026-09-28T16:25:09.273Z",
+      "extracted": {
+        "facts": {
+          "name": "Pocari Sweat Run 2026",
+          "date": "2026-09-13",
+          "organizer": "Pocari Sweat Run Vietnam",
+          "venue": "Công viên Hòa Bình",
+          "city": "Hà Nội",
+          "distances": [
+            "3km",
+            "5km",
+            "10km",
+            "21km"
+          ],
+          "types": [
+            "road_run"
+          ],
+          "note": "Organizer's own site: race day 13/09/2026 (expo 12/09), start points Hòa Bình Park and Thống Nhất Park, 3/5/10/21km"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T16:18:14.143Z"
+  "updatedAt": "2026-09-28T16:25:09.273Z"
 }
