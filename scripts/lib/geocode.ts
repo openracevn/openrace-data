@@ -18,6 +18,8 @@ export type GeoTarget = {
 
 export type EnrichGeoOptions = {
   refresh?: boolean;
+  /** Look up again the cached entries that found no point (after a query fix). */
+  retryMissing?: boolean;
   limit?: number;
   onEntry?: (cache: GeoCache, key: string) => void;
   onError?: (target: GeoTarget, error: Error) => void;
@@ -30,7 +32,7 @@ export async function enrichGeo(targets: readonly GeoTarget[], initial: GeoCache
   for (const target of targets) {
     const key = locationKey(target.location);
     if (key === null || seen.has(key)) continue;
-    if (!options.refresh && cache[key]) continue;
+    if (!options.refresh && cache[key] && !(options.retryMissing && !cache[key].geo && !isVirtual(target))) continue;
     if (options.limit !== undefined && lookups >= options.limit) break;
     seen.add(key);
     lookups++;
@@ -92,7 +94,7 @@ async function lookupEntry(target: GeoTarget, key: string): Promise<GeoCacheEntr
     const geo = await buildGeo(place.center[0], place.center[1], "place", "province");
     return { geo, query: place.name, at: new Date().toISOString(), note: point ? "geocoded point outside the wards; used the place's centre" : "no point found; used the place's centre" };
   }
-  if (!point) return { geo: null, query: queries(target.location)[0] ?? key, at: new Date().toISOString(), note: "no point found" };
+  if (!point) return { geo: null, query: geocodeQueries(target.location)[0] ?? key, at: new Date().toISOString(), note: "no point found" };
   return { geo: null, query: point.query, at: new Date().toISOString(), note: "point outside Vietnam's wards" };
 }
 
@@ -189,7 +191,7 @@ async function pointFor(target: GeoTarget): Promise<{ lat: number; lng: number; 
     const point = await mapsPoint(url);
     if (point) return { lat: point[0], lng: point[1], source: "maps_link", precision: "venue", query: url };
   }
-  for (const query of queries(target.location)) {
+  for (const query of geocodeQueries(target.location)) {
     const result = await nominatim(query);
     if (result) return { ...result, source: "nominatim", query };
   }
@@ -216,7 +218,7 @@ async function mapsPoint(url: string): Promise<[number, number] | null> {
 
 async function nominatim(query: string): Promise<{ lat: number; lng: number; precision: Geo["precision"] } | null> {
   const url = new URL("https://nominatim.openstreetmap.org/search");
-  url.search = new URLSearchParams({ format: "jsonv2", countrycodes: "vn", limit: "1", addressdetails: "1", q: query }).toString();
+  url.search = new URLSearchParams({ format: "jsonv2", countrycodes: "vn", limit: "5", addressdetails: "1", q: query }).toString();
   const response = await rateFetch(url, { headers: { "User-Agent": USER_AGENT } });
   if (!response.ok) throw new Error(`Nominatim ${response.status} ${response.statusText}`);
   const body = (await response.json()) as unknown;
@@ -226,22 +228,65 @@ async function nominatim(query: string): Promise<{ lat: number; lng: number; pre
     const lat = Number(value.lat);
     const lng = Number(value.lon);
     if (!inVietnam(lat, lng)) continue;
+    if (typeof value.name === "string" && !nameMatchesQuery(value.name, query)) continue;
     return { lat, lng, precision: precisionOf(value.addresstype, value.type) };
   }
   return null;
 }
 
-function queries(location: GeoTarget["location"]): string[] {
-  const venue = location.venue?.trim() ?? "";
-  const city = location.city?.trim() ?? "";
+// Nominatim misses addresses written with full admin-unit prefixes ("Đường Lý Thường
+// Kiệt, Phường Cao Lãnh, Tỉnh Đồng Tháp") but finds the bare names ("Lý Thường Kiệt,
+// Cao Lãnh, Đồng Tháp"), and any "(phía trước công viên …)" note sinks every query.
+const UNIT_PREFIX = /^(?:đường|phố|phường|xã|thị trấn|thị xã|quận|huyện|tỉnh|thành phố|tp\.?)\s+/iu;
+
+function bareParts(parts: readonly string[]): string[] {
+  // "Quận 7" / "Phường 12" mean nothing without the prefix, so numbered units keep it.
+  return parts
+    .map((part) => {
+      const bare = part.replace(UNIT_PREFIX, "").trim();
+      return /^\d+$/.test(bare) ? part : bare;
+    })
+    .filter(Boolean);
+}
+
+function words(text: string): string[] {
+  return foldVietnamese(text).split(/[^a-z0-9]+/).filter(Boolean);
+}
+
+/**
+ * Nominatim ranks loosely: "Thành Phố Hồ Chí Minh, Ho Chi Minh City" came back as a
+ * hotel and "Gia Nghĩa - tỉnh Đăk Nông" as a stream. Keep a result only when its own
+ * name is made of the query's words, or the query's first part is inside its name; a
+ * wrong pin is worse than none (the next, coarser query or the place fallback runs).
+ */
+export function nameMatchesQuery(name: string, query: string): boolean {
+  const nameWords = words(name);
+  if (nameWords.length === 0) return true;
+  const queryWords = new Set(words(query));
+  if (nameWords.every((word) => queryWords.has(word))) return true;
+  const head = words(query.split(",")[0] ?? "");
+  const nameSet = new Set(nameWords);
+  return head.length > 0 && head.every((word) => nameSet.has(word));
+}
+
+export function geocodeQueries(location: GeoTarget["location"]): string[] {
+  const clean = (text: string | null | undefined) => (text ?? "").replace(/\([^)]*\)/g, " ").replace(/\s+/g, " ").trim();
+  const venue = clean(location.venue);
+  const city = clean(location.city);
   // Venues are written like addresses ("Công Viên Hồ Bán Nguyệt, Quận 7, TP. Hồ Chí Minh")
   // and often use pre-2025 units Nominatim no longer finds. Drop leading parts one at a
   // time, so at worst the province is found (precision then says how coarse it is).
+  // Each step is tried as written, then with the unit prefixes stripped.
   const parts = venue.split(",").map((p) => p.trim()).filter(Boolean);
-  const tails = parts.slice(1).map((_, i) => parts.slice(i + 1).join(", "));
+  const withCity = venue && city ? [...parts, city] : [];
+  const steps = [withCity, parts, ...parts.slice(1).map((_, i) => parts.slice(i + 1)), city ? [city] : []];
   return [
     ...new Set(
-      [venue && city ? `${venue}, ${city}` : "", venue, ...tails, city].map((query) => query.replace(/\s+/g, " ").trim()).filter(Boolean),
+      steps
+        .filter((step) => step.length > 0)
+        .flatMap((step) => [step.join(", "), bareParts(step).join(", ")])
+        .map((query) => query.replace(/\s+/g, " ").trim())
+        .filter(Boolean),
     ),
   ];
 }

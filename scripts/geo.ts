@@ -7,6 +7,7 @@ import { serializeSorted } from "./lib/state.ts";
 
 const args = process.argv.slice(2);
 const refresh = args.includes("--refresh");
+const retryMissing = args.includes("--retry-missing");
 const dryRun = args.includes("--dry-run");
 const limitIndex = args.indexOf("--limit");
 const limit = limitIndex >= 0 ? Number(args[limitIndex + 1]) : undefined;
@@ -23,6 +24,7 @@ const cache = parseGeoCache(existsSync("state/geo.json") ? readFileSync("state/g
 let failures = 0;
 const enriched = await enrichGeo(targets, cache, {
   refresh,
+  retryMissing,
   ...(limit !== undefined && { limit }),
   onEntry: (next) => {
     if (!dryRun) write("state/geo.json", serializeSorted(next));

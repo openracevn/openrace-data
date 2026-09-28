@@ -98,6 +98,7 @@ Setting `prices` by hand: every entry's `site` must equal one of the race's exis
   - courses: `[{"label":"21km","meters":21097,"type":"road_run","elevationGain":null}]`
   - edition: `5` or `null`
   - location: `{"venue":"…","city":"…"}`
+    - After a location edit, check the race got a point: `state/geo.json` has an entry per location; `"note": "no point found"` means no map on the site. Geocoding already drops "(…)" notes and retries without "Đường/Phường/Tỉnh…" prefixes, and rejects results whose name doesn't match the query. If it still fails, set the point by hand: `npm run edit -- <race> geo '{"lat":…,"lng":…}'`. After a geocoder fix, `npm run geo -- --retry-missing` re-looks up only the failed entries.
   - prices: `[{"distance":"21km","tier":"Early Bird","kind":"early","audience":null,"price":750000,"from":"2026-06-24","to":"2026-07-16","inferred":[],"site":"openrace"}]`
   - date: `"YYYY-MM-DD"`
 - `seriesId` and `organizerId` must exist in `data/series.json` / `data/organizers.json`. Add entries there by hand, sorted by id.
