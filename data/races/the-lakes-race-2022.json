@@ -3,10 +3,11 @@
   "slug": "the-lakes-race-2022",
   "name": "The Lakes Race 2022",
   "types": [
-    "other"
+    "city_trail"
   ],
   "date": "2022-05-15",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "andros-the-lakes-race",
   "organizerId": null,
   "organizer": "Athlete Trotter",
@@ -153,6 +154,7 @@
     }
   ],
   "links": [],
+  "participants": null,
   "flags": [],
   "overrides": {
     "edition": {
@@ -164,6 +166,13 @@
       "value": "andros-the-lakes-race",
       "reason": "race-research: same series as the other editions.",
       "at": "2026-09-25T06:55:03.609Z"
+    },
+    "types": {
+      "value": [
+        "city_trail"
+      ],
+      "reason": "Andros Lakes Race: user says every edition is city trail",
+      "at": "2026-09-28T16:03:25.593Z"
     }
   },
   "sources": [
@@ -194,5 +203,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T06:48:59.089Z",
-  "updatedAt": "2026-09-28T05:58:42.803Z"
+  "updatedAt": "2026-09-28T16:03:25.593Z"
 }
