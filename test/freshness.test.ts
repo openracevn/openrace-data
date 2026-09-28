@@ -18,6 +18,7 @@ const entry = (e: Partial<IndexEntry>): IndexEntry => ({
   name: "Lâm Đồng Trail 2026",
   date: "2026-12-06",
   endDate: null,
+  mainDate: null,
   lastModified: "2026-09-20T10:00:00.000Z",
   file: "lam-dong-trail-2026.json",
   seriesId: null,

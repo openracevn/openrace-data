@@ -238,6 +238,7 @@ export const CANONICAL_FIELDS = [
   "types",
   "date",
   "endDate",
+  "mainDate",
   "seriesId",
   "organizerId",
   "organizer",
@@ -289,6 +290,9 @@ export const RaceSchema = z
     date: raceDate,
     // Last race day of a multi-day event; null for a one-day race.
     endDate: raceDate.nullable(),
+    // The headline race day of a multi-day event, only when a source states it (or an
+    // override does). Null = not stated, never a copy of `date`.
+    mainDate: raceDate.nullable().default(null),
     seriesId: slug.nullable(),
     organizerId: slug.nullable(),
     // The organizer as a source writes it.
@@ -321,6 +325,10 @@ export const RaceSchema = z
     updatedAt: isoDateTime,
   })
   .refine((r) => r.endDate === null || r.endDate >= r.date, { message: "endDate must be >= date", path: ["endDate"] })
+  .refine((r) => r.mainDate === null || (r.endDate !== null && r.mainDate >= r.date && r.mainDate <= r.endDate), {
+    message: "mainDate needs an endDate and must fall within date..endDate",
+    path: ["mainDate"],
+  })
   .refine((r) => r.createdAt <= r.updatedAt, { message: "createdAt must be <= updatedAt", path: ["updatedAt"] })
   .superRefine((r, ctx) => {
     for (const [field, override] of Object.entries(r.overrides)) {
@@ -427,6 +435,7 @@ export const IndexEntrySchema = z.object({
   date: raceDate,
   // The race's last day, for freshness (final after it, and never checked again).
   endDate: raceDate.nullable().default(null),
+  mainDate: raceDate.nullable().default(null),
   lastModified: isoDateTime,
   // The race's file in data/races (raceFileName), so readers don't need the naming rule.
   file: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*-\d{4}\.json$/, "expected <slug>-<year>.json"),

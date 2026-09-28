@@ -22,7 +22,7 @@
  *       holding content the live page has since dropped (an expired price table, a
  *       JS-only tab a plain fetch can't render) is new information, not a re-read.
  *       <fields> are extraction-shaped:
- *       {"name","date","endDate","types","distances","venue","city","organizer",
+ *       {"name","date","endDate","mainDate","types","distances","venue","city","organizer",
  *        "registrationStatus","prices":[{"distance","tier","from","to","price"}]};
  *       name and date required.
  *       Re-running add with the SAME --url updates that race — never reuse a URL for a

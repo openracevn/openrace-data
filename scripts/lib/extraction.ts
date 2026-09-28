@@ -69,6 +69,10 @@ export const PAGE_EXTRACTION = {
       name: { type: "string", description: "Official event name exactly as written. Do not translate it." },
       date: { type: "string", description: "Race day as YYYY-MM-DD. For multi-day events, the first day." },
       endDate: { type: "string", description: "Last race day as YYYY-MM-DD, only for multi-day events." },
+      mainDate: {
+        type: "string",
+        description: "The main (headline) race day as YYYY-MM-DD, only for a multi-day event and only when the page states which day is the main race. Omit it otherwise; never guess.",
+      },
       distances: { type: "array", items: { type: "string" }, description: "Race distances offered, as written (\"5km\", \"21KM\", \"Half Marathon\")." },
       courses: {
         type: "array",
@@ -175,6 +179,7 @@ export type SourceFacts = {
   types: RaceType[];
   date: string;
   endDate: string | null;
+  mainDate: string | null;
   courses: Course[];
   edition: number | null;
   mapsUrl: string | null;
@@ -228,6 +233,9 @@ export function normalizeExtraction(raw: SourceExtraction | Record<string, unkno
   if (!date) return { ok: false, reason: `missing or unparseable date: ${JSON.stringify(first((l) => (l.date === undefined ? null : l.date)))}` };
   let endDate = first((l) => normalizeDate(l.endDate));
   if (endDate !== null && endDate <= date) endDate = null;
+  // The main day only counts inside the event's own days.
+  let mainDate = first((l) => normalizeDate(l.mainDate));
+  if (mainDate !== null && (endDate === null || mainDate < date || mainDate > endDate)) mainDate = null;
 
   // A price table read from an image beats prices picked out of the text, which
   // mixes in other fees (photos, VIP upgrades, transfers).
@@ -257,6 +265,7 @@ export function normalizeExtraction(raw: SourceExtraction | Record<string, unkno
       types,
       date,
       endDate,
+      mainDate,
       courses,
       edition,
       mapsUrl,

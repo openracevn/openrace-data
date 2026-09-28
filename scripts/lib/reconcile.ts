@@ -99,6 +99,11 @@ export function reconcile(sources: readonly RaceSource[], config: SitesConfig): 
     types: first((f) => f.types, (t) => t.join() === "other") ?? primary.facts.types,
     date: primary.facts.date,
     endDate: primary.facts.endDate,
+    // Only a stated main day inside the primary's own days; never copied from `date`.
+    mainDate:
+      primary.facts.endDate === null
+        ? null
+        : first((f) => (f.mainDate !== null && f.mainDate >= primary.facts.date && f.mainDate <= primary.facts.endDate! ? f.mainDate : null)),
     seriesId: hints("series")?.id ?? null,
     organizerId: hints("organizer")?.id ?? null,
     // An organizer named in the site list beats the model's reading of a page.
@@ -128,8 +133,11 @@ export function reconcile(sources: readonly RaceSource[], config: SitesConfig): 
   }
   if (guessedCity) flags.push(`location: no source states a city; guessed "${guessedCity}" from the race's name`);
   const dates = new Map(usable.map(({ source, facts }) => [source.site, facts.date]));
-  if (new Set(dates.values()).size > 1) {
-    flags.push(`sources disagree on race day: ${[...dates].map(([site, d]) => `${site} ${d}`).join(", ")}`);
+  // Sources give the first day or the main day of one event; they only disagree when
+  // one's day is outside the other's date..endDate.
+  const agree = usable.every((a) => usable.every((b) => sameRaceDay(a.facts, b.facts)));
+  if (!agree) {
+    flags.push(`sources disagree on race day: ${usable.map(({ source, facts }) => `${source.site} ${facts.date}${facts.endDate ? `..${facts.endDate}` : ""}`).join(", ")}`);
   }
   const official = usable.find(({ source }) => source.role === "official");
   for (const { source, facts } of usable) {
@@ -146,8 +154,14 @@ export function reconcile(sources: readonly RaceSource[], config: SitesConfig): 
     flags.push(`participants-conflict: sources state ${[...new Set(stated)].join(", ")} participants`);
   }
 
-  const confidence: Race["confidence"] = usable.length === 1 ? "single-sourced" : dates.size > 0 && new Set(dates.values()).size === 1 ? "multi-sourced" : "conflicting";
+  const confidence: Race["confidence"] = usable.length === 1 ? "single-sourced" : dates.size > 0 && agree ? "multi-sourced" : "conflicting";
   return { fields, confidence, flags };
+}
+
+/** Two sources agree on the race day when one's first day falls inside the other's days. */
+function sameRaceDay(a: SourceFacts, b: SourceFacts): boolean {
+  const within = (x: SourceFacts, y: SourceFacts) => x.date >= y.date && x.date <= (y.endDate ?? y.date);
+  return within(a, b) || within(b, a);
 }
 
 // Sources whose stated counts differ by more than this share get a flag.

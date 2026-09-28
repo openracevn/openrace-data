@@ -1,6 +1,6 @@
 # Plan 016: multi-day races: first day, last day and a main race day
 
-Status: **written, awaiting approval. Nothing is built.**
+Status: **approved 2026-09-28. Stage A (openrace-data) built and tested, not yet committed; stages B–D pending.**
 
 ## Roadmap fit
 

@@ -42,7 +42,7 @@ All three can be filtered on.
 | `id`, `slug`, `name` | As now (UUID key; slug may change) |
 | `seriesId`, `organizerId` | Nullable |
 | `types` | As now |
-| `date` (+ `endDate` for multi-day) | Race day; the official site wins |
+| `date` (+ `endDate`, `mainDate` for multi-day) | `date` = first day, `endDate` = last day (null for one day), `mainDate` = headline day, only when a source states it (else null, never a copy of `date`); the official site wins. Sources agree when one's day falls inside the other's `date..endDate` ([plan 016](../plans/016-2026-09-28-multi-day-races-and-main-day.md)) |
 | `distances` | Official site wins |
 | `location` | `{venue, city, raw}` as written by the source |
 | `prices` | Tier list, see below |

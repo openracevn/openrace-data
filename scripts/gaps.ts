@@ -42,6 +42,9 @@ const flagged = races.filter((r) => r.flags.length > 0 || r.confidence === "conf
 
 const byYearGap = seriesYearGaps(races);
 
+// Multi-day races whose main race day isn't stated yet (informational; never guessed).
+const noMainDate = races.filter((r) => r.endDate !== null && r.mainDate === null);
+
 // Backfill worklist: past editions with no stated participant count, biggest series first.
 const seriesSize = new Map<string, number>();
 for (const r of races) if (r.seriesId) seriesSize.set(r.seriesId, (seriesSize.get(r.seriesId) ?? 0) + 1);
@@ -57,6 +60,7 @@ report("No organizerId (biggest series first)", [...noOrganizer].sort((a, b) => 
 report(`No prices, upcoming (date >= ${today})`, noPricesUpcoming, (r) => `${r.slug} (${r.date})`);
 report("No prices, past (informational — may be free or unpriced)", noPricesPast, (r) => `${r.slug} (${r.date})`);
 report("Flagged or conflicting confidence", flagged, (r) => `${r.slug} (confidence: ${r.confidence}, flags: ${r.flags.join("; ") || "none"})`);
+report("Multi-day races with no mainDate (informational; fill only where a source states the main day)", noMainDate, (r) => `${r.slug} (${r.date}..${r.endDate})`);
 report("Past races with no participant count (backfill worklist, biggest series first; a report, not a failure)", noParticipantsPast, (r) => `${r.slug} (${r.date}${r.seriesId ? `, series ${r.seriesId}: ${seriesSize.get(r.seriesId)} editions` : ""})`);
 
 console.log(`\nSeries with a year gap: ${byYearGap.length}`);

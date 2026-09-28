@@ -428,6 +428,7 @@ function indexEntry(record: Race): IndexEntry {
     name: record.name,
     date: record.date,
     endDate: record.endDate,
+    mainDate: record.mainDate,
     lastModified: record.updatedAt,
     file: raceFileName(record.slug, record.date),
     seriesId: record.seriesId,

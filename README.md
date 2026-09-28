@@ -54,7 +54,7 @@ scripts/                  check, edit, renormalize, sync, validate, notify-*
 ```jsonc
 {
   "id": "…uuid…", "slug": "hcmc-marathon", "name": "HCMC Marathon",
-  "types": ["road_run"], "date": "2027-01-17", "endDate": null,
+  "types": ["road_run"], "date": "2027-01-17", "endDate": null, "mainDate": null,
   "seriesId": "hcmc-marathon", "organizerId": "pulse-active", "organizer": "Pulse Active",
   "edition": null,              // the organizer's stated number ("lần thứ 5"), if any
   "courses": [{ "label": "42km", "meters": 42195, "type": "road_run", "elevationGain": null }],
