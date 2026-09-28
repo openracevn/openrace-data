@@ -15,7 +15,7 @@ Before writing a plan or starting non-trivial work, read `.claude/docs/roadmap.m
 
 - `.claude/docs/README.md`: the index of working notes. Start with `roadmap.md`, then `status.md`.
 - `.claude/plans/`: numbered plans, `NNN-YYYY-MM-DD-topic.md` (highest number + 1), with an index in `README.md`.
-- `.claude/skills/`: `check-race` for single-race work, `agent-read` for reading races without Firecrawl.
+- `.claude/skills/`: `check-organizer` for organizer entities (splits, duplicates, links), `check-race` for single-race work, `agent-read` for reading races without Firecrawl.
 - `scripts/lib/recipes/README.md`: how a site is read, and how to add one.
 
 Firecrawl credits cost money: say the cost before any paid run, and prefer free checks.

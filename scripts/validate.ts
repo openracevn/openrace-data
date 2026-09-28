@@ -113,6 +113,11 @@ const organizers = checkList(ORGANIZERS_PATH, OrganizerListSchema);
 for (const [id, race] of races) {
   if (race.seriesId && series && !series.has(race.seriesId)) errors.push(`${idOwner.get(id)}: seriesId "${race.seriesId}" is not in ${SERIES_PATH}`);
   if (race.organizerId && organizers && !organizers.has(race.organizerId)) errors.push(`${idOwner.get(id)}: organizerId "${race.organizerId}" is not in ${ORGANIZERS_PATH}`);
+  for (const co of race.coOrganizerIds ?? []) {
+    if (organizers && !organizers.has(co)) errors.push(`${idOwner.get(id)}: coOrganizerIds "${co}" is not in ${ORGANIZERS_PATH}`);
+    if (co === race.organizerId) errors.push(`${idOwner.get(id)}: coOrganizerIds repeats the primary organizerId "${co}"`);
+  }
+  if (new Set(race.coOrganizerIds ?? []).size !== (race.coOrganizerIds ?? []).length) errors.push(`${idOwner.get(id)}: coOrganizerIds has duplicates`);
 }
 
 // A series with no race renders as an empty series page; drop it or point races at it.

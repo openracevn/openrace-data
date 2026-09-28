@@ -12,6 +12,7 @@ Any agent can follow this (Claude Code, Antigravity, ...). You need a shell in t
 ## Rules
 
 - **Free, but slow.** Nothing here spends Firecrawl credits. Work in batches of **5–10 races**, commit, then go on.
+- **`organizer` is the operating organizer only**, no role text or sponsors, never several bodies joined; co-organizers go through the `check-organizer` skill.
 - **Only write what the page or image shows.** Copy numbers exactly. Never guess, never work out a price, never fill a gap from another race. A wrong price is worse than no price.
 - **Follow the same instructions Firecrawl gets:** `<dir>/extraction.json` holds the prompt and JSON schema for pages (`page`) and for price images (`image`). The rules below are the ones that matter most.
 - Commits go straight to `main` with `GITHUB_TOKEN=$(gh auth token)`. Never hand-edit files in `data/`.

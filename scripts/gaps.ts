@@ -7,7 +7,7 @@
  *   npm run gaps
  */
 import { readdirSync, readFileSync } from "node:fs";
-import { RACES_DIR, RaceSchema, SERIES_PATH, SeriesListSchema, upgradeRace, type Race } from "./lib/schema.ts";
+import { ORGANIZERS_PATH, OrganizerListSchema, RACES_DIR, RaceSchema, SERIES_PATH, SeriesListSchema, upgradeRace, type Race } from "./lib/schema.ts";
 
 const races: Race[] = [];
 for (const file of readdirSync(RACES_DIR).filter((f) => f.endsWith(".json")).sort()) {
@@ -21,6 +21,16 @@ try {
 } catch {
   // Report still works without series.json; names just fall back to ids.
 }
+
+// Organizer worklists, biggest first (by races as primary or co-organizer).
+const raceCount = new Map<string, number>();
+for (const r of races) for (const id of [r.organizerId, ...(r.coOrganizerIds ?? [])]) if (id) raceCount.set(id, (raceCount.get(id) ?? 0) + 1);
+const organizers = OrganizerListSchema.parse(JSON.parse(readFileSync(ORGANIZERS_PATH, "utf8")));
+const bySize = (a: { id: string }, b: { id: string }) => (raceCount.get(b.id) ?? 0) - (raceCount.get(a.id) ?? 0) || a.id.localeCompare(b.id);
+// Role text or several bodies packed into one name: should be a primary plus coOrganizerIds.
+const MERGED_NAME = /(đơn vị|ban tổ chức|đồng hành|đồng tổ chức|phối hợp|nhà tài trợ|\s[-–&]\s|,|;|\|)/i;
+const mergedOrganizers = organizers.filter((o) => MERGED_NAME.test(o.name)).sort(bySize);
+const noOrganizerLinks = organizers.filter((o) => !o.links?.length && !MERGED_NAME.test(o.name)).sort(bySize);
 
 const today = new Date().toISOString().slice(0, 10);
 
@@ -39,8 +49,11 @@ const noParticipantsPast = races
   .filter((r) => r.date < today && !r.participants)
   .sort((a, b) => (seriesSize.get(b.seriesId ?? "") ?? 0) - (seriesSize.get(a.seriesId ?? "") ?? 0) || a.date.localeCompare(b.date));
 
+const orgLine = (o: { id: string; name: string }) => `${o.id} (${raceCount.get(o.id) ?? 0} races): ${o.name}`;
+report("Organizers with merged-looking names (split with the check-organizer skill)", mergedOrganizers, orgLine, organizers.length);
+report("Organizers with no links (biggest first)", noOrganizerLinks, orgLine, organizers.length);
 report("No usable location (city and venue both null)", noLocation, (r) => r.slug);
-report("No organizerId", noOrganizer, (r) => r.slug);
+report("No organizerId (biggest series first)", [...noOrganizer].sort((a, b) => (seriesSize.get(b.seriesId ?? "") ?? 0) - (seriesSize.get(a.seriesId ?? "") ?? 0)), (r) => r.slug);
 report(`No prices, upcoming (date >= ${today})`, noPricesUpcoming, (r) => `${r.slug} (${r.date})`);
 report("No prices, past (informational — may be free or unpriced)", noPricesPast, (r) => `${r.slug} (${r.date})`);
 report("Flagged or conflicting confidence", flagged, (r) => `${r.slug} (confidence: ${r.confidence}, flags: ${r.flags.join("; ") || "none"})`);
@@ -53,8 +66,8 @@ for (const { seriesId, years } of byYearGap.slice(0, 10)) {
 
 console.log(`\n${races.length} race(s) checked.`);
 
-function report(title: string, list: Race[], describe: (r: Race) => string): void {
-  console.log(`\n${title}: ${list.length} / ${races.length}`);
+function report<T>(title: string, list: T[], describe: (r: T) => string, total = races.length): void {
+  console.log(`\n${title}: ${list.length} / ${total}`);
   for (const r of list.slice(0, 10)) console.log(`  - ${describe(r)}`);
   if (list.length > 10) console.log(`  ... and ${list.length - 10} more`);
 }

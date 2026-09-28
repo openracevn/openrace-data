@@ -241,6 +241,7 @@ export const CANONICAL_FIELDS = [
   "seriesId",
   "organizerId",
   "organizer",
+  "coOrganizerIds",
   "edition",
   "courses",
   "location",
@@ -292,6 +293,9 @@ export const RaceSchema = z
     organizerId: slug.nullable(),
     // The organizer as a source writes it.
     organizer: z.string().min(1).nullable(),
+    // Other organizers of the race (partners, co-hosts); `organizerId` stays the one
+    // operating company. Absent when none. Never repeats `organizerId`.
+    coOrganizerIds: z.array(slug).optional(),
     edition: z.number().int().min(1).max(200).nullable(),
     courses: z.array(CourseSchema),
     // As the source writes it; not normalized.
@@ -389,7 +393,18 @@ export const SeriesSchema = EntitySchema.extend({
   statedEditionCount: z.number().int().min(1).max(200).nullable().default(null),
 });
 export const SeriesListSchema = z.array(SeriesSchema);
-export const OrganizerListSchema = z.array(EntitySchema);
+// An organizer's own public pages, sourced like a race's links.
+export const ORGANIZER_LINK_KINDS = ["official", "facebook"] as const;
+export const OrganizerLinkSchema = z.object({
+  url: z.url(),
+  kind: z.enum(ORGANIZER_LINK_KINDS),
+  // Host of the page the link was found on.
+  foundOn: z.string().min(1),
+});
+export const OrganizerSchema = EntitySchema.extend({
+  links: z.array(OrganizerLinkSchema).optional(),
+});
+export const OrganizerListSchema = z.array(OrganizerSchema);
 
 /** Structural equality for JSON values (object key order doesn't matter). */
 export function deepEqual(a: unknown, b: unknown): boolean {
@@ -445,7 +460,7 @@ export type Overrides = Race["overrides"];
 export type Race = z.infer<typeof RaceSchema>;
 export type IndexEntry = z.infer<typeof IndexEntrySchema>;
 export type Series = z.infer<typeof SeriesSchema>;
-export type Organizer = z.infer<typeof EntitySchema>;
+export type Organizer = z.infer<typeof OrganizerSchema>;
 
 export type CanonicalField = (typeof CANONICAL_FIELDS)[number];
 // Every canonical field is a Race field.

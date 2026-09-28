@@ -101,7 +101,7 @@ Setting `prices` by hand: every entry's `site` must equal one of the race's exis
     - After a location edit, check the race got a point: `state/geo.json` has an entry per location; `"note": "no point found"` means no map on the site. Geocoding already drops "(…)" notes and retries without "Đường/Phường/Tỉnh…" prefixes, and rejects results whose name doesn't match the query. If it still fails, set the point by hand: `npm run edit -- <race> geo '{"lat":…,"lng":…}'`. After a geocoder fix, `npm run geo -- --retry-missing` re-looks up only the failed entries.
   - prices: `[{"distance":"21km","tier":"Early Bird","kind":"early","audience":null,"price":750000,"from":"2026-06-24","to":"2026-07-16","inferred":[],"site":"openrace"}]`
   - date: `"YYYY-MM-DD"`
-- `seriesId` and `organizerId` must exist in `data/series.json` / `data/organizers.json`. Add entries there by hand, sorted by id.
+- `seriesId` and `organizerId` must exist in `data/series.json` / `data/organizers.json`. Add entries there by hand, sorted by id. One organizer per entity: put the operating company in `organizerId` and partners/media/government in `coOrganizerIds` (override via `npm run edit -- set`), never a concatenated name. Reviewing organizer entities (splits, duplicates, links) is the `check-organizer` skill.
 - An override wins over every source. If a source later changes that field, Discord shows `⚠️ <field>: sources now say … (override kept)`.
 
 ### Participants (past races)

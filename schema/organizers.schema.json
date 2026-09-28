@@ -24,6 +24,35 @@
             "type": "null"
           }
         ]
+      },
+      "links": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "kind": {
+              "type": "string",
+              "enum": [
+                "official",
+                "facebook"
+              ]
+            },
+            "foundOn": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "url",
+            "kind",
+            "foundOn"
+          ],
+          "additionalProperties": false
+        }
       }
     },
     "required": [
