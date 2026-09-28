@@ -16,43 +16,43 @@
     {
       "label": "1km",
       "meters": 1000,
-      "type": null,
+      "type": "city_trail",
       "elevationGain": null
     },
     {
       "label": "1.8km",
       "meters": 1800,
-      "type": null,
+      "type": "city_trail",
       "elevationGain": null
     },
     {
       "label": "2.2km",
       "meters": 2200,
-      "type": null,
+      "type": "city_trail",
       "elevationGain": null
     },
     {
       "label": "6km",
       "meters": 6000,
-      "type": null,
+      "type": "city_trail",
       "elevationGain": null
     },
     {
       "label": "10km",
       "meters": 10000,
-      "type": null,
+      "type": "city_trail",
       "elevationGain": null
     },
     {
       "label": "21km",
       "meters": 21097,
-      "type": null,
+      "type": "city_trail",
       "elevationGain": null
     },
     {
       "label": "500m",
       "meters": 500,
-      "type": null,
+      "type": "city_trail",
       "elevationGain": null
     }
   ],
@@ -462,6 +462,54 @@
       ],
       "reason": "Andros Lakes Race: user says every edition is city trail",
       "at": "2026-09-28T16:02:31.302Z"
+    },
+    "courses": {
+      "value": [
+        {
+          "label": "1km",
+          "meters": 1000,
+          "type": "city_trail",
+          "elevationGain": null
+        },
+        {
+          "label": "1.8km",
+          "meters": 1800,
+          "type": "city_trail",
+          "elevationGain": null
+        },
+        {
+          "label": "2.2km",
+          "meters": 2200,
+          "type": "city_trail",
+          "elevationGain": null
+        },
+        {
+          "label": "6km",
+          "meters": 6000,
+          "type": "city_trail",
+          "elevationGain": null
+        },
+        {
+          "label": "10km",
+          "meters": 10000,
+          "type": "city_trail",
+          "elevationGain": null
+        },
+        {
+          "label": "21km",
+          "meters": 21097,
+          "type": "city_trail",
+          "elevationGain": null
+        },
+        {
+          "label": "500m",
+          "meters": 500,
+          "type": "city_trail",
+          "elevationGain": null
+        }
+      ],
+      "reason": "Andros Lakes Race: user says every edition is city trail; course types follow. Distances unchanged.",
+      "at": "2026-09-28T16:07:54.162Z"
     }
   },
   "sources": [
@@ -517,5 +565,5 @@
   ],
   "confidence": "conflicting",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T16:02:31.302Z"
+  "updatedAt": "2026-09-28T16:07:54.162Z"
 }
