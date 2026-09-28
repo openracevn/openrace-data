@@ -7,112 +7,491 @@
   ],
   "date": "2024-11-01",
   "endDate": "2024-11-03",
+  "mainDate": null,
   "seriesId": null,
   "organizerId": "pocari-sweat-run-vietnam",
   "organizer": "POCARI SWEAT RUN VIETNAM",
-  "edition": null,
-  "courses": [],
+  "edition": 5,
+  "courses": [
+    {
+      "label": "3km",
+      "meters": 3000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "The Metropole Thủ Thiêm, TP. Thủ Đức, TP. Hồ Chí Minh",
-    "city": null
+    "city": "TP. Hồ Chí Minh"
   },
   "geo": {
-    "lat": 10.7775,
-    "lng": 106.712432,
+    "lat": 10.8505674,
+    "lng": 106.7585291,
     "source": "nominatim",
-    "precision": "venue",
+    "precision": "ward",
     "current": {
       "province": "79",
-      "ward": "27094"
+      "ward": "26824"
     },
     "legacy": {
       "province": "79",
       "district": "769",
-      "ward": "27118"
+      "ward": "26815"
     },
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 3.4,
-        "minutes": 6,
+        "km": 13.1,
+        "minutes": 15,
         "method": "road",
         "near": true
       },
       "ha-noi": {
-        "km": 1494.5,
-        "minutes": 1132,
+        "km": 1485.7,
+        "minutes": 1127,
         "method": "road",
         "near": false
       },
       "da-nang": {
-        "km": 861.2,
-        "minutes": 650,
+        "km": 852.4,
+        "minutes": 644,
         "method": "road",
         "near": false
       },
       "nha-trang": {
-        "km": 411.8,
-        "minutes": 295,
+        "km": 410.2,
+        "minutes": 297,
         "method": "road",
         "near": false
       },
       "da-lat": {
-        "km": 295.4,
-        "minutes": 224,
+        "km": 282.2,
+        "minutes": 218,
         "method": "road",
         "near": false
       },
       "can-tho": {
-        "km": 172.3,
-        "minutes": 137,
+        "km": 181.5,
+        "minutes": 148,
         "method": "road",
         "near": false
       },
       "hai-phong": {
-        "km": 1528.6,
-        "minutes": 1159,
+        "km": 1519.8,
+        "minutes": 1154,
         "method": "road",
         "near": false
       },
       "hue": {
-        "km": 943.9,
-        "minutes": 724,
+        "km": 935.1,
+        "minutes": 719,
         "method": "road",
         "near": false
       },
       "vung-tau": {
-        "km": 94.8,
-        "minutes": 87,
+        "km": 93.3,
+        "minutes": 88,
         "method": "road",
         "near": false
       },
       "quy-nhon": {
-        "km": 617.7,
-        "minutes": 458,
+        "km": 616.1,
+        "minutes": 460,
         "method": "road",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 357.2,
-        "minutes": 262,
+        "km": 348.4,
+        "minutes": 256,
         "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 1803,
-        "minutes": 1368,
+        "km": 1794.2,
+        "minutes": 1362,
         "method": "road",
         "near": false
       },
       "ha-long": {
-        "km": 1578.3,
-        "minutes": 1192,
+        "km": 1569.5,
+        "minutes": 1186,
         "method": "road",
         "near": false
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "3km",
+      "tier": "Siêu sớm - Gói race kit Cơ bản",
+      "kind": "super_early",
+      "audience": null,
+      "price": 390000,
+      "from": "2024-07-01",
+      "to": "2024-07-01",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Siêu sớm - Gói race kit Cao cấp",
+      "kind": "super_early",
+      "audience": null,
+      "price": 480000,
+      "from": "2024-07-01",
+      "to": "2024-07-01",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Siêu sớm - Gói race kit Cơ bản",
+      "kind": "super_early",
+      "audience": null,
+      "price": 690000,
+      "from": "2024-07-01",
+      "to": "2024-07-01",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Siêu sớm - Gói race kit Cao cấp",
+      "kind": "super_early",
+      "audience": null,
+      "price": 780000,
+      "from": "2024-07-01",
+      "to": "2024-07-01",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Siêu sớm - Gói race kit Cơ bản",
+      "kind": "super_early",
+      "audience": null,
+      "price": 790000,
+      "from": "2024-07-01",
+      "to": "2024-07-01",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Siêu sớm - Gói race kit Cao cấp",
+      "kind": "super_early",
+      "audience": null,
+      "price": 880000,
+      "from": "2024-07-01",
+      "to": "2024-07-01",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Siêu sớm - Gói race kit Cơ bản",
+      "kind": "super_early",
+      "audience": null,
+      "price": 890000,
+      "from": "2024-07-01",
+      "to": "2024-07-01",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Siêu sớm - Gói race kit Cao cấp",
+      "kind": "super_early",
+      "audience": null,
+      "price": 980000,
+      "from": "2024-07-01",
+      "to": "2024-07-01",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Sớm - Gói race kit Cơ bản",
+      "kind": "early",
+      "audience": null,
+      "price": 460000,
+      "from": "2024-07-02",
+      "to": "2024-07-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Sớm - Gói race kit Cao cấp",
+      "kind": "early",
+      "audience": null,
+      "price": 550000,
+      "from": "2024-07-02",
+      "to": "2024-07-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Sớm - Gói race kit Cơ bản",
+      "kind": "early",
+      "audience": null,
+      "price": 760000,
+      "from": "2024-07-02",
+      "to": "2024-07-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Sớm - Gói race kit Cao cấp",
+      "kind": "early",
+      "audience": null,
+      "price": 850000,
+      "from": "2024-07-02",
+      "to": "2024-07-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Sớm - Gói race kit Cơ bản",
+      "kind": "early",
+      "audience": null,
+      "price": 980000,
+      "from": "2024-07-02",
+      "to": "2024-07-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Sớm - Gói race kit Cao cấp",
+      "kind": "early",
+      "audience": null,
+      "price": 1070000,
+      "from": "2024-07-02",
+      "to": "2024-07-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Sớm - Gói race kit Cơ bản",
+      "kind": "early",
+      "audience": null,
+      "price": 1200000,
+      "from": "2024-07-02",
+      "to": "2024-07-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Sớm - Gói race kit Cao cấp",
+      "kind": "early",
+      "audience": null,
+      "price": 1290000,
+      "from": "2024-07-02",
+      "to": "2024-07-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Tiêu chuẩn - Gói race kit Cơ bản",
+      "kind": "regular",
+      "audience": null,
+      "price": 570000,
+      "from": "2024-08-01",
+      "to": "2024-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Tiêu chuẩn - Gói race kit Cao cấp",
+      "kind": "regular",
+      "audience": null,
+      "price": 660000,
+      "from": "2024-08-01",
+      "to": "2024-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Tiêu chuẩn - Gói race kit Cơ bản",
+      "kind": "regular",
+      "audience": null,
+      "price": 870000,
+      "from": "2024-08-01",
+      "to": "2024-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Tiêu chuẩn - Gói race kit Cao cấp",
+      "kind": "regular",
+      "audience": null,
+      "price": 960000,
+      "from": "2024-08-01",
+      "to": "2024-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Tiêu chuẩn - Gói race kit Cơ bản",
+      "kind": "regular",
+      "audience": null,
+      "price": 1200000,
+      "from": "2024-08-01",
+      "to": "2024-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Tiêu chuẩn - Gói race kit Cao cấp",
+      "kind": "regular",
+      "audience": null,
+      "price": 1290000,
+      "from": "2024-08-01",
+      "to": "2024-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Tiêu chuẩn - Gói race kit Cơ bản",
+      "kind": "regular",
+      "audience": null,
+      "price": 1530000,
+      "from": "2024-08-01",
+      "to": "2024-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Tiêu chuẩn - Gói race kit Cao cấp",
+      "kind": "regular",
+      "audience": null,
+      "price": 1620000,
+      "from": "2024-08-01",
+      "to": "2024-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Trễ - Gói race kit Cơ bản",
+      "kind": "late",
+      "audience": null,
+      "price": 680000,
+      "from": "2024-10-01",
+      "to": "2024-10-25",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Trễ - Gói race kit Cao cấp",
+      "kind": "late",
+      "audience": null,
+      "price": 770000,
+      "from": "2024-10-01",
+      "to": "2024-10-25",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Trễ - Gói race kit Cơ bản",
+      "kind": "late",
+      "audience": null,
+      "price": 980000,
+      "from": "2024-10-01",
+      "to": "2024-10-25",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Trễ - Gói race kit Cao cấp",
+      "kind": "late",
+      "audience": null,
+      "price": 1070000,
+      "from": "2024-10-01",
+      "to": "2024-10-25",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Trễ - Gói race kit Cơ bản",
+      "kind": "late",
+      "audience": null,
+      "price": 1420000,
+      "from": "2024-10-01",
+      "to": "2024-10-25",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Trễ - Gói race kit Cao cấp",
+      "kind": "late",
+      "audience": null,
+      "price": 1510000,
+      "from": "2024-10-01",
+      "to": "2024-10-25",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Trễ - Gói race kit Cơ bản",
+      "kind": "late",
+      "audience": null,
+      "price": 1860000,
+      "from": "2024-10-01",
+      "to": "2024-10-25",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Trễ - Gói race kit Cao cấp",
+      "kind": "late",
+      "audience": null,
+      "price": 1950000,
+      "from": "2024-10-01",
+      "to": "2024-10-25",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -143,6 +522,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -158,7 +538,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/giai-chay-pocari-sweat-run-viet-nam-2024",
-      "lastCheckedAt": "2026-09-23T18:32:10.628Z",
+      "lastCheckedAt": "2026-09-28T16:19:12.418Z",
       "lastChangedAt": "2026-09-23T18:32:10.628Z",
       "extracted": {
         "facts": {
@@ -170,6 +550,280 @@
           "registrationStatus": "closed",
           "fromPrice": 390000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/giai-chay-pocari-sweat-run-viet-nam-2024",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "distances": [
+                "3KM",
+                "5KM",
+                "10KM",
+                "21KM"
+              ],
+              "edition": 5,
+              "venue": "Metropole Thủ Thiêm",
+              "city": "TP. Hồ Chí Minh",
+              "currency": "VND",
+              "prices": []
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://pix.raceez.com/2024/09/09/content_actiup_1description_vi",
+            "json": {
+              "prices": [
+                {
+                  "distance": "3KM",
+                  "tier": "Siêu sớm - Gói race kit Cơ bản",
+                  "from": "2024-07-01",
+                  "to": "2024-07-01",
+                  "price": 390000
+                },
+                {
+                  "distance": "3KM",
+                  "tier": "Siêu sớm - Gói race kit Cao cấp",
+                  "from": "2024-07-01",
+                  "to": "2024-07-01",
+                  "price": 480000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Siêu sớm - Gói race kit Cơ bản",
+                  "from": "2024-07-01",
+                  "to": "2024-07-01",
+                  "price": 690000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Siêu sớm - Gói race kit Cao cấp",
+                  "from": "2024-07-01",
+                  "to": "2024-07-01",
+                  "price": 780000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Siêu sớm - Gói race kit Cơ bản",
+                  "from": "2024-07-01",
+                  "to": "2024-07-01",
+                  "price": 790000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Siêu sớm - Gói race kit Cao cấp",
+                  "from": "2024-07-01",
+                  "to": "2024-07-01",
+                  "price": 880000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Siêu sớm - Gói race kit Cơ bản",
+                  "from": "2024-07-01",
+                  "to": "2024-07-01",
+                  "price": 890000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Siêu sớm - Gói race kit Cao cấp",
+                  "from": "2024-07-01",
+                  "to": "2024-07-01",
+                  "price": 980000
+                },
+                {
+                  "distance": "3KM",
+                  "tier": "Sớm - Gói race kit Cơ bản",
+                  "from": "2024-07-02",
+                  "to": "2024-07-31",
+                  "price": 460000
+                },
+                {
+                  "distance": "3KM",
+                  "tier": "Sớm - Gói race kit Cao cấp",
+                  "from": "2024-07-02",
+                  "to": "2024-07-31",
+                  "price": 550000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Sớm - Gói race kit Cơ bản",
+                  "from": "2024-07-02",
+                  "to": "2024-07-31",
+                  "price": 760000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Sớm - Gói race kit Cao cấp",
+                  "from": "2024-07-02",
+                  "to": "2024-07-31",
+                  "price": 850000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Sớm - Gói race kit Cơ bản",
+                  "from": "2024-07-02",
+                  "to": "2024-07-31",
+                  "price": 980000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Sớm - Gói race kit Cao cấp",
+                  "from": "2024-07-02",
+                  "to": "2024-07-31",
+                  "price": 1070000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Sớm - Gói race kit Cơ bản",
+                  "from": "2024-07-02",
+                  "to": "2024-07-31",
+                  "price": 1200000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Sớm - Gói race kit Cao cấp",
+                  "from": "2024-07-02",
+                  "to": "2024-07-31",
+                  "price": 1290000
+                },
+                {
+                  "distance": "3KM",
+                  "tier": "Tiêu chuẩn - Gói race kit Cơ bản",
+                  "from": "2024-08-01",
+                  "to": "2024-09-30",
+                  "price": 570000
+                },
+                {
+                  "distance": "3KM",
+                  "tier": "Tiêu chuẩn - Gói race kit Cao cấp",
+                  "from": "2024-08-01",
+                  "to": "2024-09-30",
+                  "price": 660000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Tiêu chuẩn - Gói race kit Cơ bản",
+                  "from": "2024-08-01",
+                  "to": "2024-09-30",
+                  "price": 870000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Tiêu chuẩn - Gói race kit Cao cấp",
+                  "from": "2024-08-01",
+                  "to": "2024-09-30",
+                  "price": 960000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Tiêu chuẩn - Gói race kit Cơ bản",
+                  "from": "2024-08-01",
+                  "to": "2024-09-30",
+                  "price": 1200000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Tiêu chuẩn - Gói race kit Cao cấp",
+                  "from": "2024-08-01",
+                  "to": "2024-09-30",
+                  "price": 1290000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Tiêu chuẩn - Gói race kit Cơ bản",
+                  "from": "2024-08-01",
+                  "to": "2024-09-30",
+                  "price": 1530000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Tiêu chuẩn - Gói race kit Cao cấp",
+                  "from": "2024-08-01",
+                  "to": "2024-09-30",
+                  "price": 1620000
+                },
+                {
+                  "distance": "3KM",
+                  "tier": "Trễ - Gói race kit Cơ bản",
+                  "from": "2024-10-01",
+                  "to": "2024-10-25",
+                  "price": 680000
+                },
+                {
+                  "distance": "3KM",
+                  "tier": "Trễ - Gói race kit Cao cấp",
+                  "from": "2024-10-01",
+                  "to": "2024-10-25",
+                  "price": 770000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Trễ - Gói race kit Cơ bản",
+                  "from": "2024-10-01",
+                  "to": "2024-10-25",
+                  "price": 980000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Trễ - Gói race kit Cao cấp",
+                  "from": "2024-10-01",
+                  "to": "2024-10-25",
+                  "price": 1070000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Trễ - Gói race kit Cơ bản",
+                  "from": "2024-10-01",
+                  "to": "2024-10-25",
+                  "price": 1420000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Trễ - Gói race kit Cao cấp",
+                  "from": "2024-10-01",
+                  "to": "2024-10-25",
+                  "price": 1510000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Trễ - Gói race kit Cơ bản",
+                  "from": "2024-10-01",
+                  "to": "2024-10-25",
+                  "price": 1860000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Trễ - Gói race kit Cao cấp",
+                  "from": "2024-10-01",
+                  "to": "2024-10-25",
+                  "price": 1950000
+                }
+              ],
+              "distances": [
+                "3KM",
+                "5KM",
+                "10KM",
+                "21KM"
+              ],
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.raceez.com/2024/06/25/content_actiup_1description_vi_20240625142606.",
+            "json": {
+              "prices": []
+            }
+          },
+          {
+            "url": "https://pix.raceez.com/2024/07/01/content_actiup_1description_vi_20240701104153.",
+            "json": {
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://docs.google.com/forms/d/e/1FAIpQLSdjRZtYda2RbhHgVOKR_Rl_nZw7w1m5vEP1qS3BmCv4kKDg3w/viewform",
@@ -191,11 +845,12 @@
         "organizer": {
           "id": "pocari-sweat-run-vietnam",
           "name": "POCARI SWEAT RUN VIETNAM"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-28T16:19:12.418Z"
 }
