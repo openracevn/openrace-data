@@ -7,7 +7,19 @@
   {
     "id": "aeon-viet-nam",
     "name": "AEON Việt Nam",
-    "website": null
+    "website": "https://www.aeon.com.vn/",
+    "links": [
+      {
+        "url": "https://www.aeon.com.vn/",
+        "kind": "official",
+        "foundOn": "aeon.com.vn"
+      },
+      {
+        "url": "https://www.facebook.com/AeonVietnamPage/",
+        "kind": "facebook",
+        "foundOn": "aeon.com.vn"
+      }
+    ]
   },
   {
     "id": "artlive-a-virtual-art-campus",
@@ -42,7 +54,14 @@
   {
     "id": "bao-tien-phong",
     "name": "Báo Tiền Phong",
-    "website": null
+    "website": "https://tienphong.vn/",
+    "links": [
+      {
+        "url": "https://tienphong.vn/",
+        "kind": "official",
+        "foundOn": "tienphong.vn"
+      }
+    ]
   },
   {
     "id": "bao-tuoi-tre",
@@ -67,7 +86,19 @@
   {
     "id": "bolt-event",
     "name": "BOLT EVENT",
-    "website": null
+    "website": "https://boltevent.com.vn/",
+    "links": [
+      {
+        "url": "https://boltevent.com.vn/",
+        "kind": "official",
+        "foundOn": "boltevent.com.vn"
+      },
+      {
+        "url": "https://www.facebook.com/people/BOLT-EVENT/61572913572766/",
+        "kind": "facebook",
+        "foundOn": "boltevent.com.vn"
+      }
+    ]
   },
   {
     "id": "bozo-ventures",
@@ -157,7 +188,19 @@
   {
     "id": "cong-ty-co-phan-tropiad",
     "name": "CÔNG TY CỔ PHẦN TROPIAD",
-    "website": null
+    "website": "https://tropiad.com/",
+    "links": [
+      {
+        "url": "https://tropiad.com/",
+        "kind": "official",
+        "foundOn": "tropiad.com"
+      },
+      {
+        "url": "https://www.facebook.com/TropiAd",
+        "kind": "facebook",
+        "foundOn": "tropiad.com"
+      }
+    ]
   },
   {
     "id": "cong-ty-dha-viet-nam",
@@ -267,12 +310,36 @@
   {
     "id": "gamuda-land",
     "name": "Gamuda Land",
-    "website": null
+    "website": "https://gamudaland.com.vn/",
+    "links": [
+      {
+        "url": "https://gamudaland.com.vn/",
+        "kind": "official",
+        "foundOn": "gamudaland.com.vn"
+      },
+      {
+        "url": "https://www.facebook.com/gamudalandvn",
+        "kind": "facebook",
+        "foundOn": "gamudaland.com.vn"
+      }
+    ]
   },
   {
     "id": "gemadept",
     "name": "GEMADEPT",
-    "website": null
+    "website": "https://www.gemadept.com.vn/",
+    "links": [
+      {
+        "url": "https://www.gemadept.com.vn/",
+        "kind": "official",
+        "foundOn": "gemadept.com.vn"
+      },
+      {
+        "url": "https://www.facebook.com/gemadeptcorpvn",
+        "kind": "facebook",
+        "foundOn": "gemadept.com.vn"
+      }
+    ]
   },
   {
     "id": "great-race-vietnam",
@@ -282,7 +349,19 @@
   {
     "id": "greenhat",
     "name": "GreenHat",
-    "website": null
+    "website": "https://www.greenhat.com.vn/",
+    "links": [
+      {
+        "url": "https://www.greenhat.com.vn/",
+        "kind": "official",
+        "foundOn": "greenhat.com.vn"
+      },
+      {
+        "url": "https://www.facebook.com/greenhatvn",
+        "kind": "facebook",
+        "foundOn": "greenhat.com.vn"
+      }
+    ]
   },
   {
     "id": "hatinh-race",
@@ -367,7 +446,19 @@
   {
     "id": "nexus-sport-events",
     "name": "Nexus Sport Events",
-    "website": null
+    "website": "https://nexus.com.vn/",
+    "links": [
+      {
+        "url": "https://nexus.com.vn/",
+        "kind": "official",
+        "foundOn": "nexus.com.vn"
+      },
+      {
+        "url": "https://www.facebook.com/NexusSportEvents",
+        "kind": "facebook",
+        "foundOn": "nexus.com.vn"
+      }
+    ]
   },
   {
     "id": "ngan-hang-tmcp-dau-tu-va-phat-trien-viet-nam",
@@ -417,7 +508,19 @@
   {
     "id": "race-jungle",
     "name": "Race Jungle",
-    "website": null
+    "website": "https://racejungle.com/",
+    "links": [
+      {
+        "url": "https://racejungle.com/",
+        "kind": "official",
+        "foundOn": "racejungle.com"
+      },
+      {
+        "url": "https://www.facebook.com/RaceJungle",
+        "kind": "facebook",
+        "foundOn": "racejungle.com"
+      }
+    ]
   },
   {
     "id": "sdporganisation",
@@ -482,7 +585,19 @@
   {
     "id": "sunrise-events-vietnam",
     "name": "Sunrise Events Vietnam",
-    "website": null
+    "website": "https://sunriseevents.com.vn/",
+    "links": [
+      {
+        "url": "https://sunriseevents.com.vn/",
+        "kind": "official",
+        "foundOn": "sunriseevents.com.vn"
+      },
+      {
+        "url": "https://www.facebook.com/SunriseEventsVietnam",
+        "kind": "facebook",
+        "foundOn": "sunriseevents.com.vn"
+      }
+    ]
   },
   {
     "id": "suunto-viet-nam",
@@ -612,17 +727,48 @@
   {
     "id": "vietnam-mtb-series",
     "name": "Vietnam MTB Series",
-    "website": null
+    "website": "https://vietnammtbseries.com/",
+    "links": [
+      {
+        "url": "https://vietnammtbseries.com/",
+        "kind": "official",
+        "foundOn": "vietnammtbseries.com"
+      }
+    ]
   },
   {
     "id": "vietrace365",
     "name": "VIETRACE365",
-    "website": null
+    "website": "https://vietrace365.vn/",
+    "links": [
+      {
+        "url": "https://vietrace365.vn/",
+        "kind": "official",
+        "foundOn": "vietrace365.vn"
+      },
+      {
+        "url": "https://www.facebook.com/vietrace365",
+        "kind": "facebook",
+        "foundOn": "vietrace365.vn"
+      }
+    ]
   },
   {
     "id": "vnexpress",
     "name": "VnExpress",
-    "website": "https://vm.vnexpress.net/"
+    "website": "https://vm.vnexpress.net/",
+    "links": [
+      {
+        "url": "https://vnexpress.net",
+        "kind": "official",
+        "foundOn": "vnexpress.net"
+      },
+      {
+        "url": "https://www.facebook.com/congdongvnexpress/",
+        "kind": "facebook",
+        "foundOn": "vnexpress.net"
+      }
+    ]
   },
   {
     "id": "vnpr",
@@ -637,7 +783,19 @@
   {
     "id": "vrace-cong-ty-co-phan-vu-media",
     "name": "VRace (Công ty Cổ phần Vũ Media)",
-    "website": null
+    "website": "https://vrace.vn/",
+    "links": [
+      {
+        "url": "https://vrace.vn/",
+        "kind": "official",
+        "foundOn": "vrace.vn"
+      },
+      {
+        "url": "https://www.facebook.com/Vrace.vn",
+        "kind": "facebook",
+        "foundOn": "vrace.vn"
+      }
+    ]
   },
   {
     "id": "yeah1",
