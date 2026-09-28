@@ -7,6 +7,7 @@
   ],
   "date": "2022-11-13",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "halong-bay-heritage-marathon",
   "organizerId": null,
   "organizer": "Công ty DHA Việt Nam",
@@ -227,8 +228,25 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": {
+    "count": 5000,
+    "approx": true,
+    "sourceUrl": "https://congthuong.vn/hon-5000-nguoi-tham-gia-giai-chay-halong-bay-heritage-marathon-2022-226827.html",
+    "quote": "Hơn 5.000 người tham gia giải chạy Halong Bay Heritage Marathon 2022"
+  },
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "participants": {
+      "value": {
+        "count": 5000,
+        "approx": true,
+        "sourceUrl": "https://congthuong.vn/hon-5000-nguoi-tham-gia-giai-chay-halong-bay-heritage-marathon-2022-226827.html",
+        "quote": "Hơn 5.000 người tham gia giải chạy Halong Bay Heritage Marathon 2022"
+      },
+      "reason": "Headline of news recap states the count",
+      "at": "2026-09-28T14:11:37.098Z"
+    }
+  },
   "sources": [
     {
       "site": "justrunlah-com",
@@ -289,5 +307,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-27T02:50:56.279Z",
-  "updatedAt": "2026-09-27T07:40:37.298Z"
+  "updatedAt": "2026-09-28T14:11:37.098Z"
 }
