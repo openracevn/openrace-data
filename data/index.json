@@ -3152,6 +3152,21 @@
     "linkUrls": []
   },
   {
+    "id": "90bab21a-3635-4fb2-b4bb-1cb2e850b7b0",
+    "slug": "pocari-sweat-run-viet-nam-2023",
+    "name": "Pocari Sweat Run Việt Nam 2023",
+    "date": "2023-11-19",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-09-28T16:22:34.726Z",
+    "file": "pocari-sweat-run-viet-nam-2023.json",
+    "seriesId": "pocari-sweat-run-viet-nam",
+    "sourceUrls": [
+      "https://nld.com.vn/the-thao/8000-van-dong-vien-du-giai-chay-pocari-sweat-run-viet-nam-2023-20231119083750984.htm"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "9159cb7d-69c1-4e02-b622-abdc59f84978",
     "slug": "ultra-walk-ta-pao-da-mi-2024",
     "name": "Ultra Walk Tà Pao-Đa Mi 2024",
@@ -4750,9 +4765,9 @@
     "date": "2022-11-06",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-09-28T16:22:03.604Z",
+    "lastModified": "2026-09-28T16:22:34.726Z",
     "file": "pocari-sweat-run-viet-nam-2022.json",
-    "seriesId": null,
+    "seriesId": "pocari-sweat-run-viet-nam",
     "sourceUrls": [
       "https://vnexpress.net/6-000-runner-chinh-phuc-duong-chay-pocari-sweat-run-4532967.html"
     ],
