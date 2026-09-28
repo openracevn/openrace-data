@@ -1,11 +1,11 @@
 {
-  "id": "35b6c528-0c69-46f5-8448-d17fede8f81d",
-  "slug": "hcmc-run-2015",
-  "name": "HCMC Run 2015",
+  "id": "273256df-3c23-481c-93be-2efa4343d4a6",
+  "slug": "hcmc-run-2016",
+  "name": "HCMC Run 2016",
   "types": [
     "road_run"
   ],
-  "date": "2015-01-18",
+  "date": "2016-01-24",
   "endDate": null,
   "mainDate": null,
   "seriesId": "hcmc-run",
@@ -33,7 +33,7 @@
     }
   ],
   "location": {
-    "venue": "105 Nguyễn Khắc Viện, Phú Mỹ Hưng, Quận 7",
+    "venue": "Phú Mỹ Hưng, Quận 7",
     "city": "TP.HCM"
   },
   "geo": null,
@@ -47,32 +47,32 @@
   "overrides": {},
   "sources": [
     {
-      "site": "phumyhung-vn",
+      "site": "kenh14-vn",
       "role": "reference",
-      "url": "https://phumyhung.vn/khoi-dong-giai-chay-viet-da-tp-hcm",
-      "lastCheckedAt": "2026-09-28T16:32:10.848Z",
-      "lastChangedAt": "2026-09-28T16:32:10.848Z",
+      "url": "https://kenh14.vn/doi-song/hcmc-run-2016-gay-sot-khi-da-phu-kin-duong-chay-10km-va-21km-20160108165652606.chn",
+      "lastCheckedAt": "2026-09-28T16:41:22.331Z",
+      "lastChangedAt": "2026-09-28T16:41:22.331Z",
       "extracted": {
         "facts": {
-          "name": "HCMC Run 2015",
-          "date": "2015-01-18",
+          "name": "HCMC Run 2016",
+          "date": "2016-01-24",
           "distances": [
             "5km",
             "10km",
             "21km"
           ],
-          "venue": "105 Nguyễn Khắc Viện, Phú Mỹ Hưng, Quận 7",
+          "venue": "Phú Mỹ Hưng, Quận 7",
           "types": [
             "road_run"
           ],
           "organizer": "Pulse Active",
           "city": "TP.HCM",
-          "note": "Phú Mỹ Hưng's announcement of Giải chạy việt dã TP.HCM 2015: states race day 18/01/2015, 5/10/21km, venue. race-research HCMC Marathon series history."
+          "note": "Kenh14/Trí Thức Trẻ (13/01/2016): HCMC Run 2016 on 24/01/2016 at Phú Mỹ Hưng, 5/10/21km. race-research HCMC Marathon series history."
         }
       }
     }
   ],
   "confidence": "single-sourced",
-  "createdAt": "2026-09-28T16:32:10.848Z",
+  "createdAt": "2026-09-28T16:41:22.331Z",
   "updatedAt": "2026-09-28T16:41:22.331Z"
 }

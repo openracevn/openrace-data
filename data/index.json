@@ -829,6 +829,21 @@
     "linkUrls": []
   },
   {
+    "id": "273256df-3c23-481c-93be-2efa4343d4a6",
+    "slug": "hcmc-run-2016",
+    "name": "HCMC Run 2016",
+    "date": "2016-01-24",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-09-28T16:41:22.331Z",
+    "file": "hcmc-run-2016.json",
+    "seriesId": "hcmc-run",
+    "sourceUrls": [
+      "https://kenh14.vn/doi-song/hcmc-run-2016-gay-sot-khi-da-phu-kin-duong-chay-10km-va-21km-20160108165652606.chn"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "274c0a28-80cb-48bb-b9da-006e12910dac",
     "slug": "song-hong-half-marathon-2025",
     "name": "SONG HONG HALF MARATHON 2025",
@@ -1312,9 +1327,9 @@
     "date": "2015-01-18",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-09-28T16:32:10.848Z",
+    "lastModified": "2026-09-28T16:41:22.331Z",
     "file": "hcmc-run-2015.json",
-    "seriesId": null,
+    "seriesId": "hcmc-run",
     "sourceUrls": [
       "https://phumyhung.vn/khoi-dong-giai-chay-viet-da-tp-hcm"
     ],
