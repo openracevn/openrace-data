@@ -7,6 +7,7 @@
   ],
   "date": "2023-12-10",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "techcombank-ho-chi-minh-city-international-marathon",
   "organizerId": null,
   "organizer": "Sunrise Events Vietnam",
@@ -144,29 +145,18 @@
   "links": [],
   "participants": {
     "count": 15000,
-    "approx": true,
     "sourceUrl": "https://tuoitre.vn/techcombank-marathon-2023-dat-ki-luc-voi-hon-15-000-nguoi-tham-du-20231212201906577.htm",
-    "quote": "15.000 người tham dự"
+    "quote": "15.000 người tham dự",
+    "confidence": "medium"
   },
   "flags": [],
-  "overrides": {
-    "participants": {
-      "value": {
-        "count": 15000,
-        "approx": true,
-        "sourceUrl": "https://tuoitre.vn/techcombank-marathon-2023-dat-ki-luc-voi-hon-15-000-nguoi-tham-du-20231212201906577.htm",
-        "quote": "15.000 người tham dự"
-      },
-      "reason": "Stated participant count read from the linked page (backfill, plan 012)",
-      "at": "2026-09-28T00:00:00Z"
-    }
-  },
+  "overrides": {},
   "sources": [
     {
       "site": "tuoitre-vn",
       "role": "reference",
       "url": "https://tuoitre.vn/techcombank-marathon-2023-dat-ki-luc-voi-hon-15-000-nguoi-tham-du-20231212201906577.htm",
-      "lastCheckedAt": "2026-09-27T08:06:02.251Z",
+      "lastCheckedAt": "2026-09-28T14:36:25.648Z",
       "lastChangedAt": "2026-09-27T08:06:02.251Z",
       "extracted": {
         "facts": {
@@ -185,12 +175,17 @@
           "city": "Ho Chi Minh City",
           "organizer": "Sunrise Events Vietnam",
           "edition": 6,
-          "note": "6th edition ('lần thứ 6'), race day 2023-12-10, record 15,000+ participants, 700+ international athletes from 91 countries"
+          "note": "6th edition ('lần thứ 6'), race day 2023-12-10, record 15,000+ participants, 700+ international athletes from 91 countries",
+          "participants": {
+            "count": 15000,
+            "sourceUrl": "https://tuoitre.vn/techcombank-marathon-2023-dat-ki-luc-voi-hon-15-000-nguoi-tham-du-20231212201906577.htm",
+            "quote": "15.000 người tham dự"
+          }
         }
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-27T08:06:02.251Z",
-  "updatedAt": "2026-09-28T05:58:42.803Z"
+  "updatedAt": "2026-09-28T14:36:25.648Z"
 }

@@ -230,23 +230,12 @@
   "links": [],
   "participants": {
     "count": 5000,
-    "approx": true,
     "sourceUrl": "https://congthuong.vn/hon-5000-nguoi-tham-gia-giai-chay-halong-bay-heritage-marathon-2022-226827.html",
-    "quote": "Hơn 5.000 người tham gia giải chạy Halong Bay Heritage Marathon 2022"
+    "quote": "Hơn 5.000 người tham gia giải chạy Halong Bay Heritage Marathon 2022",
+    "confidence": "medium"
   },
   "flags": [],
-  "overrides": {
-    "participants": {
-      "value": {
-        "count": 5000,
-        "approx": true,
-        "sourceUrl": "https://congthuong.vn/hon-5000-nguoi-tham-gia-giai-chay-halong-bay-heritage-marathon-2022-226827.html",
-        "quote": "Hơn 5.000 người tham gia giải chạy Halong Bay Heritage Marathon 2022"
-      },
-      "reason": "Headline of news recap states the count",
-      "at": "2026-09-28T14:11:37.098Z"
-    }
-  },
+  "overrides": {},
   "sources": [
     {
       "site": "justrunlah-com",
@@ -303,9 +292,28 @@
           "note": "JustRunLah race listing: 'Date: 13 November 2022, Categories: Full Marathon, Half Marathon, 10 km, 5 km, Entry fees: 5.00 KM - 20 EUR, 10.00 KM - 30 EUR, 21.10 KM - 40 EUR, 42.20 KM - 49 EUR'. No irace or halongmarathon.com price source found for 2022 (irace has no page for this year; halongmarathon.com's own 'Phí Đăng Ký' article's price images were never archived by Wayback). Single flat fee, no stated validity window, and it's in EUR (an international-facing listing), not VND."
         }
       }
+    },
+    {
+      "site": "congthuong-vn",
+      "role": "reference",
+      "url": "https://congthuong.vn/hon-5000-nguoi-tham-gia-giai-chay-halong-bay-heritage-marathon-2022-226827.html",
+      "lastCheckedAt": "2026-09-28T14:36:25.648Z",
+      "lastChangedAt": "2026-09-28T14:36:25.648Z",
+      "extracted": {
+        "facts": {
+          "name": "Halong Bay Heritage Marathon 2022",
+          "date": "2022-11-13",
+          "participants": {
+            "count": 5000,
+            "sourceUrl": "https://congthuong.vn/hon-5000-nguoi-tham-gia-giai-chay-halong-bay-heritage-marathon-2022-226827.html",
+            "quote": "Hơn 5.000 người tham gia giải chạy Halong Bay Heritage Marathon 2022"
+          },
+          "note": "Headline of news recap states the count"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-27T02:50:56.279Z",
-  "updatedAt": "2026-09-28T14:11:37.098Z"
+  "updatedAt": "2026-09-28T14:36:25.648Z"
 }

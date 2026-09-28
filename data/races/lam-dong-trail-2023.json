@@ -7,6 +7,7 @@
   ],
   "date": "2023-11-10",
   "endDate": "2023-11-12",
+  "mainDate": null,
   "seriesId": "lamdong-trail",
   "organizerId": null,
   "organizer": null,
@@ -486,9 +487,9 @@
   "links": [],
   "participants": {
     "count": 2000,
-    "approx": true,
     "sourceUrl": "https://app.irace.vn/lam-dong-trail-2023",
-    "quote": "2000 VĐV"
+    "quote": "2000 VĐV",
+    "confidence": "medium"
   },
   "flags": [],
   "overrides": {
@@ -868,16 +869,6 @@
       ],
       "reason": "iRace ticket price image (app.irace.vn/lam-dong-trail-2023, wp-content/uploads/2023/03/gia-ve.png, fetched via Wayback+Firecrawl JS render to find the image URL, then read directly): Super Early Bird/Early Bird/Regular/Late/Onsite tiers with explicit date windows",
       "at": "2026-09-25T08:23:00.169Z"
-    },
-    "participants": {
-      "value": {
-        "count": 2000,
-        "approx": true,
-        "sourceUrl": "https://app.irace.vn/lam-dong-trail-2023",
-        "quote": "2000 VĐV"
-      },
-      "reason": "Stated participant count read from the linked page (backfill, plan 012)",
-      "at": "2026-09-28T00:00:00Z"
     }
   },
   "sources": [
@@ -885,7 +876,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://app.irace.vn/lam-dong-trail-2023",
-      "lastCheckedAt": "2026-09-25T08:03:04.937Z",
+      "lastCheckedAt": "2026-09-28T14:36:25.648Z",
       "lastChangedAt": "2026-09-25T08:03:04.937Z",
       "extracted": {
         "facts": {
@@ -899,12 +890,17 @@
           "city": "Đà Lạt, Lâm Đồng",
           "seriesId": "lamdong-trail",
           "currency": "VND",
-          "note": "iRace results page: Lâm Đồng Trail 2023 held 10-12/11/2023, venue Thung Lũng Tình Yêu, ~2000 participants, registration closed 25/10/2023"
+          "note": "iRace results page: Lâm Đồng Trail 2023 held 10-12/11/2023, venue Thung Lũng Tình Yêu, ~2000 participants, registration closed 25/10/2023",
+          "participants": {
+            "count": 2000,
+            "sourceUrl": "https://app.irace.vn/lam-dong-trail-2023",
+            "quote": "2000 VĐV"
+          }
         }
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T08:03:04.937Z",
-  "updatedAt": "2026-09-28T05:58:42.803Z"
+  "updatedAt": "2026-09-28T14:36:25.648Z"
 }

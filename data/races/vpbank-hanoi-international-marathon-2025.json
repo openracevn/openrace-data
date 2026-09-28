@@ -7,6 +7,7 @@
   ],
   "date": "2025-10-26",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "vpbank-hanoi-international-marathon",
   "organizerId": null,
   "organizer": "Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
@@ -144,9 +145,9 @@
   "links": [],
   "participants": {
     "count": 11000,
-    "approx": true,
     "sourceUrl": "https://vpbankmarathon.com/vi/mua-giai-2025",
-    "quote": "11.000"
+    "quote": "11.000",
+    "confidence": "medium"
   },
   "flags": [],
   "overrides": {
@@ -154,16 +155,6 @@
       "value": 6,
       "reason": "Báo Thanh Niên (vietnam.vn, 2025-10-26): 'this year's race, the 6th edition organized by VPBank' — matches vpbankmarathon.com's own 'mùa giải thứ 7' claim for the following year (2026)",
       "at": "2026-09-27T02:28:23.973Z"
-    },
-    "participants": {
-      "value": {
-        "count": 11000,
-        "approx": true,
-        "sourceUrl": "https://vpbankmarathon.com/vi/mua-giai-2025",
-        "quote": "11.000"
-      },
-      "reason": "Stated participant count read from the linked page (backfill, plan 012)",
-      "at": "2026-09-28T00:00:00Z"
     }
   },
   "sources": [
@@ -171,7 +162,7 @@
       "site": "vpbank-hanoi-marathon",
       "role": "reference",
       "url": "https://vpbankmarathon.com/vi/mua-giai-2025",
-      "lastCheckedAt": "2026-09-27T02:23:40.614Z",
+      "lastCheckedAt": "2026-09-28T14:36:25.648Z",
       "lastChangedAt": "2026-09-27T02:23:40.614Z",
       "extracted": {
         "facts": {
@@ -189,7 +180,12 @@
           "venue": "Hồ Hoàn Kiếm, Hà Nội",
           "city": "Hà Nội",
           "organizer": "Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
-          "note": "Official vpbankmarathon.com 'Mùa giải 2025' recap page: VPIM 2025 stats (11,000 runners, 25 countries, 30+ landmarks) and confirms the event is VPBank's own; race day per Báo Thanh Niên/VTV news coverage of the same edition was 2025-10-26 (event weekend 24-26/10)"
+          "note": "Official vpbankmarathon.com 'Mùa giải 2025' recap page: VPIM 2025 stats (11,000 runners, 25 countries, 30+ landmarks) and confirms the event is VPBank's own; race day per Báo Thanh Niên/VTV news coverage of the same edition was 2025-10-26 (event weekend 24-26/10)",
+          "participants": {
+            "count": 11000,
+            "sourceUrl": "https://vpbankmarathon.com/vi/mua-giai-2025",
+            "quote": "11.000"
+          }
         }
       }
     },
@@ -222,5 +218,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-27T02:23:40.614Z",
-  "updatedAt": "2026-09-28T05:58:42.803Z"
+  "updatedAt": "2026-09-28T14:36:25.648Z"
 }

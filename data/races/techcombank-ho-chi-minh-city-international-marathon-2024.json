@@ -7,6 +7,7 @@
   ],
   "date": "2024-12-08",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "techcombank-ho-chi-minh-city-international-marathon",
   "organizerId": null,
   "organizer": "Sunrise Events Vietnam",
@@ -144,29 +145,18 @@
   "links": [],
   "participants": {
     "count": 18000,
-    "approx": true,
     "sourceUrl": "https://vietnamnews.vn/sports/1688542/techcombank-hcm-city-international-marathon-kicks-off-with-record-of-participants.html",
-    "quote": "18,000 athletes from 64 countries"
+    "quote": "18,000 athletes from 64 countries",
+    "confidence": "medium"
   },
   "flags": [],
-  "overrides": {
-    "participants": {
-      "value": {
-        "count": 18000,
-        "approx": true,
-        "sourceUrl": "https://vietnamnews.vn/sports/1688542/techcombank-hcm-city-international-marathon-kicks-off-with-record-of-participants.html",
-        "quote": "18,000 athletes from 64 countries"
-      },
-      "reason": "Stated participant count read from the linked page (backfill, plan 012)",
-      "at": "2026-09-28T00:00:00Z"
-    }
-  },
+  "overrides": {},
   "sources": [
     {
       "site": "vietnamnews-vn",
       "role": "reference",
       "url": "https://vietnamnews.vn/sports/1688542/techcombank-hcm-city-international-marathon-kicks-off-with-record-of-participants.html",
-      "lastCheckedAt": "2026-09-27T08:06:33.905Z",
+      "lastCheckedAt": "2026-09-28T14:36:25.648Z",
       "lastChangedAt": "2026-09-27T08:06:33.905Z",
       "extracted": {
         "facts": {
@@ -185,12 +175,17 @@
           "city": "Ho Chi Minh City",
           "organizer": "Sunrise Events Vietnam",
           "edition": 7,
-          "note": "7th edition ('lần thứ 7'), race day 2024-12-08 (activities Dec 6-8), near 18,000 athletes from 64 countries"
+          "note": "7th edition ('lần thứ 7'), race day 2024-12-08 (activities Dec 6-8), near 18,000 athletes from 64 countries",
+          "participants": {
+            "count": 18000,
+            "sourceUrl": "https://vietnamnews.vn/sports/1688542/techcombank-hcm-city-international-marathon-kicks-off-with-record-of-participants.html",
+            "quote": "18,000 athletes from 64 countries"
+          }
         }
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-27T08:06:33.905Z",
-  "updatedAt": "2026-09-28T05:58:42.803Z"
+  "updatedAt": "2026-09-28T14:36:25.648Z"
 }

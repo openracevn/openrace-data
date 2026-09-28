@@ -289,9 +289,9 @@
   ],
   "participants": {
     "count": 15000,
-    "approx": true,
     "sourceUrl": "https://halongmarathon.com/en/gan-15-000-vdv-du-giai-marathon-quoc-te-di-san-ha-long-2025-2/",
-    "quote": "Gần 15.000 VĐV dự Giải Marathon Quốc tế Di sản Hạ Long 2025"
+    "quote": "Gần 15.000 VĐV dự Giải Marathon Quốc tế Di sản Hạ Long 2025",
+    "confidence": "medium"
   },
   "flags": [],
   "overrides": {
@@ -301,16 +301,6 @@
       ],
       "reason": "inferred from race name/price-tier text (marathon); no source states an explicit type",
       "at": "2026-09-26T13:21:53.036Z"
-    },
-    "participants": {
-      "value": {
-        "count": 15000,
-        "approx": true,
-        "sourceUrl": "https://halongmarathon.com/en/gan-15-000-vdv-du-giai-marathon-quoc-te-di-san-ha-long-2025-2/",
-        "quote": "Gần 15.000 VĐV dự Giải Marathon Quốc tế Di sản Hạ Long 2025"
-      },
-      "reason": "Organizer recap headline; another organizer post says 14.000 VĐV",
-      "at": "2026-09-28T14:12:05.283Z"
     }
   },
   "sources": [
@@ -460,9 +450,28 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "halong-marathon",
+      "role": "reference",
+      "url": "https://halongmarathon.com/en/gan-15-000-vdv-du-giai-marathon-quoc-te-di-san-ha-long-2025-2",
+      "lastCheckedAt": "2026-09-28T14:36:25.648Z",
+      "lastChangedAt": "2026-09-28T14:36:25.648Z",
+      "extracted": {
+        "facts": {
+          "name": "Halong Bay Heritage Marathon 2025",
+          "date": "2025-11-23",
+          "participants": {
+            "count": 15000,
+            "sourceUrl": "https://halongmarathon.com/en/gan-15-000-vdv-du-giai-marathon-quoc-te-di-san-ha-long-2025-2/",
+            "quote": "Gần 15.000 VĐV dự Giải Marathon Quốc tế Di sản Hạ Long 2025"
+          },
+          "note": "Organizer recap headline; another organizer post says 14.000 VĐV"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T14:12:05.283Z"
+  "updatedAt": "2026-09-28T14:36:25.648Z"
 }

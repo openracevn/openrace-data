@@ -7,6 +7,7 @@
   ],
   "date": "2021-04-11",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "techcombank-ho-chi-minh-city-international-marathon",
   "organizerId": null,
   "organizer": "Sunrise Events Vietnam",
@@ -144,9 +145,9 @@
   "links": [],
   "participants": {
     "count": 13117,
-    "approx": false,
     "sourceUrl": "https://thuonghieucongluan.com.vn/giai-marathon-quoc-te-tphcm-techcombank-mua-4-thu-hut-13-117-van-dong-vien-a131782.html",
-    "quote": "13,117 vận động viên"
+    "quote": "13,117 vận động viên",
+    "confidence": "medium"
   },
   "flags": [],
   "overrides": {
@@ -154,16 +155,6 @@
       "value": "techcombank-ho-chi-minh-city-international-marathon",
       "reason": "unify series id across all editions of this race",
       "at": "2026-09-27T08:08:12.350Z"
-    },
-    "participants": {
-      "value": {
-        "count": 13117,
-        "approx": false,
-        "sourceUrl": "https://thuonghieucongluan.com.vn/giai-marathon-quoc-te-tphcm-techcombank-mua-4-thu-hut-13-117-van-dong-vien-a131782.html",
-        "quote": "13,117 vận động viên"
-      },
-      "reason": "Stated participant count read from the linked page (backfill, plan 012)",
-      "at": "2026-09-28T00:00:00Z"
     }
   },
   "sources": [
@@ -171,7 +162,7 @@
       "site": "thuonghieucongluan-com-vn",
       "role": "reference",
       "url": "https://thuonghieucongluan.com.vn/giai-marathon-quoc-te-tphcm-techcombank-mua-4-thu-hut-13-117-van-dong-vien-a131782.html",
-      "lastCheckedAt": "2026-09-27T08:04:53.237Z",
+      "lastCheckedAt": "2026-09-28T14:36:25.648Z",
       "lastChangedAt": "2026-09-27T08:04:53.237Z",
       "extracted": {
         "facts": {
@@ -190,12 +181,17 @@
           "city": "Ho Chi Minh City",
           "organizer": "Sunrise Events Vietnam",
           "edition": 4,
-          "note": "4th edition ('mùa 4'): originally scheduled Dec 2020, postponed for Covid-19, actually held 2021-04-11 (activities from 04-09), 13,117 athletes, distances 42/21/10/5km"
+          "note": "4th edition ('mùa 4'): originally scheduled Dec 2020, postponed for Covid-19, actually held 2021-04-11 (activities from 04-09), 13,117 athletes, distances 42/21/10/5km",
+          "participants": {
+            "count": 13117,
+            "sourceUrl": "https://thuonghieucongluan.com.vn/giai-marathon-quoc-te-tphcm-techcombank-mua-4-thu-hut-13-117-van-dong-vien-a131782.html",
+            "quote": "13,117 vận động viên"
+          }
         }
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-27T08:04:53.237Z",
-  "updatedAt": "2026-09-28T05:58:42.803Z"
+  "updatedAt": "2026-09-28T14:36:25.648Z"
 }

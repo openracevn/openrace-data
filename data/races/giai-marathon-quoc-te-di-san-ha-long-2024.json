@@ -227,9 +227,9 @@
   ],
   "participants": {
     "count": 13500,
-    "approx": true,
     "sourceUrl": "https://baoquangninh.vn/soi-dong-ngay-hoi-cua-cac-runner-yeu-marathone-ben-bo-di-san-3329940.html",
-    "quote": "Sôi động ngày hội của hơn 13.500 runner bên bờ Di sản"
+    "quote": "Sôi động ngày hội của hơn 13.500 runner bên bờ Di sản",
+    "confidence": "medium"
   },
   "flags": [],
   "overrides": {
@@ -244,16 +244,6 @@
       "value": "halong-bay-heritage-marathon",
       "reason": "same organizer/race family as halong-bay-heritage-marathon-2025/2026 and the retired giai-marathon-quoc-te-di-san-ha-long-2026 duplicate; unify all editions under one series",
       "at": "2026-09-27T02:36:47.734Z"
-    },
-    "participants": {
-      "value": {
-        "count": 13500,
-        "approx": true,
-        "sourceUrl": "https://baoquangninh.vn/soi-dong-ngay-hoi-cua-cac-runner-yeu-marathone-ben-bo-di-san-3329940.html",
-        "quote": "Sôi động ngày hội của hơn 13.500 runner bên bờ Di sản"
-      },
-      "reason": "Headline of news recap states the count",
-      "at": "2026-09-28T14:11:56.522Z"
     }
   },
   "sources": [
@@ -423,9 +413,28 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "baoquangninh-vn",
+      "role": "reference",
+      "url": "https://baoquangninh.vn/soi-dong-ngay-hoi-cua-cac-runner-yeu-marathone-ben-bo-di-san-3329940.html",
+      "lastCheckedAt": "2026-09-28T14:36:25.648Z",
+      "lastChangedAt": "2026-09-28T14:36:25.648Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Marathon Quốc tế Di sản Hạ Long 2024",
+          "date": "2024-11-17",
+          "participants": {
+            "count": 13500,
+            "sourceUrl": "https://baoquangninh.vn/soi-dong-ngay-hoi-cua-cac-runner-yeu-marathone-ben-bo-di-san-3329940.html",
+            "quote": "Sôi động ngày hội của hơn 13.500 runner bên bờ Di sản"
+          },
+          "note": "Headline of news recap states the count"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T14:11:56.522Z"
+  "updatedAt": "2026-09-28T14:36:25.648Z"
 }

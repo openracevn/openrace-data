@@ -277,9 +277,9 @@
   ],
   "participants": {
     "count": 9100,
-    "approx": true,
     "sourceUrl": "https://baotintuc.vn/the-thao/khoang-9100-nguoi-tham-gia-giai-marathon-quoc-te-di-san-ha-long-2023-20231119140115585.htm",
-    "quote": "Khoảng 9.100 người tham gia Giải Marathon Quốc tế Di sản Hạ Long 2023"
+    "quote": "Khoảng 9.100 người tham gia Giải Marathon Quốc tế Di sản Hạ Long 2023",
+    "confidence": "medium"
   },
   "flags": [],
   "overrides": {
@@ -287,16 +287,6 @@
       "value": "cong-ty-dha-viet-nam",
       "reason": "organizer cleanup (plan 013): \"DHA Vietnam | Ban tổ chức sự kiện\" is a duplicate or role-text variant of cong-ty-dha-viet-nam",
       "at": "2026-09-28T12:41:20.739Z"
-    },
-    "participants": {
-      "value": {
-        "count": 9100,
-        "approx": true,
-        "sourceUrl": "https://baotintuc.vn/the-thao/khoang-9100-nguoi-tham-gia-giai-marathon-quoc-te-di-san-ha-long-2023-20231119140115585.htm",
-        "quote": "Khoảng 9.100 người tham gia Giải Marathon Quốc tế Di sản Hạ Long 2023"
-      },
-      "reason": "Headline of news recap states the count",
-      "at": "2026-09-28T14:11:45.250Z"
     }
   },
   "sources": [
@@ -587,9 +577,28 @@
           "note": "Wayback snapshot of ticket.irace.vn's #personal price table (2023-05-28, during its Early Bird window) — the live page has since dropped it (registration closed). Full tier history: Early Bird 14/05-29/05, Regular 30/05-31/07, Late 01/08-31/10."
         }
       }
+    },
+    {
+      "site": "baotintuc-vn",
+      "role": "reference",
+      "url": "https://baotintuc.vn/the-thao/khoang-9100-nguoi-tham-gia-giai-marathon-quoc-te-di-san-ha-long-2023-20231119140115585.htm",
+      "lastCheckedAt": "2026-09-28T14:36:25.648Z",
+      "lastChangedAt": "2026-09-28T14:36:25.648Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Halong Bay Heritage Marathon 2023",
+          "date": "2023-11-19",
+          "participants": {
+            "count": 9100,
+            "sourceUrl": "https://baotintuc.vn/the-thao/khoang-9100-nguoi-tham-gia-giai-marathon-quoc-te-di-san-ha-long-2023-20231119140115585.htm",
+            "quote": "Khoảng 9.100 người tham gia Giải Marathon Quốc tế Di sản Hạ Long 2023"
+          },
+          "note": "Headline of news recap states the count"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-27T02:49:56.839Z",
-  "updatedAt": "2026-09-28T14:11:45.250Z"
+  "updatedAt": "2026-09-28T14:36:25.648Z"
 }
