@@ -16,25 +16,25 @@
     {
       "label": "2km",
       "meters": 2000,
-      "type": null,
+      "type": "city_trail",
       "elevationGain": null
     },
     {
       "label": "5km",
       "meters": 5000,
-      "type": null,
+      "type": "city_trail",
       "elevationGain": null
     },
     {
       "label": "15km",
       "meters": 15000,
-      "type": null,
+      "type": "city_trail",
       "elevationGain": null
     },
     {
       "label": "600m",
       "meters": 600,
-      "type": null,
+      "type": "city_trail",
       "elevationGain": null
     }
   ],
@@ -433,6 +433,36 @@
       ],
       "reason": "irace.vn price table image (bang-gia-the-lake-race.jpg) on the source page, checked directly against the image",
       "at": "2026-09-27T03:01:37.116Z"
+    },
+    "courses": {
+      "value": [
+        {
+          "label": "2km",
+          "meters": 2000,
+          "type": "city_trail",
+          "elevationGain": null
+        },
+        {
+          "label": "5km",
+          "meters": 5000,
+          "type": "city_trail",
+          "elevationGain": null
+        },
+        {
+          "label": "15km",
+          "meters": 15000,
+          "type": "city_trail",
+          "elevationGain": null
+        },
+        {
+          "label": "600m",
+          "meters": 600,
+          "type": "city_trail",
+          "elevationGain": null
+        }
+      ],
+      "reason": "Andros Lakes Race: user says every edition is city trail; course types follow. Distances unchanged.",
+      "at": "2026-09-28T16:08:10.772Z"
     }
   },
   "sources": [
@@ -475,5 +505,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T06:49:26.358Z",
-  "updatedAt": "2026-09-28T16:02:49.668Z"
+  "updatedAt": "2026-09-28T16:08:10.772Z"
 }
