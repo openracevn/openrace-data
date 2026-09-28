@@ -5,8 +5,9 @@
   "types": [
     "road_run"
   ],
-  "date": "2026-11-08",
+  "date": "2026-11-06",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "standard-chartered-hanoi-marathon-heritage-race",
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "DHA Vietnam | Ban tổ chức sự kiện",
@@ -260,14 +261,17 @@
     }
   ],
   "participants": null,
-  "flags": [
-    "sources disagree on race day: irace 2026-11-08, actiup 2026-11-07"
-  ],
+  "flags": [],
   "overrides": {
     "organizerId": {
       "value": "cong-ty-dha-viet-nam",
       "reason": "organizer cleanup (plan 013): \"DHA Vietnam | Ban tổ chức sự kiện\" is a duplicate or role-text variant of cong-ty-dha-viet-nam",
       "at": "2026-09-28T12:41:20.818Z"
+    },
+    "date": {
+      "value": "2026-11-06",
+      "reason": "Official site https://hanoi-marathon.com/ states the race runs 6-8/11/2026 with the main race day on 8/11/2026 (actiup gives 7-8 Nov, irace 8 Nov)",
+      "at": "2026-09-28T13:57:37.528Z"
     }
   },
   "sources": [
@@ -518,7 +522,7 @@
       }
     }
   ],
-  "confidence": "conflicting",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T12:41:20.818Z"
+  "updatedAt": "2026-09-28T13:57:37.528Z"
 }
