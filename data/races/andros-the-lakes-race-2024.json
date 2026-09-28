@@ -7,6 +7,7 @@
   ],
   "date": "2024-05-26",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "andros-the-lakes-race",
   "organizerId": "the-lakes-race",
   "organizer": "THE LAKES RACE",
@@ -323,6 +324,12 @@
     }
   ],
   "links": [],
+  "participants": {
+    "count": 2500,
+    "sourceUrl": "https://cellphones.com.vn/sforum/giai-chay-lakes-race",
+    "quote": "Giải chạy năm 2024 đã vô cùng thành công với sự tham dự của 532 trẻ mồ côi và 2.500 vận động viên",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "prices": {
@@ -542,9 +549,28 @@
           "note": "race-research: retag to the iRace site key."
         }
       }
+    },
+    {
+      "site": "cellphones-com-vn",
+      "role": "reference",
+      "url": "https://cellphones.com.vn/sforum/giai-chay-lakes-race",
+      "lastCheckedAt": "2026-09-28T16:01:23.829Z",
+      "lastChangedAt": "2026-09-28T16:01:23.829Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Andros The Lakes Race - Vol 6",
+          "date": "2024-05-26",
+          "participants": {
+            "count": 2500,
+            "sourceUrl": "https://cellphones.com.vn/sforum/giai-chay-lakes-race",
+            "quote": "Giải chạy năm 2024 đã vô cùng thành công với sự tham dự của 532 trẻ mồ côi và 2.500 vận động viên"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-27T03:01:49.042Z"
+  "updatedAt": "2026-09-28T16:01:23.829Z"
 }
