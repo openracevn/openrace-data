@@ -1,0 +1,79 @@
+{
+  "id": "de342cdb-aa14-45a1-9ce8-d5d6ed61d3eb",
+  "slug": "pocari-sweat-run-viet-nam-2022",
+  "name": "Pocari Sweat Run Việt Nam 2022",
+  "types": [
+    "road_run"
+  ],
+  "date": "2022-11-06",
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": null,
+  "organizerId": null,
+  "organizer": "Pocari Sweat Run Vietnam",
+  "edition": null,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Khu đô thị Sala",
+    "city": "TP. Hồ Chí Minh"
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "vnexpress-net",
+      "role": "reference",
+      "url": "https://vnexpress.net/6-000-runner-chinh-phuc-duong-chay-pocari-sweat-run-4532967.html",
+      "lastCheckedAt": "2026-09-28T16:22:03.604Z",
+      "lastChangedAt": "2026-09-28T16:22:03.604Z",
+      "extracted": {
+        "facts": {
+          "name": "Pocari Sweat Run Việt Nam 2022",
+          "date": "2022-11-06",
+          "organizer": "Pocari Sweat Run Vietnam",
+          "types": [
+            "road_run"
+          ],
+          "venue": "Khu đô thị Sala",
+          "city": "TP. Hồ Chí Minh",
+          "distances": [
+            "5km",
+            "10km",
+            "21km"
+          ],
+          "prices": [],
+          "note": "VnExpress recap: race held 6/11/2022, third edition in Vietnam, 5/10/21km at Sala"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-28T16:22:03.604Z",
+  "updatedAt": "2026-09-28T16:22:03.604Z"
+}
