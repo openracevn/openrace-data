@@ -168,25 +168,30 @@ function sameRaceDay(a: SourceFacts, b: SourceFacts): boolean {
 const PARTICIPANTS_CONFLICT = 0.25;
 
 /**
- * The stated participant count to serve: official source first, then the most precise
- * (not approx), then the most recent source read. A source that states a count without a
- * link is linked to its own page. Never a guess: no source states one, no count.
+ * The stated participant count to serve: official source first, then the most recent
+ * source read. A source that states a count without a link is linked to its own page.
+ * Never a guess: no source states one, no count. `confidence` is derived here:
+ * high = a quote from an official source, or two quoted sources within 25%;
+ * medium = a quote from a reference or seller; low = no quote (a search summary).
  */
 export function pickParticipants(usable: readonly { source: RaceSource; facts: SourceFacts }[]): CanonicalRace["participants"] {
   const stated = usable.flatMap(({ source, facts }) => (facts.participants ? [{ source, p: facts.participants }] : []));
   stated.sort(
     (a, b) =>
       Number(a.source.role !== "official") - Number(b.source.role !== "official") ||
-      Number(a.p.approx) - Number(b.p.approx) ||
       b.source.lastCheckedAt.localeCompare(a.source.lastCheckedAt),
   );
   const best = stated[0];
   if (!best) return null;
+  const agreed = stated.some(
+    (other) => other !== best && other.p.quote && Math.max(other.p.count, best.p.count) <= Math.min(other.p.count, best.p.count) * (1 + PARTICIPANTS_CONFLICT),
+  );
+  const confidence = !best.p.quote ? "low" : best.source.role === "official" || agreed ? "high" : "medium";
   return {
     count: best.p.count,
-    approx: best.p.approx,
     sourceUrl: best.p.sourceUrl ?? best.source.url,
     ...(best.p.quote ? { quote: best.p.quote } : {}),
+    confidence,
   };
 }
 

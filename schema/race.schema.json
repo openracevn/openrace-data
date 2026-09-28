@@ -627,9 +627,6 @@
               "minimum": 1,
               "maximum": 9007199254740991
             },
-            "approx": {
-              "type": "boolean"
-            },
             "sourceUrl": {
               "type": "string",
               "format": "uri"
@@ -638,12 +635,20 @@
               "type": "string",
               "minLength": 1,
               "maxLength": 200
+            },
+            "confidence": {
+              "type": "string",
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ]
             }
           },
           "required": [
             "count",
-            "approx",
-            "sourceUrl"
+            "sourceUrl",
+            "confidence"
           ],
           "additionalProperties": false
         },

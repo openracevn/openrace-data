@@ -108,13 +108,12 @@ export const PAGE_EXTRACTION = {
       participants: {
         type: "object",
         description:
-          "How many people took part in this edition, only if the page states a number (recap or results announcement). Not finishers-only, not capacity or slots. Omit for an upcoming race.",
+          "How many people registered, paid or attended this edition, only if the page states a number (recap or results announcement). Accept \"đăng ký\", \"tham gia\", \"tham dự\", \"VĐV\", tickets sold. Ignore targets (\"dự kiến\", \"expected\", \"hướng tới\"), capacity or slots (\"giới hạn\"), finisher-only counts. Omit for an upcoming race.",
         properties: {
           count: { type: "number", description: "The stated number of participants." },
-          approx: { type: "boolean", description: "true for \"~2000\", \"over 5,000\", \"khoảng 3.000\"; false for a precise figure." },
           quote: { type: "string", description: "The stated phrasing, verbatim." },
         },
-        required: ["count", "approx"],
+        required: ["count"],
       },
       prices: PRICES_PROPERTY,
     },
@@ -190,7 +189,7 @@ export type SourceFacts = {
   registrationStatus: RegistrationStatus | null;
   prices: Tier[];
   // `sourceUrl` null = the page this was read from (reconcile fills it in).
-  participants: { count: number; approx: boolean; sourceUrl: string | null; quote: string | null } | null;
+  participants: { count: number; sourceUrl: string | null; quote: string | null } | null;
 };
 
 export type NormalizeResult = { ok: true; facts: SourceFacts } | { ok: false; reason: string };
@@ -283,12 +282,11 @@ export function normalizeExtraction(raw: SourceExtraction | Record<string, unkno
 
 function normalizeParticipants(v: unknown): SourceFacts["participants"] {
   if (!isRecord(v)) return null;
-  const { count, approx, sourceUrl, quote } = v;
+  const { count, sourceUrl, quote } = v;
   if (typeof count !== "number" || !Number.isInteger(count) || count < 1) return null;
   const url = str(sourceUrl);
   return {
     count,
-    approx: approx === true,
     sourceUrl: url !== null && /^https?:\/\//.test(url) ? url : null,
     quote: str(quote)?.slice(0, 200) ?? null,
   };

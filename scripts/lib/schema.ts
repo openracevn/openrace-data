@@ -184,14 +184,16 @@ export const CourseSchema = z.object({
 /**
  * How many people took part in this edition, as the organizer or press stated it
  * (not finishers-only, not capacity). Aggregate only. `sourceUrl` is required: a
- * number with no link is rejected, never stored. `approx` marks "~2000" / "over 5,000".
+ * number with no link is rejected, never stored. Every count is a press or organizer
+ * figure, so all are approximate. `confidence` is derived in reconcile, never set by hand.
  */
+export const PARTICIPANTS_CONFIDENCE = ["high", "medium", "low"] as const;
 export const ParticipantsSchema = z.object({
   count: z.number().int().min(1),
-  approx: z.boolean(),
   sourceUrl: z.url(),
-  // The stated phrasing, verbatim, in the source's language.
+  // The stated phrasing, verbatim, in the source's language. Present only when verified.
   quote: z.string().min(1).max(200).optional(),
+  confidence: z.enum(PARTICIPANTS_CONFIDENCE),
 });
 
 export const GeoSchema = z.object({
@@ -349,6 +351,21 @@ export function upgradeRace(json: unknown): unknown {
   for (const [field, value] of [["courses", []], ["geo", null], ["edition", null], ["participants", null]] as const) {
     if (!Object.hasOwn(json, field)) {
       upgraded[field] = value;
+      changed = true;
+    }
+  }
+  if (isRecord(json.participants)) {
+    // `approx` is gone; confidence is re-derived on the next compose, so a stand-in until then.
+    const { approx: _approx, ...rest } = json.participants;
+    if (Object.hasOwn(json.participants, "approx") || !Object.hasOwn(rest, "confidence")) {
+      upgraded.participants = { ...rest, confidence: rest.confidence ?? (rest.quote ? "medium" : "low") };
+      changed = true;
+    }
+  }
+  if (isRecord(json.overrides) && isRecord(json.overrides.participants) && isRecord(json.overrides.participants.value)) {
+    const { approx: _a, ...value } = json.overrides.participants.value;
+    if (Object.hasOwn(json.overrides.participants.value, "approx")) {
+      upgraded.overrides = { ...json.overrides, participants: { ...json.overrides.participants, value: { ...value, confidence: value.confidence ?? (value.quote ? "medium" : "low") } } };
       changed = true;
     }
   }

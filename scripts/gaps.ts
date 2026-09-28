@@ -52,6 +52,8 @@ const noParticipantsPast = races
   .filter((r) => r.date < today && !r.participants)
   .sort((a, b) => (seriesSize.get(b.seriesId ?? "") ?? 0) - (seriesSize.get(a.seriesId ?? "") ?? 0) || a.date.localeCompare(b.date));
 
+const lowParticipants = races.filter((r) => r.participants?.confidence === "low");
+
 const orgLine = (o: { id: string; name: string }) => `${o.id} (${raceCount.get(o.id) ?? 0} races): ${o.name}`;
 report("Organizers with merged-looking names (split with the check-organizer skill)", mergedOrganizers, orgLine, organizers.length);
 report("Organizers with no links (biggest first)", noOrganizerLinks, orgLine, organizers.length);
@@ -62,6 +64,7 @@ report("No prices, past (informational — may be free or unpriced)", noPricesPa
 report("Flagged or conflicting confidence", flagged, (r) => `${r.slug} (confidence: ${r.confidence}, flags: ${r.flags.join("; ") || "none"})`);
 report("Multi-day races with no mainDate (informational; fill only where a source states the main day)", noMainDate, (r) => `${r.slug} (${r.date}..${r.endDate})`);
 report("Past races with no participant count (backfill worklist, biggest series first; a report, not a failure)", noParticipantsPast, (r) => `${r.slug} (${r.date}${r.seriesId ? `, series ${r.seriesId}: ${seriesSize.get(r.seriesId)} editions` : ""})`);
+report("Participant counts with low confidence (no verified quote; upgrade with a quoted source; informational)", lowParticipants, (r) => `${r.slug} (${r.participants!.count}: ${r.participants!.sourceUrl})`);
 
 console.log(`\nSeries with a year gap: ${byYearGap.length}`);
 for (const { seriesId, years } of byYearGap.slice(0, 10)) {
