@@ -1,6 +1,8 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import { describe, it } from "node:test";
 import { splitMessages } from "../scripts/lib/changes.ts";
+import { locationKey, parseGeoCache } from "../scripts/lib/geo.ts";
 import { FRESHNESS_PATH, FreshnessSchema } from "../scripts/lib/freshness.ts";
 import { fieldFlags, type StoredExtraction } from "../scripts/lib/reconcile.ts";
 import { INDEX_PATH, ORGANIZERS_PATH, RaceSchema, SERIES_PATH, racePath, type IndexEntry, type Race } from "../scripts/lib/schema.ts";
@@ -348,6 +350,16 @@ describe("OpenRace overrides and renames", () => {
     const unset = await planEdit(store, "hcmc-marathon-2027", [{ kind: "unset", field: "courses" }], config, LATER);
     apply(store, unset.files);
     assert.deepEqual(readRace(store, "hcmc-marathon-2027").courses.map((course) => course.label), ["10km", "21km", "42km"]);
+  });
+
+  it("a location override gets a map point from the geo cache, like a location a source states", async () => {
+    const store = memoryStore();
+    apply(store, (await plan(store, [officialInput()])).files);
+    const entry = Object.values(parseGeoCache(readFileSync("state/geo.json", "utf8")))[0]!;
+    const location = { venue: "Khu vực thử nghiệm", city: "Hà Nội" };
+    const set = await planEdit(store, "hcmc-marathon-2027", [{ kind: "set", field: "location", value: location, reason: "test" }], config, LATER, { [locationKey(location)!]: entry });
+    apply(store, set.files);
+    assert.deepEqual(readRace(store, "hcmc-marathon-2027").geo, entry.geo);
   });
 
   it("renames a slug: the file moves, the id stays, and re-reads keep it", async () => {

@@ -386,7 +386,10 @@ function composeRace(a: ComposeArgs): { record: Race; fields: CanonicalField[] }
   if ("error" in reconciled) return { error: reconciled.error };
   const reconciledFields = { ...reconciled.fields, seriesId: reconciled.fields.seriesId ?? a.series?.id ?? null };
   const derived = a.prev && a.stabilizeAgainstPrev ? stabilize(a.prev, reconciledFields) : reconciledFields;
-  const key = isVirtualRace(derived.name, derived.types, derived.location.venue) ? null : locationKey(derived.location);
+  // The point follows the location the race ends up with, so a hand-set location
+  // (an override) gets one too, not only a location a source stated.
+  const location = (a.overrides.location?.value as Race["location"] | undefined) ?? derived.location;
+  const key = isVirtualRace(derived.name, derived.types, location.venue) ? null : locationKey(location);
   const fields = { ...derived, geo: key === null ? null : a.geoCache[key]?.geo ?? null };
   const canonical = applyOverrides(fields, a.overrides);
   const record: Race = {
