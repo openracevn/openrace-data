@@ -522,7 +522,12 @@
       "foundOn": "actiup.net"
     }
   ],
-  "participants": null,
+  "participants": {
+    "count": 8000,
+    "sourceUrl": "https://thanhnien.vn/hon-8000-van-dong-vien-tham-gia-pocari-sweat-run-viet-nam-2024-185241107150035642.htm",
+    "quote": "Hơn 8.000 vận động viên tham gia Pocari Sweat Run Việt Nam 2024",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "types": {
@@ -853,9 +858,28 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "thanhnien-vn",
+      "role": "reference",
+      "url": "https://thanhnien.vn/hon-8000-van-dong-vien-tham-gia-pocari-sweat-run-viet-nam-2024-185241107150035642.htm",
+      "lastCheckedAt": "2026-09-28T16:42:14.971Z",
+      "lastChangedAt": "2026-09-28T16:42:14.971Z",
+      "extracted": {
+        "facts": {
+          "name": "GIẢI CHẠY POCARI SWEAT RUN VIỆT NAM 2024",
+          "date": "2024-11-01",
+          "participants": {
+            "count": 8000,
+            "sourceUrl": "https://thanhnien.vn/hon-8000-van-dong-vien-tham-gia-pocari-sweat-run-viet-nam-2024-185241107150035642.htm",
+            "quote": "Hơn 8.000 vận động viên tham gia Pocari Sweat Run Việt Nam 2024"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T16:26:27.422Z"
+  "updatedAt": "2026-09-28T16:42:14.971Z"
 }
