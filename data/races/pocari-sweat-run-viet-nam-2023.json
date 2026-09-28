@@ -11,7 +11,7 @@
   "seriesId": "pocari-sweat-run-viet-nam",
   "organizerId": null,
   "organizer": "Pocari Sweat Run Vietnam",
-  "edition": null,
+  "edition": 4,
   "courses": [],
   "location": {
     "venue": "Khu đô thị Sala",
@@ -25,7 +25,13 @@
   "links": [],
   "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "edition": {
+      "value": 4,
+      "reason": "NLĐ: 'mùa giải thứ tư'",
+      "at": "2026-09-28T16:26:01.218Z"
+    }
+  },
   "sources": [
     {
       "site": "nld-com-vn",
@@ -51,5 +57,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-28T16:22:34.726Z",
-  "updatedAt": "2026-09-28T16:22:34.726Z"
+  "updatedAt": "2026-09-28T16:26:01.218Z"
 }
