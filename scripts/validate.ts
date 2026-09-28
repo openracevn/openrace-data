@@ -115,6 +115,12 @@ for (const [id, race] of races) {
   if (race.organizerId && organizers && !organizers.has(race.organizerId)) errors.push(`${idOwner.get(id)}: organizerId "${race.organizerId}" is not in ${ORGANIZERS_PATH}`);
 }
 
+// A series with no race renders as an empty series page; drop it or point races at it.
+if (series) {
+  const usedSeries = new Set([...races.values()].map((race) => race.seriesId));
+  for (const id of series) if (!usedSeries.has(id)) errors.push(`${SERIES_PATH}: series "${id}" has no races`);
+}
+
 checkState(CHECKS_PATH, ChecksSchema);
 checkState(SITES_STATE_PATH, SitesStateSchema);
 checkState(CREDITS_PATH, CreditsSchema);
