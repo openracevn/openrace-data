@@ -7,6 +7,7 @@
   ],
   "date": "2024-11-17",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "halong-bay-heritage-marathon",
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
@@ -224,6 +225,12 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": {
+    "count": 13500,
+    "approx": true,
+    "sourceUrl": "https://baoquangninh.vn/soi-dong-ngay-hoi-cua-cac-runner-yeu-marathone-ben-bo-di-san-3329940.html",
+    "quote": "Sôi động ngày hội của hơn 13.500 runner bên bờ Di sản"
+  },
   "flags": [],
   "overrides": {
     "types": {
@@ -237,6 +244,16 @@
       "value": "halong-bay-heritage-marathon",
       "reason": "same organizer/race family as halong-bay-heritage-marathon-2025/2026 and the retired giai-marathon-quoc-te-di-san-ha-long-2026 duplicate; unify all editions under one series",
       "at": "2026-09-27T02:36:47.734Z"
+    },
+    "participants": {
+      "value": {
+        "count": 13500,
+        "approx": true,
+        "sourceUrl": "https://baoquangninh.vn/soi-dong-ngay-hoi-cua-cac-runner-yeu-marathone-ben-bo-di-san-3329940.html",
+        "quote": "Sôi động ngày hội của hơn 13.500 runner bên bờ Di sản"
+      },
+      "reason": "Headline of news recap states the count",
+      "at": "2026-09-28T14:11:56.522Z"
     }
   },
   "sources": [
@@ -410,5 +427,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-27T03:09:11.499Z"
+  "updatedAt": "2026-09-28T14:11:56.522Z"
 }
