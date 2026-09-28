@@ -7,6 +7,7 @@
   ],
   "date": "2025-10-12",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "vpbank-dat-sen-hong-music-marathon",
   "organizerId": "vpbank",
   "organizer": "VPBANK | Ban tổ chức sự kiện",
@@ -516,6 +517,12 @@
       "foundOn": "ticket.irace.vn"
     }
   ],
+  "participants": {
+    "count": 12800,
+    "sourceUrl": "https://tuoitre.vn/12-800-van-dong-vien-tham-gia-giai-vpbank-dat-sen-hong-music-marathon-2025-20251007141458637.htm",
+    "quote": "12.800 vận động viên tham gia giải VPBank Đất Sen Hồng Music Marathon 2025",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "types": {
@@ -1027,9 +1034,28 @@
           "note": "Wayback snapshot of ticket.irace.vn (2025-08-10, during the sale window) states 'Bước sang mùa giải thứ 4' — confirms 2025 is the series' 4th edition. Its price table (Early Bird/Regular/Late × 5/10/21/42km) also exactly matches actiup's prices, a strong corroboration."
         }
       }
+    },
+    {
+      "site": "tuoitre-vn",
+      "role": "reference",
+      "url": "https://tuoitre.vn/12-800-van-dong-vien-tham-gia-giai-vpbank-dat-sen-hong-music-marathon-2025-20251007141458637.htm",
+      "lastCheckedAt": "2026-09-28T16:12:27.834Z",
+      "lastChangedAt": "2026-09-28T16:12:27.834Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy VPBank Đất Sen Hồng Music Marathon 2025",
+          "date": "2025-10-12",
+          "participants": {
+            "count": 12800,
+            "sourceUrl": "https://tuoitre.vn/12-800-van-dong-vien-tham-gia-giai-vpbank-dat-sen-hong-music-marathon-2025-20251007141458637.htm",
+            "quote": "12.800 vận động viên tham gia giải VPBank Đất Sen Hồng Music Marathon 2025"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-27T02:52:25.807Z"
+  "updatedAt": "2026-09-28T16:12:27.834Z"
 }
