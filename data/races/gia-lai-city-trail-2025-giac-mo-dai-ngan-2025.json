@@ -11,7 +11,7 @@
   "seriesId": "gia-lai-city-trail-giac-mo-dai-ngan",
   "organizerId": "vietrace365",
   "organizer": "VIETRACE365",
-  "edition": null,
+  "edition": 3,
   "courses": [
     {
       "label": "5km",
@@ -328,7 +328,13 @@
     "confidence": "medium"
   },
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "edition": {
+      "value": 3,
+      "reason": "P2PNOW event page says Giải chạy lần thứ 3 năm 2025; organizer site says 2026 follows ba mùa giải Gia Lai City Trail",
+      "at": "2026-09-28T16:36:36.208Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -567,5 +573,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T16:35:37.705Z"
+  "updatedAt": "2026-09-28T16:36:36.208Z"
 }
