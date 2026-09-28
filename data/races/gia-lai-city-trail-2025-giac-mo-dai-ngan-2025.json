@@ -7,6 +7,7 @@
   ],
   "date": "2025-11-02",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "gia-lai-city-trail-giac-mo-dai-ngan",
   "organizerId": "vietrace365",
   "organizer": "VIETRACE365",
@@ -118,6 +119,12 @@
     }
   ],
   "links": [],
+  "participants": {
+    "count": 3000,
+    "sourceUrl": "https://baogialai.com.vn/gan-3000-runner-chinh-phuc-thanh-cong-giac-mo-dai-ngan-2025-post571039.html",
+    "quote": "Gần 3000 Runner Thử Thách “Giấc Mơ Đại Ngàn 2025” Thành Công",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {},
   "sources": [
@@ -143,9 +150,28 @@
           "name": "VIETRACE365"
         }
       }
+    },
+    {
+      "site": "baogialai-com-vn",
+      "role": "reference",
+      "url": "https://baogialai.com.vn/gan-3000-runner-chinh-phuc-thanh-cong-giac-mo-dai-ngan-2025-post571039.html",
+      "lastCheckedAt": "2026-09-28T16:19:30.398Z",
+      "lastChangedAt": "2026-09-28T16:19:30.398Z",
+      "extracted": {
+        "facts": {
+          "name": "GIA LAI CITY TRAIL 2025 - GIẤC MƠ ĐẠI NGÀN",
+          "date": "2025-11-02",
+          "participants": {
+            "count": 3000,
+            "sourceUrl": "https://baogialai.com.vn/gan-3000-runner-chinh-phuc-thanh-cong-giac-mo-dai-ngan-2025-post571039.html",
+            "quote": "Gần 3000 Runner Thử Thách “Giấc Mơ Đại Ngàn 2025” Thành Công"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T07:11:10.278Z"
+  "updatedAt": "2026-09-28T16:19:30.398Z"
 }
