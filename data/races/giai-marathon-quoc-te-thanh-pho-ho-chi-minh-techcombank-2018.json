@@ -7,6 +7,7 @@
   ],
   "date": "2018-12-02",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "techcombank-ho-chi-minh-city-international-marathon",
   "organizerId": null,
   "organizer": "Sunrise Events Vietnam",
@@ -142,6 +143,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": {
+    "count": 8500,
+    "sourceUrl": "https://vietnamnet.vn/8500-nguoi-tham-gia-marathon-tphcm-2018-424105.html",
+    "quote": "8.500 người tham gia Marathon TP.HCM 2018",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "seriesId": {
@@ -177,9 +184,28 @@
           "note": "Official Techcombank announcement: 2nd edition ('mùa giải năm thứ 2'), race day 2018-12-02, HCMC"
         }
       }
+    },
+    {
+      "site": "vietnamnet-vn",
+      "role": "reference",
+      "url": "https://vietnamnet.vn/8500-nguoi-tham-gia-marathon-tphcm-2018-424105.html",
+      "lastCheckedAt": "2026-09-28T14:39:52.614Z",
+      "lastChangedAt": "2026-09-28T14:39:52.614Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Marathon Quốc tế Thành phố Hồ Chí Minh Techcombank 2018",
+          "date": "2018-12-02",
+          "participants": {
+            "count": 8500,
+            "sourceUrl": "https://vietnamnet.vn/8500-nguoi-tham-gia-marathon-tphcm-2018-424105.html",
+            "quote": "8.500 người tham gia Marathon TP.HCM 2018"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-27T08:03:24.126Z",
-  "updatedAt": "2026-09-28T05:58:42.803Z"
+  "updatedAt": "2026-09-28T14:39:52.614Z"
 }
