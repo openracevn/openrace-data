@@ -1,6 +1,6 @@
 # Plan 016: multi-day races: first day, last day and a main race day
 
-Status: **approved 2026-09-28. Stage A (openrace-data) built and tested, not yet committed; stages B–D pending.**
+Status: **approved 2026-09-28. Stages A (data), B (api `0011_main_date.sql`, mcp) and C (web) built, tested and committed locally, not pushed or deployed. Stage D (backfill) pending.**
 
 ## Roadmap fit
 
