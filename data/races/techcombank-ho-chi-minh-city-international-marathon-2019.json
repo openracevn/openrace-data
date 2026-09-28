@@ -7,6 +7,7 @@
   ],
   "date": "2019-12-08",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "techcombank-ho-chi-minh-city-international-marathon",
   "organizerId": null,
   "organizer": "Sunrise Events Vietnam",
@@ -142,6 +143,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": {
+    "count": 13000,
+    "sourceUrl": "https://danviet.vn/huong-den-cong-dong-giai-marathon-quoc-te-tphcm-techcombank-2019-thu-hut-gan-13000-nguoi-tham-du-77771040699.htm",
+    "quote": "thu hút gần 13.000 người tham dự",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {},
   "sources": [
@@ -171,9 +178,28 @@
           "note": "3rd edition program booklet: over 10,000 athletes, race day 2019-12-08"
         }
       }
+    },
+    {
+      "site": "danviet-vn",
+      "role": "reference",
+      "url": "https://danviet.vn/huong-den-cong-dong-giai-marathon-quoc-te-tphcm-techcombank-2019-thu-hut-gan-13000-nguoi-tham-du-77771040699.htm",
+      "lastCheckedAt": "2026-09-28T14:43:35.743Z",
+      "lastChangedAt": "2026-09-28T14:43:35.743Z",
+      "extracted": {
+        "facts": {
+          "name": "Techcombank Ho Chi Minh City International Marathon 2019",
+          "date": "2019-12-08",
+          "participants": {
+            "count": 13000,
+            "sourceUrl": "https://danviet.vn/huong-den-cong-dong-giai-marathon-quoc-te-tphcm-techcombank-2019-thu-hut-gan-13000-nguoi-tham-du-77771040699.htm",
+            "quote": "thu hút gần 13.000 người tham dự"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-27T08:04:23.006Z",
-  "updatedAt": "2026-09-28T05:58:42.803Z"
+  "updatedAt": "2026-09-28T14:43:35.743Z"
 }
