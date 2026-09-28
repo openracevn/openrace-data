@@ -38,102 +38,98 @@
     }
   ],
   "location": {
-    "venue": "Global Gate Hạ Long",
+    "venue": "VinHomes Global Gate (Hạ Long Xanh)",
     "city": null
   },
   "geo": {
-    "lat": 21.0893397,
-    "lng": 105.861483,
-    "source": "nominatim",
-    "precision": "ward",
+    "lat": 20.9517,
+    "lng": 107.08,
+    "source": "place",
+    "precision": "province",
     "current": {
-      "province": "01",
-      "ward": "00454"
+      "province": "22",
+      "ward": null
     },
-    "legacy": {
-      "province": "01",
-      "district": "017",
-      "ward": "00523"
-    },
+    "legacy": null,
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 1506,
-        "minutes": 1148,
-        "method": "road",
+        "km": 1132.6,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "ha-noi": {
-        "km": 11.6,
-        "minutes": 14,
-        "method": "road",
-        "near": true
+        "km": 127.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
       },
       "da-nang": {
-        "km": 783.5,
-        "minutes": 636,
-        "method": "road",
+        "km": 557.1,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "nha-trang": {
-        "km": 1287.4,
-        "minutes": 1022,
-        "method": "road",
+        "km": 994.7,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "da-lat": {
-        "km": 1414.8,
-        "minutes": 1141,
-        "method": "road",
+        "km": 1012.5,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "can-tho": {
-        "km": 1616.9,
-        "minutes": 1267,
-        "method": "road",
+        "km": 1221.8,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "hai-phong": {
-        "km": 105.7,
-        "minutes": 82,
-        "method": "road",
+        "km": 42.4,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "hue": {
-        "km": 681.3,
-        "minutes": 553,
-        "method": "road",
+        "km": 501.9,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "vung-tau": {
-        "km": 1597,
-        "minutes": 1229,
-        "method": "road",
+        "km": 1179.3,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "quy-nhon": {
-        "km": 1095.3,
-        "minutes": 862,
-        "method": "road",
+        "km": 829.6,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 1292.1,
-        "minutes": 1059,
-        "method": "road",
+        "km": 926.9,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "sa-pa": {
-        "km": 307.8,
-        "minutes": 246,
-        "method": "road",
+        "km": 368.2,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "ha-long": {
-        "km": 162.4,
-        "minutes": 114,
-        "method": "road",
-        "near": false
+        "km": 0,
+        "minutes": null,
+        "method": "straight_line",
+        "near": true
       }
     }
   },
@@ -394,10 +390,17 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [
     "sources disagree on race day: irace 2026-10-11, actiup 2026-10-10"
   ],
-  "overrides": {},
+  "overrides": {
+    "date": {
+      "value": "2026-10-11",
+      "reason": "User-confirmed: race day is 11 Oct 2026 (irace says 10-11, actiup 10-10)",
+      "at": "2026-09-28T13:28:15.901Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -675,5 +678,5 @@
   ],
   "confidence": "conflicting",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-27T07:40:37.298Z"
+  "updatedAt": "2026-09-28T13:28:15.901Z"
 }
