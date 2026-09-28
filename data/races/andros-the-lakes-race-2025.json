@@ -3,7 +3,7 @@
   "slug": "andros-the-lakes-race-2025",
   "name": "Andros Lakes Race 2025",
   "types": [
-    "other"
+    "city_trail"
   ],
   "date": "2025-06-01",
   "endDate": null,
@@ -151,6 +151,13 @@
       "value": "Athlete Trotter",
       "reason": "race-research: same official site names Athlete Trotter (business ID 3702736678) as the organizer running the series throughout, not just a 2022 one-off as I'd hedged earlier.",
       "at": "2026-09-25T07:15:03.759Z"
+    },
+    "types": {
+      "value": [
+        "city_trail"
+      ],
+      "reason": "Andros Lakes Race: user says every edition is city trail",
+      "at": "2026-09-28T16:03:06.296Z"
     }
   },
   "sources": [
@@ -222,5 +229,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T16:00:52.089Z"
+  "updatedAt": "2026-09-28T16:03:06.296Z"
 }
