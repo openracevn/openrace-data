@@ -7,6 +7,7 @@
   ],
   "date": "2022-12-11",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "techcombank-ho-chi-minh-city-international-marathon",
   "organizerId": null,
   "organizer": "Sunrise Events Vietnam",
@@ -142,6 +143,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": {
+    "count": 12000,
+    "sourceUrl": "https://plo.vn/gan-12000-nguoi-tham-gia-giai-chay-marathon-quoc-te-tphcm-techcombank-lan-thu-5-post711496.html",
+    "quote": "Gần 12.000 người tham gia giải chạy Marathon Quốc tế TP.HCM Techcombank lần thứ 5",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "seriesId": {
@@ -177,9 +184,28 @@
           "note": "Official Techcombank announcement: 5th edition ('Mùa thứ 5'), diễn ra 09-11/12/2022, marking the marathon's 5-year anniversary since 2017"
         }
       }
+    },
+    {
+      "site": "plo-vn",
+      "role": "reference",
+      "url": "https://plo.vn/gan-12000-nguoi-tham-gia-giai-chay-marathon-quoc-te-tphcm-techcombank-lan-thu-5-post711496.html",
+      "lastCheckedAt": "2026-09-28T14:40:36.103Z",
+      "lastChangedAt": "2026-09-28T14:40:36.103Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Marathon Quốc tế Thành phố Hồ Chí Minh Techcombank Mùa 5",
+          "date": "2022-12-11",
+          "participants": {
+            "count": 12000,
+            "sourceUrl": "https://plo.vn/gan-12000-nguoi-tham-gia-giai-chay-marathon-quoc-te-tphcm-techcombank-lan-thu-5-post711496.html",
+            "quote": "Gần 12.000 người tham gia giải chạy Marathon Quốc tế TP.HCM Techcombank lần thứ 5"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-27T08:05:25.233Z",
-  "updatedAt": "2026-09-28T05:58:42.803Z"
+  "updatedAt": "2026-09-28T14:40:36.103Z"
 }
