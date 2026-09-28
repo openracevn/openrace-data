@@ -8,8 +8,11 @@
   "date": "2025-05-24",
   "endDate": "2025-05-25",
   "seriesId": null,
-  "organizerId": "4-miles-vietnam-backyard-ultra",
+  "organizerId": "4miles",
   "organizer": "4 Miles & Vietnam Backyard Ultra",
+  "coOrganizerIds": [
+    "vietnam-backyard-ultra"
+  ],
   "edition": null,
   "courses": [],
   "location": {
@@ -128,6 +131,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -136,6 +140,18 @@
       ],
       "reason": "inferred from race name/price-tier text (marathon); no source states an explicit type",
       "at": "2026-09-26T13:21:53.036Z"
+    },
+    "organizerId": {
+      "value": "4miles",
+      "reason": "organizer cleanup (plan 013): \"4 Miles & Vietnam Backyard Ultra\" packed several bodies into one entity; primary organizer 4miles, co-organizers vietnam-backyard-ultra",
+      "at": "2026-09-28T12:41:20.702Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "vietnam-backyard-ultra"
+      ],
+      "reason": "organizer cleanup (plan 013): \"4 Miles & Vietnam Backyard Ultra\" packed several bodies into one entity; primary organizer 4miles, co-organizers vietnam-backyard-ultra",
+      "at": "2026-09-28T12:41:20.702Z"
     }
   },
   "sources": [
@@ -171,5 +187,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-28T12:41:20.702Z"
 }

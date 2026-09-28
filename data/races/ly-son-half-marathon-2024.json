@@ -8,8 +8,11 @@
   "date": "2024-08-17",
   "endDate": "2024-08-18",
   "seriesId": "ly-son-half-marathon",
-  "organizerId": "uy-ban-nhan-dan-huyen-ly-son-va-cong-ty-co-phan-duong-chay-xanh",
+  "organizerId": "cong-ty-co-phan-duong-chay-xanh",
   "organizer": "Ủy ban nhân dân Huyện Lý Sơn và Công Ty Cổ Phần Đường Chạy Xanh",
+  "coOrganizerIds": [
+    "ubnd-huyen-ly-son"
+  ],
   "edition": null,
   "courses": [
     {
@@ -280,6 +283,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -312,6 +316,18 @@
       ],
       "reason": "confirmed 5km/10km/21km distances from iRace/yeuchaybo/official site",
       "at": "2026-09-25T08:24:52.996Z"
+    },
+    "organizerId": {
+      "value": "cong-ty-co-phan-duong-chay-xanh",
+      "reason": "organizer cleanup (plan 013): \"Ủy ban nhân dân Huyện Lý Sơn và Công Ty Cổ Phần Đường Chạy Xanh\" packed several bodies into one entity; primary organizer cong-ty-co-phan-duong-chay-xanh, co-organizers ubnd-huyen-ly-son",
+      "at": "2026-09-28T12:41:20.755Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "ubnd-huyen-ly-son"
+      ],
+      "reason": "organizer cleanup (plan 013): \"Ủy ban nhân dân Huyện Lý Sơn và Công Ty Cổ Phần Đường Chạy Xanh\" packed several bodies into one entity; primary organizer cong-ty-co-phan-duong-chay-xanh, co-organizers ubnd-huyen-ly-son",
+      "at": "2026-09-28T12:41:20.755Z"
     }
   },
   "sources": [
@@ -483,5 +499,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-27T07:40:37.298Z"
+  "updatedAt": "2026-09-28T12:41:20.755Z"
 }

@@ -8,8 +8,12 @@
   "date": "2024-03-10",
   "endDate": null,
   "seriesId": "run-to-live",
-  "organizerId": "miracle-entertainment-group-bao-sai-gon-giai-phong-so-vhtt-ho-chi-minh",
+  "organizerId": "miracle-entertainment-group",
   "organizer": "Miracle Entertainment Group - Báo Sài Gòn Giải Phóng - Sở VHTT Hồ Chí Minh",
+  "coOrganizerIds": [
+    "bao-sai-gon-giai-phong",
+    "so-van-hoa-va-the-thao-tp-ho-chi-minh"
+  ],
   "edition": 1,
   "courses": [
     {
@@ -129,6 +133,7 @@
     }
   ],
   "links": [],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -147,6 +152,19 @@
       "value": 1,
       "reason": "nhandan.vn 2024 article states 'lần thứ nhất' (edition 1)",
       "at": "2026-09-27T08:10:48.324Z"
+    },
+    "organizerId": {
+      "value": "miracle-entertainment-group",
+      "reason": "organizer cleanup (plan 013): \"Miracle Entertainment Group - Báo Sài Gòn Giải Phóng - Sở VHTT Hồ Chí Minh\" packed several bodies into one entity; primary organizer miracle-entertainment-group, co-organizers bao-sai-gon-giai-phong, so-van-hoa-va-the-thao-tp-ho-chi-minh",
+      "at": "2026-09-28T12:41:20.728Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "bao-sai-gon-giai-phong",
+        "so-van-hoa-va-the-thao-tp-ho-chi-minh"
+      ],
+      "reason": "organizer cleanup (plan 013): \"Miracle Entertainment Group - Báo Sài Gòn Giải Phóng - Sở VHTT Hồ Chí Minh\" packed several bodies into one entity; primary organizer miracle-entertainment-group, co-organizers bao-sai-gon-giai-phong, so-van-hoa-va-the-thao-tp-ho-chi-minh",
+      "at": "2026-09-28T12:41:20.728Z"
     }
   },
   "sources": [
@@ -194,5 +212,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-27T08:10:48.324Z"
+  "updatedAt": "2026-09-28T12:41:20.728Z"
 }

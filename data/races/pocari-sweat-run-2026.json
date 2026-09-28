@@ -8,7 +8,7 @@
   "date": "2026-09-12",
   "endDate": "2026-09-13",
   "seriesId": null,
-  "organizerId": "pocari-sweat-run",
+  "organizerId": "pocari-sweat-run-vietnam",
   "organizer": "POCARI SWEAT RUN",
   "edition": null,
   "courses": [],
@@ -124,6 +124,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -132,6 +133,11 @@
       ],
       "reason": "inferred from race name/price-tier text (run); no source states an explicit type",
       "at": "2026-09-26T13:21:53.036Z"
+    },
+    "organizerId": {
+      "value": "pocari-sweat-run-vietnam",
+      "reason": "organizer cleanup (plan 013): \"POCARI SWEAT RUN\" is a duplicate or role-text variant of pocari-sweat-run-vietnam",
+      "at": "2026-09-28T12:41:20.779Z"
     }
   },
   "sources": [
@@ -167,5 +173,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-28T12:41:20.779Z"
 }

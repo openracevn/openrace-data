@@ -8,8 +8,12 @@
   "date": "2026-03-20",
   "endDate": null,
   "seriesId": null,
-  "organizerId": "so-van-hoa-the-thao-va-du-lich-tinh-dak-lak-hoi-chay-bo-tinh-dak-lak-cong-ty-tnh",
+  "organizerId": "cong-ty-tnhh-dau-tu-tin-nhan",
   "organizer": "Sở Văn hóa, Thể thao và Du lịch tỉnh Đắk Lắk - Hội Chạy bộ tỉnh Đắk Lắk - Công ty TNHH Đầu tư Tín Nhân.",
+  "coOrganizerIds": [
+    "so-van-hoa-the-thao-va-du-lich-tinh-dak-lak",
+    "hoi-chay-bo-tinh-dak-lak"
+  ],
   "edition": null,
   "courses": [],
   "location": {
@@ -128,6 +132,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -136,6 +141,19 @@
       ],
       "reason": "inferred from race name/price-tier text (giải chạy); no source states an explicit type",
       "at": "2026-09-26T13:21:53.036Z"
+    },
+    "organizerId": {
+      "value": "cong-ty-tnhh-dau-tu-tin-nhan",
+      "reason": "organizer cleanup (plan 013): \"Sở Văn hóa, Thể thao và Du lịch tỉnh Đắk Lắk - Hội Chạy bộ tỉnh Đắk Lắk - Công ty TNHH Đầu tư Tín Nhân.\" packed several bodies into one entity; primary organizer cong-ty-tnhh-dau-tu-tin-nhan, co-organizers so-van-hoa-the-thao-va-du-lich-tinh-dak-lak, hoi-chay-bo-tinh-dak-lak",
+      "at": "2026-09-28T12:41:20.733Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "so-van-hoa-the-thao-va-du-lich-tinh-dak-lak",
+        "hoi-chay-bo-tinh-dak-lak"
+      ],
+      "reason": "organizer cleanup (plan 013): \"Sở Văn hóa, Thể thao và Du lịch tỉnh Đắk Lắk - Hội Chạy bộ tỉnh Đắk Lắk - Công ty TNHH Đầu tư Tín Nhân.\" packed several bodies into one entity; primary organizer cong-ty-tnhh-dau-tu-tin-nhan, co-organizers so-van-hoa-the-thao-va-du-lich-tinh-dak-lak, hoi-chay-bo-tinh-dak-lak",
+      "at": "2026-09-28T12:41:20.733Z"
     }
   },
   "sources": [
@@ -170,5 +188,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-28T12:41:20.733Z"
 }

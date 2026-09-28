@@ -8,8 +8,12 @@
   "date": "2024-11-09",
   "endDate": "2024-11-10",
   "seriesId": null,
-  "organizerId": "cong-dong-5h30-vui-khoe-moi-ngay-uy-ban-nhan-dan-huyen-chu-pah-cau-lac-bo-gia-la",
+  "organizerId": "cong-dong-5h30-vui-khoe-moi-ngay",
   "organizer": "Cộng đồng 5h30 - Vui khỏe mỗi ngày, Ủy ban nhân dân huyện Chư Păh, Câu lạc bộ Gia Lai Marathon",
+  "coOrganizerIds": [
+    "ubnd-huyen-chu-pah",
+    "cau-lac-bo-gia-lai-marathon"
+  ],
   "edition": null,
   "courses": [],
   "location": {
@@ -122,6 +126,7 @@
     }
   ],
   "links": [],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -130,6 +135,19 @@
       ],
       "reason": "inferred from race name/price-tier text (marathon); no source states an explicit type",
       "at": "2026-09-26T13:21:53.036Z"
+    },
+    "organizerId": {
+      "value": "cong-dong-5h30-vui-khoe-moi-ngay",
+      "reason": "organizer cleanup (plan 013): \"Cộng đồng 5h30 - Vui khỏe mỗi ngày, Ủy ban nhân dân huyện Chư Păh, Câu lạc bộ Gia Lai Marathon\" packed several bodies into one entity; primary organizer cong-dong-5h30-vui-khoe-moi-ngay, co-organizers ubnd-huyen-chu-pah, cau-lac-bo-gia-lai-marathon",
+      "at": "2026-09-28T12:41:20.708Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "ubnd-huyen-chu-pah",
+        "cau-lac-bo-gia-lai-marathon"
+      ],
+      "reason": "organizer cleanup (plan 013): \"Cộng đồng 5h30 - Vui khỏe mỗi ngày, Ủy ban nhân dân huyện Chư Păh, Câu lạc bộ Gia Lai Marathon\" packed several bodies into one entity; primary organizer cong-dong-5h30-vui-khoe-moi-ngay, co-organizers ubnd-huyen-chu-pah, cau-lac-bo-gia-lai-marathon",
+      "at": "2026-09-28T12:41:20.708Z"
     }
   },
   "sources": [
@@ -160,5 +178,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-28T12:41:20.708Z"
 }

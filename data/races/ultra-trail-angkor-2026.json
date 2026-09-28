@@ -8,8 +8,11 @@
   "date": "2026-01-24",
   "endDate": null,
   "seriesId": "ultra-trail-angkor",
-  "organizerId": "sdpo-va-phoenix-voyages-sports-events",
+  "organizerId": "sdporganisation",
   "organizer": "SDPO và Phoenix Voyages Sports & Events",
+  "coOrganizerIds": [
+    "phoenix-voyages-sport-events"
+  ],
   "edition": null,
   "courses": [],
   "location": {
@@ -128,6 +131,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -136,6 +140,18 @@
       ],
       "reason": "inferred from race name/price-tier text (trail); no source states an explicit type",
       "at": "2026-09-26T13:21:53.036Z"
+    },
+    "organizerId": {
+      "value": "sdporganisation",
+      "reason": "organizer cleanup (plan 013): \"SDPO và Phoenix Voyages Sports & Events\" packed several bodies into one entity; primary organizer sdporganisation, co-organizers phoenix-voyages-sport-events",
+      "at": "2026-09-28T12:41:20.845Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "phoenix-voyages-sport-events"
+      ],
+      "reason": "organizer cleanup (plan 013): \"SDPO và Phoenix Voyages Sports & Events\" packed several bodies into one entity; primary organizer sdporganisation, co-organizers phoenix-voyages-sport-events",
+      "at": "2026-09-28T12:41:20.845Z"
     }
   },
   "sources": [
@@ -170,5 +186,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-28T12:41:20.845Z"
 }

@@ -8,8 +8,12 @@
   "date": "2024-11-17",
   "endDate": null,
   "seriesId": null,
-  "organizerId": "trung-tam-van-hoa-the-thao-quan-7-mang-luoi-quan-he-cong-chung-viet-nam-vnpr-don",
+  "organizerId": "vnpr",
   "organizer": "Trung Tâm Văn Hóa - Thể Thao Quận 7 - Mạng Lưới Quan Hệ Công Chúng Việt Nam (VNPR) - Đơn vị triển khai thiện nguyện: Operation Smile",
+  "coOrganizerIds": [
+    "trung-tam-van-hoa-the-thao-quan-7",
+    "operation-smile"
+  ],
   "edition": null,
   "courses": [],
   "location": {
@@ -124,8 +128,23 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "organizerId": {
+      "value": "vnpr",
+      "reason": "organizer cleanup (plan 013): \"Trung Tâm Văn Hóa - Thể Thao Quận 7 - Mạng Lưới Quan Hệ Công Chúng Việt Nam (VNPR) - Đơn vị triển khai thiện nguyện: Operation Smile\" packed several bodies into one entity; primary organizer vnpr, co-organizers trung-tam-van-hoa-the-thao-quan-7, operation-smile",
+      "at": "2026-09-28T12:41:20.691Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "trung-tam-van-hoa-the-thao-quan-7",
+        "operation-smile"
+      ],
+      "reason": "organizer cleanup (plan 013): \"Trung Tâm Văn Hóa - Thể Thao Quận 7 - Mạng Lưới Quan Hệ Công Chúng Việt Nam (VNPR) - Đơn vị triển khai thiện nguyện: Operation Smile\" packed several bodies into one entity; primary organizer vnpr, co-organizers trung-tam-van-hoa-the-thao-quan-7, operation-smile",
+      "at": "2026-09-28T12:41:20.691Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -158,5 +177,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T07:11:10.278Z"
+  "updatedAt": "2026-09-28T12:41:20.691Z"
 }

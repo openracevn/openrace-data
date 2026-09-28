@@ -8,8 +8,13 @@
   "date": "2025-03-09",
   "endDate": null,
   "seriesId": "run-to-live",
-  "organizerId": "miracle-entertainment-group-bao-sai-gon-giai-phong-so-vhtt-ho-chi-minh",
+  "organizerId": "miracle-entertainment-group",
   "organizer": "Báo Sài Gòn Giải Phóng; Sở Văn hóa, Thể thao Thành phố Hồ Chí Minh; Công ty Miracle Entertainment Group; Ban Quản lý phát triển đô thị Thủ Thiêm",
+  "coOrganizerIds": [
+    "bao-sai-gon-giai-phong",
+    "so-van-hoa-va-the-thao-tp-ho-chi-minh",
+    "ban-quan-ly-phat-trien-do-thi-thu-thiem"
+  ],
   "edition": 2,
   "courses": [
     {
@@ -248,6 +253,7 @@
       "foundOn": "irace.vn"
     }
   ],
+  "participants": null,
   "flags": [
     "sources disagree on race day: irace 2025-03-09, nhandan-vn 2025-03-09, pace8 2025-03-13"
   ],
@@ -258,9 +264,9 @@
       "at": "2026-09-27T08:09:08.195Z"
     },
     "organizerId": {
-      "value": "miracle-entertainment-group-bao-sai-gon-giai-phong-so-vhtt-ho-chi-minh",
-      "reason": "same organizing partnership as the 2024 edition (Miracle Entertainment Group + Báo SGGP + Sở VHTT), per nhandan.vn 2025 article",
-      "at": "2026-09-27T08:09:22.508Z"
+      "value": "miracle-entertainment-group",
+      "reason": "organizer cleanup (plan 013): \"Báo Sài Gòn Giải Phóng; Sở Văn hóa, Thể thao Thành phố Hồ Chí Minh; Công ty Miracle Entertainment Group; Ban Quản lý phát triển đô thị Thủ Thiêm\" packed several bodies into one entity; primary organizer miracle-entertainment-group, co-organizers bao-sai-gon-giai-phong, so-van-hoa-va-the-thao-tp-ho-chi-minh, ban-quan-ly-phat-trien-do-thi-thu-thiem",
+      "at": "2026-09-28T12:41:20.796Z"
     },
     "seriesId": {
       "value": "run-to-live",
@@ -271,6 +277,15 @@
       "value": 2,
       "reason": "nhandan.vn 2025 article states this is 'Run To Live mùa 2' (season 2)",
       "at": "2026-09-27T08:09:46.104Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "bao-sai-gon-giai-phong",
+        "so-van-hoa-va-the-thao-tp-ho-chi-minh",
+        "ban-quan-ly-phat-trien-do-thi-thu-thiem"
+      ],
+      "reason": "organizer cleanup (plan 013): \"Báo Sài Gòn Giải Phóng; Sở Văn hóa, Thể thao Thành phố Hồ Chí Minh; Công ty Miracle Entertainment Group; Ban Quản lý phát triển đô thị Thủ Thiêm\" packed several bodies into one entity; primary organizer miracle-entertainment-group, co-organizers bao-sai-gon-giai-phong, so-van-hoa-va-the-thao-tp-ho-chi-minh, ban-quan-ly-phat-trien-do-thi-thu-thiem",
+      "at": "2026-09-28T12:41:20.796Z"
     }
   },
   "sources": [
@@ -504,5 +519,5 @@
   ],
   "confidence": "conflicting",
   "createdAt": "2026-09-27T08:06:39.781Z",
-  "updatedAt": "2026-09-27T08:12:30.848Z"
+  "updatedAt": "2026-09-28T12:41:20.796Z"
 }

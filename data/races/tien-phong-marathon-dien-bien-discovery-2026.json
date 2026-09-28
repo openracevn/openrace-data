@@ -8,8 +8,11 @@
   "date": "2026-12-31",
   "endDate": "2027-01-02",
   "seriesId": null,
-  "organizerId": "bao-tien-phong-va-so-vhttdl-tinh-dien-bien",
+  "organizerId": "bao-tien-phong",
   "organizer": "Báo Tiền Phong và Sở VHTTDL tỉnh Điện Biên",
+  "coOrganizerIds": [
+    "so-van-hoa-the-thao-du-lich-tinh-dien-bien"
+  ],
   "edition": null,
   "courses": [
     {
@@ -188,8 +191,22 @@
     }
   ],
   "links": [],
+  "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "organizerId": {
+      "value": "bao-tien-phong",
+      "reason": "organizer cleanup (plan 013): \"Báo Tiền Phong và Sở VHTTDL tỉnh Điện Biên\" packed several bodies into one entity; primary organizer bao-tien-phong, co-organizers so-van-hoa-the-thao-du-lich-tinh-dien-bien",
+      "at": "2026-09-28T12:41:20.836Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "so-van-hoa-the-thao-du-lich-tinh-dien-bien"
+      ],
+      "reason": "organizer cleanup (plan 013): \"Báo Tiền Phong và Sở VHTTDL tỉnh Điện Biên\" packed several bodies into one entity; primary organizer bao-tien-phong, co-organizers so-van-hoa-the-thao-du-lich-tinh-dien-bien",
+      "at": "2026-09-28T12:41:20.836Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -345,5 +362,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T07:11:10.278Z"
+  "updatedAt": "2026-09-28T12:41:20.836Z"
 }

@@ -8,8 +8,12 @@
   "date": "2026-01-14",
   "endDate": null,
   "seriesId": null,
-  "organizerId": "don-vi-to-chuc-hiep-hoi-the-thao-cand-viet-nam-phoi-hop-ubnd-tinh-lam-dong-don-v",
+  "organizerId": "nexus-sport-events",
   "organizer": "Đơn vị tổ chức: Hiệp hội Thể thao CAND Việt Nam phối hợp UBND tỉnh Lâm Đồng - Đơn vị đồng tổ chức - thực hiện: Công ty cổ phần truyền thông NEXUS",
+  "coOrganizerIds": [
+    "hiep-hoi-the-thao-cand-viet-nam",
+    "ubnd-tinh-lam-dong"
+  ],
   "edition": null,
   "courses": [],
   "location": {
@@ -128,6 +132,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -136,6 +141,19 @@
       ],
       "reason": "inferred from race name/price-tier text (trail); no source states an explicit type",
       "at": "2026-09-26T13:21:53.036Z"
+    },
+    "organizerId": {
+      "value": "nexus-sport-events",
+      "reason": "organizer cleanup (plan 013): \"Đơn vị tổ chức: Hiệp hội Thể thao CAND Việt Nam phối hợp UBND tỉnh Lâm Đồng - Đơn vị đồng tổ chức - thực hiện: Công ty cổ phần truyền thông NEXUS\" packed several bodies into one entity; primary organizer nexus-sport-events, co-organizers hiep-hoi-the-thao-cand-viet-nam, ubnd-tinh-lam-dong",
+      "at": "2026-09-28T12:41:20.850Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "hiep-hoi-the-thao-cand-viet-nam",
+        "ubnd-tinh-lam-dong"
+      ],
+      "reason": "organizer cleanup (plan 013): \"Đơn vị tổ chức: Hiệp hội Thể thao CAND Việt Nam phối hợp UBND tỉnh Lâm Đồng - Đơn vị đồng tổ chức - thực hiện: Công ty cổ phần truyền thông NEXUS\" packed several bodies into one entity; primary organizer nexus-sport-events, co-organizers hiep-hoi-the-thao-cand-viet-nam, ubnd-tinh-lam-dong",
+      "at": "2026-09-28T12:41:20.850Z"
     }
   },
   "sources": [
@@ -170,5 +188,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-28T12:41:20.850Z"
 }

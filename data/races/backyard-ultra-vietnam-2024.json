@@ -8,8 +8,11 @@
   "date": "2024-06-01",
   "endDate": "2024-06-02",
   "seriesId": null,
-  "organizerId": "vietnam-mtb-series-tailwind-adventure-community",
+  "organizerId": "vietnam-mtb-series",
   "organizer": "Vietnam MTB Series & Tailwind Adventure Community",
+  "coOrganizerIds": [
+    "tailwind-adventure-community"
+  ],
   "edition": null,
   "courses": [],
   "location": {
@@ -122,8 +125,22 @@
     }
   ],
   "links": [],
+  "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "organizerId": {
+      "value": "vietnam-mtb-series",
+      "reason": "organizer cleanup (plan 013): \"Vietnam MTB Series & Tailwind Adventure Community\" packed several bodies into one entity; primary organizer vietnam-mtb-series, co-organizers tailwind-adventure-community",
+      "at": "2026-09-28T12:41:20.677Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "tailwind-adventure-community"
+      ],
+      "reason": "organizer cleanup (plan 013): \"Vietnam MTB Series & Tailwind Adventure Community\" packed several bodies into one entity; primary organizer vietnam-mtb-series, co-organizers tailwind-adventure-community",
+      "at": "2026-09-28T12:41:20.677Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -151,5 +168,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-09-28T12:41:20.677Z"
 }

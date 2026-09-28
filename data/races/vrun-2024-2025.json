@@ -8,8 +8,11 @@
   "date": "2025-03-29",
   "endDate": null,
   "seriesId": null,
-  "organizerId": "hiep-hoi-thuong-mai-dien-tu-viet-nam-vecom-va-mang-luoi-quan-he-cong-chung-viet",
+  "organizerId": "vnpr",
   "organizer": "Hiệp hội Thương mại điện tử Việt Nam (VECOM) và Mạng lưới Quan hệ Công chúng Việt Nam (VNPR)",
+  "coOrganizerIds": [
+    "vecom"
+  ],
   "edition": null,
   "courses": [],
   "location": {
@@ -128,6 +131,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -136,6 +140,18 @@
       ],
       "reason": "inferred from race name/price-tier text (run20); no source states an explicit type",
       "at": "2026-09-26T13:21:53.036Z"
+    },
+    "organizerId": {
+      "value": "vnpr",
+      "reason": "organizer cleanup (plan 013): \"Hiệp hội Thương mại điện tử Việt Nam (VECOM) và Mạng lưới Quan hệ Công chúng Việt Nam (VNPR)\" packed several bodies into one entity; primary organizer vnpr, co-organizers vecom",
+      "at": "2026-09-28T12:41:20.873Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "vecom"
+      ],
+      "reason": "organizer cleanup (plan 013): \"Hiệp hội Thương mại điện tử Việt Nam (VECOM) và Mạng lưới Quan hệ Công chúng Việt Nam (VNPR)\" packed several bodies into one entity; primary organizer vnpr, co-organizers vecom",
+      "at": "2026-09-28T12:41:20.873Z"
     }
   },
   "sources": [
@@ -170,5 +186,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-28T12:41:20.873Z"
 }

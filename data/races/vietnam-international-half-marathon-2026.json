@@ -8,8 +8,12 @@
   "date": "2026-01-01",
   "endDate": null,
   "seriesId": null,
-  "organizerId": "lien-doan-dien-kinh-viet-nam-uy-ban-nhan-dan-thanh-pho-ha-noi-vietcontent",
+  "organizerId": "vietcontent",
   "organizer": "Liên đoàn điền kinh Việt Nam - Ủy ban nhân dân Thành phố Hà Nội - VietContent",
+  "coOrganizerIds": [
+    "lien-doan-dien-kinh-viet-nam",
+    "ubnd-thanh-pho-ha-noi"
+  ],
   "edition": null,
   "courses": [],
   "location": {
@@ -128,6 +132,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -136,6 +141,19 @@
       ],
       "reason": "inferred from race name/price-tier text (marathon); no source states an explicit type",
       "at": "2026-09-26T13:21:53.036Z"
+    },
+    "organizerId": {
+      "value": "vietcontent",
+      "reason": "organizer cleanup (plan 013): \"Liên đoàn điền kinh Việt Nam - Ủy ban nhân dân Thành phố Hà Nội - VietContent\" packed several bodies into one entity; primary organizer vietcontent, co-organizers lien-doan-dien-kinh-viet-nam, ubnd-thanh-pho-ha-noi",
+      "at": "2026-09-28T12:41:20.854Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "lien-doan-dien-kinh-viet-nam",
+        "ubnd-thanh-pho-ha-noi"
+      ],
+      "reason": "organizer cleanup (plan 013): \"Liên đoàn điền kinh Việt Nam - Ủy ban nhân dân Thành phố Hà Nội - VietContent\" packed several bodies into one entity; primary organizer vietcontent, co-organizers lien-doan-dien-kinh-viet-nam, ubnd-thanh-pho-ha-noi",
+      "at": "2026-09-28T12:41:20.854Z"
     }
   },
   "sources": [
@@ -170,5 +188,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-28T12:41:20.854Z"
 }

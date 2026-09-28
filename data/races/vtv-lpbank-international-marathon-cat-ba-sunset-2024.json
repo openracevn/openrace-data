@@ -8,8 +8,11 @@
   "date": "2024-10-19",
   "endDate": null,
   "seriesId": null,
-  "organizerId": "dai-truyen-hinh-viet-nam-vtv-cong-ty-co-phan-thanh-an-media",
+  "organizerId": "thanh-an-media",
   "organizer": "Đài Truyền Hình Việt Nam (VTV) & Công ty Cổ phần Thành An Media",
+  "coOrganizerIds": [
+    "dai-truyen-hinh-viet-nam-vtv"
+  ],
   "edition": null,
   "courses": [],
   "location": {
@@ -124,6 +127,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -132,6 +136,18 @@
       ],
       "reason": "inferred from race name/price-tier text (marathon); no source states an explicit type",
       "at": "2026-09-26T13:21:53.036Z"
+    },
+    "organizerId": {
+      "value": "thanh-an-media",
+      "reason": "organizer cleanup (plan 013): \"Đài Truyền Hình Việt Nam (VTV) & Công ty Cổ phần Thành An Media\" packed several bodies into one entity; primary organizer thanh-an-media, co-organizers dai-truyen-hinh-viet-nam-vtv",
+      "at": "2026-09-28T12:41:20.881Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "dai-truyen-hinh-viet-nam-vtv"
+      ],
+      "reason": "organizer cleanup (plan 013): \"Đài Truyền Hình Việt Nam (VTV) & Công ty Cổ phần Thành An Media\" packed several bodies into one entity; primary organizer thanh-an-media, co-organizers dai-truyen-hinh-viet-nam-vtv",
+      "at": "2026-09-28T12:41:20.881Z"
     }
   },
   "sources": [
@@ -166,5 +182,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-28T12:41:20.881Z"
 }

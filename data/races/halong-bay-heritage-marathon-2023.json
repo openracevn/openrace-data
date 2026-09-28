@@ -8,7 +8,7 @@
   "date": "2023-11-19",
   "endDate": null,
   "seriesId": "halong-bay-heritage-marathon",
-  "organizerId": "dha",
+  "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "DHA Vietnam | Ban tổ chức sự kiện",
   "edition": null,
   "courses": [
@@ -274,8 +274,15 @@
       "foundOn": "ticket.irace.vn"
     }
   ],
+  "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "organizerId": {
+      "value": "cong-ty-dha-viet-nam",
+      "reason": "organizer cleanup (plan 013): \"DHA Vietnam | Ban tổ chức sự kiện\" is a duplicate or role-text variant of cong-ty-dha-viet-nam",
+      "at": "2026-09-28T12:41:20.739Z"
+    }
+  },
   "sources": [
     {
       "site": "irace",
@@ -568,5 +575,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-27T02:49:56.839Z",
-  "updatedAt": "2026-09-27T02:54:44.988Z"
+  "updatedAt": "2026-09-28T12:41:20.739Z"
 }

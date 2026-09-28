@@ -8,8 +8,11 @@
   "date": "2025-08-17",
   "endDate": null,
   "seriesId": "save-turtles-run",
-  "organizerId": "tap-doan-khach-san-akyn-khach-san-the-secret-con-dao",
+  "organizerId": "tap-doan-khach-san-akyn",
   "organizer": "Tập đoàn Khách sạn AKYN - Khách sạn The Secret Côn Đảo",
+  "coOrganizerIds": [
+    "khach-san-the-secret-con-dao"
+  ],
   "edition": null,
   "courses": [],
   "location": {
@@ -128,6 +131,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -136,6 +140,18 @@
       ],
       "reason": "inferred from race name/price-tier text (chạy bộ); no source states an explicit type",
       "at": "2026-09-26T13:21:53.036Z"
+    },
+    "organizerId": {
+      "value": "tap-doan-khach-san-akyn",
+      "reason": "organizer cleanup (plan 013): \"Tập đoàn Khách sạn AKYN - Khách sạn The Secret Côn Đảo\" packed several bodies into one entity; primary organizer tap-doan-khach-san-akyn, co-organizers khach-san-the-secret-con-dao",
+      "at": "2026-09-28T12:41:20.801Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "khach-san-the-secret-con-dao"
+      ],
+      "reason": "organizer cleanup (plan 013): \"Tập đoàn Khách sạn AKYN - Khách sạn The Secret Côn Đảo\" packed several bodies into one entity; primary organizer tap-doan-khach-san-akyn, co-organizers khach-san-the-secret-con-dao",
+      "at": "2026-09-28T12:41:20.801Z"
     }
   },
   "sources": [
@@ -170,5 +186,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-28T12:41:20.801Z"
 }

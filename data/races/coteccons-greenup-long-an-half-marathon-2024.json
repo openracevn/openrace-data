@@ -8,8 +8,12 @@
   "date": "2024-08-24",
   "endDate": null,
   "seriesId": null,
-  "organizerId": "coteccons-bao-tuoi-tre-so-van-hoa-the-thao-va-du-lich-tinh-long-an",
+  "organizerId": "coteccons",
   "organizer": "Coteccons - Báo Tuổi Trẻ - Sở Văn Hoá, Thể Thao và Du lịch tỉnh Long An",
+  "coOrganizerIds": [
+    "bao-tuoi-tre",
+    "so-van-hoa-the-thao-va-du-lich-tinh-long-an"
+  ],
   "edition": null,
   "courses": [],
   "location": {
@@ -128,6 +132,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -136,6 +141,19 @@
       ],
       "reason": "inferred from race name/price-tier text (marathon); no source states an explicit type",
       "at": "2026-09-26T13:21:53.036Z"
+    },
+    "organizerId": {
+      "value": "coteccons",
+      "reason": "organizer cleanup (plan 013): \"Coteccons - Báo Tuổi Trẻ - Sở Văn Hoá, Thể Thao và Du lịch tỉnh Long An\" packed several bodies into one entity; primary organizer coteccons, co-organizers bao-tuoi-tre, so-van-hoa-the-thao-va-du-lich-tinh-long-an",
+      "at": "2026-09-28T12:41:20.697Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "bao-tuoi-tre",
+        "so-van-hoa-the-thao-va-du-lich-tinh-long-an"
+      ],
+      "reason": "organizer cleanup (plan 013): \"Coteccons - Báo Tuổi Trẻ - Sở Văn Hoá, Thể Thao và Du lịch tỉnh Long An\" packed several bodies into one entity; primary organizer coteccons, co-organizers bao-tuoi-tre, so-van-hoa-the-thao-va-du-lich-tinh-long-an",
+      "at": "2026-09-28T12:41:20.697Z"
     }
   },
   "sources": [
@@ -169,5 +187,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-28T12:41:20.697Z"
 }

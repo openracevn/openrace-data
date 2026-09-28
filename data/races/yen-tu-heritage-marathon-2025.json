@@ -8,8 +8,12 @@
   "date": "2025-11-15",
   "endDate": "2025-11-16",
   "seriesId": "yen-tu-heritage-marathon",
-  "organizerId": "ubnd-phuong-yen-tu-hoi-nha-bao-tinh-quang-ninh-great-race-vietnam",
+  "organizerId": "great-race-vietnam",
   "organizer": "UBND PHƯỜNG YÊN TỬ - HỘI NHÀ BÁO TỈNH QUẢNG NINH - GREAT RACE VIETNAM",
+  "coOrganizerIds": [
+    "ubnd-phuong-yen-tu",
+    "hoi-nha-bao-tinh-quang-ninh"
+  ],
   "edition": null,
   "courses": [],
   "location": {
@@ -128,6 +132,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -136,6 +141,19 @@
       ],
       "reason": "inferred from race name/price-tier text (marathon); no source states an explicit type",
       "at": "2026-09-26T13:21:53.036Z"
+    },
+    "organizerId": {
+      "value": "great-race-vietnam",
+      "reason": "organizer cleanup (plan 013): \"UBND PHƯỜNG YÊN TỬ - HỘI NHÀ BÁO TỈNH QUẢNG NINH - GREAT RACE VIETNAM\" packed several bodies into one entity; primary organizer great-race-vietnam, co-organizers ubnd-phuong-yen-tu, hoi-nha-bao-tinh-quang-ninh",
+      "at": "2026-09-28T12:41:20.890Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "ubnd-phuong-yen-tu",
+        "hoi-nha-bao-tinh-quang-ninh"
+      ],
+      "reason": "organizer cleanup (plan 013): \"UBND PHƯỜNG YÊN TỬ - HỘI NHÀ BÁO TỈNH QUẢNG NINH - GREAT RACE VIETNAM\" packed several bodies into one entity; primary organizer great-race-vietnam, co-organizers ubnd-phuong-yen-tu, hoi-nha-bao-tinh-quang-ninh",
+      "at": "2026-09-28T12:41:20.890Z"
     }
   },
   "sources": [
@@ -171,5 +189,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-28T12:41:20.890Z"
 }

@@ -8,8 +8,11 @@
   "date": "2026-10-09",
   "endDate": "2026-10-11",
   "seriesId": "vpbank-dat-sen-hong-music-marathon",
-  "organizerId": "don-vi-to-chuc-nexus-sport-events-doi-tac-chien-luoc-don-vi-dong-to-chuc-ngan-ha",
+  "organizerId": "nexus-sport-events",
   "organizer": "Đơn vị tổ chức: Nexus Sport Events – Đối tác chiến lược & Đơn vị đồng tổ chức: Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
+  "coOrganizerIds": [
+    "vpbank"
+  ],
   "edition": 5,
   "courses": [
     {
@@ -330,12 +333,25 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "edition": {
       "value": 5,
       "reason": "tuoitre.vn ('Mùa giải thứ 5') and irace.vn's event page ('Mùa Sen Hồng thứ 5 đã chính thức trở lại') both state this is the 5th edition.",
       "at": "2026-09-27T02:28:56.947Z"
+    },
+    "organizerId": {
+      "value": "nexus-sport-events",
+      "reason": "organizer cleanup (plan 013): \"Đơn vị tổ chức: Nexus Sport Events – Đối tác chiến lược & Đơn vị đồng tổ chức: Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)\" packed several bodies into one entity; primary organizer nexus-sport-events, co-organizers vpbank",
+      "at": "2026-09-28T12:41:20.860Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "vpbank"
+      ],
+      "reason": "organizer cleanup (plan 013): \"Đơn vị tổ chức: Nexus Sport Events – Đối tác chiến lược & Đơn vị đồng tổ chức: Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)\" packed several bodies into one entity; primary organizer nexus-sport-events, co-organizers vpbank",
+      "at": "2026-09-28T12:41:20.860Z"
     }
   },
   "sources": [
@@ -543,5 +559,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T05:58:42.803Z"
+  "updatedAt": "2026-09-28T12:41:20.860Z"
 }

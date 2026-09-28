@@ -8,8 +8,12 @@
   "date": "2025-03-16",
   "endDate": null,
   "seriesId": null,
-  "organizerId": "ubnd-huyen-cam-xuyen-hatinh-race-clb-htr-ha-tinh-runners",
+  "organizerId": "hatinh-race",
   "organizer": "UBND huyện Cẩm Xuyên - HATINH RACE - CLB HTR-Hà Tĩnh Runners",
+  "coOrganizerIds": [
+    "ubnd-huyen-cam-xuyen",
+    "clb-htr-ha-tinh-runners"
+  ],
   "edition": null,
   "courses": [],
   "location": {
@@ -122,6 +126,7 @@
     }
   ],
   "links": [],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -130,6 +135,19 @@
       ],
       "reason": "inferred from race name/price-tier text (marathon); no source states an explicit type",
       "at": "2026-09-26T13:21:53.036Z"
+    },
+    "organizerId": {
+      "value": "hatinh-race",
+      "reason": "organizer cleanup (plan 013): \"UBND huyện Cẩm Xuyên - HATINH RACE - CLB HTR-Hà Tĩnh Runners\" packed several bodies into one entity; primary organizer hatinh-race, co-organizers ubnd-huyen-cam-xuyen, clb-htr-ha-tinh-runners",
+      "at": "2026-09-28T12:41:20.828Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "ubnd-huyen-cam-xuyen",
+        "clb-htr-ha-tinh-runners"
+      ],
+      "reason": "organizer cleanup (plan 013): \"UBND huyện Cẩm Xuyên - HATINH RACE - CLB HTR-Hà Tĩnh Runners\" packed several bodies into one entity; primary organizer hatinh-race, co-organizers ubnd-huyen-cam-xuyen, clb-htr-ha-tinh-runners",
+      "at": "2026-09-28T12:41:20.828Z"
     }
   },
   "sources": [
@@ -159,5 +177,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-28T12:41:20.828Z"
 }

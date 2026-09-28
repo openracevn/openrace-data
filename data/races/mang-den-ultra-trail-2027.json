@@ -8,8 +8,11 @@
   "date": "2027-01-15",
   "endDate": "2027-01-17",
   "seriesId": "mang-den-ultra-trail",
-  "organizerId": "ban-to-chuc-hoi-du-lich-mang-den-don-vi-van-hanh-pr-events",
+  "organizerId": "pr-events-company-limited",
   "organizer": "Ban Tổ Chức: Hội Du Lịch Măng Đen - Đơn vị vận hành: PR Events",
+  "coOrganizerIds": [
+    "hoi-du-lich-mang-den"
+  ],
   "edition": null,
   "courses": [
     {
@@ -380,8 +383,22 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "organizerId": {
+      "value": "pr-events-company-limited",
+      "reason": "organizer cleanup (plan 013): \"Ban Tổ Chức: Hội Du Lịch Măng Đen - Đơn vị vận hành: PR Events\" packed several bodies into one entity; primary organizer pr-events-company-limited, co-organizers hoi-du-lich-mang-den",
+      "at": "2026-09-28T12:41:20.769Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "hoi-du-lich-mang-den"
+      ],
+      "reason": "organizer cleanup (plan 013): \"Ban Tổ Chức: Hội Du Lịch Măng Đen - Đơn vị vận hành: PR Events\" packed several bodies into one entity; primary organizer pr-events-company-limited, co-organizers hoi-du-lich-mang-den",
+      "at": "2026-09-28T12:41:20.769Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -592,5 +609,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-09-28T12:41:20.769Z"
 }

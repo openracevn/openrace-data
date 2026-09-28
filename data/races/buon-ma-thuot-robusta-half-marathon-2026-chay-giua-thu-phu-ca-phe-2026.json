@@ -8,8 +8,12 @@
   "date": "2026-06-21",
   "endDate": null,
   "seriesId": null,
-  "organizerId": "so-van-hoa-the-thao-va-du-lich-tinh-dak-lak-don-vi-to-chuc-cong-ty-tnhh-mot-than",
+  "organizerId": "cong-ty-tnhh-dau-tu-tin-nhan",
   "organizer": "Sở Văn hóa, Thể thao và Du lịch tỉnh Đắk Lắk đơn vị tổ chức | Công ty TNHH Một thành viên Xuất nhập khẩu 2-9 Đắk Lắk đơn vị đồng tổ chức | Công ty TNHH Đầu Tư Tín Nhân đơn vị vận hành giải chạy",
+  "coOrganizerIds": [
+    "so-van-hoa-the-thao-va-du-lich-tinh-dak-lak",
+    "cong-ty-tnhh-mtv-xuat-nhap-khau-2-9-dak-lak"
+  ],
   "edition": null,
   "courses": [],
   "location": {
@@ -128,6 +132,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -136,6 +141,19 @@
       ],
       "reason": "inferred from race name/price-tier text (marathon); no source states an explicit type",
       "at": "2026-09-26T13:12:18.027Z"
+    },
+    "organizerId": {
+      "value": "cong-ty-tnhh-dau-tu-tin-nhan",
+      "reason": "organizer cleanup (plan 013): \"Sở Văn hóa, Thể thao và Du lịch tỉnh Đắk Lắk đơn vị tổ chức | Công ty TNHH Một thành viên Xuất nhập khẩu 2-9 Đắk Lắk đơn vị đồng tổ chức | Công ty TNHH Đầu Tư Tín Nhân đơn vị vận hành giải chạy\" packed several bodies into one entity; primary organizer cong-ty-tnhh-dau-tu-tin-nhan, co-organizers so-van-hoa-the-thao-va-du-lich-tinh-dak-lak, cong-ty-tnhh-mtv-xuat-nhap-khau-2-9-dak-lak",
+      "at": "2026-09-28T12:41:20.685Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "so-van-hoa-the-thao-va-du-lich-tinh-dak-lak",
+        "cong-ty-tnhh-mtv-xuat-nhap-khau-2-9-dak-lak"
+      ],
+      "reason": "organizer cleanup (plan 013): \"Sở Văn hóa, Thể thao và Du lịch tỉnh Đắk Lắk đơn vị tổ chức | Công ty TNHH Một thành viên Xuất nhập khẩu 2-9 Đắk Lắk đơn vị đồng tổ chức | Công ty TNHH Đầu Tư Tín Nhân đơn vị vận hành giải chạy\" packed several bodies into one entity; primary organizer cong-ty-tnhh-dau-tu-tin-nhan, co-organizers so-van-hoa-the-thao-va-du-lich-tinh-dak-lak, cong-ty-tnhh-mtv-xuat-nhap-khau-2-9-dak-lak",
+      "at": "2026-09-28T12:41:20.685Z"
     }
   },
   "sources": [
@@ -170,5 +188,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:12:18.027Z"
+  "updatedAt": "2026-09-28T12:41:20.685Z"
 }

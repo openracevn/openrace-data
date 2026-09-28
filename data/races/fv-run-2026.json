@@ -8,8 +8,11 @@
   "date": "2026-10-31",
   "endDate": "2026-11-01",
   "seriesId": null,
-  "organizerId": "benh-vien-fv-dong-to-chuc-quy-nang-buoc-tuoi-tho",
+  "organizerId": "benh-vien-fv",
   "organizer": "Bệnh viện FV - Đồng tổ chức: Quỹ Nâng Bước Tuổi Thơ",
+  "coOrganizerIds": [
+    "quy-nang-buoc-tuoi-tho"
+  ],
   "edition": null,
   "courses": [
     {
@@ -330,8 +333,22 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "organizerId": {
+      "value": "benh-vien-fv",
+      "reason": "organizer cleanup (plan 013): \"Bệnh viện FV - Đồng tổ chức: Quỹ Nâng Bước Tuổi Thơ\" packed several bodies into one entity; primary organizer benh-vien-fv, co-organizers quy-nang-buoc-tuoi-tho",
+      "at": "2026-09-28T12:41:20.719Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "quy-nang-buoc-tuoi-tho"
+      ],
+      "reason": "organizer cleanup (plan 013): \"Bệnh viện FV - Đồng tổ chức: Quỹ Nâng Bước Tuổi Thơ\" packed several bodies into one entity; primary organizer benh-vien-fv, co-organizers quy-nang-buoc-tuoi-tho",
+      "at": "2026-09-28T12:41:20.719Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -517,5 +534,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-09-28T12:41:20.719Z"
 }

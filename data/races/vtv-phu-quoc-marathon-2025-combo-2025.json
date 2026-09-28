@@ -8,8 +8,14 @@
   "date": "2025-04-06",
   "endDate": null,
   "seriesId": null,
-  "organizerId": "dai-truyen-hinh-viet-nam-vtv-lien-doan-dien-kinh-viet-nam-so-vhtt-kien-giang-lio",
+  "organizerId": "vietcontent",
   "organizer": "Đài truyền hình Việt Nam VTV, Liên đoàn Điền kinh Việt Nam, Sở VHTT Kiên Giang, Lions Entertainment JSC, Công ty CP Thương mại và nội dung Số Việt - Vietcontent",
+  "coOrganizerIds": [
+    "dai-truyen-hinh-viet-nam-vtv",
+    "lien-doan-dien-kinh-viet-nam",
+    "so-van-hoa-the-thao-tinh-kien-giang",
+    "lions-entertainment-jsc"
+  ],
   "edition": null,
   "courses": [],
   "location": {
@@ -128,6 +134,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -136,6 +143,21 @@
       ],
       "reason": "inferred from race name/price-tier text (marathon); no source states an explicit type",
       "at": "2026-09-26T13:21:53.036Z"
+    },
+    "organizerId": {
+      "value": "vietcontent",
+      "reason": "organizer cleanup (plan 013): \"Đài truyền hình Việt Nam VTV, Liên đoàn Điền kinh Việt Nam, Sở VHTT Kiên Giang, Lions Entertainment JSC, Công ty CP Thương mại và nội dung Số Việt - Vietcontent\" packed several bodies into one entity; primary organizer vietcontent, co-organizers dai-truyen-hinh-viet-nam-vtv, lien-doan-dien-kinh-viet-nam, so-van-hoa-the-thao-tinh-kien-giang, lions-entertainment-jsc",
+      "at": "2026-09-28T12:41:20.886Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "dai-truyen-hinh-viet-nam-vtv",
+        "lien-doan-dien-kinh-viet-nam",
+        "so-van-hoa-the-thao-tinh-kien-giang",
+        "lions-entertainment-jsc"
+      ],
+      "reason": "organizer cleanup (plan 013): \"Đài truyền hình Việt Nam VTV, Liên đoàn Điền kinh Việt Nam, Sở VHTT Kiên Giang, Lions Entertainment JSC, Công ty CP Thương mại và nội dung Số Việt - Vietcontent\" packed several bodies into one entity; primary organizer vietcontent, co-organizers dai-truyen-hinh-viet-nam-vtv, lien-doan-dien-kinh-viet-nam, so-van-hoa-the-thao-tinh-kien-giang, lions-entertainment-jsc",
+      "at": "2026-09-28T12:41:20.886Z"
     }
   },
   "sources": [
@@ -170,5 +192,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T05:58:42.803Z"
+  "updatedAt": "2026-09-28T12:41:20.886Z"
 }
