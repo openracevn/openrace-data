@@ -7,14 +7,15 @@
   ],
   "date": "2026-02-08",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "vnexpress-marathon-all-star",
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
   "edition": null,
   "courses": [],
   "location": {
-    "venue": null,
-    "city": null
+    "venue": "Khu vực CNC Láng - Hòa Lạc",
+    "city": "Hà Nội"
   },
   "geo": null,
   "prices": [],
@@ -22,8 +23,18 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "location": {
+      "value": {
+        "venue": "Khu vực CNC Láng - Hòa Lạc",
+        "city": "Hà Nội"
+      },
+      "reason": "Stated by the user 2026-09-28; the VnExpress race page's venue card is empty",
+      "at": "2026-09-28T13:52:33.267Z"
+    }
+  },
   "sources": [
     {
       "site": "vnexpress-marathon",
@@ -66,5 +77,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T04:11:49.673Z",
-  "updatedAt": "2026-09-25T04:11:49.673Z"
+  "updatedAt": "2026-09-28T13:52:33.267Z"
 }
