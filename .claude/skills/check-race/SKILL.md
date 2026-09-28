@@ -106,7 +106,7 @@ Setting `prices` by hand: every entry's `site` must equal one of the race's exis
 
 ### Participants (past races)
 
-Look in the official site's recap or results-announcement page, press releases and the organizer's social post. Recaps are usually published *after* the event, so an upcoming race legitimately has none. Record `count`, `approx` (`true` for "~2000", "over 5,000", "khoảng 3.000"), the verbatim `quote`, and the exact `sourceUrl` of the page that states it (a Wayback snapshot if the live page moved or was overwritten). **Never write a figure without a link** (the schema rejects it). Skip finishers-only and capacity/slots statements. Unknown stays absent, never 0. Set it with an override (step 5): `npm run edit -- set <race> participants '{"count":2000,"approx":true,"sourceUrl":"https://…","quote":"~2000 participants"}' --reason "<where>"`. `npm run gaps` lists past races with none, biggest series first.
+Look in the official site's recap or results-announcement page, press releases and the organizer's social post. Recaps are usually published *after* the event, so an upcoming race legitimately has none. Since plan 017 there is no `approx` and no hand override: a count is stored as a `reference` source with the verbatim quote and the exact page URL (a Wayback snapshot if the live page moved), and `confidence` is derived. **Never write a figure without a link.** Skip targets ("dự kiến"), finishers-only and capacity/slots statements. Unknown stays absent, never 0. To backfill one or many races use the `backfill-field` skill (search, then `scripts/backfill-verify.ts`); `npm run gaps` lists past races with none, biggest series first.
 
 ## 6. Add a race no site lists (source `openrace`, free)
 
