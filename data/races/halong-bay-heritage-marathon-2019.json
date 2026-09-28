@@ -7,6 +7,7 @@
   ],
   "date": "2019-11-24",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "halong-bay-heritage-marathon",
   "organizerId": null,
   "organizer": "Công ty DHA Việt Nam",
@@ -428,6 +429,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": {
+    "count": 3000,
+    "sourceUrl": "https://en.vietnamplus.vn/over-3000-athletes-join-halong-bay-heritage-marathon-2019-post164237.vnp",
+    "quote": "Over 3,000 athletes join Halong Bay Heritage Marathon 2019",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {},
   "sources": [
@@ -621,9 +628,28 @@
           "note": "Wayback snapshot of halongmarathon.com's Registration Fees page (2019-07-12), which embeds the 'REGISTRATION FEES 2019' price image (Google-hosted, itself archived by Wayback) — read by eye. Prices are in USD."
         }
       }
+    },
+    {
+      "site": "en-vietnamplus-vn",
+      "role": "reference",
+      "url": "https://en.vietnamplus.vn/over-3000-athletes-join-halong-bay-heritage-marathon-2019-post164237.vnp",
+      "lastCheckedAt": "2026-09-28T14:39:24.114Z",
+      "lastChangedAt": "2026-09-28T14:39:24.114Z",
+      "extracted": {
+        "facts": {
+          "name": "Halong Bay Heritage Marathon 2019",
+          "date": "2019-11-24",
+          "participants": {
+            "count": 3000,
+            "sourceUrl": "https://en.vietnamplus.vn/over-3000-athletes-join-halong-bay-heritage-marathon-2019-post164237.vnp",
+            "quote": "Over 3,000 athletes join Halong Bay Heritage Marathon 2019"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-27T02:46:27.823Z",
-  "updatedAt": "2026-09-27T07:40:37.298Z"
+  "updatedAt": "2026-09-28T14:39:24.114Z"
 }
