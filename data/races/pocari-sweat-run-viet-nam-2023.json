@@ -12,13 +12,165 @@
   "organizerId": null,
   "organizer": "Pocari Sweat Run Vietnam",
   "edition": 4,
-  "courses": [],
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Khu đô thị Sala",
     "city": "TP. Hồ Chí Minh"
   },
   "geo": null,
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Mua sớm",
+      "kind": "early",
+      "audience": null,
+      "price": 690000,
+      "from": "2023-06-09",
+      "to": "2023-08-31",
+      "inferred": [],
+      "site": "pocarisweatrun-com-vn"
+    },
+    {
+      "distance": "5km",
+      "tier": "Mua tiêu chuẩn",
+      "kind": "regular",
+      "audience": null,
+      "price": 790000,
+      "from": "2023-09-01",
+      "to": "2023-10-31",
+      "inferred": [],
+      "site": "pocarisweatrun-com-vn"
+    },
+    {
+      "distance": "5km",
+      "tier": "Mua trễ",
+      "kind": "late",
+      "audience": null,
+      "price": 890000,
+      "from": "2023-11-01",
+      "to": "2023-11-18",
+      "inferred": [],
+      "site": "pocarisweatrun-com-vn"
+    },
+    {
+      "distance": "10km",
+      "tier": "Mua sớm",
+      "kind": "early",
+      "audience": null,
+      "price": 890000,
+      "from": "2023-06-09",
+      "to": "2023-08-31",
+      "inferred": [],
+      "site": "pocarisweatrun-com-vn"
+    },
+    {
+      "distance": "10km",
+      "tier": "Mua tiêu chuẩn",
+      "kind": "regular",
+      "audience": null,
+      "price": 1090000,
+      "from": "2023-09-01",
+      "to": "2023-10-31",
+      "inferred": [],
+      "site": "pocarisweatrun-com-vn"
+    },
+    {
+      "distance": "10km",
+      "tier": "Mua trễ",
+      "kind": "late",
+      "audience": null,
+      "price": 1290000,
+      "from": "2023-11-01",
+      "to": "2023-11-18",
+      "inferred": [],
+      "site": "pocarisweatrun-com-vn"
+    },
+    {
+      "distance": "21km",
+      "tier": "Mua sớm",
+      "kind": "early",
+      "audience": null,
+      "price": 1090000,
+      "from": "2023-06-09",
+      "to": "2023-08-31",
+      "inferred": [],
+      "site": "pocarisweatrun-com-vn"
+    },
+    {
+      "distance": "21km",
+      "tier": "Mua tiêu chuẩn",
+      "kind": "regular",
+      "audience": null,
+      "price": 1390000,
+      "from": "2023-09-01",
+      "to": "2023-10-31",
+      "inferred": [],
+      "site": "pocarisweatrun-com-vn"
+    },
+    {
+      "distance": "21km",
+      "tier": "Mua trễ",
+      "kind": "late",
+      "audience": null,
+      "price": 1690000,
+      "from": "2023-11-01",
+      "to": "2023-11-18",
+      "inferred": [],
+      "site": "pocarisweatrun-com-vn"
+    },
+    {
+      "distance": "5km",
+      "tier": "Gói 2 vé 5KM (1 người lớn + 1 trẻ 10-12 tuổi) - Mua sớm",
+      "kind": "early",
+      "audience": null,
+      "price": 1380000,
+      "from": "2023-06-09",
+      "to": "2023-08-31",
+      "inferred": [],
+      "site": "pocarisweatrun-com-vn"
+    },
+    {
+      "distance": "5km",
+      "tier": "Gói 2 vé 5KM (1 người lớn + 1 trẻ 10-12 tuổi) - Mua tiêu chuẩn",
+      "kind": "late",
+      "audience": null,
+      "price": 1580000,
+      "from": "2023-09-01",
+      "to": "2023-10-31",
+      "inferred": [],
+      "site": "pocarisweatrun-com-vn"
+    },
+    {
+      "distance": "5km",
+      "tier": "Gói 2 vé 5KM (1 người lớn + 1 trẻ 10-12 tuổi) - Mua trễ",
+      "kind": "late",
+      "audience": null,
+      "price": 1780000,
+      "from": "2023-11-01",
+      "to": "2023-11-18",
+      "inferred": [],
+      "site": "pocarisweatrun-com-vn"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": null,
   "registrations": [],
@@ -53,9 +205,120 @@
           "note": "NLĐ recap: race held 19-11-2023, fourth season (mùa giải thứ tư) at Sala"
         }
       }
+    },
+    {
+      "site": "pocarisweatrun-com-vn",
+      "role": "reference",
+      "url": "http://web.archive.org/web/20230923145226/https://pocarisweatrun.com.vn/vi/thong-tin-giai-chay",
+      "lastCheckedAt": "2026-09-28T16:35:25.265Z",
+      "lastChangedAt": "2026-09-28T16:35:25.265Z",
+      "extracted": {
+        "facts": {
+          "distances": [
+            "5km",
+            "10km",
+            "21km"
+          ],
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Mua sớm",
+              "price": 690000,
+              "from": "2023-06-09",
+              "to": "2023-08-31"
+            },
+            {
+              "distance": "5km",
+              "tier": "Mua tiêu chuẩn",
+              "price": 790000,
+              "from": "2023-09-01",
+              "to": "2023-10-31"
+            },
+            {
+              "distance": "5km",
+              "tier": "Mua trễ",
+              "price": 890000,
+              "from": "2023-11-01",
+              "to": "2023-11-18"
+            },
+            {
+              "distance": "10km",
+              "tier": "Mua sớm",
+              "price": 890000,
+              "from": "2023-06-09",
+              "to": "2023-08-31"
+            },
+            {
+              "distance": "10km",
+              "tier": "Mua tiêu chuẩn",
+              "price": 1090000,
+              "from": "2023-09-01",
+              "to": "2023-10-31"
+            },
+            {
+              "distance": "10km",
+              "tier": "Mua trễ",
+              "price": 1290000,
+              "from": "2023-11-01",
+              "to": "2023-11-18"
+            },
+            {
+              "distance": "21km",
+              "tier": "Mua sớm",
+              "price": 1090000,
+              "from": "2023-06-09",
+              "to": "2023-08-31"
+            },
+            {
+              "distance": "21km",
+              "tier": "Mua tiêu chuẩn",
+              "price": 1390000,
+              "from": "2023-09-01",
+              "to": "2023-10-31"
+            },
+            {
+              "distance": "21km",
+              "tier": "Mua trễ",
+              "price": 1690000,
+              "from": "2023-11-01",
+              "to": "2023-11-18"
+            },
+            {
+              "distance": "5km",
+              "tier": "Gói 2 vé 5KM (1 người lớn + 1 trẻ 10-12 tuổi) - Mua sớm",
+              "price": 1380000,
+              "from": "2023-06-09",
+              "to": "2023-08-31"
+            },
+            {
+              "distance": "5km",
+              "tier": "Gói 2 vé 5KM (1 người lớn + 1 trẻ 10-12 tuổi) - Mua tiêu chuẩn",
+              "price": 1580000,
+              "from": "2023-09-01",
+              "to": "2023-10-31"
+            },
+            {
+              "distance": "5km",
+              "tier": "Gói 2 vé 5KM (1 người lớn + 1 trẻ 10-12 tuổi) - Mua trễ",
+              "price": 1780000,
+              "from": "2023-11-01",
+              "to": "2023-11-18"
+            }
+          ],
+          "name": "Pocari Sweat Run Việt Nam 2023",
+          "date": "2023-11-19",
+          "types": [
+            "road_run"
+          ],
+          "organizer": "Pocari Sweat Run Vietnam",
+          "venue": "Khu đô thị Sala",
+          "city": "TP. Hồ Chí Minh",
+          "note": "Organizer's own page (Wayback, 23/09/2023, in sale window): 3-phase price table incl. 2-ticket kids package"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:22:34.726Z",
-  "updatedAt": "2026-09-28T16:26:01.218Z"
+  "updatedAt": "2026-09-28T16:35:25.265Z"
 }
