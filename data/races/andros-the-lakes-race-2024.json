@@ -3,7 +3,7 @@
   "slug": "andros-the-lakes-race-2024",
   "name": "Giải chạy Andros The Lakes Race - Vol 6",
   "types": [
-    "other"
+    "city_trail"
   ],
   "date": "2024-05-26",
   "endDate": null,
@@ -502,6 +502,13 @@
       ],
       "reason": "irace.vn price table image (Ticket-Fees.jpg) on the source page, checked directly against the image",
       "at": "2026-09-27T03:01:49.042Z"
+    },
+    "types": {
+      "value": [
+        "city_trail"
+      ],
+      "reason": "Andros Lakes Race: user says every edition is city trail",
+      "at": "2026-09-28T16:02:58.874Z"
     }
   },
   "sources": [
@@ -572,5 +579,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T16:01:23.829Z"
+  "updatedAt": "2026-09-28T16:02:58.874Z"
 }
