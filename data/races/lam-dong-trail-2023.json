@@ -484,6 +484,12 @@
     }
   ],
   "links": [],
+  "participants": {
+    "count": 2000,
+    "approx": true,
+    "sourceUrl": "https://app.irace.vn/lam-dong-trail-2023",
+    "quote": "2000 VĐV"
+  },
   "flags": [],
   "overrides": {
     "seriesId": {
@@ -862,6 +868,16 @@
       ],
       "reason": "iRace ticket price image (app.irace.vn/lam-dong-trail-2023, wp-content/uploads/2023/03/gia-ve.png, fetched via Wayback+Firecrawl JS render to find the image URL, then read directly): Super Early Bird/Early Bird/Regular/Late/Onsite tiers with explicit date windows",
       "at": "2026-09-25T08:23:00.169Z"
+    },
+    "participants": {
+      "value": {
+        "count": 2000,
+        "approx": true,
+        "sourceUrl": "https://app.irace.vn/lam-dong-trail-2023",
+        "quote": "2000 VĐV"
+      },
+      "reason": "Stated participant count read from the linked page (backfill, plan 012)",
+      "at": "2026-09-28T00:00:00Z"
     }
   },
   "sources": [

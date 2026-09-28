@@ -142,8 +142,25 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": {
+    "count": 18000,
+    "approx": true,
+    "sourceUrl": "https://vietnamnews.vn/sports/1688542/techcombank-hcm-city-international-marathon-kicks-off-with-record-of-participants.html",
+    "quote": "18,000 athletes from 64 countries"
+  },
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "participants": {
+      "value": {
+        "count": 18000,
+        "approx": true,
+        "sourceUrl": "https://vietnamnews.vn/sports/1688542/techcombank-hcm-city-international-marathon-kicks-off-with-record-of-participants.html",
+        "quote": "18,000 athletes from 64 countries"
+      },
+      "reason": "Stated participant count read from the linked page (backfill, plan 012)",
+      "at": "2026-09-28T00:00:00Z"
+    }
+  },
   "sources": [
     {
       "site": "vietnamnews-vn",

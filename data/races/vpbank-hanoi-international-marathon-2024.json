@@ -142,8 +142,25 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": {
+    "count": 11000,
+    "approx": true,
+    "sourceUrl": "https://en.vietnamplus.vn/some-11000-join-vpbank-hanoi-international-marathon-2024-post298216.vnp",
+    "quote": "Some 11,000 join VPBank Hanoi International Marathon 2024"
+  },
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "participants": {
+      "value": {
+        "count": 11000,
+        "approx": true,
+        "sourceUrl": "https://en.vietnamplus.vn/some-11000-join-vpbank-hanoi-international-marathon-2024-post298216.vnp",
+        "quote": "Some 11,000 join VPBank Hanoi International Marathon 2024"
+      },
+      "reason": "Stated participant count read from the linked page (backfill, plan 012)",
+      "at": "2026-09-28T00:00:00Z"
+    }
+  },
   "sources": [
     {
       "site": "en-vietnamplus-vn",

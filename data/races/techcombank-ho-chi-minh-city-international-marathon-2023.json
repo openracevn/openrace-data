@@ -142,8 +142,25 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": {
+    "count": 15000,
+    "approx": true,
+    "sourceUrl": "https://tuoitre.vn/techcombank-marathon-2023-dat-ki-luc-voi-hon-15-000-nguoi-tham-du-20231212201906577.htm",
+    "quote": "15.000 người tham dự"
+  },
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "participants": {
+      "value": {
+        "count": 15000,
+        "approx": true,
+        "sourceUrl": "https://tuoitre.vn/techcombank-marathon-2023-dat-ki-luc-voi-hon-15-000-nguoi-tham-du-20231212201906577.htm",
+        "quote": "15.000 người tham dự"
+      },
+      "reason": "Stated participant count read from the linked page (backfill, plan 012)",
+      "at": "2026-09-28T00:00:00Z"
+    }
+  },
   "sources": [
     {
       "site": "tuoitre-vn",

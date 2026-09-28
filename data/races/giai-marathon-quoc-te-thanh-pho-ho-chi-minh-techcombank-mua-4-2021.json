@@ -142,12 +142,28 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": {
+    "count": 13117,
+    "approx": false,
+    "sourceUrl": "https://thuonghieucongluan.com.vn/giai-marathon-quoc-te-tphcm-techcombank-mua-4-thu-hut-13-117-van-dong-vien-a131782.html",
+    "quote": "13,117 vận động viên"
+  },
   "flags": [],
   "overrides": {
     "seriesId": {
       "value": "techcombank-ho-chi-minh-city-international-marathon",
       "reason": "unify series id across all editions of this race",
       "at": "2026-09-27T08:08:12.350Z"
+    },
+    "participants": {
+      "value": {
+        "count": 13117,
+        "approx": false,
+        "sourceUrl": "https://thuonghieucongluan.com.vn/giai-marathon-quoc-te-tphcm-techcombank-mua-4-thu-hut-13-117-van-dong-vien-a131782.html",
+        "quote": "13,117 vận động viên"
+      },
+      "reason": "Stated participant count read from the linked page (backfill, plan 012)",
+      "at": "2026-09-28T00:00:00Z"
     }
   },
   "sources": [

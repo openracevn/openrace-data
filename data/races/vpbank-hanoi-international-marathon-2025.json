@@ -142,12 +142,28 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": {
+    "count": 11000,
+    "approx": true,
+    "sourceUrl": "https://vpbankmarathon.com/vi/mua-giai-2025",
+    "quote": "11.000"
+  },
   "flags": [],
   "overrides": {
     "edition": {
       "value": 6,
       "reason": "Báo Thanh Niên (vietnam.vn, 2025-10-26): 'this year's race, the 6th edition organized by VPBank' — matches vpbankmarathon.com's own 'mùa giải thứ 7' claim for the following year (2026)",
       "at": "2026-09-27T02:28:23.973Z"
+    },
+    "participants": {
+      "value": {
+        "count": 11000,
+        "approx": true,
+        "sourceUrl": "https://vpbankmarathon.com/vi/mua-giai-2025",
+        "quote": "11.000"
+      },
+      "reason": "Stated participant count read from the linked page (backfill, plan 012)",
+      "at": "2026-09-28T00:00:00Z"
     }
   },
   "sources": [
