@@ -7,6 +7,7 @@
   ],
   "date": "2026-10-18",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "vpbank-hanoi-international-marathon",
   "organizerId": "vpbank",
   "organizer": "Đơn vị tổ chức: Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
@@ -42,93 +43,97 @@
     "city": "Hà Nội"
   },
   "geo": {
-    "lat": 21.0283334,
-    "lng": 105.854041,
+    "lat": 21.0288313,
+    "lng": 105.8525357,
     "source": "nominatim",
-    "precision": "province",
+    "precision": "venue",
     "current": {
       "province": "01",
-      "ward": null
+      "ward": "00070"
     },
-    "legacy": null,
+    "legacy": {
+      "province": "01",
+      "district": "002",
+      "ward": "00070"
+    },
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 1144,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1494.9,
+        "minutes": 1138,
+        "method": "road",
         "near": false
       },
       "ha-noi": {
-        "km": 0.2,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1.7,
+        "minutes": 2,
+        "method": "road",
         "near": true
       },
       "da-nang": {
-        "km": 606.3,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 772.5,
+        "minutes": 626,
+        "method": "road",
         "near": false
       },
       "nha-trang": {
-        "km": 1040.1,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1276.3,
+        "minutes": 1012,
+        "method": "road",
         "near": false
       },
       "da-lat": {
-        "km": 1047.4,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1403.7,
+        "minutes": 1131,
+        "method": "road",
         "near": false
       },
       "can-tho": {
-        "km": 1222.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1605.8,
+        "minutes": 1257,
+        "method": "road",
         "near": false
       },
       "hai-phong": {
-        "km": 89,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 114.9,
+        "minutes": 84,
+        "method": "road",
         "near": false
       },
       "hue": {
-        "km": 539.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 670.2,
+        "minutes": 543,
+        "method": "road",
         "near": false
       },
       "vung-tau": {
-        "km": 1195.1,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1585.9,
+        "minutes": 1219,
+        "method": "road",
         "near": false
       },
       "quy-nhon": {
-        "km": 882,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1084.2,
+        "minutes": 852,
+        "method": "road",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 958.3,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1281,
+        "minutes": 1049,
+        "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 253.6,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 315.4,
+        "minutes": 255,
+        "method": "road",
         "near": false
       },
       "ha-long": {
-        "km": 127.6,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 159.5,
+        "minutes": 113,
+        "method": "road",
         "near": false
       }
     }
@@ -351,5 +356,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T12:41:20.864Z"
+  "updatedAt": "2026-09-28T13:58:50.138Z"
 }

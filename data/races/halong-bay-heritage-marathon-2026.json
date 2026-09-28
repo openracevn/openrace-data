@@ -7,6 +7,7 @@
   ],
   "date": "2026-11-22",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "halong-bay-heritage-marathon",
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
@@ -823,9 +824,7 @@
     }
   ],
   "participants": null,
-  "flags": [
-    "sources disagree on race day: halong-marathon 2026-11-20, irace 2026-11-22, actiup 2026-11-22"
-  ],
+  "flags": [],
   "overrides": {
     "seriesId": {
       "value": "halong-bay-heritage-marathon",
@@ -1643,7 +1642,7 @@
       }
     }
   ],
-  "confidence": "conflicting",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T13:29:06.974Z"
+  "updatedAt": "2026-09-28T13:58:50.138Z"
 }

@@ -7,6 +7,7 @@
   ],
   "date": "2026-09-13",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "vnexpress-marathon-quy-nhon",
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
@@ -36,93 +37,97 @@
     "city": "Quy Nhơn"
   },
   "geo": {
-    "lat": 13.7549672,
-    "lng": 109.1767596,
+    "lat": 13.7624587,
+    "lng": 109.2214998,
     "source": "nominatim",
-    "precision": "province",
+    "precision": "venue",
     "current": {
       "province": "52",
-      "ward": null
+      "ward": "21583"
     },
-    "legacy": null,
+    "legacy": {
+      "province": "52",
+      "district": "540",
+      "ward": "21580"
+    },
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 427.2,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 617.8,
+        "minutes": 453,
+        "method": "road",
         "near": false
       },
       "ha-noi": {
-        "km": 882.2,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1078.6,
+        "minutes": 837,
+        "method": "road",
         "near": false
       },
       "da-nang": {
-        "km": 276,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 309.1,
+        "minutes": 234,
+        "method": "road",
         "near": false
       },
       "nha-trang": {
-        "km": 168.6,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 212.1,
+        "minutes": 168,
+        "method": "road",
         "near": false
       },
       "da-lat": {
-        "km": 216.9,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 339.5,
+        "minutes": 286,
+        "method": "road",
         "near": false
       },
       "can-tho": {
-        "km": 554.2,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 783.3,
+        "minutes": 581,
+        "method": "road",
         "near": false
       },
       "hai-phong": {
-        "km": 831.4,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1112.7,
+        "minutes": 864,
+        "method": "road",
         "near": false
       },
       "hue": {
-        "km": 346,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 406.3,
+        "minutes": 309,
+        "method": "road",
         "near": false
       },
       "vung-tau": {
-        "km": 442.1,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 610.9,
+        "minutes": 460,
+        "method": "road",
         "near": false
       },
       "quy-nhon": {
-        "km": 5.6,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 2.1,
+        "minutes": 2,
+        "method": "road",
         "near": true
       },
       "buon-ma-thuot": {
-        "km": 172.8,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 262.3,
+        "minutes": 246,
+        "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 1108,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1387.2,
+        "minutes": 1073,
+        "method": "road",
         "near": false
       },
       "ha-long": {
-        "km": 830.6,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1162.4,
+        "minutes": 897,
+        "method": "road",
         "near": false
       }
     }
@@ -132,6 +137,7 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": null,
   "flags": [],
   "overrides": {
     "edition": {
@@ -215,5 +221,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T05:01:22.419Z",
-  "updatedAt": "2026-09-26T14:00:50.351Z"
+  "updatedAt": "2026-09-28T13:58:50.138Z"
 }

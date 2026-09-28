@@ -7,6 +7,7 @@
   ],
   "date": "2026-10-11",
   "endDate": null,
+  "mainDate": null,
   "seriesId": null,
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
@@ -391,9 +392,7 @@
     }
   ],
   "participants": null,
-  "flags": [
-    "sources disagree on race day: irace 2026-10-11, actiup 2026-10-10"
-  ],
+  "flags": [],
   "overrides": {
     "date": {
       "value": "2026-10-11",
@@ -676,7 +675,7 @@
       }
     }
   ],
-  "confidence": "conflicting",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T13:28:15.901Z"
+  "updatedAt": "2026-09-28T13:58:50.138Z"
 }
