@@ -3,10 +3,11 @@
   "slug": "andros-the-lakes-race-2023",
   "name": "Giải chạy Andros The Lakes Race 2023",
   "types": [
-    "road_run"
+    "city_trail"
   ],
   "date": "2023-06-04",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "andros-the-lakes-race",
   "organizerId": null,
   "organizer": null,
@@ -280,6 +281,7 @@
     }
   ],
   "links": [],
+  "participants": null,
   "flags": [],
   "overrides": {
     "edition": {
@@ -289,10 +291,10 @@
     },
     "types": {
       "value": [
-        "road_run"
+        "city_trail"
       ],
-      "reason": "inferred from race name/price-tier text (giải chạy); no source states an explicit type",
-      "at": "2026-09-26T13:11:14.080Z"
+      "reason": "Andros Lakes Race: user says every edition is city trail",
+      "at": "2026-09-28T16:02:49.668Z"
     },
     "prices": {
       "value": [
@@ -473,5 +475,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T06:49:26.358Z",
-  "updatedAt": "2026-09-28T05:58:42.803Z"
+  "updatedAt": "2026-09-28T16:02:49.668Z"
 }
