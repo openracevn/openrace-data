@@ -16,31 +16,31 @@
     {
       "label": "2km",
       "meters": 2000,
-      "type": null,
+      "type": "city_trail",
       "elevationGain": null
     },
     {
       "label": "5km",
       "meters": 5000,
-      "type": null,
+      "type": "city_trail",
       "elevationGain": null
     },
     {
       "label": "15km",
       "meters": 15000,
-      "type": null,
+      "type": "city_trail",
       "elevationGain": null
     },
     {
       "label": "25km",
       "meters": 25000,
-      "type": null,
+      "type": "city_trail",
       "elevationGain": null
     },
     {
       "label": "600m",
       "meters": 600,
-      "type": null,
+      "type": "city_trail",
       "elevationGain": null
     }
   ],
@@ -509,6 +509,42 @@
       ],
       "reason": "Andros Lakes Race: user says every edition is city trail",
       "at": "2026-09-28T16:02:58.874Z"
+    },
+    "courses": {
+      "value": [
+        {
+          "label": "2km",
+          "meters": 2000,
+          "type": "city_trail",
+          "elevationGain": null
+        },
+        {
+          "label": "5km",
+          "meters": 5000,
+          "type": "city_trail",
+          "elevationGain": null
+        },
+        {
+          "label": "15km",
+          "meters": 15000,
+          "type": "city_trail",
+          "elevationGain": null
+        },
+        {
+          "label": "25km",
+          "meters": 25000,
+          "type": "city_trail",
+          "elevationGain": null
+        },
+        {
+          "label": "600m",
+          "meters": 600,
+          "type": "city_trail",
+          "elevationGain": null
+        }
+      ],
+      "reason": "Andros Lakes Race: user says every edition is city trail; course types follow. Distances unchanged.",
+      "at": "2026-09-28T16:08:18.750Z"
     }
   },
   "sources": [
@@ -579,5 +615,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T16:02:58.874Z"
+  "updatedAt": "2026-09-28T16:08:18.750Z"
 }
