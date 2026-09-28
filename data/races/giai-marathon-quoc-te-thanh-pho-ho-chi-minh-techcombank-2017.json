@@ -35,7 +35,102 @@
     "venue": "Thành Phố Hồ Chí Minh",
     "city": "Ho Chi Minh City"
   },
-  "geo": null,
+  "geo": {
+    "lat": 10.8283337,
+    "lng": 106.761474,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "26824"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "769",
+      "ward": "26827"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 12.1,
+        "minutes": 14,
+        "method": "road",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1491.1,
+        "minutes": 1130,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 857.8,
+        "minutes": 648,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 410.2,
+        "minutes": 293,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 283.2,
+        "minutes": 218,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 180.6,
+        "minutes": 145,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1525.2,
+        "minutes": 1157,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 940.5,
+        "minutes": 722,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 93.2,
+        "minutes": 85,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 616,
+        "minutes": 456,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 353.8,
+        "minutes": 260,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1799.6,
+        "minutes": 1366,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1574.9,
+        "minutes": 1190,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
   "prices": [],
   "currency": "VND",
   "registrationStatus": null,
@@ -94,5 +189,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-27T08:01:56.212Z",
-  "updatedAt": "2026-09-27T08:07:56.877Z"
+  "updatedAt": "2026-09-28T05:58:42.803Z"
 }

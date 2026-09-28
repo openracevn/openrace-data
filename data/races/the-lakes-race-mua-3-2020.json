@@ -35,7 +35,98 @@
     "venue": "Hồ Đá – Làng Đại học Thủ Đức",
     "city": "Hồ Chí Minh"
   },
-  "geo": null,
+  "geo": {
+    "lat": 10.7737261,
+    "lng": 106.7166008,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "79",
+      "ward": null
+    },
+    "legacy": null,
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1144,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 610.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 315.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 228.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 130.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1119.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 639.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 62.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 430.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 254.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1321.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1132.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
   "prices": [],
   "currency": "VND",
   "registrationStatus": null,
@@ -75,5 +166,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T06:48:34.476Z",
-  "updatedAt": "2026-09-25T08:00:05.867Z"
+  "updatedAt": "2026-09-28T05:58:42.803Z"
 }

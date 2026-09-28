@@ -41,7 +41,102 @@
     "venue": "Đường Lý Thường Kiệt, Phường Cao Lãnh, Tỉnh Đồng Tháp (phía trước công viên Văn Miếu)",
     "city": null
   },
-  "geo": null,
+  "geo": {
+    "lat": 10.4578441,
+    "lng": 105.6362633,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "82",
+      "ward": "29869"
+    },
+    "legacy": {
+      "province": "87",
+      "district": "866",
+      "ward": "29869"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 143.7,
+        "minutes": 118,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1561.1,
+        "minutes": 1209,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 978.2,
+        "minutes": 743,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 557.1,
+        "minutes": 413,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 434.8,
+        "minutes": 337,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 83.9,
+        "minutes": 70,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1595.2,
+        "minutes": 1236,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 1023.9,
+        "minutes": 814,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 240.1,
+        "minutes": 205,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 763,
+        "minutes": 576,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 474.2,
+        "minutes": 355,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1869.6,
+        "minutes": 1445,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1644.9,
+        "minutes": 1269,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
   "prices": [
     {
       "distance": "5km",
@@ -448,5 +543,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-27T02:29:11.152Z"
+  "updatedAt": "2026-09-28T05:58:42.803Z"
 }

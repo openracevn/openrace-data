@@ -47,7 +47,102 @@
     "venue": "Thung Lũng Tình Yêu, Thành phố Đà Lạt, Lâm Đồng",
     "city": "Đà Lạt, Lâm Đồng"
   },
-  "geo": null,
+  "geo": {
+    "lat": 11.9781853,
+    "lng": 108.4499229,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "68",
+      "ward": "24778"
+    },
+    "legacy": {
+      "province": "68",
+      "district": "672",
+      "ward": "24772"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 303,
+        "minutes": 233,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1400.4,
+        "minutes": 1118,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 630.9,
+        "minutes": 515,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 137.2,
+        "minutes": 132,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 5.8,
+        "minutes": 7,
+        "method": "road",
+        "near": true
+      },
+      "can-tho": {
+        "km": 468.5,
+        "minutes": 361,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1434.5,
+        "minutes": 1145,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 728.1,
+        "minutes": 590,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 332.4,
+        "minutes": 248,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 343.1,
+        "minutes": 294,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 189.6,
+        "minutes": 177,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1708.9,
+        "minutes": 1354,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1484.2,
+        "minutes": 1178,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
   "prices": [
     {
       "distance": "15km",
@@ -795,5 +890,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T08:03:04.937Z",
-  "updatedAt": "2026-09-26T05:57:31.541Z"
+  "updatedAt": "2026-09-28T05:58:42.803Z"
 }

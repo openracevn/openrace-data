@@ -47,7 +47,98 @@
     "venue": "Thành phố Đà Lạt, Lâm Đồng",
     "city": "Đà Lạt, Lâm Đồng"
   },
-  "geo": null,
+  "geo": {
+    "lat": 11.9082632,
+    "lng": 108.4572089,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "68",
+      "ward": null
+    },
+    "legacy": null,
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 229.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1051.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 462.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 88.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 3.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": true
+      },
+      "can-tho": {
+        "km": 358.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1011.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 515.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 229.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 223.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 95.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1258.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1016.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
   "prices": [
     {
       "distance": "70km",
@@ -437,5 +528,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T08:00:46.737Z",
-  "updatedAt": "2026-09-26T05:57:31.541Z"
+  "updatedAt": "2026-09-28T05:58:42.803Z"
 }
