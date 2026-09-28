@@ -47,7 +47,7 @@ A new question goes in this table first. When it gets built, it gets a plan and 
 | Sort upcoming races by price, longest or shortest distance | `courses[].meters`, price on a date | Built (plan 003) |
 | When was this race's data last checked? Can I trust it? | freshness per race in the API | Built (plan 003) |
 | How many trail races a year? North vs South? Distance distribution? | backfill, `types`, `courses`, admin codes / region | Later (path step 4) |
-| How big is this race, and which series is the biggest? | `participants` per edition (stated count, `approx`, required source link), series aggregates in the API | Building (openrace-web plan 012) |
+| How big is this race, and which series is the biggest? | `participants` per edition (count of people who registered, paid or attended; required source link; derived `confidence`), series aggregates in the API | Building (openrace-web plan 012; backfill and confidence: [plan 017](../plans/017-2026-09-28-participants-backfill-and-derived-confidence.md)) |
 | Which day is the main race day of a multi-day event? | `date` (first day), `endDate` (last day), `mainDate` (stated headline day, else null) | Planned ([plan 016](../plans/016-2026-09-28-multi-day-races-and-main-day.md)) |
 | Elevation gain and share of races with GPX | `courses[].elevationGain`; GPX files added by hand by the user | Later (GPX is manual, not scraped) |
 
@@ -63,17 +63,18 @@ Old place names ("Nha Trang", "Bình Dương") must keep working after the 2025 
 
 ## Non-goals
 
-- **Selling tickets, or tracking ticket quotas or sold-out tiers.** We record tiers and their dates only. No capacity, slots-left or sold-out counts; "how many took part", stated after the event, is a different fact.
+- **Selling tickets, or tracking ticket quotas or sold-out tiers.** We record tiers and their dates only. No capacity, slots-left or sold-out counts. "How many registered, paid or took part" in an edition, stated by a source, is a different fact (change log, 2026-09-28).
 - **Scraping GPX files.** GPX is added by hand by the user, later.
 - **User accounts and social features** (profiles, reviews, comments).
 - **Races outside Vietnam.**
-- **Race results and timing** (finish times, rankings, live tracking). An aggregate participant count per edition, with a source link, is in scope (change log, 2026-09-28); finisher counts, runner rankings and per-runner data are not.
+- **Race results and timing** (finish times, rankings, live tracking). An aggregate participant count per edition, with a source link, is in scope (change log, 2026-09-28); finisher-only counts, runner rankings and per-runner data are not.
 - **Anything about or for people rather than races:** paid listings or sponsored ranking, organizers editing their own races (their site is a source; corrections are our overrides), personal data about runners.
 
 ## Change log
 
 Deliberate changes of direction, newest first.
 
+- **2026-09-28 (plan 017):** "Participants" means the number of people who **registered, paid or attended** an edition, as a source states it (tickets sold and "đăng ký" count; "dự kiến"/expected targets do not). Capacity and slot limits, finisher-only counts and targets stay out. The `approx` flag is dropped (every count is approximate); a `confidence` (high/medium/low) is **derived** from the source and whether the quote was verified, and shown by the API. A count from the wrong edition is never stored. Backfill uses a free fast lane (my own web search plus a verify script), not Firecrawl or opencode.
 - **2026-09-28:** An aggregate participant count per race edition, with a required source link and an `approx` flag, is in scope (unknown is `null`, never 0). Finisher counts, runner rankings, capacity and quotas remain non-goals; the site's "Largest" series ordering ranks races by size, not people. openrace-web plan 012.
 
 - **2026-09-24:** Non-goals confirmed: accounts and social features, races outside Vietnam, results and timing, and anything about people rather than races ("focus on data, not people").
