@@ -37,7 +37,107 @@
     "city": "TP. Hồ Chí Minh"
   },
   "geo": null,
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Đăng ký sớm",
+      "kind": "early",
+      "audience": null,
+      "price": 390000,
+      "from": "2020-06-29",
+      "to": "2020-08-31",
+      "inferred": [],
+      "site": "pocarisweatrun-com-vn"
+    },
+    {
+      "distance": "5km",
+      "tier": "Đăng ký tiêu chuẩn",
+      "kind": "regular",
+      "audience": null,
+      "price": 490000,
+      "from": "2020-09-01",
+      "to": "2020-10-31",
+      "inferred": [],
+      "site": "pocarisweatrun-com-vn"
+    },
+    {
+      "distance": "5km",
+      "tier": "Đăng ký trễ",
+      "kind": "late",
+      "audience": null,
+      "price": 690000,
+      "from": "2020-11-01",
+      "to": "2020-11-21",
+      "inferred": [],
+      "site": "pocarisweatrun-com-vn"
+    },
+    {
+      "distance": "10km",
+      "tier": "Đăng ký sớm",
+      "kind": "early",
+      "audience": null,
+      "price": 690000,
+      "from": "2020-06-29",
+      "to": "2020-08-31",
+      "inferred": [],
+      "site": "pocarisweatrun-com-vn"
+    },
+    {
+      "distance": "10km",
+      "tier": "Đăng ký tiêu chuẩn",
+      "kind": "regular",
+      "audience": null,
+      "price": 890000,
+      "from": "2020-09-01",
+      "to": "2020-10-31",
+      "inferred": [],
+      "site": "pocarisweatrun-com-vn"
+    },
+    {
+      "distance": "10km",
+      "tier": "Đăng ký trễ",
+      "kind": "late",
+      "audience": null,
+      "price": 1190000,
+      "from": "2020-11-01",
+      "to": "2020-11-21",
+      "inferred": [],
+      "site": "pocarisweatrun-com-vn"
+    },
+    {
+      "distance": "21km",
+      "tier": "Đăng ký sớm",
+      "kind": "early",
+      "audience": null,
+      "price": 890000,
+      "from": "2020-06-29",
+      "to": "2020-08-31",
+      "inferred": [],
+      "site": "pocarisweatrun-com-vn"
+    },
+    {
+      "distance": "21km",
+      "tier": "Đăng ký tiêu chuẩn",
+      "kind": "regular",
+      "audience": null,
+      "price": 1190000,
+      "from": "2020-09-01",
+      "to": "2020-10-31",
+      "inferred": [],
+      "site": "pocarisweatrun-com-vn"
+    },
+    {
+      "distance": "21km",
+      "tier": "Đăng ký trễ",
+      "kind": "late",
+      "audience": null,
+      "price": 1490000,
+      "from": "2020-11-01",
+      "to": "2020-11-21",
+      "inferred": [],
+      "site": "pocarisweatrun-com-vn"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": null,
   "registrations": [],
@@ -71,9 +171,99 @@
           "note": "UEL post (Wayback) announcing Pocari Sweat Run 2020: 22/11/2020, Khu đô thị Sala, Quận 2"
         }
       }
+    },
+    {
+      "site": "pocarisweatrun-com-vn",
+      "role": "reference",
+      "url": "http://web.archive.org/web/20200926232357/http://pocarisweatrun.com.vn/vi/thong-tin-pocari",
+      "lastCheckedAt": "2026-09-28T16:33:10.982Z",
+      "lastChangedAt": "2026-09-28T16:33:10.982Z",
+      "extracted": {
+        "facts": {
+          "distances": [
+            "5km",
+            "10km",
+            "21km"
+          ],
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Đăng ký sớm",
+              "price": 390000,
+              "from": "2020-06-29",
+              "to": "2020-08-31"
+            },
+            {
+              "distance": "5km",
+              "tier": "Đăng ký tiêu chuẩn",
+              "price": 490000,
+              "from": "2020-09-01",
+              "to": "2020-10-31"
+            },
+            {
+              "distance": "5km",
+              "tier": "Đăng ký trễ",
+              "price": 690000,
+              "from": "2020-11-01",
+              "to": "2020-11-21"
+            },
+            {
+              "distance": "10km",
+              "tier": "Đăng ký sớm",
+              "price": 690000,
+              "from": "2020-06-29",
+              "to": "2020-08-31"
+            },
+            {
+              "distance": "10km",
+              "tier": "Đăng ký tiêu chuẩn",
+              "price": 890000,
+              "from": "2020-09-01",
+              "to": "2020-10-31"
+            },
+            {
+              "distance": "10km",
+              "tier": "Đăng ký trễ",
+              "price": 1190000,
+              "from": "2020-11-01",
+              "to": "2020-11-21"
+            },
+            {
+              "distance": "21km",
+              "tier": "Đăng ký sớm",
+              "price": 890000,
+              "from": "2020-06-29",
+              "to": "2020-08-31"
+            },
+            {
+              "distance": "21km",
+              "tier": "Đăng ký tiêu chuẩn",
+              "price": 1190000,
+              "from": "2020-09-01",
+              "to": "2020-10-31"
+            },
+            {
+              "distance": "21km",
+              "tier": "Đăng ký trễ",
+              "price": 1490000,
+              "from": "2020-11-01",
+              "to": "2020-11-21"
+            }
+          ],
+          "name": "Pocari Sweat Run Việt Nam 2020",
+          "date": "2020-11-22",
+          "types": [
+            "road_run"
+          ],
+          "organizer": "Pocari Sweat Run Vietnam",
+          "venue": "Khu đô thị Sala",
+          "city": "TP. Hồ Chí Minh",
+          "note": "Organizer's own page (Wayback, 26/09/2020, in sale window): price table, ages per distance"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:24:00.933Z",
-  "updatedAt": "2026-09-28T16:24:00.933Z"
+  "updatedAt": "2026-09-28T16:33:10.982Z"
 }
