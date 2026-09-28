@@ -7,6 +7,7 @@
   ],
   "date": "2017-11-26",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "techcombank-ho-chi-minh-city-international-marathon",
   "organizerId": null,
   "organizer": "Sunrise Events Vietnam",
@@ -136,6 +137,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": {
+    "count": 5000,
+    "sourceUrl": "https://vietnamnet.vn/nhung-dau-an-giai-marathon-quoc-te-tphcm-techcombank-2017-413974.html",
+    "quote": "để lại nhiều dấu ấn cho hơn 5.000 VĐV chuyên và không chuyên tới từ 44 quốc gia",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "seriesId": {
@@ -185,9 +192,28 @@
           "note": "Pre-race countdown article corroborating 2017 edition (over 5,000-6,000 runners expected, 44 countries)"
         }
       }
+    },
+    {
+      "site": "vietnamnet-vn",
+      "role": "reference",
+      "url": "https://vietnamnet.vn/nhung-dau-an-giai-marathon-quoc-te-tphcm-techcombank-2017-413974.html",
+      "lastCheckedAt": "2026-09-28T14:44:20.730Z",
+      "lastChangedAt": "2026-09-28T14:44:20.730Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Marathon Quốc tế Thành phố Hồ Chí Minh Techcombank 2017",
+          "date": "2017-11-26",
+          "participants": {
+            "count": 5000,
+            "sourceUrl": "https://vietnamnet.vn/nhung-dau-an-giai-marathon-quoc-te-tphcm-techcombank-2017-413974.html",
+            "quote": "để lại nhiều dấu ấn cho hơn 5.000 VĐV chuyên và không chuyên tới từ 44 quốc gia"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-27T08:01:56.212Z",
-  "updatedAt": "2026-09-28T05:58:42.803Z"
+  "updatedAt": "2026-09-28T14:44:20.730Z"
 }
