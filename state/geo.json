@@ -13221,6 +13221,102 @@
     "at": "2026-09-28T05:57:26.762Z",
     "note": "no point found"
   },
+  "khu vuc cnc lang hoa lac | ha noi": {
+    "geo": {
+      "lat": 21.0283334,
+      "lng": 105.854041,
+      "source": "nominatim",
+      "precision": "province",
+      "current": {
+        "province": "01",
+        "ward": null
+      },
+      "legacy": null,
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 1144,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "ha-noi": {
+          "km": 0.2,
+          "minutes": null,
+          "method": "straight_line",
+          "near": true
+        },
+        "da-nang": {
+          "km": 606.3,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 1040.1,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "da-lat": {
+          "km": 1047.4,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "can-tho": {
+          "km": 1222.5,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 89,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "hue": {
+          "km": 539.5,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 1195.1,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 882,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 958.3,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 253.6,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "ha-long": {
+          "km": 127.6,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        }
+      }
+    },
+    "query": "Hà Nội",
+    "at": "2026-09-28T13:53:58.576Z"
+  },
   "khu vuc ho tay va pho di bo trinh cong son | ": {
     "geo": null,
     "query": "Khu vực Hồ Tây và Phố đi bộ Trịnh Công Sơn",
