@@ -544,9 +544,28 @@
           "note": "Participant count stated by the page (backfill, plan 017)"
         }
       }
+    },
+    {
+      "site": "p2pnow-vn",
+      "role": "reference",
+      "url": "https://p2pnow.vn/su-kien/gia-lai-city-trail-2025",
+      "lastCheckedAt": "2026-09-28T16:35:37.705Z",
+      "lastChangedAt": "2026-09-28T16:35:37.705Z",
+      "extracted": {
+        "facts": {
+          "name": "GIA LAI CITY TRAIL 2025 - GIẤC MƠ ĐẠI NGÀN",
+          "date": "2025-11-02",
+          "types": [
+            "city_trail"
+          ],
+          "organizer": "VIETRACE365",
+          "registrationStatus": "closed",
+          "note": "P2PNOW event page states Giải chạy lần thứ 3 năm 2025; source for edition 3"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T16:24:07.097Z"
+  "updatedAt": "2026-09-28T16:35:37.705Z"
 }
