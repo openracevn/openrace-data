@@ -1,6 +1,6 @@
 # Plan 017: participants: a fast backfill lane and a derived confidence
 
-Status: **approved 2026-09-28. Written only; no stage started.**
+Status: **approved 2026-09-28. Stages A, B and C built 2026-09-28. Not yet: API deploy (`db:migrate:remote`, `deploy`), the web/MCP follow-up, and running the first backfill batches.**
 
 ## Roadmap fit
 
