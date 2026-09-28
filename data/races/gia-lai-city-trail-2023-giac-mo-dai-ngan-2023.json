@@ -1,0 +1,87 @@
+{
+  "id": "720f25b4-a4c2-423d-b378-4cd3f0a30840",
+  "slug": "gia-lai-city-trail-2023-giac-mo-dai-ngan",
+  "name": "GIA LAI CITY TRAIL 2023 – GIẤC MƠ ĐẠI NGÀN",
+  "types": [
+    "city_trail"
+  ],
+  "date": "2023-11-19",
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": "gia-lai-city-trail-giac-mo-dai-ngan",
+  "organizerId": null,
+  "organizer": "VIETRACE365",
+  "edition": null,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "city_trail",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "city_trail",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "city_trail",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "city_trail",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Cổng chính Khu du lịch Biển Hồ, Đường Tôn Đức Thắng, xã Biển Hồ, Thành phố Pleiku, Gia Lai",
+    "city": "Pleiku"
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [],
+  "links": [],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "timve365",
+      "role": "reference",
+      "url": "https://web.archive.org/web/20231004062441/https://timve365.vn/events/gia-lai-city-trail-2023-giac-mo-dai-ngan",
+      "lastCheckedAt": "2026-09-28T16:29:34.804Z",
+      "lastChangedAt": "2026-09-28T16:29:34.804Z",
+      "extracted": {
+        "facts": {
+          "name": "GIA LAI CITY TRAIL 2023 – GIẤC MƠ ĐẠI NGÀN",
+          "date": "2023-11-19",
+          "types": [
+            "city_trail"
+          ],
+          "distances": [
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "venue": "Cổng chính Khu du lịch Biển Hồ, Đường Tôn Đức Thắng, xã Biển Hồ, Thành phố Pleiku, Gia Lai",
+          "city": "Pleiku",
+          "organizer": "VIETRACE365",
+          "registrationStatus": "closed",
+          "prices": [],
+          "note": "Timve365's own event page for the first Gia Lai City Trail (Wayback snapshot 2023-10-04, live page no longer renders): date 19/11/2023, 5/10/21/42km, venue, organizer. Its price table is JS-only, so no per-distance prices."
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-28T16:29:34.804Z",
+  "updatedAt": "2026-09-28T16:29:34.804Z"
+}
