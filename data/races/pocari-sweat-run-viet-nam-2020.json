@@ -1,0 +1,79 @@
+{
+  "id": "25f3c44b-ca50-4614-a824-79faaa9c98fe",
+  "slug": "pocari-sweat-run-viet-nam-2020",
+  "name": "Pocari Sweat Run Việt Nam 2020",
+  "types": [
+    "road_run"
+  ],
+  "date": "2020-11-22",
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": "pocari-sweat-run-viet-nam",
+  "organizerId": null,
+  "organizer": "Pocari Sweat Run Vietnam",
+  "edition": null,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Khu đô thị Sala",
+    "city": "TP. Hồ Chí Minh"
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "qhdn-uel-edu-vn",
+      "role": "reference",
+      "url": "http://web.archive.org/web/2020/https://qhdn.uel.edu.vn/tin-tuc/chuong-trinh-pocari-sweat-run-2020",
+      "lastCheckedAt": "2026-09-28T16:24:00.933Z",
+      "lastChangedAt": "2026-09-28T16:24:00.933Z",
+      "extracted": {
+        "facts": {
+          "name": "Pocari Sweat Run Việt Nam 2020",
+          "date": "2020-11-22",
+          "organizer": "Pocari Sweat Run Vietnam",
+          "types": [
+            "road_run"
+          ],
+          "venue": "Khu đô thị Sala",
+          "city": "TP. Hồ Chí Minh",
+          "distances": [
+            "5km",
+            "10km",
+            "21km"
+          ],
+          "prices": [],
+          "note": "UEL post (Wayback) announcing Pocari Sweat Run 2020: 22/11/2020, Khu đô thị Sala, Quận 2"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-28T16:24:00.933Z",
+  "updatedAt": "2026-09-28T16:24:00.933Z"
+}
