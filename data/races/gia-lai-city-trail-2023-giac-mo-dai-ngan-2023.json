@@ -321,7 +321,12 @@
   "registrationStatus": "closed",
   "registrations": [],
   "links": [],
-  "participants": null,
+  "participants": {
+    "count": 4000,
+    "sourceUrl": "https://www.vietrace365.vn/tin-tuc/detail/gia-lai-4000-van-dong-vien-tham-gia-giai-chay-bo-gia-lai-city-trail-2023-giac-mo-dai-ngan",
+    "quote": "Gia Lai: 4.000 vận động viên tham gia giải chạy bộ “Gia Lai City Trail 2023 -Giấc mơ đại ngàn”",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "edition": {
@@ -507,9 +512,28 @@
           "note": "Organizer own site (Wayback 2023-11-30): per-distance prices for basic and PRO (with trail pole) packages; states first City Trail of the Central Highlands. Tier dates not shown."
         }
       }
+    },
+    {
+      "site": "vietrace365-vn",
+      "role": "reference",
+      "url": "https://vietrace365.vn/tin-tuc/detail/gia-lai-4000-van-dong-vien-tham-gia-giai-chay-bo-gia-lai-city-trail-2023-giac-mo-dai-ngan",
+      "lastCheckedAt": "2026-09-28T16:40:05.200Z",
+      "lastChangedAt": "2026-09-28T16:40:05.200Z",
+      "extracted": {
+        "facts": {
+          "name": "GIA LAI CITY TRAIL 2023 – GIẤC MƠ ĐẠI NGÀN",
+          "date": "2023-11-19",
+          "participants": {
+            "count": 4000,
+            "sourceUrl": "https://www.vietrace365.vn/tin-tuc/detail/gia-lai-4000-van-dong-vien-tham-gia-giai-chay-bo-gia-lai-city-trail-2023-giac-mo-dai-ngan",
+            "quote": "Gia Lai: 4.000 vận động viên tham gia giải chạy bộ “Gia Lai City Trail 2023 -Giấc mơ đại ngàn”"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:29:34.804Z",
-  "updatedAt": "2026-09-28T16:33:39.616Z"
+  "updatedAt": "2026-09-28T16:40:05.200Z"
 }
