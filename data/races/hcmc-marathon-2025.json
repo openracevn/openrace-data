@@ -1,0 +1,79 @@
+{
+  "id": "29f676bb-9578-4667-b288-b0a22949d40e",
+  "slug": "hcmc-marathon-2025",
+  "name": "HCMC Marathon 2025",
+  "types": [
+    "road_run"
+  ],
+  "date": "2025-01-12",
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": "hcmc-marathon",
+  "organizerId": null,
+  "organizer": "Pulse Active",
+  "edition": 12,
+  "courses": [
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Independence Palace, Lê Duẩn, District 1",
+    "city": "TP.HCM"
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "en-sggp-org-vn",
+      "role": "reference",
+      "url": "https://en.sggp.org.vn/over-10000-runners-kick-off-new-year-at-hcmc-marathon-2025-post115105.html",
+      "lastCheckedAt": "2026-09-28T16:39:28.238Z",
+      "lastChangedAt": "2026-09-28T16:39:28.238Z",
+      "extracted": {
+        "facts": {
+          "name": "HCMC Marathon 2025",
+          "date": "2025-01-12",
+          "edition": 12,
+          "distances": [
+            "42km",
+            "21km",
+            "10km"
+          ],
+          "venue": "Independence Palace, Lê Duẩn, District 1",
+          "types": [
+            "road_run"
+          ],
+          "organizer": "Pulse Active",
+          "city": "TP.HCM",
+          "note": "SGGP English (10/01/2025): 12th HCMC Marathon on 12 January, 10/21/42km, start and finish in front of Independence Palace. race-research HCMC Marathon series history."
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-28T16:39:28.238Z",
+  "updatedAt": "2026-09-28T16:39:28.238Z"
+}
