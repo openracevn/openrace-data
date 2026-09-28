@@ -3,10 +3,11 @@
   "slug": "giai-half-trail-marathon-ho-da-2019-the-lake-race",
   "name": "Giải Half Trail Marathon Hồ Đá 2019 (The Lake Race)",
   "types": [
-    "trail_run"
+    "city_trail"
   ],
   "date": "2019-04-07",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "andros-the-lakes-race",
   "organizerId": null,
   "organizer": null,
@@ -166,6 +167,7 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": null,
   "flags": [],
   "overrides": {
     "seriesId": {
@@ -180,10 +182,10 @@
     },
     "types": {
       "value": [
-        "trail_run"
+        "city_trail"
       ],
-      "reason": "inferred from race name/price-tier text (trail); no source states an explicit type",
-      "at": "2026-09-26T13:21:53.036Z"
+      "reason": "Andros Lakes Race: user says every edition is city trail",
+      "at": "2026-09-28T16:03:17.267Z"
     }
   },
   "sources": [
@@ -234,5 +236,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T06:47:41.570Z",
-  "updatedAt": "2026-09-28T05:58:42.803Z"
+  "updatedAt": "2026-09-28T16:03:17.267Z"
 }
