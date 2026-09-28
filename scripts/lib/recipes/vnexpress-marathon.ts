@@ -21,6 +21,11 @@
  *   `curl`); worth checking a snapshot from near race day if the venue matters and the
  *   live site can't give it.
  *
+ * - Found 2026-09-28 (Galaxy Run 2026 had no venue): the race page itself carries the
+ *   venue in its "Địa điểm tổ chức" card (`a[data-medium="Title-DiaDiemToChuc"]`), which
+ *   is outside `#slideshow` and `.ticket-policy`, so it was never read. It is read now.
+ *   Not every race fills it in (All-Star 2026's card is empty).
+ *
  * Notes from race-research on Nha Trang (2026-09-26), likely true for every city:
  * - The same `/thong-tin-cuoc-dua` intro paragraph states the edition as prose
  *   ("tổ chức lần đầu tiên" = 1st, "lần thứ hai" = 2nd, "Lần thứ N" from 3 up) —
@@ -45,7 +50,10 @@ import { externalLinks, pickPriceImages } from "./default.ts";
 import type { RaceRef, Recipe, RecipeContext, Snapshot } from "./types.ts";
 
 const RACE_PAGE = /^https:\/\/vm\.vnexpress\.net\/([a-z0-9-]+)-(20\d\d)\/?$/;
-const CONTENT = ["#slideshow", ".ticket-policy"];
+// `Title-DiaDiemToChuc` is the race page'"'"'s own "Địa điểm tổ chức" card (one line of venue
+// text, sometimes empty or a prose sentence); the same card links to the client-side
+// `/thong-tin-cuoc-dua/dia-diem` route that a plain fetch can'"'"'t read (see above).
+const CONTENT = ["#slideshow", ".ticket-policy", 'a[data-medium="Title-DiaDiemToChuc"]'];
 
 // A branded edition's slug prefixes the city with a sponsor name (long-chau-can-tho):
 // the banner then names the sponsor, not the city, and .ticket-policy may not exist

@@ -131,6 +131,14 @@ describe("vnexpress-marathon recipe", () => {
   });
 });
 
+describe("vnexpress-marathon recipe: venue card", () => {
+  it("reads the race page's own 'Địa điểm tổ chức' card, outside the banner and ticket table", async () => {
+    const http = fakeHttp({ "https://vm.vnexpress.net/galaxy-run-2026": fixture("vm-galaxy-run-2026.html") });
+    const snap = await vnexpressMarathonRecipe.snapshot({ url: "https://vm.vnexpress.net/galaxy-run-2026" }, ctx("vnexpress-marathon", http));
+    assert.match(snap.pages[0]!.html, /Đường Trần Bạch Đằng, phường An Khánh, TP Hồ Chí Minh/);
+  });
+});
+
 describe("irace recipe", () => {
   it("lists races on sale from the home page's cards, with their names", async () => {
     const http = fakeHttp({ "https://ticket.irace.vn/": fixture("irace-home.html") });
