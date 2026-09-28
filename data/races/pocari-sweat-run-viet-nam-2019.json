@@ -11,7 +11,7 @@
   "seriesId": "pocari-sweat-run-viet-nam",
   "organizerId": null,
   "organizer": "Pocari Sweat Run Vietnam",
-  "edition": null,
+  "edition": 1,
   "courses": [
     {
       "label": "5km",
@@ -44,7 +44,13 @@
   "links": [],
   "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "edition": {
+      "value": 1,
+      "reason": "iRace page: 2019 is the first year the run is held in Vietnam",
+      "at": "2026-09-28T16:26:10.635Z"
+    }
+  },
   "sources": [
     {
       "site": "irace",
@@ -75,5 +81,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-28T16:23:36.352Z",
-  "updatedAt": "2026-09-28T16:23:36.352Z"
+  "updatedAt": "2026-09-28T16:26:10.635Z"
 }
