@@ -49,7 +49,192 @@
     "city": "Pleiku"
   },
   "geo": null,
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 399000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 549000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 699000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "42km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 849000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 499000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 649000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 849000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 999000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 599000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 749000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 999000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "42km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1149000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 649000,
+      "from": null,
+      "to": "2024-11-17",
+      "inferred": [
+        "to"
+      ],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 799000,
+      "from": null,
+      "to": "2024-11-17",
+      "inferred": [
+        "to"
+      ],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1049000,
+      "from": null,
+      "to": "2024-11-17",
+      "inferred": [
+        "to"
+      ],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1199000,
+      "from": null,
+      "to": "2024-11-17",
+      "inferred": [
+        "to"
+      ],
+      "site": "gia-lai-city-trail"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [],
@@ -86,9 +271,119 @@
           "note": "Timve365's own event page for Gia Lai City Trail 2024 - Mùa 2 (Wayback snapshot 2024-09-05): date 17/11/2024, KIDS 2km/5/10/21/42km, venue, organizer. Its price table is JS-only (only tier ranges in text), so no per-distance prices."
         }
       }
+    },
+    {
+      "site": "gia-lai-city-trail",
+      "role": "reference",
+      "url": "https://web.archive.org/web/20240919212429/https://gialaicitytrail.com",
+      "lastCheckedAt": "2026-09-28T16:32:42.847Z",
+      "lastChangedAt": "2026-09-28T16:32:42.847Z",
+      "extracted": {
+        "facts": {
+          "types": [
+            "city_trail"
+          ],
+          "organizer": "VIETRACE365",
+          "registrationStatus": "closed",
+          "city": "Pleiku",
+          "venue": "Cổng chính Khu du lịch Biển Hồ, Đường Tôn Đức Thắng, xã Biển Hồ, Thành phố Pleiku, Gia Lai",
+          "name": "GIA LAI CITY TRAIL 2024 - GIẤC MƠ ĐẠI NGÀN",
+          "date": "2024-11-17",
+          "distances": [
+            "2km",
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Super Early Bird",
+              "price": 399000
+            },
+            {
+              "distance": "10km",
+              "tier": "Super Early Bird",
+              "price": 549000
+            },
+            {
+              "distance": "21km",
+              "tier": "Super Early Bird",
+              "price": 699000
+            },
+            {
+              "distance": "42km",
+              "tier": "Super Early Bird",
+              "price": 849000
+            },
+            {
+              "distance": "5km",
+              "tier": "Early Bird",
+              "price": 499000
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "price": 649000
+            },
+            {
+              "distance": "21km",
+              "tier": "Early Bird",
+              "price": 849000
+            },
+            {
+              "distance": "42km",
+              "tier": "Early Bird",
+              "price": 999000
+            },
+            {
+              "distance": "5km",
+              "tier": "Regular",
+              "price": 599000
+            },
+            {
+              "distance": "10km",
+              "tier": "Regular",
+              "price": 749000
+            },
+            {
+              "distance": "21km",
+              "tier": "Regular",
+              "price": 999000
+            },
+            {
+              "distance": "42km",
+              "tier": "Regular",
+              "price": 1149000
+            },
+            {
+              "distance": "5km",
+              "tier": "Late",
+              "price": 649000
+            },
+            {
+              "distance": "10km",
+              "tier": "Late",
+              "price": 799000
+            },
+            {
+              "distance": "21km",
+              "tier": "Late",
+              "price": 1049000
+            },
+            {
+              "distance": "42km",
+              "tier": "Late",
+              "price": 1199000
+            }
+          ],
+          "note": "Organizer own site (Wayback 2024-09-19): per-distance basic ticket prices for four tiers; states Mùa 2 (Mùa 1 was 2023) and KIDS 2km. Tier dates not shown."
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:30:06.182Z",
-  "updatedAt": "2026-09-28T16:30:06.182Z"
+  "updatedAt": "2026-09-28T16:32:42.847Z"
 }
