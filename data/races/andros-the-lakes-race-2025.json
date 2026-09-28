@@ -12,7 +12,44 @@
   "organizerId": "the-lakes-race",
   "organizer": "Athlete Trotter",
   "edition": 7,
-  "courses": [],
+  "courses": [
+    {
+      "label": "600m",
+      "meters": 600,
+      "type": "city_trail",
+      "elevationGain": null
+    },
+    {
+      "label": "1.8km",
+      "meters": 1800,
+      "type": "city_trail",
+      "elevationGain": null
+    },
+    {
+      "label": "2.2km",
+      "meters": 2200,
+      "type": "city_trail",
+      "elevationGain": null
+    },
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "city_trail",
+      "elevationGain": null
+    },
+    {
+      "label": "15km",
+      "meters": 15000,
+      "type": "city_trail",
+      "elevationGain": null
+    },
+    {
+      "label": "25km",
+      "meters": 25000,
+      "type": "city_trail",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Hồ Đá - Bình Dương",
     "city": null
@@ -158,6 +195,48 @@
       ],
       "reason": "Andros Lakes Race: user says every edition is city trail",
       "at": "2026-09-28T16:03:06.296Z"
+    },
+    "courses": {
+      "value": [
+        {
+          "label": "600m",
+          "meters": 600,
+          "type": "city_trail",
+          "elevationGain": null
+        },
+        {
+          "label": "1.8km",
+          "meters": 1800,
+          "type": "city_trail",
+          "elevationGain": null
+        },
+        {
+          "label": "2.2km",
+          "meters": 2200,
+          "type": "city_trail",
+          "elevationGain": null
+        },
+        {
+          "label": "5km",
+          "meters": 5000,
+          "type": "city_trail",
+          "elevationGain": null
+        },
+        {
+          "label": "15km",
+          "meters": 15000,
+          "type": "city_trail",
+          "elevationGain": null
+        },
+        {
+          "label": "25km",
+          "meters": 25000,
+          "type": "city_trail",
+          "elevationGain": null
+        }
+      ],
+      "reason": "Distances from CCI France Vietnam event page (children 600m/1.8km/2.2km; all ages 5/15/25km), same on FV Hospital recap",
+      "at": "2026-09-28T16:03:42.844Z"
     }
   },
   "sources": [
@@ -229,5 +308,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T16:03:06.296Z"
+  "updatedAt": "2026-09-28T16:03:42.844Z"
 }
