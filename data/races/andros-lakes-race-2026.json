@@ -6,7 +6,7 @@
     "other"
   ],
   "date": "2026-04-18",
-  "endDate": null,
+  "endDate": "2026-04-19",
   "seriesId": "andros-the-lakes-race",
   "organizerId": "the-lakes-race",
   "organizer": "THE LAKES RACE",
@@ -302,6 +302,7 @@
     }
   ],
   "links": [],
+  "participants": null,
   "flags": [
     "sources disagree on race day: irace 2026-04-18, actiup 2026-04-19"
   ],
@@ -448,6 +449,11 @@
       ],
       "reason": "irace.vn price table image (ticket-fees.webp) on the source page, checked directly against the image",
       "at": "2026-09-27T03:01:57.285Z"
+    },
+    "endDate": {
+      "value": "2026-04-19",
+      "reason": "User-confirmed: event runs 18-19/04/2026 (irace says 04-18, actiup 04-19)",
+      "at": "2026-09-28T13:27:36.050Z"
     }
   },
   "sources": [
@@ -503,5 +509,5 @@
   ],
   "confidence": "conflicting",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T05:58:42.803Z"
+  "updatedAt": "2026-09-28T13:27:36.050Z"
 }
