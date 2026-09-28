@@ -43,7 +43,280 @@
     "city": "Pleiku"
   },
   "geo": null,
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 400000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 500000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 650000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 800000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 480000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 600000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 780000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "42km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 960000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 600000,
+      "from": null,
+      "to": "2023-11-19",
+      "inferred": [
+        "to"
+      ],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 720000,
+      "from": null,
+      "to": "2023-11-19",
+      "inferred": [
+        "to"
+      ],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 960000,
+      "from": null,
+      "to": "2023-11-19",
+      "inferred": [
+        "to"
+      ],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1150000,
+      "from": null,
+      "to": "2023-11-19",
+      "inferred": [
+        "to"
+      ],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "5km",
+      "tier": "Combo PRO (basic + 1 trail pole) Early Bird",
+      "kind": "group",
+      "audience": null,
+      "price": 650000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "10km",
+      "tier": "Combo PRO (basic + 1 trail pole) Early Bird",
+      "kind": "group",
+      "audience": null,
+      "price": 750000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "21km",
+      "tier": "Combo PRO (basic + 1 trail pole) Early Bird",
+      "kind": "group",
+      "audience": null,
+      "price": 900000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "42km",
+      "tier": "Combo PRO (basic + 1 trail pole) Early Bird",
+      "kind": "group",
+      "audience": null,
+      "price": 1050000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "5km",
+      "tier": "Combo PRO (basic + 1 trail pole) Regular",
+      "kind": "group",
+      "audience": null,
+      "price": 730000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "10km",
+      "tier": "Combo PRO (basic + 1 trail pole) Regular",
+      "kind": "group",
+      "audience": null,
+      "price": 850000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "21km",
+      "tier": "Combo PRO (basic + 1 trail pole) Regular",
+      "kind": "group",
+      "audience": null,
+      "price": 1030000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "42km",
+      "tier": "Combo PRO (basic + 1 trail pole) Regular",
+      "kind": "group",
+      "audience": null,
+      "price": 1210000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "5km",
+      "tier": "Combo PRO (basic + 1 trail pole) Late",
+      "kind": "group",
+      "audience": null,
+      "price": 850000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "10km",
+      "tier": "Combo PRO (basic + 1 trail pole) Late",
+      "kind": "group",
+      "audience": null,
+      "price": 970000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "21km",
+      "tier": "Combo PRO (basic + 1 trail pole) Late",
+      "kind": "group",
+      "audience": null,
+      "price": 1210000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    },
+    {
+      "distance": "42km",
+      "tier": "Combo PRO (basic + 1 trail pole) Late",
+      "kind": "group",
+      "audience": null,
+      "price": 1400000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "gia-lai-city-trail"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [],
@@ -79,9 +352,158 @@
           "note": "Timve365's own event page for the first Gia Lai City Trail (Wayback snapshot 2023-10-04, live page no longer renders): date 19/11/2023, 5/10/21/42km, venue, organizer. Its price table is JS-only, so no per-distance prices."
         }
       }
+    },
+    {
+      "site": "gia-lai-city-trail",
+      "role": "reference",
+      "url": "https://web.archive.org/web/20231130105811/https://gialaicitytrail.com",
+      "lastCheckedAt": "2026-09-28T16:32:08.077Z",
+      "lastChangedAt": "2026-09-28T16:32:08.077Z",
+      "extracted": {
+        "facts": {
+          "types": [
+            "city_trail"
+          ],
+          "organizer": "VIETRACE365",
+          "registrationStatus": "closed",
+          "city": "Pleiku",
+          "venue": "Cổng chính Khu du lịch Biển Hồ, Đường Tôn Đức Thắng, xã Biển Hồ, Thành phố Pleiku, Gia Lai",
+          "name": "GIA LAI CITY TRAIL 2023 – GIẤC MƠ ĐẠI NGÀN",
+          "date": "2023-11-19",
+          "distances": [
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Early Bird",
+              "price": 400000
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "price": 500000
+            },
+            {
+              "distance": "21km",
+              "tier": "Early Bird",
+              "price": 650000
+            },
+            {
+              "distance": "42km",
+              "tier": "Early Bird",
+              "price": 800000
+            },
+            {
+              "distance": "5km",
+              "tier": "Regular",
+              "price": 480000
+            },
+            {
+              "distance": "10km",
+              "tier": "Regular",
+              "price": 600000
+            },
+            {
+              "distance": "21km",
+              "tier": "Regular",
+              "price": 780000
+            },
+            {
+              "distance": "42km",
+              "tier": "Regular",
+              "price": 960000
+            },
+            {
+              "distance": "5km",
+              "tier": "Late",
+              "price": 600000
+            },
+            {
+              "distance": "10km",
+              "tier": "Late",
+              "price": 720000
+            },
+            {
+              "distance": "21km",
+              "tier": "Late",
+              "price": 960000
+            },
+            {
+              "distance": "42km",
+              "tier": "Late",
+              "price": 1150000
+            },
+            {
+              "distance": "5km",
+              "tier": "Combo PRO (basic + 1 trail pole) Early Bird",
+              "price": 650000
+            },
+            {
+              "distance": "10km",
+              "tier": "Combo PRO (basic + 1 trail pole) Early Bird",
+              "price": 750000
+            },
+            {
+              "distance": "21km",
+              "tier": "Combo PRO (basic + 1 trail pole) Early Bird",
+              "price": 900000
+            },
+            {
+              "distance": "42km",
+              "tier": "Combo PRO (basic + 1 trail pole) Early Bird",
+              "price": 1050000
+            },
+            {
+              "distance": "5km",
+              "tier": "Combo PRO (basic + 1 trail pole) Regular",
+              "price": 730000
+            },
+            {
+              "distance": "10km",
+              "tier": "Combo PRO (basic + 1 trail pole) Regular",
+              "price": 850000
+            },
+            {
+              "distance": "21km",
+              "tier": "Combo PRO (basic + 1 trail pole) Regular",
+              "price": 1030000
+            },
+            {
+              "distance": "42km",
+              "tier": "Combo PRO (basic + 1 trail pole) Regular",
+              "price": 1210000
+            },
+            {
+              "distance": "5km",
+              "tier": "Combo PRO (basic + 1 trail pole) Late",
+              "price": 850000
+            },
+            {
+              "distance": "10km",
+              "tier": "Combo PRO (basic + 1 trail pole) Late",
+              "price": 970000
+            },
+            {
+              "distance": "21km",
+              "tier": "Combo PRO (basic + 1 trail pole) Late",
+              "price": 1210000
+            },
+            {
+              "distance": "42km",
+              "tier": "Combo PRO (basic + 1 trail pole) Late",
+              "price": 1400000
+            }
+          ],
+          "note": "Organizer own site (Wayback 2023-11-30): per-distance prices for basic and PRO (with trail pole) packages; states first City Trail of the Central Highlands. Tier dates not shown."
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:29:34.804Z",
-  "updatedAt": "2026-09-28T16:29:34.804Z"
+  "updatedAt": "2026-09-28T16:32:08.077Z"
 }
