@@ -1,6 +1,6 @@
 # Plan 017: participants: a fast backfill lane and a derived confidence
 
-Status: **approved 2026-09-28. Stages A, B and C built 2026-09-28. Batch 1 stored 6 counts (Techcombank 2017, 2018, 2019, 2022; Ha Long 2019, 2020); Ha Long 2015-2018 and the 2015 half have no findable count. Not yet: API deploy (`db:migrate:remote`, `deploy`), the web/MCP follow-up, and running the first backfill batches.**
+Status: **approved 2026-09-28. Stages A, B and C built 2026-09-28. Batch 1 stored 6 counts (Techcombank 2017, 2018, 2019, 2022; Ha Long 2019, 2020); Ha Long 2015-2018 and the 2015 half have no findable count. Deployed 2026-09-28: openrace-api (migration 0012, resync run), openrace-mcp, openrace-web. Backfill continues in batches.**
 
 ## Roadmap fit
 
