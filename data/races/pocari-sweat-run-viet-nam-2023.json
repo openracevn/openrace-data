@@ -175,7 +175,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
-  "participants": null,
+  "participants": {
+    "count": 8000,
+    "sourceUrl": "https://vnexpress.net/hon-8-000-vdv-tham-du-giai-pocari-sweat-run-viet-nam-2023-4679560.html",
+    "quote": "Hơn 8.000 VĐV tham dự giải Pocari Sweat Run Việt Nam 2023",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "edition": {
@@ -316,9 +321,28 @@
           "note": "Organizer's own page (Wayback, 23/09/2023, in sale window): 3-phase price table incl. 2-ticket kids package"
         }
       }
+    },
+    {
+      "site": "vnexpress-net",
+      "role": "reference",
+      "url": "https://vnexpress.net/hon-8-000-vdv-tham-du-giai-pocari-sweat-run-viet-nam-2023-4679560.html",
+      "lastCheckedAt": "2026-09-28T16:41:23.541Z",
+      "lastChangedAt": "2026-09-28T16:41:23.541Z",
+      "extracted": {
+        "facts": {
+          "name": "Pocari Sweat Run Việt Nam 2023",
+          "date": "2023-11-19",
+          "participants": {
+            "count": 8000,
+            "sourceUrl": "https://vnexpress.net/hon-8-000-vdv-tham-du-giai-pocari-sweat-run-viet-nam-2023-4679560.html",
+            "quote": "Hơn 8.000 VĐV tham dự giải Pocari Sweat Run Việt Nam 2023"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:22:34.726Z",
-  "updatedAt": "2026-09-28T16:35:25.265Z"
+  "updatedAt": "2026-09-28T16:41:23.541Z"
 }
