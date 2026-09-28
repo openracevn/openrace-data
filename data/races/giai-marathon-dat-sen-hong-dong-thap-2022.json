@@ -7,6 +7,7 @@
   ],
   "date": "2022-11-26",
   "endDate": "2022-11-27",
+  "mainDate": null,
   "seriesId": "vpbank-dat-sen-hong-music-marathon",
   "organizerId": null,
   "organizer": "Tỉnh Ủy – Ủy ban Nhân dân tỉnh Đồng Tháp (chỉ đạo); Sở Văn hoá, Thể thao và Du lịch tỉnh Đồng Tháp, Công ty Cổ phần Truyền thông Nexus và Công ty Cổ phần Văn hóa Tổng hợp Bến Thành (tổ chức)",
@@ -491,6 +492,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": {
+    "count": 3100,
+    "sourceUrl": "https://nhandan.vn/giai-marathon-dat-sen-hong-the-thao-vi-cong-dong-post727043.html",
+    "quote": "Giải Marathon Đất sen hồng Đồng Tháp 2022, là sự kiện thể thao thu hút hơn 3.100 vận động viên trong nước và quốc tế tham dự",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "seriesId": {
@@ -769,9 +776,28 @@
           "note": "Báo Cần Thơ Online article explicitly states 'Giải Marathon Đất Sen Hồng lần thứ I' — confirms 2022 is the series' first edition."
         }
       }
+    },
+    {
+      "site": "nhandan-vn",
+      "role": "reference",
+      "url": "https://nhandan.vn/giai-marathon-dat-sen-hong-the-thao-vi-cong-dong-post727043.html",
+      "lastCheckedAt": "2026-09-28T16:13:49.643Z",
+      "lastChangedAt": "2026-09-28T16:13:49.643Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Marathon Đất Sen Hồng - Đồng Tháp 2022",
+          "date": "2022-11-26",
+          "participants": {
+            "count": 3100,
+            "sourceUrl": "https://nhandan.vn/giai-marathon-dat-sen-hong-the-thao-vi-cong-dong-post727043.html",
+            "quote": "Giải Marathon Đất sen hồng Đồng Tháp 2022, là sự kiện thể thao thu hút hơn 3.100 vận động viên trong nước và quốc tế tham dự"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-27T02:23:28.320Z",
-  "updatedAt": "2026-09-28T05:58:42.803Z"
+  "updatedAt": "2026-09-28T16:13:49.643Z"
 }
