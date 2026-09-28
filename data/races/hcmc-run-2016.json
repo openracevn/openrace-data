@@ -8,7 +8,7 @@
   "date": "2016-01-24",
   "endDate": null,
   "mainDate": null,
-  "seriesId": "hcmc-run",
+  "seriesId": "hcmc-marathon",
   "organizerId": null,
   "organizer": "Pulse Active",
   "edition": null,
@@ -44,7 +44,13 @@
   "links": [],
   "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "seriesId": {
+      "value": "hcmc-marathon",
+      "reason": "Same race as the HCMC Marathon series (Pulse Active, Ho Chi Minh City; earlier called HCMC Run / Salonpas HCMC Marathon after its title sponsor); the name-based grouping had put it in its own series.",
+      "at": "2026-09-28T16:43:45.247Z"
+    }
+  },
   "sources": [
     {
       "site": "kenh14-vn",
@@ -74,5 +80,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-28T16:41:22.331Z",
-  "updatedAt": "2026-09-28T16:41:22.331Z"
+  "updatedAt": "2026-09-28T16:43:45.247Z"
 }
