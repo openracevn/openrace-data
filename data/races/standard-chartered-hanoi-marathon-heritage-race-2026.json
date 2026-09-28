@@ -7,7 +7,7 @@
   ],
   "date": "2026-11-06",
   "endDate": "2026-11-08",
-  "mainDate": null,
+  "mainDate": "2026-11-08",
   "seriesId": "standard-chartered-hanoi-marathon-heritage-race",
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "DHA Vietnam | Ban tổ chức sự kiện",
@@ -277,6 +277,11 @@
       "value": "2026-11-08",
       "reason": "Official site https://hanoi-marathon.com/ states the race runs 6-8/11/2026 with the main race day on 8/11/2026 (actiup gives 7-8 Nov, irace 8 Nov)",
       "at": "2026-09-28T13:57:50.982Z"
+    },
+    "mainDate": {
+      "value": "2026-11-08",
+      "reason": "Official site https://hanoi-marathon.com/ states the race runs 6-8/11/2026 with the main race day on 8/11/2026 (actiup gives 7-8 Nov, irace 8 Nov)",
+      "at": "2026-09-28T13:57:59.855Z"
     }
   },
   "sources": [
@@ -529,5 +534,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T13:57:50.982Z"
+  "updatedAt": "2026-09-28T13:57:59.855Z"
 }
