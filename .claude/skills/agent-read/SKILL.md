@@ -98,6 +98,7 @@ For a dense or very wide table, crop to the table and look again at full size. S
 - `edition`: the edition number if the page states it ("lần thứ 5", "5th edition", "mùa 5"). Omit otherwise; never count editions yourself.
 - `mapsUrl`: a Google Maps link or coordinates for the start/finish venue, exactly as on the page. Omit if none.
 - Leave out any field the page doesn't state. `facts` in `task.json` already cover what the site states in structured form. Name as written, never translated. Dates as `YYYY-MM-DD`.
+- `participants`: `{count, approx, quote, sourceUrl}` only when the page states how many people took part (a recap or results post). Not finishers-only, not capacity. `sourceUrl` is the page's own URL. Omit for upcoming races and for anything not stated.
 - `prices`: only amounts written in the page text. If prices are only in images, `[]`.
 - **`ticket.irace.vn`/`irace.vn`'s `prices` is already pre-filled** from the page's own `<table>` (not typed by hand): check every row against `page-<n>.html`'s table before touching anything else, exactly like an image you looked at — a parser can misjudge a header or a merged cell same as a person can misread a photo. Then add the rest of the page's fields (`pageKind`, `name`, `date`, `types`, ...) around it as usual.
 

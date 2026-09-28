@@ -181,6 +181,19 @@ export const CourseSchema = z.object({
   elevationGain: z.number().int().nonnegative().max(20_000).nullable(),
 });
 
+/**
+ * How many people took part in this edition, as the organizer or press stated it
+ * (not finishers-only, not capacity). Aggregate only. `sourceUrl` is required: a
+ * number with no link is rejected, never stored. `approx` marks "~2000" / "over 5,000".
+ */
+export const ParticipantsSchema = z.object({
+  count: z.number().int().min(1),
+  approx: z.boolean(),
+  sourceUrl: z.url(),
+  // The stated phrasing, verbatim, in the source's language.
+  quote: z.string().min(1).max(200).optional(),
+});
+
 export const GeoSchema = z.object({
   lat: z.number().min(8).max(24),
   lng: z.number().min(102).max(110),
@@ -237,6 +250,7 @@ export const CANONICAL_FIELDS = [
   "registrationStatus",
   "registrations",
   "links",
+  "participants",
 ] as const;
 
 export const SourceSchema = z.object({
@@ -291,6 +305,8 @@ export const RaceSchema = z
     registrationStatus: z.enum(REGISTRATION_STATUSES).nullable(),
     registrations: z.array(RegistrationSchema),
     links: z.array(LinkSchema),
+    // `null` = unknown (recaps come after the event), never 0.
+    participants: ParticipantsSchema.nullable(),
     // Things someone should look at (sources disagree, no prices close to race day, ...).
     // Derived on every write; shown on Discord.
     flags: z.array(z.string().min(1)),
@@ -318,7 +334,7 @@ export function upgradeRace(json: unknown): unknown {
     delete upgraded.distances;
     changed = true;
   }
-  for (const [field, value] of [["courses", []], ["geo", null], ["edition", null]] as const) {
+  for (const [field, value] of [["courses", []], ["geo", null], ["edition", null], ["participants", null]] as const) {
     if (!Object.hasOwn(json, field)) {
       upgraded[field] = value;
       changed = true;

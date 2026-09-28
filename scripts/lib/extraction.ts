@@ -101,6 +101,17 @@ export const PAGE_EXTRACTION = {
         enum: [...REGISTRATION_STATUSES],
         description: "open = can register; closing_soon = ends soon or few slots left; sold_out = all slots taken (hết vé); closed = registration ended (the race happened or its window passed); cancelled = the race itself was called off or postponed with no new date, not just registration ending (hủy, tạm hoãn với no rescheduled date).",
       },
+      participants: {
+        type: "object",
+        description:
+          "How many people took part in this edition, only if the page states a number (recap or results announcement). Not finishers-only, not capacity or slots. Omit for an upcoming race.",
+        properties: {
+          count: { type: "number", description: "The stated number of participants." },
+          approx: { type: "boolean", description: "true for \"~2000\", \"over 5,000\", \"khoảng 3.000\"; false for a precise figure." },
+          quote: { type: "string", description: "The stated phrasing, verbatim." },
+        },
+        required: ["count", "approx"],
+      },
       prices: PRICES_PROPERTY,
     },
     required: ["pageKind"],
@@ -173,6 +184,8 @@ export type SourceFacts = {
   currency: string;
   registrationStatus: RegistrationStatus | null;
   prices: Tier[];
+  // `sourceUrl` null = the page this was read from (reconcile fills it in).
+  participants: { count: number; approx: boolean; sourceUrl: string | null; quote: string | null } | null;
 };
 
 export type NormalizeResult = { ok: true; facts: SourceFacts } | { ok: false; reason: string };
@@ -254,7 +267,21 @@ export function normalizeExtraction(raw: SourceExtraction | Record<string, unkno
       currency: first((l) => str(l.currency)?.toUpperCase().slice(0, 3) ?? null) ?? "VND",
       registrationStatus: REGISTRATION_STATUSES.includes(status as RegistrationStatus) ? (status as RegistrationStatus) : null,
       prices,
+      participants: first((l) => normalizeParticipants(l.participants)),
     },
+  };
+}
+
+function normalizeParticipants(v: unknown): SourceFacts["participants"] {
+  if (!isRecord(v)) return null;
+  const { count, approx, sourceUrl, quote } = v;
+  if (typeof count !== "number" || !Number.isInteger(count) || count < 1) return null;
+  const url = str(sourceUrl);
+  return {
+    count,
+    approx: approx === true,
+    sourceUrl: url !== null && /^https?:\/\//.test(url) ? url : null,
+    quote: str(quote)?.slice(0, 200) ?? null,
   };
 }
 

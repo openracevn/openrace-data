@@ -32,11 +32,19 @@ const flagged = races.filter((r) => r.flags.length > 0 || r.confidence === "conf
 
 const byYearGap = seriesYearGaps(races);
 
+// Backfill worklist: past editions with no stated participant count, biggest series first.
+const seriesSize = new Map<string, number>();
+for (const r of races) if (r.seriesId) seriesSize.set(r.seriesId, (seriesSize.get(r.seriesId) ?? 0) + 1);
+const noParticipantsPast = races
+  .filter((r) => r.date < today && !r.participants)
+  .sort((a, b) => (seriesSize.get(b.seriesId ?? "") ?? 0) - (seriesSize.get(a.seriesId ?? "") ?? 0) || a.date.localeCompare(b.date));
+
 report("No usable location (city and venue both null)", noLocation, (r) => r.slug);
 report("No organizerId", noOrganizer, (r) => r.slug);
 report(`No prices, upcoming (date >= ${today})`, noPricesUpcoming, (r) => `${r.slug} (${r.date})`);
 report("No prices, past (informational — may be free or unpriced)", noPricesPast, (r) => `${r.slug} (${r.date})`);
 report("Flagged or conflicting confidence", flagged, (r) => `${r.slug} (confidence: ${r.confidence}, flags: ${r.flags.join("; ") || "none"})`);
+report("Past races with no participant count (backfill worklist, biggest series first; a report, not a failure)", noParticipantsPast, (r) => `${r.slug} (${r.date}${r.seriesId ? `, series ${r.seriesId}: ${seriesSize.get(r.seriesId)} editions` : ""})`);
 
 console.log(`\nSeries with a year gap: ${byYearGap.length}`);
 for (const { seriesId, years } of byYearGap.slice(0, 10)) {

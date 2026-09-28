@@ -117,6 +117,7 @@ export function reconcile(sources: readonly RaceSource[], config: SitesConfig): 
       first((f) => f.registrationStatus),
     registrations,
     links,
+    participants: pickParticipants(usable),
   };
 
   const flags: string[] = [...fxFlags];
@@ -140,8 +141,39 @@ export function reconcile(sources: readonly RaceSource[], config: SitesConfig): 
     }
   }
 
+  const stated = usable.flatMap(({ facts }) => (facts.participants ? [facts.participants.count] : []));
+  if (stated.length > 1 && Math.max(...stated) > Math.min(...stated) * (1 + PARTICIPANTS_CONFLICT)) {
+    flags.push(`participants-conflict: sources state ${[...new Set(stated)].join(", ")} participants`);
+  }
+
   const confidence: Race["confidence"] = usable.length === 1 ? "single-sourced" : dates.size > 0 && new Set(dates.values()).size === 1 ? "multi-sourced" : "conflicting";
   return { fields, confidence, flags };
+}
+
+// Sources whose stated counts differ by more than this share get a flag.
+const PARTICIPANTS_CONFLICT = 0.25;
+
+/**
+ * The stated participant count to serve: official source first, then the most precise
+ * (not approx), then the most recent source read. A source that states a count without a
+ * link is linked to its own page. Never a guess: no source states one, no count.
+ */
+export function pickParticipants(usable: readonly { source: RaceSource; facts: SourceFacts }[]): CanonicalRace["participants"] {
+  const stated = usable.flatMap(({ source, facts }) => (facts.participants ? [{ source, p: facts.participants }] : []));
+  stated.sort(
+    (a, b) =>
+      Number(a.source.role !== "official") - Number(b.source.role !== "official") ||
+      Number(a.p.approx) - Number(b.p.approx) ||
+      b.source.lastCheckedAt.localeCompare(a.source.lastCheckedAt),
+  );
+  const best = stated[0];
+  if (!best) return null;
+  return {
+    count: best.p.count,
+    approx: best.p.approx,
+    sourceUrl: best.p.sourceUrl ?? best.source.url,
+    ...(best.p.quote ? { quote: best.p.quote } : {}),
+  };
 }
 
 /**

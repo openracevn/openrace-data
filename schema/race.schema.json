@@ -597,6 +597,41 @@
         "additionalProperties": false
       }
     },
+    "participants": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "count": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "approx": {
+              "type": "boolean"
+            },
+            "sourceUrl": {
+              "type": "string",
+              "format": "uri"
+            },
+            "quote": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200
+            }
+          },
+          "required": [
+            "count",
+            "approx",
+            "sourceUrl"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
     "flags": {
       "type": "array",
       "items": {
@@ -624,7 +659,8 @@
           "currency",
           "registrationStatus",
           "registrations",
-          "links"
+          "links",
+          "participants"
         ]
       },
       "additionalProperties": {
@@ -739,6 +775,7 @@
     "registrationStatus",
     "registrations",
     "links",
+    "participants",
     "flags",
     "overrides",
     "sources",

@@ -36,6 +36,10 @@ A `Snapshot` has:
 4. Do one paid check: `npm run check -- --site <key> --dry-run --preview /tmp/x`. Compare every price with the page or image **by eye**.
 5. Save the source as `test/fixtures/read-<race>.json` and add its checked prices to `test/answers.test.ts`.
 
+## Participant counts
+
+Recipes generally can't read `participants`: it lives in prose on recap pages, not in the site's structured data. It comes from `agent-read` (`facts.participants` in `read.json`) or a hand override (`check-race` skill).
+
 ## Lessons from the first sites (2026-09-24)
 
 - **Text often mentions fees that aren't entry fees** (photos, VIP upgrades, transfers, change deadlines). The model reads them as tiers, so a price table read from an image wins over prices taken from text, and images with unmistakable names are always read.

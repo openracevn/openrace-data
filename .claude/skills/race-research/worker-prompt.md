@@ -35,3 +35,5 @@ Rules (same as `agent-read`'s reading rules — read `.claude/skills/agent-read/
 - If a file is not actually about this race (wrong race, an ad, a login/error page, or too little text to extract anything), write `{ "file": "...", "skip": "<why>" }` instead of facts.
 
 When every file is done, end with one line per file: `<file>: extracted` or `<file>: skip, <why>`.
+
+Also, when a page states how many people took part in a past edition (recap, results announcement), include `participants: {"count": N, "approx": true|false, "quote": "<verbatim>", "sourceUrl": "<that page's URL>"}`. `approx` is true for "~2000" or "over 5,000". Not finishers-only, not capacity. Never without a URL; omit if unstated.
