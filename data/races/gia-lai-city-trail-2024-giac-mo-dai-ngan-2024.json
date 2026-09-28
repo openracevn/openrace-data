@@ -11,7 +11,7 @@
   "seriesId": "gia-lai-city-trail-giac-mo-dai-ngan",
   "organizerId": null,
   "organizer": "VIETRACE365",
-  "edition": null,
+  "edition": 2,
   "courses": [
     {
       "label": "2km",
@@ -241,7 +241,13 @@
   "links": [],
   "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "edition": {
+      "value": 2,
+      "reason": "Organizer site and timve365 say Mùa 2; Báo Gia Lai, Pháp luật VN and gialai.dms.gov.vn say the second year",
+      "at": "2026-09-28T16:33:49.514Z"
+    }
+  },
   "sources": [
     {
       "site": "timve365",
@@ -385,5 +391,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:30:06.182Z",
-  "updatedAt": "2026-09-28T16:32:42.847Z"
+  "updatedAt": "2026-09-28T16:33:49.514Z"
 }
