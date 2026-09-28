@@ -7,6 +7,7 @@
   ],
   "date": "2025-06-01",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "andros-the-lakes-race",
   "organizerId": "the-lakes-race",
   "organizer": "Athlete Trotter",
@@ -133,6 +134,12 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": {
+    "count": 2500,
+    "sourceUrl": "https://www.fvhospital.com/tin-tuc/benh-vien-fv-phong-kham-acc-dong-hanh-cung-andros-lakes-race-2025-chay-vi-suc-khoe-va-lan-toa-yeu-thuong/",
+    "quote": "quy tụ hơn 2.500 vận động viên cùng 500 trẻ mồ côi",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "edition": {
@@ -192,9 +199,28 @@
           "note": "cleanup: retag off openrace to the real host."
         }
       }
+    },
+    {
+      "site": "fvhospital-com",
+      "role": "reference",
+      "url": "https://fvhospital.com/tin-tuc/benh-vien-fv-phong-kham-acc-dong-hanh-cung-andros-lakes-race-2025-chay-vi-suc-khoe-va-lan-toa-yeu-thuong",
+      "lastCheckedAt": "2026-09-28T16:00:52.089Z",
+      "lastChangedAt": "2026-09-28T16:00:52.089Z",
+      "extracted": {
+        "facts": {
+          "name": "Andros Lakes Race 2025",
+          "date": "2025-06-01",
+          "participants": {
+            "count": 2500,
+            "sourceUrl": "https://www.fvhospital.com/tin-tuc/benh-vien-fv-phong-kham-acc-dong-hanh-cung-andros-lakes-race-2025-chay-vi-suc-khoe-va-lan-toa-yeu-thuong/",
+            "quote": "quy tụ hơn 2.500 vận động viên cùng 500 trẻ mồ côi"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T08:02:31.648Z"
+  "updatedAt": "2026-09-28T16:00:52.089Z"
 }
