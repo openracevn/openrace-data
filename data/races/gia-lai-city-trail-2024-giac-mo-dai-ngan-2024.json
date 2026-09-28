@@ -239,7 +239,12 @@
   "registrationStatus": "closed",
   "registrations": [],
   "links": [],
-  "participants": null,
+  "participants": {
+    "count": 7000,
+    "sourceUrl": "https://baophapluat.vn/soi-dong-giai-chay-gia-lai-city-trail-2024-giac-mo-dai-ngan-post532068.html",
+    "quote": "gần 7.000 vận động viên đã tham gia giải chạy Gia Lai City Trail 2024",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "edition": {
@@ -387,9 +392,28 @@
           "note": "Organizer own site (Wayback 2024-09-19): per-distance basic ticket prices for four tiers; states Mùa 2 (Mùa 1 was 2023) and KIDS 2km. Tier dates not shown."
         }
       }
+    },
+    {
+      "site": "baophapluat-vn",
+      "role": "reference",
+      "url": "https://baophapluat.vn/soi-dong-giai-chay-gia-lai-city-trail-2024-giac-mo-dai-ngan-post532068.html",
+      "lastCheckedAt": "2026-09-28T16:39:31.047Z",
+      "lastChangedAt": "2026-09-28T16:39:31.047Z",
+      "extracted": {
+        "facts": {
+          "name": "GIA LAI CITY TRAIL 2024 - GIẤC MƠ ĐẠI NGÀN",
+          "date": "2024-11-17",
+          "participants": {
+            "count": 7000,
+            "sourceUrl": "https://baophapluat.vn/soi-dong-giai-chay-gia-lai-city-trail-2024-giac-mo-dai-ngan-post532068.html",
+            "quote": "gần 7.000 vận động viên đã tham gia giải chạy Gia Lai City Trail 2024"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:30:06.182Z",
-  "updatedAt": "2026-09-28T16:33:49.514Z"
+  "updatedAt": "2026-09-28T16:39:31.047Z"
 }
