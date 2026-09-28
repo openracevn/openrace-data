@@ -1,0 +1,79 @@
+{
+  "id": "e87ab76a-a9cf-49a4-8402-f29fae9f8753",
+  "slug": "pocari-sweat-run-viet-nam-2019",
+  "name": "Pocari Sweat Run Việt Nam 2019",
+  "types": [
+    "road_run"
+  ],
+  "date": "2019-11-17",
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": "pocari-sweat-run-viet-nam",
+  "organizerId": null,
+  "organizer": "Pocari Sweat Run Vietnam",
+  "edition": null,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Khu đô thị Sala",
+    "city": "TP. Hồ Chí Minh"
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "irace",
+      "role": "reference",
+      "url": "http://web.archive.org/web/20260121121555/https://app.irace.vn/pocari-sweat-run",
+      "lastCheckedAt": "2026-09-28T16:23:36.352Z",
+      "lastChangedAt": "2026-09-28T16:23:36.352Z",
+      "extracted": {
+        "facts": {
+          "name": "Pocari Sweat Run Việt Nam 2019",
+          "date": "2019-11-17",
+          "organizer": "Pocari Sweat Run Vietnam",
+          "types": [
+            "road_run"
+          ],
+          "venue": "Khu đô thị Sala",
+          "city": "TP. Hồ Chí Minh",
+          "distances": [
+            "5km",
+            "10km",
+            "21km"
+          ],
+          "prices": [],
+          "note": "Wayback snapshot of iRace page for the 2019 edition (live URL is a recipe site): race day 17/11/2019, registration closed 10/11/2019, 5/10/21km"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-28T16:23:36.352Z",
+  "updatedAt": "2026-09-28T16:23:36.352Z"
+}
