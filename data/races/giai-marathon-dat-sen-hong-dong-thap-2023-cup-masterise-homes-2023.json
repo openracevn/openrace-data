@@ -139,8 +139,15 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
-  "participants": null,
-  "flags": [],
+  "participants": {
+    "count": 6000,
+    "sourceUrl": "https://thanhnien.vn/gan-6000-vdv-tham-gia-giai-marathon-dat-sen-hong-dong-thap-185231015113048602.htm",
+    "quote": "Gần 6.000 VĐV tham gia giải marathon đất sen hồng Đồng Tháp",
+    "confidence": "medium"
+  },
+  "flags": [
+    "sources disagree on race day: dongthapmarathon-com 2023-10-14..2023-10-15, yeuchaybo-com 2023-10-15, thanhnien-vn 2023-10-14"
+  ],
   "overrides": {
     "seriesId": {
       "value": "vpbank-dat-sen-hong-music-marathon",
@@ -205,9 +212,28 @@
           "note": "Corroborating third-party event listing for the 2023 edition (date, venue, distances match the organizer's own site)."
         }
       }
+    },
+    {
+      "site": "thanhnien-vn",
+      "role": "reference",
+      "url": "https://thanhnien.vn/gan-6000-vdv-tham-gia-giai-marathon-dat-sen-hong-dong-thap-185231015113048602.htm",
+      "lastCheckedAt": "2026-09-28T16:12:57.979Z",
+      "lastChangedAt": "2026-09-28T16:12:57.979Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Marathon Đất Sen Hồng - Đồng Tháp 2023 Cúp Masterise Homes",
+          "date": "2023-10-14",
+          "participants": {
+            "count": 6000,
+            "sourceUrl": "https://thanhnien.vn/gan-6000-vdv-tham-gia-giai-marathon-dat-sen-hong-dong-thap-185231015113048602.htm",
+            "quote": "Gần 6.000 VĐV tham gia giải marathon đất sen hồng Đồng Tháp"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "multi-sourced",
+  "confidence": "conflicting",
   "createdAt": "2026-09-27T02:24:23.189Z",
-  "updatedAt": "2026-09-28T13:58:50.138Z"
+  "updatedAt": "2026-09-28T16:12:57.979Z"
 }
