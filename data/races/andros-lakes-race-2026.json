@@ -3,10 +3,11 @@
   "slug": "andros-lakes-race-2026",
   "name": "Andros Lakes Race (8th) - 2026",
   "types": [
-    "other"
+    "city_trail"
   ],
   "date": "2026-04-18",
   "endDate": "2026-04-19",
+  "mainDate": null,
   "seriesId": "andros-the-lakes-race",
   "organizerId": "the-lakes-race",
   "organizer": "THE LAKES RACE",
@@ -454,6 +455,13 @@
       "value": "2026-04-19",
       "reason": "User-confirmed: event runs 18-19/04/2026 (irace says 04-18, actiup 04-19)",
       "at": "2026-09-28T13:27:36.050Z"
+    },
+    "types": {
+      "value": [
+        "city_trail"
+      ],
+      "reason": "Andros Lakes Race: user says every edition is city trail",
+      "at": "2026-09-28T16:02:31.302Z"
     }
   },
   "sources": [
@@ -509,5 +517,5 @@
   ],
   "confidence": "conflicting",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T13:27:36.050Z"
+  "updatedAt": "2026-09-28T16:02:31.302Z"
 }
