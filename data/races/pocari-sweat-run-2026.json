@@ -11,7 +11,7 @@
   "seriesId": null,
   "organizerId": "pocari-sweat-run-vietnam",
   "organizer": "POCARI SWEAT RUN",
-  "edition": null,
+  "edition": 6,
   "courses": [
     {
       "label": "3km",
@@ -346,6 +346,11 @@
       "value": "2026-09-13",
       "reason": "Official site (pocarisweatrun.com.vn) and iRace: race day 13/09/2026, expo day 12/09; ActiUp's 12-13/09 range covers expo + race day",
       "at": "2026-09-28T16:25:36.637Z"
+    },
+    "edition": {
+      "value": 6,
+      "reason": "Nhân Dân recap: 'mùa giải thứ 6', first in Hà Nội",
+      "at": "2026-09-28T16:25:44.361Z"
     }
   },
   "sources": [
@@ -562,5 +567,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T16:25:36.637Z"
+  "updatedAt": "2026-09-28T16:25:44.361Z"
 }
