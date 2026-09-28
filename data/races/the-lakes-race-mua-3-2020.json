@@ -7,131 +7,28 @@
   ],
   "date": "2020-11-15",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "andros-the-lakes-race",
   "organizerId": null,
   "organizer": null,
-  "edition": 3,
-  "courses": [
-    {
-      "label": "5km",
-      "meters": 5000,
-      "type": null,
-      "elevationGain": null
-    },
-    {
-      "label": "10km",
-      "meters": 10000,
-      "type": null,
-      "elevationGain": null
-    },
-    {
-      "label": "15km",
-      "meters": 15000,
-      "type": null,
-      "elevationGain": null
-    }
-  ],
+  "edition": null,
+  "courses": [],
   "location": {
-    "venue": "Hồ Đá – Làng Đại học Thủ Đức",
-    "city": "Hồ Chí Minh"
+    "venue": null,
+    "city": null
   },
-  "geo": {
-    "lat": 10.7737261,
-    "lng": 106.7166008,
-    "source": "nominatim",
-    "precision": "province",
-    "current": {
-      "province": "79",
-      "ward": null
-    },
-    "legacy": null,
-    "access": "road",
-    "fromPlaces": {
-      "hcmc": {
-        "km": 2,
-        "minutes": null,
-        "method": "straight_line",
-        "near": true
-      },
-      "ha-noi": {
-        "km": 1144,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "da-nang": {
-        "km": 610.2,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "nha-trang": {
-        "km": 315.5,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "da-lat": {
-        "km": 228.5,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "can-tho": {
-        "km": 130.7,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "hai-phong": {
-        "km": 1119.9,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "hue": {
-        "km": 639.7,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "vung-tau": {
-        "km": 62.3,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "quy-nhon": {
-        "km": 430.9,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "buon-ma-thuot": {
-        "km": 254.9,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "sa-pa": {
-        "km": 1321.5,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "ha-long": {
-        "km": 1132.4,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      }
-    }
-  },
+  "geo": null,
   "prices": [],
   "currency": "VND",
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": {
+    "count": 1000,
+    "sourceUrl": "https://ezland.vn/the-lakes-race-chay-vi-mot-tuong-lai-tot-hon-cho-tre-mo-coi",
+    "quote": "hơn 1000 người tham dự",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "seriesId": {
@@ -145,26 +42,23 @@
       "site": "ezland-vn",
       "role": "reference",
       "url": "https://ezland.vn/the-lakes-race-chay-vi-mot-tuong-lai-tot-hon-cho-tre-mo-coi",
-      "lastCheckedAt": "2026-09-25T07:59:47.682Z",
+      "lastCheckedAt": "2026-09-28T16:02:00.654Z",
       "lastChangedAt": "2026-09-25T07:59:47.682Z",
       "extracted": {
         "facts": {
           "name": "The Lakes Race (Mùa 3)",
           "date": "2020-11-15",
-          "edition": 3,
-          "venue": "Hồ Đá – Làng Đại học Thủ Đức",
-          "city": "Hồ Chí Minh",
-          "distances": [
-            "5km",
-            "10km",
-            "15km"
-          ],
-          "note": "cleanup: retag off openrace to the real host."
+          "participants": {
+            "count": 1000,
+            "sourceUrl": "https://ezland.vn/the-lakes-race-chay-vi-mot-tuong-lai-tot-hon-cho-tre-mo-coi",
+            "quote": "hơn 1000 người tham dự"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
         }
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T06:48:34.476Z",
-  "updatedAt": "2026-09-28T05:58:42.803Z"
+  "updatedAt": "2026-09-28T16:02:00.654Z"
 }
