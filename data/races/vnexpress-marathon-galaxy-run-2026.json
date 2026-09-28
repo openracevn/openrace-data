@@ -7,21 +7,118 @@
   ],
   "date": "2026-06-21",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "vnexpress-marathon-galaxy-run",
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
   "edition": null,
   "courses": [],
   "location": {
-    "venue": null,
-    "city": null
+    "venue": "Đường Trần Bạch Đằng, phường An Khánh, TP Hồ Chí Minh",
+    "city": "Hồ Chí Minh"
   },
-  "geo": null,
+  "geo": {
+    "lat": 10.778745,
+    "lng": 106.7153932,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "27094"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "769",
+      "ward": "27118"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 4.1,
+        "minutes": 7,
+        "method": "road",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1495.2,
+        "minutes": 1134,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 861.9,
+        "minutes": 651,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 411.6,
+        "minutes": 295,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 295.2,
+        "minutes": 223,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 172.7,
+        "minutes": 138,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1529.4,
+        "minutes": 1161,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 944.6,
+        "minutes": 726,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 94.6,
+        "minutes": 87,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 617.4,
+        "minutes": 458,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 358,
+        "minutes": 263,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1803.8,
+        "minutes": 1369,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1579.1,
+        "minutes": 1193,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
   "prices": [],
   "currency": "VND",
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": null,
   "flags": [],
   "overrides": {},
   "sources": [
@@ -29,7 +126,7 @@
       "site": "vnexpress-marathon",
       "role": "official",
       "url": "https://vm.vnexpress.net/galaxy-run-2026",
-      "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+      "lastCheckedAt": "2026-09-28T13:50:23.300Z",
       "lastChangedAt": "2026-09-25T04:11:49.673Z",
       "extracted": {
         "facts": {
@@ -46,6 +143,17 @@
               ],
               "name": "Galaxy Run 2026",
               "date": "2026-06-21",
+              "venue": "Đường Trần Bạch Đằng, phường An Khánh, TP Hồ Chí Minh",
+              "city": "Hồ Chí Minh",
+              "prices": []
+            }
+          },
+          {
+            "url": "https://vm.vnexpress.net/galaxy-run-2026/thong-tin-cuoc-dua",
+            "json": {
+              "pageKind": "sport",
+              "venue": "Đường Trần Bạch Đằng, phường An Khánh, TP HCM",
+              "city": "Hồ Chí Minh",
               "prices": []
             }
           }
@@ -66,5 +174,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T04:11:49.673Z",
-  "updatedAt": "2026-09-25T04:11:49.673Z"
+  "updatedAt": "2026-09-28T13:50:23.300Z"
 }

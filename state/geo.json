@@ -7645,6 +7645,106 @@
     "query": "Quận Ninh Kiều, Thành phố Cần Thơ",
     "at": "2026-09-24T06:46:43.112Z"
   },
+  "duong tran bach dang phuong an khanh tp ho chi minh | ho chi minh": {
+    "geo": {
+      "lat": 10.778745,
+      "lng": 106.7153932,
+      "source": "nominatim",
+      "precision": "venue",
+      "current": {
+        "province": "79",
+        "ward": "27094"
+      },
+      "legacy": {
+        "province": "79",
+        "district": "769",
+        "ward": "27118"
+      },
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 4.1,
+          "minutes": 7,
+          "method": "road",
+          "near": true
+        },
+        "ha-noi": {
+          "km": 1495.2,
+          "minutes": 1134,
+          "method": "road",
+          "near": false
+        },
+        "da-nang": {
+          "km": 861.9,
+          "minutes": 651,
+          "method": "road",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 411.6,
+          "minutes": 295,
+          "method": "road",
+          "near": false
+        },
+        "da-lat": {
+          "km": 295.2,
+          "minutes": 223,
+          "method": "road",
+          "near": false
+        },
+        "can-tho": {
+          "km": 172.7,
+          "minutes": 138,
+          "method": "road",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 1529.4,
+          "minutes": 1161,
+          "method": "road",
+          "near": false
+        },
+        "hue": {
+          "km": 944.6,
+          "minutes": 726,
+          "method": "road",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 94.6,
+          "minutes": 87,
+          "method": "road",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 617.4,
+          "minutes": 458,
+          "method": "road",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 358,
+          "minutes": 263,
+          "method": "road",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 1803.8,
+          "minutes": 1369,
+          "method": "road",
+          "near": false
+        },
+        "ha-long": {
+          "km": 1579.1,
+          "minutes": 1193,
+          "method": "road",
+          "near": false
+        }
+      }
+    },
+    "query": "Trần Bạch Đằng, An Khánh, Hồ Chí Minh, Hồ Chí Minh",
+    "at": "2026-09-28T13:50:25.970Z"
+  },
   "duong tran bach dang thu thiem | ": {
     "geo": null,
     "query": "Đường Trần Bạch Đằng - Thủ Thiêm",
@@ -16723,6 +16823,106 @@
     },
     "query": "Quảng trường 10/3 - phường Buôn Ma Thuột - tỉnh Đắk Lắk",
     "at": "2026-09-24T06:36:10.104Z"
+  },
+  "quang truong 2 4 nha trang | nha trang": {
+    "geo": {
+      "lat": 12.2379502,
+      "lng": 109.1969419,
+      "source": "nominatim",
+      "precision": "venue",
+      "current": {
+        "province": "56",
+        "ward": "22366"
+      },
+      "legacy": {
+        "province": "56",
+        "district": "568",
+        "ward": "22363"
+      },
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 407.2,
+          "minutes": 296,
+          "method": "road",
+          "near": false
+        },
+        "ha-noi": {
+          "km": 1272.2,
+          "minutes": 999,
+          "method": "road",
+          "near": false
+        },
+        "da-nang": {
+          "km": 502.7,
+          "minutes": 396,
+          "method": "road",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 1.1,
+          "minutes": 2,
+          "method": "road",
+          "near": true
+        },
+        "da-lat": {
+          "km": 137.2,
+          "minutes": 131,
+          "method": "road",
+          "near": false
+        },
+        "can-tho": {
+          "km": 572.7,
+          "minutes": 424,
+          "method": "road",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 1306.3,
+          "minutes": 1026,
+          "method": "road",
+          "near": false
+        },
+        "hue": {
+          "km": 599.9,
+          "minutes": 471,
+          "method": "road",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 400.3,
+          "minutes": 304,
+          "method": "road",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 214.9,
+          "minutes": 175,
+          "method": "road",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 189.5,
+          "minutes": 175,
+          "method": "road",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 1580.7,
+          "minutes": 1235,
+          "method": "road",
+          "near": false
+        },
+        "ha-long": {
+          "km": 1356,
+          "minutes": 1059,
+          "method": "road",
+          "near": false
+        }
+      }
+    },
+    "query": "Quảng trường 2/4 - Nha Trang, Nha Trang",
+    "at": "2026-09-28T13:50:27.549Z"
   },
   "quang truong 24 3 thanh pho tam ky tinh quang nam | ": {
     "geo": {
