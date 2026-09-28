@@ -3,7 +3,7 @@
   "slug": "the-lakes-race-mua-3",
   "name": "The Lakes Race (Mùa 3)",
   "types": [
-    "other"
+    "city_trail"
   ],
   "date": "2020-11-15",
   "endDate": null,
@@ -35,6 +35,13 @@
       "value": "andros-the-lakes-race",
       "reason": "race-research: same series as the other editions (2019, 2022-2026), same venue and organizer.",
       "at": "2026-09-25T06:54:55.537Z"
+    },
+    "types": {
+      "value": [
+        "city_trail"
+      ],
+      "reason": "Andros Lakes Race: user says every edition is city trail",
+      "at": "2026-09-28T16:03:34.100Z"
     }
   },
   "sources": [
@@ -60,5 +67,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T06:48:34.476Z",
-  "updatedAt": "2026-09-28T16:02:00.654Z"
+  "updatedAt": "2026-09-28T16:03:34.100Z"
 }
