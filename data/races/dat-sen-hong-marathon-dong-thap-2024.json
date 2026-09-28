@@ -7,6 +7,7 @@
   ],
   "date": "2024-10-12",
   "endDate": "2024-10-13",
+  "mainDate": null,
   "seriesId": "vpbank-dat-sen-hong-music-marathon",
   "organizerId": "nexus-sport-events",
   "organizer": "Nexus Sport Events",
@@ -394,6 +395,12 @@
       "foundOn": "ticket.irace.vn"
     }
   ],
+  "participants": {
+    "count": 10000,
+    "sourceUrl": "https://thanhnien.vn/bat-ngo-voi-10000-nguoi-tham-gia-giai-marathon-dat-sen-hong-dong-thap-185240921222108831.htm",
+    "quote": "Kỷ lục 10.000 người tham gia giải marathon Đất sen hồng Đồng Tháp",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "types": {
@@ -821,9 +828,28 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "thanhnien-vn",
+      "role": "reference",
+      "url": "https://thanhnien.vn/bat-ngo-voi-10000-nguoi-tham-gia-giai-marathon-dat-sen-hong-dong-thap-185240921222108831.htm",
+      "lastCheckedAt": "2026-09-28T16:13:23.492Z",
+      "lastChangedAt": "2026-09-28T16:13:23.492Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Đất Sen Hồng Marathon Đồng Tháp 2024",
+          "date": "2024-10-12",
+          "participants": {
+            "count": 10000,
+            "sourceUrl": "https://thanhnien.vn/bat-ngo-voi-10000-nguoi-tham-gia-giai-marathon-dat-sen-hong-dong-thap-185240921222108831.htm",
+            "quote": "Kỷ lục 10.000 người tham gia giải marathon Đất sen hồng Đồng Tháp"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-27T02:43:40.147Z"
+  "updatedAt": "2026-09-28T16:13:23.492Z"
 }
