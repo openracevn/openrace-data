@@ -17,7 +17,98 @@
     "venue": "Khu vực CNC Láng - Hòa Lạc",
     "city": "Hà Nội"
   },
-  "geo": null,
+  "geo": {
+    "lat": 21.0283334,
+    "lng": 105.854041,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "01",
+      "ward": null
+    },
+    "legacy": null,
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1144,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 0.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": true
+      },
+      "da-nang": {
+        "km": 606.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1040.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1047.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1222.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 89,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 539.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1195.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 882,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 958.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 253.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 127.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
   "prices": [],
   "currency": "VND",
   "registrationStatus": null,
@@ -31,8 +122,8 @@
         "venue": "Khu vực CNC Láng - Hòa Lạc",
         "city": "Hà Nội"
       },
-      "reason": "Stated by the user 2026-09-28; the VnExpress race page's venue card is empty",
-      "at": "2026-09-28T13:52:33.267Z"
+      "reason": "Stated by the user 2026-09-28; the VnExpress race page's venue card is empty. Re-applied to attach the point (province precision: Nominatim can't find the venue)",
+      "at": "2026-09-28T13:56:05.081Z"
     }
   },
   "sources": [
@@ -77,5 +168,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T04:11:49.673Z",
-  "updatedAt": "2026-09-28T13:52:33.267Z"
+  "updatedAt": "2026-09-28T13:56:05.081Z"
 }
