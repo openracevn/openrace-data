@@ -3,22 +3,49 @@
   "slug": "ironkids-phu-quoc-2024",
   "name": "IRONKIDS Phú Quốc 2024",
   "types": [
-    "triathlon"
+    "triathlon",
+    "aquathlon"
   ],
   "date": "2024-11-15",
   "endDate": "2024-11-16",
-  "seriesId": null,
+  "mainDate": null,
+  "seriesId": "ironkids-viet-nam-in-phu-quoc",
   "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "1075m",
+      "meters": 1075,
+      "type": "aquathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "4075m",
+      "meters": 4075,
+      "type": "triathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "2150m",
+      "meters": 2150,
+      "type": "aquathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "8150m",
+      "meters": 8150,
+      "type": "triathlon",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Phú Quốc",
-    "city": null
+    "city": "Phú Quốc"
   },
   "geo": {
-    "lat": 10.2287856,
-    "lng": 104.0143592,
+    "lat": 10.1353582,
+    "lng": 104.0331886,
     "source": "nominatim",
     "precision": "venue",
     "current": {
@@ -28,84 +55,84 @@
     "legacy": {
       "province": "91",
       "district": "911",
-      "ward": "31078"
+      "ward": "31096"
     },
     "access": "flight_or_ferry",
     "fromPlaces": {
       "hcmc": {
-        "km": 299.6,
+        "km": 299.9,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "ha-noi": {
-        "km": 1216.8,
+        "km": 1226.8,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "da-nang": {
-        "km": 792.8,
+        "km": 800.2,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "nha-trang": {
-        "km": 607.8,
+        "km": 609.8,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "da-lat": {
-        "km": 519.2,
+        "km": 521.3,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "can-tho": {
-        "km": 195.3,
+        "km": 192.4,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "hai-phong": {
-        "km": 1214.6,
+        "km": 1224.2,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "hue": {
-        "km": 793.9,
+        "km": 802,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "vung-tau": {
-        "km": 336.1,
+        "km": 334.7,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "quy-nhon": {
-        "km": 690.3,
+        "km": 694.7,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 515.5,
+        "km": 519.4,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "sa-pa": {
-        "km": 1346.4,
+        "km": 1356.8,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "ha-long": {
-        "km": 1236.6,
+        "km": 1246.1,
         "minutes": null,
         "method": "straight_line",
         "near": false
@@ -122,14 +149,59 @@
     }
   ],
   "links": [],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
       "value": [
-        "triathlon"
+        "triathlon",
+        "aquathlon"
       ],
-      "reason": "inferred from race name/price-tier text (ironkids); no source states an explicit type",
-      "at": "2026-09-26T13:21:53.036Z"
+      "reason": "Same event as the 2025 and 2026 IronKids Phú Quốc, so same series. City Phú Quốc (the ActiUp venue is Phú Quốc). https://irace.vn/su-kien/ironkids-viet-nam/ (iRace page for 'Giải IRONKIDS Việt Nam diễn ra vào ngày 16 tháng 11 năm 2024'): aquathlon and triathlon; ages 5-10 swim 75m + run 1km (+3km bike for triathlon), ages 11-15 double: 150m + 2km (+6km bike). Course meters are the sum of the legs; ages have no field and stay here (1075m/4075m are 5-10, 2150m/8150m are 11-15). That page dates the race 16/11/2024 while ActiUp says 15-16/11; the date is not changed.",
+      "at": "2026-09-29T08:15:57.682Z"
+    },
+    "seriesId": {
+      "value": "ironkids-viet-nam-in-phu-quoc",
+      "reason": "Same event as the 2025 and 2026 IronKids Phú Quốc, so same series. City Phú Quốc (the ActiUp venue is Phú Quốc). https://irace.vn/su-kien/ironkids-viet-nam/ (iRace page for 'Giải IRONKIDS Việt Nam diễn ra vào ngày 16 tháng 11 năm 2024'): aquathlon and triathlon; ages 5-10 swim 75m + run 1km (+3km bike for triathlon), ages 11-15 double: 150m + 2km (+6km bike). Course meters are the sum of the legs; ages have no field and stay here (1075m/4075m are 5-10, 2150m/8150m are 11-15). That page dates the race 16/11/2024 while ActiUp says 15-16/11; the date is not changed.",
+      "at": "2026-09-29T08:15:57.682Z"
+    },
+    "location": {
+      "value": {
+        "venue": "Phú Quốc",
+        "city": "Phú Quốc"
+      },
+      "reason": "Same event as the 2025 and 2026 IronKids Phú Quốc, so same series. City Phú Quốc (the ActiUp venue is Phú Quốc). https://irace.vn/su-kien/ironkids-viet-nam/ (iRace page for 'Giải IRONKIDS Việt Nam diễn ra vào ngày 16 tháng 11 năm 2024'): aquathlon and triathlon; ages 5-10 swim 75m + run 1km (+3km bike for triathlon), ages 11-15 double: 150m + 2km (+6km bike). Course meters are the sum of the legs; ages have no field and stay here (1075m/4075m are 5-10, 2150m/8150m are 11-15). That page dates the race 16/11/2024 while ActiUp says 15-16/11; the date is not changed.",
+      "at": "2026-09-29T08:15:57.682Z"
+    },
+    "courses": {
+      "value": [
+        {
+          "label": "1075m",
+          "meters": 1075,
+          "type": "aquathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "4075m",
+          "meters": 4075,
+          "type": "triathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "2150m",
+          "meters": 2150,
+          "type": "aquathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "8150m",
+          "meters": 8150,
+          "type": "triathlon",
+          "elevationGain": null
+        }
+      ],
+      "reason": "Same event as the 2025 and 2026 IronKids Phú Quốc, so same series. City Phú Quốc (the ActiUp venue is Phú Quốc). https://irace.vn/su-kien/ironkids-viet-nam/ (iRace page for 'Giải IRONKIDS Việt Nam diễn ra vào ngày 16 tháng 11 năm 2024'): aquathlon and triathlon; ages 5-10 swim 75m + run 1km (+3km bike for triathlon), ages 11-15 double: 150m + 2km (+6km bike). Course meters are the sum of the legs; ages have no field and stay here (1075m/4075m are 5-10, 2150m/8150m are 11-15). That page dates the race 16/11/2024 while ActiUp says 15-16/11; the date is not changed.",
+      "at": "2026-09-29T08:15:57.682Z"
     }
   },
   "sources": [
@@ -159,5 +231,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-29T08:15:57.682Z"
 }

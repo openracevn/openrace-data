@@ -3,22 +3,30 @@
   "slug": "sunrise-sprint-phu-quoc-2024",
   "name": "Sunrise Sprint Phú Quốc 2024",
   "types": [
-    "other"
+    "triathlon"
   ],
   "date": "2024-11-15",
   "endDate": "2024-11-16",
-  "seriesId": null,
+  "mainDate": null,
+  "seriesId": "sunrise-sprint-viet-nam-in-phu-quoc",
   "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "Sprint",
+      "meters": 25750,
+      "type": "triathlon",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Phú Quốc",
-    "city": null
+    "city": "Phú Quốc"
   },
   "geo": {
-    "lat": 10.2287856,
-    "lng": 104.0143592,
+    "lat": 10.1353582,
+    "lng": 104.0331886,
     "source": "nominatim",
     "precision": "venue",
     "current": {
@@ -28,84 +36,84 @@
     "legacy": {
       "province": "91",
       "district": "911",
-      "ward": "31078"
+      "ward": "31096"
     },
     "access": "flight_or_ferry",
     "fromPlaces": {
       "hcmc": {
-        "km": 299.6,
+        "km": 299.9,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "ha-noi": {
-        "km": 1216.8,
+        "km": 1226.8,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "da-nang": {
-        "km": 792.8,
+        "km": 800.2,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "nha-trang": {
-        "km": 607.8,
+        "km": 609.8,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "da-lat": {
-        "km": 519.2,
+        "km": 521.3,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "can-tho": {
-        "km": 195.3,
+        "km": 192.4,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "hai-phong": {
-        "km": 1214.6,
+        "km": 1224.2,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "hue": {
-        "km": 793.9,
+        "km": 802,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "vung-tau": {
-        "km": 336.1,
+        "km": 334.7,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "quy-nhon": {
-        "km": 690.3,
+        "km": 694.7,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 515.5,
+        "km": 519.4,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "sa-pa": {
-        "km": 1346.4,
+        "km": 1356.8,
         "minutes": null,
         "method": "straight_line",
         "near": false
       },
       "ha-long": {
-        "km": 1236.6,
+        "km": 1246.1,
         "minutes": null,
         "method": "straight_line",
         "near": false
@@ -122,8 +130,42 @@
     }
   ],
   "links": [],
+  "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "seriesId": {
+      "value": "sunrise-sprint-viet-nam-in-phu-quoc",
+      "reason": "Same event as the 2025 and 2026 Sunrise Sprint Phú Quốc, so same series. City Phú Quốc (ActiUp venue). https://irace.vn/su-kien/sunrise-sprint/ (iRace page 'Sunrise Sprint Phú Quốc 2024', race days 15-16/11/2024, 'Cự ly: Bơi 750m, Đạp xe 20km, Chạy 5km', triathlon): the Sprint format, 25,750 m. Also xongon.com/t/vietnam/sunrise-sprint-phu-quoc-2024-50.html (race day 15/11/2024, same 750m/20km/5km).",
+      "at": "2026-09-29T08:15:57.682Z"
+    },
+    "location": {
+      "value": {
+        "venue": "Phú Quốc",
+        "city": "Phú Quốc"
+      },
+      "reason": "Same event as the 2025 and 2026 Sunrise Sprint Phú Quốc, so same series. City Phú Quốc (ActiUp venue). https://irace.vn/su-kien/sunrise-sprint/ (iRace page 'Sunrise Sprint Phú Quốc 2024', race days 15-16/11/2024, 'Cự ly: Bơi 750m, Đạp xe 20km, Chạy 5km', triathlon): the Sprint format, 25,750 m. Also xongon.com/t/vietnam/sunrise-sprint-phu-quoc-2024-50.html (race day 15/11/2024, same 750m/20km/5km).",
+      "at": "2026-09-29T08:15:57.682Z"
+    },
+    "types": {
+      "value": [
+        "triathlon"
+      ],
+      "reason": "Same event as the 2025 and 2026 Sunrise Sprint Phú Quốc, so same series. City Phú Quốc (ActiUp venue). https://irace.vn/su-kien/sunrise-sprint/ (iRace page 'Sunrise Sprint Phú Quốc 2024', race days 15-16/11/2024, 'Cự ly: Bơi 750m, Đạp xe 20km, Chạy 5km', triathlon): the Sprint format, 25,750 m. Also xongon.com/t/vietnam/sunrise-sprint-phu-quoc-2024-50.html (race day 15/11/2024, same 750m/20km/5km).",
+      "at": "2026-09-29T08:15:57.682Z"
+    },
+    "courses": {
+      "value": [
+        {
+          "label": "Sprint",
+          "meters": 25750,
+          "type": "triathlon",
+          "elevationGain": null
+        }
+      ],
+      "reason": "Same event as the 2025 and 2026 Sunrise Sprint Phú Quốc, so same series. City Phú Quốc (ActiUp venue). https://irace.vn/su-kien/sunrise-sprint/ (iRace page 'Sunrise Sprint Phú Quốc 2024', race days 15-16/11/2024, 'Cự ly: Bơi 750m, Đạp xe 20km, Chạy 5km', triathlon): the Sprint format, 25,750 m. Also xongon.com/t/vietnam/sunrise-sprint-phu-quoc-2024-50.html (race day 15/11/2024, same 750m/20km/5km).",
+      "at": "2026-09-29T08:15:57.682Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -151,5 +193,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-09-29T08:15:57.682Z"
 }
