@@ -93,7 +93,12 @@
   "registrationStatus": "closed",
   "registrations": [],
   "links": [],
-  "participants": null,
+  "participants": {
+    "count": 4000,
+    "sourceUrl": "https://nhandan.vn/trao-giai-vo-dich-quoc-gia-marathon-bao-tien-phong-lan-thu-64-post744771.html",
+    "quote": "Giải đã quy tụ được hơn 4.000 vận động viên chuyên nghiệp và phong trào tham gia tranh tài",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "seriesId": {
@@ -160,9 +165,28 @@
           "note": "Tiền Phong article (18/02/2023): 64th edition in Lai Châu, race 26/3/2023, final-stage prices"
         }
       }
+    },
+    {
+      "site": "nhandan-vn",
+      "role": "reference",
+      "url": "https://nhandan.vn/trao-giai-vo-dich-quoc-gia-marathon-bao-tien-phong-lan-thu-64-post744771.html",
+      "lastCheckedAt": "2026-09-29T04:57:21.972Z",
+      "lastChangedAt": "2026-09-29T04:57:21.972Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Vô địch Quốc gia Marathon và cự ly dài báo Tiền Phong lần thứ 64 năm 2023",
+          "date": "2023-03-26",
+          "participants": {
+            "count": 4000,
+            "sourceUrl": "https://nhandan.vn/trao-giai-vo-dich-quoc-gia-marathon-bao-tien-phong-lan-thu-64-post744771.html",
+            "quote": "Giải đã quy tụ được hơn 4.000 vận động viên chuyên nghiệp và phong trào tham gia tranh tài"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-29T04:53:00.325Z",
-  "updatedAt": "2026-09-29T04:54:52.533Z"
+  "updatedAt": "2026-09-29T04:57:21.972Z"
 }
