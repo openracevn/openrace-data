@@ -10035,6 +10035,106 @@
     "query": "Hồ Hoàn Kiếm, Quận Hoàn Kiếm, Hà Nội",
     "at": "2026-09-24T06:37:24.936Z"
   },
+  "ho tay | ha noi": {
+    "geo": {
+      "lat": 21.0580419,
+      "lng": 105.8139655,
+      "source": "nominatim",
+      "precision": "venue",
+      "current": {
+        "province": "01",
+        "ward": "00103"
+      },
+      "legacy": {
+        "province": "01",
+        "district": "003",
+        "ward": "00109"
+      },
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 1500.1,
+          "minutes": 1143,
+          "method": "road",
+          "near": false
+        },
+        "ha-noi": {
+          "km": 6.9,
+          "minutes": 10,
+          "method": "road",
+          "near": true
+        },
+        "da-nang": {
+          "km": 777.6,
+          "minutes": 631,
+          "method": "road",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 1281.4,
+          "minutes": 1017,
+          "method": "road",
+          "near": false
+        },
+        "da-lat": {
+          "km": 1408.8,
+          "minutes": 1136,
+          "method": "road",
+          "near": false
+        },
+        "can-tho": {
+          "km": 1611,
+          "minutes": 1262,
+          "method": "road",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 119.8,
+          "minutes": 91,
+          "method": "road",
+          "near": false
+        },
+        "hue": {
+          "km": 675.4,
+          "minutes": 548,
+          "method": "road",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 1591.1,
+          "minutes": 1224,
+          "method": "road",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 1089.4,
+          "minutes": 857,
+          "method": "road",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 1286.2,
+          "minutes": 1054,
+          "method": "road",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 307.2,
+          "minutes": 247,
+          "method": "road",
+          "near": false
+        },
+        "ha-long": {
+          "km": 164.4,
+          "minutes": 121,
+          "method": "road",
+          "near": false
+        }
+      }
+    },
+    "query": "Hồ Tây, Hà Nội",
+    "at": "2026-09-29T08:07:03.788Z"
+  },
   "ho thien quang ha noi | ": {
     "geo": {
       "lat": 21.0184311,
