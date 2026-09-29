@@ -142,7 +142,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
-  "participants": null,
+  "participants": {
+    "count": 7000,
+    "sourceUrl": "https://web.archive.org/web/2id_/https://webthethao.vn/chay/pocari-sweat-run-vuon-tam-mot-giai-chay-phong-trao-o-viet-nam-OT66c3oMR.htm",
+    "quote": "22/11/2020 tại khu đô thị Sala (TP.HCM) với sự tham gia của hơn 7000 VĐV",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {},
   "sources": [
@@ -261,9 +266,28 @@
           "note": "Organizer's own page (Wayback, 26/09/2020, in sale window): price table, ages per distance"
         }
       }
+    },
+    {
+      "site": "webthethao-vn",
+      "role": "reference",
+      "url": "https://web.archive.org/web/2id_/https://webthethao.vn/chay/pocari-sweat-run-vuon-tam-mot-giai-chay-phong-trao-o-viet-nam-OT66c3oMR.htm",
+      "lastCheckedAt": "2026-09-29T04:32:48.999Z",
+      "lastChangedAt": "2026-09-29T04:32:48.999Z",
+      "extracted": {
+        "facts": {
+          "name": "Pocari Sweat Run Việt Nam 2020",
+          "date": "2020-11-22",
+          "participants": {
+            "count": 7000,
+            "sourceUrl": "https://web.archive.org/web/2id_/https://webthethao.vn/chay/pocari-sweat-run-vuon-tam-mot-giai-chay-phong-trao-o-viet-nam-OT66c3oMR.htm",
+            "quote": "22/11/2020 tại khu đô thị Sala (TP.HCM) với sự tham gia của hơn 7000 VĐV"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:24:00.933Z",
-  "updatedAt": "2026-09-28T16:33:10.982Z"
+  "updatedAt": "2026-09-29T04:32:48.999Z"
 }
