@@ -55,12 +55,14 @@ Stored:
 | pocari-sweat-run-2026 | 5,000 | vtv.vn |
 | vnexpress-marathon-nha-trang-2 (2022) | 8,500 (hơn) | nguoidothi.net.vn |
 
-Searched, not stored:
+Follow-up, same day (the two Pocari misses, after reading the pages): stored with `web.archive.org` source links, because webthethao.vn's live URLs loop on 308 redirects and fail the verifier (Wayback copy loads).
 
-| Race (slug) | Why no count | Next thing to try |
+| Race (slug) | Count | Source |
 | --- | --- | --- |
-| pocari-sweat-run-viet-nam-2019 | "Hơn 3.200" (also "3.187") seen only in search summaries; no quotable title | A post-race recap of 17 Nov 2019 whose title or a sentence states it (sgtt.thesaigontimes.vn "lần đầu được tổ chức" article: check its body) |
-| pocari-sweat-run-viet-nam-2020 | "6.947" seen only in a search summary; the "hơn 8.000" qdnd title is the 2023 edition | A post-race recap of 22 Nov 2020 |
+| pocari-sweat-run-viet-nam-2019 | 3,200 (hơn) | webthethao.vn recap, via Wayback |
+| pocari-sweat-run-viet-nam-2020 | 7,000 (hơn) | webthethao.vn post-race article, via Wayback (iwater.vn says 6,947, within 25%, not added) |
+
+Lesson: a number seen only in a search summary is worth one page read before calling a miss. The count was on a page we could read.
 
 ### Next in the worklist
 
