@@ -11,7 +11,7 @@
   "seriesId": "mang-den-ultra-trail",
   "organizerId": "vud",
   "organizer": "Công ty Cổ phần Khám phá Không giới hạn Việt Nam (VUD)",
-  "edition": null,
+  "edition": 1,
   "courses": [
     {
       "label": "5km",
@@ -45,7 +45,7 @@
     }
   ],
   "location": {
-    "venue": "Thị trấn Măng Đen , huyện Kon Plông, tỉnh Kon Tum",
+    "venue": "Thị trấn Măng Đen, huyện Kon Plông, tỉnh Kon Tum",
     "city": "Kon Tum"
   },
   "geo": {
@@ -409,6 +409,11 @@
       ],
       "reason": "inferred from race name/price-tier text (trail); no source states an explicit type",
       "at": "2026-09-26T13:21:53.036Z"
+    },
+    "edition": {
+      "value": 1,
+      "reason": "Tuổi Trẻ (2025-12-26) calls 2025 'mùa giải đầu tiên'; irace.vn/su-kien/mang-den-ultra-trail numbers 2027 as 'mùa 3' after 'mùa đầu tiên' and 'mùa 2'",
+      "at": "2026-09-29T05:00:12.859Z"
     }
   },
   "sources": [
@@ -729,5 +734,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T04:59:19.621Z"
+  "updatedAt": "2026-09-29T05:00:12.859Z"
 }
