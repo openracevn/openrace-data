@@ -2376,6 +2376,106 @@
     "query": "Bản Giốc, Cao Bằng, Việt Nam",
     "at": "2026-09-24T06:37:37.967Z"
   },
+  "ban gioc cao bang viet nam | cao bang": {
+    "geo": {
+      "lat": 22.8542722,
+      "lng": 106.7233149,
+      "source": "nominatim",
+      "precision": "venue",
+      "current": {
+        "province": "04",
+        "ward": "01501"
+      },
+      "legacy": {
+        "province": "04",
+        "district": "047",
+        "ward": "01495"
+      },
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 1343.4,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "ha-noi": {
+          "km": 222,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "da-nang": {
+          "km": 771.6,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 1209.1,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "da-lat": {
+          "km": 1227.1,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "can-tho": {
+          "km": 1429,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 223.5,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "hue": {
+          "km": 716.4,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 1391.4,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 1043.2,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 1141.3,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 301.2,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "ha-long": {
+          "km": 214.7,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        }
+      }
+    },
+    "query": "Bản Giốc, Cao Bằng, Việt Nam",
+    "at": "2026-09-29T07:55:17.115Z"
+  },
   "ban quan ly vuon quoc gia bu gia map tinh binh phuoc | ": {
     "geo": {
       "lat": 11.8000378,

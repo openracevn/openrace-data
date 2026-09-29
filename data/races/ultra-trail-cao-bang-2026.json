@@ -52,104 +52,9 @@
   ],
   "location": {
     "venue": "Bản Giốc, Cao Bằng, Việt Nam",
-    "city": null
+    "city": "Cao Bằng"
   },
-  "geo": {
-    "lat": 22.8539003,
-    "lng": 106.7232867,
-    "source": "nominatim",
-    "precision": "venue",
-    "current": {
-      "province": "04",
-      "ward": "01501"
-    },
-    "legacy": {
-      "province": "04",
-      "district": "047",
-      "ward": "01495"
-    },
-    "access": "road",
-    "fromPlaces": {
-      "hcmc": {
-        "km": 1805.9,
-        "minutes": 1377,
-        "method": "road",
-        "near": false
-      },
-      "ha-noi": {
-        "km": 319.6,
-        "minutes": 251,
-        "method": "road",
-        "near": false
-      },
-      "da-nang": {
-        "km": 1083.4,
-        "minutes": 865,
-        "method": "road",
-        "near": false
-      },
-      "nha-trang": {
-        "km": 1587.2,
-        "minutes": 1251,
-        "method": "road",
-        "near": false
-      },
-      "da-lat": {
-        "km": 1714.6,
-        "minutes": 1370,
-        "method": "road",
-        "near": false
-      },
-      "can-tho": {
-        "km": 1916.7,
-        "minutes": 1496,
-        "method": "road",
-        "near": false
-      },
-      "hai-phong": {
-        "km": 380.3,
-        "minutes": 276,
-        "method": "road",
-        "near": false
-      },
-      "hue": {
-        "km": 981.2,
-        "minutes": 782,
-        "method": "road",
-        "near": false
-      },
-      "vung-tau": {
-        "km": 1896.8,
-        "minutes": 1458,
-        "method": "road",
-        "near": false
-      },
-      "quy-nhon": {
-        "km": 1395.2,
-        "minutes": 1091,
-        "method": "road",
-        "near": false
-      },
-      "buon-ma-thuot": {
-        "km": 1591.9,
-        "minutes": 1288,
-        "method": "road",
-        "near": false
-      },
-      "sa-pa": {
-        "km": 518,
-        "minutes": 371,
-        "method": "road",
-        "near": false
-      },
-      "ha-long": {
-        "km": 352.2,
-        "minutes": 259,
-        "method": "road",
-        "near": false
-      }
-    }
-  },
+  "geo": null,
   "prices": [
     {
       "distance": "10km",
@@ -438,6 +343,14 @@
       "value": 5,
       "reason": "Race Jungle and Pace8 pages state 'MÙA GIẢI THỨ 05 ULTRA TRAIL CAO BANG 2026' (2025 page says thứ 04, 2024 thứ 3)",
       "at": "2026-09-29T07:20:52.168Z"
+    },
+    "location": {
+      "value": {
+        "venue": "Bản Giốc, Cao Bằng, Việt Nam",
+        "city": "Cao Bằng"
+      },
+      "reason": "5BIB event page states location 'Cao Bằng, Việt Nam' (city Cao Bằng, venue Bản Giốc); ActiUp, the ranked source, gives only the venue string. Same venue, city added. The source names the province, which is used as the city like other provincial races.",
+      "at": "2026-09-29T07:55:24.159Z"
     }
   },
   "sources": [
@@ -680,5 +593,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T07:20:52.168Z"
+  "updatedAt": "2026-09-29T07:55:24.159Z"
 }
