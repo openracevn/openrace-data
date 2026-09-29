@@ -7,6 +7,7 @@
   ],
   "date": "2026-12-06",
   "endDate": null,
+  "mainDate": null,
   "seriesId": null,
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
@@ -32,14 +33,151 @@
     }
   ],
   "location": {
-    "venue": "Khu vực Hồ Tây và Phố đi bộ Trịnh Công Sơn",
-    "city": null
+    "venue": "Vườn hoa phố đi bộ Trịnh Công Sơn",
+    "city": "Hà Nội"
   },
   "geo": null,
-  "prices": [],
+  "prices": [
+    {
+      "distance": "3km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 159000,
+      "from": "2026-08-01",
+      "to": "2026-08-08",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 259000,
+      "from": "2026-08-01",
+      "to": "2026-08-08",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 359000,
+      "from": "2026-08-01",
+      "to": "2026-08-08",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "3km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 199000,
+      "from": "2026-08-09",
+      "to": "2026-08-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 299000,
+      "from": "2026-08-09",
+      "to": "2026-08-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 399000,
+      "from": "2026-08-09",
+      "to": "2026-08-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "3km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 299000,
+      "from": "2026-09-01",
+      "to": "2026-10-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 399000,
+      "from": "2026-09-01",
+      "to": "2026-10-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 499000,
+      "from": "2026-09-01",
+      "to": "2026-10-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "3km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 399000,
+      "from": "2026-10-16",
+      "to": "2026-11-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 499000,
+      "from": "2026-10-16",
+      "to": "2026-11-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 599000,
+      "from": "2026-10-16",
+      "to": "2026-11-15",
+      "inferred": [],
+      "site": "irace"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
+    {
+      "site": "irace",
+      "url": "https://irace.vn/su-kien/hanh-trinh-tiep-suc"
+    },
     {
       "site": "actiup",
       "url": "https://actiup.net/vi/event/empower-run-2026"
@@ -52,8 +190,18 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "location": {
+      "value": {
+        "venue": "Vườn hoa phố đi bộ Trịnh Công Sơn",
+        "city": "Hà Nội"
+      },
+      "reason": "irace.vn event page (saved .agent-read/empower-run/pages/irace.html) gives address 'Vườn hoa phố đi bộ Trịnh Công Sơn, Tây Hồ, Hà Nội'; ActiUp names the same place",
+      "at": "2026-09-29T07:20:52.168Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -102,9 +250,130 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://irace.vn/su-kien/hanh-trinh-tiep-suc",
+      "lastCheckedAt": "2026-09-29T00:00:00.000Z",
+      "lastChangedAt": "2026-09-29T00:00:00.000Z",
+      "extracted": {
+        "facts": {
+          "name": "Hành Trình Tiếp Sức 2026",
+          "date": "2026-12-06",
+          "venue": "Vườn hoa phố đi bộ Trịnh Công Sơn, Tây Hồ, Hà Nội"
+        },
+        "pages": [
+          {
+            "url": "https://irace.vn/su-kien/hanh-trinh-tiep-suc/",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Hành Trình Tiếp Sức 2026",
+              "date": "2026-12-06",
+              "distances": [
+                "3km",
+                "5km",
+                "10km"
+              ],
+              "venue": "Vườn hoa phố đi bộ Trịnh Công Sơn, Tây Hồ, Hà Nội",
+              "currency": "VND",
+              "prices": [
+                {
+                  "distance": "3km",
+                  "tier": "Flash Sale",
+                  "from": "01/08",
+                  "to": "08/08",
+                  "price": 159000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Flash Sale",
+                  "from": "01/08",
+                  "to": "08/08",
+                  "price": 259000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Flash Sale",
+                  "from": "01/08",
+                  "to": "08/08",
+                  "price": 359000
+                },
+                {
+                  "distance": "3km",
+                  "tier": "Super Early Bird",
+                  "from": "09/08",
+                  "to": "31/08",
+                  "price": 199000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Super Early Bird",
+                  "from": "09/08",
+                  "to": "31/08",
+                  "price": 299000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Super Early Bird",
+                  "from": "09/08",
+                  "to": "31/08",
+                  "price": 399000
+                },
+                {
+                  "distance": "3km",
+                  "tier": "Early Bird",
+                  "from": "01/09",
+                  "to": "15/10",
+                  "price": 299000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Early Bird",
+                  "from": "01/09",
+                  "to": "15/10",
+                  "price": 399000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Early Bird",
+                  "from": "01/09",
+                  "to": "15/10",
+                  "price": 499000
+                },
+                {
+                  "distance": "3km",
+                  "tier": "Regular",
+                  "from": "16/10",
+                  "to": "15/11",
+                  "price": 399000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Regular",
+                  "from": "16/10",
+                  "to": "15/11",
+                  "price": 499000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Regular",
+                  "from": "16/10",
+                  "to": "15/11",
+                  "price": 599000
+                }
+              ]
+            }
+          }
+        ],
+        "readBy": "agent"
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-09-29T07:20:52.168Z"
 }

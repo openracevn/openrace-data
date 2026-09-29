@@ -7,10 +7,11 @@
   ],
   "date": "2026-11-27",
   "endDate": "2026-11-29",
+  "mainDate": null,
   "seriesId": "ultra-trail-cao-bang",
   "organizerId": "race-jungle",
   "organizer": "Race Jungle",
-  "edition": null,
+  "edition": 5,
   "courses": [
     {
       "label": "10km",
@@ -149,7 +150,272 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "10km",
+      "tier": "Priority",
+      "kind": "other",
+      "audience": null,
+      "price": 840000,
+      "from": "2026-04-10",
+      "to": "2026-04-22",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1050000,
+      "from": "2026-04-23",
+      "to": "2026-05-21",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "10km",
+      "tier": "Noon",
+      "kind": "other",
+      "audience": null,
+      "price": 1232000,
+      "from": "2026-05-22",
+      "to": "2026-10-28",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1400000,
+      "from": "2026-10-29",
+      "to": "2026-11-26",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "25km",
+      "tier": "Priority",
+      "kind": "other",
+      "audience": null,
+      "price": 1440000,
+      "from": "2026-04-10",
+      "to": "2026-04-22",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "25km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1800000,
+      "from": "2026-04-23",
+      "to": "2026-05-21",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "25km",
+      "tier": "Noon",
+      "kind": "other",
+      "audience": null,
+      "price": 2112000,
+      "from": "2026-05-22",
+      "to": "2026-10-28",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "25km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2400000,
+      "from": "2026-10-29",
+      "to": "2026-11-26",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "42km",
+      "tier": "Priority",
+      "kind": "other",
+      "audience": null,
+      "price": 1920000,
+      "from": "2026-04-10",
+      "to": "2026-04-22",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2400000,
+      "from": "2026-04-23",
+      "to": "2026-05-21",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "42km",
+      "tier": "Noon",
+      "kind": "other",
+      "audience": null,
+      "price": 2816000,
+      "from": "2026-05-22",
+      "to": "2026-10-28",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "42km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 3200000,
+      "from": "2026-10-29",
+      "to": "2026-11-26",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "70km",
+      "tier": "Priority",
+      "kind": "other",
+      "audience": null,
+      "price": 2340000,
+      "from": "2026-04-10",
+      "to": "2026-04-22",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "70km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2925000,
+      "from": "2026-04-23",
+      "to": "2026-05-21",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "70km",
+      "tier": "Noon",
+      "kind": "other",
+      "audience": null,
+      "price": 3432000,
+      "from": "2026-05-22",
+      "to": "2026-10-28",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "70km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 3900000,
+      "from": "2026-10-29",
+      "to": "2026-11-26",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "100km",
+      "tier": "Priority",
+      "kind": "other",
+      "audience": null,
+      "price": 2700000,
+      "from": "2026-04-10",
+      "to": "2026-04-22",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "100km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 3375000,
+      "from": "2026-04-23",
+      "to": "2026-05-21",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "100km",
+      "tier": "Noon",
+      "kind": "other",
+      "audience": null,
+      "price": 3960000,
+      "from": "2026-05-22",
+      "to": "2026-10-28",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "100km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 4500000,
+      "from": "2026-10-29",
+      "to": "2026-11-26",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "160km",
+      "tier": "Priority",
+      "kind": "other",
+      "audience": null,
+      "price": 4080000,
+      "from": "2026-04-10",
+      "to": "2026-04-22",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "160km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 5100000,
+      "from": "2026-04-23",
+      "to": "2026-05-21",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "160km",
+      "tier": "Noon",
+      "kind": "other",
+      "audience": null,
+      "price": 5984000,
+      "from": "2026-05-22",
+      "to": "2026-10-28",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "160km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 6800000,
+      "from": "2026-10-29",
+      "to": "2026-11-26",
+      "inferred": [],
+      "site": "5bib"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -165,8 +431,15 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "edition": {
+      "value": 5,
+      "reason": "Race Jungle and Pace8 pages state 'MÙA GIẢI THỨ 05 ULTRA TRAIL CAO BANG 2026' (2025 page says thứ 04, 2024 thứ 3)",
+      "at": "2026-09-29T07:20:52.168Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -218,9 +491,194 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "5bib",
+      "role": "reference",
+      "url": "https://5bib.com/vi/events/ultra-trail-cao-bang-2026_185",
+      "lastCheckedAt": "2026-09-29T07:20:52.168Z",
+      "lastChangedAt": "2026-09-29T07:20:52.168Z",
+      "extracted": {
+        "facts": {
+          "name": "ULTRA TRAIL CAO BANG 2026",
+          "date": "2026-11-27",
+          "city": "Cao Bằng",
+          "venue": "Bản Giốc, Cao Bằng, Việt Nam",
+          "prices": [
+            {
+              "distance": "10km",
+              "tier": "Priority",
+              "from": "10/04",
+              "to": "22/04",
+              "price": 840000
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "from": "23/04",
+              "to": "21/05",
+              "price": 1050000
+            },
+            {
+              "distance": "10km",
+              "tier": "Noon",
+              "from": "22/05",
+              "to": "28/10",
+              "price": 1232000
+            },
+            {
+              "distance": "10km",
+              "tier": "Regular",
+              "from": "29/10",
+              "to": "26/11",
+              "price": 1400000
+            },
+            {
+              "distance": "25km",
+              "tier": "Priority",
+              "from": "10/04",
+              "to": "22/04",
+              "price": 1440000
+            },
+            {
+              "distance": "25km",
+              "tier": "Early Bird",
+              "from": "23/04",
+              "to": "21/05",
+              "price": 1800000
+            },
+            {
+              "distance": "25km",
+              "tier": "Noon",
+              "from": "22/05",
+              "to": "28/10",
+              "price": 2112000
+            },
+            {
+              "distance": "25km",
+              "tier": "Regular",
+              "from": "29/10",
+              "to": "26/11",
+              "price": 2400000
+            },
+            {
+              "distance": "42km",
+              "tier": "Priority",
+              "from": "10/04",
+              "to": "22/04",
+              "price": 1920000
+            },
+            {
+              "distance": "42km",
+              "tier": "Early Bird",
+              "from": "23/04",
+              "to": "21/05",
+              "price": 2400000
+            },
+            {
+              "distance": "42km",
+              "tier": "Noon",
+              "from": "22/05",
+              "to": "28/10",
+              "price": 2816000
+            },
+            {
+              "distance": "42km",
+              "tier": "Regular",
+              "from": "29/10",
+              "to": "26/11",
+              "price": 3200000
+            },
+            {
+              "distance": "70km",
+              "tier": "Priority",
+              "from": "10/04",
+              "to": "22/04",
+              "price": 2340000
+            },
+            {
+              "distance": "70km",
+              "tier": "Early Bird",
+              "from": "23/04",
+              "to": "21/05",
+              "price": 2925000
+            },
+            {
+              "distance": "70km",
+              "tier": "Noon",
+              "from": "22/05",
+              "to": "28/10",
+              "price": 3432000
+            },
+            {
+              "distance": "70km",
+              "tier": "Regular",
+              "from": "29/10",
+              "to": "26/11",
+              "price": 3900000
+            },
+            {
+              "distance": "100km",
+              "tier": "Priority",
+              "from": "10/04",
+              "to": "22/04",
+              "price": 2700000
+            },
+            {
+              "distance": "100km",
+              "tier": "Early Bird",
+              "from": "23/04",
+              "to": "21/05",
+              "price": 3375000
+            },
+            {
+              "distance": "100km",
+              "tier": "Noon",
+              "from": "22/05",
+              "to": "28/10",
+              "price": 3960000
+            },
+            {
+              "distance": "100km",
+              "tier": "Regular",
+              "from": "29/10",
+              "price": 4500000
+            },
+            {
+              "distance": "160km",
+              "tier": "Priority",
+              "from": "10/04",
+              "to": "22/04",
+              "price": 4080000
+            },
+            {
+              "distance": "160km",
+              "tier": "Early Bird",
+              "from": "23/04",
+              "to": "21/05",
+              "price": 5100000
+            },
+            {
+              "distance": "160km",
+              "tier": "Noon",
+              "from": "22/05",
+              "to": "28/10",
+              "price": 5984000
+            },
+            {
+              "distance": "160km",
+              "tier": "Regular",
+              "from": "29/10",
+              "to": "26/11",
+              "price": 6800000
+            }
+          ],
+          "note": "5BIB ticket list: 4 tiers x 6 distances with valid dates; location Cao Bằng, Việt Nam"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-09-29T07:20:52.168Z"
 }
