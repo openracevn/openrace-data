@@ -7,6 +7,7 @@
   ],
   "date": "2025-06-07",
   "endDate": "2025-06-08",
+  "mainDate": null,
   "seriesId": "ly-son-cross-island",
   "organizerId": "cong-ty-co-phan-duong-chay-xanh",
   "organizer": "CÔNG TY CỔ PHẦN ĐƯỜNG CHẠY XANH",
@@ -127,7 +128,140 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "1km",
+      "tier": "EB1",
+      "kind": "other",
+      "audience": null,
+      "price": 1512150,
+      "from": "2024-11-04",
+      "to": "2024-12-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "2km",
+      "tier": "EB1",
+      "kind": "other",
+      "audience": null,
+      "price": 1682150,
+      "from": "2024-11-04",
+      "to": "2024-12-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "EB1",
+      "kind": "other",
+      "audience": null,
+      "price": 1937150,
+      "from": "2024-11-04",
+      "to": "2024-12-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "1km",
+      "tier": "EB2",
+      "kind": "other",
+      "audience": null,
+      "price": 1601100,
+      "from": "2025-01-01",
+      "to": "2025-01-01",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "2km",
+      "tier": "EB2",
+      "kind": "other",
+      "audience": null,
+      "price": 1781100,
+      "from": "2025-01-01",
+      "to": "2025-01-01",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "EB2",
+      "kind": "other",
+      "audience": null,
+      "price": 2051100,
+      "from": "2025-01-01",
+      "to": "2025-01-01",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "1km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1779000,
+      "from": "2025-01-02",
+      "to": "2025-02-28",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "2km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1979000,
+      "from": "2025-01-02",
+      "to": "2025-02-28",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2279000,
+      "from": "2025-01-02",
+      "to": "2025-02-28",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "1km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1956900,
+      "from": "2025-03-01",
+      "to": "2025-05-05",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "2km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2176900,
+      "from": "2025-03-01",
+      "to": "2025-05-05",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2506900,
+      "from": "2025-03-01",
+      "to": "2025-05-05",
+      "inferred": [],
+      "site": "irace"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -147,6 +281,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -234,9 +369,131 @@
           "note": "iRace listing confirms this is an open-water swim event with 1km/2km/5km distances, corroborating actiup"
         }
       }
+    },
+    {
+      "site": "irace",
+      "role": "reference",
+      "url": "http://web.archive.org/web/20250122020117/https://ticket.irace.vn/ly-son-cross-island-2025",
+      "lastCheckedAt": "2026-09-29T04:46:32.526Z",
+      "lastChangedAt": "2026-09-29T04:46:32.526Z",
+      "extracted": {
+        "facts": {
+          "name": "Lý Sơn Cross Island 2025",
+          "date": "2025-06-07",
+          "endDate": "2025-06-08",
+          "types": [
+            "swim"
+          ],
+          "distances": [
+            "1km",
+            "2km",
+            "5km"
+          ],
+          "venue": "Huyện đảo Lý Sơn, tỉnh Quảng Ngãi",
+          "prices": [
+            {
+              "distance": "1km",
+              "tier": "EB1",
+              "kind": "early",
+              "from": "2024-11-04",
+              "to": "2024-12-31",
+              "price": 1512150
+            },
+            {
+              "distance": "2km",
+              "tier": "EB1",
+              "kind": "early",
+              "from": "2024-11-04",
+              "to": "2024-12-31",
+              "price": 1682150
+            },
+            {
+              "distance": "5km",
+              "tier": "EB1",
+              "kind": "early",
+              "from": "2024-11-04",
+              "to": "2024-12-31",
+              "price": 1937150
+            },
+            {
+              "distance": "1km",
+              "tier": "EB2",
+              "kind": "early",
+              "from": "2025-01-01",
+              "to": "2025-01-01",
+              "price": 1601100
+            },
+            {
+              "distance": "2km",
+              "tier": "EB2",
+              "kind": "early",
+              "from": "2025-01-01",
+              "to": "2025-01-01",
+              "price": 1781100
+            },
+            {
+              "distance": "5km",
+              "tier": "EB2",
+              "kind": "early",
+              "from": "2025-01-01",
+              "to": "2025-01-01",
+              "price": 2051100
+            },
+            {
+              "distance": "1km",
+              "tier": "Regular",
+              "kind": "regular",
+              "from": "2025-01-02",
+              "to": "2025-02-28",
+              "price": 1779000
+            },
+            {
+              "distance": "2km",
+              "tier": "Regular",
+              "kind": "regular",
+              "from": "2025-01-02",
+              "to": "2025-02-28",
+              "price": 1979000
+            },
+            {
+              "distance": "5km",
+              "tier": "Regular",
+              "kind": "regular",
+              "from": "2025-01-02",
+              "to": "2025-02-28",
+              "price": 2279000
+            },
+            {
+              "distance": "1km",
+              "tier": "Late",
+              "kind": "late",
+              "from": "2025-03-01",
+              "to": "2025-05-05",
+              "price": 1956900
+            },
+            {
+              "distance": "2km",
+              "tier": "Late",
+              "kind": "late",
+              "from": "2025-03-01",
+              "to": "2025-05-05",
+              "price": 2176900
+            },
+            {
+              "distance": "5km",
+              "tier": "Late",
+              "kind": "late",
+              "from": "2025-03-01",
+              "to": "2025-05-05",
+              "price": 2506900
+            }
+          ],
+          "note": "Wayback snapshot 2025-01-22 of iRace page holds the price table (EB1/EB2/Regular/Late) the live page has dropped"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-27T07:40:37.298Z"
+  "updatedAt": "2026-09-29T04:46:32.526Z"
 }
