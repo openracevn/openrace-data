@@ -48,7 +48,12 @@
   "registrationStatus": "closed",
   "registrations": [],
   "links": [],
-  "participants": null,
+  "participants": {
+    "count": 4500,
+    "sourceUrl": "https://tienphong.vn/tien-phong-marathon-2021-cung-nhau-ve-dich-post1323544.tpo",
+    "quote": "Trong tổng số hơn 4.500 vận động viên đăng ký thi đấu tại Tiền Phong Marathon năm 2021",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "seriesId": {
@@ -90,9 +95,28 @@
           "note": "Tiền Phong article (14/12/2020): 62nd edition, Pleiku, race 28/3/2021, distances 5/10/21/42km; no prices stated"
         }
       }
+    },
+    {
+      "site": "tienphong-vn",
+      "role": "reference",
+      "url": "https://tienphong.vn/tien-phong-marathon-2021-cung-nhau-ve-dich-post1323544.tpo",
+      "lastCheckedAt": "2026-09-29T04:56:18.045Z",
+      "lastChangedAt": "2026-09-29T04:56:18.045Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Vô địch Quốc gia Marathon và cự ly dài báo Tiền Phong lần thứ 62 năm 2021",
+          "date": "2021-03-28",
+          "participants": {
+            "count": 4500,
+            "sourceUrl": "https://tienphong.vn/tien-phong-marathon-2021-cung-nhau-ve-dich-post1323544.tpo",
+            "quote": "Trong tổng số hơn 4.500 vận động viên đăng ký thi đấu tại Tiền Phong Marathon năm 2021"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-29T04:51:21.179Z",
-  "updatedAt": "2026-09-29T04:54:17.313Z"
+  "updatedAt": "2026-09-29T04:56:18.045Z"
 }
