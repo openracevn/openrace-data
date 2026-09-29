@@ -9,6 +9,9 @@ name: Main
 # It also runs daily at 00:40 UTC (07:40 in Vietnam), just after D1's daily write quota
 # resets, as a backup: a sync that failed (quota, outage) catches up. Unchanged files
 # cost the API nothing.
+# One job on purpose: every job bills at least a minute and reinstalls dependencies,
+# and data pushes are frequent. Typecheck and unit tests are skipped when a push
+# only touched data/.
 on:
   push:
     branches: [main]
@@ -19,78 +22,56 @@ on:
     - cron: "40 0 * * *"
 
 jobs:
-  changes:
+  main:
     runs-on: ubuntu-latest
-    outputs:
-      data_changed: ${{ steps.changes.outputs.data_changed }}
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7
         with:
-          fetch-depth: 0
+          fetch-depth: 0 # change detection and the notify payloads read the git diff
       - id: changes
-        name: Detect data changes
+        name: Detect changes
         env:
           BEFORE: ${{ github.event.before }}
         run: |
-          if [[ "${{ github.event_name }}" == "workflow_dispatch" || "${{ github.event_name }}" == "schedule" ]] || [[ "$BEFORE" =~ ^0+$ ]] || ! git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
-            echo "data_changed=true" >> "$GITHUB_OUTPUT"
-          elif git diff --quiet "$BEFORE" "$GITHUB_SHA" -- data/; then
-            echo "data_changed=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "data_changed=true" >> "$GITHUB_OUTPUT"
+          data=true
+          code=true
+          if [[ "${{ github.event_name }}" == "push" ]] && [[ ! "$BEFORE" =~ ^0+$ ]] && git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            files=$(git diff --name-only "$BEFORE" "$GITHUB_SHA")
+            grep -q '^data/' <<<"$files" || data=false
+            grep -qvE '^(data|state|\.claude)/|\.md$' <<<"$files" || code=false
           fi
-
-  validate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v7
+          echo "data_changed=$data" >> "$GITHUB_OUTPUT"
+          echo "code_changed=$code" >> "$GITHUB_OUTPUT"
       - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run typecheck
-      - run: npm test
-      - run: npm run validate
 
-  # Tell openrace-api to resync, only once the pushed data has validated.
-  # The API reads schema v2 since 2026-09-24 (openrace-api 65f6d00).
-  notify-api:
-    needs: [changes, validate]
-    if: needs.changes.outputs.data_changed == 'true'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v7
-        with:
-          fetch-depth: 0 # the payload lists changed races from the git diff
-      - uses: actions/setup-node@v7
-        with:
-          node-version: 22
-          cache: npm
-      - run: npm ci
-      - run: npm run notify:sync
+      # Doesn't wait for validation, so a bad data push is still announced.
+      - name: Notify Discord
+        if: github.event_name == 'push' && steps.changes.outputs.data_changed == 'true'
+        run: npm run notify:discord
         env:
-          SYNC_WEBHOOK_URL: ${{ secrets.SYNC_WEBHOOK_URL }}
-          SYNC_SECRET: ${{ secrets.SYNC_SECRET }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           BEFORE_SHA: ${{ github.event.before }}
           AFTER_SHA: ${{ github.sha }}
 
-  # Doesn't wait for validation, so a bad data push is still announced.
-  notify-discord:
-    needs: changes
-    if: github.event_name == 'push' && needs.changes.outputs.data_changed == 'true'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v7
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v7
-        with:
-          node-version: 22
-          cache: npm
-      - run: npm ci
-      - run: npm run notify:discord
+      - name: Typecheck and test
+        if: steps.changes.outputs.code_changed == 'true'
+        run: |
+          npm run typecheck
+          npm test
+      - run: npm run validate
+
+      # Tell openrace-api to resync, only once the pushed data has validated.
+      # The API reads schema v2 since 2026-09-24 (openrace-api 65f6d00).
+      - name: Notify API
+        if: steps.changes.outputs.data_changed == 'true'
+        run: npm run notify:sync
         env:
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          SYNC_WEBHOOK_URL: ${{ secrets.SYNC_WEBHOOK_URL }}
+          SYNC_SECRET: ${{ secrets.SYNC_SECRET }}
           BEFORE_SHA: ${{ github.event.before }}
           AFTER_SHA: ${{ github.sha }}
