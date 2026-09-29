@@ -13,7 +13,7 @@ Plan 017. Free: your own `WebSearch` and plain page fetches. No Firecrawl, no op
 
 ## Steps
 
-0. **Read `.claude/docs/participants-backfill-log.md` first** (races already run, and why the misses have no count; don't search those twice) and **append each batch to it** at the end: stored, not stored with the reason and what to try next.
+0. **Read `.claude/docs/participants-backfill-log.md` first** (races already run, and why the misses have no count; don't search those twice) and **append each batch to it** at the end: stored, not stored with the reason and what to try next. `npm run gaps` still lists the misses, so "next 5" means the next 5 races in the worklist that are **not in the log** (neither stored nor "searched, not stored" nor "skipped on purpose"); retry a logged miss only when the user asks or its "next thing to try" is now doable.
 1. **Worklist:** `git pull`, then `npm run gaps`, section "Past races with no participant count" (biggest series first). "Participant counts with low confidence" is the upgrade list.
 2. **Search:** about 10 races per batch, in parallel, one `WebSearch` per race (`<race name> <year> số người tham gia`), a second wording only for misses. Only a number in a result **title** can be quoted verbatim; a number seen only in a search summary goes in **without a quote** (stored as `low`).
 3. **Write candidates** to a scratch file. `race` is the `slug` inside the JSON, which can differ from the filename (`the-lakes-race-mua-3-2020.json` has slug `the-lakes-race-mua-3`; a wrong one is rejected as "no such race"): `[{"race":"<slug>","url":"<page>","count":9100,"quote":"<verbatim title or sentence>"}]`.
