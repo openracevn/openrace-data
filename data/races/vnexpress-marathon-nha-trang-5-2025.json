@@ -7,6 +7,7 @@
   ],
   "date": "2025-08-24",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "vnexpress-marathon-nha-trang",
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
@@ -113,6 +114,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": {
+    "count": 13000,
+    "sourceUrl": "https://baovanhoa.vn/the-thao/13000-vdv-tham-gia-vnexpress-marathon-libera-nha-trang-2025-163081.html",
+    "quote": "13.000 VĐV tham gia VnExpress Marathon Libera Nha Trang 2025",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {},
   "sources": [
@@ -161,9 +168,28 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "baovanhoa-vn",
+      "role": "reference",
+      "url": "https://baovanhoa.vn/the-thao/13000-vdv-tham-gia-vnexpress-marathon-libera-nha-trang-2025-163081.html",
+      "lastCheckedAt": "2026-09-29T04:36:12.204Z",
+      "lastChangedAt": "2026-09-29T04:36:12.204Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Marathon Libera Nha Trang 2025",
+          "date": "2025-08-24",
+          "participants": {
+            "count": 13000,
+            "sourceUrl": "https://baovanhoa.vn/the-thao/13000-vdv-tham-gia-vnexpress-marathon-libera-nha-trang-2025-163081.html",
+            "quote": "13.000 VĐV tham gia VnExpress Marathon Libera Nha Trang 2025"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-26T13:37:21.014Z",
-  "updatedAt": "2026-09-26T13:37:21.014Z"
+  "updatedAt": "2026-09-29T04:36:12.204Z"
 }
