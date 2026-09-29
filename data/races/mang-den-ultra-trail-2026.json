@@ -558,9 +558,35 @@
           "note": "Tuổi Trẻ preview (2025-12-26): 16-18/1/2026, 5 distances 15/25/50/70/100km, UTMB Index, returns after first season"
         }
       }
+    },
+    {
+      "site": "tuoitre-vn",
+      "role": "reference",
+      "url": "https://tuoitre.vn/dulichtphcm/800-van-dong-vien-tham-gia-giai-chay-dia-hinh-mang-aen-ultra-trail-2026-107109077.htm",
+      "lastCheckedAt": "2026-09-29T06:28:53.208Z",
+      "lastChangedAt": "2026-09-29T06:28:53.208Z",
+      "extracted": {
+        "facts": {
+          "name": "Măng Đen Ultra Trail 2026",
+          "date": "2026-01-16",
+          "types": [
+            "trail_run"
+          ],
+          "distances": [
+            "15km",
+            "25km",
+            "50km",
+            "70km",
+            "100km"
+          ],
+          "city": "Quảng Ngãi",
+          "organizer": "Hội Du lịch Măng Đen",
+          "note": "Tạp chí Du lịch TPHCM (2026-01-16): opening ceremony, nearly 800 athletes, 5 distances, organized by Hiệp hội Du lịch Măng Đen"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T06:28:18.272Z"
+  "updatedAt": "2026-09-29T06:28:53.208Z"
 }
