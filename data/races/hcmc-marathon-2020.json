@@ -48,7 +48,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
-  "participants": null,
+  "participants": {
+    "count": 9000,
+    "sourceUrl": "https://plo.vn/ky-nguyen-so/hcmc-marathon-2020-thu-hut-hon-9000-nguoi-tham-du-post556450.html",
+    "quote": "HCMC Marathon 2020 thu hút hơn 9.000 người tham dự",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {},
   "sources": [
@@ -79,9 +84,28 @@
           "note": "Thanh Niên: 'Mùa giải lần thứ 7 năm 2020'; VnExpress states 4-5/1 at Phú Mỹ Hưng. race-research HCMC Marathon series history."
         }
       }
+    },
+    {
+      "site": "plo-vn",
+      "role": "reference",
+      "url": "https://plo.vn/ky-nguyen-so/hcmc-marathon-2020-thu-hut-hon-9000-nguoi-tham-du-post556450.html",
+      "lastCheckedAt": "2026-09-29T03:54:43.679Z",
+      "lastChangedAt": "2026-09-29T03:54:43.679Z",
+      "extracted": {
+        "facts": {
+          "name": "HCMC Marathon 2020",
+          "date": "2020-01-04",
+          "participants": {
+            "count": 9000,
+            "sourceUrl": "https://plo.vn/ky-nguyen-so/hcmc-marathon-2020-thu-hut-hon-9000-nguoi-tham-du-post556450.html",
+            "quote": "HCMC Marathon 2020 thu hút hơn 9.000 người tham dự"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:37:24.472Z",
-  "updatedAt": "2026-09-28T16:37:24.472Z"
+  "updatedAt": "2026-09-29T03:54:43.679Z"
 }
