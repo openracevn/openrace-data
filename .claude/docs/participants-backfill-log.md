@@ -64,6 +64,22 @@ Follow-up, same day (the two Pocari misses, after reading the pages): stored wit
 
 Lesson: a number seen only in a search summary is worth one page read before calling a miss. The count was on a page we could read.
 
+### Batch: vnexpress-marathon-nha-trang series (2026-09-29)
+
+Found 3 of 4 (75%). The series' 2022 edition was already stored.
+
+| Race (slug) | Count | Source |
+| --- | --- | --- |
+| vnexpress-marathon-nha-trang-3 (2023) | 11,000 (hơn) | cadn.com.vn |
+| vnexpress-marathon-nha-trang-4 (2024) | 9,000 (hơn) | nld.com.vn |
+| vnexpress-marathon-nha-trang-5 (2025) | 13,000 | baovanhoa.vn |
+
+Searched, not stored:
+
+| Race (slug) | Why | Next thing to try |
+| --- | --- | --- |
+| vnexpress-marathon-nha-trang (2026) | only the pre-race 4/8 vnexpress.net article ("đón 10.000 runner") is found: an expected figure, not a count; the race-day article states none | post-race recap or results page (after mid-Aug 2026), vm.vnexpress.net/nha-trang-2026 |
+
 ### Next in the worklist
 
 After the races above, the worklist moves on to `lam-dong-trail-2022`, `vnexpress-marathon-nha-trang-3`, `-4` and the rest of `npm run gaps` (section "Past races with no participant count"). Run `git pull` first: the apply step commits through the GitHub API, so the local checkout lags.
