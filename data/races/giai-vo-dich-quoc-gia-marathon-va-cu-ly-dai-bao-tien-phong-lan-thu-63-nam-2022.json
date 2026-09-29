@@ -148,7 +148,12 @@
   "registrationStatus": "closed",
   "registrations": [],
   "links": [],
-  "participants": null,
+  "participants": {
+    "count": 3700,
+    "sourceUrl": "https://www.vietnamplus.vn/gan-3700-van-dong-vien-tham-du-giai-tien-phong-marathon-tai-con-dao/778249.vnp",
+    "quote": "quy tụ gần 3.700 vận động viên gồm cả chuyên nghiệp và phong trào",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "seriesId": {
@@ -256,9 +261,28 @@
           "note": "Tiền Phong's own article opening registration for the 63rd edition; states the price table, dates and Côn Đảo venue"
         }
       }
+    },
+    {
+      "site": "vietnamplus-vn",
+      "role": "reference",
+      "url": "https://vietnamplus.vn/gan-3700-van-dong-vien-tham-du-giai-tien-phong-marathon-tai-con-dao/778249.vnp",
+      "lastCheckedAt": "2026-09-29T04:56:47.891Z",
+      "lastChangedAt": "2026-09-29T04:56:47.891Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Vô địch Quốc gia Marathon và cự ly dài báo Tiền Phong lần thứ 63 năm 2022",
+          "date": "2022-03-25",
+          "participants": {
+            "count": 3700,
+            "sourceUrl": "https://www.vietnamplus.vn/gan-3700-van-dong-vien-tham-du-giai-tien-phong-marathon-tai-con-dao/778249.vnp",
+            "quote": "quy tụ gần 3.700 vận động viên gồm cả chuyên nghiệp và phong trào"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-29T04:46:51.499Z",
-  "updatedAt": "2026-09-29T04:54:34.181Z"
+  "updatedAt": "2026-09-29T04:56:47.891Z"
 }
