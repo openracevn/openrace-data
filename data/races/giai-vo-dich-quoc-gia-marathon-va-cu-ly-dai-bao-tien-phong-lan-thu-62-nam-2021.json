@@ -1,0 +1,87 @@
+{
+  "id": "26df28c9-99de-4460-98d8-c971e505f295",
+  "slug": "giai-vo-dich-quoc-gia-marathon-va-cu-ly-dai-bao-tien-phong-lan-thu-62-nam-2021",
+  "name": "Giải Vô địch Quốc gia Marathon và cự ly dài báo Tiền Phong lần thứ 62 năm 2021",
+  "types": [
+    "road_run"
+  ],
+  "date": "2021-03-28",
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": null,
+  "organizerId": null,
+  "organizer": "Báo Tiền Phong",
+  "edition": null,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Thành phố Pleiku",
+    "city": "Gia Lai"
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [],
+  "links": [],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "tienphong-vn",
+      "role": "reference",
+      "url": "https://tienphong.vn/tien-phong-marathon-2021-mo-cong-dang-ky-tu-ngay-19122020-post1297543.tpo",
+      "lastCheckedAt": "2026-09-29T04:51:21.179Z",
+      "lastChangedAt": "2026-09-29T04:51:21.179Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Vô địch Quốc gia Marathon và cự ly dài báo Tiền Phong lần thứ 62 năm 2021",
+          "date": "2021-03-28",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "venue": "Thành phố Pleiku",
+          "city": "Gia Lai",
+          "organizer": "Báo Tiền Phong",
+          "registrationStatus": "closed",
+          "prices": [],
+          "note": "Tiền Phong article (14/12/2020): 62nd edition, Pleiku, race 28/3/2021, distances 5/10/21/42km; no prices stated"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-29T04:51:21.179Z",
+  "updatedAt": "2026-09-29T04:51:21.179Z"
+}
