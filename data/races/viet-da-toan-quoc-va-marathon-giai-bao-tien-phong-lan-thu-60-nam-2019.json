@@ -11,7 +11,7 @@
   "seriesId": "tien-phong-marathon",
   "organizerId": null,
   "organizer": "Báo Tiền Phong",
-  "edition": null,
+  "edition": 60,
   "courses": [],
   "location": {
     "venue": "Thành phố Vũng Tàu",
@@ -30,6 +30,11 @@
       "value": "tien-phong-marathon",
       "reason": "same national championship series (Tiền Phong Marathon)",
       "at": "2026-09-29T04:53:39.205Z"
+    },
+    "edition": {
+      "value": 60,
+      "reason": "Dân trí states 'lần thứ 60'",
+      "at": "2026-09-29T04:53:46.791Z"
     }
   },
   "sources": [
@@ -58,5 +63,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-29T04:52:15.910Z",
-  "updatedAt": "2026-09-29T04:53:39.205Z"
+  "updatedAt": "2026-09-29T04:53:46.791Z"
 }
