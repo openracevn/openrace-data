@@ -48,7 +48,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
-  "participants": null,
+  "participants": {
+    "count": 9000,
+    "sourceUrl": "https://congthuong.vn/hon-9000-van-dong-vien-tham-gia-hcmc-marathon-2019-114706.html",
+    "quote": "Hơn 9.000 vận động viên tham gia HCMC Marathon 2019",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {},
   "sources": [
@@ -78,9 +83,28 @@
           "note": "Pulse Active (organizer) post: 'lần thứ 6 - 2019 diễn ra ngày 13-01-2019 tại Phú Mỹ Hưng', 42/21/10/5km. race-research HCMC Marathon series history."
         }
       }
+    },
+    {
+      "site": "congthuong-vn",
+      "role": "reference",
+      "url": "https://congthuong.vn/hon-9000-van-dong-vien-tham-gia-hcmc-marathon-2019-114706.html",
+      "lastCheckedAt": "2026-09-29T03:52:22.966Z",
+      "lastChangedAt": "2026-09-29T03:52:22.966Z",
+      "extracted": {
+        "facts": {
+          "name": "HCMC Marathon 2019",
+          "date": "2019-01-13",
+          "participants": {
+            "count": 9000,
+            "sourceUrl": "https://congthuong.vn/hon-9000-van-dong-vien-tham-gia-hcmc-marathon-2019-114706.html",
+            "quote": "Hơn 9.000 vận động viên tham gia HCMC Marathon 2019"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:36:56.674Z",
-  "updatedAt": "2026-09-28T16:36:56.674Z"
+  "updatedAt": "2026-09-29T03:52:22.966Z"
 }
