@@ -26,7 +26,74 @@
     "city": "Phú Quốc"
   },
   "geo": null,
-  "prices": [],
+  "prices": [
+    {
+      "distance": null,
+      "tier": "Aquathlon Tier 1",
+      "kind": "other",
+      "audience": null,
+      "price": 950000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    },
+    {
+      "distance": null,
+      "tier": "Aquathlon Tier 2",
+      "kind": "other",
+      "audience": null,
+      "price": 1200000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    },
+    {
+      "distance": null,
+      "tier": "Aquathlon Tier 3",
+      "kind": "other",
+      "audience": null,
+      "price": 1300000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    },
+    {
+      "distance": null,
+      "tier": "Triathlon Tier 1",
+      "kind": "other",
+      "audience": null,
+      "price": 1250000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    },
+    {
+      "distance": null,
+      "tier": "Triathlon Tier 2",
+      "kind": "other",
+      "audience": null,
+      "price": 1450000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    },
+    {
+      "distance": null,
+      "tier": "Triathlon Tier 3",
+      "kind": "other",
+      "audience": null,
+      "price": 1650000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -97,9 +164,55 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "ironman-com",
+      "role": "reference",
+      "url": "https://ironman.com/races/im703-phu-quoc/ironkids",
+      "lastCheckedAt": "2026-09-29T07:25:49.157Z",
+      "lastChangedAt": "2026-09-29T07:25:49.157Z",
+      "extracted": {
+        "facts": {
+          "name": "IRONKIDS Viet Nam in Phu Quoc 2026",
+          "date": "2026-11-14",
+          "prices": [
+            {
+              "distance": null,
+              "tier": "Aquathlon Tier 1",
+              "price": 950000
+            },
+            {
+              "distance": null,
+              "tier": "Aquathlon Tier 2",
+              "price": 1200000
+            },
+            {
+              "distance": null,
+              "tier": "Aquathlon Tier 3",
+              "price": 1300000
+            },
+            {
+              "distance": null,
+              "tier": "Triathlon Tier 1",
+              "price": 1250000
+            },
+            {
+              "distance": null,
+              "tier": "Triathlon Tier 2",
+              "price": 1450000
+            },
+            {
+              "distance": null,
+              "tier": "Triathlon Tier 3",
+              "price": 1650000
+            }
+          ],
+          "note": "IRONMAN 70.3 Phu Quoc's own IRONKIDS page lists both entries and their 3 tiers in text (same figures as irace.vn gia-ve.webp); tier dates not stated"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T07:20:52.168Z"
+  "updatedAt": "2026-09-29T07:25:49.157Z"
 }

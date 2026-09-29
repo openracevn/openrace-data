@@ -25,7 +25,76 @@
     "city": "Phú Quốc"
   },
   "geo": null,
-  "prices": [],
+  "prices": [
+    {
+      "distance": null,
+      "tier": "General Tier 1",
+      "kind": "regular",
+      "audience": null,
+      "price": 3000000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    },
+    {
+      "distance": null,
+      "tier": "General Tier 2",
+      "kind": "regular",
+      "audience": null,
+      "price": 3400000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    },
+    {
+      "distance": null,
+      "tier": "General Tier 3",
+      "kind": "regular",
+      "audience": null,
+      "price": 3950000,
+      "from": null,
+      "to": "2026-11-14",
+      "inferred": [
+        "to"
+      ],
+      "site": "ironman-com"
+    },
+    {
+      "distance": null,
+      "tier": "Relay Tier 1",
+      "kind": "group",
+      "audience": null,
+      "price": 4350000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    },
+    {
+      "distance": null,
+      "tier": "Relay Tier 2",
+      "kind": "group",
+      "audience": null,
+      "price": 4950000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    },
+    {
+      "distance": null,
+      "tier": "Relay Tier 3",
+      "kind": "group",
+      "audience": null,
+      "price": 5500000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -95,9 +164,55 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "ironman-com",
+      "role": "reference",
+      "url": "https://ironman.com/races/im703-phu-quoc/sunrise-sprint",
+      "lastCheckedAt": "2026-09-29T07:25:49.157Z",
+      "lastChangedAt": "2026-09-29T07:25:49.157Z",
+      "extracted": {
+        "facts": {
+          "name": "SUNRISE SPRINT Viet Nam in Phu Quoc 2026",
+          "date": "2026-11-14",
+          "prices": [
+            {
+              "distance": null,
+              "tier": "General Tier 1",
+              "price": 3000000
+            },
+            {
+              "distance": null,
+              "tier": "General Tier 2",
+              "price": 3400000
+            },
+            {
+              "distance": null,
+              "tier": "General Tier 3",
+              "price": 3950000
+            },
+            {
+              "distance": null,
+              "tier": "Relay Tier 1",
+              "price": 4350000
+            },
+            {
+              "distance": null,
+              "tier": "Relay Tier 2",
+              "price": 4950000
+            },
+            {
+              "distance": null,
+              "tier": "Relay Tier 3",
+              "price": 5500000
+            }
+          ],
+          "note": "IRONMAN 70.3 Phu Quoc's own Sunrise Sprint page lists General and Relay entry with 3 tiers each in text; tier dates not stated; race day Saturday 14 November 2026"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T07:20:52.168Z"
+  "updatedAt": "2026-09-29T07:25:49.157Z"
 }
