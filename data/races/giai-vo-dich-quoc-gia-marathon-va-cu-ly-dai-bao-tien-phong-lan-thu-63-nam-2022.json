@@ -8,7 +8,7 @@
   "date": "2022-03-25",
   "endDate": "2022-03-27",
   "mainDate": "2022-03-27",
-  "seriesId": null,
+  "seriesId": "tien-phong-marathon",
   "organizerId": null,
   "organizer": "Báo Tiền Phong",
   "edition": null,
@@ -150,7 +150,13 @@
   "links": [],
   "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "seriesId": {
+      "value": "tien-phong-marathon",
+      "reason": "same national championship series (Tiền Phong Marathon)",
+      "at": "2026-09-29T04:54:24.718Z"
+    }
+  },
   "sources": [
     {
       "site": "tienphong-vn",
@@ -249,5 +255,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-29T04:46:51.499Z",
-  "updatedAt": "2026-09-29T04:46:51.499Z"
+  "updatedAt": "2026-09-29T04:54:24.718Z"
 }
