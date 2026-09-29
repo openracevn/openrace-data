@@ -188,7 +188,12 @@
       "foundOn": "actiup.net"
     }
   ],
-  "participants": null,
+  "participants": {
+    "count": 600,
+    "sourceUrl": "https://dantri.com.vn/the-thao/600-nguoi-tham-gia-boi-vuot-bien-o-ly-son-20240513112538743.htm",
+    "quote": "Giải thu hút 600 vận động viên đến từ 10 quốc gia tham dự",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "types": {
@@ -329,9 +334,27 @@
           "note": "iRace listing confirms this is an open-water swim event with 1km/2km/5km distances, corroborating actiup"
         }
       }
+    },
+    {
+      "site": "dantri-com-vn",
+      "role": "reference",
+      "url": "https://dantri.com.vn/the-thao/600-nguoi-tham-gia-boi-vuot-bien-o-ly-son-20240513112538743.htm",
+      "lastCheckedAt": "2026-09-29T04:59:39.990Z",
+      "lastChangedAt": "2026-09-29T04:59:39.990Z",
+      "extracted": {
+        "facts": {
+          "name": "Lý Sơn Cross Island 2024",
+          "date": "2024-06-01",
+          "participants": {
+            "count": 600,
+            "quote": "Giải thu hút 600 vận động viên đến từ 10 quốc gia tham dự"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T04:50:10.427Z"
+  "updatedAt": "2026-09-29T04:59:39.990Z"
 }
