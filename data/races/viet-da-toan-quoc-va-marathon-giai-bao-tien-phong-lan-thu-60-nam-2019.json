@@ -1,0 +1,56 @@
+{
+  "id": "639bd911-1a7e-4cf6-a6c4-65a020127666",
+  "slug": "viet-da-toan-quoc-va-marathon-giai-bao-tien-phong-lan-thu-60-nam-2019",
+  "name": "Việt dã toàn quốc và Marathon giải báo Tiền Phong lần thứ 60 năm 2019",
+  "types": [
+    "road_run"
+  ],
+  "date": "2019-03-24",
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": null,
+  "organizerId": null,
+  "organizer": "Báo Tiền Phong",
+  "edition": null,
+  "courses": [],
+  "location": {
+    "venue": "Thành phố Vũng Tàu",
+    "city": "Bà Rịa - Vũng Tàu"
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "closed",
+  "registrations": [],
+  "links": [],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "dantri-com-vn",
+      "role": "reference",
+      "url": "https://dantri.com.vn/the-thao/giai-chay-viet-da-tien-phong-lan-thu-60-2019-nhieu-net-doi-moi-hap-dan-20190314144455069.htm",
+      "lastCheckedAt": "2026-09-29T04:52:15.910Z",
+      "lastChangedAt": "2026-09-29T04:52:15.910Z",
+      "extracted": {
+        "facts": {
+          "name": "Việt dã toàn quốc và Marathon giải báo Tiền Phong lần thứ 60 năm 2019",
+          "date": "2019-03-24",
+          "types": [
+            "road_run"
+          ],
+          "venue": "Thành phố Vũng Tàu",
+          "city": "Bà Rịa - Vũng Tàu",
+          "organizer": "Báo Tiền Phong",
+          "registrationStatus": "closed",
+          "prices": [],
+          "note": "Dân trí press-conference report: 60th edition, Sunday 24/3/2019, Vũng Tàu"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-29T04:52:15.910Z",
+  "updatedAt": "2026-09-29T04:52:15.910Z"
+}
