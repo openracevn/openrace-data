@@ -43,7 +43,8 @@ One unit = one race or one series. Name it `<slug>` in lowercase-with-dashes (`^
 1. **`WebSearch`**, several queries in parallel, Vietnamese and English (`<name> lần thứ`, `<name> <year> giá vé`, `<name> irace`, `<name> số người tham gia`).
 2. **`curl -sL -A 'Mozilla/5.0'`** (or `WebFetch` for a quick read) on the promising hits. Look at price images yourself (download, then Read).
 3. **Recipes and `npm run find-sources -- <race> [--field prices]`** for sites that have one (ActiUp, iRace, VnExpress Marathon, race sites in `config/sites.yaml`). A live URL on a recipe site is not added by hand: read it with `npm run agent-read -- prepare --race <url|slug|id>` (see `refs/agent-read`). **Always `--out .agent-read/<unit>/prepared`**: the folder `.agent-read/` is shared by parallel workers, and each unit stays inside its own subfolder.
-4. **Wayback** at every step: `https://web.archive.org/web/2id_/<url>`, CDX listing for a snapshot inside the sale window (`refs/race-research` step 1.5). A live page showing nothing proves nothing about what it once showed.
+4. **The event's own organizer or brand site**, even when a seller (ActiUp, iRace) is already known. A seller often shows only a from-price while the organizer's page lists every tier in text (IronKids/Sunrise Sprint: `ironman.com/races/im703-phu-quoc/...`). Look at price images on ticket pages before calling prices a dead end.
+5. **Wayback** at every step: `https://web.archive.org/web/2id_/<url>`, CDX listing for a snapshot inside the sale window (`refs/race-research` step 1.5). A live page showing nothing proves nothing about what it once showed.
 
 Rules that never bend (roadmap trust principles):
 - **Every fact traces to a source.** A fact from a search snippet needs the page fetched and saved; a count with no quote is stored as `low` confidence. Facebook is a link, never a source.
@@ -51,6 +52,10 @@ Rules that never bend (roadmap trust principles):
 - **Nothing is deleted or lost.** Save every fetched page, Wayback snapshot, CDX listing, price image and every `WebSearch` query with its full result under `.agent-read/<unit>/` (`search-log.md`, `pages/`, `images/`). Check `.agent-read-archive/` before fetching anything.
 - **Stopping rule:** every ✗ is either filled from a source or logged in `.agent-read/<unit>/attempts.json` as a dead end with what was tried. `npm run gaps -- --race <x>` is how you know you are done. "Not found" only after digging (retry a failed fetch, Wayback, a second wording, a different outlet).
 - `prices[].site` must equal one of the race's own `sources[].site`; `add` gives you that for free.
+- **Shape prices for the price table** (course × phase): each tier needs the course's `distance` (a valid label such as `10km` or `Sprint`, not a category name) and a phase in its name (`Early Bird`, `Regular`, `Late`) or an explicit `kind` (`early`/`regular`/`late`) in a `prices` override. Tiers with distance `null` and no phase word collapse into one cell, and `group` (relay/team) tiers are not shown. The column header is the tier's own text. Ages have no field: put them in the override reason.
+- **`reference` sources don't override a seller's fields**: a value only a reference source states (a city) needs a `set-many` override.
+- **A location change needs its geo entry first.** `state/geo.json` is keyed by location; a new venue/city has no entry, so the edit loses the point. Geocode the new location, commit `state/geo.json` first (`--also`), then the location edit in a second flush; or re-apply the location afterwards. If the geocoder returns a wrong point (it can ignore the city), set `geo` by hand from a point already stored for the same place. Don't run `npm run geo` to look at things: it rewrites `state/geo.json`.
+- **Don't use `renormalize --commit` for a batch**: in the pilot it re-added an orphan series entry and broke `validate`.
 - Field details, value shapes and per-field rules: `refs/check-race/REFERENCE.md` (overrides, prices, location, geo), `refs/backfill-field/REFERENCE.md` (participants: what counts, quote and verify), `refs/check-organizer/REFERENCE.md` (organizer splits, links).
 
 ## 4. Stage, never commit
@@ -74,6 +79,7 @@ Write the unit's results as a bundle, `.staging/<unit>.json` (in the main checko
 - `add`: a race or edition from a reference page (same fields as `npm run edit -- add`; `name` and `date` required). `attachTo` forces the source onto that existing race (a Wayback snapshot, or any page whose race you already know). Never reuse one URL as the source of two different editions.
 - `set-many`: overrides on one existing race, several fields at once, with the reason and where it came from.
 - `source`: a page already read, as a sync input `{ "op": "source", "input": { url, site, role, extracted, checkedAt } }` (an agent-read result).
+- New series: add the entry to `data/series.json` (sorted by id; organizerId must exist) and commit it in the same commit as the races that use it: `npm run flush -- --also data/series.json`. A series with no races fails `validate`.
 - Check your own bundle: `npm run flush -- --dry-run --unit <unit>` plans it and runs `validate` on a temporary tree. Fix a ✗ REJECTED before reporting.
 
 ## 5. Flush once, then report
@@ -86,7 +92,8 @@ npm run flush -- --dry-run                       # every bundle: ✓ accepted, =
 GITHUB_TOKEN=$(gh auth token) npm run flush      # ONE commit for all accepted bundles
 ```
 
-- One commit costs ~400 GitHub API calls and one Main run, however many races are in it. Say so, then commit; the user asked for the update.
+- One flush is one commit, one Main run and one Discord line however many races are in it. Planning reads race files through the GitHub API (a `set-many` reads about 3 paths; `add` and source ops read more, an earlier measurement gave ~400), so batch rather than commit per race. The user asked for the update: commit.
+- After the commit, check the pages: `npm run gaps -- --race <x>` for each target, and `npm run validate`.
 - A rejected unit is left out; the rest still commit. Fix it and stage it again, or report it.
 - Afterwards each unit's bundle and working folder are in `.agent-read-archive/<date>-<unit>/` with a `status.json`, and its claims are released. Never `rm -rf` these.
 - Push: if the work also changed code or docs, commit those normally and `git push`.

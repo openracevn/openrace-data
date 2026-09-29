@@ -1,6 +1,6 @@
 # Plan 019: One `update-race` skill, Claude-led, parallel, batch-committed
 
-Date: 2026-09-29. Status: approved by the user 2026-09-29; steps 0–4 built 2026-09-29, pilot (step 5) pending.
+Date: 2026-09-29. Status: approved by the user 2026-09-29; all steps built and piloted 2026-09-29 (pilot log below).
 
 ## Roadmap fit
 
@@ -89,4 +89,26 @@ They move under `.claude/skills/update-race/refs/` as reference documents, and t
 - **2026-09-29, steps 0–4 built.** Roadmap change log and principle 5 updated. `scripts/lib/race-gaps.ts` + `npm run gaps -- --race|--series` (also `npm run race-gaps`). `scripts/lib/workspace.ts` (folders anchored to the main checkout), `claims.ts`, `staging.ts` (bundle ops `add`, `set-many`, `source`), `flush.ts` + `npm run flush` and `npm run claim`. Tests in `test/update-race.test.ts` cover the claim refusal (second session refused) and a bundle with a bad `prices[].site` rejected by the temporary-tree `validate` while the others commit. Skill in `.claude/skills/update-race/`; the six old skills moved to `refs/<name>/REFERENCE.md`.
 - **Deviation:** workers do not get a git worktree each. They only write untracked files (`.staging/`, `.agent-read/`), never `data/`, so they share the main checkout and a worktree would only cost a `node_modules` install. Manually opened extra sessions may still use a worktree; the folders resolve to the main checkout.
 - **Not built:** editing `data/series.json` (`statedEditionCount`, `description`) has no command yet; the skill reports it to the user. A bundle op for it is a follow-up.
-- **Step 5 (pilot) pending:** needs three real targets from the user and a live commit; time, Claude usage and commit count go here when done.
+
+## Pilot log (step 5, 2026-09-29)
+
+**Targets:** the 5 soonest upcoming races with no prices: IronKids and Sunrise Sprint Phú Quốc 2026 (one unit, same weekend), Ultra Trail Cao Bằng 2026, Nghệ An Legacy Marathon 2026, Empower Run (Hành Trình Tiếp Sức) 2026. 4 units, so 4 parallel subagents.
+
+**Numbers**
+- First batch: 4 workers in parallel took 102–234 s each; the whole thing from spawn to the single flush commit took **345 s** (14:16 to 14:22). The 4 workers used about **301k subagent tokens** in total (73k, 70k, 66k, 92k) and 20–37 tool calls each. No Claude-usage figure for the old sequential flow was taken, so the comparison the plan asked for is not made; the 3-unit threshold is untested against an inline run.
+- Commits: the batch itself was **1 commit** (`577ded7`, 5 races, one Main run). The session then made **11 more data commits** and 2 code commits, all follow-ups to the workers' output (below). The plan's "the pilot ends as one commit" held for the first flush and not for the pilot as a whole.
+- Result of the first flush: prices for 3 races (24, 20 and 12 tiers), city for 4, Cao Bằng edition 5. IronKids/Sunrise prices, edition, series and geo were not resolved by the workers.
+
+**What went wrong, and what changed**
+1. **Shared `.agent-read/` wiped mid-run.** `agent-read prepare` deleted its whole `--out` folder (default `.agent-read`), destroying other workers' saved pages and search logs (3 of 4 workers reported it). Fixed in `25d39e1`: `prepare` clears only its own output; workers pass `--out .agent-read/<unit>/prepared` (worker prompt and SKILL.md).
+2. **A worker reported a false dead end.** The IronKids/Sunrise worker found no prices; the organizer's own page (`ironman.com/races/im703-phu-quoc/ironkids` and `/sunrise-sprint`) states all of them in text, and iRace had a price image. The user caught it. The skill's source order now says to read the event's organizer or brand site, and to look at images on the ticket page, before any dead end.
+3. **Prices must be shaped for the web price table** (course × phase). Tiers with distance `null` and names that carry no phase word collapsed to one cell (`regular`, first tier wins) and `group` tiers are dropped. Fixed in the data (Sprint/course distances, kinds early/regular/late by tier order) and in `openrace-web` (`23bed2e`: a column is headed by the tier's own text, kind label as fallback). Ages have no field (course labels must be distances), so they live in the override reason.
+4. **A location change orphans the geo point.** `state/geo.json` is keyed by location; a new location has no entry, so the edit plans against the old cache and loses the point (Phú Quốc, Nghệ An, Empower Run, Cao Bằng). The entry must be committed before the location edit (`flush --also state/geo.json`, then a second flush), or the location re-applied afterwards.
+5. **`renormalize` re-added an orphan series entry** (`ha-long-heritage-marathon`), which broke `validate` and the Main run for `0cfd824`; removed in `96ece23`. Cause not investigated: don't use `renormalize --commit` for a batch until it is.
+6. **A `reference` source doesn't override a seller's fields**, so a city that only 5BIB states needed a `location` override.
+7. **New series must be in the same commit as the races that use them** (validate: "series has no races"). Added `npm run flush -- --also <path>` (`477c35a`).
+8. **The geocoder can ignore the city**: "Phố đi bộ Trịnh Công Sơn", city Hà Nội, still returned the Hồ Chí Minh City street. Fixed by a manual point already stored for the same place.
+9. **`npm run geo -- --help` is not a help flag**: it ran the geocoder and rewrote ~1,800 lines of `state/geo.json` locally (reverted, never committed).
+10. **The "~400 GitHub API calls per commit" figure is unverified for this flow.** A `set-many` plan reads about 3 paths; the figure came from an earlier measurement of `edit add`/`set`. Docs reworded.
+
+**Open after the pilot:** Sunrise Sprint / IronKids / Nghệ An editions (no source states them); 2024 Hành Trình Tiếp Sức edition not added; `hanh-trinh-tiep-suc-2025` has no courses or participants; the 3-unit threshold and the Claude-usage comparison still need a sequential baseline.
