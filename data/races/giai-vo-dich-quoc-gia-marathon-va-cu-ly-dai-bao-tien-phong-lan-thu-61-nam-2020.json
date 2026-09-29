@@ -11,7 +11,7 @@
   "seriesId": "tien-phong-marathon",
   "organizerId": null,
   "organizer": "Báo Tiền Phong",
-  "edition": null,
+  "edition": 61,
   "courses": [
     {
       "label": "5km",
@@ -55,6 +55,11 @@
       "value": "tien-phong-marathon",
       "reason": "same national championship series (Tiền Phong Marathon)",
       "at": "2026-09-29T04:53:54.056Z"
+    },
+    "edition": {
+      "value": 61,
+      "reason": "racevietnam page states 'lần tổ chức thứ 61'",
+      "at": "2026-09-29T04:54:01.949Z"
     }
   },
   "sources": [
@@ -89,5 +94,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-29T04:51:48.729Z",
-  "updatedAt": "2026-09-29T04:53:54.056Z"
+  "updatedAt": "2026-09-29T04:54:01.949Z"
 }
