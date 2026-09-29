@@ -1,0 +1,77 @@
+{
+  "id": "8a5cffd2-6660-4726-a79d-6750a54779b5",
+  "slug": "ly-son-cross-island-2023",
+  "name": "Lý Sơn Cross Island 2023",
+  "types": [
+    "swim"
+  ],
+  "date": "2023-05-28",
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": "ly-son-cross-island",
+  "organizerId": null,
+  "organizer": null,
+  "edition": null,
+  "courses": [
+    {
+      "label": "1km",
+      "meters": 1000,
+      "type": "swim",
+      "elevationGain": null
+    },
+    {
+      "label": "2km",
+      "meters": 2000,
+      "type": "swim",
+      "elevationGain": null
+    },
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "swim",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Huyện đảo Lý Sơn, tỉnh Quảng Ngãi",
+    "city": "Lý Sơn"
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "timve365",
+      "role": "reference",
+      "url": "http://web.archive.org/web/20240806204111/https://timve365.vn/events/ly-son-cross-island-2023",
+      "lastCheckedAt": "2026-09-29T04:49:15.046Z",
+      "lastChangedAt": "2026-09-29T04:49:15.046Z",
+      "extracted": {
+        "facts": {
+          "name": "Lý Sơn Cross Island 2023",
+          "date": "2023-05-28",
+          "types": [
+            "swim"
+          ],
+          "distances": [
+            "1km",
+            "2km",
+            "5km"
+          ],
+          "venue": "Huyện đảo Lý Sơn, tỉnh Quảng Ngãi",
+          "city": "Lý Sơn",
+          "note": "First edition (2023 season 1, per dantri/petrotimes); TimVe365 Wayback snapshot states date 28/5/2023, 5km/2km/1km, price range 1,379,000-1,779,000đ (tier table not in static HTML)"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-29T04:49:15.046Z",
+  "updatedAt": "2026-09-29T04:49:15.046Z"
+}
