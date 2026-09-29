@@ -54,7 +54,102 @@
     "venue": "Bản Giốc, Cao Bằng, Việt Nam",
     "city": "Cao Bằng"
   },
-  "geo": null,
+  "geo": {
+    "lat": 22.8542722,
+    "lng": 106.7233149,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "04",
+      "ward": "01501"
+    },
+    "legacy": {
+      "province": "04",
+      "district": "047",
+      "ward": "01495"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1343.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 222,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 771.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1209.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1227.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1429,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 223.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 716.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1391.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1043.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1141.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 301.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 214.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
   "prices": [
     {
       "distance": "10km",
@@ -349,8 +444,8 @@
         "venue": "Bản Giốc, Cao Bằng, Việt Nam",
         "city": "Cao Bằng"
       },
-      "reason": "5BIB event page states location 'Cao Bằng, Việt Nam' (city Cao Bằng, venue Bản Giốc); ActiUp, the ranked source, gives only the venue string. Same venue, city added. The source names the province, which is used as the city like other provincial races.",
-      "at": "2026-09-29T07:55:24.159Z"
+      "reason": "Same location as the previous edit (5BIB: Cao Bằng; venue Bản Giốc), re-applied now that its geocode entry is in state/geo.json so the point is derived. The previous edit was planned before that entry was committed.",
+      "at": "2026-09-29T07:55:47.979Z"
     }
   },
   "sources": [
@@ -593,5 +688,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T07:55:24.159Z"
+  "updatedAt": "2026-09-29T07:55:47.979Z"
 }
