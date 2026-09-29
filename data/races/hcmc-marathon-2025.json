@@ -42,7 +42,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
-  "participants": null,
+  "participants": {
+    "count": 10000,
+    "sourceUrl": "https://hcmcpv.org.vn/tin-tuc/hon-10-000-van-dong-vien-giai-marathon-tphcm-lan-thu-12-nam-2025-1491932893",
+    "quote": "Hơn 10.000 vận động viên Giải Marathon TPHCM lần thứ 12 năm 2025",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {},
   "sources": [
@@ -71,9 +76,28 @@
           "note": "SGGP English (10/01/2025): 12th HCMC Marathon on 12 January, 10/21/42km, start and finish in front of Independence Palace. race-research HCMC Marathon series history."
         }
       }
+    },
+    {
+      "site": "hcmcpv-org-vn",
+      "role": "reference",
+      "url": "https://hcmcpv.org.vn/tin-tuc/hon-10-000-van-dong-vien-giai-marathon-tphcm-lan-thu-12-nam-2025-1491932893",
+      "lastCheckedAt": "2026-09-29T04:04:23.235Z",
+      "lastChangedAt": "2026-09-29T04:04:23.235Z",
+      "extracted": {
+        "facts": {
+          "name": "HCMC Marathon 2025",
+          "date": "2025-01-12",
+          "participants": {
+            "count": 10000,
+            "sourceUrl": "https://hcmcpv.org.vn/tin-tuc/hon-10-000-van-dong-vien-giai-marathon-tphcm-lan-thu-12-nam-2025-1491932893",
+            "quote": "Hơn 10.000 vận động viên Giải Marathon TPHCM lần thứ 12 năm 2025"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:39:28.238Z",
-  "updatedAt": "2026-09-28T16:39:28.238Z"
+  "updatedAt": "2026-09-29T04:04:23.235Z"
 }
