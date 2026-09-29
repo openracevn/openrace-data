@@ -401,7 +401,9 @@
     }
   ],
   "participants": null,
-  "flags": [],
+  "flags": [
+    "sources disagree on race day: irace 2025-02-15..2025-02-16, actiup 2025-02-15..2025-02-16, baovanhoa-vn 2025-02-14"
+  ],
   "overrides": {
     "types": {
       "value": [
@@ -730,9 +732,28 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "baovanhoa-vn",
+      "role": "reference",
+      "url": "https://baovanhoa.vn/the-thao/kon-tum-sap-dien-ra-giai-chay-dia-hinh-cu-ly-sieu-dai-dau-tien-o-mang-den-120904.html",
+      "lastCheckedAt": "2026-09-29T06:27:07.772Z",
+      "lastChangedAt": "2026-09-29T06:27:07.772Z",
+      "extracted": {
+        "facts": {
+          "name": "Măng Đen Ultra Trail 2025",
+          "date": "2025-02-14",
+          "types": [
+            "trail_run"
+          ],
+          "city": "Kon Tum",
+          "organizer": "Hội Du lịch Măng Đen",
+          "note": "Báo Văn Hóa preview (2025-02-12): first ultra-distance trail at Măng Đen, opening ceremony 14.2, organizer quoted is the Hội Du lịch Măng Đen chairman, route around Măng Đen town, Măng Cành, Ngọc Lễ"
+        }
+      }
     }
   ],
-  "confidence": "multi-sourced",
+  "confidence": "conflicting",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T05:00:12.859Z"
+  "updatedAt": "2026-09-29T06:27:07.772Z"
 }
