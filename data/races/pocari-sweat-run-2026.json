@@ -327,7 +327,12 @@
       "foundOn": "actiup.net"
     }
   ],
-  "participants": null,
+  "participants": {
+    "count": 5000,
+    "sourceUrl": "https://vtv.vn/5000-vdv-va-nhung-con-so-an-tuong-tai-giai-chay-pocari-sweat-run-2026-100260916103348653.htm",
+    "quote": "5.000 VĐV và những con số ấn tượng tại Giải chạy Pocari Sweat Run 2026",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "types": {
@@ -568,9 +573,28 @@
           "note": "Organizer's own site: race day 13/09/2026 (expo 12/09), start points Hòa Bình Park and Thống Nhất Park, 3/5/10/21km"
         }
       }
+    },
+    {
+      "site": "vtv-vn",
+      "role": "reference",
+      "url": "https://vtv.vn/5000-vdv-va-nhung-con-so-an-tuong-tai-giai-chay-pocari-sweat-run-2026-100260916103348653.htm",
+      "lastCheckedAt": "2026-09-29T04:27:28.239Z",
+      "lastChangedAt": "2026-09-29T04:27:28.239Z",
+      "extracted": {
+        "facts": {
+          "name": "Pocari Sweat Run 2026",
+          "date": "2026-09-13",
+          "participants": {
+            "count": 5000,
+            "sourceUrl": "https://vtv.vn/5000-vdv-va-nhung-con-so-an-tuong-tai-giai-chay-pocari-sweat-run-2026-100260916103348653.htm",
+            "quote": "5.000 VĐV và những con số ấn tượng tại Giải chạy Pocari Sweat Run 2026"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T16:26:19.570Z"
+  "updatedAt": "2026-09-29T04:27:28.239Z"
 }
