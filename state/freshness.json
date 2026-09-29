@@ -554,7 +554,7 @@
   },
   "2f678a84-6cf0-4c5c-b4b4-7c569bce6b5c": {
     "lastCheckedAt": "2026-09-23T18:31:21.622Z",
-    "lastChangedAt": "2026-09-29T07:58:28.552Z",
+    "lastChangedAt": "2026-09-29T08:07:25.931Z",
     "cadence": "weekly",
     "dueAt": "2026-10-01",
     "final": true
@@ -956,6 +956,13 @@
     "lastChangedAt": "2026-09-27T02:04:36.102Z",
     "cadence": "monthly",
     "dueAt": "2026-10-25",
+    "final": true
+  },
+  "55437973-e118-4ac0-80a1-89d5a5336503": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-09-29T08:07:25.931Z",
+    "cadence": "manual",
+    "dueAt": null,
     "final": true
   },
   "557d09e1-fe70-4aa8-9abd-9572124e9a3f": {

@@ -1230,11 +1230,12 @@
     "date": "2025-10-12",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-09-29T07:58:28.552Z",
+    "lastModified": "2026-09-29T08:07:25.931Z",
     "file": "hanh-trinh-tiep-suc-2025.json",
     "seriesId": "hanh-trinh-tiep-suc",
     "sourceUrls": [
-      "https://actiup.net/vi/event/hanh-trinh-tiep-suc-2025"
+      "https://actiup.net/vi/event/hanh-trinh-tiep-suc-2025",
+      "https://vietnamnet.vn/3-000-van-dong-vien-chay-bo-gay-quy-cho-benh-nhan-ung-thu-2451669.html"
     ],
     "linkUrls": []
   },
@@ -2106,6 +2107,21 @@
       "http://web.archive.org/web/20260626072226/https://vm.vnexpress.net/vung-tau-2026",
       "https://vm.vnexpress.net/vung-tau-2026",
       "https://vnexpress.net/vnexpress-marathon-vung-tau-2026-mo-dang-ky-5089743.html"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "55437973-e118-4ac0-80a1-89d5a5336503",
+    "slug": "hanh-trinh-tiep-suc-2024",
+    "name": "Hành trình tiếp sức 2024",
+    "date": "2024-12-08",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-09-29T08:07:25.931Z",
+    "file": "hanh-trinh-tiep-suc-2024.json",
+    "seriesId": "hanh-trinh-tiep-suc",
+    "sourceUrls": [
+      "https://dantri.com.vn/suc-khoe/giai-chay-hanh-trinh-tiep-suc-trao-546-trieu-dong-toi-nguoi-benh-ung-thu-20241208162340883.htm"
     ],
     "linkUrls": []
   },

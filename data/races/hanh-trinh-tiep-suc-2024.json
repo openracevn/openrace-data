@@ -1,0 +1,186 @@
+{
+  "id": "55437973-e118-4ac0-80a1-89d5a5336503",
+  "slug": "hanh-trinh-tiep-suc-2024",
+  "name": "Hành trình tiếp sức 2024",
+  "types": [
+    "road_run"
+  ],
+  "date": "2024-12-08",
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": "hanh-trinh-tiep-suc",
+  "organizerId": null,
+  "organizer": null,
+  "edition": 1,
+  "courses": [
+    {
+      "label": "2.5km",
+      "meters": 2500,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Hồ Tây",
+    "city": "Hà Nội"
+  },
+  "geo": {
+    "lat": 21.0580419,
+    "lng": 105.8139655,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "01",
+      "ward": "00103"
+    },
+    "legacy": {
+      "province": "01",
+      "district": "003",
+      "ward": "00109"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1500.1,
+        "minutes": 1143,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 6.9,
+        "minutes": 10,
+        "method": "road",
+        "near": true
+      },
+      "da-nang": {
+        "km": 777.6,
+        "minutes": 631,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1281.4,
+        "minutes": 1017,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1408.8,
+        "minutes": 1136,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1611,
+        "minutes": 1262,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 119.8,
+        "minutes": 91,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 675.4,
+        "minutes": 548,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1591.1,
+        "minutes": 1224,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1089.4,
+        "minutes": 857,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1286.2,
+        "minutes": 1054,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 307.2,
+        "minutes": 247,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 164.4,
+        "minutes": 121,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "participants": {
+    "count": 1500,
+    "sourceUrl": "https://dantri.com.vn/suc-khoe/giai-chay-hanh-trinh-tiep-suc-trao-546-trieu-dong-toi-nguoi-benh-ung-thu-20241208162340883.htm",
+    "quote": "Hơn 1.500 vận động viên cùng tham gia đường chạy tại khu vực Hồ Tây",
+    "confidence": "medium"
+  },
+  "flags": [],
+  "overrides": {
+    "seriesId": {
+      "value": "hanh-trinh-tiep-suc",
+      "reason": "Dân trí 2025-10-09 ('Hành trình tiếp sức' mùa 2): 'Tiếp nối thành công từ mùa giải đầu tiên' and 'Trong mùa giải đầu tiên năm 2024'. https://dantri.com.vn/the-thao/hanh-trinh-tiep-suc-mua-2-khi-yeu-thuong-lan-toa-qua-moi-buoc-chay-20251009111812136.htm",
+      "at": "2026-09-29T08:07:25.931Z"
+    },
+    "edition": {
+      "value": 1,
+      "reason": "Dân trí 2025-10-09 ('Hành trình tiếp sức' mùa 2): 'Tiếp nối thành công từ mùa giải đầu tiên' and 'Trong mùa giải đầu tiên năm 2024'. https://dantri.com.vn/the-thao/hanh-trinh-tiep-suc-mua-2-khi-yeu-thuong-lan-toa-qua-moi-buoc-chay-20251009111812136.htm",
+      "at": "2026-09-29T08:07:25.931Z"
+    }
+  },
+  "sources": [
+    {
+      "site": "dantri-com-vn",
+      "role": "reference",
+      "url": "https://dantri.com.vn/suc-khoe/giai-chay-hanh-trinh-tiep-suc-trao-546-trieu-dong-toi-nguoi-benh-ung-thu-20241208162340883.htm",
+      "lastCheckedAt": "2026-09-29T08:07:25.931Z",
+      "lastChangedAt": "2026-09-29T08:07:25.931Z",
+      "extracted": {
+        "facts": {
+          "name": "Hành trình tiếp sức 2024",
+          "date": "2024-12-08",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "2.5km",
+            "5km"
+          ],
+          "venue": "Hồ Tây",
+          "city": "Hà Nội",
+          "participants": {
+            "count": 1500,
+            "sourceUrl": "https://dantri.com.vn/suc-khoe/giai-chay-hanh-trinh-tiep-suc-trao-546-trieu-dong-toi-nguoi-benh-ung-thu-20241208162340883.htm",
+            "quote": "Hơn 1.500 vận động viên cùng tham gia đường chạy tại khu vực Hồ Tây"
+          },
+          "note": "Dân trí 2024-12-08: 'Sáng 8/12, hơn 1.500 vận động viên đã tham gia giải chạy \"Hành trình tiếp sức\" do Bệnh viện K phát động'; 'đường chạy tại khu vực Hồ Tây … 2 cự ly 2,5km và 5km'. First season, per Dân trí 2025-10-09 ('Trong mùa giải đầu tiên năm 2024')."
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-09-29T08:07:25.931Z",
+  "updatedAt": "2026-09-29T08:07:25.931Z"
+}

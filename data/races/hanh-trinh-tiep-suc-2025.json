@@ -3,7 +3,7 @@
   "slug": "hanh-trinh-tiep-suc-2025",
   "name": "Hành trình tiếp sức 2025",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2025-10-12",
   "endDate": null,
@@ -12,7 +12,26 @@
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
   "edition": 2,
-  "courses": [],
+  "courses": [
+    {
+      "label": "3km",
+      "meters": 3000,
+      "type": null,
+      "elevationGain": null
+    },
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": null,
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": null,
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Phố đi bộ Trịnh Công Sơn",
     "city": "Hà Nội"
@@ -129,7 +148,12 @@
       "foundOn": "actiup.net"
     }
   ],
-  "participants": null,
+  "participants": {
+    "count": 3000,
+    "sourceUrl": "https://vietnamnet.vn/3-000-van-dong-vien-chay-bo-gay-quy-cho-benh-nhan-ung-thu-2451669.html",
+    "quote": "gần 3.000 vận động viên đã có mặt và cùng tham gia đường chạy tại khu vực Hồ Tây",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "seriesId": {
@@ -249,6 +273,13 @@
       },
       "reason": "ActiUp spells the venue 'Trinh Công Sơn' with no city, so the geocoder matched a street of that name in Ho Chi Minh City (10.81, 106.78). The race was held on the Trịnh Công Sơn pedestrian street in Tây Hồ, Hà Nội (Dân trí / Vietnamplus coverage, 2025-10-12). Point: the Nominatim result already stored for the same place ('Không gian văn hóa sáng tạo Tây Hồ (phố đi bộ Trịnh Công Sơn trước đây)') on tay-ho-half-marathon-2024..2026, ward precision.",
       "at": "2026-09-29T07:58:28.552Z"
+    },
+    "types": {
+      "value": [
+        "road_run"
+      ],
+      "reason": "ActiUp gave no type, so it fell back to 'other'; Vietnamnet and Dân trí describe a running race over 3km, 5km and 10km around Hồ Tây",
+      "at": "2026-09-29T08:07:25.931Z"
     }
   },
   "sources": [
@@ -279,9 +310,33 @@
           "name": "Công ty DHA Việt Nam"
         }
       }
+    },
+    {
+      "site": "vietnamnet-vn",
+      "role": "reference",
+      "url": "https://vietnamnet.vn/3-000-van-dong-vien-chay-bo-gay-quy-cho-benh-nhan-ung-thu-2451669.html",
+      "lastCheckedAt": "2026-09-29T08:07:25.931Z",
+      "lastChangedAt": "2026-09-29T08:07:25.931Z",
+      "extracted": {
+        "facts": {
+          "name": "Hành trình tiếp sức 2025",
+          "date": "2025-10-12",
+          "distances": [
+            "3km",
+            "5km",
+            "10km"
+          ],
+          "participants": {
+            "count": 3000,
+            "sourceUrl": "https://vietnamnet.vn/3-000-van-dong-vien-chay-bo-gay-quy-cho-benh-nhan-ung-thu-2451669.html",
+            "quote": "gần 3.000 vận động viên đã có mặt và cùng tham gia đường chạy tại khu vực Hồ Tây"
+          },
+          "note": "Vietnamnet 2025-10-12: 'Hành trình tiếp sức - Empower Run lần thứ 2'; 'gần 3.000 vận động viên đã có mặt và cùng tham gia đường chạy tại khu vực Hồ Tây thử sức với 3 cự ly 3km, 5km và 10km'"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T07:58:28.552Z"
+  "updatedAt": "2026-09-29T08:07:25.931Z"
 }
