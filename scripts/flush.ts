@@ -4,6 +4,8 @@
  *   npm run flush -- --dry-run         plan and validate every bundle in .staging/, commit nothing
  *   npm run flush                      the same, then commit once (GITHUB_TOKEN=$(gh auth token))
  *   npm run flush -- --unit <unit> …   only these bundles
+ *   npm run flush -- --also <path> …   also commit this locally edited file (e.g. data/series.json,
+ *                                      a new series the staged races point at) in the same commit
  *
  * Each bundle is applied on top of the ones accepted before it and validated (npm run
  * validate) in a temporary tree. A bundle that fails is rejected and left out; the rest
@@ -23,6 +25,9 @@ import { commitToGitHub, formatCommitMessage, type RaceStore } from "./sync.ts";
 const args = process.argv.slice(2);
 const dryRun = args.includes("--dry-run");
 const only = args.flatMap((a, i) => (a === "--unit" && args[i + 1] ? [args[i + 1]!] : []));
+const also: Record<string, string> = Object.fromEntries(
+  args.flatMap((a, i) => (a === "--also" && args[i + 1] ? [[args[i + 1]!, readFileSync(args[i + 1]!, "utf8")] as const] : [])),
+);
 const ws = defaultWorkspace();
 const config = loadSites();
 const now = new Date().toISOString();
@@ -45,7 +50,8 @@ const local: RaceStore = {
     }
   },
 };
-const result = await planBatch(local, bundles, config, now, treeValidator(process.cwd()));
+const validateTree = treeValidator(process.cwd());
+const result = await planBatch(local, bundles, config, now, (files) => validateTree({ ...also, ...files }));
 result.rejected.unshift(...unreadable);
 
 for (const a of result.accepted) console.log(`✓ ${a.unit}: ${a.summary} → ${a.changes.map((c) => `${c.kind === "added" ? "+" : "~"}${c.slug}`).join(", ")}`);
@@ -71,7 +77,7 @@ if (result.accepted.length > 0) {
     },
     // Re-planned on the branch head on a retry; validation already ran on the same bundles.
     async (store) => (await planBatch(store, acceptedBundles, config, now, null)).plan,
-    { config, now, context },
+    { config, now, context, extraFiles: async () => also },
   );
   commitSha = committed.commitSha;
   console.log(`\n${formatCommitMessage(committed, context)}`);
