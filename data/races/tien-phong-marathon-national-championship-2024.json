@@ -8,7 +8,7 @@
   "date": "2024-03-29",
   "endDate": "2024-03-31",
   "mainDate": null,
-  "seriesId": null,
+  "seriesId": "tien-phong-marathon",
   "organizerId": "bao-tien-phong",
   "organizer": "Báo Tiền Phong",
   "edition": 65,
@@ -343,6 +343,11 @@
       ],
       "reason": "inferred from race name/price-tier text (marathon); no source states an explicit type",
       "at": "2026-09-26T13:21:53.036Z"
+    },
+    "seriesId": {
+      "value": "tien-phong-marathon",
+      "reason": "same national championship series (Tiền Phong Marathon); ActiUp page states 65th",
+      "at": "2026-09-29T04:54:59.200Z"
     }
   },
   "sources": [
@@ -566,5 +571,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T04:44:21.230Z"
+  "updatedAt": "2026-09-29T04:54:59.200Z"
 }
