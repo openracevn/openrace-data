@@ -48,7 +48,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
-  "participants": null,
+  "participants": {
+    "count": 11000,
+    "sourceUrl": "https://nld.com.vn/11000-nguoi-chay-khai-xuan-tai-hcmc-marathon-2024-19624011414201296.htm",
+    "quote": "11.000 người chạy khai xuân tại HCMC Marathon 2024",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {},
   "sources": [
@@ -78,9 +83,28 @@
           "note": "thegioichaybo page (copy of official text): 14/01/2024, 5/10/21/42K, 'mùa Giải thứ 11'; NLD recap: route in the city centre. race-research HCMC Marathon series history."
         }
       }
+    },
+    {
+      "site": "nld-com-vn",
+      "role": "reference",
+      "url": "https://nld.com.vn/11000-nguoi-chay-khai-xuan-tai-hcmc-marathon-2024-19624011414201296.htm",
+      "lastCheckedAt": "2026-09-29T03:56:38.104Z",
+      "lastChangedAt": "2026-09-29T03:56:38.104Z",
+      "extracted": {
+        "facts": {
+          "name": "HCMC Marathon 2024",
+          "date": "2024-01-14",
+          "participants": {
+            "count": 11000,
+            "sourceUrl": "https://nld.com.vn/11000-nguoi-chay-khai-xuan-tai-hcmc-marathon-2024-19624011414201296.htm",
+            "quote": "11.000 người chạy khai xuân tại HCMC Marathon 2024"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:39:03.028Z",
-  "updatedAt": "2026-09-28T16:39:03.028Z"
+  "updatedAt": "2026-09-29T03:56:38.104Z"
 }
