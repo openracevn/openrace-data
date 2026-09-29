@@ -79,3 +79,19 @@ Also stored: vnexpress-marathon-nha-trang (2026), 10,000, vnexpress.net article 
 ### Next in the worklist
 
 After the races above, the worklist moves on to `lam-dong-trail-2022`, `vnexpress-marathon-nha-trang-3`, `-4` and the rest of `npm run gaps` (section "Past races with no participant count"). Run `git pull` first: the apply step commits through the GitHub API, so the local checkout lags.
+
+## Tiền Phong Marathon series (race-research, 2026-09-29)
+
+Stored 9 of 10 (2020 to 2026 plus the Half): every count is a registered or attended figure, several pre-race ("đăng ký"). Not stored: none. Wrong figure caught: a search summary said "hơn 11.500" for 2025; the closing-ceremony article (Wayback copy of baoquangtri.vn, live link 404) says 7,500, and that is what's stored.
+
+| Race (slug) | Count | Source |
+| --- | --- | --- |
+| viet-da-toan-quoc-...-lan-thu-60-nam-2019 | ~2,000 (gần, đăng ký) | dantri.com.vn |
+| ...-lan-thu-61-nam-2020 | ~2,000 (gần) | vietnamplus.vn |
+| ...-lan-thu-62-nam-2021 | 4,500 (hơn, đăng ký) | tienphong.vn |
+| ...-lan-thu-63-nam-2022 | ~3,700 (gần) | vietnamplus.vn |
+| ...-lan-thu-64-nam-2023 | 4,000 (hơn) | nhandan.vn |
+| tien-phong-marathon-national-championship-2024 | ~12,000 (gần, đăng ký) | bvhttdl.gov.vn |
+| tien-phong-marathon-2025 | 7,500 (hơn) | baoquangtri.vn via Wayback |
+| tien-phong-marathon-2026 | 12,000 (hơn) | sggp.org.vn |
+| tien-phong-half-marathon-2025 | ~2,000 (gần) | doanhnhansaigon.vn |
