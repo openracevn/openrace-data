@@ -42,7 +42,102 @@
     "venue": "Quảng trường Bình Minh, Cửa Lò, Nghệ An",
     "city": "Nghệ An"
   },
-  "geo": null,
+  "geo": {
+    "lat": 18.7979381,
+    "lng": 105.7304068,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "40",
+      "ward": "16732"
+    },
+    "legacy": {
+      "province": "40",
+      "district": "412",
+      "ward": "16732"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1218.4,
+        "minutes": 916,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 287.5,
+        "minutes": 229,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 492.5,
+        "minutes": 400,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 996.3,
+        "minutes": 786,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1123.7,
+        "minutes": 905,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1329.2,
+        "minutes": 1035,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 321.6,
+        "minutes": 256,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 390.2,
+        "minutes": 317,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1309.3,
+        "minutes": 997,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 804.3,
+        "minutes": 626,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1001,
+        "minutes": 824,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 596.1,
+        "minutes": 465,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 371.3,
+        "minutes": 289,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
   "prices": [
     {
       "distance": "5km",
@@ -467,5 +562,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T07:20:52.168Z"
+  "updatedAt": "2026-09-29T07:47:42.659Z"
 }
