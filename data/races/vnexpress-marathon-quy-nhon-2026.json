@@ -137,7 +137,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
-  "participants": null,
+  "participants": {
+    "count": 8000,
+    "sourceUrl": "https://baogialai.com.vn/8000-vdv-tham-gia-giai-vnexpress-marathon-quy-nhon-2026-post598579.html",
+    "quote": "8.000 VĐV tham gia Giải VnExpress Marathon Quy Nhơn 2026",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "edition": {
@@ -217,9 +222,28 @@
           "note": "VnExpress news article states 'Mùa thứ 7 của giải lâu đời nhất hệ thống' (7th season of the system's oldest race), venue and distances for the 2026 edition, filling gaps the official vm.vnexpress.net page didn't state"
         }
       }
+    },
+    {
+      "site": "baogialai-com-vn",
+      "role": "reference",
+      "url": "https://baogialai.com.vn/8000-vdv-tham-gia-giai-vnexpress-marathon-quy-nhon-2026-post598579.html",
+      "lastCheckedAt": "2026-09-29T04:15:29.321Z",
+      "lastChangedAt": "2026-09-29T04:15:29.321Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Marathon Quy Nhon 2026",
+          "date": "2026-09-13",
+          "participants": {
+            "count": 8000,
+            "sourceUrl": "https://baogialai.com.vn/8000-vdv-tham-gia-giai-vnexpress-marathon-quy-nhon-2026-post598579.html",
+            "quote": "8.000 VĐV tham gia Giải VnExpress Marathon Quy Nhơn 2026"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T05:01:22.419Z",
-  "updatedAt": "2026-09-28T13:58:50.138Z"
+  "updatedAt": "2026-09-29T04:15:29.321Z"
 }
