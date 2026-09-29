@@ -7,6 +7,7 @@
   ],
   "date": "2026-06-07",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "ly-son-cross-island",
   "organizerId": "cong-ty-co-phan-duong-chay-xanh",
   "organizer": "CÔNG TY CỔ PHẦN ĐƯỜNG CHẠY XANH",
@@ -208,6 +209,7 @@
     }
   ],
   "links": [],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -240,6 +242,11 @@
       ],
       "reason": "iRace event page lists distances 1km, 2km, 5km for this swim race",
       "at": "2026-09-25T08:30:43.681Z"
+    },
+    "seriesId": {
+      "value": "ly-son-cross-island",
+      "reason": "same swim series as 2024-2026 editions",
+      "at": "2026-09-29T04:50:42.703Z"
     }
   },
   "sources": [
@@ -417,5 +424,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-27T07:40:37.298Z"
+  "updatedAt": "2026-09-29T04:50:42.703Z"
 }
