@@ -1,6 +1,6 @@
 # Plan 023: A public completeness score (data, API, MCP, web)
 
-Date: 2026-09-29. Status: built 2026-09-29 (steps 0–4), committed locally in all four repos, not pushed or deployed. Spans openrace-data, openrace-api, openrace-mcp and openrace-web; the API and web plan indexes get a line that links here.
+Date: 2026-09-29. Status: built and deployed 2026-09-29 in all four repos. Spans openrace-data, openrace-api, openrace-mcp and openrace-web; the API and web plan indexes get a line that links here.
 
 ## Roadmap fit
 
@@ -105,4 +105,5 @@ The API computes the score from D1 (it holds every race; the data repo's commit 
 - **2026-09-29, API:** migration 0013 (`completeness_snapshots`), `src/lib/completeness.ts` (JSON reduced in SQL to keep Worker CPU low), snapshot at the end of a sync and in the daily cron, `GET /stats/completeness`. Same fixture passes in both repos; loading the real 387 race files through `toRaceValues` into the test D1 gives the exact numbers above.
 - **2026-09-29, MCP:** `get_data_completeness` tool, server instructions line, eval Q7, README table.
 - **2026-09-29, web:** footer badge (hidden when the API call fails), `/minh-bach` (en `/transparency`) with tiles, history chart (shown from 2 days), per-field bars, "working on next" from counts, method and not-measured text, a GitHub issues link; sitemap entry. `next build` passes. Not checked in a browser.
-- **To go live (in order):** push openrace-api, `db:migrate:remote`, deploy; push and deploy openrace-mcp; push openrace-web; push openrace-data. History starts on the first sync after the deploy.
+- **2026-09-29, deployed:** API migration 0013 applied remotely, API and MCP deployed (MCP eval 7/7 against live), web and data pushed. A manual Main run synced and stored the first snapshot (2026-09-29: 69% / 70%). Footer badge and `/minh-bach` checked by fetching the HTML, not in a browser.
+- **Order used to go live:** push openrace-api, `db:migrate:remote`, deploy; push and deploy openrace-mcp; push openrace-web; push openrace-data. History starts on the first sync after the deploy.
