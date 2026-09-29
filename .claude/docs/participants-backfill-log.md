@@ -66,7 +66,7 @@ Lesson: a number seen only in a search summary is worth one page read before cal
 
 ### Batch: vnexpress-marathon-nha-trang series (2026-09-29)
 
-Found 3 of 4 (75%). The series' 2022 edition was already stored.
+Found 4 of 4 (3 post-race, 2026 from a pre-race article, see roadmap change log). The series' 2022 edition was already stored.
 
 | Race (slug) | Count | Source |
 | --- | --- | --- |
@@ -74,11 +74,7 @@ Found 3 of 4 (75%). The series' 2022 edition was already stored.
 | vnexpress-marathon-nha-trang-4 (2024) | 9,000 (hơn) | nld.com.vn |
 | vnexpress-marathon-nha-trang-5 (2025) | 13,000 | baovanhoa.vn |
 
-Searched, not stored:
-
-| Race (slug) | Why | Next thing to try |
-| --- | --- | --- |
-| vnexpress-marathon-nha-trang (2026) | only the pre-race 4/8 vnexpress.net article ("đón 10.000 runner") is found: an expected figure, not a count; the race-day article states none | post-race recap or results page (after mid-Aug 2026), vm.vnexpress.net/nha-trang-2026 |
+Also stored: vnexpress-marathon-nha-trang (2026), 10,000, vnexpress.net article dated 4 Aug 2026 (pre-race, user-approved); replace it if a post-race figure appears.
 
 ### Next in the worklist
 

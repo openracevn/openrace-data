@@ -74,6 +74,7 @@ Old place names ("Nha Trang", "Bình Dương") must keep working after the 2025 
 
 Deliberate changes of direction, newest first.
 
+- **2026-09-29:** A participant count the organizer or its media partner states flatly for an edition ("đón 10.000 runner", no "dự kiến"/target wording) is stored even when the article predates the race, if no post-race figure is found. It is stored without leaning on it: the count is replaced when a post-race figure appears. Explicit targets, capacity and finisher-only counts stay out. First case: vnexpress-marathon-nha-trang 2026.
 - **2026-09-28 (plan 017):** "Participants" means the number of people who **registered, paid or attended** an edition, as a source states it (tickets sold and "đăng ký" count; "dự kiến"/expected targets do not). Capacity and slot limits, finisher-only counts and targets stay out. The `approx` flag is dropped (every count is approximate); a `confidence` (high/medium/low) is **derived** from the source and whether the quote was verified, and shown by the API. A count from the wrong edition is never stored. Backfill uses a free fast lane (my own web search plus a verify script), not Firecrawl or opencode.
 - **2026-09-28:** An aggregate participant count per race edition, with a required source link and an `approx` flag, is in scope (unknown is `null`, never 0). Finisher counts, runner rankings, capacity and quotas remain non-goals; the site's "Largest" series ordering ranks races by size, not people. openrace-web plan 012.
 
