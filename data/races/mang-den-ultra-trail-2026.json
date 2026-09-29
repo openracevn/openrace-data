@@ -7,13 +7,14 @@
   ],
   "date": "2026-01-16",
   "endDate": "2026-01-18",
+  "mainDate": null,
   "seriesId": "mang-den-ultra-trail",
   "organizerId": "pr-events-company-limited",
   "organizer": "Ban Tổ Chức: Hội Du Lịch Măng Đen | Đơn vị vận hành: PR Events",
   "coOrganizerIds": [
     "hoi-du-lich-mang-den"
   ],
-  "edition": null,
+  "edition": 2,
   "courses": [],
   "location": {
     "venue": "Xã Măng Đen, Tỉnh Quảng Ngãi",
@@ -152,6 +153,11 @@
       ],
       "reason": "organizer cleanup (plan 013): \"Ban Tổ Chức: Hội Du Lịch Măng Đen | Đơn vị vận hành: PR Events\" packed several bodies into one entity; primary organizer pr-events-company-limited, co-organizers hoi-du-lich-mang-den",
       "at": "2026-09-28T12:41:20.765Z"
+    },
+    "edition": {
+      "value": 2,
+      "reason": "Search results (irace.vn, dulichquangngai.vn) state 2026 is 'mùa 2' after the first season; irace 2027 page is 'mùa 3'",
+      "at": "2026-09-29T05:00:21.337Z"
     }
   },
   "sources": [
@@ -187,5 +193,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T12:41:20.765Z"
+  "updatedAt": "2026-09-29T05:00:21.337Z"
 }
