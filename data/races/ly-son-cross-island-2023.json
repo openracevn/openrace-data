@@ -11,7 +11,7 @@
   "seriesId": "ly-son-cross-island",
   "organizerId": null,
   "organizer": null,
-  "edition": null,
+  "edition": 1,
   "courses": [
     {
       "label": "1km",
@@ -49,6 +49,11 @@
       "value": "ly-son-cross-island",
       "reason": "same swim series as 2024-2026 editions",
       "at": "2026-09-29T04:49:42.533Z"
+    },
+    "edition": {
+      "value": 1,
+      "reason": "dantri 2024-05-13 (https://dantri.com.vn/the-thao/600-nguoi-tham-gia-boi-vuot-bien-o-ly-son-20240513112538743.htm) says 2024 is the second time and the race was first held in 2023; petrotimes calls 2023 'mùa 1'",
+      "at": "2026-09-29T04:49:50.450Z"
     }
   },
   "sources": [
@@ -79,5 +84,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-29T04:49:15.046Z",
-  "updatedAt": "2026-09-29T04:49:42.533Z"
+  "updatedAt": "2026-09-29T04:49:50.450Z"
 }
