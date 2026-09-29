@@ -148,7 +148,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
-  "participants": null,
+  "participants": {
+    "count": 3200,
+    "sourceUrl": "https://web.archive.org/web/2id_/https://webthethao.vn/chay/pocari-sweat-run-lan-toa-tinh-than-the-thao-dep-trong-cong-dong-AgWP3uTMg.htm",
+    "quote": "năm 2019 lần đầu PSR ra mắt với hơn 3.200",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "edition": {
@@ -261,9 +266,28 @@
           "note": "Organizer's own page (Wayback, 07/01/2020) still showing the 2019 price table (early/standard/late, registration closed 14/11/2019)"
         }
       }
+    },
+    {
+      "site": "webthethao-vn",
+      "role": "reference",
+      "url": "https://web.archive.org/web/2id_/https://webthethao.vn/chay/pocari-sweat-run-lan-toa-tinh-than-the-thao-dep-trong-cong-dong-AgWP3uTMg.htm",
+      "lastCheckedAt": "2026-09-29T04:32:16.750Z",
+      "lastChangedAt": "2026-09-29T04:32:16.750Z",
+      "extracted": {
+        "facts": {
+          "name": "Pocari Sweat Run Việt Nam 2019",
+          "date": "2019-11-17",
+          "participants": {
+            "count": 3200,
+            "sourceUrl": "https://web.archive.org/web/2id_/https://webthethao.vn/chay/pocari-sweat-run-lan-toa-tinh-than-the-thao-dep-trong-cong-dong-AgWP3uTMg.htm",
+            "quote": "năm 2019 lần đầu PSR ra mắt với hơn 3.200"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:23:36.352Z",
-  "updatedAt": "2026-09-28T16:34:29.515Z"
+  "updatedAt": "2026-09-29T04:32:16.750Z"
 }
