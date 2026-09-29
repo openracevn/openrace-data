@@ -11,7 +11,7 @@
   "seriesId": "ly-son-cross-island",
   "organizerId": "cong-ty-co-phan-duong-chay-xanh",
   "organizer": "CÔNG TY CỔ PHẦN ĐƯỜNG CHẠY XANH",
-  "edition": null,
+  "edition": 3,
   "courses": [
     {
       "label": "1km",
@@ -319,6 +319,11 @@
       "value": "ly-son-cross-island",
       "reason": "same swim series as 2024-2026 editions",
       "at": "2026-09-29T04:50:24.943Z"
+    },
+    "edition": {
+      "value": 3,
+      "reason": "lyson.quangngai.gov.vn 2025 news: 'Năm 2025 là năm thứ 3 liên tiếp huyện Lý Sơn tổ chức giải bơi vượt biển'",
+      "at": "2026-09-29T04:50:33.662Z"
     }
   },
   "sources": [
@@ -500,5 +505,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T04:50:24.943Z"
+  "updatedAt": "2026-09-29T04:50:33.662Z"
 }
