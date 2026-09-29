@@ -27,9 +27,9 @@
   "geo": null,
   "prices": [
     {
-      "distance": null,
-      "tier": "General Tier 1",
-      "kind": "regular",
+      "distance": "Sprint",
+      "tier": "Tier 1",
+      "kind": "early",
       "audience": null,
       "price": 3000000,
       "from": null,
@@ -38,8 +38,8 @@
       "site": "ironman-com"
     },
     {
-      "distance": null,
-      "tier": "General Tier 2",
+      "distance": "Sprint",
+      "tier": "Tier 2",
       "kind": "regular",
       "audience": null,
       "price": 3400000,
@@ -49,22 +49,20 @@
       "site": "ironman-com"
     },
     {
-      "distance": null,
-      "tier": "General Tier 3",
-      "kind": "regular",
+      "distance": "Sprint",
+      "tier": "Tier 3",
+      "kind": "late",
       "audience": null,
       "price": 3950000,
       "from": null,
-      "to": "2026-11-14",
-      "inferred": [
-        "to"
-      ],
+      "to": null,
+      "inferred": [],
       "site": "ironman-com"
     },
     {
-      "distance": null,
+      "distance": "Sprint",
       "tier": "Relay Tier 1",
-      "kind": "group",
+      "kind": "early",
       "audience": null,
       "price": 4350000,
       "from": null,
@@ -73,9 +71,9 @@
       "site": "ironman-com"
     },
     {
-      "distance": null,
+      "distance": "Sprint",
       "tier": "Relay Tier 2",
-      "kind": "group",
+      "kind": "regular",
       "audience": null,
       "price": 4950000,
       "from": null,
@@ -84,9 +82,9 @@
       "site": "ironman-com"
     },
     {
-      "distance": null,
+      "distance": "Sprint",
       "tier": "Relay Tier 3",
-      "kind": "group",
+      "kind": "late",
       "audience": null,
       "price": 5500000,
       "from": null,
@@ -120,6 +118,78 @@
       },
       "reason": "ActiUp API place 'Phú Quốc, Việt Nam'; baoangiang 2025 report: Sunrise Sprint at Phú Quốc Marina",
       "at": "2026-09-29T07:20:52.168Z"
+    },
+    "prices": {
+      "value": [
+        {
+          "distance": "Sprint",
+          "tier": "Tier 1",
+          "kind": "early",
+          "audience": null,
+          "price": 3000000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        },
+        {
+          "distance": "Sprint",
+          "tier": "Tier 2",
+          "kind": "regular",
+          "audience": null,
+          "price": 3400000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        },
+        {
+          "distance": "Sprint",
+          "tier": "Tier 3",
+          "kind": "late",
+          "audience": null,
+          "price": 3950000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        },
+        {
+          "distance": "Sprint",
+          "tier": "Relay Tier 1",
+          "kind": "early",
+          "audience": null,
+          "price": 4350000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        },
+        {
+          "distance": "Sprint",
+          "tier": "Relay Tier 2",
+          "kind": "regular",
+          "audience": null,
+          "price": 4950000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        },
+        {
+          "distance": "Sprint",
+          "tier": "Relay Tier 3",
+          "kind": "late",
+          "audience": null,
+          "price": 5500000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        }
+      ],
+      "reason": "ironman.com Sunrise Sprint page: General entry Tier 1/2/3 (3,000,000 / 3,400,000 / 3,950,000) and Relay entry Tier 1/2/3 (4,350,000 / 4,950,000 / 5,500,000). Tier names kept as the source writes them; distance set to the Sprint course and kinds early/regular/late assigned by tier order so the price table shows one column per tier (the source gives no tier dates or phase names). Relay tiers are not tagged group because the price table drops group tiers.",
+      "at": "2026-09-29T07:39:55.750Z"
     }
   },
   "sources": [
@@ -214,5 +284,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T07:25:49.157Z"
+  "updatedAt": "2026-09-29T07:39:55.750Z"
 }

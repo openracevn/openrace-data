@@ -46,9 +46,9 @@
   "geo": null,
   "prices": [
     {
-      "distance": null,
-      "tier": "Aquathlon Tier 1",
-      "kind": "other",
+      "distance": "1075m",
+      "tier": "Tier 1",
+      "kind": "early",
       "audience": null,
       "price": 950000,
       "from": null,
@@ -57,9 +57,9 @@
       "site": "ironman-com"
     },
     {
-      "distance": null,
-      "tier": "Aquathlon Tier 2",
-      "kind": "other",
+      "distance": "1075m",
+      "tier": "Tier 2",
+      "kind": "regular",
       "audience": null,
       "price": 1200000,
       "from": null,
@@ -68,9 +68,9 @@
       "site": "ironman-com"
     },
     {
-      "distance": null,
-      "tier": "Aquathlon Tier 3",
-      "kind": "other",
+      "distance": "1075m",
+      "tier": "Tier 3",
+      "kind": "late",
       "audience": null,
       "price": 1300000,
       "from": null,
@@ -79,9 +79,9 @@
       "site": "ironman-com"
     },
     {
-      "distance": null,
-      "tier": "Triathlon Tier 1",
-      "kind": "other",
+      "distance": "4075m",
+      "tier": "Tier 1",
+      "kind": "early",
       "audience": null,
       "price": 1250000,
       "from": null,
@@ -90,9 +90,9 @@
       "site": "ironman-com"
     },
     {
-      "distance": null,
-      "tier": "Triathlon Tier 2",
-      "kind": "other",
+      "distance": "4075m",
+      "tier": "Tier 2",
+      "kind": "regular",
       "audience": null,
       "price": 1450000,
       "from": null,
@@ -101,9 +101,75 @@
       "site": "ironman-com"
     },
     {
-      "distance": null,
-      "tier": "Triathlon Tier 3",
-      "kind": "other",
+      "distance": "4075m",
+      "tier": "Tier 3",
+      "kind": "late",
+      "audience": null,
+      "price": 1650000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    },
+    {
+      "distance": "2150m",
+      "tier": "Tier 1",
+      "kind": "early",
+      "audience": null,
+      "price": 950000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    },
+    {
+      "distance": "2150m",
+      "tier": "Tier 2",
+      "kind": "regular",
+      "audience": null,
+      "price": 1200000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    },
+    {
+      "distance": "2150m",
+      "tier": "Tier 3",
+      "kind": "late",
+      "audience": null,
+      "price": 1300000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    },
+    {
+      "distance": "8150m",
+      "tier": "Tier 1",
+      "kind": "early",
+      "audience": null,
+      "price": 1250000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    },
+    {
+      "distance": "8150m",
+      "tier": "Tier 2",
+      "kind": "regular",
+      "audience": null,
+      "price": 1450000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    },
+    {
+      "distance": "8150m",
+      "tier": "Tier 3",
+      "kind": "late",
       "audience": null,
       "price": 1650000,
       "from": null,
@@ -167,6 +233,144 @@
       ],
       "reason": "ironman.com IRONKIDS page: ages 5-10 aquathlon = 75m swim + 1km run, triathlon adds a 3km bike; ages 11-15 doubles to 150m swim + 2km run, triathlon adds a 6km bike. Course meters are the sum of the legs. Age bands are not a course field, so the courses are listed 5-10 first, then 11-15, and the ages are kept here and in the source's extracted note.",
       "at": "2026-09-29T07:28:03.828Z"
+    },
+    "prices": {
+      "value": [
+        {
+          "distance": "1075m",
+          "tier": "Tier 1",
+          "kind": "early",
+          "audience": null,
+          "price": 950000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        },
+        {
+          "distance": "1075m",
+          "tier": "Tier 2",
+          "kind": "regular",
+          "audience": null,
+          "price": 1200000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        },
+        {
+          "distance": "1075m",
+          "tier": "Tier 3",
+          "kind": "late",
+          "audience": null,
+          "price": 1300000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        },
+        {
+          "distance": "4075m",
+          "tier": "Tier 1",
+          "kind": "early",
+          "audience": null,
+          "price": 1250000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        },
+        {
+          "distance": "4075m",
+          "tier": "Tier 2",
+          "kind": "regular",
+          "audience": null,
+          "price": 1450000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        },
+        {
+          "distance": "4075m",
+          "tier": "Tier 3",
+          "kind": "late",
+          "audience": null,
+          "price": 1650000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        },
+        {
+          "distance": "2150m",
+          "tier": "Tier 1",
+          "kind": "early",
+          "audience": null,
+          "price": 950000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        },
+        {
+          "distance": "2150m",
+          "tier": "Tier 2",
+          "kind": "regular",
+          "audience": null,
+          "price": 1200000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        },
+        {
+          "distance": "2150m",
+          "tier": "Tier 3",
+          "kind": "late",
+          "audience": null,
+          "price": 1300000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        },
+        {
+          "distance": "8150m",
+          "tier": "Tier 1",
+          "kind": "early",
+          "audience": null,
+          "price": 1250000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        },
+        {
+          "distance": "8150m",
+          "tier": "Tier 2",
+          "kind": "regular",
+          "audience": null,
+          "price": 1450000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        },
+        {
+          "distance": "8150m",
+          "tier": "Tier 3",
+          "kind": "late",
+          "audience": null,
+          "price": 1650000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        }
+      ],
+      "reason": "ironman.com IRONKIDS page: Aquathlon Tier 1/2/3 950,000 / 1,200,000 / 1,300,000 and Triathlon Tier 1/2/3 1,250,000 / 1,450,000 / 1,650,000, one price per category for both age bands, so each price is repeated on that category's two courses (aquathlon 1075m ages 5-10 and 2150m ages 11-15, triathlon 4075m and 8150m). Tier names kept as written; kinds early/regular/late by tier order so the price table shows one column per tier.",
+      "at": "2026-09-29T07:39:55.750Z"
     }
   },
   "sources": [
@@ -262,5 +466,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T07:28:03.828Z"
+  "updatedAt": "2026-09-29T07:39:55.750Z"
 }
