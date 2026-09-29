@@ -329,7 +329,12 @@
     }
   ],
   "links": [],
-  "participants": null,
+  "participants": {
+    "count": 12000,
+    "sourceUrl": "https://bvhttdl.gov.vn/phu-yen-khai-mac-giai-vo-dich-quoc-gia-marathon-va-cu-ly-dai-bao-tien-phong-lan-thu-65-20240401092202398.htm",
+    "quote": "giải đấu kỷ lục về số lượng VĐV đăng ký với gần 12.000 VĐV cả chuyên nghiệp lẫn phong trào",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "types": {
@@ -538,9 +543,28 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "bvhttdl-gov-vn",
+      "role": "reference",
+      "url": "https://bvhttdl.gov.vn/phu-yen-khai-mac-giai-vo-dich-quoc-gia-marathon-va-cu-ly-dai-bao-tien-phong-lan-thu-65-20240401092202398.htm",
+      "lastCheckedAt": "2026-09-29T04:44:21.230Z",
+      "lastChangedAt": "2026-09-29T04:44:21.230Z",
+      "extracted": {
+        "facts": {
+          "name": "GIẢI VÔ ĐỊCH QUỐC GIA MARATHON VÀ CỰ LY DÀI BÁO TIỀN PHONG",
+          "date": "2024-03-29",
+          "participants": {
+            "count": 12000,
+            "sourceUrl": "https://bvhttdl.gov.vn/phu-yen-khai-mac-giai-vo-dich-quoc-gia-marathon-va-cu-ly-dai-bao-tien-phong-lan-thu-65-20240401092202398.htm",
+            "quote": "giải đấu kỷ lục về số lượng VĐV đăng ký với gần 12.000 VĐV cả chuyên nghiệp lẫn phong trào"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T04:39:05.161Z"
+  "updatedAt": "2026-09-29T04:44:21.230Z"
 }
