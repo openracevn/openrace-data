@@ -45,6 +45,23 @@ Method for all batches: one `WebSearch` per race, a second wording for misses, `
 - **Lakes Race editions** (series `andros-the-lakes-race`): skipped at the user's request. Only searched: `giai-half-trail-marathon-ho-da-2019-the-lake-race`, `andros-the-lakes-race-2019-10` (only "hơn 1.000", summary only, edition unclear) and `the-lakes-race-2022` (only orphan-guest numbers). Not searched: the rest of the series.
 - Wayback copies were not tried for the HCMC and Hạ Long misses.
 
+## Batch 6 (2026-09-29)
+
+Stored:
+
+| Race (slug) | Count | Source |
+| --- | --- | --- |
+| pocari-sweat-run-viet-nam-2022 | 6,000 | vnexpress.net |
+| pocari-sweat-run-2026 | 5,000 | vtv.vn |
+| vnexpress-marathon-nha-trang-2 (2022) | 8,500 (hơn) | nguoidothi.net.vn |
+
+Searched, not stored:
+
+| Race (slug) | Why no count | Next thing to try |
+| --- | --- | --- |
+| pocari-sweat-run-viet-nam-2019 | "Hơn 3.200" (also "3.187") seen only in search summaries; no quotable title | A post-race recap of 17 Nov 2019 whose title or a sentence states it (sgtt.thesaigontimes.vn "lần đầu được tổ chức" article: check its body) |
+| pocari-sweat-run-viet-nam-2020 | "6.947" seen only in a search summary; the "hơn 8.000" qdnd title is the 2023 edition | A post-race recap of 22 Nov 2020 |
+
 ### Next in the worklist
 
-After the races above, the worklist moves on to `pocari-sweat-run-viet-nam-2019` and the rest of `npm run gaps` (section "Past races with no participant count"). Run `git pull` first: the apply step commits through the GitHub API, so the local checkout lags.
+After the races above, the worklist moves on to `lam-dong-trail-2022`, `vnexpress-marathon-nha-trang-3`, `-4` and the rest of `npm run gaps` (section "Past races with no participant count"). Run `git pull` first: the apply step commits through the GitHub API, so the local checkout lags.
