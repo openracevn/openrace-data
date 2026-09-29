@@ -109,7 +109,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
-  "participants": null,
+  "participants": {
+    "count": 11000,
+    "sourceUrl": "https://tuoitre.vn/giai-marathon-tp-hcm-2026-khep-lai-thanh-cong-voi-11-000-vdv-tham-du-20260111184411003.htm",
+    "quote": "Giải marathon TP.HCM 2026 khép lại thành công với 11.000 VĐV tham dự",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {},
   "sources": [
@@ -182,9 +187,28 @@
           "note": "Decathlon guide: 11/01/2026, Công viên 30/4, 10/21/42km with two dated price stages, 'mùa giải thứ 13'. race-research HCMC Marathon series history."
         }
       }
+    },
+    {
+      "site": "tuoitre-vn",
+      "role": "reference",
+      "url": "https://tuoitre.vn/giai-marathon-tp-hcm-2026-khep-lai-thanh-cong-voi-11-000-vdv-tham-du-20260111184411003.htm",
+      "lastCheckedAt": "2026-09-29T04:04:52.077Z",
+      "lastChangedAt": "2026-09-29T04:04:52.077Z",
+      "extracted": {
+        "facts": {
+          "name": "HCMC Marathon 2026",
+          "date": "2026-01-11",
+          "participants": {
+            "count": 11000,
+            "sourceUrl": "https://tuoitre.vn/giai-marathon-tp-hcm-2026-khep-lai-thanh-cong-voi-11-000-vdv-tham-du-20260111184411003.htm",
+            "quote": "Giải marathon TP.HCM 2026 khép lại thành công với 11.000 VĐV tham dự"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:40:23.377Z",
-  "updatedAt": "2026-09-28T16:40:23.377Z"
+  "updatedAt": "2026-09-29T04:04:52.077Z"
 }
