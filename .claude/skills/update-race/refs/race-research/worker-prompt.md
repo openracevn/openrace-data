@@ -24,7 +24,7 @@ Output: `.race-research/<slug>/extract.json` — a JSON array, one object per in
 ]
 ```
 
-Rules (same as `agent-read`'s reading rules — read `.claude/skills/agent-read/SKILL.md` section "2. Read each race" if anything here is unclear):
+Rules (same as `agent-read`'s reading rules — read `.claude/skills/update-race/refs/agent-read/SKILL.md` section "2. Read each race" if anything here is unclear):
 
 - **`organizer` is the operating organizer only**, without role text ("Đơn vị tổ chức:") or sponsors; never concatenate several bodies. Co-organizers are handled later with the `check-organizer` skill.
 - **Only write what the file states.** Copy names, dates and numbers exactly. Never guess, never compute a price, never fill in a field from what another edition or another file "usually" has.

@@ -5,8 +5,16 @@
  * validate.ts for that) — always exits 0.
  *
  *   npm run gaps
+ *   npm run gaps -- --race <x> | --series <x>   (per-race checklist, see race-gaps.ts)
  */
 import { readdirSync, readFileSync } from "node:fs";
+
+// `npm run gaps -- --race <x>` / `--series <x>` is the per-race checklist (scripts/race-gaps.ts).
+if (process.argv.some((a) => a === "--race" || a === "--series")) {
+  await import("./race-gaps.ts");
+  process.exit(0);
+}
+
 import { ORGANIZERS_PATH, OrganizerListSchema, RACES_DIR, RaceSchema, SERIES_PATH, SeriesListSchema, upgradeRace, type Race } from "./lib/schema.ts";
 
 const races: Race[] = [];

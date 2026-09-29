@@ -1,7 +1,4 @@
----
-name: check-organizer
-description: Review organizer entities in openrace-data (data/organizers.json). Use when the user asks to check, clean up, split, merge or add links to an organizer, when an organizer name looks like several bodies or contains role text ("Đơn vị tổ chức:", "Đồng hành:"), or when `npm run gaps` lists organizers with merged names or no links.
----
+> Reference for the `update-race` skill (plan 019). This used to be the `check-organizer` skill and no longer triggers on its own; `update-race` calls into it. Its scripts and steps are unchanged.
 
 # Check an organizer
 

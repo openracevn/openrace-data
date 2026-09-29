@@ -1,13 +1,10 @@
----
-name: opencode-read
-description: Supervisor workflow for Claude Code only. Hand an agent-read batch to free opencode models as workers, then check and commit their work, to save Claude usage. Use when the user says "use opencode to read races", "let opencode do the agent read", "read the next races with free models", or wants agent-read done while using less Claude. Not for opencode itself: an opencode worker follows its prompt in worker-prompt.md, never this skill.
----
+> Reference for the `update-race` skill (plan 019). This used to be the `opencode-read` skill and no longer triggers on its own; `update-race` calls into it. Its scripts and steps are unchanged.
 
 # Opencode reads, Claude supervises
 
 The `agent-read` skill, split up: **opencode (free models) does the reading, Claude checks it and commits.** It exists because Claude usage is limited. Claude should spend tokens only on setup, on the diff between two page readings, and on checking A's reading of each price image against the image.
 
-The race-reading case of the global `opencode-delegate` skill (`~/.claude/skills/opencode-delegate/`), which has the general rules: free models only, guard the repo, verify cheaply, only Claude commits. Nothing here spends Firecrawl credits or paid model tokens. Read `.claude/skills/agent-read/SKILL.md` first: its reading rules still hold, and this skill only changes who does the reading.
+The race-reading case of the global `opencode-delegate` skill (`~/.claude/skills/opencode-delegate/`), which has the general rules: free models only, guard the repo, verify cheaply, only Claude commits. Nothing here spends Firecrawl credits or paid model tokens. Read `.claude/skills/update-race/refs/agent-read/SKILL.md` first: its reading rules still hold, and this skill only changes who does the reading.
 
 ## Keep Claude's share small
 
@@ -44,7 +41,7 @@ git pull -q
 npm run agent-read -- prepare --site actiup --limit 20
 # or a hand-picked batch (a curated list of slugs, not a whole site): repeat --race
 npm run agent-read -- prepare --race <a> --race <b> --race <c> ...
-.claude/skills/opencode-read/prep.sh      # read-b.json per race + view-image-<n>.jpg copies
+.claude/skills/update-race/refs/opencode-read/prep.sh      # read-b.json per race + view-image-<n>.jpg copies
 ```
 
 ## 2. Start the workers (background)
@@ -52,7 +49,7 @@ npm run agent-read -- prepare --race <a> --race <b> --race <c> ...
 Run both at the same time with `run_in_background`, and don't poll them: you're told when each one exits.
 
 ```bash
-P=.claude/skills/opencode-read/worker-prompt.md
+P=.claude/skills/update-race/refs/opencode-read/worker-prompt.md
 opencode run --auto -m opencode/muse-spark-1.3-contributor-free "$(sed 's/{{FILE}}/read.json/' $P)"   > .agent-read/worker-a.log 2>&1
 opencode run --auto -m opencode/mimo-v2.6-flash-free          "$(sed 's/{{FILE}}/read-b.json/' $P)
 
@@ -66,7 +63,7 @@ When a worker exits, don't read its whole log: `tail -20` is enough. If it died 
 ## 3. Compare (cheap)
 
 ```bash
-node .claude/skills/opencode-read/compare.mjs .agent-read
+node .claude/skills/update-race/refs/opencode-read/compare.mjs .agent-read
 ```
 
 This prints one line per race:

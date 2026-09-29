@@ -1,7 +1,4 @@
----
-name: race-research
-description: Deep, multi-source research on one race — a finder and completeness auditor, not a one-shot backfill. Find every edition (past and current) and every independent source (the race's own site, old ticket resellers like iRace/TicketBox/Raceez, news and blog coverage), add missing editions, and re-audit editions we already track — sources, price, date, distances — beyond what agent-read/check-race read from their one primary source. Use when the user names a race and asks to "study" it, find its full history, check how many editions it's really had, double-check it against other sources, or re-run research to deepen trust in what's already there. Facebook is never a source here, only a link. Not for a normal re-check of a race's current listing (use check-race) or for reading a recipe site's regular pages (use agent-read) — this skill calls those in when a found/audited race turns out to be on a site they cover.
----
+> Reference for the `update-race` skill (plan 019). This used to be the `race-research` skill and no longer triggers on its own; `update-race` calls into it. Its scripts and steps are unchanged.
 
 # Research a race across the whole web
 
@@ -136,7 +133,7 @@ Then hand the whole batch to an opencode worker with a **detailed prompt** namin
 mkdir -p .race-research/<slug>/raw
 # WebFetch or curl each candidate URL's content into raw/01-<site>.txt, raw/02-<site>.txt, ...
 opencode run --auto -m opencode/muse-spark-1.3-contributor-free \
-  "$(cat .claude/skills/race-research/worker-prompt.md)" \
+  "$(cat .claude/skills/update-race/refs/race-research/worker-prompt.md)" \
   > .race-research/<slug>/worker.log 2>&1
 ```
 

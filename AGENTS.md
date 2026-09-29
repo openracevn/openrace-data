@@ -15,7 +15,7 @@ Before writing a plan or starting non-trivial work, read `.claude/docs/roadmap.m
 
 - `.claude/docs/README.md`: the index of working notes. Start with `roadmap.md`, then `status.md`.
 - `.claude/plans/`: numbered plans, `NNN-YYYY-MM-DD-topic.md` (highest number + 1), with an index in `README.md`.
-- `.claude/skills/`: `backfill-field` for one field across many races (participants), `check-organizer` for organizer entities (splits, duplicates, links), `check-race` for single-race work, `agent-read` for reading races without Firecrawl.
+- `.claude/skills/update-race/`: **the one skill for finding and fixing race data** (races, series, gaps, backfills; plan 019). It resolves targets, works units in parallel, stages results in `.staging/` and commits once with `npm run flush`. The older skills (`check-race`, `agent-read`, `race-research`, `backfill-field`, `check-organizer`, `opencode-read`) are reference documents under its `refs/` and no longer trigger on their own.
 - `scripts/lib/recipes/README.md`: how a site is read, and how to add one.
 
 Firecrawl credits cost money: say the cost before any paid run, and prefer free checks.

@@ -10,3 +10,6 @@ ref/.cache/
 
 # race-research working files (.claude/skills/race-research)
 .race-research/
+
+# update-race staged bundles awaiting `npm run flush` (plan 019)
+.staging/

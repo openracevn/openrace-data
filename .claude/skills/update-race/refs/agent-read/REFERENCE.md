@@ -1,7 +1,4 @@
----
-name: agent-read
-description: Read races for openrace-data without Firecrawl (free), with the agent reading the pages and price images itself. Use for backfills and batches when credits should be saved, e.g. "read the upcoming ActiUp races without Firecrawl", "backfill past races", "read these races by hand/agent", or when the user says not to spend credits but races still need prices, courses and types.
----
+> Reference for the `update-race` skill (plan 019). This used to be the `agent-read` skill and no longer triggers on its own; `update-race` calls into it. Its scripts and steps are unchanged.
 
 # Read races without Firecrawl (agent read)
 

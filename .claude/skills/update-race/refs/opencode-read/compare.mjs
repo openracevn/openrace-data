@@ -1,5 +1,5 @@
 // Compare two agent readings (read.json from worker A, read-b.json from worker B) per race.
-// Usage: node .claude/skills/opencode-read/compare.mjs .agent-read
+// Usage: node .claude/skills/update-race/refs/opencode-read/compare.mjs .agent-read
 import { readdirSync, readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 

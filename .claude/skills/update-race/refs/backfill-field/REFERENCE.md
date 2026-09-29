@@ -1,7 +1,4 @@
----
-name: backfill-field
-description: Backfill one field (today: participants) across many races in openrace-data without Firecrawl or opencode, using your own WebSearch and a verify script. Use when the user says "backfill participants", "find participant counts for past races", "fill the participants gap", or when `npm run gaps` lists past races with no participant count or low-confidence counts.
----
+> Reference for the `update-race` skill (plan 019). This used to be the `backfill-field` skill and no longer triggers on its own; `update-race` calls into it. Its scripts and steps are unchanged.
 
 # Backfill one field across many races (the fast lane)
 

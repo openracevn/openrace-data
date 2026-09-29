@@ -2,7 +2,7 @@
  * Reading races without Firecrawl: an agent (Claude Code, Antigravity, ...) reads the
  * pages and price images itself, for free. Same recipes, same extraction format, same
  * normalization and commit as scripts/check.ts. The skill that drives it:
- * .claude/skills/agent-read/SKILL.md.
+ * .claude/skills/update-race/refs/agent-read/REFERENCE.md.
  *
  *   npm run agent-read -- prepare --race <url|id|slug> [--race <url|id|slug> ...] [--out <dir>]
  *       Repeat --race for a hand-picked batch (a curated list of slugs, not a whole site);

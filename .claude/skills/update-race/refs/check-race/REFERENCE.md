@@ -1,7 +1,4 @@
----
-name: check-race
-description: Check, add, update, edit or verify a race in openrace-data. Use when the user gives a race URL (ActiUp, a race's own site, VnExpress Marathon, ...), a race slug or id, asks whether a race's data is correct or why a field is wrong, asks to (re)check, add or fix a race, to change a race's info by hand, or to add a race no site lists.
----
+> Reference for the `update-race` skill (plan 019). This used to be the `check-race` skill and no longer triggers on its own; `update-race` calls into it. Its scripts and steps are unchanged.
 
 # Check a race (design v2)
 

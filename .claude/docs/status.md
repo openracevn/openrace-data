@@ -13,6 +13,7 @@ Direction and the questions we're building toward: [roadmap.md](roadmap.md). Des
   - `vnexpress-marathon`: banner + ticket table only;
   - `default`: race sites, home + subpages + price images.
 - **FX cache** ([plan 014](../plans/014-2026-09-27-vnd-currency-conversion.md)): `data/fx/rates.json`, committed, one official World Bank rate (LCU per US$) per calendar year per currency, refreshed by hand with `npm run fx:ref` — never during `sync`/`renormalize`. Every race's `currency` is `"VND"`; a source priced in another currency gets each tier converted at its own sale-window year (`priceOriginal`/`fxRate` on the tier), or flagged (not guessed) if that year isn't cached yet. `MIN_PRICE` (10,000 VND) flags a raw VND tier priced implausibly low.
+- **`update-race` skill** ([plan 019](../plans/019-2026-09-29-update-race-single-skill.md), built 2026-09-29, pilot pending): one skill for races and series. `npm run gaps -- --race|--series <x>` (per-race checklist), `npm run claim` (claims in `.git/openrace-claims/`), workers stage bundles in `.staging/<unit>.json`, `npm run flush [-- --dry-run]` applies them all, validates each in a temporary tree and commits once, then archives to `.agent-read-archive/`.
 - **`npm run gaps`** ([plan 012](../plans/012-2026-09-27-gaps-report-script.md)): read-only report of missing data — no usable location, no organizerId, no prices (upcoming vs. past), existing flags/conflicting confidence, and series with a year gap between editions. Not a CI gate; always exits 0.
 - **Reading:** Firecrawl Parse on our own cleaned HTML, or a price image wrapped in a PDF (OCR); about 5 credits each. Cached by content hash in `state/reads.json`. Unchanged snapshots are skipped by fingerprint.
 - **Paid end-to-end checks** (2026-09-24), every price compared by eye with the page or image: **82 of 82 correct.**
@@ -21,7 +22,7 @@ Direction and the questions we're building toward: [roadmap.md](roadmap.md). Des
   - HCMC Marathon 2027: 48, including resident / non-resident.
   - Kept as `test/answers.test.ts`.
 - **Free dry runs against the live sites work:** ActiUp lists 41 upcoming races (≤425 credits to read them all the first time), VM 15 (≤85), and each race site ≤20–50.
-- **Agent reads (2026-09-24):** `npm run agent-read -- prepare | commit` and the `agent-read` skill (`.claude/skills/agent-read/SKILL.md`). An agent reads pages and price images itself, for free; same recipes, format, normalization and commit, and the fingerprint is recorded so Firecrawl runs skip the race. First used on Run For The Heart and Prenn Trail Summit 2026.
+- **Agent reads (2026-09-24):** `npm run agent-read -- prepare | commit` and the `agent-read` skill (`.claude/skills/update-race/refs/agent-read/REFERENCE.md`). An agent reads pages and price images itself, for free; same recipes, format, normalization and commit, and the fingerprint is recorded so Firecrawl runs skip the race. First used on Run For The Heart and Prenn Trail Summit 2026.
 - **Workflows:**
   - `check.yml` has v2 inputs (site / race / past / limit / max credits / free / dry run). Manual only.
   - `main.yml` (one job) validates, resyncs openrace-api when `data/` changed, and posts to Discord.
