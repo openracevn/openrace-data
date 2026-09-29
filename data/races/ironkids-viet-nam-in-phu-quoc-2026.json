@@ -15,9 +15,27 @@
   "edition": null,
   "courses": [
     {
-      "label": "Kids",
-      "meters": null,
-      "type": null,
+      "label": "1075m",
+      "meters": 1075,
+      "type": "aquathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "4075m",
+      "meters": 4075,
+      "type": "triathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "2150m",
+      "meters": 2150,
+      "type": "aquathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "8150m",
+      "meters": 8150,
+      "type": "triathlon",
       "elevationGain": null
     }
   ],
@@ -119,6 +137,36 @@
       },
       "reason": "ActiUp API place 'Phú Quốc, Việt Nam'; iRace page 'Địa điểm: Phú Quốc'; baoangiang 2025 report: Phú Quốc Marina",
       "at": "2026-09-29T07:20:52.168Z"
+    },
+    "courses": {
+      "value": [
+        {
+          "label": "1075m",
+          "meters": 1075,
+          "type": "aquathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "4075m",
+          "meters": 4075,
+          "type": "triathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "2150m",
+          "meters": 2150,
+          "type": "aquathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "8150m",
+          "meters": 8150,
+          "type": "triathlon",
+          "elevationGain": null
+        }
+      ],
+      "reason": "ironman.com IRONKIDS page: ages 5-10 aquathlon = 75m swim + 1km run, triathlon adds a 3km bike; ages 11-15 doubles to 150m swim + 2km run, triathlon adds a 6km bike. Course meters are the sum of the legs. Age bands are not a course field, so the courses are listed 5-10 first, then 11-15, and the ages are kept here and in the source's extracted note.",
+      "at": "2026-09-29T07:28:03.828Z"
     }
   },
   "sources": [
@@ -214,5 +262,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T07:25:49.157Z"
+  "updatedAt": "2026-09-29T07:28:03.828Z"
 }
