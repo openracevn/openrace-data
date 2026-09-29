@@ -21816,6 +21816,106 @@
     "query": "Thủ Đức, Hồ Chí Minh",
     "at": "2026-09-28T16:19:19.144Z"
   },
+  "thi tran mang den | kon tum": {
+    "geo": {
+      "lat": 14.62272,
+      "lng": 108.3026655,
+      "source": "maps_link",
+      "precision": "venue",
+      "current": {
+        "province": "51",
+        "ward": "23473"
+      },
+      "legacy": {
+        "province": "62",
+        "district": "613",
+        "ward": "23473"
+      },
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 622,
+          "minutes": 485,
+          "method": "road",
+          "near": false
+        },
+        "ha-noi": {
+          "km": 1032.7,
+          "minutes": 806,
+          "method": "road",
+          "near": false
+        },
+        "da-nang": {
+          "km": 277.6,
+          "minutes": 203,
+          "method": "road",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 403,
+          "minutes": 357,
+          "method": "road",
+          "near": false
+        },
+        "da-lat": {
+          "km": 450.4,
+          "minutes": 412,
+          "method": "road",
+          "near": false
+        },
+        "can-tho": {
+          "km": 781.2,
+          "minutes": 613,
+          "method": "road",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 1066.8,
+          "minutes": 833,
+          "method": "road",
+          "near": false
+        },
+        "hue": {
+          "km": 360.4,
+          "minutes": 278,
+          "method": "road",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 670.9,
+          "minutes": 549,
+          "method": "road",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 264.7,
+          "minutes": 201,
+          "method": "road",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 282.5,
+          "minutes": 245,
+          "method": "road",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 1341.2,
+          "minutes": 1041,
+          "method": "road",
+          "near": false
+        },
+        "ha-long": {
+          "km": 1116.5,
+          "minutes": 865,
+          "method": "road",
+          "near": false
+        }
+      }
+    },
+    "query": "https://www.google.com/maps/place/Mng+en,+Kon+Plng+District,+Kon+Tum/@14.62272,108.3026655,12z/data=!3m1!4b1!4m6!3m5!1s0x3169424eaa23801d:0x1dfb1396f196cfad!8m2!3d14.5941164!4d108.308934!16sg1218lv7n?entry=ttu",
+    "at": "2026-09-29T04:59:28.443Z"
+  },
   "thi tran mang den huyen kon plong tinh kon tum | ": {
     "geo": {
       "lat": 14.6699512,
@@ -21915,6 +22015,106 @@
     },
     "query": "tỉnh Kon Tum",
     "at": "2026-09-24T06:45:11.026Z"
+  },
+  "thi tran mang den huyen kon plong tinh kon tum | kon tum": {
+    "geo": {
+      "lat": 14.5771705,
+      "lng": 108.2774587,
+      "source": "nominatim",
+      "precision": "venue",
+      "current": {
+        "province": "51",
+        "ward": "23473"
+      },
+      "legacy": {
+        "province": "62",
+        "district": "613",
+        "ward": "23473"
+      },
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 615.7,
+          "minutes": 479,
+          "method": "road",
+          "near": false
+        },
+        "ha-noi": {
+          "km": 1032,
+          "minutes": 803,
+          "method": "road",
+          "near": false
+        },
+        "da-nang": {
+          "km": 276.8,
+          "minutes": 201,
+          "method": "road",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 396.7,
+          "minutes": 351,
+          "method": "road",
+          "near": false
+        },
+        "da-lat": {
+          "km": 444.2,
+          "minutes": 406,
+          "method": "road",
+          "near": false
+        },
+        "can-tho": {
+          "km": 774.9,
+          "minutes": 607,
+          "method": "road",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 1066.1,
+          "minutes": 830,
+          "method": "road",
+          "near": false
+        },
+        "hue": {
+          "km": 359.7,
+          "minutes": 276,
+          "method": "road",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 664.7,
+          "minutes": 543,
+          "method": "road",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 264,
+          "minutes": 199,
+          "method": "road",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 276.2,
+          "minutes": 239,
+          "method": "road",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 1340.5,
+          "minutes": 1039,
+          "method": "road",
+          "near": false
+        },
+        "ha-long": {
+          "km": 1115.8,
+          "minutes": 863,
+          "method": "road",
+          "near": false
+        }
+      }
+    },
+    "query": "Măng Đen, Kon Plông, Kon Tum, Kon Tum",
+    "at": "2026-09-29T04:59:27.801Z"
   },
   "thi tran ta xua tinh son la | ": {
     "geo": {

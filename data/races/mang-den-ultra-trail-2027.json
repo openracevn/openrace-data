@@ -7,13 +7,14 @@
   ],
   "date": "2027-01-15",
   "endDate": "2027-01-17",
+  "mainDate": null,
   "seriesId": "mang-den-ultra-trail",
   "organizerId": "pr-events-company-limited",
   "organizer": "Ban Tổ Chức: Hội Du Lịch Măng Đen - Đơn vị vận hành: PR Events",
   "coOrganizerIds": [
     "hoi-du-lich-mang-den"
   ],
-  "edition": null,
+  "edition": 3,
   "courses": [
     {
       "label": "15km",
@@ -47,14 +48,14 @@
     }
   ],
   "location": {
-    "venue": "Xã Măng Đen - Quảng Ngãi",
-    "city": null
+    "venue": "Thị trấn Măng Đen",
+    "city": "Kon Tum"
   },
   "geo": {
-    "lat": 14.6014606,
-    "lng": 108.2916225,
-    "source": "nominatim",
-    "precision": "ward",
+    "lat": 14.62272,
+    "lng": 108.3026655,
+    "source": "maps_link",
+    "precision": "venue",
     "current": {
       "province": "51",
       "ward": "23473"
@@ -67,80 +68,80 @@
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 619.2,
-        "minutes": 482,
+        "km": 622,
+        "minutes": 485,
         "method": "road",
         "near": false
       },
       "ha-noi": {
-        "km": 1029.3,
-        "minutes": 802,
+        "km": 1032.7,
+        "minutes": 806,
         "method": "road",
         "near": false
       },
       "da-nang": {
-        "km": 274.2,
-        "minutes": 200,
+        "km": 277.6,
+        "minutes": 203,
         "method": "road",
         "near": false
       },
       "nha-trang": {
-        "km": 400.2,
-        "minutes": 354,
+        "km": 403,
+        "minutes": 357,
         "method": "road",
         "near": false
       },
       "da-lat": {
-        "km": 447.6,
-        "minutes": 409,
+        "km": 450.4,
+        "minutes": 412,
         "method": "road",
         "near": false
       },
       "can-tho": {
-        "km": 778.4,
-        "minutes": 610,
+        "km": 781.2,
+        "minutes": 613,
         "method": "road",
         "near": false
       },
       "hai-phong": {
-        "km": 1063.5,
-        "minutes": 829,
+        "km": 1066.8,
+        "minutes": 833,
         "method": "road",
         "near": false
       },
       "hue": {
-        "km": 357,
-        "minutes": 275,
+        "km": 360.4,
+        "minutes": 278,
         "method": "road",
         "near": false
       },
       "vung-tau": {
-        "km": 668.1,
-        "minutes": 546,
+        "km": 670.9,
+        "minutes": 549,
         "method": "road",
         "near": false
       },
       "quy-nhon": {
-        "km": 261.4,
-        "minutes": 197,
+        "km": 264.7,
+        "minutes": 201,
         "method": "road",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 279.7,
-        "minutes": 242,
+        "km": 282.5,
+        "minutes": 245,
         "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 1337.9,
-        "minutes": 1038,
+        "km": 1341.2,
+        "minutes": 1041,
         "method": "road",
         "near": false
       },
       "ha-long": {
-        "km": 1113.2,
-        "minutes": 862,
+        "km": 1116.5,
+        "minutes": 865,
         "method": "road",
         "near": false
       }
@@ -372,11 +373,80 @@
   "registrationStatus": "open",
   "registrations": [
     {
+      "site": "irace",
+      "url": "https://irace.vn/su-kien/mang-den-ultra-trail"
+    },
+    {
       "site": "actiup",
       "url": "https://actiup.net/vi/event/mang-den-ultra-trail-2027"
     }
   ],
   "links": [
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://google.com/calendar/event",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://google.com/maps/place/Mng+en,+Kon+Plng+District,+Kon+Tum/@14.62272,108.3026655,12z/data=!3m1!4b1!4m6!3m5!1s0x3169424eaa23801d:0x1dfb1396f196cfad!8m2!3d14.5941164!4d108.308934!16sg1218lv7n",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/mung-ngay-phu-nu-viet-nam-20-10",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/creatine-monohydrate-scitec-nutrition-300g",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/sua-tang-hieu-suat-scitec-bcaa-xpress",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/sua-tang-suc-manh-applied-nutrition-abe-pre-workout-315g",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/sua-uong-truoc-khi-tap-elite-labs-usa-pre-cut-white-raspberry",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/sua-uong-truoc-khi-tap-vaporx5-next-gen-pre-workout-228g",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
     {
       "url": "https://drive.google.com/file/d/1Qih4_R1LRSfbyDyBL4RPx3FAHsaCjsv9/view",
       "kind": "rules",
@@ -605,9 +675,112 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://irace.vn/su-kien/mang-den-ultra-trail",
+      "lastCheckedAt": "2026-09-29T04:59:19.621Z",
+      "lastChangedAt": "2026-09-29T04:59:19.621Z",
+      "extracted": {
+        "facts": {
+          "name": "Măng Đen Ultra Trail 2027",
+          "venue": "Thị trấn Măng Đen",
+          "organizer": "PR Events"
+        },
+        "pages": [
+          {
+            "url": "https://irace.vn/su-kien/mang-den-ultra-trail",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "trail_run"
+              ],
+              "name": "Măng Đen Ultra Trail 2027",
+              "date": "2027-01-15",
+              "endDate": "2027-01-17",
+              "venue": "Thị trấn Măng Đen",
+              "city": "Kon Tum",
+              "edition": 3,
+              "prices": []
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": "facebook facebook"
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn/",
+            "text": "instagram instagram"
+          },
+          {
+            "url": "https://app.irace.vn/",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=iRace&utm_medium=Menu&utm_campaign=Menu",
+            "text": "sports shop"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=iRace&utm_medium=Menu&utm_campaign=Menu",
+            "text": "nutritions"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=iRace&utm_medium=Menu&utm_campaign=Menu",
+            "text": "accessories"
+          },
+          {
+            "url": "https://ticket.irace.vn/",
+            "text": "su kien tai viet nam"
+          },
+          {
+            "url": "https://ticket.irace.vn/orders",
+            "text": "ve chay offline"
+          },
+          {
+            "url": "https://app.irace.vn/my-orders",
+            "text": "ve chay online"
+          },
+          {
+            "url": "https://www.google.com/calendar/event?action=TEMPLATE&text=M%C4%83ng%20%C4%90en%20Ultra%20Trail%202027&dates=20270115T120000Z/20270117T090000Z&ctz=Asia%2FSaigon&details=M%C4%83ng%20%C4%90en%20Ultra%20Trail%202027&location=Th%E1%BB%8B%20tr%E1%BA%A5n%20M%C4%83ng%20%C4%90en%20Huy%E1%BB%87n%20Kon%20Pl%C3%B4ng%2C%20t%E1%BB%89nh%20Kon%20Tum",
+            "text": "them vao google calendar them vao google calendar"
+          },
+          {
+            "url": "https://ifitness.vn/products/sua-uong-truoc-khi-tap-vaporx5-next-gen-pre-workout-228g?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "text": "mua ngay"
+          },
+          {
+            "url": "https://ifitness.vn/products/creatine-monohydrate-scitec-nutrition-300g?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "text": "mua ngay"
+          },
+          {
+            "url": "https://ifitness.vn/products/sua-uong-truoc-khi-tap-elite-labs-usa-pre-cut-white-raspberry?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "text": "mua ngay"
+          },
+          {
+            "url": "https://ifitness.vn/products/sua-tang-suc-manh-applied-nutrition-abe-pre-workout-315g?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "text": "mua ngay"
+          },
+          {
+            "url": "https://www.google.com/maps/place/Mng+en,+Kon+Plng+District,+Kon+Tum/@14.62272,108.3026655,12z/data=!3m1!4b1!4m6!3m5!1s0x3169424eaa23801d:0x1dfb1396f196cfad!8m2!3d14.5941164!4d108.308934!16sg1218lv7n?entry=ttu",
+            "text": "dia diem"
+          },
+          {
+            "url": "https://ifitness.vn/collections/mung-ngay-phu-nu-viet-nam-20-10?utm_source=iRace.vn&utm_medium=Banner&utm_campaign=Top&utm_content=Optivita",
+            "text": ""
+          },
+          {
+            "url": "https://ifitness.vn/products/sua-tang-hieu-suat-scitec-bcaa-xpress?ref=iRace&utm_source=iRace&utm_medium=Banner&utm_campaign=Topbanner&utm_content=%22Bcaa-Xpress%22",
+            "text": ""
+          }
+        ],
+        "readBy": "agent"
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T12:41:20.769Z"
+  "updatedAt": "2026-09-29T04:59:19.621Z"
 }

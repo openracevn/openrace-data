@@ -1,121 +1,323 @@
 {
   "id": "6daa5d8f-91f5-4505-81b3-6acd4ff11fad",
   "slug": "mang-den-ultra-trail-2025",
-  "name": "Măng Đen Ultra Trail 2025",
+  "name": "Giải chạy Măng Đen Ultra Trail 2025",
   "types": [
     "trail_run"
   ],
   "date": "2025-02-15",
   "endDate": "2025-02-16",
+  "mainDate": null,
   "seriesId": "mang-den-ultra-trail",
-  "organizerId": "hoi-du-lich-mang-den",
-  "organizer": "Hội Du Lịch Măng Đen",
+  "organizerId": "vud",
+  "organizer": "Công ty Cổ phần Khám phá Không giới hạn Việt Nam (VUD)",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "15km",
+      "meters": 15000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "25km",
+      "meters": 25000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "50km",
+      "meters": 50000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "75km",
+      "meters": 75000,
+      "type": "trail_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Thị trấn Măng Đen , huyện Kon Plông, tỉnh Kon Tum",
-    "city": null
+    "city": "Kon Tum"
   },
   "geo": {
-    "lat": 14.6699512,
-    "lng": 108.0288466,
+    "lat": 14.5771705,
+    "lng": 108.2774587,
     "source": "nominatim",
     "precision": "venue",
     "current": {
       "province": "51",
-      "ward": "23504"
+      "ward": "23473"
     },
     "legacy": {
       "province": "62",
-      "district": "615",
-      "ward": "23503"
+      "district": "613",
+      "ward": "23473"
     },
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 615.4,
-        "minutes": 493,
+        "km": 615.7,
+        "minutes": 479,
         "method": "road",
         "near": false
       },
       "ha-noi": {
-        "km": 1034.6,
-        "minutes": 834,
+        "km": 1032,
+        "minutes": 803,
         "method": "road",
         "near": false
       },
       "da-nang": {
-        "km": 279.6,
-        "minutes": 232,
+        "km": 276.8,
+        "minutes": 201,
         "method": "road",
         "near": false
       },
       "nha-trang": {
-        "km": 396.4,
-        "minutes": 364,
+        "km": 396.7,
+        "minutes": 351,
         "method": "road",
         "near": false
       },
       "da-lat": {
-        "km": 443.8,
-        "minutes": 419,
+        "km": 444.2,
+        "minutes": 406,
         "method": "road",
         "near": false
       },
       "can-tho": {
-        "km": 774.6,
-        "minutes": 620,
+        "km": 774.9,
+        "minutes": 607,
         "method": "road",
         "near": false
       },
       "hai-phong": {
-        "km": 1068.7,
-        "minutes": 861,
+        "km": 1066.1,
+        "minutes": 830,
         "method": "road",
         "near": false
       },
       "hue": {
-        "km": 362.3,
-        "minutes": 306,
+        "km": 359.7,
+        "minutes": 276,
         "method": "road",
         "near": false
       },
       "vung-tau": {
-        "km": 664.4,
-        "minutes": 556,
+        "km": 664.7,
+        "minutes": 543,
         "method": "road",
         "near": false
       },
       "quy-nhon": {
-        "km": 244.4,
-        "minutes": 231,
+        "km": 264,
+        "minutes": 199,
         "method": "road",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 275.9,
-        "minutes": 253,
+        "km": 276.2,
+        "minutes": 239,
         "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 1343.1,
-        "minutes": 1070,
+        "km": 1340.5,
+        "minutes": 1039,
         "method": "road",
         "near": false
       },
       "ha-long": {
-        "km": 1118.4,
-        "minutes": 894,
+        "km": 1115.8,
+        "minutes": 863,
         "method": "road",
         "near": false
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "75km",
+      "tier": "SUPER EARLY BIRD",
+      "kind": "super_early",
+      "audience": null,
+      "price": 2068000,
+      "from": "2024-07-07",
+      "to": "2024-07-27",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "75km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 2488000,
+      "from": "2024-07-28",
+      "to": "2024-10-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "75km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 2888000,
+      "from": "2024-10-11",
+      "to": "2024-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "50km",
+      "tier": "SUPER EARLY BIRD",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1868000,
+      "from": "2024-07-07",
+      "to": "2024-07-27",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "50km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 2188000,
+      "from": "2024-07-28",
+      "to": "2024-10-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "50km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 2588000,
+      "from": "2024-10-11",
+      "to": "2024-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "25km",
+      "tier": "SUPER EARLY BIRD",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1368000,
+      "from": "2024-07-07",
+      "to": "2024-07-27",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "25km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 1688000,
+      "from": "2024-07-28",
+      "to": "2024-10-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "25km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 2088000,
+      "from": "2024-10-11",
+      "to": "2024-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "15km",
+      "tier": "SUPER EARLY BIRD",
+      "kind": "super_early",
+      "audience": null,
+      "price": 868000,
+      "from": "2024-07-07",
+      "to": "2024-07-27",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "15km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 1188000,
+      "from": "2024-07-28",
+      "to": "2024-10-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "15km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 1588000,
+      "from": "2024-10-11",
+      "to": "2024-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "SUPER EARLY BIRD",
+      "kind": "super_early",
+      "audience": null,
+      "price": 568000,
+      "from": "2024-07-07",
+      "to": "2024-07-27",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 888000,
+      "from": "2024-07-28",
+      "to": "2024-10-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 988000,
+      "from": "2024-10-11",
+      "to": "2024-10-31",
+      "inferred": [],
+      "site": "irace"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
+    {
+      "site": "irace",
+      "url": "https://ticket.irace.vn/mang-den-ultra-trail-2025"
+    },
     {
       "site": "actiup",
       "url": "https://actiup.net/vi/event/mang-den-ultra-trail-2025"
@@ -123,11 +325,82 @@
   ],
   "links": [
     {
+      "url": "https://facebook.com/iRace.vn",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://facebook.com/profile.php",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://facebook.com/sharer/sharer.php",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "http://online.gov.vn/Home/WebDetails/51414",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://docs.google.com/document/d/1SITIMifMFFB2NH3M0SSZLNP4mRvNgFHZ/edit",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://drive.google.com/drive/u/0/folders/1SkaP3Lhy27fPCr5HrAD_aT-dKZUC-0j3",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
       "url": "https://drive.google.com/file/d/18XPqAjBGj_50ULIsSl8OiJnearfIJN1K/view",
       "kind": "rules",
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -167,9 +440,294 @@
           "name": "Hội Du Lịch Măng Đen"
         }
       }
+    },
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://ticket.irace.vn/mang-den-ultra-trail-2025",
+      "lastCheckedAt": "2026-09-29T04:59:19.621Z",
+      "lastChangedAt": "2026-09-29T04:59:19.621Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Măng Đen Ultra Trail 2025",
+          "venue": "Thị trấn Măng Đen, huyện Kon Plông, tỉnh Kon Tum",
+          "organizer": "Công ty Cổ phần Khám phá Không giới hạn Việt Nam (VUD)"
+        },
+        "pages": [
+          {
+            "url": "https://ticket.irace.vn/mang-den-ultra-trail-2025",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "trail_run"
+              ],
+              "name": "Giải chạy Măng Đen Ultra Trail 2025",
+              "date": "2025-02-15",
+              "endDate": "2025-02-16",
+              "distances": [
+                "5km",
+                "15km",
+                "25km",
+                "50km",
+                "75km"
+              ],
+              "venue": "Thị trấn Măng Đen, huyện Kon Plông, tỉnh Kon Tum",
+              "city": "Kon Tum",
+              "currency": "VND",
+              "registrationStatus": "closed",
+              "prices": [
+                {
+                  "distance": "75KM",
+                  "tier": "SUPER EARLY BIRD",
+                  "from": "2024-07-07",
+                  "to": "2024-07-27",
+                  "price": 2068000
+                },
+                {
+                  "distance": "75KM",
+                  "tier": "EARLY BIRD",
+                  "from": "2024-07-28",
+                  "to": "2024-10-10",
+                  "price": 2488000
+                },
+                {
+                  "distance": "75KM",
+                  "tier": "REGULAR",
+                  "from": "2024-10-11",
+                  "to": "2024-10-31",
+                  "price": 2888000
+                },
+                {
+                  "distance": "50KM",
+                  "tier": "SUPER EARLY BIRD",
+                  "from": "2024-07-07",
+                  "to": "2024-07-27",
+                  "price": 1868000
+                },
+                {
+                  "distance": "50KM",
+                  "tier": "EARLY BIRD",
+                  "from": "2024-07-28",
+                  "to": "2024-10-10",
+                  "price": 2188000
+                },
+                {
+                  "distance": "50KM",
+                  "tier": "REGULAR",
+                  "from": "2024-10-11",
+                  "to": "2024-10-31",
+                  "price": 2588000
+                },
+                {
+                  "distance": "25KM",
+                  "tier": "SUPER EARLY BIRD",
+                  "from": "2024-07-07",
+                  "to": "2024-07-27",
+                  "price": 1368000
+                },
+                {
+                  "distance": "25KM",
+                  "tier": "EARLY BIRD",
+                  "from": "2024-07-28",
+                  "to": "2024-10-10",
+                  "price": 1688000
+                },
+                {
+                  "distance": "25KM",
+                  "tier": "REGULAR",
+                  "from": "2024-10-11",
+                  "to": "2024-10-31",
+                  "price": 2088000
+                },
+                {
+                  "distance": "15KM",
+                  "tier": "SUPER EARLY BIRD",
+                  "from": "2024-07-07",
+                  "to": "2024-07-27",
+                  "price": 868000
+                },
+                {
+                  "distance": "15KM",
+                  "tier": "EARLY BIRD",
+                  "from": "2024-07-28",
+                  "to": "2024-10-10",
+                  "price": 1188000
+                },
+                {
+                  "distance": "15KM",
+                  "tier": "REGULAR",
+                  "from": "2024-10-11",
+                  "to": "2024-10-31",
+                  "price": 1588000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "SUPER EARLY BIRD",
+                  "from": "2024-07-07",
+                  "to": "2024-07-27",
+                  "price": 568000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "EARLY BIRD",
+                  "from": "2024-07-28",
+                  "to": "2024-10-10",
+                  "price": 888000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "REGULAR",
+                  "from": "2024-10-11",
+                  "to": "2024-10-31",
+                  "price": 988000
+                }
+              ]
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://app.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://irace.vn/ban-ve/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ban ve su kien"
+          },
+          {
+            "url": "https://irace.vn/myfoto/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "tim hinh su kien"
+          },
+          {
+            "url": "https://irace.vn/doanh-nghiep/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "to chuc su kien"
+          },
+          {
+            "url": "https://irace.vn/affiliate/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kiem tien cung irace vn"
+          },
+          {
+            "url": "https://irace.vn/thiet-ke-huy-chuong/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huy chuong"
+          },
+          {
+            "url": "https://irace.vn/san-xuat-qua-tang-phu-kien-the-thao/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "quan ao phu kien"
+          },
+          {
+            "url": "https://irace.vn/about-us/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ve irace"
+          },
+          {
+            "url": "https://irace.vn/bao-chi/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "bao chi viet"
+          },
+          {
+            "url": "https://irace.vn/hoi-dap/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "hoi dap"
+          },
+          {
+            "url": "https://irace.vn/thong-tin/huong-dan/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huong dan su dung"
+          },
+          {
+            "url": "https://irace.vn/kien-thuc-tap-luyen/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kien thuc chay bo"
+          },
+          {
+            "url": "https://tools.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "cong cu tinh toan"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "shop the thao"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "dinh duong"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "phu kien"
+          },
+          {
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://ticket.irace.vn/mang-den-ultra-trail-2025",
+            "text": "chia se tren facebook"
+          },
+          {
+            "url": "https://www.facebook.com/iRace.vn",
+            "text": "https www facebook com irace vn"
+          },
+          {
+            "url": "https://www.facebook.com/profile.php?id=61561518726367",
+            "text": "https www facebook com profile php id 61561518726367"
+          },
+          {
+            "url": "https://drive.google.com/drive/u/0/folders/1SkaP3Lhy27fPCr5HrAD_aT-dKZUC-0j3?fbclid=IwY2xjawFfRgdleHRuA2FlbQIxMAABHdgtU-6F8Ncq_H15jX-M_9r_4AXc3Fkvvcp-lWSBLrbx2mJWbN_qw_vO2w_aem_7lweDtbSz-zz5U1OHAPsyQ",
+            "text": "tai day"
+          },
+          {
+            "url": "https://docs.google.com/document/d/1SITIMifMFFB2NH3M0SSZLNP4mRvNgFHZ/edit?usp=drive_link&ouid=112186841958023711427&rtpof=true&sd=true",
+            "text": "tai day"
+          },
+          {
+            "url": "http://online.gov.vn/Home/WebDetails/51414",
+            "text": ""
+          },
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/feed/",
+            "text": ""
+          },
+          {
+            "url": "https://www.youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+            "text": ""
+          },
+          {
+            "url": "https://play.google.com/store/apps/details?id=com.irace.app",
+            "text": ""
+          },
+          {
+            "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/chinh-sach-bao-mat/",
+            "text": "chinh sach bao mat"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-thanh-toan/",
+            "text": "dieu khoan thanh toan"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-su-dung/",
+            "text": "dieu khoan su dung"
+          },
+          {
+            "url": "https://irace.vn/tuyen-dung/",
+            "text": "tuyen dung"
+          },
+          {
+            "url": "https://irace.vn/lien-he/",
+            "text": "lien he"
+          }
+        ],
+        "organizer": {
+          "id": "vud",
+          "name": "Công ty Cổ phần Khám phá Không giới hạn Việt Nam (VUD)"
+        },
+        "readBy": "agent"
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-29T04:59:19.621Z"
 }
