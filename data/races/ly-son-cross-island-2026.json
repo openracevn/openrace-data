@@ -11,7 +11,7 @@
   "seriesId": "ly-son-cross-island",
   "organizerId": "cong-ty-co-phan-duong-chay-xanh",
   "organizer": "CÔNG TY CỔ PHẦN ĐƯỜNG CHẠY XANH",
-  "edition": null,
+  "edition": 4,
   "courses": [
     {
       "label": "1km",
@@ -247,6 +247,11 @@
       "value": "ly-son-cross-island",
       "reason": "same swim series as 2024-2026 editions",
       "at": "2026-09-29T04:50:42.703Z"
+    },
+    "edition": {
+      "value": 4,
+      "reason": "anninhthudo.vn 2026: 'mùa giải thứ tư liên tiếp', 'năm thứ tư liên tiếp'",
+      "at": "2026-09-29T04:50:50.971Z"
     }
   },
   "sources": [
@@ -424,5 +429,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T04:50:42.703Z"
+  "updatedAt": "2026-09-29T04:50:50.971Z"
 }
