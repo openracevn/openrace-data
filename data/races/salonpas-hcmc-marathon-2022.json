@@ -48,7 +48,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
-  "participants": null,
+  "participants": {
+    "count": 7500,
+    "sourceUrl": "https://voh.com.vn/tin-tp-ho-chi-minh/hon-7-500-vdv-tranh-tai-o-giai-hcmc-marathon-2022-431746.html",
+    "quote": "Hơn 7.500 VĐV tranh tài ở giải HCMC Marathon 2022",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "seriesId": {
@@ -86,9 +91,28 @@
           "note": "HCMC Dept of Culture and Sports (svhtt): 9th edition held 16-17/4 at 10 Tân Trào, Phú Mỹ Hưng, 'vào ngày 17/4/2022, sau khi dời từ ngày cũ là 9/1/2022'. race-research HCMC Marathon series history."
         }
       }
+    },
+    {
+      "site": "voh-com-vn",
+      "role": "reference",
+      "url": "https://voh.com.vn/tin-tp-ho-chi-minh/hon-7-500-vdv-tranh-tai-o-giai-hcmc-marathon-2022-431746.html",
+      "lastCheckedAt": "2026-09-29T03:55:35.654Z",
+      "lastChangedAt": "2026-09-29T03:55:35.654Z",
+      "extracted": {
+        "facts": {
+          "name": "Salonpas HCMC Marathon 2022",
+          "date": "2022-04-16",
+          "participants": {
+            "count": 7500,
+            "sourceUrl": "https://voh.com.vn/tin-tp-ho-chi-minh/hon-7-500-vdv-tranh-tai-o-giai-hcmc-marathon-2022-431746.html",
+            "quote": "Hơn 7.500 VĐV tranh tài ở giải HCMC Marathon 2022"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:38:13.134Z",
-  "updatedAt": "2026-09-28T16:44:16.834Z"
+  "updatedAt": "2026-09-29T03:55:35.654Z"
 }
