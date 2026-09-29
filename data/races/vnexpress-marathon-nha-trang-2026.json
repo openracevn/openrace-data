@@ -7,6 +7,7 @@
   ],
   "date": "2026-08-09",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "vnexpress-marathon-nha-trang",
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
@@ -113,6 +114,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": {
+    "count": 10000,
+    "sourceUrl": "https://vnexpress.net/vnexpress-marathon-nha-trang-2026-10000-runner-5105194.html",
+    "quote": "VnExpress Marathon Nha Trang 2026 đón 10.000 runner mùa thứ 5",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {},
   "sources": [
@@ -154,9 +161,28 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "vnexpress-net",
+      "role": "reference",
+      "url": "https://vnexpress.net/vnexpress-marathon-nha-trang-2026-10000-runner-5105194.html",
+      "lastCheckedAt": "2026-09-29T04:39:47.684Z",
+      "lastChangedAt": "2026-09-29T04:39:47.684Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Marathon Nha Trang 2026",
+          "date": "2026-08-09",
+          "participants": {
+            "count": 10000,
+            "sourceUrl": "https://vnexpress.net/vnexpress-marathon-nha-trang-2026-10000-runner-5105194.html",
+            "quote": "VnExpress Marathon Nha Trang 2026 đón 10.000 runner mùa thứ 5"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-25T04:11:49.673Z",
-  "updatedAt": "2026-09-25T04:28:29.753Z"
+  "updatedAt": "2026-09-29T04:39:47.684Z"
 }
