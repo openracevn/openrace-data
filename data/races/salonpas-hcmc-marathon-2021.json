@@ -48,7 +48,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
-  "participants": null,
+  "participants": {
+    "count": 10000,
+    "sourceUrl": "https://znews.vn/giai-salonpas-hcmc-marathon-thu-hut-hon-10000-nguoi-post1177201.html",
+    "quote": "Giải Salonpas HCMC Marathon thu hút hơn 10.000 người",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "seriesId": {
@@ -86,9 +91,28 @@
           "note": "Cục TDTT: 'HCMC Marathon lần 8 năm 2021' 17.1.2021 at Phú Mỹ Hưng; VnExpress: weekend 16-17/1, long distances Sunday 17/1. race-research HCMC Marathon series history."
         }
       }
+    },
+    {
+      "site": "znews-vn",
+      "role": "reference",
+      "url": "https://znews.vn/giai-salonpas-hcmc-marathon-thu-hut-hon-10000-nguoi-post1177201.html",
+      "lastCheckedAt": "2026-09-29T03:55:10.308Z",
+      "lastChangedAt": "2026-09-29T03:55:10.308Z",
+      "extracted": {
+        "facts": {
+          "name": "Salonpas HCMC Marathon 2021",
+          "date": "2021-01-16",
+          "participants": {
+            "count": 10000,
+            "sourceUrl": "https://znews.vn/giai-salonpas-hcmc-marathon-thu-hut-hon-10000-nguoi-post1177201.html",
+            "quote": "Giải Salonpas HCMC Marathon thu hút hơn 10.000 người"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:37:49.987Z",
-  "updatedAt": "2026-09-28T16:44:02.416Z"
+  "updatedAt": "2026-09-29T03:55:10.308Z"
 }
