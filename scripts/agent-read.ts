@@ -24,7 +24,8 @@
  *       sync (dry run). With --commit: commits the races, and records each snapshot's
  *       fingerprint in state/checks.json so scheduled runs don't pay to read it again.
  *
- * Default <dir>: .agent-read (gitignored). Env for --commit: GITHUB_TOKEN.
+ * Default <dir>: .agent-read (gitignored). `prepare` only clears its own earlier output there,
+ * never other folders; update-race workers use --out .agent-read/<unit>/prepared. Env for --commit: GITHUB_TOKEN.
  */
 import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
@@ -143,7 +144,7 @@ async function prepare() {
     jobs.push({ site, recipe });
   }
 
-  rmSync(out, { recursive: true, force: true });
+  clearPrepared(out);
   mkdirSync(out, { recursive: true });
   // The instructions Firecrawl is given; the agent follows the same ones.
   writeFileSync(join(out, "extraction.json"), `${JSON.stringify({ page: PAGE_EXTRACTION, image: IMAGE_EXTRACTION }, null, 2)}\n`);
@@ -210,6 +211,20 @@ async function prepare() {
     }
   }
   console.log(`\n${n} race(s) prepared in ${out}${skipped ? ` (${skipped} already read, skipped; --all to include them)` : ""}. Fill in each read.json, then: npm run agent-read -- commit ${out}`);
+}
+
+/**
+ * Clears what an earlier `prepare` left in <dir> (extraction.json and the <nn>-<slug>/ folders
+ * holding a task.json) and nothing else. It used to wipe <dir> whole, which destroyed other
+ * update-race workers' saved pages and search logs in the shared .agent-read (plan 019).
+ * Workers should still prepare into their own folder: --out .agent-read/<unit>/prepared.
+ */
+function clearPrepared(out: string): void {
+  if (!existsSync(out)) return;
+  for (const name of readdirSync(out)) {
+    const path = join(out, name);
+    if (name === "extraction.json" || existsSync(join(path, "task.json"))) rmSync(path, { recursive: true, force: true });
+  }
 }
 
 async function commit() {

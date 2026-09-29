@@ -42,7 +42,7 @@ One unit = one race or one series. Name it `<slug>` in lowercase-with-dashes (`^
 
 1. **`WebSearch`**, several queries in parallel, Vietnamese and English (`<name> lần thứ`, `<name> <year> giá vé`, `<name> irace`, `<name> số người tham gia`).
 2. **`curl -sL -A 'Mozilla/5.0'`** (or `WebFetch` for a quick read) on the promising hits. Look at price images yourself (download, then Read).
-3. **Recipes and `npm run find-sources -- <race> [--field prices]`** for sites that have one (ActiUp, iRace, VnExpress Marathon, race sites in `config/sites.yaml`). A live URL on a recipe site is not added by hand: read it with `npm run agent-read -- prepare --race <url|slug|id>` (see `refs/agent-read`).
+3. **Recipes and `npm run find-sources -- <race> [--field prices]`** for sites that have one (ActiUp, iRace, VnExpress Marathon, race sites in `config/sites.yaml`). A live URL on a recipe site is not added by hand: read it with `npm run agent-read -- prepare --race <url|slug|id>` (see `refs/agent-read`). **Always `--out .agent-read/<unit>/prepared`**: the folder `.agent-read/` is shared by parallel workers, and each unit stays inside its own subfolder.
 4. **Wayback** at every step: `https://web.archive.org/web/2id_/<url>`, CDX listing for a snapshot inside the sale window (`refs/race-research` step 1.5). A live page showing nothing proves nothing about what it once showed.
 
 Rules that never bend (roadmap trust principles):
