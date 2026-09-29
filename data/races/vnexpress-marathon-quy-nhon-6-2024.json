@@ -320,7 +320,12 @@
   "registrationStatus": "closed",
   "registrations": [],
   "links": [],
-  "participants": null,
+  "participants": {
+    "count": 8000,
+    "sourceUrl": "https://thanhnien.vn/8000-vdv-dua-tai-giai-vnexpress-marathon-quy-nhon-2024-tien-thuong-bac-ti-185240620170500152.htm",
+    "quote": "8.000 VĐV đua tài giải VnExpress Marathon Quy Nhơn 2024, tiền thưởng bạc tỉ",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "prices": {
@@ -616,9 +621,28 @@
           "note": "Wayback snapshot of the live page before its .ticket-policy was removed; carries the full price table (already recorded as an override), distances, and venue"
         }
       }
+    },
+    {
+      "site": "thanhnien-vn",
+      "role": "reference",
+      "url": "https://thanhnien.vn/8000-vdv-dua-tai-giai-vnexpress-marathon-quy-nhon-2024-tien-thuong-bac-ti-185240620170500152.htm",
+      "lastCheckedAt": "2026-09-29T04:14:27.072Z",
+      "lastChangedAt": "2026-09-29T04:14:27.072Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Marathon Quy Nhon 2024",
+          "date": "2024-06-23",
+          "participants": {
+            "count": 8000,
+            "sourceUrl": "https://thanhnien.vn/8000-vdv-dua-tai-giai-vnexpress-marathon-quy-nhon-2024-tien-thuong-bac-ti-185240620170500152.htm",
+            "quote": "8.000 VĐV đua tài giải VnExpress Marathon Quy Nhơn 2024, tiền thưởng bạc tỉ"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-26T13:58:07.150Z",
-  "updatedAt": "2026-09-28T13:58:50.138Z"
+  "updatedAt": "2026-09-29T04:14:27.072Z"
 }
