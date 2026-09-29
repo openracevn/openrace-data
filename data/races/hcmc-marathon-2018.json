@@ -48,7 +48,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
-  "participants": null,
+  "participants": {
+    "count": 8500,
+    "sourceUrl": "https://vietnamnet.vn/8500-nguoi-tham-gia-marathon-tphcm-2018-424105.html",
+    "quote": "8.500 người tham gia Marathon TP.HCM 2018",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {},
   "sources": [
@@ -78,9 +83,28 @@
           "note": "Cục TDTT recap: Giải Marathon TP.HCM (HCMC Run) lần thứ 5 - 2018 held 14/1 at Phú Mỹ Hưng, 42/21/10/5km. race-research HCMC Marathon series history."
         }
       }
+    },
+    {
+      "site": "vietnamnet-vn",
+      "role": "reference",
+      "url": "https://vietnamnet.vn/8500-nguoi-tham-gia-marathon-tphcm-2018-424105.html",
+      "lastCheckedAt": "2026-09-29T03:51:54.333Z",
+      "lastChangedAt": "2026-09-29T03:51:54.333Z",
+      "extracted": {
+        "facts": {
+          "name": "HCMC Marathon 2018",
+          "date": "2018-01-14",
+          "participants": {
+            "count": 8500,
+            "sourceUrl": "https://vietnamnet.vn/8500-nguoi-tham-gia-marathon-tphcm-2018-424105.html",
+            "quote": "8.500 người tham gia Marathon TP.HCM 2018"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:42:40.823Z",
-  "updatedAt": "2026-09-28T16:42:40.823Z"
+  "updatedAt": "2026-09-29T03:51:54.333Z"
 }
