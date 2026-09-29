@@ -209,7 +209,12 @@
     }
   ],
   "links": [],
-  "participants": null,
+  "participants": {
+    "count": 800,
+    "sourceUrl": "https://baoquangngai.vn/an-tuong-giai-boi-vuot-bien-ly-son-cross-island-2026-3582878.html",
+    "quote": "thu hút hơn 800 vận động viên tham gia",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "types": {
@@ -425,9 +430,28 @@
           "note": "iRace listing confirms this is an open-water swim event with 1km/2km/5km distances, corroborating actiup"
         }
       }
+    },
+    {
+      "site": "baoquangngai-vn",
+      "role": "reference",
+      "url": "https://baoquangngai.vn/an-tuong-giai-boi-vuot-bien-ly-son-cross-island-2026-3582878.html",
+      "lastCheckedAt": "2026-09-29T04:58:55.731Z",
+      "lastChangedAt": "2026-09-29T04:58:55.731Z",
+      "extracted": {
+        "facts": {
+          "name": "Lý Sơn Cross Island 2026",
+          "date": "2026-06-07",
+          "participants": {
+            "count": 800,
+            "sourceUrl": "https://baoquangngai.vn/an-tuong-giai-boi-vuot-bien-ly-son-cross-island-2026-3582878.html",
+            "quote": "thu hút hơn 800 vận động viên tham gia"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T04:50:50.971Z"
+  "updatedAt": "2026-09-29T04:58:55.731Z"
 }
