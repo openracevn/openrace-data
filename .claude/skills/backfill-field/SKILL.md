@@ -13,7 +13,8 @@ Plan 017. Free: your own `WebSearch` and plain page fetches. No Firecrawl, no op
 
 ## Steps
 
-1. **Worklist:** `npm run gaps`, section "Past races with no participant count" (biggest series first). "Participant counts with low confidence" is the upgrade list.
+0. **Read `.claude/docs/participants-backfill-log.md` first** (races already run, and why the misses have no count; don't search those twice) and **append each batch to it** at the end: stored, not stored with the reason and what to try next.
+1. **Worklist:** `git pull`, then `npm run gaps`, section "Past races with no participant count" (biggest series first). "Participant counts with low confidence" is the upgrade list.
 2. **Search:** about 10 races per batch, in parallel, one `WebSearch` per race (`<race name> <year> số người tham gia`), a second wording only for misses. Only a number in a result **title** can be quoted verbatim; a number seen only in a search summary goes in **without a quote** (stored as `low`).
 3. **Write candidates** to a scratch file. `race` is the `slug` inside the JSON, which can differ from the filename (`the-lakes-race-mua-3-2020.json` has slug `the-lakes-race-mua-3`; a wrong one is rejected as "no such race"): `[{"race":"<slug>","url":"<page>","count":9100,"quote":"<verbatim title or sentence>"}]`.
 4. **Verify (dry, free):** `npx tsx scripts/backfill-verify.ts <file>`. It fetches each page and rejects: link not loading, the edition's year missing from the page, the count not in the quote, the quote not verbatim on the page or title, targets/capacity/finishers wording, Facebook. Fix or drop rejects; never loosen the script to let one through.
