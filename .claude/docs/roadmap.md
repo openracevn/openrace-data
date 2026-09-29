@@ -49,6 +49,7 @@ A new question goes in this table first. When it gets built, it gets a plan and 
 | How many trail races a year? North vs South? Distance distribution? | backfill, `types`, `courses`, admin codes / region | Later (path step 4) |
 | How big is this race, and which series is the biggest? | `participants` per edition (count of people who registered, paid or attended; required source link; derived `confidence`), series aggregates in the API | Building (openrace-web plan 012; backfill and confidence: [plan 017](../plans/017-2026-09-28-participants-backfill-and-derived-confidence.md)) |
 | Which day is the main race day of a multi-day event? | `date` (first day), `endDate` (last day), `mainDate` (stated headline day, else null) | Planned ([plan 016](../plans/016-2026-09-28-multi-day-races-and-main-day.md)) |
+| How complete is OpenRace's data, and is it getting better? | per-race scored items, edition coverage per series, daily snapshots in the API, a public page | Building ([plan 023](../plans/023-2026-09-29-completeness-score.md)) |
 | Elevation gain and share of races with GPX | `courses[].elevationGain`; GPX files added by hand by the user | Later (GPX is manual, not scraped) |
 
 Old place names ("Nha Trang", "Bình Dương") must keep working after the 2025 merger: people and race names still use them.

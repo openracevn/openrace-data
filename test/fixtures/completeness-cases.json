@@ -1,0 +1,55 @@
+{
+  "_note": "Plan 023. Byte-identical copy in openrace-api/test/fixtures/. Inputs are ScoreInput (scripts/lib/completeness-core.ts); expected values were worked out by hand.",
+  "today": "2026-10-01",
+  "series": [
+    { "id": "s1", "statedEditionCount": 5 },
+    { "id": "s2", "statedEditionCount": null },
+    { "id": "s3", "statedEditionCount": 4 }
+  ],
+  "races": [
+    {
+      "name": "A: upcoming, everything known",
+      "input": { "date": "2026-11-01", "endDate": null, "seriesId": "s1", "edition": 3, "venue": "Hồ Tây", "city": null, "geoProvince": "01", "organizerId": "o1", "courseLabels": ["21km", "42km"], "types": ["road_run"], "priceDistances": ["21KM", "42km", "42km"], "hasRegistration": true, "participantsConfidence": null, "flagCount": 0, "conflicting": false },
+      "items": { "place": true, "geo": true, "organizer": true, "courses": true, "types": true, "edition": true, "prices": true, "registration": true }
+    },
+    {
+      "name": "B: upcoming one-off, one course unpriced, flagged",
+      "input": { "date": "2026-12-01", "endDate": null, "seriesId": null, "edition": null, "venue": null, "city": "Huế", "geoProvince": null, "organizerId": null, "courseLabels": ["10km", "5km"], "types": [], "priceDistances": ["10km"], "hasRegistration": false, "participantsConfidence": null, "flagCount": 1, "conflicting": false },
+      "items": { "place": true, "geo": false, "organizer": false, "courses": true, "types": false, "prices": false, "registration": false }
+    },
+    {
+      "name": "C: past, a tier with no distance on a one-course race, low-confidence count, conflicting",
+      "input": { "date": "2025-05-01", "endDate": null, "seriesId": "s1", "edition": 1, "venue": "Sa Pa", "city": null, "geoProvince": "10", "organizerId": "o1", "courseLabels": ["5km"], "types": ["trail_run"], "priceDistances": [null], "hasRegistration": false, "participantsConfidence": "low", "flagCount": 0, "conflicting": true },
+      "items": { "place": true, "geo": true, "organizer": true, "courses": true, "types": true, "edition": true, "participants": false }
+    },
+    {
+      "name": "D: multi-day race running today counts as upcoming",
+      "input": { "date": "2026-09-30", "endDate": "2026-10-02", "seriesId": "s2", "edition": null, "venue": null, "city": null, "geoProvince": null, "organizerId": null, "courseLabels": [], "types": ["fun_run"], "priceDistances": [], "hasRegistration": true, "participantsConfidence": "high", "flagCount": 0, "conflicting": false },
+      "items": { "place": false, "geo": false, "organizer": false, "courses": false, "types": true, "edition": false, "prices": false, "registration": true }
+    },
+    {
+      "name": "E: past, no edition number, medium-confidence count",
+      "input": { "date": "2023-04-01", "endDate": null, "seriesId": "s1", "edition": null, "venue": "Nha Trang", "city": "Khánh Hòa", "geoProvince": "56", "organizerId": "o2", "courseLabels": ["42km"], "types": ["road_run"], "priceDistances": [], "hasRegistration": false, "participantsConfidence": "medium", "flagCount": 0, "conflicting": false },
+      "items": { "place": true, "geo": true, "organizer": true, "courses": true, "types": true, "edition": false, "participants": true }
+    }
+  ],
+  "expected": {
+    "score": 65,
+    "ok": 24,
+    "total": 37,
+    "byField": [
+      { "field": "prices", "ok": 1, "total": 3 },
+      { "field": "edition", "ok": 2, "total": 4 },
+      { "field": "participants", "ok": 1, "total": 2 },
+      { "field": "geo", "ok": 3, "total": 5 },
+      { "field": "organizer", "ok": 3, "total": 5 },
+      { "field": "registration", "ok": 2, "total": 3 },
+      { "field": "courses", "ok": 4, "total": 5 },
+      { "field": "place", "ok": 4, "total": 5 },
+      { "field": "types", "ok": 4, "total": 5 }
+    ],
+    "editionCoverage": { "score": 67, "onRecord": 4, "known": 6, "series": 2 },
+    "openIssues": 2,
+    "races": 5
+  }
+}

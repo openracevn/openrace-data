@@ -1,5 +1,6 @@
 /**
- * Read-only report of missing data across data/races/*.json: no usable location, no
+ * Read-only report of missing data across data/races/*.json: the completeness score
+ * (plan 023, lib/completeness-core.ts), no usable location, no
  * organizer, no prices (split upcoming/past), existing flags/low confidence, and series
  * with a year gap between their earliest and latest edition. Not a CI gate (see
  * validate.ts for that) — always exits 0.
@@ -15,7 +16,10 @@ if (process.argv.some((a) => a === "--race" || a === "--series")) {
   process.exit(0);
 }
 
+import { completeness } from "./lib/completeness-core.ts";
+import { scoreInput } from "./lib/race-gaps.ts";
 import { ORGANIZERS_PATH, OrganizerListSchema, RACES_DIR, RaceSchema, SERIES_PATH, SeriesListSchema, upgradeRace, type Race } from "./lib/schema.ts";
+import { vietnamDate } from "./lib/state.ts";
 
 const races: Race[] = [];
 for (const file of readdirSync(RACES_DIR).filter((f) => f.endsWith(".json")).sort()) {
@@ -24,8 +28,12 @@ for (const file of readdirSync(RACES_DIR).filter((f) => f.endsWith(".json")).sor
 }
 
 const seriesNames = new Map<string, string>();
+const seriesStated: { id: string; statedEditionCount: number | null }[] = [];
 try {
-  for (const s of SeriesListSchema.parse(JSON.parse(readFileSync(SERIES_PATH, "utf8")))) seriesNames.set(s.id, s.name);
+  for (const s of SeriesListSchema.parse(JSON.parse(readFileSync(SERIES_PATH, "utf8")))) {
+    seriesNames.set(s.id, s.name);
+    seriesStated.push({ id: s.id, statedEditionCount: s.statedEditionCount ?? null });
+  }
 } catch {
   // Report still works without series.json; names just fall back to ids.
 }
@@ -62,7 +70,12 @@ const noParticipantsPast = races
 
 const lowParticipants = races.filter((r) => r.participants?.confidence === "low");
 
-const orgLine = (o: { id: string; name: string }) => `${o.id} (${raceCount.get(o.id) ?? 0} races): ${o.name}`;
+const done = completeness(races.map(scoreInput), seriesStated, vietnamDate(new Date()));
+const cov = done.editionCoverage;
+console.log(`Completeness: ${done.score}% depth (${done.ok} of ${done.total} items ok across ${done.races} races) · ${cov.score}% editions (${cov.onRecord} of ${cov.known} known, ${cov.series} series) · ${done.openIssues} open issue(s)`);
+for (const f of done.byField) console.log(`  ${`${Math.round((f.ok / f.total) * 100)}%`.padStart(4)}  ${f.field} (${f.ok}/${f.total})`);
+
+const orgLine =(o: { id: string; name: string }) => `${o.id} (${raceCount.get(o.id) ?? 0} races): ${o.name}`;
 report("Organizers with merged-looking names (split with the check-organizer skill)", mergedOrganizers, orgLine, organizers.length);
 report("Organizers with no links (biggest first)", noOrganizerLinks, orgLine, organizers.length);
 report("No usable location (city and venue both null)", noLocation, (r) => r.slug);

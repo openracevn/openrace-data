@@ -3,6 +3,7 @@
  * so `update-race` knows what is left to find and when it is done. Pure functions over
  * parsed data; scripts/race-gaps.ts reads the files and prints.
  */
+import type { ScoreInput } from "./completeness-core.ts";
 import type { Race, Series } from "./schema.ts";
 
 export type GapItem = { field: string; status: "ok" | "gap" | "info"; note: string };
@@ -62,6 +63,27 @@ export function raceChecklist(r: Race, today: string): RaceChecklist {
   if (r.confidence === "conflicting") items.push(gap("confidence", "sources conflict"));
 
   return { slug: r.slug, date: r.date, items };
+}
+
+/** A race file as the completeness score's input (plan 023; rules in completeness-core.ts). */
+export function scoreInput(r: Race): ScoreInput {
+  return {
+    date: r.date,
+    endDate: r.endDate,
+    seriesId: r.seriesId,
+    edition: r.edition,
+    venue: r.location.venue,
+    city: r.location.city,
+    geoProvince: r.geo?.current.province ?? null,
+    organizerId: r.organizerId,
+    courseLabels: r.courses.map((c) => c.label),
+    types: r.types,
+    priceDistances: r.prices.map((p) => p.distance ?? null),
+    hasRegistration: r.registrations.length > 0 || r.links.some((l) => l.kind === "seller"),
+    participantsConfidence: r.participants?.confidence ?? null,
+    flagCount: r.flags.length,
+    conflicting: r.confidence === "conflicting",
+  };
 }
 
 export function seriesChecklist(series: Pick<Series, "id" | "name" | "statedEditionCount">, races: readonly Race[]): SeriesChecklist {
