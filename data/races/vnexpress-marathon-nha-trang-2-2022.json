@@ -7,6 +7,7 @@
   ],
   "date": "2022-08-28",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "vnexpress-marathon-nha-trang",
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
@@ -113,6 +114,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": {
+    "count": 8500,
+    "sourceUrl": "https://nguoidothi.net.vn/hon-8-500-van-dong-vien-tham-gia-vnexpress-marathon-marvelous-nha-trang-2022-36302.html",
+    "quote": "Hơn 8.500 vận động viên tham gia VnExpress Marathon Marvelous Nha Trang 2022",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {},
   "sources": [
@@ -161,9 +168,28 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "nguoidothi-net-vn",
+      "role": "reference",
+      "url": "https://nguoidothi.net.vn/hon-8-500-van-dong-vien-tham-gia-vnexpress-marathon-marvelous-nha-trang-2022-36302.html",
+      "lastCheckedAt": "2026-09-29T04:27:52.358Z",
+      "lastChangedAt": "2026-09-29T04:27:52.358Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Marathon Marvelous Nha Trang 2022",
+          "date": "2022-08-28",
+          "participants": {
+            "count": 8500,
+            "sourceUrl": "https://nguoidothi.net.vn/hon-8-500-van-dong-vien-tham-gia-vnexpress-marathon-marvelous-nha-trang-2022-36302.html",
+            "quote": "Hơn 8.500 vận động viên tham gia VnExpress Marathon Marvelous Nha Trang 2022"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-26T13:37:21.014Z",
-  "updatedAt": "2026-09-26T13:37:21.014Z"
+  "updatedAt": "2026-09-29T04:27:52.358Z"
 }
