@@ -8,10 +8,10 @@
   "date": "2026-12-06",
   "endDate": null,
   "mainDate": null,
-  "seriesId": null,
+  "seriesId": "hanh-trinh-tiep-suc",
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
-  "edition": null,
+  "edition": 3,
   "courses": [
     {
       "label": "3km",
@@ -291,6 +291,16 @@
       },
       "reason": "irace.vn event page (saved .agent-read/empower-run/pages/irace.html) gives address 'Vườn hoa phố đi bộ Trịnh Công Sơn, Tây Hồ, Hà Nội'; ActiUp names the same place",
       "at": "2026-09-29T07:20:52.168Z"
+    },
+    "seriesId": {
+      "value": "hanh-trinh-tiep-suc",
+      "reason": "ActiUp: 'Hành Trình Tiếp Sức mùa 3 sẽ chính thức diễn ra vào Chủ nhật, ngày 06/12/2026'; consistent with Dân trí calling the 2025 run season 2. irace.vn's 'lần thứ II' on the same page is the previous year's wording.",
+      "at": "2026-09-29T07:54:13.257Z"
+    },
+    "edition": {
+      "value": 3,
+      "reason": "ActiUp: 'Hành Trình Tiếp Sức mùa 3 sẽ chính thức diễn ra vào Chủ nhật, ngày 06/12/2026'; consistent with Dân trí calling the 2025 run season 2. irace.vn's 'lần thứ II' on the same page is the previous year's wording.",
+      "at": "2026-09-29T07:54:13.257Z"
     }
   },
   "sources": [
@@ -466,5 +476,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T07:47:42.659Z"
+  "updatedAt": "2026-09-29T07:54:13.257Z"
 }

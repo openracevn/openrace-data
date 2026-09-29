@@ -7,10 +7,11 @@
   ],
   "date": "2025-10-12",
   "endDate": null,
-  "seriesId": null,
+  "mainDate": null,
+  "seriesId": "hanh-trinh-tiep-suc",
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
-  "edition": null,
+  "edition": 2,
   "courses": [],
   "location": {
     "venue": "Phố đi bộ Trinh Công Sơn",
@@ -128,8 +129,20 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "seriesId": {
+      "value": "hanh-trinh-tiep-suc",
+      "reason": "Dân trí 2025-10-09 'Hành trình tiếp sức mùa 2': 'Tiếp nối thành công từ mùa giải đầu tiên, Hành trình tiếp sức 2025…', race day Chủ nhật 12/10/2025, first season in 2024. https://dantri.com.vn/the-thao/hanh-trinh-tiep-suc-mua-2-khi-yeu-thuong-lan-toa-qua-moi-buoc-chay-20251009111812136.htm",
+      "at": "2026-09-29T07:54:13.257Z"
+    },
+    "edition": {
+      "value": 2,
+      "reason": "Dân trí 2025-10-09 'Hành trình tiếp sức mùa 2': 'Tiếp nối thành công từ mùa giải đầu tiên, Hành trình tiếp sức 2025…', race day Chủ nhật 12/10/2025, first season in 2024. https://dantri.com.vn/the-thao/hanh-trinh-tiep-suc-mua-2-khi-yeu-thuong-lan-toa-qua-moi-buoc-chay-20251009111812136.htm",
+      "at": "2026-09-29T07:54:13.257Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -162,5 +175,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-09-29T07:54:13.257Z"
 }

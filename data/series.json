@@ -104,6 +104,14 @@
     "statedEditionCount": null
   },
   {
+    "id": "hanh-trinh-tiep-suc",
+    "name": "Hành Trình Tiếp Sức (Empower Run)",
+    "website": null,
+    "organizerId": "cong-ty-dha-viet-nam",
+    "description": "Charity run for cancer patients (K Hospital and the Ngày mai tươi sáng fund), Hồ Tây, Hà Nội. Dân trí (2025-10-09) calls the 2025 run season 2 (\"Tiếp nối thành công từ mùa giải đầu tiên\", first season 2024) and ActiUp calls the 2026 run season 3. Only 2025 and 2026 are tracked; the 2024 first season is not added yet.",
+    "statedEditionCount": 3
+  },
+  {
     "id": "hcmc-marathon",
     "name": "HCMC Marathon",
     "website": null,
@@ -172,6 +180,14 @@
     "name": "MUCANGCHAI ULTRA TRAIL",
     "website": null,
     "organizerId": "viet-jungle",
+    "description": null,
+    "statedEditionCount": null
+  },
+  {
+    "id": "nghe-an-legacy-marathon",
+    "name": "Nghệ An Legacy Marathon",
+    "website": null,
+    "organizerId": "cong-ty-zaha-vietnam",
     "description": null,
     "statedEditionCount": null
   },

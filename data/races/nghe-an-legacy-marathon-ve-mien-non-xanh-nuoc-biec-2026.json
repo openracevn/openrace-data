@@ -8,7 +8,7 @@
   "date": "2026-12-05",
   "endDate": "2026-12-06",
   "mainDate": null,
-  "seriesId": null,
+  "seriesId": "nghe-an-legacy-marathon",
   "organizerId": "cong-ty-zaha-vietnam",
   "organizer": "Công ty Zaha Vietnam",
   "edition": null,
@@ -371,7 +371,13 @@
   "links": [],
   "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "seriesId": {
+      "value": "nghe-an-legacy-marathon",
+      "reason": "Zaha Vietnam's Legacy Marathon event in Cửa Lò; grouped as its own series by name, like bac-ninh-legacy-marathon. No source states an edition number.",
+      "at": "2026-09-29T07:54:13.257Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -562,5 +568,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T07:47:42.659Z"
+  "updatedAt": "2026-09-29T07:54:13.257Z"
 }
