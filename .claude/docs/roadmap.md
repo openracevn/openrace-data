@@ -32,7 +32,7 @@ Day-to-day tasks live in [status.md](status.md); how things are built lives in [
    - share of races with GPX
    - price trends by year
    - deeper stats once there's enough history (backfill)
-5. **Open it up.** A public API and an MCP server, then act as a data provider for others (for example Firecrawl's provider catalogue, other apps). *API built; MCP server built ([plan 005](../plans/005-2026-09-24-mcp-server.md), live 2026-09-24).*
+5. **Open it up.** A public API and an MCP server, then act as a data provider for others (for example Firecrawl's provider catalogue, other apps). The website (openrace-web) is this step's public window: people read the data there, and machines are pointed to the API and MCP. *API built; MCP server built ([plan 005](../plans/005-2026-09-24-mcp-server.md), live 2026-09-24); launch: [plan 021](../plans/021-2026-09-29-mvp-launch-checklist.md), [plan 022](../plans/022-2026-09-29-web-home-and-content-depth.md).*
 
 ## Questions OpenRace should answer
 
@@ -74,6 +74,7 @@ Old place names ("Nha Trang", "Bình Dương") must keep working after the 2025 
 
 Deliberate changes of direction, newest first.
 
+- **2026-09-29 (plan 022):** The website is named on the path as step 5's public window: it shows what the dataset is (counts, years, freshness) and points to the API and MCP. Every number and generated sentence on it comes from the API; thin pages are kept out of the index until the data fills them. Confirmed by the user.
 - **2026-09-29 (plan 019):** Three changes, all confirmed by the user. (1) Trust principle 5 is relaxed: Claude's own web search and page reads lead, and recipes / `find-sources` stay for sites that have one; a fact from a search snippet still needs a fetched, saved page. (2) Firecrawl is opt-in, used only when the user asks; the budget constraint is unchanged. (3) Parallel Claude subagents are allowed (`race-research` forbade them), on purpose, for speed. Trust principles 1, 3, 4 and 6 hold.
 - **2026-09-29:** A participant count the organizer or its media partner states flatly for an edition ("đón 10.000 runner", no "dự kiến"/target wording) is stored even when the article predates the race, if no post-race figure is found. It is stored without leaning on it: the count is replaced when a post-race figure appears. Explicit targets, capacity and finisher-only counts stay out. First case: vnexpress-marathon-nha-trang 2026.
 - **2026-09-28 (plan 017):** "Participants" means the number of people who **registered, paid or attended** an edition, as a source states it (tickets sold and "đăng ký" count; "dự kiến"/expected targets do not). Capacity and slot limits, finisher-only counts and targets stay out. The `approx` flag is dropped (every count is approximate); a `confidence` (high/medium/low) is **derived** from the source and whether the quote was verified, and shown by the API. A count from the wrong edition is never stored. Backfill uses a free fast lane (my own web search plus a verify script), not Firecrawl or opencode.
