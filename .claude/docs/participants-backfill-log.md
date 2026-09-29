@@ -95,3 +95,14 @@ Stored 9 of 10 (2020 to 2026 plus the Half): every count is a registered or atte
 | tien-phong-marathon-2025 | 7,500 (hơn) | baoquangtri.vn via Wayback |
 | tien-phong-marathon-2026 | 12,000 (hơn) | sggp.org.vn |
 | tien-phong-half-marathon-2025 | ~2,000 (gần) | doanhnhansaigon.vn |
+
+## 2026-09-29: ly-son-cross-island (race-research follow-up)
+
+4 of 4 stored, all medium. 2023's 250 comes from the 2024 Dân Trí article (same page is the source for 2024's 600).
+
+| Race | Count | Source |
+| --- | --- | --- |
+| ly-son-cross-island-2023 | 250 | dantri.com.vn (2024 recap) |
+| ly-son-cross-island-2024 | 600 | dantri.com.vn |
+| ly-son-cross-island-2025 | 600 (gần) | baoquangngai.vn |
+| ly-son-cross-island-2026 | 800 (hơn) | baoquangngai.vn (baovanhoa says "gần 800"; not stored as second source) |
