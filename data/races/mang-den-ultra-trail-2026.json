@@ -15,7 +15,38 @@
     "hoi-du-lich-mang-den"
   ],
   "edition": 2,
-  "courses": [],
+  "courses": [
+    {
+      "label": "15km",
+      "meters": 15000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "25km",
+      "meters": 25000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "50km",
+      "meters": 50000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "70km",
+      "meters": 70000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "100km",
+      "meters": 100000,
+      "type": "trail_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Xã Măng Đen, Tỉnh Quảng Ngãi",
     "city": null
@@ -116,7 +147,173 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "15km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 799000,
+      "from": "2025-06-18",
+      "to": "2025-06-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "15km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1099000,
+      "from": "2025-06-19",
+      "to": "2025-11-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "15km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1499000,
+      "from": "2025-11-19",
+      "to": "2025-12-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "25km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 1199000,
+      "from": "2025-06-18",
+      "to": "2025-06-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "25km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1599000,
+      "from": "2025-06-19",
+      "to": "2025-11-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "25km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1999000,
+      "from": "2025-11-19",
+      "to": "2025-12-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "50km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 1499000,
+      "from": "2025-06-18",
+      "to": "2025-06-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "50km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2099000,
+      "from": "2025-06-19",
+      "to": "2025-11-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "50km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2499000,
+      "from": "2025-11-19",
+      "to": "2025-12-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "70km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 1699000,
+      "from": "2025-06-18",
+      "to": "2025-06-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "70km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2399000,
+      "from": "2025-06-19",
+      "to": "2025-11-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "70km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2699000,
+      "from": "2025-11-19",
+      "to": "2025-12-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "100km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 2299000,
+      "from": "2025-06-18",
+      "to": "2025-06-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "100km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 3199000,
+      "from": "2025-06-19",
+      "to": "2025-11-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "100km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 4299000,
+      "from": "2025-11-19",
+      "to": "2025-12-18",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -165,7 +362,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/mang-den-ultra-trail-2026",
-      "lastCheckedAt": "2026-09-23T18:31:28.023Z",
+      "lastCheckedAt": "2026-09-29T05:02:21.626Z",
       "lastChangedAt": "2026-09-23T18:31:28.023Z",
       "extracted": {
         "facts": {
@@ -178,6 +375,151 @@
           "registrationStatus": "closed",
           "fromPrice": 799000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/mang-den-ultra-trail-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "trail_run"
+              ],
+              "name": "Măng Đen Ultra Trail 2026",
+              "date": "2026-01-16",
+              "endDate": "2026-01-18",
+              "edition": 2,
+              "distances": [
+                "15km",
+                "25km",
+                "50km",
+                "70km",
+                "100km"
+              ],
+              "venue": "Xã Măng Đen, Tỉnh Quảng Ngãi",
+              "currency": "VND",
+              "registrationStatus": "closed"
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2025/09/11/1757584606928739/price-MDUT26.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "15km",
+                  "tier": "Flash Sale",
+                  "from": "2025-06-18",
+                  "to": "2025-06-18",
+                  "price": 799000
+                },
+                {
+                  "distance": "15km",
+                  "tier": "Early Bird",
+                  "from": "2025-06-19",
+                  "to": "2025-11-18",
+                  "price": 1099000
+                },
+                {
+                  "distance": "15km",
+                  "tier": "Regular",
+                  "from": "2025-11-19",
+                  "to": "2025-12-18",
+                  "price": 1499000
+                },
+                {
+                  "distance": "25km",
+                  "tier": "Flash Sale",
+                  "from": "2025-06-18",
+                  "to": "2025-06-18",
+                  "price": 1199000
+                },
+                {
+                  "distance": "25km",
+                  "tier": "Early Bird",
+                  "from": "2025-06-19",
+                  "to": "2025-11-18",
+                  "price": 1599000
+                },
+                {
+                  "distance": "25km",
+                  "tier": "Regular",
+                  "from": "2025-11-19",
+                  "to": "2025-12-18",
+                  "price": 1999000
+                },
+                {
+                  "distance": "50km",
+                  "tier": "Flash Sale",
+                  "from": "2025-06-18",
+                  "to": "2025-06-18",
+                  "price": 1499000
+                },
+                {
+                  "distance": "50km",
+                  "tier": "Early Bird",
+                  "from": "2025-06-19",
+                  "to": "2025-11-18",
+                  "price": 2099000
+                },
+                {
+                  "distance": "50km",
+                  "tier": "Regular",
+                  "from": "2025-11-19",
+                  "to": "2025-12-18",
+                  "price": 2499000
+                },
+                {
+                  "distance": "70km",
+                  "tier": "Flash Sale",
+                  "from": "2025-06-18",
+                  "to": "2025-06-18",
+                  "price": 1699000
+                },
+                {
+                  "distance": "70km",
+                  "tier": "Early Bird",
+                  "from": "2025-06-19",
+                  "to": "2025-11-18",
+                  "price": 2399000
+                },
+                {
+                  "distance": "70km",
+                  "tier": "Regular",
+                  "from": "2025-11-19",
+                  "to": "2025-12-18",
+                  "price": 2699000
+                },
+                {
+                  "distance": "100km",
+                  "tier": "Flash Sale",
+                  "from": "2025-06-18",
+                  "to": "2025-06-18",
+                  "price": 2299000
+                },
+                {
+                  "distance": "100km",
+                  "tier": "Early Bird",
+                  "from": "2025-06-19",
+                  "to": "2025-11-18",
+                  "price": 3199000
+                },
+                {
+                  "distance": "100km",
+                  "tier": "Regular",
+                  "from": "2025-11-19",
+                  "to": "2025-12-18",
+                  "price": 4299000
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2025/06/17/1750126608358577/GROUP-POLICY-MDUT26.jpg",
+            "json": {
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1tjUaBNjB74mwjaN-1qbFPnO29LxMdsIb/view?usp=drive_link",
@@ -187,11 +529,12 @@
         "organizer": {
           "id": "ban-to-chuc-hoi-du-lich-mang-den-don-vi-van-hanh-pr-events",
           "name": "Ban Tổ Chức: Hội Du Lịch Măng Đen | Đơn vị vận hành: PR Events"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T05:00:21.337Z"
+  "updatedAt": "2026-09-29T05:02:21.626Z"
 }
