@@ -48,7 +48,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
-  "participants": null,
+  "participants": {
+    "count": 10000,
+    "sourceUrl": "https://www.vietnamplus.vn/hon-10000-nguoi-tham-gia-giai-marathon-thanh-pho-chi-minh-nam-2023/840000.vnp",
+    "quote": "Hơn 10.000 người tham gia giải marathon Thành phố Chí Minh năm 2023",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "seriesId": {
@@ -85,9 +90,28 @@
           "note": "Viet Nam News (7/1/2023): opening Saturday, marathon run on Sunday at Phú Mỹ Hưng, 42/21/10/5km. race-research HCMC Marathon series history."
         }
       }
+    },
+    {
+      "site": "vietnamplus-vn",
+      "role": "reference",
+      "url": "https://vietnamplus.vn/hon-10000-nguoi-tham-gia-giai-marathon-thanh-pho-chi-minh-nam-2023/840000.vnp",
+      "lastCheckedAt": "2026-09-29T03:56:07.404Z",
+      "lastChangedAt": "2026-09-29T03:56:07.404Z",
+      "extracted": {
+        "facts": {
+          "name": "Salonpas HCMC Marathon 2023",
+          "date": "2023-01-07",
+          "participants": {
+            "count": 10000,
+            "sourceUrl": "https://www.vietnamplus.vn/hon-10000-nguoi-tham-gia-giai-marathon-thanh-pho-chi-minh-nam-2023/840000.vnp",
+            "quote": "Hơn 10.000 người tham gia giải marathon Thành phố Chí Minh năm 2023"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:38:38.721Z",
-  "updatedAt": "2026-09-28T16:44:25.087Z"
+  "updatedAt": "2026-09-29T03:56:07.404Z"
 }
