@@ -7,112 +7,319 @@
   ],
   "date": "2024-03-29",
   "endDate": "2024-03-31",
+  "mainDate": null,
   "seriesId": null,
   "organizerId": "bao-tien-phong",
   "organizer": "Báo Tiền Phong",
-  "edition": null,
-  "courses": [],
+  "edition": 65,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Thành phố Tuy Hòa, Phú Yên, Việt Nam",
-    "city": null
+    "city": "Phú Yên"
   },
   "geo": {
-    "lat": 13.1998999,
-    "lng": 109.2390033,
+    "lat": 13.095037,
+    "lng": 109.2991634,
     "source": "nominatim",
-    "precision": "venue",
+    "precision": "province",
     "current": {
       "province": "66",
-      "ward": "22153"
+      "ward": null
     },
-    "legacy": {
-      "province": "54",
-      "district": "559",
-      "ward": "22153"
-    },
+    "legacy": null,
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 540.3,
-        "minutes": 393,
-        "method": "road",
+        "km": 383.1,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "ha-noi": {
-        "km": 1148.6,
-        "minutes": 899,
-        "method": "road",
+        "km": 955.1,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "da-nang": {
-        "km": 379.1,
-        "minutes": 297,
-        "method": "road",
+        "km": 349.4,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "nha-trang": {
-        "km": 134.5,
-        "minutes": 108,
-        "method": "road",
+        "km": 95.9,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "da-lat": {
-        "km": 262,
-        "minutes": 227,
-        "method": "road",
+        "km": 158.6,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "can-tho": {
-        "km": 705.8,
-        "minutes": 521,
-        "method": "road",
+        "km": 512,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "hai-phong": {
-        "km": 1182.8,
-        "minutes": 926,
-        "method": "road",
+        "km": 905.3,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "hue": {
-        "km": 476.4,
-        "minutes": 372,
-        "method": "road",
+        "km": 417.2,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "vung-tau": {
-        "km": 533.4,
-        "minutes": 401,
-        "method": "road",
+        "km": 389.3,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "quy-nhon": {
-        "km": 87.3,
-        "minutes": 73,
-        "method": "road",
+        "km": 76.2,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 188.3,
-        "minutes": 186,
-        "method": "road",
+        "km": 144.8,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "sa-pa": {
-        "km": 1457.2,
-        "minutes": 1135,
-        "method": "road",
+        "km": 1178.5,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "ha-long": {
-        "km": 1232.5,
-        "minutes": 959,
-        "method": "road",
+        "km": 904.9,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "42km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 850000,
+      "from": "2023-11-07",
+      "to": "2023-11-12",
+      "inferred": [
+        "to"
+      ],
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1050000,
+      "from": "2023-11-13",
+      "to": "2023-12-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1350000,
+      "from": "2023-12-13",
+      "to": "2024-01-24",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1750000,
+      "from": "2024-01-25",
+      "to": "2024-02-27",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 780000,
+      "from": "2023-11-07",
+      "to": "2023-11-12",
+      "inferred": [
+        "to"
+      ],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early bird",
+      "kind": "early",
+      "audience": null,
+      "price": 950000,
+      "from": "2023-11-13",
+      "to": "2023-12-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1180000,
+      "from": "2023-12-13",
+      "to": "2024-01-24",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1380000,
+      "from": "2024-01-25",
+      "to": "2024-02-27",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 550000,
+      "from": "2023-11-07",
+      "to": "2023-11-12",
+      "inferred": [
+        "to"
+      ],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early bird",
+      "kind": "early",
+      "audience": null,
+      "price": 650000,
+      "from": "2023-11-13",
+      "to": "2023-12-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 850000,
+      "from": "2023-12-13",
+      "to": "2024-01-24",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1080000,
+      "from": "2024-01-25",
+      "to": "2024-02-27",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 450000,
+      "from": "2023-11-07",
+      "to": "2023-11-12",
+      "inferred": [
+        "to"
+      ],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early bird",
+      "kind": "early",
+      "audience": null,
+      "price": 550000,
+      "from": "2023-11-13",
+      "to": "2023-12-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 750000,
+      "from": "2023-12-13",
+      "to": "2024-01-24",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 890000,
+      "from": "2024-01-25",
+      "to": "2024-02-27",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -122,6 +329,7 @@
     }
   ],
   "links": [],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -137,7 +345,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/tien-phong-marathon-national-championship-2024",
-      "lastCheckedAt": "2026-09-23T18:32:33.975Z",
+      "lastCheckedAt": "2026-09-29T04:39:05.161Z",
       "lastChangedAt": "2026-09-23T18:32:33.975Z",
       "extracted": {
         "facts": {
@@ -149,15 +357,190 @@
           "registrationStatus": "closed",
           "fromPrice": 450000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/tien-phong-marathon-national-championship-2024",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "GIẢI VÔ ĐỊCH QUỐC GIA MARATHON VÀ CỰ LY DÀI BÁO TIỀN PHONG",
+              "date": "2024-03-31",
+              "distances": [
+                "5km",
+                "10km",
+                "21,1km",
+                "42,195km"
+              ],
+              "courses": [
+                {
+                  "distance": "5km",
+                  "type": "road_run"
+                },
+                {
+                  "distance": "10km",
+                  "type": "road_run"
+                },
+                {
+                  "distance": "21,1km",
+                  "type": "road_run"
+                },
+                {
+                  "distance": "42,195km",
+                  "type": "road_run"
+                }
+              ],
+              "edition": 65,
+              "venue": "Thành phố Tuy Hòa",
+              "city": "Phú Yên",
+              "organizer": "Báo Tiền Phong",
+              "currency": "VND",
+              "registrationStatus": "closed",
+              "prices": []
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://pix.raceez.com/2023/11/05/content_actiup_1description_vi",
+            "json": {
+              "prices": [
+                {
+                  "distance": "42.2KM",
+                  "tier": "Super Early Bird",
+                  "price": 850000,
+                  "from": "2023-11-07"
+                },
+                {
+                  "distance": "42.2KM",
+                  "tier": "Early bird",
+                  "price": 1050000,
+                  "from": "2023-11-13",
+                  "to": "2023-12-12"
+                },
+                {
+                  "distance": "42.2KM",
+                  "tier": "Regular",
+                  "price": 1350000,
+                  "from": "2023-12-13",
+                  "to": "2024-01-24"
+                },
+                {
+                  "distance": "42.2KM",
+                  "tier": "Late",
+                  "price": 1750000,
+                  "from": "2024-01-25",
+                  "to": "2024-02-27"
+                },
+                {
+                  "distance": "21.1KM",
+                  "tier": "Super Early Bird",
+                  "price": 780000,
+                  "from": "2023-11-07"
+                },
+                {
+                  "distance": "21.1KM",
+                  "tier": "Early bird",
+                  "price": 950000,
+                  "from": "2023-11-13",
+                  "to": "2023-12-12"
+                },
+                {
+                  "distance": "21.1KM",
+                  "tier": "Regular",
+                  "price": 1180000,
+                  "from": "2023-12-13",
+                  "to": "2024-01-24"
+                },
+                {
+                  "distance": "21.1KM",
+                  "tier": "Late",
+                  "price": 1380000,
+                  "from": "2024-01-25",
+                  "to": "2024-02-27"
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Super Early Bird",
+                  "price": 550000,
+                  "from": "2023-11-07"
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Early bird",
+                  "price": 650000,
+                  "from": "2023-11-13",
+                  "to": "2023-12-12"
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Regular",
+                  "price": 850000,
+                  "from": "2023-12-13",
+                  "to": "2024-01-24"
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Late",
+                  "price": 1080000,
+                  "from": "2024-01-25",
+                  "to": "2024-02-27"
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Super Early Bird",
+                  "price": 450000,
+                  "from": "2023-11-07"
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Early bird",
+                  "price": 550000,
+                  "from": "2023-11-13",
+                  "to": "2023-12-12"
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Regular",
+                  "price": 750000,
+                  "from": "2023-12-13",
+                  "to": "2024-01-24"
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Late",
+                  "price": 890000,
+                  "from": "2024-01-25",
+                  "to": "2024-02-27"
+                }
+              ],
+              "distances": [
+                "5KM",
+                "10KM",
+                "21.1KM",
+                "42.2KM"
+              ],
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.raceez.com/2023/11/03/content_actiup_1description_vi_20231103140606.",
+            "json": {
+              "prices": []
+            }
+          }
+        ],
         "links": [],
         "organizer": {
           "id": "bao-tien-phong",
           "name": "Báo Tiền Phong"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-29T04:39:05.161Z"
 }

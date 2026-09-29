@@ -7,14 +7,40 @@
   ],
   "date": "2026-03-29",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "tien-phong-marathon",
   "organizerId": "bao-tien-phong",
   "organizer": "Báo Tiền Phong",
-  "edition": null,
-  "courses": [],
+  "edition": 67,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Nha Trang, tỉnh Khánh Hòa",
-    "city": null
+    "city": "Khánh Hòa"
   },
   "geo": {
     "lat": 12.2388,
@@ -108,7 +134,52 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1050000,
+      "from": "2025-12-11",
+      "to": "2026-01-20",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 950000,
+      "from": "2025-12-11",
+      "to": "2026-01-20",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 650000,
+      "from": "2025-12-11",
+      "to": "2026-01-20",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 550000,
+      "from": "2025-12-11",
+      "to": "2026-01-20",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -124,6 +195,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -139,7 +211,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/tien-phong-marathon-2026",
-      "lastCheckedAt": "2026-09-23T18:31:11.553Z",
+      "lastCheckedAt": "2026-09-29T04:39:05.161Z",
       "lastChangedAt": "2026-09-23T18:31:11.553Z",
       "extracted": {
         "facts": {
@@ -151,6 +223,99 @@
           "registrationStatus": "closed",
           "fromPrice": 450000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/tien-phong-marathon-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "GIẢI VÔ ĐỊCH QUỐC GIA MARATHON BÁO TIỀN PHONG LẦN THỨ 67 NĂM 2026",
+              "date": "2026-03-29",
+              "distances": [
+                "5km",
+                "10km",
+                "21,1km",
+                "42,2km"
+              ],
+              "courses": [
+                {
+                  "distance": "5km",
+                  "type": "road_run"
+                },
+                {
+                  "distance": "10km",
+                  "type": "road_run"
+                },
+                {
+                  "distance": "21,1km",
+                  "type": "road_run"
+                },
+                {
+                  "distance": "42,2km",
+                  "type": "road_run"
+                }
+              ],
+              "edition": 67,
+              "venue": "Nha Trang",
+              "city": "Khánh Hòa",
+              "currency": "VND",
+              "registrationStatus": "closed",
+              "prices": []
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2025/12/29/1766982849249550/EB-TPM26.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "42.2KM",
+                  "tier": "Early Bird",
+                  "price": 1050000,
+                  "from": "2025-12-11",
+                  "to": "2026-01-20"
+                },
+                {
+                  "distance": "21.1KM",
+                  "tier": "Early Bird",
+                  "price": 950000,
+                  "from": "2025-12-11",
+                  "to": "2026-01-20"
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Early Bird",
+                  "price": 650000,
+                  "from": "2025-12-11",
+                  "to": "2026-01-20"
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Early Bird",
+                  "price": 550000,
+                  "from": "2025-12-11",
+                  "to": "2026-01-20"
+                }
+              ],
+              "distances": [
+                "5KM",
+                "10KM",
+                "21.1KM",
+                "42.2KM"
+              ],
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2025/12/09/1765253561042122/groupdiscount-tpm26.jpg",
+            "json": {
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1ZbRSO_LQa1RinmHBHWRi-PhP56xqKENb/view",
@@ -160,11 +325,12 @@
         "organizer": {
           "id": "bao-tien-phong",
           "name": "Báo Tiền Phong"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-29T04:39:05.161Z"
 }

@@ -7,112 +7,166 @@
   ],
   "date": "2025-12-14",
   "endDate": null,
+  "mainDate": null,
   "seriesId": null,
   "organizerId": "bao-tien-phong",
   "organizer": "Báo Tiền Phong",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Khu đô thị Vạn Phúc, Quốc lộ 13, Phường Hiệp Bình, TP Hồ Chí Minh (Địa chỉ cũ: Quốc lộ 13, Phường Hiệp Bình Phước, Thành phố Thủ Đức, TP Hồ Chí Minh)",
-    "city": null
+    "city": "TP Hồ Chí Minh"
   },
   "geo": {
-    "lat": 10.8040647,
-    "lng": 106.7460498,
+    "lat": 10.8400549,
+    "lng": 106.7161085,
     "source": "nominatim",
     "precision": "venue",
     "current": {
       "province": "79",
-      "ward": "27094"
+      "ward": "26809"
     },
     "legacy": {
       "province": "79",
       "district": "769",
-      "ward": "27088"
+      "ward": "26809"
     },
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 9.7,
-        "minutes": 12,
+        "km": 9,
+        "minutes": 10,
         "method": "road",
         "near": true
       },
       "ha-noi": {
-        "km": 1496,
-        "minutes": 1134,
+        "km": 1486,
+        "minutes": 1123,
         "method": "road",
         "near": false
       },
       "da-nang": {
-        "km": 862.7,
-        "minutes": 652,
+        "km": 852.7,
+        "minutes": 641,
         "method": "road",
         "near": false
       },
       "nha-trang": {
-        "km": 408.6,
-        "minutes": 292,
+        "km": 416.9,
+        "minutes": 300,
         "method": "road",
         "near": false
       },
       "da-lat": {
-        "km": 292.2,
-        "minutes": 220,
+        "km": 289,
+        "minutes": 221,
         "method": "road",
         "near": false
       },
       "can-tho": {
-        "km": 179,
+        "km": 177.4,
         "minutes": 143,
         "method": "road",
         "near": false
       },
       "hai-phong": {
-        "km": 1530.1,
-        "minutes": 1161,
+        "km": 1520.1,
+        "minutes": 1150,
         "method": "road",
         "near": false
       },
       "hue": {
-        "km": 945.4,
-        "minutes": 726,
+        "km": 935.4,
+        "minutes": 715,
         "method": "road",
         "near": false
       },
       "vung-tau": {
-        "km": 91.7,
-        "minutes": 84,
+        "km": 100,
+        "minutes": 91,
         "method": "road",
         "near": false
       },
       "quy-nhon": {
-        "km": 614.5,
-        "minutes": 455,
+        "km": 622.8,
+        "minutes": 463,
         "method": "road",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 358.7,
-        "minutes": 264,
+        "km": 348.7,
+        "minutes": 253,
         "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 1804.5,
-        "minutes": 1370,
+        "km": 1794.5,
+        "minutes": 1359,
         "method": "road",
         "near": false
       },
       "ha-long": {
-        "km": 1579.8,
-        "minutes": 1194,
+        "km": 1569.8,
+        "minutes": 1183,
         "method": "road",
         "near": false
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "21km",
+      "tier": "Giá vé đến 17h 04/12/2025",
+      "kind": "other",
+      "audience": null,
+      "price": 199000,
+      "from": null,
+      "to": "2025-12-04",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Giá vé đến 17h 04/12/2025",
+      "kind": "other",
+      "audience": null,
+      "price": 149000,
+      "from": null,
+      "to": "2025-12-04",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Giá vé đến 17h 04/12/2025",
+      "kind": "other",
+      "audience": null,
+      "price": 79000,
+      "from": null,
+      "to": "2025-12-04",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -128,6 +182,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -143,7 +198,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/tien-phong-half-marathon-2025",
-      "lastCheckedAt": "2026-09-23T18:31:13.554Z",
+      "lastCheckedAt": "2026-09-29T04:39:05.161Z",
       "lastChangedAt": "2026-09-23T18:31:13.554Z",
       "extracted": {
         "facts": {
@@ -155,6 +210,83 @@
           "registrationStatus": "closed",
           "fromPrice": 79000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/tien-phong-half-marathon-2025",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Tiền Phong Half Marathon 2025",
+              "date": "2025-12-14",
+              "distances": [
+                "5km",
+                "10km",
+                "21,1km"
+              ],
+              "courses": [
+                {
+                  "distance": "5km",
+                  "type": "road_run"
+                },
+                {
+                  "distance": "10km",
+                  "type": "road_run"
+                },
+                {
+                  "distance": "21,1km",
+                  "type": "road_run"
+                }
+              ],
+              "venue": "Khu đô thị Vạn Phúc, Quốc lộ 13",
+              "city": "TP Hồ Chí Minh",
+              "organizer": "Báo Tiền Phong",
+              "currency": "VND",
+              "registrationStatus": "closed",
+              "prices": []
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2025/11/07/1762533667331599/IMG_2527.png",
+            "json": {
+              "prices": [
+                {
+                  "distance": "21.1KM",
+                  "tier": "Giá vé đến 17h 04/12/2025",
+                  "price": 199000,
+                  "to": "2025-12-04"
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Giá vé đến 17h 04/12/2025",
+                  "price": 149000,
+                  "to": "2025-12-04"
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Giá vé đến 17h 04/12/2025",
+                  "price": 79000,
+                  "to": "2025-12-04"
+                }
+              ],
+              "distances": [
+                "5KM",
+                "10KM",
+                "21.1KM"
+              ],
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2025/11/07/1762533771118282/IMG_2528.png",
+            "json": {
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1WbibDkQe2BLkGYpI6_uZiiKm9uN9Iv4v/view?usp=sharing",
@@ -164,11 +296,12 @@
         "organizer": {
           "id": "bao-tien-phong",
           "name": "Báo Tiền Phong"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-09-29T04:39:05.161Z"
 }

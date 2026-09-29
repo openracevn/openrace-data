@@ -7,6 +7,7 @@
   ],
   "date": "2025-03-28",
   "endDate": "2025-03-30",
+  "mainDate": null,
   "seriesId": "tien-phong-marathon",
   "organizerId": "bao-tien-phong",
   "organizer": "Liên đoàn Điền kinh Việt Nam - Báo Tiền Phong - UBND tỉnh Quảng Trị",
@@ -14,109 +15,175 @@
     "lien-doan-dien-kinh-viet-nam",
     "ubnd-tinh-quang-tri"
   ],
-  "edition": null,
-  "courses": [],
+  "edition": 66,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Đông Hà, Quảng Trị",
-    "city": null
+    "city": "Quảng Trị"
   },
   "geo": {
     "lat": 16.802493,
     "lng": 107.0953385,
     "source": "nominatim",
-    "precision": "venue",
+    "precision": "province",
     "current": {
       "province": "44",
-      "ward": "19351"
+      "ward": null
     },
-    "legacy": {
-      "province": "45",
-      "district": "461",
-      "ward": "19348"
-    },
+    "legacy": null,
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 956.3,
-        "minutes": 723,
-        "method": "road",
+        "km": 671.9,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "ha-noi": {
-        "km": 598.8,
-        "minutes": 477,
-        "method": "road",
+        "km": 487.8,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "da-nang": {
-        "km": 172.7,
-        "minutes": 139,
-        "method": "road",
+        "km": 146.2,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "nha-trang": {
-        "km": 676.5,
-        "minutes": 525,
-        "method": "road",
+        "km": 555.6,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "da-lat": {
-        "km": 803.9,
-        "minutes": 643,
-        "method": "road",
+        "km": 559.7,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "can-tho": {
-        "km": 1067.2,
-        "minutes": 843,
-        "method": "road",
+        "km": 765.8,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "hai-phong": {
-        "km": 632.9,
-        "minutes": 504,
-        "method": "road",
+        "km": 451.5,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "hue": {
-        "km": 70.5,
-        "minutes": 56,
-        "method": "road",
+        "km": 64.9,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "vung-tau": {
-        "km": 1047.2,
-        "minutes": 805,
-        "method": "road",
+        "km": 717.9,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "quy-nhon": {
-        "km": 484.5,
-        "minutes": 365,
-        "method": "road",
+        "km": 406.6,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 681.2,
-        "minutes": 562,
-        "method": "road",
+        "km": 470.9,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "sa-pa": {
-        "km": 907.3,
-        "minutes": 713,
-        "method": "road",
+        "km": 703.3,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "ha-long": {
-        "km": 682.6,
-        "minutes": 537,
-        "method": "road",
+        "km": 461.4,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1750000,
+      "from": "2025-01-26",
+      "to": "2025-02-24",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1380000,
+      "from": "2025-01-26",
+      "to": "2025-02-24",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1080000,
+      "from": "2025-01-26",
+      "to": "2025-02-24",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 890000,
+      "from": "2025-01-26",
+      "to": "2025-02-24",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -155,7 +222,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/tien-phong-marathon-2025",
-      "lastCheckedAt": "2026-09-23T18:31:50.146Z",
+      "lastCheckedAt": "2026-09-29T04:39:05.161Z",
       "lastChangedAt": "2026-09-23T18:31:50.146Z",
       "extracted": {
         "facts": {
@@ -168,15 +235,109 @@
           "registrationStatus": "closed",
           "fromPrice": 550000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/tien-phong-marathon-2025",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "GIẢI VÔ ĐỊCH QUỐC GIA MARATHON VÀ CỰ LY DÀI BÁO TIỀN PHONG LẦN THỨ 66 NĂM 2025",
+              "date": "2025-03-30",
+              "distances": [
+                "5km",
+                "10km",
+                "21,1km",
+                "42,195km"
+              ],
+              "courses": [
+                {
+                  "distance": "5km",
+                  "type": "road_run"
+                },
+                {
+                  "distance": "10km",
+                  "type": "road_run"
+                },
+                {
+                  "distance": "21,1km",
+                  "type": "road_run"
+                },
+                {
+                  "distance": "42,195km",
+                  "type": "road_run"
+                }
+              ],
+              "edition": 66,
+              "venue": "Đông Hà",
+              "city": "Quảng Trị",
+              "currency": "VND",
+              "registrationStatus": "closed",
+              "prices": []
+            }
+          }
+        ],
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2025/02/03/actiup_event_description_2906",
+            "json": {
+              "prices": [
+                {
+                  "distance": "42.2KM",
+                  "tier": "Late",
+                  "price": 1750000,
+                  "from": "2025-01-26",
+                  "to": "2025-02-24"
+                },
+                {
+                  "distance": "21.1KM",
+                  "tier": "Late",
+                  "price": 1380000,
+                  "from": "2025-01-26",
+                  "to": "2025-02-24"
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Late",
+                  "price": 1080000,
+                  "from": "2025-01-26",
+                  "to": "2025-02-24"
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Late",
+                  "price": 890000,
+                  "from": "2025-01-26",
+                  "to": "2025-02-24"
+                }
+              ],
+              "distances": [
+                "5KM",
+                "10KM",
+                "21.1KM",
+                "42.2KM"
+              ],
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2024/12/07/actiup_event_description_3948",
+            "json": {
+              "prices": []
+            }
+          }
+        ],
         "links": [],
         "organizer": {
           "id": "lien-doan-dien-kinh-viet-nam-bao-tien-phong-ubnd-tinh-quang-tri",
           "name": "Liên đoàn Điền kinh Việt Nam - Báo Tiền Phong - UBND tỉnh Quảng Trị"
-        }
+        },
+        "readBy": "agent"
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T12:41:20.832Z"
+  "updatedAt": "2026-09-29T04:39:05.161Z"
 }
