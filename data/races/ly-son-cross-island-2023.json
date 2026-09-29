@@ -44,7 +44,13 @@
   "links": [],
   "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "seriesId": {
+      "value": "ly-son-cross-island",
+      "reason": "same swim series as 2024-2026 editions",
+      "at": "2026-09-29T04:49:42.533Z"
+    }
+  },
   "sources": [
     {
       "site": "timve365",
@@ -73,5 +79,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-29T04:49:15.046Z",
-  "updatedAt": "2026-09-29T04:49:15.046Z"
+  "updatedAt": "2026-09-29T04:49:42.533Z"
 }
