@@ -48,7 +48,12 @@
   "registrationStatus": "closed",
   "registrations": [],
   "links": [],
-  "participants": null,
+  "participants": {
+    "count": 2000,
+    "sourceUrl": "https://www.vietnamplus.vn/2000-van-dong-vien-tham-gia-giai-chay-marathon-quoc-gia-tai-dao-ly-son-post650018.vnp",
+    "quote": "gần 2.000 vận động viên đến từ các tỉnh, thành trong cả nước đã tham gia",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "seriesId": {
@@ -90,9 +95,28 @@
           "note": "racevietnam event page: 61st edition, Lý Sơn, 5/7/2020; pro 5/10/21/42km, amateur 10/21/42km; price table not on the page"
         }
       }
+    },
+    {
+      "site": "vietnamplus-vn",
+      "role": "reference",
+      "url": "https://vietnamplus.vn/2000-van-dong-vien-tham-gia-giai-chay-marathon-quoc-gia-tai-dao-ly-son-post650018.vnp",
+      "lastCheckedAt": "2026-09-29T04:55:48.204Z",
+      "lastChangedAt": "2026-09-29T04:55:48.204Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Vô địch Quốc gia Marathon và cự ly dài báo Tiền Phong lần thứ 61 năm 2020",
+          "date": "2020-07-05",
+          "participants": {
+            "count": 2000,
+            "sourceUrl": "https://www.vietnamplus.vn/2000-van-dong-vien-tham-gia-giai-chay-marathon-quoc-gia-tai-dao-ly-son-post650018.vnp",
+            "quote": "gần 2.000 vận động viên đến từ các tỉnh, thành trong cả nước đã tham gia"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-29T04:51:48.729Z",
-  "updatedAt": "2026-09-29T04:54:01.949Z"
+  "updatedAt": "2026-09-29T04:55:48.204Z"
 }
