@@ -33,7 +33,7 @@
     }
   ],
   "location": {
-    "venue": "Huyện Đảo Lý Sơn, tỉnh Quảng Ngãi",
+    "venue": "Huyện đảo Lý Sơn, tỉnh Quảng Ngãi",
     "city": null
   },
   "geo": {
@@ -314,6 +314,11 @@
       ],
       "reason": "iRace event page lists distances 1km, 2km, 5km for this swim race",
       "at": "2026-09-25T08:30:43.681Z"
+    },
+    "seriesId": {
+      "value": "ly-son-cross-island",
+      "reason": "same swim series as 2024-2026 editions",
+      "at": "2026-09-29T04:50:24.943Z"
     }
   },
   "sources": [
@@ -495,5 +500,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T04:46:32.526Z"
+  "updatedAt": "2026-09-29T04:50:24.943Z"
 }
