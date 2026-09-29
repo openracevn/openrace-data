@@ -7,8 +7,8 @@
 | Race checker | GitHub Actions (`check.yml`: **manual only for now**; daily cron is commented out) | `scripts/check.ts` | Finds new ActiUp races, re-checks the ones that are due, commits to GitHub |
 | Firecrawl | Firecrawl (hosted API) | `scripts/lib/firecrawl.ts` | Scrapes and renders pages, and does the LLM JSON extraction (`/v2/scrape`), for ActiUp (primary) and bibchung (group-purchase prices) |
 | Data repo `openracevn/openrace-data` (private) | GitHub | `data/`, `state/` | SSOT: `data/races/*.json` + `data/index.json`; the check log is `state/checks.json`; git history is the audit trail |
-| Main workflow | GitHub Actions | `.github/workflows/main.yml` | Validates pushes to `main`; when `data/` changed, notifies the API and Discord |
-| CI workflow | GitHub Actions | `.github/workflows/ci.yml` | Typecheck, tests and `validate` on pull requests |
+| Main workflow | GitHub Actions | `.github/workflows/main.yml` | Validates pushes to `main`; when `data/` changed, notifies the API and Discord. One job (each job bills a minute and reinstalls dependencies; the repo hit the free-minutes cap on 2026-09-29 at ~21 pushes a day) |
+| CI workflow | GitHub Actions | `.github/workflows/ci.yml` | Typecheck, tests and `validate` on pull requests; a newer push to the same PR cancels the older run |
 | Discord channel | Discord | `scripts/notify-discord.ts` | Human-readable change feed |
 | openrace-api | Cloudflare Worker + D1, `https://openrace-api.bmp.workers.dev` | separate repo (`../openrace-api`) | Receives the resync webhook, pulls changed race files plus series and organizers, serves the public API. Reads schema v2 since 2026-09-24 |
 
@@ -27,17 +27,19 @@ check.yml  (cron daily, or workflow_dispatch: mode = daily|discover|refresh|race
   ▼
 openracevn/openrace-data main   (commit authored with the OPENRACE_BOT_TOKEN PAT, so it triggers main.yml)
   ▼
-main.yml  (skipped entirely when only state/** changed)
-  ├─ changes          did the push touch data/?
-  ├─ validate         typecheck, tests, validate
-  ├─ notify-api       needs changes+validate, only if data/ changed → POST SYNC_WEBHOOK_URL
-  └─ notify-discord   needs changes only, only if data/ changed → Discord summary from git diff
+main.yml  (skipped entirely when only state/** changed; ONE job, steps in this order, since 2026-09-29)
+  ├─ detect changes   did the push touch data/? anything outside data/, state/, .claude/, *.md?
+  ├─ npm ci           once
+  ├─ notify discord   only on push, only if data/ changed → Discord summary from git diff (before validate)
+  ├─ typecheck+test   skipped when the push only touched data/, state/, .claude/ or *.md
+  ├─ validate
+  └─ notify api       only if data/ changed, after the steps above pass → POST SYNC_WEBHOOK_URL
 ```
 
 ## Traps
 
 - **A script's "Committed `<sha>`" doesn't touch your local checkout.** `check.ts`, `agent-read.ts` and `edit.ts` all write through `scripts/lib/github.ts` (Octokit `createTree`/`createCommit`/`updateRef` against GitHub directly), not local git. `git status`/`git log` in your working copy stay exactly as they were until you `git pull` — reading a race file locally right after a "Committed" message will show the pre-commit content and can look like the write silently failed.
-- **`notify-api` is gated on `validate` (typecheck + `npm test` + `npm run validate`), and the gate fails closed and quiet.** If `validate` is red for any reason — even one unrelated to the data just pushed — `notify-api` shows as `skipped`, not `failed`, in the Actions run, and the API just never hears about the change. A single broken test can silently stop every data push from reaching production until someone runs `gh run list --branch main` and notices. Recovery once `validate` is green again: `gh workflow run main.yml` (workflow_dispatch resyncs current `main` without needing a new commit) — a rerun of the old failed run (`gh run rerun`) replays the *old* broken tree and won't help.
+- **The API notify step is gated on `validate` (typecheck + `npm test` + `npm run validate`), and the gate fails closed and quiet.** If `validate` is red for any reason — even one unrelated to the data just pushed — `notify-api` shows as `skipped`, not `failed`, in the Actions run, and the API just never hears about the change. A single broken test can silently stop every data push from reaching production until someone runs `gh run list --branch main` and notices. Recovery once `validate` is green again: `gh workflow run main.yml` (workflow_dispatch resyncs current `main` without needing a new commit) — a rerun of the old failed run (`gh run rerun`) replays the *old* broken tree and won't help.
 
 ## Code map
 

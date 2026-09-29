@@ -8,6 +8,10 @@
  *       Use courses for the full array, edition for the stated number, and geo for {"lat":…,"lng":…}.
  *       A manual geo point resolves codes and travel times, so setting it uses the network. Anything that
  *       isn't JSON is taken as a string.
+ *   npm run edit -- set-many <race> --json '{"seriesId":"x","edition":2}' --reason "<why>"
+ *       Several overrides on one race in ONE commit (one workflow run, one Discord line,
+ *       one round of GitHub API calls). Prefer it to running set once per field.
+ *       Each value is parsed like set's <value>; geo goes through the same lookup.
  *   npm run edit -- unset <race> <field>
  *       Remove the override; the field goes back to what the sources say.
  *   npm run edit -- add --url [<race>@]<reference> --json '<fields>' --reason "<why>"
@@ -49,7 +53,7 @@ import { manualGeo } from "./lib/geocode.ts";
 import { INDEX_PATH, IndexSchema, type CanonicalField, CANONICAL_FIELDS } from "./lib/schema.ts";
 import { isWaybackUrl, loadSites, siteForUrl, siteKeyForUrl } from "./lib/sites.ts";
 import { canonicalSourceUrl } from "./lib/slug.ts";
-import { commitToGitHub, formatCommitMessage, planDropSource, planEdit, planRename, planSync, type RaceStore, type SyncPlan } from "./sync.ts";
+import { commitToGitHub, formatCommitMessage, planDropSource, planEdit, planRename, planSync, type Edit, type RaceStore, type SyncPlan } from "./sync.ts";
 
 const EDITABLE_FIELDS: readonly string[] = CANONICAL_FIELDS;
 const VALUE_FLAGS = new Set(["--reason", "--url", "--json"]);
@@ -85,6 +89,20 @@ if (command === "set" || command === "unset") {
     planAt = (store) => planEdit(store, race!, [{ kind: "unset", field: field as CanonicalField }], config, now);
     message = `edit: ${race}: remove the ${field} override (back to the source value)${reason ? `\n\n${reason}` : ""}`;
   }
+} else if (command === "set-many") {
+  const json = flag("json");
+  if (!race || !json) fail("usage: npm run edit -- set-many <race> --json '{\"field\": value, ...}' --reason <why>");
+  if (!reason) fail("set-many needs --reason: say why OpenRace overrides the sources");
+  const fields = parseValue(json!);
+  if (typeof fields !== "object" || fields === null || Array.isArray(fields)) fail("--json must be an object of field: value");
+  const entries = Object.entries(fields as Record<string, unknown>);
+  if (entries.length === 0) fail("--json has no fields");
+  const unknown = entries.map(([f]) => f).filter((f) => !EDITABLE_FIELDS.includes(f));
+  if (unknown.length) fail(`unknown field(s) ${unknown.join(", ")}; field must be one of: ${EDITABLE_FIELDS.join(", ")}`);
+  const ops: Extract<Edit, { kind: "set" }>[] = [];
+  for (const [f, v] of entries) ops.push({ kind: "set" as const, field: f as CanonicalField, value: f === "geo" ? await manualGeoValue(v) : v, reason: reason! });
+  planAt = (store) => planEdit(store, race!, ops, config, now);
+  message = `edit: ${race}: set ${ops.map((o) => o.field).join(", ")}\n\n${ops.map((o) => `- ${o.field} = ${JSON.stringify(o.value)}`).join("\n")}\n\nOpenRace override: ${reason}`;
 } else if (command === "slug") {
   const newSlug = field;
   if (!race || !newSlug) fail("usage: npm run edit -- slug <race> <new-slug> [--reason <why>]");
@@ -134,7 +152,7 @@ if (command === "set" || command === "unset") {
     planSync(store, [{ url: reference!, site: siteKeyForUrl(config, reference!), role: "reference", extracted, checkedAt: now, ...(matchId && { matchId }) }], config, now);
   message = ""; // generated from the plan below
 } else {
-  fail("usage: npm run edit -- set|unset|add|slug|drop-source … (see scripts/edit.ts)");
+  fail("usage: npm run edit -- set|set-many|unset|add|slug|drop-source … (see scripts/edit.ts)");
 }
 
 const local: RaceStore = {

@@ -19,4 +19,4 @@ Working notes on how openrace-data is wired up. Read these before changing inges
 | [2026-09-24-summary.md](2026-09-24-summary.md) | Day summary: design v2 built and checked, 300 races seeded, series |
 | [2026-09-23-summary.md](2026-09-23-summary.md) | Day summary: what was built, how the design changed and why, problems found in real runs, commits |
 
-Last updated: end of 2026-09-24. The check-race skill (.claude/skills/check-race) is the quick path for any single-race task; `scripts/lib/recipes/README.md` explains recipes and how to add a site.
+Last updated: 2026-09-29 (Actions minutes and commit batching, plan 018; infrastructure.md, decisions.md, status.md). The check-race skill (.claude/skills/check-race) is the quick path for any single-race task; `scripts/lib/recipes/README.md` explains recipes and how to add a site.

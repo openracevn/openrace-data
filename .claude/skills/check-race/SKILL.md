@@ -13,6 +13,7 @@ openrace-data holds one JSON file per race edition (`data/races/<slug>-<year>.js
 - Commits go straight to `main`. The schedule is **off**; nothing runs unless triggered. Commit with `GITHUB_TOKEN=$(gh auth token)`.
 - **Another session can be committing to `main` at the same time as you** (seen 2026-09-27: a concurrent run landed several unrelated `edit`/check commits within seconds of each other while a manual merge was in progress). `npm run edit`/`agent-read`/`check`'s commit path re-fetches the branch head from the GitHub API on every attempt and retries on conflict, so a single scripted commit is safe either way — but a *hand* edit to a race file or `data/index.json` (the merge-a-duplicate case below) sits as **uncommitted local changes**, and a plain `git pull` (or anything that resets/checks out the tree) while those are dirty can silently overwrite or lose them with no error. For any multi-step hand edit spanning more than one commit (a duplicate-race merge, a multi-field cleanup across editions), do it in a git worktree (`EnterWorktree`) so a concurrent puller on the main checkout can't touch your working copy; the actual commits still land on `main` via the GitHub API regardless of which checkout you run the script from.
 - Never print secrets.
+- **One commit per race, not per field.** Every commit starts a `Main` workflow run, a Discord line and about 400 GitHub API calls. When a race needs 2+ overrides (e.g. `seriesId` + `edition`), use `npm run edit -- set-many`, not `set` twice. Do the check/dry-run for several races first, then commit them together in one `agent-read commit` batch where possible.
 - Race fields are derived from each source's stored `extracted`, then **OpenRace overrides** go on top. Never hand-edit a race's fields in its file (the next read or `renormalize` undoes it). Fix the code (step 4) when a site is misread, or set an override (step 5). `slug` changes go through `npm run edit -- slug`.
 - **Check prices by eye.** Open the page or price image (download it with curl and look at it) and compare every tier. This is free, and it's the only real check.
 
@@ -87,6 +88,7 @@ Use this when the user says what a field should be, or no source has it. Always 
 ```bash
 npm run edit -- set <race> <field> '<json value>' --reason "<why, and where it's from>" --dry-run
 GITHUB_TOKEN=$(gh auth token) npm run edit -- set <race> <field> '<json value>' --reason "<why>"
+GITHUB_TOKEN=$(gh auth token) npm run edit -- set-many <race> --json '{"seriesId":"x","edition":2}' --reason "<why>"   # several fields, ONE commit
 GITHUB_TOKEN=$(gh auth token) npm run edit -- unset <race> <field>
 GITHUB_TOKEN=$(gh auth token) npm run edit -- slug <race> <new-slug>
 ```
