@@ -42,7 +42,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
-  "participants": null,
+  "participants": {
+    "count": 250,
+    "sourceUrl": "https://dantri.com.vn/the-thao/600-nguoi-tham-gia-boi-vuot-bien-o-ly-son-20240513112538743.htm",
+    "quote": "Giải bơi vượt biển được tổ chức lần đầu vào năm 2023 có 250 vận động viên tham gia",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "seriesId": {
@@ -80,9 +85,27 @@
           "note": "First edition (2023 season 1, per dantri/petrotimes); TimVe365 Wayback snapshot states date 28/5/2023, 5km/2km/1km, price range 1,379,000-1,779,000đ (tier table not in static HTML)"
         }
       }
+    },
+    {
+      "site": "dantri-com-vn",
+      "role": "reference",
+      "url": "https://dantri.com.vn/the-thao/600-nguoi-tham-gia-boi-vuot-bien-o-ly-son-20240513112538743.htm",
+      "lastCheckedAt": "2026-09-29T05:01:11.611Z",
+      "lastChangedAt": "2026-09-29T05:01:11.611Z",
+      "extracted": {
+        "facts": {
+          "name": "Lý Sơn Cross Island 2023",
+          "date": "2023-05-28",
+          "participants": {
+            "count": 250,
+            "quote": "Giải bơi vượt biển được tổ chức lần đầu vào năm 2023 có 250 vận động viên tham gia"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-29T04:49:15.046Z",
-  "updatedAt": "2026-09-29T04:49:50.450Z"
+  "updatedAt": "2026-09-29T05:01:11.611Z"
 }
