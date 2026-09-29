@@ -8,7 +8,7 @@
   "date": "2021-03-28",
   "endDate": null,
   "mainDate": null,
-  "seriesId": null,
+  "seriesId": "tien-phong-marathon",
   "organizerId": null,
   "organizer": "Báo Tiền Phong",
   "edition": null,
@@ -50,7 +50,13 @@
   "links": [],
   "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "seriesId": {
+      "value": "tien-phong-marathon",
+      "reason": "same national championship series (Tiền Phong Marathon)",
+      "at": "2026-09-29T04:54:09.660Z"
+    }
+  },
   "sources": [
     {
       "site": "tienphong-vn",
@@ -83,5 +89,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-29T04:51:21.179Z",
-  "updatedAt": "2026-09-29T04:51:21.179Z"
+  "updatedAt": "2026-09-29T04:54:09.660Z"
 }
