@@ -7,6 +7,7 @@
   ],
   "date": "2024-08-11",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "vnexpress-marathon-nha-trang",
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
@@ -113,6 +114,12 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": {
+    "count": 9000,
+    "sourceUrl": "https://nld.com.vn/hon-9000-nguoi-tham-gia-giai-chay-vnexpress-marathon-nha-trang-196240809160621222.htm",
+    "quote": "Hơn 9.000 người tham gia giải chạy VnExpress Marathon Nha Trang",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {},
   "sources": [
@@ -161,9 +168,28 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "nld-com-vn",
+      "role": "reference",
+      "url": "https://nld.com.vn/hon-9000-nguoi-tham-gia-giai-chay-vnexpress-marathon-nha-trang-196240809160621222.htm",
+      "lastCheckedAt": "2026-09-29T04:36:38.591Z",
+      "lastChangedAt": "2026-09-29T04:36:38.591Z",
+      "extracted": {
+        "facts": {
+          "name": "VnExpress Marathon Nha Trang 2024",
+          "date": "2024-08-11",
+          "participants": {
+            "count": 9000,
+            "sourceUrl": "https://nld.com.vn/hon-9000-nguoi-tham-gia-giai-chay-vnexpress-marathon-nha-trang-196240809160621222.htm",
+            "quote": "Hơn 9.000 người tham gia giải chạy VnExpress Marathon Nha Trang"
+          },
+          "note": "Participant count stated by the page (backfill, plan 017)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-26T13:37:21.014Z",
-  "updatedAt": "2026-09-26T13:37:21.014Z"
+  "updatedAt": "2026-09-29T04:36:38.591Z"
 }
