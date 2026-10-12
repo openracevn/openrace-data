@@ -162,15 +162,17 @@ await check("Upcoming races sorted by longest distance", async () => {
 });
 await check("How many times has Lâm Đồng Trail been held?", async () => {
   const found = (await tool("find_series", { name: "Lâm Đồng Trail" })).series as Json[];
-  assert(found.length > 0, "find_series found nothing");
-  const s = await tool("get_series", { id: found[0].id });
-  return `${found[0].id}: ${found[0].editions?.label ?? JSON.stringify(Object.keys(s))}`;
+  const first = found[0];
+  assert(first, "find_series found nothing");
+  const s = await tool("get_series", { id: first.id });
+  return `${first.id}: ${first.editions?.label ?? JSON.stringify(Object.keys(s))}`;
 });
 await check("Organizers in HCMC (province 79), then one organizer", async () => {
   const found = (await tool("find_organizers", { province: "79", sort: "most_races" })).organizers as Json[];
-  assert(found?.length > 0, "find_organizers found nothing");
-  const o = await tool("get_organizer", { id: found[0].id });
-  return `${found.length} found; ${found[0].id} (${Object.keys(o).length} fields)`;
+  const first = found?.[0];
+  assert(first, "find_organizers found nothing");
+  const o = await tool("get_organizer", { id: first.id });
+  return `${found.length} found; ${first.id} (${Object.keys(o).length} fields)`;
 });
 await check("Province by name, as people write it: 'Lâm Đồng', 'TP.HCM'", async () => {
   const ld = await tool("search_races", { province: "Lâm Đồng", when: "all", limit: 1 });
