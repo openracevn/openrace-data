@@ -1,6 +1,6 @@
 # Plan 026: Fresh without effort. Scheduled checks that spend nothing, paid reads only where they pay off
 
-Date: 2026-10-13. Status: **draft, awaiting the user's answer on one decision** (Firecrawl in scheduled runs, section "Roadmap fit"). Spans openrace-data only (scripts, workflows, docs). No API or MCP change.
+Date: 2026-10-13. Status: **built 2026-10-13** (the user said yes to scheduled Firecrawl credits within a cap; build log at the end). Spans openrace-data only (scripts, workflows, docs). No API or MCP change.
 
 ## Roadmap fit
 
@@ -77,3 +77,14 @@ Expected credits: 34 upcoming ActiUp pages, a few change per week (4–8 × ~10 
 - **Recipes for bibchung, 5BIB, Vietnam MTB Series,** and the paid checks of the 9 `recipe: none` race sites. Each paid check is ~20–50 credits and a human eye; one or two per month fit in the 400-credit manual reserve.
 - **Cross-source read skipping** (don't OCR ActiUp's poster when iRace's table for the same race is fresh). Worth ~5–20 credits per shared race, 7 races today. Add it if lane B keeps hitting its cap.
 - **A `--queue` for commits across sessions** (plan 018): lane C already commits once per session through `flush`.
+
+## Build log (2026-10-13)
+
+Decision taken by the user: yes to scheduled Firecrawl credits within a cap (roadmap change log, 2026-10-13).
+
+- **Step 0:** roadmap path step 3 and change-log line; status; `state/checks.json` gains `pending` / `pendingSince`; `config/sites.yaml` gains `scheduledMonthlyCredits: 600` and `trusted: true` on actiup, irace, vnexpress-marathon and hcmc-marathon (`76a93e4`).
+- **Steps 1–4** (`11aa858`): `check.ts --refresh` (free; every seller plus the due sites) and `--scheduled` (scheduled cap; paid reads only on trusted sites). The free fallback is universal: a changed page that gets no paid read now keeps its stored read, takes the fresh facts and links, and is marked `pending`; a page never read in full becomes a race from facts when they name one (`status: facts`). A free run no longer marks a site checked. Pending pages first, then soonest race day (`sortByUrgency`, `isPendingCheck` in `lib/state.ts`, `test/check-order.test.ts`). iRace's price table becomes `facts.prices` when clean (`priceTableFacts` in `irace.ts`: product names kept in the tier label as the page prompt asks the model to do); `normalizeExtraction` takes fact prices over page prices. `refresh.yml` daily 00:50 UTC; `check.yml` Tuesday 01:00 UTC with `--scheduled --max-credits 150`; both alert Discord on failure.
+- **Step 6, catch-up:** `check --refresh --scheduled` dry run then live (`1009e39`): 7 sites, 82 pages, 25 unchanged, 57 refreshed and pending, 6 races added from free facts (Đồng Nai Marathon, Nha Trang Night Run, Đất Thép City Trail, Măng Đen Lala Trail, Đà Lạt Ultra Trail, Aqua Warriors Hạ Long), 10 updated (5 sale statuses, a series link), 0 credits. Then `check --scheduled --max-credits 150` live (`c13f734`): 12 races read, 28 paid reads + 1 cached, 150 credits, 45 pages still pending (≤365 credits, two more Tuesdays). Known answers compared with the fresh reads: Pink Run 2026 (18 tiers) and Quảng Trực 2026 (Early Bird set) match `test/answers.test.ts` exactly.
+- **Found and fixed on the way:** both data commits turned Main red. The halongmarathon.com page carries the site's series hint `ha-long-heritage-marathon`, while the race's `seriesId` is overridden to `halong-bay-heritage-marathon`; every sync re-added the hint's series with no race in it and `validate` failed (the API was never told about the new races). `planSync` now adds a series only when a planned race carries it (`fba5e93`, test in `test/sync.test.ts`, trap noted in `infrastructure.md`), the orphan was dropped, and Main was re-run by hand to resync the API.
+- **Step 5, digest:** `scripts/lib/digest.ts`, `notify-stale.ts` as the Monday data digest, a freshness line in `notify-weekly.ts`, `test/digest.test.ts`. First draft by a free opencode worker (muse-spark-1.3) in a worktree, checked and finished by Claude.
+- **Not done:** `notify-stale` keeps its name and `stale.yml` its file name (the job is now the digest; renaming would touch package.json, docs and the Actions history for nothing).

@@ -12,7 +12,13 @@
  * Env: DISCORD_WEBHOOK_URL (not needed with --dry-run),
  *      E2E_MCP_URL (default https://openrace-mcp.bmp.workers.dev).
  */
+import { readFileSync } from "node:fs";
+import { formatCredits, formatFreshnessShare, freshnessShare } from "./lib/digest.ts";
 import { env } from "./lib/env.ts";
+import { FRESHNESS_PATH, FreshnessSchema } from "./lib/freshness.ts";
+import { INDEX_PATH, IndexSchema } from "./lib/schema.ts";
+import { loadSites } from "./lib/sites.ts";
+import { CREDITS_PATH, parseCredits } from "./lib/state.ts";
 
 const MCP_URL = (env("E2E_MCP_URL") ?? "https://openrace-mcp.bmp.workers.dev").replace(/\/$/, "");
 const dryRun = process.argv.includes("--dry-run");
@@ -65,6 +71,9 @@ if ("error" in report.completeness) {
       `${c.races} races, ${c.openIssues} open issues`,
   );
 }
+// Freshness is one of the four numbers OpenRace is measured by (roadmap, "Measure"),
+// read from this checkout like the Monday digest does (plan 026).
+lines.push(localFreshnessLine());
 lines.push(`-# Caller keys rotate daily, so they count caller-days, not people. Our own checks (npm run e2e) count too. ${MCP_URL}/dash`);
 const content = lines.join("\n");
 
@@ -87,3 +96,21 @@ if (!post.ok) {
   process.exit(1);
 }
 console.log(content);
+
+function localFreshnessLine(): string {
+  try {
+    const now = new Date();
+    const index = IndexSchema.parse(JSON.parse(readFileSync(INDEX_PATH, "utf8")));
+    const freshness = FreshnessSchema.parse(JSON.parse(readFileSync(FRESHNESS_PATH, "utf8")));
+    const config = loadSites();
+    let credits = {};
+    try {
+      credits = parseCredits(readFileSync(CREDITS_PATH, "utf8"));
+    } catch {
+      // no credits spent yet
+    }
+    return `Freshness: ${formatFreshnessShare(freshnessShare(index, freshness, now))} · Firecrawl ${formatCredits(credits, config, now).replace(/^Credits/, "credits")}`;
+  } catch (err) {
+    return `Freshness: unavailable (${(err as Error).message})`;
+  }
+}

@@ -1,9 +1,10 @@
-name: Stale races
+name: Data digest
 
-# Every Monday 08:00 in Vietnam: a Discord line with the upcoming races whose
-# freshness is stale, so someone reads them before the data is too old to trust.
-# No page reads and no Firecrawl credits: it only reads the committed
-# state/freshness.json written by the check run.
+# Every Monday 08:00 in Vietnam (plan 026): the data's to-do list as one Discord
+# message: freshness share of the upcoming races, pages pending a paid read (and
+# whether Tuesday's check.yml run takes them), races that need an update-race
+# session with the reason, and the month's Firecrawl credits. No page reads and no
+# credits: it only reads the committed data/ and state/ files.
 on:
   schedule:
     - cron: "0 1 * * 1"
