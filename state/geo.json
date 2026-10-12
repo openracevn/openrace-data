@@ -3284,6 +3284,106 @@
     "query": "Celadon City ,Thành Phố Hồ Chí Minh",
     "at": "2026-09-24T06:33:24.451Z"
   },
+  "celadon city thanh pho ho chi minh | tp hcm": {
+    "geo": {
+      "lat": 10.8046953,
+      "lng": 106.6204799,
+      "source": "nominatim",
+      "precision": "venue",
+      "current": {
+        "province": "79",
+        "ward": "27019"
+      },
+      "legacy": {
+        "province": "79",
+        "district": "767",
+        "ward": "27010"
+      },
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 11.7,
+          "minutes": 15,
+          "method": "road",
+          "near": true
+        },
+        "ha-noi": {
+          "km": 1490,
+          "minutes": 1135,
+          "method": "road",
+          "near": false
+        },
+        "da-nang": {
+          "km": 856.7,
+          "minutes": 650,
+          "method": "road",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 424.9,
+          "minutes": 311,
+          "method": "road",
+          "near": false
+        },
+        "da-lat": {
+          "km": 305,
+          "minutes": 236,
+          "method": "road",
+          "near": false
+        },
+        "can-tho": {
+          "km": 168,
+          "minutes": 134,
+          "method": "road",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 1524.1,
+          "minutes": 1159,
+          "method": "road",
+          "near": false
+        },
+        "hue": {
+          "km": 939.3,
+          "minutes": 725,
+          "method": "road",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 108,
+          "minutes": 104,
+          "method": "road",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 630.8,
+          "minutes": 474,
+          "method": "road",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 352.7,
+          "minutes": 262,
+          "method": "road",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 1797.7,
+          "minutes": 1367,
+          "method": "road",
+          "near": false
+        },
+        "ha-long": {
+          "km": 1573.8,
+          "minutes": 1192,
+          "method": "road",
+          "near": false
+        }
+      }
+    },
+    "query": "Celadon City, Thành Phố Hồ Chí Minh, TP.HCM",
+    "at": "2026-10-12T17:55:41.488Z"
+  },
   "chan deo prenn phuong 3 thanh pho da lat tinh lam dong | ": {
     "geo": {
       "lat": 11.9230787,
@@ -4577,6 +4677,106 @@
     },
     "query": "Phường An Khánh, Thành phố Hồ Chí Minh.",
     "at": "2026-09-24T06:48:21.211Z"
+  },
+  "cong vien sang tao phuong an khanh thanh pho ho chi minh | thong tin ve lich trinh su kien se duoc cap nhat chi tiet sau": {
+    "geo": {
+      "lat": 10.7850885,
+      "lng": 106.7293654,
+      "source": "nominatim",
+      "precision": "ward",
+      "current": {
+        "province": "79",
+        "ward": "27094"
+      },
+      "legacy": {
+        "province": "79",
+        "district": "769",
+        "ward": "27094"
+      },
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 6.3,
+          "minutes": 9,
+          "method": "road",
+          "near": true
+        },
+        "ha-noi": {
+          "km": 1495.1,
+          "minutes": 1135,
+          "method": "road",
+          "near": false
+        },
+        "da-nang": {
+          "km": 861.8,
+          "minutes": 650,
+          "method": "road",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 408.9,
+          "minutes": 292,
+          "method": "road",
+          "near": false
+        },
+        "da-lat": {
+          "km": 292.5,
+          "minutes": 221,
+          "method": "road",
+          "near": false
+        },
+        "can-tho": {
+          "km": 174.4,
+          "minutes": 140,
+          "method": "road",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 1529.2,
+          "minutes": 1160,
+          "method": "road",
+          "near": false
+        },
+        "hue": {
+          "km": 944.5,
+          "minutes": 725,
+          "method": "road",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 91.9,
+          "minutes": 85,
+          "method": "road",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 614.8,
+          "minutes": 455,
+          "method": "road",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 357.8,
+          "minutes": 262,
+          "method": "road",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 1802.9,
+          "minutes": 1368,
+          "method": "road",
+          "near": false
+        },
+        "ha-long": {
+          "km": 1578.9,
+          "minutes": 1192,
+          "method": "road",
+          "near": false
+        }
+      }
+    },
+    "query": "Phường An Khánh, Thành phố Hồ Chí Minh.",
+    "at": "2026-10-12T17:55:48.001Z"
   },
   "cong vien sang tao phuong an khanh tp ho chi minh | ": {
     "geo": {
@@ -8249,6 +8449,106 @@
     "query": "Gia Lai",
     "at": "2026-09-24T06:36:43.717Z"
   },
+  "gia lai | gia lai": {
+    "geo": {
+      "lat": 13.9657486,
+      "lng": 108.0219734,
+      "source": "nominatim",
+      "precision": "venue",
+      "current": {
+        "province": "52",
+        "ward": "23586"
+      },
+      "legacy": {
+        "province": "64",
+        "district": "622",
+        "ward": "23581"
+      },
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 523,
+          "minutes": 415,
+          "method": "road",
+          "near": false
+        },
+        "ha-noi": {
+          "km": 1096.3,
+          "minutes": 875,
+          "method": "road",
+          "near": false
+        },
+        "da-nang": {
+          "km": 341.3,
+          "minutes": 272,
+          "method": "road",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 297.2,
+          "minutes": 278,
+          "method": "road",
+          "near": false
+        },
+        "da-lat": {
+          "km": 344.6,
+          "minutes": 332,
+          "method": "road",
+          "near": false
+        },
+        "can-tho": {
+          "km": 682.2,
+          "minutes": 543,
+          "method": "road",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 1130.4,
+          "minutes": 900,
+          "method": "road",
+          "near": false
+        },
+        "hue": {
+          "km": 424,
+          "minutes": 347,
+          "method": "road",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 571.9,
+          "minutes": 478,
+          "method": "road",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 165.1,
+          "minutes": 155,
+          "method": "road",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 176.7,
+          "minutes": 166,
+          "method": "road",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 1404.1,
+          "minutes": 1107,
+          "method": "road",
+          "near": false
+        },
+        "ha-long": {
+          "km": 1180.1,
+          "minutes": 932,
+          "method": "road",
+          "near": false
+        }
+      }
+    },
+    "query": "Gia Lai, Gia Lai",
+    "at": "2026-10-12T17:55:39.413Z"
+  },
   "global gate ha long | ": {
     "geo": {
       "lat": 21.0893397,
@@ -8548,6 +8848,106 @@
     },
     "query": "Ha Long, Vietnam",
     "at": "2026-09-24T06:35:05.676Z"
+  },
+  "ha long vietnam | ha long": {
+    "geo": {
+      "lat": 20.9454443,
+      "lng": 107.1073079,
+      "source": "nominatim",
+      "precision": "ward",
+      "current": {
+        "province": "22",
+        "ward": "06652"
+      },
+      "legacy": {
+        "province": "22",
+        "district": "193",
+        "ward": "06664"
+      },
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 1579.2,
+          "minutes": 1190,
+          "method": "road",
+          "near": false
+        },
+        "ha-noi": {
+          "km": 161.3,
+          "minutes": 114,
+          "method": "road",
+          "near": false
+        },
+        "da-nang": {
+          "km": 856.7,
+          "minutes": 677,
+          "method": "road",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 1360.5,
+          "minutes": 1063,
+          "method": "road",
+          "near": false
+        },
+        "da-lat": {
+          "km": 1488,
+          "minutes": 1181,
+          "method": "road",
+          "near": false
+        },
+        "can-tho": {
+          "km": 1690.1,
+          "minutes": 1310,
+          "method": "road",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 56,
+          "minutes": 45,
+          "method": "road",
+          "near": false
+        },
+        "hue": {
+          "km": 754.5,
+          "minutes": 594,
+          "method": "road",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 1670.2,
+          "minutes": 1273,
+          "method": "road",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 1168.5,
+          "minutes": 903,
+          "method": "road",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 1365.3,
+          "minutes": 1100,
+          "method": "road",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 470.1,
+          "minutes": 360,
+          "method": "road",
+          "near": false
+        },
+        "ha-long": {
+          "km": 4,
+          "minutes": 5,
+          "method": "road",
+          "near": true
+        }
+      }
+    },
+    "query": "Ha Long, Vietnam",
+    "at": "2026-10-12T17:55:50.491Z"
   },
   "ha noi | ": {
     "geo": {
@@ -12114,6 +12514,106 @@
     },
     "query": "Phường Tân Mỹ, TP. Hồ Chí Minh",
     "at": "2026-09-24T06:48:15.602Z"
+  },
+  "khu c13 duong tan trao khu do thi phu my hung phuong tan my tp ho chi minh | hcmc": {
+    "geo": {
+      "lat": 10.7258082,
+      "lng": 106.7238126,
+      "source": "nominatim",
+      "precision": "ward",
+      "current": {
+        "province": "79",
+        "ward": "27487"
+      },
+      "legacy": {
+        "province": "79",
+        "district": "778",
+        "ward": "27487"
+      },
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 8.1,
+          "minutes": 10,
+          "method": "road",
+          "near": true
+        },
+        "ha-noi": {
+          "km": 1501.2,
+          "minutes": 1143,
+          "method": "road",
+          "near": false
+        },
+        "da-nang": {
+          "km": 867.9,
+          "minutes": 658,
+          "method": "road",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 413.5,
+          "minutes": 298,
+          "method": "road",
+          "near": false
+        },
+        "da-lat": {
+          "km": 297.1,
+          "minutes": 226,
+          "method": "road",
+          "near": false
+        },
+        "can-tho": {
+          "km": 168,
+          "minutes": 132,
+          "method": "road",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 1535.3,
+          "minutes": 1167,
+          "method": "road",
+          "near": false
+        },
+        "hue": {
+          "km": 950.6,
+          "minutes": 732,
+          "method": "road",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 96.6,
+          "minutes": 90,
+          "method": "road",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 619.4,
+          "minutes": 460,
+          "method": "road",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 363.9,
+          "minutes": 270,
+          "method": "road",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 1809,
+          "minutes": 1375,
+          "method": "road",
+          "near": false
+        },
+        "ha-long": {
+          "km": 1585,
+          "minutes": 1200,
+          "method": "road",
+          "near": false
+        }
+      }
+    },
+    "query": "Phường Tân Mỹ, TP. Hồ Chí Minh",
+    "at": "2026-10-12T17:55:37.857Z"
   },
   "khu di tich lich su den hung phu tho | ": {
     "geo": null,
@@ -19399,6 +19899,106 @@
     },
     "query": "Phường Bình Phước, Thành phố Đồng Nai",
     "at": "2026-10-12T17:48:24.430Z"
+  },
+  "quang truong phuong binh phuoc phuong binh phuoc thanh pho dong nai | thanh pho dong nai": {
+    "geo": {
+      "lat": 11.5374934,
+      "lng": 106.9021465,
+      "source": "nominatim",
+      "precision": "ward",
+      "current": {
+        "province": "75",
+        "ward": "25195"
+      },
+      "legacy": {
+        "province": "70",
+        "district": "689",
+        "ward": "25205"
+      },
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 120,
+          "minutes": 90,
+          "method": "road",
+          "near": false
+        },
+        "ha-noi": {
+          "km": 1433.7,
+          "minutes": 1094,
+          "method": "road",
+          "near": false
+        },
+        "da-nang": {
+          "km": 740.7,
+          "minutes": 558,
+          "method": "road",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 402.8,
+          "minutes": 333,
+          "method": "road",
+          "near": false
+        },
+        "da-lat": {
+          "km": 271.2,
+          "minutes": 208,
+          "method": "road",
+          "near": false
+        },
+        "can-tho": {
+          "km": 279.1,
+          "minutes": 218,
+          "method": "road",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 1467.8,
+          "minutes": 1118,
+          "method": "road",
+          "near": false
+        },
+        "hue": {
+          "km": 823.4,
+          "minutes": 633,
+          "method": "road",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 171.5,
+          "minutes": 170,
+          "method": "road",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 499.2,
+          "minutes": 416,
+          "method": "road",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 236.7,
+          "minutes": 170,
+          "method": "road",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 1741.5,
+          "minutes": 1326,
+          "method": "road",
+          "near": false
+        },
+        "ha-long": {
+          "km": 1517.5,
+          "minutes": 1151,
+          "method": "road",
+          "near": false
+        }
+      }
+    },
+    "query": "Phường Bình Phước, Thành phố Đồng Nai",
+    "at": "2026-10-12T17:55:59.976Z"
   },
   "quang truong tran quang khai rach gia kien giang | ": {
     "geo": null,

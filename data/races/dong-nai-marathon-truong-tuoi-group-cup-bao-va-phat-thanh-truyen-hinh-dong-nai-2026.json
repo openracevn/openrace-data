@@ -3,7 +3,7 @@
   "slug": "dong-nai-marathon-truong-tuoi-group-cup-bao-va-phat-thanh-truyen-hinh-dong-nai",
   "name": "ĐỒNG NAI MARATHON - TRƯỜNG TƯƠI GROUP CÚP BÁO VÀ PHÁT THANH TRUYỀN HÌNH ĐỒNG NAI",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2026-11-29",
   "endDate": null,
@@ -11,11 +11,42 @@
   "seriesId": null,
   "organizerId": "vietrace365",
   "organizer": "VIETRACE365",
-  "edition": null,
-  "courses": [],
+  "edition": 1,
+  "courses": [
+    {
+      "label": "2km",
+      "meters": 2000,
+      "type": "road_run",
+      "elevationGain": 0
+    },
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": 0
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": 0
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": 0
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": 0
+    }
+  ],
   "location": {
     "venue": "Quảng trường Phường Bình Phước, Phường Bình Phước, Thành phố Đồng Nai",
-    "city": null
+    "city": "Thành phố Đồng Nai"
   },
   "geo": {
     "lat": 11.5374934,
@@ -113,7 +144,238 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "2km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 119000,
+      "from": null,
+      "to": "2025-12-11",
+      "inferred": [
+        "to"
+      ],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 169000,
+      "from": "2025-12-12",
+      "to": "2026-08-10",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 219000,
+      "from": "2026-08-11",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 269000,
+      "from": "2026-10-01",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 299000,
+      "from": null,
+      "to": "2025-12-11",
+      "inferred": [
+        "to"
+      ],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 399000,
+      "from": "2025-12-12",
+      "to": "2026-08-10",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 499000,
+      "from": "2026-08-11",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 599000,
+      "from": "2026-10-01",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 399000,
+      "from": null,
+      "to": "2025-12-11",
+      "inferred": [
+        "to"
+      ],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 499000,
+      "from": "2025-12-12",
+      "to": "2026-08-10",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 599000,
+      "from": "2026-08-11",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 749000,
+      "from": "2026-10-01",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 499000,
+      "from": null,
+      "to": "2025-12-11",
+      "inferred": [
+        "to"
+      ],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 649000,
+      "from": "2025-12-12",
+      "to": "2026-08-10",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 849000,
+      "from": "2026-08-11",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 999000,
+      "from": "2026-10-01",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 649000,
+      "from": null,
+      "to": "2025-12-11",
+      "inferred": [
+        "to"
+      ],
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 799000,
+      "from": "2025-12-12",
+      "to": "2026-08-10",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 999000,
+      "from": "2026-08-11",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1199000,
+      "from": "2026-10-01",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -131,7 +393,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/dong-nai-marathon-truong-tuoi-group-cup-bao-va-phat-thanh-truyen-hinh-dong-nai",
-      "lastCheckedAt": "2026-10-12T17:47:12.440Z",
+      "lastCheckedAt": "2026-10-12T17:52:49.455Z",
       "lastChangedAt": "2026-10-12T17:47:12.440Z",
       "extracted": {
         "facts": {
@@ -143,15 +405,263 @@
           "registrationStatus": "open",
           "fromPrice": 269000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/dong-nai-marathon-truong-tuoi-group-cup-bao-va-phat-thanh-truyen-hinh-dong-nai",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Đồng Nai Marathon – Trường Tươi Group Cúp Báo và Phát thanh Truyền hình Đồng Nai",
+              "date": "2026-11-29",
+              "endDate": "2026-11-29",
+              "mainDate": "2026-11-29",
+              "distances": [
+                "2km",
+                "5km",
+                "10km",
+                "21km",
+                "42km"
+              ],
+              "courses": [
+                {
+                  "distance": "2km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "5km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "21km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "42km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "mapsUrl": "https://goo.gl/maps/7Csk9j2B9Q72",
+              "venue": "Quảng trường Phường Bình Phước",
+              "city": "Thành phố Đồng Nai",
+              "organizer": "Trường Tươi Group và Báo – Đài PT-TH Đồng Nai",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": []
+            }
+          }
+        ],
         "links": [],
         "organizer": {
           "id": "vietrace365",
           "name": "VIETRACE365"
-        }
+        },
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/10/08/1791439442230782/B%E1%BA%A2NG-GI%C3%81-V%C3%89.C%E1%BA%ACP-NH%E1%BA%ACT-L%E1%BA%A6N-1.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "2KM KIDS",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "11/11",
+                  "to": "11/12",
+                  "price": 119000
+                },
+                {
+                  "distance": "2KM KIDS",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "12/12",
+                  "to": "10/08",
+                  "price": 169000
+                },
+                {
+                  "distance": "2KM KIDS",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "11/08",
+                  "to": "30/09",
+                  "price": 219000
+                },
+                {
+                  "distance": "2KM KIDS",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "29/10",
+                  "price": 269000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "11/11",
+                  "to": "11/12",
+                  "price": 299000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "12/12",
+                  "to": "10/08",
+                  "price": 399000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "11/08",
+                  "to": "30/09",
+                  "price": 499000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "29/10",
+                  "price": 599000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "11/11",
+                  "to": "11/12",
+                  "price": 399000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "12/12",
+                  "to": "10/08",
+                  "price": 499000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "11/08",
+                  "to": "30/09",
+                  "price": 599000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "29/10",
+                  "price": 749000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "11/11",
+                  "to": "11/12",
+                  "price": 499000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "12/12",
+                  "to": "10/08",
+                  "price": 649000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "11/08",
+                  "to": "30/09",
+                  "price": 849000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "29/10",
+                  "price": 999000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "11/11",
+                  "to": "11/12",
+                  "price": 649000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "12/12",
+                  "to": "10/08",
+                  "price": 799000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "11/08",
+                  "to": "30/09",
+                  "price": 999000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "29/10",
+                  "price": 1199000
+                }
+              ],
+              "distances": [
+                "2KM KIDS",
+                "5KM",
+                "10KM",
+                "21KM",
+                "42KM"
+              ],
+              "date": "",
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2026/10/08/1791444371536290/CS-NH%C3%93M.jpg",
+            "json": {
+              "prices": [],
+              "distances": [],
+              "date": "",
+              "currency": "VND"
+            }
+          }
+        ]
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-10-12T17:48:31.011Z",
-  "updatedAt": "2026-10-12T17:48:31.011Z"
+  "updatedAt": "2026-10-12T17:55:59.976Z"
 }

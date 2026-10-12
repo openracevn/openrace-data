@@ -11,7 +11,7 @@
   "seriesId": "standard-chartered-hanoi-marathon-heritage-race",
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "DHA Vietnam | Ban tổ chức sự kiện",
-  "edition": null,
+  "edition": 10,
   "courses": [
     {
       "label": "2.1km",
@@ -41,7 +41,7 @@
       "label": "42km",
       "meters": 42195,
       "type": "road_run",
-      "elevationGain": null
+      "elevationGain": 0
     }
   ],
   "location": {
@@ -260,7 +260,12 @@
       "foundOn": "actiup.net"
     }
   ],
-  "participants": null,
+  "participants": {
+    "count": 10000,
+    "sourceUrl": "https://actiup.net/vi/event/standard-chartered-hanoi-marathon-heritage-race-2026",
+    "quote": "hơn 10.000 người đăng ký thi đấu",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "organizerId": {
@@ -289,7 +294,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/standard-chartered-hanoi-marathon-heritage-race-2026",
-      "lastCheckedAt": "2026-09-24T06:43:09.238Z",
+      "lastCheckedAt": "2026-10-12T17:51:39.718Z",
       "lastChangedAt": "2026-09-23T18:30:51.452Z",
       "extracted": {
         "facts": {
@@ -299,7 +304,7 @@
           "venue": "Hà Nội, Việt Nam",
           "organizer": "Công ty DHA Việt Nam",
           "currency": "VND",
-          "registrationStatus": "open",
+          "registrationStatus": "closed",
           "fromPrice": 258000
         },
         "pages": [
@@ -311,14 +316,30 @@
                 "road_run"
               ],
               "name": "Standard Chartered Marathon Di sản Hà Nội 2026",
-              "prices": []
-            }
-          }
-        ],
-        "images": [
-          {
-            "url": "https://pix.actiup.net/2026/03/03/1772507394252745/FlashSalePrice-SCHM26.jpg",
-            "json": {
+              "date": "2026-11-21",
+              "endDate": "2026-11-22",
+              "mainDate": "2026-11-21",
+              "distances": [
+                "42,195 km"
+              ],
+              "courses": [
+                {
+                  "distance": "42,195 km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 10,
+              "mapsUrl": "https://drive.google.com/file/d/1dWhJOepPOz7srAJf7NGjD27KhBn6YTNo/view?usp=drive_link",
+              "venue": "Hồ Hoàn Kiếm",
+              "city": "Hà Nội",
+              "organizer": "Standard Chartered",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 10000,
+                "quote": "hơn 10.000 người đăng ký thi đấu"
+              },
               "prices": []
             }
           }
@@ -333,7 +354,17 @@
           "id": "cong-ty-dha-viet-nam",
           "name": "Công ty DHA Việt Nam"
         },
-        "readBy": "agent"
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/03/03/1772507394252745/FlashSalePrice-SCHM26.jpg",
+            "json": {
+              "prices": [],
+              "distances": [],
+              "date": "",
+              "currency": "VND"
+            }
+          }
+        ]
       }
     },
     {
@@ -534,5 +565,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T13:57:59.855Z"
+  "updatedAt": "2026-10-12T17:55:59.976Z"
 }

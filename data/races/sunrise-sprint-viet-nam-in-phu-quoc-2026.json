@@ -6,12 +6,12 @@
     "triathlon"
   ],
   "date": "2026-11-14",
-  "endDate": null,
-  "mainDate": null,
+  "endDate": "2026-11-22",
+  "mainDate": "2026-11-21",
   "seriesId": "sunrise-sprint-viet-nam-in-phu-quoc",
   "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
-  "edition": null,
+  "edition": 1,
   "courses": [
     {
       "label": "Sprint",
@@ -200,7 +200,9 @@
     }
   ],
   "participants": null,
-  "flags": [],
+  "flags": [
+    "race spans 8 days (2026-11-14 to 2026-11-22); endDate may be the registration close"
+  ],
   "overrides": {
     "location": {
       "value": {
@@ -288,7 +290,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/2026-sunrise-sprint-viet-nam-in-phu-quoc",
-      "lastCheckedAt": "2026-10-12T17:47:20.108Z",
+      "lastCheckedAt": "2026-10-12T17:52:14.366Z",
       "lastChangedAt": "2026-09-23T18:30:50.245Z",
       "extracted": {
         "facts": {
@@ -308,7 +310,43 @@
               "types": [
                 "triathlon"
               ],
-              "name": "2026 SUNRISE SPRINT Viet Nam in Phu Quoc",
+              "name": "2026 SUNRISE SPRINT Viet Nam",
+              "date": "2026-11-21",
+              "endDate": "2026-11-22",
+              "mainDate": "2026-11-21",
+              "distances": [
+                "750m",
+                "20km",
+                "5km"
+              ],
+              "courses": [
+                {
+                  "distance": "750m",
+                  "type": "open_water_swim",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "20km",
+                  "type": "road_cycle",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "5km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "mapsUrl": "https://drive.google.com/file/d/1HimQZZpSmGWU_Ux4ukOvZksQmzZpzIcs/view?usp=sharing",
+              "venue": "Phu Quoc",
+              "city": "Phu Quoc",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
               "prices": []
             }
           }
@@ -322,8 +360,7 @@
         "organizer": {
           "id": "sunrise-events-vietnam",
           "name": "Sunrise Events Vietnam"
-        },
-        "readBy": "agent"
+        }
       }
     },
     {
@@ -375,5 +412,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-12T17:48:31.011Z"
+  "updatedAt": "2026-10-12T17:55:59.976Z"
 }

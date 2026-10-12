@@ -7,10 +7,11 @@
   ],
   "date": "2026-11-14",
   "endDate": "2026-11-15",
+  "mainDate": null,
   "seriesId": null,
   "organizerId": "uy-ban-nhan-dan-dan-xa-quang-truc",
   "organizer": "Ủy ban nhân dân dân xã Quảng Trực",
-  "edition": null,
+  "edition": 1,
   "courses": [
     {
       "label": "1.5km",
@@ -34,7 +35,7 @@
       "label": "21km",
       "meters": 21097,
       "type": "road_run",
-      "elevationGain": null
+      "elevationGain": 0
     }
   ],
   "location": {
@@ -177,6 +178,50 @@
       "to": "2026-09-30",
       "inferred": [],
       "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 299000,
+      "from": "2026-10-01",
+      "to": "2026-10-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 499000,
+      "from": "2026-10-01",
+      "to": "2026-10-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 599000,
+      "from": "2026-10-01",
+      "to": "2026-10-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 749000,
+      "from": "2026-10-01",
+      "to": "2026-10-15",
+      "inferred": [],
+      "site": "actiup"
     }
   ],
   "currency": "VND",
@@ -194,6 +239,12 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": {
+    "count": 1000,
+    "sourceUrl": "https://actiup.net/vi/event/quang-truc-half-marathon-2026-noi-nhip-bien-cuong",
+    "quote": "khoảng 1.000 vận động viên",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {},
   "sources": [
@@ -201,7 +252,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/quang-truc-half-marathon-2026-noi-nhip-bien-cuong",
-      "lastCheckedAt": "2026-09-23T18:51:18.729Z",
+      "lastCheckedAt": "2026-10-12T17:51:52.176Z",
       "lastChangedAt": "2026-09-23T18:30:40.997Z",
       "extracted": {
         "facts": {
@@ -225,12 +276,28 @@
               "name": "Quảng Trực Half Marathon 2026 - Nối nhịp biên cương",
               "date": "2026-11-21",
               "endDate": "2026-11-22",
-              "distances": [],
-              "venue": "",
+              "mainDate": "2026-11-21",
+              "distances": [
+                "21KM"
+              ],
+              "courses": [
+                {
+                  "distance": "21KM",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "mapsUrl": "https://drive.google.com/file/d/18UfSrmJAqM-d-3YFToccatM205CyqLqC/view?usp=drive_link",
+              "venue": "Vùng biên giới phía Tây tỉnh Lâm Đồng",
               "city": "Lâm Đồng",
-              "organizer": "",
+              "organizer": "Ban Tổ chức",
               "currency": "VND",
               "registrationStatus": "open",
+              "participants": {
+                "count": 1000,
+                "quote": "khoảng 1.000 vận động viên"
+              },
               "prices": []
             }
           }
@@ -283,132 +350,36 @@
                   "price": 269000
                 },
                 {
-                  "distance": "21KM",
-                  "tier": "Group 10-29",
+                  "distance": "Group 10-29",
+                  "tier": "Giá Nhóm",
                   "audience": "Việt Nam",
                   "from": "09/09",
                   "to": "30/09",
-                  "price": 616050
+                  "price": 0
                 },
                 {
-                  "distance": "21KM",
-                  "tier": "Group 30-49",
+                  "distance": "Group 30-49",
+                  "tier": "Giá Nhóm",
                   "audience": "Việt Nam",
                   "from": "09/09",
                   "to": "30/09",
-                  "price": 584100
+                  "price": 0
                 },
                 {
-                  "distance": "21KM",
-                  "tier": "Group 50-99",
+                  "distance": "Group 50-99",
+                  "tier": "Giá Nhóm",
                   "audience": "Việt Nam",
                   "from": "09/09",
                   "to": "30/09",
-                  "price": 551500
+                  "price": 0
                 },
                 {
-                  "distance": "21KM",
-                  "tier": "Group 100",
+                  "distance": "Group 100",
+                  "tier": "Giá Nhóm",
                   "audience": "Việt Nam",
                   "from": "09/09",
                   "to": "30/09",
-                  "price": 519200
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "Group 10-29",
-                  "audience": "Việt Nam",
-                  "from": "09/09",
-                  "to": "30/09",
-                  "price": 474050
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "Group 30-49",
-                  "audience": "Việt Nam",
-                  "from": "09/09",
-                  "to": "30/09",
-                  "price": 449100
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "Group 50-99",
-                  "audience": "Việt Nam",
-                  "from": "09/09",
-                  "to": "30/09",
-                  "price": 424000
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "Group 100",
-                  "audience": "Việt Nam",
-                  "from": "09/09",
-                  "to": "30/09",
-                  "price": 399200
-                },
-                {
-                  "distance": "5KM",
-                  "tier": "Group 10-29",
-                  "audience": "Việt Nam",
-                  "from": "09/09",
-                  "to": "30/09",
-                  "price": 379050
-                },
-                {
-                  "distance": "5KM",
-                  "tier": "Group 30-49",
-                  "audience": "Việt Nam",
-                  "from": "09/09",
-                  "to": "30/09",
-                  "price": 359100
-                },
-                {
-                  "distance": "5KM",
-                  "tier": "Group 50-99",
-                  "audience": "Việt Nam",
-                  "from": "09/09",
-                  "to": "30/09",
-                  "price": 339000
-                },
-                {
-                  "distance": "5KM",
-                  "tier": "Group 100",
-                  "audience": "Việt Nam",
-                  "from": "09/09",
-                  "to": "30/09",
-                  "price": 319200
-                },
-                {
-                  "distance": "KIDS RUN 1,5 KM",
-                  "tier": "Group 10-29",
-                  "audience": "Việt Nam",
-                  "from": "09/09",
-                  "to": "30/09",
-                  "price": 255050
-                },
-                {
-                  "distance": "KIDS RUN 1,5 KM",
-                  "tier": "Group 30-49",
-                  "audience": "Việt Nam",
-                  "from": "09/09",
-                  "to": "30/09",
-                  "price": 239100
-                },
-                {
-                  "distance": "KIDS RUN 1,5 KM",
-                  "tier": "Group 50-99",
-                  "audience": "Việt Nam",
-                  "from": "09/09",
-                  "to": "30/09",
-                  "price": 223000
-                },
-                {
-                  "distance": "KIDS RUN 1,5 KM",
-                  "tier": "Group 100",
-                  "audience": "Việt Nam",
-                  "from": "09/09",
-                  "to": "30/09",
-                  "price": 207200
+                  "price": 0
                 }
               ],
               "distances": [
@@ -420,6 +391,53 @@
               "date": "2026-09-09",
               "currency": "VND"
             }
+          },
+          {
+            "url": "https://pix.actiup.net/2026/09/29/1790651688628376/Quang-Truc---Bang-gia-Regular.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "KID RUN1,5 KM",
+                  "tier": "Regular",
+                  "audience": "Cá nhân",
+                  "from": "01/10",
+                  "to": "15/10",
+                  "price": 299000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Regular",
+                  "audience": "Cá nhân",
+                  "from": "01/10",
+                  "to": "15/10",
+                  "price": 499000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Regular",
+                  "audience": "Cá nhân",
+                  "from": "01/10",
+                  "to": "15/10",
+                  "price": 599000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Regular",
+                  "audience": "Cá nhân",
+                  "from": "01/10",
+                  "to": "15/10",
+                  "price": 749000
+                }
+              ],
+              "distances": [
+                "KID RUN1,5 KM",
+                "5KM",
+                "10KM",
+                "21KM"
+              ],
+              "date": "2026-10-01",
+              "currency": "VND"
+            }
           }
         ]
       }
@@ -427,5 +445,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T07:11:10.278Z"
+  "updatedAt": "2026-10-12T17:55:59.976Z"
 }

@@ -7,12 +7,12 @@
     "aquathlon"
   ],
   "date": "2026-11-14",
-  "endDate": null,
-  "mainDate": null,
+  "endDate": "2026-11-22",
+  "mainDate": "2026-11-21",
   "seriesId": "ironkids-viet-nam-in-phu-quoc",
   "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
-  "edition": null,
+  "edition": 1,
   "courses": [
     {
       "label": "1075m",
@@ -285,7 +285,9 @@
     }
   ],
   "participants": null,
-  "flags": [],
+  "flags": [
+    "race spans 8 days (2026-11-14 to 2026-11-22); endDate may be the registration close"
+  ],
   "overrides": {
     "location": {
       "value": {
@@ -469,7 +471,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/2026-ironkids-viet-nam-in-phu-quoc",
-      "lastCheckedAt": "2026-10-12T17:47:20.676Z",
+      "lastCheckedAt": "2026-10-12T17:52:18.207Z",
       "lastChangedAt": "2026-09-23T18:30:49.853Z",
       "extracted": {
         "facts": {
@@ -487,10 +489,64 @@
             "json": {
               "pageKind": "sport",
               "types": [
-                "aquathlon",
-                "triathlon"
+                "triathlon",
+                "aquathlon"
               ],
-              "name": "2026 IRONKIDS Viet Nam in Phu Quoc",
+              "name": "2026 IRONKIDS Viet Nam",
+              "date": "2026-11-21",
+              "endDate": "2026-11-22",
+              "mainDate": "2026-11-21",
+              "distances": [
+                "75m",
+                "1km",
+                "150m",
+                "2km",
+                "3km",
+                "6km"
+              ],
+              "courses": [
+                {
+                  "distance": "75m",
+                  "type": "aquathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "1km",
+                  "type": "aquathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "150m",
+                  "type": "triathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "2km",
+                  "type": "triathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "3km",
+                  "type": "triathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "6km",
+                  "type": "triathlon",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "mapsUrl": "https://drive.google.com/file/d/1Xkv_EOGQ_Pp9UcPCooHRLu7ALXmuWjkt/view?usp=sharing",
+              "venue": "Phú Quốc",
+              "city": "Phú Quốc",
+              "organizer": "IRONKIDS Việt Nam",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
               "prices": []
             }
           }
@@ -504,8 +560,7 @@
         "organizer": {
           "id": "sunrise-events-vietnam",
           "name": "Sunrise Events Vietnam"
-        },
-        "readBy": "agent"
+        }
       }
     },
     {
@@ -557,5 +612,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-12T17:48:31.011Z"
+  "updatedAt": "2026-10-12T17:55:59.976Z"
 }

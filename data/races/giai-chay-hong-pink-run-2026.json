@@ -28,7 +28,7 @@
   ],
   "location": {
     "venue": "Celadon City ,Thành Phố Hồ Chí Minh",
-    "city": null
+    "city": "TP.HCM"
   },
   "geo": {
     "lat": 10.8046953,
@@ -47,14 +47,14 @@
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 11.5,
+        "km": 11.7,
         "minutes": 15,
         "method": "road",
         "near": true
       },
       "ha-noi": {
         "km": 1490,
-        "minutes": 1133,
+        "minutes": 1135,
         "method": "road",
         "near": false
       },
@@ -65,7 +65,7 @@
         "near": false
       },
       "nha-trang": {
-        "km": 425,
+        "km": 424.9,
         "minutes": 311,
         "method": "road",
         "near": false
@@ -84,7 +84,7 @@
       },
       "hai-phong": {
         "km": 1524.1,
-        "minutes": 1160,
+        "minutes": 1159,
         "method": "road",
         "near": false
       },
@@ -96,12 +96,12 @@
       },
       "vung-tau": {
         "km": 108,
-        "minutes": 103,
+        "minutes": 104,
         "method": "road",
         "near": false
       },
       "quy-nhon": {
-        "km": 630.9,
+        "km": 630.8,
         "minutes": 474,
         "method": "road",
         "near": false
@@ -113,8 +113,8 @@
         "near": false
       },
       "sa-pa": {
-        "km": 1798.5,
-        "minutes": 1368,
+        "km": 1797.7,
+        "minutes": 1367,
         "method": "road",
         "near": false
       },
@@ -129,47 +129,10 @@
   "prices": [
     {
       "distance": "3km",
-      "tier": "Giá vé Tiêu chuẩn",
-      "kind": "regular",
-      "audience": null,
-      "price": 569000,
-      "from": "2026-08-01",
-      "to": null,
-      "inferred": [
-        "from"
-      ],
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "Giá vé Tiêu chuẩn",
-      "kind": "regular",
-      "audience": null,
-      "price": 799000,
-      "from": "2026-08-01",
-      "to": null,
-      "inferred": [
-        "from"
-      ],
-      "site": "actiup"
-    },
-    {
-      "distance": "3km",
       "tier": "Super Early Bird",
       "kind": "super_early",
       "audience": null,
       "price": 459000,
-      "from": "2026-07-08",
-      "to": "2026-07-18",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "Super Early Bird",
-      "kind": "super_early",
-      "audience": null,
-      "price": 629000,
       "from": "2026-07-08",
       "to": "2026-07-18",
       "inferred": [],
@@ -187,33 +150,11 @@
       "site": "actiup"
     },
     {
-      "distance": "10km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 679000,
-      "from": "2026-07-19",
-      "to": "2026-07-31",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
       "distance": "3km",
       "tier": "Last call",
       "kind": "late",
       "audience": null,
       "price": 529000,
-      "from": "2026-08-01",
-      "to": "2026-09-20",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "Last call",
-      "kind": "late",
-      "audience": null,
-      "price": 749000,
       "from": "2026-08-01",
       "to": "2026-09-20",
       "inferred": [],
@@ -232,6 +173,39 @@
     },
     {
       "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 629000,
+      "from": "2026-07-08",
+      "to": "2026-07-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 679000,
+      "from": "2026-07-19",
+      "to": "2026-07-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Last call",
+      "kind": "late",
+      "audience": null,
+      "price": 749000,
+      "from": "2026-08-01",
+      "to": "2026-09-20",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
       "tier": "Late",
       "kind": "late",
       "audience": null,
@@ -243,7 +217,20 @@
     },
     {
       "distance": "3km",
-      "tier": "Group 20 - 49",
+      "tier": "Giá vé Tiêu chuẩn",
+      "kind": "regular",
+      "audience": null,
+      "price": 569000,
+      "from": "2026-08-01",
+      "to": null,
+      "inferred": [
+        "from"
+      ],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Group 20-49",
       "kind": "group",
       "audience": null,
       "price": 510000,
@@ -253,19 +240,8 @@
       "site": "actiup"
     },
     {
-      "distance": "10km",
-      "tier": "Group 20 - 49",
-      "kind": "group",
-      "audience": null,
-      "price": 720000,
-      "from": null,
-      "to": null,
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
       "distance": "3km",
-      "tier": "Group 50 - 99",
+      "tier": "Group 50-99",
       "kind": "group",
       "audience": null,
       "price": 480000,
@@ -275,33 +251,11 @@
       "site": "actiup"
     },
     {
-      "distance": "10km",
-      "tier": "Group 50 - 99",
-      "kind": "group",
-      "audience": null,
-      "price": 680000,
-      "from": null,
-      "to": null,
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
       "distance": "3km",
-      "tier": "Group 100 - 199",
+      "tier": "Group 100-199",
       "kind": "group",
       "audience": null,
       "price": 450000,
-      "from": null,
-      "to": null,
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "Group 100 - 199",
-      "kind": "group",
-      "audience": null,
-      "price": 640000,
       "from": null,
       "to": null,
       "inferred": [],
@@ -313,6 +267,52 @@
       "kind": "group",
       "audience": null,
       "price": 430000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Giá vé Tiêu chuẩn",
+      "kind": "regular",
+      "audience": null,
+      "price": 799000,
+      "from": "2026-08-01",
+      "to": null,
+      "inferred": [
+        "from"
+      ],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Group 20-49",
+      "kind": "group",
+      "audience": null,
+      "price": 720000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Group 50-99",
+      "kind": "group",
+      "audience": null,
+      "price": 680000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Group 100-199",
+      "kind": "group",
+      "audience": null,
+      "price": 640000,
       "from": null,
       "to": null,
       "inferred": [],
@@ -353,7 +353,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/giai-chay-hong-pink-run-2026",
-      "lastCheckedAt": "2026-10-12T17:47:17.198Z",
+      "lastCheckedAt": "2026-10-12T17:50:48.662Z",
       "lastChangedAt": "2026-09-23T18:30:47.521Z",
       "extracted": {
         "facts": {
@@ -367,160 +367,37 @@
         },
         "pages": [
           {
+            "url": "https://actiup.net/vi/event/giai-chay-hong-pink-run-2026",
             "json": {
-              "date": "2026-11-01",
-              "name": "Giải Chạy Hồng – Pink Run 2026",
               "pageKind": "sport",
-              "prices": [],
               "types": [
                 "road_run"
-              ]
-            },
-            "url": "https://actiup.net/vi/event/giai-chay-hong-pink-run-2026"
-          }
-        ],
-        "images": [
-          {
-            "json": {
-              "currency": "VND",
-              "date": "2026-11-01",
-              "distances": [
-                "3 KM",
-                "10 KM"
               ],
-              "prices": [
-                {
-                  "distance": "3 KM",
-                  "price": 569000,
-                  "tier": "Giá vé Tiêu chuẩn"
-                },
-                {
-                  "distance": "10 KM",
-                  "price": 799000,
-                  "tier": "Giá vé Tiêu chuẩn"
-                },
-                {
-                  "distance": "3 KM",
-                  "from": "08/7",
-                  "price": 459000,
-                  "tier": "Super Early Bird",
-                  "to": "18/7"
-                },
-                {
-                  "distance": "10 KM",
-                  "from": "08/7",
-                  "price": 629000,
-                  "tier": "Super Early Bird",
-                  "to": "18/7"
-                },
-                {
-                  "distance": "3 KM",
-                  "from": "19/7",
-                  "price": 479000,
-                  "tier": "Early Bird",
-                  "to": "31/7"
-                },
-                {
-                  "distance": "10 KM",
-                  "from": "19/7",
-                  "price": 679000,
-                  "tier": "Early Bird",
-                  "to": "31/7"
-                },
-                {
-                  "distance": "3 KM",
-                  "from": "01/8",
-                  "price": 529000,
-                  "tier": "Last call",
-                  "to": "20/9"
-                },
-                {
-                  "distance": "10 KM",
-                  "from": "01/8",
-                  "price": 749000,
-                  "tier": "Last call",
-                  "to": "20/9"
-                },
-                {
-                  "distance": "3 KM",
-                  "from": "21/9",
-                  "price": 569000,
-                  "tier": "Late",
-                  "to": "05/10"
-                },
-                {
-                  "distance": "10 KM",
-                  "from": "21/9",
-                  "price": 799000,
-                  "tier": "Late",
-                  "to": "05/10"
-                }
-              ]
-            },
-            "url": "https://pix.actiup.net/2026/07/11/1783767689408581/price-pinkrun26.png"
-          },
-          {
-            "json": {
-              "currency": "VND",
+              "name": "Giải Chạy Hồng – Pink Run 2026",
               "date": "2026-11-01",
-              "distances": [
-                "3 KM",
-                "10 KM"
-              ],
-              "prices": [
+              "endDate": "2026-11-01",
+              "mainDate": "2026-11-01",
+              "distances": [],
+              "courses": [
                 {
-                  "distance": "3 KM",
-                  "price": 569000,
-                  "tier": "Giá vé Tiêu chuẩn"
-                },
-                {
-                  "distance": "10 KM",
-                  "price": 799000,
-                  "tier": "Giá vé Tiêu chuẩn"
-                },
-                {
-                  "distance": "3 KM",
-                  "price": 510000,
-                  "tier": "Group 20 - 49"
-                },
-                {
-                  "distance": "10 KM",
-                  "price": 720000,
-                  "tier": "Group 20 - 49"
-                },
-                {
-                  "distance": "3 KM",
-                  "price": 480000,
-                  "tier": "Group 50 - 99"
-                },
-                {
-                  "distance": "10 KM",
-                  "price": 680000,
-                  "tier": "Group 50 - 99"
-                },
-                {
-                  "distance": "3 KM",
-                  "price": 450000,
-                  "tier": "Group 100 - 199"
-                },
-                {
-                  "distance": "10 KM",
-                  "price": 640000,
-                  "tier": "Group 100 - 199"
-                },
-                {
-                  "distance": "3 KM",
-                  "price": 430000,
-                  "tier": "Group >200"
-                },
-                {
-                  "distance": "10 KM",
-                  "price": 600000,
-                  "tier": "Group >200"
+                  "distance": "unknown",
+                  "type": "road_run",
+                  "elevationGain": 0
                 }
-              ]
-            },
-            "url": "https://pix.actiup.net/2026/07/11/1783767675896934/grouppolicy-pinkrun26.png"
+              ],
+              "edition": 2026,
+              "mapsUrl": "https://maps.google.com/?q=Celadon+City,+TP.HCM",
+              "venue": "Celadon City",
+              "city": "TP.HCM",
+              "organizer": "BCNV",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": []
+            }
           }
         ],
         "links": [
@@ -533,11 +410,182 @@
           "id": "mang-luoi-ung-thu-vu-viet-nam-bcnv",
           "name": "Mạng Lưới Ung Thu Vú Việt Nam - BCNV"
         },
-        "readBy": "agent"
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/07/11/1783767689408581/price-pinkrun26.png",
+            "json": {
+              "prices": [
+                {
+                  "distance": "3 KM",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "08/07",
+                  "to": "18/07",
+                  "price": 459000
+                },
+                {
+                  "distance": "3 KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "19/07",
+                  "to": "31/07",
+                  "price": 479000
+                },
+                {
+                  "distance": "3 KM",
+                  "tier": "Last call",
+                  "audience": "",
+                  "from": "01/08",
+                  "to": "20/09",
+                  "price": 529000
+                },
+                {
+                  "distance": "3 KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "21/09",
+                  "to": "05/10",
+                  "price": 569000
+                },
+                {
+                  "distance": "10 KM",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "08/07",
+                  "to": "18/07",
+                  "price": 629000
+                },
+                {
+                  "distance": "10 KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "19/07",
+                  "to": "31/07",
+                  "price": 679000
+                },
+                {
+                  "distance": "10 KM",
+                  "tier": "Last call",
+                  "audience": "",
+                  "from": "01/08",
+                  "to": "20/09",
+                  "price": 749000
+                },
+                {
+                  "distance": "10 KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "21/09",
+                  "to": "05/10",
+                  "price": 799000
+                }
+              ],
+              "distances": [
+                "3 KM",
+                "10 KM"
+              ],
+              "date": "2026-11-01",
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2026/07/11/1783767675896934/grouppolicy-pinkrun26.png",
+            "json": {
+              "prices": [
+                {
+                  "distance": "3 KM",
+                  "tier": "Giá vé Tiêu chuẩn",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 569000
+                },
+                {
+                  "distance": "3 KM",
+                  "tier": "Group 20-49",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 510000
+                },
+                {
+                  "distance": "3 KM",
+                  "tier": "Group 50-99",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 480000
+                },
+                {
+                  "distance": "3 KM",
+                  "tier": "Group 100-199",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 450000
+                },
+                {
+                  "distance": "3 KM",
+                  "tier": "Group >200",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 430000
+                },
+                {
+                  "distance": "10 KM",
+                  "tier": "Giá vé Tiêu chuẩn",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 799000
+                },
+                {
+                  "distance": "10 KM",
+                  "tier": "Group 20-49",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 720000
+                },
+                {
+                  "distance": "10 KM",
+                  "tier": "Group 50-99",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 680000
+                },
+                {
+                  "distance": "10 KM",
+                  "tier": "Group 100-199",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 640000
+                },
+                {
+                  "distance": "10 KM",
+                  "tier": "Group >200",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 600000
+                }
+              ],
+              "distances": [
+                "3 KM",
+                "10 KM"
+              ],
+              "date": "2026-11-01",
+              "currency": "VND"
+            }
+          }
+        ]
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-12T17:48:31.011Z"
+  "updatedAt": "2026-10-12T17:55:59.976Z"
 }

@@ -11,131 +11,135 @@
   "seriesId": "gia-lai-city-trail-giac-mo-dai-ngan",
   "organizerId": "vietrace365",
   "organizer": "VIETRACE365",
-  "edition": null,
+  "edition": 4,
   "courses": [
     {
       "label": "6km",
       "meters": 6000,
-      "type": "city_trail",
-      "elevationGain": null
+      "type": "trail_run",
+      "elevationGain": 0
     },
     {
       "label": "12km",
       "meters": 12000,
-      "type": "city_trail",
-      "elevationGain": null
+      "type": "trail_run",
+      "elevationGain": 0
     },
     {
       "label": "30km",
       "meters": 30000,
-      "type": "city_trail",
-      "elevationGain": null
+      "type": "trail_run",
+      "elevationGain": 0
     },
     {
       "label": "50km",
       "meters": 50000,
-      "type": "city_trail",
-      "elevationGain": null
+      "type": "trail_run",
+      "elevationGain": 0
     },
     {
       "label": "70km",
       "meters": 70000,
-      "type": "city_trail",
-      "elevationGain": null
+      "type": "trail_run",
+      "elevationGain": 0
     }
   ],
   "location": {
     "venue": "Gia Lai",
-    "city": null
+    "city": "Gia Lai"
   },
   "geo": {
-    "lat": 14.0201373,
-    "lng": 108.6354524,
+    "lat": 13.9657486,
+    "lng": 108.0219734,
     "source": "nominatim",
-    "precision": "province",
+    "precision": "venue",
     "current": {
       "province": "52",
-      "ward": null
+      "ward": "23586"
     },
-    "legacy": null,
+    "legacy": {
+      "province": "64",
+      "district": "622",
+      "ward": "23581"
+    },
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 417.9,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 523,
+        "minutes": 415,
+        "method": "road",
         "near": false
       },
       "ha-noi": {
-        "km": 833.2,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1096.3,
+        "minutes": 875,
+        "method": "road",
         "near": false
       },
       "da-nang": {
-        "km": 231.2,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 341.3,
+        "minutes": 272,
+        "method": "road",
         "near": false
       },
       "nha-trang": {
-        "km": 207.2,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 297.2,
+        "minutes": 278,
+        "method": "road",
         "near": false
       },
       "da-lat": {
-        "km": 232.2,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 344.6,
+        "minutes": 332,
+        "method": "road",
         "near": false
       },
       "can-tho": {
-        "km": 540.7,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 682.2,
+        "minutes": 543,
+        "method": "road",
         "near": false
       },
       "hai-phong": {
-        "km": 786.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1130.4,
+        "minutes": 900,
+        "method": "road",
         "near": false
       },
       "hue": {
-        "km": 293.9,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 424,
+        "minutes": 347,
+        "method": "road",
         "near": false
       },
       "vung-tau": {
-        "km": 442,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 571.9,
+        "minutes": 478,
+        "method": "road",
         "near": false
       },
       "quy-nhon": {
-        "km": 69,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 165.1,
+        "minutes": 155,
+        "method": "road",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 163.8,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 176.7,
+        "minutes": 166,
+        "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 1053.9,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1404.1,
+        "minutes": 1107,
+        "method": "road",
         "near": false
       },
       "ha-long": {
-        "km": 788.2,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1180.1,
+        "minutes": 932,
+        "method": "road",
         "near": false
       }
     }
@@ -143,7 +147,7 @@
   "prices": [
     {
       "distance": "6km",
-      "tier": "Flash Sale",
+      "tier": "FLASH SALE 12H TRUA",
       "kind": "other",
       "audience": null,
       "price": 348000,
@@ -154,7 +158,7 @@
     },
     {
       "distance": "6km",
-      "tier": "Early Bird",
+      "tier": "EARLY BIRD",
       "kind": "early",
       "audience": null,
       "price": 448000,
@@ -165,7 +169,7 @@
     },
     {
       "distance": "6km",
-      "tier": "Regular",
+      "tier": "REGULAR",
       "kind": "regular",
       "audience": null,
       "price": 548000,
@@ -176,18 +180,18 @@
     },
     {
       "distance": "6km",
-      "tier": "Late",
+      "tier": "LATE",
       "kind": "late",
       "audience": null,
       "price": 648000,
       "from": "2026-09-16",
-      "to": "2026-10-07",
+      "to": "2026-10-04",
       "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "12km",
-      "tier": "Flash Sale",
+      "tier": "FLASH SALE 12H TRUA",
       "kind": "other",
       "audience": null,
       "price": 548000,
@@ -198,7 +202,7 @@
     },
     {
       "distance": "12km",
-      "tier": "Early Bird",
+      "tier": "EARLY BIRD",
       "kind": "early",
       "audience": null,
       "price": 648000,
@@ -209,7 +213,7 @@
     },
     {
       "distance": "12km",
-      "tier": "Regular",
+      "tier": "REGULAR",
       "kind": "regular",
       "audience": null,
       "price": 748000,
@@ -220,18 +224,18 @@
     },
     {
       "distance": "12km",
-      "tier": "Late",
+      "tier": "LATE",
       "kind": "late",
       "audience": null,
       "price": 848000,
       "from": "2026-09-16",
-      "to": "2026-10-07",
+      "to": "2026-10-04",
       "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "30km",
-      "tier": "Flash Sale",
+      "tier": "FLASH SALE 12H TRUA",
       "kind": "other",
       "audience": null,
       "price": 868000,
@@ -242,7 +246,7 @@
     },
     {
       "distance": "30km",
-      "tier": "Early Bird",
+      "tier": "EARLY BIRD",
       "kind": "early",
       "audience": null,
       "price": 1168000,
@@ -253,7 +257,7 @@
     },
     {
       "distance": "30km",
-      "tier": "Regular",
+      "tier": "REGULAR",
       "kind": "regular",
       "audience": null,
       "price": 1368000,
@@ -264,18 +268,18 @@
     },
     {
       "distance": "30km",
-      "tier": "Late",
+      "tier": "LATE",
       "kind": "late",
       "audience": null,
       "price": 1568000,
       "from": "2026-09-16",
-      "to": "2026-10-07",
+      "to": "2026-10-04",
       "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "50km",
-      "tier": "Flash Sale",
+      "tier": "FLASH SALE 12H TRUA",
       "kind": "other",
       "audience": null,
       "price": 1468000,
@@ -286,7 +290,7 @@
     },
     {
       "distance": "50km",
-      "tier": "Early Bird",
+      "tier": "EARLY BIRD",
       "kind": "early",
       "audience": null,
       "price": 1868000,
@@ -297,7 +301,7 @@
     },
     {
       "distance": "50km",
-      "tier": "Regular",
+      "tier": "REGULAR",
       "kind": "regular",
       "audience": null,
       "price": 2068000,
@@ -308,18 +312,18 @@
     },
     {
       "distance": "50km",
-      "tier": "Late",
+      "tier": "LATE",
       "kind": "late",
       "audience": null,
       "price": 2268000,
       "from": "2026-09-16",
-      "to": "2026-10-07",
+      "to": "2026-10-04",
       "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "70km",
-      "tier": "Flash Sale",
+      "tier": "FLASH SALE 12H TRUA",
       "kind": "other",
       "audience": null,
       "price": 1668000,
@@ -330,7 +334,7 @@
     },
     {
       "distance": "70km",
-      "tier": "Early Bird",
+      "tier": "EARLY BIRD",
       "kind": "early",
       "audience": null,
       "price": 2268000,
@@ -341,7 +345,7 @@
     },
     {
       "distance": "70km",
-      "tier": "Regular",
+      "tier": "REGULAR",
       "kind": "regular",
       "audience": null,
       "price": 2568000,
@@ -352,12 +356,12 @@
     },
     {
       "distance": "70km",
-      "tier": "Late",
+      "tier": "LATE",
       "kind": "late",
       "audience": null,
       "price": 2868000,
       "from": "2026-09-16",
-      "to": "2026-10-07",
+      "to": "2026-10-04",
       "inferred": [],
       "site": "actiup"
     }
@@ -379,7 +383,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/gia-lai-city-trail-giac-mo-dai-ngan-2026",
-      "lastCheckedAt": "2026-10-12T17:47:16.606Z",
+      "lastCheckedAt": "2026-10-12T17:50:21.156Z",
       "lastChangedAt": "2026-09-23T18:30:50.684Z",
       "extracted": {
         "facts": {
@@ -398,179 +402,57 @@
             "json": {
               "pageKind": "sport",
               "types": [
-                "city_trail"
+                "trail_run"
               ],
-              "name": "GIA LAI CITY TRAIL - GIẤC MƠ ĐẠI NGÀN 2026",
+              "name": "Gia Lai City Trail - Giấc mơ đại ngàn 2026",
+              "date": "2026-11-21",
+              "endDate": "2026-11-22",
+              "mainDate": "2026-11-21",
               "distances": [
-                "6KM",
-                "12KM",
-                "30KM",
-                "50KM",
-                "70KM"
+                "6km",
+                "12km",
+                "30km",
+                "50km",
+                "70km"
               ],
-              "prices": []
-            }
-          }
-        ],
-        "images": [
-          {
-            "url": "https://pix.actiup.net/2026/05/16/1778908809002575/IMG_5763.jpeg",
-            "json": {
-              "prices": [
+              "courses": [
                 {
-                  "distance": "6KM",
-                  "tier": "Flash Sale",
-                  "from": "2026-03-12",
-                  "to": "2026-03-14",
-                  "price": 348000
+                  "distance": "6km",
+                  "type": "trail_run",
+                  "elevationGain": 0
                 },
                 {
-                  "distance": "6KM",
-                  "tier": "Early Bird",
-                  "from": "2026-03-15",
-                  "to": "2026-07-15",
-                  "price": 448000
+                  "distance": "12km",
+                  "type": "trail_run",
+                  "elevationGain": 0
                 },
                 {
-                  "distance": "6KM",
-                  "tier": "Regular",
-                  "from": "2026-07-16",
-                  "to": "2026-09-15",
-                  "price": 548000
+                  "distance": "30km",
+                  "type": "trail_run",
+                  "elevationGain": 0
                 },
                 {
-                  "distance": "6KM",
-                  "tier": "Late",
-                  "from": "2026-09-16",
-                  "to": "2026-10-07",
-                  "price": 648000
+                  "distance": "50km",
+                  "type": "trail_run",
+                  "elevationGain": 0
                 },
                 {
-                  "distance": "12KM",
-                  "tier": "Flash Sale",
-                  "from": "2026-03-12",
-                  "to": "2026-03-14",
-                  "price": 548000
-                },
-                {
-                  "distance": "12KM",
-                  "tier": "Early Bird",
-                  "from": "2026-03-15",
-                  "to": "2026-07-15",
-                  "price": 648000
-                },
-                {
-                  "distance": "12KM",
-                  "tier": "Regular",
-                  "from": "2026-07-16",
-                  "to": "2026-09-15",
-                  "price": 748000
-                },
-                {
-                  "distance": "12KM",
-                  "tier": "Late",
-                  "from": "2026-09-16",
-                  "to": "2026-10-07",
-                  "price": 848000
-                },
-                {
-                  "distance": "30KM",
-                  "tier": "Flash Sale",
-                  "from": "2026-03-12",
-                  "to": "2026-03-14",
-                  "price": 868000
-                },
-                {
-                  "distance": "30KM",
-                  "tier": "Early Bird",
-                  "from": "2026-03-15",
-                  "to": "2026-07-15",
-                  "price": 1168000
-                },
-                {
-                  "distance": "30KM",
-                  "tier": "Regular",
-                  "from": "2026-07-16",
-                  "to": "2026-09-15",
-                  "price": 1368000
-                },
-                {
-                  "distance": "30KM",
-                  "tier": "Late",
-                  "from": "2026-09-16",
-                  "to": "2026-10-07",
-                  "price": 1568000
-                },
-                {
-                  "distance": "50KM",
-                  "tier": "Flash Sale",
-                  "from": "2026-03-12",
-                  "to": "2026-03-14",
-                  "price": 1468000
-                },
-                {
-                  "distance": "50KM",
-                  "tier": "Early Bird",
-                  "from": "2026-03-15",
-                  "to": "2026-07-15",
-                  "price": 1868000
-                },
-                {
-                  "distance": "50KM",
-                  "tier": "Regular",
-                  "from": "2026-07-16",
-                  "to": "2026-09-15",
-                  "price": 2068000
-                },
-                {
-                  "distance": "50KM",
-                  "tier": "Late",
-                  "from": "2026-09-16",
-                  "to": "2026-10-07",
-                  "price": 2268000
-                },
-                {
-                  "distance": "70KM",
-                  "tier": "Flash Sale",
-                  "from": "2026-03-12",
-                  "to": "2026-03-14",
-                  "price": 1668000
-                },
-                {
-                  "distance": "70KM",
-                  "tier": "Early Bird",
-                  "from": "2026-03-15",
-                  "to": "2026-07-15",
-                  "price": 2268000
-                },
-                {
-                  "distance": "70KM",
-                  "tier": "Regular",
-                  "from": "2026-07-16",
-                  "to": "2026-09-15",
-                  "price": 2568000
-                },
-                {
-                  "distance": "70KM",
-                  "tier": "Late",
-                  "from": "2026-09-16",
-                  "to": "2026-10-07",
-                  "price": 2868000
+                  "distance": "70km",
+                  "type": "trail_run",
+                  "elevationGain": 0
                 }
               ],
-              "distances": [
-                "6KM",
-                "12KM",
-                "30KM",
-                "50KM",
-                "70KM"
-              ],
-              "currency": "VND"
-            }
-          },
-          {
-            "url": "https://pix.actiup.net/2026/03/20/1773992194770725/gia%CC%81-nho%CC%81m.jpg",
-            "json": {
+              "edition": 4,
+              "mapsUrl": "",
+              "venue": "Gia Lai City",
+              "city": "Gia Lai",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
               "prices": []
             }
           }
@@ -580,11 +462,197 @@
           "id": "vietrace365",
           "name": "VIETRACE365"
         },
-        "readBy": "agent"
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/10/02/1790916076281167/NEW-PRICE-GL.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "6KM",
+                  "tier": "FLASH SALE 12H TRUA",
+                  "audience": "",
+                  "from": "12/03",
+                  "to": "14/03",
+                  "price": 348000
+                },
+                {
+                  "distance": "6KM",
+                  "tier": "EARLY BIRD",
+                  "audience": "",
+                  "from": "15/03",
+                  "to": "15/07",
+                  "price": 448000
+                },
+                {
+                  "distance": "6KM",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "16/07",
+                  "to": "15/09",
+                  "price": 548000
+                },
+                {
+                  "distance": "6KM",
+                  "tier": "LATE",
+                  "audience": "",
+                  "from": "16/09",
+                  "to": "04/10",
+                  "price": 648000
+                },
+                {
+                  "distance": "12KM",
+                  "tier": "FLASH SALE 12H TRUA",
+                  "audience": "",
+                  "from": "12/03",
+                  "to": "14/03",
+                  "price": 548000
+                },
+                {
+                  "distance": "12KM",
+                  "tier": "EARLY BIRD",
+                  "audience": "",
+                  "from": "15/03",
+                  "to": "15/07",
+                  "price": 648000
+                },
+                {
+                  "distance": "12KM",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "16/07",
+                  "to": "15/09",
+                  "price": 748000
+                },
+                {
+                  "distance": "12KM",
+                  "tier": "LATE",
+                  "audience": "",
+                  "from": "16/09",
+                  "to": "04/10",
+                  "price": 848000
+                },
+                {
+                  "distance": "30KM ELEVATION GAIN 600M+",
+                  "tier": "FLASH SALE 12H TRUA",
+                  "audience": "",
+                  "from": "12/03",
+                  "to": "14/03",
+                  "price": 868000
+                },
+                {
+                  "distance": "30KM ELEVATION GAIN 600M+",
+                  "tier": "EARLY BIRD",
+                  "audience": "",
+                  "from": "15/03",
+                  "to": "15/07",
+                  "price": 1168000
+                },
+                {
+                  "distance": "30KM ELEVATION GAIN 600M+",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "16/07",
+                  "to": "15/09",
+                  "price": 1368000
+                },
+                {
+                  "distance": "30KM ELEVATION GAIN 600M+",
+                  "tier": "LATE",
+                  "audience": "",
+                  "from": "16/09",
+                  "to": "04/10",
+                  "price": 1568000
+                },
+                {
+                  "distance": "50KM ELEVATION GAIN 1600M+",
+                  "tier": "FLASH SALE 12H TRUA",
+                  "audience": "",
+                  "from": "12/03",
+                  "to": "14/03",
+                  "price": 1468000
+                },
+                {
+                  "distance": "50KM ELEVATION GAIN 1600M+",
+                  "tier": "EARLY BIRD",
+                  "audience": "",
+                  "from": "15/03",
+                  "to": "15/07",
+                  "price": 1868000
+                },
+                {
+                  "distance": "50KM ELEVATION GAIN 1600M+",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "16/07",
+                  "to": "15/09",
+                  "price": 2068000
+                },
+                {
+                  "distance": "50KM ELEVATION GAIN 1600M+",
+                  "tier": "LATE",
+                  "audience": "",
+                  "from": "16/09",
+                  "to": "04/10",
+                  "price": 2268000
+                },
+                {
+                  "distance": "70KM ELEVATION GAIN 2500M+",
+                  "tier": "FLASH SALE 12H TRUA",
+                  "audience": "",
+                  "from": "12/03",
+                  "to": "14/03",
+                  "price": 1668000
+                },
+                {
+                  "distance": "70KM ELEVATION GAIN 2500M+",
+                  "tier": "EARLY BIRD",
+                  "audience": "",
+                  "from": "15/03",
+                  "to": "15/07",
+                  "price": 2268000
+                },
+                {
+                  "distance": "70KM ELEVATION GAIN 2500M+",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "16/07",
+                  "to": "15/09",
+                  "price": 2568000
+                },
+                {
+                  "distance": "70KM ELEVATION GAIN 2500M+",
+                  "tier": "LATE",
+                  "audience": "",
+                  "from": "16/09",
+                  "to": "04/10",
+                  "price": 2868000
+                }
+              ],
+              "distances": [
+                "6KM",
+                "12KM",
+                "30KM ELEVATION GAIN 600M+",
+                "50KM ELEVATION GAIN 1600M+",
+                "70KM ELEVATION GAIN 2500M+"
+              ],
+              "date": "",
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2026/03/20/1773992194770725/gia%CC%81-nho%CC%81m.jpg",
+            "json": {
+              "prices": [],
+              "distances": [],
+              "date": "",
+              "currency": "VND"
+            }
+          }
+        ]
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-12T17:48:31.011Z"
+  "updatedAt": "2026-10-12T17:55:59.976Z"
 }

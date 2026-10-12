@@ -621,7 +621,7 @@
     },
     {
       "distance": "5km",
-      "tier": "Flash Sale",
+      "tier": "Giá vẽ công bố (VND)",
       "kind": "other",
       "audience": null,
       "price": 288000,
@@ -632,7 +632,7 @@
     },
     {
       "distance": "10km",
-      "tier": "Flash Sale",
+      "tier": "Giá vẽ công bố (VND)",
       "kind": "other",
       "audience": null,
       "price": 388000,
@@ -643,7 +643,7 @@
     },
     {
       "distance": "21km",
-      "tier": "Flash Sale",
+      "tier": "Giá vẽ công bố (VND)",
       "kind": "other",
       "audience": null,
       "price": 488000,
@@ -654,7 +654,7 @@
     },
     {
       "distance": "42km",
-      "tier": "Flash Sale",
+      "tier": "Giá vẽ công bố (VND)",
       "kind": "other",
       "audience": null,
       "price": 588000,
@@ -847,7 +847,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/halong-bay-heritage-marathon-2026",
-      "lastCheckedAt": "2026-09-25T04:03:37.715Z",
+      "lastCheckedAt": "2026-10-12T17:52:25.333Z",
       "lastChangedAt": "2026-09-23T18:30:52.268Z",
       "extracted": {
         "facts": {
@@ -856,7 +856,7 @@
           "venue": "Ha Long, Vietnam",
           "organizer": "Công ty DHA Việt Nam",
           "currency": "VND",
-          "registrationStatus": "open",
+          "registrationStatus": "closed",
           "fromPrice": 288000
         },
         "pages": [
@@ -867,52 +867,24 @@
               "types": [
                 "road_run"
               ],
-              "name": "Halong Bay Heritage Marathon 2026",
+              "name": "Giải Marathon Quốc tế Di sản Hạ Long",
+              "date": "2026-11-21",
+              "endDate": "2026-11-22",
+              "mainDate": "2026-11-21",
+              "distances": [],
+              "courses": [],
+              "edition": 0,
+              "mapsUrl": "",
+              "venue": "Hạ Long",
+              "city": "Hạ Long",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
               "prices": []
-            }
-          }
-        ],
-        "images": [
-          {
-            "url": "https://pix.actiup.net/2026/01/13/1768290130052028/FS.jpg",
-            "json": {
-              "prices": [
-                {
-                  "distance": "5KM",
-                  "tier": "Flash Sale",
-                  "from": "2026-01-15",
-                  "to": "2026-01-17",
-                  "price": 288000
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "Flash Sale",
-                  "from": "2026-01-15",
-                  "to": "2026-01-17",
-                  "price": 388000
-                },
-                {
-                  "distance": "21KM",
-                  "tier": "Flash Sale",
-                  "from": "2026-01-15",
-                  "to": "2026-01-17",
-                  "price": 488000
-                },
-                {
-                  "distance": "42KM",
-                  "tier": "Flash Sale",
-                  "from": "2026-01-15",
-                  "to": "2026-01-17",
-                  "price": 588000
-                }
-              ],
-              "distances": [
-                "5KM",
-                "10KM",
-                "21KM",
-                "42KM"
-              ],
-              "currency": "VND"
             }
           }
         ],
@@ -926,14 +898,62 @@
           "id": "cong-ty-dha-viet-nam",
           "name": "Công ty DHA Việt Nam"
         },
-        "readBy": "agent"
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/01/13/1768290130052028/FS.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "5 KM",
+                  "tier": "Giá vẽ công bố (VND)",
+                  "audience": "Việt Nam",
+                  "from": "15/01",
+                  "to": "17/01",
+                  "price": 288000
+                },
+                {
+                  "distance": "10 KM",
+                  "tier": "Giá vẽ công bố (VND)",
+                  "audience": "Việt Nam",
+                  "from": "15/01",
+                  "to": "17/01",
+                  "price": 388000
+                },
+                {
+                  "distance": "21 KM",
+                  "tier": "Giá vẽ công bố (VND)",
+                  "audience": "Việt Nam",
+                  "from": "15/01",
+                  "to": "17/01",
+                  "price": 488000
+                },
+                {
+                  "distance": "42 KM",
+                  "tier": "Giá vẽ công bố (VND)",
+                  "audience": "Việt Nam",
+                  "from": "15/01",
+                  "to": "17/01",
+                  "price": 588000
+                }
+              ],
+              "distances": [
+                "5 KM",
+                "10 KM",
+                "21 KM",
+                "42 KM"
+              ],
+              "date": "2026-11-22",
+              "currency": "VND"
+            }
+          }
+        ]
       }
     },
     {
       "site": "halong-marathon",
       "role": "official",
       "url": "https://halongmarathon.com/",
-      "lastCheckedAt": "2026-09-25T05:03:56.536Z",
+      "lastCheckedAt": "2026-10-12T17:54:59.389Z",
       "lastChangedAt": "2026-09-25T05:03:56.536Z",
       "extracted": {
         "pages": [
@@ -1644,5 +1664,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T13:58:50.138Z"
+  "updatedAt": "2026-10-12T17:55:59.976Z"
 }

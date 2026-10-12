@@ -11,36 +11,36 @@
   "seriesId": null,
   "organizerId": "cong-ty-tnhh-duoc-pham-hisamitsu-viet-nam",
   "organizer": "CÔNG TY TNHH DƯỢC PHẨM HISAMITSU VIỆT NAM",
-  "edition": null,
+  "edition": 1,
   "courses": [
     {
       "label": "3km",
       "meters": 3000,
       "type": "road_run",
-      "elevationGain": null
+      "elevationGain": 0
     },
     {
       "label": "5km",
       "meters": 5000,
       "type": "road_run",
-      "elevationGain": null
+      "elevationGain": 0
     },
     {
       "label": "10km",
       "meters": 10000,
       "type": "road_run",
-      "elevationGain": null
+      "elevationGain": 0
     },
     {
       "label": "21km",
       "meters": 21097,
       "type": "road_run",
-      "elevationGain": null
+      "elevationGain": 0
     }
   ],
   "location": {
     "venue": "Công viên Sáng Tạo, Phường An Khánh, Thành phố Hồ Chí Minh.",
-    "city": null
+    "city": "Thông tin về lịch trình sự kiện sẽ được cập nhật chi tiết sau."
   },
   "geo": {
     "lat": 10.7850885,
@@ -66,7 +66,7 @@
       },
       "ha-noi": {
         "km": 1495.1,
-        "minutes": 1133,
+        "minutes": 1135,
         "method": "road",
         "near": false
       },
@@ -108,7 +108,7 @@
       },
       "vung-tau": {
         "km": 91.9,
-        "minutes": 84,
+        "minutes": 85,
         "method": "road",
         "near": false
       },
@@ -125,14 +125,14 @@
         "near": false
       },
       "sa-pa": {
-        "km": 1803.6,
-        "minutes": 1369,
+        "km": 1802.9,
+        "minutes": 1368,
         "method": "road",
         "near": false
       },
       "ha-long": {
         "km": 1578.9,
-        "minutes": 1193,
+        "minutes": 1192,
         "method": "road",
         "near": false
       }
@@ -151,77 +151,11 @@
       "site": "actiup"
     },
     {
-      "distance": "10km",
-      "tier": "FLASH SALE",
-      "kind": "other",
-      "audience": null,
-      "price": 390000,
-      "from": "2026-06-24",
-      "to": "2026-07-11",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "5km",
-      "tier": "FLASH SALE",
-      "kind": "other",
-      "audience": null,
-      "price": 230000,
-      "from": "2026-06-24",
-      "to": "2026-07-11",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "3km",
-      "tier": "FLASH SALE",
-      "kind": "other",
-      "audience": null,
-      "price": 120000,
-      "from": "2026-06-24",
-      "to": "2026-07-11",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
       "distance": "21km",
       "tier": "EARLY BIRD",
       "kind": "early",
       "audience": null,
       "price": 750000,
-      "from": "2026-07-12",
-      "to": "2026-08-10",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "EARLY BIRD",
-      "kind": "early",
-      "audience": null,
-      "price": 650000,
-      "from": "2026-07-12",
-      "to": "2026-08-10",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "5km",
-      "tier": "EARLY BIRD",
-      "kind": "early",
-      "audience": null,
-      "price": 400000,
-      "from": "2026-07-12",
-      "to": "2026-08-10",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "3km",
-      "tier": "EARLY BIRD",
-      "kind": "early",
-      "audience": null,
-      "price": 195000,
       "from": "2026-07-12",
       "to": "2026-08-10",
       "inferred": [],
@@ -233,39 +167,6 @@
       "kind": "regular",
       "audience": null,
       "price": 850000,
-      "from": "2026-08-11",
-      "to": "2026-09-30",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "REGULAR",
-      "kind": "regular",
-      "audience": null,
-      "price": 750000,
-      "from": "2026-08-11",
-      "to": "2026-09-30",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "5km",
-      "tier": "REGULAR",
-      "kind": "regular",
-      "audience": null,
-      "price": 550000,
-      "from": "2026-08-11",
-      "to": "2026-09-30",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "3km",
-      "tier": "REGULAR",
-      "kind": "regular",
-      "audience": null,
-      "price": 235000,
       "from": "2026-08-11",
       "to": "2026-09-30",
       "inferred": [],
@@ -284,6 +185,39 @@
     },
     {
       "distance": "10km",
+      "tier": "FLASH SALE",
+      "kind": "other",
+      "audience": null,
+      "price": 390000,
+      "from": "2026-06-24",
+      "to": "2026-07-11",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 650000,
+      "from": "2026-07-12",
+      "to": "2026-08-10",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 750000,
+      "from": "2026-08-11",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
       "tier": "LATE COMER",
       "kind": "late",
       "audience": null,
@@ -295,12 +229,78 @@
     },
     {
       "distance": "5km",
+      "tier": "FLASH SALE",
+      "kind": "other",
+      "audience": null,
+      "price": 230000,
+      "from": "2026-06-24",
+      "to": "2026-07-11",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 400000,
+      "from": "2026-07-12",
+      "to": "2026-08-10",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 550000,
+      "from": "2026-08-11",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
       "tier": "LATE COMER",
       "kind": "late",
       "audience": null,
       "price": 650000,
       "from": "2026-10-01",
       "to": "2026-10-10",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "FLASH SALE",
+      "kind": "other",
+      "audience": null,
+      "price": 120000,
+      "from": "2026-06-24",
+      "to": "2026-07-11",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 195000,
+      "from": "2026-07-12",
+      "to": "2026-08-10",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 235000,
+      "from": "2026-08-11",
+      "to": "2026-09-30",
       "inferred": [],
       "site": "actiup"
     },
@@ -339,7 +339,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/salonpas-run-2026",
-      "lastCheckedAt": "2026-10-12T17:47:18.172Z",
+      "lastCheckedAt": "2026-10-12T17:51:08.260Z",
       "lastChangedAt": "2026-09-23T18:30:47.837Z",
       "extracted": {
         "facts": {
@@ -354,149 +354,57 @@
         },
         "pages": [
           {
+            "url": "https://actiup.net/vi/event/salonpas-run-2026",
             "json": {
-              "name": "Giải chạy bộ Salonpas 2026",
               "pageKind": "sport",
-              "prices": [],
               "types": [
                 "road_run"
-              ]
-            },
-            "url": "https://actiup.net/vi/event/salonpas-run-2026"
-          }
-        ],
-        "images": [
-          {
-            "json": {
-              "currency": "VND",
-              "distances": [
-                "21KM",
-                "10KM",
-                "5KM",
-                "3KM"
               ],
-              "prices": [
+              "name": "Giải chạy bộ Salonpas 2026",
+              "date": "2026-11-21",
+              "endDate": "2026-11-22",
+              "mainDate": "2026-11-21",
+              "distances": [
+                "3km",
+                "5km",
+                "10km",
+                "21km"
+              ],
+              "courses": [
                 {
-                  "distance": "21KM",
-                  "from": "24/06",
-                  "price": 470000,
-                  "tier": "FLASH SALE",
-                  "to": "2026-07-11"
+                  "distance": "3km",
+                  "type": "road_run",
+                  "elevationGain": 0
                 },
                 {
-                  "distance": "10KM",
-                  "from": "24/06",
-                  "price": 390000,
-                  "tier": "FLASH SALE",
-                  "to": "2026-07-11"
+                  "distance": "5km",
+                  "type": "road_run",
+                  "elevationGain": 0
                 },
                 {
-                  "distance": "5KM",
-                  "from": "24/06",
-                  "price": 230000,
-                  "tier": "FLASH SALE",
-                  "to": "2026-07-11"
+                  "distance": "10km",
+                  "type": "road_run",
+                  "elevationGain": 0
                 },
                 {
-                  "distance": "3KM",
-                  "from": "24/06",
-                  "price": 120000,
-                  "tier": "FLASH SALE",
-                  "to": "2026-07-11"
-                },
-                {
-                  "distance": "21KM",
-                  "from": "12/07",
-                  "price": 750000,
-                  "tier": "EARLY BIRD",
-                  "to": "2026-08-10"
-                },
-                {
-                  "distance": "10KM",
-                  "from": "12/07",
-                  "price": 650000,
-                  "tier": "EARLY BIRD",
-                  "to": "2026-08-10"
-                },
-                {
-                  "distance": "5KM",
-                  "from": "12/07",
-                  "price": 400000,
-                  "tier": "EARLY BIRD",
-                  "to": "2026-08-10"
-                },
-                {
-                  "distance": "3KM",
-                  "from": "12/07",
-                  "price": 195000,
-                  "tier": "EARLY BIRD",
-                  "to": "2026-08-10"
-                },
-                {
-                  "distance": "21KM",
-                  "from": "11/08",
-                  "price": 850000,
-                  "tier": "REGULAR",
-                  "to": "2026-09-30"
-                },
-                {
-                  "distance": "10KM",
-                  "from": "11/08",
-                  "price": 750000,
-                  "tier": "REGULAR",
-                  "to": "2026-09-30"
-                },
-                {
-                  "distance": "5KM",
-                  "from": "11/08",
-                  "price": 550000,
-                  "tier": "REGULAR",
-                  "to": "2026-09-30"
-                },
-                {
-                  "distance": "3KM",
-                  "from": "11/08",
-                  "price": 235000,
-                  "tier": "REGULAR",
-                  "to": "2026-09-30"
-                },
-                {
-                  "distance": "21KM",
-                  "from": "01/10",
-                  "price": 990000,
-                  "tier": "LATE COMER",
-                  "to": "2026-10-10"
-                },
-                {
-                  "distance": "10KM",
-                  "from": "01/10",
-                  "price": 850000,
-                  "tier": "LATE COMER",
-                  "to": "2026-10-10"
-                },
-                {
-                  "distance": "5KM",
-                  "from": "01/10",
-                  "price": 650000,
-                  "tier": "LATE COMER",
-                  "to": "2026-10-10"
-                },
-                {
-                  "distance": "3KM",
-                  "from": "01/10",
-                  "price": 325000,
-                  "tier": "LATE COMER",
-                  "to": "2026-10-10"
+                  "distance": "21km",
+                  "type": "road_run",
+                  "elevationGain": 0
                 }
-              ]
-            },
-            "url": "https://pix.actiup.net/2026/06/15/1781512677943304/B%E1%BA%A3ng-gi%C3%A1-v%C3%A9-(1).jpg"
-          },
-          {
-            "json": {
+              ],
+              "edition": 1,
+              "mapsUrl": "https://salonpasrun.vn/thong-tin-giai/",
+              "venue": "Thông tin về lịch trình sự kiện sẽ được cập nhật chi tiết sau.",
+              "city": "Thông tin về lịch trình sự kiện sẽ được cập nhật chi tiết sau.",
+              "organizer": "Thông tin về lịch trình sự kiện sẽ được cập nhật chi tiết sau.",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": "Thông tin về lịch trình sự kiện sẽ được cập nhật chi tiết sau."
+              },
               "prices": []
-            },
-            "url": "https://pix.actiup.net/2026/06/15/1781512792880030/uu-dai-nhom-(1).jpg"
+            }
           }
         ],
         "links": [
@@ -509,11 +417,165 @@
           "id": "cong-ty-tnhh-duoc-pham-hisamitsu-viet-nam",
           "name": "CÔNG TY TNHH DƯỢC PHẨM HISAMITSU VIỆT NAM"
         },
-        "readBy": "agent"
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/06/15/1781512677943304/B%E1%BA%A3ng-gi%C3%A1-v%C3%A9-(1).jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "21 KM",
+                  "tier": "FLASH SALE",
+                  "audience": "Việt Nam",
+                  "from": "24/06",
+                  "to": "11/07",
+                  "price": 470000
+                },
+                {
+                  "distance": "21 KM",
+                  "tier": "EARLY BIRD",
+                  "audience": "Việt Nam",
+                  "from": "12/07",
+                  "to": "10/08",
+                  "price": 750000
+                },
+                {
+                  "distance": "21 KM",
+                  "tier": "REGULAR",
+                  "audience": "Việt Nam",
+                  "from": "11/08",
+                  "to": "30/09",
+                  "price": 850000
+                },
+                {
+                  "distance": "21 KM",
+                  "tier": "LATE COMER",
+                  "audience": "Việt Nam",
+                  "from": "01/10",
+                  "to": "10/10",
+                  "price": 990000
+                },
+                {
+                  "distance": "10 KM",
+                  "tier": "FLASH SALE",
+                  "audience": "Việt Nam",
+                  "from": "24/06",
+                  "to": "11/07",
+                  "price": 390000
+                },
+                {
+                  "distance": "10 KM",
+                  "tier": "EARLY BIRD",
+                  "audience": "Việt Nam",
+                  "from": "12/07",
+                  "to": "10/08",
+                  "price": 650000
+                },
+                {
+                  "distance": "10 KM",
+                  "tier": "REGULAR",
+                  "audience": "Việt Nam",
+                  "from": "11/08",
+                  "to": "30/09",
+                  "price": 750000
+                },
+                {
+                  "distance": "10 KM",
+                  "tier": "LATE COMER",
+                  "audience": "Việt Nam",
+                  "from": "01/10",
+                  "to": "10/10",
+                  "price": 850000
+                },
+                {
+                  "distance": "5 KM",
+                  "tier": "FLASH SALE",
+                  "audience": "Việt Nam",
+                  "from": "24/06",
+                  "to": "11/07",
+                  "price": 230000
+                },
+                {
+                  "distance": "5 KM",
+                  "tier": "EARLY BIRD",
+                  "audience": "Việt Nam",
+                  "from": "12/07",
+                  "to": "10/08",
+                  "price": 400000
+                },
+                {
+                  "distance": "5 KM",
+                  "tier": "REGULAR",
+                  "audience": "Việt Nam",
+                  "from": "11/08",
+                  "to": "30/09",
+                  "price": 550000
+                },
+                {
+                  "distance": "5 KM",
+                  "tier": "LATE COMER",
+                  "audience": "Việt Nam",
+                  "from": "01/10",
+                  "to": "10/10",
+                  "price": 650000
+                },
+                {
+                  "distance": "3 KM",
+                  "tier": "FLASH SALE",
+                  "audience": "Việt Nam",
+                  "from": "24/06",
+                  "to": "11/07",
+                  "price": 120000
+                },
+                {
+                  "distance": "3 KM",
+                  "tier": "EARLY BIRD",
+                  "audience": "Việt Nam",
+                  "from": "12/07",
+                  "to": "10/08",
+                  "price": 195000
+                },
+                {
+                  "distance": "3 KM",
+                  "tier": "REGULAR",
+                  "audience": "Việt Nam",
+                  "from": "11/08",
+                  "to": "30/09",
+                  "price": 235000
+                },
+                {
+                  "distance": "3 KM",
+                  "tier": "LATE COMER",
+                  "audience": "Việt Nam",
+                  "from": "01/10",
+                  "to": "10/10",
+                  "price": 325000
+                }
+              ],
+              "distances": [
+                "21 KM",
+                "10 KM",
+                "5 KM",
+                "3 KM",
+                "FAMILY RUN"
+              ],
+              "date": "2026-10-10",
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2026/06/15/1781512792880030/uu-dai-nhom-(1).jpg",
+            "json": {
+              "prices": [],
+              "distances": [],
+              "date": "",
+              "currency": ""
+            }
+          }
+        ]
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-12T17:48:31.011Z"
+  "updatedAt": "2026-10-12T17:55:59.976Z"
 }
