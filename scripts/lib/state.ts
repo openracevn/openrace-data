@@ -4,6 +4,8 @@
  *
  * - checks.json: per race page, when it was last read, how it went, and the
  *   fingerprint of what was read. An unchanged fingerprint means nothing is paid for.
+ *   `pending` marks a page that changed and had only its free facts refreshed
+ *   (plan 026); `status: facts` without a fingerprint marks a page never read in full.
  * - sites.json:  per site, when it was last checked and how many runs in a row failed.
  * - credits.json: Firecrawl credits spent per calendar month (UTC), for the cap.
  */
@@ -24,6 +26,13 @@ export const CheckSchema = z.object({
   permanent: z.boolean().optional(),
   /** Hash of the content last read (read.ts snapshotFingerprint). */
   fingerprint: z.string().optional(),
+  /**
+   * The page changed since `fingerprint` and only its free facts were refreshed
+   * (check.ts --refresh, plan 026): the new fingerprint, waiting for a paid read.
+   * Cleared when the page is read in full.
+   */
+  pending: z.string().optional(),
+  pendingSince: z.iso.datetime().optional(),
 });
 export const ChecksSchema = z.record(z.url(), CheckSchema);
 

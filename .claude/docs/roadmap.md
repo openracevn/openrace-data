@@ -23,7 +23,7 @@ Day-to-day tasks live in [status.md](status.md); how things are built lives in [
 
 1. **Trusted data.** Any source (sellers, hubs, race sites), recipes, agent-read, price tiers, series and organizers. *Built (design v2).*
 2. **Questions people ask** (table below): schema v3 and API queries. *Built: [plan 003](../plans/003-2026-09-24-schema-v3-geo-price.md), live 2026-09-24.*
-3. **Fresh without effort.** Freshness in the API (plan 003), then the daily cron once the data is trusted.
+3. **Fresh without effort.** Freshness in the API (plan 003), then the scheduled runs ([plan 026](../plans/026-2026-10-13-scheduled-freshness.md), 2026-10-13): a daily free refresh (facts, fingerprints, new races), a weekly paid read within a cap, and a Monday digest that is the to-do list for a Claude session.
 4. **Stats from the data:**
    - trail races per year
    - North vs Central vs South
@@ -86,6 +86,8 @@ Old place names ("Nha Trang", "Bình Dương") must keep working after the 2025 
 ## Change log
 
 Deliberate changes of direction, newest first.
+
+- **2026-10-13 (plan 026):** Scheduled runs may spend Firecrawl credits, up to a scheduled cap (`scheduledMonthlyCredits` in `config/sites.yaml`, 600 of the Free plan's 1,000) and only on sites marked `trusted` (recipe checked by eye against a known answer). The 2026-09-29 rule stands for interactive sessions: Claude asks before a paid read. Reason: Free-plan credits don't roll over, so a capped scheduled spend costs nothing, and in a scheduled run there is no Claude to read pages for free. The budget constraint (≤ $5/month, no Claude API in scheduled runs) is unchanged. Confirmed by the user.
 
 - **2026-10-12 (plan 025, amended twice):** MCP only, and no OpenRace website. The API is no longer public: only openrace-mcp (through its service binding) and the openrace-data sync webhook reach it. openrace-web is archived (tagged, not deleted) and OpenRace launches on the Perxel website. Path step 4's stats page is dropped with it. No CORS, no public API reference, no data catalogues (Firecrawl's provider catalogue dropped). The openrace-data repo stays public for now but isn't promoted. Confirmed by the user.
 - **2026-10-12 (plan 025):** The API and MCP server are the product; the website shrinks to a few static pages (home and how to connect, stats with real charts, transparency). Race, series, organizer and hub pages are removed, and so is the goal of web traffic; the reasoning is in "Who we serve, and why not web traffic". No hosted chatbot (budget). Launch is on `openrace.perxel.com`; `openrace.vn` waits until there is budget. This replaces the 2026-09-29 (plan 022) line. Confirmed by the user.

@@ -24,6 +24,13 @@ export const SiteSchema = z
     hosts: z.array(z.string().min(1)).optional(),
     recipe: z.string().min(1),
     check: z.enum(CADENCES).default("manual"),
+    /**
+     * The recipe's output for this site was compared by eye with the live page or
+     * image (a known answer in test/answers.test.ts or recipe fixtures). Scheduled
+     * runs pay for reads only on trusted sites (plan 026); the rest get free
+     * refreshes and wait for a paid check by hand.
+     */
+    trusted: z.boolean().default(false),
     series: entity.optional(),
     organizer: entity.optional(),
   })
@@ -31,6 +38,8 @@ export const SiteSchema = z
 
 export const SitesConfigSchema = z.object({
   monthlyCredits: z.number().int().nonnegative(),
+  /** Credits scheduled runs (check.ts --scheduled) may spend per calendar month; the rest is kept for manual runs. Default: monthlyCredits. */
+  scheduledMonthlyCredits: z.number().int().nonnegative().optional(),
   sites: z.array(SiteSchema).superRefine((sites, ctx) => {
     const keys = new Set<string>();
     const hosts = new Map<string, string>();
