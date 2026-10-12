@@ -4,6 +4,8 @@ Direction and the questions we're building toward: [roadmap.md](roadmap.md). Des
 
 ## Built and verified
 
+- **MCP only (2026-10-12, [plan 025](../plans/025-2026-10-12-mcp-only.md)):** openrace-api is internal (404 without `X-MCP-Secret`; only the sync webhook is public), openrace-mcp is the only door (`https://openrace-mcp.bmp.workers.dev/mcp`, about and connect: `/llms.txt`, weekly numbers: `/weekly.json`, posted to Discord on Mondays), openrace-web archived (tag `archive/full-site-2026-10-12`). `npm run e2e` checks data → API → MCP end to end; `main.yml` alerts Discord when it fails. Licenses: MIT code, CC BY 4.0 data.
+
 - **Schema v2:** price tiers with dates and audience (resident / non-resident), series and organizers, registrations, links, flags; location as written. JSON Schema in `schema/`.
 - **Site list** `config/sites.yaml`:
   - read with a recipe: ActiUp, VnExpress Marathon, and 4 race sites (HCMC Marathon, Hạ Long, Lâm Đồng Trail, Run To Live);

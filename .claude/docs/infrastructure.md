@@ -39,6 +39,8 @@ main.yml  (skipped entirely when only state/** changed; ONE job, steps in this o
   └─ alert discord    only if a step above failed (plan 025)
 ```
 
+**Weekly numbers:** `weekly.yml` (Mondays 08:10 in Vietnam) runs `npm run notify:weekly`: one Discord message with MCP tool calls, caller keys and clients per week and the completeness score against a week before, read from openrace-mcp's public `/weekly.json`. These are the numbers OpenRace is measured by (roadmap: not page views).
+
 **End-to-end check:** `npm run e2e` (`scripts/e2e-check.ts`, plan 025) checks the whole chain against the deployed Workers: the API is closed (404) but its webhook answers, the MCP server is up, every tool answers the roadmap questions, and races in this checkout match what `get_race` returns. No secrets, no writes, ~20 MCP calls. Run it on an up-to-date `main` after any change to the API, the MCP server or the sync.
 
 ## Traps

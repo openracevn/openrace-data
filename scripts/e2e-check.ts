@@ -4,7 +4,7 @@
  *
  * 1. openrace-api is internal: its public URL answers 404 on every read route, and the
  *    sync webhook still answers (401 without X-Sync-Secret, not 404).
- * 2. openrace-mcp is up: /health, /llms.txt, and tools/list has exactly the expected tools.
+ * 2. openrace-mcp is up: /health, /llms.txt, /weekly.json, and tools/list has exactly the expected tools.
  * 3. Every MCP tool answers the roadmap questions, in Vietnamese and English, without a
  *    tool error and with results where results must exist.
  * 4. The data made it through: a few races from data/ in this checkout (run it on an
@@ -112,6 +112,14 @@ await check("MCP /llms.txt", async () => {
   assert(text.includes("OpenRace by Perxel"), "no attribution");
   assert(!/openrace-api/.test(text), "mentions the internal API");
   return `${text.length} chars`;
+});
+await check("MCP /weekly.json", async () => {
+  const res = await fetch(`${MCP_URL}/weekly.json`);
+  const body = (await res.json()) as Json;
+  assert(res.ok, `HTTP ${res.status}`);
+  assert(Array.isArray(body.usage), `usage: ${JSON.stringify(body.usage)}`);
+  assert(typeof body.completeness?.score === "number", `completeness: ${JSON.stringify(body.completeness)}`);
+  return `${body.usage[0].calls} calls this week, completeness ${body.completeness.score}`;
 });
 await check("MCP tools/list", async () => {
   const names = ((await rpc("tools/list")).tools as Json[]).map((t) => t.name as string).sort();

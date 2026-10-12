@@ -32,7 +32,7 @@ Day-to-day tasks live in [status.md](status.md); how things are built lives in [
    - share of races with GPX
    - price trends by year
    - deeper stats once there's enough history (backfill)
-5. **Open it up, through MCP only.** The MCP server **is the product** and the only public way in: the data reaches people through AI assistants (Claude, ChatGPT, Cursor) and other MCP clients, and we list it in MCP registries. The API is internal: only openrace-mcp (service binding) and our own builds call it (change log, 2026-10-12). There is no OpenRace website: OpenRace is presented on the Perxel website, and openrace-web is archived (see "Who we serve, and why not web traffic"). *API built (to be made internal); MCP server built ([plan 005](../plans/005-2026-09-24-mcp-server.md), live 2026-09-24); MCP-only launch: [plan 025](../plans/025-2026-10-12-mcp-only.md).*
+5. **Open it up, through MCP only.** The MCP server **is the product** and the only public way in: the data reaches people through AI assistants (Claude, ChatGPT, Cursor) and other MCP clients, and we list it in MCP registries. The API is internal: only openrace-mcp (service binding) and our own builds call it (change log, 2026-10-12). There is no OpenRace website: OpenRace is presented on the Perxel website, and openrace-web is archived (see "Who we serve, and why not web traffic"). *API built, internal since 2026-10-12; MCP server built ([plan 005](../plans/005-2026-09-24-mcp-server.md), live 2026-09-24), with `/llms.txt` and `/weekly.json`; MCP-only launch infrastructure built 2026-10-12 ([plan 025](../plans/025-2026-10-12-mcp-only.md)). Listings and the live assistant check are left to the user.*
 
 ## Who we serve, and why not web traffic
 
