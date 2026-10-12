@@ -1,0 +1,157 @@
+{
+  "id": "6d5532bc-eb2f-4494-8793-e4e96b749cd2",
+  "slug": "dong-nai-marathon-truong-tuoi-group-cup-bao-va-phat-thanh-truyen-hinh-dong-nai",
+  "name": "ĐỒNG NAI MARATHON - TRƯỜNG TƯƠI GROUP CÚP BÁO VÀ PHÁT THANH TRUYỀN HÌNH ĐỒNG NAI",
+  "types": [
+    "other"
+  ],
+  "date": "2026-11-29",
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": null,
+  "organizerId": "vietrace365",
+  "organizer": "VIETRACE365",
+  "edition": null,
+  "courses": [],
+  "location": {
+    "venue": "Quảng trường Phường Bình Phước, Phường Bình Phước, Thành phố Đồng Nai",
+    "city": null
+  },
+  "geo": {
+    "lat": 11.5374934,
+    "lng": 106.9021465,
+    "source": "nominatim",
+    "precision": "ward",
+    "current": {
+      "province": "75",
+      "ward": "25195"
+    },
+    "legacy": {
+      "province": "70",
+      "district": "689",
+      "ward": "25205"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 120,
+        "minutes": 90,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1433.7,
+        "minutes": 1094,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 740.7,
+        "minutes": 558,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 402.8,
+        "minutes": 333,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 271.2,
+        "minutes": 208,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 279.1,
+        "minutes": 218,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1467.8,
+        "minutes": 1118,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 823.4,
+        "minutes": 633,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 171.5,
+        "minutes": 170,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 499.2,
+        "minutes": 416,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 236.7,
+        "minutes": 170,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1741.5,
+        "minutes": 1326,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1517.5,
+        "minutes": 1151,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/dong-nai-marathon-truong-tuoi-group-cup-bao-va-phat-thanh-truyen-hinh-dong-nai"
+    }
+  ],
+  "links": [],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/dong-nai-marathon-truong-tuoi-group-cup-bao-va-phat-thanh-truyen-hinh-dong-nai",
+      "lastCheckedAt": "2026-10-12T17:47:12.440Z",
+      "lastChangedAt": "2026-10-12T17:47:12.440Z",
+      "extracted": {
+        "facts": {
+          "name": "ĐỒNG NAI MARATHON - TRƯỜNG TƯƠI GROUP CÚP BÁO VÀ PHÁT THANH TRUYỀN HÌNH ĐỒNG NAI",
+          "date": "2026-11-29",
+          "venue": "Quảng trường Phường Bình Phước, Phường Bình Phước, Thành phố Đồng Nai",
+          "organizer": "VIETRACE365",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 269000
+        },
+        "links": [],
+        "organizer": {
+          "id": "vietrace365",
+          "name": "VIETRACE365"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-10-12T17:48:31.011Z",
+  "updatedAt": "2026-10-12T17:48:31.011Z"
+}

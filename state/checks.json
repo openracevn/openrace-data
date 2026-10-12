@@ -16,7 +16,7 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/2026-international-run-for-a-green-da-lat": {
-    "lastCheckedAt": "2026-09-23T18:49:38.268Z",
+    "lastCheckedAt": "2026-10-12T17:47:21.617Z",
     "status": "ok",
     "fingerprint": "9c7fe020c9e3b5744967269c7e4ca1ef"
   },
@@ -25,26 +25,30 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/2026-ironkids-viet-nam-in-phu-quoc": {
-    "lastCheckedAt": "2026-09-24T06:43:09.238Z",
+    "lastCheckedAt": "2026-10-12T17:47:20.676Z",
     "status": "ok",
-    "fingerprint": "e4f6b3bf2f47927568e2555496708140"
+    "fingerprint": "e4f6b3bf2f47927568e2555496708140",
+    "pending": "11642ce5ac1574be569fc873fc3c11b4",
+    "pendingSince": "2026-10-12T17:47:20.676Z"
   },
   "https://actiup.net/vi/event/2026-sunrise-sprint-viet-nam-in-da-nang": {
     "lastCheckedAt": "2026-09-23T18:31:17.176Z",
     "status": "facts"
   },
   "https://actiup.net/vi/event/2026-sunrise-sprint-viet-nam-in-phu-quoc": {
-    "lastCheckedAt": "2026-09-24T06:43:09.238Z",
+    "lastCheckedAt": "2026-10-12T17:47:20.108Z",
     "status": "ok",
-    "fingerprint": "62ae3f9741a6c212d1ee77237859ccf1"
+    "fingerprint": "62ae3f9741a6c212d1ee77237859ccf1",
+    "pending": "ac5b4ab91e657db06b933a21cfdd43e1",
+    "pendingSince": "2026-10-12T17:47:20.108Z"
   },
   "https://actiup.net/vi/event/2027-ironkids-viet-nam-in-da-nang": {
-    "lastCheckedAt": "2026-09-23T18:52:15.212Z",
+    "lastCheckedAt": "2026-10-12T17:47:29.532Z",
     "status": "ok",
     "fingerprint": "07a30020e5e18959246407ae391b8fcc"
   },
   "https://actiup.net/vi/event/2027-sunrise-sprint-viet-nam-in-da-nang": {
-    "lastCheckedAt": "2026-09-23T18:52:10.297Z",
+    "lastCheckedAt": "2026-10-12T17:47:29.905Z",
     "status": "ok",
     "fingerprint": "3897744e21429a5e9d2b4212de8b5403"
   },
@@ -122,6 +126,10 @@
     "lastCheckedAt": "2026-09-23T18:31:14.801Z",
     "status": "facts"
   },
+  "https://actiup.net/vi/event/aqua-warriors-halong-bay-2027": {
+    "lastCheckedAt": "2026-10-12T17:47:14.353Z",
+    "status": "facts"
+  },
   "https://actiup.net/vi/event/aqua-warriors-hue-2026": {
     "lastCheckedAt": "2026-09-23T18:31:00.290Z",
     "status": "facts"
@@ -159,7 +167,7 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/bac-ninh-legacy-marathon-2027": {
-    "lastCheckedAt": "2026-09-23T18:52:20.412Z",
+    "lastCheckedAt": "2026-10-12T17:47:28.220Z",
     "status": "ok",
     "fingerprint": "c0c12cf733869c9927005a4f6b76c3c5"
   },
@@ -260,7 +268,7 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/cuc-phuong-jungle-paths-2026": {
-    "lastCheckedAt": "2026-09-25T04:03:37.715Z",
+    "lastCheckedAt": "2026-10-12T17:47:26.561Z",
     "status": "ok",
     "fingerprint": "b514454e732d6619f1120b00f6563b89"
   },
@@ -305,6 +313,10 @@
     "lastCheckedAt": "2026-09-23T18:31:15.563Z",
     "status": "facts"
   },
+  "https://actiup.net/vi/event/dalat-ultra-trail-2027": {
+    "lastCheckedAt": "2026-10-12T17:47:13.983Z",
+    "status": "facts"
+  },
   "https://actiup.net/vi/event/danang-mountain-trail-2026": {
     "lastCheckedAt": "2026-09-23T18:31:03.512Z",
     "status": "facts"
@@ -318,6 +330,10 @@
     "status": "ok",
     "fingerprint": "bbe13092fa92ce8001dcf1d6bc82227a"
   },
+  "https://actiup.net/vi/event/dat-thep-city-trail-2027": {
+    "lastCheckedAt": "2026-10-12T17:47:13.156Z",
+    "status": "facts"
+  },
   "https://actiup.net/vi/event/den-hung-spirituality-marathon-2024-ve-nguon": {
     "lastCheckedAt": "2026-09-23T18:32:36.339Z",
     "status": "facts"
@@ -330,8 +346,12 @@
     "lastCheckedAt": "2026-09-23T18:31:54.155Z",
     "status": "facts"
   },
+  "https://actiup.net/vi/event/dong-nai-marathon-truong-tuoi-group-cup-bao-va-phat-thanh-truyen-hinh-dong-nai": {
+    "lastCheckedAt": "2026-10-12T17:47:12.440Z",
+    "status": "facts"
+  },
   "https://actiup.net/vi/event/empower-run-2026": {
-    "lastCheckedAt": "2026-09-24T05:54:22.509Z",
+    "lastCheckedAt": "2026-10-12T17:47:24.730Z",
     "status": "ok",
     "fingerprint": "ddeb53440154f681bdb78863a5f8d4ce"
   },
@@ -340,7 +360,7 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/fv-run": {
-    "lastCheckedAt": "2026-09-24T05:54:22.509Z",
+    "lastCheckedAt": "2026-10-12T17:47:17.124Z",
     "status": "ok",
     "fingerprint": "8255c5ab98dec8951a4140c2ddbda3a7"
   },
@@ -358,9 +378,11 @@
     "fingerprint": "e4b1792ebe8fc1c56f56410562866071"
   },
   "https://actiup.net/vi/event/gemadept-run-the-way-forward-2026": {
-    "lastCheckedAt": "2026-09-24T06:43:09.238Z",
+    "lastCheckedAt": "2026-10-12T17:47:15.649Z",
     "status": "ok",
-    "fingerprint": "0595fbe022c0738039ffea3dfefc576c"
+    "fingerprint": "0595fbe022c0738039ffea3dfefc576c",
+    "pending": "195dca803023a9bc7d29b8a4eaa58f26",
+    "pendingSince": "2026-10-12T17:47:15.649Z"
   },
   "https://actiup.net/vi/event/gia-lai-city-trail-2025-giac-mo-dai-ngan": {
     "lastCheckedAt": "2026-09-28T16:24:07.097Z",
@@ -368,9 +390,11 @@
     "fingerprint": "6b56109ef96a85fc2be5dd15503ef48e"
   },
   "https://actiup.net/vi/event/gia-lai-city-trail-giac-mo-dai-ngan-2026": {
-    "lastCheckedAt": "2026-09-24T06:43:09.238Z",
+    "lastCheckedAt": "2026-10-12T17:47:16.606Z",
     "status": "ok",
-    "fingerprint": "31d9b5a0c388839eb52cc05c37c4a78d"
+    "fingerprint": "31d9b5a0c388839eb52cc05c37c4a78d",
+    "pending": "91c616ff1f4717c2a8baa794c038b3de",
+    "pendingSince": "2026-10-12T17:47:16.606Z"
   },
   "https://actiup.net/vi/event/giai-ban-marathon-quoc-te-viet-nam-2024": {
     "lastCheckedAt": "2026-09-23T18:32:37.951Z",
@@ -397,9 +421,11 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/giai-chay-hong-pink-run-2026": {
-    "lastCheckedAt": "2026-09-24T05:54:22.509Z",
+    "lastCheckedAt": "2026-10-12T17:47:17.198Z",
     "status": "ok",
-    "fingerprint": "8b4f34b10d0bf24e3239266856514b04"
+    "fingerprint": "8b4f34b10d0bf24e3239266856514b04",
+    "pending": "f992bcd2cd787ce58681931327b0222e",
+    "pendingSince": "2026-10-12T17:47:17.198Z"
   },
   "https://actiup.net/vi/event/giai-chay-marathon-quoc-te-strong-viet-nam-vung-tau-2024": {
     "lastCheckedAt": "2026-09-23T18:32:17.047Z",
@@ -435,7 +461,7 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/giai-marathon-ca-mau-2026-cup-petrovietnam": {
-    "lastCheckedAt": "2026-09-24T05:54:22.509Z",
+    "lastCheckedAt": "2026-10-12T17:47:21.139Z",
     "status": "ok",
     "fingerprint": "d2e88293f3658f1ae41ab680146fcd59"
   },
@@ -452,7 +478,7 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/giai-marathon-quoc-te-di-san-can-tho-quan-quan-21": {
-    "lastCheckedAt": "2026-09-24T05:54:22.509Z",
+    "lastCheckedAt": "2026-10-12T17:47:26.448Z",
     "status": "ok",
     "fingerprint": "5cbbe30670c00d5ae9867f769e45a68c"
   },
@@ -496,9 +522,11 @@
     "fingerprint": "fb41af9f60bdfdb1c131c2237c6d4778"
   },
   "https://actiup.net/vi/event/halong-bay-heritage-marathon-2026": {
-    "lastCheckedAt": "2026-09-25T04:03:37.715Z",
+    "lastCheckedAt": "2026-10-12T17:47:22.012Z",
     "status": "ok",
-    "fingerprint": "db8e17db4bfe1b28961690e8f0961baf"
+    "fingerprint": "db8e17db4bfe1b28961690e8f0961baf",
+    "pending": "57f39cbccfeb84b633bc5f1ea89237cd",
+    "pendingSince": "2026-10-12T17:47:22.012Z"
   },
   "https://actiup.net/vi/event/hanh-trinh-80-nam-vi-an-ninh-to-quoc": {
     "lastCheckedAt": "2026-09-23T18:31:25.287Z",
@@ -604,7 +632,7 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/lamdong-trail-2026": {
-    "lastCheckedAt": "2026-09-24T06:43:09.238Z",
+    "lastCheckedAt": "2026-10-12T17:47:18.009Z",
     "status": "ok",
     "fingerprint": "516eda2760740f289647ee973e868a1c"
   },
@@ -613,7 +641,7 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/lao-cai-marathon-2026-dong-chay-bien-cuong": {
-    "lastCheckedAt": "2026-09-25T04:03:37.715Z",
+    "lastCheckedAt": "2026-10-12T17:47:14.792Z",
     "status": "ok",
     "fingerprint": "a52d4eec98709a2c187753c59094c877"
   },
@@ -654,6 +682,10 @@
     "lastCheckedAt": "2026-09-23T18:31:32.448Z",
     "status": "facts"
   },
+  "https://actiup.net/vi/event/mang-den-lala-trail-2027": {
+    "lastCheckedAt": "2026-10-12T17:47:13.559Z",
+    "status": "facts"
+  },
   "https://actiup.net/vi/event/mang-den-ultra-trail-2025": {
     "lastCheckedAt": "2026-09-23T18:32:09.853Z",
     "status": "facts"
@@ -664,7 +696,7 @@
     "fingerprint": "360a451228a4d6fca2e00ad7802041ab"
   },
   "https://actiup.net/vi/event/mang-den-ultra-trail-2027": {
-    "lastCheckedAt": "2026-09-24T06:43:09.238Z",
+    "lastCheckedAt": "2026-10-12T17:47:28.304Z",
     "status": "ok",
     "fingerprint": "327a197ec137daced7f2ce9e4171a89d"
   },
@@ -726,12 +758,16 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/nghe-an-legacy-marathon-ve-mien-non-xanh-nuoc-biec": {
-    "lastCheckedAt": "2026-09-24T05:54:22.509Z",
+    "lastCheckedAt": "2026-10-12T17:47:23.939Z",
     "status": "ok",
     "fingerprint": "ab2f32d2da47811ba719232bca5b70e6"
   },
   "https://actiup.net/vi/event/nha-trang-city-trail-2026": {
     "lastCheckedAt": "2026-09-23T18:31:01.168Z",
+    "status": "facts"
+  },
+  "https://actiup.net/vi/event/nha-trang-night-run-sanest-sanvinest-bkh-2026": {
+    "lastCheckedAt": "2026-10-12T17:47:12.799Z",
     "status": "facts"
   },
   "https://actiup.net/vi/event/ninh-binh-heritage-half-marathon-2025": {
@@ -780,9 +816,11 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/prenn-trail-summit-2026": {
-    "lastCheckedAt": "2026-09-23T19:22:57.623Z",
+    "lastCheckedAt": "2026-10-12T17:47:25.596Z",
     "status": "ok",
-    "fingerprint": "f37a770b7170ada336e42a3e6333936a"
+    "fingerprint": "f37a770b7170ada336e42a3e6333936a",
+    "pending": "ef25c58215ccf29da1788226c0f7bfbb",
+    "pendingSince": "2026-10-12T17:47:25.596Z"
   },
   "https://actiup.net/vi/event/quang-binh-discovery-marathon-2025": {
     "lastCheckedAt": "2026-09-23T18:31:51.744Z",
@@ -809,9 +847,11 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/quang-truc-half-marathon-2026-noi-nhip-bien-cuong": {
-    "lastCheckedAt": "2026-09-23T18:51:18.729Z",
+    "lastCheckedAt": "2026-10-12T17:47:19.611Z",
     "status": "ok",
-    "fingerprint": "bb59434d961ab37c2253cc17ec52231d"
+    "fingerprint": "bb59434d961ab37c2253cc17ec52231d",
+    "pending": "9dcad2ff9ad1b97f00fae3133ba5497a",
+    "pendingSince": "2026-10-12T17:47:19.611Z"
   },
   "https://actiup.net/vi/event/rang-ham-mat-smile-run-2026": {
     "lastCheckedAt": "2026-09-23T18:31:02.737Z",
@@ -826,7 +866,7 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/run-for-the-heart-2026": {
-    "lastCheckedAt": "2026-09-23T19:22:57.623Z",
+    "lastCheckedAt": "2026-10-12T17:47:24.303Z",
     "status": "ok",
     "fingerprint": "a880aa5818d8132d7a687595185a8569"
   },
@@ -843,9 +883,11 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/salonpas-run-2026": {
-    "lastCheckedAt": "2026-09-24T05:54:22.509Z",
+    "lastCheckedAt": "2026-10-12T17:47:18.172Z",
     "status": "ok",
-    "fingerprint": "0d7e7ea8b4af2e017e28a000ca42800f"
+    "fingerprint": "0d7e7ea8b4af2e017e28a000ca42800f",
+    "pending": "6cfe568b14cc4838cb5ab07e77a7c8be",
+    "pendingSince": "2026-10-12T17:47:18.172Z"
   },
   "https://actiup.net/vi/event/save-turtles-run-2025": {
     "lastCheckedAt": "2026-09-23T18:31:35.259Z",
@@ -893,9 +935,11 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/son-tra-city-trail-2026": {
-    "lastCheckedAt": "2026-09-23T18:51:45.377Z",
+    "lastCheckedAt": "2026-10-12T17:47:26.940Z",
     "status": "ok",
-    "fingerprint": "28cbd67b3d2d5531a8d5694149e1c076"
+    "fingerprint": "28cbd67b3d2d5531a8d5694149e1c076",
+    "pending": "5b8f8a132fd69ced5a6d37d3f6fef6fd",
+    "pendingSince": "2026-10-12T17:47:26.940Z"
   },
   "https://actiup.net/vi/event/song-hong-half-marathon-2024": {
     "lastCheckedAt": "2026-09-23T18:32:07.424Z",
@@ -914,9 +958,11 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/standard-chartered-hanoi-marathon-heritage-race-2026": {
-    "lastCheckedAt": "2026-09-24T06:43:09.238Z",
+    "lastCheckedAt": "2026-10-12T17:47:18.955Z",
     "status": "ok",
-    "fingerprint": "1eec72896e00f38e700d150801c3162c"
+    "fingerprint": "1eec72896e00f38e700d150801c3162c",
+    "pending": "ab7ed28afac3301bc660e6dcd1c605ef",
+    "pendingSince": "2026-10-12T17:47:18.955Z"
   },
   "https://actiup.net/vi/event/stop-and-run-marathon-binh-thuan-2024": {
     "lastCheckedAt": "2026-09-23T18:32:37.153Z",
@@ -993,7 +1039,7 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/tet-run-mien-nam-2027": {
-    "lastCheckedAt": "2026-09-23T18:50:00.594Z",
+    "lastCheckedAt": "2026-10-12T17:47:28.719Z",
     "status": "ok",
     "fingerprint": "b63c872d85639d0c847297297c7f5836"
   },
@@ -1003,7 +1049,7 @@
     "fingerprint": "4ba727d11dfd293ca78de0da49230668"
   },
   "https://actiup.net/vi/event/the-9th-edition-of-the-techcombank-ho-chi-minh-city-internationalmarathon": {
-    "lastCheckedAt": "2026-09-24T06:43:09.238Z",
+    "lastCheckedAt": "2026-10-12T17:47:25.116Z",
     "status": "ok",
     "fingerprint": "e82134dbf2ad693cf8003a091a0d66af"
   },
@@ -1031,9 +1077,11 @@
     "fingerprint": "a1dd06d76b218e9782d9c26a7ed1a473"
   },
   "https://actiup.net/vi/event/tien-phong-marathon-dien-bien-discovery-2026": {
-    "lastCheckedAt": "2026-09-24T05:54:22.509Z",
+    "lastCheckedAt": "2026-10-12T17:47:27.784Z",
     "status": "ok",
-    "fingerprint": "e9c0021fd6b8ad71124b05d87dca13e7"
+    "fingerprint": "e9c0021fd6b8ad71124b05d87dca13e7",
+    "pending": "0b30770ed36acd7ee5997234b950ee27",
+    "pendingSince": "2026-10-12T17:47:27.784Z"
   },
   "https://actiup.net/vi/event/tien-phong-marathon-national-championship-2024": {
     "lastCheckedAt": "2026-09-29T04:39:05.161Z",
@@ -1061,7 +1109,7 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/trang-an-marathon-2026": {
-    "lastCheckedAt": "2026-09-25T04:03:37.715Z",
+    "lastCheckedAt": "2026-10-12T17:47:21.219Z",
     "status": "ok",
     "fingerprint": "3100085b932b61bf733247b760f2a1f5"
   },
@@ -1094,7 +1142,7 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/ultra-trail-cao-bang-2026": {
-    "lastCheckedAt": "2026-09-24T06:43:09.238Z",
+    "lastCheckedAt": "2026-10-12T17:47:23.005Z",
     "status": "ok",
     "fingerprint": "eb187faa95267f9eb61eb67c059648f3"
   },
@@ -1147,7 +1195,7 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/vietnam-festrival-2027": {
-    "lastCheckedAt": "2026-09-23T18:50:56.802Z",
+    "lastCheckedAt": "2026-10-12T17:47:29.183Z",
     "status": "ok",
     "fingerprint": "90e3e56048868f617fd132675568f8b8"
   },
@@ -1210,7 +1258,7 @@
     "fingerprint": "6bac0a9d1b81c4d746d35a4dbc1e94a2"
   },
   "https://actiup.net/vi/event/vpbank-hanoi-international-marathon-2026": {
-    "lastCheckedAt": "2026-09-25T04:03:37.715Z",
+    "lastCheckedAt": "2026-10-12T17:47:15.157Z",
     "status": "ok",
     "fingerprint": "c115e1706f0443f614126882e304f7c5"
   },
@@ -1239,9 +1287,11 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/vung-tau-city-trail": {
-    "lastCheckedAt": "2026-09-23T19:01:53.539Z",
+    "lastCheckedAt": "2026-10-12T17:47:23.102Z",
     "status": "ok",
-    "fingerprint": "299c64cfd1ec4c19732fcd5a3d2ebfbd"
+    "fingerprint": "299c64cfd1ec4c19732fcd5a3d2ebfbd",
+    "pending": "286484289e94b5c035a7cee686844b66",
+    "pendingSince": "2026-10-12T17:47:23.102Z"
   },
   "https://actiup.net/vi/event/vung-tau-discovery-night-run-2024": {
     "lastCheckedAt": "2026-09-23T18:31:58.580Z",
@@ -1252,7 +1302,7 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/yen-tu-heritage-marathon-2026": {
-    "lastCheckedAt": "2026-09-24T06:43:09.238Z",
+    "lastCheckedAt": "2026-10-12T17:47:23.824Z",
     "status": "ok",
     "fingerprint": "83f1eacde5093f85ac134a210dc5f945"
   },
@@ -1273,12 +1323,14 @@
     "status": "facts"
   },
   "https://halongmarathon.com/": {
-    "lastCheckedAt": "2026-09-25T05:03:56.536Z",
+    "lastCheckedAt": "2026-10-12T17:47:57.345Z",
     "status": "ok",
-    "fingerprint": "4bb1ea23c7ace3769227eafc013855bb"
+    "fingerprint": "4bb1ea23c7ace3769227eafc013855bb",
+    "pending": "a0bd325faa64d19fbc8623f07f385b9b",
+    "pendingSince": "2026-10-12T17:47:57.345Z"
   },
   "https://hcmcmarathon.com/": {
-    "lastCheckedAt": "2026-09-25T05:01:22.419Z",
+    "lastCheckedAt": "2026-10-12T17:47:54.751Z",
     "status": "ok",
     "fingerprint": "a79f68e5920547fc6476cd73632397a0"
   },
@@ -1308,44 +1360,132 @@
     "fingerprint": "d6012159479ad557d8de38281209b67f"
   },
   "https://lamdongtrail.vn/": {
-    "lastCheckedAt": "2026-09-25T05:01:22.419Z",
+    "lastCheckedAt": "2026-10-12T17:47:59.643Z",
     "status": "ok",
-    "fingerprint": "4633fd897137e532faec85d55b7e3fa6"
+    "fingerprint": "4633fd897137e532faec85d55b7e3fa6",
+    "pending": "128d0a3ba2757e9e9ee04330172be64b",
+    "pendingSince": "2026-10-12T17:47:59.643Z"
   },
   "https://runtolive.vn/": {
-    "lastCheckedAt": "2026-09-25T05:01:22.419Z",
+    "lastCheckedAt": "2026-10-12T17:48:06.320Z",
     "status": "ok",
-    "fingerprint": "22ca47fb7111c2fdab74dccadbbae0ee"
+    "fingerprint": "22ca47fb7111c2fdab74dccadbbae0ee",
+    "pending": "11daee4878236bebf6aee8c34c6b384b",
+    "pendingSince": "2026-10-12T17:48:06.320Z"
+  },
+  "https://ticket.irace.vn/aqua-warriors-halong-bay-2027": {
+    "lastCheckedAt": "2026-10-12T17:47:32.056Z",
+    "status": "facts"
+  },
+  "https://ticket.irace.vn/bac-ninh-legacy-marathon-2027": {
+    "lastCheckedAt": "2026-10-12T17:47:36.358Z",
+    "status": "facts"
+  },
+  "https://ticket.irace.vn/cuc-phuong-jungle-paths-2026": {
+    "lastCheckedAt": "2026-10-12T17:47:39.991Z",
+    "status": "facts"
   },
   "https://ticket.irace.vn/dat-sen-hong-marathon-dong-thap-2024": {
     "lastCheckedAt": "2026-09-27T02:43:40.147Z",
     "status": "ok",
     "fingerprint": "d4b460f96aa874b2f94875de609147b5"
   },
+  "https://ticket.irace.vn/dat-thep-city-trail-2027": {
+    "lastCheckedAt": "2026-10-12T17:47:31.646Z",
+    "status": "facts"
+  },
+  "https://ticket.irace.vn/deep-c-run-royale-2026": {
+    "lastCheckedAt": "2026-10-12T17:47:34.465Z",
+    "status": "facts"
+  },
+  "https://ticket.irace.vn/dong-nai-marathon-truong-tuoi-group-cup-bao-va-phat-thanh-truyen-hinh-dong-nai": {
+    "lastCheckedAt": "2026-10-12T17:47:31.329Z",
+    "status": "facts"
+  },
+  "https://ticket.irace.vn/giai-marathon-ca-mau-2026": {
+    "lastCheckedAt": "2026-10-12T17:47:37.577Z",
+    "status": "facts"
+  },
   "https://ticket.irace.vn/halong-bay-heritage-marathon-2023": {
     "lastCheckedAt": "2026-09-27T02:49:56.839Z",
     "status": "ok",
     "fingerprint": "776d83b134503129f74997052010a3fc"
+  },
+  "https://ticket.irace.vn/hanh-trinh-tiep-suc-2026": {
+    "lastCheckedAt": "2026-10-12T17:47:37.890Z",
+    "status": "facts"
   },
   "https://ticket.irace.vn/lao-cai-marathon-2026": {
     "lastCheckedAt": "2026-09-26T12:46:14.409Z",
     "status": "ok",
     "fingerprint": "7d5709bfb774ba85de8db4f24ae365a8"
   },
+  "https://ticket.irace.vn/mang-den-lala-trail-2027": {
+    "lastCheckedAt": "2026-10-12T17:47:32.460Z",
+    "status": "facts"
+  },
   "https://ticket.irace.vn/mang-den-ultra-trail-2025": {
     "lastCheckedAt": "2026-09-29T04:59:19.621Z",
     "status": "ok",
     "fingerprint": "222eded878825d2dd98e8400d722dce8"
+  },
+  "https://ticket.irace.vn/marathon-quoc-te-di-san-can-tho-2026": {
+    "lastCheckedAt": "2026-10-12T17:47:37.086Z",
+    "status": "facts"
+  },
+  "https://ticket.irace.vn/nghe-an-legacy-marathon-2026": {
+    "lastCheckedAt": "2026-10-12T17:47:38.277Z",
+    "status": "facts"
+  },
+  "https://ticket.irace.vn/nha-trang-night-run-sanest-sanvinest-bkh-2026": {
+    "lastCheckedAt": "2026-10-12T17:47:30.965Z",
+    "status": "facts"
+  },
+  "https://ticket.irace.vn/quang-truc-half-marathon-2026": {
+    "lastCheckedAt": "2026-10-12T17:47:34.039Z",
+    "status": "facts"
+  },
+  "https://ticket.irace.vn/quoc-te-vi-da-lat-xanh-2026": {
+    "lastCheckedAt": "2026-10-12T17:47:32.890Z",
+    "status": "facts"
+  },
+  "https://ticket.irace.vn/run-for-the-heart-2026": {
+    "lastCheckedAt": "2026-10-12T17:47:36.661Z",
+    "status": "facts"
+  },
+  "https://ticket.irace.vn/son-tra-city-trail-2026": {
+    "lastCheckedAt": "2026-10-12T17:47:35.825Z",
+    "status": "facts"
   },
   "https://ticket.irace.vn/standard-chartered-marathon-di-san-ha-noi-2026": {
     "lastCheckedAt": "2026-09-26T06:31:20.332Z",
     "status": "ok",
     "fingerprint": "97a88febce0708709602c09798957f63"
   },
+  "https://ticket.irace.vn/trang-an-marathon-2026": {
+    "lastCheckedAt": "2026-10-12T17:47:39.489Z",
+    "status": "facts"
+  },
+  "https://ticket.irace.vn/ultra-trail-cao-bang-2026": {
+    "lastCheckedAt": "2026-10-12T17:47:38.677Z",
+    "status": "facts"
+  },
+  "https://ticket.irace.vn/vietnam-festrival-2027": {
+    "lastCheckedAt": "2026-10-12T17:47:33.632Z",
+    "status": "facts"
+  },
   "https://ticket.irace.vn/vnexpress-marathon-grand-tour-nghe-an-2026": {
     "lastCheckedAt": "2026-09-26T05:36:57.420Z",
     "status": "ok",
     "fingerprint": "2124f77ea97a84fee404b0f75e506201"
+  },
+  "https://ticket.irace.vn/vnexpress-marathon-hai-phong-2026": {
+    "lastCheckedAt": "2026-10-12T17:47:35.240Z",
+    "status": "facts"
+  },
+  "https://ticket.irace.vn/vnexpress-marathon-hanoi-midnight-2026": {
+    "lastCheckedAt": "2026-10-12T17:47:34.835Z",
+    "status": "facts"
   },
   "https://ticket.irace.vn/vpbank-dat-sen-hong-music-marathon-2025": {
     "lastCheckedAt": "2026-09-27T02:43:40.147Z",
@@ -1362,40 +1502,58 @@
     "status": "ok",
     "fingerprint": "b60ebe703f0cf6f65f29788e5950222f"
   },
+  "https://ticket.irace.vn/vung-tau-city-trail-2026": {
+    "lastCheckedAt": "2026-10-12T17:47:33.262Z",
+    "status": "facts"
+  },
+  "https://ticket.irace.vn/yen-tu-heritage-marathon-2026": {
+    "lastCheckedAt": "2026-10-12T17:47:39.182Z",
+    "status": "facts"
+  },
   "https://vm.vnexpress.net/all-star-2026": {
-    "lastCheckedAt": "2026-09-28T13:50:23.300Z",
+    "lastCheckedAt": "2026-10-12T17:47:41.361Z",
     "status": "ok",
     "fingerprint": "4a61ada755cef0c9848430a6ee582c3d"
   },
   "https://vm.vnexpress.net/can-gio-2026": {
-    "lastCheckedAt": "2026-09-25T04:28:29.753Z",
+    "lastCheckedAt": "2026-10-12T17:47:44.387Z",
     "status": "ok",
-    "fingerprint": "aa4055449a52b55ed0e1494ed998be96"
+    "fingerprint": "aa4055449a52b55ed0e1494ed998be96",
+    "pending": "a77ba4a2506271c72740f0805a77d0a6",
+    "pendingSince": "2026-10-12T17:47:44.387Z"
   },
   "https://vm.vnexpress.net/can-tho-2026": {
-    "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+    "lastCheckedAt": "2026-10-12T17:47:45.434Z",
     "status": "ok",
-    "fingerprint": "5757911c603308eb5ef9991d12e6e8fe"
+    "fingerprint": "5757911c603308eb5ef9991d12e6e8fe",
+    "pending": "89d02432d076108bd6473b28727b28bc",
+    "pendingSince": "2026-10-12T17:47:45.434Z"
   },
   "https://vm.vnexpress.net/da-nang-2026": {
-    "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+    "lastCheckedAt": "2026-10-12T17:47:48.055Z",
     "status": "ok",
-    "fingerprint": "722e0c1639f841a25c8d024cab01f5d0"
+    "fingerprint": "722e0c1639f841a25c8d024cab01f5d0",
+    "pending": "1688d784bdcbb1b8af7147ff7ffc6b7f",
+    "pendingSince": "2026-10-12T17:47:48.055Z"
   },
   "https://vm.vnexpress.net/galaxy-run-2026": {
-    "lastCheckedAt": "2026-09-28T13:50:23.300Z",
+    "lastCheckedAt": "2026-10-12T17:47:46.307Z",
     "status": "ok",
     "fingerprint": "a96fd8bc0de4d05470f033563493a5ff"
   },
   "https://vm.vnexpress.net/ha-noi-2026": {
-    "lastCheckedAt": "2026-09-25T05:01:22.419Z",
+    "lastCheckedAt": "2026-10-12T17:47:52.869Z",
     "status": "ok",
-    "fingerprint": "f497fceb30c44c39f4b9f55d0d4b6377"
+    "fingerprint": "f497fceb30c44c39f4b9f55d0d4b6377",
+    "pending": "f8201fba947710f691d522e2a405016e",
+    "pendingSince": "2026-10-12T17:47:52.869Z"
   },
   "https://vm.vnexpress.net/hai-phong-2026": {
-    "lastCheckedAt": "2026-09-25T05:01:22.419Z",
+    "lastCheckedAt": "2026-10-12T17:47:53.824Z",
     "status": "ok",
-    "fingerprint": "0347e332d221c918b462805342638cb4"
+    "fingerprint": "0347e332d221c918b462805342638cb4",
+    "pending": "1d9f6f0c72f60dfcc606ee8d95b579a0",
+    "pendingSince": "2026-10-12T17:47:53.824Z"
   },
   "https://vm.vnexpress.net/ho-chi-minh-2023": {
     "lastCheckedAt": "2026-09-26T14:42:18.015Z",
@@ -1413,29 +1571,37 @@
     "fingerprint": "f763822ee5d2fda8c805612812063628"
   },
   "https://vm.vnexpress.net/ho-chi-minh-2026": {
-    "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+    "lastCheckedAt": "2026-10-12T17:47:42.091Z",
     "status": "ok",
-    "fingerprint": "0fb18c74572640d3c748035c44efba31"
+    "fingerprint": "0fb18c74572640d3c748035c44efba31",
+    "pending": "31b85bfbbdbea937736bb33f5d83a40e",
+    "pendingSince": "2026-10-12T17:47:42.091Z"
   },
   "https://vm.vnexpress.net/hue-2026": {
-    "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+    "lastCheckedAt": "2026-10-12T17:47:43.442Z",
     "status": "ok",
-    "fingerprint": "c09cb976a315d954d4722bb553a55da6"
+    "fingerprint": "c09cb976a315d954d4722bb553a55da6",
+    "pending": "ddcfd9359efcd8c644e53bef6285244a",
+    "pendingSince": "2026-10-12T17:47:43.442Z"
   },
   "https://vm.vnexpress.net/long-chau-2026": {
-    "lastCheckedAt": "2026-09-28T13:50:23.300Z",
+    "lastCheckedAt": "2026-10-12T17:47:40.766Z",
     "status": "ok",
     "fingerprint": "9a55568265d09cdad2a18ab50f400e47"
   },
   "https://vm.vnexpress.net/long-chau-can-tho-2026": {
-    "lastCheckedAt": "2026-09-25T04:28:29.753Z",
+    "lastCheckedAt": "2026-10-12T17:47:46.851Z",
     "status": "ok",
-    "fingerprint": "24845f0dfd19378102fe9f0e6574f860"
+    "fingerprint": "24845f0dfd19378102fe9f0e6574f860",
+    "pending": "a984254fc06f4c73ea7fcb0cbced0918",
+    "pendingSince": "2026-10-12T17:47:46.851Z"
   },
   "https://vm.vnexpress.net/nghe-an-2026": {
-    "lastCheckedAt": "2026-09-26T05:38:00.505Z",
+    "lastCheckedAt": "2026-10-12T17:47:51.726Z",
     "status": "ok",
-    "fingerprint": "eeb68468b31efc788411cc04c442c84a"
+    "fingerprint": "eeb68468b31efc788411cc04c442c84a",
+    "pending": "d1922056b7c1e4093049bca8bbf7c6e1",
+    "pendingSince": "2026-10-12T17:47:51.726Z"
   },
   "https://vm.vnexpress.net/nha-trang-2022": {
     "lastCheckedAt": "2026-09-26T13:37:21.014Z",
@@ -1458,9 +1624,11 @@
     "fingerprint": "50f1d40f66e0469cba0b58a76e3b4940"
   },
   "https://vm.vnexpress.net/nha-trang-2026": {
-    "lastCheckedAt": "2026-09-25T04:28:29.753Z",
+    "lastCheckedAt": "2026-10-12T17:47:48.931Z",
     "status": "ok",
-    "fingerprint": "6503ec6e3cdc9bbca61524a29d987a98"
+    "fingerprint": "6503ec6e3cdc9bbca61524a29d987a98",
+    "pending": "1661ffe921eb379ff9e240a896c43fe5",
+    "pendingSince": "2026-10-12T17:47:48.931Z"
   },
   "https://vm.vnexpress.net/quy-nhon-2019": {
     "lastCheckedAt": "2026-09-26T13:55:17.963Z",
@@ -1493,13 +1661,17 @@
     "fingerprint": "3adaaa7b94143fe57eff48eb88515ec0"
   },
   "https://vm.vnexpress.net/quy-nhon-2026": {
-    "lastCheckedAt": "2026-09-25T05:01:22.419Z",
+    "lastCheckedAt": "2026-10-12T17:47:50.759Z",
     "status": "ok",
-    "fingerprint": "65b4f6f4928235e5958219fce2974091"
+    "fingerprint": "65b4f6f4928235e5958219fce2974091",
+    "pending": "65686b7d327b54757d64cd61b8768d2b",
+    "pendingSince": "2026-10-12T17:47:50.759Z"
   },
   "https://vm.vnexpress.net/vung-tau-2026": {
-    "lastCheckedAt": "2026-09-25T04:28:29.753Z",
+    "lastCheckedAt": "2026-10-12T17:47:49.825Z",
     "status": "ok",
-    "fingerprint": "d3cb7df382103936e0e4de41eae8c834"
+    "fingerprint": "d3cb7df382103936e0e4de41eae8c834",
+    "pending": "e6646d6bb89daaf6ab35e72bf2ef4ed8",
+    "pendingSince": "2026-10-12T17:47:49.825Z"
   }
 }

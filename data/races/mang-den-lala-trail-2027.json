@@ -1,0 +1,169 @@
+{
+  "id": "a7ade95a-f6d3-4d9e-8ca4-32475a32b23b",
+  "slug": "mang-den-lala-trail-2027",
+  "name": "Măng Đen LaLa Trail 2027",
+  "types": [
+    "other"
+  ],
+  "date": "2027-03-05",
+  "endDate": "2027-03-07",
+  "mainDate": null,
+  "seriesId": "mang-den-lala-trail",
+  "organizerId": "cong-ty-tnhh-belove-mountain",
+  "organizer": "Công ty TNHH Belove Mountain",
+  "edition": null,
+  "courses": [],
+  "location": {
+    "venue": "Măng Đen",
+    "city": null
+  },
+  "geo": {
+    "lat": 14.6014606,
+    "lng": 108.2916225,
+    "source": "nominatim",
+    "precision": "ward",
+    "current": {
+      "province": "51",
+      "ward": "23473"
+    },
+    "legacy": {
+      "province": "62",
+      "district": "613",
+      "ward": "23473"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 619.2,
+        "minutes": 482,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1029.3,
+        "minutes": 803,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 274.2,
+        "minutes": 200,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 400.2,
+        "minutes": 354,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 447.6,
+        "minutes": 409,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 778.4,
+        "minutes": 610,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1063.4,
+        "minutes": 827,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 357,
+        "minutes": 275,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 668.1,
+        "minutes": 546,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 261.4,
+        "minutes": 197,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 279.7,
+        "minutes": 242,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1337.1,
+        "minutes": 1035,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1113.1,
+        "minutes": 860,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/mang-den-lala-trail-2027"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1MSDO4g5i9QzAZbQ1MqR3Nzs02ONP-o8E/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/mang-den-lala-trail-2027",
+      "lastCheckedAt": "2026-10-12T17:47:13.559Z",
+      "lastChangedAt": "2026-10-12T17:47:13.559Z",
+      "extracted": {
+        "facts": {
+          "name": "Măng Đen LaLa Trail 2027",
+          "date": "2027-03-05",
+          "endDate": "2027-03-07",
+          "venue": "Măng Đen",
+          "organizer": "Công ty TNHH Belove Mountain",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 568000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1MSDO4g5i9QzAZbQ1MqR3Nzs02ONP-o8E/view?usp=drive_link",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-tnhh-belove-mountain",
+          "name": "Công ty TNHH Belove Mountain"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-10-12T17:48:31.011Z",
+  "updatedAt": "2026-10-12T17:48:31.011Z"
+}

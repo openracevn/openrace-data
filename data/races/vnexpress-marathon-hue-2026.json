@@ -7,6 +7,7 @@
   ],
   "date": "2026-04-19",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "vnexpress-marathon-hue",
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
@@ -113,21 +114,21 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
-  "flags": [
-    "location: no source states a city; guessed \"Huế\" from the race's name"
-  ],
+  "participants": null,
+  "flags": [],
   "overrides": {},
   "sources": [
     {
       "site": "vnexpress-marathon",
       "role": "official",
       "url": "https://vm.vnexpress.net/hue-2026",
-      "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+      "lastCheckedAt": "2026-10-12T17:47:43.442Z",
       "lastChangedAt": "2026-09-25T04:11:49.673Z",
       "extracted": {
         "facts": {
           "name": "VnExpress Marathon Hue 2026",
-          "date": "2026-04-19"
+          "date": "2026-04-19",
+          "city": "Huế"
         },
         "pages": [
           {
@@ -159,5 +160,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T04:11:49.673Z",
-  "updatedAt": "2026-09-25T06:44:22.797Z"
+  "updatedAt": "2026-10-12T17:48:31.011Z"
 }

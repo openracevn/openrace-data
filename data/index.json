@@ -180,6 +180,21 @@
     "linkUrls": []
   },
   {
+    "id": "09f9ff76-e3ff-470c-891f-c6ace918b629",
+    "slug": "aqua-warriors-halong-bay-2027",
+    "name": "AQUA WARRIORS HALONG BAY 2027",
+    "date": "2027-04-03",
+    "endDate": "2027-04-04",
+    "mainDate": null,
+    "lastModified": "2026-10-12T17:48:31.011Z",
+    "file": "aqua-warriors-halong-bay-2027.json",
+    "seriesId": "aqua-warriors-halong-bay",
+    "sourceUrls": [
+      "https://actiup.net/vi/event/aqua-warriors-halong-bay-2027"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "0a2a61d8-6591-435c-a357-6a055e412244",
     "slug": "vnexpress-marathon-nha-trang-4",
     "name": "VnExpress Marathon Nha Trang 2024",
@@ -966,7 +981,7 @@
     "date": "2026-04-19",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-09-25T06:44:22.797Z",
+    "lastModified": "2026-10-12T17:48:31.011Z",
     "file": "vnexpress-marathon-hue-2026.json",
     "seriesId": "vnexpress-marathon-hue",
     "sourceUrls": [
@@ -997,7 +1012,7 @@
     "date": "2026-11-01",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-09-24T06:49:38.787Z",
+    "lastModified": "2026-10-12T17:48:31.011Z",
     "file": "giai-chay-hong-pink-run-2026.json",
     "seriesId": null,
     "sourceUrls": [
@@ -1384,7 +1399,7 @@
     "date": "2026-05-10",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-09-25T04:28:29.753Z",
+    "lastModified": "2026-10-12T17:48:31.011Z",
     "file": "vnexpress-marathon-can-tho-2026.json",
     "seriesId": "vnexpress-marathon-can-tho",
     "sourceUrls": [
@@ -1564,7 +1579,7 @@
     "date": "2026-11-14",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-09-29T07:47:42.659Z",
+    "lastModified": "2026-10-12T17:48:31.011Z",
     "file": "sunrise-sprint-viet-nam-in-phu-quoc-2026.json",
     "seriesId": "sunrise-sprint-viet-nam-in-phu-quoc",
     "sourceUrls": [
@@ -2039,9 +2054,9 @@
     "date": "2026-03-06",
     "endDate": "2026-03-08",
     "mainDate": null,
-    "lastModified": "2026-09-26T13:21:53.036Z",
+    "lastModified": "2026-10-12T17:48:31.011Z",
     "file": "mang-den-lala-trail-2026.json",
-    "seriesId": null,
+    "seriesId": "mang-den-lala-trail",
     "sourceUrls": [
       "https://actiup.net/vi/event/mang-den-lala-trail-2026"
     ],
@@ -2600,6 +2615,21 @@
     "linkUrls": []
   },
   {
+    "id": "6d5532bc-eb2f-4494-8793-e4e96b749cd2",
+    "slug": "dong-nai-marathon-truong-tuoi-group-cup-bao-va-phat-thanh-truyen-hinh-dong-nai",
+    "name": "ĐỒNG NAI MARATHON - TRƯỜNG TƯƠI GROUP CÚP BÁO VÀ PHÁT THANH TRUYỀN HÌNH ĐỒNG NAI",
+    "date": "2026-11-29",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-10-12T17:48:31.011Z",
+    "file": "dong-nai-marathon-truong-tuoi-group-cup-bao-va-phat-thanh-truyen-hinh-dong-nai-2026.json",
+    "seriesId": null,
+    "sourceUrls": [
+      "https://actiup.net/vi/event/dong-nai-marathon-truong-tuoi-group-cup-bao-va-phat-thanh-truyen-hinh-dong-nai"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "6da9ef4a-1ff9-43f9-b06a-d230c8e795f8",
     "slug": "andros-the-lakes-race-2025",
     "name": "Andros Lakes Race 2025",
@@ -2742,6 +2772,21 @@
     "seriesId": "bac-ninh-legacy-marathon",
     "sourceUrls": [
       "https://actiup.net/vi/event/bac-ninh-legacy-marathon-2027"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "7581a618-e4de-45aa-9fde-733d70c8f1ca",
+    "slug": "dat-thep-city-trail-2027",
+    "name": "Đất Thép City Trail 2027",
+    "date": "2027-01-23",
+    "endDate": "2027-01-24",
+    "mainDate": null,
+    "lastModified": "2026-10-12T17:48:31.011Z",
+    "file": "dat-thep-city-trail-2027.json",
+    "seriesId": null,
+    "sourceUrls": [
+      "https://actiup.net/vi/event/dat-thep-city-trail-2027"
     ],
     "linkUrls": []
   },
@@ -2951,7 +2996,7 @@
     "date": "2026-03-22",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-09-26T14:43:42.720Z",
+    "lastModified": "2026-10-12T17:48:31.011Z",
     "file": "vnexpress-marathon-ho-chi-minh-2026.json",
     "seriesId": "vnexpress-marathon-ho-chi-minh",
     "sourceUrls": [
@@ -3901,6 +3946,21 @@
     "linkUrls": []
   },
   {
+    "id": "a7ade95a-f6d3-4d9e-8ca4-32475a32b23b",
+    "slug": "mang-den-lala-trail-2027",
+    "name": "Măng Đen LaLa Trail 2027",
+    "date": "2027-03-05",
+    "endDate": "2027-03-07",
+    "mainDate": null,
+    "lastModified": "2026-10-12T17:48:31.011Z",
+    "file": "mang-den-lala-trail-2027.json",
+    "seriesId": "mang-den-lala-trail",
+    "sourceUrls": [
+      "https://actiup.net/vi/event/mang-den-lala-trail-2027"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "aa148665-22f1-4604-8958-d8039c41f2bd",
     "slug": "ly-son-cross-island-2024",
     "name": "Lý Sơn Cross Island 2024",
@@ -4276,7 +4336,7 @@
     "date": "2026-10-30",
     "endDate": "2026-11-01",
     "mainDate": null,
-    "lastModified": "2026-09-24T07:11:10.278Z",
+    "lastModified": "2026-10-12T17:48:31.011Z",
     "file": "gia-lai-city-trail-giac-mo-dai-ngan-2026.json",
     "seriesId": "gia-lai-city-trail-giac-mo-dai-ngan",
     "sourceUrls": [
@@ -4487,7 +4547,7 @@
     "date": "2026-07-19",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-09-25T06:44:22.797Z",
+    "lastModified": "2026-10-12T17:48:31.011Z",
     "file": "vnexpress-marathon-da-nang-2026.json",
     "seriesId": "vnexpress-marathon-da-nang",
     "sourceUrls": [
@@ -5248,6 +5308,21 @@
     "linkUrls": []
   },
   {
+    "id": "e0f43515-e440-4210-8254-ab03a8675529",
+    "slug": "nha-trang-night-run-sanest-sanvinest-bkh-2026",
+    "name": "NHA TRANG NIGHT RUN SANEST, SANVINEST - BKH 2026",
+    "date": "2026-12-12",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-10-12T17:48:31.011Z",
+    "file": "nha-trang-night-run-sanest-sanvinest-bkh-2026.json",
+    "seriesId": null,
+    "sourceUrls": [
+      "https://actiup.net/vi/event/nha-trang-night-run-sanest-sanvinest-bkh-2026"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "e21ed4b2-00f5-4722-9eab-4058eae43655",
     "slug": "ultra-trail-angkor-2025",
     "name": "Ultra Trail Angkor 2025",
@@ -5359,7 +5434,7 @@
     "date": "2026-11-14",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-09-29T07:47:42.659Z",
+    "lastModified": "2026-10-12T17:48:31.011Z",
     "file": "ironkids-viet-nam-in-phu-quoc-2026.json",
     "seriesId": "ironkids-viet-nam-in-phu-quoc",
     "sourceUrls": [
@@ -5615,6 +5690,23 @@
       "https://actiup.net/vi/event/cat-tien-jungle-paths-2025"
     ],
     "linkUrls": []
+  },
+  {
+    "id": "f0d29981-7aea-4daa-af25-2c2576b736c4",
+    "slug": "dalat-ultra-trail-2027",
+    "name": "Giải siêu marathon địa hình Dalat Ultra Trail 2027",
+    "date": "2027-03-19",
+    "endDate": "2027-03-21",
+    "mainDate": null,
+    "lastModified": "2026-10-12T17:48:31.011Z",
+    "file": "dalat-ultra-trail-2027.json",
+    "seriesId": "dalat-ultra-trail",
+    "sourceUrls": [
+      "https://actiup.net/vi/event/dalat-ultra-trail-2027"
+    ],
+    "linkUrls": [
+      "https://vietnammtbseries.com/vi/event/dalat-ultra-trail-2027"
+    ]
   },
   {
     "id": "f1a3dad0-cd34-4d12-9dc2-c03926911a64",
@@ -5885,7 +5977,7 @@
     "date": "2026-11-07",
     "endDate": "2026-11-08",
     "mainDate": null,
-    "lastModified": "2026-09-24T06:49:38.787Z",
+    "lastModified": "2026-10-12T17:48:31.011Z",
     "file": "salonpas-run-2026.json",
     "seriesId": null,
     "sourceUrls": [

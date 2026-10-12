@@ -1,0 +1,168 @@
+{
+  "id": "f0d29981-7aea-4daa-af25-2c2576b736c4",
+  "slug": "dalat-ultra-trail-2027",
+  "name": "Giải siêu marathon địa hình Dalat Ultra Trail 2027",
+  "types": [
+    "other"
+  ],
+  "date": "2027-03-19",
+  "endDate": "2027-03-21",
+  "mainDate": null,
+  "seriesId": "dalat-ultra-trail",
+  "organizerId": "vietnam-mtb-series",
+  "organizer": "Vietnam MTB Series",
+  "edition": null,
+  "courses": [],
+  "location": {
+    "venue": "Thung Lũng Tình Yêu",
+    "city": null
+  },
+  "geo": {
+    "lat": 11.9781853,
+    "lng": 108.4499229,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "68",
+      "ward": "24778"
+    },
+    "legacy": {
+      "province": "68",
+      "district": "672",
+      "ward": "24772"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 303,
+        "minutes": 233,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1400.4,
+        "minutes": 1119,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 630.9,
+        "minutes": 515,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 137.2,
+        "minutes": 132,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 5.8,
+        "minutes": 7,
+        "method": "road",
+        "near": true
+      },
+      "can-tho": {
+        "km": 468.5,
+        "minutes": 361,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1434.5,
+        "minutes": 1143,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 728.1,
+        "minutes": 590,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 332.4,
+        "minutes": 248,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 343.1,
+        "minutes": 294,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 189.6,
+        "minutes": 177,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1708.2,
+        "minutes": 1351,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1484.2,
+        "minutes": 1176,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/dalat-ultra-trail-2027"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://vietnammtbseries.com/vi/event/dalat-ultra-trail-2027",
+      "kind": "official",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/dalat-ultra-trail-2027",
+      "lastCheckedAt": "2026-10-12T17:47:13.983Z",
+      "lastChangedAt": "2026-10-12T17:47:13.983Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải siêu marathon địa hình Dalat Ultra Trail 2027",
+          "date": "2027-03-19",
+          "endDate": "2027-03-21",
+          "venue": "Thung Lũng Tình Yêu",
+          "organizer": "Vietnam MTB Series",
+          "currency": "VND",
+          "fromPrice": 760000
+        },
+        "links": [
+          {
+            "url": "https://vietnammtbseries.com/vi/event/dalat-ultra-trail-2027",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "vietnam-mtb-series",
+          "name": "Vietnam MTB Series"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-10-12T17:48:31.011Z",
+  "updatedAt": "2026-10-12T17:48:31.011Z"
+}

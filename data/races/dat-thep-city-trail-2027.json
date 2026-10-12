@@ -1,0 +1,74 @@
+{
+  "id": "7581a618-e4de-45aa-9fde-733d70c8f1ca",
+  "slug": "dat-thep-city-trail-2027",
+  "name": "Đất Thép City Trail 2027",
+  "types": [
+    "city_trail"
+  ],
+  "date": "2027-01-23",
+  "endDate": "2027-01-24",
+  "mainDate": null,
+  "seriesId": null,
+  "organizerId": "vietnam-mtb-series",
+  "organizer": "Vietnam MTB Series",
+  "edition": null,
+  "courses": [],
+  "location": {
+    "venue": "Trung tâm cung ứng dịch vụ công xã Tân An Hội",
+    "city": null
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/dat-thep-city-trail-2027"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1bqt3bsLudeHAGlaMJJuBqTDD_WIWn3ex/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/dat-thep-city-trail-2027",
+      "lastCheckedAt": "2026-10-12T17:47:13.156Z",
+      "lastChangedAt": "2026-10-12T17:47:13.156Z",
+      "extracted": {
+        "facts": {
+          "name": "Đất Thép City Trail 2027",
+          "date": "2027-01-23",
+          "endDate": "2027-01-24",
+          "venue": "Trung tâm cung ứng dịch vụ công xã Tân An Hội",
+          "organizer": "Vietnam MTB Series",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 350000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1bqt3bsLudeHAGlaMJJuBqTDD_WIWn3ex/view?usp=drive_link",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "vietnam-mtb-series",
+          "name": "Vietnam MTB Series"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-10-12T17:48:31.011Z",
+  "updatedAt": "2026-10-12T17:48:31.011Z"
+}

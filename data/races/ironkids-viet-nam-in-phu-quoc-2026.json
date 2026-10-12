@@ -270,7 +270,7 @@
     }
   ],
   "currency": "VND",
-  "registrationStatus": "open",
+  "registrationStatus": "closed",
   "registrations": [
     {
       "site": "actiup",
@@ -469,7 +469,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/2026-ironkids-viet-nam-in-phu-quoc",
-      "lastCheckedAt": "2026-09-24T06:43:09.238Z",
+      "lastCheckedAt": "2026-10-12T17:47:20.676Z",
       "lastChangedAt": "2026-09-23T18:30:49.853Z",
       "extracted": {
         "facts": {
@@ -478,7 +478,7 @@
           "venue": "Phú Quốc, Việt Nam",
           "organizer": "Sunrise Events Vietnam",
           "currency": "VND",
-          "registrationStatus": "open",
+          "registrationStatus": "closed",
           "fromPrice": 950000
         },
         "pages": [
@@ -557,5 +557,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T07:47:42.659Z"
+  "updatedAt": "2026-10-12T17:48:31.011Z"
 }

@@ -7,6 +7,7 @@
   ],
   "date": "2026-11-07",
   "endDate": "2026-11-08",
+  "mainDate": null,
   "seriesId": null,
   "organizerId": "cong-ty-tnhh-duoc-pham-hisamitsu-viet-nam",
   "organizer": "CÔNG TY TNHH DƯỢC PHẨM HISAMITSU VIỆT NAM",
@@ -316,7 +317,7 @@
     }
   ],
   "currency": "VND",
-  "registrationStatus": "open",
+  "registrationStatus": "closed",
   "registrations": [
     {
       "site": "actiup",
@@ -330,6 +331,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {},
   "sources": [
@@ -337,7 +339,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/salonpas-run-2026",
-      "lastCheckedAt": "2026-09-24T05:54:22.509Z",
+      "lastCheckedAt": "2026-10-12T17:47:18.172Z",
       "lastChangedAt": "2026-09-23T18:30:47.837Z",
       "extracted": {
         "facts": {
@@ -347,7 +349,7 @@
           "venue": "Công viên Sáng Tạo, Phường An Khánh, Thành phố Hồ Chí Minh.",
           "organizer": "CÔNG TY TNHH DƯỢC PHẨM HISAMITSU VIỆT NAM",
           "currency": "VND",
-          "registrationStatus": "open",
+          "registrationStatus": "closed",
           "fromPrice": 120000
         },
         "pages": [
@@ -513,5 +515,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-10-12T17:48:31.011Z"
 }

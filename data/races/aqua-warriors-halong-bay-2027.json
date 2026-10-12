@@ -1,0 +1,169 @@
+{
+  "id": "09f9ff76-e3ff-470c-891f-c6ace918b629",
+  "slug": "aqua-warriors-halong-bay-2027",
+  "name": "AQUA WARRIORS HALONG BAY 2027",
+  "types": [
+    "other"
+  ],
+  "date": "2027-04-03",
+  "endDate": "2027-04-04",
+  "mainDate": null,
+  "seriesId": "aqua-warriors-halong-bay",
+  "organizerId": "bolt-event",
+  "organizer": "BOLT EVENT",
+  "edition": null,
+  "courses": [],
+  "location": {
+    "venue": "Thành Phố Hạ Long",
+    "city": null
+  },
+  "geo": {
+    "lat": 20.9379565,
+    "lng": 107.1275055,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "22",
+      "ward": "06652"
+    },
+    "legacy": {
+      "province": "22",
+      "district": "193",
+      "ward": "06664"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1581.4,
+        "minutes": 1193,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 163.5,
+        "minutes": 117,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 858.9,
+        "minutes": 681,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1362.7,
+        "minutes": 1068,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1490.2,
+        "minutes": 1186,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1692.3,
+        "minutes": 1312,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 58.2,
+        "minutes": 48,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 756.7,
+        "minutes": 598,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1672.4,
+        "minutes": 1275,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1170.7,
+        "minutes": 907,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1367.5,
+        "minutes": 1105,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 473,
+        "minutes": 362,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 6.2,
+        "minutes": 7,
+        "method": "road",
+        "near": true
+      }
+    }
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/aqua-warriors-halong-bay-2027"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://docs.google.com/document/d/1i_vpPCwlVOFwV0z49Hgmhzc4wIqlnHYv/edit",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/aqua-warriors-halong-bay-2027",
+      "lastCheckedAt": "2026-10-12T17:47:14.353Z",
+      "lastChangedAt": "2026-10-12T17:47:14.353Z",
+      "extracted": {
+        "facts": {
+          "name": "AQUA WARRIORS HALONG BAY 2027",
+          "date": "2027-04-03",
+          "endDate": "2027-04-04",
+          "venue": "Thành Phố Hạ Long",
+          "organizer": "BOLT EVENT",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 529000
+        },
+        "links": [
+          {
+            "url": "https://docs.google.com/document/d/1i_vpPCwlVOFwV0z49Hgmhzc4wIqlnHYv/edit?usp=drive_link&ouid=111350351941733978191&rtpof=true&sd=true",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "bolt-event",
+          "name": "BOLT EVENT"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-10-12T17:48:31.011Z",
+  "updatedAt": "2026-10-12T17:48:31.011Z"
+}

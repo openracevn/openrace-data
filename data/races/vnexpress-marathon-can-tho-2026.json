@@ -7,6 +7,7 @@
   ],
   "date": "2026-05-10",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "vnexpress-marathon-can-tho",
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
@@ -113,21 +114,21 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
-  "flags": [
-    "location: no source states a city; guessed \"Cần Thơ\" from the race's name"
-  ],
+  "participants": null,
+  "flags": [],
   "overrides": {},
   "sources": [
     {
       "site": "vnexpress-marathon",
       "role": "official",
       "url": "https://vm.vnexpress.net/can-tho-2026",
-      "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+      "lastCheckedAt": "2026-10-12T17:47:45.434Z",
       "lastChangedAt": "2026-09-25T04:11:49.673Z",
       "extracted": {
         "facts": {
           "name": "VnExpress Marathon Can Tho 2026",
-          "date": "2026-05-10"
+          "date": "2026-05-10",
+          "city": "Cần Thơ"
         },
         "pages": [
           {
@@ -159,5 +160,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T04:11:49.673Z",
-  "updatedAt": "2026-09-25T04:28:29.753Z"
+  "updatedAt": "2026-10-12T17:48:31.011Z"
 }

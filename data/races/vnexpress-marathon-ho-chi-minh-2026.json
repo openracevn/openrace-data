@@ -7,6 +7,7 @@
   ],
   "date": "2026-03-22",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "vnexpress-marathon-ho-chi-minh",
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
@@ -315,21 +316,21 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
-  "flags": [
-    "location: no source states a city; guessed \"Hồ Chí Minh\" from the race's name"
-  ],
+  "participants": null,
+  "flags": [],
   "overrides": {},
   "sources": [
     {
       "site": "vnexpress-marathon",
       "role": "official",
       "url": "https://vm.vnexpress.net/ho-chi-minh-2026",
-      "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+      "lastCheckedAt": "2026-10-12T17:47:42.091Z",
       "lastChangedAt": "2026-09-25T04:11:49.673Z",
       "extracted": {
         "facts": {
           "name": "VnExpress Marathon Ho Chi Minh City Midnight 2026",
-          "date": "2026-03-22"
+          "date": "2026-03-22",
+          "city": "Hồ Chí Minh"
         },
         "pages": [
           {
@@ -499,5 +500,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T04:11:49.673Z",
-  "updatedAt": "2026-09-26T14:43:42.720Z"
+  "updatedAt": "2026-10-12T17:48:31.011Z"
 }

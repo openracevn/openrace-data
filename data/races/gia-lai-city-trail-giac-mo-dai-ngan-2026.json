@@ -7,6 +7,7 @@
   ],
   "date": "2026-10-30",
   "endDate": "2026-11-01",
+  "mainDate": null,
   "seriesId": "gia-lai-city-trail-giac-mo-dai-ngan",
   "organizerId": "vietrace365",
   "organizer": "VIETRACE365",
@@ -362,7 +363,7 @@
     }
   ],
   "currency": "VND",
-  "registrationStatus": "open",
+  "registrationStatus": "closed",
   "registrations": [
     {
       "site": "actiup",
@@ -370,6 +371,7 @@
     }
   ],
   "links": [],
+  "participants": null,
   "flags": [],
   "overrides": {},
   "sources": [
@@ -377,7 +379,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/gia-lai-city-trail-giac-mo-dai-ngan-2026",
-      "lastCheckedAt": "2026-09-24T06:43:09.238Z",
+      "lastCheckedAt": "2026-10-12T17:47:16.606Z",
       "lastChangedAt": "2026-09-23T18:30:50.684Z",
       "extracted": {
         "facts": {
@@ -387,7 +389,7 @@
           "venue": "Gia Lai",
           "organizer": "VIETRACE365",
           "currency": "VND",
-          "registrationStatus": "open",
+          "registrationStatus": "closed",
           "fromPrice": 448000
         },
         "pages": [
@@ -584,5 +586,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T07:11:10.278Z"
+  "updatedAt": "2026-10-12T17:48:31.011Z"
 }

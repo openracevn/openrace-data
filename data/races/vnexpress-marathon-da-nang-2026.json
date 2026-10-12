@@ -7,6 +7,7 @@
   ],
   "date": "2026-07-19",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "vnexpress-marathon-da-nang",
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
@@ -113,21 +114,21 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
-  "flags": [
-    "location: no source states a city; guessed \"Đà Nẵng\" from the race's name"
-  ],
+  "participants": null,
+  "flags": [],
   "overrides": {},
   "sources": [
     {
       "site": "vnexpress-marathon",
       "role": "official",
       "url": "https://vm.vnexpress.net/da-nang-2026",
-      "lastCheckedAt": "2026-09-25T04:11:49.673Z",
+      "lastCheckedAt": "2026-10-12T17:47:48.055Z",
       "lastChangedAt": "2026-09-25T04:11:49.673Z",
       "extracted": {
         "facts": {
           "name": "VnExpress Da Nang International Marathon Herbalife Cup 2026",
-          "date": "2026-07-19"
+          "date": "2026-07-19",
+          "city": "Đà Nẵng"
         },
         "pages": [
           {
@@ -159,5 +160,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T04:11:49.673Z",
-  "updatedAt": "2026-09-25T06:44:22.797Z"
+  "updatedAt": "2026-10-12T17:48:31.011Z"
 }
