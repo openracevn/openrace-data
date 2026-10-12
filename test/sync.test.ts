@@ -335,6 +335,21 @@ describe("series from slugs", () => {
     assert.equal(readRace(store, "hcmc-marathon-2027").seriesId, "hcmc-marathon");
     assert.equal(readRace(store, "hcmc-marathon-2028", "2028-01-16").seriesId, "hcmc-marathon");
   });
+
+  it("doesn't add a site's series to series.json when an override sends the race to another series (a series with no races fails validate)", async () => {
+    const store = memoryStore();
+    apply(store, (await plan(store, [officialInput()])).files);
+    const set = await planEdit(store, "hcmc-marathon-2027", [{ kind: "set", field: "seriesId", value: "other-series", reason: "unified with another edition's series" }], config, LATER);
+    apply(store, set.files);
+    // The site's series is no longer used by any race; a hand cleanup dropped it.
+    store.files[SERIES_PATH] = JSON.stringify([{ id: "other-series", name: "Other", website: null, organizerId: null, description: null, statedEditionCount: null }]);
+    const changed = { ...officialPage, venue: "Nguyen Hue Walking Street" };
+    const reread = await plan(store, [officialInput(official(changed), "2026-10-01T10:00:00.000Z")], "2026-10-01T10:00:05.000Z");
+    assert.equal(reread.changes.length, 1);
+    assert.equal(reread.files[SERIES_PATH], undefined);
+    apply(store, reread.files);
+    assert.equal(readRace(store, "hcmc-marathon-2027").seriesId, "other-series");
+  });
 });
 
 describe("OpenRace overrides and renames", () => {

@@ -4,7 +4,9 @@
 
 | Component | Where it runs | Code | Job |
 | --- | --- | --- | --- |
-| Race checker | GitHub Actions (`check.yml`: **manual only for now**; daily cron is commented out) | `scripts/check.ts` | Finds new ActiUp races, re-checks the ones that are due, commits to GitHub |
+| Race refresh (plan 026, lane A) | GitHub Actions `refresh.yml`, daily 07:50 in Vietnam | `scripts/check.ts --refresh --scheduled` | Free: lists every seller (ActiUp, iRace) and the sites that are due, records unchanged pages as checked, refreshes free facts (dates, venue, sale status, "from" price, iRace's price table) on changed pages and marks them `pending` in `state/checks.json`, creates new races from facts. 0 credits |
+| Race checker (plan 026, lane B) | GitHub Actions `check.yml`, Tuesdays 08:00 in Vietnam (`--scheduled --max-credits 150`), and by hand with inputs | `scripts/check.ts` | Reads pending pages (and other changed pages) with Firecrawl, pending and soonest race day first, only on sites marked `trusted` in `config/sites.yaml`; stops at `scheduledMonthlyCredits` (600); commits to GitHub |
+| Monday digest | GitHub Actions `stale.yml`, Mondays 08:00 in Vietnam | `scripts/notify-stale.ts` | The to-do list: freshness share, pages pending a read (and which lane takes them), races that need a Claude `update-race` session, credits spent |
 | Firecrawl | Firecrawl (hosted API) | `scripts/lib/firecrawl.ts` | Scrapes and renders pages, and does the LLM JSON extraction (`/v2/scrape`), for ActiUp (primary) and bibchung (group-purchase prices) |
 | Data repo `openracevn/openrace-data` (public, not promoted; the API reads it without a token) | GitHub | `data/`, `state/` | SSOT: `data/races/*.json` + `data/index.json`; the check log is `state/checks.json`; git history is the audit trail |
 | Main workflow | GitHub Actions | `.github/workflows/main.yml` | Validates pushes to `main`; when `data/` changed, notifies the API and Discord. One job (each job bills a minute and reinstalls dependencies; the repo hit the free-minutes cap on 2026-09-29 at ~21 pushes a day) |
@@ -17,14 +19,16 @@
 ## Data flow
 
 ```
-check.yml  (cron daily, or workflow_dispatch: mode = daily|discover|refresh|race)
-  │ npm run check -- --mode …
-  │  1. read data/index.json, race files, state/checks.json from the checkout
-  │  2. discover: scrape the listing for links (1 credit); queue unknown /vi/event/<slug> pages
-  │     refresh: queue known races with date ≥ today (VN) and last check ≥ 14 days ago
-  │     race: queue the one race asked for
-  │  3. extract each page (5 credits), sequentially 6.5 s apart
-  │  4. syncToGitHub: planSync against main HEAD + merge the check log → ONE commit
+refresh.yml (daily 00:50 UTC)            check.yml (Tuesdays 01:00 UTC, or workflow_dispatch with inputs)
+  │ npm run check -- --refresh --scheduled  │ npm run check -- --scheduled --max-credits 150
+  │  1. read data/index.json, race files and state/ at main HEAD (GitHub API)
+  │  2. discover: each site's listing (ActiUp API, iRace home, hub/race-site pages), free
+  │  3. snapshot each upcoming race page (free HTTP) and fingerprint it; pending pages and
+  │     the soonest race day first
+  │  4. per page: unchanged → checked; changed and cached → read for free; changed and a
+  │     paid read allowed (lane B, trusted site, budget) → Firecrawl, 5 credits per page or
+  │     image, 6.5 s apart; otherwise → stored read kept, free facts refreshed, `pending`
+  │  5. syncToGitHub: planSync against main HEAD + merge the check log → ONE commit
   │     (createTree → createCommit → updateRef force:false; retry ×3 if main moved)
   ▼
 openracevn/openrace-data main   (commit authored with the OPENRACE_BOT_TOKEN PAT, so it triggers main.yml)
@@ -39,11 +43,15 @@ main.yml  (skipped entirely when only state/** changed; ONE job, steps in this o
   └─ alert discord    only if a step above failed (plan 025)
 ```
 
+**Monday digest:** `stale.yml` (Mondays 08:00 in Vietnam) runs `npm run notify:stale`: freshness share of the non-final races (final recomputed from the index's dates at read time), pages pending a read with the estimated credits and which lane takes them (Tuesday's run, or a check by hand on an untrusted site), races that need a Claude session (`update-race`, with the reason), and the month's credits. `npm run notify:stale -- --dry-run` prints it any day: it is the answer to "what needs attention today".
+
 **Weekly numbers:** `weekly.yml` (Mondays 08:10 in Vietnam) runs `npm run notify:weekly`: one Discord message with MCP tool calls, caller keys and clients per week and the completeness score against a week before, read from openrace-mcp's public `/weekly.json`. These are the numbers OpenRace is measured by (roadmap: not page views).
 
 **End-to-end check:** `npm run e2e` (`scripts/e2e-check.ts`, plan 025) checks the whole chain against the deployed Workers: the API is closed (404) but its webhook answers, the MCP server is up, every tool answers the roadmap questions, and races in this checkout match what `get_race` returns. No secrets, no writes, ~20 MCP calls. Run it on an up-to-date `main` after any change to the API, the MCP server or the sync.
 
 ## Traps
+
+- **A site's series hint can orphan a series entry.** `config/sites.yaml` gives halongmarathon.com `series: ha-long-heritage-marathon`, but the race's `seriesId` is overridden to `halong-bay-heritage-marathon`. Until 2026-10-13, every sync that touched that source re-added the hint's series to `data/series.json` with no race in it, and `validate` went red (API notify skipped). `planSync` now adds a series only when a planned race actually carries it (`test/sync.test.ts`).
 
 - **A script's "Committed `<sha>`" doesn't touch your local checkout.** `check.ts`, `agent-read.ts` and `edit.ts` all write through `scripts/lib/github.ts` (Octokit `createTree`/`createCommit`/`updateRef` against GitHub directly), not local git. `git status`/`git log` in your working copy stay exactly as they were until you `git pull` — reading a race file locally right after a "Committed" message will show the pre-commit content and can look like the write silently failed.
 - **The API notify step is gated on `validate` (typecheck + `npm test` + `npm run validate`), and the gate fails closed and quiet.** If `validate` is red for any reason — even one unrelated to the data just pushed — `notify-api` shows as `skipped`, not `failed`, in the Actions run, and the API just never hears about the change. A single broken test can silently stop every data push from reaching production until someone runs `gh run list --branch main` and notices. Recovery once `validate` is green again: `gh workflow run main.yml` (workflow_dispatch resyncs current `main` without needing a new commit) — a rerun of the old failed run (`gh run rerun`) replays the *old* broken tree and won't help.

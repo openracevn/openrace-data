@@ -218,6 +218,11 @@ export async function planSync(
     }),
   ]);
   const seriesRefs: StoredExtraction[] = [];
+  // Series the planned races end up in. A site's series hint is only added to
+  // series.json when a race actually carries it: an override can send the race to
+  // another series, and a series with no races fails validate (seen 2026-10-13,
+  // halongmarathon.com's hint vs. the race's overridden seriesId).
+  const plannedSeries = new Set<string>();
 
   for (const { id, newSlug, items } of groups.values()) {
     const prev = await loadRace(id);
@@ -247,6 +252,7 @@ export async function planSync(
       continue;
     }
     const { record, fields } = composed;
+    if (record.seriesId) plannedSeries.add(record.seriesId);
     const newFlags = record.flags.filter((f) => !prev?.flags.includes(f));
     const shadowed = prev ? shadowedChanges(prev, sources, config) : [];
     const flagsChanged = prev ? !deepEqual(prev.flags, record.flags) : false;
@@ -279,13 +285,14 @@ export async function planSync(
     const composed = composeRace({ id: entry.id, slug: prev.slug, prev, sources: prev.sources, overrides: prev.overrides, now, config, geoCache, stabilizeAgainstPrev: true, series: inferred.get(entry.id) });
     if ("error" in composed || (migrationFields.length === 0 && composed.fields.length === 0)) continue; // a site's own series wins
     if (writeRace(files, nextIndex, composed.record)) continue;
+    if (composed.record.seriesId) plannedSeries.add(composed.record.seriesId);
     changes.push({ id: entry.id, slug: prev.slug, kind: "updated", fields: [...new Set([...migrationFields, ...composed.fields])] });
     seriesRefs.push(...seriesEntity(composed.record, inferred.get(entry.id)));
   }
 
   if (changes.length > 0) {
     files[INDEX_PATH] = serializeIndex(nextIndex);
-    Object.assign(files, await plannedEntities(store, [...[...groups.values()].flatMap((g) => g.items.map((i) => i.input.extracted)), ...seriesRefs]));
+    Object.assign(files, await plannedEntities(store, [...[...groups.values()].flatMap((g) => g.items.map((i) => i.input.extracted)), ...seriesRefs], plannedSeries));
   }
   return { files, changes, skipped };
 }
@@ -298,9 +305,10 @@ function seriesEntity(record: Race, inferred: EntityRef | undefined): StoredExtr
 
 /**
  * New series and organizers named by this run's sources. Entries are only added,
- * never changed: a name or website fixed by hand in series.json stays.
+ * never changed: a name or website fixed by hand in series.json stays. A series is
+ * added only when one of the planned races carries it (`usedSeries`).
  */
-async function plannedEntities(store: RaceStore, extractions: StoredExtraction[]): Promise<Record<string, string>> {
+async function plannedEntities(store: RaceStore, extractions: StoredExtraction[], usedSeries: ReadonlySet<string>): Promise<Record<string, string>> {
   const series = SeriesListSchema.parse(JSON.parse((await store.read(SERIES_PATH)) ?? "[]"));
   const organizers = OrganizerListSchema.parse(JSON.parse((await store.read(ORGANIZERS_PATH)) ?? "[]"));
   const out: Record<string, string> = {};
@@ -314,7 +322,7 @@ async function plannedEntities(store: RaceStore, extractions: StoredExtraction[]
   for (const x of extractions) {
     organizersChanged = add<Organizer>(organizers, x.organizer, (r) => ({ id: r.id, name: r.name, website: r.website ?? null })) || organizersChanged;
     seriesChanged =
-      add<Series>(series, x.series, (r) => ({
+      add<Series>(series, isEntityRef(x.series) && usedSeries.has(x.series.id) ? x.series : undefined, (r) => ({
         id: r.id,
         name: r.name,
         website: r.website ?? null,
