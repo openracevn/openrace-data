@@ -8,7 +8,7 @@ Names and locations only. **Never write secret values into this repo.** Local va
 | `OPENRACE_BOT_TOKEN` (Actions) / `GITHUB_TOKEN` (local) | `check.ts`, `sync-cli.ts`, `renormalize.ts`, `agent-read.ts` (commits) | Actions secret; locally `GITHUB_TOKEN=$(gh auth token)` | **set** in Actions (2026-09-23) |
 | `GITHUB_OWNER` / `GITHUB_REPO` / `GITHUB_BRANCH` | `check.ts`, `sync-cli.ts` | derived from the repo in `check.yml`; `.env` locally | `openracevn` / `openrace-data` / `main` |
 | `DISCORD_WEBHOOK_URL` | `notify-discord` job | Actions secret, `.env` | **set** in both; messages confirmed in the channel |
-| `SYNC_WEBHOOK_URL` | `notify-api` job | Actions secret | **set** (2026-09-23): `https://openrace-api.bmp.workers.dev/internal/sync` |
+| `SYNC_WEBHOOK_URL` | `notify-api` job | Actions secret | **set** (2026-09-23): `https://openrace-api.bmp.workers.dev/internal/sync`. Since 2026-10-12 (plan 025) this is the only route the API answers without `X-MCP-Secret`. |
 | `SYNC_SECRET` | `notify-api` job (`X-Sync-Secret` header) | Actions secret; the same value as openrace-api's Worker secret `SYNC_SECRET` | **set** (2026-09-23), random 32-byte hex, stored only in these two secrets. To rotate, set both from the same value (see openrace-api's `.claude/docs/local-dev.md`) |
 
 ## Notes
@@ -18,4 +18,5 @@ Names and locations only. **Never write secret values into this repo.** Local va
 - The Discord webhook URL was pasted in a Claude session on 2026-09-23. If that matters, regenerate it in Discord and update both `.env` and the Actions secret.
 - To set a secret from `.env` without the value appearing in shell history:
   `grep '^NAME=' .env | cut -d= -f2- | tr -d '\n' | gh secret set NAME --repo openracevn/openrace-data`
+- **`MCP_SECRET`** (not in this repo): a Worker secret on both openrace-api and openrace-mcp, same value (rotated 2026-10-12, stored nowhere else). The API answers 404 to every read without it. To rotate: `openssl rand -hex 32`, `wrangler secret put MCP_SECRET` on openrace-mcp (`-c wrangler.mcp.jsonc`) first, then on openrace-api, then `npm run e2e`.
 - Obsolete since the Worker was removed: `FIRECRAWL_WEBHOOK_SECRET`, `INGEST_WEBHOOK_URL`, and the Worker secrets. None of them were ever set.

@@ -6,11 +6,13 @@
 | --- | --- | --- | --- |
 | Race checker | GitHub Actions (`check.yml`: **manual only for now**; daily cron is commented out) | `scripts/check.ts` | Finds new ActiUp races, re-checks the ones that are due, commits to GitHub |
 | Firecrawl | Firecrawl (hosted API) | `scripts/lib/firecrawl.ts` | Scrapes and renders pages, and does the LLM JSON extraction (`/v2/scrape`), for ActiUp (primary) and bibchung (group-purchase prices) |
-| Data repo `openracevn/openrace-data` (private) | GitHub | `data/`, `state/` | SSOT: `data/races/*.json` + `data/index.json`; the check log is `state/checks.json`; git history is the audit trail |
+| Data repo `openracevn/openrace-data` (public, not promoted; the API reads it without a token) | GitHub | `data/`, `state/` | SSOT: `data/races/*.json` + `data/index.json`; the check log is `state/checks.json`; git history is the audit trail |
 | Main workflow | GitHub Actions | `.github/workflows/main.yml` | Validates pushes to `main`; when `data/` changed, notifies the API and Discord. One job (each job bills a minute and reinstalls dependencies; the repo hit the free-minutes cap on 2026-09-29 at ~21 pushes a day) |
 | CI workflow | GitHub Actions | `.github/workflows/ci.yml` | Typecheck, tests and `validate` on pull requests; a newer push to the same PR cancels the older run |
 | Discord channel | Discord | `scripts/notify-discord.ts` | Human-readable change feed |
-| openrace-api | Cloudflare Worker + D1, `https://openrace-api.bmp.workers.dev` | separate repo (`../openrace-api`) | Receives the resync webhook, pulls changed race files plus series and organizers, serves the public API. Reads schema v2 since 2026-09-24 |
+| openrace-api | Cloudflare Worker + D1, `https://openrace-api.bmp.workers.dev` | separate repo (`../openrace-api`), deployed by hand (`pnpm run deploy`) | Receives the resync webhook, pulls changed race files plus series and organizers, answers openrace-mcp. **Internal since 2026-10-12 (plan 025):** every route except `/internal/*` answers 404 without `X-MCP-Secret`; the public URL stays only for the sync webhook (`X-Sync-Secret`). Daily cron 00:30 UTC |
+| openrace-mcp | Cloudflare Worker, `https://openrace-mcp.bmp.workers.dev/mcp` | separate repo (`../openrace-mcp`), deploys on push to `main` | **The product and the only public way in.** Calls openrace-api through the service binding `API` with `X-MCP-Secret`. Serves `/` (docs), `/llms.txt` (about, how to connect, license), `/health`, `/dash` (usage) |
+| openrace-web | archived 2026-10-12 | `../openrace-web`, tag `archive/full-site-2026-10-12` | Not deployed or changed; its Worker and KV `openrace-web-inc-cache` are left in place (down since error 1102) |
 
 ## Data flow
 
@@ -33,8 +35,11 @@ main.yml  (skipped entirely when only state/** changed; ONE job, steps in this o
   ├─ notify discord   only on push, only if data/ changed → Discord summary from git diff (before validate)
   ├─ typecheck+test   skipped when the push only touched data/, state/, .claude/ or *.md
   ├─ validate
-  └─ notify api       only if data/ changed, after the steps above pass → POST SYNC_WEBHOOK_URL
+  ├─ notify api       only if data/ changed, after the steps above pass → POST SYNC_WEBHOOK_URL
+  └─ alert discord    only if a step above failed (plan 025)
 ```
+
+**End-to-end check:** `npm run e2e` (`scripts/e2e-check.ts`, plan 025) checks the whole chain against the deployed Workers: the API is closed (404) but its webhook answers, the MCP server is up, every tool answers the roadmap questions, and races in this checkout match what `get_race` returns. No secrets, no writes, ~20 MCP calls. Run it on an up-to-date `main` after any change to the API, the MCP server or the sync.
 
 ## Traps
 

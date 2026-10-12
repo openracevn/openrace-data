@@ -29,7 +29,8 @@
     "freshness": "tsx scripts/freshness.ts",
     "notify:discord": "tsx scripts/notify-discord.ts",
     "notify:stale": "tsx scripts/notify-stale.ts",
-    "notify:sync": "tsx scripts/notify-sync.ts"
+    "notify:sync": "tsx scripts/notify-sync.ts",
+    "e2e": "tsx scripts/e2e-check.ts"
   },
   "dependencies": {
     "@octokit/rest": "^22.0.1",

@@ -1,6 +1,6 @@
 # openrace-data
 
-The race data behind OpenRace (openrace.vn): one JSON file per race edition in Vietnam, read from ticket sellers (ActiUp, ...) and races' own sites, with a git history of every change.
+The race data behind OpenRace by Perxel: one JSON file per race edition in Vietnam, read from ticket sellers (ActiUp, ...) and races' own sites, with a git history of every change.
 
 The design and the reasons behind it are in [`.claude/docs/design-v2.md`](.claude/docs/design-v2.md), with schema v3 (courses, location, freshness) in [plan 003](.claude/plans/003-2026-09-24-schema-v3-geo-price.md). Where it's going: [`.claude/docs/roadmap.md`](.claude/docs/roadmap.md). The current state: [`.claude/docs/status.md`](.claude/docs/status.md).
 
@@ -120,3 +120,7 @@ GitHub Actions:
 - **Images:** only PNG and JPEG images can be OCR'd.
 - **Races seeded with `--facts-only`** have no prices, courses or types until a normal run reads them.
 - **Location:** 267 of 300 races located; about 60 only to province precision. No ORS key yet, so driving distances come from the public OSRM demo server (light use, cached).
+
+## License
+
+The data in `data/` is [CC BY 4.0](LICENSE-DATA): credit "OpenRace by Perxel". The code is [MIT](LICENSE). People reach the data through the OpenRace MCP server (`https://openrace-mcp.bmp.workers.dev/mcp`; about and how to connect: `/llms.txt`).

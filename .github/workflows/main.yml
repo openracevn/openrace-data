@@ -1,6 +1,7 @@
 name: Main
 
 # Validation runs on every push to main; the API resync and Discord notification
+# (and a Discord alert whenever the job fails, plan 025)
 # only run when the push touched data/. Includes commits made by the race checker
 # (check.yml commits with a PAT, so they trigger workflows; GITHUB_TOKEN pushes
 # would not). Pushes that only touch the check log are skipped entirely.
@@ -75,3 +76,18 @@ jobs:
           SYNC_SECRET: ${{ secrets.SYNC_SECRET }}
           BEFORE_SHA: ${{ github.event.before }}
           AFTER_SHA: ${{ github.sha }}
+
+      # Plan 025: a red Main (typecheck, tests, validate or the API resync) says so in
+      # Discord, so a failed sync never goes unnoticed. Skipped when the secret is unset.
+      - name: Alert Discord on failure
+        if: failure()
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          EVENT: ${{ github.event_name }}
+          SHA: ${{ github.sha }}
+        run: |
+          [[ -n "$DISCORD_WEBHOOK_URL" ]] || exit 0
+          msg=":red_circle: **Main failed** on \`main\` (${EVENT}, ${SHA:0:7}): validate or the API resync didn't pass. ${RUN_URL}"
+          jq -n --arg content "$msg" '{content: $content}' |
+            curl -fsS -X POST -H 'Content-Type: application/json' --data @- "$DISCORD_WEBHOOK_URL"
