@@ -10,7 +10,8 @@ import { cleanContent, pageImages, pageLinks, parseHtml } from "../scripts/lib/h
 import type { Http } from "../scripts/lib/http.ts";
 import { actiupRecipe } from "../scripts/lib/recipes/actiup.ts";
 import { defaultRecipe, pickPriceImages, pickSubpages } from "../scripts/lib/recipes/default.ts";
-import { iraceRecipe } from "../scripts/lib/recipes/irace.ts";
+import { iraceRecipe, isCleanPriceTable, priceTableFacts } from "../scripts/lib/recipes/irace.ts";
+import type { PriceDraft } from "../scripts/lib/recipes/types.ts";
 import type { RecipeContext } from "../scripts/lib/recipes/types.ts";
 import { vnexpressMarathonRecipe } from "../scripts/lib/recipes/vnexpress-marathon.ts";
 import { classifyLink, loadSites } from "../scripts/lib/sites.ts";
@@ -154,7 +155,8 @@ describe("irace recipe", () => {
   it("reads Lâm Đồng Trail's price table as text, not an image, plus free facts from its JSON-LD", async () => {
     const http = fakeHttp({ "https://ticket.irace.vn/lamdong-trail-2026": fixture("irace-lamdong-trail-2026.html") });
     const snap = await iraceRecipe.snapshot({ url: "https://ticket.irace.vn/lamdong-trail-2026" }, ctx("irace", http));
-    assert.deepEqual(snap.facts, {
+    const { prices: factPrices, ...facts } = snap.facts!;
+    assert.deepEqual(facts, {
       name: "Giải chạy Lâm Đồng Trail 2026",
       venue: "TTC World - Thung Lũng Tình Yêu, số 03-05-07 đường Mai Anh Đào, phường Lâm Viên, Tp. Đà Lạt, Lâm Đồng",
       organizer: "GreenHat | Ban tổ chức sự kiện",
@@ -176,6 +178,32 @@ describe("irace recipe", () => {
       snap.pricesDraft!.find((t) => t.distance === "5km" && t.tier === "Late"),
       { distance: "5km", tier: "Late", from: "17/08", to: "05/10", price: 950_000 },
     );
+    // A clean table is a free fact too (plan 026): the same rows, products kept in the tier label.
+    assert.equal((factPrices as unknown[]).length, snap.pricesDraft!.length);
+    assert.deepEqual(
+      (factPrices as PriceDraft[]).filter((t) => t.tier.startsWith("Kid Trail") || t.tier.startsWith("Family (1 người lớn + 1")).map((t) => [t.distance, t.tier, t.price]),
+      [
+        ["5Km", "Kid Trail Early Bird", 650_000],
+        ["5Km", "Kid Trail Regular", 750_000],
+        ["5Km", "Kid Trail Late", 950_000],
+        ["5km", "Family (1 người lớn + 1 trẻ em) Early Bird", 1_200_000],
+        ["5km", "Family (1 người lớn + 1 trẻ em) Regular", 1_400_000],
+        ["5km", "Family (1 người lớn + 1 trẻ em) Late", 1_800_000],
+      ],
+    );
+  });
+
+  it("stores a parsed price table as a fact only when every row has a distance and a printed round VND amount", () => {
+    const row = { distance: "5km", tier: "Early Bird", from: "01/06", to: "30/06", price: 450_000 };
+    assert.deepEqual(priceTableFacts([row]), [row]);
+    assert.equal(priceTableFacts([]), null);
+    assert.equal(priceTableFacts([row, { ...row, distance: "Giảm giá" }]), null); // not a distance
+    assert.deepEqual(priceTableFacts([{ ...row, distance: "42KM - TIER 3", tier: "Giá vé" }]), [{ ...row, distance: "42KM", tier: "TIER 3" }]); // one-column layout: the tier is in the cell
+    assert.deepEqual(priceTableFacts([{ ...row, distance: "Half Marathon" }]), [{ ...row, distance: "Half Marathon" }]);
+    assert.equal(priceTableFacts([row, { ...row, price: 450_500 }]), null); // not a printed round amount
+    assert.equal(priceTableFacts([row, { ...row, price: 5_000 }]), null); // below the plausible floor
+    assert.equal(priceTableFacts([row, { ...row, tier: " " }]), null); // unnamed tier
+    assert.equal(isCleanPriceTable([row]), true);
   });
 
   it("falls back to #bang-gia's text table once registration closes and #personal is gone", async () => {
@@ -196,11 +224,14 @@ describe("irace recipe", () => {
     });
     const snap = await iraceRecipe.snapshot({ url: "https://irace.vn/su-kien/techcombank-ha-noi-marathon/" }, ctx("irace", http));
     // location/organizer are arrays on irace.vn, unlike ticket.irace.vn's single object.
-    assert.deepEqual(snap.facts, {
+    const { prices: suKienPrices, ...suKienFacts } = snap.facts!;
+    assert.deepEqual(suKienFacts, {
       name: "Techcombank Hanoi International Marathon 2026",
       venue: "Hà Nội",
       organizer: "Sunrise Events Vietnam",
     });
+    // The one-column "Giá vé" table ("42KM - TIER 3" rows) is stored as facts with the tier taken from the cell.
+    assert.ok((suKienPrices as PriceDraft[]).some((t) => t.distance === "42KM" && t.tier === "TIER 3" && t.price === 1_300_000));
     assert.equal(snap.slugHint, "techcombank-ha-noi-marathon");
     const html = snap.pages[0]!.html;
     assert.match(html, /1\.300\.000đ/);

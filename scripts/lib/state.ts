@@ -72,6 +72,28 @@ export function isSiteDue(site: Site, state: SiteState | undefined, now: Date): 
   return (now.getTime() - Date.parse(state.lastCheckedAt)) / DAY_MS >= days - 0.5;
 }
 
+/**
+ * A page a read is for (plan 026): never seen, changed since its last read
+ * (`pending`), or only ever taken from free facts (status `facts`, no fingerprint).
+ */
+export function isPendingCheck(check: Check | undefined): boolean {
+  if (!check) return true;
+  if (check.pending) return true;
+  return check.status === "facts" && !check.fingerprint;
+}
+
+/**
+ * Pending pages first, then the soonest race day, then the listing order, so a
+ * credit cap leaves the races that can wait. `dayOf` gives a page's race day
+ * (from the listing, else the race on file), "9999-12-31" when unknown.
+ */
+export function sortByUrgency<T extends { url: string }>(refs: readonly T[], checks: Checks, dayOf: (r: T) => string): T[] {
+  return refs
+    .map((r, i) => ({ r, i, u: isPendingCheck(checks[r.url]) ? 0 : 1, d: dayOf(r) }))
+    .sort((a, b) => a.u - b.u || a.d.localeCompare(b.d) || a.i - b.i)
+    .map(({ r }) => r);
+}
+
 /** Today's date in Vietnam, where the races are, as YYYY-MM-DD. */
 export function vietnamDate(now: Date): string {
   return new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Ho_Chi_Minh" }).format(now);

@@ -10,6 +10,12 @@
  *   --limit N         at most N races per site (tests, small batches)
  *   --max-credits N   Firecrawl credits this run may spend (default 250; the month's cap in config/sites.yaml also applies)
  *   --free            no paid reads: only what's cached; reports what would be read
+ *   --refresh         the daily free run (plan 026): --free, plus every seller site whatever its
+ *                     cadence (sellers list many races and change often; hubs and race sites keep
+ *                     their cadence). Costs 0 credits; see "what a run does to a page" below.
+ *   --scheduled       a cron run (plan 026): the month's cap is scheduledMonthlyCredits, and paid
+ *                     reads happen only on sites marked trusted in config/sites.yaml; other sites
+ *                     get the free refresh and wait for a paid check by hand.
  *   --facts-only      no reads at all: create or update races from the site's free data only
  *                     (ActiUp's API: name, dates, place, organizer, sale status). Prices,
  *                     courses and types come with a later normal run, which still reads
@@ -18,11 +24,21 @@
  *                     what it paid for is kept in the local state/reads.json)
  *   --preview <dir>   with --dry-run: write the planned files under <dir>
  *
- * For each site: the recipe lists its races and takes a snapshot of each (free);
- * a snapshot whose fingerprint didn't change since the last read is skipped;
- * otherwise its pages (and, if they give no prices, its price images) are read
- * with Firecrawl, cached by content. Everything lands in one commit: race files,
- * index, series, organizers and state/.
+ * For each site: the recipe lists its races and takes a snapshot of each (free).
+ * Pages never read in full and pages changed since (pending) come first, then the
+ * soonest race day, so a credit cap starves the races that matter least.
+ *
+ * What a run does to a page (plan 026):
+ *   - unchanged fingerprint: the check is recorded (the source said the same), 0 credits;
+ *   - changed, and every page and image is in the read cache: read for free, recorded ok;
+ *   - changed, and a paid read is possible (budget, trusted site, not --free): read with
+ *     Firecrawl, cached by content, recorded ok;
+ *   - changed, but no paid read now: the stored read is kept and the site's free facts
+ *     (name, dates, venue, sale status, "from" price...) and links replace the old ones;
+ *     the page is marked `pending` in state/checks.json until a later run reads it;
+ *   - never read in full, and no paid read now: a race from the free facts alone, as
+ *     --facts-only does (status `facts`, no fingerprint: still to be read).
+ * Everything lands in one commit: race files, index, series, organizers and state/.
  *
  * Env: FIRECRAWL_API_KEY (unless --free); GITHUB_TOKEN (PAT) + GITHUB_OWNER/REPO/BRANCH
  * unless --dry-run; DISCORD_WEBHOOK_URL for health alerts (optional).
@@ -38,7 +54,8 @@ import { GitHubRepo, type GitHubTarget } from "./lib/github.ts";
 import { createHttp } from "./lib/http.ts";
 import { READS_PATH, parseReadCache, pruneReadCache, readSnapshot, snapshotFingerprint, type ReadCache } from "./lib/read.ts";
 import { recipeFor } from "./lib/recipes/index.ts";
-import type { RaceRef, Recipe, RecipeContext } from "./lib/recipes/types.ts";
+import type { RaceRef, Recipe, RecipeContext, Snapshot } from "./lib/recipes/types.ts";
+import type { StoredExtraction } from "./lib/reconcile.ts";
 import { INDEX_PATH, IndexSchema, RaceSchema, racePath, upgradeRace } from "./lib/schema.ts";
 import { loadSites, roleOf, siteForUrl, type Site } from "./lib/sites.ts";
 import { canonicalSourceUrl } from "./lib/slug.ts";
@@ -52,6 +69,7 @@ import {
   parseCredits,
   parseSitesState,
   serializeSorted,
+  sortByUrgency,
   vietnamDate,
   type Check,
   type SiteState,
@@ -69,7 +87,9 @@ const includePast = args.includes("--past");
 const limit = arg("limit") ? Number(arg("limit")) : Number.POSITIVE_INFINITY;
 const maxCredits = Number(arg("max-credits") ?? 250);
 const factsOnly = args.includes("--facts-only");
-const free = args.includes("--free") || factsOnly;
+const refresh = args.includes("--refresh");
+const scheduled = args.includes("--scheduled");
+const free = args.includes("--free") || factsOnly || refresh;
 const dryRun = args.includes("--dry-run");
 const previewDir = arg("preview");
 if (siteArg && raceArg) fail("use --site or --race, not both");
@@ -115,21 +135,22 @@ const sitesState = parseSitesState(await current.read(SITES_STATE_PATH));
 const spentThisMonth = parseCredits(await current.read(CREDITS_PATH))[month] ?? 0;
 const readCache: ReadCache = parseReadCache(await current.read(READS_PATH));
 
-const budget = Math.max(0, Math.min(maxCredits, config.monthlyCredits - spentThisMonth));
-const reader: Reader = free
-  ? {
-      credits: 0,
-      readHtml: async () => ({ ok: false, error: "free run: not read", credits: 0, capped: true }),
-      readImage: async () => ({ ok: false, error: "free run: not read", credits: 0, capped: true }),
-    }
-  : new FirecrawlReader(requireEnv("FIRECRAWL_API_KEY"), budget);
+// A cron run keeps part of the month's credits for manual runs (plan 026).
+const monthlyCap = scheduled ? (config.scheduledMonthlyCredits ?? config.monthlyCredits) : config.monthlyCredits;
+const budget = Math.max(0, Math.min(maxCredits, monthlyCap - spentThisMonth));
+const freeReader: Reader = {
+  credits: 0,
+  readHtml: async () => ({ ok: false, error: "free run: not read", credits: 0, capped: true }),
+  readImage: async () => ({ ok: false, error: "free run: not read", credits: 0, capped: true }),
+};
+const reader: Reader = free ? freeReader : new FirecrawlReader(requireEnv("FIRECRAWL_API_KEY"), budget);
 
 const runChecks = new Map<string, Check>();
 const runSites = new Map<string, SiteState>();
 const inputs: SyncInput[] = [];
 const report: string[] = [];
 const alerts: string[] = [];
-const counts = { sites: 0, races: 0, unchanged: 0, read: 0, paidReads: 0, cachedReads: 0, deferred: 0, failed: 0, wouldSpend: 0 };
+const counts = { sites: 0, races: 0, unchanged: 0, read: 0, paidReads: 0, cachedReads: 0, deferred: 0, refreshed: 0, failed: 0, wouldSpend: 0 };
 
 // 1. What to check.
 type Job = { site: Site; recipe: Recipe; refs?: RaceRef[] };
@@ -156,7 +177,10 @@ if (raceArg) {
   }
   if (jobs.length === 0) fail(`${raceArg} has no source on a site with a recipe`);
 } else {
-  const sites = siteArg ? config.sites.filter((s) => s.key === siteArg) : config.sites.filter((s) => isSiteDue(s, sitesState[s.key], now));
+  // The daily refresh takes every seller as well as the sites that are due (see the header).
+  const sites = siteArg
+    ? config.sites.filter((s) => s.key === siteArg)
+    : config.sites.filter((s) => isSiteDue(s, sitesState[s.key], now) || (refresh && s.kind === "seller"));
   if (siteArg && sites.length === 0) fail(`no site "${siteArg}" in config/sites.yaml`);
   for (const site of sites) {
     const recipe = recipeFor(site);
@@ -180,7 +204,10 @@ for (const job of jobs) {
     if (failures >= 2) alerts.push(`🚨 ${site.name} (${site.key}) failed ${failures} runs in a row: ${(err as Error).message}`);
     continue;
   }
-  refs = refs.filter((r) => !checks[r.url]?.permanent || !!raceArg).slice(0, limit);
+  refs = sortRefs(refs.filter((r) => !checks[r.url]?.permanent || !!raceArg)).slice(0, limit);
+  // A cron run pays only on sites whose recipe was checked by eye (plan 026).
+  const siteReader = scheduled && !site.trusted ? freeReader : reader;
+  if (scheduled && !site.trusted && !free) report.push(`· site ${site.key}: not trusted, no paid reads in a scheduled run (free refresh only)`);
   let siteRead = 0;
   for (const ref of refs) {
     counts.races++;
@@ -202,13 +229,7 @@ for (const job of jobs) {
         counts.unchanged++;
         continue;
       }
-      const extracted = {
-        ...(snap.facts && { facts: snap.facts }),
-        links: snap.links,
-        ...(snap.hints?.series && { series: snap.hints.series }),
-        ...(snap.hints?.organizer && { organizer: snap.hints.organizer }),
-      };
-      inputs.push({ url: ref.url, site: site.key, role: roleOf(site), extracted, checkedAt, slugHint: snap.slugHint });
+      inputs.push({ url: ref.url, site: site.key, role: roleOf(site), extracted: factsExtraction(snap), checkedAt, slugHint: snap.slugHint });
       runChecks.set(ref.url, { lastCheckedAt: checkedAt, status: "facts" });
       counts.read++;
       siteRead++;
@@ -216,10 +237,11 @@ for (const job of jobs) {
     }
     if (!raceArg && prev?.fingerprint === fp && prev.status !== "error") {
       counts.unchanged++;
-      runChecks.set(ref.url, { ...prev, lastCheckedAt: checkedAt });
+      // The page is back to what was read last: nothing is pending any more.
+      runChecks.set(ref.url, { ...prev, lastCheckedAt: checkedAt, pending: undefined, pendingSince: undefined });
       continue;
     }
-    const outcome = await readSnapshot(snap, reader, http, readCache, now);
+    const outcome = await readSnapshot(snap, siteReader, http, readCache, now);
     if (!outcome.ok) {
       if (outcome.capped) {
         counts.deferred++;
@@ -227,11 +249,22 @@ for (const job of jobs) {
         const images = Math.min(snap.priceImages.length, 4);
         const estimate = (snap.pages.length + images) * CREDITS_PER_READ;
         counts.wouldSpend += estimate;
-        report.push(
-          free
-            ? `… ${ref.url}: would read ${snap.pages.length} page(s)${images ? ` + up to ${images} price image(s)` : ""}, ≤${estimate} credits`
-            : `… ${ref.url}: ${outcome.reason} (left for the next run)`,
-        );
+        const what = `${snap.pages.length} page(s)${images ? ` + up to ${images} price image(s)` : ""}, ≤${estimate} credits`;
+        // No paid read now: keep what was read before and refresh the free parts (plan 026).
+        const stored = prev?.fingerprint ? await storedExtraction(ref.url) : null;
+        if (stored) {
+          inputs.push({ url: ref.url, site: site.key, role: roleOf(site), extracted: { ...stored, ...factsExtraction(snap) }, checkedAt, slugHint: snap.slugHint });
+          runChecks.set(ref.url, { ...prev!, lastCheckedAt: checkedAt, pending: fp, pendingSince: prev!.pending === fp && prev!.pendingSince ? prev!.pendingSince : checkedAt });
+          counts.refreshed++;
+          report.push(`~ ${ref.url}: changed; facts refreshed, pending a read (${what})`);
+        } else {
+          // Never read in full: a race from the free facts alone, when they name one.
+          const facts = factsExtraction(snap);
+          if (normalizeExtraction(facts).ok) inputs.push({ url: ref.url, site: site.key, role: roleOf(site), extracted: facts, checkedAt, slugHint: snap.slugHint });
+          runChecks.set(ref.url, { lastCheckedAt: checkedAt, status: "facts" });
+          counts.refreshed++;
+          report.push(`+ ${ref.url}: not read yet${normalizeExtraction(facts).ok ? "; race from free facts" : ""}, pending a read (${what})`);
+        }
       } else {
         counts.failed++;
         runChecks.set(ref.url, { ...prev, lastCheckedAt: checkedAt, status: "error", reason: outcome.reason });
@@ -248,8 +281,8 @@ for (const job of jobs) {
     runChecks.set(ref.url, { lastCheckedAt: checkedAt, status: "ok", fingerprint: fp });
     console.log(`read ${ref.url} (${outcome.paidReads} paid, ${outcome.cachedReads} cached)`);
   }
-  // Facts alone don't count as a check: the next scheduled run should still read the site.
-  if (!factsOnly) runSites.set(site.key, { lastCheckedAt: now.toISOString(), status: "ok", failures: 0 });
+  // A free run (facts, refresh) doesn't count as a site check: the next paid run is still due.
+  if (!free) runSites.set(site.key, { lastCheckedAt: now.toISOString(), status: "ok", failures: 0 });
   report.push(`site ${site.key}: ${refs.length} race page(s), ${siteRead} read`);
 }
 
@@ -346,15 +379,17 @@ if (dryRun) {
 }
 
 // 4. Report, and alert on Discord when something needs a person.
-if (counts.deferred > 0 && !free) alerts.push(`💳 Credit cap reached: ${counts.deferred} race(s) left for the next run (month ${month}: ${spentThisMonth + credits} of ${config.monthlyCredits}).`);
+if (counts.deferred > 0 && !free && budget < CREDITS_PER_READ + credits) {
+  alerts.push(`💳 Credit cap reached: ${counts.deferred} race(s) left pending for the next run (month ${month}: ${spentThisMonth + credits} of ${monthlyCap}${scheduled ? " scheduled" : ""}).`);
+}
 for (const s of plan.skipped) report.push(`· skipped ${s.url}: ${s.reason}`);
 
 const summary = [
-  `## Race check${dryRun ? " (dry run)" : ""}${factsOnly ? " (facts only: no reads)" : free ? " (free: cached reads only)" : ""}`,
+  `## Race check${dryRun ? " (dry run)" : ""}${scheduled ? " (scheduled)" : ""}${factsOnly ? " (facts only: no reads)" : refresh ? " (refresh: free)" : free ? " (free: cached reads only)" : ""}`,
   "",
-  `- Sites: ${counts.sites} · race pages: ${counts.races} (${counts.unchanged} unchanged, ${counts.read} read, ${counts.deferred} ${free ? "to read" : "deferred"}, ${counts.failed} failed)`,
-  `- Reads: ${counts.paidReads} paid, ${counts.cachedReads} from cache · Firecrawl credits: ${credits} (month: ${spentThisMonth + credits} of ${config.monthlyCredits})`,
-  ...(free && counts.deferred > 0 ? [`- A paid run would read ${counts.deferred} race(s) for at most ${counts.wouldSpend} credits`] : []),
+  `- Sites: ${counts.sites} · race pages: ${counts.races} (${counts.unchanged} unchanged, ${counts.read} read, ${counts.refreshed} refreshed and pending a read, ${counts.failed} failed)`,
+  `- Reads: ${counts.paidReads} paid, ${counts.cachedReads} from cache · Firecrawl credits: ${credits} (month: ${spentThisMonth + credits} of ${monthlyCap}${scheduled ? " scheduled" : ""})`,
+  ...(counts.deferred > 0 ? [`- A paid run would read the ${counts.deferred} pending race(s) for at most ${counts.wouldSpend} credits`] : []),
   `- Races: ${plan.changes.filter((c) => c.kind === "added").length} added, ${plan.changes.filter((c) => c.kind === "updated").length} updated`,
   `- Commit: ${commitSha ?? (dryRun ? "none (dry run)" : "none")}`,
   "",
@@ -376,7 +411,39 @@ if (alerts.length > 0 && webhook && !dryRun) {
 }
 
 // Red run if nothing could be read at all (bad key, every site down, ...).
-if (counts.failed > 0 && counts.read === 0 && counts.unchanged === 0) process.exitCode = 1;
+if (counts.failed > 0 && counts.read === 0 && counts.unchanged === 0 && counts.refreshed === 0) process.exitCode = 1;
+
+/** A source's free parts: the site's own facts, the page's links and the site's hints. Same shape for --facts-only and a refresh. */
+function factsExtraction(snap: Snapshot): StoredExtraction {
+  return {
+    ...(snap.facts && { facts: snap.facts }),
+    links: snap.links,
+    ...(snap.hints?.series && { series: snap.hints.series }),
+    ...(snap.hints?.organizer && { organizer: snap.hints.organizer }),
+  };
+}
+
+/** What this page's source said when it was last read in full (its stored `extracted`), from the race that has it; null if no race does. */
+async function storedExtraction(url: string): Promise<StoredExtraction | null> {
+  let canonical = url;
+  try {
+    canonical = canonicalSourceUrl(url);
+  } catch {
+    // keep the raw URL
+  }
+  const entry = index.find((e) => e.sourceUrls.includes(url) || e.sourceUrls.includes(canonical));
+  if (!entry) return null;
+  const text = await current.read(racePath(entry));
+  if (!text) return null;
+  const race = RaceSchema.parse(upgradeRace(JSON.parse(text)));
+  const source = race.sources.find((s) => s.url === url || s.url === canonical);
+  return source ? (source.extracted as StoredExtraction) : null;
+}
+
+/** Pending pages first, then the soonest race day (from the listing, else the race on file); see lib/state.ts sortByUrgency. */
+function sortRefs(refs: RaceRef[]): RaceRef[] {
+  return sortByUrgency(refs, checks, (r) => r.date ?? index.find((e) => e.sourceUrls.includes(r.url))?.date ?? "9999-12-31");
+}
 
 function fail(message: string): never {
   console.error(message);

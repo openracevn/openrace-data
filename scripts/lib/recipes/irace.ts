@@ -47,7 +47,9 @@
  *     (`[{...}]`), not a single object, and `organizer.url` is the organizer's own
  *     site, not an `/organizers/<slug>` page, so no organizer hint comes from it.
  */
+import { normalizeDistance } from "../extraction.ts";
 import { cleanContent, pageLinks, parseHtml } from "../html.ts";
+import { MIN_PRICE, isDistance } from "../schema.ts";
 import type { HTMLElement } from "node-html-parser";
 import { hostOf } from "../sites.ts";
 import { str } from "../text.ts";
@@ -128,6 +130,45 @@ export function parsePriceTable(table: HTMLElement): PriceDraft[] {
   return rows;
 }
 
+// The distance inside a product cell: "Kid Trail (5Km)", "5km Family (1 người lớn + 1 trẻ em)", "42KM - TIER 3".
+const DISTANCE_IN_CELL = /\b(\d+(?:[.,]\d+)?\s*(?:km|k|m|mi)|half marathon|bán marathon|full marathon|marathon)\b/i;
+// A price column with no tier of its own ("Giá vé", irace.vn's one-column layout).
+const GENERIC_TIER = /^(giá( vé)?|price|phí|fee)$/i;
+
+/**
+ * A parsed price table as facts (plan 026): the same rows the page extraction prompt
+ * asks the model for. A product cell that names more than a distance ("Kid Trail
+ * (5Km)", "5km Family (1 người lớn + 1 trẻ em)") keeps the product in the tier label,
+ * as the prompt does for bundles and team entries ("Combo 1 (2 tickets) Early Bird").
+ * Returns null when any row can't be stored without a human or a model looking at
+ * it: no distance in the cell, an unnamed tier, or an amount that isn't a printed
+ * round VND price above the plausible floor (a percentage, "Liên hệ").
+ */
+export function priceTableFacts(rows: PriceDraft[]): PriceDraft[] | null {
+  if (rows.length === 0) return null;
+  const out: PriceDraft[] = [];
+  for (const r of rows) {
+    const m = r.distance.match(DISTANCE_IN_CELL);
+    if (!m || !isDistance(normalizeDistance(m[1]!))) return null;
+    if (!Number.isInteger(r.price) || r.price % 1000 !== 0 || r.price < MIN_PRICE) return null;
+    const product = r.distance
+      .replace(m[0], " ")
+      .replace(/\(\s*\)/g, " ")
+      .replace(/^[\s\-–—:]+|[\s\-–—:]+$/g, "")
+      .replace(/\s+/g, " ")
+      .trim();
+    const tier = GENERIC_TIER.test(r.tier.trim()) ? product : [product, r.tier.trim()].filter(Boolean).join(" ");
+    if (!tier) return null;
+    out.push({ ...r, distance: m[1]!, tier });
+  }
+  return out;
+}
+
+/** True when `priceTableFacts` can store the table. */
+export function isCleanPriceTable(rows: PriceDraft[]): boolean {
+  return priceTableFacts(rows) !== null;
+}
+
 export const iraceRecipe: Recipe = {
   async discover(ctx: RecipeContext): Promise<RaceRef[]> {
     const url = ctx.site.url;
@@ -157,6 +198,9 @@ export const iraceRecipe: Recipe = {
     const content = parseHtml(`<main>${parts.map((el) => el.outerHTML).join("")}</main>`);
     const priceTable = content.querySelector("table");
     const pricesDraft = priceTable ? parsePriceTable(priceTable) : [];
+    // A table that parsed cleanly is a free fact (plan 026): the scheduled refresh
+    // takes it without a paid read, and reconcile trusts facts over the model.
+    const factPrices = priceTableFacts(pricesDraft);
 
     const event = readEventLd(html);
     const venue = str(first(event?.location)?.name);
@@ -174,6 +218,7 @@ export const iraceRecipe: Recipe = {
         ...(str(event?.name) && { name: event!.name }),
         ...(venue && { venue }),
         ...(organizerName && { organizer: organizerName }),
+        ...(factPrices && { prices: factPrices }),
       },
       hints: organizerName && organizerSlug ? { organizer: { id: organizerSlug, name: organizerName } } : {},
       slugHint: ref.slugHint ?? m?.[1] ?? m?.[2],

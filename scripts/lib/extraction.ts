@@ -237,11 +237,14 @@ export function normalizeExtraction(raw: SourceExtraction | Record<string, unkno
   if (mainDate !== null && (endDate === null || mainDate < date || mainDate > endDate)) mainDate = null;
 
   // A price table read from an image beats prices picked out of the text, which
-  // mixes in other fees (photos, VIP upgrades, transfers).
+  // mixes in other fees (photos, VIP upgrades, transfers). Prices the site states
+  // itself (a free fee, a table parsed from its HTML) beat the model's reading of
+  // the same text, and don't get mixed with it (plan 026).
   const tiersOf = (ls: Record<string, unknown>[]) =>
     dropUnsplitAudiences(fillTierDates(dedupeTiers(ls.flatMap((l) => dropComputedGroupPrices((Array.isArray(l.prices) ? l.prices : []).map((t) => normalizeTier(t, date)).filter((t) => t !== null))))));
   const imageTiers = tiersOf(images);
-  const prices = imageTiers.length > 0 ? imageTiers : tiersOf([facts, ...pages]);
+  const factTiers = tiersOf([facts]);
+  const prices = imageTiers.length > 0 ? imageTiers : factTiers.length > 0 ? factTiers : tiersOf(pages);
   const types = normalizeTypes(first((l) => (Array.isArray(l.types) && l.types.length > 0 ? l.types : null)), name);
   const distances = multisportFormats(
     normalizeDistances([

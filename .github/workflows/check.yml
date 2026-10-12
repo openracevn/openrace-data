@@ -3,11 +3,14 @@ name: Check races
 # Design v2 (.claude/docs/design-v2.md): reads the sites in config/sites.yaml with
 # their recipes, pays Firecrawl only for content that changed, and commits races +
 # state in one commit.
-# Manual only for now (Actions tab → Run workflow). The daily schedule is off until
-# the data is trusted; to turn it on, add (each site is then read on its own cadence):
-#   schedule:
-#     - cron: "17 0 * * *" # 07:17 in Vietnam
+# Plan 026, lane B: every Tuesday 08:00 in Vietnam it reads the due sites, pending
+# and soonest races first, with at most 150 credits per run and the scheduled cap
+# per month (scheduledMonthlyCredits in config/sites.yaml), paid reads only on
+# trusted sites. The daily free refresh is refresh.yml. Manual runs (Actions tab →
+# Run workflow) keep the inputs below and the full monthly cap.
 on:
+  schedule:
+    - cron: "0 1 * * 2"
   workflow_dispatch:
     inputs:
       site:
@@ -71,12 +74,14 @@ jobs:
           RACE: ${{ inputs.race }}
           PAST: ${{ inputs.past }}
           LIMIT: ${{ inputs.limit }}
-          MAX_CREDITS: ${{ inputs.max_credits || '250' }}
+          MAX_CREDITS: ${{ github.event_name == 'schedule' && '150' || inputs.max_credits || '250' }}
           FREE: ${{ inputs.free }}
           FACTS_ONLY: ${{ inputs.facts_only }}
           DRY_RUN: ${{ inputs.dry_run }}
+          SCHEDULED: ${{ github.event_name == 'schedule' }}
         run: |
           args=(--max-credits "$MAX_CREDITS")
+          if [[ "$SCHEDULED" == "true" ]]; then args+=(--scheduled); fi
           if [[ -n "$SITE" ]]; then args+=(--site "$SITE"); fi
           if [[ -n "$RACE" ]]; then args+=(--race "$RACE"); fi
           if [[ -n "$LIMIT" ]]; then args+=(--limit "$LIMIT"); fi
@@ -85,3 +90,13 @@ jobs:
           if [[ "$FACTS_ONLY" == "true" ]]; then args+=(--facts-only); fi
           if [[ "$DRY_RUN" == "true" ]]; then args+=(--dry-run); fi
           npm run -s check -- "${args[@]}"
+      # A red scheduled run (bad key, every site down, commit failed) says so in Discord.
+      - name: Alert Discord on failure
+        if: failure() && github.event_name == 'schedule'
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          [[ -n "$DISCORD_WEBHOOK_URL" ]] || exit 0
+          jq -n --arg content ":red_circle: **Check races failed**: the weekly paid read didn't finish. ${RUN_URL}" '{content: $content}' |
+            curl -fsS -X POST -H 'Content-Type: application/json' --data @- "$DISCORD_WEBHOOK_URL"
