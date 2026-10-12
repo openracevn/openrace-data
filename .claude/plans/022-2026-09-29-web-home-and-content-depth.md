@@ -1,6 +1,6 @@
 # Plan 022: The web as the window on the data (home page, thin pages, developers page)
 
-**Superseded by [plan 025](025-2026-10-12-api-and-mcp-are-the-product.md) (2026-10-12):** race, series, organizer and hub pages are removed; the website is a small static window.
+**Superseded by [plan 025](025-2026-10-12-mcp-only.md) (2026-10-12):** race, series, organizer and hub pages are removed; the website is a small static window.
 
 Date: 2026-09-29. Status: built 2026-09-29 (steps 0–5); step 6 is later work. The work is in openrace-web, with a small read from openrace-api; nothing changes in the data. It goes with [plan 021](021-2026-09-29-mvp-launch-checklist.md) (domains, license, open API and MCP) and takes the per-year chart from [plan 020](020-2026-09-29-trends-and-stats.md) when that ships. The web repo's plans index gets a line that links here.
 

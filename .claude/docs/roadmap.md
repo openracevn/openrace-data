@@ -32,17 +32,17 @@ Day-to-day tasks live in [status.md](status.md); how things are built lives in [
    - share of races with GPX
    - price trends by year
    - deeper stats once there's enough history (backfill)
-5. **Open it up.** A public API and an MCP server **are the product**: the data reaches people through other apps and AI assistants, and we act as a data provider for others (MCP registries, Firecrawl's provider catalogue, other apps). The website (openrace-web) is only a small static window: what OpenRace is, how to connect, stats with real charts, and how the data is kept. It is not a place to browse races (see "Who we serve, and why not web traffic"). *API built; MCP server built ([plan 005](../plans/005-2026-09-24-mcp-server.md), live 2026-09-24); launch on openrace.perxel.com: [plan 025](../plans/025-2026-10-12-api-and-mcp-are-the-product.md).*
+5. **Open it up, through MCP only.** The MCP server **is the product** and the only public way in: the data reaches people through AI assistants (Claude, ChatGPT, Cursor) and other MCP clients, and we list it in MCP registries. The API is internal: only openrace-mcp (service binding) and our own builds call it (change log, 2026-10-12). There is no OpenRace website: OpenRace is presented on the Perxel website, and openrace-web is archived (see "Who we serve, and why not web traffic"). *API built (to be made internal); MCP server built ([plan 005](../plans/005-2026-09-24-mcp-server.md), live 2026-09-24); MCP-only launch: [plan 025](../plans/025-2026-10-12-mcp-only.md).*
 
 ## Who we serve, and why not web traffic
 
-Decided by the user on 2026-10-12 ([plan 025](../plans/025-2026-10-12-api-and-mcp-are-the-product.md)). **Read this before any plan that adds pages, SEO work or features for site visitors.**
+Decided by the user on 2026-10-12 ([plan 025](../plans/025-2026-10-12-mcp-only.md)). **Read this before any plan that adds pages, SEO work or features for site visitors.**
 
-- **We serve systems first:** apps, chatbots and AI assistants that use the API or MCP, and through them, runners. We don't run a race-browsing website.
+- **We serve systems first:** AI assistants and other MCP clients, and through them, runners. We don't run a race-browsing website.
 - **Web traffic doesn't benefit OpenRace.** A visit is only worth what it turns into. For a runner on our site that is no money (ads, tickets and paid listings are non-goals; non-commercial), no accounts or community (non-goals), almost no better data (visitors don't send corrections), and a real cost (every page view runs our code; on 2026-10-12 that took the site down on Cloudflare's free CPU limit).
 - **What does benefit us:** (1) being the source other systems use, since one integration reaches more runners than our own site and costs nothing to serve; (2) Perxel's credibility, from a working data product with an MCP server; (3) better data, the moat that drives both.
-- **Crawlable, not visited:** AI answers should be able to cite us, through the public JSON on GitHub, `llms.txt` and the API docs, not through race pages.
-- **Measure:** API and MCP calls, distinct clients, integrations, completeness and freshness. Not page views.
+- **Reached through MCP, not visited:** assistants get the data by connecting to the MCP server. `llms.txt` on the MCP server and the Perxel website say what OpenRace is and how to connect; there are no race pages and no public API docs. The openrace-data repo stays public for now, but we don't point anyone to it.
+- **Measure:** MCP tool calls, distinct clients, completeness and freshness. Not page views.
 - **Given up on purpose:** Google traffic from runners and a shareable page per race. A plan that wants them back must show what that traffic turns into, against the list above.
 - **No hosted chatbot:** answering questions on our site would need a paid LLM (breaks the budget). People bring their own assistant through MCP.
 
@@ -87,6 +87,7 @@ Old place names ("Nha Trang", "Bình Dương") must keep working after the 2025 
 
 Deliberate changes of direction, newest first.
 
+- **2026-10-12 (plan 025, amended twice):** MCP only, and no OpenRace website. The API is no longer public: only openrace-mcp (through its service binding) and the openrace-data sync webhook reach it. openrace-web is archived (tagged, not deleted) and OpenRace launches on the Perxel website. Path step 4's stats page is dropped with it. No CORS, no public API reference, no data catalogues (Firecrawl's provider catalogue dropped). The openrace-data repo stays public for now but isn't promoted. Confirmed by the user.
 - **2026-10-12 (plan 025):** The API and MCP server are the product; the website shrinks to a few static pages (home and how to connect, stats with real charts, transparency). Race, series, organizer and hub pages are removed, and so is the goal of web traffic; the reasoning is in "Who we serve, and why not web traffic". No hosted chatbot (budget). Launch is on `openrace.perxel.com`; `openrace.vn` waits until there is budget. This replaces the 2026-09-29 (plan 022) line. Confirmed by the user.
 - **2026-09-29 (plan 022):** The website is named on the path as step 5's public window: it shows what the dataset is (counts, years, freshness) and points to the API and MCP. Every number and generated sentence on it comes from the API; thin pages are kept out of the index until the data fills them. Confirmed by the user.
 - **2026-09-29 (plan 019):** Three changes, all confirmed by the user. (1) Trust principle 5 is relaxed: Claude's own web search and page reads lead, and recipes / `find-sources` stay for sites that have one; a fact from a search snippet still needs a fetched, saved page. (2) Firecrawl is opt-in, used only when the user asks; the budget constraint is unchanged. (3) Parallel Claude subagents are allowed (`race-research` forbade them), on purpose, for speed. Trust principles 1, 3, 4 and 6 hold.

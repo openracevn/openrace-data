@@ -1,6 +1,6 @@
 # Plan 024: Launch readiness, an owner's review and a plan for today
 
-Date: 2026-10-12. Status: **superseded by [plan 025](025-2026-10-12-api-and-mcp-are-the-product.md)** the same day: the user decided the API and MCP are the product and the website shrinks to a few static pages. Its review findings and its data work (blocks 2 and 3) carry over into plan 025. Spans openrace-data, openrace-web, openrace-api and openrace-mcp. It replaces the order of [plan 021](021-2026-09-29-mvp-launch-checklist.md): the domain comes last, and launch means `openrace.perxel.com`.
+Date: 2026-10-12. Status: **superseded by [plan 025](025-2026-10-12-mcp-only.md)** the same day: the user decided the API and MCP are the product and the website shrinks to a few static pages. Its review findings and its data work (blocks 2 and 3) carry over into plan 025. Spans openrace-data, openrace-web, openrace-api and openrace-mcp. It replaces the order of [plan 021](021-2026-09-29-mvp-launch-checklist.md): the domain comes last, and launch means `openrace.perxel.com`.
 
 ## Roadmap fit
 
