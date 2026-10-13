@@ -115,7 +115,7 @@
   },
   "prices": [],
   "currency": "VND",
-  "registrationStatus": null,
+  "registrationStatus": "open",
   "registrations": [
     {
       "site": "actiup",
@@ -137,7 +137,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/dalat-ultra-trail-2027",
-      "lastCheckedAt": "2026-10-12T17:47:13.983Z",
+      "lastCheckedAt": "2026-10-13T07:07:53.078Z",
       "lastChangedAt": "2026-10-12T17:47:13.983Z",
       "extracted": {
         "facts": {
@@ -147,6 +147,7 @@
           "venue": "Thung Lũng Tình Yêu",
           "organizer": "Vietnam MTB Series",
           "currency": "VND",
+          "registrationStatus": "open",
           "fromPrice": 760000
         },
         "links": [
@@ -164,5 +165,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-10-12T17:48:31.011Z",
-  "updatedAt": "2026-10-12T17:48:31.011Z"
+  "updatedAt": "2026-10-13T07:09:05.682Z"
 }

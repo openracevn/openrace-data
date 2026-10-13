@@ -374,7 +374,13 @@
       "url": "https://actiup.net/vi/event/gia-lai-city-trail-giac-mo-dai-ngan-2026"
     }
   ],
-  "links": [],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/19t4etyMitS-cSb7EXQ2pnYmgNm5FhArz/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
   "participants": null,
   "flags": [],
   "overrides": {},
@@ -383,7 +389,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/gia-lai-city-trail-giac-mo-dai-ngan-2026",
-      "lastCheckedAt": "2026-10-12T17:50:21.156Z",
+      "lastCheckedAt": "2026-10-13T07:07:55.474Z",
       "lastChangedAt": "2026-09-23T18:30:50.684Z",
       "extracted": {
         "facts": {
@@ -457,7 +463,12 @@
             }
           }
         ],
-        "links": [],
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/19t4etyMitS-cSb7EXQ2pnYmgNm5FhArz/view?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
         "organizer": {
           "id": "vietrace365",
           "name": "VIETRACE365"
@@ -654,5 +665,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-13T02:40:11.333Z"
+  "updatedAt": "2026-10-13T07:09:05.682Z"
 }

@@ -1,0 +1,168 @@
+{
+  "id": "87fc1d38-87d8-4af4-ae3c-abc8958a287d",
+  "slug": "run-to-live-2027",
+  "name": "Run To Live 2027",
+  "types": [
+    "other"
+  ],
+  "date": "2027-04-11",
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": "run-to-live",
+  "organizerId": "miracle-entertainment-group",
+  "organizer": "Miracle Entertainment Group",
+  "edition": null,
+  "courses": [],
+  "location": {
+    "venue": "Công viên bờ sông Sài Gòn",
+    "city": null
+  },
+  "geo": {
+    "lat": 10.7705461,
+    "lng": 106.7120693,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "27094"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "769",
+      "ward": "27118"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 4.2,
+        "minutes": 6,
+        "method": "road",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1495.9,
+        "minutes": 1136,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 862.6,
+        "minutes": 652,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 411.3,
+        "minutes": 294,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 294.9,
+        "minutes": 222,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 172.2,
+        "minutes": 137,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1530,
+        "minutes": 1161,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 945.3,
+        "minutes": 726,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 94.3,
+        "minutes": 87,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 617.2,
+        "minutes": 457,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 358.6,
+        "minutes": 263,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1803.6,
+        "minutes": 1369,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1579.7,
+        "minutes": 1193,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/run-to-live-2027"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1U4JR7slLrfFazqbgBfU9Febj-eI132_O/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/run-to-live-2027",
+      "lastCheckedAt": "2026-10-13T07:07:53.879Z",
+      "lastChangedAt": "2026-10-13T07:07:53.879Z",
+      "extracted": {
+        "facts": {
+          "name": "Run To Live 2027",
+          "date": "2027-04-11",
+          "venue": "Công viên bờ sông Sài Gòn",
+          "organizer": "Miracle Entertainment Group",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 900000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1U4JR7slLrfFazqbgBfU9Febj-eI132_O/view",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "miracle-entertainment-group",
+          "name": "Miracle Entertainment Group"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-10-13T07:09:05.682Z",
+  "updatedAt": "2026-10-13T07:09:05.682Z"
+}

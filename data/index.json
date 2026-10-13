@@ -3262,6 +3262,21 @@
     "linkUrls": []
   },
   {
+    "id": "87fc1d38-87d8-4af4-ae3c-abc8958a287d",
+    "slug": "run-to-live-2027",
+    "name": "Run To Live 2027",
+    "date": "2027-04-11",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-10-13T07:09:05.682Z",
+    "file": "run-to-live-2027.json",
+    "seriesId": "run-to-live",
+    "sourceUrls": [
+      "https://actiup.net/vi/event/run-to-live-2027"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "88fb0464-d184-4f3f-a4f3-57362bb5c294",
     "slug": "vnexpress-marathon-ho-chi-minh-3",
     "name": "VPBank VnExpress Marathon Ho Chi Minh City Midnight 2024",
@@ -4344,7 +4359,7 @@
     "date": "2026-10-30",
     "endDate": "2026-11-01",
     "mainDate": null,
-    "lastModified": "2026-10-13T02:40:11.333Z",
+    "lastModified": "2026-10-13T07:09:05.682Z",
     "file": "gia-lai-city-trail-giac-mo-dai-ngan-2026.json",
     "seriesId": "gia-lai-city-trail-giac-mo-dai-ngan",
     "sourceUrls": [
@@ -5710,7 +5725,7 @@
     "date": "2027-03-19",
     "endDate": "2027-03-21",
     "mainDate": null,
-    "lastModified": "2026-10-12T17:48:31.011Z",
+    "lastModified": "2026-10-13T07:09:05.682Z",
     "file": "dalat-ultra-trail-2027.json",
     "seriesId": "dalat-ultra-trail",
     "sourceUrls": [

@@ -4282,6 +4282,106 @@
     "query": "Công viên Biển Đông, Thành phố Đà Nẵng, Việt Nam",
     "at": "2026-09-24T06:36:55.217Z"
   },
+  "cong vien bo song sai gon | ": {
+    "geo": {
+      "lat": 10.7705461,
+      "lng": 106.7120693,
+      "source": "nominatim",
+      "precision": "venue",
+      "current": {
+        "province": "79",
+        "ward": "27094"
+      },
+      "legacy": {
+        "province": "79",
+        "district": "769",
+        "ward": "27118"
+      },
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 4.2,
+          "minutes": 6,
+          "method": "road",
+          "near": true
+        },
+        "ha-noi": {
+          "km": 1495.9,
+          "minutes": 1136,
+          "method": "road",
+          "near": false
+        },
+        "da-nang": {
+          "km": 862.6,
+          "minutes": 652,
+          "method": "road",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 411.3,
+          "minutes": 294,
+          "method": "road",
+          "near": false
+        },
+        "da-lat": {
+          "km": 294.9,
+          "minutes": 222,
+          "method": "road",
+          "near": false
+        },
+        "can-tho": {
+          "km": 172.2,
+          "minutes": 137,
+          "method": "road",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 1530,
+          "minutes": 1161,
+          "method": "road",
+          "near": false
+        },
+        "hue": {
+          "km": 945.3,
+          "minutes": 726,
+          "method": "road",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 94.3,
+          "minutes": 87,
+          "method": "road",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 617.2,
+          "minutes": 457,
+          "method": "road",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 358.6,
+          "minutes": 263,
+          "method": "road",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 1803.6,
+          "minutes": 1369,
+          "method": "road",
+          "near": false
+        },
+        "ha-long": {
+          "km": 1579.7,
+          "minutes": 1193,
+          "method": "road",
+          "near": false
+        }
+      }
+    },
+    "query": "Công viên bờ sông Sài Gòn",
+    "at": "2026-10-13T07:09:05.682Z"
+  },
   "cong vien bo song sai gon khu do thi moi thu thiem tp thu duc tp hcm | ": {
     "geo": {
       "lat": 10.7737261,
