@@ -6,7 +6,8 @@
     "triathlon"
   ],
   "date": "2027-05-08",
-  "endDate": "2027-11-22",
+  "endDate": null,
+  "mainDate": null,
   "seriesId": "sunrise-sprint-viet-nam-in-da-nang",
   "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
@@ -119,7 +120,32 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "Sprint",
+      "tier": "General entry",
+      "kind": "regular",
+      "audience": null,
+      "price": 3680000,
+      "from": null,
+      "to": "2027-05-08",
+      "inferred": [
+        "to"
+      ],
+      "site": "ironman-com"
+    },
+    {
+      "distance": "Sprint",
+      "tier": "Relay entry",
+      "kind": "group",
+      "audience": null,
+      "price": 4180000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -129,10 +155,15 @@
     }
   ],
   "links": [],
-  "flags": [
-    "race spans 198 days (2027-05-08 to 2027-11-22); endDate may be the registration close"
-  ],
-  "overrides": {},
+  "participants": null,
+  "flags": [],
+  "overrides": {
+    "endDate": {
+      "value": null,
+      "reason": "one-day race: ActiUp API now gives start_date and end_date 2027-05-08 and ironman.com says Saturday 08 May 2027; the stored endDate 2027-11-22 came from an older ActiUp page read (Phu Quoc-like dates) and is wrong",
+      "at": "2026-10-13T02:12:57.272Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -181,9 +212,35 @@
           "name": "Sunrise Events Vietnam"
         }
       }
+    },
+    {
+      "site": "ironman-com",
+      "role": "reference",
+      "url": "https://ironman.com/races/im703-danang/sunrise-sprint",
+      "lastCheckedAt": "2026-10-13T02:12:57.272Z",
+      "lastChangedAt": "2026-10-13T02:12:57.272Z",
+      "extracted": {
+        "facts": {
+          "name": "SUNRISE SPRINT Viet Nam in Da Nang 2027",
+          "date": "2027-05-08",
+          "prices": [
+            {
+              "distance": "Sprint",
+              "tier": "General entry",
+              "price": 3680000
+            },
+            {
+              "distance": "Sprint",
+              "tier": "Relay entry",
+              "price": 4180000
+            }
+          ],
+          "note": "IRONMAN 70.3 Da Nang's own Sunrise SPRINT page: race day Saturday 08 May 2027, General entry ₫3,680,000 (registration open), Relay entry ₫4,180,000 (opening soon); only the current price is shown, no tier names or dates. ActiUp's min_price 2,980,000 is unlabelled and not staged."
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-10-13T02:12:57.272Z"
 }

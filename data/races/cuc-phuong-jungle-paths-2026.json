@@ -7,6 +7,7 @@
   ],
   "date": "2026-12-25",
   "endDate": "2026-12-27",
+  "mainDate": null,
   "seriesId": "cuc-phuong-jungle-paths",
   "organizerId": "race-jungle",
   "organizer": "Race Jungle",
@@ -45,12 +46,12 @@
   ],
   "location": {
     "venue": "Vườn Quốc gia Cúc Phương, Ninh Bình, Việt Nam",
-    "city": null
+    "city": "Ninh Bình"
   },
   "geo": {
     "lat": 20.3162835,
     "lng": 105.6176593,
-    "source": "nominatim",
+    "source": "manual",
     "precision": "venue",
     "current": {
       "province": "37",
@@ -77,19 +78,19 @@
       },
       "da-nang": {
         "km": 695.1,
-        "minutes": 592,
+        "minutes": 590,
         "method": "road",
         "near": false
       },
       "nha-trang": {
         "km": 1198.9,
-        "minutes": 979,
+        "minutes": 977,
         "method": "road",
         "near": false
       },
       "da-lat": {
         "km": 1326.3,
-        "minutes": 1097,
+        "minutes": 1095,
         "method": "road",
         "near": false
       },
@@ -107,31 +108,31 @@
       },
       "hue": {
         "km": 592.9,
-        "minutes": 509,
+        "minutes": 508,
         "method": "road",
         "near": false
       },
       "vung-tau": {
         "km": 1508.5,
-        "minutes": 1186,
+        "minutes": 1187,
         "method": "road",
         "near": false
       },
       "quy-nhon": {
         "km": 1006.9,
-        "minutes": 819,
+        "minutes": 817,
         "method": "road",
         "near": false
       },
       "buon-ma-thuot": {
         "km": 1203.6,
-        "minutes": 1016,
+        "minutes": 1014,
         "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 408.9,
-        "minutes": 356,
+        "km": 408.1,
+        "minutes": 355,
         "method": "road",
         "near": false
       },
@@ -143,7 +144,228 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "10km",
+      "tier": "Priority",
+      "kind": "other",
+      "audience": null,
+      "price": 840000,
+      "from": "2025-11-19",
+      "to": "2026-03-18",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1050000,
+      "from": "2026-03-19",
+      "to": "2026-05-27",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "10km",
+      "tier": "Noon",
+      "kind": "other",
+      "audience": null,
+      "price": 1232000,
+      "from": "2026-05-28",
+      "to": "2026-11-10",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1400000,
+      "from": "2026-11-11",
+      "to": "2026-12-25",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "25km",
+      "tier": "Priority",
+      "kind": "other",
+      "audience": null,
+      "price": 1440000,
+      "from": "2025-11-19",
+      "to": "2026-03-18",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "25km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1800000,
+      "from": "2026-03-19",
+      "to": "2026-05-27",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "25km",
+      "tier": "Noon",
+      "kind": "other",
+      "audience": null,
+      "price": 2112000,
+      "from": "2026-05-28",
+      "to": "2026-11-10",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "25km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2400000,
+      "from": "2026-11-11",
+      "to": "2026-12-25",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "42km",
+      "tier": "Priority",
+      "kind": "other",
+      "audience": null,
+      "price": 1920000,
+      "from": "2025-11-19",
+      "to": "2026-03-18",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2400000,
+      "from": "2026-03-19",
+      "to": "2026-05-27",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "42km",
+      "tier": "Noon",
+      "kind": "other",
+      "audience": null,
+      "price": 2816000,
+      "from": "2026-05-28",
+      "to": "2026-11-10",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "42km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 3200000,
+      "from": "2026-11-11",
+      "to": "2026-12-25",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "75km",
+      "tier": "Priority",
+      "kind": "other",
+      "audience": null,
+      "price": 2340000,
+      "from": "2025-11-19",
+      "to": "2026-03-18",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "75km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2925000,
+      "from": "2026-03-19",
+      "to": "2026-05-27",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "75km",
+      "tier": "Noon",
+      "kind": "other",
+      "audience": null,
+      "price": 3432000,
+      "from": "2026-05-28",
+      "to": "2026-11-10",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "75km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 3900000,
+      "from": "2026-11-11",
+      "to": "2026-12-25",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "100km",
+      "tier": "Priority",
+      "kind": "other",
+      "audience": null,
+      "price": 2700000,
+      "from": "2025-11-19",
+      "to": "2026-03-18",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "100km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 3375000,
+      "from": "2026-03-19",
+      "to": "2026-05-27",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "100km",
+      "tier": "Noon",
+      "kind": "other",
+      "audience": null,
+      "price": 3960000,
+      "from": "2026-05-28",
+      "to": "2026-11-10",
+      "inferred": [],
+      "site": "5bib"
+    },
+    {
+      "distance": "100km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 4500000,
+      "from": "2026-11-11",
+      "to": "2026-12-25",
+      "inferred": [],
+      "site": "5bib"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -159,8 +381,118 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "location": {
+      "value": {
+        "venue": "Vườn Quốc gia Cúc Phương, Ninh Bình, Việt Nam",
+        "city": "Ninh Bình"
+      },
+      "reason": "5BIB event data states province 'Tỉnh Ninh Bình' (ward Xã Cúc Phương); ActiUp gives only the venue. Province used as city like other provincial races (Ultra Trail Cao Bang). geo kept from the point already stored for this venue (state/geo.json 'vuon quoc gia cuc phuong ninh binh viet nam'), since the new location key has no geo entry yet.",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "geo": {
+      "value": {
+        "lat": 20.3162835,
+        "lng": 105.6176593,
+        "source": "manual",
+        "precision": "venue",
+        "current": {
+          "province": "37",
+          "ward": "14404"
+        },
+        "legacy": {
+          "province": "37",
+          "district": "372",
+          "ward": "14404"
+        },
+        "access": "road",
+        "fromPlaces": {
+          "hcmc": {
+            "km": 1417.6,
+            "minutes": 1104,
+            "method": "road",
+            "near": false
+          },
+          "ha-noi": {
+            "km": 126,
+            "minutes": 136,
+            "method": "road",
+            "near": false
+          },
+          "da-nang": {
+            "km": 695.1,
+            "minutes": 590,
+            "method": "road",
+            "near": false
+          },
+          "nha-trang": {
+            "km": 1198.9,
+            "minutes": 977,
+            "method": "road",
+            "near": false
+          },
+          "da-lat": {
+            "km": 1326.3,
+            "minutes": 1095,
+            "method": "road",
+            "near": false
+          },
+          "can-tho": {
+            "km": 1528.5,
+            "minutes": 1224,
+            "method": "road",
+            "near": false
+          },
+          "hai-phong": {
+            "km": 187.2,
+            "minutes": 169,
+            "method": "road",
+            "near": false
+          },
+          "hue": {
+            "km": 592.9,
+            "minutes": 508,
+            "method": "road",
+            "near": false
+          },
+          "vung-tau": {
+            "km": 1508.5,
+            "minutes": 1187,
+            "method": "road",
+            "near": false
+          },
+          "quy-nhon": {
+            "km": 1006.9,
+            "minutes": 817,
+            "method": "road",
+            "near": false
+          },
+          "buon-ma-thuot": {
+            "km": 1203.6,
+            "minutes": 1014,
+            "method": "road",
+            "near": false
+          },
+          "sa-pa": {
+            "km": 408.1,
+            "minutes": 355,
+            "method": "road",
+            "near": false
+          },
+          "ha-long": {
+            "km": 236.9,
+            "minutes": 201,
+            "method": "road",
+            "near": false
+          }
+        }
+      },
+      "reason": "5BIB event data states province 'Tỉnh Ninh Bình' (ward Xã Cúc Phương); ActiUp gives only the venue. Province used as city like other provincial races (Ultra Trail Cao Bang). geo kept from the point already stored for this venue (state/geo.json 'vuon quoc gia cuc phuong ninh binh viet nam'), since the new location key has no geo entry yet.",
+      "at": "2026-10-13T02:12:57.272Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -239,9 +571,168 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "5bib",
+      "role": "reference",
+      "url": "https://5bib.com/vi/events/cuc-phuong-jungle-paths-2026",
+      "lastCheckedAt": "2026-10-13T02:12:57.272Z",
+      "lastChangedAt": "2026-10-13T02:12:57.272Z",
+      "extracted": {
+        "facts": {
+          "name": "CUC PHUONG JUNGLE PATHS 2026",
+          "date": "2026-12-26",
+          "endDate": "2026-12-27",
+          "city": "Ninh Bình",
+          "venue": "Khu hồ Mạc - VQG Cúc Phương",
+          "prices": [
+            {
+              "distance": "10km",
+              "tier": "Priority",
+              "from": "2025-11-19",
+              "to": "2026-03-18",
+              "price": 840000
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "from": "2026-03-19",
+              "to": "2026-05-27",
+              "price": 1050000
+            },
+            {
+              "distance": "10km",
+              "tier": "Noon",
+              "from": "2026-05-28",
+              "to": "2026-11-10",
+              "price": 1232000
+            },
+            {
+              "distance": "10km",
+              "tier": "Regular",
+              "from": "2026-11-11",
+              "to": "2026-12-25",
+              "price": 1400000
+            },
+            {
+              "distance": "25km",
+              "tier": "Priority",
+              "from": "2025-11-19",
+              "to": "2026-03-18",
+              "price": 1440000
+            },
+            {
+              "distance": "25km",
+              "tier": "Early Bird",
+              "from": "2026-03-19",
+              "to": "2026-05-27",
+              "price": 1800000
+            },
+            {
+              "distance": "25km",
+              "tier": "Noon",
+              "from": "2026-05-28",
+              "to": "2026-11-10",
+              "price": 2112000
+            },
+            {
+              "distance": "25km",
+              "tier": "Regular",
+              "from": "2026-11-11",
+              "to": "2026-12-25",
+              "price": 2400000
+            },
+            {
+              "distance": "42km",
+              "tier": "Priority",
+              "from": "2025-11-19",
+              "to": "2026-03-18",
+              "price": 1920000
+            },
+            {
+              "distance": "42km",
+              "tier": "Early Bird",
+              "from": "2026-03-19",
+              "to": "2026-05-27",
+              "price": 2400000
+            },
+            {
+              "distance": "42km",
+              "tier": "Noon",
+              "from": "2026-05-28",
+              "to": "2026-11-10",
+              "price": 2816000
+            },
+            {
+              "distance": "42km",
+              "tier": "Regular",
+              "from": "2026-11-11",
+              "to": "2026-12-25",
+              "price": 3200000
+            },
+            {
+              "distance": "75km",
+              "tier": "Priority",
+              "from": "2025-11-19",
+              "to": "2026-03-18",
+              "price": 2340000
+            },
+            {
+              "distance": "75km",
+              "tier": "Early Bird",
+              "from": "2026-03-19",
+              "to": "2026-05-27",
+              "price": 2925000
+            },
+            {
+              "distance": "75km",
+              "tier": "Noon",
+              "from": "2026-05-28",
+              "to": "2026-11-10",
+              "price": 3432000
+            },
+            {
+              "distance": "75km",
+              "tier": "Regular",
+              "from": "2026-11-11",
+              "to": "2026-12-25",
+              "price": 3900000
+            },
+            {
+              "distance": "100km",
+              "tier": "Priority",
+              "from": "2025-11-19",
+              "to": "2026-03-18",
+              "price": 2700000
+            },
+            {
+              "distance": "100km",
+              "tier": "Early Bird",
+              "from": "2026-03-19",
+              "to": "2026-05-27",
+              "price": 3375000
+            },
+            {
+              "distance": "100km",
+              "tier": "Noon",
+              "from": "2026-05-28",
+              "to": "2026-11-10",
+              "price": 3960000
+            },
+            {
+              "distance": "100km",
+              "tier": "Regular",
+              "from": "2026-11-11",
+              "to": "2026-12-25",
+              "price": 4500000
+            }
+          ],
+          "note": "5BIB ticket list (Race Jungle's seller): 4 tiers x 5 courses with valid dates; province Tỉnh Ninh Bình, location Khu hồ Mạc - VQG Cúc Phương. Noon and Regular match the organizer's racejungle.com product page (sale price and list price)."
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T04:03:37.715Z"
+  "updatedAt": "2026-10-13T02:12:57.272Z"
 }

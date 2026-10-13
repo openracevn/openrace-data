@@ -11,7 +11,7 @@
   "seriesId": "standard-chartered-hanoi-marathon-heritage-race",
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "DHA Vietnam | Ban tổ chức sự kiện",
-  "edition": 10,
+  "edition": 3,
   "courses": [
     {
       "label": "2.1km",
@@ -46,7 +46,7 @@
   ],
   "location": {
     "venue": "Hà Nội, Việt Nam",
-    "city": null
+    "city": "Hà Nội"
   },
   "geo": {
     "lat": 21.0283334,
@@ -143,6 +143,182 @@
   "prices": [
     {
       "distance": "5km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 258000,
+      "from": "2026-03-04",
+      "to": "2026-03-06",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 358000,
+      "from": "2026-03-04",
+      "to": "2026-03-06",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 458000,
+      "from": "2026-03-04",
+      "to": "2026-03-06",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 558000,
+      "from": "2026-03-04",
+      "to": "2026-03-06",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 358000,
+      "from": "2026-03-07",
+      "to": "2026-03-28",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 478000,
+      "from": "2026-03-07",
+      "to": "2026-03-28",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 658000,
+      "from": "2026-03-07",
+      "to": "2026-03-28",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 758000,
+      "from": "2026-03-07",
+      "to": "2026-03-28",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 500000,
+      "from": "2026-03-29",
+      "to": "2026-06-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 650000,
+      "from": "2026-03-29",
+      "to": "2026-06-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 850000,
+      "from": "2026-03-29",
+      "to": "2026-06-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 950000,
+      "from": "2026-03-29",
+      "to": "2026-06-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 500000,
+      "from": "2026-07-01",
+      "to": "2026-08-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 1100000,
+      "from": "2026-07-01",
+      "to": "2026-08-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 1300000,
+      "from": "2026-07-01",
+      "to": "2026-08-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 1500000,
+      "from": "2026-07-01",
+      "to": "2026-08-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
       "tier": "Late",
       "kind": "late",
       "audience": null,
@@ -184,10 +360,23 @@
       "to": "2026-09-30",
       "inferred": [],
       "site": "irace"
+    },
+    {
+      "distance": "2.1km",
+      "tier": "Regular (giá gốc)",
+      "kind": "regular",
+      "audience": null,
+      "price": 300000,
+      "from": null,
+      "to": "2026-11-08",
+      "inferred": [
+        "to"
+      ],
+      "site": "standard-chartered-hanoi-marathon"
     }
   ],
   "currency": "VND",
-  "registrationStatus": "open",
+  "registrationStatus": "closed",
   "registrations": [
     {
       "site": "irace",
@@ -260,12 +449,7 @@
       "foundOn": "actiup.net"
     }
   ],
-  "participants": {
-    "count": 10000,
-    "sourceUrl": "https://actiup.net/vi/event/standard-chartered-hanoi-marathon-heritage-race-2026",
-    "quote": "hơn 10.000 người đăng ký thi đấu",
-    "confidence": "medium"
-  },
+  "participants": null,
   "flags": [],
   "overrides": {
     "organizerId": {
@@ -287,6 +471,24 @@
       "value": "2026-11-08",
       "reason": "Official site https://hanoi-marathon.com/ states the race runs 6-8/11/2026 with the main race day on 8/11/2026 (actiup gives 7-8 Nov, irace 8 Nov)",
       "at": "2026-09-28T13:57:59.855Z"
+    },
+    "edition": {
+      "value": 3,
+      "reason": "Organizer site hanoi-marathon.com (Dân Trí reprint 'cong-bo-giai-chay-standard-chartered-marathon-di-san-ha-noi-2026') says 2026 is 'mùa giải lần thứ ba'; edition 10 was misread from 'thành viên thứ 10 trong chuỗi giải Standard Chartered Marathon'. The ActiUp participants quote 'hơn 10.000 người đăng ký thi đấu' describes the 2023 edition, not 2026 (2026's 18.000 is a target), so participants unknown. City Hà Nội: organizer site, event area at Công viên Thống Nhất, Hà Nội.",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "participants": {
+      "value": null,
+      "reason": "Organizer site hanoi-marathon.com (Dân Trí reprint 'cong-bo-giai-chay-standard-chartered-marathon-di-san-ha-noi-2026') says 2026 is 'mùa giải lần thứ ba'; edition 10 was misread from 'thành viên thứ 10 trong chuỗi giải Standard Chartered Marathon'. The ActiUp participants quote 'hơn 10.000 người đăng ký thi đấu' describes the 2023 edition, not 2026 (2026's 18.000 is a target), so participants unknown. City Hà Nội: organizer site, event area at Công viên Thống Nhất, Hà Nội.",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "location": {
+      "value": {
+        "venue": "Hà Nội, Việt Nam",
+        "city": "Hà Nội"
+      },
+      "reason": "Organizer site hanoi-marathon.com (Dân Trí reprint 'cong-bo-giai-chay-standard-chartered-marathon-di-san-ha-noi-2026') says 2026 is 'mùa giải lần thứ ba'; edition 10 was misread from 'thành viên thứ 10 trong chuỗi giải Standard Chartered Marathon'. The ActiUp participants quote 'hơn 10.000 người đăng ký thi đấu' describes the 2023 edition, not 2026 (2026's 18.000 is a target), so participants unknown. City Hà Nội: organizer site, event area at Công viên Thống Nhất, Hà Nội.",
+      "at": "2026-10-13T02:12:57.272Z"
     }
   },
   "sources": [
@@ -371,13 +573,14 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/standard-chartered-marathon-di-san-ha-noi-2026",
-      "lastCheckedAt": "2026-09-26T06:31:20.332Z",
+      "lastCheckedAt": "2026-10-13T02:10:00.000Z",
       "lastChangedAt": "2026-09-26T06:31:20.332Z",
       "extracted": {
         "facts": {
           "name": "Giải chạy Standard Chartered Marathon Di sản Hà Nội 2026",
           "venue": "Hà Nội, Việt Nam",
-          "organizer": "DHA Vietnam | Ban tổ chức sự kiện"
+          "organizer": "DHA Vietnam | Ban tổ chức sự kiện",
+          "registrationStatus": "closed"
         },
         "pages": [
           {
@@ -399,8 +602,120 @@
               "venue": "Hà Nội, Việt Nam",
               "organizer": "DHA Vietnam",
               "currency": "VND",
-              "registrationStatus": "open",
+              "registrationStatus": "closed",
               "prices": [
+                {
+                  "distance": "5km",
+                  "tier": "Flash Sale",
+                  "from": "04/03",
+                  "to": "06/03",
+                  "price": 258000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Flash Sale",
+                  "from": "04/03",
+                  "to": "06/03",
+                  "price": 358000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Flash Sale",
+                  "from": "04/03",
+                  "to": "06/03",
+                  "price": 458000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Flash Sale",
+                  "from": "04/03",
+                  "to": "06/03",
+                  "price": 558000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Super Early Bird",
+                  "from": "07/03",
+                  "to": "28/03",
+                  "price": 358000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Super Early Bird",
+                  "from": "07/03",
+                  "to": "28/03",
+                  "price": 478000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Super Early Bird",
+                  "from": "07/03",
+                  "to": "28/03",
+                  "price": 658000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Super Early Bird",
+                  "from": "07/03",
+                  "to": "28/03",
+                  "price": 758000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Early Bird",
+                  "from": "29/03",
+                  "to": "30/06",
+                  "price": 500000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Early Bird",
+                  "from": "29/03",
+                  "to": "30/06",
+                  "price": 650000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Early Bird",
+                  "from": "29/03",
+                  "to": "30/06",
+                  "price": 850000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Early Bird",
+                  "from": "29/03",
+                  "to": "30/06",
+                  "price": 950000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Standard",
+                  "from": "01/07",
+                  "to": "31/08",
+                  "price": 500000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Standard",
+                  "from": "01/07",
+                  "to": "31/08",
+                  "price": 1100000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Standard",
+                  "from": "01/07",
+                  "to": "31/08",
+                  "price": 1300000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Standard",
+                  "from": "01/07",
+                  "to": "31/08",
+                  "price": 1500000
+                },
                 {
                   "distance": "5km",
                   "tier": "Late",
@@ -561,9 +876,31 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "standard-chartered-hanoi-marathon",
+      "role": "reference",
+      "url": "https://hanoi-marathon.com/roi-man-hinh-vung-buoc-chan-san-bib-kid-dash-150k-hoc-bong-5-trieu-dong-tu-scots-english",
+      "lastCheckedAt": "2026-10-13T02:12:57.272Z",
+      "lastChangedAt": "2026-10-13T02:12:57.272Z",
+      "extracted": {
+        "facts": {
+          "name": "Standard Chartered Marathon Di sản Hà Nội 2026",
+          "date": "2026-11-08",
+          "city": "Hà Nội",
+          "prices": [
+            {
+              "distance": "2.1km",
+              "tier": "Regular (giá gốc)",
+              "price": 300000
+            }
+          ],
+          "note": "organizer's Kid Dash promo post (25/08/2026): 'BIB chỉ còn 150.000 VNĐ, so với giá gốc 300.000 VNĐ'; list price of Kid Dash 2.1km, ages 5-9 (organizer post 01/06), Kid Dash runs 07/11/2026"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-12T17:55:59.976Z"
+  "updatedAt": "2026-10-13T02:12:57.272Z"
 }

@@ -7,7 +7,8 @@
   ],
   "date": "2025-12-21",
   "endDate": null,
-  "seriesId": null,
+  "mainDate": null,
+  "seriesId": "can-tho-heritage-marathon",
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
   "edition": null,
@@ -124,6 +125,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -132,6 +134,11 @@
       ],
       "reason": "inferred from race name/price-tier text (marathon); no source states an explicit type",
       "at": "2026-09-26T13:12:26.292Z"
+    },
+    "seriesId": {
+      "value": "can-tho-heritage-marathon",
+      "reason": "organizer page canthomarathon.com/cuoc-dua/ links the 2024 and 2025 editions as earlier years of this race",
+      "at": "2026-10-13T02:12:57.272Z"
     }
   },
   "sources": [
@@ -166,5 +173,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:12:26.292Z"
+  "updatedAt": "2026-10-13T02:12:57.272Z"
 }

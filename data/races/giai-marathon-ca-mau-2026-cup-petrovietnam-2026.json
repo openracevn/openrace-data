@@ -5,12 +5,13 @@
   "types": [
     "road_run"
   ],
-  "date": "2026-11-15",
-  "endDate": null,
+  "date": "2026-11-14",
+  "endDate": "2026-11-15",
+  "mainDate": "2026-11-15",
   "seriesId": "giai-marathon-ca-mau-cup-petrovietnam",
   "organizerId": "vietrace365",
   "organizer": "VIETRACE365",
-  "edition": null,
+  "edition": 6,
   "courses": [
     {
       "label": "2km",
@@ -45,12 +46,12 @@
   ],
   "location": {
     "venue": "Trung tâm hội nghị tỉnh Cà Mau, Phường An Xuyên, Tỉnh Cà Mau.",
-    "city": null
+    "city": "Cà Mau"
   },
   "geo": {
     "lat": 9.2913779,
     "lng": 105.7255311,
-    "source": "nominatim",
+    "source": "manual",
     "precision": "venue",
     "current": {
       "province": "96",
@@ -71,7 +72,7 @@
       },
       "ha-noi": {
         "km": 1705.1,
-        "minutes": 1322,
+        "minutes": 1325,
         "method": "road",
         "near": false
       },
@@ -112,8 +113,8 @@
         "near": false
       },
       "vung-tau": {
-        "km": 362.3,
-        "minutes": 291,
+        "km": 352,
+        "minutes": 285,
         "method": "road",
         "near": false
       },
@@ -130,8 +131,8 @@
         "near": false
       },
       "sa-pa": {
-        "km": 2013.6,
-        "minutes": 1558,
+        "km": 2012.9,
+        "minutes": 1557,
         "method": "road",
         "near": false
       },
@@ -330,8 +331,138 @@
     }
   ],
   "links": [],
+  "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "edition": {
+      "value": 6,
+      "reason": "edition: camaumarathon.com (organizer) and ticket.irace.vn state 'mùa giải năm thứ sáu' / 'sáu mùa liên tiếp' (iRace copy ends with a typo 'Mùa giải thứ tư'; organizer page says 'Mùa giải thứ sáu'). Days: organizer 'Ngày 14,15/11/2026'; VTC News ar1039261: 2km family run starts 14/11 16h, 42/21/10/5km on 15/11 from 3h30. City: venue is in Tỉnh Cà Mau (organizer site, iRace, ActiUp). Venue unchanged. Geo: city added changes the geo cache key, so the point already stored for this same venue (nominatim, 9.2913779,105.7255311) is kept by hand.",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "date": {
+      "value": "2026-11-14",
+      "reason": "edition: camaumarathon.com (organizer) and ticket.irace.vn state 'mùa giải năm thứ sáu' / 'sáu mùa liên tiếp' (iRace copy ends with a typo 'Mùa giải thứ tư'; organizer page says 'Mùa giải thứ sáu'). Days: organizer 'Ngày 14,15/11/2026'; VTC News ar1039261: 2km family run starts 14/11 16h, 42/21/10/5km on 15/11 from 3h30. City: venue is in Tỉnh Cà Mau (organizer site, iRace, ActiUp). Venue unchanged. Geo: city added changes the geo cache key, so the point already stored for this same venue (nominatim, 9.2913779,105.7255311) is kept by hand.",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "endDate": {
+      "value": "2026-11-15",
+      "reason": "edition: camaumarathon.com (organizer) and ticket.irace.vn state 'mùa giải năm thứ sáu' / 'sáu mùa liên tiếp' (iRace copy ends with a typo 'Mùa giải thứ tư'; organizer page says 'Mùa giải thứ sáu'). Days: organizer 'Ngày 14,15/11/2026'; VTC News ar1039261: 2km family run starts 14/11 16h, 42/21/10/5km on 15/11 from 3h30. City: venue is in Tỉnh Cà Mau (organizer site, iRace, ActiUp). Venue unchanged. Geo: city added changes the geo cache key, so the point already stored for this same venue (nominatim, 9.2913779,105.7255311) is kept by hand.",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "mainDate": {
+      "value": "2026-11-15",
+      "reason": "edition: camaumarathon.com (organizer) and ticket.irace.vn state 'mùa giải năm thứ sáu' / 'sáu mùa liên tiếp' (iRace copy ends with a typo 'Mùa giải thứ tư'; organizer page says 'Mùa giải thứ sáu'). Days: organizer 'Ngày 14,15/11/2026'; VTC News ar1039261: 2km family run starts 14/11 16h, 42/21/10/5km on 15/11 from 3h30. City: venue is in Tỉnh Cà Mau (organizer site, iRace, ActiUp). Venue unchanged. Geo: city added changes the geo cache key, so the point already stored for this same venue (nominatim, 9.2913779,105.7255311) is kept by hand.",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "location": {
+      "value": {
+        "venue": "Trung tâm hội nghị tỉnh Cà Mau, Phường An Xuyên, Tỉnh Cà Mau.",
+        "city": "Cà Mau"
+      },
+      "reason": "edition: camaumarathon.com (organizer) and ticket.irace.vn state 'mùa giải năm thứ sáu' / 'sáu mùa liên tiếp' (iRace copy ends with a typo 'Mùa giải thứ tư'; organizer page says 'Mùa giải thứ sáu'). Days: organizer 'Ngày 14,15/11/2026'; VTC News ar1039261: 2km family run starts 14/11 16h, 42/21/10/5km on 15/11 from 3h30. City: venue is in Tỉnh Cà Mau (organizer site, iRace, ActiUp). Venue unchanged. Geo: city added changes the geo cache key, so the point already stored for this same venue (nominatim, 9.2913779,105.7255311) is kept by hand.",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "geo": {
+      "value": {
+        "lat": 9.2913779,
+        "lng": 105.7255311,
+        "source": "manual",
+        "precision": "venue",
+        "current": {
+          "province": "96",
+          "ward": "31825"
+        },
+        "legacy": {
+          "province": "95",
+          "district": "954",
+          "ward": "31816"
+        },
+        "access": "road",
+        "fromPlaces": {
+          "hcmc": {
+            "km": 270.1,
+            "minutes": 207,
+            "method": "road",
+            "near": false
+          },
+          "ha-noi": {
+            "km": 1705.1,
+            "minutes": 1325,
+            "method": "road",
+            "near": false
+          },
+          "da-nang": {
+            "km": 1119.8,
+            "minutes": 848,
+            "method": "road",
+            "near": false
+          },
+          "nha-trang": {
+            "km": 679.3,
+            "minutes": 499,
+            "method": "road",
+            "near": false
+          },
+          "da-lat": {
+            "km": 562.9,
+            "minutes": 428,
+            "method": "road",
+            "near": false
+          },
+          "can-tho": {
+            "km": 104.9,
+            "minutes": 77,
+            "method": "road",
+            "near": false
+          },
+          "hai-phong": {
+            "km": 1739.2,
+            "minutes": 1349,
+            "method": "road",
+            "near": false
+          },
+          "hue": {
+            "km": 1202.5,
+            "minutes": 923,
+            "method": "road",
+            "near": false
+          },
+          "vung-tau": {
+            "km": 352,
+            "minutes": 285,
+            "method": "road",
+            "near": false
+          },
+          "quy-nhon": {
+            "km": 885.1,
+            "minutes": 662,
+            "method": "road",
+            "near": false
+          },
+          "buon-ma-thuot": {
+            "km": 615.8,
+            "minutes": 460,
+            "method": "road",
+            "near": false
+          },
+          "sa-pa": {
+            "km": 2012.9,
+            "minutes": 1557,
+            "method": "road",
+            "near": false
+          },
+          "ha-long": {
+            "km": 1788.9,
+            "minutes": 1382,
+            "method": "road",
+            "near": false
+          }
+        }
+      },
+      "reason": "edition: camaumarathon.com (organizer) and ticket.irace.vn state 'mùa giải năm thứ sáu' / 'sáu mùa liên tiếp' (iRace copy ends with a typo 'Mùa giải thứ tư'; organizer page says 'Mùa giải thứ sáu'). Days: organizer 'Ngày 14,15/11/2026'; VTC News ar1039261: 2km family run starts 14/11 16h, 42/21/10/5km on 15/11 from 3h30. City: venue is in Tỉnh Cà Mau (organizer site, iRace, ActiUp). Venue unchanged. Geo: city added changes the geo cache key, so the point already stored for this same venue (nominatim, 9.2913779,105.7255311) is kept by hand.",
+      "at": "2026-10-13T02:12:57.272Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -506,9 +637,37 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "camaumarathon-com",
+      "role": "reference",
+      "url": "https://camaumarathon.com/",
+      "lastCheckedAt": "2026-10-13T02:12:57.272Z",
+      "lastChangedAt": "2026-10-13T02:12:57.272Z",
+      "extracted": {
+        "facts": {
+          "name": "GIẢI MARATHON - CÀ MAU 2026 CÚP PETROVIETNAM",
+          "date": "2026-11-14",
+          "endDate": "2026-11-15",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "2km",
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "venue": "Trung tâm hội nghị tỉnh Cà Mau, Phường An Xuyên, Tỉnh Cà Mau.",
+          "city": "Cà Mau",
+          "organizer": "VIETRACE365",
+          "note": "organizer's own site (Vietrace365): 'Bước sang mùa giải năm thứ sáu, Giải Marathon - Cà Mau 2026 Cúp PETROVIETNAM'; 'Thời gian: Ngày 14,15/11/2026. Địa điểm: Trung tâm hội nghị tỉnh Cà Mau, Phường An Xuyên, Tỉnh Cà Mau.'"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-10-13T02:12:57.272Z"
 }

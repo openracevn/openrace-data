@@ -7,10 +7,11 @@
   ],
   "date": "2027-03-21",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "vietnam-festrival",
   "organizerId": "cong-ty-tnhh-stop-and-sports",
   "organizer": "CÔNG TY TNHH STOP AND SPORTS",
-  "edition": null,
+  "edition": 5,
   "courses": [
     {
       "label": "56.50",
@@ -33,12 +34,12 @@
   ],
   "location": {
     "venue": "Bàu Trắng - Hòa Thắng - Lâm Đồng",
-    "city": "Vietnam"
+    "city": "Lâm Đồng"
   },
   "geo": {
     "lat": 11.0679312,
     "lng": 108.4163598,
-    "source": "nominatim",
+    "source": "manual",
     "precision": "venue",
     "current": {
       "province": "68",
@@ -59,7 +60,7 @@
       },
       "ha-noi": {
         "km": 1465.2,
-        "minutes": 1143,
+        "minutes": 1144,
         "method": "road",
         "near": false
       },
@@ -76,7 +77,7 @@
         "near": false
       },
       "da-lat": {
-        "km": 132.7,
+        "km": 132.8,
         "minutes": 117,
         "method": "road",
         "near": false
@@ -89,12 +90,12 @@
       },
       "hai-phong": {
         "km": 1499.4,
-        "minutes": 1170,
+        "minutes": 1168,
         "method": "road",
         "near": false
       },
       "hue": {
-        "km": 793,
+        "km": 792.9,
         "minutes": 616,
         "method": "road",
         "near": false
@@ -112,20 +113,20 @@
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 285.2,
+        "km": 285.3,
         "minutes": 258,
         "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 1773.8,
-        "minutes": 1379,
+        "km": 1773,
+        "minutes": 1376,
         "method": "road",
         "near": false
       },
       "ha-long": {
-        "km": 1549.1,
-        "minutes": 1203,
+        "km": 1549,
+        "minutes": 1201,
         "method": "road",
         "near": false
       }
@@ -133,8 +134,8 @@
   },
   "prices": [
     {
-      "distance": null,
-      "tier": "70.3 - 56.50 · Super Early Bird",
+      "distance": "70.3",
+      "tier": "Super Early Bird",
       "kind": "super_early",
       "audience": null,
       "price": 3670000,
@@ -144,8 +145,8 @@
       "site": "actiup"
     },
     {
-      "distance": null,
-      "tier": "70.3 - 56.50 · Early Bird",
+      "distance": "70.3",
+      "tier": "Early Bird",
       "kind": "early",
       "audience": null,
       "price": 4210000,
@@ -155,8 +156,8 @@
       "site": "actiup"
     },
     {
-      "distance": null,
-      "tier": "70.3 - 56.50 · Standard",
+      "distance": "70.3",
+      "tier": "Standard",
       "kind": "regular",
       "audience": null,
       "price": 4750000,
@@ -166,8 +167,8 @@
       "site": "actiup"
     },
     {
-      "distance": null,
-      "tier": "70.3 - 56.50 · TIẾP SỰC (RELAY TEAM) · Super Early Bird",
+      "distance": "70.3",
+      "tier": "Relay Team · Super Early Bird",
       "kind": "group",
       "audience": null,
       "price": 4530000,
@@ -177,8 +178,8 @@
       "site": "actiup"
     },
     {
-      "distance": null,
-      "tier": "70.3 - 56.50 · TIẾP SỰC (RELAY TEAM) · Early Bird",
+      "distance": "70.3",
+      "tier": "Relay Team · Early Bird",
       "kind": "group",
       "audience": null,
       "price": 5070000,
@@ -188,8 +189,74 @@
       "site": "actiup"
     },
     {
-      "distance": null,
-      "tier": "70.3 - 56.50 · TIẾP SỰC (RELAY TEAM) · Standard",
+      "distance": "70.3",
+      "tier": "Relay Team · Standard",
+      "kind": "group",
+      "audience": null,
+      "price": 5830000,
+      "from": "2026-12-01",
+      "to": "2027-02-28",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "56.50",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 3670000,
+      "from": "2026-09-16",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "56.50",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 4210000,
+      "from": "2026-10-01",
+      "to": "2026-11-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "56.50",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 4750000,
+      "from": "2026-12-01",
+      "to": "2027-02-28",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "56.50",
+      "tier": "Relay Team · Super Early Bird",
+      "kind": "group",
+      "audience": null,
+      "price": 4530000,
+      "from": "2026-09-16",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "56.50",
+      "tier": "Relay Team · Early Bird",
+      "kind": "group",
+      "audience": null,
+      "price": 5070000,
+      "from": "2026-10-01",
+      "to": "2026-11-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "56.50",
+      "tier": "Relay Team · Standard",
       "kind": "group",
       "audience": null,
       "price": 5830000,
@@ -247,8 +314,294 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "edition": {
+      "value": 5,
+      "reason": "ActiUp https://actiup.net/vi/event/vietnam-festrival-2027 : description 'Vietnam FesTRIval 2027 – được tổ chức lần thứ 5' and '5th' logo (edition 5). Organizer fee image LỆ PHÍ (pix.actiup.net/2026/09/11/1789110276099989/LỆ-PHÍ.jpg) gives one row '70.3 - 56.50' for both long formats, so each tier is listed for 70.3 and for 56.50 (individual; relay = TIẾP SỰC team); Sprint individual only. ActiUp place and banner 'Bàu Trắng - Lâm Đồng' give city Lâm Đồng (was 'Vietnam'); geo kept from the existing point for the same venue (state/geo.json 'bau trang hoa thang lam dong'). Saved in .agent-read/vietnam-festrival-2027/.",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "prices": {
+      "value": [
+        {
+          "distance": "70.3",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 3670000,
+          "from": "2026-09-16",
+          "to": "2026-09-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "70.3",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 4210000,
+          "from": "2026-10-01",
+          "to": "2026-11-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "70.3",
+          "tier": "Standard",
+          "kind": "regular",
+          "audience": null,
+          "price": 4750000,
+          "from": "2026-12-01",
+          "to": "2027-02-28",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "70.3",
+          "tier": "Relay Team · Super Early Bird",
+          "kind": "group",
+          "audience": null,
+          "price": 4530000,
+          "from": "2026-09-16",
+          "to": "2026-09-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "70.3",
+          "tier": "Relay Team · Early Bird",
+          "kind": "group",
+          "audience": null,
+          "price": 5070000,
+          "from": "2026-10-01",
+          "to": "2026-11-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "70.3",
+          "tier": "Relay Team · Standard",
+          "kind": "group",
+          "audience": null,
+          "price": 5830000,
+          "from": "2026-12-01",
+          "to": "2027-02-28",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "56.50",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 3670000,
+          "from": "2026-09-16",
+          "to": "2026-09-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "56.50",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 4210000,
+          "from": "2026-10-01",
+          "to": "2026-11-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "56.50",
+          "tier": "Standard",
+          "kind": "regular",
+          "audience": null,
+          "price": 4750000,
+          "from": "2026-12-01",
+          "to": "2027-02-28",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "56.50",
+          "tier": "Relay Team · Super Early Bird",
+          "kind": "group",
+          "audience": null,
+          "price": 4530000,
+          "from": "2026-09-16",
+          "to": "2026-09-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "56.50",
+          "tier": "Relay Team · Early Bird",
+          "kind": "group",
+          "audience": null,
+          "price": 5070000,
+          "from": "2026-10-01",
+          "to": "2026-11-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "56.50",
+          "tier": "Relay Team · Standard",
+          "kind": "group",
+          "audience": null,
+          "price": 5830000,
+          "from": "2026-12-01",
+          "to": "2027-02-28",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "Sprint",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 2590000,
+          "from": "2026-09-16",
+          "to": "2026-09-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "Sprint",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 3130000,
+          "from": "2026-10-01",
+          "to": "2026-11-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "Sprint",
+          "tier": "Standard",
+          "kind": "regular",
+          "audience": null,
+          "price": 3670000,
+          "from": "2026-12-01",
+          "to": "2027-02-28",
+          "inferred": [],
+          "site": "actiup"
+        }
+      ],
+      "reason": "ActiUp https://actiup.net/vi/event/vietnam-festrival-2027 : description 'Vietnam FesTRIval 2027 – được tổ chức lần thứ 5' and '5th' logo (edition 5). Organizer fee image LỆ PHÍ (pix.actiup.net/2026/09/11/1789110276099989/LỆ-PHÍ.jpg) gives one row '70.3 - 56.50' for both long formats, so each tier is listed for 70.3 and for 56.50 (individual; relay = TIẾP SỰC team); Sprint individual only. ActiUp place and banner 'Bàu Trắng - Lâm Đồng' give city Lâm Đồng (was 'Vietnam'); geo kept from the existing point for the same venue (state/geo.json 'bau trang hoa thang lam dong'). Saved in .agent-read/vietnam-festrival-2027/.",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "location": {
+      "value": {
+        "venue": "Bàu Trắng - Hòa Thắng - Lâm Đồng",
+        "city": "Lâm Đồng"
+      },
+      "reason": "ActiUp https://actiup.net/vi/event/vietnam-festrival-2027 : description 'Vietnam FesTRIval 2027 – được tổ chức lần thứ 5' and '5th' logo (edition 5). Organizer fee image LỆ PHÍ (pix.actiup.net/2026/09/11/1789110276099989/LỆ-PHÍ.jpg) gives one row '70.3 - 56.50' for both long formats, so each tier is listed for 70.3 and for 56.50 (individual; relay = TIẾP SỰC team); Sprint individual only. ActiUp place and banner 'Bàu Trắng - Lâm Đồng' give city Lâm Đồng (was 'Vietnam'); geo kept from the existing point for the same venue (state/geo.json 'bau trang hoa thang lam dong'). Saved in .agent-read/vietnam-festrival-2027/.",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "geo": {
+      "value": {
+        "lat": 11.0679312,
+        "lng": 108.4163598,
+        "source": "manual",
+        "precision": "venue",
+        "current": {
+          "province": "68",
+          "ward": "23053"
+        },
+        "legacy": {
+          "province": "60",
+          "district": "596",
+          "ward": "23053"
+        },
+        "access": "road",
+        "fromPlaces": {
+          "hcmc": {
+            "km": 213.3,
+            "minutes": 163,
+            "method": "road",
+            "near": false
+          },
+          "ha-noi": {
+            "km": 1465.2,
+            "minutes": 1144,
+            "method": "road",
+            "near": false
+          },
+          "da-nang": {
+            "km": 695.7,
+            "minutes": 541,
+            "method": "road",
+            "near": false
+          },
+          "nha-trang": {
+            "km": 202.1,
+            "minutes": 157,
+            "method": "road",
+            "near": false
+          },
+          "da-lat": {
+            "km": 132.8,
+            "minutes": 117,
+            "method": "road",
+            "near": false
+          },
+          "can-tho": {
+            "km": 378.8,
+            "minutes": 291,
+            "method": "road",
+            "near": false
+          },
+          "hai-phong": {
+            "km": 1499.4,
+            "minutes": 1168,
+            "method": "road",
+            "near": false
+          },
+          "hue": {
+            "km": 792.9,
+            "minutes": 616,
+            "method": "road",
+            "near": false
+          },
+          "vung-tau": {
+            "km": 206.4,
+            "minutes": 171,
+            "method": "road",
+            "near": false
+          },
+          "quy-nhon": {
+            "km": 408,
+            "minutes": 320,
+            "method": "road",
+            "near": false
+          },
+          "buon-ma-thuot": {
+            "km": 285.3,
+            "minutes": 258,
+            "method": "road",
+            "near": false
+          },
+          "sa-pa": {
+            "km": 1773,
+            "minutes": 1376,
+            "method": "road",
+            "near": false
+          },
+          "ha-long": {
+            "km": 1549,
+            "minutes": 1201,
+            "method": "road",
+            "near": false
+          }
+        }
+      },
+      "reason": "ActiUp https://actiup.net/vi/event/vietnam-festrival-2027 : description 'Vietnam FesTRIval 2027 – được tổ chức lần thứ 5' and '5th' logo (edition 5). Organizer fee image LỆ PHÍ (pix.actiup.net/2026/09/11/1789110276099989/LỆ-PHÍ.jpg) gives one row '70.3 - 56.50' for both long formats, so each tier is listed for 70.3 and for 56.50 (individual; relay = TIẾP SỰC team); Sprint individual only. ActiUp place and banner 'Bàu Trắng - Lâm Đồng' give city Lâm Đồng (was 'Vietnam'); geo kept from the existing point for the same venue (state/geo.json 'bau trang hoa thang lam dong'). Saved in .agent-read/vietnam-festrival-2027/.",
+      "at": "2026-10-13T02:12:57.272Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -393,5 +746,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-10-13T02:12:57.272Z"
 }

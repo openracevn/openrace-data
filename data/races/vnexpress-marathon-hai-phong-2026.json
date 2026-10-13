@@ -7,10 +7,11 @@
   ],
   "date": "2026-12-27",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "vnexpress-marathon-hai-phong",
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
-  "edition": null,
+  "edition": 4,
   "courses": [
     {
       "label": "5km",
@@ -141,7 +142,7 @@
       "audience": null,
       "price": 400000,
       "from": "2026-08-28",
-      "to": "2026-10-02",
+      "to": "2026-10-08",
       "inferred": [],
       "site": "vnexpress-marathon"
     },
@@ -151,7 +152,7 @@
       "kind": "early",
       "audience": null,
       "price": 550000,
-      "from": "2026-10-03",
+      "from": "2026-10-09",
       "to": "2026-10-28",
       "inferred": [],
       "site": "vnexpress-marathon"
@@ -185,7 +186,7 @@
       "audience": null,
       "price": 540000,
       "from": "2026-08-28",
-      "to": "2026-10-02",
+      "to": "2026-10-08",
       "inferred": [],
       "site": "vnexpress-marathon"
     },
@@ -195,7 +196,7 @@
       "kind": "early",
       "audience": null,
       "price": 690000,
-      "from": "2026-10-03",
+      "from": "2026-10-09",
       "to": "2026-10-28",
       "inferred": [],
       "site": "vnexpress-marathon"
@@ -229,7 +230,7 @@
       "audience": null,
       "price": 780000,
       "from": "2026-08-28",
-      "to": "2026-10-02",
+      "to": "2026-10-08",
       "inferred": [],
       "site": "vnexpress-marathon"
     },
@@ -239,7 +240,7 @@
       "kind": "early",
       "audience": null,
       "price": 880000,
-      "from": "2026-10-03",
+      "from": "2026-10-09",
       "to": "2026-10-28",
       "inferred": [],
       "site": "vnexpress-marathon"
@@ -273,7 +274,7 @@
       "audience": null,
       "price": 880000,
       "from": "2026-08-28",
-      "to": "2026-10-02",
+      "to": "2026-10-08",
       "inferred": [],
       "site": "vnexpress-marathon"
     },
@@ -283,7 +284,7 @@
       "kind": "early",
       "audience": null,
       "price": 1050000,
-      "from": "2026-10-03",
+      "from": "2026-10-09",
       "to": "2026-10-28",
       "inferred": [],
       "site": "vnexpress-marathon"
@@ -315,14 +316,21 @@
   "registrationStatus": "open",
   "registrations": [],
   "links": [],
+  "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "edition": {
+      "value": 4,
+      "reason": "Organizer's own outlet VnExpress, 'Dang ky som VnExpress Marathon Hai Phong 2026' (12/10/2026, https://vnexpress.net/dang-ky-som-vnexpress-marathon-hai-phong-2026-8000-bib-5131228.html): 'Bước sang mùa thứ tư, VnExpress Marathon Hải Phòng ...' and 'qua ba mùa tổ chức' (2023, 2024, 2025)",
+      "at": "2026-10-13T02:12:57.272Z"
+    }
+  },
   "sources": [
     {
       "site": "vnexpress-marathon",
       "role": "official",
       "url": "https://vm.vnexpress.net/hai-phong-2026",
-      "lastCheckedAt": "2026-09-25T05:01:22.419Z",
+      "lastCheckedAt": "2026-10-13T00:00:00.000Z",
       "lastChangedAt": "2026-09-25T05:01:22.419Z",
       "extracted": {
         "facts": {
@@ -346,6 +354,7 @@
                 "21 km",
                 "42 km"
               ],
+              "city": "Hải Phòng",
               "currency": "VND",
               "registrationStatus": "open",
               "prices": [
@@ -353,13 +362,13 @@
                   "distance": "5 km",
                   "tier": "Super Early Bird",
                   "from": "2026-08-28",
-                  "to": "2026-10-02",
+                  "to": "2026-10-08",
                   "price": 400000
                 },
                 {
                   "distance": "5 km",
                   "tier": "Early Bird",
-                  "from": "2026-10-03",
+                  "from": "2026-10-09",
                   "to": "2026-10-28",
                   "price": 550000
                 },
@@ -381,13 +390,13 @@
                   "distance": "10 km",
                   "tier": "Super Early Bird",
                   "from": "2026-08-28",
-                  "to": "2026-10-02",
+                  "to": "2026-10-08",
                   "price": 540000
                 },
                 {
                   "distance": "10 km",
                   "tier": "Early Bird",
-                  "from": "2026-10-03",
+                  "from": "2026-10-09",
                   "to": "2026-10-28",
                   "price": 690000
                 },
@@ -409,13 +418,13 @@
                   "distance": "21 km",
                   "tier": "Super Early Bird",
                   "from": "2026-08-28",
-                  "to": "2026-10-02",
+                  "to": "2026-10-08",
                   "price": 780000
                 },
                 {
                   "distance": "21 km",
                   "tier": "Early Bird",
-                  "from": "2026-10-03",
+                  "from": "2026-10-09",
                   "to": "2026-10-28",
                   "price": 880000
                 },
@@ -437,13 +446,13 @@
                   "distance": "42 km",
                   "tier": "Super Early Bird",
                   "from": "2026-08-28",
-                  "to": "2026-10-02",
+                  "to": "2026-10-08",
                   "price": 880000
                 },
                 {
                   "distance": "42 km",
                   "tier": "Early Bird",
-                  "from": "2026-10-03",
+                  "from": "2026-10-09",
                   "to": "2026-10-28",
                   "price": 1050000
                 },
@@ -463,6 +472,17 @@
                 }
               ]
             }
+          },
+          {
+            "url": "https://vm.vnexpress.net/hai-phong-2026/thong-tin-cuoc-dua",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "VnExpress Marathon Hai Phong 2026",
+              "city": "Hải Phòng"
+            }
           }
         ],
         "links": [],
@@ -481,5 +501,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T05:01:22.419Z",
-  "updatedAt": "2026-09-25T05:01:22.419Z"
+  "updatedAt": "2026-10-13T02:12:57.272Z"
 }

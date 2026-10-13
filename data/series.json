@@ -40,6 +40,14 @@
     "statedEditionCount": null
   },
   {
+    "id": "can-tho-heritage-marathon",
+    "name": "Giải Marathon Quốc tế Di sản Cần Thơ",
+    "website": "https://canthomarathon.com",
+    "organizerId": "cong-ty-dha-viet-nam",
+    "description": "Cần Thơ Heritage Marathon by DHA Việt Nam. Editions on record: 2024-12-22, 2025-12-21, 2026-12-20; the organizer page (canthomarathon.com/cuoc-dua/) links 2024 and 2025 as earlier years. Earlier editions reported for 12/2019 and 2022-12-04 (pbgdpl.cantho.gov.vn, baodautu.vn) are not yet on record. No source states an edition number.",
+    "statedEditionCount": null
+  },
+  {
     "id": "cat-tien-jungle-paths",
     "name": "CAT TIEN JUNGLE PATHS",
     "website": null,
@@ -69,6 +77,14 @@
     "website": null,
     "organizerId": "vietnam-mtb-series",
     "description": null,
+    "statedEditionCount": null
+  },
+  {
+    "id": "fv-run",
+    "name": "FV RUN",
+    "website": null,
+    "organizerId": "benh-vien-fv",
+    "description": "Charity run by FV Hospital with Quỹ Nâng Bước Tuổi Thơ. First edition 2026 (ActiUp, FV Hospital, Vietnam News all call it the first / inaugural edition).",
     "statedEditionCount": null
   },
   {

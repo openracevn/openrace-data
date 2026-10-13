@@ -7,11 +7,19 @@
   ],
   "date": "2027-01-24",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "tet-run-mien-nam",
   "organizerId": "cong-ty-co-phan-duong-chay-xanh",
   "organizer": "CÔNG TY CỔ PHẦN ĐƯỜNG CHẠY XANH",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Vinhomes Grand Park,Tp Thủ Đức, Tp Hồ Chí Minh",
     "city": "TP.HCM"
@@ -114,7 +122,7 @@
   },
   "prices": [
     {
-      "distance": null,
+      "distance": "21km",
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
@@ -125,7 +133,7 @@
       "site": "actiup"
     },
     {
-      "distance": null,
+      "distance": "21km",
       "tier": "Group 50+",
       "kind": "group",
       "audience": null,
@@ -136,7 +144,7 @@
       "site": "actiup"
     },
     {
-      "distance": null,
+      "distance": "21km",
       "tier": "Group 200+",
       "kind": "group",
       "audience": null,
@@ -147,7 +155,7 @@
       "site": "actiup"
     },
     {
-      "distance": null,
+      "distance": "21km",
       "tier": "Regular",
       "kind": "regular",
       "audience": null,
@@ -158,7 +166,7 @@
       "site": "actiup"
     },
     {
-      "distance": null,
+      "distance": "21km",
       "tier": "Group 50+",
       "kind": "group",
       "audience": null,
@@ -169,7 +177,7 @@
       "site": "actiup"
     },
     {
-      "distance": null,
+      "distance": "21km",
       "tier": "Group 200+",
       "kind": "group",
       "audience": null,
@@ -180,7 +188,7 @@
       "site": "actiup"
     },
     {
-      "distance": null,
+      "distance": "21km",
       "tier": "Late",
       "kind": "late",
       "audience": null,
@@ -206,8 +214,105 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "courses": {
+      "value": [
+        {
+          "label": "21km",
+          "meters": 21097,
+          "type": "road_run",
+          "elevationGain": null
+        }
+      ],
+      "reason": "Official rules PDF linked from the ActiUp page (https://drive.google.com/file/d/1qfcA1Tj6Xeky22UnNty6yl4cooUlGCqh/view, 'TẾT RUN 2027 ĐIỀU LỆ VÀ LUẬT THI ĐẤU', Điều 1.1): 'Giải có duy nhất một cự li 21,1km'. The ActiUp price boards carry one price per tier, so every tier is the 21km course. Group tiers need at least 50 / 200 runners (15% / 20% off). The Regular board reads '31/11/2026', kept as 2026-11-30.",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "prices": {
+      "value": [
+        {
+          "distance": "21km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 678000,
+          "from": "2026-10-22",
+          "to": "2026-10-22",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "21km",
+          "tier": "Group 50+",
+          "kind": "group",
+          "audience": null,
+          "price": 576000,
+          "from": "2026-10-22",
+          "to": "2026-10-22",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "21km",
+          "tier": "Group 200+",
+          "kind": "group",
+          "audience": null,
+          "price": 542000,
+          "from": "2026-10-22",
+          "to": "2026-10-22",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "21km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 778000,
+          "from": "2026-10-23",
+          "to": "2026-11-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "21km",
+          "tier": "Group 50+",
+          "kind": "group",
+          "audience": null,
+          "price": 660000,
+          "from": "2026-10-23",
+          "to": "2026-11-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "21km",
+          "tier": "Group 200+",
+          "kind": "group",
+          "audience": null,
+          "price": 622000,
+          "from": "2026-10-23",
+          "to": "2026-11-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "21km",
+          "tier": "Late",
+          "kind": "late",
+          "audience": null,
+          "price": 986000,
+          "from": "2026-12-01",
+          "to": "2026-12-23",
+          "inferred": [],
+          "site": "actiup"
+        }
+      ],
+      "reason": "Official rules PDF linked from the ActiUp page (https://drive.google.com/file/d/1qfcA1Tj6Xeky22UnNty6yl4cooUlGCqh/view, 'TẾT RUN 2027 ĐIỀU LỆ VÀ LUẬT THI ĐẤU', Điều 1.1): 'Giải có duy nhất một cự li 21,1km'. The ActiUp price boards carry one price per tier, so every tier is the 21km course. Group tiers need at least 50 / 200 runners (15% / 20% off). The Regular board reads '31/11/2026', kept as 2026-11-30.",
+      "at": "2026-10-13T02:12:57.272Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -351,5 +456,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-10-13T02:12:57.272Z"
 }

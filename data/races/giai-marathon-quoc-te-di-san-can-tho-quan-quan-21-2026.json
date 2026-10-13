@@ -7,7 +7,8 @@
   ],
   "date": "2026-12-20",
   "endDate": null,
-  "seriesId": null,
+  "mainDate": null,
+  "seriesId": "can-tho-heritage-marathon",
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
   "edition": null,
@@ -33,12 +34,12 @@
   ],
   "location": {
     "venue": "Công viên Sông Hậu, phường Cái Khế, thành phố Cần Thơ",
-    "city": null
+    "city": "Cần Thơ"
   },
   "geo": {
     "lat": 10.0456493,
     "lng": 105.7928778,
-    "source": "nominatim",
+    "source": "manual",
     "precision": "venue",
     "current": {
       "province": "92",
@@ -59,7 +60,7 @@
       },
       "ha-noi": {
         "km": 1607.6,
-        "minutes": 1254,
+        "minutes": 1256,
         "method": "road",
         "near": false
       },
@@ -100,26 +101,26 @@
         "near": false
       },
       "vung-tau": {
-        "km": 264.9,
-        "minutes": 222,
+        "km": 254.6,
+        "minutes": 217,
         "method": "road",
         "near": false
       },
       "quy-nhon": {
         "km": 787.7,
-        "minutes": 593,
+        "minutes": 594,
         "method": "road",
         "near": false
       },
       "buon-ma-thuot": {
         "km": 518.4,
-        "minutes": 391,
+        "minutes": 392,
         "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 1916.2,
-        "minutes": 1490,
+        "km": 1915.4,
+        "minutes": 1488,
         "method": "road",
         "near": false
       },
@@ -131,7 +132,116 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 295000,
+      "from": "2026-08-11",
+      "to": "2026-08-15",
+      "inferred": [],
+      "site": "canthomarathon-com"
+    },
+    {
+      "distance": "10km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 420000,
+      "from": "2026-08-11",
+      "to": "2026-08-15",
+      "inferred": [],
+      "site": "canthomarathon-com"
+    },
+    {
+      "distance": "21km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 495000,
+      "from": "2026-08-11",
+      "to": "2026-08-15",
+      "inferred": [],
+      "site": "canthomarathon-com"
+    },
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 330000,
+      "from": "2026-08-16",
+      "to": "2026-09-06",
+      "inferred": [],
+      "site": "canthomarathon-com"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 450000,
+      "from": "2026-08-16",
+      "to": "2026-09-06",
+      "inferred": [],
+      "site": "canthomarathon-com"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 530000,
+      "from": "2026-08-16",
+      "to": "2026-09-06",
+      "inferred": [],
+      "site": "canthomarathon-com"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 450000,
+      "from": "2026-09-07",
+      "to": "2026-12-20",
+      "inferred": [
+        "from",
+        "to"
+      ],
+      "site": "canthomarathon-com"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 550000,
+      "from": "2026-09-07",
+      "to": "2026-12-20",
+      "inferred": [
+        "from",
+        "to"
+      ],
+      "site": "canthomarathon-com"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 650000,
+      "from": "2026-09-07",
+      "to": "2026-12-20",
+      "inferred": [
+        "from",
+        "to"
+      ],
+      "site": "canthomarathon-com"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -147,8 +257,123 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "seriesId": {
+      "value": "can-tho-heritage-marathon",
+      "reason": "organizer page canthomarathon.com/cuoc-dua/ links the 2024 and 2025 editions as earlier years of this race",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "location": {
+      "value": {
+        "venue": "Công viên Sông Hậu, phường Cái Khế, thành phố Cần Thơ",
+        "city": "Cần Thơ"
+      },
+      "reason": "city from the venue as stated by the organizer (canthomarathon.com/cuoc-dua/: 'Công viên Sông Hậu, phường Cái Khế, thành phố Cần Thơ') and ActiUp place; geo kept from the point already stored for this venue",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "geo": {
+      "value": {
+        "lat": 10.0456493,
+        "lng": 105.7928778,
+        "source": "manual",
+        "precision": "venue",
+        "current": {
+          "province": "92",
+          "ward": "31120"
+        },
+        "legacy": {
+          "province": "92",
+          "district": "916",
+          "ward": "31117"
+        },
+        "access": "road",
+        "fromPlaces": {
+          "hcmc": {
+            "km": 172.7,
+            "minutes": 139,
+            "method": "road",
+            "near": false
+          },
+          "ha-noi": {
+            "km": 1607.6,
+            "minutes": 1256,
+            "method": "road",
+            "near": false
+          },
+          "da-nang": {
+            "km": 1022.4,
+            "minutes": 780,
+            "method": "road",
+            "near": false
+          },
+          "nha-trang": {
+            "km": 581.8,
+            "minutes": 431,
+            "method": "road",
+            "near": false
+          },
+          "da-lat": {
+            "km": 465.4,
+            "minutes": 359,
+            "method": "road",
+            "near": false
+          },
+          "can-tho": {
+            "km": 1.8,
+            "minutes": 3,
+            "method": "road",
+            "near": true
+          },
+          "hai-phong": {
+            "km": 1641.8,
+            "minutes": 1281,
+            "method": "road",
+            "near": false
+          },
+          "hue": {
+            "km": 1105.1,
+            "minutes": 854,
+            "method": "road",
+            "near": false
+          },
+          "vung-tau": {
+            "km": 254.6,
+            "minutes": 217,
+            "method": "road",
+            "near": false
+          },
+          "quy-nhon": {
+            "km": 787.7,
+            "minutes": 594,
+            "method": "road",
+            "near": false
+          },
+          "buon-ma-thuot": {
+            "km": 518.4,
+            "minutes": 392,
+            "method": "road",
+            "near": false
+          },
+          "sa-pa": {
+            "km": 1915.4,
+            "minutes": 1488,
+            "method": "road",
+            "near": false
+          },
+          "ha-long": {
+            "km": 1691.5,
+            "minutes": 1313,
+            "method": "road",
+            "near": false
+          }
+        }
+      },
+      "reason": "city from the venue as stated by the organizer (canthomarathon.com/cuoc-dua/: 'Công viên Sông Hậu, phường Cái Khế, thành phố Cần Thơ') and ActiUp place; geo kept from the point already stored for this venue",
+      "at": "2026-10-13T02:12:57.272Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -197,9 +422,123 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "canthomarathon-com",
+      "role": "reference",
+      "url": "https://canthomarathon.com/giai-marathon-quoc-te-di-san-can-tho-chinh-thuc-mo-cong-dang-ky-bib-chi-tu-295-000-vnd",
+      "lastCheckedAt": "2026-10-13T02:12:57.272Z",
+      "lastChangedAt": "2026-10-13T02:12:57.272Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Marathon Quốc tế Di sản Cần Thơ 2026",
+          "date": "2026-12-20",
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Flash Sale",
+              "price": 295000,
+              "kind": "early",
+              "from": "11/08",
+              "to": "15/08"
+            },
+            {
+              "distance": "10km",
+              "tier": "Flash Sale",
+              "price": 420000,
+              "kind": "early",
+              "from": "11/08",
+              "to": "15/08"
+            },
+            {
+              "distance": "21km",
+              "tier": "Flash Sale",
+              "price": 495000,
+              "kind": "early",
+              "from": "11/08",
+              "to": "15/08"
+            }
+          ],
+          "note": "organizer's own post (2026-08-12) with the Flash Sale price image BG-CT-giam-kb-01.jpg: 11/08-15/08/2026, 5km 295.000, 10km 420.000, 21km 495.000"
+        }
+      }
+    },
+    {
+      "site": "canthomarathon-com",
+      "role": "reference",
+      "url": "https://canthomarathon.com/super-early-bird-chot-bib-ngay-khi-con-gia-tot",
+      "lastCheckedAt": "2026-10-13T02:12:57.272Z",
+      "lastChangedAt": "2026-10-13T02:12:57.272Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Marathon Quốc tế Di sản Cần Thơ 2026",
+          "date": "2026-12-20",
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Super Early Bird",
+              "price": 330000,
+              "kind": "early",
+              "from": "16/08",
+              "to": "06/09"
+            },
+            {
+              "distance": "10km",
+              "tier": "Super Early Bird",
+              "price": 450000,
+              "kind": "early",
+              "from": "16/08",
+              "to": "06/09"
+            },
+            {
+              "distance": "21km",
+              "tier": "Super Early Bird",
+              "price": 530000,
+              "kind": "early",
+              "from": "16/08",
+              "to": "06/09"
+            }
+          ],
+          "note": "organizer's own post (2026-08-18) with the Super Early Bird price image: 16/08-06/09/2026, 5km 330.000, 10km 450.000, 21km 530.000"
+        }
+      }
+    },
+    {
+      "site": "canthomarathon-com",
+      "role": "reference",
+      "url": "https://canthomarathon.com/quen-chot-super-early-bird-dung-lo-early-bird-can-tho-heritage-marathon-2026-da-mo",
+      "lastCheckedAt": "2026-10-13T02:12:57.272Z",
+      "lastChangedAt": "2026-10-13T02:12:57.272Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Marathon Quốc tế Di sản Cần Thơ 2026",
+          "date": "2026-12-20",
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Early Bird",
+              "price": 450000,
+              "kind": "early"
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "price": 550000,
+              "kind": "early"
+            },
+            {
+              "distance": "21km",
+              "tier": "Early Bird",
+              "price": 650000,
+              "kind": "early"
+            }
+          ],
+          "note": "organizer's own post (2026-09-09) with the Early Bird price image: 5km (Conservation Vietnam) 450.000, 10km 550.000, 21km 650.000; same prices on paymentcantho.vietnamheritagemarathon.com read 2026-10-13. Dates left empty: the image header repeats 16/08-06/09/2026 (the Super Early Bird window) while the post text says 'áp dụng đến 07/09/2026' and was published 09/09, so the window is unclear. Ages: 5km from 9, 10km from 12, 21km from 16 (payment site). Group 5% off for 5+ BIBs (427.500/522.500/617.500) not stored"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-10-13T02:12:57.272Z"
 }

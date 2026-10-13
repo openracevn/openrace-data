@@ -7,13 +7,14 @@
   ],
   "date": "2026-10-31",
   "endDate": "2026-11-01",
-  "seriesId": null,
+  "mainDate": "2026-11-01",
+  "seriesId": "fv-run",
   "organizerId": "benh-vien-fv",
   "organizer": "Bệnh viện FV - Đồng tổ chức: Quỹ Nâng Bước Tuổi Thơ",
   "coOrganizerIds": [
     "quy-nang-buoc-tuoi-tho"
   ],
-  "edition": null,
+  "edition": 1,
   "courses": [
     {
       "label": "1km",
@@ -42,13 +43,13 @@
   ],
   "location": {
     "venue": "KĐT Phú Mỹ Hưng, Phường Tân Hưng, TP. Hồ Chí Minh.",
-    "city": null
+    "city": "TP.HCM"
   },
   "geo": {
     "lat": 10.739937,
     "lng": 106.7034261,
-    "source": "nominatim",
-    "precision": "ward",
+    "source": "manual",
+    "precision": "venue",
     "current": {
       "province": "79",
       "ward": "27475"
@@ -68,13 +69,13 @@
       },
       "ha-noi": {
         "km": 1499.3,
-        "minutes": 1138,
+        "minutes": 1140,
         "method": "road",
         "near": false
       },
       "da-nang": {
         "km": 866,
-        "minutes": 656,
+        "minutes": 655,
         "method": "road",
         "near": false
       },
@@ -110,7 +111,7 @@
       },
       "vung-tau": {
         "km": 97.8,
-        "minutes": 91,
+        "minutes": 92,
         "method": "road",
         "near": false
       },
@@ -127,14 +128,14 @@
         "near": false
       },
       "sa-pa": {
-        "km": 1807.8,
-        "minutes": 1374,
+        "km": 1807.1,
+        "minutes": 1373,
         "method": "road",
         "near": false
       },
       "ha-long": {
         "km": 1583.1,
-        "minutes": 1198,
+        "minutes": 1197,
         "method": "road",
         "near": false
       }
@@ -230,8 +231,8 @@
       "site": "actiup"
     },
     {
-      "distance": null,
-      "tier": "HM · Flash Sale",
+      "distance": "21km",
+      "tier": "Flash Sale",
       "kind": "other",
       "audience": null,
       "price": 550000,
@@ -241,8 +242,8 @@
       "site": "actiup"
     },
     {
-      "distance": null,
-      "tier": "HM · Early Bird",
+      "distance": "21km",
+      "tier": "Early Bird",
       "kind": "early",
       "audience": null,
       "price": 750000,
@@ -252,8 +253,8 @@
       "site": "actiup"
     },
     {
-      "distance": null,
-      "tier": "HM · Regular",
+      "distance": "21km",
+      "tier": "Regular",
       "kind": "regular",
       "audience": null,
       "price": 1050000,
@@ -263,8 +264,8 @@
       "site": "actiup"
     },
     {
-      "distance": null,
-      "tier": "HM · Late",
+      "distance": "21km",
+      "tier": "Late",
       "kind": "late",
       "audience": null,
       "price": 1350000,
@@ -274,8 +275,8 @@
       "site": "actiup"
     },
     {
-      "distance": null,
-      "tier": "Family Run (Tiếp sức 3x1000m) · Relay team Flash Sale",
+      "distance": "1km",
+      "tier": "Family Run relay team (3x1000m) Flash Sale",
       "kind": "group",
       "audience": null,
       "price": 570000,
@@ -285,8 +286,8 @@
       "site": "actiup"
     },
     {
-      "distance": null,
-      "tier": "Family Run (Tiếp sức 3x1000m) · Relay team Early Bird",
+      "distance": "1km",
+      "tier": "Family Run relay team (3x1000m) Early Bird",
       "kind": "group",
       "audience": null,
       "price": 775000,
@@ -296,8 +297,8 @@
       "site": "actiup"
     },
     {
-      "distance": null,
-      "tier": "Family Run (Tiếp sức 3x1000m) · Relay team Regular",
+      "distance": "1km",
+      "tier": "Family Run relay team (3x1000m) Regular",
       "kind": "group",
       "audience": null,
       "price": 980000,
@@ -307,8 +308,8 @@
       "site": "actiup"
     },
     {
-      "distance": null,
-      "tier": "Family Run (Tiếp sức 3x1000m) · Relay team Late",
+      "distance": "1km",
+      "tier": "Family Run relay team (3x1000m) Late",
       "kind": "group",
       "audience": null,
       "price": 1250000,
@@ -347,6 +348,311 @@
       ],
       "reason": "organizer cleanup (plan 013): \"Bệnh viện FV - Đồng tổ chức: Quỹ Nâng Bước Tuổi Thơ\" packed several bodies into one entity; primary organizer benh-vien-fv, co-organizers quy-nang-buoc-tuoi-tho",
       "at": "2026-09-28T12:41:20.719Z"
+    },
+    "seriesId": {
+      "value": "fv-run",
+      "reason": "new series fv-run (data/series.json); first edition per ActiUp and FV Hospital",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "edition": {
+      "value": 1,
+      "reason": "edition 1: ActiUp description 'FV RUN 2026 là mùa giải đầu tiên', FV Hospital announcement 'this first edition', Vietnam News 'inaugural edition' (vietnamnews.vn/sports/1796790). mainDate: FV Hospital announcement 'On 1 November, the races, the award ceremony, and the closing event will take place' (31 Oct is kit pickup/expo). city: ActiUp place and FV Hospital both state Ho Chi Minh City; geo kept at the point already stored for this venue. prices: ActiUp price image (Ticket---Price-(3).jpg) row 'HM' = 21km per the race description (Family Run 3x1km, 5km, 10km, 21km); 'Family Run (Tiếp sức 3x1000m)' tiers are per relay team of three, kept kind group with distance 1km (the leg; team of 3 incl. one child aged 6-14 per FV Hospital).",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "mainDate": {
+      "value": "2026-11-01",
+      "reason": "edition 1: ActiUp description 'FV RUN 2026 là mùa giải đầu tiên', FV Hospital announcement 'this first edition', Vietnam News 'inaugural edition' (vietnamnews.vn/sports/1796790). mainDate: FV Hospital announcement 'On 1 November, the races, the award ceremony, and the closing event will take place' (31 Oct is kit pickup/expo). city: ActiUp place and FV Hospital both state Ho Chi Minh City; geo kept at the point already stored for this venue. prices: ActiUp price image (Ticket---Price-(3).jpg) row 'HM' = 21km per the race description (Family Run 3x1km, 5km, 10km, 21km); 'Family Run (Tiếp sức 3x1000m)' tiers are per relay team of three, kept kind group with distance 1km (the leg; team of 3 incl. one child aged 6-14 per FV Hospital).",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "location": {
+      "value": {
+        "venue": "KĐT Phú Mỹ Hưng, Phường Tân Hưng, TP. Hồ Chí Minh.",
+        "city": "TP.HCM"
+      },
+      "reason": "edition 1: ActiUp description 'FV RUN 2026 là mùa giải đầu tiên', FV Hospital announcement 'this first edition', Vietnam News 'inaugural edition' (vietnamnews.vn/sports/1796790). mainDate: FV Hospital announcement 'On 1 November, the races, the award ceremony, and the closing event will take place' (31 Oct is kit pickup/expo). city: ActiUp place and FV Hospital both state Ho Chi Minh City; geo kept at the point already stored for this venue. prices: ActiUp price image (Ticket---Price-(3).jpg) row 'HM' = 21km per the race description (Family Run 3x1km, 5km, 10km, 21km); 'Family Run (Tiếp sức 3x1000m)' tiers are per relay team of three, kept kind group with distance 1km (the leg; team of 3 incl. one child aged 6-14 per FV Hospital).",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "geo": {
+      "value": {
+        "lat": 10.739937,
+        "lng": 106.7034261,
+        "source": "manual",
+        "precision": "venue",
+        "current": {
+          "province": "79",
+          "ward": "27475"
+        },
+        "legacy": {
+          "province": "79",
+          "district": "778",
+          "ward": "27481"
+        },
+        "access": "road",
+        "fromPlaces": {
+          "hcmc": {
+            "km": 4.9,
+            "minutes": 6,
+            "method": "road",
+            "near": true
+          },
+          "ha-noi": {
+            "km": 1499.3,
+            "minutes": 1140,
+            "method": "road",
+            "near": false
+          },
+          "da-nang": {
+            "km": 866,
+            "minutes": 655,
+            "method": "road",
+            "near": false
+          },
+          "nha-trang": {
+            "km": 414.8,
+            "minutes": 299,
+            "method": "road",
+            "near": false
+          },
+          "da-lat": {
+            "km": 298.4,
+            "minutes": 227,
+            "method": "road",
+            "near": false
+          },
+          "can-tho": {
+            "km": 166.7,
+            "minutes": 130,
+            "method": "road",
+            "near": false
+          },
+          "hai-phong": {
+            "km": 1533.4,
+            "minutes": 1165,
+            "method": "road",
+            "near": false
+          },
+          "hue": {
+            "km": 948.7,
+            "minutes": 730,
+            "method": "road",
+            "near": false
+          },
+          "vung-tau": {
+            "km": 97.8,
+            "minutes": 92,
+            "method": "road",
+            "near": false
+          },
+          "quy-nhon": {
+            "km": 620.7,
+            "minutes": 462,
+            "method": "road",
+            "near": false
+          },
+          "buon-ma-thuot": {
+            "km": 362,
+            "minutes": 267,
+            "method": "road",
+            "near": false
+          },
+          "sa-pa": {
+            "km": 1807.1,
+            "minutes": 1373,
+            "method": "road",
+            "near": false
+          },
+          "ha-long": {
+            "km": 1583.1,
+            "minutes": 1197,
+            "method": "road",
+            "near": false
+          }
+        }
+      },
+      "reason": "edition 1: ActiUp description 'FV RUN 2026 là mùa giải đầu tiên', FV Hospital announcement 'this first edition', Vietnam News 'inaugural edition' (vietnamnews.vn/sports/1796790). mainDate: FV Hospital announcement 'On 1 November, the races, the award ceremony, and the closing event will take place' (31 Oct is kit pickup/expo). city: ActiUp place and FV Hospital both state Ho Chi Minh City; geo kept at the point already stored for this venue. prices: ActiUp price image (Ticket---Price-(3).jpg) row 'HM' = 21km per the race description (Family Run 3x1km, 5km, 10km, 21km); 'Family Run (Tiếp sức 3x1000m)' tiers are per relay team of three, kept kind group with distance 1km (the leg; team of 3 incl. one child aged 6-14 per FV Hospital).",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "prices": {
+      "value": [
+        {
+          "distance": "5km",
+          "tier": "Flash Sale",
+          "kind": "other",
+          "audience": null,
+          "price": 250000,
+          "from": "2026-07-29",
+          "to": null,
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "5km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 450000,
+          "from": "2026-07-30",
+          "to": "2026-09-14",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "5km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 650000,
+          "from": "2026-09-15",
+          "to": "2026-10-11",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "5km",
+          "tier": "Late",
+          "kind": "late",
+          "audience": null,
+          "price": 850000,
+          "from": "2026-10-12",
+          "to": "2026-10-25",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "10km",
+          "tier": "Flash Sale",
+          "kind": "other",
+          "audience": null,
+          "price": 350000,
+          "from": "2026-07-29",
+          "to": null,
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "10km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 550000,
+          "from": "2026-07-30",
+          "to": "2026-09-14",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "10km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 850000,
+          "from": "2026-09-15",
+          "to": "2026-10-11",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "10km",
+          "tier": "Late",
+          "kind": "late",
+          "audience": null,
+          "price": 1050000,
+          "from": "2026-10-12",
+          "to": "2026-10-25",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "21km",
+          "tier": "Flash Sale",
+          "kind": "other",
+          "audience": null,
+          "price": 550000,
+          "from": "2026-07-29",
+          "to": null,
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "21km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 750000,
+          "from": "2026-07-30",
+          "to": "2026-09-14",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "21km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 1050000,
+          "from": "2026-09-15",
+          "to": "2026-10-11",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "21km",
+          "tier": "Late",
+          "kind": "late",
+          "audience": null,
+          "price": 1350000,
+          "from": "2026-10-12",
+          "to": "2026-10-25",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "1km",
+          "tier": "Family Run relay team (3x1000m) Flash Sale",
+          "kind": "group",
+          "audience": null,
+          "price": 570000,
+          "from": "2026-07-29",
+          "to": null,
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "1km",
+          "tier": "Family Run relay team (3x1000m) Early Bird",
+          "kind": "group",
+          "audience": null,
+          "price": 775000,
+          "from": "2026-07-30",
+          "to": "2026-09-14",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "1km",
+          "tier": "Family Run relay team (3x1000m) Regular",
+          "kind": "group",
+          "audience": null,
+          "price": 980000,
+          "from": "2026-09-15",
+          "to": "2026-10-11",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "1km",
+          "tier": "Family Run relay team (3x1000m) Late",
+          "kind": "group",
+          "audience": null,
+          "price": 1250000,
+          "from": "2026-10-12",
+          "to": "2026-10-25",
+          "inferred": [],
+          "site": "actiup"
+        }
+      ],
+      "reason": "edition 1: ActiUp description 'FV RUN 2026 là mùa giải đầu tiên', FV Hospital announcement 'this first edition', Vietnam News 'inaugural edition' (vietnamnews.vn/sports/1796790). mainDate: FV Hospital announcement 'On 1 November, the races, the award ceremony, and the closing event will take place' (31 Oct is kit pickup/expo). city: ActiUp place and FV Hospital both state Ho Chi Minh City; geo kept at the point already stored for this venue. prices: ActiUp price image (Ticket---Price-(3).jpg) row 'HM' = 21km per the race description (Family Run 3x1km, 5km, 10km, 21km); 'Family Run (Tiếp sức 3x1000m)' tiers are per relay team of three, kept kind group with distance 1km (the leg; team of 3 incl. one child aged 6-14 per FV Hospital).",
+      "at": "2026-10-13T02:12:57.272Z"
     }
   },
   "sources": [
@@ -530,9 +836,34 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "fvhospital-com",
+      "role": "reference",
+      "url": "https://fvhospital.com/en/news/fv-hospital-announces-fv-run-a-community-race-to-raise-funds-for-underprivileged-children-with-disabilities",
+      "lastCheckedAt": "2026-10-13T02:12:57.272Z",
+      "lastChangedAt": "2026-10-13T02:12:57.272Z",
+      "extracted": {
+        "facts": {
+          "name": "FV RUN 2026 - Run with Heart, Run for Hope",
+          "date": "2026-10-31",
+          "endDate": "2026-11-01",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "1km",
+            "5km",
+            "10km",
+            "21km"
+          ],
+          "organizer": "FV Hospital",
+          "note": "organizer's own announcement (FV Hospital, 2026-07-31): 'first edition', races on 1 November, P2 Park, Phu My Hung Urban Area, Ho Chi Minh City"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T12:41:20.719Z"
+  "updatedAt": "2026-10-13T02:12:57.272Z"
 }

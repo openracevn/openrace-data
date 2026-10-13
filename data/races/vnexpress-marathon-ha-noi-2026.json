@@ -7,10 +7,11 @@
   ],
   "date": "2026-11-29",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "vnexpress-marathon-ha-noi",
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
-  "edition": null,
+  "edition": 6,
   "courses": [
     {
       "label": "5km",
@@ -309,14 +310,258 @@
       "to": "2026-11-19",
       "inferred": [],
       "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 420000,
+      "from": "2026-09-04",
+      "to": "2026-09-22",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 500000,
+      "from": "2026-09-23",
+      "to": "2026-10-13",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 620000,
+      "from": "2026-10-14",
+      "to": "2026-11-04",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 790000,
+      "from": "2026-11-05",
+      "to": "2026-11-17",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 480000,
+      "from": "2026-09-04",
+      "to": "2026-09-22",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 620000,
+      "from": "2026-09-23",
+      "to": "2026-10-13",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 790000,
+      "from": "2026-10-14",
+      "to": "2026-11-04",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 950000,
+      "from": "2026-11-05",
+      "to": "2026-11-17",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 660000,
+      "from": "2026-09-04",
+      "to": "2026-09-22",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 790000,
+      "from": "2026-09-23",
+      "to": "2026-10-13",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 950000,
+      "from": "2026-10-14",
+      "to": "2026-11-04",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1150000,
+      "from": "2026-11-05",
+      "to": "2026-11-17",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 780000,
+      "from": "2026-09-04",
+      "to": "2026-09-22",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 950000,
+      "from": "2026-09-23",
+      "to": "2026-10-13",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1150000,
+      "from": "2026-10-14",
+      "to": "2026-11-04",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1350000,
+      "from": "2026-11-05",
+      "to": "2026-11-17",
+      "inferred": [],
+      "site": "irace"
     }
   ],
   "currency": "VND",
   "registrationStatus": "open",
-  "registrations": [],
-  "links": [],
+  "registrations": [
+    {
+      "site": "irace",
+      "url": "https://ticket.irace.vn/vnexpress-marathon-hanoi-midnight-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://facebook.com/sharer/sharer.php",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://vm.vnexpress.net/ha-noi-2026/thong-tin-cuoc-dua/dieu-le",
+      "kind": "official",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "http://online.gov.vn/Home/WebDetails/51414",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    }
+  ],
+  "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "edition": {
+      "value": 6,
+      "reason": "VnExpress article https://vnexpress.net/gia-bib-hanoi-midnight-2026-5124065.html (2026-09-24, organizer's own paper) states: \"Năm nay, VnExpress Marathon Hanoi Midnight bước sang mùa thứ 6\"",
+      "at": "2026-10-13T02:12:57.272Z"
+    }
+  },
   "sources": [
     {
       "site": "vnexpress-marathon",
@@ -477,9 +722,400 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://ticket.irace.vn/vnexpress-marathon-hanoi-midnight-2026",
+      "lastCheckedAt": "2026-10-13T02:09:07.000Z",
+      "lastChangedAt": "2026-10-13T02:09:07.000Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy VnExpress Marathon Hanoi Midnight 2026 Powered by PUMA",
+          "venue": "Thành phố Hà Nội",
+          "organizer": "VnExpress Marathon",
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Super Early Bird",
+              "from": "04/09",
+              "to": "22/09",
+              "price": 420000
+            },
+            {
+              "distance": "5km",
+              "tier": "Early Bird",
+              "from": "23/09",
+              "to": "13/10",
+              "price": 500000
+            },
+            {
+              "distance": "5km",
+              "tier": "Regular",
+              "from": "14/10",
+              "to": "04/11",
+              "price": 620000
+            },
+            {
+              "distance": "5km",
+              "tier": "Late",
+              "from": "05/11",
+              "to": "17/11",
+              "price": 790000
+            },
+            {
+              "distance": "10km",
+              "tier": "Super Early Bird",
+              "from": "04/09",
+              "to": "22/09",
+              "price": 480000
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "from": "23/09",
+              "to": "13/10",
+              "price": 620000
+            },
+            {
+              "distance": "10km",
+              "tier": "Regular",
+              "from": "14/10",
+              "to": "04/11",
+              "price": 790000
+            },
+            {
+              "distance": "10km",
+              "tier": "Late",
+              "from": "05/11",
+              "to": "17/11",
+              "price": 950000
+            },
+            {
+              "distance": "21km",
+              "tier": "Super Early Bird",
+              "from": "04/09",
+              "to": "22/09",
+              "price": 660000
+            },
+            {
+              "distance": "21km",
+              "tier": "Early Bird",
+              "from": "23/09",
+              "to": "13/10",
+              "price": 790000
+            },
+            {
+              "distance": "21km",
+              "tier": "Regular",
+              "from": "14/10",
+              "to": "04/11",
+              "price": 950000
+            },
+            {
+              "distance": "21km",
+              "tier": "Late",
+              "from": "05/11",
+              "to": "17/11",
+              "price": 1150000
+            },
+            {
+              "distance": "42km",
+              "tier": "Super Early Bird",
+              "from": "04/09",
+              "to": "22/09",
+              "price": 780000
+            },
+            {
+              "distance": "42km",
+              "tier": "Early Bird",
+              "from": "23/09",
+              "to": "13/10",
+              "price": 950000
+            },
+            {
+              "distance": "42km",
+              "tier": "Regular",
+              "from": "14/10",
+              "to": "04/11",
+              "price": 1150000
+            },
+            {
+              "distance": "42km",
+              "tier": "Late",
+              "from": "05/11",
+              "to": "17/11",
+              "price": 1350000
+            }
+          ]
+        },
+        "pages": [
+          {
+            "url": "https://ticket.irace.vn/vnexpress-marathon-hanoi-midnight-2026",
+            "json": {
+              "prices": [
+                {
+                  "distance": "5km",
+                  "tier": "Super Early Bird",
+                  "from": "04/09",
+                  "to": "22/09",
+                  "price": 420000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Early Bird",
+                  "from": "23/09",
+                  "to": "13/10",
+                  "price": 500000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Regular",
+                  "from": "14/10",
+                  "to": "04/11",
+                  "price": 620000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Late",
+                  "from": "05/11",
+                  "to": "17/11",
+                  "price": 790000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Super Early Bird",
+                  "from": "04/09",
+                  "to": "22/09",
+                  "price": 480000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Early Bird",
+                  "from": "23/09",
+                  "to": "13/10",
+                  "price": 620000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Regular",
+                  "from": "14/10",
+                  "to": "04/11",
+                  "price": 790000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Late",
+                  "from": "05/11",
+                  "to": "17/11",
+                  "price": 950000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Super Early Bird",
+                  "from": "04/09",
+                  "to": "22/09",
+                  "price": 660000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Early Bird",
+                  "from": "23/09",
+                  "to": "13/10",
+                  "price": 790000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Regular",
+                  "from": "14/10",
+                  "to": "04/11",
+                  "price": 950000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Late",
+                  "from": "05/11",
+                  "to": "17/11",
+                  "price": 1150000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Super Early Bird",
+                  "from": "04/09",
+                  "to": "22/09",
+                  "price": 780000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Early Bird",
+                  "from": "23/09",
+                  "to": "13/10",
+                  "price": 950000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Regular",
+                  "from": "14/10",
+                  "to": "04/11",
+                  "price": 1150000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Late",
+                  "from": "05/11",
+                  "to": "17/11",
+                  "price": 1350000
+                }
+              ],
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Giải chạy VnExpress Marathon Hanoi Midnight 2026 Powered by PUMA",
+              "date": "2026-11-29",
+              "distances": [
+                "5km",
+                "10km",
+                "21km",
+                "42km"
+              ],
+              "city": "Thành phố Hà Nội",
+              "currency": "VND",
+              "registrationStatus": "open"
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://app.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://irace.vn/ban-ve/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ban ve su kien"
+          },
+          {
+            "url": "https://irace.vn/myfoto/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "tim hinh su kien"
+          },
+          {
+            "url": "https://irace.vn/doanh-nghiep/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "to chuc su kien"
+          },
+          {
+            "url": "https://irace.vn/affiliate/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kiem tien cung irace vn"
+          },
+          {
+            "url": "https://irace.vn/thiet-ke-huy-chuong/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huy chuong"
+          },
+          {
+            "url": "https://irace.vn/san-xuat-qua-tang-phu-kien-the-thao/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "quan ao phu kien"
+          },
+          {
+            "url": "https://irace.vn/about-us/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ve irace"
+          },
+          {
+            "url": "https://irace.vn/bao-chi/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "bao chi viet"
+          },
+          {
+            "url": "https://irace.vn/hoi-dap/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "hoi dap"
+          },
+          {
+            "url": "https://irace.vn/thong-tin/huong-dan/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huong dan su dung"
+          },
+          {
+            "url": "https://irace.vn/kien-thuc-tap-luyen/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kien thuc chay bo"
+          },
+          {
+            "url": "https://tools.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "cong cu tinh toan"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "shop the thao"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "dinh duong"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "phu kien"
+          },
+          {
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://ticket.irace.vn/vnexpress-marathon-hanoi-midnight-2026",
+            "text": "chia se tren facebook"
+          },
+          {
+            "url": "https://vm.vnexpress.net/ha-noi-2026/thong-tin-cuoc-dua/dieu-le",
+            "text": "tai day"
+          },
+          {
+            "url": "http://online.gov.vn/Home/WebDetails/51414",
+            "text": ""
+          },
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/feed/",
+            "text": ""
+          },
+          {
+            "url": "https://www.youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+            "text": ""
+          },
+          {
+            "url": "https://play.google.com/store/apps/details?id=com.irace.app",
+            "text": ""
+          },
+          {
+            "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/chinh-sach-bao-mat/",
+            "text": "chinh sach bao mat"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-thanh-toan/",
+            "text": "dieu khoan thanh toan"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-su-dung/",
+            "text": "dieu khoan su dung"
+          },
+          {
+            "url": "https://irace.vn/tuyen-dung/",
+            "text": "tuyen dung"
+          },
+          {
+            "url": "https://irace.vn/lien-he/",
+            "text": "lien he"
+          }
+        ],
+        "organizer": {
+          "id": "vnexpress-marathon",
+          "name": "VnExpress Marathon"
+        },
+        "readBy": "agent"
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-25T05:01:22.419Z",
-  "updatedAt": "2026-09-25T05:01:22.419Z"
+  "updatedAt": "2026-10-13T02:12:57.272Z"
 }

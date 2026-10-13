@@ -5,13 +5,26 @@
   "types": [
     "road_run"
   ],
-  "date": "2026-12-06",
-  "endDate": null,
+  "date": "2026-12-05",
+  "endDate": "2026-12-06",
+  "mainDate": "2026-12-06",
   "seriesId": "techcombank-ho-chi-minh-city-international-marathon",
   "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
   "edition": 9,
   "courses": [
+    {
+      "label": "1.5km",
+      "meters": 1500,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "3km",
+      "meters": 3000,
+      "type": "road_run",
+      "elevationGain": null
+    },
     {
       "label": "5km",
       "meters": 5000,
@@ -39,96 +52,100 @@
   ],
   "location": {
     "venue": "Thành Phố Hồ Chí Minh",
-    "city": null
+    "city": "Ho Chi Minh City"
   },
   "geo": {
-    "lat": 10.7737261,
-    "lng": 106.7166008,
+    "lat": 10.8283337,
+    "lng": 106.761474,
     "source": "nominatim",
-    "precision": "province",
+    "precision": "venue",
     "current": {
       "province": "79",
-      "ward": null
+      "ward": "26824"
     },
-    "legacy": null,
+    "legacy": {
+      "province": "79",
+      "district": "769",
+      "ward": "26827"
+    },
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 2,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 12.1,
+        "minutes": 14,
+        "method": "road",
         "near": true
       },
       "ha-noi": {
-        "km": 1144,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1491.1,
+        "minutes": 1130,
+        "method": "road",
         "near": false
       },
       "da-nang": {
-        "km": 610.2,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 857.8,
+        "minutes": 648,
+        "method": "road",
         "near": false
       },
       "nha-trang": {
-        "km": 315.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 410.2,
+        "minutes": 293,
+        "method": "road",
         "near": false
       },
       "da-lat": {
-        "km": 228.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 283.2,
+        "minutes": 218,
+        "method": "road",
         "near": false
       },
       "can-tho": {
-        "km": 130.7,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 180.6,
+        "minutes": 145,
+        "method": "road",
         "near": false
       },
       "hai-phong": {
-        "km": 1119.9,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1525.2,
+        "minutes": 1157,
+        "method": "road",
         "near": false
       },
       "hue": {
-        "km": 639.7,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 940.5,
+        "minutes": 722,
+        "method": "road",
         "near": false
       },
       "vung-tau": {
-        "km": 62.3,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 93.2,
+        "minutes": 85,
+        "method": "road",
         "near": false
       },
       "quy-nhon": {
-        "km": 430.9,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 616,
+        "minutes": 456,
+        "method": "road",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 254.9,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 353.8,
+        "minutes": 260,
+        "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 1321.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1799.6,
+        "minutes": 1366,
+        "method": "road",
         "near": false
       },
       "ha-long": {
-        "km": 1132.4,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1574.9,
+        "minutes": 1190,
+        "method": "road",
         "near": false
       }
     }
@@ -136,36 +153,27 @@
   "prices": [
     {
       "distance": "42km",
+      "tier": "Phase 1",
+      "kind": "early",
+      "audience": null,
+      "price": 1090000,
+      "from": "2026-01-27",
+      "to": "2026-01-29",
+      "inferred": [],
+      "site": "njuko"
+    },
+    {
+      "distance": "42km",
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
       "price": 1690000,
-      "from": null,
-      "to": "2026-01-30",
-      "inferred": [],
-      "site": "marathonhcmc-com"
-    },
-    {
-      "distance": "21km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 1370000,
-      "from": null,
-      "to": "2026-01-30",
-      "inferred": [],
-      "site": "marathonhcmc-com"
-    },
-    {
-      "distance": "10km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 1080000,
-      "from": null,
-      "to": "2026-01-30",
-      "inferred": [],
-      "site": "marathonhcmc-com"
+      "from": "2026-01-30",
+      "to": "2026-03-31",
+      "inferred": [
+        "from"
+      ],
+      "site": "njuko"
     },
     {
       "distance": "42km",
@@ -176,7 +184,44 @@
       "from": "2026-04-01",
       "to": "2026-09-30",
       "inferred": [],
-      "site": "marathonhcmc-com"
+      "site": "njuko"
+    },
+    {
+      "distance": "42km",
+      "tier": "Phase 4",
+      "kind": "late",
+      "audience": null,
+      "price": 2380000,
+      "from": "2026-10-01",
+      "to": null,
+      "inferred": [
+        "from"
+      ],
+      "site": "njuko"
+    },
+    {
+      "distance": "21km",
+      "tier": "Phase 1",
+      "kind": "early",
+      "audience": null,
+      "price": 880000,
+      "from": "2026-01-27",
+      "to": "2026-01-29",
+      "inferred": [],
+      "site": "njuko"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1370000,
+      "from": "2026-01-30",
+      "to": "2026-03-31",
+      "inferred": [
+        "from"
+      ],
+      "site": "njuko"
     },
     {
       "distance": "21km",
@@ -187,7 +232,44 @@
       "from": "2026-04-01",
       "to": "2026-09-30",
       "inferred": [],
-      "site": "marathonhcmc-com"
+      "site": "njuko"
+    },
+    {
+      "distance": "21km",
+      "tier": "Phase 4",
+      "kind": "late",
+      "audience": null,
+      "price": 1960000,
+      "from": "2026-10-01",
+      "to": null,
+      "inferred": [
+        "from"
+      ],
+      "site": "njuko"
+    },
+    {
+      "distance": "10km",
+      "tier": "Phase 1",
+      "kind": "early",
+      "audience": null,
+      "price": 690000,
+      "from": "2026-01-27",
+      "to": "2026-01-29",
+      "inferred": [],
+      "site": "njuko"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1080000,
+      "from": "2026-01-30",
+      "to": "2026-03-31",
+      "inferred": [
+        "from"
+      ],
+      "site": "njuko"
     },
     {
       "distance": "10km",
@@ -198,7 +280,166 @@
       "from": "2026-04-01",
       "to": "2026-09-30",
       "inferred": [],
-      "site": "marathonhcmc-com"
+      "site": "njuko"
+    },
+    {
+      "distance": "10km",
+      "tier": "Phase 4",
+      "kind": "late",
+      "audience": null,
+      "price": 1590000,
+      "from": "2026-10-01",
+      "to": null,
+      "inferred": [
+        "from"
+      ],
+      "site": "njuko"
+    },
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 550000,
+      "from": "2026-06-15",
+      "to": "2026-06-17",
+      "inferred": [],
+      "site": "njuko"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 790000,
+      "from": "2026-06-18",
+      "to": "2026-07-20",
+      "inferred": [
+        "from"
+      ],
+      "site": "njuko"
+    },
+    {
+      "distance": "5km",
+      "tier": "Phase 3",
+      "kind": "regular",
+      "audience": null,
+      "price": 985000,
+      "from": "2026-07-21",
+      "to": "2026-09-30",
+      "inferred": [
+        "from"
+      ],
+      "site": "njuko"
+    },
+    {
+      "distance": "5km",
+      "tier": "Phase 4",
+      "kind": "late",
+      "audience": null,
+      "price": 1190000,
+      "from": "2026-10-01",
+      "to": null,
+      "inferred": [
+        "from"
+      ],
+      "site": "njuko"
+    },
+    {
+      "distance": "3km",
+      "tier": "Phase 1",
+      "kind": "early",
+      "audience": null,
+      "price": 390000,
+      "from": "2026-01-27",
+      "to": "2026-01-29",
+      "inferred": [],
+      "site": "njuko"
+    },
+    {
+      "distance": "3km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 560000,
+      "from": "2026-01-30",
+      "to": "2026-03-31",
+      "inferred": [
+        "from"
+      ],
+      "site": "njuko"
+    },
+    {
+      "distance": "3km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 685000,
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "njuko"
+    },
+    {
+      "distance": "3km",
+      "tier": "Phase 4",
+      "kind": "late",
+      "audience": null,
+      "price": 760000,
+      "from": "2026-10-01",
+      "to": null,
+      "inferred": [
+        "from"
+      ],
+      "site": "njuko"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Phase 1",
+      "kind": "early",
+      "audience": null,
+      "price": 390000,
+      "from": "2026-01-27",
+      "to": "2026-01-29",
+      "inferred": [],
+      "site": "njuko"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 560000,
+      "from": "2026-01-30",
+      "to": "2026-03-31",
+      "inferred": [
+        "from"
+      ],
+      "site": "njuko"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 685000,
+      "from": "2026-04-01",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "njuko"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Phase 4",
+      "kind": "late",
+      "audience": null,
+      "price": 760000,
+      "from": "2026-10-01",
+      "to": null,
+      "inferred": [
+        "from"
+      ],
+      "site": "njuko"
     }
   ],
   "currency": "VND",
@@ -210,6 +451,7 @@
     }
   ],
   "links": [],
+  "participants": null,
   "flags": [],
   "overrides": {
     "seriesId": {
@@ -221,6 +463,367 @@
       "value": 9,
       "reason": "actiup/official site both state Mùa thứ 9 / 9th edition",
       "at": "2026-09-27T08:08:35.131Z"
+    },
+    "date": {
+      "value": "2026-12-05",
+      "reason": "Organizer marathonhcmc.com blog 'Đón chờ trải nghiệm đáng nhớ với Ngày thi đấu mới dành cho cự ly 5KM': 'cự ly 5KM chính thức được tổ chức vào một ngày thi đấu riêng. Ngày thi đấu: Thứ Bảy, 05/12/2026', race day 6/12/2026; njuko starts Kids Run 3km/1.5km on 05/12 too. City: organizer home page '06/12/2026, TP. HỒ CHÍ MINH, VIỆT NAM' (same as editions 2023-2025). Courses: njuko competitions Marathon 42.195KM, Half 21.1KM, 10KM, 5KM, KIDS RUN 3KM, KIDS RUN 1.5KM. Prices: njuko price tiers in order (ends at 23:59 ICT), registration opened 27/01/2026 (5km 15/06/2026). Early Bird ends 31/03/2026 per njuko and the organizer image archived 2026-02-18 ('EARLY BIRD By March 31, 2026'); the old 'to 2026-01-30' was the end of the limited first tier. 'Super Early Bird' and 'Early Bird' names for 5km from the organizer's 5km blog; 'Early Bird' and 'Standard (01/04-30/09/2026)' from the organizer images (Kids Run 560,000 / 685,000 match njuko). Phase 1/3/4 are unnamed in every source; kind from njuko order; inferred 'from' = day after the previous tier's end. Kids Run ages 3km 7-14, 1.5km 5-10 (techcombank.com bib blog); 5km min age 10.",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "endDate": {
+      "value": "2026-12-06",
+      "reason": "Organizer marathonhcmc.com blog 'Đón chờ trải nghiệm đáng nhớ với Ngày thi đấu mới dành cho cự ly 5KM': 'cự ly 5KM chính thức được tổ chức vào một ngày thi đấu riêng. Ngày thi đấu: Thứ Bảy, 05/12/2026', race day 6/12/2026; njuko starts Kids Run 3km/1.5km on 05/12 too. City: organizer home page '06/12/2026, TP. HỒ CHÍ MINH, VIỆT NAM' (same as editions 2023-2025). Courses: njuko competitions Marathon 42.195KM, Half 21.1KM, 10KM, 5KM, KIDS RUN 3KM, KIDS RUN 1.5KM. Prices: njuko price tiers in order (ends at 23:59 ICT), registration opened 27/01/2026 (5km 15/06/2026). Early Bird ends 31/03/2026 per njuko and the organizer image archived 2026-02-18 ('EARLY BIRD By March 31, 2026'); the old 'to 2026-01-30' was the end of the limited first tier. 'Super Early Bird' and 'Early Bird' names for 5km from the organizer's 5km blog; 'Early Bird' and 'Standard (01/04-30/09/2026)' from the organizer images (Kids Run 560,000 / 685,000 match njuko). Phase 1/3/4 are unnamed in every source; kind from njuko order; inferred 'from' = day after the previous tier's end. Kids Run ages 3km 7-14, 1.5km 5-10 (techcombank.com bib blog); 5km min age 10.",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "mainDate": {
+      "value": "2026-12-06",
+      "reason": "Organizer marathonhcmc.com blog 'Đón chờ trải nghiệm đáng nhớ với Ngày thi đấu mới dành cho cự ly 5KM': 'cự ly 5KM chính thức được tổ chức vào một ngày thi đấu riêng. Ngày thi đấu: Thứ Bảy, 05/12/2026', race day 6/12/2026; njuko starts Kids Run 3km/1.5km on 05/12 too. City: organizer home page '06/12/2026, TP. HỒ CHÍ MINH, VIỆT NAM' (same as editions 2023-2025). Courses: njuko competitions Marathon 42.195KM, Half 21.1KM, 10KM, 5KM, KIDS RUN 3KM, KIDS RUN 1.5KM. Prices: njuko price tiers in order (ends at 23:59 ICT), registration opened 27/01/2026 (5km 15/06/2026). Early Bird ends 31/03/2026 per njuko and the organizer image archived 2026-02-18 ('EARLY BIRD By March 31, 2026'); the old 'to 2026-01-30' was the end of the limited first tier. 'Super Early Bird' and 'Early Bird' names for 5km from the organizer's 5km blog; 'Early Bird' and 'Standard (01/04-30/09/2026)' from the organizer images (Kids Run 560,000 / 685,000 match njuko). Phase 1/3/4 are unnamed in every source; kind from njuko order; inferred 'from' = day after the previous tier's end. Kids Run ages 3km 7-14, 1.5km 5-10 (techcombank.com bib blog); 5km min age 10.",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "location": {
+      "value": {
+        "venue": "Thành Phố Hồ Chí Minh",
+        "city": "Ho Chi Minh City"
+      },
+      "reason": "Organizer marathonhcmc.com blog 'Đón chờ trải nghiệm đáng nhớ với Ngày thi đấu mới dành cho cự ly 5KM': 'cự ly 5KM chính thức được tổ chức vào một ngày thi đấu riêng. Ngày thi đấu: Thứ Bảy, 05/12/2026', race day 6/12/2026; njuko starts Kids Run 3km/1.5km on 05/12 too. City: organizer home page '06/12/2026, TP. HỒ CHÍ MINH, VIỆT NAM' (same as editions 2023-2025). Courses: njuko competitions Marathon 42.195KM, Half 21.1KM, 10KM, 5KM, KIDS RUN 3KM, KIDS RUN 1.5KM. Prices: njuko price tiers in order (ends at 23:59 ICT), registration opened 27/01/2026 (5km 15/06/2026). Early Bird ends 31/03/2026 per njuko and the organizer image archived 2026-02-18 ('EARLY BIRD By March 31, 2026'); the old 'to 2026-01-30' was the end of the limited first tier. 'Super Early Bird' and 'Early Bird' names for 5km from the organizer's 5km blog; 'Early Bird' and 'Standard (01/04-30/09/2026)' from the organizer images (Kids Run 560,000 / 685,000 match njuko). Phase 1/3/4 are unnamed in every source; kind from njuko order; inferred 'from' = day after the previous tier's end. Kids Run ages 3km 7-14, 1.5km 5-10 (techcombank.com bib blog); 5km min age 10.",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "courses": {
+      "value": [
+        {
+          "label": "1.5km",
+          "meters": 1500,
+          "type": "road_run",
+          "elevationGain": null
+        },
+        {
+          "label": "3km",
+          "meters": 3000,
+          "type": "road_run",
+          "elevationGain": null
+        },
+        {
+          "label": "5km",
+          "meters": 5000,
+          "type": "road_run",
+          "elevationGain": null
+        },
+        {
+          "label": "10km",
+          "meters": 10000,
+          "type": "road_run",
+          "elevationGain": null
+        },
+        {
+          "label": "21km",
+          "meters": 21097,
+          "type": "road_run",
+          "elevationGain": null
+        },
+        {
+          "label": "42km",
+          "meters": 42195,
+          "type": "road_run",
+          "elevationGain": null
+        }
+      ],
+      "reason": "Organizer marathonhcmc.com blog 'Đón chờ trải nghiệm đáng nhớ với Ngày thi đấu mới dành cho cự ly 5KM': 'cự ly 5KM chính thức được tổ chức vào một ngày thi đấu riêng. Ngày thi đấu: Thứ Bảy, 05/12/2026', race day 6/12/2026; njuko starts Kids Run 3km/1.5km on 05/12 too. City: organizer home page '06/12/2026, TP. HỒ CHÍ MINH, VIỆT NAM' (same as editions 2023-2025). Courses: njuko competitions Marathon 42.195KM, Half 21.1KM, 10KM, 5KM, KIDS RUN 3KM, KIDS RUN 1.5KM. Prices: njuko price tiers in order (ends at 23:59 ICT), registration opened 27/01/2026 (5km 15/06/2026). Early Bird ends 31/03/2026 per njuko and the organizer image archived 2026-02-18 ('EARLY BIRD By March 31, 2026'); the old 'to 2026-01-30' was the end of the limited first tier. 'Super Early Bird' and 'Early Bird' names for 5km from the organizer's 5km blog; 'Early Bird' and 'Standard (01/04-30/09/2026)' from the organizer images (Kids Run 560,000 / 685,000 match njuko). Phase 1/3/4 are unnamed in every source; kind from njuko order; inferred 'from' = day after the previous tier's end. Kids Run ages 3km 7-14, 1.5km 5-10 (techcombank.com bib blog); 5km min age 10.",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "prices": {
+      "value": [
+        {
+          "distance": "42km",
+          "tier": "Phase 1",
+          "kind": "early",
+          "audience": null,
+          "price": 1090000,
+          "from": "2026-01-27",
+          "to": "2026-01-29",
+          "inferred": [],
+          "site": "njuko"
+        },
+        {
+          "distance": "42km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 1690000,
+          "from": "2026-01-30",
+          "to": "2026-03-31",
+          "inferred": [
+            "from"
+          ],
+          "site": "njuko"
+        },
+        {
+          "distance": "42km",
+          "tier": "Standard",
+          "kind": "regular",
+          "audience": null,
+          "price": 2085000,
+          "from": "2026-04-01",
+          "to": "2026-09-30",
+          "inferred": [],
+          "site": "njuko"
+        },
+        {
+          "distance": "42km",
+          "tier": "Phase 4",
+          "kind": "late",
+          "audience": null,
+          "price": 2380000,
+          "from": "2026-10-01",
+          "to": null,
+          "inferred": [
+            "from"
+          ],
+          "site": "njuko"
+        },
+        {
+          "distance": "21km",
+          "tier": "Phase 1",
+          "kind": "early",
+          "audience": null,
+          "price": 880000,
+          "from": "2026-01-27",
+          "to": "2026-01-29",
+          "inferred": [],
+          "site": "njuko"
+        },
+        {
+          "distance": "21km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 1370000,
+          "from": "2026-01-30",
+          "to": "2026-03-31",
+          "inferred": [
+            "from"
+          ],
+          "site": "njuko"
+        },
+        {
+          "distance": "21km",
+          "tier": "Standard",
+          "kind": "regular",
+          "audience": null,
+          "price": 1685000,
+          "from": "2026-04-01",
+          "to": "2026-09-30",
+          "inferred": [],
+          "site": "njuko"
+        },
+        {
+          "distance": "21km",
+          "tier": "Phase 4",
+          "kind": "late",
+          "audience": null,
+          "price": 1960000,
+          "from": "2026-10-01",
+          "to": null,
+          "inferred": [
+            "from"
+          ],
+          "site": "njuko"
+        },
+        {
+          "distance": "10km",
+          "tier": "Phase 1",
+          "kind": "early",
+          "audience": null,
+          "price": 690000,
+          "from": "2026-01-27",
+          "to": "2026-01-29",
+          "inferred": [],
+          "site": "njuko"
+        },
+        {
+          "distance": "10km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 1080000,
+          "from": "2026-01-30",
+          "to": "2026-03-31",
+          "inferred": [
+            "from"
+          ],
+          "site": "njuko"
+        },
+        {
+          "distance": "10km",
+          "tier": "Standard",
+          "kind": "regular",
+          "audience": null,
+          "price": 1375000,
+          "from": "2026-04-01",
+          "to": "2026-09-30",
+          "inferred": [],
+          "site": "njuko"
+        },
+        {
+          "distance": "10km",
+          "tier": "Phase 4",
+          "kind": "late",
+          "audience": null,
+          "price": 1590000,
+          "from": "2026-10-01",
+          "to": null,
+          "inferred": [
+            "from"
+          ],
+          "site": "njuko"
+        },
+        {
+          "distance": "5km",
+          "tier": "Super Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 550000,
+          "from": "2026-06-15",
+          "to": "2026-06-17",
+          "inferred": [],
+          "site": "njuko"
+        },
+        {
+          "distance": "5km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 790000,
+          "from": "2026-06-18",
+          "to": "2026-07-20",
+          "inferred": [
+            "from"
+          ],
+          "site": "njuko"
+        },
+        {
+          "distance": "5km",
+          "tier": "Phase 3",
+          "kind": "regular",
+          "audience": null,
+          "price": 985000,
+          "from": "2026-07-21",
+          "to": "2026-09-30",
+          "inferred": [
+            "from"
+          ],
+          "site": "njuko"
+        },
+        {
+          "distance": "5km",
+          "tier": "Phase 4",
+          "kind": "late",
+          "audience": null,
+          "price": 1190000,
+          "from": "2026-10-01",
+          "to": null,
+          "inferred": [
+            "from"
+          ],
+          "site": "njuko"
+        },
+        {
+          "distance": "3km",
+          "tier": "Phase 1",
+          "kind": "early",
+          "audience": null,
+          "price": 390000,
+          "from": "2026-01-27",
+          "to": "2026-01-29",
+          "inferred": [],
+          "site": "njuko"
+        },
+        {
+          "distance": "3km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 560000,
+          "from": "2026-01-30",
+          "to": "2026-03-31",
+          "inferred": [
+            "from"
+          ],
+          "site": "njuko"
+        },
+        {
+          "distance": "3km",
+          "tier": "Standard",
+          "kind": "regular",
+          "audience": null,
+          "price": 685000,
+          "from": "2026-04-01",
+          "to": "2026-09-30",
+          "inferred": [],
+          "site": "njuko"
+        },
+        {
+          "distance": "3km",
+          "tier": "Phase 4",
+          "kind": "late",
+          "audience": null,
+          "price": 760000,
+          "from": "2026-10-01",
+          "to": null,
+          "inferred": [
+            "from"
+          ],
+          "site": "njuko"
+        },
+        {
+          "distance": "1.5km",
+          "tier": "Phase 1",
+          "kind": "early",
+          "audience": null,
+          "price": 390000,
+          "from": "2026-01-27",
+          "to": "2026-01-29",
+          "inferred": [],
+          "site": "njuko"
+        },
+        {
+          "distance": "1.5km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 560000,
+          "from": "2026-01-30",
+          "to": "2026-03-31",
+          "inferred": [
+            "from"
+          ],
+          "site": "njuko"
+        },
+        {
+          "distance": "1.5km",
+          "tier": "Standard",
+          "kind": "regular",
+          "audience": null,
+          "price": 685000,
+          "from": "2026-04-01",
+          "to": "2026-09-30",
+          "inferred": [],
+          "site": "njuko"
+        },
+        {
+          "distance": "1.5km",
+          "tier": "Phase 4",
+          "kind": "late",
+          "audience": null,
+          "price": 760000,
+          "from": "2026-10-01",
+          "to": null,
+          "inferred": [
+            "from"
+          ],
+          "site": "njuko"
+        }
+      ],
+      "reason": "Organizer marathonhcmc.com blog 'Đón chờ trải nghiệm đáng nhớ với Ngày thi đấu mới dành cho cự ly 5KM': 'cự ly 5KM chính thức được tổ chức vào một ngày thi đấu riêng. Ngày thi đấu: Thứ Bảy, 05/12/2026', race day 6/12/2026; njuko starts Kids Run 3km/1.5km on 05/12 too. City: organizer home page '06/12/2026, TP. HỒ CHÍ MINH, VIỆT NAM' (same as editions 2023-2025). Courses: njuko competitions Marathon 42.195KM, Half 21.1KM, 10KM, 5KM, KIDS RUN 3KM, KIDS RUN 1.5KM. Prices: njuko price tiers in order (ends at 23:59 ICT), registration opened 27/01/2026 (5km 15/06/2026). Early Bird ends 31/03/2026 per njuko and the organizer image archived 2026-02-18 ('EARLY BIRD By March 31, 2026'); the old 'to 2026-01-30' was the end of the limited first tier. 'Super Early Bird' and 'Early Bird' names for 5km from the organizer's 5km blog; 'Early Bird' and 'Standard (01/04-30/09/2026)' from the organizer images (Kids Run 560,000 / 685,000 match njuko). Phase 1/3/4 are unnamed in every source; kind from njuko order; inferred 'from' = day after the previous tier's end. Kids Run ages 3km 7-14, 1.5km 5-10 (techcombank.com bib blog); 5km min age 10.",
+      "at": "2026-10-13T02:12:57.272Z"
     }
   },
   "sources": [
@@ -324,9 +927,208 @@
           "note": "Official race-site price table images (read by agent): Early Bird (by 2026-01-30) and Standard (2026-04-01 to 2026-09-30) individual registration fees for the 9th edition"
         }
       }
+    },
+    {
+      "site": "njuko",
+      "role": "reference",
+      "url": "https://in.njuko.com/tcb-hcmc-im-2026",
+      "lastCheckedAt": "2026-10-13T02:12:57.272Z",
+      "lastChangedAt": "2026-10-13T02:12:57.272Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải Marathon Quốc tế Thành phố Hồ Chí Minh Techcombank Mùa thứ 9",
+          "date": "2026-12-05",
+          "endDate": "2026-12-06",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "1.5km",
+            "3km",
+            "5km",
+            "10km",
+            "21km",
+            "42km"
+          ],
+          "venue": "Thành Phố Hồ Chí Minh",
+          "city": "Ho Chi Minh City",
+          "organizer": "Sunrise Events Vietnam",
+          "prices": [
+            {
+              "distance": "42km",
+              "tier": "Phase 1",
+              "price": 1090000,
+              "from": "2026-01-27",
+              "to": "2026-01-29"
+            },
+            {
+              "distance": "42km",
+              "tier": "Early Bird",
+              "price": 1690000,
+              "from": "2026-01-30",
+              "to": "2026-03-31"
+            },
+            {
+              "distance": "42km",
+              "tier": "Standard",
+              "price": 2085000,
+              "from": "2026-04-01",
+              "to": "2026-09-30"
+            },
+            {
+              "distance": "42km",
+              "tier": "Phase 4",
+              "price": 2380000,
+              "from": "2026-10-01",
+              "to": null
+            },
+            {
+              "distance": "21km",
+              "tier": "Phase 1",
+              "price": 880000,
+              "from": "2026-01-27",
+              "to": "2026-01-29"
+            },
+            {
+              "distance": "21km",
+              "tier": "Early Bird",
+              "price": 1370000,
+              "from": "2026-01-30",
+              "to": "2026-03-31"
+            },
+            {
+              "distance": "21km",
+              "tier": "Standard",
+              "price": 1685000,
+              "from": "2026-04-01",
+              "to": "2026-09-30"
+            },
+            {
+              "distance": "21km",
+              "tier": "Phase 4",
+              "price": 1960000,
+              "from": "2026-10-01",
+              "to": null
+            },
+            {
+              "distance": "10km",
+              "tier": "Phase 1",
+              "price": 690000,
+              "from": "2026-01-27",
+              "to": "2026-01-29"
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "price": 1080000,
+              "from": "2026-01-30",
+              "to": "2026-03-31"
+            },
+            {
+              "distance": "10km",
+              "tier": "Standard",
+              "price": 1375000,
+              "from": "2026-04-01",
+              "to": "2026-09-30"
+            },
+            {
+              "distance": "10km",
+              "tier": "Phase 4",
+              "price": 1590000,
+              "from": "2026-10-01",
+              "to": null
+            },
+            {
+              "distance": "5km",
+              "tier": "Super Early Bird",
+              "price": 550000,
+              "from": "2026-06-15",
+              "to": "2026-06-17"
+            },
+            {
+              "distance": "5km",
+              "tier": "Early Bird",
+              "price": 790000,
+              "from": "2026-06-18",
+              "to": "2026-07-20"
+            },
+            {
+              "distance": "5km",
+              "tier": "Phase 3",
+              "price": 985000,
+              "from": "2026-07-21",
+              "to": "2026-09-30"
+            },
+            {
+              "distance": "5km",
+              "tier": "Phase 4",
+              "price": 1190000,
+              "from": "2026-10-01",
+              "to": null
+            },
+            {
+              "distance": "3km",
+              "tier": "Phase 1",
+              "price": 390000,
+              "from": "2026-01-27",
+              "to": "2026-01-29"
+            },
+            {
+              "distance": "3km",
+              "tier": "Early Bird",
+              "price": 560000,
+              "from": "2026-01-30",
+              "to": "2026-03-31"
+            },
+            {
+              "distance": "3km",
+              "tier": "Standard",
+              "price": 685000,
+              "from": "2026-04-01",
+              "to": "2026-09-30"
+            },
+            {
+              "distance": "3km",
+              "tier": "Phase 4",
+              "price": 760000,
+              "from": "2026-10-01",
+              "to": null
+            },
+            {
+              "distance": "1.5km",
+              "tier": "Phase 1",
+              "price": 390000,
+              "from": "2026-01-27",
+              "to": "2026-01-29"
+            },
+            {
+              "distance": "1.5km",
+              "tier": "Early Bird",
+              "price": 560000,
+              "from": "2026-01-30",
+              "to": "2026-03-31"
+            },
+            {
+              "distance": "1.5km",
+              "tier": "Standard",
+              "price": 685000,
+              "from": "2026-04-01",
+              "to": "2026-09-30"
+            },
+            {
+              "distance": "1.5km",
+              "tier": "Phase 4",
+              "price": 760000,
+              "from": "2026-10-01",
+              "to": null
+            }
+          ],
+          "note": "official registration platform linked from marathonhcmc.com; njuko front API (front-api.njuko.com/edition/url/tcb-hcmc-im-2026) lists each competition's price tiers with end dates, 5km and Kids Run start 2026-12-05, 42/21/10km 2026-12-06"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-27T08:10:13.934Z"
+  "updatedAt": "2026-10-13T02:12:57.272Z"
 }

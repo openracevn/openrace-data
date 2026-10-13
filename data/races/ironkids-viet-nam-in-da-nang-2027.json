@@ -7,16 +7,35 @@
     "aquathlon"
   ],
   "date": "2027-05-08",
-  "endDate": "2027-11-22",
+  "endDate": null,
+  "mainDate": null,
   "seriesId": "ironkids-viet-nam-in-da-nang",
   "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
   "edition": null,
   "courses": [
     {
-      "label": "Kids",
-      "meters": null,
-      "type": null,
+      "label": "1075m",
+      "meters": 1075,
+      "type": "aquathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "4075m",
+      "meters": 4075,
+      "type": "triathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "2150m",
+      "meters": 2150,
+      "type": "aquathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "8150m",
+      "meters": 8150,
+      "type": "triathlon",
       "elevationGain": null
     }
   ],
@@ -120,7 +139,52 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "1075m",
+      "tier": "Aquathlon Entry",
+      "kind": "other",
+      "audience": null,
+      "price": 980000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    },
+    {
+      "distance": "4075m",
+      "tier": "Triathlon Entry",
+      "kind": "other",
+      "audience": null,
+      "price": 1580000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    },
+    {
+      "distance": "2150m",
+      "tier": "Aquathlon Entry",
+      "kind": "other",
+      "audience": null,
+      "price": 980000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    },
+    {
+      "distance": "8150m",
+      "tier": "Triathlon Entry",
+      "kind": "other",
+      "audience": null,
+      "price": 1580000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -130,10 +194,95 @@
     }
   ],
   "links": [],
-  "flags": [
-    "race spans 198 days (2027-05-08 to 2027-11-22); endDate may be the registration close"
-  ],
-  "overrides": {},
+  "participants": null,
+  "flags": [],
+  "overrides": {
+    "endDate": {
+      "value": null,
+      "reason": "ironman.com/races/im703-danang/ironkids: ages 5-10 aquathlon = 75m swim + 1km run, triathlon adds a 3km bike; ages 11-15 = 150m swim + 2km run, triathlon adds a 6km bike (course meters are the sum of the legs; courses listed 5-10 first, then 11-15). Prices as shown there on 2026-10-13: Aquathlon Entry 980,000 (on 1075m ages 5-10 and 2150m ages 11-15), Triathlon Entry 1,580,000 (on 4075m ages 5-10 and 8150m ages 11-15); the page shows only the current price, the tier phase is not stated, so kind is other. endDate cleared: ActiUp API start_date and end_date are both 2027-05-08 and its banner says 'RACE DATE MAY 8, 2027', so the stored 2027-11-22 was a misread.",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "courses": {
+      "value": [
+        {
+          "label": "1075m",
+          "meters": 1075,
+          "type": "aquathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "4075m",
+          "meters": 4075,
+          "type": "triathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "2150m",
+          "meters": 2150,
+          "type": "aquathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "8150m",
+          "meters": 8150,
+          "type": "triathlon",
+          "elevationGain": null
+        }
+      ],
+      "reason": "ironman.com/races/im703-danang/ironkids: ages 5-10 aquathlon = 75m swim + 1km run, triathlon adds a 3km bike; ages 11-15 = 150m swim + 2km run, triathlon adds a 6km bike (course meters are the sum of the legs; courses listed 5-10 first, then 11-15). Prices as shown there on 2026-10-13: Aquathlon Entry 980,000 (on 1075m ages 5-10 and 2150m ages 11-15), Triathlon Entry 1,580,000 (on 4075m ages 5-10 and 8150m ages 11-15); the page shows only the current price, the tier phase is not stated, so kind is other. endDate cleared: ActiUp API start_date and end_date are both 2027-05-08 and its banner says 'RACE DATE MAY 8, 2027', so the stored 2027-11-22 was a misread.",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "prices": {
+      "value": [
+        {
+          "distance": "1075m",
+          "tier": "Aquathlon Entry",
+          "kind": "other",
+          "audience": null,
+          "price": 980000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        },
+        {
+          "distance": "4075m",
+          "tier": "Triathlon Entry",
+          "kind": "other",
+          "audience": null,
+          "price": 1580000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        },
+        {
+          "distance": "2150m",
+          "tier": "Aquathlon Entry",
+          "kind": "other",
+          "audience": null,
+          "price": 980000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        },
+        {
+          "distance": "8150m",
+          "tier": "Triathlon Entry",
+          "kind": "other",
+          "audience": null,
+          "price": 1580000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        }
+      ],
+      "reason": "ironman.com/races/im703-danang/ironkids: ages 5-10 aquathlon = 75m swim + 1km run, triathlon adds a 3km bike; ages 11-15 = 150m swim + 2km run, triathlon adds a 6km bike (course meters are the sum of the legs; courses listed 5-10 first, then 11-15). Prices as shown there on 2026-10-13: Aquathlon Entry 980,000 (on 1075m ages 5-10 and 2150m ages 11-15), Triathlon Entry 1,580,000 (on 4075m ages 5-10 and 8150m ages 11-15); the page shows only the current price, the tier phase is not stated, so kind is other. endDate cleared: ActiUp API start_date and end_date are both 2027-05-08 and its banner says 'RACE DATE MAY 8, 2027', so the stored 2027-11-22 was a misread.",
+      "at": "2026-10-13T02:12:57.272Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -184,9 +333,41 @@
           "name": "Sunrise Events Vietnam"
         }
       }
+    },
+    {
+      "site": "ironman-com",
+      "role": "reference",
+      "url": "https://ironman.com/races/im703-danang/ironkids",
+      "lastCheckedAt": "2026-10-13T02:12:57.272Z",
+      "lastChangedAt": "2026-10-13T02:12:57.272Z",
+      "extracted": {
+        "facts": {
+          "name": "IRONKIDS Vietnam 2027",
+          "date": "2027-05-08",
+          "types": [
+            "aquathlon",
+            "triathlon"
+          ],
+          "venue": "Đà Nẵng, Việt Nam",
+          "city": "Đà Nẵng",
+          "prices": [
+            {
+              "distance": null,
+              "tier": "Aquathlon Entry",
+              "price": 980000
+            },
+            {
+              "distance": null,
+              "tier": "Triathlon Entry",
+              "price": 1580000
+            }
+          ],
+          "note": "IRONMAN 70.3 Da Nang's own IRONKIDS page: 'IRONKIDS Vietnam, 08 May 2027', 'Aquathlon Entry ₫ 980,000 VND', 'Triathlon Entry ₫ 1,580,000 VND' (current price only, no tier list)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-10-13T02:12:57.272Z"
 }

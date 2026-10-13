@@ -7,10 +7,11 @@
   ],
   "date": "2027-04-11",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "run-to-live",
-  "organizerId": null,
+  "organizerId": "miracle-entertainment-group",
   "organizer": null,
-  "edition": null,
+  "edition": 3,
   "courses": [
     {
       "label": "5km",
@@ -148,8 +149,20 @@
       "foundOn": "runtolive.vn"
     }
   ],
+  "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "edition": {
+      "value": 3,
+      "reason": "runtolive.vn (official, read 2026-10-13). Edition: the 2027 banners uploaded to runtolive.vn/wp-content/uploads/2026/06/anh-cover-fanpage-tam-11.04.png and banner.png read 'RUN TO LV.03 INCOMING' with '11.04.2027' (stated season number 3; 2024 = lần thứ nhất, 2025 = mùa 2). Organizer: site footer 'CÔNG TY CỔ PHẦN MIRACLE ENTERTAINMENT GROUP MST: 0314909438', same operator as editions 1 and 2. Co-organizers for 2027 not stated (Ban tổ chức block is commented out), so none set.",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "organizerId": {
+      "value": "miracle-entertainment-group",
+      "reason": "runtolive.vn (official, read 2026-10-13). Edition: the 2027 banners uploaded to runtolive.vn/wp-content/uploads/2026/06/anh-cover-fanpage-tam-11.04.png and banner.png read 'RUN TO LV.03 INCOMING' with '11.04.2027' (stated season number 3; 2024 = lần thứ nhất, 2025 = mùa 2). Organizer: site footer 'CÔNG TY CỔ PHẦN MIRACLE ENTERTAINMENT GROUP MST: 0314909438', same operator as editions 1 and 2. Co-organizers for 2027 not stated (Ban tổ chức block is commented out), so none set.",
+      "at": "2026-10-13T02:12:57.272Z"
+    }
+  },
   "sources": [
     {
       "site": "run-to-live",
@@ -226,5 +239,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T05:01:22.419Z",
-  "updatedAt": "2026-09-25T05:01:22.419Z"
+  "updatedAt": "2026-10-13T02:12:57.272Z"
 }
