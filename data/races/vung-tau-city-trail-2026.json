@@ -17,25 +17,25 @@
       "label": "7km",
       "meters": 7000,
       "type": "trail_run",
-      "elevationGain": 0
+      "elevationGain": null
     },
     {
       "label": "12km",
       "meters": 12000,
       "type": "trail_run",
-      "elevationGain": 0
+      "elevationGain": null
     },
     {
       "label": "25km",
       "meters": 25000,
       "type": "trail_run",
-      "elevationGain": 0
+      "elevationGain": null
     },
     {
       "label": "35km",
       "meters": 35000,
       "type": "trail_run",
-      "elevationGain": 0
+      "elevationGain": null
     }
   ],
   "location": {
@@ -630,5 +630,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-12T17:55:59.976Z"
+  "updatedAt": "2026-10-13T02:40:11.333Z"
 }

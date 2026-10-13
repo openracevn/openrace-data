@@ -41,7 +41,7 @@
       "label": "42km",
       "meters": 42195,
       "type": "road_run",
-      "elevationGain": 0
+      "elevationGain": null
     }
   ],
   "location": {
@@ -902,5 +902,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-13T02:12:57.272Z"
+  "updatedAt": "2026-10-13T02:40:11.333Z"
 }

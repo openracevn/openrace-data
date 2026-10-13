@@ -17,31 +17,31 @@
       "label": "2km",
       "meters": 2000,
       "type": "road_run",
-      "elevationGain": 0
+      "elevationGain": null
     },
     {
       "label": "5km",
       "meters": 5000,
       "type": "road_run",
-      "elevationGain": 0
+      "elevationGain": null
     },
     {
       "label": "10km",
       "meters": 10000,
       "type": "road_run",
-      "elevationGain": 0
+      "elevationGain": null
     },
     {
       "label": "21km",
       "meters": 21097,
       "type": "road_run",
-      "elevationGain": 0
+      "elevationGain": null
     },
     {
       "label": "42km",
       "meters": 42195,
       "type": "road_run",
-      "elevationGain": 0
+      "elevationGain": null
     }
   ],
   "location": {
@@ -663,5 +663,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-10-12T17:48:31.011Z",
-  "updatedAt": "2026-10-12T17:55:59.976Z"
+  "updatedAt": "2026-10-13T02:40:11.333Z"
 }
