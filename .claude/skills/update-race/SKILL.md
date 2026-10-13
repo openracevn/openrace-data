@@ -81,7 +81,7 @@ Write the unit's results as a bundle, `.staging/<unit>.json` (in the main checko
 - `add`: a race or edition from a reference page (same fields as `npm run edit -- add`; `name` and `date` required). `attachTo` forces the source onto that existing race (a Wayback snapshot, or any page whose race you already know). Never reuse one URL as the source of two different editions.
 - `set-many`: overrides on one existing race, several fields at once, with the reason and where it came from.
 - `source`: a page already read, as a sync input `{ "op": "source", "input": { url, site, role, extracted, checkedAt } }` (an agent-read result).
-- New series: add the entry to `data/series.json` (sorted by id; organizerId must exist) and commit it in the same commit as the races that use it: `npm run flush -- --also data/series.json`. A series with no races fails `validate`.
+- New series: add the entry to `data/series.json` (sorted by id; organizerId must exist) and commit it in the same commit as the races that use it: `npm run flush -- --also data/series.json`. Bundle order doesn't matter: the new series may have no races until the bundle that links it is applied, then the whole batch is validated and a series no bundle links blocks the commit. `flush` refuses an unknown argument (`--help` prints usage).
 - Check your own bundle: `npm run flush -- --dry-run --unit <unit>` plans it and runs `validate` on a temporary tree. Fix a ✗ REJECTED before reporting.
 
 ## 5. Flush once, then report

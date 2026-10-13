@@ -14,7 +14,7 @@
 | Discord channel | Discord | `scripts/notify-discord.ts` | Human-readable change feed |
 | openrace-api | Cloudflare Worker + D1, `https://openrace-api.bmp.workers.dev` | separate repo (`../openrace-api`), deployed by hand (`pnpm run deploy`) | Receives the resync webhook, pulls changed race files plus series and organizers, answers openrace-mcp. **Internal since 2026-10-12 (plan 025):** every route except `/internal/*` answers 404 without `X-MCP-Secret`; the public URL stays only for the sync webhook (`X-Sync-Secret`). Daily cron 00:30 UTC |
 | openrace-mcp | Cloudflare Worker, `https://openrace-mcp.bmp.workers.dev/mcp` | separate repo (`../openrace-mcp`), deploys on push to `main` | **The product and the only public way in.** Calls openrace-api through the service binding `API` with `X-MCP-Secret`. Serves `/` (docs), `/llms.txt` (about, how to connect, license), `/health`, `/dash` (usage) |
-| openrace-web | archived 2026-10-12 | `../openrace-web`, tag `archive/full-site-2026-10-12` | Not deployed or changed; its Worker and KV `openrace-web-inc-cache` are left in place (down since error 1102) |
+| openrace-web | Cloudflare Worker (OpenNext), `../openrace-web`, deployed by hand (`pnpm cf:deploy`) | archived 2026-10-12 (tag `archive/full-site-2026-10-12`), **back 2026-10-13** | The website. Reads openrace-api through the service binding `API`, sending `X-MCP-Secret` (Worker secret `MCP_SECRET`, same value as the API's). Pages cached in KV `openrace-web-inc-cache` to stay under the free plan's CPU limit (error 1102 on 2026-10-12) |
 
 ## Data flow
 
@@ -36,7 +36,7 @@ openracevn/openrace-data main   (commit authored with the OPENRACE_BOT_TOKEN PAT
 main.yml  (skipped entirely when only state/** changed; ONE job, steps in this order, since 2026-09-29)
   ├─ detect changes   did the push touch data/? anything outside data/, state/, .claude/, *.md?
   ├─ npm ci           once
-  ├─ notify discord   only on push, only if data/ changed → Discord summary from git diff (before validate)
+  ├─ notify discord   only on push, only if data/ changed → Discord summary from git diff (before validate; retries a 429, and a failed post doesn't stop the steps below)
   ├─ typecheck+test   skipped when the push only touched data/, state/, .claude/ or *.md
   ├─ validate
   ├─ notify api       only if data/ changed, after the steps above pass → POST SYNC_WEBHOOK_URL
