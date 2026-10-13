@@ -83,15 +83,17 @@ export const PAGE_EXTRACTION = {
           properties: {
             distance: { type: "string", description: "Distance as written." },
             type: { type: "string", enum: [...RACE_TYPES], description: "Format for this distance, if the page states it." },
-            elevationGain: { type: "number", description: "Elevation gain in metres, if the page states it." },
+            elevationGain: { type: "number", description: "Elevation gain (D+) in metres, only if the page prints it for this distance. Omit it otherwise; never write 0 for an unknown gain." },
           },
           required: ["distance"],
         },
       },
       edition: {
         type: "number",
-        description: "The edition number if the page states it (\"lần thứ 5\", \"5th edition\", \"mùa 5\"). Omit otherwise; never count editions yourself.",
+        description:
+          "The edition number of THIS event, only if the page states it (\"lần thứ 5\", \"5th edition\", \"mùa 5\"). Omit otherwise: never count editions yourself, never use the year, never write 1 for a race that doesn't say it is the first.",
       },
+      editionQuote: { type: "string", description: "With edition: the words that state it, verbatim (\"Giải chạy lần thứ 5\")." },
       mapsUrl: {
         type: "string",
         description: "A Google Maps link or coordinates for the start/finish venue, exactly as on the page. Omit if none.",
@@ -111,13 +113,13 @@ export const PAGE_EXTRACTION = {
           "How many people registered, paid or attended this edition, only if the page states a number (recap or results announcement). Accept \"đăng ký\", \"tham gia\", \"tham dự\", \"VĐV\", tickets sold. Ignore targets (\"dự kiến\", \"expected\", \"hướng tới\"), capacity or slots (\"giới hạn\"), finisher-only counts. Omit for an upcoming race.",
         properties: {
           count: { type: "number", description: "The stated number of participants." },
-          quote: { type: "string", description: "The stated phrasing, verbatim." },
+          quote: { type: "string", description: "The stated phrasing with the number in it, verbatim." },
         },
-        required: ["count"],
+        required: ["count", "quote"],
       },
       prices: PRICES_PROPERTY,
     },
-    required: ["pageKind"],
+    required: ["pageKind", "editionQuote"],
   },
   prompt:
     "Extract the sports event (running, trail, triathlon, swimming, cycling, ...) described on this race page, usually in Vietnamese. " +
@@ -240,11 +242,12 @@ export function normalizeExtraction(raw: SourceExtraction | Record<string, unkno
   // mixes in other fees (photos, VIP upgrades, transfers). Prices the site states
   // itself (a free fee, a table parsed from its HTML) beat the model's reading of
   // the same text, and don't get mixed with it (plan 026).
-  const tiersOf = (ls: Record<string, unknown>[]) =>
-    dropUnsplitAudiences(fillTierDates(dedupeTiers(ls.flatMap((l) => dropComputedGroupPrices((Array.isArray(l.prices) ? l.prices : []).map((t) => normalizeTier(t, date)).filter((t) => t !== null))))));
-  const imageTiers = tiersOf(images);
-  const factTiers = tiersOf([facts]);
-  const prices = imageTiers.length > 0 ? imageTiers : factTiers.length > 0 ? factTiers : tiersOf(pages);
+  // A year in page text or site data is printed there; in an image the model made it up.
+  const tiersOf = (ls: Record<string, unknown>[], yearShown: boolean) =>
+    dropUnsplitAudiences(fillTierDates(dedupeTiers(ls.flatMap((l) => dropComputedGroupPrices((Array.isArray(l.prices) ? l.prices : []).map((t) => normalizeTier(t, date, yearShown)).filter((t) => t !== null))))));
+  const imageTiers = tiersOf(images, false);
+  const factTiers = tiersOf([facts], true);
+  const prices = imageTiers.length > 0 ? imageTiers : factTiers.length > 0 ? factTiers : tiersOf(pages, true);
   const types = normalizeTypes(first((l) => (Array.isArray(l.types) && l.types.length > 0 ? l.types : null)), name);
   const distances = multisportFormats(
     normalizeDistances([
@@ -255,7 +258,7 @@ export function normalizeExtraction(raw: SourceExtraction | Record<string, unkno
     name,
   );
   const courses = distances.map((label) => courseOf(label, layers, types));
-  const edition = first((l) => normalizeEdition(l.edition));
+  const edition = pickEdition(layers);
   const mapsUrl = first((l) => str(l.mapsUrl));
   const status = first((l) => str(l.registrationStatus));
   const organizer = first((l) => str(l.organizer));
@@ -283,10 +286,22 @@ export function normalizeExtraction(raw: SourceExtraction | Record<string, unkno
   };
 }
 
+// Targets, capacity and limits are not a count of people (plan 017).
+const NOT_A_COUNT = /\b(du kien|ky vong|muc tieu|huong toi|toi da|gioi han|suc chua|expected|expect|target|aim|capacity|limit(ed)?|up to|slots?)\b/;
+
+/**
+ * A count only stands when its quote states it: the number is in the quote, and the
+ * quote isn't a target or a capacity. The model returns counts the quote doesn't
+ * hold ("VÉ ĐÃ BÁN TỔNG 0 vé" → 500, Run To Live 2027) and targets ("dự kiến thu
+ * hút khoảng 18.000 vận động viên", Hạ Long 2026). Without a quote, a count stays
+ * (low confidence, see schema.ts).
+ */
 function normalizeParticipants(v: unknown): SourceFacts["participants"] {
   if (!isRecord(v)) return null;
   const { count, sourceUrl, quote } = v;
   if (typeof count !== "number" || !Number.isInteger(count) || count < 1) return null;
+  const q = str(quote);
+  if (q !== null && (NOT_A_COUNT.test(foldVietnamese(q)) || !statesNumber(q, count))) return null;
   const url = str(sourceUrl);
   return {
     count,
@@ -328,9 +343,22 @@ export function tierKind(label: string): TierKind {
   return "other";
 }
 
-function normalizeTier(v: unknown, raceDate: string): Tier | null {
+/**
+ * A tier sold two or more years before race day is an old edition's price still on
+ * the page (Run To Live 2027 shows May 2024 tiers, Hạ Long 2026 shows 2024 ones).
+ */
+function oldEditionTier(t: Record<string, unknown>, raceDate: string): boolean {
+  const raceYear = Number(raceDate.slice(0, 4));
+  return [t.from, t.to].some((v) => {
+    const d = normalizeDate(v);
+    return d !== null && Number(d.slice(0, 4)) < raceYear - 1;
+  });
+}
+
+function normalizeTier(v: unknown, raceDate: string, yearShown = false): Tier | null {
   if (typeof v !== "object" || v === null) return null;
   const t = v as Record<string, unknown>;
+  if (yearShown && oldEditionTier(t, raceDate)) return null;
   const label = str(t.tier) ?? "Price";
   if (NOT_AN_ENTRY_FEE.test(foldVietnamese(label))) return null;
   const price = normalizePrice(t.price);
@@ -490,11 +518,65 @@ function courseOf(label: string, layers: Record<string, unknown>[], types: RaceT
 function normalizeElevationGain(v: unknown): number | null {
   if (typeof v !== "number" || !Number.isFinite(v)) return null;
   const rounded = Math.round(v);
-  return rounded >= 0 && rounded <= 20_000 ? rounded : null;
+  // 0 is what the model writes for a gain the page doesn't state (every course of
+  // Lamdong Trail 2026, Run To Live 2027, Hạ Long 2026): unknown, not flat.
+  return rounded >= 1 && rounded <= 20_000 ? rounded : null;
 }
 
 function normalizeEdition(v: unknown): number | null {
   return typeof v === "number" && Number.isInteger(v) && v >= 1 && v <= 200 ? v : null;
+}
+
+/**
+ * The edition one source states. The model fills `edition` with the year or with 1 on
+ * pages that state none (Lamdong Trail 2026: "Sau nhiều mùa tổ chức" became 1), so a
+ * read that also returns `editionQuote` keeps its number only when the quote states
+ * it; reads made before the quote was asked for keep the old rule. Pages of one site
+ * that disagree give no edition: a gap, not a pick.
+ */
+function pickEdition(layers: Record<string, unknown>[]): number | null {
+  const found = new Set<number>();
+  for (const l of layers) {
+    const n = normalizeEdition(l.edition);
+    if (n === null) continue;
+    // Firecrawl returns every schema property, so a read made since the quote was
+    // asked for always has the key (empty when the page states no edition).
+    if (Object.hasOwn(l, "editionQuote")) {
+      const q = str(l.editionQuote);
+      if (q === null || !statesEdition(q, n)) continue;
+    }
+    found.add(n);
+  }
+  return found.size === 1 ? [...found][0]! : null;
+}
+
+const VI_NUMBERS = ["", "nhat|mot", "hai", "ba", "tu|bon", "nam", "sau", "bay", "tam", "chin", "muoi"];
+const EN_ORDINALS = ["", "first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth"];
+const ROMAN = ["", "", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "xi", "xii", "xiii", "xiv", "xv", "xvi", "xvii", "xviii", "xix", "xx"];
+
+/**
+ * Whether a quote states edition n: the number ("lần thứ 5", "5th", "LV.03"), its Roman
+ * numeral, or its word up to ten ("lần thứ năm", "mùa giải thứ sáu", "fifth edition").
+ * A bare year never counts.
+ */
+export function statesEdition(quote: string, n: number): boolean {
+  const q = foldVietnamese(quote);
+  if (new RegExp(`(^|[^\\d])0*${n}(st|nd|rd|th)?([^\\d]|$)`).test(q)) return true;
+  if (ROMAN[n] && new RegExp(`\\b${ROMAN[n]}\\b`).test(q)) return true;
+  if (EN_ORDINALS[n] && new RegExp(`\\b${EN_ORDINALS[n]}\\b`).test(q)) return true;
+  return !!VI_NUMBERS[n] && new RegExp(`\\b(thu|lan|mua|nam thu|mua giai thu) (${VI_NUMBERS[n]})\\b`).test(q);
+}
+
+/** Whether a quote holds this count: "18.000", "18,000", "18 000", "18000", "18 nghìn", "18K". */
+export function statesNumber(quote: string, count: number): boolean {
+  const q = foldVietnamese(quote);
+  for (const m of q.matchAll(/(\d{1,3}(?:[., ]\d{3})+|\d+(?:[.,]\d+)?)\s*(nghin|ngan|k\b)?/g)) {
+    const thousands = m[2] !== undefined;
+    const raw = m[1]!;
+    const n = thousands ? Number(raw.replace(",", ".")) * 1000 : Number(raw.replace(/[., ]/g, ""));
+    if (Math.round(n) === count) return true;
+  }
+  return false;
 }
 
 function isRecord(value: unknown): value is Record<string, unknown> {

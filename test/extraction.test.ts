@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { normalizeDistance, normalizeExtraction, tierDate, tierKind } from "../scripts/lib/extraction.ts";
+import { normalizeDistance, normalizeExtraction, statesEdition, statesNumber, tierDate, tierKind } from "../scripts/lib/extraction.ts";
 
 describe("price tiers", () => {
   it("maps tier labels to kinds", () => {
@@ -170,5 +170,81 @@ describe("normalizeExtraction", () => {
 
   it("snaps standard distances", () => {
     assert.deepEqual(["21.1K", "Half Marathon", "42.195km", "10 km", "100 MILES", "5K"].map(normalizeDistance), ["21km", "21km", "42km", "10km", "100mi", "5km"]);
+  });
+});
+
+// The misreads of the 2026-10-13 paid check of three untrusted race sites (default recipe).
+describe("guesses the model makes on a race site", () => {
+  const read = (...pages: Record<string, unknown>[]) => {
+    const result = normalizeExtraction({ pages: pages.map((json, i) => ({ url: `p${i}`, json: { pageKind: "sport", ...json } })) });
+    assert.ok(result.ok);
+    return result.facts;
+  };
+
+  it("keeps a new read's edition only when its quote states it", () => {
+    // Lamdong Trail 2026: the site says "Sau nhiều mùa tổ chức"; the model wrote 2026 and 1.
+    const lamdong = read(
+      { name: "Lamdong Trail 2026", date: "2026-11-06", edition: 2026, editionQuote: "" },
+      { name: "Lamdong Trail", date: "2026-11-07", edition: 1, editionQuote: "" },
+    );
+    assert.equal(lamdong.edition, null);
+    assert.equal(read({ name: "X", date: "2026-11-15", edition: 6, editionQuote: "Mùa giải thứ sáu" }).edition, 6);
+    assert.equal(read({ name: "X", date: "2026-11-15", edition: 3, editionQuote: "RUN TO LV.03 INCOMING" }).edition, 3);
+    // Reads made before the quote was asked for (and agent-read) keep their number.
+    assert.equal(read({ name: "X", date: "2026-11-15", edition: 4 }).edition, 4);
+  });
+
+  it("gives no edition when pages of one site disagree", () => {
+    // Run To Live 2027: the home page said 2, the policy page 1.
+    const facts = read(
+      { name: "Run To Live 2027", date: "2027-04-11", edition: 2, editionQuote: "lần thứ 2" },
+      { name: "Run To Live 2027", date: "2027-04-11", edition: 1, editionQuote: "lần thứ 1" },
+    );
+    assert.equal(facts.edition, null);
+  });
+
+  it("matches edition words, not years", () => {
+    assert.ok(statesEdition("Giải chạy lần thứ 5", 5));
+    assert.ok(statesEdition("the 5th edition", 5));
+    assert.ok(statesEdition("Bước sang mùa giải năm thứ sáu", 6));
+    assert.ok(statesEdition("the fifth edition", 5));
+    assert.ok(statesEdition("Mùa thứ IX", 9));
+    assert.ok(!statesEdition("Lamdong Trail 2026", 2));
+    assert.ok(!statesEdition("Sau nhiều mùa tổ chức", 1));
+  });
+
+  it("drops a count its quote doesn't state, or a target", () => {
+    // Run To Live 2027: 500 from "VÉ ĐÃ BÁN TỔNG 0 vé".
+    assert.equal(read({ name: "X", date: "2025-04-11", participants: { count: 500, quote: "VÉ ĐÃ BÁN TỔNG 0 vé" } }).participants, null);
+    // Hạ Long 2026: a target, not a count.
+    assert.equal(read({ name: "X", date: "2025-11-22", participants: { count: 18000, quote: "dự kiến thu hút khoảng 18.000 vận động viên" } }).participants, null);
+    assert.equal(read({ name: "X", date: "2025-11-22", participants: { count: 10000, quote: "hơn 10.000 người đăng ký" } }).participants?.count, 10000);
+    assert.ok(statesNumber("gần 7 nghìn VĐV", 7000));
+    assert.ok(statesNumber("12,500 runners", 12500));
+  });
+
+  it("drops an elevation gain of 0", () => {
+    const facts = read({ name: "Lamdong Trail 2026", date: "2026-11-06", distances: ["25km", "85km"], courses: [{ distance: "25Km", elevationGain: 0 }, { distance: "85Km", elevationGain: 4200 }] });
+    assert.deepEqual(facts.courses.map((c) => c.elevationGain), [null, 4200]);
+  });
+
+  it("drops an old edition's tiers still on the page, but redoes a year the model put on an image", () => {
+    // Hạ Long 2026's page still lists 2024 tiers; Run To Live 2027's lists May 2024 ones.
+    const page = read({
+      name: "Hạ Long 2026",
+      date: "2026-11-22",
+      prices: [
+        { distance: "10KM", tier: "Early Bird", from: "2024-01-16", to: "2024-04-26", price: 1125000 },
+        { distance: "10KM", tier: "Regular", from: "2026-06-01", to: "2026-09-30", price: 1250000 },
+        { distance: "10KM", tier: "Late", from: "01/10", to: "31/10", price: 1400000 },
+      ],
+    });
+    assert.deepEqual(page.prices.map((t) => t.tier), ["Regular", "Late"]);
+    const image = normalizeExtraction({
+      pages: [{ url: "x", json: { pageKind: "sport", name: "HCMC Marathon", date: "2027-01-17" } }],
+      images: [{ url: "y", json: { prices: [{ distance: "42km", tier: "Early Bird", from: "2023-06-23", to: "2023-07-31", price: 1200000 }] } }],
+    });
+    assert.ok(image.ok);
+    assert.equal(image.facts.prices[0]?.from, "2026-06-23");
   });
 });

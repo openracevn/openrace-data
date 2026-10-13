@@ -85,3 +85,16 @@ describe("mainDate in the schema", () => {
     assert.ok(!RaceSchema.safeParse(base({ endDate: null, mainDate: "2026-11-06" })).success);
   });
 });
+
+describe("mainDate after overrides", () => {
+  it("drops a source's main day when a hand fix makes the race one day", async () => {
+    const { applyOverrides } = await import("../scripts/lib/reconcile.ts");
+    const at = "2026-09-28T13:29:06.974Z";
+    // Hạ Long 2026: the site says 20-22/11 with main day 22; the user fixed it to one day.
+    const fields = { date: "2026-11-20", endDate: "2026-11-22", mainDate: "2026-11-22" } as Parameters<typeof applyOverrides>[0];
+    const out = applyOverrides(fields, { date: { value: "2026-11-22", reason: "r", at }, endDate: { value: null, reason: "r", at } });
+    assert.equal(out.mainDate, null);
+    const kept = applyOverrides(fields, { mainDate: { value: "2026-11-21", reason: "r", at } });
+    assert.equal(kept.mainDate, "2026-11-21");
+  });
+});

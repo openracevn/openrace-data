@@ -353,5 +353,9 @@ export function applyOverrides(fields: CanonicalRace, overrides: Overrides): Can
   for (const [field, override] of Object.entries(overrides)) {
     if (override) (out as Record<string, unknown>)[field] = override.value;
   }
+  // A main day the sources give stops making sense once a hand fix moves the days: a
+  // race overridden to one day has no main day (Hạ Long 2026, whose site still says
+  // 20-22/11, was skipped as an invalid record). A mainDate override is kept as set.
+  if (!overrides.mainDate && out.mainDate !== null && (out.endDate === null || out.mainDate < out.date || out.mainDate > out.endDate)) out.mainDate = null;
   return out;
 }

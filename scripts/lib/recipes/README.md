@@ -59,6 +59,16 @@ Recipes generally can't read `participants`: it lives in prose on recap pages, n
 - **Posters print impossible days** ("31/11/2026"): the month's last day.
 - **Busy images can shift rows** (Vũng Tàu City Trail: each distance got the next row's prices, and a slogan, "GIANTS", became a tier). No rule catches that, and the prompt now says to read rows straight across, but a re-read shifted them again. Such a race gets its prices by hand (`npm run edit -- set <race> prices …`).
 
+## Lessons from the paid check of three race sites (2026-10-13)
+
+The default recipe on runtolive.vn, halongmarathon.com and lamdongtrail.vn: none passed, none trusted. The model filled gaps with guesses, now caught in `extraction.ts` (tests in `test/extraction.test.ts`):
+
+- **Elevation gain 0 for every course** when no D+ is printed. A gain of 0 is unknown (`null`); 8 stored races had it, Prenn Trail's 250km among them.
+- **Edition = the year, or 1** on pages that state none ("Sau nhiều mùa tổ chức"). The page schema now asks for `editionQuote`, and a read that has it keeps its edition only when the quote states the number. Pages of one site that disagree give no edition. Reads from before the quote, and agent-read, keep the old rule.
+- **Participant counts the quote doesn't hold** (500 from "VÉ ĐÃ BÁN TỔNG 0 vé") and **targets** ("dự kiến … 18.000"). A quoted count stands only when the quote has the number and no target or capacity word.
+- **An old edition's prices still on the page** (May 2024 tiers on a 2027 site). A tier whose printed year is two or more years before race day is dropped. On images the year is still redone from the day and month, since posters rarely print it.
+- **A hand fix to one day broke the record** (Hạ Long 2026: overridden to 22/11 alone, the site still says 20-22/11 with a main day). A source's main day outside the overridden days is dropped.
+
 ## Lessons from backfilling plan 008's gaps (2026-09-26)
 
 - **A hub or seller page can genuinely have nothing, and the fix is to look for another page on the same site, not another site.** `vm.vnexpress.net`'s race page has no venue at all — it's on a separate `/<slug>/thong-tin-cuoc-dua` page the recipe never fetched. Found by noticing the official page really had zero venue text anywhere, not by guessing there'd be a subpage.
