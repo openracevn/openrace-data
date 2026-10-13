@@ -4,7 +4,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { describe, it } from "node:test";
 import { CLAIM_TTL_MS, claimAll, listClaims, releaseUnit } from "../scripts/lib/claims.ts";
-import { overlayStore, planBatch, treeValidator } from "../scripts/lib/flush.ts";
+import { overlayStore, planBatch, seriesIdsIn, tolerateNewSeries, treeValidator, untolerated, type Validator } from "../scripts/lib/flush.ts";
 import { formatRaceChecklist, formatSeriesChecklist, raceChecklist, seriesChecklist } from "../scripts/lib/race-gaps.ts";
 import { RaceSchema, type Race } from "../scripts/lib/schema.ts";
 import { loadSites } from "../scripts/lib/sites.ts";
@@ -127,5 +127,28 @@ describe("flush batch", () => {
     assert.deepEqual(Object.keys(JSON.parse(file).overrides).sort(), ["edition", "seriesId"], "the second op builds on the first");
     const empty = await planBatch(local, [parseBundle(JSON.stringify({ unit: "unit-empty", summary: "nothing", ops: [] }))], config, now, null);
     assert.deepEqual(empty.unchanged, ["unit-empty"]);
+  });
+
+  // 2026-10-13: a new series in --also rejected every bundle that sorted before the one linking it.
+  it("lets a new --also series wait for the bundle that links it, then validates the batch as a whole", async () => {
+    const orphanCheck: Validator = async (files) =>
+      Object.values(files).some((f) => f?.includes('"new-series"')) ? [] : ['data/series.json: series "new-series" has no races', "1 problem(s) found."];
+    const bundles = [setMany("a-unit", "hcmc-marathon-2025", { edition: 12 }), setMany("b-unit", "hcmc-marathon-2024", { seriesId: "new-series" })];
+    const strict = await planBatch(local, bundles, config, now, orphanCheck);
+    assert.deepEqual(strict.rejected.map((r) => r.unit), ["a-unit"], "without tolerance the earlier bundle fails");
+    const tolerate = tolerateNewSeries(new Set(["new-series"]));
+    const both = await planBatch(local, bundles, config, now, orphanCheck, { tolerate });
+    assert.deepEqual(both.accepted.map((a) => a.unit), ["a-unit", "b-unit"]);
+    assert.deepEqual(both.finalErrors, []);
+    const unlinked = await planBatch(local, [bundles[0]!], config, now, orphanCheck, { tolerate });
+    assert.deepEqual(unlinked.accepted.map((a) => a.unit), ["a-unit"]);
+    assert.match(unlinked.finalErrors.join("\n"), /new-series" has no races/, "an orphan series still blocks the commit");
+  });
+
+  it("tolerates only the new series' orphan error", () => {
+    const tolerate = tolerateNewSeries(new Set(["new-series"]));
+    assert.deepEqual(untolerated(['data/series.json: series "new-series" has no races', "1 problem(s) found."], tolerate), []);
+    assert.equal(untolerated(['data/series.json: series "old-series" has no races', "1 problem(s) found."], tolerate).length, 2);
+    assert.deepEqual([...seriesIdsIn('[{"id":"a"},{"id":"b"}]')], ["a", "b"]);
   });
 });

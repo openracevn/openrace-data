@@ -145,6 +145,16 @@ describe("data digest", () => {
     );
   });
 
+  it("names the distances without a price when a race has some prices", () => {
+    const index = [entry(1, {})];
+    const base1 = race(1, {});
+    const races = new Map([[ID(1), race(1, { courses: [...base1.courses, { label: "2km", meters: 2000, type: "road_run", elevationGain: null }] })]]);
+    assert.deepEqual(
+      needsYou(base({ index, races, freshness: { [ID(1)]: fresh({}) } })).map((r) => r.reasons),
+      [["no price for 2km"]],
+    );
+  });
+
   it("stays under Discord's limit with many races and says how many were left out", () => {
     const index = Array.from({ length: 40 }, (_, i) => entry(i + 1, { name: `A race with a fairly long Vietnamese name number ${i + 1} – Giải chạy ${i + 1}` }));
     const races = new Map(index.map((e, i) => [e.id, race(i + 1, { prices: [], location: { venue: null, city: null } })]));

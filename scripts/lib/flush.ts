@@ -119,13 +119,49 @@ export type BatchResult = {
   /** Units whose bundles changed nothing (already in the data). */
   unchanged: string[];
   rejected: { unit: string; reason: string }[];
+  /** `validate` on everything accepted together, when some errors were tolerated per bundle. Non-empty = don't commit. */
+  finalErrors: string[];
 };
+
+export type BatchOptions = {
+  /**
+   * Validate errors a single bundle may leave for a later one to fix: a new series in an
+   * `--also` file has no races until the bundle that links it is applied, which used to
+   * reject every bundle planned before that one (2026-10-13). The batch as a whole is
+   * then validated strictly.
+   */
+  tolerate?: (error: string) => boolean;
+};
+
+const PROBLEM_COUNT = /^\d+ problem\(s\) found\.?$/;
+
+/** Errors left once tolerated ones (and a count line with nothing left to count) are dropped. */
+export function untolerated(errors: readonly string[], tolerate: ((error: string) => boolean) | undefined): string[] {
+  if (!tolerate) return [...errors];
+  const left = errors.filter((e) => !tolerate(e));
+  return left.every((e) => PROBLEM_COUNT.test(e)) ? [] : left;
+}
+
+/** Series ids in an `--also` copy of data/series.json, for `tolerate`. */
+export function seriesIdsIn(json: string | undefined): Set<string> {
+  if (!json) return new Set();
+  const list = JSON.parse(json) as { id?: unknown }[];
+  return new Set(list.map((s) => s.id).filter((id): id is string => typeof id === "string"));
+}
+
+/** Tolerate "series X has no races" for series an `--also` file adds. */
+export function tolerateNewSeries(ids: ReadonlySet<string>): (error: string) => boolean {
+  return (error) => {
+    const m = error.match(/series "([^"]+)" has no races/);
+    return m !== null && ids.has(m[1]!);
+  };
+}
 
 /**
  * Plan every bundle on top of the ones accepted so far. A bundle that throws or fails
  * `validate` is rejected and leaves no trace in the accumulated files.
  */
-export async function planBatch(base: RaceStore, bundles: readonly Bundle[], config: SitesConfig, now: string, validate: Validator | null): Promise<BatchResult> {
+export async function planBatch(base: RaceStore, bundles: readonly Bundle[], config: SitesConfig, now: string, validate: Validator | null, options: BatchOptions = {}): Promise<BatchResult> {
   let files: Record<string, string | null> = {};
   const changes: RaceChange[] = [];
   const accepted: BatchResult["accepted"] = [];
@@ -144,7 +180,7 @@ export async function planBatch(base: RaceStore, bundles: readonly Bundle[], con
       continue;
     }
     const candidate = { ...files, ...plan.files };
-    const errors = validate ? await validate(candidate) : [];
+    const errors = validate ? untolerated(await validate(candidate), options.tolerate) : [];
     if (errors.length) {
       rejected.push({ unit: bundle.unit, reason: `validate failed:\n${errors.slice(0, 8).join("\n")}` });
       continue;
@@ -153,7 +189,8 @@ export async function planBatch(base: RaceStore, bundles: readonly Bundle[], con
     changes.push(...plan.changes);
     accepted.push({ unit: bundle.unit, summary: bundle.summary, changes: plan.changes });
   }
-  return { plan: { files, changes: mergeChanges(changes), skipped: [] }, accepted, unchanged, rejected };
+  const finalErrors = validate && options.tolerate && accepted.length > 0 ? await validate(files) : [];
+  return { plan: { files, changes: mergeChanges(changes), skipped: [] }, accepted, unchanged, rejected, finalErrors };
 }
 
 /** `npm run validate` on a temporary copy of the checkout's data with `files` written on top. */

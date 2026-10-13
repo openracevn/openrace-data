@@ -6,7 +6,7 @@
  * Env: DISCORD_WEBHOOK_URL, BEFORE_SHA, AFTER_SHA, GITHUB_REPOSITORY, GITHUB_SERVER_URL.
  */
 import { readFileSync } from "node:fs";
-import { EMPTY_TREE, git, raceDiff, splitMessages } from "./lib/changes.ts";
+import { EMPTY_TREE, formatValue as fmt, git, raceDiff, splitMessages } from "./lib/changes.ts";
 import { env } from "./lib/env.ts";
 import { reconcile, type StoredExtraction } from "./lib/reconcile.ts";
 import { deepEqual, type CanonicalField, type Race } from "./lib/schema.ts";
@@ -166,14 +166,3 @@ function links(r: Race | null, path: string, rev: string): string {
   return `\n  ↳ ${out.join(" · ")}`;
 }
 
-function fmt(v: unknown, field?: CanonicalField): string {
-  if (v === null || v === undefined) return "∅";
-  if (typeof v === "number") return v.toLocaleString("en-US");
-  if (field === "courses" && Array.isArray(v)) {
-    return v
-      .map((course) => (typeof course === "object" && course !== null && "label" in course ? course.label : null))
-      .filter((label): label is string => typeof label === "string")
-      .join(", ");
-  }
-  return typeof v === "object" && !Array.isArray(v) ? JSON.stringify(v) : String(v);
-}

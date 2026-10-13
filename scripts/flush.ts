@@ -16,13 +16,25 @@
 import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 import { env, requireEnv } from "./lib/env.ts";
-import { batchContext, planBatch, treeValidator } from "./lib/flush.ts";
+import { batchContext, planBatch, seriesIdsIn, tolerateNewSeries, treeValidator } from "./lib/flush.ts";
 import { loadSites } from "./lib/sites.ts";
 import { archiveUnit, readStaged, type Bundle } from "./lib/staging.ts";
 import { defaultWorkspace } from "./lib/workspace.ts";
 import { commitToGitHub, formatCommitMessage, type RaceStore } from "./sync.ts";
 
 const args = process.argv.slice(2);
+// An unknown flag (--help) used to start a real flush of every bundle: refuse instead.
+const USAGE = "usage: npm run flush -- [--dry-run] [--unit <unit> …] [--also <path> …]";
+for (let i = 0; i < args.length; i++) {
+  const a = args[i]!;
+  if (a === "--dry-run") continue;
+  if ((a === "--unit" || a === "--also") && args[i + 1] && !args[i + 1]!.startsWith("--")) {
+    i++;
+    continue;
+  }
+  console.error(`${a === "--help" || a === "-h" ? "" : `flush: unexpected argument "${a}"\n`}${USAGE}`);
+  process.exit(a === "--help" || a === "-h" ? 0 : 2);
+}
 const dryRun = args.includes("--dry-run");
 const only = args.flatMap((a, i) => (a === "--unit" && args[i + 1] ? [args[i + 1]!] : []));
 const also: Record<string, string> = Object.fromEntries(
@@ -51,12 +63,20 @@ const local: RaceStore = {
   },
 };
 const validateTree = treeValidator(process.cwd());
-const result = await planBatch(local, bundles, config, now, (files) => validateTree({ ...also, ...files }));
+// Series the --also file adds that the checkout's committed series.json doesn't have yet.
+const committedSeries = seriesIdsIn(gitShow("HEAD:data/series.json"));
+const newSeries = new Set([...seriesIdsIn(also["data/series.json"])].filter((id) => !committedSeries.has(id)));
+const result = await planBatch(local, bundles, config, now, (files) => validateTree({ ...also, ...files }), newSeries.size ? { tolerate: tolerateNewSeries(newSeries) } : {});
 result.rejected.unshift(...unreadable);
 
 for (const a of result.accepted) console.log(`✓ ${a.unit}: ${a.summary} → ${a.changes.map((c) => `${c.kind === "added" ? "+" : "~"}${c.slug}`).join(", ")}`);
 for (const u of result.unchanged) console.log(`= ${u}: nothing new (already in the data)`);
 for (const r of result.rejected) console.log(`✗ ${r.unit}: REJECTED, left out of the commit\n    ${r.reason.replace(/\n/g, "\n    ")}`);
+
+if (result.finalErrors.length) {
+  console.log(`\n✗ The accepted bundles together fail validate, so nothing is committed:\n    ${result.finalErrors.slice(0, 8).join("\n    ")}`);
+  process.exit(1);
+}
 
 if (dryRun) {
   console.log(`\nDry run: ${result.accepted.length} accepted, ${result.unchanged.length} unchanged, ${result.rejected.length} rejected. Nothing committed or archived.`);
@@ -96,5 +116,13 @@ function warnIfBehind(): void {
     if (behind > 0) console.warn(`warning: this checkout is ${behind} commit(s) behind origin/main; validation ran on stale data. git pull first.\n`);
   } catch {
     // Offline or no remote: validation still runs on the local tree.
+  }
+}
+
+function gitShow(spec: string): string | undefined {
+  try {
+    return execFileSync("git", ["show", spec], { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] });
+  } catch {
+    return undefined;
   }
 }

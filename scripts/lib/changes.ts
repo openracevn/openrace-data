@@ -102,3 +102,33 @@ export function splitMessages(lines: readonly string[], limit: number): string[]
   }
   return messages;
 }
+
+/**
+ * A field value for a Discord line. Prices and other lists of objects get a summary:
+ * String() on them printed "[object Object],[object Object],…" (2026-10-13).
+ */
+export function formatValue(v: unknown, field?: string): string {
+  if (v === null || v === undefined) return "∅";
+  if (typeof v === "number") return v.toLocaleString("en-US");
+  if (!Array.isArray(v)) return typeof v === "object" ? JSON.stringify(v) : String(v);
+  if (v.length === 0) return "none";
+  if (field === "prices") {
+    const values = v.map((t) => (isRecord(t) && typeof t.price === "number" ? t.price : null)).filter((n): n is number => n !== null);
+    if (values.length === 0) return `${v.length} price(s)`;
+    const [min, max] = [Math.min(...values), Math.max(...values)];
+    return `${v.length} price(s), ${min.toLocaleString("en-US")}${max > min ? `–${max.toLocaleString("en-US")}` : ""}`;
+  }
+  if (field === "courses") {
+    return v
+      .map((c) => (isRecord(c) && typeof c.label === "string" ? c.label : null))
+      .filter((label): label is string => label !== null)
+      .join(", ");
+  }
+  if (v.every((x) => typeof x !== "object" || x === null)) return v.map(String).join(", ");
+  return `${v.length} × ${field ?? "item"}`;
+}
+
+function isRecord(v: unknown): v is Record<string, unknown> {
+  return typeof v === "object" && v !== null && !Array.isArray(v);
+}
+

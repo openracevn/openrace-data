@@ -132,13 +132,20 @@ export function needsYou(input: Pick<DigestInput, "index" | "races" | "freshness
     const f = input.freshness[entry.id];
     const stale = f ? freshnessStatus(recomputeFinal(entry, f, today), input.now) === "stale" : false;
     const race = input.races.get(entry.id);
-    const gaps = race ? raceChecklist(race, today).items.filter((i) => i.status === "gap").map((i) => i.field) : [];
+    const gapItems = race ? raceChecklist(race, today).items.filter((i) => i.status === "gap") : [];
+    const gaps = gapItems.map((i) => i.field);
+    // A race with prices for some distances says which ones lack one (Cà Mau 2026: 16
+    // tiers, none for the 2km), not "no prices".
+    const reasonFor = (g: string) => {
+      const partial = g === "prices" ? gapItems.find((i) => i.field === "prices" && i.note.startsWith("no tier for "))?.note : undefined;
+      return partial ? partial.replace("no tier for ", "no price for ") : `no ${g}`;
+    };
     const primary = SESSION_GAPS.filter((g) => gaps.includes(g) && !(scheduledRead.has(entry.id) && (READ_FILLS as readonly string[]).includes(g)));
     if (!stale && primary.length === 0) continue;
     const reasons: string[] = [];
     if (stale) reasons.push(`stale since ${f?.lastCheckedAt ? f.lastCheckedAt.slice(0, 10) : "never checked"}`);
-    for (const g of primary) reasons.push(`no ${g}`);
-    for (const g of SECONDARY_GAPS) if (gaps.includes(g)) reasons.push(`no ${g}`);
+    for (const g of primary) reasons.push(reasonFor(g));
+    for (const g of SECONDARY_GAPS) if (gaps.includes(g)) reasons.push(reasonFor(g));
     out.push({ id: entry.id, name: entry.name, date: entry.date, reasons, staleSince: stale ? (f?.lastCheckedAt ?? "") : null });
   }
   return out.sort((a, b) => {
