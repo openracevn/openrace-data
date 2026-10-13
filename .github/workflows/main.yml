@@ -50,9 +50,12 @@ jobs:
           cache: npm
       - run: npm ci
 
-      # Doesn't wait for validation, so a bad data push is still announced.
+      # Doesn't wait for validation, so a bad data push is still announced. A failed
+      # announcement must not stop the API resync below (2026-10-13: a Discord rate
+      # limit skipped validate and Notify API for a 16-race commit).
       - name: Notify Discord
         if: github.event_name == 'push' && steps.changes.outputs.data_changed == 'true'
+        continue-on-error: true
         run: npm run notify:discord
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}

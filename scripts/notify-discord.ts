@@ -84,11 +84,20 @@ if (added.length + updated.length + removed.length === 0) {
 }
 
 for (const content of splitMessages(lines, DISCORD_LIMIT)) {
-  const res = await fetch(webhook, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ username: "OpenRace Data", content, allowed_mentions: { parse: [] } }),
-  });
+  const post = () =>
+    fetch(webhook, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ username: "OpenRace Data", content, allowed_mentions: { parse: [] } }),
+    });
+  let res = await post();
+  // A batch of many races sends several messages in a row and hits the webhook's rate
+  // limit (2026-10-13, 16 races): wait as told and try again.
+  for (let attempt = 0; res.status === 429 && attempt < 5; attempt++) {
+    const body = (await res.json().catch(() => ({}))) as { retry_after?: number };
+    await new Promise((r) => setTimeout(r, Math.ceil((body.retry_after ?? 1) * 1000) + 250));
+    res = await post();
+  }
   if (!res.ok) {
     console.error(`Discord webhook failed: ${res.status} ${await res.text()}`);
     process.exit(1);
