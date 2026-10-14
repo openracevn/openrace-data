@@ -7,6 +7,7 @@
   ],
   "date": "2026-11-06",
   "endDate": "2026-11-08",
+  "mainDate": null,
   "seriesId": "lamdong-trail",
   "organizerId": "greenhat",
   "organizer": "GreenHat",
@@ -498,7 +499,7 @@
     }
   ],
   "currency": "VND",
-  "registrationStatus": "open",
+  "registrationStatus": "closed",
   "registrations": [
     {
       "site": "irace",
@@ -594,6 +595,7 @@
       "foundOn": "lamdongtrail.vn"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "prices": {
@@ -960,7 +962,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/lamdong-trail-2026",
-      "lastCheckedAt": "2026-09-24T06:43:09.238Z",
+      "lastCheckedAt": "2026-10-14T05:26:19.101Z",
       "lastChangedAt": "2026-09-23T18:30:49.114Z",
       "extracted": {
         "facts": {
@@ -970,7 +972,7 @@
           "venue": "TTC World - Thung Lũng Tình Yêu, số 03-05-07 đường Mai Anh Đào, phường Lâm Viên, Tp. Đà Lạt, Lâm Đồng",
           "organizer": "GreenHat",
           "currency": "VND",
-          "registrationStatus": "open",
+          "registrationStatus": "closed",
           "fromPrice": 450000
         },
         "pages": [
@@ -1708,5 +1710,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T12:46:14.409Z"
+  "updatedAt": "2026-10-14T05:27:10.815Z"
 }
