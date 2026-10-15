@@ -25398,6 +25398,102 @@
     "query": "Trung tâm hội nghị tỉnh Cà Mau, Phường An Xuyên, Tỉnh Cà Mau.",
     "at": "2026-09-24T06:33:38.882Z"
   },
+  "trung tam hoi nghi tinh ca mau phuong an xuyen tinh ca mau | ca mau": {
+    "geo": {
+      "lat": 9.2218303,
+      "lng": 105.1784503,
+      "source": "nominatim",
+      "precision": "province",
+      "current": {
+        "province": "96",
+        "ward": null
+      },
+      "legacy": null,
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 239.6,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "ha-noi": {
+          "km": 1314.8,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "da-nang": {
+          "km": 829.2,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 552.5,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "da-lat": {
+          "km": 467.5,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "can-tho": {
+          "km": 112.3,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 1302.5,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "hue": {
+          "km": 846.6,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 243.4,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 671.3,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 494.1,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 1465.2,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "ha-long": {
+          "km": 1320.1,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        }
+      }
+    },
+    "query": "Phường An Xuyên, Tỉnh Cà Mau.",
+    "at": "2026-10-15T20:16:02.179Z"
+  },
   "trung tam tp ho chi minh | ": {
     "geo": {
       "lat": 10.7561784,
