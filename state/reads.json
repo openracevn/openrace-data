@@ -7707,6 +7707,67 @@
     },
     "usedAt": "2026-10-15T20:31:24.431Z"
   },
+  "page:5898fa2ce499:822f7e206b93a8ef7f0834978ee4f3b0008a20c921f24d7114edb963b0a5f9bd": {
+    "kind": "page",
+    "json": {
+      "pageKind": "sport",
+      "types": [
+        "trail_run"
+      ],
+      "name": "Lamdong Trail 2026",
+      "date": "2026-11-06",
+      "endDate": "2026-11-08",
+      "mainDate": "2026-11-06",
+      "distances": [
+        "5Km",
+        "15Km",
+        "25Km",
+        "55Km",
+        "85Km"
+      ],
+      "courses": [
+        {
+          "distance": "5Km",
+          "type": "trail_run",
+          "elevationGain": 0
+        },
+        {
+          "distance": "15Km",
+          "type": "trail_run",
+          "elevationGain": 0
+        },
+        {
+          "distance": "25Km",
+          "type": "trail_run",
+          "elevationGain": 0
+        },
+        {
+          "distance": "55Km",
+          "type": "trail_run",
+          "elevationGain": 0
+        },
+        {
+          "distance": "85Km",
+          "type": "trail_run",
+          "elevationGain": 0
+        }
+      ],
+      "edition": 1,
+      "editionQuote": "Giải chạy trail “chill giữa đại ngàn”",
+      "mapsUrl": "https://lamdongtrail.vn/vi-tri/",
+      "venue": "Thung Lũng Tình Yêu",
+      "city": "Đà Lạt, Lâm Đồng",
+      "organizer": "Lamdong Trail",
+      "currency": "VND",
+      "registrationStatus": "open",
+      "participants": {
+        "count": 0,
+        "quote": "Đang mở đơn đăng ký"
+      },
+      "prices": []
+    },
+    "usedAt": "2026-10-15T20:35:22.551Z"
+  },
   "page:5898fa2ce499:82ded0ff0cca7dae70cb672aff4f905bc893424f093e906e2906a1132590eb8e": {
     "kind": "page",
     "json": {
@@ -8294,6 +8355,43 @@
     },
     "usedAt": "2026-10-15T20:20:39.236Z"
   },
+  "page:5898fa2ce499:93e9afe1726ec61f2019931eed0f960bc34072703fdf145c45c1ab3dc56f7011": {
+    "kind": "page",
+    "json": {
+      "pageKind": "sport",
+      "types": [
+        "trail_run"
+      ],
+      "name": "Lamdong Trail 2026",
+      "date": "2026-11-07",
+      "endDate": "2026-11-07",
+      "mainDate": "2026-11-07",
+      "distances": [
+        "85Km"
+      ],
+      "courses": [
+        {
+          "distance": "85Km",
+          "type": "trail_run",
+          "elevationGain": 0
+        }
+      ],
+      "edition": 1,
+      "editionQuote": "Lamdong Trail 2026 lần đầu tiên mở ra thử thách 85Km",
+      "mapsUrl": "https://lamdongtrail.vn/vi-tri/",
+      "venue": "Thung Lũng Tình Yêu – TTC World",
+      "city": "Đà Lạt",
+      "organizer": "Lamdong Trail",
+      "currency": "VND",
+      "registrationStatus": "open",
+      "participants": {
+        "count": 0,
+        "quote": ""
+      },
+      "prices": []
+    },
+    "usedAt": "2026-10-15T20:35:22.551Z"
+  },
   "page:5898fa2ce499:96b3f3cd7e299dd318f15250476cda9e91f15ecc2a0fb5d20f5be8e8b5407fae": {
     "kind": "page",
     "json": {
@@ -8577,6 +8675,47 @@
     },
     "usedAt": "2026-10-15T20:26:16.431Z"
   },
+  "page:5898fa2ce499:9b3d9359e9033600af9a3e4d6103dcb4f4665c0d2de4c05a8839c9d8b8fc2c51": {
+    "kind": "page",
+    "json": {
+      "pageKind": "sport",
+      "types": [
+        "trail_run"
+      ],
+      "name": "Lamdong Trail 2026",
+      "date": "2026-11-07",
+      "endDate": "2026-11-07",
+      "mainDate": "2026-11-07",
+      "distances": [
+        "5 Km",
+        "15 Km",
+        "25 Km",
+        "55 Km",
+        "85 Km"
+      ],
+      "courses": [
+        {
+          "distance": "25 Km",
+          "type": "trail_run",
+          "elevationGain": 0
+        }
+      ],
+      "edition": 0,
+      "editionQuote": "",
+      "mapsUrl": "https://lamdongtrail.vn/vi-tri/",
+      "venue": "Thung Lũng Tình Yêu – TTC World",
+      "city": "Đà Lạt",
+      "organizer": "ActiUp",
+      "currency": "VND",
+      "registrationStatus": "open",
+      "participants": {
+        "count": 0,
+        "quote": ""
+      },
+      "prices": []
+    },
+    "usedAt": "2026-10-15T20:35:22.551Z"
+  },
   "page:5898fa2ce499:9c6e089ae8c2d559c84d0cd06094f62716d0b38d510a3d72b82baca555efe07c": {
     "kind": "page",
     "json": {
@@ -8813,6 +8952,73 @@
       ]
     },
     "usedAt": "2026-10-15T20:26:16.431Z"
+  },
+  "page:5898fa2ce499:a5ec5339ca762ae25ec095abf5c766a1d2e916741f55002c73b02ee9bf4e97db": {
+    "kind": "page",
+    "json": {
+      "pageKind": "sport",
+      "types": [
+        "trail_run"
+      ],
+      "name": "Lamdong Trail 2026",
+      "date": "2026-11-06",
+      "endDate": "2026-11-08",
+      "mainDate": "2026-11-06",
+      "distances": [
+        "5Km",
+        "15Km",
+        "25Km",
+        "55Km",
+        "85Km",
+        "5Km Kids Trail"
+      ],
+      "courses": [
+        {
+          "distance": "85Km",
+          "type": "trail_run",
+          "elevationGain": 0
+        },
+        {
+          "distance": "55Km",
+          "type": "trail_run",
+          "elevationGain": 0
+        },
+        {
+          "distance": "25Km",
+          "type": "trail_run",
+          "elevationGain": 0
+        },
+        {
+          "distance": "15Km",
+          "type": "trail_run",
+          "elevationGain": 0
+        },
+        {
+          "distance": "5Km",
+          "type": "trail_run",
+          "elevationGain": 0
+        },
+        {
+          "distance": "5Km Kids Trail",
+          "type": "trail_run",
+          "elevationGain": 0
+        }
+      ],
+      "edition": 2026,
+      "editionQuote": "Lamdong Trail 2026",
+      "mapsUrl": "https://lamdongtrail.vn/vi-tri/",
+      "venue": "Thung Lũng Tình Yêu",
+      "city": "Đà Lạt, Lâm Đồng",
+      "organizer": "GreenHat",
+      "currency": "VND",
+      "registrationStatus": "open",
+      "participants": {
+        "count": 0,
+        "quote": ""
+      },
+      "prices": []
+    },
+    "usedAt": "2026-10-15T20:35:22.551Z"
   },
   "page:5898fa2ce499:a63a7e483dfe5a35b5601e24e3567ed97251f18f26503d92cd5d49b478f5d747": {
     "kind": "page",
@@ -9416,6 +9622,43 @@
       ]
     },
     "usedAt": "2026-10-15T20:26:16.431Z"
+  },
+  "page:5898fa2ce499:ba9b89b5eca96db958af1e49d8c48382713777643e7ed64ca975e0d5b824b73c": {
+    "kind": "page",
+    "json": {
+      "pageKind": "sport",
+      "types": [
+        "trail_run"
+      ],
+      "name": "Lamdong Trail 2026",
+      "date": "2026-11-07",
+      "endDate": "2026-11-07",
+      "mainDate": "2026-11-07",
+      "distances": [
+        "15Km"
+      ],
+      "courses": [
+        {
+          "distance": "15Km",
+          "type": "trail_run",
+          "elevationGain": 0
+        }
+      ],
+      "edition": 1,
+      "editionQuote": "Giải chạy lần thứ 1",
+      "mapsUrl": "https://lamdongtrail.vn/vi-tri/",
+      "venue": "Thung Lũng Tình Yêu – TTC World",
+      "city": "Đà Lạt",
+      "organizer": "",
+      "currency": "VND",
+      "registrationStatus": "open",
+      "participants": {
+        "count": 0,
+        "quote": ""
+      },
+      "prices": []
+    },
+    "usedAt": "2026-10-15T20:35:22.551Z"
   },
   "page:5898fa2ce499:bcb01d923a8cd11858298b77d05b1c9648d3921812afeb479272108b043aba6e": {
     "kind": "page",
@@ -10426,6 +10669,47 @@
     },
     "usedAt": "2026-10-15T20:26:16.431Z"
   },
+  "page:5898fa2ce499:f1e10fc7b21242ab9afc4706314147da49b2ed4eb8816b7b44a8097fb90c4153": {
+    "kind": "page",
+    "json": {
+      "pageKind": "sport",
+      "types": [
+        "trail_run"
+      ],
+      "name": "Lamdong Trail 2026",
+      "date": "2026-11-07",
+      "endDate": "2026-11-07",
+      "mainDate": "2026-11-07",
+      "distances": [
+        "5 Km",
+        "15 Km",
+        "25 Km",
+        "55 Km",
+        "85 Km"
+      ],
+      "courses": [
+        {
+          "distance": "55 Km",
+          "type": "trail_run",
+          "elevationGain": 0
+        }
+      ],
+      "edition": 2026,
+      "editionQuote": "Giải chạy Lamdong Trail 2026",
+      "mapsUrl": "https://lamdongtrail.vn/vi-tri/",
+      "venue": "Thung Lũng Tình Yêu – TTC World",
+      "city": "Đà Lạt",
+      "organizer": "Đơn Vị Tổ Chức",
+      "currency": "VND",
+      "registrationStatus": "open",
+      "participants": {
+        "count": 0,
+        "quote": "Đang chờ đăng ký"
+      },
+      "prices": []
+    },
+    "usedAt": "2026-10-15T20:35:22.551Z"
+  },
   "page:5898fa2ce499:f2f1a1ea1c563c01bca8a976798f13e462658b6b1a7e5c9eee61fb94e02df2d0": {
     "kind": "page",
     "json": {
@@ -10454,6 +10738,67 @@
       "prices": []
     },
     "usedAt": "2026-10-15T20:20:39.236Z"
+  },
+  "page:5898fa2ce499:f4a7dcd9cf0cc2f82fdb716c7e78366a1340c0e73ed55c32dec1bd26bd85c140": {
+    "kind": "page",
+    "json": {
+      "pageKind": "sport",
+      "types": [
+        "trail_run"
+      ],
+      "name": "Lamdong Trail 2026",
+      "date": "2026-11-08",
+      "endDate": "2026-11-08",
+      "mainDate": "2026-11-08",
+      "distances": [
+        "5Km",
+        "15 Km",
+        "25 Km",
+        "55 Km",
+        "85 Km"
+      ],
+      "courses": [
+        {
+          "distance": "5Km",
+          "type": "trail_run",
+          "elevationGain": 0
+        },
+        {
+          "distance": "15 Km",
+          "type": "trail_run",
+          "elevationGain": 0
+        },
+        {
+          "distance": "25 Km",
+          "type": "trail_run",
+          "elevationGain": 0
+        },
+        {
+          "distance": "55 Km",
+          "type": "trail_run",
+          "elevationGain": 0
+        },
+        {
+          "distance": "85 Km",
+          "type": "trail_run",
+          "elevationGain": 0
+        }
+      ],
+      "edition": 1,
+      "editionQuote": "Giải chạy Lamdong Trail lần thứ nhất",
+      "mapsUrl": "https://lamdongtrail.vn/vi-tri/",
+      "venue": "Khu vực Lâm Đồng",
+      "city": "Đà Lạt",
+      "organizer": "Lamdong Trail Team",
+      "currency": "VND",
+      "registrationStatus": "open",
+      "participants": {
+        "count": 0,
+        "quote": "Chưa có thông tin về số lượng người tham gia."
+      },
+      "prices": []
+    },
+    "usedAt": "2026-10-15T20:35:22.551Z"
   },
   "page:5898fa2ce499:f63a66cd4af502a3faf4e3fd2e09867d6db0fc60ce0ca9c0f2337251c9273ee2": {
     "kind": "page",

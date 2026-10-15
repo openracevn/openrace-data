@@ -7,11 +7,11 @@
   ],
   "date": "2026-11-06",
   "endDate": "2026-11-08",
-  "mainDate": null,
+  "mainDate": "2026-11-06",
   "seriesId": "lamdong-trail",
   "organizerId": "greenhat",
   "organizer": "GreenHat",
-  "edition": null,
+  "edition": 1,
   "courses": [
     {
       "label": "5km",
@@ -1146,7 +1146,7 @@
       "site": "lamdong-trail",
       "role": "official",
       "url": "https://lamdongtrail.vn/",
-      "lastCheckedAt": "2026-09-25T05:01:22.419Z",
+      "lastCheckedAt": "2026-10-15T20:35:23.714Z",
       "lastChangedAt": "2026-09-25T05:01:22.419Z",
       "extracted": {
         "pages": [
@@ -1160,140 +1160,60 @@
               "name": "Lamdong Trail 2026",
               "date": "2026-11-06",
               "endDate": "2026-11-08",
+              "mainDate": "2026-11-06",
               "distances": [
-                "85Km",
-                "55Km",
-                "25Km",
-                "15Km",
                 "5Km",
+                "15Km",
+                "25Km",
+                "55Km",
+                "85Km",
                 "5Km Kids Trail"
               ],
               "courses": [
                 {
                   "distance": "85Km",
-                  "type": "trail_run"
+                  "type": "trail_run",
+                  "elevationGain": 0
                 },
                 {
                   "distance": "55Km",
-                  "type": "trail_run"
+                  "type": "trail_run",
+                  "elevationGain": 0
                 },
                 {
                   "distance": "25Km",
-                  "type": "trail_run"
+                  "type": "trail_run",
+                  "elevationGain": 0
                 },
                 {
                   "distance": "15Km",
-                  "type": "trail_run"
+                  "type": "trail_run",
+                  "elevationGain": 0
                 },
                 {
                   "distance": "5Km",
-                  "type": "trail_run"
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "5Km Kids Trail",
+                  "type": "trail_run",
+                  "elevationGain": 0
                 }
               ],
+              "edition": 2026,
+              "editionQuote": "Lamdong Trail 2026",
+              "mapsUrl": "https://lamdongtrail.vn/vi-tri/",
               "venue": "Thung Lũng Tình Yêu",
               "city": "Đà Lạt, Lâm Đồng",
+              "organizer": "GreenHat",
               "currency": "VND",
               "registrationStatus": "open",
-              "prices": [
-                {
-                  "distance": "85Km",
-                  "tier": "REGULAR",
-                  "from": "11/06",
-                  "to": "2026-08-16",
-                  "price": 2900000
-                },
-                {
-                  "distance": "55Km",
-                  "tier": "REGULAR",
-                  "from": "11/06",
-                  "to": "2026-08-16",
-                  "price": 2250000
-                },
-                {
-                  "distance": "25Km",
-                  "tier": "REGULAR",
-                  "from": "11/06",
-                  "to": "2026-08-16",
-                  "price": 1700000
-                },
-                {
-                  "distance": "15Km",
-                  "tier": "REGULAR",
-                  "from": "11/06",
-                  "to": "2026-08-16",
-                  "price": 1050000
-                },
-                {
-                  "distance": "5Km/ 5Km Kids Trail",
-                  "tier": "REGULAR",
-                  "from": "11/06",
-                  "to": "2026-08-16",
-                  "price": 750000
-                },
-                {
-                  "distance": "5Km",
-                  "tier": "Family Trail Run 5Km (1 Người lớn + 1 Trẻ em) REGULAR",
-                  "from": "11/06",
-                  "to": "2026-08-16",
-                  "price": 1400000
-                },
-                {
-                  "distance": "5Km",
-                  "tier": "Family Trail Run 5Km (2 Người lớn + 1 Trẻ em hoặc 1 người lớn + 2 Trẻ em) REGULAR",
-                  "from": "11/06",
-                  "to": "2026-08-16",
-                  "price": 2100000
-                },
-                {
-                  "distance": "85Km",
-                  "tier": "LATE COMER",
-                  "from": "17/08",
-                  "to": "2026-10-05",
-                  "price": 3150000
-                },
-                {
-                  "distance": "55Km",
-                  "tier": "LATE COMER",
-                  "from": "17/08",
-                  "to": "2026-10-05",
-                  "price": 2550000
-                },
-                {
-                  "distance": "25Km",
-                  "tier": "LATE COMER",
-                  "from": "17/08",
-                  "to": "2026-10-05",
-                  "price": 2050000
-                },
-                {
-                  "distance": "15Km",
-                  "tier": "LATE COMER",
-                  "from": "17/08",
-                  "to": "2026-10-05",
-                  "price": 1400000
-                },
-                {
-                  "distance": "5Km/ 5Km Kids Trail",
-                  "tier": "LATE COMER",
-                  "from": "17/08",
-                  "to": "2026-10-05",
-                  "price": 950000
-                },
-                {
-                  "distance": "5Km",
-                  "tier": "Family Trail Run 5Km (1 Người lớn + 1 Trẻ em) LATE COMER",
-                  "from": "17/08",
-                  "to": "2026-10-05",
-                  "price": 1800000
-                },
-                {
-                  "distance": "5Km",
-                  "tier": "Family Trail Run 5Km (2 Người lớn + 1 Trẻ em hoặc 1 người lớn + 2 Trẻ em) LATE COMER",
-                  "from": "17/08",
-                  "to": "2026-10-05",
-                  "price": 2700000
-                }
-              ]
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": []
             }
           },
           {
@@ -1306,140 +1226,54 @@
               "name": "Lamdong Trail 2026",
               "date": "2026-11-06",
               "endDate": "2026-11-08",
+              "mainDate": "2026-11-06",
               "distances": [
-                "85Km",
-                "55Km",
-                "25Km",
-                "15Km",
                 "5Km",
-                "5Km Kids Trail"
+                "15Km",
+                "25Km",
+                "55Km",
+                "85Km"
               ],
               "courses": [
                 {
-                  "distance": "85Km",
-                  "type": "trail_run"
-                },
-                {
-                  "distance": "55Km",
-                  "type": "trail_run"
-                },
-                {
-                  "distance": "25Km",
-                  "type": "trail_run"
+                  "distance": "5Km",
+                  "type": "trail_run",
+                  "elevationGain": 0
                 },
                 {
                   "distance": "15Km",
-                  "type": "trail_run"
+                  "type": "trail_run",
+                  "elevationGain": 0
                 },
                 {
-                  "distance": "5Km",
-                  "type": "trail_run"
+                  "distance": "25Km",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "55Km",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "85Km",
+                  "type": "trail_run",
+                  "elevationGain": 0
                 }
               ],
+              "edition": 1,
+              "editionQuote": "Giải chạy trail “chill giữa đại ngàn”",
+              "mapsUrl": "https://lamdongtrail.vn/vi-tri/",
               "venue": "Thung Lũng Tình Yêu",
               "city": "Đà Lạt, Lâm Đồng",
+              "organizer": "Lamdong Trail",
               "currency": "VND",
               "registrationStatus": "open",
-              "prices": [
-                {
-                  "distance": "85Km",
-                  "tier": "REGULAR",
-                  "from": "11/06",
-                  "to": "2026-08-16",
-                  "price": 2900000
-                },
-                {
-                  "distance": "55Km",
-                  "tier": "REGULAR",
-                  "from": "11/06",
-                  "to": "2026-08-16",
-                  "price": 2250000
-                },
-                {
-                  "distance": "25Km",
-                  "tier": "REGULAR",
-                  "from": "11/06",
-                  "to": "2026-08-16",
-                  "price": 1700000
-                },
-                {
-                  "distance": "15Km",
-                  "tier": "REGULAR",
-                  "from": "11/06",
-                  "to": "2026-08-16",
-                  "price": 1050000
-                },
-                {
-                  "distance": "5Km/ 5Km Kids Trail",
-                  "tier": "REGULAR",
-                  "from": "11/06",
-                  "to": "2026-08-16",
-                  "price": 750000
-                },
-                {
-                  "distance": "5Km",
-                  "tier": "Family Trail Run 5Km (1 Người lớn + 1 Trẻ em) REGULAR",
-                  "from": "11/06",
-                  "to": "2026-08-16",
-                  "price": 1400000
-                },
-                {
-                  "distance": "5Km",
-                  "tier": "Family Trail Run 5Km (2 Người lớn + 1 Trẻ em hoặc 1 người lớn + 2 Trẻ em) REGULAR",
-                  "from": "11/06",
-                  "to": "2026-08-16",
-                  "price": 2100000
-                },
-                {
-                  "distance": "85Km",
-                  "tier": "LATE COMER",
-                  "from": "17/08",
-                  "to": "2026-10-05",
-                  "price": 3150000
-                },
-                {
-                  "distance": "55Km",
-                  "tier": "LATE COMER",
-                  "from": "17/08",
-                  "to": "2026-10-05",
-                  "price": 2550000
-                },
-                {
-                  "distance": "25Km",
-                  "tier": "LATE COMER",
-                  "from": "17/08",
-                  "to": "2026-10-05",
-                  "price": 2050000
-                },
-                {
-                  "distance": "15Km",
-                  "tier": "LATE COMER",
-                  "from": "17/08",
-                  "to": "2026-10-05",
-                  "price": 1400000
-                },
-                {
-                  "distance": "5Km/ 5Km Kids Trail",
-                  "tier": "LATE COMER",
-                  "from": "17/08",
-                  "to": "2026-10-05",
-                  "price": 950000
-                },
-                {
-                  "distance": "5Km",
-                  "tier": "Family Trail Run 5Km (1 Người lớn + 1 Trẻ em) LATE COMER",
-                  "from": "17/08",
-                  "to": "2026-10-05",
-                  "price": 1800000
-                },
-                {
-                  "distance": "5Km",
-                  "tier": "Family Trail Run 5Km (2 Người lớn + 1 Trẻ em hoặc 1 người lớn + 2 Trẻ em) LATE COMER",
-                  "from": "17/08",
-                  "to": "2026-10-05",
-                  "price": 2700000
-                }
-              ]
+              "participants": {
+                "count": 0,
+                "quote": "Đang mở đơn đăng ký"
+              },
+              "prices": []
             }
           },
           {
@@ -1449,19 +1283,56 @@
               "types": [
                 "trail_run"
               ],
+              "name": "Lamdong Trail 2026",
               "date": "2026-11-08",
+              "endDate": "2026-11-08",
+              "mainDate": "2026-11-08",
               "distances": [
                 "5Km",
-                "5Km Kids Trail"
+                "15 Km",
+                "25 Km",
+                "55 Km",
+                "85 Km"
               ],
               "courses": [
                 {
                   "distance": "5Km",
-                  "type": "trail_run"
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "15 Km",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "25 Km",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "55 Km",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "85 Km",
+                  "type": "trail_run",
+                  "elevationGain": 0
                 }
               ],
+              "edition": 1,
+              "editionQuote": "Giải chạy Lamdong Trail lần thứ nhất",
+              "mapsUrl": "https://lamdongtrail.vn/vi-tri/",
+              "venue": "Khu vực Lâm Đồng",
+              "city": "Đà Lạt",
+              "organizer": "Lamdong Trail Team",
               "currency": "VND",
               "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": "Chưa có thông tin về số lượng người tham gia."
+              },
               "prices": []
             }
           },
@@ -1472,19 +1343,32 @@
               "types": [
                 "trail_run"
               ],
+              "name": "Lamdong Trail 2026",
               "date": "2026-11-07",
+              "endDate": "2026-11-07",
+              "mainDate": "2026-11-07",
               "distances": [
                 "15Km"
               ],
               "courses": [
                 {
                   "distance": "15Km",
-                  "type": "trail_run"
+                  "type": "trail_run",
+                  "elevationGain": 0
                 }
               ],
+              "edition": 1,
+              "editionQuote": "Giải chạy lần thứ 1",
+              "mapsUrl": "https://lamdongtrail.vn/vi-tri/",
               "venue": "Thung Lũng Tình Yêu – TTC World",
+              "city": "Đà Lạt",
+              "organizer": "",
               "currency": "VND",
               "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
               "prices": []
             }
           },
@@ -1495,19 +1379,36 @@
               "types": [
                 "trail_run"
               ],
+              "name": "Lamdong Trail 2026",
               "date": "2026-11-07",
+              "endDate": "2026-11-07",
+              "mainDate": "2026-11-07",
               "distances": [
-                "25Km"
+                "5 Km",
+                "15 Km",
+                "25 Km",
+                "55 Km",
+                "85 Km"
               ],
               "courses": [
                 {
-                  "distance": "25Km",
-                  "type": "trail_run"
+                  "distance": "25 Km",
+                  "type": "trail_run",
+                  "elevationGain": 0
                 }
               ],
+              "edition": 0,
+              "editionQuote": "",
+              "mapsUrl": "https://lamdongtrail.vn/vi-tri/",
               "venue": "Thung Lũng Tình Yêu – TTC World",
+              "city": "Đà Lạt",
+              "organizer": "ActiUp",
               "currency": "VND",
               "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
               "prices": []
             }
           },
@@ -1518,19 +1419,36 @@
               "types": [
                 "trail_run"
               ],
+              "name": "Lamdong Trail 2026",
               "date": "2026-11-07",
+              "endDate": "2026-11-07",
+              "mainDate": "2026-11-07",
               "distances": [
-                "55Km"
+                "5 Km",
+                "15 Km",
+                "25 Km",
+                "55 Km",
+                "85 Km"
               ],
               "courses": [
                 {
-                  "distance": "55Km",
-                  "type": "trail_run"
+                  "distance": "55 Km",
+                  "type": "trail_run",
+                  "elevationGain": 0
                 }
               ],
+              "edition": 2026,
+              "editionQuote": "Giải chạy Lamdong Trail 2026",
+              "mapsUrl": "https://lamdongtrail.vn/vi-tri/",
               "venue": "Thung Lũng Tình Yêu – TTC World",
+              "city": "Đà Lạt",
+              "organizer": "Đơn Vị Tổ Chức",
               "currency": "VND",
               "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": "Đang chờ đăng ký"
+              },
               "prices": []
             }
           },
@@ -1541,19 +1459,32 @@
               "types": [
                 "trail_run"
               ],
+              "name": "Lamdong Trail 2026",
               "date": "2026-11-07",
+              "endDate": "2026-11-07",
+              "mainDate": "2026-11-07",
               "distances": [
                 "85Km"
               ],
               "courses": [
                 {
                   "distance": "85Km",
-                  "type": "trail_run"
+                  "type": "trail_run",
+                  "elevationGain": 0
                 }
               ],
+              "edition": 1,
+              "editionQuote": "Lamdong Trail 2026 lần đầu tiên mở ra thử thách 85Km",
+              "mapsUrl": "https://lamdongtrail.vn/vi-tri/",
               "venue": "Thung Lũng Tình Yêu – TTC World",
+              "city": "Đà Lạt",
+              "organizer": "Lamdong Trail",
               "currency": "VND",
               "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
               "prices": []
             }
           }
@@ -1572,16 +1503,16 @@
             "text": "enjoysport"
           },
           {
-            "url": "https://5bib.com/vi/events/lamdong-trail-2026_208",
-            "text": "5bib"
-          },
-          {
             "url": "https://www.facebook.com/messages/t/100185755514070",
             "text": "messenger"
           },
           {
             "url": "https://zalo.me/0968869509",
             "text": "zalo"
+          },
+          {
+            "url": "https://5bib.com/vi/events/lamdong-trail-2026_208",
+            "text": "5bib"
           },
           {
             "url": "https://bit.ly/LDT25-dangkynhom",
@@ -1647,8 +1578,7 @@
         "series": {
           "id": "lamdong-trail",
           "name": "Lamdong Trail"
-        },
-        "readBy": "agent"
+        }
       }
     },
     {
@@ -1772,5 +1702,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-15T20:26:01.820Z"
+  "updatedAt": "2026-10-15T20:36:15.851Z"
 }
