@@ -133,7 +133,7 @@ describe("planSync", () => {
     assert.deepEqual(fresh[race.id], {
       lastCheckedAt: null,
       lastChangedAt: race.updatedAt,
-      cadence: "quarterly",
+      cadence: "weekly",
       dueAt: null,
       final: false,
     });

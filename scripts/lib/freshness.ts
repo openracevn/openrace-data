@@ -8,19 +8,30 @@
  */
 import { z } from "zod";
 import { type IndexEntry } from "./schema.ts";
-import { CADENCE_DAYS, CADENCES, siteForUrl, type Cadence, type SitesConfig } from "./sites.ts";
+import { siteForUrl, type SitesConfig } from "./sites.ts";
 import { vietnamDate, type Checks } from "./state.ts";
 
 export const FRESHNESS_PATH = "state/freshness.json";
 export const FRESHNESS_STATUSES = ["fresh", "due", "stale", "final", "unscheduled"] as const;
 export type FreshnessStatus = (typeof FRESHNESS_STATUSES)[number];
 
+/** The API shows these. Since plan 027 a race is weekly (Schedule 1's Monday pass reads every upcoming race on a site with a recipe) or manual. */
+export const CADENCES = ["weekly", "monthly", "quarterly", "yearly", "manual"] as const;
+export type Cadence = (typeof CADENCES)[number];
+export const CADENCE_DAYS: Record<Cadence, number> = {
+  weekly: 7,
+  monthly: 30,
+  quarterly: 91,
+  yearly: 365,
+  manual: Number.POSITIVE_INFINITY,
+};
+
 const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "expected YYYY-MM-DD");
 
 export const FreshnessEntrySchema = z.object({
   lastCheckedAt: z.iso.datetime().nullable(), // newest ok/facts check over the race's source URLs; null: never checked
   lastChangedAt: z.iso.datetime(), // the race file's updatedAt (index lastModified)
-  cadence: z.enum(CADENCES), // most frequent `check` among its sources' sites
+  cadence: z.enum(CADENCES), // weekly when a source is on a site with a recipe (plan 027), else manual
   dueAt: isoDate.nullable(), // Vietnam date of lastCheckedAt + cadence; null when manual or never checked
   final: z.boolean(), // the race's last day (endDate ?? date) is before today in Vietnam
 });
@@ -40,9 +51,8 @@ export function buildFreshness(index: IndexEntry[], checks: Checks, config: Site
     for (const url of entry.sourceUrls) {
       const check = checks[url];
       if (check && (check.status === "ok" || check.status === "facts") && (lastCheckedAt === null || check.lastCheckedAt > lastCheckedAt)) lastCheckedAt = check.lastCheckedAt;
-      // "Most frequent" wins: the cadence with the fewest days between reads.
-      const c = siteForUrl(config, url)?.check ?? "manual";
-      if (CADENCE_DAYS[c] < CADENCE_DAYS[cadence]) cadence = c;
+      const site = siteForUrl(config, url);
+      if (site && site.recipe !== "none") cadence = "weekly";
     }
     const days = CADENCE_DAYS[cadence];
     const dueAt = lastCheckedAt && Number.isFinite(days) ? vietnamDate(new Date(Date.parse(lastCheckedAt) + days * DAY_MS)) : null;

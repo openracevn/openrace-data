@@ -6,7 +6,8 @@ name: Trial run (plan 027)
 # next session checks them). Each schedule posts its result to Discord.
 # GitHub starts this repo's crons 4 to 7.5 hours late, so the cron is 00:07 Vietnam
 # Friday with a retry at 02:07; a run does nothing if an earlier one went through.
-# Delete this file when plan 027 is built.
+# Plan 027 was built the day before (2026-10-15): check --refresh is kept as the old name of
+# --discover for this file. Delete it, and that name, once the trial has been read.
 
 on:
   schedule:

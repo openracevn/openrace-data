@@ -8,20 +8,22 @@
 # hosts:      domains that belong to the site (default: the host of url)
 # recipe:     how to read it: a file in scripts/lib/recipes/, "default" (generic
 #             race-site reader), or "none" (only recognized in links, never read)
-# check:      how often the scheduled run reads it: weekly | monthly | quarterly | yearly | manual
 # trusted:    the recipe's output was checked by eye against the live page (known answer in
-#             test/answers.test.ts or a fixture test). Scheduled runs pay for reads only on
-#             trusted sites (plan 026); other sites get free refreshes and a note in the digest.
+#             test/answers.test.ts or a fixture test). A recorded fact: the scheduled runs
+#             (plan 027) read every site with a recipe, sellers daily, hubs and race sites
+#             every two weeks; the weekly quality check is what makes a site trusted.
 # series / organizer: set on every race this site gives (race-sites and some hubs)
 #
 # Adding a race site is usually just an entry with recipe: default. Give it its own
 # recipe only when the default picks the wrong pages or images (see recipes/README.md).
 
-# Firecrawl credits the scheduled runs may spend per calendar month (UTC). The Free
-# plan has 1,000; paid reads stop at this cap and the run says so. Free checks go on.
+# Firecrawl credits all runs may spend per calendar month (UTC). The Free plan has
+# 1,000; paid reads stop at this cap and the run says so. Free checks go on.
 monthlyCredits: 900
-# Of those, what scheduled runs (refresh.yml, check.yml's cron) may spend; the rest is for manual runs.
-scheduledMonthlyCredits: 600
+# Of those, what Schedule 2 (schedule-2.yml, plan 027) may spend. No per-run cap: the
+# aim is data quality. Provisional (2026-10-15): the whole cap until the trial and the
+# first week measure what a month takes; then both rise to that (and the plan with it).
+scheduledMonthlyCredits: 900
 
 sites:
   # --- Sellers ---
@@ -30,7 +32,6 @@ sites:
     kind: seller
     url: https://actiup.net/vi/events/sports
     recipe: actiup
-    check: weekly
     trusted: true # 82 of 82 prices right (2026-09-24), test/answers.test.ts
 
   - key: bibchung
@@ -38,14 +39,12 @@ sites:
     kind: seller
     url: https://bibchung.pro/events
     recipe: none # TODO: recipe (group price per tier; server-rendered, see firecrawl.md)
-    check: manual
 
   - key: 5bib
     name: 5BIB
     kind: seller
     url: https://5bib.com/
     recipe: none
-    check: manual
 
   - key: irace
     name: iRace
@@ -53,7 +52,6 @@ sites:
     url: https://ticket.irace.vn/
     hosts: [irace.vn, ticket.irace.vn, app.irace.vn]
     recipe: irace
-    check: weekly
     trusted: true # price table parsed from HTML, fixtures in test/recipes.test.ts
 
   - key: ticketbox
@@ -62,35 +60,30 @@ sites:
     url: https://ticketbox.vn/
     hosts: [ticketbox.vn, beta.ticketbox.vn]
     recipe: none
-    check: manual
 
   - key: raceez
     name: Raceez
     kind: seller
     url: https://raceez.com/
     recipe: none
-    check: manual
 
   - key: ticketgo
     name: TicketGo
     kind: seller
     url: https://ticketgo.vn/
     recipe: none
-    check: manual
 
   - key: enjoysport
     name: EnjoySport
     kind: seller
     url: https://enjoysport.vn/
     recipe: none
-    check: manual
 
   - key: timve365
     name: timve365
     kind: seller
     url: https://timve365.vn/
     recipe: none
-    check: manual
 
   - key: njuko
     name: Njuko
@@ -98,28 +91,24 @@ sites:
     url: https://in.njuko.com/
     hosts: [njuko.com, in.njuko.com]
     recipe: none # registration platform (HCMC Marathon)
-    check: manual
 
   - key: pace8
     name: Pace8
     kind: seller
     url: https://pace8.vn/
     recipe: none
-    check: manual
 
   - key: cticket
     name: CTicket
     kind: seller
     url: https://cticket.vn/
     recipe: none # VPBank Hanoi Marathon
-    check: manual
 
   - key: truerace
     name: TrueRace
     kind: seller
     url: https://truerace.org/
     recipe: none
-    check: manual
 
   # --- Hubs ---
   - key: vnexpress-marathon
@@ -127,7 +116,6 @@ sites:
     kind: hub
     url: https://vm.vnexpress.net/
     recipe: vnexpress-marathon
-    check: monthly
     trusted: true # VM Hà Nội 2026, 16 of 16 (2026-09-24), test/answers.test.ts
     organizer: { id: vnexpress, name: VnExpress, website: https://vnexpress.net/ }
 
@@ -136,7 +124,6 @@ sites:
     kind: hub
     url: https://vietnammtbseries.com/vi/series
     recipe: none # TODO: recipe (/event/<slug-year>, dates + venue as text)
-    check: manual
 
   # --- Race sites ---
   - key: hcmc-marathon
@@ -144,7 +131,6 @@ sites:
     kind: race-site
     url: https://hcmcmarathon.com/
     recipe: default
-    check: quarterly
     trusted: true # HCMC Marathon 2027, 48 of 48 (2026-09-24), test/answers.test.ts
     series: { id: hcmc-marathon, name: HCMC Marathon }
     organizer: { id: pulse-active, name: Pulse Active, website: https://pulse.vn/ }
@@ -154,7 +140,6 @@ sites:
     kind: race-site
     url: https://halongmarathon.com/
     recipe: default
-    check: quarterly
     series: { id: ha-long-heritage-marathon, name: Giải Marathon Quốc tế Di sản Hạ Long }
 
   - key: lamdong-trail
@@ -162,7 +147,6 @@ sites:
     kind: race-site
     url: https://lamdongtrail.vn/
     recipe: default
-    check: quarterly
     series: { id: lamdong-trail, name: Lamdong Trail }
 
   - key: run-to-live
@@ -170,7 +154,6 @@ sites:
     kind: race-site
     url: https://runtolive.vn/
     recipe: default
-    check: quarterly
     series: { id: run-to-live, name: Run To Live }
 
   - key: androslakesrace
@@ -178,7 +161,6 @@ sites:
     kind: race-site
     url: https://androslakesrace.com/
     recipe: none # live site is "Coming Soon"; only useful via Wayback Machine snapshots (race-research)
-    check: manual
     series: { id: andros-the-lakes-race, name: Andros Lakes Race }
     organizer: { id: the-lakes-race, name: THE LAKES RACE }
 

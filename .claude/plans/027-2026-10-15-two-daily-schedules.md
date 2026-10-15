@@ -1,6 +1,6 @@
 # Plan 027: Two daily schedules, done before 07:00 Vietnam, paid reads for data quality
 
-Date: 2026-10-15 (written), build in the next session. Status: **written; trial run Friday 2026-10-16** (`.github/workflows/trial.yml`). Spans openrace-data (scripts, workflows, docs) and one small Cloudflare Worker for the timing. No API or MCP change.
+Date: 2026-10-15 (written), build in the next session. Status: **built 2026-10-15, before the trial (the user's call), except step 4; trial run Friday 2026-10-16** (`.github/workflows/trial.yml`). See "Built" at the end. Spans openrace-data (scripts, workflows, docs) and one small Cloudflare Worker for the timing. No API or MCP change.
 
 ## Roadmap fit
 
@@ -72,3 +72,14 @@ GitHub starts this repo's crons 4 to 7.5 hours late (observed 2026-10-02 to 10-1
 - Cron 00:07 Vietnam Friday (17:07 UTC Thursday), retry at 02:07; the retry does nothing if the first run went through. Expected in Discord well before 09:00, but GitHub doesn't guarantee start times; if nothing has arrived, start it by hand from the Actions tab (Trial run, Run workflow).
 
 What to read from the trial in the next session: credits per site and per page, pages read vs skipped as unchanged, what changed in the data, and what the three untrusted sites committed, against their live pages.
+
+## Built (2026-10-15)
+
+The user asked to build it the day before the trial, keep the trial, and skip the Worker for now.
+
+- **Code:** `scripts/lib/todo.ts` (the list, `discoverySites`, `weeklyPages`, `readDoneToday`), `check.ts --discover` (`--refresh` kept as its old name while `trial.yml` uses it) and `--todo`, `--force` to run either again the same day. A page read in any run leaves the list. `--scheduled`, `isSiteDue`, `check:` in `config/sites.yaml` and `pending` are gone; `state/checks.json`'s 41 upcoming pending or never-read pages went on the list. `state/credits.json` also keeps a key per Vietnam day (62 days) for the digest's week. Freshness `cadence` (the API shows it) is `weekly` for any race with a source on a recipe site, else `manual`. Tests: `test/todo.test.ts`, `test/check-order.test.ts`, `test/digest.test.ts`.
+- **Workflows:** `schedule-1.yml` (cron 00:07 Vietnam, retry 02:07), `schedule-2.yml` (`workflow_run` on Schedule 1, fallback 03:07; then waits for Main and sends `repository_dispatch data-updated` to openrace-web, whose two daily crons are gone; a `web_only` button rebuilds the site alone), `digest.yml` (Monday 09:00: digest, then weekly numbers). Removed: `refresh.yml`, `stale.yml`, `weekly.yml`, the crons of `check.yml` and `main.yml`. Neither schedule runs on 2026-10-16 (the trial's day) unless started by hand.
+- **Credits:** `scheduledMonthlyCredits: 900`, the whole cap, until the trial and the first week give a number. The trial may spend up to 685 of October's remaining credits, so Schedule 2 may hit the cap before November: pages then stay on the list (not counted as failures) and the run says so.
+- **Not built:** step 4, the Cloudflare Worker. Without it the crons start hours late and the 07:00 target isn't guaranteed. To add: a Worker with cron triggers dispatching `schedule-1.yml` (04:00), `schedule-2.yml` (05:00) and `digest.yml` (Monday 09:00), a fine-grained token (Actions: read and write on openrace-data) as its secret, then the crons go.
+- **Next session:** read the trial (credits per site and page, what changed, the three untrusted sites against their live pages), delete `trial.yml` and the `--refresh` name, set the ceiling, and watch the first week (step 6).
+

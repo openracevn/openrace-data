@@ -1,0 +1,32 @@
+name: Data digest
+
+# Every Monday 09:00 in Vietnam (plans 026, 027), two Discord messages: the data digest
+# (freshness share of the upcoming races, the to-do list and what Schedule 2 couldn't
+# read, races that need an update-race session with the reason, the week's and month's
+# Firecrawl credits), then the weekly numbers (MCP tool calls, caller keys and clients,
+# completeness against a week before, from openrace-mcp's public /weekly.json). No page
+# reads and no credits: it only reads the committed files. GitHub starts it late (hours);
+# a Cloudflare Worker will dispatch it on time (plan 027, step 4).
+on:
+  schedule:
+    - cron: "0 2 * * 1"
+  workflow_dispatch:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run notify:stale
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      - run: npm run notify:weekly
+        if: always()
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}

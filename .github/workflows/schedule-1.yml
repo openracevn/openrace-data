@@ -1,0 +1,84 @@
+name: Schedule 1 (discovery)
+
+# Plan 027. Daily, free: lists ActiUp and iRace (every seller with a recipe) every day,
+# and the hubs and race sites with a recipe on Monday of even ISO weeks; snapshots their
+# pages and puts new and changed ones on state/todo.json. On Monday it also puts every
+# source page of every upcoming race there. 0 Firecrawl credits; one commit (state/,
+# plus data/ when a new race comes from free facts). Schedule 2 starts when it finishes.
+# GitHub starts this repo's crons 4 to 7.5 hours late, so the cron is 00:07 Vietnam with
+# a retry at 02:07; a run does nothing if today's discovery already went through. Once
+# a Cloudflare Worker dispatches it on time (plan 027, step 4), the cron goes.
+on:
+  schedule:
+    - cron: "7 17 * * *"
+    - cron: "7 19 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Run even if today's discovery already went through"
+        type: boolean
+        default: false
+      dry_run:
+        description: "Show the plan, don't commit"
+        type: boolean
+        default: false
+
+# Shares check.yml's group: never two runs on the same pages at once.
+concurrency:
+  group: check-races
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      # Friday 2026-10-16 is trial.yml's day (plan 027); the schedules start Saturday.
+      - id: gate
+        run: |
+          day=$(TZ=Asia/Ho_Chi_Minh date +%F)
+          if [[ "${{ github.event_name }}" == "schedule" && "$day" == "2026-10-16" ]]; then echo "go=false" >> "$GITHUB_OUTPUT"; else echo "go=true" >> "$GITHUB_OUTPUT"; fi
+      - if: steps.gate.outputs.go == 'true'
+        uses: actions/checkout@v7
+      - if: steps.gate.outputs.go == 'true'
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - if: steps.gate.outputs.go == 'true'
+        run: npm ci
+      - name: Discovery (free)
+        if: steps.gate.outputs.go == 'true'
+        env:
+          # A PAT, not the built-in token: commits must trigger main.yml (validate + Discord).
+          GITHUB_TOKEN: ${{ secrets.OPENRACE_BOT_TOKEN }}
+          GITHUB_OWNER: ${{ github.repository_owner }}
+          GITHUB_REPO: ${{ github.event.repository.name }}
+          GITHUB_BRANCH: ${{ github.event.repository.default_branch }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          FORCE: ${{ inputs.force }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          args=(--discover)
+          if [[ "$FORCE" == "true" ]]; then args+=(--force); fi
+          if [[ "$DRY_RUN" == "true" ]]; then args+=(--dry-run); fi
+          npm run -s check -- "${args[@]}" 2>&1 | tee "$RUNNER_TEMP/run.log"
+          exit "${PIPESTATUS[0]}"
+      - name: Post to Discord
+        if: always() && steps.gate.outputs.go == 'true'
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          JOB_STATUS: ${{ job.status }}
+        run: |
+          [[ -n "$DISCORD_WEBHOOK_URL" ]] || exit 0
+          log="$RUNNER_TEMP/run.log"
+          # A retry that found today's run done says nothing.
+          if grep -q "already ran today" "$log" 2>/dev/null; then exit 0; fi
+          body=$(grep -E '^- (Sites|To-do list|Races|Commit)|^- Monday' "$log" 2>/dev/null | sed 's/^- /· /' || true)
+          msg=$(printf ':one: **Schedule 1 (discovery, free)**: %s\n%s\n%s' "$JOB_STATUS" "${body:-no output}" "$RUN_URL" | head -c 1990)
+          jq -n --arg content "$msg" '{username: "OpenRace Data", content: $content, allowed_mentions: {parse: []}}' |
+            curl -fsS -X POST -H 'Content-Type: application/json' --data @- "$DISCORD_WEBHOOK_URL"

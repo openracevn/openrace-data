@@ -1,18 +1,18 @@
-// Plan 026, step 5: the Monday data digest's rules (lib/digest.ts).
+// Plans 026 and 027: the Monday data digest's rules (lib/digest.ts).
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { DISCORD_LIMIT, buildDigest, freshnessShare, needsYou, pendingPages, type DigestInput } from "../scripts/lib/digest.ts";
+import { DISCORD_LIMIT, buildDigest, formatTodo, freshnessShare, needsYou, unresolved, type DigestInput } from "../scripts/lib/digest.ts";
 import type { FreshnessEntry } from "../scripts/lib/freshness.ts";
 import { RaceSchema, type IndexEntry, type Race } from "../scripts/lib/schema.ts";
 import { parseSites } from "../scripts/lib/sites.ts";
-import type { Checks } from "../scripts/lib/state.ts";
+import { emptyTodo, type Todo } from "../scripts/lib/todo.ts";
 
 const config = parseSites(`
 monthlyCredits: 900
 scheduledMonthlyCredits: 600
 sites:
-  - { key: actiup, name: ActiUp, kind: seller, url: "https://actiup.net/vi/events/sports", recipe: actiup, check: weekly, trusted: true }
-  - { key: halong-marathon, name: Hạ Long Marathon, kind: race-site, url: "https://halongmarathon.com/", recipe: default, check: quarterly }
+  - { key: actiup, name: ActiUp, kind: seller, url: "https://actiup.net/vi/events/sports", recipe: actiup, trusted: true }
+  - { key: halong-marathon, name: Hạ Long Marathon, kind: race-site, url: "https://halongmarathon.com/", recipe: default }
 `);
 
 const now = new Date("2026-10-13T03:00:00Z"); // 10:00 in Vietnam, 2026-10-13
@@ -68,7 +68,7 @@ function race(n: number, r: Partial<Race> = {}): Race {
   });
 }
 
-const base = (over: Partial<DigestInput> = {}): DigestInput => ({ index: [], races: new Map(), freshness: {}, checks: {}, config, credits: { "2026-10": 150 }, now, ...over });
+const base = (over: Partial<DigestInput> = {}): DigestInput => ({ index: [], races: new Map(), freshness: {}, todo: emptyTodo(), config, credits: { "2026-10": 150, "2026-10-06": 20, "2026-10-12": 30 }, now, ...over });
 
 describe("data digest", () => {
   it("recomputes final from the index's dates, so a race that took place since the last commit isn't counted", () => {
@@ -78,26 +78,24 @@ describe("data digest", () => {
     assert.deepEqual(needsYou(base({ index, freshness })), []);
   });
 
-  it("splits pending pages by trusted site, and counts a page no race has yet", () => {
-    const index = [entry(1, {}), entry(2, { sourceUrls: ["https://halongmarathon.com/"] }), entry(3, { date: "2026-10-01" })];
-    const checks: Checks = {
-      "https://actiup.net/vi/event/race-1": { lastCheckedAt: "2026-10-13T00:00:00.000Z", status: "ok", fingerprint: "a", pending: "b" },
-      "https://halongmarathon.com/": { lastCheckedAt: "2026-10-13T00:00:00.000Z", status: "ok", fingerprint: "a", pending: "b" },
-      "https://actiup.net/vi/event/race-3": { lastCheckedAt: "2026-10-13T00:00:00.000Z", status: "facts" }, // final race: not counted
-      "https://ticket.irace.vn/new-race": { lastCheckedAt: "2026-10-13T00:00:00.000Z", status: "facts" }, // no race yet: counted
-      "https://actiup.net/vi/event/read": { lastCheckedAt: "2026-10-13T00:00:00.000Z", status: "ok", fingerprint: "a" },
-    };
-    const pages = pendingPages(index, checks, config, now);
-    assert.deepEqual(
-      pages.map((p) => [p.name, p.trusted]),
-      [
-        ["Race 1", true],
-        ["Race 2", false],
-        ["https://ticket.irace.vn/new-race", false],
+  it("counts the to-do list by reason, and lists pages Schedule 2 gave up on", () => {
+    const index = [entry(1, {}), entry(2, { sourceUrls: ["https://halongmarathon.com/"] })];
+    const at = "2026-10-13T00:00:00.000Z";
+    const todo: Todo = {
+      ...emptyTodo(),
+      entries: [
+        { url: "https://actiup.net/vi/event/race-1", raceId: ID(1), reason: "weekly", addedAt: at },
+        { url: "https://halongmarathon.com/", reason: "changed", addedAt: at, failures: 3, lastError: "HTTP 404" },
+        { url: "https://ticket.irace.vn/new-race", reason: "new", addedAt: at, failures: 1, lastError: "timeout" },
       ],
+    };
+    assert.equal(formatTodo(todo), "To-do list: 3 pages (1 new, 1 changed, 1 weekly), at most about 30 credits");
+    assert.deepEqual(
+      unresolved(todo, index).map((p) => [p.name, p.failures]),
+      [["Race 2", 3]],
     );
-    const text = buildDigest(base({ index, checks }));
-    assert.match(text, /Pending a paid read: 3 pages, about 30 credits \(Tuesday's run takes 1; 2 wait for a check by hand: Race 2 on halongmarathon.com, https:\/\/ticket.irace.vn\/new-race on ticket.irace.vn\)/);
+    const text = buildDigest(base({ index, todo }));
+    assert.match(text, /Schedule 2 couldn't read: 1 page\n• Race 2 on halongmarathon.com \(3×: HTTP 404\)/);
   });
 
   it("lists stale races first (oldest check first), then gaps by race day, and not a race with only a series gap", () => {
@@ -127,20 +125,24 @@ describe("data digest", () => {
     );
   });
 
-  it("doesn't ask a person for prices, courses or types while Tuesday's run has the page pending", () => {
+  it("doesn't ask a person for prices, courses or types while the page is on the to-do list", () => {
     const index = [entry(1, {}), entry(2, { sourceUrls: ["https://halongmarathon.com/"] })];
     const races = new Map([
       [ID(1), race(1, { prices: [], courses: [] })],
       [ID(2), race(2, { prices: [] })],
     ]);
-    const checks: Checks = {
-      "https://actiup.net/vi/event/race-1": { lastCheckedAt: "2026-10-13T00:00:00.000Z", status: "facts" },
-      "https://halongmarathon.com/": { lastCheckedAt: "2026-10-13T00:00:00.000Z", status: "ok", fingerprint: "a", pending: "b" },
+    const at = "2026-10-13T00:00:00.000Z";
+    const todo: Todo = {
+      ...emptyTodo(),
+      entries: [
+        { url: "https://actiup.net/vi/event/race-1", reason: "new", addedAt: at },
+        { url: "https://halongmarathon.com/", reason: "changed", addedAt: at, failures: 3, lastError: "HTTP 500" },
+      ],
     };
     const freshness = { [ID(1)]: fresh({}), [ID(2)]: fresh({}) };
-    // Race 1: ActiUp (trusted) reads it on Tuesday. Race 2: an untrusted site, so a person must check it.
+    // Race 1: Schedule 2 reads it next. Race 2: Schedule 2 gave up on its page, so a person must check it.
     assert.deepEqual(
-      needsYou(base({ index, races, checks, freshness })).map((r) => [r.name, r.reasons]),
+      needsYou(base({ index, races, todo, freshness })).map((r) => [r.name, r.reasons]),
       [["Race 2", ["no prices"]]],
     );
   });
@@ -163,6 +165,6 @@ describe("data digest", () => {
     assert.ok(text.length <= DISCORD_LIMIT, `${text.length} chars`);
     assert.match(text, /Needs you: 40 races/);
     assert.match(text, /…and \d+ more/);
-    assert.match(text, /Credits this month: 150 of 600 scheduled \(900 cap\)$/);
+    assert.match(text, /Credits: 30 this week · this month 150 of 600 scheduled \(900 cap\)$/);
   });
 });

@@ -1,9 +1,9 @@
 /**
- * The Monday data digest (plan 026): what needs attention, as one Discord message.
- * Freshness share of the upcoming races, pages pending a paid read (and whether
- * Tuesday's scheduled run takes them), races that need a Claude `update-race`
- * session with the reason, and the month's Firecrawl credits. Run by
- * .github/workflows/stale.yml (Mondays, 08:00 in Vietnam) or by hand, any day:
+ * The Monday data digest (plans 026, 027): what needs attention, as one Discord
+ * message. Freshness share of the upcoming races, the to-do list Schedule 2 reads
+ * and the pages it couldn't read, races that need a Claude `update-race` session
+ * with the reason, and the week's and month's Firecrawl credits. Run by
+ * .github/workflows/digest.yml (Mondays, 09:00 in Vietnam) or by hand, any day:
  *
  *   npm run notify:stale -- --dry-run   # print the message instead of posting
  *
@@ -17,7 +17,8 @@ import { env } from "./lib/env.ts";
 import { FRESHNESS_PATH, FreshnessSchema } from "./lib/freshness.ts";
 import { INDEX_PATH, IndexSchema, RACES_DIR, RaceSchema, upgradeRace, type Race } from "./lib/schema.ts";
 import { loadSites } from "./lib/sites.ts";
-import { CHECKS_PATH, CREDITS_PATH, parseChecks, parseCredits } from "./lib/state.ts";
+import { CREDITS_PATH, parseCredits } from "./lib/state.ts";
+import { TODO_PATH, parseTodo } from "./lib/todo.ts";
 
 const dryRun = process.argv.includes("--dry-run");
 
@@ -37,7 +38,7 @@ for (const file of readdirSync(RACES_DIR).filter((f) => f.endsWith(".json"))) {
   if (parsed.success) races.set(parsed.data.id, parsed.data);
 }
 
-const content = buildDigest({ index, races, freshness, checks: parseChecks(read(CHECKS_PATH)), config: loadSites(), credits: parseCredits(read(CREDITS_PATH)), now: new Date() });
+const content = buildDigest({ index, races, freshness, todo: parseTodo(read(TODO_PATH)), config: loadSites(), credits: parseCredits(read(CREDITS_PATH)), now: new Date() });
 
 if (dryRun) {
   console.log(content);

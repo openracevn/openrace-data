@@ -4,9 +4,10 @@
 
 | Component | Where it runs | Code | Job |
 | --- | --- | --- | --- |
-| Race refresh (plan 026, lane A) | GitHub Actions `refresh.yml`, daily 07:50 in Vietnam | `scripts/check.ts --refresh --scheduled` | Free: lists every seller (ActiUp, iRace) and the sites that are due, records unchanged pages as checked, refreshes free facts (dates, venue, sale status, "from" price, iRace's price table) on changed pages and marks them `pending` in `state/checks.json`, creates new races from facts. 0 credits |
-| Race checker (plan 026, lane B) | GitHub Actions `check.yml`, Tuesdays 08:00 in Vietnam (`--scheduled --max-credits 150`), and by hand with inputs | `scripts/check.ts` | Reads pending pages (and other changed pages) with Firecrawl, pending and soonest race day first, only on sites marked `trusted` in `config/sites.yaml`; stops at `scheduledMonthlyCredits` (600); commits to GitHub |
-| Monday digest | GitHub Actions `stale.yml`, Mondays 08:00 in Vietnam | `scripts/notify-stale.ts` | The to-do list: freshness share, pages pending a read (and which lane takes them), races that need a Claude `update-race` session, credits spent |
+| Schedule 1: discovery (plan 027) | GitHub Actions `schedule-1.yml`, daily, cron 00:07 Vietnam with a 02:07 retry (GitHub starts it hours late) | `scripts/check.ts --discover` | Free: lists the sellers with a recipe (ActiUp, iRace) daily and the hubs and race sites with a recipe on Monday of even ISO weeks, records unchanged pages as checked, refreshes free facts on changed pages, creates new races from facts, and puts new and changed pages on `state/todo.json`. On Monday it adds every source page of every upcoming race. Once a day (a retry does nothing). 0 credits |
+| Schedule 2: details (plan 027) | GitHub Actions `schedule-2.yml`, when Schedule 1 finishes (fallback cron 03:07 Vietnam) | `scripts/check.ts --todo` | Reads every page on the to-do list with Firecrawl (past races dropped, an unchanged page from the read cache for free), any site with a recipe, no per-run cap, `scheduledMonthlyCredits` per month; a page leaves the list once read, and one that fails 3 times goes to the digest. Commits, waits for Main, then starts openrace-web's Deploy (`repository_dispatch data-updated`) |
+| Race checker (button) | GitHub Actions `check.yml`, by hand with inputs | `scripts/check.ts` | A site, a race, or every site with a recipe now; full monthly cap |
+| Monday digest | GitHub Actions `digest.yml`, Mondays 09:00 in Vietnam (cron, so hours late) | `scripts/notify-stale.ts`, then `scripts/notify-weekly.ts` | The data digest: freshness share, the to-do list and what Schedule 2 couldn't read, races that need a Claude `update-race` session, the week's and month's credits. Then the weekly numbers |
 | Firecrawl | Firecrawl (hosted API) | `scripts/lib/firecrawl.ts` | Scrapes and renders pages, and does the LLM JSON extraction (`/v2/scrape`), for ActiUp (primary) and bibchung (group-purchase prices) |
 | Data repo `openracevn/openrace-data` (public, not promoted; the API reads it without a token) | GitHub | `data/`, `state/` | SSOT: `data/races/*.json` + `data/index.json`; the check log is `state/checks.json`; git history is the audit trail |
 | Main workflow | GitHub Actions | `.github/workflows/main.yml` | Validates pushes to `main`; when `data/` changed, notifies the API and Discord. One job (each job bills a minute and reinstalls dependencies; the repo hit the free-minutes cap on 2026-09-29 at ~21 pushes a day) |
@@ -14,22 +15,24 @@
 | Discord channel | Discord | `scripts/notify-discord.ts` | Human-readable change feed |
 | openrace-api | Cloudflare Worker + D1, `https://openrace-api.bmp.workers.dev` | separate repo (`../openrace-api`), deployed by hand (`pnpm run deploy`) | Receives the resync webhook, pulls changed race files plus series and organizers, answers openrace-mcp. **Internal since 2026-10-12 (plan 025):** every route except `/internal/*` answers 404 without `X-MCP-Secret`; the public URL stays only for the sync webhook (`X-Sync-Secret`). Daily cron 00:30 UTC |
 | openrace-mcp | Cloudflare Worker, `https://openrace-mcp.bmp.workers.dev/mcp` | separate repo (`../openrace-mcp`), deploys on push to `main` | **The product and the only public way in.** Calls openrace-api through the service binding `API` with `X-MCP-Secret`. Serves `/` (docs), `/llms.txt` (about, how to connect, license), `/health`, `/dash` (usage) |
-| openrace-web | Cloudflare Worker static assets, `https://openrace-web.bmp.workers.dev` | separate repo (`../openrace-web`), deployed by its `deploy.yml` on push and at 12:00 and 20:00 Vietnam | The website, back 2026-10-13 after the 2026-10-12 archive. Every page is rendered ahead of time (`pnpm mirror`) and served as a static file, so a view runs no code (the free plan's CPU limit took the old Worker down, error 1102). A tiny Worker handles only search, filter counts and filtered list URLs. Rendering reads openrace-api's public URL with `X-MCP-Secret`; the Worker uses the service binding. Pages are a snapshot until the next run. KV `openrace-web-inc-cache` is no longer used |
+| openrace-web | Cloudflare Worker static assets, `https://openrace-web.bmp.workers.dev` | separate repo (`../openrace-web`), deployed by its `deploy.yml` on push and once a day after Schedule 2 (`repository_dispatch`) | The website, back 2026-10-13 after the 2026-10-12 archive. Every page is rendered ahead of time (`pnpm mirror`) and served as a static file, so a view runs no code (the free plan's CPU limit took the old Worker down, error 1102). A tiny Worker handles only search, filter counts and filtered list URLs. Rendering reads openrace-api's public URL with `X-MCP-Secret`; the Worker uses the service binding. Pages are a snapshot until the next run. KV `openrace-web-inc-cache` is no longer used |
 
 ## Data flow
 
 ```
-refresh.yml (daily 00:50 UTC)            check.yml (Tuesdays 01:00 UTC, or workflow_dispatch with inputs)
-  │ npm run check -- --refresh --scheduled  │ npm run check -- --scheduled --max-credits 150
-  │  1. read data/index.json, race files and state/ at main HEAD (GitHub API)
-  │  2. discover: each site's listing (ActiUp API, iRace home, hub/race-site pages), free
-  │  3. snapshot each upcoming race page (free HTTP) and fingerprint it; pending pages and
-  │     the soonest race day first
-  │  4. per page: unchanged → checked; changed and cached → read for free; changed and a
-  │     paid read allowed (lane B, trusted site, budget) → Firecrawl, 5 credits per page or
-  │     image, 6.5 s apart; otherwise → stored read kept, free facts refreshed, `pending`
-  │  5. syncToGitHub: planSync against main HEAD + merge the check log → ONE commit
-  │     (createTree → createCommit → updateRef force:false; retry ×3 if main moved)
+schedule-1.yml (daily, 17:07 UTC)              ──completed──▶  schedule-2.yml (or 20:07 UTC fallback)
+  │ npm run check -- --discover (free)            │ npm run check -- --todo (paid)
+  │  1. read data/index.json, race files and state/ (todo.json too) at main HEAD (GitHub API)
+  │  2. S1: each due site's listing (ActiUp API, iRace home, hub/race-site pages), free;
+  │     S2: the pages on state/todo.json, past races dropped
+  │  3. snapshot each page (free HTTP) and fingerprint it; never-read pages and the soonest
+  │     race day first
+  │  4. S1, per page: unchanged → checked; changed or new → free facts refreshed, on the
+  │     to-do list; Monday: every upcoming race's pages on the list too.
+  │     S2, per page: cached → read for free; else Firecrawl, 5 credits per page or image,
+  │     6.5 s apart; read → off the list; failed → failures+1 (3 → the digest)
+  │  5. syncToGitHub: planSync against main HEAD + merge the check log and the list → ONE
+  │     commit (createTree → createCommit → updateRef force:false; retry ×3 if main moved)
   ▼
 openracevn/openrace-data main   (commit authored with the OPENRACE_BOT_TOKEN PAT, so it triggers main.yml)
   ▼
@@ -43,9 +46,9 @@ main.yml  (skipped entirely when only state/** changed; ONE job, steps in this o
   └─ alert discord    only if a step above failed (plan 025)
 ```
 
-**Monday digest:** `stale.yml` (Mondays 08:00 in Vietnam) runs `npm run notify:stale`: freshness share of the non-final races (final recomputed from the index's dates at read time), pages pending a read with the estimated credits and which lane takes them (Tuesday's run, or a check by hand on an untrusted site), races that need a Claude session (`update-race`, with the reason), and the month's credits. `npm run notify:stale -- --dry-run` prints it any day: it is the answer to "what needs attention today".
+**Monday digest:** `digest.yml` (Mondays 09:00 in Vietnam) runs `npm run notify:stale`: freshness share of the non-final races (final recomputed from the index's dates at read time), the to-do list by reason with the most it could cost, the pages Schedule 2 failed to read 3 times, races that need a Claude session (`update-race`, with the reason), and the week's and month's credits (`state/credits.json` keeps a day key per Vietnam day for 62 days). `npm run notify:stale -- --dry-run` prints it any day: it is the answer to "what needs attention today".
 
-**Weekly numbers:** `weekly.yml` (Mondays 08:10 in Vietnam) runs `npm run notify:weekly`: one Discord message with MCP tool calls, caller keys and clients per week and the completeness score against a week before, read from openrace-mcp's public `/weekly.json`. These are the numbers OpenRace is measured by (roadmap: not page views).
+**Weekly numbers:** `digest.yml` then runs `npm run notify:weekly`: one Discord message with MCP tool calls, caller keys and clients per week and the completeness score against a week before, read from openrace-mcp's public `/weekly.json`. These are the numbers OpenRace is measured by (roadmap: not page views).
 
 **End-to-end check:** `npm run e2e` (`scripts/e2e-check.ts`, plan 025) checks the whole chain against the deployed Workers: the API is closed (404) but its webhook answers, the MCP server is up, every tool answers the roadmap questions, and races in this checkout match what `get_race` returns. No secrets, no writes, ~20 MCP calls. Run it on an up-to-date `main` after any change to the API, the MCP server or the sync.
 

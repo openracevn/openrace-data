@@ -3,13 +3,12 @@ name: Main
 # Validation runs on every push to main; the API resync and Discord notification
 # (and a Discord alert whenever the job fails, plan 025)
 # only run when the push touched data/. Includes commits made by the race checker
-# (check.yml commits with a PAT, so they trigger workflows; GITHUB_TOKEN pushes
+# (the schedules and check.yml commit with a PAT, so they trigger workflows; GITHUB_TOKEN pushes
 # would not). Pushes that only touch the check log are skipped entirely.
 # Run it by hand (Actions tab → Main → Run workflow) to resync the API without a
 # commit: it validates main, then calls the API (no Discord message).
-# It also runs daily at 00:40 UTC (07:40 in Vietnam), just after D1's daily write quota
-# resets, as a backup: a sync that failed (quota, outage) catches up. Unchanged files
-# cost the API nothing.
+# No cron since plan 027: pushes start it, and a failed sync says so in Discord (run it
+# by hand to catch up). Unchanged files cost the API nothing.
 # One job on purpose: every job bills at least a minute and reinstalls dependencies,
 # and data pushes are frequent. Typecheck and unit tests are skipped when a push
 # only touched data/.
@@ -19,8 +18,6 @@ on:
     paths-ignore:
       - "state/**"
   workflow_dispatch:
-  schedule:
-    - cron: "40 0 * * *"
 
 jobs:
   main:

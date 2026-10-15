@@ -9,7 +9,7 @@ The user says `update race A, race B, series C`. You decide what each target nee
 
 Read `.claude/docs/roadmap.md` first (trust principles). Firecrawl is **opt-in**: use it only when the user asks, and say the cost first. Everything below is free.
 
-**Where the targets come from (plan 026):** the Monday Discord digest (`npm run notify:stale -- --dry-run` prints it any day) lists the races that need a session and why. Pages it lists as "pending a paid read" on a trusted site are read by Tuesday's scheduled run: don't spend a session on those unless the user asks. New races created from free facts (status `facts`) get their prices from that run too.
+**Where the targets come from (plans 026, 027):** the Monday Discord digest (`npm run notify:stale -- --dry-run` prints it any day) lists the races that need a session and why, and the pages Schedule 2 couldn't read. Pages on the to-do list (`state/todo.json`) are read by the next morning's Schedule 2: don't spend a session on those unless the user asks. New races created from free facts (status `facts`) get their prices from that run too.
 
 ## 1. Resolve each target into a unit
 

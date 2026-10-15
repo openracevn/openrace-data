@@ -103,15 +103,16 @@ npm run renormalize [-- --commit]     # re-derive every race from stored reads (
 npm run geo [-- --refresh]            # locate races not in state/geo.json yet (Nominatim 1/s, OSRM demo or ORS_API_KEY)
 npm run geo:ref                       # rebuild ref/ from the pinned sources
 npm run freshness                     # rebuild state/freshness.json locally
-npm run notify:stale -- --dry-run     # the weekly stale-races Discord line
+npm run notify:stale -- --dry-run     # the Monday data digest
 npm run sync -- inputs.json [--commit]   # commit extractions made elsewhere (e.g. by an agent)
 npm run typecheck && npm test && npm run validate
 ```
 
 GitHub Actions:
-- **Check races** (`check.yml`) runs the checker. It's manual only; the schedule is off until the data is trusted.
-- **Main** validates every push, resyncs openrace-api when `data/` changed, and posts data changes to Discord. It also runs daily at 07:40 in Vietnam as a backup sync (after D1's daily write quota resets). Run it by hand for a full resync, but not many times a day: D1's free plan allows 100,000 row writes a day.
-- **Stale races** (`stale.yml`) posts the stale upcoming races to Discord every Monday. Routine checks only touch `state/`, which Main ignores: the API's daily cron reads `state/freshness.json` itself.
+- **Schedule 1** (`schedule-1.yml`, daily, free) lists the sites and puts new and changed race pages on `state/todo.json`; on Monday every upcoming race too. **Schedule 2** (`schedule-2.yml`) follows it and reads that list with Firecrawl, then rebuilds openrace-web once. See plan 027.
+- **Check races** (`check.yml`) runs the checker by hand: one site, one race, or every site.
+- **Main** validates every push, resyncs openrace-api when `data/` changed, and posts data changes to Discord. Run it by hand for a full resync, but not many times a day: D1's free plan allows 100,000 row writes a day.
+- **Data digest** (`digest.yml`) posts the data digest and the weekly numbers to Discord every Monday. Routine checks only touch `state/`, which Main ignores: the API's daily cron reads `state/freshness.json` itself.
 
 ## Limits to know
 

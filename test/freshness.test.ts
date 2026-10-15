@@ -30,7 +30,7 @@ const entry = (e: Partial<IndexEntry>): IndexEntry => ({
 const now = new Date("2026-09-24T03:00:00Z"); // 10:00 in Vietnam
 
 describe("freshness file", () => {
-  it("takes the newest ok or facts check over the race's sources, and the most frequent cadence", () => {
+  it("takes the newest ok or facts check over the race's sources, and weekly when a source is on a site with a recipe", () => {
     const checks: Checks = {
       [ACTIUP]: { lastCheckedAt: "2026-09-21T00:00:00.000Z", status: "ok" },
       [HCMC]: { lastCheckedAt: "2026-09-23T00:00:00.000Z", status: "facts" },

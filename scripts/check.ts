@@ -1,21 +1,29 @@
 /**
- * The race checker (design v2), run by .github/workflows/check.yml or by hand.
+ * The race checker (design v2), run by the two daily schedules (plan 027), by
+ * .github/workflows/check.yml's button, or by hand.
  *
- *   npm run check                               # every site that is due (the scheduled run)
- *   npm run check -- --site <key>               # one site now, whatever its schedule
+ *   npm run check -- --discover                 # Schedule 1 (free): list the sites, fill the to-do list
+ *   npm run check -- --todo                     # Schedule 2 (paid): read every page on the to-do list
+ *   npm run check -- --site <key>               # one site now
  *   npm run check -- --race <url|id|slug>       # one race now
+ *   npm run check                               # every site with a recipe now
  *
  * Options:
  *   --past            also races that already took place (backfill)
  *   --limit N         at most N races per site (tests, small batches)
- *   --max-credits N   Firecrawl credits this run may spend (default 250; the month's cap in config/sites.yaml also applies)
+ *   --max-credits N   Firecrawl credits this run may spend (default 250, none with --todo; the
+ *                     month's cap in config/sites.yaml also applies)
  *   --free            no paid reads: only what's cached; reports what would be read
- *   --refresh         the daily free run (plan 026): --free, plus every seller site whatever its
- *                     cadence (sellers list many races and change often; hubs and race sites keep
- *                     their cadence). Costs 0 credits; see "what a run does to a page" below.
- *   --scheduled       a cron run (plan 026): the month's cap is scheduledMonthlyCredits, and paid
- *                     reads happen only on sites marked trusted in config/sites.yaml; other sites
- *                     get the free refresh and wait for a paid check by hand.
+ *   --discover        Schedule 1 (plan 027): --free on the sites due today (lib/todo.ts
+ *                     discoverySites: sellers daily, hubs and race sites on Monday of even ISO
+ *                     weeks), or on --site. New and changed pages go on state/todo.json; on Monday
+ *                     every source page of every upcoming race does too. 0 credits. Without
+ *                     --site it runs once a day (--force runs it again). --refresh is the old
+ *                     name, kept while trial.yml uses it.
+ *   --todo            Schedule 2 (plan 027): read every page on state/todo.json (past races are
+ *                     dropped), even an unchanged one (a cached read costs nothing). A page leaves
+ *                     the list once read; a failure counts against it. The month's cap is
+ *                     scheduledMonthlyCredits. Runs once a day after Schedule 1 (--force again).
  *   --facts-only      no reads at all: create or update races from the site's free data only
  *                     (ActiUp's API: name, dates, place, organizer, sale status). Prices,
  *                     courses and types come with a later normal run, which still reads
@@ -25,19 +33,20 @@
  *   --preview <dir>   with --dry-run: write the planned files under <dir>
  *
  * For each site: the recipe lists its races and takes a snapshot of each (free).
- * Pages never read in full and pages changed since (pending) come first, then the
- * soonest race day, so a credit cap starves the races that matter least.
+ * Pages never read in full come first, then the soonest race day, so a credit cap
+ * starves the races that matter least.
  *
- * What a run does to a page (plan 026):
- *   - unchanged fingerprint: the check is recorded (the source said the same), 0 credits;
+ * What a run does to a page (plans 026, 027):
+ *   - unchanged fingerprint: the check is recorded (the source said the same), 0 credits
+ *     (--race and --todo read it anyway);
  *   - changed, and every page and image is in the read cache: read for free, recorded ok;
- *   - changed, and a paid read is possible (budget, trusted site, not --free): read with
- *     Firecrawl, cached by content, recorded ok;
+ *   - changed, and a paid read is possible (budget, not --free): read with Firecrawl,
+ *     cached by content, recorded ok, and off the to-do list;
  *   - changed, but no paid read now: the stored read is kept and the site's free facts
  *     (name, dates, venue, sale status, "from" price...) and links replace the old ones;
- *     the page is marked `pending` in state/checks.json until a later run reads it;
+ *     the page goes on the to-do list (`changed`) for Schedule 2;
  *   - never read in full, and no paid read now: a race from the free facts alone, as
- *     --facts-only does (status `facts`, no fingerprint: still to be read).
+ *     --facts-only does (status `facts`, no fingerprint), and on the to-do list (`new`).
  * Everything lands in one commit: race files, index, series, organizers and state/.
  *
  * Env: FIRECRAWL_API_KEY (unless --free); GITHUB_TOKEN (PAT) + GITHUB_OWNER/REPO/BRANCH
@@ -63,7 +72,7 @@ import {
   CHECKS_PATH,
   CREDITS_PATH,
   SITES_STATE_PATH,
-  isSiteDue,
+  addCredits,
   monthKey,
   parseChecks,
   parseCredits,
@@ -74,6 +83,7 @@ import {
   type Check,
   type SiteState,
 } from "./lib/state.ts";
+import { TODO_PATH, addTodo, discoverySites, failTodo, isMonday, isPast, parseTodo, readDoneToday, removeTodo, serializeTodo, weeklyPages, type Todo } from "./lib/todo.ts";
 import { formatCommitMessage, planSync, syncToGitHub, type RaceStore, type SyncInput, type SyncPlan } from "./sync.ts";
 
 const args = process.argv.slice(2);
@@ -85,14 +95,18 @@ const siteArg = arg("site");
 const raceArg = arg("race")?.trim();
 const includePast = args.includes("--past");
 const limit = arg("limit") ? Number(arg("limit")) : Number.POSITIVE_INFINITY;
-const maxCredits = Number(arg("max-credits") ?? 250);
+const todoMode = args.includes("--todo");
+const maxCredits = arg("max-credits") !== undefined ? Number(arg("max-credits")) : todoMode ? Number.MAX_SAFE_INTEGER : 250;
 const factsOnly = args.includes("--facts-only");
-const refresh = args.includes("--refresh");
-const scheduled = args.includes("--scheduled");
-const free = args.includes("--free") || factsOnly || refresh;
+const discover = args.includes("--discover") || args.includes("--refresh");
+const force = args.includes("--force");
+const free = args.includes("--free") || factsOnly || discover;
 const dryRun = args.includes("--dry-run");
 const previewDir = arg("preview");
 if (siteArg && raceArg) fail("use --site or --race, not both");
+if (discover && todoMode) fail("use --discover or --todo, not both");
+if (todoMode && (siteArg || raceArg)) fail("--todo reads the to-do list: no --site or --race");
+if (discover && raceArg) fail("--discover lists sites: no --race");
 if (!(limit > 0)) fail("--limit must be a positive number");
 if (!Number.isInteger(maxCredits) || maxCredits < 0) fail("--max-credits must be a whole number");
 if (previewDir && !dryRun) fail("--preview only works with --dry-run");
@@ -134,8 +148,25 @@ const checks = parseChecks(await current.read(CHECKS_PATH));
 const sitesState = parseSitesState(await current.read(SITES_STATE_PATH));
 const spentThisMonth = parseCredits(await current.read(CREDITS_PATH))[month] ?? 0;
 const readCache: ReadCache = parseReadCache(await current.read(READS_PATH));
+const todo: Todo = parseTodo(await current.read(TODO_PATH));
+// What this run does to the to-do list, replayed on the list at commit time.
+const todoOps: ((t: Todo) => void)[] = [];
+const onTodo = (op: (t: Todo) => void) => {
+  op(todo);
+  todoOps.push(op);
+};
 
-// A cron run keeps part of the month's credits for manual runs (plan 026).
+// Once a day each (plan 027): a retried cron or a late fallback does nothing.
+if (!force && discover && !siteArg && todo.discoveredAt && vietnamDate(new Date(todo.discoveredAt)) === today) {
+  console.log(`Schedule 1 already ran today (${todo.discoveredAt}); nothing to do (--force runs it again).`);
+  process.exit(0);
+}
+if (!force && todoMode && readDoneToday(todo, today, (iso) => vietnamDate(new Date(iso)))) {
+  console.log(`Schedule 2 already read the list today (${todo.readAt}); nothing to do (--force runs it again).`);
+  process.exit(0);
+}
+
+const scheduled = discover || todoMode;
 const monthlyCap = scheduled ? (config.scheduledMonthlyCredits ?? config.monthlyCredits) : config.monthlyCredits;
 const budget = Math.max(0, Math.min(maxCredits, monthlyCap - spentThisMonth));
 const freeReader: Reader = {
@@ -150,7 +181,7 @@ const runSites = new Map<string, SiteState>();
 const inputs: SyncInput[] = [];
 const report: string[] = [];
 const alerts: string[] = [];
-const counts = { sites: 0, races: 0, unchanged: 0, read: 0, paidReads: 0, cachedReads: 0, deferred: 0, refreshed: 0, failed: 0, wouldSpend: 0 };
+const counts = { sites: 0, races: 0, unchanged: 0, read: 0, paidReads: 0, cachedReads: 0, deferred: 0, refreshed: 0, failed: 0, wouldSpend: 0, queued: 0, dropped: 0 };
 
 // 1. What to check.
 type Job = { site: Site; recipe: Recipe; refs?: RaceRef[] };
@@ -176,11 +207,36 @@ if (raceArg) {
     jobs.push({ site, recipe, refs: [{ url, slugHint }] });
   }
   if (jobs.length === 0) fail(`${raceArg} has no source on a site with a recipe`);
+} else if (todoMode) {
+  // Schedule 2: the to-do list, grouped by site. Past races are never checked.
+  const bySite = new Map<string, Job>();
+  for (const entry of [...todo.entries]) {
+    const race = index.find((e) => e.id === entry.raceId || e.sourceUrls.includes(entry.url));
+    if ((race && isPast(race, today)) || checks[entry.url]?.permanent) {
+      onTodo((t) => removeTodo(t, entry.url));
+      counts.dropped++;
+      continue;
+    }
+    const site = siteForUrl(config, entry.url);
+    const recipe = site && recipeFor(site);
+    if (!site || !recipe) {
+      onTodo((t) => failTodo(t, entry.url, "not on a site with a recipe"));
+      report.push(`✗ ${entry.url}: not on a site with a recipe`);
+      counts.failed++;
+      continue;
+    }
+    const slugHint = site.recipe === "actiup" ? new URL(entry.url).pathname.split("/")[3] : undefined;
+    const job = bySite.get(site.key) ?? { site, recipe, refs: [] };
+    job.refs!.push({ url: entry.url, slugHint });
+    bySite.set(site.key, job);
+  }
+  jobs.push(...bySite.values());
 } else {
-  // The daily refresh takes every seller as well as the sites that are due (see the header).
   const sites = siteArg
     ? config.sites.filter((s) => s.key === siteArg)
-    : config.sites.filter((s) => isSiteDue(s, sitesState[s.key], now) || (refresh && s.kind === "seller"));
+    : discover
+      ? discoverySites(config, today)
+      : config.sites.filter((s) => s.recipe !== "none");
   if (siteArg && sites.length === 0) fail(`no site "${siteArg}" in config/sites.yaml`);
   for (const site of sites) {
     const recipe = recipeFor(site);
@@ -192,7 +248,7 @@ if (raceArg) {
 // 2. Discover, snapshot, read.
 for (const job of jobs) {
   const { site, recipe } = job;
-  const ctx: RecipeContext = { site, config, http, today, includePast: includePast || !!raceArg };
+  const ctx: RecipeContext = { site, config, http, today, includePast: includePast || !!raceArg || todoMode };
   counts.sites++;
   let refs: RaceRef[];
   try {
@@ -205,9 +261,6 @@ for (const job of jobs) {
     continue;
   }
   refs = sortRefs(refs.filter((r) => !checks[r.url]?.permanent || !!raceArg)).slice(0, limit);
-  // A cron run pays only on sites whose recipe was checked by eye (plan 026).
-  const siteReader = scheduled && !site.trusted ? freeReader : reader;
-  if (scheduled && !site.trusted && !free) report.push(`· site ${site.key}: not trusted, no paid reads in a scheduled run (free refresh only)`);
   let siteRead = 0;
   for (const ref of refs) {
     counts.races++;
@@ -218,6 +271,7 @@ for (const job of jobs) {
     } catch (err) {
       runChecks.set(ref.url, { ...checks[ref.url], lastCheckedAt: checkedAt, status: "error", reason: (err as Error).message });
       report.push(`✗ ${ref.url}: ${(err as Error).message}`);
+      if (todoMode) onTodo((t) => failTodo(t, ref.url, (err as Error).message));
       counts.failed++;
       continue;
     }
@@ -235,13 +289,14 @@ for (const job of jobs) {
       siteRead++;
       continue;
     }
-    if (!raceArg && prev?.fingerprint === fp && prev.status !== "error") {
+    if (!raceArg && !todoMode && prev?.fingerprint === fp && prev.status !== "error") {
       counts.unchanged++;
-      // The page is back to what was read last: nothing is pending any more.
-      runChecks.set(ref.url, { ...prev, lastCheckedAt: checkedAt, pending: undefined, pendingSince: undefined });
+      runChecks.set(ref.url, { ...prev, lastCheckedAt: checkedAt });
+      // The page is back to what was read last: no read needed for the change.
+      if (todo.entries.some((e) => e.url === ref.url && e.reason === "changed")) onTodo((t) => removeTodo(t, ref.url));
       continue;
     }
-    const outcome = await readSnapshot(snap, siteReader, http, readCache, now);
+    const outcome = await readSnapshot(snap, reader, http, readCache, now);
     if (!outcome.ok) {
       if (outcome.capped) {
         counts.deferred++;
@@ -250,25 +305,30 @@ for (const job of jobs) {
         const estimate = (snap.pages.length + images) * CREDITS_PER_READ;
         counts.wouldSpend += estimate;
         const what = `${snap.pages.length} page(s)${images ? ` + up to ${images} price image(s)` : ""}, ≤${estimate} credits`;
-        // No paid read now: keep what was read before and refresh the free parts (plan 026).
+        // No paid read now: keep what was read before and refresh the free parts (plan 026),
+        // and put the page on the to-do list for Schedule 2 (plan 027).
+        const raceId = index.find((e) => e.sourceUrls.includes(ref.url))?.id;
+        if (!todo.entries.some((e) => e.url === ref.url)) counts.queued++;
+        onTodo((t) => addTodo(t, { url: ref.url, ...(raceId && { raceId }), reason: prev?.fingerprint ? "changed" : "new", addedAt: checkedAt }));
         const stored = prev?.fingerprint ? await storedExtraction(ref.url) : null;
         if (stored) {
           inputs.push({ url: ref.url, site: site.key, role: roleOf(site), extracted: { ...stored, ...factsExtraction(snap) }, checkedAt, slugHint: snap.slugHint });
-          runChecks.set(ref.url, { ...prev!, lastCheckedAt: checkedAt, pending: fp, pendingSince: prev!.pending === fp && prev!.pendingSince ? prev!.pendingSince : checkedAt });
+          runChecks.set(ref.url, { ...prev!, lastCheckedAt: checkedAt });
           counts.refreshed++;
-          report.push(`~ ${ref.url}: changed; facts refreshed, pending a read (${what})`);
+          report.push(`~ ${ref.url}: changed; facts refreshed, on the to-do list (${what})`);
         } else {
           // Never read in full: a race from the free facts alone, when they name one.
           const facts = factsExtraction(snap);
           if (normalizeExtraction(facts).ok) inputs.push({ url: ref.url, site: site.key, role: roleOf(site), extracted: facts, checkedAt, slugHint: snap.slugHint });
           runChecks.set(ref.url, { lastCheckedAt: checkedAt, status: "facts" });
           counts.refreshed++;
-          report.push(`+ ${ref.url}: not read yet${normalizeExtraction(facts).ok ? "; race from free facts" : ""}, pending a read (${what})`);
+          report.push(`+ ${ref.url}: not read yet${normalizeExtraction(facts).ok ? "; race from free facts" : ""}, on the to-do list (${what})`);
         }
       } else {
         counts.failed++;
         runChecks.set(ref.url, { ...prev, lastCheckedAt: checkedAt, status: "error", reason: outcome.reason });
         report.push(`✗ ${ref.url}: ${outcome.reason}`);
+        if (todoMode) onTodo((t) => failTodo(t, ref.url, outcome.reason));
       }
       continue;
     }
@@ -279,12 +339,26 @@ for (const job of jobs) {
     for (const note of outcome.notes) report.push(`· ${ref.url}: ${note}`);
     inputs.push({ url: ref.url, site: site.key, role: roleOf(site), extracted: outcome.extraction, checkedAt, slugHint: snap.slugHint });
     runChecks.set(ref.url, { lastCheckedAt: checkedAt, status: "ok", fingerprint: fp });
+    if (todo.entries.some((e) => e.url === ref.url)) onTodo((t) => removeTodo(t, ref.url));
     console.log(`read ${ref.url} (${outcome.paidReads} paid, ${outcome.cachedReads} cached)`);
   }
   // A free run (facts, refresh) doesn't count as a site check: the next paid run is still due.
   if (!free) runSites.set(site.key, { lastCheckedAt: now.toISOString(), status: "ok", failures: 0 });
   report.push(`site ${site.key}: ${refs.length} race page(s), ${siteRead} read`);
 }
+
+// Schedule 1's Monday pass: every upcoming race gets a read this week (plan 027).
+if (discover && !siteArg) {
+  if (isMonday(today)) {
+    const before = todo.entries.length;
+    const stamp = now.toISOString();
+    for (const page of weeklyPages(index, config, today)) onTodo((t) => addTodo(t, { ...page, reason: "weekly", addedAt: stamp }));
+    counts.queued += todo.entries.length - before;
+    report.push(`Monday: every upcoming race's pages on the to-do list (${todo.entries.length - before} added)`);
+  }
+  onTodo((t) => (t.discoveredAt = now.toISOString()));
+}
+if (todoMode) onTodo((t) => (t.readAt = new Date().toISOString()));
 
 const geoTargets: GeoTarget[] = [];
 for (const input of inputs) {
@@ -321,7 +395,8 @@ await enrichGeo(geoTargets, geoCache, {
 // 3. Plan and commit: races + index + series/organizers + state, one commit.
 const finishedAt = new Date().toISOString();
 const credits = reader.credits;
-const context = `Checked by scripts/check.ts (${raceArg ? `race ${raceArg}` : siteArg ? `site ${siteArg}` : "due sites"}${includePast ? ", with past races" : ""}).`;
+const scope = raceArg ? `race ${raceArg}` : todoMode ? "the to-do list, Schedule 2" : siteArg ? `site ${siteArg}` : discover ? "discovery, Schedule 1" : "every site with a recipe";
+const context = `Checked by scripts/check.ts (${scope}${includePast ? ", with past races" : ""}).`;
 
 async function stateFiles(store: RaceStore): Promise<Record<string, string>> {
   const out: Record<string, string> = {};
@@ -340,10 +415,11 @@ async function stateFiles(store: RaceStore): Promise<Record<string, string>> {
     for (const [key, s] of runSites) merged[key] = s;
     out[SITES_STATE_PATH] = serializeSorted(merged);
   }
-  if (credits > 0) {
-    const merged = parseCredits(await store.read(CREDITS_PATH));
-    merged[month] = (merged[month] ?? 0) + credits;
-    out[CREDITS_PATH] = serializeSorted(merged);
+  if (credits > 0) out[CREDITS_PATH] = serializeSorted(addCredits(parseCredits(await store.read(CREDITS_PATH)), credits, now));
+  if (todoOps.length > 0) {
+    const merged = parseTodo(await store.read(TODO_PATH));
+    for (const op of todoOps) op(merged);
+    out[TODO_PATH] = serializeTodo(merged);
   }
   if (counts.paidReads + counts.cachedReads > 0) {
     const merged = { ...parseReadCache(await store.read(READS_PATH)), ...readCache };
@@ -369,7 +445,7 @@ if (dryRun) {
   const result = await syncToGitHub(target!, inputs, config, {
     now: finishedAt,
     context,
-    bookkeepingMessage: `state: checked ${runChecks.size} page(s), no race changes\n\n${context}`,
+    bookkeepingMessage: `state: checked ${runChecks.size} page(s), to-do list ${todo.entries.length}, no race changes\n\n${context}`,
     extraFiles: stateFiles,
     config,
     geoCache,
@@ -380,16 +456,17 @@ if (dryRun) {
 
 // 4. Report, and alert on Discord when something needs a person.
 if (counts.deferred > 0 && !free && budget < CREDITS_PER_READ + credits) {
-  alerts.push(`💳 Credit cap reached: ${counts.deferred} race(s) left pending for the next run (month ${month}: ${spentThisMonth + credits} of ${monthlyCap}${scheduled ? " scheduled" : ""}).`);
+  alerts.push(`💳 Credit cap reached: ${counts.deferred} race(s) left on the to-do list for the next run (month ${month}: ${spentThisMonth + credits} of ${monthlyCap}${scheduled ? " scheduled" : ""}).`);
 }
 for (const s of plan.skipped) report.push(`· skipped ${s.url}: ${s.reason}`);
 
 const summary = [
-  `## Race check${dryRun ? " (dry run)" : ""}${scheduled ? " (scheduled)" : ""}${factsOnly ? " (facts only: no reads)" : refresh ? " (refresh: free)" : free ? " (free: cached reads only)" : ""}`,
+  `## Race check${dryRun ? " (dry run)" : ""}${discover ? " (Schedule 1: discovery, free)" : todoMode ? " (Schedule 2: the to-do list)" : factsOnly ? " (facts only: no reads)" : free ? " (free: cached reads only)" : ""}`,
   "",
-  `- Sites: ${counts.sites} · race pages: ${counts.races} (${counts.unchanged} unchanged, ${counts.read} read, ${counts.refreshed} refreshed and pending a read, ${counts.failed} failed)`,
+  `- Sites: ${counts.sites} · race pages: ${counts.races} (${counts.unchanged} unchanged, ${counts.read} read, ${counts.refreshed} refreshed and waiting for a read, ${counts.failed} failed)`,
   `- Reads: ${counts.paidReads} paid, ${counts.cachedReads} from cache · Firecrawl credits: ${credits} (month: ${spentThisMonth + credits} of ${monthlyCap}${scheduled ? " scheduled" : ""})`,
-  ...(counts.deferred > 0 ? [`- A paid run would read the ${counts.deferred} pending race(s) for at most ${counts.wouldSpend} credits`] : []),
+  `- To-do list: ${todo.entries.length} page(s)${counts.queued ? `, ${counts.queued} added` : ""}${counts.dropped ? `, ${counts.dropped} past race(s) dropped` : ""}`,
+  ...(counts.deferred > 0 ? [`- A paid run would read the ${counts.deferred} waiting race(s) for at most ${counts.wouldSpend} credits`] : []),
   `- Races: ${plan.changes.filter((c) => c.kind === "added").length} added, ${plan.changes.filter((c) => c.kind === "updated").length} updated`,
   `- Commit: ${commitSha ?? (dryRun ? "none (dry run)" : "none")}`,
   "",
@@ -440,7 +517,7 @@ async function storedExtraction(url: string): Promise<StoredExtraction | null> {
   return source ? (source.extracted as StoredExtraction) : null;
 }
 
-/** Pending pages first, then the soonest race day (from the listing, else the race on file); see lib/state.ts sortByUrgency. */
+/** Pages never read first, then the soonest race day (from the listing, else the race on file); see lib/state.ts sortByUrgency. */
 function sortRefs(refs: RaceRef[]): RaceRef[] {
   return sortByUrgency(refs, checks, (r) => r.date ?? index.find((e) => e.sourceUrls.includes(r.url))?.date ?? "9999-12-31");
 }

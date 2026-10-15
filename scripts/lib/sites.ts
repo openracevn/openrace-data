@@ -1,5 +1,5 @@
 /**
- * The site list (config/sites.yaml): which sites are read, how and how often, and
+ * The site list (config/sites.yaml): which sites are read and how, and
  * which domains are recognized when a page links to them.
  */
 import { readFileSync } from "node:fs";
@@ -10,7 +10,6 @@ import type { LinkKind, SourceRole } from "./schema.ts";
 export const SITES_PATH = "config/sites.yaml";
 
 export const SITE_KINDS = ["seller", "hub", "race-site"] as const;
-export const CADENCES = ["weekly", "monthly", "quarterly", "yearly", "manual"] as const;
 
 const slug = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, "expected kebab-case");
 const entity = z.object({ id: slug, name: z.string().min(1), website: z.url().optional() });
@@ -23,12 +22,10 @@ export const SiteSchema = z
     url: z.url(),
     hosts: z.array(z.string().min(1)).optional(),
     recipe: z.string().min(1),
-    check: z.enum(CADENCES).default("manual"),
     /**
      * The recipe's output for this site was compared by eye with the live page or
-     * image (a known answer in test/answers.test.ts or recipe fixtures). Scheduled
-     * runs pay for reads only on trusted sites (plan 026); the rest get free
-     * refreshes and wait for a paid check by hand.
+     * image (a known answer in test/answers.test.ts or recipe fixtures). A recorded
+     * fact only: scheduled runs read every site with a recipe (plan 027).
      */
     trusted: z.boolean().default(false),
     series: entity.optional(),
@@ -38,7 +35,7 @@ export const SiteSchema = z
 
 export const SitesConfigSchema = z.object({
   monthlyCredits: z.number().int().nonnegative(),
-  /** Credits scheduled runs (check.ts --scheduled) may spend per calendar month; the rest is kept for manual runs. Default: monthlyCredits. */
+  /** Credits the scheduled reads (check.ts --todo, plan 027) may spend per calendar month. Default: monthlyCredits. */
   scheduledMonthlyCredits: z.number().int().nonnegative().optional(),
   sites: z.array(SiteSchema).superRefine((sites, ctx) => {
     const keys = new Set<string>();
@@ -56,7 +53,6 @@ export const SitesConfigSchema = z.object({
 
 export type Site = z.infer<typeof SiteSchema>;
 export type SitesConfig = z.infer<typeof SitesConfigSchema>;
-export type Cadence = (typeof CADENCES)[number];
 
 export function loadSites(path = SITES_PATH): SitesConfig {
   return parseSites(readFileSync(path, "utf8"));
@@ -65,15 +61,6 @@ export function loadSites(path = SITES_PATH): SitesConfig {
 export function parseSites(text: string): SitesConfig {
   return SitesConfigSchema.parse(parse(text));
 }
-
-/** Days between scheduled reads; manual sites are only read on request. */
-export const CADENCE_DAYS: Record<Cadence, number> = {
-  weekly: 7,
-  monthly: 30,
-  quarterly: 91,
-  yearly: 365,
-  manual: Number.POSITIVE_INFINITY,
-};
 
 /** Race sites and hubs speak for their own races; sellers only sell them. */
 export function roleOf(site: Site): SourceRole {
