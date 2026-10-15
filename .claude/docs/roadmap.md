@@ -23,7 +23,7 @@ Day-to-day tasks live in [status.md](status.md); how things are built lives in [
 
 1. **Trusted data.** Any source (sellers, hubs, race sites), recipes, agent-read, price tiers, series and organizers. *Built (design v2).*
 2. **Questions people ask** (table below): schema v3 and API queries. *Built: [plan 003](../plans/003-2026-09-24-schema-v3-geo-price.md), live 2026-09-24.*
-3. **Fresh without effort.** Freshness in the API (plan 003), then the scheduled runs ([plan 026](../plans/026-2026-10-13-scheduled-freshness.md), 2026-10-13): a daily free refresh (facts, fingerprints, new races), a weekly paid read within a cap, and a Monday digest that is the to-do list for a Claude session.
+3. **Fresh without effort.** Freshness in the API (plan 003), then the scheduled runs ([plan 026](../plans/026-2026-10-13-scheduled-freshness.md), 2026-10-13), reshaped by [plan 027](../plans/027-2026-10-15-two-daily-schedules.md) (2026-10-15): two daily schedules done before 07:00 Vietnam, discovery (free) then paid reads of a to-do list (new races daily, every upcoming race on Monday), and a Monday 09:00 digest.
 4. **Stats from the data:**
    - trail races per year
    - North vs Central vs South
@@ -68,7 +68,7 @@ Old place names ("Nha Trang", "Bình Dương") must keep working after the 2025 
 
 ## Constraints
 
-- **Budget:** ≤ $5/month after the first month. In practice that means the Firecrawl Free plan, Cloudflare free tiers and free services only (Nominatim, OpenRouteService free key). No paid APIs, and no Claude API in scheduled runs.
+- **Budget:** ≤ $5/month after the first month, except scheduled Firecrawl reads (change log, 2026-10-15): those may go past the Free plan, up to the monthly ceiling in `config/sites.yaml`, for data quality. Otherwise Cloudflare free tiers and free services only (Nominatim, OpenRouteService free key). No Claude or OpenRouter API in scheduled runs.
 - **Non-commercial for now.** If that changes, check the terms of every free service (OpenRouteService first).
 - **Scale:** 100–150 races a year.
 - **Agent-read and Firecrawl produce the same format.** Neither is the only way in.
@@ -87,6 +87,7 @@ Old place names ("Nha Trang", "Bình Dương") must keep working after the 2025 
 
 Deliberate changes of direction, newest first.
 
+- **2026-10-15 (plan 027):** Scheduled runs focus on data quality: Firecrawl reads every new race daily and every upcoming race weekly, on any site with a recipe (no `trusted` gate), with no 600 cap. Not unlimited: a monthly ceiling in `config/sites.yaml` holds, set from what the first runs measure, and the Firecrawl plan may go past Free (the user pays). No Claude or OpenRouter API in scheduled runs: Firecrawl does the extraction. This replaces the 600-credit and trusted-only parts of the 2026-10-13 (plan 026) line and relaxes the budget constraint for scheduled Firecrawl reads only. Reason (the user): there is budget now, and the aim is correct data and knowing what it costs. Confirmed by the user.
 - **2026-10-13:** The website comes back, as it was archived (`archive/full-site-2026-10-12`), on `openrace-web.bmp.workers.dev` (no `openrace.vn` domain for the foreseeable future). It stays on the free plan: pages are rendered ahead of time and served as static files, rebuilt twice a day. This reverses the "no OpenRace website" part of the 2026-10-12 line. Reason (the user): data with no visualization isn't helpful; without the site they can't see the stats or what was updated. The API stays internal: the site sends `X-MCP-Secret` over its service binding, like openrace-mcp. Confirmed by the user.
 - **2026-10-13 (plan 026):** Scheduled runs may spend Firecrawl credits, up to a scheduled cap (`scheduledMonthlyCredits` in `config/sites.yaml`, 600 of the Free plan's 1,000) and only on sites marked `trusted` (recipe checked by eye against a known answer). The 2026-09-29 rule stands for interactive sessions: Claude asks before a paid read. Reason: Free-plan credits don't roll over, so a capped scheduled spend costs nothing, and in a scheduled run there is no Claude to read pages for free. The budget constraint (≤ $5/month, no Claude API in scheduled runs) is unchanged. Confirmed by the user.
 

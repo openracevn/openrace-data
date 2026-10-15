@@ -1,0 +1,152 @@
+name: Trial run (plan 027)
+# One-time test of plan 027's two schedules, Friday 2026-10-16, built from today's
+# scripts. Schedule 1: free discovery (check --refresh) on every site with a recipe.
+# Schedule 2: paid reads (check --site) of what Schedule 1 left pending; committed on
+# the four trusted sites, a dry run with the output kept as an artifact on the three
+# that failed the 10-13 check by eye. Each schedule posts its result to Discord.
+# GitHub starts this repo's crons 4 to 7.5 hours late, so the cron is 00:07 Vietnam
+# Friday with a retry at 02:07; a run does nothing if an earlier one went through.
+# Delete this file when plan 027 is built.
+
+on:
+  schedule:
+    - cron: "7 17 15 10 *"
+    - cron: "7 19 15 10 *"
+  workflow_dispatch:
+
+concurrency:
+  group: check-races
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      go: ${{ steps.gate.outputs.go }}
+    steps:
+      - id: gate
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EVENT: ${{ github.event_name }}
+          REPO: ${{ github.repository }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          if [[ "$EVENT" == "workflow_dispatch" ]]; then echo "go=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          day=$(date -u +%F)
+          if [[ "$day" != "2026-10-15" && "$day" != "2026-10-16" ]]; then echo "go=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          # The trial counts as done once a run got through Schedule 2.
+          done=$(gh run list -R "$REPO" -w trial.yml -L 20 --json databaseId,conclusion \
+            -q "[.[] | select(.databaseId != $RUN_ID and .conclusion == \"success\")] | length")
+          ran=0
+          for id in $(gh run list -R "$REPO" -w trial.yml -L 20 --json databaseId,conclusion -q ".[] | select(.databaseId != $RUN_ID and .conclusion == \"success\") | .databaseId"); do
+            if gh run view "$id" -R "$REPO" --json jobs -q '.jobs[] | select(.name == "schedule-2" and .conclusion == "success") | .name' | grep -q .; then ran=1; fi
+          done
+          echo "earlier successful runs: $done, with Schedule 2 done: $ran"
+          if [[ "$ran" == "1" ]]; then echo "go=false" >> "$GITHUB_OUTPUT"; else echo "go=true" >> "$GITHUB_OUTPUT"; fi
+
+  schedule-1:
+    needs: gate
+    if: needs.gate.outputs.go == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Discovery (free)
+        env:
+          GITHUB_TOKEN: ${{ secrets.OPENRACE_BOT_TOKEN }}
+          GITHUB_OWNER: ${{ github.repository_owner }}
+          GITHUB_REPO: ${{ github.event.repository.name }}
+          GITHUB_BRANCH: main
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          out="$RUNNER_TEMP/s1.md"
+          for site in actiup irace vnexpress-marathon hcmc-marathon halong-marathon lamdong-trail run-to-live; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            log="$RUNNER_TEMP/s1-$site.log"
+            if npm run -s check -- --refresh --site "$site" > "$log" 2>&1; then status=ok; else status=FAILED; fi
+            cat "$log"
+            { echo "**$site** ($status)"; grep -E '^- (Sites|Races|A paid run)' "$log" | sed 's/^- /  · /' || true; } >> "$out"
+          done
+          cp "$out" "$RUNNER_TEMP/s1-summary.md"
+      - name: Post Schedule 1 to Discord
+        if: always()
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          JOB_STATUS: ${{ job.status }}
+        run: |
+          [[ -n "$DISCORD_WEBHOOK_URL" ]] || exit 0
+          body=$(cat "$RUNNER_TEMP/s1.md" 2>/dev/null || echo "no output")
+          msg=$(printf ':one: **Trial, Schedule 1 (discovery, free)**: %s\n%s\n%s' "$JOB_STATUS" "$body" "$RUN_URL" | head -c 1990)
+          jq -n --arg content "$msg" '{username: "OpenRace Data", content: $content, allowed_mentions: {parse: []}}' |
+            curl -fsS -X POST -H 'Content-Type: application/json' --data @- "$DISCORD_WEBHOOK_URL"
+
+  schedule-2:
+    needs: [gate, schedule-1]
+    if: always() && needs.gate.outputs.go == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Details (paid reads)
+        env:
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.OPENRACE_BOT_TOKEN }}
+          GITHUB_OWNER: ${{ github.repository_owner }}
+          GITHUB_REPO: ${{ github.event.repository.name }}
+          GITHUB_BRANCH: main
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          out="$RUNNER_TEMP/s2.md"
+          mkdir -p "$RUNNER_TEMP/preview"
+          run_site() { # site, extra args...
+            local site="$1"; shift
+            git fetch -q origin main && git reset -q --hard origin/main
+            local log="$RUNNER_TEMP/s2-$site.log" status
+            if npm run -s check -- --site "$site" --max-credits 685 "$@" > "$log" 2>&1; then status=ok; else status=FAILED; fi
+            cat "$log"
+            { echo "**$site** ($status${*:+, dry run})"; grep -E '^- (Sites|Reads|Races|A paid run)' "$log" | sed 's/^- /  · /' || true; } >> "$out"
+          }
+          # Committed: the sites whose recipe has a known-answer check.
+          for site in actiup irace vnexpress-marathon hcmc-marathon; do run_site "$site"; done
+          # Read but not committed: these failed the 10-13 check by eye; output kept for the next session.
+          for site in halong-marathon lamdong-trail run-to-live; do
+            run_site "$site" --dry-run --preview "$RUNNER_TEMP/preview/$site"
+            cp "$RUNNER_TEMP/s2-$site.log" "$RUNNER_TEMP/preview/$site.log" 2>/dev/null || true
+          done
+      - uses: actions/upload-artifact@v5
+        if: always()
+        with:
+          name: trial-dry-run-preview
+          path: ${{ runner.temp }}/preview
+          if-no-files-found: ignore
+      - name: Post Schedule 2 to Discord
+        if: always()
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          JOB_STATUS: ${{ job.status }}
+        run: |
+          [[ -n "$DISCORD_WEBHOOK_URL" ]] || exit 0
+          body=$(cat "$RUNNER_TEMP/s2.md" 2>/dev/null || echo "no output")
+          msg=$(printf ':two: **Trial, Schedule 2 (details, paid reads)**: %s\n%s\n%s' "$JOB_STATUS" "$body" "$RUN_URL" | head -c 1990)
+          jq -n --arg content "$msg" '{username: "OpenRace Data", content: $content, allowed_mentions: {parse: []}}' |
+            curl -fsS -X POST -H 'Content-Type: application/json' --data @- "$DISCORD_WEBHOOK_URL"
