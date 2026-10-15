@@ -1304,8 +1304,8 @@
   "https://halongmarathon.com/": {
     "lastCheckedAt": "2026-10-15T20:18:42.388Z",
     "status": "error",
-    "fingerprint": "4bb1ea23c7ace3769227eafc013855bb",
-    "reason": "fetch failed"
+    "reason": "fetch failed",
+    "fingerprint": "4bb1ea23c7ace3769227eafc013855bb"
   },
   "https://hcmcmarathon.com/": {
     "lastCheckedAt": "2026-10-15T20:18:20.790Z",
@@ -1338,7 +1338,7 @@
     "fingerprint": "d6012159479ad557d8de38281209b67f"
   },
   "https://lamdongtrail.vn/": {
-    "lastCheckedAt": "2026-10-12T17:55:01.617Z",
+    "lastCheckedAt": "2026-10-15T20:19:43.600Z",
     "status": "ok",
     "fingerprint": "4633fd897137e532faec85d55b7e3fa6"
   },
