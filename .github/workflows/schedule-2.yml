@@ -6,8 +6,9 @@ name: Schedule 2 (details)
 # never read. A page leaves the list once read; one that fails 3 times goes to the
 # Monday digest. No per-run cap; the month's cap is scheduledMonthlyCredits in
 # config/sites.yaml. Commits once, then rebuilds openrace-web once Main has synced the API.
-# Starts when Schedule 1 finishes; the 03:07 Vietnam cron is the fallback, and a run
-# does nothing if the list was already read today after the latest discovery.
+# Starts when a scheduled Schedule 1 finishes (not one started by hand: a dry run there
+# must not set off paid reads); the 03:07 Vietnam cron is the fallback, and a run does
+# nothing if the list was already read today after the latest discovery.
 on:
   workflow_run:
     workflows: ["Schedule 1 (discovery)"]
@@ -48,10 +49,15 @@ jobs:
       - id: gate
         env:
           EVENT: ${{ github.event_name }}
+          AFTER: ${{ github.event.workflow_run.event }}
           WEB_ONLY: ${{ inputs.web_only }}
         run: |
           day=$(TZ=Asia/Ho_Chi_Minh date +%F)
-          if [[ "$WEB_ONLY" == "true" ]] || [[ "$EVENT" != "workflow_dispatch" && "$day" == "2026-10-16" ]]; then echo "go=false" >> "$GITHUB_OUTPUT"; else echo "go=true" >> "$GITHUB_OUTPUT"; fi
+          go=true
+          if [[ "$WEB_ONLY" == "true" ]]; then go=false; fi
+          if [[ "$EVENT" == "workflow_run" && "$AFTER" != "schedule" ]]; then go=false; fi
+          if [[ "$EVENT" != "workflow_dispatch" && "$day" == "2026-10-16" ]]; then go=false; fi
+          echo "go=$go" >> "$GITHUB_OUTPUT"
       - if: steps.gate.outputs.go == 'true'
         uses: actions/checkout@v7
       - if: steps.gate.outputs.go == 'true'
