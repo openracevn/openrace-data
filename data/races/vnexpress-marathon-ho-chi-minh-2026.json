@@ -39,97 +39,101 @@
     }
   ],
   "location": {
-    "venue": null,
+    "venue": "Thành phố Hồ Chí Minh",
     "city": "Hồ Chí Minh"
   },
   "geo": {
-    "lat": 10.7737261,
-    "lng": 106.7166008,
+    "lat": 10.8283337,
+    "lng": 106.761474,
     "source": "nominatim",
-    "precision": "province",
+    "precision": "venue",
     "current": {
       "province": "79",
-      "ward": null
+      "ward": "26824"
     },
-    "legacy": null,
+    "legacy": {
+      "province": "79",
+      "district": "769",
+      "ward": "26827"
+    },
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 2,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 12.1,
+        "minutes": 14,
+        "method": "road",
         "near": true
       },
       "ha-noi": {
-        "km": 1144,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1491.1,
+        "minutes": 1133,
+        "method": "road",
         "near": false
       },
       "da-nang": {
-        "km": 610.2,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 857.8,
+        "minutes": 648,
+        "method": "road",
         "near": false
       },
       "nha-trang": {
-        "km": 315.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 410.2,
+        "minutes": 293,
+        "method": "road",
         "near": false
       },
       "da-lat": {
-        "km": 228.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 283.2,
+        "minutes": 218,
+        "method": "road",
         "near": false
       },
       "can-tho": {
-        "km": 130.7,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 180.6,
+        "minutes": 145,
+        "method": "road",
         "near": false
       },
       "hai-phong": {
-        "km": 1119.9,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1525.2,
+        "minutes": 1157,
+        "method": "road",
         "near": false
       },
       "hue": {
-        "km": 639.7,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 940.5,
+        "minutes": 722,
+        "method": "road",
         "near": false
       },
       "vung-tau": {
-        "km": 62.3,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 93.2,
+        "minutes": 86,
+        "method": "road",
         "near": false
       },
       "quy-nhon": {
-        "km": 430.9,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 616,
+        "minutes": 456,
+        "method": "road",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 254.9,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 353.8,
+        "minutes": 260,
+        "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 1321.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1798.9,
+        "minutes": 1365,
+        "method": "road",
         "near": false
       },
       "ha-long": {
-        "km": 1132.4,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1574.9,
+        "minutes": 1190,
+        "method": "road",
         "near": false
       }
     }
@@ -313,7 +317,7 @@
     }
   ],
   "currency": "VND",
-  "registrationStatus": null,
+  "registrationStatus": "open",
   "registrations": [],
   "links": [],
   "participants": null,
@@ -324,7 +328,7 @@
       "site": "vnexpress-marathon",
       "role": "official",
       "url": "https://vm.vnexpress.net/ho-chi-minh-2026",
-      "lastCheckedAt": "2026-10-12T17:47:42.091Z",
+      "lastCheckedAt": "2026-10-15T20:31:30.982Z",
       "lastChangedAt": "2026-09-25T04:11:49.673Z",
       "extracted": {
         "facts": {
@@ -342,6 +346,50 @@
               ],
               "name": "VnExpress Marathon Ho Chi Minh City Midnight 2026",
               "date": "2026-03-22",
+              "endDate": "2026-03-22",
+              "mainDate": "2026-03-22",
+              "distances": [],
+              "courses": [],
+              "edition": 1,
+              "editionQuote": "Giải chạy có quy mô dự kiến 12.000 vận động viên.",
+              "mapsUrl": "https://vm.vnexpress.net/ho-chi-minh-2026/thong-tin-cuoc-dua/dia-diem",
+              "venue": "Thành phố Hồ Chí Minh",
+              "city": "Thành phố Hồ Chí Minh",
+              "organizer": "",
+              "currency": "",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 12000,
+                "quote": "Giải chạy có quy mô dự kiến 12.000 vận động viên."
+              },
+              "prices": []
+            }
+          },
+          {
+            "url": "https://vm.vnexpress.net/ho-chi-minh-2026/thong-tin-cuoc-dua",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "VnExpress Marathon Ho Chi Minh City Midnight 2026",
+              "date": "2026-03-22",
+              "endDate": "2026-03-22",
+              "mainDate": "2026-03-22",
+              "distances": [],
+              "courses": [],
+              "edition": 4,
+              "editionQuote": "Mùa thứ 4",
+              "mapsUrl": "",
+              "venue": "",
+              "city": "Thành phố Hồ Chí Minh",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 12000,
+                "quote": "Dự kiến 12.000 vận động viên trong và ngoài nước."
+              },
               "prices": []
             }
           }
@@ -355,8 +403,7 @@
           "id": "vnexpress",
           "name": "VnExpress",
           "website": "https://vnexpress.net/"
-        },
-        "readBy": "agent"
+        }
       }
     },
     {
@@ -500,5 +547,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T04:11:49.673Z",
-  "updatedAt": "2026-10-12T17:48:31.011Z"
+  "updatedAt": "2026-10-15T20:33:57.116Z"
 }

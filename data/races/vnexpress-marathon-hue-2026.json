@@ -12,106 +12,117 @@
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
-    "venue": null,
+    "venue": "Thành phố Huế",
     "city": "Huế"
   },
   "geo": {
-    "lat": 16.4639321,
-    "lng": 107.5863388,
+    "lat": 16.4564881,
+    "lng": 107.5780488,
     "source": "nominatim",
-    "precision": "province",
+    "precision": "venue",
     "current": {
       "province": "46",
-      "ward": null
+      "ward": "19789"
     },
-    "legacy": null,
+    "legacy": {
+      "province": "46",
+      "district": "474",
+      "ward": "19780"
+    },
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 640.1,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 944.4,
+        "minutes": 726,
+        "method": "road",
         "near": false
       },
       "ha-noi": {
-        "km": 539.4,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 665.5,
+        "minutes": 530,
+        "method": "road",
         "near": false
       },
       "da-nang": {
-        "km": 81.8,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 97.3,
+        "minutes": 87,
+        "method": "road",
         "near": false
       },
       "nha-trang": {
-        "km": 500.8,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 601.1,
+        "minutes": 473,
+        "method": "road",
         "near": false
       },
       "da-lat": {
-        "km": 511.4,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 728.5,
+        "minutes": 592,
+        "method": "road",
         "near": false
       },
       "can-tho": {
-        "km": 741,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1103.6,
+        "minutes": 853,
+        "method": "road",
         "near": false
       },
       "hai-phong": {
-        "km": 496.2,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 699.6,
+        "minutes": 554,
+        "method": "road",
         "near": false
       },
       "hue": {
-        "km": 0.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1.7,
+        "minutes": 2,
+        "method": "road",
         "near": true
       },
       "vung-tau": {
-        "km": 682.4,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 999.9,
+        "minutes": 765,
+        "method": "road",
         "near": false
       },
       "quy-nhon": {
-        "km": 346.7,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 409.1,
+        "minutes": 313,
+        "method": "road",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 425,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 605.8,
+        "minutes": 510,
+        "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 761.8,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 973.3,
+        "minutes": 762,
+        "method": "road",
         "near": false
       },
       "ha-long": {
-        "km": 501.9,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 749.3,
+        "minutes": 587,
+        "method": "road",
         "near": false
       }
     }
   },
   "prices": [],
   "currency": "VND",
-  "registrationStatus": null,
+  "registrationStatus": "open",
   "registrations": [],
   "links": [],
   "participants": null,
@@ -122,7 +133,7 @@
       "site": "vnexpress-marathon",
       "role": "official",
       "url": "https://vm.vnexpress.net/hue-2026",
-      "lastCheckedAt": "2026-10-12T17:47:43.442Z",
+      "lastCheckedAt": "2026-10-15T20:31:41.263Z",
       "lastChangedAt": "2026-09-25T04:11:49.673Z",
       "extracted": {
         "facts": {
@@ -140,6 +151,64 @@
               ],
               "name": "VnExpress Marathon Hue 2026",
               "date": "2026-04-19",
+              "endDate": "2026-04-19",
+              "mainDate": "2026-04-19",
+              "distances": [],
+              "courses": [
+                {
+                  "distance": "unknown",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "Đây là lần thứ 1",
+              "mapsUrl": "https://vm.vnexpress.net/hue-2026/thong-tin-cuoc-dua/dia-diem",
+              "venue": "Thành phố Huế",
+              "city": "Huế",
+              "organizer": "VnExpress",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": "Chưa có thông tin về số lượng tham gia."
+              },
+              "prices": []
+            }
+          },
+          {
+            "url": "https://vm.vnexpress.net/hue-2026/thong-tin-cuoc-dua",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "VnExpress Marathon Huế",
+              "date": "2026-04-17",
+              "endDate": "2026-04-19",
+              "mainDate": "2026-04-17",
+              "distances": [
+                "Half Marathon"
+              ],
+              "courses": [
+                {
+                  "distance": "Half Marathon",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 6,
+              "editionQuote": "mùa giải thứ 6",
+              "mapsUrl": "",
+              "venue": "thành phố Huế",
+              "city": "Huế",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
               "prices": []
             }
           }
@@ -153,12 +222,11 @@
           "id": "vnexpress",
           "name": "VnExpress",
           "website": "https://vnexpress.net/"
-        },
-        "readBy": "agent"
+        }
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T04:11:49.673Z",
-  "updatedAt": "2026-10-12T17:48:31.011Z"
+  "updatedAt": "2026-10-15T20:33:57.116Z"
 }

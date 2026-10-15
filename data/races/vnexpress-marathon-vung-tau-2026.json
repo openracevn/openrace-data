@@ -7,39 +7,28 @@
   ],
   "date": "2026-08-30",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "vnexpress-marathon-vung-tau",
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
   "edition": 1,
   "courses": [
     {
-      "label": "5km",
-      "meters": 5000,
-      "type": null,
-      "elevationGain": null
-    },
-    {
-      "label": "10km",
-      "meters": 10000,
-      "type": null,
-      "elevationGain": null
-    },
-    {
       "label": "21km",
       "meters": 21097,
-      "type": null,
+      "type": "road_run",
       "elevationGain": null
     }
   ],
   "location": {
-    "venue": null,
+    "venue": "Vũng Tàu",
     "city": "Vũng Tàu"
   },
   "geo": {
-    "lat": 10.348189,
-    "lng": 107.0753349,
+    "lat": 10.3414941,
+    "lng": 107.0772178,
     "source": "nominatim",
-    "precision": "ward",
+    "precision": "venue",
     "current": {
       "province": "79",
       "ward": "26506"
@@ -52,79 +41,79 @@
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 96.2,
+        "km": 96.4,
         "minutes": 93,
         "method": "road",
         "near": false
       },
       "ha-noi": {
-        "km": 1584.9,
-        "minutes": 1217,
+        "km": 1585,
+        "minutes": 1220,
         "method": "road",
         "near": false
       },
       "da-nang": {
-        "km": 901.6,
+        "km": 901.7,
         "minutes": 689,
         "method": "road",
         "near": false
       },
       "nha-trang": {
-        "km": 407.9,
+        "km": 408.1,
         "minutes": 305,
         "method": "road",
         "near": false
       },
       "da-lat": {
-        "km": 328.8,
+        "km": 329,
         "minutes": 245,
         "method": "road",
         "near": false
       },
       "can-tho": {
-        "km": 261.7,
-        "minutes": 221,
+        "km": 253.2,
+        "minutes": 214,
         "method": "road",
         "near": false
       },
       "hai-phong": {
-        "km": 1619,
+        "km": 1619.1,
         "minutes": 1244,
         "method": "road",
         "near": false
       },
       "hue": {
-        "km": 998.8,
+        "km": 998.9,
         "minutes": 764,
         "method": "road",
         "near": false
       },
       "vung-tau": {
-        "km": 1.7,
-        "minutes": 3,
+        "km": 1.2,
+        "minutes": 2,
         "method": "road",
         "near": true
       },
       "quy-nhon": {
-        "km": 613.8,
+        "km": 614,
         "minutes": 468,
         "method": "road",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 414.1,
+        "km": 414.3,
         "minutes": 323,
         "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 1893.4,
-        "minutes": 1453,
+        "km": 1892.8,
+        "minutes": 1452,
         "method": "road",
         "near": false
       },
       "ha-long": {
-        "km": 1668.7,
+        "km": 1668.8,
         "minutes": 1277,
         "method": "road",
         "near": false
@@ -266,10 +255,13 @@
     }
   ],
   "currency": "VND",
-  "registrationStatus": null,
+  "registrationStatus": "open",
   "registrations": [],
   "links": [],
-  "flags": [],
+  "participants": null,
+  "flags": [
+    "vnexpress-marathon lists courses 5km, 10km, 21km; the official site 21km"
+  ],
   "overrides": {
     "edition": {
       "value": 1,
@@ -282,7 +274,7 @@
       "site": "vnexpress-marathon",
       "role": "official",
       "url": "https://vm.vnexpress.net/vung-tau-2026",
-      "lastCheckedAt": "2026-09-25T04:28:29.753Z",
+      "lastCheckedAt": "2026-10-15T20:32:44.328Z",
       "lastChangedAt": "2026-09-25T04:11:49.673Z",
       "extracted": {
         "facts": {
@@ -300,6 +292,30 @@
               ],
               "name": "VnExpress Vung Tau International Half Marathon Herbalife Cup",
               "date": "2026-08-30",
+              "endDate": "2026-08-30",
+              "mainDate": "2026-08-30",
+              "distances": [
+                "21KM"
+              ],
+              "courses": [
+                {
+                  "distance": "21KM",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "lần thứ 1",
+              "mapsUrl": "https://vm.vnexpress.net/vung-tau-2026/thong-tin-cuoc-dua/dia-diem",
+              "venue": "Vũng Tàu",
+              "city": "Vũng Tàu",
+              "organizer": "VnExpress",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
               "prices": []
             }
           }
@@ -313,8 +329,7 @@
           "id": "vnexpress",
           "name": "VnExpress",
           "website": "https://vnexpress.net/"
-        },
-        "readBy": "agent"
+        }
       }
     },
     {
@@ -441,5 +456,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T04:11:49.673Z",
-  "updatedAt": "2026-09-27T02:04:36.102Z"
+  "updatedAt": "2026-10-15T20:33:57.116Z"
 }

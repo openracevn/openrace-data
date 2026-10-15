@@ -14,104 +14,108 @@
   "edition": null,
   "courses": [],
   "location": {
-    "venue": null,
+    "venue": "Đà Nẵng",
     "city": "Đà Nẵng"
   },
   "geo": {
-    "lat": 16.068501,
-    "lng": 108.2240242,
+    "lat": 16.071571,
+    "lng": 108.2093029,
     "source": "nominatim",
-    "precision": "province",
+    "precision": "venue",
     "current": {
       "province": "48",
-      "ward": null
+      "ward": "20209"
     },
-    "legacy": null,
+    "legacy": {
+      "province": "48",
+      "district": "491",
+      "ward": "20215"
+    },
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 611.6,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 861,
+        "minutes": 651,
+        "method": "road",
         "near": false
       },
       "ha-noi": {
-        "km": 605.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 766.6,
+        "minutes": 612,
+        "method": "road",
         "near": false
       },
       "da-nang": {
-        "km": 0.9,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 3.1,
+        "minutes": 4,
+        "method": "road",
         "near": true
       },
       "nha-trang": {
-        "km": 438.6,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 503.5,
+        "minutes": 398,
+        "method": "road",
         "near": false
       },
       "da-lat": {
-        "km": 459.6,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 630.9,
+        "minutes": 516,
+        "method": "road",
         "near": false
       },
       "can-tho": {
-        "km": 721,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1020.1,
+        "minutes": 778,
+        "method": "road",
         "near": false
       },
       "hai-phong": {
-        "km": 555.3,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 800.7,
+        "minutes": 637,
+        "method": "road",
         "near": false
       },
       "hue": {
-        "km": 80.6,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 94.3,
+        "minutes": 84,
+        "method": "road",
         "near": false
       },
       "vung-tau": {
-        "km": 648.2,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 902.3,
+        "minutes": 690,
+        "method": "road",
         "near": false
       },
       "quy-nhon": {
-        "km": 276.6,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 311.5,
+        "minutes": 238,
+        "method": "road",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 378.8,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 522.4,
+        "minutes": 436,
+        "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 834.9,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1074.4,
+        "minutes": 844,
+        "method": "road",
         "near": false
       },
       "ha-long": {
-        "km": 556.2,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 850.4,
+        "minutes": 669,
+        "method": "road",
         "near": false
       }
     }
   },
   "prices": [],
   "currency": "VND",
-  "registrationStatus": null,
+  "registrationStatus": "open",
   "registrations": [],
   "links": [],
   "participants": null,
@@ -122,7 +126,7 @@
       "site": "vnexpress-marathon",
       "role": "official",
       "url": "https://vm.vnexpress.net/da-nang-2026",
-      "lastCheckedAt": "2026-10-12T17:47:48.055Z",
+      "lastCheckedAt": "2026-10-15T20:32:32.000Z",
       "lastChangedAt": "2026-09-25T04:11:49.673Z",
       "extracted": {
         "facts": {
@@ -140,6 +144,22 @@
               ],
               "name": "VnExpress Da Nang International Marathon Herbalife Cup 2026",
               "date": "2026-07-19",
+              "endDate": "2026-07-19",
+              "mainDate": "2026-07-19",
+              "distances": [],
+              "courses": [],
+              "edition": 2026,
+              "editionQuote": "Giải chay năm 2026",
+              "mapsUrl": "https://vm.vnexpress.net/da-nang-2026/thong-tin-cuoc-dua/dia-diem",
+              "venue": "Đà Nẵng",
+              "city": "Đà Nẵng",
+              "organizer": "VnExpress",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": "đang chờ thông tin"
+              },
               "prices": []
             }
           }
@@ -153,12 +173,11 @@
           "id": "vnexpress",
           "name": "VnExpress",
           "website": "https://vnexpress.net/"
-        },
-        "readBy": "agent"
+        }
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T04:11:49.673Z",
-  "updatedAt": "2026-10-12T17:48:31.011Z"
+  "updatedAt": "2026-10-15T20:33:57.116Z"
 }

@@ -134,7 +134,7 @@
   },
   "prices": [],
   "currency": "VND",
-  "registrationStatus": null,
+  "registrationStatus": "open",
   "registrations": [],
   "links": [],
   "participants": {
@@ -164,7 +164,7 @@
       "site": "vnexpress-marathon",
       "role": "official",
       "url": "https://vm.vnexpress.net/quy-nhon-2026",
-      "lastCheckedAt": "2026-09-25T05:01:22.419Z",
+      "lastCheckedAt": "2026-10-15T20:32:50.600Z",
       "lastChangedAt": "2026-09-25T05:01:22.419Z",
       "extracted": {
         "facts": {
@@ -182,6 +182,22 @@
               ],
               "name": "VnExpress Marathon Quy Nhon 2026",
               "date": "2026-09-13",
+              "endDate": "2026-09-13",
+              "mainDate": "2026-09-13",
+              "distances": [],
+              "courses": [],
+              "edition": 1,
+              "editionQuote": "Mùa 1",
+              "mapsUrl": "https://vm.vnexpress.net/quy-nhon-2026/thong-tin-cuoc-dua/dia-diem",
+              "venue": "Quy Nhon",
+              "city": "Quy Nhon",
+              "organizer": "VnExpress",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": "Chưa có thông tin về số lượng người tham gia."
+              },
               "prices": []
             }
           }
@@ -195,8 +211,7 @@
           "id": "vnexpress",
           "name": "VnExpress",
           "website": "https://vnexpress.net/"
-        },
-        "readBy": "agent"
+        }
       }
     },
     {
@@ -245,5 +260,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T05:01:22.419Z",
-  "updatedAt": "2026-09-29T04:15:29.321Z"
+  "updatedAt": "2026-10-15T20:33:57.116Z"
 }

@@ -14,104 +14,108 @@
   "edition": null,
   "courses": [],
   "location": {
-    "venue": null,
+    "venue": "Nha Trang",
     "city": "Nha Trang"
   },
   "geo": {
-    "lat": 12.2388,
-    "lng": 109.1967,
-    "source": "place",
-    "precision": "province",
+    "lat": 12.248482,
+    "lng": 109.1842855,
+    "source": "nominatim",
+    "precision": "venue",
     "current": {
       "province": "56",
-      "ward": null
+      "ward": "22366"
     },
-    "legacy": null,
+    "legacy": {
+      "province": "56",
+      "district": "568",
+      "ward": "22366"
+    },
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 317.3,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 412.6,
+        "minutes": 293,
+        "method": "road",
         "near": false
       },
       "ha-noi": {
-        "km": 1040.1,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1270.2,
+        "minutes": 997,
+        "method": "road",
         "near": false
       },
       "da-nang": {
-        "km": 437.7,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 500.7,
+        "minutes": 393,
+        "method": "road",
         "near": false
       },
       "nha-trang": {
-        "km": 0,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 2.1,
+        "minutes": 3,
+        "method": "road",
         "near": true
       },
       "da-lat": {
-        "km": 88.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 134.3,
+        "minutes": 127,
+        "method": "road",
         "near": false
       },
       "can-tho": {
-        "km": 445.4,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 578.1,
+        "minutes": 422,
+        "method": "road",
         "near": false
       },
       "hai-phong": {
-        "km": 993.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1304.3,
+        "minutes": 1021,
+        "method": "road",
         "near": false
       },
       "hue": {
-        "km": 500.6,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 597.9,
+        "minutes": 468,
+        "method": "road",
         "near": false
       },
       "vung-tau": {
-        "km": 312,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 405.7,
+        "minutes": 301,
+        "method": "road",
         "near": false
       },
       "quy-nhon": {
-        "km": 171,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 213,
+        "minutes": 172,
+        "method": "road",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 134.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 187.5,
+        "minutes": 172,
+        "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 1258,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1578,
+        "minutes": 1229,
+        "method": "road",
         "near": false
       },
       "ha-long": {
-        "km": 994.7,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1354,
+        "minutes": 1054,
+        "method": "road",
         "near": false
       }
     }
   },
   "prices": [],
   "currency": "VND",
-  "registrationStatus": null,
+  "registrationStatus": "open",
   "registrations": [],
   "links": [],
   "participants": {
@@ -127,7 +131,7 @@
       "site": "vnexpress-marathon",
       "role": "official",
       "url": "https://vm.vnexpress.net/nha-trang-2026",
-      "lastCheckedAt": "2026-09-25T04:28:29.753Z",
+      "lastCheckedAt": "2026-10-15T20:32:38.179Z",
       "lastChangedAt": "2026-09-25T04:11:49.673Z",
       "extracted": {
         "facts": {
@@ -145,6 +149,22 @@
               ],
               "name": "VnExpress Marathon Nha Trang 2026",
               "date": "2026-08-09",
+              "endDate": "2026-08-09",
+              "mainDate": "2026-08-09",
+              "distances": [],
+              "courses": [],
+              "edition": 1,
+              "editionQuote": "Năm đầu tiên tổ chức",
+              "mapsUrl": "https://vm.vnexpress.net/nha-trang-2026/thong-tin-cuoc-dua/dia-diem",
+              "venue": "Nha Trang",
+              "city": "Nha Trang",
+              "organizer": "VnExpress",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
               "prices": []
             }
           }
@@ -158,8 +178,7 @@
           "id": "vnexpress",
           "name": "VnExpress",
           "website": "https://vnexpress.net/"
-        },
-        "readBy": "agent"
+        }
       }
     },
     {
@@ -184,5 +203,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T04:11:49.673Z",
-  "updatedAt": "2026-09-29T04:39:47.684Z"
+  "updatedAt": "2026-10-15T20:33:57.116Z"
 }

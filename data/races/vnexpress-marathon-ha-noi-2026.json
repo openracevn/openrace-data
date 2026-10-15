@@ -39,97 +39,101 @@
     }
   ],
   "location": {
-    "venue": null,
+    "venue": "Hà Nội",
     "city": "Hà Nội"
   },
   "geo": {
-    "lat": 21.0283334,
-    "lng": 105.854041,
+    "lat": 21.0242336,
+    "lng": 105.8410067,
     "source": "nominatim",
-    "precision": "province",
+    "precision": "venue",
     "current": {
       "province": "01",
-      "ward": null
+      "ward": "00226"
     },
-    "legacy": null,
+    "legacy": {
+      "province": "01",
+      "district": "002",
+      "ward": "00073"
+    },
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 1144,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1494,
+        "minutes": 1139,
+        "method": "road",
         "near": false
       },
       "ha-noi": {
-        "km": 0.2,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1.8,
+        "minutes": 3,
+        "method": "road",
         "near": true
       },
       "da-nang": {
-        "km": 606.3,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 771.5,
+        "minutes": 625,
+        "method": "road",
         "near": false
       },
       "nha-trang": {
-        "km": 1040.1,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1275.3,
+        "minutes": 1011,
+        "method": "road",
         "near": false
       },
       "da-lat": {
-        "km": 1047.4,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1402.7,
+        "minutes": 1130,
+        "method": "road",
         "near": false
       },
       "can-tho": {
-        "km": 1222.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1604.8,
+        "minutes": 1258,
+        "method": "road",
         "near": false
       },
       "hai-phong": {
-        "km": 89,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 116.2,
+        "minutes": 86,
+        "method": "road",
         "near": false
       },
       "hue": {
-        "km": 539.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 669.2,
+        "minutes": 542,
+        "method": "road",
         "near": false
       },
       "vung-tau": {
-        "km": 1195.1,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1584.9,
+        "minutes": 1221,
+        "method": "road",
         "near": false
       },
       "quy-nhon": {
-        "km": 882,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1083.3,
+        "minutes": 851,
+        "method": "road",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 958.3,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1280,
+        "minutes": 1048,
+        "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 253.6,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 312.6,
+        "minutes": 253,
+        "method": "road",
         "near": false
       },
       "ha-long": {
-        "km": 127.6,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 160.8,
+        "minutes": 116,
+        "method": "road",
         "near": false
       }
     }
@@ -567,7 +571,7 @@
       "site": "vnexpress-marathon",
       "role": "official",
       "url": "https://vm.vnexpress.net/ha-noi-2026",
-      "lastCheckedAt": "2026-09-25T05:01:22.419Z",
+      "lastCheckedAt": "2026-10-15T20:33:09.295Z",
       "lastChangedAt": "2026-09-25T05:01:22.419Z",
       "extracted": {
         "facts": {
@@ -583,20 +587,55 @@
               "types": [
                 "road_run"
               ],
-              "name": "VnExpress Marathon Hanoi Midnight 2026",
+              "name": "VnExpress Marathon",
               "date": "2026-11-29",
+              "endDate": "2026-11-29",
+              "mainDate": "2026-11-29",
               "distances": [
                 "5 km",
                 "10 km",
                 "21 km",
                 "42 km"
               ],
+              "courses": [
+                {
+                  "distance": "5 km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10 km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "21 km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "42 km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "lần thứ 1",
+              "mapsUrl": "https://vm.vnexpress.net/ha-noi-2026/thong-tin-cuoc-dua/dia-diem",
+              "venue": "Hà Nội",
+              "city": "Hà Nội",
+              "organizer": "",
               "currency": "VND",
               "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
               "prices": [
                 {
                   "distance": "5 km",
                   "tier": "Super Early Bird",
+                  "audience": "",
                   "from": "2026-09-04",
                   "to": "2026-09-24",
                   "price": 420000
@@ -604,6 +643,7 @@
                 {
                   "distance": "5 km",
                   "tier": "Early Bird",
+                  "audience": "",
                   "from": "2026-09-25",
                   "to": "2026-10-15",
                   "price": 500000
@@ -611,6 +651,7 @@
                 {
                   "distance": "5 km",
                   "tier": "Regular",
+                  "audience": "",
                   "from": "2026-10-16",
                   "to": "2026-11-06",
                   "price": 620000
@@ -618,6 +659,7 @@
                 {
                   "distance": "5 km",
                   "tier": "Late",
+                  "audience": "",
                   "from": "2026-11-07",
                   "to": "2026-11-19",
                   "price": 790000
@@ -625,6 +667,7 @@
                 {
                   "distance": "10 km",
                   "tier": "Super Early Bird",
+                  "audience": "",
                   "from": "2026-09-04",
                   "to": "2026-09-24",
                   "price": 480000
@@ -632,6 +675,7 @@
                 {
                   "distance": "10 km",
                   "tier": "Early Bird",
+                  "audience": "",
                   "from": "2026-09-25",
                   "to": "2026-10-15",
                   "price": 620000
@@ -639,6 +683,7 @@
                 {
                   "distance": "10 km",
                   "tier": "Regular",
+                  "audience": "",
                   "from": "2026-10-16",
                   "to": "2026-11-06",
                   "price": 790000
@@ -646,6 +691,7 @@
                 {
                   "distance": "10 km",
                   "tier": "Late",
+                  "audience": "",
                   "from": "2026-11-07",
                   "to": "2026-11-19",
                   "price": 950000
@@ -653,6 +699,7 @@
                 {
                   "distance": "21 km",
                   "tier": "Super Early Bird",
+                  "audience": "",
                   "from": "2026-09-04",
                   "to": "2026-09-24",
                   "price": 660000
@@ -660,6 +707,7 @@
                 {
                   "distance": "21 km",
                   "tier": "Early Bird",
+                  "audience": "",
                   "from": "2026-09-25",
                   "to": "2026-10-15",
                   "price": 790000
@@ -667,6 +715,7 @@
                 {
                   "distance": "21 km",
                   "tier": "Regular",
+                  "audience": "",
                   "from": "2026-10-16",
                   "to": "2026-11-06",
                   "price": 950000
@@ -674,6 +723,7 @@
                 {
                   "distance": "21 km",
                   "tier": "Late",
+                  "audience": "",
                   "from": "2026-11-07",
                   "to": "2026-11-19",
                   "price": 1150000
@@ -681,6 +731,7 @@
                 {
                   "distance": "42 km",
                   "tier": "Super Early Bird",
+                  "audience": "",
                   "from": "2026-09-04",
                   "to": "2026-09-24",
                   "price": 780000
@@ -688,6 +739,7 @@
                 {
                   "distance": "42 km",
                   "tier": "Early Bird",
+                  "audience": "",
                   "from": "2026-09-25",
                   "to": "2026-10-15",
                   "price": 950000
@@ -695,6 +747,7 @@
                 {
                   "distance": "42 km",
                   "tier": "Regular",
+                  "audience": "",
                   "from": "2026-10-16",
                   "to": "2026-11-06",
                   "price": 1150000
@@ -702,11 +755,46 @@
                 {
                   "distance": "42 km",
                   "tier": "Late",
+                  "audience": "",
                   "from": "2026-11-07",
                   "to": "2026-11-19",
                   "price": 1350000
                 }
               ]
+            }
+          },
+          {
+            "url": "https://vm.vnexpress.net/ha-noi-2026/thong-tin-cuoc-dua",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "VnExpress Marathon Hanoi Midnight 2026",
+              "date": "2026-11-21",
+              "endDate": "2026-11-22",
+              "mainDate": "2026-11-21",
+              "distances": [],
+              "courses": [
+                {
+                  "distance": "unknown",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "VnExpress Marathon Hanoi Midnight 2026",
+              "mapsUrl": "unknown",
+              "venue": "unknown",
+              "city": "Hà Nội",
+              "organizer": "unknown",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": "unknown"
+              },
+              "prices": []
             }
           }
         ],
@@ -719,8 +807,7 @@
           "id": "vnexpress",
           "name": "VnExpress",
           "website": "https://vnexpress.net/"
-        },
-        "readBy": "agent"
+        }
       }
     },
     {
@@ -1165,5 +1252,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T05:01:22.419Z",
-  "updatedAt": "2026-10-15T20:31:08.696Z"
+  "updatedAt": "2026-10-15T20:33:57.116Z"
 }

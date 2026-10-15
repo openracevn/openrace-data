@@ -7,10 +7,11 @@
   ],
   "date": "2026-09-27",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "vnexpress-marathon-nghe-an",
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
-  "edition": null,
+  "edition": 1,
   "courses": [
     {
       "label": "5km",
@@ -38,97 +39,101 @@
     }
   ],
   "location": {
-    "venue": "Quảng trường Hồ Chí Minh, số 2 đường Vương Thúc Mậu, thành phố Vinh, tỉnh Nghệ An",
+    "venue": "Nhà Văn hoá Lao động tỉnh Nghệ An",
     "city": "Nghệ An"
   },
   "geo": {
-    "lat": 18.7358406,
-    "lng": 105.6906101,
+    "lat": 18.6689511,
+    "lng": 105.6850803,
     "source": "nominatim",
-    "precision": "province",
+    "precision": "venue",
     "current": {
       "province": "40",
-      "ward": null
+      "ward": "16681"
     },
-    "legacy": null,
+    "legacy": {
+      "province": "40",
+      "district": "412",
+      "ward": "16681"
+    },
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 892.1,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1202.8,
+        "minutes": 904,
+        "method": "road",
         "near": false
       },
       "ha-noi": {
-        "km": 255.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 297,
+        "minutes": 239,
+        "method": "road",
         "near": false
       },
       "da-nang": {
-        "km": 401.1,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 475,
+        "minutes": 383,
+        "method": "road",
         "near": false
       },
       "nha-trang": {
-        "km": 814.2,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 978.8,
+        "minutes": 769,
+        "method": "road",
         "near": false
       },
       "da-lat": {
-        "km": 811.1,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1106.3,
+        "minutes": 887,
+        "method": "road",
         "near": false
       },
       "can-tho": {
-        "km": 967.7,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1313.7,
+        "minutes": 1024,
+        "method": "road",
         "near": false
       },
       "hai-phong": {
-        "km": 256.7,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 331.1,
+        "minutes": 263,
+        "method": "road",
         "near": false
       },
       "hue": {
-        "km": 323.1,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 372.8,
+        "minutes": 300,
+        "method": "road",
         "near": false
       },
       "vung-tau": {
-        "km": 944.9,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1293.8,
+        "minutes": 987,
+        "method": "road",
         "near": false
       },
       "quy-nhon": {
-        "km": 668,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 786.8,
+        "minutes": 609,
+        "method": "road",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 720.1,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 983.6,
+        "minutes": 806,
+        "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 444.1,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 604.8,
+        "minutes": 471,
+        "method": "road",
         "near": false
       },
       "ha-long": {
-        "km": 286,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 380.8,
+        "minutes": 296,
+        "method": "road",
         "near": false
       }
     }
@@ -224,7 +229,7 @@
     }
   ],
   "currency": "VND",
-  "registrationStatus": null,
+  "registrationStatus": "open",
   "registrations": [
     {
       "site": "irace",
@@ -283,6 +288,7 @@
       "foundOn": "ticket.irace.vn"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {},
   "sources": [
@@ -290,7 +296,7 @@
       "site": "vnexpress-marathon",
       "role": "official",
       "url": "https://vm.vnexpress.net/nghe-an-2026",
-      "lastCheckedAt": "2026-09-26T05:38:00.505Z",
+      "lastCheckedAt": "2026-10-15T20:32:57.235Z",
       "lastChangedAt": "2026-09-25T05:01:22.419Z",
       "extracted": {
         "facts": {
@@ -306,16 +312,50 @@
               "types": [
                 "road_run"
               ],
-              "name": "VnExpress Marathon Grand Tour Nghe An 2026",
+              "name": "Grand Tour Nghe An 2026",
               "date": "2026-09-27",
+              "endDate": "2026-09-27",
+              "mainDate": "2026-09-27",
+              "distances": [],
+              "courses": [],
+              "edition": 1,
+              "editionQuote": "Mùa 1",
+              "mapsUrl": "https://vm.vnexpress.net/nghe-an-2026/thong-tin-cuoc-dua/dia-diem",
+              "venue": "Nhà Văn hoá Lao động tỉnh Nghệ An",
+              "city": "Vinh, Nghệ An",
+              "organizer": "VnExpress",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
               "prices": []
             }
           },
           {
             "url": "https://vm.vnexpress.net/nghe-an-2026/thong-tin-cuoc-dua",
             "json": {
-              "pageKind": "sport",
-              "venue": "Quảng trường Hồ Chí Minh, số 2 đường Vương Thúc Mậu, thành phố Vinh, tỉnh Nghệ An",
+              "pageKind": "none",
+              "types": [],
+              "name": "",
+              "date": "",
+              "endDate": "",
+              "mainDate": "",
+              "distances": [],
+              "courses": [],
+              "edition": 0,
+              "editionQuote": "",
+              "mapsUrl": "",
+              "venue": "",
+              "city": "",
+              "organizer": "",
+              "currency": "",
+              "registrationStatus": "closed",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
               "prices": []
             }
           }
@@ -329,8 +369,7 @@
           "id": "vnexpress",
           "name": "VnExpress",
           "website": "https://vnexpress.net/"
-        },
-        "readBy": "agent"
+        }
       }
     },
     {
@@ -550,5 +589,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T05:01:22.419Z",
-  "updatedAt": "2026-09-26T05:38:00.505Z"
+  "updatedAt": "2026-10-15T20:33:57.116Z"
 }

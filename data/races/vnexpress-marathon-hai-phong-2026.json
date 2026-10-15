@@ -39,97 +39,101 @@
     }
   ],
   "location": {
-    "venue": null,
+    "venue": "Thành phố Hải Phòng",
     "city": "Hải Phòng"
   },
   "geo": {
-    "lat": 20.8830967,
-    "lng": 106.6790381,
+    "lat": 20.856022,
+    "lng": 106.6875207,
     "source": "nominatim",
-    "precision": "province",
+    "precision": "venue",
     "current": {
       "province": "31",
-      "ward": null
+      "ward": "11359"
     },
-    "legacy": null,
+    "legacy": {
+      "province": "31",
+      "district": "304",
+      "ward": "11341"
+    },
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 1124.3,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1524.7,
+        "minutes": 1157,
+        "method": "road",
         "near": false
       },
       "ha-noi": {
-        "km": 87.4,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 108.6,
+        "minutes": 84,
+        "method": "road",
         "near": false
       },
       "da-nang": {
-        "km": 560.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 802.3,
+        "minutes": 643,
+        "method": "road",
         "near": false
       },
       "nha-trang": {
-        "km": 997.9,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1306,
+        "minutes": 1030,
+        "method": "road",
         "near": false
       },
       "da-lat": {
-        "km": 1012,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1433.5,
+        "minutes": 1148,
+        "method": "road",
         "near": false
       },
       "can-tho": {
-        "km": 1210.1,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1635.6,
+        "minutes": 1276,
+        "method": "road",
         "near": false
       },
       "hai-phong": {
-        "km": 4.4,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 2.6,
+        "minutes": 5,
+        "method": "road",
         "near": true
       },
       "hue": {
-        "km": 500.7,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 700,
+        "minutes": 560,
+        "method": "road",
         "near": false
       },
       "vung-tau": {
-        "km": 1172.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1615.7,
+        "minutes": 1239,
+        "method": "road",
         "near": false
       },
       "quy-nhon": {
-        "km": 835,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1114,
+        "minutes": 869,
+        "method": "road",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 925,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1310.8,
+        "minutes": 1067,
+        "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 334.7,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 408.9,
+        "minutes": 328,
+        "method": "road",
         "near": false
       },
       "ha-long": {
-        "km": 42.3,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 55.4,
+        "minutes": 46,
+        "method": "road",
         "near": false
       }
     }
@@ -567,7 +571,7 @@
       "site": "vnexpress-marathon",
       "role": "official",
       "url": "https://vm.vnexpress.net/hai-phong-2026",
-      "lastCheckedAt": "2026-10-13T00:00:00.000Z",
+      "lastCheckedAt": "2026-10-15T20:33:23.331Z",
       "lastChangedAt": "2026-09-25T05:01:22.419Z",
       "extracted": {
         "facts": {
@@ -585,19 +589,53 @@
               ],
               "name": "VnExpress Marathon Hai Phong 2026",
               "date": "2026-12-27",
+              "endDate": "2026-12-27",
+              "mainDate": "2026-12-27",
               "distances": [
                 "5 km",
                 "10 km",
                 "21 km",
                 "42 km"
               ],
+              "courses": [
+                {
+                  "distance": "5 km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10 km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "21 km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "42 km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "VnExpress Marathon Hai Phong lần thứ 1",
+              "mapsUrl": "https://vm.vnexpress.net/hai-phong-2026/thong-tin-cuoc-dua/dia-diem",
+              "venue": "Thành phố Hải Phòng",
               "city": "Hải Phòng",
+              "organizer": "VnExpress",
               "currency": "VND",
               "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": "Chưa có thông tin tham gia"
+              },
               "prices": [
                 {
                   "distance": "5 km",
                   "tier": "Super Early Bird",
+                  "audience": "Individual",
                   "from": "2026-08-28",
                   "to": "2026-10-08",
                   "price": 400000
@@ -605,6 +643,7 @@
                 {
                   "distance": "5 km",
                   "tier": "Early Bird",
+                  "audience": "Individual",
                   "from": "2026-10-09",
                   "to": "2026-10-28",
                   "price": 550000
@@ -612,6 +651,7 @@
                 {
                   "distance": "5 km",
                   "tier": "Regular",
+                  "audience": "Individual",
                   "from": "2026-10-29",
                   "to": "2026-12-02",
                   "price": 650000
@@ -619,6 +659,7 @@
                 {
                   "distance": "5 km",
                   "tier": "Late",
+                  "audience": "Individual",
                   "from": "2026-12-03",
                   "to": "2026-12-16",
                   "price": 850000
@@ -626,6 +667,7 @@
                 {
                   "distance": "10 km",
                   "tier": "Super Early Bird",
+                  "audience": "Individual",
                   "from": "2026-08-28",
                   "to": "2026-10-08",
                   "price": 540000
@@ -633,6 +675,7 @@
                 {
                   "distance": "10 km",
                   "tier": "Early Bird",
+                  "audience": "Individual",
                   "from": "2026-10-09",
                   "to": "2026-10-28",
                   "price": 690000
@@ -640,6 +683,7 @@
                 {
                   "distance": "10 km",
                   "tier": "Regular",
+                  "audience": "Individual",
                   "from": "2026-10-29",
                   "to": "2026-12-02",
                   "price": 850000
@@ -647,6 +691,7 @@
                 {
                   "distance": "10 km",
                   "tier": "Late",
+                  "audience": "Individual",
                   "from": "2026-12-03",
                   "to": "2026-12-16",
                   "price": 1100000
@@ -654,6 +699,7 @@
                 {
                   "distance": "21 km",
                   "tier": "Super Early Bird",
+                  "audience": "Individual",
                   "from": "2026-08-28",
                   "to": "2026-10-08",
                   "price": 780000
@@ -661,6 +707,7 @@
                 {
                   "distance": "21 km",
                   "tier": "Early Bird",
+                  "audience": "Individual",
                   "from": "2026-10-09",
                   "to": "2026-10-28",
                   "price": 880000
@@ -668,6 +715,7 @@
                 {
                   "distance": "21 km",
                   "tier": "Regular",
+                  "audience": "Individual",
                   "from": "2026-10-29",
                   "to": "2026-12-02",
                   "price": 1050000
@@ -675,6 +723,7 @@
                 {
                   "distance": "21 km",
                   "tier": "Late",
+                  "audience": "Individual",
                   "from": "2026-12-03",
                   "to": "2026-12-16",
                   "price": 1300000
@@ -682,6 +731,7 @@
                 {
                   "distance": "42 km",
                   "tier": "Super Early Bird",
+                  "audience": "Individual",
                   "from": "2026-08-28",
                   "to": "2026-10-08",
                   "price": 880000
@@ -689,6 +739,7 @@
                 {
                   "distance": "42 km",
                   "tier": "Early Bird",
+                  "audience": "Individual",
                   "from": "2026-10-09",
                   "to": "2026-10-28",
                   "price": 1050000
@@ -696,6 +747,7 @@
                 {
                   "distance": "42 km",
                   "tier": "Regular",
+                  "audience": "Individual",
                   "from": "2026-10-29",
                   "to": "2026-12-02",
                   "price": 1250000
@@ -703,6 +755,7 @@
                 {
                   "distance": "42 km",
                   "tier": "Late",
+                  "audience": "Individual",
                   "from": "2026-12-03",
                   "to": "2026-12-16",
                   "price": 1600000
@@ -713,12 +766,27 @@
           {
             "url": "https://vm.vnexpress.net/hai-phong-2026/thong-tin-cuoc-dua",
             "json": {
-              "pageKind": "sport",
-              "types": [
-                "road_run"
-              ],
-              "name": "VnExpress Marathon Hai Phong 2026",
-              "city": "Hải Phòng"
+              "pageKind": "none",
+              "types": [],
+              "name": "",
+              "date": "",
+              "endDate": "",
+              "mainDate": "",
+              "distances": [],
+              "courses": [],
+              "edition": 0,
+              "editionQuote": "",
+              "mapsUrl": "",
+              "venue": "",
+              "city": "",
+              "organizer": "",
+              "currency": "",
+              "registrationStatus": "closed",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": []
             }
           }
         ],
@@ -731,8 +799,7 @@
           "id": "vnexpress",
           "name": "VnExpress",
           "website": "https://vnexpress.net/"
-        },
-        "readBy": "agent"
+        }
       }
     },
     {
@@ -1177,5 +1244,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T05:01:22.419Z",
-  "updatedAt": "2026-10-15T20:31:08.696Z"
+  "updatedAt": "2026-10-15T20:33:57.116Z"
 }
