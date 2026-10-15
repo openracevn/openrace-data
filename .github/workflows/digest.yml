@@ -5,12 +5,15 @@ name: Data digest
 # read, races that need an update-race session with the reason, the week's and month's
 # Firecrawl credits), then the weekly numbers (MCP tool calls, caller keys and clients,
 # completeness against a week before, from openrace-mcp's public /weekly.json). No page
-# reads and no credits: it only reads the committed files. GitHub starts it late (hours);
-# a Cloudflare Worker will dispatch it on time (plan 027, step 4).
+# reads and no credits: it only reads the committed files. The Cloudflare Worker
+# openrace-cron (workers/cron/) dispatches it on time; no GitHub cron, so it never posts twice.
 on:
-  schedule:
-    - cron: "0 2 * * 1"
   workflow_dispatch:
+    inputs:
+      scheduled:
+        description: "Set by openrace-cron"
+        type: boolean
+        default: false
 
 jobs:
   notify:

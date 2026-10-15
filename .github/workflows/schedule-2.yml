@@ -6,17 +6,17 @@ name: Schedule 2 (details)
 # never read. A page leaves the list once read; one that fails 3 times goes to the
 # Monday digest. No per-run cap; the month's cap is scheduledMonthlyCredits in
 # config/sites.yaml. Commits once, then rebuilds openrace-web once Main has synced the API.
-# Starts when a scheduled Schedule 1 finishes (not one started by hand: a dry run there
-# must not set off paid reads); the 03:07 Vietnam cron is the fallback, and a run does
-# nothing if the list was already read today after the latest discovery.
+# A scheduled Schedule 1 starts it when it finishes (one started by hand doesn't: a dry
+# run there must not set off paid reads); openrace-cron (workers/cron/) dispatches it at
+# 05:00 Vietnam as the fallback. A run does nothing if the list was already read today
+# after the latest discovery.
 on:
-  workflow_run:
-    workflows: ["Schedule 1 (discovery)"]
-    types: [completed]
-  schedule:
-    - cron: "7 20 * * *"
   workflow_dispatch:
     inputs:
+      scheduled:
+        description: "Set by Schedule 1 or openrace-cron: a scheduled run"
+        type: boolean
+        default: false
       force:
         description: "Run even if the list was already read today"
         type: boolean
@@ -48,15 +48,13 @@ jobs:
       # Friday 2026-10-16 is trial.yml's day (plan 027); the schedules start Saturday.
       - id: gate
         env:
-          EVENT: ${{ github.event_name }}
-          AFTER: ${{ github.event.workflow_run.event }}
+          SCHEDULED: ${{ inputs.scheduled }}
           WEB_ONLY: ${{ inputs.web_only }}
         run: |
           day=$(TZ=Asia/Ho_Chi_Minh date +%F)
           go=true
           if [[ "$WEB_ONLY" == "true" ]]; then go=false; fi
-          if [[ "$EVENT" == "workflow_run" && "$AFTER" != "schedule" ]]; then go=false; fi
-          if [[ "$EVENT" != "workflow_dispatch" && "$day" == "2026-10-16" ]]; then go=false; fi
+          if [[ "$SCHEDULED" == "true" && "$day" == "2026-10-16" ]]; then go=false; fi
           echo "go=$go" >> "$GITHUB_OUTPUT"
       - if: steps.gate.outputs.go == 'true'
         uses: actions/checkout@v7

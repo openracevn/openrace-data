@@ -1,0 +1,21 @@
+# openrace-cron (plan 027, step 4): starts openrace-data's schedules on time. GitHub
+# starts this repo's own crons 4 to 7.5 hours late; Cloudflare's run on the minute.
+# Deploy: npx wrangler deploy (from this folder). Secret: GITHUB_TOKEN, a fine-grained
+# token with Actions: read and write on openracevn/openrace-data (the same token as the
+# repo's OPENRACE_BOT_TOKEN): npx wrangler secret put GITHUB_TOKEN
+name = "openrace-cron"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+workers_dev = false
+
+[triggers]
+# Times in UTC. 21:00 = 04:00 Vietnam (Schedule 1), 22:00 = 05:00 (Schedule 2's
+# fallback; it does nothing if the list was read after today's discovery), and
+# Monday 02:00 = 09:00 Vietnam (the digest).
+crons = ["0 21,22 * * *", "0 2 * * 1"]
+
+[vars]
+REPO = "openracevn/openrace-data"
+
+[observability]
+enabled = true

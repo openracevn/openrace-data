@@ -4,16 +4,20 @@ name: Schedule 1 (discovery)
 # and the hubs and race sites with a recipe on Monday of even ISO weeks; snapshots their
 # pages and puts new and changed ones on state/todo.json. On Monday it also puts every
 # source page of every upcoming race there. 0 Firecrawl credits; one commit (state/,
-# plus data/ when a new race comes from free facts). Schedule 2 starts when it finishes.
-# GitHub starts this repo's crons 4 to 7.5 hours late, so the cron is 00:07 Vietnam with
-# a retry at 02:07; a run does nothing if today's discovery already went through. Once
-# a Cloudflare Worker dispatches it on time (plan 027, step 4), the cron goes.
+# plus data/ when a new race comes from free facts). A scheduled run starts Schedule 2
+# when it finishes.
+# The Cloudflare Worker openrace-cron (workers/cron/) dispatches it at 04:00 Vietnam with
+# scheduled: true. The cron below is only a safety net if the Worker didn't: GitHub
+# starts it hours late, and it does nothing if today's discovery already went through.
 on:
   schedule:
-    - cron: "7 17 * * *"
-    - cron: "7 19 * * *"
+    - cron: "0 23 * * *"
   workflow_dispatch:
     inputs:
+      scheduled:
+        description: "Set by openrace-cron: a scheduled run (starts Schedule 2 after)"
+        type: boolean
+        default: false
       force:
         description: "Run even if today's discovery already went through"
         type: boolean
@@ -38,9 +42,11 @@ jobs:
     steps:
       # Friday 2026-10-16 is trial.yml's day (plan 027); the schedules start Saturday.
       - id: gate
+        env:
+          SCHEDULED: ${{ github.event_name == 'schedule' || inputs.scheduled }}
         run: |
           day=$(TZ=Asia/Ho_Chi_Minh date +%F)
-          if [[ "${{ github.event_name }}" == "schedule" && "$day" == "2026-10-16" ]]; then echo "go=false" >> "$GITHUB_OUTPUT"; else echo "go=true" >> "$GITHUB_OUTPUT"; fi
+          if [[ "$SCHEDULED" == "true" && "$day" == "2026-10-16" ]]; then echo "go=false" >> "$GITHUB_OUTPUT"; else echo "go=true" >> "$GITHUB_OUTPUT"; fi
       - if: steps.gate.outputs.go == 'true'
         uses: actions/checkout@v7
       - if: steps.gate.outputs.go == 'true'
@@ -51,6 +57,7 @@ jobs:
       - if: steps.gate.outputs.go == 'true'
         run: npm ci
       - name: Discovery (free)
+        id: discover
         if: steps.gate.outputs.go == 'true'
         env:
           # A PAT, not the built-in token: commits must trigger main.yml (validate + Discord).
@@ -66,7 +73,9 @@ jobs:
           if [[ "$FORCE" == "true" ]]; then args+=(--force); fi
           if [[ "$DRY_RUN" == "true" ]]; then args+=(--dry-run); fi
           npm run -s check -- "${args[@]}" 2>&1 | tee "$RUNNER_TEMP/run.log"
-          exit "${PIPESTATUS[0]}"
+          status="${PIPESTATUS[0]}"
+          if grep -q "already ran today" "$RUNNER_TEMP/run.log" || [[ "$DRY_RUN" == "true" ]]; then echo "ran=false" >> "$GITHUB_OUTPUT"; else echo "ran=true" >> "$GITHUB_OUTPUT"; fi
+          exit "$status"
       - name: Post to Discord
         if: always() && steps.gate.outputs.go == 'true'
         env:
@@ -82,3 +91,11 @@ jobs:
           msg=$(printf ':one: **Schedule 1 (discovery, free)**: %s\n%s\n%s' "$JOB_STATUS" "${body:-no output}" "$RUN_URL" | head -c 1990)
           jq -n --arg content "$msg" '{username: "OpenRace Data", content: $content, allowed_mentions: {parse: []}}' |
             curl -fsS -X POST -H 'Content-Type: application/json' --data @- "$DISCORD_WEBHOOK_URL"
+      # A scheduled discovery hands over to Schedule 2 (also when it failed: the list is
+      # still there). openrace-cron's 05:00 dispatch is the fallback.
+      - name: Start Schedule 2
+        if: always() && steps.discover.outputs.ran == 'true' && (github.event_name == 'schedule' || inputs.scheduled)
+        env:
+          GH_TOKEN: ${{ secrets.OPENRACE_BOT_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: gh workflow run schedule-2.yml -R "$REPO" -f scheduled=true
