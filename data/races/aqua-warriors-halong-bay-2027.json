@@ -1,22 +1,21 @@
 {
   "id": "09f9ff76-e3ff-470c-891f-c6ace918b629",
   "slug": "aqua-warriors-halong-bay-2027",
-  "name": "AQUA WARRIORS HALONG BAY 2027",
+  "name": "Aqua Warriors Halong Bay 2027",
   "types": [
     "triathlon",
-    "duathlon",
-    "aquathlon"
+    "duathlon"
   ],
   "date": "2027-04-03",
   "endDate": "2027-04-04",
-  "mainDate": null,
+  "mainDate": "2027-04-03",
   "seriesId": "aqua-warriors-halong-bay",
-  "organizerId": "bolt-event",
-  "organizer": "BOLT EVENT",
+  "organizerId": "cong-ty-co-phan-su-kien-bolt",
+  "organizer": "Công ty Cổ phần Sự kiện BOLT",
   "edition": null,
   "courses": [],
   "location": {
-    "venue": "Thành Phố Hạ Long",
+    "venue": "Hạ Long, Quảng Ninh, Việt Nam",
     "city": "Quảng Ninh"
   },
   "geo": {
@@ -116,6 +115,138 @@
     }
   },
   "prices": [
+    {
+      "distance": null,
+      "tier": "STANDARD DUATHLON · SUPER EARLY BIRD",
+      "kind": "super_early",
+      "audience": null,
+      "price": 2589000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "(RELAY) STANDARD DUATHLON · SUPER EARLY BIRD",
+      "kind": "group",
+      "audience": null,
+      "price": 3366000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "T103 ENDURO TRIATHLON SOLO · SUPER EARLY BIRD",
+      "kind": "super_early",
+      "audience": null,
+      "price": 3739000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "[RELAY] T103 ENDURO TRIATHLON · SUPER EARLY BIRD",
+      "kind": "group",
+      "audience": null,
+      "price": 4869000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "OLYMPIC TRIATHLON SOLO · SUPER EARLY BIRD",
+      "kind": "super_early",
+      "audience": null,
+      "price": 3189000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "[RELAY] OLYMPIC TRIATHLON · SUPER EARLY BIRD",
+      "kind": "group",
+      "audience": null,
+      "price": 4149000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "FULL AQUA WARRIORS SOLO · SUPER EARLY BIRD",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1619000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "[RELAY] FULL AQUA WARRIORS · SUPER EARLY BIRD",
+      "kind": "group",
+      "audience": null,
+      "price": 2449000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "OLYMPIC AQUA WARRIORS · SUPER EARLY BIRD",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1219000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "SPRINT AQUA WARRIORS · SUPER EARLY BIRD",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1019000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "JUNIOR AQUA WARRIORS · SUPER EARLY BIRD",
+      "kind": "super_early",
+      "audience": null,
+      "price": 659000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "KIDS AQUA WARRIORS · SUPER EARLY BIRD",
+      "kind": "super_early",
+      "audience": null,
+      "price": 529000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "irace"
+    },
     {
       "distance": "10km",
       "tier": "Super Early Bird",
@@ -649,11 +780,70 @@
   "registrationStatus": "open",
   "registrations": [
     {
+      "site": "irace",
+      "url": "https://ticket.irace.vn/aqua-warriors-halong-bay-2027"
+    },
+    {
       "site": "actiup",
       "url": "https://actiup.net/vi/event/aqua-warriors-halong-bay-2027"
     }
   ],
   "links": [
+    {
+      "url": "https://facebook.com/sharer/sharer.php",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "http://online.gov.vn/Home/WebDetails/51414",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1Wf91juetsaZK3F_yZDLKw8bEqcKkfKTK",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
     {
       "url": "https://docs.google.com/document/d/1i_vpPCwlVOFwV0z49Hgmhzc4wIqlnHYv/edit",
       "kind": "rules",
@@ -1153,9 +1343,351 @@
           }
         ]
       }
+    },
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://ticket.irace.vn/aqua-warriors-halong-bay-2027",
+      "lastCheckedAt": "2026-10-15T20:27:06.087Z",
+      "lastChangedAt": "2026-10-15T20:27:06.087Z",
+      "extracted": {
+        "facts": {
+          "name": "Aqua Warriors Halong Bay 2027",
+          "venue": "Hạ Long, Quảng Ninh, Việt Nam",
+          "organizer": "Công ty Cổ phần Sự kiện BOLT"
+        },
+        "pages": [
+          {
+            "url": "https://ticket.irace.vn/aqua-warriors-halong-bay-2027",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "triathlon",
+                "duathlon"
+              ],
+              "name": "Aqua Warriors Halong Bay 2027",
+              "date": "2027-04-03",
+              "endDate": "2027-04-04",
+              "mainDate": "2027-04-03",
+              "distances": [
+                "STANDARD DUATHLON",
+                "(RELAY) STANDARD DUATHLON",
+                "T103 ENDURO TRIATHLON SOLO",
+                "[RELAY] T103 ENDURO TRIATHLON",
+                "OLYMPIC TRIATHLON SOLO",
+                "[RELAY] OLYMPIC TRIATHLON",
+                "FULL AQUA WARRIORS SOLO",
+                "[RELAY] FULL AQUA WARRIORS",
+                "OLYMPIC AQUA WARRIORS",
+                "SPRINT AQUA WARRIORS",
+                "JUNIOR AQUA WARRIORS",
+                "KIDS AQUA WARRIORS"
+              ],
+              "courses": [
+                {
+                  "distance": "STANDARD DUATHLON",
+                  "type": "duathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "(RELAY) STANDARD DUATHLON",
+                  "type": "duathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "T103 ENDURO TRIATHLON SOLO",
+                  "type": "triathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "[RELAY] T103 ENDURO TRIATHLON",
+                  "type": "triathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "OLYMPIC TRIATHLON SOLO",
+                  "type": "triathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "[RELAY] OLYMPIC TRIATHLON",
+                  "type": "triathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "FULL AQUA WARRIORS SOLO",
+                  "type": "triathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "[RELAY] FULL AQUA WARRIORS",
+                  "type": "triathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "OLYMPIC AQUA WARRIORS",
+                  "type": "triathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "SPRINT AQUA WARRIORS",
+                  "type": "triathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "JUNIOR AQUA WARRIORS",
+                  "type": "triathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "KIDS AQUA WARRIORS",
+                  "type": "triathlon",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "Aqua Warriors Halong Bay 2027",
+              "mapsUrl": "",
+              "venue": "Hạ Long",
+              "city": "Quảng Ninh",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": [
+                {
+                  "distance": "STANDARD DUATHLON",
+                  "tier": "SUPER EARLY BIRD",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 2589000
+                },
+                {
+                  "distance": "(RELAY) STANDARD DUATHLON",
+                  "tier": "SUPER EARLY BIRD",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 3366000
+                },
+                {
+                  "distance": "T103 ENDURO TRIATHLON SOLO",
+                  "tier": "SUPER EARLY BIRD",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 3739000
+                },
+                {
+                  "distance": "[RELAY] T103 ENDURO TRIATHLON",
+                  "tier": "SUPER EARLY BIRD",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 4869000
+                },
+                {
+                  "distance": "OLYMPIC TRIATHLON SOLO",
+                  "tier": "SUPER EARLY BIRD",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 3189000
+                },
+                {
+                  "distance": "[RELAY] OLYMPIC TRIATHLON",
+                  "tier": "SUPER EARLY BIRD",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 4149000
+                },
+                {
+                  "distance": "FULL AQUA WARRIORS SOLO",
+                  "tier": "SUPER EARLY BIRD",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 1619000
+                },
+                {
+                  "distance": "[RELAY] FULL AQUA WARRIORS",
+                  "tier": "SUPER EARLY BIRD",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 2449000
+                },
+                {
+                  "distance": "OLYMPIC AQUA WARRIORS",
+                  "tier": "SUPER EARLY BIRD",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 1219000
+                },
+                {
+                  "distance": "SPRINT AQUA WARRIORS",
+                  "tier": "SUPER EARLY BIRD",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 1019000
+                },
+                {
+                  "distance": "JUNIOR AQUA WARRIORS",
+                  "tier": "SUPER EARLY BIRD",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 659000
+                },
+                {
+                  "distance": "KIDS AQUA WARRIORS",
+                  "tier": "SUPER EARLY BIRD",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 529000
+                }
+              ]
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://app.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://irace.vn/ban-ve/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ban ve su kien"
+          },
+          {
+            "url": "https://irace.vn/myfoto/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "tim hinh su kien"
+          },
+          {
+            "url": "https://irace.vn/doanh-nghiep/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "to chuc su kien"
+          },
+          {
+            "url": "https://irace.vn/affiliate/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kiem tien cung irace vn"
+          },
+          {
+            "url": "https://irace.vn/thiet-ke-huy-chuong/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huy chuong"
+          },
+          {
+            "url": "https://irace.vn/san-xuat-qua-tang-phu-kien-the-thao/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "quan ao phu kien"
+          },
+          {
+            "url": "https://irace.vn/about-us/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ve irace"
+          },
+          {
+            "url": "https://irace.vn/bao-chi/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "bao chi viet"
+          },
+          {
+            "url": "https://irace.vn/hoi-dap/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "hoi dap"
+          },
+          {
+            "url": "https://irace.vn/thong-tin/huong-dan/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huong dan su dung"
+          },
+          {
+            "url": "https://irace.vn/kien-thuc-tap-luyen/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kien thuc chay bo"
+          },
+          {
+            "url": "https://tools.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "cong cu tinh toan"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "shop the thao"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "dinh duong"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "phu kien"
+          },
+          {
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://ticket.irace.vn/aqua-warriors-halong-bay-2027",
+            "text": "chia se tren facebook"
+          },
+          {
+            "url": "https://drive.google.com/drive/folders/1Wf91juetsaZK3F_yZDLKw8bEqcKkfKTK",
+            "text": "tai day"
+          },
+          {
+            "url": "http://online.gov.vn/Home/WebDetails/51414",
+            "text": ""
+          },
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/feed/",
+            "text": ""
+          },
+          {
+            "url": "https://www.youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+            "text": ""
+          },
+          {
+            "url": "https://play.google.com/store/apps/details?id=com.irace.app",
+            "text": ""
+          },
+          {
+            "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/chinh-sach-bao-mat/",
+            "text": "chinh sach bao mat"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-thanh-toan/",
+            "text": "dieu khoan thanh toan"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-su-dung/",
+            "text": "dieu khoan su dung"
+          },
+          {
+            "url": "https://irace.vn/tuyen-dung/",
+            "text": "tuyen dung"
+          },
+          {
+            "url": "https://irace.vn/lien-he/",
+            "text": "lien he"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-co-phan-su-kien-bolt",
+          "name": "Công ty Cổ phần Sự kiện BOLT"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-10-12T17:48:31.011Z",
-  "updatedAt": "2026-10-15T20:26:01.820Z"
+  "updatedAt": "2026-10-15T20:31:08.696Z"
 }

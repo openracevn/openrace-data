@@ -1,16 +1,16 @@
 {
   "id": "993a097f-5cf3-415f-84c6-6fe1eb1b7404",
   "slug": "quang-truc-half-marathon-2026-noi-nhip-bien-cuong",
-  "name": "Quảng Trực Half Marathon 2026 - Nối nhịp biên cương",
+  "name": "Giải chạy Quảng Trực Half Marathon 2026 - Nối nhịp biên cương",
   "types": [
     "road_run"
   ],
   "date": "2026-11-14",
   "endDate": "2026-11-15",
-  "mainDate": null,
+  "mainDate": "2026-11-14",
   "seriesId": null,
-  "organizerId": "uy-ban-nhan-dan-dan-xa-quang-truc",
-  "organizer": "Ủy ban nhân dân dân xã Quảng Trực",
+  "organizerId": "bao-dak-nong",
+  "organizer": "Báo Đắk Nông",
   "edition": 1,
   "courses": [
     {
@@ -137,6 +137,94 @@
   "prices": [
     {
       "distance": "1.5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 269000,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 299000,
+      "from": "2026-10-01",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 399000,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 499000,
+      "from": "2026-10-01",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 499000,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 599000,
+      "from": "2026-10-01",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 649000,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 749000,
+      "from": "2026-10-01",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "1.5km",
       "tier": "Regular",
       "kind": "regular",
       "audience": null,
@@ -228,11 +316,70 @@
   "registrationStatus": "open",
   "registrations": [
     {
+      "site": "irace",
+      "url": "https://ticket.irace.vn/quang-truc-half-marathon-2026"
+    },
+    {
       "site": "actiup",
       "url": "https://actiup.net/vi/event/quang-truc-half-marathon-2026-noi-nhip-bien-cuong"
     }
   ],
   "links": [
+    {
+      "url": "https://facebook.com/sharer/sharer.php",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "http://online.gov.vn/Home/WebDetails/51414",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://drive.google.com/file/d/18maLCDGmVodb2A1VuqmafWIXopaSooEO/view",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
     {
       "url": "https://drive.google.com/file/d/18UfSrmJAqM-d-3YFToccatM205CyqLqC/view",
       "kind": "rules",
@@ -442,9 +589,328 @@
           }
         ]
       }
+    },
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://ticket.irace.vn/quang-truc-half-marathon-2026",
+      "lastCheckedAt": "2026-10-15T20:28:00.918Z",
+      "lastChangedAt": "2026-10-15T20:28:00.918Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Quảng Trực Half Marathon 2026 - Nối nhịp biên cương",
+          "venue": "Xã Quảng Trực, tỉnh Lâm Đồng",
+          "organizer": "Báo Đắk Nông",
+          "prices": [
+            {
+              "distance": "1.5km",
+              "tier": "Early Bird",
+              "from": "09/09",
+              "to": "30/09",
+              "price": 269000
+            },
+            {
+              "distance": "1.5km",
+              "tier": "Regular",
+              "from": "01/10",
+              "to": "31/10",
+              "price": 299000
+            },
+            {
+              "distance": "5km",
+              "tier": "Early Bird",
+              "from": "09/09",
+              "to": "30/09",
+              "price": 399000
+            },
+            {
+              "distance": "5km",
+              "tier": "Regular",
+              "from": "01/10",
+              "to": "31/10",
+              "price": 499000
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "from": "09/09",
+              "to": "30/09",
+              "price": 499000
+            },
+            {
+              "distance": "10km",
+              "tier": "Regular",
+              "from": "01/10",
+              "to": "31/10",
+              "price": 599000
+            },
+            {
+              "distance": "21km",
+              "tier": "Early Bird",
+              "from": "09/09",
+              "to": "30/09",
+              "price": 649000
+            },
+            {
+              "distance": "21km",
+              "tier": "Regular",
+              "from": "01/10",
+              "to": "31/10",
+              "price": 749000
+            }
+          ]
+        },
+        "pages": [
+          {
+            "url": "https://ticket.irace.vn/quang-truc-half-marathon-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Giải chạy Quảng Trực Half Marathon 2026 - Nối nhịp biên cương",
+              "date": "2026-11-14",
+              "endDate": "2026-11-15",
+              "mainDate": "2026-11-14",
+              "distances": [
+                "1.5km",
+                "5km",
+                "10km",
+                "21km"
+              ],
+              "courses": [
+                {
+                  "distance": "1.5km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "5km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "21km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "Giải chạy Quảng Trực Half Marathon 2026",
+              "mapsUrl": "",
+              "venue": "Xã Quảng Trực, tỉnh Lâm Đồng",
+              "city": "Lâm Đồng",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": [
+                {
+                  "distance": "1.5km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "2023-09-09",
+                  "to": "2023-09-30",
+                  "price": 269000
+                },
+                {
+                  "distance": "1.5km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "2023-10-01",
+                  "to": "2023-10-31",
+                  "price": 299000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "2023-09-09",
+                  "to": "2023-09-30",
+                  "price": 399000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "2023-10-01",
+                  "to": "2023-10-31",
+                  "price": 499000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "2023-09-09",
+                  "to": "2023-09-30",
+                  "price": 499000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "2023-10-01",
+                  "to": "2023-10-31",
+                  "price": 599000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "2023-09-09",
+                  "to": "2023-09-30",
+                  "price": 649000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "2023-10-01",
+                  "to": "2023-10-31",
+                  "price": 749000
+                }
+              ]
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://app.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://irace.vn/ban-ve/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ban ve su kien"
+          },
+          {
+            "url": "https://irace.vn/myfoto/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "tim hinh su kien"
+          },
+          {
+            "url": "https://irace.vn/doanh-nghiep/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "to chuc su kien"
+          },
+          {
+            "url": "https://irace.vn/affiliate/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kiem tien cung irace vn"
+          },
+          {
+            "url": "https://irace.vn/thiet-ke-huy-chuong/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huy chuong"
+          },
+          {
+            "url": "https://irace.vn/san-xuat-qua-tang-phu-kien-the-thao/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "quan ao phu kien"
+          },
+          {
+            "url": "https://irace.vn/about-us/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ve irace"
+          },
+          {
+            "url": "https://irace.vn/bao-chi/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "bao chi viet"
+          },
+          {
+            "url": "https://irace.vn/hoi-dap/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "hoi dap"
+          },
+          {
+            "url": "https://irace.vn/thong-tin/huong-dan/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huong dan su dung"
+          },
+          {
+            "url": "https://irace.vn/kien-thuc-tap-luyen/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kien thuc chay bo"
+          },
+          {
+            "url": "https://tools.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "cong cu tinh toan"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "shop the thao"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "dinh duong"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "phu kien"
+          },
+          {
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://ticket.irace.vn/quang-truc-half-marathon-2026",
+            "text": "chia se tren facebook"
+          },
+          {
+            "url": "https://drive.google.com/file/d/18maLCDGmVodb2A1VuqmafWIXopaSooEO/view?usp=drive_link",
+            "text": "tai day"
+          },
+          {
+            "url": "http://online.gov.vn/Home/WebDetails/51414",
+            "text": ""
+          },
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/feed/",
+            "text": ""
+          },
+          {
+            "url": "https://www.youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+            "text": ""
+          },
+          {
+            "url": "https://play.google.com/store/apps/details?id=com.irace.app",
+            "text": ""
+          },
+          {
+            "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/chinh-sach-bao-mat/",
+            "text": "chinh sach bao mat"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-thanh-toan/",
+            "text": "dieu khoan thanh toan"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-su-dung/",
+            "text": "dieu khoan su dung"
+          },
+          {
+            "url": "https://irace.vn/tuyen-dung/",
+            "text": "tuyen dung"
+          },
+          {
+            "url": "https://irace.vn/lien-he/",
+            "text": "lien he"
+          }
+        ],
+        "organizer": {
+          "id": "bao-dak-nong",
+          "name": "Báo Đắk Nông"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-15T20:26:01.820Z"
+  "updatedAt": "2026-10-15T20:31:08.696Z"
 }

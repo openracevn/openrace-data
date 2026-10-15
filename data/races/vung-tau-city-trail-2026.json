@@ -1,12 +1,12 @@
 {
   "id": "b54dfd25-8254-40cb-9dc7-df93782402d9",
   "slug": "vung-tau-city-trail",
-  "name": "Giải chạy Vũng Tàu City Trail 2026",
+  "name": "Giải chạy Vung Tau City Trail 2026",
   "types": [
     "city_trail"
   ],
-  "date": "2026-11-28",
-  "endDate": "2026-11-29",
+  "date": "2026-11-29",
+  "endDate": null,
   "mainDate": null,
   "seriesId": null,
   "organizerId": "vietnam-mtb-series",
@@ -276,11 +276,65 @@
   "registrationStatus": "open",
   "registrations": [
     {
+      "site": "irace",
+      "url": "https://ticket.irace.vn/vung-tau-city-trail-2026"
+    },
+    {
       "site": "actiup",
       "url": "https://actiup.net/vi/event/vung-tau-city-trail"
     }
   ],
   "links": [
+    {
+      "url": "https://facebook.com/sharer/sharer.php",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "http://online.gov.vn/Home/WebDetails/51414",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
     {
       "url": "https://drive.google.com/file/d/1NlmkunBtqalMjKjI5dZyC6nM-GG5GhLp/view",
       "kind": "rules",
@@ -626,9 +680,324 @@
           }
         ]
       }
+    },
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://ticket.irace.vn/vung-tau-city-trail-2026",
+      "lastCheckedAt": "2026-10-15T20:27:44.511Z",
+      "lastChangedAt": "2026-10-15T20:27:44.511Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Vung Tau City Trail 2026",
+          "venue": "Nhà truyền thống cách mạng Vũng Tàu",
+          "organizer": "Vietnam MTB Series",
+          "prices": [
+            {
+              "distance": "7km",
+              "tier": "Early Bird",
+              "from": "19/09",
+              "to": "18/10",
+              "price": 550000
+            },
+            {
+              "distance": "7km",
+              "tier": "Regular",
+              "from": "19/10",
+              "to": "15/11",
+              "price": 650000
+            },
+            {
+              "distance": "12km",
+              "tier": "Early Bird",
+              "from": "19/09",
+              "to": "18/10",
+              "price": 650000
+            },
+            {
+              "distance": "12km",
+              "tier": "Regular",
+              "from": "19/10",
+              "to": "15/11",
+              "price": 750000
+            },
+            {
+              "distance": "25km",
+              "tier": "Early Bird",
+              "from": "19/09",
+              "to": "18/10",
+              "price": 750000
+            },
+            {
+              "distance": "25km",
+              "tier": "Regular",
+              "from": "19/10",
+              "to": "15/11",
+              "price": 850000
+            },
+            {
+              "distance": "35km",
+              "tier": "Early Bird",
+              "from": "19/09",
+              "to": "18/10",
+              "price": 850000
+            },
+            {
+              "distance": "35km",
+              "tier": "Regular",
+              "from": "19/10",
+              "to": "15/11",
+              "price": 1150000
+            }
+          ]
+        },
+        "pages": [
+          {
+            "url": "https://ticket.irace.vn/vung-tau-city-trail-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "trail_run"
+              ],
+              "name": "Giải chạy Vung Tau City Trail 2026",
+              "date": "2026-11-29",
+              "endDate": "2026-11-29",
+              "mainDate": "2026-11-29",
+              "distances": [
+                "7km",
+                "12km",
+                "25km",
+                "35km"
+              ],
+              "courses": [
+                {
+                  "distance": "7km",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "12km",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "25km",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "35km",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "Giải chạy Vung Tau City Trail 2026",
+              "mapsUrl": "",
+              "venue": "Nhà truyền thống cách mạng Vũng Tàu",
+              "city": "Vũng Tàu",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": [
+                {
+                  "distance": "7km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "2023-09-19",
+                  "to": "2023-10-18",
+                  "price": 550000
+                },
+                {
+                  "distance": "7km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "2023-10-19",
+                  "to": "2023-11-15",
+                  "price": 650000
+                },
+                {
+                  "distance": "12km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "2023-09-19",
+                  "to": "2023-10-18",
+                  "price": 650000
+                },
+                {
+                  "distance": "12km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "2023-10-19",
+                  "to": "2023-11-15",
+                  "price": 750000
+                },
+                {
+                  "distance": "25km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "2023-09-19",
+                  "to": "2023-10-18",
+                  "price": 750000
+                },
+                {
+                  "distance": "25km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "2023-10-19",
+                  "to": "2023-11-15",
+                  "price": 850000
+                },
+                {
+                  "distance": "35km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "2023-09-19",
+                  "to": "2023-10-18",
+                  "price": 850000
+                },
+                {
+                  "distance": "35km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "2023-10-19",
+                  "to": "2023-11-15",
+                  "price": 1150000
+                }
+              ]
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://app.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://irace.vn/ban-ve/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ban ve su kien"
+          },
+          {
+            "url": "https://irace.vn/myfoto/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "tim hinh su kien"
+          },
+          {
+            "url": "https://irace.vn/doanh-nghiep/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "to chuc su kien"
+          },
+          {
+            "url": "https://irace.vn/affiliate/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kiem tien cung irace vn"
+          },
+          {
+            "url": "https://irace.vn/thiet-ke-huy-chuong/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huy chuong"
+          },
+          {
+            "url": "https://irace.vn/san-xuat-qua-tang-phu-kien-the-thao/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "quan ao phu kien"
+          },
+          {
+            "url": "https://irace.vn/about-us/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ve irace"
+          },
+          {
+            "url": "https://irace.vn/bao-chi/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "bao chi viet"
+          },
+          {
+            "url": "https://irace.vn/hoi-dap/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "hoi dap"
+          },
+          {
+            "url": "https://irace.vn/thong-tin/huong-dan/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huong dan su dung"
+          },
+          {
+            "url": "https://irace.vn/kien-thuc-tap-luyen/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kien thuc chay bo"
+          },
+          {
+            "url": "https://tools.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "cong cu tinh toan"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "shop the thao"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "dinh duong"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "phu kien"
+          },
+          {
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://ticket.irace.vn/vung-tau-city-trail-2026",
+            "text": "chia se tren facebook"
+          },
+          {
+            "url": "http://online.gov.vn/Home/WebDetails/51414",
+            "text": ""
+          },
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/feed/",
+            "text": ""
+          },
+          {
+            "url": "https://www.youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+            "text": ""
+          },
+          {
+            "url": "https://play.google.com/store/apps/details?id=com.irace.app",
+            "text": ""
+          },
+          {
+            "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/chinh-sach-bao-mat/",
+            "text": "chinh sach bao mat"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-thanh-toan/",
+            "text": "dieu khoan thanh toan"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-su-dung/",
+            "text": "dieu khoan su dung"
+          },
+          {
+            "url": "https://irace.vn/tuyen-dung/",
+            "text": "tuyen dung"
+          },
+          {
+            "url": "https://irace.vn/lien-he/",
+            "text": "lien he"
+          }
+        ],
+        "organizer": {
+          "id": "vietnam-mtb-series",
+          "name": "Vietnam MTB Series"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-13T02:40:11.333Z"
+  "updatedAt": "2026-10-15T20:31:08.696Z"
 }

@@ -1,7 +1,7 @@
 {
   "id": "ddda98fb-5837-4b4c-b986-9056b42d5025",
   "slug": "giai-marathon-quoc-te-di-san-can-tho-quan-quan-21",
-  "name": "Giải Marathon Quốc tế Di sản Cần Thơ 2026",
+  "name": "Giải chạy Marathon Quốc tế Di sản Cần Thơ 2026",
   "types": [
     "road_run"
   ],
@@ -9,8 +9,8 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "can-tho-heritage-marathon",
-  "organizerId": "cong-ty-dha-viet-nam",
-  "organizer": "Công ty DHA Việt Nam",
+  "organizerId": "dha",
+  "organizer": "DHA Vietnam | Ban tổ chức sự kiện",
   "edition": null,
   "courses": [
     {
@@ -142,6 +142,171 @@
       "from": "2026-08-11",
       "to": "2026-08-15",
       "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 330000,
+      "from": "2026-08-16",
+      "to": "2026-09-06",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 450000,
+      "from": "2026-09-07",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 700000,
+      "from": "2026-11-01",
+      "to": "2026-11-01",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 900000,
+      "from": "2026-11-02",
+      "to": "2026-11-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 420000,
+      "from": "2026-08-11",
+      "to": "2026-08-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 450000,
+      "from": "2026-08-16",
+      "to": "2026-09-06",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 550000,
+      "from": "2026-09-07",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 1100000,
+      "from": "2026-11-01",
+      "to": "2026-11-01",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1500000,
+      "from": "2026-11-02",
+      "to": "2026-11-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 495000,
+      "from": "2026-08-11",
+      "to": "2026-08-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 530000,
+      "from": "2026-08-16",
+      "to": "2026-09-06",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 650000,
+      "from": "2026-09-07",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 1300000,
+      "from": "2026-11-01",
+      "to": "2026-11-01",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2000000,
+      "from": "2026-11-02",
+      "to": "2026-11-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 295000,
+      "from": "2026-08-11",
+      "to": "2026-08-15",
+      "inferred": [],
       "site": "canthomarathon-com"
     },
     {
@@ -246,11 +411,70 @@
   "registrationStatus": "open",
   "registrations": [
     {
+      "site": "irace",
+      "url": "https://ticket.irace.vn/marathon-quoc-te-di-san-can-tho-2026"
+    },
+    {
       "site": "actiup",
       "url": "https://actiup.net/vi/event/giai-marathon-quoc-te-di-san-can-tho-quan-quan-21"
     }
   ],
   "links": [
+    {
+      "url": "https://facebook.com/sharer/sharer.php",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "http://online.gov.vn/Home/WebDetails/51414",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1uMzmLKbOKJHsMshZ4F2N34kp0bb92ZoJ/view",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
     {
       "url": "https://drive.google.com/file/d/1WfBjAjgv52hGsmJHtb4oTpaXSY_Ev1jm/view",
       "kind": "rules",
@@ -536,9 +760,427 @@
           "note": "organizer's own post (2026-09-09) with the Early Bird price image: 5km (Conservation Vietnam) 450.000, 10km 550.000, 21km 650.000; same prices on paymentcantho.vietnamheritagemarathon.com read 2026-10-13. Dates left empty: the image header repeats 16/08-06/09/2026 (the Super Early Bird window) while the post text says 'áp dụng đến 07/09/2026' and was published 09/09, so the window is unclear. Ages: 5km from 9, 10km from 12, 21km from 16 (payment site). Group 5% off for 5+ BIBs (427.500/522.500/617.500) not stored"
         }
       }
+    },
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://ticket.irace.vn/marathon-quoc-te-di-san-can-tho-2026",
+      "lastCheckedAt": "2026-10-15T20:28:58.149Z",
+      "lastChangedAt": "2026-10-15T20:28:58.149Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Marathon Quốc tế Di sản Cần Thơ 2026",
+          "venue": "Cần Thơ",
+          "organizer": "DHA Vietnam | Ban tổ chức sự kiện",
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Flash Sale",
+              "from": "11/08",
+              "to": "15/08",
+              "price": 295000
+            },
+            {
+              "distance": "5km",
+              "tier": "Super Early Bird",
+              "from": "16/08",
+              "to": "06/09",
+              "price": 330000
+            },
+            {
+              "distance": "5km",
+              "tier": "Early Bird",
+              "from": "07/09",
+              "to": "31/10",
+              "price": 450000
+            },
+            {
+              "distance": "5km",
+              "tier": "Standard",
+              "from": "01/11",
+              "to": "01/11",
+              "price": 700000
+            },
+            {
+              "distance": "5km",
+              "tier": "Late",
+              "from": "02/11",
+              "to": "15/11",
+              "price": 900000
+            },
+            {
+              "distance": "10km",
+              "tier": "Flash Sale",
+              "from": "11/08",
+              "to": "15/08",
+              "price": 420000
+            },
+            {
+              "distance": "10km",
+              "tier": "Super Early Bird",
+              "from": "16/08",
+              "to": "06/09",
+              "price": 450000
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "from": "07/09",
+              "to": "31/10",
+              "price": 550000
+            },
+            {
+              "distance": "10km",
+              "tier": "Standard",
+              "from": "01/11",
+              "to": "01/11",
+              "price": 1100000
+            },
+            {
+              "distance": "10km",
+              "tier": "Late",
+              "from": "02/11",
+              "to": "15/11",
+              "price": 1500000
+            },
+            {
+              "distance": "21km",
+              "tier": "Flash Sale",
+              "from": "11/08",
+              "to": "15/08",
+              "price": 495000
+            },
+            {
+              "distance": "21km",
+              "tier": "Super Early Bird",
+              "from": "16/08",
+              "to": "06/09",
+              "price": 530000
+            },
+            {
+              "distance": "21km",
+              "tier": "Early Bird",
+              "from": "07/09",
+              "to": "31/10",
+              "price": 650000
+            },
+            {
+              "distance": "21km",
+              "tier": "Standard",
+              "from": "01/11",
+              "to": "01/11",
+              "price": 1300000
+            },
+            {
+              "distance": "21km",
+              "tier": "Late",
+              "from": "02/11",
+              "to": "15/11",
+              "price": 2000000
+            }
+          ]
+        },
+        "pages": [
+          {
+            "url": "https://ticket.irace.vn/marathon-quoc-te-di-san-can-tho-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Giải chạy Marathon Quốc tế Di sản Cần Thơ 2026",
+              "date": "2026-12-20",
+              "endDate": "2026-12-20",
+              "mainDate": "2026-12-20",
+              "distances": [
+                "5km",
+                "10km",
+                "21km"
+              ],
+              "courses": [
+                {
+                  "distance": "5km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "21km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "Giải chạy lần đầu",
+              "mapsUrl": "",
+              "venue": "Cần Thơ",
+              "city": "Cần Thơ",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": [
+                {
+                  "distance": "5km",
+                  "tier": "Flash Sale",
+                  "audience": "",
+                  "from": "11/08",
+                  "to": "15/08",
+                  "price": 295000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "16/08",
+                  "to": "06/09",
+                  "price": 330000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "07/09",
+                  "to": "31/10",
+                  "price": 450000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "01/11",
+                  "price": 700000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "02/11",
+                  "to": "15/11",
+                  "price": 900000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Flash Sale",
+                  "audience": "",
+                  "from": "11/08",
+                  "to": "15/08",
+                  "price": 420000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "16/08",
+                  "to": "06/09",
+                  "price": 450000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "07/09",
+                  "to": "31/10",
+                  "price": 550000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "01/11",
+                  "price": 1100000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "02/11",
+                  "to": "15/11",
+                  "price": 1500000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Flash Sale",
+                  "audience": "",
+                  "from": "11/08",
+                  "to": "15/08",
+                  "price": 495000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "16/08",
+                  "to": "06/09",
+                  "price": 530000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "07/09",
+                  "to": "31/10",
+                  "price": 650000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "01/11",
+                  "price": 1300000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "02/11",
+                  "to": "15/11",
+                  "price": 2000000
+                }
+              ]
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://app.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://irace.vn/ban-ve/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ban ve su kien"
+          },
+          {
+            "url": "https://irace.vn/myfoto/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "tim hinh su kien"
+          },
+          {
+            "url": "https://irace.vn/doanh-nghiep/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "to chuc su kien"
+          },
+          {
+            "url": "https://irace.vn/affiliate/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kiem tien cung irace vn"
+          },
+          {
+            "url": "https://irace.vn/thiet-ke-huy-chuong/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huy chuong"
+          },
+          {
+            "url": "https://irace.vn/san-xuat-qua-tang-phu-kien-the-thao/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "quan ao phu kien"
+          },
+          {
+            "url": "https://irace.vn/about-us/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ve irace"
+          },
+          {
+            "url": "https://irace.vn/bao-chi/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "bao chi viet"
+          },
+          {
+            "url": "https://irace.vn/hoi-dap/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "hoi dap"
+          },
+          {
+            "url": "https://irace.vn/thong-tin/huong-dan/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huong dan su dung"
+          },
+          {
+            "url": "https://irace.vn/kien-thuc-tap-luyen/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kien thuc chay bo"
+          },
+          {
+            "url": "https://tools.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "cong cu tinh toan"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "shop the thao"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "dinh duong"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "phu kien"
+          },
+          {
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://ticket.irace.vn/marathon-quoc-te-di-san-can-tho-2026",
+            "text": "chia se tren facebook"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1uMzmLKbOKJHsMshZ4F2N34kp0bb92ZoJ/view?usp=drive_link",
+            "text": "tai day"
+          },
+          {
+            "url": "http://online.gov.vn/Home/WebDetails/51414",
+            "text": ""
+          },
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/feed/",
+            "text": ""
+          },
+          {
+            "url": "https://www.youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+            "text": ""
+          },
+          {
+            "url": "https://play.google.com/store/apps/details?id=com.irace.app",
+            "text": ""
+          },
+          {
+            "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/chinh-sach-bao-mat/",
+            "text": "chinh sach bao mat"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-thanh-toan/",
+            "text": "dieu khoan thanh toan"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-su-dung/",
+            "text": "dieu khoan su dung"
+          },
+          {
+            "url": "https://irace.vn/tuyen-dung/",
+            "text": "tuyen dung"
+          },
+          {
+            "url": "https://irace.vn/lien-he/",
+            "text": "lien he"
+          }
+        ],
+        "organizer": {
+          "id": "dha",
+          "name": "DHA Vietnam | Ban tổ chức sự kiện"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-13T02:12:57.272Z"
+  "updatedAt": "2026-10-15T20:31:08.696Z"
 }

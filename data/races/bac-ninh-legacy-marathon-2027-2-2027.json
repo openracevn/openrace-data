@@ -1,0 +1,831 @@
+{
+  "id": "d819e35b-d992-4289-a8f8-2182b0ab2c0e",
+  "slug": "bac-ninh-legacy-marathon-2027-2",
+  "name": "Giải chạy Bắc Ninh Legacy Marathon 2027",
+  "types": [
+    "road_run"
+  ],
+  "date": "2027-01-10",
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": "bac-ninh-legacy-marathon",
+  "organizerId": "dha",
+  "organizer": "DHA Vietnam | Ban tổ chức sự kiện",
+  "edition": null,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Quảng trường Trung tâm Văn hóa Kinh Bắc, đường Kinh Dương Vương, phường Suối Hoa, Bắc Ninh",
+    "city": "Bắc Ninh"
+  },
+  "geo": {
+    "lat": 21.1889714,
+    "lng": 106.075441,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "24",
+      "ward": "09187"
+    },
+    "legacy": {
+      "province": "27",
+      "district": "256",
+      "ward": "09187"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1533.4,
+        "minutes": 1166,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 32.4,
+        "minutes": 37,
+        "method": "road",
+        "near": true
+      },
+      "da-nang": {
+        "km": 810.9,
+        "minutes": 653,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1314.7,
+        "minutes": 1039,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1442.2,
+        "minutes": 1158,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1644.3,
+        "minutes": 1286,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 101.7,
+        "minutes": 82,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 708.7,
+        "minutes": 570,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1624.4,
+        "minutes": 1249,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1122.7,
+        "minutes": 879,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1319.5,
+        "minutes": 1076,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 320.8,
+        "minutes": 259,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 160.1,
+        "minutes": 119,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 350000,
+      "from": "2026-08-27",
+      "to": "2026-09-04",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 400000,
+      "from": "2026-09-05",
+      "to": "2026-11-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 450000,
+      "from": "2026-11-16",
+      "to": "2026-12-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 500000,
+      "from": "2026-12-16",
+      "to": "2026-12-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 350000,
+      "from": "2026-08-27",
+      "to": "2026-09-04",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 400000,
+      "from": "2026-09-05",
+      "to": "2026-11-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 450000,
+      "from": "2026-11-16",
+      "to": "2026-12-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 500000,
+      "from": "2026-12-16",
+      "to": "2026-12-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 450000,
+      "from": "2026-08-27",
+      "to": "2026-09-04",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 500000,
+      "from": "2026-09-05",
+      "to": "2026-11-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 550000,
+      "from": "2026-11-16",
+      "to": "2026-12-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 700000,
+      "from": "2026-12-16",
+      "to": "2026-12-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 450000,
+      "from": "2026-08-27",
+      "to": "2026-09-04",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 500000,
+      "from": "2026-09-05",
+      "to": "2026-11-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 550000,
+      "from": "2026-11-16",
+      "to": "2026-12-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 800000,
+      "from": "2026-12-16",
+      "to": "2026-12-31",
+      "inferred": [],
+      "site": "irace"
+    }
+  ],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "irace",
+      "url": "https://ticket.irace.vn/bac-ninh-legacy-marathon-2027"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://facebook.com/sharer/sharer.php",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "http://online.gov.vn/Home/WebDetails/51414",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://docs.google.com/document/d/1yBVQw0PL8EVkLgSNjS7hs-19UKUGRt-8/edit",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    }
+  ],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://ticket.irace.vn/bac-ninh-legacy-marathon-2027",
+      "lastCheckedAt": "2026-10-15T20:28:39.489Z",
+      "lastChangedAt": "2026-10-15T20:28:39.489Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Bắc Ninh Legacy Marathon 2027",
+          "venue": "Quảng trường Trung tâm Văn hóa Kinh Bắc, đường Kinh Dương Vương, phường Suối Hoa, Bắc Ninh",
+          "organizer": "DHA Vietnam | Ban tổ chức sự kiện",
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Super Early Bird",
+              "from": "27/08",
+              "to": "04/09",
+              "price": 350000
+            },
+            {
+              "distance": "5km",
+              "tier": "Early Bird",
+              "from": "05/09",
+              "to": "15/11",
+              "price": 400000
+            },
+            {
+              "distance": "5km",
+              "tier": "Regular",
+              "from": "16/11",
+              "to": "15/12",
+              "price": 450000
+            },
+            {
+              "distance": "5km",
+              "tier": "Late",
+              "from": "16/12",
+              "to": "31/12",
+              "price": 500000
+            },
+            {
+              "distance": "10km",
+              "tier": "Super Early Bird",
+              "from": "27/08",
+              "to": "04/09",
+              "price": 350000
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "from": "05/09",
+              "to": "15/11",
+              "price": 400000
+            },
+            {
+              "distance": "10km",
+              "tier": "Regular",
+              "from": "16/11",
+              "to": "15/12",
+              "price": 450000
+            },
+            {
+              "distance": "10km",
+              "tier": "Late",
+              "from": "16/12",
+              "to": "31/12",
+              "price": 500000
+            },
+            {
+              "distance": "21km",
+              "tier": "Super Early Bird",
+              "from": "27/08",
+              "to": "04/09",
+              "price": 450000
+            },
+            {
+              "distance": "21km",
+              "tier": "Early Bird",
+              "from": "05/09",
+              "to": "15/11",
+              "price": 500000
+            },
+            {
+              "distance": "21km",
+              "tier": "Regular",
+              "from": "16/11",
+              "to": "15/12",
+              "price": 550000
+            },
+            {
+              "distance": "21km",
+              "tier": "Late",
+              "from": "16/12",
+              "to": "31/12",
+              "price": 700000
+            },
+            {
+              "distance": "42km",
+              "tier": "Super Early Bird",
+              "from": "27/08",
+              "to": "04/09",
+              "price": 450000
+            },
+            {
+              "distance": "42km",
+              "tier": "Early Bird",
+              "from": "05/09",
+              "to": "15/11",
+              "price": 500000
+            },
+            {
+              "distance": "42km",
+              "tier": "Regular",
+              "from": "16/11",
+              "to": "15/12",
+              "price": 550000
+            },
+            {
+              "distance": "42km",
+              "tier": "Late",
+              "from": "16/12",
+              "to": "31/12",
+              "price": 800000
+            }
+          ]
+        },
+        "pages": [
+          {
+            "url": "https://ticket.irace.vn/bac-ninh-legacy-marathon-2027",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Giải chạy Bắc Ninh Legacy Marathon 2027",
+              "date": "2027-01-10",
+              "endDate": "2027-01-10",
+              "mainDate": "2027-01-10",
+              "distances": [
+                "5km",
+                "10km",
+                "21km",
+                "42km"
+              ],
+              "courses": [
+                {
+                  "distance": "5km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "21km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "42km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "Giải chạy Bắc Ninh Legacy Marathon 2027",
+              "mapsUrl": "https://www.google.com/maps?q=Quảng%20trường%20Trung%20tâm%20Văn%20hóa%20Kinh%20Bắc,%20đường%20Kinh%20Dương%20Vương,%20phường%20Suối%20Hoa,%20Bắc%20Ninh",
+              "venue": "Quảng trường Trung tâm Văn hóa Kinh Bắc, đường Kinh Dương Vương, phường Suối Hoa, Bắc Ninh",
+              "city": "Bắc Ninh",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": [
+                {
+                  "distance": "5km",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "2026-08-27",
+                  "to": "2026-09-04",
+                  "price": 350000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "2026-09-05",
+                  "to": "2026-11-15",
+                  "price": 400000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "2026-11-16",
+                  "to": "2026-12-15",
+                  "price": 450000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "2026-12-16",
+                  "to": "2026-12-31",
+                  "price": 500000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "2026-08-27",
+                  "to": "2026-09-04",
+                  "price": 350000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "2026-09-05",
+                  "to": "2026-11-15",
+                  "price": 400000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "2026-11-16",
+                  "to": "2026-12-15",
+                  "price": 450000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "2026-12-16",
+                  "to": "2026-12-31",
+                  "price": 500000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "2026-08-27",
+                  "to": "2026-09-04",
+                  "price": 450000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "2026-09-05",
+                  "to": "2026-11-15",
+                  "price": 500000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "2026-11-16",
+                  "to": "2026-12-15",
+                  "price": 550000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "2026-12-16",
+                  "to": "2026-12-31",
+                  "price": 700000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "2026-08-27",
+                  "to": "2026-09-04",
+                  "price": 450000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "2026-09-05",
+                  "to": "2026-11-15",
+                  "price": 500000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "2026-11-16",
+                  "to": "2026-12-15",
+                  "price": 550000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "2026-12-16",
+                  "to": "2026-12-31",
+                  "price": 800000
+                }
+              ]
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://app.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://irace.vn/ban-ve/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ban ve su kien"
+          },
+          {
+            "url": "https://irace.vn/myfoto/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "tim hinh su kien"
+          },
+          {
+            "url": "https://irace.vn/doanh-nghiep/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "to chuc su kien"
+          },
+          {
+            "url": "https://irace.vn/affiliate/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kiem tien cung irace vn"
+          },
+          {
+            "url": "https://irace.vn/thiet-ke-huy-chuong/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huy chuong"
+          },
+          {
+            "url": "https://irace.vn/san-xuat-qua-tang-phu-kien-the-thao/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "quan ao phu kien"
+          },
+          {
+            "url": "https://irace.vn/about-us/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ve irace"
+          },
+          {
+            "url": "https://irace.vn/bao-chi/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "bao chi viet"
+          },
+          {
+            "url": "https://irace.vn/hoi-dap/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "hoi dap"
+          },
+          {
+            "url": "https://irace.vn/thong-tin/huong-dan/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huong dan su dung"
+          },
+          {
+            "url": "https://irace.vn/kien-thuc-tap-luyen/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kien thuc chay bo"
+          },
+          {
+            "url": "https://tools.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "cong cu tinh toan"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "shop the thao"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "dinh duong"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "phu kien"
+          },
+          {
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://ticket.irace.vn/bac-ninh-legacy-marathon-2027",
+            "text": "chia se tren facebook"
+          },
+          {
+            "url": "https://docs.google.com/document/d/1yBVQw0PL8EVkLgSNjS7hs-19UKUGRt-8/edit?usp=drive_link&ouid=112186841958023711427&rtpof=true&sd=true",
+            "text": "tai day"
+          },
+          {
+            "url": "http://online.gov.vn/Home/WebDetails/51414",
+            "text": ""
+          },
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/feed/",
+            "text": ""
+          },
+          {
+            "url": "https://www.youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+            "text": ""
+          },
+          {
+            "url": "https://play.google.com/store/apps/details?id=com.irace.app",
+            "text": ""
+          },
+          {
+            "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/chinh-sach-bao-mat/",
+            "text": "chinh sach bao mat"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-thanh-toan/",
+            "text": "dieu khoan thanh toan"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-su-dung/",
+            "text": "dieu khoan su dung"
+          },
+          {
+            "url": "https://irace.vn/tuyen-dung/",
+            "text": "tuyen dung"
+          },
+          {
+            "url": "https://irace.vn/lien-he/",
+            "text": "lien he"
+          }
+        ],
+        "organizer": {
+          "id": "dha",
+          "name": "DHA Vietnam | Ban tổ chức sự kiện"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-10-15T20:31:08.696Z",
+  "updatedAt": "2026-10-15T20:31:08.696Z"
+}

@@ -1,146 +1,233 @@
 {
   "id": "7581a618-e4de-45aa-9fde-733d70c8f1ca",
   "slug": "dat-thep-city-trail-2027",
-  "name": "Đất Thép City Trail 2027",
+  "name": "Giải chạy Đất Thép City Trail 2027",
   "types": [
+    "road_run",
     "city_trail"
   ],
   "date": "2027-01-23",
   "endDate": "2027-01-24",
-  "mainDate": null,
+  "mainDate": "2027-01-23",
   "seriesId": null,
   "organizerId": "vietnam-mtb-series",
   "organizer": "Vietnam MTB Series",
   "edition": 1,
   "courses": [
     {
-      "label": "5km",
-      "meters": 5000,
-      "type": "trail_run",
-      "elevationGain": 250
-    },
-    {
       "label": "7km",
       "meters": 7000,
-      "type": "city_trail",
+      "type": "road_run",
       "elevationGain": null
     },
     {
       "label": "10km",
       "meters": 10000,
-      "type": "trail_run",
+      "type": "road_run",
       "elevationGain": 300
     },
     {
       "label": "21km",
       "meters": 21097,
-      "type": "trail_run",
+      "type": "road_run",
       "elevationGain": 400
     },
     {
       "label": "42km",
       "meters": 42195,
-      "type": "city_trail",
+      "type": "road_run",
       "elevationGain": null
     }
   ],
   "location": {
     "venue": "Trung tâm cung ứng dịch vụ công xã Tân An Hội",
-    "city": "Hồ Chí Minh"
+    "city": "Tân An Hội"
   },
   "geo": {
-    "lat": 10.7737261,
-    "lng": 106.7166008,
+    "lat": 10.9702851,
+    "lng": 106.4651356,
     "source": "nominatim",
-    "precision": "province",
+    "precision": "venue",
     "current": {
       "province": "79",
-      "ward": null
+      "ward": "27496"
     },
-    "legacy": null,
+    "legacy": {
+      "province": "79",
+      "district": "783",
+      "ward": "27532"
+    },
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 2,
-        "minutes": null,
-        "method": "straight_line",
-        "near": true
+        "km": 38.1,
+        "minutes": 36,
+        "method": "road",
+        "near": false
       },
       "ha-noi": {
-        "km": 1144,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1474.3,
+        "minutes": 1130,
+        "method": "road",
         "near": false
       },
       "da-nang": {
-        "km": 610.2,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 854.1,
+        "minutes": 648,
+        "method": "road",
         "near": false
       },
       "nha-trang": {
-        "km": 315.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 449.3,
+        "minutes": 331,
+        "method": "road",
         "near": false
       },
       "da-lat": {
-        "km": 228.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 322.8,
+        "minutes": 250,
+        "method": "road",
         "near": false
       },
       "can-tho": {
-        "km": 130.7,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 176.3,
+        "minutes": 147,
+        "method": "road",
         "near": false
       },
       "hai-phong": {
-        "km": 1119.9,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1508.5,
+        "minutes": 1154,
+        "method": "road",
         "near": false
       },
       "hue": {
-        "km": 639.7,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 936.8,
+        "minutes": 723,
+        "method": "road",
         "near": false
       },
       "vung-tau": {
-        "km": 62.3,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 132.4,
+        "minutes": 124,
+        "method": "road",
         "near": false
       },
       "quy-nhon": {
-        "km": 430.9,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 655.2,
+        "minutes": 494,
+        "method": "road",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 254.9,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 350.2,
+        "minutes": 260,
+        "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 1321.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1782.1,
+        "minutes": 1362,
+        "method": "road",
         "near": false
       },
       "ha-long": {
-        "km": 1132.4,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1558.2,
+        "minutes": 1187,
+        "method": "road",
         "near": false
       }
     }
   },
   "prices": [
+    {
+      "distance": "7km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 550000,
+      "from": "2026-09-29",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "7km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 650000,
+      "from": "2026-11-01",
+      "to": "2027-01-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 650000,
+      "from": "2026-09-29",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 750000,
+      "from": "2026-11-01",
+      "to": "2027-01-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 750000,
+      "from": "2026-09-29",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 850000,
+      "from": "2026-11-01",
+      "to": "2027-01-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 900000,
+      "from": "2026-09-29",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 1200000,
+      "from": "2026-11-01",
+      "to": "2027-01-10",
+      "inferred": [],
+      "site": "irace"
+    },
     {
       "distance": "7km",
       "tier": "FLASH SALE",
@@ -278,11 +365,70 @@
   "registrationStatus": "open",
   "registrations": [
     {
+      "site": "irace",
+      "url": "https://ticket.irace.vn/dat-thep-city-trail-2027"
+    },
+    {
       "site": "actiup",
       "url": "https://actiup.net/vi/event/dat-thep-city-trail-2027"
     }
   ],
   "links": [
+    {
+      "url": "https://facebook.com/sharer/sharer.php",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "http://online.gov.vn/Home/WebDetails/51414",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://docs.google.com/document/d/1NxRN_CxJJESLOiJWUsGMpnC8ys_PA5tl/edit",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
     {
       "url": "https://drive.google.com/file/d/1bqt3bsLudeHAGlaMJJuBqTDD_WIWn3ex/view",
       "kind": "rules",
@@ -514,9 +660,329 @@
           }
         ]
       }
+    },
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://ticket.irace.vn/dat-thep-city-trail-2027",
+      "lastCheckedAt": "2026-10-15T20:26:59.246Z",
+      "lastChangedAt": "2026-10-15T20:26:59.246Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Đất Thép City Trail 2027",
+          "venue": "Trung tâm cung ứng dịch vụ công xã Tân An Hội",
+          "organizer": "Vietnam MTB Series",
+          "prices": [
+            {
+              "distance": "7km",
+              "tier": "EARLY BIRD",
+              "from": "29/09",
+              "to": "31/10",
+              "price": 550000
+            },
+            {
+              "distance": "7km",
+              "tier": "REGULAR",
+              "from": "01/11",
+              "to": "10/01",
+              "price": 650000
+            },
+            {
+              "distance": "10km",
+              "tier": "EARLY BIRD",
+              "from": "29/09",
+              "to": "31/10",
+              "price": 650000
+            },
+            {
+              "distance": "10km",
+              "tier": "REGULAR",
+              "from": "01/11",
+              "to": "10/01",
+              "price": 750000
+            },
+            {
+              "distance": "21km",
+              "tier": "EARLY BIRD",
+              "from": "29/09",
+              "to": "31/10",
+              "price": 750000
+            },
+            {
+              "distance": "21km",
+              "tier": "REGULAR",
+              "from": "01/11",
+              "to": "10/01",
+              "price": 850000
+            },
+            {
+              "distance": "42km",
+              "tier": "EARLY BIRD",
+              "from": "29/09",
+              "to": "31/10",
+              "price": 900000
+            },
+            {
+              "distance": "42km",
+              "tier": "REGULAR",
+              "from": "01/11",
+              "to": "10/01",
+              "price": 1200000
+            }
+          ]
+        },
+        "pages": [
+          {
+            "url": "https://ticket.irace.vn/dat-thep-city-trail-2027",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run",
+                "city_trail"
+              ],
+              "name": "Giải chạy Đất Thép City Trail 2027",
+              "date": "2027-01-23",
+              "endDate": "2027-01-24",
+              "mainDate": "2027-01-23",
+              "distances": [
+                "7km",
+                "10km",
+                "21km",
+                "42km"
+              ],
+              "courses": [
+                {
+                  "distance": "7km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "21km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "42km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "Giải chạy Đất Thép City Trail 2027",
+              "mapsUrl": "Trung tâm cung ứng dịch vụ công xã Tân An Hội",
+              "venue": "Trung tâm cung ứng dịch vụ công xã Tân An Hội",
+              "city": "Tân An Hội",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": [
+                {
+                  "distance": "7km",
+                  "tier": "EARLY BIRD",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "31/10",
+                  "price": 550000
+                },
+                {
+                  "distance": "7km",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "10/01",
+                  "price": 650000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "EARLY BIRD",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "31/10",
+                  "price": 650000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "10/01",
+                  "price": 750000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "EARLY BIRD",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "31/10",
+                  "price": 750000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "10/01",
+                  "price": 850000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "EARLY BIRD",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "31/10",
+                  "price": 900000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "10/01",
+                  "price": 1200000
+                }
+              ]
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://app.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://irace.vn/ban-ve/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ban ve su kien"
+          },
+          {
+            "url": "https://irace.vn/myfoto/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "tim hinh su kien"
+          },
+          {
+            "url": "https://irace.vn/doanh-nghiep/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "to chuc su kien"
+          },
+          {
+            "url": "https://irace.vn/affiliate/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kiem tien cung irace vn"
+          },
+          {
+            "url": "https://irace.vn/thiet-ke-huy-chuong/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huy chuong"
+          },
+          {
+            "url": "https://irace.vn/san-xuat-qua-tang-phu-kien-the-thao/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "quan ao phu kien"
+          },
+          {
+            "url": "https://irace.vn/about-us/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ve irace"
+          },
+          {
+            "url": "https://irace.vn/bao-chi/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "bao chi viet"
+          },
+          {
+            "url": "https://irace.vn/hoi-dap/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "hoi dap"
+          },
+          {
+            "url": "https://irace.vn/thong-tin/huong-dan/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huong dan su dung"
+          },
+          {
+            "url": "https://irace.vn/kien-thuc-tap-luyen/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kien thuc chay bo"
+          },
+          {
+            "url": "https://tools.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "cong cu tinh toan"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "shop the thao"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "dinh duong"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "phu kien"
+          },
+          {
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://ticket.irace.vn/dat-thep-city-trail-2027",
+            "text": "chia se tren facebook"
+          },
+          {
+            "url": "https://docs.google.com/document/d/1NxRN_CxJJESLOiJWUsGMpnC8ys_PA5tl/edit?usp=sharing&ouid=102620863486540030886&rtpof=true&sd=true",
+            "text": "tai day"
+          },
+          {
+            "url": "http://online.gov.vn/Home/WebDetails/51414",
+            "text": ""
+          },
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/feed/",
+            "text": ""
+          },
+          {
+            "url": "https://www.youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+            "text": ""
+          },
+          {
+            "url": "https://play.google.com/store/apps/details?id=com.irace.app",
+            "text": ""
+          },
+          {
+            "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/chinh-sach-bao-mat/",
+            "text": "chinh sach bao mat"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-thanh-toan/",
+            "text": "dieu khoan thanh toan"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-su-dung/",
+            "text": "dieu khoan su dung"
+          },
+          {
+            "url": "https://irace.vn/tuyen-dung/",
+            "text": "tuyen dung"
+          },
+          {
+            "url": "https://irace.vn/lien-he/",
+            "text": "lien he"
+          }
+        ],
+        "organizer": {
+          "id": "vietnam-mtb-series",
+          "name": "Vietnam MTB Series"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-10-12T17:48:31.011Z",
-  "updatedAt": "2026-10-15T20:26:01.820Z"
+  "updatedAt": "2026-10-15T20:31:08.696Z"
 }

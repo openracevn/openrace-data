@@ -1,144 +1,269 @@
 {
   "id": "a7ade95a-f6d3-4d9e-8ca4-32475a32b23b",
   "slug": "mang-den-lala-trail-2027",
-  "name": "Măng Đen LaLa Trail 2027",
+  "name": "Giải chạy Măng Đen LaLa Trail 2027",
   "types": [
-    "other"
+    "trail_run"
   ],
   "date": "2027-03-05",
   "endDate": "2027-03-07",
-  "mainDate": null,
+  "mainDate": "2027-03-05",
   "seriesId": "mang-den-lala-trail",
-  "organizerId": "cong-ty-tnhh-belove-mountain",
-  "organizer": "Công ty TNHH Belove Mountain",
+  "organizerId": "blm",
+  "organizer": "Be Love Mountain",
   "edition": null,
   "courses": [
     {
       "label": "5km",
       "meters": 5000,
-      "type": null,
+      "type": "trail_run",
       "elevationGain": null
     },
     {
       "label": "10km",
       "meters": 10000,
-      "type": null,
+      "type": "trail_run",
       "elevationGain": null
     },
     {
       "label": "25km",
       "meters": 25000,
-      "type": null,
+      "type": "trail_run",
       "elevationGain": null
     },
     {
       "label": "50km",
       "meters": 50000,
-      "type": null,
+      "type": "trail_run",
       "elevationGain": null
     }
   ],
   "location": {
     "venue": "Măng Đen",
-    "city": null
+    "city": "Quảng Ngãi"
   },
-  "geo": {
-    "lat": 14.6014606,
-    "lng": 108.2916225,
-    "source": "nominatim",
-    "precision": "ward",
-    "current": {
-      "province": "51",
-      "ward": "23473"
-    },
-    "legacy": {
-      "province": "62",
-      "district": "613",
-      "ward": "23473"
-    },
-    "access": "road",
-    "fromPlaces": {
-      "hcmc": {
-        "km": 619.2,
-        "minutes": 482,
-        "method": "road",
-        "near": false
-      },
-      "ha-noi": {
-        "km": 1029.3,
-        "minutes": 803,
-        "method": "road",
-        "near": false
-      },
-      "da-nang": {
-        "km": 274.2,
-        "minutes": 200,
-        "method": "road",
-        "near": false
-      },
-      "nha-trang": {
-        "km": 400.2,
-        "minutes": 354,
-        "method": "road",
-        "near": false
-      },
-      "da-lat": {
-        "km": 447.6,
-        "minutes": 409,
-        "method": "road",
-        "near": false
-      },
-      "can-tho": {
-        "km": 778.4,
-        "minutes": 610,
-        "method": "road",
-        "near": false
-      },
-      "hai-phong": {
-        "km": 1063.4,
-        "minutes": 827,
-        "method": "road",
-        "near": false
-      },
-      "hue": {
-        "km": 357,
-        "minutes": 275,
-        "method": "road",
-        "near": false
-      },
-      "vung-tau": {
-        "km": 668.1,
-        "minutes": 546,
-        "method": "road",
-        "near": false
-      },
-      "quy-nhon": {
-        "km": 261.4,
-        "minutes": 197,
-        "method": "road",
-        "near": false
-      },
-      "buon-ma-thuot": {
-        "km": 279.7,
-        "minutes": 242,
-        "method": "road",
-        "near": false
-      },
-      "sa-pa": {
-        "km": 1337.1,
-        "minutes": 1035,
-        "method": "road",
-        "near": false
-      },
-      "ha-long": {
-        "km": 1113.1,
-        "minutes": 860,
-        "method": "road",
-        "near": false
-      }
-    }
-  },
+  "geo": null,
   "prices": [
+    {
+      "distance": "5km",
+      "tier": "Priority",
+      "kind": "other",
+      "audience": null,
+      "price": 568000,
+      "from": "2026-09-28",
+      "to": "2026-10-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 868000,
+      "from": "2026-10-11",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1168000,
+      "from": "2026-11-01",
+      "to": "2027-01-20",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1468000,
+      "from": "2027-01-21",
+      "to": "2027-02-20",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Priority",
+      "kind": "other",
+      "audience": null,
+      "price": 768000,
+      "from": "2026-09-28",
+      "to": "2026-10-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1168000,
+      "from": "2026-10-11",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1468000,
+      "from": "2026-11-01",
+      "to": "2027-01-20",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1768000,
+      "from": "2027-01-21",
+      "to": "2027-02-20",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "25km",
+      "tier": "Priority",
+      "kind": "other",
+      "audience": null,
+      "price": 968000,
+      "from": "2026-09-28",
+      "to": "2026-10-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "25km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1368000,
+      "from": "2026-10-11",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "25km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1768000,
+      "from": "2026-11-01",
+      "to": "2027-01-20",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "25km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2168000,
+      "from": "2027-01-21",
+      "to": "2027-02-20",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "50km",
+      "tier": "COT 9H Priority",
+      "kind": "other",
+      "audience": null,
+      "price": 1068000,
+      "from": "2026-09-28",
+      "to": "2026-10-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "50km",
+      "tier": "COT 9H Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1568000,
+      "from": "2026-10-11",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "50km",
+      "tier": "COT 9H Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2168000,
+      "from": "2026-11-01",
+      "to": "2027-01-20",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "50km",
+      "tier": "COT 9H Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2568000,
+      "from": "2027-01-21",
+      "to": "2027-02-20",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "50km",
+      "tier": "COT 15H Priority",
+      "kind": "other",
+      "audience": null,
+      "price": 1368000,
+      "from": "2026-09-28",
+      "to": "2026-10-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "50km",
+      "tier": "COT 15H Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1968000,
+      "from": "2026-10-11",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "50km",
+      "tier": "COT 15H Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2568000,
+      "from": "2026-11-01",
+      "to": "2027-01-20",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "50km",
+      "tier": "COT 15H Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2968000,
+      "from": "2027-01-21",
+      "to": "2027-02-20",
+      "inferred": [],
+      "site": "irace"
+    },
     {
       "distance": "5km",
       "tier": "Super Early Bird",
@@ -309,11 +434,70 @@
   "registrationStatus": "open",
   "registrations": [
     {
+      "site": "irace",
+      "url": "https://ticket.irace.vn/mang-den-lala-trail-2027"
+    },
+    {
       "site": "actiup",
       "url": "https://actiup.net/vi/event/mang-den-lala-trail-2027"
     }
   ],
   "links": [
+    {
+      "url": "https://facebook.com/sharer/sharer.php",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "http://online.gov.vn/Home/WebDetails/51414",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1nTk_0blChtqJfMNQTfdFdRrCjFxs0RUi/view",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
     {
       "url": "https://drive.google.com/file/d/1MSDO4g5i9QzAZbQ1MqR3Nzs02ONP-o8E/view",
       "kind": "rules",
@@ -518,9 +702,514 @@
           }
         ]
       }
+    },
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://ticket.irace.vn/mang-den-lala-trail-2027",
+      "lastCheckedAt": "2026-10-15T20:27:17.547Z",
+      "lastChangedAt": "2026-10-15T20:27:17.547Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Măng Đen LaLa Trail 2027",
+          "venue": "Măng Đen, Quảng Ngãi",
+          "organizer": "Be Love Mountain",
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Priority",
+              "from": "28/09",
+              "to": "10/10",
+              "price": 568000
+            },
+            {
+              "distance": "5km",
+              "tier": "Super Early Bird",
+              "from": "11/10",
+              "to": "31/10",
+              "price": 868000
+            },
+            {
+              "distance": "5km",
+              "tier": "Early Bird",
+              "from": "01/11",
+              "to": "20/01",
+              "price": 1168000
+            },
+            {
+              "distance": "5km",
+              "tier": "Regular",
+              "from": "21/01",
+              "to": "20/02",
+              "price": 1468000
+            },
+            {
+              "distance": "10km",
+              "tier": "Priority",
+              "from": "28/09",
+              "to": "10/10",
+              "price": 768000
+            },
+            {
+              "distance": "10km",
+              "tier": "Super Early Bird",
+              "from": "11/10",
+              "to": "31/10",
+              "price": 1168000
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "from": "01/11",
+              "to": "20/01",
+              "price": 1468000
+            },
+            {
+              "distance": "10km",
+              "tier": "Regular",
+              "from": "21/01",
+              "to": "20/02",
+              "price": 1768000
+            },
+            {
+              "distance": "25km",
+              "tier": "Priority",
+              "from": "28/09",
+              "to": "10/10",
+              "price": 968000
+            },
+            {
+              "distance": "25km",
+              "tier": "Super Early Bird",
+              "from": "11/10",
+              "to": "31/10",
+              "price": 1368000
+            },
+            {
+              "distance": "25km",
+              "tier": "Early Bird",
+              "from": "01/11",
+              "to": "20/01",
+              "price": 1768000
+            },
+            {
+              "distance": "25km",
+              "tier": "Regular",
+              "from": "21/01",
+              "to": "20/02",
+              "price": 2168000
+            },
+            {
+              "distance": "50km",
+              "tier": "COT 9H Priority",
+              "from": "28/09",
+              "to": "10/10",
+              "price": 1068000
+            },
+            {
+              "distance": "50km",
+              "tier": "COT 9H Super Early Bird",
+              "from": "11/10",
+              "to": "31/10",
+              "price": 1568000
+            },
+            {
+              "distance": "50km",
+              "tier": "COT 9H Early Bird",
+              "from": "01/11",
+              "to": "20/01",
+              "price": 2168000
+            },
+            {
+              "distance": "50km",
+              "tier": "COT 9H Regular",
+              "from": "21/01",
+              "to": "20/02",
+              "price": 2568000
+            },
+            {
+              "distance": "50km",
+              "tier": "COT 15H Priority",
+              "from": "28/09",
+              "to": "10/10",
+              "price": 1368000
+            },
+            {
+              "distance": "50km",
+              "tier": "COT 15H Super Early Bird",
+              "from": "11/10",
+              "to": "31/10",
+              "price": 1968000
+            },
+            {
+              "distance": "50km",
+              "tier": "COT 15H Early Bird",
+              "from": "01/11",
+              "to": "20/01",
+              "price": 2568000
+            },
+            {
+              "distance": "50km",
+              "tier": "COT 15H Regular",
+              "from": "21/01",
+              "to": "20/02",
+              "price": 2968000
+            }
+          ]
+        },
+        "pages": [
+          {
+            "url": "https://ticket.irace.vn/mang-den-lala-trail-2027",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "trail_run"
+              ],
+              "name": "Giải chạy Măng Đen LaLa Trail 2027",
+              "date": "2027-03-05",
+              "endDate": "2027-03-07",
+              "mainDate": "2027-03-05",
+              "distances": [
+                "5km",
+                "10km",
+                "25km",
+                "50km COT 9H",
+                "50km COT 15H"
+              ],
+              "courses": [
+                {
+                  "distance": "5km",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10km",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "25km",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "50km COT 9H",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "50km COT 15H",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "Giải chạy Măng Đen LaLa Trail 2027",
+              "mapsUrl": "",
+              "venue": "Măng Đen",
+              "city": "Quảng Ngãi",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": [
+                {
+                  "distance": "5km",
+                  "tier": "Priority",
+                  "audience": "",
+                  "from": "2022-09-28",
+                  "to": "2022-10-10",
+                  "price": 568000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "2022-10-11",
+                  "to": "2022-10-31",
+                  "price": 868000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "2022-11-01",
+                  "to": "2022-01-20",
+                  "price": 1168000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "2022-01-21",
+                  "to": "2022-02-20",
+                  "price": 1468000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Priority",
+                  "audience": "",
+                  "from": "2022-09-28",
+                  "to": "2022-10-10",
+                  "price": 768000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "2022-10-11",
+                  "to": "2022-10-31",
+                  "price": 1168000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "2022-11-01",
+                  "to": "2022-01-20",
+                  "price": 1468000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "2022-01-21",
+                  "to": "2022-02-20",
+                  "price": 1768000
+                },
+                {
+                  "distance": "25km",
+                  "tier": "Priority",
+                  "audience": "",
+                  "from": "2022-09-28",
+                  "to": "2022-10-10",
+                  "price": 968000
+                },
+                {
+                  "distance": "25km",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "2022-10-11",
+                  "to": "2022-10-31",
+                  "price": 1368000
+                },
+                {
+                  "distance": "25km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "2022-11-01",
+                  "to": "2022-01-20",
+                  "price": 1768000
+                },
+                {
+                  "distance": "25km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "2022-01-21",
+                  "to": "2022-02-20",
+                  "price": 2168000
+                },
+                {
+                  "distance": "50km COT 9H",
+                  "tier": "Priority",
+                  "audience": "",
+                  "from": "2022-09-28",
+                  "to": "2022-10-10",
+                  "price": 1068000
+                },
+                {
+                  "distance": "50km COT 9H",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "2022-10-11",
+                  "to": "2022-10-31",
+                  "price": 1568000
+                },
+                {
+                  "distance": "50km COT 9H",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "2022-11-01",
+                  "to": "2022-01-20",
+                  "price": 2168000
+                },
+                {
+                  "distance": "50km COT 9H",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "2022-01-21",
+                  "to": "2022-02-20",
+                  "price": 2568000
+                },
+                {
+                  "distance": "50km COT 15H",
+                  "tier": "Priority",
+                  "audience": "",
+                  "from": "2022-09-28",
+                  "to": "2022-10-10",
+                  "price": 1368000
+                },
+                {
+                  "distance": "50km COT 15H",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "2022-10-11",
+                  "to": "2022-10-31",
+                  "price": 1968000
+                },
+                {
+                  "distance": "50km COT 15H",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "2022-11-01",
+                  "to": "2022-01-20",
+                  "price": 2568000
+                },
+                {
+                  "distance": "50km COT 15H",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "2022-01-21",
+                  "to": "2022-02-20",
+                  "price": 2968000
+                }
+              ]
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://app.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://irace.vn/ban-ve/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ban ve su kien"
+          },
+          {
+            "url": "https://irace.vn/myfoto/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "tim hinh su kien"
+          },
+          {
+            "url": "https://irace.vn/doanh-nghiep/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "to chuc su kien"
+          },
+          {
+            "url": "https://irace.vn/affiliate/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kiem tien cung irace vn"
+          },
+          {
+            "url": "https://irace.vn/thiet-ke-huy-chuong/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huy chuong"
+          },
+          {
+            "url": "https://irace.vn/san-xuat-qua-tang-phu-kien-the-thao/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "quan ao phu kien"
+          },
+          {
+            "url": "https://irace.vn/about-us/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ve irace"
+          },
+          {
+            "url": "https://irace.vn/bao-chi/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "bao chi viet"
+          },
+          {
+            "url": "https://irace.vn/hoi-dap/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "hoi dap"
+          },
+          {
+            "url": "https://irace.vn/thong-tin/huong-dan/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huong dan su dung"
+          },
+          {
+            "url": "https://irace.vn/kien-thuc-tap-luyen/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kien thuc chay bo"
+          },
+          {
+            "url": "https://tools.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "cong cu tinh toan"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "shop the thao"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "dinh duong"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "phu kien"
+          },
+          {
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://ticket.irace.vn/mang-den-lala-trail-2027",
+            "text": "chia se tren facebook"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1nTk_0blChtqJfMNQTfdFdRrCjFxs0RUi/view?usp=drive_link",
+            "text": "tai day"
+          },
+          {
+            "url": "http://online.gov.vn/Home/WebDetails/51414",
+            "text": ""
+          },
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/feed/",
+            "text": ""
+          },
+          {
+            "url": "https://www.youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+            "text": ""
+          },
+          {
+            "url": "https://play.google.com/store/apps/details?id=com.irace.app",
+            "text": ""
+          },
+          {
+            "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/chinh-sach-bao-mat/",
+            "text": "chinh sach bao mat"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-thanh-toan/",
+            "text": "dieu khoan thanh toan"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-su-dung/",
+            "text": "dieu khoan su dung"
+          },
+          {
+            "url": "https://irace.vn/tuyen-dung/",
+            "text": "tuyen dung"
+          },
+          {
+            "url": "https://irace.vn/lien-he/",
+            "text": "lien he"
+          }
+        ],
+        "organizer": {
+          "id": "blm",
+          "name": "Be Love Mountain"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-10-12T17:48:31.011Z",
-  "updatedAt": "2026-10-15T20:26:01.820Z"
+  "updatedAt": "2026-10-15T20:31:08.696Z"
 }

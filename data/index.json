@@ -182,15 +182,16 @@
   {
     "id": "09f9ff76-e3ff-470c-891f-c6ace918b629",
     "slug": "aqua-warriors-halong-bay-2027",
-    "name": "AQUA WARRIORS HALONG BAY 2027",
+    "name": "Aqua Warriors Halong Bay 2027",
     "date": "2027-04-03",
     "endDate": "2027-04-04",
-    "mainDate": null,
-    "lastModified": "2026-10-15T20:26:01.820Z",
+    "mainDate": "2027-04-03",
+    "lastModified": "2026-10-15T20:31:08.696Z",
     "file": "aqua-warriors-halong-bay-2027.json",
     "seriesId": "aqua-warriors-halong-bay",
     "sourceUrls": [
-      "https://actiup.net/vi/event/aqua-warriors-halong-bay-2027"
+      "https://actiup.net/vi/event/aqua-warriors-halong-bay-2027",
+      "https://ticket.irace.vn/aqua-warriors-halong-bay-2027"
     ],
     "linkUrls": []
   },
@@ -350,15 +351,16 @@
   {
     "id": "119a1b5d-a88c-4509-880c-b5f127b32fd6",
     "slug": "yen-tu-heritage-marathon-2026",
-    "name": "Giải chạy Yên Tử Heritage Marathon - Chạm vào vùng di sản 2026",
+    "name": "Giải chạy Yên Tử Heritage Marathon 2026",
     "date": "2026-11-28",
     "endDate": "2026-11-29",
-    "mainDate": null,
-    "lastModified": "2026-09-24T06:49:38.787Z",
+    "mainDate": "2026-11-29",
+    "lastModified": "2026-10-15T20:31:08.696Z",
     "file": "yen-tu-heritage-marathon-2026.json",
     "seriesId": "yen-tu-heritage-marathon",
     "sourceUrls": [
-      "https://actiup.net/vi/event/yen-tu-heritage-marathon-2026"
+      "https://actiup.net/vi/event/yen-tu-heritage-marathon-2026",
+      "https://ticket.irace.vn/yen-tu-heritage-marathon-2026"
     ],
     "linkUrls": []
   },
@@ -535,15 +537,16 @@
   {
     "id": "1866d85d-16f0-4648-8c6d-c7f453d65aed",
     "slug": "son-tra-city-trail-2026",
-    "name": "SƠN TRÀ CITY TRAIL 2026",
-    "date": "2026-12-26",
-    "endDate": "2026-12-27",
+    "name": "Giải chạy Sơn Trà City Trail 2026",
+    "date": "2026-12-27",
+    "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-10-15T20:26:01.820Z",
+    "lastModified": "2026-10-15T20:31:08.696Z",
     "file": "son-tra-city-trail-2026.json",
     "seriesId": null,
     "sourceUrls": [
-      "https://actiup.net/vi/event/son-tra-city-trail-2026"
+      "https://actiup.net/vi/event/son-tra-city-trail-2026",
+      "https://ticket.irace.vn/son-tra-city-trail-2026"
     ],
     "linkUrls": []
   },
@@ -628,6 +631,21 @@
     "linkUrls": []
   },
   {
+    "id": "1d638dce-c219-4efc-b52b-c47c6fc04282",
+    "slug": "hanh-trinh-tiep-suc-2026",
+    "name": "Giải chạy Hành Trình Tiếp Sức 2026",
+    "date": "2026-12-06",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-10-15T20:31:08.696Z",
+    "file": "hanh-trinh-tiep-suc-2026.json",
+    "seriesId": "hanh-trinh-tiep-suc",
+    "sourceUrls": [
+      "https://ticket.irace.vn/hanh-trinh-tiep-suc-2026"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "1dcfdad2-c3be-44a4-aca0-7f00b6334730",
     "slug": "vietnam-highlands-trail-2025",
     "name": "Vietnam Highlands Trail 2025",
@@ -679,13 +697,16 @@
     "date": "2026-12-27",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-10-13T02:12:57.272Z",
+    "lastModified": "2026-10-15T20:31:08.696Z",
     "file": "vnexpress-marathon-hai-phong-2026.json",
     "seriesId": "vnexpress-marathon-hai-phong",
     "sourceUrls": [
+      "https://ticket.irace.vn/vnexpress-marathon-hai-phong-2026",
       "https://vm.vnexpress.net/hai-phong-2026"
     ],
-    "linkUrls": []
+    "linkUrls": [
+      "https://vm.vnexpress.net/hai-phong-2026/thong-tin-cuoc-dua/dieu-le"
+    ]
   },
   {
     "id": "241567cb-4b9f-47af-91b6-07d6f94f3167",
@@ -740,7 +761,7 @@
     "date": "2026-11-29",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-10-13T02:12:57.272Z",
+    "lastModified": "2026-10-15T20:31:08.696Z",
     "file": "vnexpress-marathon-ha-noi-2026.json",
     "seriesId": "vnexpress-marathon-ha-noi",
     "sourceUrls": [
@@ -1609,6 +1630,21 @@
     "linkUrls": []
   },
   {
+    "id": "3f1c18dc-8f7e-4306-a09d-1f541caf4dc9",
+    "slug": "nghe-an-legacy-marathon-2026",
+    "name": "Giải chạy Nghệ An Legacy Marathon – Dấu chân quê Bác năm 2026",
+    "date": "2026-12-06",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-10-15T20:31:08.696Z",
+    "file": "nghe-an-legacy-marathon-2026.json",
+    "seriesId": null,
+    "sourceUrls": [
+      "https://ticket.irace.vn/nghe-an-legacy-marathon-2026"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "3ffa3f84-320d-4679-97c5-3375924db68f",
     "slug": "the-5th-edition-of-the-techcombank-hanoi-international-marathon",
     "name": "Techcombank Hanoi International Marathon 2026",
@@ -1642,15 +1678,16 @@
   {
     "id": "40d499a7-1536-4fd1-9d27-552e1844ebb7",
     "slug": "vietnam-festrival-2027",
-    "name": "Vietnam FesTRIval 2027",
+    "name": "Vietnam FesTRIval lần 5",
     "date": "2027-03-21",
-    "endDate": null,
-    "mainDate": null,
-    "lastModified": "2026-10-13T02:12:57.272Z",
+    "endDate": "2027-03-22",
+    "mainDate": "2027-03-21",
+    "lastModified": "2026-10-15T20:31:08.696Z",
     "file": "vietnam-festrival-2027.json",
     "seriesId": "vietnam-festrival",
     "sourceUrls": [
-      "https://actiup.net/vi/event/vietnam-festrival-2027"
+      "https://actiup.net/vi/event/vietnam-festrival-2027",
+      "https://ticket.irace.vn/vietnam-festrival-2027"
     ],
     "linkUrls": []
   },
@@ -2255,15 +2292,16 @@
   {
     "id": "58576199-2f18-4507-965d-d2cba3e2de34",
     "slug": "2026-international-run-for-a-green-da-lat",
-    "name": "Giải Chạy Quốc Tế Vì Đà Lạt Xanh 2026",
-    "date": "2026-11-21",
-    "endDate": "2026-11-22",
+    "name": "Giải Chạy Quốc Tế vì Đà Lạt Xanh 2026",
+    "date": "2026-11-22",
+    "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-09-24T06:49:38.787Z",
+    "lastModified": "2026-10-15T20:31:08.696Z",
     "file": "international-run-for-a-green-da-lat-2026.json",
     "seriesId": null,
     "sourceUrls": [
-      "https://actiup.net/vi/event/2026-international-run-for-a-green-da-lat"
+      "https://actiup.net/vi/event/2026-international-run-for-a-green-da-lat",
+      "https://ticket.irace.vn/quoc-te-vi-da-lat-xanh-2026"
     ],
     "linkUrls": []
   },
@@ -2623,15 +2661,16 @@
   {
     "id": "6d5532bc-eb2f-4494-8793-e4e96b749cd2",
     "slug": "dong-nai-marathon-truong-tuoi-group-cup-bao-va-phat-thanh-truyen-hinh-dong-nai",
-    "name": "ĐỒNG NAI MARATHON - TRƯỜNG TƯƠI GROUP CÚP BÁO VÀ PHÁT THANH TRUYỀN HÌNH ĐỒNG NAI",
+    "name": "Giải chạy Đồng Nai Marathon - Trường Tươi Group Cúp Báo và Phát thanh Truyền hình Đồng Nai",
     "date": "2026-11-29",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-10-13T02:40:11.333Z",
+    "lastModified": "2026-10-15T20:31:08.696Z",
     "file": "dong-nai-marathon-truong-tuoi-group-cup-bao-va-phat-thanh-truyen-hinh-dong-nai-2026.json",
     "seriesId": null,
     "sourceUrls": [
-      "https://actiup.net/vi/event/dong-nai-marathon-truong-tuoi-group-cup-bao-va-phat-thanh-truyen-hinh-dong-nai"
+      "https://actiup.net/vi/event/dong-nai-marathon-truong-tuoi-group-cup-bao-va-phat-thanh-truyen-hinh-dong-nai",
+      "https://ticket.irace.vn/dong-nai-marathon-truong-tuoi-group-cup-bao-va-phat-thanh-truyen-hinh-dong-nai"
     ],
     "linkUrls": []
   },
@@ -2784,15 +2823,16 @@
   {
     "id": "7581a618-e4de-45aa-9fde-733d70c8f1ca",
     "slug": "dat-thep-city-trail-2027",
-    "name": "Đất Thép City Trail 2027",
+    "name": "Giải chạy Đất Thép City Trail 2027",
     "date": "2027-01-23",
     "endDate": "2027-01-24",
-    "mainDate": null,
-    "lastModified": "2026-10-15T20:26:01.820Z",
+    "mainDate": "2027-01-23",
+    "lastModified": "2026-10-15T20:31:08.696Z",
     "file": "dat-thep-city-trail-2027.json",
     "seriesId": null,
     "sourceUrls": [
-      "https://actiup.net/vi/event/dat-thep-city-trail-2027"
+      "https://actiup.net/vi/event/dat-thep-city-trail-2027",
+      "https://ticket.irace.vn/dat-thep-city-trail-2027"
     ],
     "linkUrls": []
   },
@@ -3770,15 +3810,16 @@
   {
     "id": "993a097f-5cf3-415f-84c6-6fe1eb1b7404",
     "slug": "quang-truc-half-marathon-2026-noi-nhip-bien-cuong",
-    "name": "Quảng Trực Half Marathon 2026 - Nối nhịp biên cương",
+    "name": "Giải chạy Quảng Trực Half Marathon 2026 - Nối nhịp biên cương",
     "date": "2026-11-14",
     "endDate": "2026-11-15",
-    "mainDate": null,
-    "lastModified": "2026-10-15T20:26:01.820Z",
+    "mainDate": "2026-11-14",
+    "lastModified": "2026-10-15T20:31:08.696Z",
     "file": "quang-truc-half-marathon-2026-noi-nhip-bien-cuong-2026.json",
     "seriesId": null,
     "sourceUrls": [
-      "https://actiup.net/vi/event/quang-truc-half-marathon-2026-noi-nhip-bien-cuong"
+      "https://actiup.net/vi/event/quang-truc-half-marathon-2026-noi-nhip-bien-cuong",
+      "https://ticket.irace.vn/quang-truc-half-marathon-2026"
     ],
     "linkUrls": []
   },
@@ -3845,6 +3886,21 @@
     "linkUrls": []
   },
   {
+    "id": "9d93d041-635b-4f6c-9b9b-445a2b713769",
+    "slug": "deep-c-run-royale-2026",
+    "name": "Giải chạy DEEP C RUN ROYALE 2026",
+    "date": "2026-11-29",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-10-15T20:31:08.696Z",
+    "file": "deep-c-run-royale-2026.json",
+    "seriesId": null,
+    "sourceUrls": [
+      "https://ticket.irace.vn/deep-c-run-royale-2026"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "9f707b2f-9e1c-4205-b7ea-80c887c6efb6",
     "slug": "giai-half-marathon-tu-hao-to-quoc-toi-2025-lan2",
     "name": "Giải Half Marathon Tự Hào Tổ Quốc Tôi 2025 - Lần 2",
@@ -3862,16 +3918,17 @@
   {
     "id": "a186bdd7-6ed8-4907-95dc-42e0f2d72ea2",
     "slug": "cuc-phuong-jungle-paths-2026",
-    "name": "CUC PHUONG JUNGLE PATHS 2026",
-    "date": "2026-12-25",
+    "name": "Giải chạy Cuc Phuong Jungle Paths 2026",
+    "date": "2026-12-26",
     "endDate": "2026-12-27",
-    "mainDate": null,
-    "lastModified": "2026-10-13T02:12:57.272Z",
+    "mainDate": "2026-12-26",
+    "lastModified": "2026-10-15T20:31:08.696Z",
     "file": "cuc-phuong-jungle-paths-2026.json",
     "seriesId": "cuc-phuong-jungle-paths",
     "sourceUrls": [
       "https://5bib.com/vi/events/cuc-phuong-jungle-paths-2026",
-      "https://actiup.net/vi/event/cuc-phuong-jungle-paths-2026"
+      "https://actiup.net/vi/event/cuc-phuong-jungle-paths-2026",
+      "https://ticket.irace.vn/cuc-phuong-jungle-paths-2026"
     ],
     "linkUrls": []
   },
@@ -3971,15 +4028,16 @@
   {
     "id": "a7ade95a-f6d3-4d9e-8ca4-32475a32b23b",
     "slug": "mang-den-lala-trail-2027",
-    "name": "Măng Đen LaLa Trail 2027",
+    "name": "Giải chạy Măng Đen LaLa Trail 2027",
     "date": "2027-03-05",
     "endDate": "2027-03-07",
-    "mainDate": null,
-    "lastModified": "2026-10-15T20:26:01.820Z",
+    "mainDate": "2027-03-05",
+    "lastModified": "2026-10-15T20:31:08.696Z",
     "file": "mang-den-lala-trail-2027.json",
     "seriesId": "mang-den-lala-trail",
     "sourceUrls": [
-      "https://actiup.net/vi/event/mang-den-lala-trail-2027"
+      "https://actiup.net/vi/event/mang-den-lala-trail-2027",
+      "https://ticket.irace.vn/mang-den-lala-trail-2027"
     ],
     "linkUrls": []
   },
@@ -4218,15 +4276,16 @@
   {
     "id": "b54dfd25-8254-40cb-9dc7-df93782402d9",
     "slug": "vung-tau-city-trail",
-    "name": "Giải chạy Vũng Tàu City Trail 2026",
-    "date": "2026-11-28",
-    "endDate": "2026-11-29",
+    "name": "Giải chạy Vung Tau City Trail 2026",
+    "date": "2026-11-29",
+    "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-10-13T02:40:11.333Z",
+    "lastModified": "2026-10-15T20:31:08.696Z",
     "file": "vung-tau-city-trail-2026.json",
     "seriesId": null,
     "sourceUrls": [
-      "https://actiup.net/vi/event/vung-tau-city-trail"
+      "https://actiup.net/vi/event/vung-tau-city-trail",
+      "https://ticket.irace.vn/vung-tau-city-trail-2026"
     ],
     "linkUrls": []
   },
@@ -4875,15 +4934,16 @@
   {
     "id": "d022ca37-c7e1-4fe8-b3f4-a25e1adc6172",
     "slug": "trang-an-marathon-2026",
-    "name": "Trang An Marathon 2026",
+    "name": "Giải chạy Trang An Marathon 2026",
     "date": "2026-11-15",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-09-25T04:03:37.715Z",
+    "lastModified": "2026-10-15T20:31:08.696Z",
     "file": "trang-an-marathon-2026.json",
     "seriesId": "trang-an-marathon",
     "sourceUrls": [
-      "https://actiup.net/vi/event/trang-an-marathon-2026"
+      "https://actiup.net/vi/event/trang-an-marathon-2026",
+      "https://ticket.irace.vn/trang-an-marathon-2026"
     ],
     "linkUrls": []
   },
@@ -5001,11 +5061,12 @@
     "date": "2026-12-06",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-10-15T20:26:01.820Z",
+    "lastModified": "2026-10-15T20:31:08.696Z",
     "file": "run-for-the-heart-2026.json",
     "seriesId": null,
     "sourceUrls": [
-      "https://actiup.net/vi/event/run-for-the-heart-2026"
+      "https://actiup.net/vi/event/run-for-the-heart-2026",
+      "https://ticket.irace.vn/run-for-the-heart-2026"
     ],
     "linkUrls": []
   },
@@ -5100,6 +5161,21 @@
     "seriesId": null,
     "sourceUrls": [
       "https://actiup.net/vi/event/vietnam-international-half-marathon-2025"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "d819e35b-d992-4289-a8f8-2182b0ab2c0e",
+    "slug": "bac-ninh-legacy-marathon-2027-2",
+    "name": "Giải chạy Bắc Ninh Legacy Marathon 2027",
+    "date": "2027-01-10",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-10-15T20:31:08.696Z",
+    "file": "bac-ninh-legacy-marathon-2027-2-2027.json",
+    "seriesId": "bac-ninh-legacy-marathon",
+    "sourceUrls": [
+      "https://ticket.irace.vn/bac-ninh-legacy-marathon-2027"
     ],
     "linkUrls": []
   },
@@ -5211,18 +5287,19 @@
   {
     "id": "ddda98fb-5837-4b4c-b986-9056b42d5025",
     "slug": "giai-marathon-quoc-te-di-san-can-tho-quan-quan-21",
-    "name": "Giải Marathon Quốc tế Di sản Cần Thơ 2026",
+    "name": "Giải chạy Marathon Quốc tế Di sản Cần Thơ 2026",
     "date": "2026-12-20",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-10-13T02:12:57.272Z",
+    "lastModified": "2026-10-15T20:31:08.696Z",
     "file": "giai-marathon-quoc-te-di-san-can-tho-quan-quan-21-2026.json",
     "seriesId": "can-tho-heritage-marathon",
     "sourceUrls": [
       "https://actiup.net/vi/event/giai-marathon-quoc-te-di-san-can-tho-quan-quan-21",
       "https://canthomarathon.com/giai-marathon-quoc-te-di-san-can-tho-chinh-thuc-mo-cong-dang-ky-bib-chi-tu-295-000-vnd",
       "https://canthomarathon.com/quen-chot-super-early-bird-dung-lo-early-bird-can-tho-heritage-marathon-2026-da-mo",
-      "https://canthomarathon.com/super-early-bird-chot-bib-ngay-khi-con-gia-tot"
+      "https://canthomarathon.com/super-early-bird-chot-bib-ngay-khi-con-gia-tot",
+      "https://ticket.irace.vn/marathon-quoc-te-di-san-can-tho-2026"
     ],
     "linkUrls": []
   },
@@ -5290,16 +5367,17 @@
   {
     "id": "dee28bd9-ba1a-433c-a8e3-8007067bc7a2",
     "slug": "ultra-trail-cao-bang-2026",
-    "name": "ULTRA TRAIL CAO BANG 2026",
+    "name": "Giải chạy Ultra Trail Cao Bang 2026",
     "date": "2026-11-27",
     "endDate": "2026-11-29",
-    "mainDate": null,
-    "lastModified": "2026-09-29T07:55:47.979Z",
+    "mainDate": "2026-11-27",
+    "lastModified": "2026-10-15T20:31:08.696Z",
     "file": "ultra-trail-cao-bang-2026.json",
     "seriesId": "ultra-trail-cao-bang",
     "sourceUrls": [
       "https://5bib.com/vi/events/ultra-trail-cao-bang-2026_185",
-      "https://actiup.net/vi/event/ultra-trail-cao-bang-2026"
+      "https://actiup.net/vi/event/ultra-trail-cao-bang-2026",
+      "https://ticket.irace.vn/ultra-trail-cao-bang-2026"
     ],
     "linkUrls": []
   },
@@ -5337,15 +5415,16 @@
   {
     "id": "e0f43515-e440-4210-8254-ab03a8675529",
     "slug": "nha-trang-night-run-sanest-sanvinest-bkh-2026",
-    "name": "NHA TRANG NIGHT RUN SANEST, SANVINEST - BKH 2026",
+    "name": "Giải chạy Nha Trang Night Run Sanest, Sanvinest – BKH 2026",
     "date": "2026-12-12",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-10-15T20:26:01.820Z",
+    "lastModified": "2026-10-15T20:31:08.696Z",
     "file": "nha-trang-night-run-sanest-sanvinest-bkh-2026.json",
     "seriesId": null,
     "sourceUrls": [
-      "https://actiup.net/vi/event/nha-trang-night-run-sanest-sanvinest-bkh-2026"
+      "https://actiup.net/vi/event/nha-trang-night-run-sanest-sanvinest-bkh-2026",
+      "https://ticket.irace.vn/nha-trang-night-run-sanest-sanvinest-bkh-2026"
     ],
     "linkUrls": []
   },
@@ -5724,12 +5803,13 @@
     "name": "Giải siêu marathon địa hình Dalat Ultra Trail 2027",
     "date": "2027-03-19",
     "endDate": "2027-03-21",
-    "mainDate": null,
-    "lastModified": "2026-10-15T20:26:01.820Z",
+    "mainDate": "2027-03-19",
+    "lastModified": "2026-10-15T20:31:08.696Z",
     "file": "dalat-ultra-trail-2027.json",
     "seriesId": "dalat-ultra-trail",
     "sourceUrls": [
-      "https://actiup.net/vi/event/dalat-ultra-trail-2027"
+      "https://actiup.net/vi/event/dalat-ultra-trail-2027",
+      "https://ticket.irace.vn/dalat-ultra-trail-2027"
     ],
     "linkUrls": [
       "https://vietnammtbseries.com/vi/event/dalat-ultra-trail-2027"

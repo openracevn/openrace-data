@@ -1,15 +1,16 @@
 {
   "id": "d022ca37-c7e1-4fe8-b3f4-a25e1adc6172",
   "slug": "trang-an-marathon-2026",
-  "name": "Trang An Marathon 2026",
+  "name": "Giải chạy Trang An Marathon 2026",
   "types": [
     "road_run"
   ],
   "date": "2026-11-15",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "trang-an-marathon",
-  "organizerId": "vrace-cong-ty-co-phan-vu-media",
-  "organizer": "VRace (Công ty Cổ phần Vũ Media)",
+  "organizerId": "vumedia",
+  "organizer": "VuMedia | Ban tổ chức sự kiện",
   "edition": 6,
   "courses": [
     {
@@ -39,105 +40,145 @@
   ],
   "location": {
     "venue": "Cố đô Hoa Lư, Phường Tây Hoa Lư, Tỉnh Ninh Bình",
-    "city": null
+    "city": "Ninh Bình"
   },
   "geo": {
     "lat": 20.283483,
     "lng": 105.8995986,
     "source": "nominatim",
-    "precision": "venue",
+    "precision": "province",
     "current": {
       "province": "37",
-      "ward": "14533"
+      "ward": null
     },
-    "legacy": {
-      "province": "37",
-      "district": "374",
-      "ward": "14533"
-    },
+    "legacy": null,
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 1409.2,
-        "minutes": 1072,
-        "method": "road",
+        "km": 1061,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "ha-noi": {
-        "km": 93,
-        "minutes": 83,
-        "method": "road",
+        "km": 83,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "da-nang": {
-        "km": 686.7,
-        "minutes": 560,
-        "method": "road",
+        "km": 530,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "nha-trang": {
-        "km": 1190.5,
-        "minutes": 946,
-        "method": "road",
+        "km": 961.1,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "da-lat": {
-        "km": 1317.9,
-        "minutes": 1065,
-        "method": "road",
+        "km": 966.6,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "can-tho": {
-        "km": 1520.1,
-        "minutes": 1191,
-        "method": "road",
+        "km": 1139.8,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "hai-phong": {
-        "km": 130.7,
-        "minutes": 110,
-        "method": "road",
+        "km": 103.1,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "hue": {
-        "km": 584.5,
-        "minutes": 477,
-        "method": "road",
+        "km": 460.7,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "vung-tau": {
-        "km": 1500.2,
-        "minutes": 1153,
-        "method": "road",
+        "km": 1112.3,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "quy-nhon": {
-        "km": 998.5,
-        "minutes": 786,
-        "method": "road",
+        "km": 805.1,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 1195.2,
-        "minutes": 983,
-        "method": "road",
+        "km": 877,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "sa-pa": {
-        "km": 390.2,
-        "minutes": 328,
-        "method": "road",
+        "km": 312.2,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       },
       "ha-long": {
-        "km": 180.4,
-        "minutes": 142,
-        "method": "road",
+        "km": 143.6,
+        "minutes": null,
+        "method": "straight_line",
         "near": false
       }
     }
   },
   "prices": [
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 799000,
+      "from": "2026-10-11",
+      "to": "2026-10-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 899000,
+      "from": "2026-10-11",
+      "to": "2026-10-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1099000,
+      "from": "2026-10-11",
+      "to": "2026-10-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1399000,
+      "from": "2026-10-11",
+      "to": "2026-10-30",
+      "inferred": [],
+      "site": "irace"
+    },
     {
       "distance": "5km",
       "tier": "Vé tiêu chuẩn/ Standard",
@@ -187,17 +228,77 @@
   "registrationStatus": "open",
   "registrations": [
     {
+      "site": "irace",
+      "url": "https://ticket.irace.vn/trang-an-marathon-2026"
+    },
+    {
       "site": "actiup",
       "url": "https://actiup.net/vi/event/trang-an-marathon-2026"
     }
   ],
   "links": [
     {
+      "url": "https://facebook.com/sharer/sharer.php",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "http://online.gov.vn/Home/WebDetails/51414",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1pYMmBlfTe1uD9cNZfd3dzmP8xsnsyVx-/view",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
       "url": "https://drive.google.com/file/d/1YsPjseqegg39ZUa60-EpLHDkZWnVcA-5/view",
       "kind": "rules",
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {},
   "sources": [
@@ -300,9 +401,268 @@
         },
         "readBy": "agent"
       }
+    },
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://ticket.irace.vn/trang-an-marathon-2026",
+      "lastCheckedAt": "2026-10-15T20:29:50.677Z",
+      "lastChangedAt": "2026-10-15T20:29:50.677Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Trang An Marathon 2026",
+          "venue": "Cố đô Hoa Lư, phường Tây Hoa Lư, tỉnh Ninh Bình",
+          "organizer": "VuMedia | Ban tổ chức sự kiện",
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Late",
+              "from": "11/10",
+              "to": "30/10",
+              "price": 799000
+            },
+            {
+              "distance": "10km",
+              "tier": "Late",
+              "from": "11/10",
+              "to": "30/10",
+              "price": 899000
+            },
+            {
+              "distance": "21km",
+              "tier": "Late",
+              "from": "11/10",
+              "to": "30/10",
+              "price": 1099000
+            },
+            {
+              "distance": "42km",
+              "tier": "Late",
+              "from": "11/10",
+              "to": "30/10",
+              "price": 1399000
+            }
+          ]
+        },
+        "pages": [
+          {
+            "url": "https://ticket.irace.vn/trang-an-marathon-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Giải chạy Trang An Marathon 2026",
+              "date": "2026-11-15",
+              "endDate": "2026-11-15",
+              "mainDate": "2026-11-15",
+              "distances": [
+                "5km",
+                "10km",
+                "21km",
+                "42km"
+              ],
+              "courses": [
+                {
+                  "distance": "5km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "21km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "42km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "Giải chạy Trang An Marathon 2026",
+              "mapsUrl": "",
+              "venue": "Cố đô Hoa Lư, phường Tây Hoa Lư, tỉnh Ninh Bình",
+              "city": "Ninh Bình",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": [
+                {
+                  "distance": "5km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "11/10",
+                  "to": "30/10",
+                  "price": 799000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "11/10",
+                  "to": "30/10",
+                  "price": 899000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "11/10",
+                  "to": "30/10",
+                  "price": 1099000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "11/10",
+                  "to": "30/10",
+                  "price": 1399000
+                }
+              ]
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://app.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://irace.vn/ban-ve/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ban ve su kien"
+          },
+          {
+            "url": "https://irace.vn/myfoto/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "tim hinh su kien"
+          },
+          {
+            "url": "https://irace.vn/doanh-nghiep/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "to chuc su kien"
+          },
+          {
+            "url": "https://irace.vn/affiliate/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kiem tien cung irace vn"
+          },
+          {
+            "url": "https://irace.vn/thiet-ke-huy-chuong/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huy chuong"
+          },
+          {
+            "url": "https://irace.vn/san-xuat-qua-tang-phu-kien-the-thao/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "quan ao phu kien"
+          },
+          {
+            "url": "https://irace.vn/about-us/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ve irace"
+          },
+          {
+            "url": "https://irace.vn/bao-chi/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "bao chi viet"
+          },
+          {
+            "url": "https://irace.vn/hoi-dap/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "hoi dap"
+          },
+          {
+            "url": "https://irace.vn/thong-tin/huong-dan/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huong dan su dung"
+          },
+          {
+            "url": "https://irace.vn/kien-thuc-tap-luyen/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kien thuc chay bo"
+          },
+          {
+            "url": "https://tools.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "cong cu tinh toan"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "shop the thao"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "dinh duong"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "phu kien"
+          },
+          {
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://ticket.irace.vn/trang-an-marathon-2026",
+            "text": "chia se tren facebook"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1pYMmBlfTe1uD9cNZfd3dzmP8xsnsyVx-/view",
+            "text": "tai day"
+          },
+          {
+            "url": "http://online.gov.vn/Home/WebDetails/51414",
+            "text": ""
+          },
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/feed/",
+            "text": ""
+          },
+          {
+            "url": "https://www.youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+            "text": ""
+          },
+          {
+            "url": "https://play.google.com/store/apps/details?id=com.irace.app",
+            "text": ""
+          },
+          {
+            "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/chinh-sach-bao-mat/",
+            "text": "chinh sach bao mat"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-thanh-toan/",
+            "text": "dieu khoan thanh toan"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-su-dung/",
+            "text": "dieu khoan su dung"
+          },
+          {
+            "url": "https://irace.vn/tuyen-dung/",
+            "text": "tuyen dung"
+          },
+          {
+            "url": "https://irace.vn/lien-he/",
+            "text": "lien he"
+          }
+        ],
+        "organizer": {
+          "id": "vumedia",
+          "name": "VuMedia | Ban tổ chức sự kiện"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T04:03:37.715Z"
+  "updatedAt": "2026-10-15T20:31:08.696Z"
 }

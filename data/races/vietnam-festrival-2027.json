@@ -1,30 +1,18 @@
 {
   "id": "40d499a7-1536-4fd1-9d27-552e1844ebb7",
   "slug": "vietnam-festrival-2027",
-  "name": "Vietnam FesTRIval 2027",
+  "name": "Vietnam FesTRIval lần 5",
   "types": [
     "triathlon"
   ],
   "date": "2027-03-21",
-  "endDate": null,
-  "mainDate": null,
+  "endDate": "2027-03-22",
+  "mainDate": "2027-03-21",
   "seriesId": "vietnam-festrival",
-  "organizerId": "cong-ty-tnhh-stop-and-sports",
+  "organizerId": "stop-and-sports",
   "organizer": "CÔNG TY TNHH STOP AND SPORTS",
   "edition": 5,
   "courses": [
-    {
-      "label": "56.50",
-      "meters": 56500,
-      "type": "triathlon",
-      "elevationGain": null
-    },
-    {
-      "label": "70.3",
-      "meters": 113000,
-      "type": "triathlon",
-      "elevationGain": null
-    },
     {
       "label": "Sprint",
       "meters": 25750,
@@ -303,11 +291,70 @@
   "registrationStatus": "open",
   "registrations": [
     {
+      "site": "irace",
+      "url": "https://ticket.irace.vn/vietnam-festrival-2027"
+    },
+    {
       "site": "actiup",
       "url": "https://actiup.net/vi/event/vietnam-festrival-2027"
     }
   ],
   "links": [
+    {
+      "url": "https://facebook.com/sharer/sharer.php",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "http://online.gov.vn/Home/WebDetails/51414",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1cmKEuTjLS2BLbYr4zOec8Z0-HciyY91G/view",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
     {
       "url": "https://drive.google.com/file/d/17B3H7j1Cq448xXmWerVd0X_CuGBHGTUc/view",
       "kind": "rules",
@@ -742,9 +789,332 @@
           }
         ]
       }
+    },
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://ticket.irace.vn/vietnam-festrival-2027",
+      "lastCheckedAt": "2026-10-15T20:27:50.831Z",
+      "lastChangedAt": "2026-10-15T20:27:50.831Z",
+      "extracted": {
+        "facts": {
+          "name": "Vietnam FesTRIval lần 5",
+          "venue": "Bàu Trắng, Hòa Thắng, Lâm Đồng",
+          "organizer": "Stop And Sports"
+        },
+        "pages": [
+          {
+            "url": "https://ticket.irace.vn/vietnam-festrival-2027",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "triathlon"
+              ],
+              "name": "Vietnam FesTRIval lần 5",
+              "date": "2027-03-21",
+              "endDate": "2027-03-22",
+              "mainDate": "2027-03-21",
+              "distances": [
+                "70.3 (Cá nhân)",
+                "70.3 (Tiếp sức)",
+                "56.50 (Cá nhân)",
+                "56.50 (Tiếp sức)",
+                "Sprint"
+              ],
+              "courses": [
+                {
+                  "distance": "70.3 (Cá nhân)",
+                  "type": "triathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "70.3 (Tiếp sức)",
+                  "type": "triathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "56.50 (Cá nhân)",
+                  "type": "triathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "56.50 (Tiếp sức)",
+                  "type": "triathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "Sprint",
+                  "type": "triathlon",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 5,
+              "editionQuote": "lần 5",
+              "mapsUrl": "Bàu Trắng, Hòa Thắng, Lâm Đồng",
+              "venue": "Bàu Trắng, Hòa Thắng, Lâm Đồng",
+              "city": "Lâm Đồng",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": [
+                {
+                  "distance": "70.3 (Cá nhân)",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "16/09",
+                  "to": "30/09",
+                  "price": 3670000
+                },
+                {
+                  "distance": "70.3 (Cá nhân)",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "30/11",
+                  "price": 4210000
+                },
+                {
+                  "distance": "70.3 (Cá nhân)",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "01/12",
+                  "to": "28/02",
+                  "price": 4750000
+                },
+                {
+                  "distance": "70.3 (Tiếp sức)",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "16/09",
+                  "to": "30/09",
+                  "price": 4530000
+                },
+                {
+                  "distance": "70.3 (Tiếp sức)",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "30/11",
+                  "price": 5070000
+                },
+                {
+                  "distance": "70.3 (Tiếp sức)",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "01/12",
+                  "to": "28/02",
+                  "price": 5830000
+                },
+                {
+                  "distance": "56.50 (Cá nhân)",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "16/09",
+                  "to": "30/09",
+                  "price": 3670000
+                },
+                {
+                  "distance": "56.50 (Cá nhân)",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "30/11",
+                  "price": 4210000
+                },
+                {
+                  "distance": "56.50 (Cá nhân)",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "01/12",
+                  "to": "28/02",
+                  "price": 4750000
+                },
+                {
+                  "distance": "56.50 (Tiếp sức)",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "16/09",
+                  "to": "30/09",
+                  "price": 4530000
+                },
+                {
+                  "distance": "56.50 (Tiếp sức)",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "30/11",
+                  "price": 5070000
+                },
+                {
+                  "distance": "56.50 (Tiếp sức)",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "01/12",
+                  "to": "28/02",
+                  "price": 5830000
+                },
+                {
+                  "distance": "Sprint",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "16/09",
+                  "to": "30/09",
+                  "price": 2590000
+                },
+                {
+                  "distance": "Sprint",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "30/11",
+                  "price": 3130000
+                },
+                {
+                  "distance": "Sprint",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "01/12",
+                  "to": "28/02",
+                  "price": 3670000
+                }
+              ]
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://app.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://irace.vn/ban-ve/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ban ve su kien"
+          },
+          {
+            "url": "https://irace.vn/myfoto/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "tim hinh su kien"
+          },
+          {
+            "url": "https://irace.vn/doanh-nghiep/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "to chuc su kien"
+          },
+          {
+            "url": "https://irace.vn/affiliate/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kiem tien cung irace vn"
+          },
+          {
+            "url": "https://irace.vn/thiet-ke-huy-chuong/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huy chuong"
+          },
+          {
+            "url": "https://irace.vn/san-xuat-qua-tang-phu-kien-the-thao/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "quan ao phu kien"
+          },
+          {
+            "url": "https://irace.vn/about-us/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ve irace"
+          },
+          {
+            "url": "https://irace.vn/bao-chi/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "bao chi viet"
+          },
+          {
+            "url": "https://irace.vn/hoi-dap/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "hoi dap"
+          },
+          {
+            "url": "https://irace.vn/thong-tin/huong-dan/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huong dan su dung"
+          },
+          {
+            "url": "https://irace.vn/kien-thuc-tap-luyen/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kien thuc chay bo"
+          },
+          {
+            "url": "https://tools.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "cong cu tinh toan"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "shop the thao"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "dinh duong"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "phu kien"
+          },
+          {
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://ticket.irace.vn/vietnam-festrival-2027",
+            "text": "chia se tren facebook"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1cmKEuTjLS2BLbYr4zOec8Z0-HciyY91G/view?usp=drive_link",
+            "text": "tai day"
+          },
+          {
+            "url": "http://online.gov.vn/Home/WebDetails/51414",
+            "text": ""
+          },
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/feed/",
+            "text": ""
+          },
+          {
+            "url": "https://www.youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+            "text": ""
+          },
+          {
+            "url": "https://play.google.com/store/apps/details?id=com.irace.app",
+            "text": ""
+          },
+          {
+            "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/chinh-sach-bao-mat/",
+            "text": "chinh sach bao mat"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-thanh-toan/",
+            "text": "dieu khoan thanh toan"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-su-dung/",
+            "text": "dieu khoan su dung"
+          },
+          {
+            "url": "https://irace.vn/tuyen-dung/",
+            "text": "tuyen dung"
+          },
+          {
+            "url": "https://irace.vn/lien-he/",
+            "text": "lien he"
+          }
+        ],
+        "organizer": {
+          "id": "stop-and-sports",
+          "name": "Stop And Sports"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-13T02:12:57.272Z"
+  "updatedAt": "2026-10-15T20:31:08.696Z"
 }

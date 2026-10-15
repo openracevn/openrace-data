@@ -1,40 +1,40 @@
 {
   "id": "1866d85d-16f0-4648-8c6d-c7f453d65aed",
   "slug": "son-tra-city-trail-2026",
-  "name": "SƠN TRÀ CITY TRAIL 2026",
+  "name": "Giải chạy Sơn Trà City Trail 2026",
   "types": [
     "city_trail"
   ],
-  "date": "2026-12-26",
-  "endDate": "2026-12-27",
+  "date": "2026-12-27",
+  "endDate": null,
   "mainDate": null,
   "seriesId": null,
-  "organizerId": "cong-ty-tnhh-belove-mountain",
-  "organizer": "Công ty TNHH Belove Mountain",
+  "organizerId": "blm",
+  "organizer": "Be Love Mountain",
   "edition": 1,
   "courses": [
     {
       "label": "5km",
       "meters": 5000,
-      "type": "city_trail",
+      "type": "trail_run",
       "elevationGain": null
     },
     {
       "label": "10km",
       "meters": 10000,
-      "type": "city_trail",
+      "type": "trail_run",
       "elevationGain": null
     },
     {
       "label": "21km",
       "meters": 21097,
-      "type": "city_trail",
+      "type": "trail_run",
       "elevationGain": null
     },
     {
       "label": "42km",
       "meters": 42195,
-      "type": "city_trail",
+      "type": "trail_run",
       "elevationGain": null
     }
   ],
@@ -139,6 +139,138 @@
     }
   },
   "prices": [
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 660000,
+      "from": "2026-10-11",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 866000,
+      "from": "2026-11-01",
+      "to": "2026-11-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1166000,
+      "from": "2026-12-01",
+      "to": "2026-12-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 766000,
+      "from": "2026-10-11",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 966000,
+      "from": "2026-11-01",
+      "to": "2026-11-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1266000,
+      "from": "2026-12-01",
+      "to": "2026-12-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 988000,
+      "from": "2026-10-11",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1188000,
+      "from": "2026-11-01",
+      "to": "2026-11-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1488000,
+      "from": "2026-12-01",
+      "to": "2026-12-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1088000,
+      "from": "2026-10-11",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1388000,
+      "from": "2026-11-01",
+      "to": "2026-11-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1688000,
+      "from": "2026-12-01",
+      "to": "2026-12-15",
+      "inferred": [],
+      "site": "irace"
+    },
     {
       "distance": "5km",
       "tier": "Early Bird",
@@ -276,11 +408,75 @@
   "registrationStatus": "open",
   "registrations": [
     {
+      "site": "irace",
+      "url": "https://ticket.irace.vn/son-tra-city-trail-2026"
+    },
+    {
       "site": "actiup",
       "url": "https://actiup.net/vi/event/son-tra-city-trail-2026"
     }
   ],
   "links": [
+    {
+      "url": "https://facebook.com/profile.php",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://facebook.com/sharer/sharer.php",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "http://online.gov.vn/Home/WebDetails/51414",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1Y2u3UkDessQAZk1-InxIhdzsOM6Q6mJK/view",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
     {
       "url": "https://drive.google.com/file/d/1RrDm_fgMVfex1NT6JPA3H8oKtDA3b9SP/view",
       "kind": "rules",
@@ -462,9 +658,392 @@
           }
         ]
       }
+    },
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://ticket.irace.vn/son-tra-city-trail-2026",
+      "lastCheckedAt": "2026-10-15T20:28:27.335Z",
+      "lastChangedAt": "2026-10-15T20:28:27.335Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Sơn Trà City Trail 2026",
+          "venue": "Sơn Trà, Đà Nẵng",
+          "organizer": "Be Love Mountain",
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Early Bird",
+              "from": "11/10",
+              "to": "31/10",
+              "price": 660000
+            },
+            {
+              "distance": "5km",
+              "tier": "Regular",
+              "from": "01/11",
+              "to": "30/11",
+              "price": 866000
+            },
+            {
+              "distance": "5km",
+              "tier": "Late",
+              "from": "01/12",
+              "to": "15/12",
+              "price": 1166000
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "from": "11/10",
+              "to": "31/10",
+              "price": 766000
+            },
+            {
+              "distance": "10km",
+              "tier": "Regular",
+              "from": "01/11",
+              "to": "30/11",
+              "price": 966000
+            },
+            {
+              "distance": "10km",
+              "tier": "Late",
+              "from": "01/12",
+              "to": "15/12",
+              "price": 1266000
+            },
+            {
+              "distance": "21km",
+              "tier": "Early Bird",
+              "from": "11/10",
+              "to": "31/10",
+              "price": 988000
+            },
+            {
+              "distance": "21km",
+              "tier": "Regular",
+              "from": "01/11",
+              "to": "30/11",
+              "price": 1188000
+            },
+            {
+              "distance": "21km",
+              "tier": "Late",
+              "from": "01/12",
+              "to": "15/12",
+              "price": 1488000
+            },
+            {
+              "distance": "42km",
+              "tier": "Early Bird",
+              "from": "11/10",
+              "to": "31/10",
+              "price": 1088000
+            },
+            {
+              "distance": "42km",
+              "tier": "Regular",
+              "from": "01/11",
+              "to": "30/11",
+              "price": 1388000
+            },
+            {
+              "distance": "42km",
+              "tier": "Late",
+              "from": "01/12",
+              "to": "15/12",
+              "price": 1688000
+            }
+          ]
+        },
+        "pages": [
+          {
+            "url": "https://ticket.irace.vn/son-tra-city-trail-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "trail_run"
+              ],
+              "name": "Giải chạy Sơn Trà City Trail 2026",
+              "date": "2026-12-27",
+              "endDate": "2026-12-27",
+              "mainDate": "2026-12-27",
+              "distances": [
+                "5km",
+                "10km",
+                "21km",
+                "42km"
+              ],
+              "courses": [
+                {
+                  "distance": "5km",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10km",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "21km",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "42km",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "Giải chạy lần thứ 1",
+              "mapsUrl": "",
+              "venue": "Sơn Trà",
+              "city": "Đà Nẵng",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": [
+                {
+                  "distance": "5km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "11/10",
+                  "to": "31/10",
+                  "price": 660000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "30/11",
+                  "price": 866000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/12",
+                  "to": "15/12",
+                  "price": 1166000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "11/10",
+                  "to": "31/10",
+                  "price": 766000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "30/11",
+                  "price": 966000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/12",
+                  "to": "15/12",
+                  "price": 1266000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "11/10",
+                  "to": "31/10",
+                  "price": 988000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "30/11",
+                  "price": 1188000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/12",
+                  "to": "15/12",
+                  "price": 1488000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "11/10",
+                  "to": "31/10",
+                  "price": 1088000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "30/11",
+                  "price": 1388000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/12",
+                  "to": "15/12",
+                  "price": 1688000
+                }
+              ]
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://app.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://irace.vn/ban-ve/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ban ve su kien"
+          },
+          {
+            "url": "https://irace.vn/myfoto/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "tim hinh su kien"
+          },
+          {
+            "url": "https://irace.vn/doanh-nghiep/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "to chuc su kien"
+          },
+          {
+            "url": "https://irace.vn/affiliate/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kiem tien cung irace vn"
+          },
+          {
+            "url": "https://irace.vn/thiet-ke-huy-chuong/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huy chuong"
+          },
+          {
+            "url": "https://irace.vn/san-xuat-qua-tang-phu-kien-the-thao/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "quan ao phu kien"
+          },
+          {
+            "url": "https://irace.vn/about-us/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ve irace"
+          },
+          {
+            "url": "https://irace.vn/bao-chi/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "bao chi viet"
+          },
+          {
+            "url": "https://irace.vn/hoi-dap/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "hoi dap"
+          },
+          {
+            "url": "https://irace.vn/thong-tin/huong-dan/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huong dan su dung"
+          },
+          {
+            "url": "https://irace.vn/kien-thuc-tap-luyen/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kien thuc chay bo"
+          },
+          {
+            "url": "https://tools.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "cong cu tinh toan"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "shop the thao"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "dinh duong"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "phu kien"
+          },
+          {
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://ticket.irace.vn/son-tra-city-trail-2026",
+            "text": "chia se tren facebook"
+          },
+          {
+            "url": "https://www.facebook.com/profile.php?id=61592836797096",
+            "text": "https www facebook com profile php id 61592836797096"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1Y2u3UkDessQAZk1-InxIhdzsOM6Q6mJK/view?usp=drive_link",
+            "text": "tai day"
+          },
+          {
+            "url": "http://online.gov.vn/Home/WebDetails/51414",
+            "text": ""
+          },
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/feed/",
+            "text": ""
+          },
+          {
+            "url": "https://www.youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+            "text": ""
+          },
+          {
+            "url": "https://play.google.com/store/apps/details?id=com.irace.app",
+            "text": ""
+          },
+          {
+            "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/chinh-sach-bao-mat/",
+            "text": "chinh sach bao mat"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-thanh-toan/",
+            "text": "dieu khoan thanh toan"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-su-dung/",
+            "text": "dieu khoan su dung"
+          },
+          {
+            "url": "https://irace.vn/tuyen-dung/",
+            "text": "tuyen dung"
+          },
+          {
+            "url": "https://irace.vn/lien-he/",
+            "text": "lien he"
+          }
+        ],
+        "organizer": {
+          "id": "blm",
+          "name": "Be Love Mountain"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-15T20:26:01.820Z"
+  "updatedAt": "2026-10-15T20:31:08.696Z"
 }

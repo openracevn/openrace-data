@@ -1,47 +1,47 @@
 {
   "id": "a186bdd7-6ed8-4907-95dc-42e0f2d72ea2",
   "slug": "cuc-phuong-jungle-paths-2026",
-  "name": "CUC PHUONG JUNGLE PATHS 2026",
+  "name": "Giải chạy Cuc Phuong Jungle Paths 2026",
   "types": [
     "trail_run"
   ],
-  "date": "2026-12-25",
+  "date": "2026-12-26",
   "endDate": "2026-12-27",
-  "mainDate": null,
+  "mainDate": "2026-12-26",
   "seriesId": "cuc-phuong-jungle-paths",
   "organizerId": "race-jungle",
   "organizer": "Race Jungle",
-  "edition": null,
+  "edition": 1,
   "courses": [
     {
       "label": "10km",
       "meters": 10000,
       "type": "trail_run",
-      "elevationGain": 200
+      "elevationGain": 1232
     },
     {
       "label": "25km",
       "meters": 25000,
       "type": "trail_run",
-      "elevationGain": 700
+      "elevationGain": 2112
     },
     {
       "label": "42km",
       "meters": 42195,
       "type": "trail_run",
-      "elevationGain": 1200
+      "elevationGain": 2816
     },
     {
       "label": "75km",
       "meters": 75000,
       "type": "trail_run",
-      "elevationGain": 2500
+      "elevationGain": 3432
     },
     {
       "label": "100km",
       "meters": 100000,
       "type": "trail_run",
-      "elevationGain": 3500
+      "elevationGain": 3960
     }
   ],
   "location": {
@@ -145,6 +145,71 @@
     }
   },
   "prices": [
+    {
+      "distance": "10km",
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": null,
+      "price": 1232000,
+      "from": null,
+      "to": "2026-12-26",
+      "inferred": [
+        "to"
+      ],
+      "site": "irace"
+    },
+    {
+      "distance": "25km",
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": null,
+      "price": 2112000,
+      "from": null,
+      "to": "2026-12-26",
+      "inferred": [
+        "to"
+      ],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": null,
+      "price": 2816000,
+      "from": null,
+      "to": "2026-12-26",
+      "inferred": [
+        "to"
+      ],
+      "site": "irace"
+    },
+    {
+      "distance": "75km",
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": null,
+      "price": 3432000,
+      "from": null,
+      "to": "2026-12-26",
+      "inferred": [
+        "to"
+      ],
+      "site": "irace"
+    },
+    {
+      "distance": "100km",
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": null,
+      "price": 3960000,
+      "from": null,
+      "to": "2026-12-26",
+      "inferred": [
+        "to"
+      ],
+      "site": "irace"
+    },
     {
       "distance": "10km",
       "tier": "Priority",
@@ -370,11 +435,75 @@
   "registrationStatus": "open",
   "registrations": [
     {
+      "site": "irace",
+      "url": "https://ticket.irace.vn/cuc-phuong-jungle-paths-2026"
+    },
+    {
       "site": "actiup",
       "url": "https://actiup.net/vi/event/cuc-phuong-jungle-paths-2026"
     }
   ],
   "links": [
+    {
+      "url": "https://facebook.com/sharer/sharer.php",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "http://online.gov.vn/Home/WebDetails/51414",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://docs.google.com/document/d/1kju8Rz16JPqESO-BJsjBBG00SB5KJTVB/edit",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://goo.gl/maps/vqxmDcwj2cMhPFLPA",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
     {
       "url": "https://drive.google.com/file/d/1FxrT3Zf-17e7pEUrD2zZgAIKGt5JE_9C/view",
       "kind": "rules",
@@ -730,9 +859,256 @@
           "note": "5BIB ticket list (Race Jungle's seller): 4 tiers x 5 courses with valid dates; province Tỉnh Ninh Bình, location Khu hồ Mạc - VQG Cúc Phương. Noon and Regular match the organizer's racejungle.com product page (sale price and list price)."
         }
       }
+    },
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://ticket.irace.vn/cuc-phuong-jungle-paths-2026",
+      "lastCheckedAt": "2026-10-15T20:29:56.434Z",
+      "lastChangedAt": "2026-10-15T20:29:56.434Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Cuc Phuong Jungle Paths 2026",
+          "venue": "VQG Cúc Phương, Ninh Bình, Việt Nam",
+          "organizer": "Race Jungle | Ban tổ chức giải"
+        },
+        "pages": [
+          {
+            "url": "https://ticket.irace.vn/cuc-phuong-jungle-paths-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "trail_run"
+              ],
+              "name": "Giải chạy Cuc Phuong Jungle Paths 2026",
+              "date": "2026-12-26",
+              "endDate": "2026-12-27",
+              "mainDate": "2026-12-26",
+              "distances": [
+                "10km",
+                "25km",
+                "42km",
+                "75km",
+                "100km"
+              ],
+              "courses": [
+                {
+                  "distance": "10km",
+                  "type": "trail_run",
+                  "elevationGain": 1232
+                },
+                {
+                  "distance": "25km",
+                  "type": "trail_run",
+                  "elevationGain": 2112
+                },
+                {
+                  "distance": "42km",
+                  "type": "trail_run",
+                  "elevationGain": 2816
+                },
+                {
+                  "distance": "75km",
+                  "type": "trail_run",
+                  "elevationGain": 3432
+                },
+                {
+                  "distance": "100km",
+                  "type": "trail_run",
+                  "elevationGain": 3960
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "Giải chạy lần thứ 1",
+              "mapsUrl": "",
+              "venue": "VQG Cúc Phương, Ninh Bình, Việt Nam",
+              "city": "Ninh Bình",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": [
+                {
+                  "distance": "10km",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 1232000
+                },
+                {
+                  "distance": "25km",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 2112000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 2816000
+                },
+                {
+                  "distance": "75km",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 3432000
+                },
+                {
+                  "distance": "100km",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 3960000
+                }
+              ]
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://app.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://irace.vn/ban-ve/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ban ve su kien"
+          },
+          {
+            "url": "https://irace.vn/myfoto/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "tim hinh su kien"
+          },
+          {
+            "url": "https://irace.vn/doanh-nghiep/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "to chuc su kien"
+          },
+          {
+            "url": "https://irace.vn/affiliate/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kiem tien cung irace vn"
+          },
+          {
+            "url": "https://irace.vn/thiet-ke-huy-chuong/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huy chuong"
+          },
+          {
+            "url": "https://irace.vn/san-xuat-qua-tang-phu-kien-the-thao/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "quan ao phu kien"
+          },
+          {
+            "url": "https://irace.vn/about-us/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ve irace"
+          },
+          {
+            "url": "https://irace.vn/bao-chi/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "bao chi viet"
+          },
+          {
+            "url": "https://irace.vn/hoi-dap/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "hoi dap"
+          },
+          {
+            "url": "https://irace.vn/thong-tin/huong-dan/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huong dan su dung"
+          },
+          {
+            "url": "https://irace.vn/kien-thuc-tap-luyen/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kien thuc chay bo"
+          },
+          {
+            "url": "https://tools.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "cong cu tinh toan"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "shop the thao"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "dinh duong"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "phu kien"
+          },
+          {
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://ticket.irace.vn/cuc-phuong-jungle-paths-2026",
+            "text": "chia se tren facebook"
+          },
+          {
+            "url": "https://goo.gl/maps/vqxmDcwj2cMhPFLPA",
+            "text": "khu ho mac vuon quoc gia cuc phuong ninh binh"
+          },
+          {
+            "url": "https://docs.google.com/document/d/1kju8Rz16JPqESO-BJsjBBG00SB5KJTVB/edit",
+            "text": "xem tai day"
+          },
+          {
+            "url": "http://online.gov.vn/Home/WebDetails/51414",
+            "text": ""
+          },
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/feed/",
+            "text": ""
+          },
+          {
+            "url": "https://www.youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+            "text": ""
+          },
+          {
+            "url": "https://play.google.com/store/apps/details?id=com.irace.app",
+            "text": ""
+          },
+          {
+            "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/chinh-sach-bao-mat/",
+            "text": "chinh sach bao mat"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-thanh-toan/",
+            "text": "dieu khoan thanh toan"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-su-dung/",
+            "text": "dieu khoan su dung"
+          },
+          {
+            "url": "https://irace.vn/tuyen-dung/",
+            "text": "tuyen dung"
+          },
+          {
+            "url": "https://irace.vn/lien-he/",
+            "text": "lien he"
+          }
+        ],
+        "organizer": {
+          "id": "race-jungle",
+          "name": "Race Jungle | Ban tổ chức giải"
+        }
+      }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-13T02:12:57.272Z"
+  "updatedAt": "2026-10-15T20:31:08.696Z"
 }
