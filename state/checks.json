@@ -1302,9 +1302,10 @@
     "status": "facts"
   },
   "https://halongmarathon.com/": {
-    "lastCheckedAt": "2026-10-12T17:54:59.389Z",
-    "status": "ok",
-    "fingerprint": "4bb1ea23c7ace3769227eafc013855bb"
+    "lastCheckedAt": "2026-10-15T20:18:42.388Z",
+    "status": "error",
+    "fingerprint": "4bb1ea23c7ace3769227eafc013855bb",
+    "reason": "fetch failed"
   },
   "https://hcmcmarathon.com/": {
     "lastCheckedAt": "2026-10-15T20:18:20.790Z",
