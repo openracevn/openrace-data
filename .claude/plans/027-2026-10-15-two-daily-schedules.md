@@ -66,9 +66,9 @@ GitHub starts this repo's crons 4 to 7.5 hours late (observed 2026-10-02 to 10-1
 `.github/workflows/trial.yml`, built from today's scripts so the two schedules can be tested before the refactor:
 
 - **Schedule 1 (trial):** `check --refresh --site <site>` on all 7 sites with a recipe (actiup, irace, vnexpress-marathon, hcmc-marathon, halong-marathon, lamdong-trail, run-to-live). Free.
-- **Schedule 2 (trial):** `check --site <site>` (paid reads of new and changed pages) on actiup, irace, vnexpress-marathon, hcmc-marathon, committed. On halong-marathon, lamdong-trail and run-to-live it runs `--dry-run --preview`: the reads are paid but not committed, because those three failed the 10-13 check by eye; the output is kept as a run artifact for the next session to check against the live pages.
+- **Schedule 2 (trial):** `check --site <site>` (paid reads of new and changed pages) on all 7 sites, committed. halong-marathon, lamdong-trail and run-to-live failed the 10-13 check by eye; the user chose to commit them anyway, so the next session checks what they wrote against the live pages and fixes or reverts.
 - Credits: capped by the existing monthly cap (900; 215 spent in October, so up to 685).
 - Each schedule posts a summary to Discord. Main posts its usual data announcement for each commit.
 - Cron 00:07 Vietnam Friday (17:07 UTC Thursday), retry at 02:07; the retry does nothing if the first run went through. Expected in Discord well before 09:00, but GitHub doesn't guarantee start times; if nothing has arrived, start it by hand from the Actions tab (Trial run, Run workflow).
 
-What to read from the trial in the next session: credits per site and per page, pages read vs skipped as unchanged, what changed in the data, and the three dry-run sites' output against their live pages.
+What to read from the trial in the next session: credits per site and per page, pages read vs skipped as unchanged, what changed in the data, and what the three untrusted sites committed, against their live pages.

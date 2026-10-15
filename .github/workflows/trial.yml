@@ -1,9 +1,9 @@
 name: Trial run (plan 027)
 # One-time test of plan 027's two schedules, Friday 2026-10-16, built from today's
 # scripts. Schedule 1: free discovery (check --refresh) on every site with a recipe.
-# Schedule 2: paid reads (check --site) of what Schedule 1 left pending; committed on
-# the four trusted sites, a dry run with the output kept as an artifact on the three
-# that failed the 10-13 check by eye. Each schedule posts its result to Discord.
+# Schedule 2: paid reads (check --site) of what Schedule 1 left pending, committed on
+# every site, the three that failed the 10-13 check by eye too (the user's call; the
+# next session checks them). Each schedule posts its result to Discord.
 # GitHub starts this repo's crons 4 to 7.5 hours late, so the cron is 00:07 Vietnam
 # Friday with a retry at 02:07; a run does nothing if an earlier one went through.
 # Delete this file when plan 027 is built.
@@ -116,28 +116,16 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
           out="$RUNNER_TEMP/s2.md"
-          mkdir -p "$RUNNER_TEMP/preview"
           run_site() { # site, extra args...
             local site="$1"; shift
             git fetch -q origin main && git reset -q --hard origin/main
             local log="$RUNNER_TEMP/s2-$site.log" status
             if npm run -s check -- --site "$site" --max-credits 685 "$@" > "$log" 2>&1; then status=ok; else status=FAILED; fi
             cat "$log"
-            { echo "**$site** ($status${*:+, dry run})"; grep -E '^- (Sites|Reads|Races|A paid run)' "$log" | sed 's/^- /  · /' || true; } >> "$out"
+            { echo "**$site** ($status)"; grep -E '^- (Sites|Reads|Races|A paid run)' "$log" | sed 's/^- /  · /' || true; } >> "$out"
           }
-          # Committed: the sites whose recipe has a known-answer check.
-          for site in actiup irace vnexpress-marathon hcmc-marathon; do run_site "$site"; done
-          # Read but not committed: these failed the 10-13 check by eye; output kept for the next session.
-          for site in halong-marathon lamdong-trail run-to-live; do
-            run_site "$site" --dry-run --preview "$RUNNER_TEMP/preview/$site"
-            cp "$RUNNER_TEMP/s2-$site.log" "$RUNNER_TEMP/preview/$site.log" 2>/dev/null || true
-          done
-      - uses: actions/upload-artifact@v5
-        if: always()
-        with:
-          name: trial-dry-run-preview
-          path: ${{ runner.temp }}/preview
-          if-no-files-found: ignore
+          # All committed, the three untrusted sites too (the user, 2026-10-15); the next session checks them against the live pages.
+          for site in actiup irace vnexpress-marathon hcmc-marathon halong-marathon lamdong-trail run-to-live; do run_site "$site"; done
       - name: Post Schedule 2 to Discord
         if: always()
         env:
