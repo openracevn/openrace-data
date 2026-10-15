@@ -12,7 +12,32 @@
   "organizerId": "cong-ty-tnhh-belove-mountain",
   "organizer": "Công ty TNHH Belove Mountain",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": null,
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": null,
+      "elevationGain": null
+    },
+    {
+      "label": "25km",
+      "meters": 25000,
+      "type": null,
+      "elevationGain": null
+    },
+    {
+      "label": "50km",
+      "meters": 50000,
+      "type": null,
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Măng Đen",
     "city": null
@@ -113,7 +138,173 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 868000,
+      "from": "2026-10-11",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1168000,
+      "from": "2026-11-01",
+      "to": "2027-01-20",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1468000,
+      "from": "2027-01-21",
+      "to": "2027-02-20",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1168000,
+      "from": "2026-10-11",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1468000,
+      "from": "2026-11-01",
+      "to": "2027-01-20",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1768000,
+      "from": "2027-01-21",
+      "to": "2027-02-20",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "25km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1368000,
+      "from": "2026-10-11",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "25km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1768000,
+      "from": "2026-11-01",
+      "to": "2027-01-20",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "25km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2168000,
+      "from": "2027-01-21",
+      "to": "2027-02-20",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "50km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1568000,
+      "from": "2026-10-11",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "50km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2168000,
+      "from": "2026-11-01",
+      "to": "2027-01-20",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "50km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2568000,
+      "from": "2027-01-21",
+      "to": "2027-02-20",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "50km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1968000,
+      "from": "2026-10-11",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "50km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2568000,
+      "from": "2026-11-01",
+      "to": "2027-01-20",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "50km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2968000,
+      "from": "2027-01-21",
+      "to": "2027-02-20",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -137,7 +328,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/mang-den-lala-trail-2027",
-      "lastCheckedAt": "2026-10-12T17:47:13.559Z",
+      "lastCheckedAt": "2026-10-15T20:21:17.005Z",
       "lastChangedAt": "2026-10-12T17:47:13.559Z",
       "extracted": {
         "facts": {
@@ -150,6 +341,34 @@
           "registrationStatus": "open",
           "fromPrice": 568000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/mang-den-lala-trail-2027",
+            "json": {
+              "pageKind": "none",
+              "types": [],
+              "name": "Măng Đen LaLa Trail 2027",
+              "date": "2027-11-21",
+              "endDate": "2027-11-22",
+              "mainDate": "",
+              "distances": [],
+              "courses": [],
+              "edition": 0,
+              "editionQuote": "",
+              "mapsUrl": "",
+              "venue": "",
+              "city": "",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1MSDO4g5i9QzAZbQ1MqR3Nzs02ONP-o8E/view?usp=drive_link",
@@ -159,11 +378,149 @@
         "organizer": {
           "id": "cong-ty-tnhh-belove-mountain",
           "name": "Công ty TNHH Belove Mountain"
-        }
+        },
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/10/12/1791773586656192/IMG_7569.jpeg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "5km",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "11/10",
+                  "to": "31/10",
+                  "price": 868000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "20/01",
+                  "price": 1168000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "21/01",
+                  "to": "20/02",
+                  "price": 1468000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "11/10",
+                  "to": "31/10",
+                  "price": 1168000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "20/01",
+                  "price": 1468000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "21/01",
+                  "to": "20/02",
+                  "price": 1768000
+                },
+                {
+                  "distance": "25km",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "11/10",
+                  "to": "31/10",
+                  "price": 1368000
+                },
+                {
+                  "distance": "25km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "20/01",
+                  "price": 1768000
+                },
+                {
+                  "distance": "25km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "21/01",
+                  "to": "20/02",
+                  "price": 2168000
+                },
+                {
+                  "distance": "50km COT 9h",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "11/10",
+                  "to": "31/10",
+                  "price": 1568000
+                },
+                {
+                  "distance": "50km COT 9h",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "20/01",
+                  "price": 2168000
+                },
+                {
+                  "distance": "50km COT 9h",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "21/01",
+                  "to": "20/02",
+                  "price": 2568000
+                },
+                {
+                  "distance": "50km COT 15h",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "11/10",
+                  "to": "31/10",
+                  "price": 1968000
+                },
+                {
+                  "distance": "50km COT 15h",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "20/01",
+                  "price": 2568000
+                },
+                {
+                  "distance": "50km COT 15h",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "21/01",
+                  "to": "20/02",
+                  "price": 2968000
+                }
+              ],
+              "distances": [
+                "5km",
+                "10km",
+                "25km",
+                "50km COT 9h",
+                "50km COT 15h"
+              ],
+              "date": "2027-02-20",
+              "currency": "VND"
+            }
+          }
+        ]
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-10-12T17:48:31.011Z",
-  "updatedAt": "2026-10-12T17:48:31.011Z"
+  "updatedAt": "2026-10-15T20:26:01.820Z"
 }

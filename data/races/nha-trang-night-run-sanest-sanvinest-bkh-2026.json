@@ -3,7 +3,7 @@
   "slug": "nha-trang-night-run-sanest-sanvinest-bkh-2026",
   "name": "NHA TRANG NIGHT RUN SANEST, SANVINEST - BKH 2026",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2026-12-12",
   "endDate": null,
@@ -11,11 +11,30 @@
   "seriesId": null,
   "organizerId": "vietrace365",
   "organizer": "VIETRACE365",
-  "edition": null,
-  "courses": [],
+  "edition": 2,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Quảng trường 2/4, Phường Nha Trang, Tỉnh Khánh Hòa",
-    "city": null
+    "city": "Nha Trang"
   },
   "geo": {
     "lat": 12.2379502,
@@ -113,7 +132,140 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 250000,
+      "from": "2026-08-21",
+      "to": "2026-08-24",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 350000,
+      "from": "2026-08-24",
+      "to": "2026-10-05",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 500000,
+      "from": "2026-10-06",
+      "to": "2026-10-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 650000,
+      "from": "2026-10-31",
+      "to": "2026-11-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 350000,
+      "from": "2026-08-21",
+      "to": "2026-08-24",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 450000,
+      "from": "2026-08-24",
+      "to": "2026-10-05",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 600000,
+      "from": "2026-10-06",
+      "to": "2026-10-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 750000,
+      "from": "2026-10-31",
+      "to": "2026-11-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 500000,
+      "from": "2026-08-21",
+      "to": "2026-08-24",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 600000,
+      "from": "2026-08-24",
+      "to": "2026-10-05",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 800000,
+      "from": "2026-10-06",
+      "to": "2026-10-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1000000,
+      "from": "2026-10-31",
+      "to": "2026-11-12",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -137,7 +289,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/nha-trang-night-run-sanest-sanvinest-bkh-2026",
-      "lastCheckedAt": "2026-10-12T17:47:12.799Z",
+      "lastCheckedAt": "2026-10-15T20:20:45.195Z",
       "lastChangedAt": "2026-10-12T17:47:12.799Z",
       "extracted": {
         "facts": {
@@ -149,6 +301,36 @@
           "registrationStatus": "open",
           "fromPrice": 500000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/nha-trang-night-run-sanest-sanvinest-bkh-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "NHA TRANG NIGHT RUN SANEST, SANVINEST - BKH 2026",
+              "date": "2026-12-12",
+              "endDate": "2026-12-12",
+              "mainDate": "2026-12-12",
+              "distances": [],
+              "courses": [],
+              "edition": 2,
+              "editionQuote": "mùa thứ 2",
+              "mapsUrl": "https://drive.google.com/file/d/1k5qIovLhoWwR1ZxjseXSuvY5U57msRtV/view?usp=drive_link",
+              "venue": "Quảng trường 2/4",
+              "city": "Nha Trang",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1k5qIovLhoWwR1ZxjseXSuvY5U57msRtV/view?usp=drive_link",
@@ -158,11 +340,132 @@
         "organizer": {
           "id": "vietrace365",
           "name": "VIETRACE365"
-        }
+        },
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/10/08/1791442432160389/GI%C3%81-V%C3%89-01.png",
+            "json": {
+              "prices": [
+                {
+                  "distance": "5KM",
+                  "tier": "Flash Sale",
+                  "audience": "CULY NAM / NÜ",
+                  "from": "21/08",
+                  "to": "24/08",
+                  "price": 250000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Early Bird",
+                  "audience": "CULY NAM / NÜ",
+                  "from": "24/08",
+                  "to": "05/10",
+                  "price": 350000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Regular",
+                  "audience": "CULY NAM / NÜ",
+                  "from": "06/10",
+                  "to": "30/10",
+                  "price": 500000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Late",
+                  "audience": "CULY NAM / NÜ",
+                  "from": "31/10",
+                  "to": "12/11",
+                  "price": 650000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Flash Sale",
+                  "audience": "CULY NAM / NÜ",
+                  "from": "21/08",
+                  "to": "24/08",
+                  "price": 350000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Early Bird",
+                  "audience": "CULY NAM / NÜ",
+                  "from": "24/08",
+                  "to": "05/10",
+                  "price": 450000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Regular",
+                  "audience": "CULY NAM / NÜ",
+                  "from": "06/10",
+                  "to": "30/10",
+                  "price": 600000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Late",
+                  "audience": "CULY NAM / NÜ",
+                  "from": "31/10",
+                  "to": "12/11",
+                  "price": 750000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Flash Sale",
+                  "audience": "CULY NAM / NÜ",
+                  "from": "21/08",
+                  "to": "24/08",
+                  "price": 500000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Early Bird",
+                  "audience": "CULY NAM / NÜ",
+                  "from": "24/08",
+                  "to": "05/10",
+                  "price": 600000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Regular",
+                  "audience": "CULY NAM / NÜ",
+                  "from": "06/10",
+                  "to": "30/10",
+                  "price": 800000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Late",
+                  "audience": "CULY NAM / NÜ",
+                  "from": "31/10",
+                  "to": "12/11",
+                  "price": 1000000
+                }
+              ],
+              "distances": [
+                "5KM",
+                "10KM",
+                "21KM"
+              ],
+              "date": "2026-11-12",
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2026/10/08/1791442450608296/GI%C3%81-V%C3%89-02.png",
+            "json": {
+              "prices": [],
+              "distances": [],
+              "date": "",
+              "currency": "VND"
+            }
+          }
+        ]
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-10-12T17:48:31.011Z",
-  "updatedAt": "2026-10-12T17:48:31.011Z"
+  "updatedAt": "2026-10-15T20:26:01.820Z"
 }

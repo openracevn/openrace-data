@@ -318,7 +318,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/tet-run-mien-nam-2027",
-      "lastCheckedAt": "2026-09-23T18:50:00.594Z",
+      "lastCheckedAt": "2026-10-15T20:25:19.289Z",
       "lastChangedAt": "2026-09-23T18:30:39.404Z",
       "extracted": {
         "facts": {
@@ -341,12 +341,27 @@
               "name": "TẾT RUN MIỀN NAM 2027",
               "date": "2027-01-24",
               "endDate": "2027-01-24",
+              "mainDate": "2027-01-24",
               "distances": [],
+              "courses": [
+                {
+                  "distance": "N/A",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "Tết Run miền Nam 2027",
+              "mapsUrl": "https://drive.google.com/file/d/1qfcA1Tj6Xeky22UnNty6yl4cooUlGCqh/view?usp=sharing",
               "venue": "Vinhomes Grand Park",
               "city": "TP.HCM",
               "organizer": "",
               "currency": "VND",
               "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
               "prices": []
             }
           }
@@ -363,90 +378,78 @@
         },
         "images": [
           {
-            "url": "https://pix.actiup.net/2026/09/18/1789717694701775/EB---TET-RUN.jpg",
+            "url": "https://pix.actiup.net/2026/10/14/1791973275137921/B%E1%BA%A3ng-gi%C3%A1-T%E1%BA%BFt-Run.jpg",
             "json": {
               "prices": [
                 {
-                  "distance": "",
+                  "distance": "ĐỐI TƯỢNG",
+                  "tier": "Super Early Bird",
+                  "audience": "CÁ NHÂN",
+                  "from": "08/09",
+                  "to": "06/11",
+                  "price": 488000
+                },
+                {
+                  "distance": "ĐỐI TƯỢNG",
                   "tier": "Early Bird",
-                  "audience": "Individual",
-                  "from": "22/10",
-                  "to": "22/10",
+                  "audience": "CÁ NHÂN",
+                  "from": "06/11",
+                  "to": "15/12",
                   "price": 678000
                 },
                 {
-                  "distance": "",
-                  "tier": "Group 50+",
-                  "audience": "Group",
-                  "from": "22/10",
-                  "to": "22/10",
+                  "distance": "ĐỐI TƯỢNG",
+                  "tier": "Group ≥ 50",
+                  "audience": "THEO NHÓM",
+                  "from": "06/11",
+                  "to": "15/12",
                   "price": 576000
                 },
                 {
-                  "distance": "",
-                  "tier": "Group 200+",
-                  "audience": "Group",
-                  "from": "22/10",
-                  "to": "22/10",
+                  "distance": "ĐỐI TƯỢNG",
+                  "tier": "Group ≥ 200",
+                  "audience": "THEO NHÓM",
+                  "from": "06/11",
+                  "to": "15/12",
                   "price": 542000
-                }
-              ],
-              "distances": [],
-              "date": "2027-01-01",
-              "currency": "VND"
-            }
-          },
-          {
-            "url": "https://pix.actiup.net/2026/09/18/1789717711857384/RAGULAR---TET-RUN.jpg",
-            "json": {
-              "prices": [
+                },
                 {
-                  "distance": "",
+                  "distance": "ĐỐI TƯỢNG",
                   "tier": "Regular",
-                  "audience": "Cá Nhân",
-                  "from": "23/10",
-                  "to": "31/11",
+                  "audience": "CÁ NHÂN",
+                  "from": "07/11",
+                  "to": "15/12",
                   "price": 778000
                 },
                 {
-                  "distance": "",
-                  "tier": "Group 50+",
+                  "distance": "ĐỐI TƯỢNG",
+                  "tier": "Group ≥ 50",
                   "audience": "THEO NHÓM",
-                  "from": "23/10",
-                  "to": "31/11",
-                  "price": 660000
+                  "from": "16/12",
+                  "to": "23/12",
+                  "price": 661000
                 },
                 {
-                  "distance": "",
-                  "tier": "Group 200+",
+                  "distance": "ĐỐI TƯỢNG",
+                  "tier": "Group ≥ 200",
                   "audience": "THEO NHÓM",
-                  "from": "23/10",
-                  "to": "31/11",
+                  "from": "16/12",
+                  "to": "23/12",
                   "price": 622000
-                }
-              ],
-              "distances": [],
-              "date": "",
-              "currency": "VND"
-            }
-          },
-          {
-            "url": "https://pix.actiup.net/2026/09/18/1789717724194489/LATE--TET-RUN.jpg",
-            "json": {
-              "prices": [
+                },
                 {
-                  "distance": "CÁ NHÂN",
+                  "distance": "ĐỐI TƯỢNG",
                   "tier": "Late",
-                  "audience": "Resident",
-                  "from": "01/12",
+                  "audience": "CÁ NHÂN",
+                  "from": "16/12",
                   "to": "23/12",
                   "price": 986000
                 }
               ],
               "distances": [
-                "CÁ NHÂN"
+                "ĐỐI TƯỢNG"
               ],
-              "date": "2026-12-01",
+              "date": "2027-01-24",
               "currency": "VND"
             }
           }
@@ -456,5 +459,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-13T02:12:57.272Z"
+  "updatedAt": "2026-10-15T20:26:01.820Z"
 }

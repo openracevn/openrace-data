@@ -7,6 +7,7 @@
   ],
   "date": "2026-12-06",
   "endDate": null,
+  "mainDate": null,
   "seriesId": null,
   "organizerId": "gamuda-land",
   "organizer": "Gamuda Land Việt Nam phối hợp cùng Nhịp Tim Việt Nam",
@@ -30,6 +31,12 @@
     {
       "label": "10km",
       "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
       "type": "road_run",
       "elevationGain": null
     }
@@ -137,34 +144,34 @@
   "prices": [
     {
       "distance": "2km",
-      "tier": "Supper Early Bird",
-      "kind": "super_early",
+      "tier": "Giá vé tiểu chuẩn",
+      "kind": "regular",
       "audience": null,
-      "price": 169000,
-      "from": "2026-08-25",
-      "to": "2026-10-13",
+      "price": 219000,
+      "from": "2026-10-14",
+      "to": "2026-11-10",
       "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "5km",
-      "tier": "Supper Early Bird",
-      "kind": "super_early",
+      "tier": "Giá vé tiểu chuẩn",
+      "kind": "regular",
       "audience": null,
-      "price": 189000,
-      "from": "2026-08-25",
-      "to": "2026-10-13",
+      "price": 239000,
+      "from": "2026-10-14",
+      "to": "2026-11-10",
       "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "10km",
-      "tier": "Supper Early Bird",
-      "kind": "super_early",
+      "tier": "Giá vé tiểu chuẩn",
+      "kind": "regular",
       "audience": null,
-      "price": 199000,
-      "from": "2026-08-25",
-      "to": "2026-10-13",
+      "price": 299000,
+      "from": "2026-10-14",
+      "to": "2026-11-10",
       "inferred": [],
       "site": "actiup"
     }
@@ -184,7 +191,12 @@
       "foundOn": "actiup.net"
     }
   ],
-  "participants": null,
+  "participants": {
+    "count": 2000,
+    "sourceUrl": "https://actiup.net/vi/event/run-for-the-heart-2026",
+    "quote": "gần 2.000 trái tim nhỏ bé.",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "organizerId": {
@@ -205,7 +217,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/run-for-the-heart-2026",
-      "lastCheckedAt": "2026-09-23T19:22:57.623Z",
+      "lastCheckedAt": "2026-10-15T20:24:13.035Z",
       "lastChangedAt": "2026-09-23T18:30:43.016Z",
       "extracted": {
         "facts": {
@@ -215,7 +227,7 @@
           "organizer": "Gamuda Land Việt Nam phối hợp cùng Nhịp Tim Việt Nam",
           "currency": "VND",
           "registrationStatus": "open",
-          "fromPrice": 169000
+          "fromPrice": 219000
         },
         "pages": [
           {
@@ -225,52 +237,44 @@
               "types": [
                 "road_run"
               ],
-              "name": "Giải chạy Run For The Heart - Chạy vì trái tim 2026",
+              "name": "Run For The Heart - Chạy Vì Trái Tim 2026",
+              "date": "2026-11-21",
+              "endDate": "2026-11-22",
+              "mainDate": "2026-11-21",
+              "distances": [
+                "5km",
+                "10km",
+                "21km"
+              ],
+              "courses": [
+                {
+                  "distance": "5km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "21km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 2026,
+              "editionQuote": "Năm 2026",
+              "mapsUrl": "https://drive.google.com/file/d/1as7sB7Azzz8NLPLDxijX8h-Memw1aZi6/view?usp=drive_link",
+              "venue": "Hà Nội",
               "city": "Hà Nội",
               "organizer": "Gamuda Land Việt Nam",
               "currency": "VND",
-              "prices": []
-            }
-          }
-        ],
-        "images": [
-          {
-            "url": "https://pix.actiup.net/2026/08/24/1787551238540706/Gi%C3%A1-v%C3%A9-SEB-(VN)---activeUP.png",
-            "json": {
-              "prices": [
-                {
-                  "distance": "2KM",
-                  "tier": "Supper Early Bird",
-                  "from": "2026-08-25",
-                  "to": "2026-10-13",
-                  "price": 169000
-                },
-                {
-                  "distance": "5KM",
-                  "tier": "Supper Early Bird",
-                  "from": "2026-08-25",
-                  "to": "2026-10-13",
-                  "price": 189000
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "Supper Early Bird",
-                  "from": "2026-08-25",
-                  "to": "2026-10-13",
-                  "price": 199000
-                }
-              ],
-              "distances": [
-                "2KM",
-                "5KM",
-                "10KM"
-              ],
-              "currency": "VND"
-            }
-          },
-          {
-            "url": "https://pix.actiup.net/2026/08/25/1787654372631111/B%E1%BA%A2NG-CHI%E1%BA%BET-KH%E1%BA%A4U-H%E1%BB%98I-NH%C3%93M.png",
-            "json": {
+              "registrationStatus": "open",
+              "participants": {
+                "count": 2000,
+                "quote": "gần 2.000 trái tim nhỏ bé."
+              },
               "prices": []
             }
           }
@@ -285,11 +289,59 @@
           "id": "gamuda-land-viet-nam-phoi-hop-cung-nhip-tim-viet-nam",
           "name": "Gamuda Land Việt Nam phối hợp cùng Nhịp Tim Việt Nam"
         },
-        "readBy": "agent"
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/10/13/1791888214380362/Gi%C3%A1-v%C3%A9-STD-(VN)---activeUP.png",
+            "json": {
+              "prices": [
+                {
+                  "distance": "2KM",
+                  "tier": "Giá vé tiểu chuẩn",
+                  "audience": "",
+                  "from": "14/10",
+                  "to": "10/11",
+                  "price": 219000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Giá vé tiểu chuẩn",
+                  "audience": "",
+                  "from": "14/10",
+                  "to": "10/11",
+                  "price": 239000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Giá vé tiểu chuẩn",
+                  "audience": "",
+                  "from": "14/10",
+                  "to": "10/11",
+                  "price": 299000
+                }
+              ],
+              "distances": [
+                "2KM",
+                "5KM",
+                "10KM"
+              ],
+              "date": "2026-10-14",
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2026/08/25/1787654372631111/B%E1%BA%A2NG-CHI%E1%BA%BET-KH%E1%BA%A4U-H%E1%BB%98I-NH%C3%93M.png",
+            "json": {
+              "prices": [],
+              "distances": [],
+              "date": "",
+              "currency": ""
+            }
+          }
+        ]
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T12:41:20.787Z"
+  "updatedAt": "2026-10-15T20:26:01.820Z"
 }

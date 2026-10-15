@@ -136,6 +136,50 @@
   },
   "prices": [
     {
+      "distance": "1.5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 299000,
+      "from": "2026-10-01",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 499000,
+      "from": "2026-10-01",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 599000,
+      "from": "2026-10-01",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 749000,
+      "from": "2026-10-01",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
       "distance": "21km",
       "tier": "Early Bird",
       "kind": "early",
@@ -178,50 +222,6 @@
       "to": "2026-09-30",
       "inferred": [],
       "site": "actiup"
-    },
-    {
-      "distance": "1.5km",
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 299000,
-      "from": "2026-10-01",
-      "to": "2026-10-15",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "5km",
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 499000,
-      "from": "2026-10-01",
-      "to": "2026-10-15",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 599000,
-      "from": "2026-10-01",
-      "to": "2026-10-15",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "21km",
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 749000,
-      "from": "2026-10-01",
-      "to": "2026-10-15",
-      "inferred": [],
-      "site": "actiup"
     }
   ],
   "currency": "VND",
@@ -242,7 +242,7 @@
   "participants": {
     "count": 1000,
     "sourceUrl": "https://actiup.net/vi/event/quang-truc-half-marathon-2026-noi-nhip-bien-cuong",
-    "quote": "khoảng 1.000 vận động viên",
+    "quote": "giải chạy cộng đồng quy mô khoảng 1.000 vận động viên.",
     "confidence": "medium"
   },
   "flags": [],
@@ -252,7 +252,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/quang-truc-half-marathon-2026-noi-nhip-bien-cuong",
-      "lastCheckedAt": "2026-10-12T17:51:52.176Z",
+      "lastCheckedAt": "2026-10-15T20:23:35.012Z",
       "lastChangedAt": "2026-09-23T18:30:40.997Z",
       "extracted": {
         "facts": {
@@ -288,6 +288,7 @@
                 }
               ],
               "edition": 1,
+              "editionQuote": "Giải chạy cộng đồng quy mô khoảng 1.000 vận động viên",
               "mapsUrl": "https://drive.google.com/file/d/18UfSrmJAqM-d-3YFToccatM205CyqLqC/view?usp=drive_link",
               "venue": "Vùng biên giới phía Tây tỉnh Lâm Đồng",
               "city": "Lâm Đồng",
@@ -296,7 +297,7 @@
               "registrationStatus": "open",
               "participants": {
                 "count": 1000,
-                "quote": "khoảng 1.000 vận động viên"
+                "quote": "giải chạy cộng đồng quy mô khoảng 1.000 vận động viên."
               },
               "prices": []
             }
@@ -313,6 +314,53 @@
           "name": "Ủy ban nhân dân dân xã Quảng Trực"
         },
         "images": [
+          {
+            "url": "https://pix.actiup.net/2026/10/14/1791944828912135/G%C3%ADa-v%C3%A9-QT-regular.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "KID RUN1,5 KM",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "31/10",
+                  "price": 299000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "31/10",
+                  "price": 499000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "31/10",
+                  "price": 599000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "31/10",
+                  "price": 749000
+                }
+              ],
+              "distances": [
+                "KID RUN1,5 KM",
+                "5KM",
+                "10KM",
+                "21KM"
+              ],
+              "date": "2026-10-01",
+              "currency": "VND"
+            }
+          },
           {
             "url": "https://pix.actiup.net/2026/09/07/1788750003442623/B%E1%BA%A3ng-gi%C3%A1-v%C3%A9.png",
             "json": {
@@ -391,53 +439,6 @@
               "date": "2026-09-09",
               "currency": "VND"
             }
-          },
-          {
-            "url": "https://pix.actiup.net/2026/09/29/1790651688628376/Quang-Truc---Bang-gia-Regular.jpg",
-            "json": {
-              "prices": [
-                {
-                  "distance": "KID RUN1,5 KM",
-                  "tier": "Regular",
-                  "audience": "Cá nhân",
-                  "from": "01/10",
-                  "to": "15/10",
-                  "price": 299000
-                },
-                {
-                  "distance": "5KM",
-                  "tier": "Regular",
-                  "audience": "Cá nhân",
-                  "from": "01/10",
-                  "to": "15/10",
-                  "price": 499000
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "Regular",
-                  "audience": "Cá nhân",
-                  "from": "01/10",
-                  "to": "15/10",
-                  "price": 599000
-                },
-                {
-                  "distance": "21KM",
-                  "tier": "Regular",
-                  "audience": "Cá nhân",
-                  "from": "01/10",
-                  "to": "15/10",
-                  "price": 749000
-                }
-              ],
-              "distances": [
-                "KID RUN1,5 KM",
-                "5KM",
-                "10KM",
-                "21KM"
-              ],
-              "date": "2026-10-01",
-              "currency": "VND"
-            }
           }
         ]
       }
@@ -445,5 +446,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-13T02:40:11.333Z"
+  "updatedAt": "2026-10-15T20:26:01.820Z"
 }

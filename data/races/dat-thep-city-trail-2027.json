@@ -11,14 +11,269 @@
   "seriesId": null,
   "organizerId": "vietnam-mtb-series",
   "organizer": "Vietnam MTB Series",
-  "edition": null,
-  "courses": [],
+  "edition": 1,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "trail_run",
+      "elevationGain": 250
+    },
+    {
+      "label": "7km",
+      "meters": 7000,
+      "type": "city_trail",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "trail_run",
+      "elevationGain": 300
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "trail_run",
+      "elevationGain": 400
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "city_trail",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Trung tâm cung ứng dịch vụ công xã Tân An Hội",
-    "city": null
+    "city": "Hồ Chí Minh"
   },
-  "geo": null,
-  "prices": [],
+  "geo": {
+    "lat": 10.7737261,
+    "lng": 106.7166008,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "79",
+      "ward": null
+    },
+    "legacy": null,
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1144,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 610.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 315.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 228.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 130.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1119.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 639.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 62.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 430.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 254.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1321.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1132.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
+  "prices": [
+    {
+      "distance": "7km",
+      "tier": "FLASH SALE",
+      "kind": "other",
+      "audience": null,
+      "price": 350000,
+      "from": "2026-09-28",
+      "to": "2026-09-28",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "7km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 550000,
+      "from": "2026-09-29",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "7km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 650000,
+      "from": "2026-11-01",
+      "to": "2027-01-10",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "FLASH SALE",
+      "kind": "other",
+      "audience": null,
+      "price": 450000,
+      "from": "2026-09-28",
+      "to": "2026-09-28",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 650000,
+      "from": "2026-09-29",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 750000,
+      "from": "2026-11-01",
+      "to": "2027-01-10",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "FLASH SALE",
+      "kind": "other",
+      "audience": null,
+      "price": 550000,
+      "from": "2026-09-28",
+      "to": "2026-09-28",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 750000,
+      "from": "2026-09-29",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 850000,
+      "from": "2026-11-01",
+      "to": "2027-01-10",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "FLASH SALE",
+      "kind": "other",
+      "audience": null,
+      "price": 800000,
+      "from": "2026-09-28",
+      "to": "2026-09-28",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "EARLY BIRD",
+      "kind": "early",
+      "audience": null,
+      "price": 900000,
+      "from": "2026-09-29",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 1200000,
+      "from": "2026-11-01",
+      "to": "2027-01-10",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -34,7 +289,12 @@
       "foundOn": "actiup.net"
     }
   ],
-  "participants": null,
+  "participants": {
+    "count": 610,
+    "sourceUrl": "https://actiup.net/vi/event/dat-thep-city-trail-2027",
+    "quote": "Tham gia: 610 vận động viên.",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {},
   "sources": [
@@ -42,7 +302,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/dat-thep-city-trail-2027",
-      "lastCheckedAt": "2026-10-12T17:47:13.156Z",
+      "lastCheckedAt": "2026-10-15T20:20:59.621Z",
       "lastChangedAt": "2026-10-12T17:47:13.156Z",
       "extracted": {
         "facts": {
@@ -55,6 +315,81 @@
           "registrationStatus": "open",
           "fromPrice": 350000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/dat-thep-city-trail-2027",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "trail_run"
+              ],
+              "name": "Đất Thép City Trail 2027",
+              "date": "2026-11-21",
+              "endDate": "2026-11-22",
+              "mainDate": "2026-11-21",
+              "distances": [
+                "5km",
+                "10km",
+                "21km"
+              ],
+              "courses": [
+                {
+                  "distance": "5km",
+                  "type": "trail_run",
+                  "elevationGain": 250
+                },
+                {
+                  "distance": "10km",
+                  "type": "trail_run",
+                  "elevationGain": 300
+                },
+                {
+                  "distance": "21km",
+                  "type": "trail_run",
+                  "elevationGain": 400
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "lần thứ 1",
+              "mapsUrl": "https://drive.google.com/file/d/1bqt3bsLudeHAGlaMJJuBqTDD_WIWn3ex/view?usp=drive_link",
+              "venue": "Khu di tích Địa đạo Củ Chi",
+              "city": "Hồ Chí Minh",
+              "organizer": "ActiUp",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 610,
+                "quote": "Tham gia: 610 vận động viên."
+              },
+              "prices": [
+                {
+                  "distance": "5km",
+                  "tier": "Giá vé tiều chuẩn",
+                  "audience": "Việt Nam",
+                  "from": "01/10",
+                  "to": "30/10",
+                  "price": 300000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Giá vé tiều chuẩn",
+                  "audience": "Việt Nam",
+                  "from": "01/10",
+                  "to": "30/10",
+                  "price": 400000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Giá vé tiều chuẩn",
+                  "audience": "Việt Nam",
+                  "from": "01/10",
+                  "to": "30/10",
+                  "price": 500000
+                }
+              ]
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1bqt3bsLudeHAGlaMJJuBqTDD_WIWn3ex/view?usp=drive_link",
@@ -64,11 +399,124 @@
         "organizer": {
           "id": "vietnam-mtb-series",
           "name": "Vietnam MTB Series"
-        }
+        },
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/09/28/1790566802298899/Artboard-19-100.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "07KM",
+                  "tier": "FLASH SALE",
+                  "audience": "",
+                  "from": "28/09",
+                  "to": "28/09",
+                  "price": 350000
+                },
+                {
+                  "distance": "07KM",
+                  "tier": "EARLY BIRD",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "31/10",
+                  "price": 550000
+                },
+                {
+                  "distance": "07KM",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "10/01",
+                  "price": 650000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "FLASH SALE",
+                  "audience": "",
+                  "from": "28/09",
+                  "to": "28/09",
+                  "price": 450000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "EARLY BIRD",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "31/10",
+                  "price": 650000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "10/01",
+                  "price": 750000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "FLASH SALE",
+                  "audience": "",
+                  "from": "28/09",
+                  "to": "28/09",
+                  "price": 550000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "EARLY BIRD",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "31/10",
+                  "price": 750000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "10/01",
+                  "price": 850000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "FLASH SALE",
+                  "audience": "",
+                  "from": "28/09",
+                  "to": "28/09",
+                  "price": 800000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "EARLY BIRD",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "31/10",
+                  "price": 900000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "10/01",
+                  "price": 1200000
+                }
+              ],
+              "distances": [
+                "07KM",
+                "10KM",
+                "21KM",
+                "42KM"
+              ],
+              "date": "2027-01-24",
+              "currency": "VND"
+            }
+          }
+        ]
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-10-12T17:48:31.011Z",
-  "updatedAt": "2026-10-12T17:48:31.011Z"
+  "updatedAt": "2026-10-15T20:26:01.820Z"
 }

@@ -3,7 +3,7 @@
   "slug": "run-to-live-2027",
   "name": "Run To Live 2027",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2027-04-11",
   "endDate": null,
@@ -11,11 +11,30 @@
   "seriesId": "run-to-live",
   "organizerId": "miracle-entertainment-group",
   "organizer": "Miracle Entertainment Group",
-  "edition": null,
-  "courses": [],
+  "edition": 3,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Công viên bờ sông Sài Gòn",
-    "city": null
+    "city": "TBU"
   },
   "geo": {
     "lat": 10.7705461,
@@ -113,7 +132,173 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 395000,
+      "from": "2026-05-28",
+      "to": "2026-05-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 715000,
+      "from": "2026-05-30",
+      "to": "2026-06-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 790000,
+      "from": "2026-07-01",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 900000,
+      "from": "2026-10-01",
+      "to": "2026-12-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": null,
+      "price": 1045000,
+      "from": "2027-01-01",
+      "to": "2027-02-28",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 435000,
+      "from": "2026-05-28",
+      "to": "2026-05-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 790000,
+      "from": "2026-05-30",
+      "to": "2026-06-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1065000,
+      "from": "2026-07-01",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1120000,
+      "from": "2026-10-01",
+      "to": "2026-12-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": null,
+      "price": 1395000,
+      "from": "2027-01-01",
+      "to": "2027-02-28",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 590000,
+      "from": "2026-05-28",
+      "to": "2026-05-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1075000,
+      "from": "2026-05-30",
+      "to": "2026-06-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1285000,
+      "from": "2026-07-01",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1485000,
+      "from": "2026-10-01",
+      "to": "2026-12-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": null,
+      "price": 1770000,
+      "from": "2027-01-01",
+      "to": "2027-02-28",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -137,7 +322,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/run-to-live-2027",
-      "lastCheckedAt": "2026-10-13T07:07:53.879Z",
+      "lastCheckedAt": "2026-10-15T20:22:52.417Z",
       "lastChangedAt": "2026-10-13T07:07:53.879Z",
       "extracted": {
         "facts": {
@@ -149,6 +334,56 @@
           "registrationStatus": "open",
           "fromPrice": 900000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/run-to-live-2027",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Run To Live 2027",
+              "date": "2026-11-21",
+              "endDate": "2026-11-22",
+              "mainDate": "2026-11-21",
+              "distances": [
+                "5km",
+                "10km",
+                "21KM"
+              ],
+              "courses": [
+                {
+                  "distance": "5km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "21KM",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 3,
+              "editionQuote": "mùa giải thứ ba",
+              "mapsUrl": "https://drive.google.com/file/d/1U4JR7slLrfFazqbgBfU9Febj-eI132_O/view",
+              "venue": "Công ty Miracle Entertainment Group",
+              "city": "TBU",
+              "organizer": "Công ty Miracle Entertainment Group",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1U4JR7slLrfFazqbgBfU9Febj-eI132_O/view",
@@ -158,11 +393,156 @@
         "organizer": {
           "id": "miracle-entertainment-group",
           "name": "Miracle Entertainment Group"
-        }
+        },
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/10/10/1791619346406614/price-rtl27.png",
+            "json": {
+              "prices": [
+                {
+                  "distance": "5KM",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "28/05",
+                  "to": "30/05",
+                  "price": 395000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "30/05",
+                  "to": "30/06",
+                  "price": 715000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "01/07",
+                  "to": "30/09",
+                  "price": 790000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "31/12",
+                  "price": 900000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "",
+                  "from": "01/01",
+                  "to": "28/02",
+                  "price": 1045000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "28/05",
+                  "to": "30/05",
+                  "price": 435000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "30/05",
+                  "to": "30/06",
+                  "price": 790000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "01/07",
+                  "to": "30/09",
+                  "price": 1065000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "31/12",
+                  "price": 1120000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "",
+                  "from": "01/01",
+                  "to": "28/02",
+                  "price": 1395000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "28/05",
+                  "to": "30/05",
+                  "price": 590000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "30/05",
+                  "to": "30/06",
+                  "price": 1075000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "01/07",
+                  "to": "30/09",
+                  "price": 1285000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "31/12",
+                  "price": 1485000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "",
+                  "from": "01/01",
+                  "to": "28/02",
+                  "price": 1770000
+                }
+              ],
+              "distances": [
+                "5KM",
+                "10KM",
+                "21KM"
+              ],
+              "date": "",
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2026/10/10/1791619334166005/grouppolicy-rtl27.png",
+            "json": {
+              "prices": [],
+              "distances": [],
+              "date": "",
+              "currency": ""
+            }
+          }
+        ]
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-10-13T07:09:05.682Z",
-  "updatedAt": "2026-10-13T07:09:05.682Z"
+  "updatedAt": "2026-10-15T20:26:01.820Z"
 }

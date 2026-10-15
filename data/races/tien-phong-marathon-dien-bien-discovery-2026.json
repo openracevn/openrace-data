@@ -7,6 +7,7 @@
   ],
   "date": "2026-12-31",
   "endDate": "2027-01-02",
+  "mainDate": null,
   "seriesId": null,
   "organizerId": "bao-tien-phong",
   "organizer": "Báo Tiền Phong và Sở VHTTDL tỉnh Điện Biên",
@@ -42,7 +43,7 @@
   ],
   "location": {
     "venue": "Phường Điện Biên Phủ, tỉnh Điện Biên",
-    "city": null
+    "city": "Điện Biên"
   },
   "geo": {
     "lat": 21.4140962,
@@ -139,12 +140,56 @@
   "prices": [
     {
       "distance": "48km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 636000,
+      "from": "2026-08-11",
+      "to": "2026-10-20",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "48km",
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
       "price": 886000,
-      "from": null,
-      "to": "2026-09-30",
+      "from": "2026-10-20",
+      "to": "2026-11-24",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "48km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 986000,
+      "from": "2026-10-21",
+      "to": "2026-11-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "48km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1286000,
+      "from": "2026-11-19",
+      "to": "2026-12-10",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 568000,
+      "from": "2026-08-11",
+      "to": "2026-10-20",
       "inferred": [],
       "site": "actiup"
     },
@@ -154,8 +199,41 @@
       "kind": "early",
       "audience": null,
       "price": 768000,
-      "from": null,
-      "to": "2026-09-30",
+      "from": "2026-10-20",
+      "to": "2026-11-24",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 886000,
+      "from": "2026-10-21",
+      "to": "2026-11-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 986000,
+      "from": "2026-11-19",
+      "to": "2026-12-10",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 386000,
+      "from": "2026-08-11",
+      "to": "2026-10-20",
       "inferred": [],
       "site": "actiup"
     },
@@ -165,8 +243,41 @@
       "kind": "early",
       "audience": null,
       "price": 586000,
-      "from": null,
-      "to": "2026-09-30",
+      "from": "2026-10-20",
+      "to": "2026-11-24",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 686000,
+      "from": "2026-10-21",
+      "to": "2026-11-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 886000,
+      "from": "2026-11-19",
+      "to": "2026-12-10",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 336000,
+      "from": "2026-08-11",
+      "to": "2026-10-20",
       "inferred": [],
       "site": "actiup"
     },
@@ -176,8 +287,30 @@
       "kind": "early",
       "audience": null,
       "price": 486000,
-      "from": null,
-      "to": "2026-09-30",
+      "from": "2026-10-20",
+      "to": "2026-11-24",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 586000,
+      "from": "2026-10-21",
+      "to": "2026-11-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 786000,
+      "from": "2026-11-19",
+      "to": "2026-12-10",
       "inferred": [],
       "site": "actiup"
     }
@@ -212,7 +345,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/tien-phong-marathon-dien-bien-discovery-2026",
-      "lastCheckedAt": "2026-09-24T05:54:22.509Z",
+      "lastCheckedAt": "2026-10-15T20:24:48.849Z",
       "lastChangedAt": "2026-09-23T18:30:43.872Z",
       "extracted": {
         "facts": {
@@ -227,128 +360,32 @@
         },
         "pages": [
           {
+            "url": "https://actiup.net/vi/event/tien-phong-marathon-dien-bien-discovery-2026",
             "json": {
-              "name": "TIỀN PHONG MARATHON ĐIỆN BIÊN DISCOVERY 2026",
               "pageKind": "sport",
-              "prices": [],
               "types": [
                 "road_run"
-              ]
-            },
-            "url": "https://actiup.net/vi/event/tien-phong-marathon-dien-bien-discovery-2026"
-          }
-        ],
-        "images": [
-          {
-            "json": {
-              "currency": "VND",
-              "date": "2027-01-02",
-              "distances": [
-                "48KM",
-                "21.1KM",
-                "10KM",
-                "5KM"
               ],
-              "prices": [
-                {
-                  "distance": "48KM",
-                  "price": 886000,
-                  "tier": "Early Bird",
-                  "to": "2026-09-30"
-                },
-                {
-                  "distance": "48KM",
-                  "price": 753100,
-                  "tier": "Group 50+",
-                  "to": "2026-09-30"
-                },
-                {
-                  "distance": "48KM",
-                  "price": 708800,
-                  "tier": "Group 100+",
-                  "to": "2026-09-30"
-                },
-                {
-                  "distance": "48KM",
-                  "price": 664500,
-                  "tier": "Group 200+",
-                  "to": "2026-09-30"
-                },
-                {
-                  "distance": "21.1KM",
-                  "price": 768000,
-                  "tier": "Early Bird",
-                  "to": "2026-09-30"
-                },
-                {
-                  "distance": "21.1KM",
-                  "price": 652800,
-                  "tier": "Group 50+",
-                  "to": "2026-09-30"
-                },
-                {
-                  "distance": "21.1KM",
-                  "price": 614400,
-                  "tier": "Group 100+",
-                  "to": "2026-09-30"
-                },
-                {
-                  "distance": "21.1KM",
-                  "price": 576000,
-                  "tier": "Group 200+",
-                  "to": "2026-09-30"
-                },
-                {
-                  "distance": "10KM",
-                  "price": 586000,
-                  "tier": "Early Bird",
-                  "to": "2026-09-30"
-                },
-                {
-                  "distance": "10KM",
-                  "price": 498100,
-                  "tier": "Group 50+",
-                  "to": "2026-09-30"
-                },
-                {
-                  "distance": "10KM",
-                  "price": 468800,
-                  "tier": "Group 100+",
-                  "to": "2026-09-30"
-                },
-                {
-                  "distance": "10KM",
-                  "price": 439500,
-                  "tier": "Group 200+",
-                  "to": "2026-09-30"
-                },
-                {
-                  "distance": "5KM",
-                  "price": 486000,
-                  "tier": "Early Bird",
-                  "to": "2026-09-30"
-                },
-                {
-                  "distance": "5KM",
-                  "price": 413100,
-                  "tier": "Group 50+",
-                  "to": "2026-09-30"
-                },
-                {
-                  "distance": "5KM",
-                  "price": 388800,
-                  "tier": "Group 100+",
-                  "to": "2026-09-30"
-                },
-                {
-                  "distance": "5KM",
-                  "price": 364500,
-                  "tier": "Group 200+",
-                  "to": "2026-09-30"
-                }
-              ]
-            },
-            "url": "https://pix.actiup.net/2026/08/11/1786433318382838/BA%CC%89NG-GIA%CC%81_EB.jpg"
+              "name": "Tiền Phong Marathon – Điện Biên Discovery",
+              "date": "2026-11-21",
+              "endDate": "2026-11-22",
+              "mainDate": "2026-11-21",
+              "distances": [],
+              "courses": [],
+              "edition": 2026,
+              "editionQuote": "Tiền Phong Marathon – Điện Biên Discovery 2026",
+              "mapsUrl": "",
+              "venue": "",
+              "city": "Điện Biên",
+              "organizer": "báo Tiền Phong",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": []
+            }
           }
         ],
         "links": [],
@@ -356,11 +393,315 @@
           "id": "bao-tien-phong-va-so-vhttdl-tinh-dien-bien",
           "name": "Báo Tiền Phong và Sở VHTTDL tỉnh Điện Biên"
         },
-        "readBy": "agent"
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/10/01/1790830251953138/b%E1%BA%A3ng-gi%C3%A1-v%C3%A9-t%E1%BB%95ng---ti%E1%BB%81n-phong.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "48KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Cả nhân",
+                  "from": "11/08",
+                  "to": "20/10",
+                  "price": 636000
+                },
+                {
+                  "distance": "48KM",
+                  "tier": "Early Bird",
+                  "audience": "Cả nhân",
+                  "from": "20/10",
+                  "to": "24/11",
+                  "price": 886000
+                },
+                {
+                  "distance": "48KM",
+                  "tier": "Group 50",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 753100
+                },
+                {
+                  "distance": "48KM",
+                  "tier": "Group 100",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 708800
+                },
+                {
+                  "distance": "48KM",
+                  "tier": "Group 200",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 664500
+                },
+                {
+                  "distance": "48KM",
+                  "tier": "Regular",
+                  "audience": "Cả nhân",
+                  "from": "21/10",
+                  "to": "18/11",
+                  "price": 986000
+                },
+                {
+                  "distance": "48KM",
+                  "tier": "Group 200",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 838100
+                },
+                {
+                  "distance": "48KM",
+                  "tier": "Group 200",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 788800
+                },
+                {
+                  "distance": "48KM",
+                  "tier": "Late",
+                  "audience": "Cả nhân",
+                  "from": "19/11",
+                  "to": "10/12",
+                  "price": 1286000
+                },
+                {
+                  "distance": "21.1KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Cả nhân",
+                  "from": "11/08",
+                  "to": "20/10",
+                  "price": 568000
+                },
+                {
+                  "distance": "21.1KM",
+                  "tier": "Early Bird",
+                  "audience": "Cả nhân",
+                  "from": "20/10",
+                  "to": "24/11",
+                  "price": 768000
+                },
+                {
+                  "distance": "21.1KM",
+                  "tier": "Group 50",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 652800
+                },
+                {
+                  "distance": "21.1KM",
+                  "tier": "Group 100",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 614400
+                },
+                {
+                  "distance": "21.1KM",
+                  "tier": "Group 200",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 576000
+                },
+                {
+                  "distance": "21.1KM",
+                  "tier": "Regular",
+                  "audience": "Cả nhân",
+                  "from": "21/10",
+                  "to": "18/11",
+                  "price": 886000
+                },
+                {
+                  "distance": "21.1KM",
+                  "tier": "Group 200",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 753100
+                },
+                {
+                  "distance": "21.1KM",
+                  "tier": "Group 200",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 708800
+                },
+                {
+                  "distance": "21.1KM",
+                  "tier": "Late",
+                  "audience": "Cả nhân",
+                  "from": "19/11",
+                  "to": "10/12",
+                  "price": 986000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Cả nhân",
+                  "from": "11/08",
+                  "to": "20/10",
+                  "price": 386000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Early Bird",
+                  "audience": "Cả nhân",
+                  "from": "20/10",
+                  "to": "24/11",
+                  "price": 586000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Group 50",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 498100
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Group 100",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 468800
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Group 200",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 439500
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Regular",
+                  "audience": "Cả nhân",
+                  "from": "21/10",
+                  "to": "18/11",
+                  "price": 686000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Group 200",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 583100
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Group 200",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 548800
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Late",
+                  "audience": "Cả nhân",
+                  "from": "19/11",
+                  "to": "10/12",
+                  "price": 886000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Cả nhân",
+                  "from": "11/08",
+                  "to": "20/10",
+                  "price": 336000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Early Bird",
+                  "audience": "Cả nhân",
+                  "from": "20/10",
+                  "to": "24/11",
+                  "price": 486000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Group 50",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 413100
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Group 100",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 388800
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Group 200",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 364500
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Regular",
+                  "audience": "Cả nhân",
+                  "from": "21/10",
+                  "to": "18/11",
+                  "price": 586000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Group 200",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 498100
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Group 200",
+                  "audience": "",
+                  "from": "",
+                  "to": "",
+                  "price": 468800
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Late",
+                  "audience": "Cả nhân",
+                  "from": "19/11",
+                  "to": "10/12",
+                  "price": 786000
+                }
+              ],
+              "distances": [
+                "48KM",
+                "21.1KM",
+                "10KM",
+                "5KM"
+              ],
+              "date": "2027-01-02",
+              "currency": "VND"
+            }
+          }
+        ]
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T12:41:20.836Z"
+  "updatedAt": "2026-10-15T20:26:01.820Z"
 }

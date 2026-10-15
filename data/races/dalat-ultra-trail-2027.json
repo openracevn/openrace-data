@@ -3,7 +3,7 @@
   "slug": "dalat-ultra-trail-2027",
   "name": "Giải siêu marathon địa hình Dalat Ultra Trail 2027",
   "types": [
-    "other"
+    "trail_run"
   ],
   "date": "2027-03-19",
   "endDate": "2027-03-21",
@@ -12,10 +12,53 @@
   "organizerId": "vietnam-mtb-series",
   "organizer": "Vietnam MTB Series",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "15km",
+      "meters": 15000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "50km",
+      "meters": 50000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "75km",
+      "meters": 75000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "110km",
+      "meters": 110000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "160km",
+      "meters": 160000,
+      "type": "trail_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Thung Lũng Tình Yêu",
-    "city": null
+    "city": "Dalat"
   },
   "geo": {
     "lat": 11.9781853,
@@ -113,7 +156,371 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1400000,
+      "from": "2026-10-13",
+      "to": "2026-11-13",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1400000,
+      "from": "2026-11-14",
+      "to": "2027-01-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1400000,
+      "from": "2027-02-01",
+      "to": "2027-02-28",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2100000,
+      "from": "2026-10-13",
+      "to": "2026-11-13",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2100000,
+      "from": "2026-11-14",
+      "to": "2027-01-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2100000,
+      "from": "2027-02-01",
+      "to": "2027-02-28",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2200000,
+      "from": "2026-10-13",
+      "to": "2026-11-13",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2200000,
+      "from": "2026-11-14",
+      "to": "2027-01-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2200000,
+      "from": "2027-02-01",
+      "to": "2027-02-28",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2700000,
+      "from": "2026-10-13",
+      "to": "2026-11-13",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2700000,
+      "from": "2026-11-14",
+      "to": "2027-01-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2700000,
+      "from": "2027-02-01",
+      "to": "2027-02-28",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 800000,
+      "from": "2026-10-13",
+      "to": "2026-11-13",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1250000,
+      "from": "2026-11-14",
+      "to": "2027-01-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1460000,
+      "from": "2027-02-01",
+      "to": "2027-02-28",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "15km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1000000,
+      "from": "2026-10-13",
+      "to": "2026-11-13",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "15km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1450000,
+      "from": "2026-11-14",
+      "to": "2027-01-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "15km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1900000,
+      "from": "2027-02-01",
+      "to": "2027-02-28",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1700000,
+      "from": "2026-10-13",
+      "to": "2026-11-13",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2150000,
+      "from": "2026-11-14",
+      "to": "2027-01-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2600000,
+      "from": "2027-02-01",
+      "to": "2027-02-28",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "50km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2150000,
+      "from": "2026-10-13",
+      "to": "2026-11-13",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "50km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2600000,
+      "from": "2026-11-14",
+      "to": "2027-01-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "50km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 3050000,
+      "from": "2027-02-01",
+      "to": "2027-02-28",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "75km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2700000,
+      "from": "2026-10-13",
+      "to": "2026-11-13",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "75km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 3150000,
+      "from": "2026-11-14",
+      "to": "2027-01-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "75km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 3600000,
+      "from": "2027-02-01",
+      "to": "2027-02-28",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "110km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 3800000,
+      "from": "2026-10-13",
+      "to": "2026-11-13",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "110km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 4250000,
+      "from": "2026-11-14",
+      "to": "2027-01-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "110km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 4700000,
+      "from": "2027-02-01",
+      "to": "2027-02-28",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "160km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 5950000,
+      "from": "2026-10-13",
+      "to": "2026-11-13",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "160km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 6400000,
+      "from": "2026-11-14",
+      "to": "2027-01-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "160km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 6850000,
+      "from": "2027-02-01",
+      "to": "2027-02-28",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -137,7 +544,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/dalat-ultra-trail-2027",
-      "lastCheckedAt": "2026-10-13T07:07:53.078Z",
+      "lastCheckedAt": "2026-10-15T20:21:32.146Z",
       "lastChangedAt": "2026-10-12T17:47:13.983Z",
       "extracted": {
         "facts": {
@@ -150,6 +557,36 @@
           "registrationStatus": "open",
           "fromPrice": 760000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/dalat-ultra-trail-2027",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "trail_run"
+              ],
+              "name": "Giải siêu marathon địa hình Dalat Ultra Trail 2027",
+              "date": "2027-11-21",
+              "endDate": "2027-11-22",
+              "mainDate": "2027-11-21",
+              "distances": [],
+              "courses": [],
+              "edition": 1,
+              "editionQuote": "Giải siêu marathon địa hình Dalat Ultra Trail 2027",
+              "mapsUrl": "https://vietnammtbseries.com/vi/event/dalat-ultra-trail-2027",
+              "venue": "TBU",
+              "city": "Dalat",
+              "organizer": "ActiUp",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": "Đang mở đăng ký"
+              },
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://vietnammtbseries.com/vi/event/dalat-ultra-trail-2027",
@@ -159,11 +596,299 @@
         "organizer": {
           "id": "vietnam-mtb-series",
           "name": "Vietnam MTB Series"
-        }
+        },
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/10/12/1791790734051690/ActiUp-x-DUT-27.png",
+            "json": {
+              "prices": [
+                {
+                  "distance": "05KM - FAMILY (1 NGƯỜI LỐN + 1 TRẾ EM / 1 ADULT + 1 KID)",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "13/10",
+                  "to": "13/11",
+                  "price": 1400000
+                },
+                {
+                  "distance": "05KM - FAMILY (1 NGƯỜI LỐN + 1 TRẾ EM / 1 ADULT + 1 KID)",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "14/11",
+                  "to": "31/01",
+                  "price": 1400000
+                },
+                {
+                  "distance": "05KM - FAMILY (1 NGƯỜI LỐN + 1 TRẾ EM / 1 ADULT + 1 KID)",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/02",
+                  "to": "28/02",
+                  "price": 1400000
+                },
+                {
+                  "distance": "05KM - FAMILY (1 NGƯỜI LỐN + 2 TRẾ EM / 1 ADULT + 1 KID)",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "13/10",
+                  "to": "13/11",
+                  "price": 2100000
+                },
+                {
+                  "distance": "05KM - FAMILY (1 NGƯỜI LỐN + 2 TRẾ EM / 1 ADULT + 1 KID)",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "14/11",
+                  "to": "31/01",
+                  "price": 2100000
+                },
+                {
+                  "distance": "05KM - FAMILY (1 NGƯỜI LỐN + 2 TRẾ EM / 1 ADULT + 1 KID)",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/02",
+                  "to": "28/02",
+                  "price": 2100000
+                },
+                {
+                  "distance": "05KM - FAMILY (2 NGƯỜI LỐN + 1 TRẾ EM / 2 ADULTS + 1 KID)",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "13/10",
+                  "to": "13/11",
+                  "price": 2200000
+                },
+                {
+                  "distance": "05KM - FAMILY (2 NGƯỜI LỐN + 1 TRẾ EM / 2 ADULTS + 1 KID)",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "14/11",
+                  "to": "31/01",
+                  "price": 2200000
+                },
+                {
+                  "distance": "05KM - FAMILY (2 NGƯỜI LỐN + 1 TRẾ EM / 2 ADULTS + 1 KID)",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/02",
+                  "to": "28/02",
+                  "price": 2200000
+                },
+                {
+                  "distance": "05KM - FAMILY (2 NGƯỜI LỐN + 2 TRẾ EM / 2 ADULTS + 2 KIDS)",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "13/10",
+                  "to": "13/11",
+                  "price": 2700000
+                },
+                {
+                  "distance": "05KM - FAMILY (2 NGƯỜI LỐN + 2 TRẾ EM / 2 ADULTS + 2 KIDS)",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "14/11",
+                  "to": "31/01",
+                  "price": 2700000
+                },
+                {
+                  "distance": "05KM - FAMILY (2 NGƯỜI LỐN + 2 TRẾ EM / 2 ADULTS + 2 KIDS)",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/02",
+                  "to": "28/02",
+                  "price": 2700000
+                },
+                {
+                  "distance": "05KM - CÁ NHÂN / INDIVIDUAL",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "13/10",
+                  "to": "13/11",
+                  "price": 800000
+                },
+                {
+                  "distance": "05KM - CÁ NHÂN / INDIVIDUAL",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "14/11",
+                  "to": "31/01",
+                  "price": 1250000
+                },
+                {
+                  "distance": "05KM - CÁ NHÂN / INDIVIDUAL",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/02",
+                  "to": "28/02",
+                  "price": 1460000
+                },
+                {
+                  "distance": "15KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "13/10",
+                  "to": "13/11",
+                  "price": 1000000
+                },
+                {
+                  "distance": "15KM",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "14/11",
+                  "to": "31/01",
+                  "price": 1450000
+                },
+                {
+                  "distance": "15KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/02",
+                  "to": "28/02",
+                  "price": 1900000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "13/10",
+                  "to": "13/11",
+                  "price": 1700000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "14/11",
+                  "to": "31/01",
+                  "price": 2150000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/02",
+                  "to": "28/02",
+                  "price": 2600000
+                },
+                {
+                  "distance": "50KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "13/10",
+                  "to": "13/11",
+                  "price": 2150000
+                },
+                {
+                  "distance": "50KM",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "14/11",
+                  "to": "31/01",
+                  "price": 2600000
+                },
+                {
+                  "distance": "50KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/02",
+                  "to": "28/02",
+                  "price": 3050000
+                },
+                {
+                  "distance": "75KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "13/10",
+                  "to": "13/11",
+                  "price": 2700000
+                },
+                {
+                  "distance": "75KM",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "14/11",
+                  "to": "31/01",
+                  "price": 3150000
+                },
+                {
+                  "distance": "75KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/02",
+                  "to": "28/02",
+                  "price": 3600000
+                },
+                {
+                  "distance": "110KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "13/10",
+                  "to": "13/11",
+                  "price": 3800000
+                },
+                {
+                  "distance": "110KM",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "14/11",
+                  "to": "31/01",
+                  "price": 4250000
+                },
+                {
+                  "distance": "110KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/02",
+                  "to": "28/02",
+                  "price": 4700000
+                },
+                {
+                  "distance": "160KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "13/10",
+                  "to": "13/11",
+                  "price": 5950000
+                },
+                {
+                  "distance": "160KM",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "14/11",
+                  "to": "31/01",
+                  "price": 6400000
+                },
+                {
+                  "distance": "160KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/02",
+                  "to": "28/02",
+                  "price": 6850000
+                }
+              ],
+              "distances": [
+                "05KM - FAMILY (1 NGƯỜI LỐN + 1 TRẾ EM / 1 ADULT + 1 KID)",
+                "05KM - FAMILY (1 NGƯỜI LỐN + 2 TRẾ EM / 1 ADULT + 1 KID)",
+                "05KM - FAMILY (2 NGƯỜI LỐN + 1 TRẾ EM / 2 ADULTS + 1 KID)",
+                "05KM - FAMILY (2 NGƯỜI LỐN + 2 TRẾ EM / 2 ADULTS + 2 KIDS)",
+                "05KM - CÁ NHÂN / INDIVIDUAL",
+                "15KM",
+                "21KM",
+                "50KM",
+                "75KM",
+                "110KM",
+                "160KM"
+              ],
+              "date": "2027-02-28",
+              "currency": "VND"
+            }
+          }
+        ]
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-10-12T17:48:31.011Z",
-  "updatedAt": "2026-10-13T07:09:05.682Z"
+  "updatedAt": "2026-10-15T20:26:01.820Z"
 }

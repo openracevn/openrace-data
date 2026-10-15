@@ -147,178 +147,194 @@
   "prices": [
     {
       "distance": "5km",
-      "tier": "VÉ HỒI LIVE STREAM",
-      "kind": "other",
-      "audience": null,
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": "resident",
       "price": 250000,
       "from": null,
-      "to": "2026-07-30",
+      "to": "2026-11-15",
+      "inferred": [
+        "to"
+      ],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": "non_resident",
+      "price": 368000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": "non_resident",
+      "price": 468000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": "non_resident",
+      "price": 568000,
+      "from": null,
+      "to": "2026-11-15",
+      "inferred": [
+        "to"
+      ],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": "resident",
+      "price": 250000,
+      "from": null,
+      "to": "2026-11-15",
+      "inferred": [
+        "to"
+      ],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": "non_resident",
+      "price": 468000,
+      "from": null,
+      "to": null,
       "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "10km",
-      "tier": "VÉ HỒI LIVE STREAM",
-      "kind": "other",
-      "audience": null,
-      "price": 250000,
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": "non_resident",
+      "price": 568000,
       "from": null,
-      "to": "2026-07-30",
+      "to": null,
       "inferred": [],
       "site": "actiup"
     },
     {
+      "distance": "10km",
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": "non_resident",
+      "price": 768000,
+      "from": null,
+      "to": "2026-11-15",
+      "inferred": [
+        "to"
+      ],
+      "site": "actiup"
+    },
+    {
       "distance": "21km",
-      "tier": "VÉ HỒI LIVE STREAM",
-      "kind": "other",
-      "audience": null,
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": "resident",
       "price": 370000,
       "from": null,
-      "to": "2026-07-30",
+      "to": "2026-11-15",
+      "inferred": [
+        "to"
+      ],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": "non_resident",
+      "price": 568000,
+      "from": null,
+      "to": null,
       "inferred": [],
       "site": "actiup"
     },
     {
+      "distance": "21km",
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": "non_resident",
+      "price": 768000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": "non_resident",
+      "price": 968000,
+      "from": null,
+      "to": "2026-11-15",
+      "inferred": [
+        "to"
+      ],
+      "site": "actiup"
+    },
+    {
       "distance": "42km",
-      "tier": "VÉ HỒI LIVE STREAM",
-      "kind": "other",
-      "audience": null,
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": "resident",
       "price": 450000,
       "from": null,
-      "to": "2026-07-30",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "5km",
-      "tier": "SUPER EARLY BIRD",
-      "kind": "super_early",
-      "audience": null,
-      "price": 368000,
-      "from": "2026-07-30",
-      "to": "2026-08-31",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "SUPER EARLY BIRD",
-      "kind": "super_early",
-      "audience": null,
-      "price": 468000,
-      "from": "2026-07-30",
-      "to": "2026-08-31",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "21km",
-      "tier": "SUPER EARLY BIRD",
-      "kind": "super_early",
-      "audience": null,
-      "price": 568000,
-      "from": "2026-07-30",
-      "to": "2026-08-31",
-      "inferred": [],
+      "to": "2026-11-15",
+      "inferred": [
+        "to"
+      ],
       "site": "actiup"
     },
     {
       "distance": "42km",
-      "tier": "SUPER EARLY BIRD",
-      "kind": "super_early",
-      "audience": null,
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": "non_resident",
       "price": 668000,
-      "from": "2026-07-30",
-      "to": "2026-08-31",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "5km",
-      "tier": "EARLY BIRD",
-      "kind": "early",
-      "audience": null,
-      "price": 468000,
-      "from": "2026-09-01",
-      "to": "2026-09-30",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "EARLY BIRD",
-      "kind": "early",
-      "audience": null,
-      "price": 568000,
-      "from": "2026-09-01",
-      "to": "2026-09-30",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "21km",
-      "tier": "EARLY BIRD",
-      "kind": "early",
-      "audience": null,
-      "price": 768000,
-      "from": "2026-09-01",
-      "to": "2026-09-30",
+      "from": null,
+      "to": null,
       "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "42km",
-      "tier": "EARLY BIRD",
-      "kind": "early",
-      "audience": null,
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": "non_resident",
       "price": 868000,
-      "from": "2026-09-01",
-      "to": "2026-09-30",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "5km",
-      "tier": "REGULAR",
-      "kind": "regular",
-      "audience": null,
-      "price": 568000,
-      "from": "2026-10-01",
-      "to": "2026-10-15",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "REGULAR",
-      "kind": "regular",
-      "audience": null,
-      "price": 768000,
-      "from": "2026-10-01",
-      "to": "2026-10-15",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "21km",
-      "tier": "REGULAR",
-      "kind": "regular",
-      "audience": null,
-      "price": 968000,
-      "from": "2026-10-01",
-      "to": "2026-10-15",
+      "from": null,
+      "to": null,
       "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "42km",
-      "tier": "REGULAR",
+      "tier": "Giá vé tiêu chuẩn",
       "kind": "regular",
-      "audience": null,
+      "audience": "non_resident",
       "price": 1068000,
-      "from": "2026-10-01",
-      "to": "2026-10-15",
-      "inferred": [],
+      "from": null,
+      "to": "2026-11-15",
+      "inferred": [
+        "to"
+      ],
       "site": "actiup"
     }
   ],
@@ -468,7 +484,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/giai-marathon-ca-mau-2026-cup-petrovietnam",
-      "lastCheckedAt": "2026-10-15T20:15:45.330Z",
+      "lastCheckedAt": "2026-10-15T20:23:49.482Z",
       "lastChangedAt": "2026-09-23T18:30:44.623Z",
       "extracted": {
         "facts": {
@@ -482,7 +498,16 @@
         },
         "pages": [
           {
+            "url": "https://actiup.net/vi/event/giai-marathon-ca-mau-2026-cup-petrovietnam",
             "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "GIẢI MARATHON - CÀ MAU 2026 CÚP PETROVIETNAM",
+              "date": "2026-11-21",
+              "endDate": "2026-11-22",
+              "mainDate": "2026-11-21",
               "distances": [
                 "2KM",
                 "5KM",
@@ -490,144 +515,47 @@
                 "21KM",
                 "42KM"
               ],
-              "name": "GIẢI MARATHON - CÀ MAU 2026 CÚP PETROVIETNAM",
-              "pageKind": "sport",
-              "prices": [],
-              "types": [
-                "road_run"
-              ]
-            },
-            "url": "https://actiup.net/vi/event/giai-marathon-ca-mau-2026-cup-petrovietnam"
-          }
-        ],
-        "images": [
-          {
-            "json": {
-              "currency": "VND",
-              "distances": [
-                "5KM",
-                "10KM",
-                "21KM",
-                "42KM"
-              ],
-              "prices": [
+              "courses": [
                 {
-                  "distance": "5KM",
-                  "price": 250000,
-                  "tier": "VÉ HỒI LIVE STREAM",
-                  "to": "2026-07-30"
-                },
-                {
-                  "distance": "10KM",
-                  "price": 250000,
-                  "tier": "VÉ HỒI LIVE STREAM",
-                  "to": "2026-07-30"
-                },
-                {
-                  "distance": "21KM",
-                  "price": 370000,
-                  "tier": "VÉ HỒI LIVE STREAM",
-                  "to": "2026-07-30"
-                },
-                {
-                  "distance": "42KM",
-                  "price": 450000,
-                  "tier": "VÉ HỒI LIVE STREAM",
-                  "to": "2026-07-30"
+                  "distance": "2KM",
+                  "type": "road_run",
+                  "elevationGain": 0
                 },
                 {
                   "distance": "5KM",
-                  "from": "2026-07-30",
-                  "price": 368000,
-                  "tier": "SUPER EARLY BIRD",
-                  "to": "2026-08-31"
+                  "type": "road_run",
+                  "elevationGain": 0
                 },
                 {
                   "distance": "10KM",
-                  "from": "2026-07-30",
-                  "price": 468000,
-                  "tier": "SUPER EARLY BIRD",
-                  "to": "2026-08-31"
+                  "type": "road_run",
+                  "elevationGain": 0
                 },
                 {
                   "distance": "21KM",
-                  "from": "2026-07-30",
-                  "price": 568000,
-                  "tier": "SUPER EARLY BIRD",
-                  "to": "2026-08-31"
+                  "type": "road_run",
+                  "elevationGain": 0
                 },
                 {
                   "distance": "42KM",
-                  "from": "2026-07-30",
-                  "price": 668000,
-                  "tier": "SUPER EARLY BIRD",
-                  "to": "2026-08-31"
-                },
-                {
-                  "distance": "5KM",
-                  "from": "2026-09-01",
-                  "price": 468000,
-                  "tier": "EARLY BIRD",
-                  "to": "2026-09-30"
-                },
-                {
-                  "distance": "10KM",
-                  "from": "2026-09-01",
-                  "price": 568000,
-                  "tier": "EARLY BIRD",
-                  "to": "2026-09-30"
-                },
-                {
-                  "distance": "21KM",
-                  "from": "2026-09-01",
-                  "price": 768000,
-                  "tier": "EARLY BIRD",
-                  "to": "2026-09-30"
-                },
-                {
-                  "distance": "42KM",
-                  "from": "2026-09-01",
-                  "price": 868000,
-                  "tier": "EARLY BIRD",
-                  "to": "2026-09-30"
-                },
-                {
-                  "distance": "5KM",
-                  "from": "2026-10-01",
-                  "price": 568000,
-                  "tier": "REGULAR",
-                  "to": "2026-10-15"
-                },
-                {
-                  "distance": "10KM",
-                  "from": "2026-10-01",
-                  "price": 768000,
-                  "tier": "REGULAR",
-                  "to": "2026-10-15"
-                },
-                {
-                  "distance": "21KM",
-                  "from": "2026-10-01",
-                  "price": 968000,
-                  "tier": "REGULAR",
-                  "to": "2026-10-15"
-                },
-                {
-                  "distance": "42KM",
-                  "from": "2026-10-01",
-                  "price": 1068000,
-                  "tier": "REGULAR",
-                  "to": "2026-10-15"
+                  "type": "road_run",
+                  "elevationGain": 0
                 }
-              ]
-            },
-            "url": "https://pix.actiup.net/2026/08/07/1786092525539822/b%E1%BA%A3ng-gi%C3%A1-v%C3%A9-c%E1%BA%ADp-nh%E1%BA%ADt-07082026.jpg"
-          },
-          {
-            "json": {
+              ],
+              "edition": 6,
+              "editionQuote": "mùa giải năm thứ sáu",
+              "mapsUrl": "https://maps.example.com/locate",
+              "venue": "Cà Mau",
+              "city": "Cà Mau",
+              "organizer": "PETROVIETNAM",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": "Chưa có thông tin người tham dự."
+              },
               "prices": []
-            },
-            "url": "https://pix.actiup.net/2026/08/07/1786092535635774/ch%C3%ADnh-s%C3%A1ch-nh%C3%B3m.jpg"
+            }
           }
         ],
         "links": [],
@@ -635,7 +563,160 @@
           "id": "vietrace365",
           "name": "VIETRACE365"
         },
-        "readBy": "agent"
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/08/07/1786092525539822/b%E1%BA%A3ng-gi%C3%A1-v%C3%A9-c%E1%BA%ADp-nh%E1%BA%ADt-07082026.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "5KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "Việt Nam",
+                  "from": "",
+                  "to": "",
+                  "price": 250000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "Nước ngoài",
+                  "from": "",
+                  "to": "",
+                  "price": 368000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "Nước ngoài",
+                  "from": "",
+                  "to": "",
+                  "price": 468000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "Nước ngoài",
+                  "from": "",
+                  "to": "",
+                  "price": 568000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "Việt Nam",
+                  "from": "",
+                  "to": "",
+                  "price": 250000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "Nước ngoài",
+                  "from": "",
+                  "to": "",
+                  "price": 468000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "Nước ngoài",
+                  "from": "",
+                  "to": "",
+                  "price": 568000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "Nước ngoài",
+                  "from": "",
+                  "to": "",
+                  "price": 768000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "Việt Nam",
+                  "from": "",
+                  "to": "",
+                  "price": 370000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "Nước ngoài",
+                  "from": "",
+                  "to": "",
+                  "price": 568000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "Nước ngoài",
+                  "from": "",
+                  "to": "",
+                  "price": 768000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "Nước ngoài",
+                  "from": "",
+                  "to": "",
+                  "price": 968000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "Việt Nam",
+                  "from": "",
+                  "to": "",
+                  "price": 450000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "Nước ngoài",
+                  "from": "",
+                  "to": "",
+                  "price": 668000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "Nước ngoài",
+                  "from": "",
+                  "to": "",
+                  "price": 868000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "Nước ngoài",
+                  "from": "",
+                  "to": "",
+                  "price": 1068000
+                }
+              ],
+              "distances": [
+                "5KM",
+                "10KM",
+                "21KM",
+                "42KM"
+              ],
+              "date": "",
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2026/08/07/1786092535635774/ch%C3%ADnh-s%C3%A1ch-nh%C3%B3m.jpg",
+            "json": {
+              "prices": [],
+              "distances": [],
+              "date": "",
+              "currency": ""
+            }
+          }
+        ]
       }
     },
     {
@@ -669,5 +750,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-15T20:16:02.179Z"
+  "updatedAt": "2026-10-15T20:26:01.820Z"
 }

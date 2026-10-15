@@ -962,7 +962,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/lamdong-trail-2026",
-      "lastCheckedAt": "2026-10-14T05:26:19.101Z",
+      "lastCheckedAt": "2026-10-15T20:23:25.447Z",
       "lastChangedAt": "2026-09-23T18:30:49.114Z",
       "extracted": {
         "facts": {
@@ -984,85 +984,55 @@
                 "trail_run"
               ],
               "name": "Lamdong Trail 2026",
-              "prices": []
-            }
-          }
-        ],
-        "images": [
-          {
-            "url": "https://pix.actiup.net/2026/09/23/1790156366572704/1st-pic-B%E1%BA%A2NG-GI%C3%81-V%C3%89-update.png",
-            "json": {
-              "prices": [
+              "date": "2026-11-21",
+              "endDate": "2026-11-22",
+              "mainDate": "2026-11-21",
+              "distances": [
+                "5km",
+                "15km",
+                "25km",
+                "55km",
+                "85km"
+              ],
+              "courses": [
                 {
-                  "distance": "85KM",
-                  "tier": "Late Comer",
-                  "from": "17/08",
-                  "to": "2026-10-05",
-                  "price": 3150000
+                  "distance": "5km",
+                  "type": "trail_run",
+                  "elevationGain": 0
                 },
                 {
-                  "distance": "55KM",
-                  "tier": "Late Comer",
-                  "from": "17/08",
-                  "to": "2026-10-05",
-                  "price": 2550000
+                  "distance": "15km",
+                  "type": "trail_run",
+                  "elevationGain": 0
                 },
                 {
-                  "distance": "25KM",
-                  "tier": "Late Comer",
-                  "from": "17/08",
-                  "to": "2026-10-05",
-                  "price": 2050000
+                  "distance": "25km",
+                  "type": "trail_run",
+                  "elevationGain": 0
                 },
                 {
-                  "distance": "15KM",
-                  "tier": "Late Comer",
-                  "from": "17/08",
-                  "to": "2026-10-05",
-                  "price": 1400000
+                  "distance": "55km",
+                  "type": "trail_run",
+                  "elevationGain": 0
                 },
                 {
-                  "distance": "5KM",
-                  "tier": "Late Comer",
-                  "from": "17/08",
-                  "to": "2026-10-05",
-                  "price": 950000
-                },
-                {
-                  "distance": "5KM",
-                  "tier": "Late Comer Kids Trail",
-                  "from": "17/08",
-                  "to": "2026-10-05",
-                  "price": 950000
-                },
-                {
-                  "distance": "5KM",
-                  "tier": "Late Comer Family Trail (1 adult & 1 kid)",
-                  "from": "17/08",
-                  "to": "2026-10-05",
-                  "price": 1800000
-                },
-                {
-                  "distance": "5KM",
-                  "tier": "Late Comer Family Trail (2 adults & 1 kid / 1 adult & 2 kids)",
-                  "from": "17/08",
-                  "to": "2026-10-05",
-                  "price": 2700000
+                  "distance": "85km",
+                  "type": "trail_run",
+                  "elevationGain": 0
                 }
               ],
-              "distances": [
-                "5KM",
-                "15KM",
-                "25KM",
-                "55KM",
-                "85KM"
-              ],
-              "currency": "VND"
-            }
-          },
-          {
-            "url": "https://pix.actiup.net/2026/04/16/1776328845567974/Cs-ve%CC%81-nho%CC%81m-(2).jpg",
-            "json": {
+              "edition": 2026,
+              "editionQuote": "Giải chạy Lamdong Trail 2026",
+              "mapsUrl": "https://drive.google.com/file/d/1cWGbhMwxlc-5lVVF5CtPGG9VXkUerNLW/view",
+              "venue": "Đà Lạt - Lâm Đồng",
+              "city": "Đà Lạt",
+              "organizer": "Chưa có thông tin",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": "Chưa có thông tin về số lượng người tham gia."
+              },
               "prices": []
             }
           }
@@ -1077,7 +1047,99 @@
           "id": "greenhat",
           "name": "GreenHat"
         },
-        "readBy": "agent"
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/09/23/1790156366572704/1st-pic-B%E1%BA%A2NG-GI%C3%81-V%C3%89-update.png",
+            "json": {
+              "prices": [
+                {
+                  "distance": "85KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "17/08",
+                  "to": "05/10",
+                  "price": 3150000
+                },
+                {
+                  "distance": "55KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "17/08",
+                  "to": "05/10",
+                  "price": 2550000
+                },
+                {
+                  "distance": "25KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "17/08",
+                  "to": "05/10",
+                  "price": 2050000
+                },
+                {
+                  "distance": "15KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "17/08",
+                  "to": "05/10",
+                  "price": 1400000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "17/08",
+                  "to": "05/10",
+                  "price": 950000
+                },
+                {
+                  "distance": "5KM KIDS",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "17/08",
+                  "to": "05/10",
+                  "price": 950000
+                },
+                {
+                  "distance": "5KM FAMILY",
+                  "tier": "Group 1",
+                  "audience": "",
+                  "from": "17/08",
+                  "to": "05/10",
+                  "price": 1800000
+                },
+                {
+                  "distance": "5KM FAMILY",
+                  "tier": "Group 2",
+                  "audience": "",
+                  "from": "17/08",
+                  "to": "05/10",
+                  "price": 2700000
+                }
+              ],
+              "distances": [
+                "85KM",
+                "55KM",
+                "25KM",
+                "15KM",
+                "5KM",
+                "5KM KIDS",
+                "5KM FAMILY"
+              ],
+              "date": "2026-11-06",
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2026/04/16/1776328845567974/Cs-ve%CC%81-nho%CC%81m-(2).jpg",
+            "json": {
+              "prices": [],
+              "distances": [],
+              "date": "",
+              "currency": "VND"
+            }
+          }
+        ]
       }
     },
     {
@@ -1710,5 +1772,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-14T05:27:10.815Z"
+  "updatedAt": "2026-10-15T20:26:01.820Z"
 }

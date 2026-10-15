@@ -7,10 +7,11 @@
   ],
   "date": "2026-12-26",
   "endDate": "2026-12-27",
+  "mainDate": null,
   "seriesId": null,
   "organizerId": "cong-ty-tnhh-belove-mountain",
   "organizer": "Công ty TNHH Belove Mountain",
-  "edition": null,
+  "edition": 1,
   "courses": [
     {
       "label": "5km",
@@ -140,22 +141,22 @@
   "prices": [
     {
       "distance": "5km",
-      "tier": "Super Early Bird",
-      "kind": "super_early",
-      "audience": null,
-      "price": 466000,
-      "from": "2026-09-03",
-      "to": "2026-10-10",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "5km",
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
       "price": 660000,
       "from": "2026-10-11",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 866000,
+      "from": "2026-11-01",
       "to": "2026-11-30",
       "inferred": [],
       "site": "actiup"
@@ -165,20 +166,9 @@
       "tier": "Late",
       "kind": "late",
       "audience": null,
-      "price": 866000,
+      "price": 1166000,
       "from": "2026-12-01",
       "to": "2026-12-15",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "Super Early Bird",
-      "kind": "super_early",
-      "audience": null,
-      "price": 566000,
-      "from": "2026-09-03",
-      "to": "2026-10-10",
       "inferred": [],
       "site": "actiup"
     },
@@ -189,6 +179,17 @@
       "audience": null,
       "price": 766000,
       "from": "2026-10-11",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 966000,
+      "from": "2026-11-01",
       "to": "2026-11-30",
       "inferred": [],
       "site": "actiup"
@@ -198,20 +199,9 @@
       "tier": "Late",
       "kind": "late",
       "audience": null,
-      "price": 966000,
+      "price": 1266000,
       "from": "2026-12-01",
       "to": "2026-12-15",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "21km",
-      "tier": "Super Early Bird",
-      "kind": "super_early",
-      "audience": null,
-      "price": 688000,
-      "from": "2026-09-03",
-      "to": "2026-10-10",
       "inferred": [],
       "site": "actiup"
     },
@@ -222,6 +212,17 @@
       "audience": null,
       "price": 988000,
       "from": "2026-10-11",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1188000,
+      "from": "2026-11-01",
       "to": "2026-11-30",
       "inferred": [],
       "site": "actiup"
@@ -231,20 +232,9 @@
       "tier": "Late",
       "kind": "late",
       "audience": null,
-      "price": 1188000,
+      "price": 1488000,
       "from": "2026-12-01",
       "to": "2026-12-15",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "42km",
-      "tier": "Super Early Bird",
-      "kind": "super_early",
-      "audience": null,
-      "price": 888000,
-      "from": "2026-09-03",
-      "to": "2026-10-10",
       "inferred": [],
       "site": "actiup"
     },
@@ -255,6 +245,17 @@
       "audience": null,
       "price": 1088000,
       "from": "2026-10-11",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1388000,
+      "from": "2026-11-01",
       "to": "2026-11-30",
       "inferred": [],
       "site": "actiup"
@@ -264,7 +265,7 @@
       "tier": "Late",
       "kind": "late",
       "audience": null,
-      "price": 1388000,
+      "price": 1688000,
       "from": "2026-12-01",
       "to": "2026-12-15",
       "inferred": [],
@@ -286,6 +287,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {},
   "sources": [
@@ -293,7 +295,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/son-tra-city-trail-2026",
-      "lastCheckedAt": "2026-09-23T18:51:45.377Z",
+      "lastCheckedAt": "2026-10-15T20:24:31.280Z",
       "lastChangedAt": "2026-09-23T18:30:41.398Z",
       "extracted": {
         "facts": {
@@ -317,12 +319,21 @@
               "name": "Sơn Trà City Trail 2026",
               "date": "2026-11-21",
               "endDate": "2026-11-22",
+              "mainDate": "2026-11-21",
               "distances": [],
+              "courses": [],
+              "edition": 1,
+              "editionQuote": "Giải chạy Sơn Trà City Trail lầ thứ 1",
+              "mapsUrl": "",
               "venue": "Bán đảo Sơn Trà",
               "city": "Đà Nẵng",
               "organizer": "",
               "currency": "VND",
               "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
               "prices": []
             }
           }
@@ -339,104 +350,104 @@
         },
         "images": [
           {
-            "url": "https://pix.actiup.net/2026/08/27/1787815275758247/b%E1%BA%A3ng-gi%C3%A1.png",
+            "url": "https://pix.actiup.net/2026/10/12/1791773467230654/IMG_7568.jpeg",
             "json": {
               "prices": [
                 {
                   "distance": "5km",
-                  "tier": "Super Early Bird",
-                  "audience": "Resident",
-                  "from": "03/09",
-                  "to": "10/10",
-                  "price": 466000
-                },
-                {
-                  "distance": "5km",
                   "tier": "Early Bird",
-                  "audience": "Resident",
+                  "audience": "",
                   "from": "11/10",
-                  "to": "30/11",
+                  "to": "31/10",
                   "price": 660000
                 },
                 {
                   "distance": "5km",
-                  "tier": "Late",
-                  "audience": "Resident",
-                  "from": "01/12",
-                  "to": "15/12",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "30/11",
                   "price": 866000
                 },
                 {
-                  "distance": "10km",
-                  "tier": "Super Early Bird",
-                  "audience": "Resident",
-                  "from": "03/09",
-                  "to": "10/10",
-                  "price": 566000
+                  "distance": "5km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/12",
+                  "to": "15/12",
+                  "price": 1166000
                 },
                 {
                   "distance": "10km",
                   "tier": "Early Bird",
-                  "audience": "Resident",
+                  "audience": "",
                   "from": "11/10",
-                  "to": "30/11",
+                  "to": "31/10",
                   "price": 766000
                 },
                 {
                   "distance": "10km",
-                  "tier": "Late",
-                  "audience": "Resident",
-                  "from": "01/12",
-                  "to": "15/12",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "30/11",
                   "price": 966000
                 },
                 {
-                  "distance": "21km",
-                  "tier": "Super Early Bird",
-                  "audience": "Resident",
-                  "from": "03/09",
-                  "to": "10/10",
-                  "price": 688000
+                  "distance": "10km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/12",
+                  "to": "15/12",
+                  "price": 1266000
                 },
                 {
                   "distance": "21km",
                   "tier": "Early Bird",
-                  "audience": "Resident",
+                  "audience": "",
                   "from": "11/10",
-                  "to": "30/11",
+                  "to": "31/10",
                   "price": 988000
                 },
                 {
                   "distance": "21km",
-                  "tier": "Late",
-                  "audience": "Resident",
-                  "from": "01/12",
-                  "to": "15/12",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "30/11",
                   "price": 1188000
                 },
                 {
-                  "distance": "42km",
-                  "tier": "Super Early Bird",
-                  "audience": "Resident",
-                  "from": "03/09",
-                  "to": "10/10",
-                  "price": 888000
+                  "distance": "21km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "01/12",
+                  "to": "15/12",
+                  "price": 1488000
                 },
                 {
                   "distance": "42km",
                   "tier": "Early Bird",
-                  "audience": "Resident",
+                  "audience": "",
                   "from": "11/10",
-                  "to": "30/11",
+                  "to": "31/10",
                   "price": 1088000
                 },
                 {
                   "distance": "42km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "01/11",
+                  "to": "30/11",
+                  "price": 1388000
+                },
+                {
+                  "distance": "42km",
                   "tier": "Late",
-                  "audience": "Resident",
+                  "audience": "",
                   "from": "01/12",
                   "to": "15/12",
-                  "price": 1388000
+                  "price": 1688000
                 }
               ],
               "distances": [
@@ -455,5 +466,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-10-15T20:26:01.820Z"
 }

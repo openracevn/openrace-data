@@ -3,7 +3,9 @@
   "slug": "aqua-warriors-halong-bay-2027",
   "name": "AQUA WARRIORS HALONG BAY 2027",
   "types": [
-    "other"
+    "triathlon",
+    "duathlon",
+    "aquathlon"
   ],
   "date": "2027-04-03",
   "endDate": "2027-04-04",
@@ -15,13 +17,13 @@
   "courses": [],
   "location": {
     "venue": "Thành Phố Hạ Long",
-    "city": null
+    "city": "Quảng Ninh"
   },
   "geo": {
-    "lat": 20.9379565,
-    "lng": 107.1275055,
+    "lat": 20.9454443,
+    "lng": 107.1073079,
     "source": "nominatim",
-    "precision": "venue",
+    "precision": "ward",
     "current": {
       "province": "22",
       "ward": "06652"
@@ -34,86 +36,615 @@
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 1581.4,
-        "minutes": 1193,
+        "km": 1579.2,
+        "minutes": 1190,
         "method": "road",
         "near": false
       },
       "ha-noi": {
-        "km": 163.5,
-        "minutes": 117,
+        "km": 161.3,
+        "minutes": 114,
         "method": "road",
         "near": false
       },
       "da-nang": {
-        "km": 858.9,
-        "minutes": 681,
+        "km": 856.7,
+        "minutes": 677,
         "method": "road",
         "near": false
       },
       "nha-trang": {
-        "km": 1362.7,
-        "minutes": 1068,
+        "km": 1360.5,
+        "minutes": 1063,
         "method": "road",
         "near": false
       },
       "da-lat": {
-        "km": 1490.2,
-        "minutes": 1186,
+        "km": 1488,
+        "minutes": 1181,
         "method": "road",
         "near": false
       },
       "can-tho": {
-        "km": 1692.3,
-        "minutes": 1312,
+        "km": 1690.1,
+        "minutes": 1310,
         "method": "road",
         "near": false
       },
       "hai-phong": {
-        "km": 58.2,
-        "minutes": 48,
+        "km": 56,
+        "minutes": 45,
         "method": "road",
         "near": false
       },
       "hue": {
-        "km": 756.7,
-        "minutes": 598,
+        "km": 754.5,
+        "minutes": 594,
         "method": "road",
         "near": false
       },
       "vung-tau": {
-        "km": 1672.4,
-        "minutes": 1275,
+        "km": 1670.2,
+        "minutes": 1273,
         "method": "road",
         "near": false
       },
       "quy-nhon": {
-        "km": 1170.7,
-        "minutes": 907,
+        "km": 1168.5,
+        "minutes": 903,
         "method": "road",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 1367.5,
-        "minutes": 1105,
+        "km": 1365.3,
+        "minutes": 1100,
         "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 473,
-        "minutes": 362,
+        "km": 470.1,
+        "minutes": 360,
         "method": "road",
         "near": false
       },
       "ha-long": {
-        "km": 6.2,
-        "minutes": 7,
+        "km": 4,
+        "minutes": 5,
         "method": "road",
         "near": true
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 2589000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 3107000,
+      "from": "2026-10-30",
+      "to": "2026-11-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "STANDARD",
+      "kind": "regular",
+      "audience": null,
+      "price": 3729000,
+      "from": "2026-12-01",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 4474000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 3366000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 4039000,
+      "from": "2026-10-30",
+      "to": "2026-11-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "STANDARD",
+      "kind": "regular",
+      "audience": null,
+      "price": 4847000,
+      "from": "2026-12-01",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 5816000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 3739000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 4489000,
+      "from": "2026-10-30",
+      "to": "2026-11-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "STANDARD",
+      "kind": "regular",
+      "audience": null,
+      "price": 5389000,
+      "from": "2026-12-01",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 6469000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 4869000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 5849000,
+      "from": "2026-10-30",
+      "to": "2026-11-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "STANDARD",
+      "kind": "regular",
+      "audience": null,
+      "price": 7019000,
+      "from": "2026-12-01",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 8429000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 3189000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 3829000,
+      "from": "2026-10-30",
+      "to": "2026-11-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "STANDARD",
+      "kind": "regular",
+      "audience": null,
+      "price": 4599000,
+      "from": "2026-12-01",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 5519000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 4149000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 4979000,
+      "from": "2026-10-30",
+      "to": "2026-11-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "STANDARD",
+      "kind": "regular",
+      "audience": null,
+      "price": 5979000,
+      "from": "2026-12-01",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 7179000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1619000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1949000,
+      "from": "2026-10-30",
+      "to": "2026-11-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "STANDARD",
+      "kind": "regular",
+      "audience": null,
+      "price": 2339000,
+      "from": "2026-12-01",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2809000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 2449000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2939000,
+      "from": "2026-10-30",
+      "to": "2026-11-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "STANDARD",
+      "kind": "regular",
+      "audience": null,
+      "price": 3529000,
+      "from": "2026-12-01",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 4239000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1219000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1469000,
+      "from": "2026-10-30",
+      "to": "2026-11-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "STANDARD",
+      "kind": "regular",
+      "audience": null,
+      "price": 1769000,
+      "from": "2026-12-01",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2129000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1019000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1229000,
+      "from": "2026-10-30",
+      "to": "2026-11-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "STANDARD",
+      "kind": "regular",
+      "audience": null,
+      "price": 1479000,
+      "from": "2026-12-01",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1779000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 659000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 799000,
+      "from": "2026-10-30",
+      "to": "2026-11-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "STANDARD",
+      "kind": "regular",
+      "audience": null,
+      "price": 959000,
+      "from": "2026-12-01",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1159000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 529000,
+      "from": "2026-09-29",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 639000,
+      "from": "2026-10-30",
+      "to": "2026-11-30",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1km",
+      "tier": "STANDARD",
+      "kind": "regular",
+      "audience": null,
+      "price": 769000,
+      "from": "2026-12-01",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 929000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -137,7 +668,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/aqua-warriors-halong-bay-2027",
-      "lastCheckedAt": "2026-10-12T17:47:14.353Z",
+      "lastCheckedAt": "2026-10-15T20:22:00.898Z",
       "lastChangedAt": "2026-10-12T17:47:14.353Z",
       "extracted": {
         "facts": {
@@ -150,6 +681,58 @@
           "registrationStatus": "open",
           "fromPrice": 529000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/aqua-warriors-halong-bay-2027",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "aquathlon",
+                "triathlon",
+                "duathlon"
+              ],
+              "name": "Aqua Warriors Halong Bay 2027",
+              "date": "2027-11-21",
+              "endDate": "2027-11-22",
+              "mainDate": "2027-11-21",
+              "distances": [
+                "10km",
+                "40km",
+                "5km"
+              ],
+              "courses": [
+                {
+                  "distance": "10km",
+                  "type": "duathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "40km",
+                  "type": "duathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "5km",
+                  "type": "duathlon",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "năm đầu tiên bộ môn Duathlon chính thức góp mặt",
+              "mapsUrl": "https://www.google.com/maps/place/Qu%E1%BA%A3ng+Ninh",
+              "venue": "Vịnh Hạ Long",
+              "city": "Quảng Ninh",
+              "organizer": "Aqua Warriors Vietnam Series",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://docs.google.com/document/d/1i_vpPCwlVOFwV0z49Hgmhzc4wIqlnHYv/edit?usp=drive_link&ouid=111350351941733978191&rtpof=true&sd=true",
@@ -159,11 +742,420 @@
         "organizer": {
           "id": "bolt-event",
           "name": "BOLT EVENT"
-        }
+        },
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/09/30/1790761633806031/B%E1%BA%A2NG-GI%C3%81-%C4%90%C4%82NG-K%C3%9D-C%C3%81-NH%C3%82N-01.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "STANDAR DUATHLON 10KM - 40KM - 5KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 2589000
+                },
+                {
+                  "distance": "STANDAR DUATHLON 10KM - 40KM - 5KM",
+                  "tier": "Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "30/10",
+                  "to": "30/11",
+                  "price": 3107000
+                },
+                {
+                  "distance": "STANDAR DUATHLON 10KM - 40KM - 5KM",
+                  "tier": "STANDARD",
+                  "audience": "Việt Nam",
+                  "from": "01/12",
+                  "to": "18/02",
+                  "price": 3729000
+                },
+                {
+                  "distance": "STANDAR DUATHLON 10KM - 40KM - 5KM",
+                  "tier": "Late",
+                  "audience": "Việt Nam",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 4474000
+                },
+                {
+                  "distance": "(RELAY) STANDARD DUATHLON 10KM - 40KM - 5KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 3366000
+                },
+                {
+                  "distance": "(RELAY) STANDARD DUATHLON 10KM - 40KM - 5KM",
+                  "tier": "Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "30/10",
+                  "to": "30/11",
+                  "price": 4039000
+                },
+                {
+                  "distance": "(RELAY) STANDARD DUATHLON 10KM - 40KM - 5KM",
+                  "tier": "STANDARD",
+                  "audience": "Việt Nam",
+                  "from": "01/12",
+                  "to": "18/02",
+                  "price": 4847000
+                },
+                {
+                  "distance": "(RELAY) STANDARD DUATHLON 10KM - 40KM - 5KM",
+                  "tier": "Late",
+                  "audience": "Việt Nam",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 5816000
+                },
+                {
+                  "distance": "T103 ENDURO TRIATHLON SOLO 2KM - 80KM - 21KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 3739000
+                },
+                {
+                  "distance": "T103 ENDURO TRIATHLON SOLO 2KM - 80KM - 21KM",
+                  "tier": "Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "30/10",
+                  "to": "30/11",
+                  "price": 4489000
+                },
+                {
+                  "distance": "T103 ENDURO TRIATHLON SOLO 2KM - 80KM - 21KM",
+                  "tier": "STANDARD",
+                  "audience": "Việt Nam",
+                  "from": "01/12",
+                  "to": "18/02",
+                  "price": 5389000
+                },
+                {
+                  "distance": "T103 ENDURO TRIATHLON SOLO 2KM - 80KM - 21KM",
+                  "tier": "Late",
+                  "audience": "Việt Nam",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 6469000
+                },
+                {
+                  "distance": "(RELAY) T103 ENDURO TRIATHLON 2KM - 80KM - 21KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 4869000
+                },
+                {
+                  "distance": "(RELAY) T103 ENDURO TRIATHLON 2KM - 80KM - 21KM",
+                  "tier": "Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "30/10",
+                  "to": "30/11",
+                  "price": 5849000
+                },
+                {
+                  "distance": "(RELAY) T103 ENDURO TRIATHLON 2KM - 80KM - 21KM",
+                  "tier": "STANDARD",
+                  "audience": "Việt Nam",
+                  "from": "01/12",
+                  "to": "18/02",
+                  "price": 7019000
+                },
+                {
+                  "distance": "(RELAY) T103 ENDURO TRIATHLON 2KM - 80KM - 21KM",
+                  "tier": "Late",
+                  "audience": "Việt Nam",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 8429000
+                },
+                {
+                  "distance": "OLYMPIC TRIATHLON SOLO 1.5KM - 40KM - 10KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 3189000
+                },
+                {
+                  "distance": "OLYMPIC TRIATHLON SOLO 1.5KM - 40KM - 10KM",
+                  "tier": "Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "30/10",
+                  "to": "30/11",
+                  "price": 3829000
+                },
+                {
+                  "distance": "OLYMPIC TRIATHLON SOLO 1.5KM - 40KM - 10KM",
+                  "tier": "STANDARD",
+                  "audience": "Việt Nam",
+                  "from": "01/12",
+                  "to": "18/02",
+                  "price": 4599000
+                },
+                {
+                  "distance": "OLYMPIC TRIATHLON SOLO 1.5KM - 40KM - 10KM",
+                  "tier": "Late",
+                  "audience": "Việt Nam",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 5519000
+                },
+                {
+                  "distance": "(RELAY) OLYMPIC TRIATHLON 1.5KM - 40KM - 10KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 4149000
+                },
+                {
+                  "distance": "(RELAY) OLYMPIC TRIATHLON 1.5KM - 40KM - 10KM",
+                  "tier": "Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "30/10",
+                  "to": "30/11",
+                  "price": 4979000
+                },
+                {
+                  "distance": "(RELAY) OLYMPIC TRIATHLON 1.5KM - 40KM - 10KM",
+                  "tier": "STANDARD",
+                  "audience": "Việt Nam",
+                  "from": "01/12",
+                  "to": "18/02",
+                  "price": 5979000
+                },
+                {
+                  "distance": "(RELAY) OLYMPIC TRIATHLON 1.5KM - 40KM - 10KM",
+                  "tier": "Late",
+                  "audience": "Việt Nam",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 7179000
+                },
+                {
+                  "distance": "FULL AQUA WARRIORS SOLO 3KM - 15KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 1619000
+                },
+                {
+                  "distance": "FULL AQUA WARRIORS SOLO 3KM - 15KM",
+                  "tier": "Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "30/10",
+                  "to": "30/11",
+                  "price": 1949000
+                },
+                {
+                  "distance": "FULL AQUA WARRIORS SOLO 3KM - 15KM",
+                  "tier": "STANDARD",
+                  "audience": "Việt Nam",
+                  "from": "01/12",
+                  "to": "18/02",
+                  "price": 2339000
+                },
+                {
+                  "distance": "FULL AQUA WARRIORS SOLO 3KM - 15KM",
+                  "tier": "Late",
+                  "audience": "Việt Nam",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 2809000
+                },
+                {
+                  "distance": "(RELAY) FULL AQUA WARRIORS 3KM - 15KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 2449000
+                },
+                {
+                  "distance": "(RELAY) FULL AQUA WARRIORS 3KM - 15KM",
+                  "tier": "Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "30/10",
+                  "to": "30/11",
+                  "price": 2939000
+                },
+                {
+                  "distance": "(RELAY) FULL AQUA WARRIORS 3KM - 15KM",
+                  "tier": "STANDARD",
+                  "audience": "Việt Nam",
+                  "from": "01/12",
+                  "to": "18/02",
+                  "price": 3529000
+                },
+                {
+                  "distance": "(RELAY) FULL AQUA WARRIORS 3KM - 15KM",
+                  "tier": "Late",
+                  "audience": "Việt Nam",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 4239000
+                },
+                {
+                  "distance": "OLYMPIC AQUA WARRIORS 1.5KM - 10KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 1219000
+                },
+                {
+                  "distance": "OLYMPIC AQUA WARRIORS 1.5KM - 10KM",
+                  "tier": "Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "30/10",
+                  "to": "30/11",
+                  "price": 1469000
+                },
+                {
+                  "distance": "OLYMPIC AQUA WARRIORS 1.5KM - 10KM",
+                  "tier": "STANDARD",
+                  "audience": "Việt Nam",
+                  "from": "01/12",
+                  "to": "18/02",
+                  "price": 1769000
+                },
+                {
+                  "distance": "OLYMPIC AQUA WARRIORS 1.5KM - 10KM",
+                  "tier": "Late",
+                  "audience": "Việt Nam",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 2129000
+                },
+                {
+                  "distance": "SPRINT AQUA WARRIORS 750M - 5KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 1019000
+                },
+                {
+                  "distance": "SPRINT AQUA WARRIORS 750M - 5KM",
+                  "tier": "Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "30/10",
+                  "to": "30/11",
+                  "price": 1229000
+                },
+                {
+                  "distance": "SPRINT AQUA WARRIORS 750M - 5KM",
+                  "tier": "STANDARD",
+                  "audience": "Việt Nam",
+                  "from": "01/12",
+                  "to": "18/02",
+                  "price": 1479000
+                },
+                {
+                  "distance": "SPRINT AQUA WARRIORS 750M - 5KM",
+                  "tier": "Late",
+                  "audience": "Việt Nam",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 1779000
+                },
+                {
+                  "distance": "JUNIOR AQUA WARRIORS 300M - 2KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 659000
+                },
+                {
+                  "distance": "JUNIOR AQUA WARRIORS 300M - 2KM",
+                  "tier": "Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "30/10",
+                  "to": "30/11",
+                  "price": 799000
+                },
+                {
+                  "distance": "JUNIOR AQUA WARRIORS 300M - 2KM",
+                  "tier": "STANDARD",
+                  "audience": "Việt Nam",
+                  "from": "01/12",
+                  "to": "18/02",
+                  "price": 959000
+                },
+                {
+                  "distance": "JUNIOR AQUA WARRIORS 300M - 2KM",
+                  "tier": "Late",
+                  "audience": "Việt Nam",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 1159000
+                },
+                {
+                  "distance": "KIDS AQUA WARRIORS 150M - 1KM",
+                  "tier": "Super Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "29/09",
+                  "to": "29/10",
+                  "price": 529000
+                },
+                {
+                  "distance": "KIDS AQUA WARRIORS 150M - 1KM",
+                  "tier": "Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "30/10",
+                  "to": "30/11",
+                  "price": 639000
+                },
+                {
+                  "distance": "KIDS AQUA WARRIORS 150M - 1KM",
+                  "tier": "STANDARD",
+                  "audience": "Việt Nam",
+                  "from": "01/12",
+                  "to": "18/02",
+                  "price": 769000
+                },
+                {
+                  "distance": "KIDS AQUA WARRIORS 150M - 1KM",
+                  "tier": "Late",
+                  "audience": "Việt Nam",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 929000
+                }
+              ],
+              "distances": [
+                "10KM - 40KM - 5KM",
+                "(RELAY) 10KM - 40KM - 5KM",
+                "2KM - 80KM - 21KM",
+                "(RELAY) 2KM - 80KM - 21KM",
+                "1.5KM - 40KM - 10KM",
+                "(RELAY) 1.5KM - 40KM - 10KM",
+                "3KM - 15KM",
+                "(RELAY) 3KM - 15KM",
+                "1.5KM - 10KM",
+                "750M - 5KM",
+                "300M - 2KM",
+                "150M - 1KM"
+              ],
+              "date": "2026-03-19",
+              "currency": "VND"
+            }
+          }
+        ]
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-10-12T17:48:31.011Z",
-  "updatedAt": "2026-10-12T17:48:31.011Z"
+  "updatedAt": "2026-10-15T20:26:01.820Z"
 }
