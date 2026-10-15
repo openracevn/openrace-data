@@ -11,7 +11,7 @@
   "seriesId": "halong-bay-heritage-marathon",
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
-  "edition": null,
+  "edition": 2,
   "courses": [
     {
       "label": "5km",
@@ -40,100 +40,9 @@
   ],
   "location": {
     "venue": "thành phố Hạ Long, tỉnh Quảng Ninh",
-    "city": "Quảng Ninh"
+    "city": "Hạ Long"
   },
-  "geo": {
-    "lat": 20.9517,
-    "lng": 107.08,
-    "source": "place",
-    "precision": "province",
-    "current": {
-      "province": "22",
-      "ward": null
-    },
-    "legacy": null,
-    "access": "road",
-    "fromPlaces": {
-      "hcmc": {
-        "km": 1132.6,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "ha-noi": {
-        "km": 127.8,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "da-nang": {
-        "km": 557.1,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "nha-trang": {
-        "km": 994.7,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "da-lat": {
-        "km": 1012.5,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "can-tho": {
-        "km": 1221.8,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "hai-phong": {
-        "km": 42.4,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "hue": {
-        "km": 501.9,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "vung-tau": {
-        "km": 1179.3,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "quy-nhon": {
-        "km": 829.6,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "buon-ma-thuot": {
-        "km": 926.9,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "sa-pa": {
-        "km": 368.2,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "ha-long": {
-        "km": 0,
-        "minutes": null,
-        "method": "straight_line",
-        "near": true
-      }
-    }
-  },
+  "geo": null,
   "prices": [
     {
       "distance": "5km",
@@ -181,8 +90,8 @@
     },
     {
       "distance": "5km",
-      "tier": "Late",
-      "kind": "late",
+      "tier": "Giá công bố",
+      "kind": "other",
       "audience": null,
       "price": 900000,
       "from": "2026-09-01",
@@ -225,8 +134,8 @@
     },
     {
       "distance": "10km",
-      "tier": "Late",
-      "kind": "late",
+      "tier": "Giá công bố",
+      "kind": "other",
       "audience": null,
       "price": 1500000,
       "from": "2026-09-01",
@@ -269,8 +178,8 @@
     },
     {
       "distance": "21km",
-      "tier": "Late",
-      "kind": "late",
+      "tier": "Giá công bố",
+      "kind": "other",
       "audience": null,
       "price": 2000000,
       "from": "2026-09-01",
@@ -313,8 +222,8 @@
     },
     {
       "distance": "42km",
-      "tier": "Late",
-      "kind": "late",
+      "tier": "Giá công bố",
+      "kind": "other",
       "audience": null,
       "price": 2300000,
       "from": "2026-09-01",
@@ -350,50 +259,6 @@
       "kind": "group",
       "audience": null,
       "price": 1840000,
-      "from": "2026-09-01",
-      "to": "2026-10-15",
-      "inferred": [],
-      "site": "halong-marathon"
-    },
-    {
-      "distance": "5km",
-      "tier": "Late Online",
-      "kind": "late",
-      "audience": null,
-      "price": 900000,
-      "from": "2026-09-01",
-      "to": "2026-10-15",
-      "inferred": [],
-      "site": "halong-marathon"
-    },
-    {
-      "distance": "10km",
-      "tier": "Late Online",
-      "kind": "late",
-      "audience": null,
-      "price": 1500000,
-      "from": "2026-09-01",
-      "to": "2026-10-15",
-      "inferred": [],
-      "site": "halong-marathon"
-    },
-    {
-      "distance": "21km",
-      "tier": "Late Online",
-      "kind": "late",
-      "audience": null,
-      "price": 2000000,
-      "from": "2026-09-01",
-      "to": "2026-10-15",
-      "inferred": [],
-      "site": "halong-marathon"
-    },
-    {
-      "distance": "42km",
-      "tier": "Late Online",
-      "kind": "late",
-      "audience": null,
-      "price": 2300000,
       "from": "2026-09-01",
       "to": "2026-10-15",
       "inferred": [],
@@ -953,7 +818,7 @@
       "site": "halong-marathon",
       "role": "official",
       "url": "https://halongmarathon.com/",
-      "lastCheckedAt": "2026-10-12T17:54:59.389Z",
+      "lastCheckedAt": "2026-10-15T20:34:27.454Z",
       "lastChangedAt": "2026-09-25T05:03:56.536Z",
       "extracted": {
         "pages": [
@@ -967,397 +832,177 @@
               "name": "Giải Marathon Quốc tế Di sản Hạ Long 2026",
               "date": "2026-11-20",
               "endDate": "2026-11-22",
+              "mainDate": "2026-11-22",
               "distances": [
                 "5KM",
                 "10KM",
                 "Bán marathon",
                 "Marathon"
               ],
-              "venue": "thành phố Hạ Long, tỉnh Quảng Ninh",
-              "city": "Quảng Ninh",
+              "courses": [
+                {
+                  "distance": "5KM",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10KM",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "Bán marathon",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "Marathon",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 2,
+              "editionQuote": "Giải Marathon Quốc tế Di sản Hạ Long giữ Nhãn Thế giới năm thứ hai",
+              "mapsUrl": "https://halongmarathon.com/",
+              "venue": "Vịnh Hạ Long, tỉnh Quảng Ninh",
+              "city": "Hạ Long",
+              "organizer": "Ban Tổ chức Giải Marathon Quốc tế Di sản Hạ Long",
               "currency": "VND",
               "registrationStatus": "open",
-              "prices": []
-            }
-          }
-        ],
-        "images": [
-          {
-            "url": "https://halongmarathon.com/wp-content/uploads/2026/03/BANG-GIA-EB-HBHM.png",
-            "json": {
-              "prices": [
-                {
-                  "distance": "5 KM",
-                  "tier": "Early Bird",
-                  "from": "2026-03-16",
-                  "to": "2026-05-31",
-                  "price": 500000
-                },
-                {
-                  "distance": "5 KM",
-                  "tier": "Group 5",
-                  "from": "2026-03-16",
-                  "to": "2026-05-31",
-                  "price": 475000
-                },
-                {
-                  "distance": "5 KM",
-                  "tier": "Group 10",
-                  "from": "2026-03-16",
-                  "to": "2026-05-31",
-                  "price": 450000
-                },
-                {
-                  "distance": "5 KM",
-                  "tier": "Group 20",
-                  "from": "2026-03-16",
-                  "to": "2026-05-31",
-                  "price": 400000
-                },
-                {
-                  "distance": "10 KM",
-                  "tier": "Early Bird",
-                  "from": "2026-03-16",
-                  "to": "2026-05-31",
-                  "price": 650000
-                },
-                {
-                  "distance": "10 KM",
-                  "tier": "Group 5",
-                  "from": "2026-03-16",
-                  "to": "2026-05-31",
-                  "price": 617500
-                },
-                {
-                  "distance": "10 KM",
-                  "tier": "Group 10",
-                  "from": "2026-03-16",
-                  "to": "2026-05-31",
-                  "price": 585000
-                },
-                {
-                  "distance": "10 KM",
-                  "tier": "Group 20",
-                  "from": "2026-03-16",
-                  "to": "2026-05-31",
-                  "price": 520000
-                },
-                {
-                  "distance": "21 KM",
-                  "tier": "Early Bird",
-                  "from": "2026-03-16",
-                  "to": "2026-05-31",
-                  "price": 850000
-                },
-                {
-                  "distance": "21 KM",
-                  "tier": "Group 5",
-                  "from": "2026-03-16",
-                  "to": "2026-05-31",
-                  "price": 807500
-                },
-                {
-                  "distance": "21 KM",
-                  "tier": "Group 10",
-                  "from": "2026-03-16",
-                  "to": "2026-05-31",
-                  "price": 765000
-                },
-                {
-                  "distance": "21 KM",
-                  "tier": "Group 20",
-                  "from": "2026-03-16",
-                  "to": "2026-05-31",
-                  "price": 680000
-                },
-                {
-                  "distance": "42 KM",
-                  "tier": "Early Bird",
-                  "from": "2026-03-16",
-                  "to": "2026-05-31",
-                  "price": 950000
-                },
-                {
-                  "distance": "42 KM",
-                  "tier": "Group 5",
-                  "from": "2026-03-16",
-                  "to": "2026-05-31",
-                  "price": 902500
-                },
-                {
-                  "distance": "42 KM",
-                  "tier": "Group 10",
-                  "from": "2026-03-16",
-                  "to": "2026-05-31",
-                  "price": 855000
-                },
-                {
-                  "distance": "42 KM",
-                  "tier": "Group 20",
-                  "from": "2026-03-16",
-                  "to": "2026-05-31",
-                  "price": 760000
-                }
-              ],
-              "distances": [
-                "5 KM",
-                "10 KM",
-                "21 KM",
-                "42 KM"
-              ],
-              "currency": "VND"
-            }
-          },
-          {
-            "url": "https://halongmarathon.com/wp-content/uploads/2026/09/bang-gia-giai-doan-late-HBHM-01-2048x2048.jpg",
-            "json": {
+              "participants": {
+                "count": 18000,
+                "quote": "dự kiến thu hút khoảng 18.000 vận động viên."
+              },
               "prices": [
                 {
                   "distance": "5KM",
-                  "tier": "Late",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
+                  "tier": "Đăng ký sớm",
+                  "audience": "Cá nhân",
+                  "from": "2024-01-16",
+                  "to": "2024-04-26",
+                  "price": 750000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Đăng ký sớm",
+                  "audience": "Cá nhân",
+                  "from": "2024-01-16",
+                  "to": "2024-04-26",
+                  "price": 1125000
+                },
+                {
+                  "distance": "Bán marathon",
+                  "tier": "Đăng ký sớm",
+                  "audience": "Cá nhân",
+                  "from": "2024-01-16",
+                  "to": "2024-04-26",
+                  "price": 1875000
+                },
+                {
+                  "distance": "Marathon",
+                  "tier": "Đăng ký sớm",
+                  "audience": "Cá nhân",
+                  "from": "2024-01-16",
+                  "to": "2024-04-26",
+                  "price": 2125000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Giá tiêu chuẩn",
+                  "audience": "Cá nhân",
+                  "from": "2024-04-27",
+                  "to": "2025-08-01",
+                  "price": 875000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Giá tiêu chuẩn",
+                  "audience": "Cá nhân",
+                  "from": "2024-04-27",
+                  "to": "2025-08-01",
+                  "price": 1250000
+                },
+                {
+                  "distance": "Bán marathon",
+                  "tier": "Giá tiêu chuẩn",
+                  "audience": "Cá nhân",
+                  "from": "2024-04-27",
+                  "to": "2025-08-01",
+                  "price": 1875000
+                },
+                {
+                  "distance": "Marathon",
+                  "tier": "Giá tiêu chuẩn",
+                  "audience": "Cá nhân",
+                  "from": "2024-04-27",
+                  "to": "2025-08-01",
+                  "price": 2125000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Thẻ Standard Chartered",
+                  "audience": "Cá nhân",
+                  "from": "2024-02-05",
+                  "to": "2024-04-26",
+                  "price": 600000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Thẻ Standard Chartered",
+                  "audience": "Cá nhân",
+                  "from": "2024-02-05",
+                  "to": "2024-04-26",
                   "price": 900000
                 },
                 {
-                  "distance": "5KM",
-                  "tier": "Group 5",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 855000
+                  "distance": "Bán marathon",
+                  "tier": "Thẻ Standard Chartered",
+                  "audience": "Cá nhân",
+                  "from": "2024-02-05",
+                  "to": "2024-04-26",
+                  "price": 1100000
+                },
+                {
+                  "distance": "Marathon",
+                  "tier": "Thẻ Standard Chartered",
+                  "audience": "Cá nhân",
+                  "from": "2024-02-05",
+                  "to": "2024-04-26",
+                  "price": 1300000
                 },
                 {
                   "distance": "5KM",
-                  "tier": "Group 10",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 810000
-                },
-                {
-                  "distance": "5KM",
-                  "tier": "Group 20",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 720000
+                  "tier": "Giá muộn",
+                  "audience": "Cá nhân",
+                  "from": "2024-08-02",
+                  "to": "2024-09-18",
+                  "price": 1000000
                 },
                 {
                   "distance": "10KM",
-                  "tier": "Late",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 1500000
+                  "tier": "Giá muộn",
+                  "audience": "Cá nhân",
+                  "from": "2024-08-02",
+                  "to": "2024-09-18",
+                  "price": 1375000
                 },
                 {
-                  "distance": "10KM",
-                  "tier": "Group 5",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 1425000
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "Group 10",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 1350000
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "Group 20",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 1200000
-                },
-                {
-                  "distance": "21KM",
-                  "tier": "Late",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
+                  "distance": "Bán marathon",
+                  "tier": "Giá muộn",
+                  "audience": "Cá nhân",
+                  "from": "2024-08-02",
+                  "to": "2024-09-18",
                   "price": 2000000
                 },
                 {
-                  "distance": "21KM",
-                  "tier": "Group 5",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 1900000
-                },
-                {
-                  "distance": "21KM",
-                  "tier": "Group 10",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 1800000
-                },
-                {
-                  "distance": "21KM",
-                  "tier": "Group 20",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 1600000
-                },
-                {
-                  "distance": "42KM",
-                  "tier": "Late",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 2300000
-                },
-                {
-                  "distance": "42KM",
-                  "tier": "Group 5",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 2185000
-                },
-                {
-                  "distance": "42KM",
-                  "tier": "Group 10",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 2070000
-                },
-                {
-                  "distance": "42KM",
-                  "tier": "Group 20",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 1840000
+                  "distance": "Marathon",
+                  "tier": "Giá muộn",
+                  "audience": "Cá nhân",
+                  "from": "2024-08-02",
+                  "to": "2024-09-18",
+                  "price": 2375000
                 }
-              ],
-              "distances": [
-                "5KM",
-                "10KM",
-                "21KM",
-                "42KM"
-              ],
-              "currency": "VND"
-            }
-          },
-          {
-            "url": "https://halongmarathon.com/wp-content/uploads/2026/09/Bang-gia-HBHMM-late-online-01.png",
-            "json": {
-              "prices": [
-                {
-                  "distance": "5KM",
-                  "tier": "Late Online",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 900000
-                },
-                {
-                  "distance": "5KM",
-                  "tier": "Group 5",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 855000
-                },
-                {
-                  "distance": "5KM",
-                  "tier": "Group 10",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 810000
-                },
-                {
-                  "distance": "5KM",
-                  "tier": "Group 20",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 720000
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "Late Online",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 1500000
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "Group 5",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 1425000
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "Group 10",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 1350000
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "Group 20",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 1200000
-                },
-                {
-                  "distance": "21KM",
-                  "tier": "Late Online",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 2000000
-                },
-                {
-                  "distance": "21KM",
-                  "tier": "Group 5",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 1900000
-                },
-                {
-                  "distance": "21KM",
-                  "tier": "Group 10",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 1800000
-                },
-                {
-                  "distance": "21KM",
-                  "tier": "Group 20",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 1600000
-                },
-                {
-                  "distance": "42KM",
-                  "tier": "Late Online",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 2300000
-                },
-                {
-                  "distance": "42KM",
-                  "tier": "Group 5",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 2185000
-                },
-                {
-                  "distance": "42KM",
-                  "tier": "Group 10",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 2070000
-                },
-                {
-                  "distance": "42KM",
-                  "tier": "Group 20",
-                  "from": "2026-09-01",
-                  "to": "2026-10-15",
-                  "price": 1840000
-                }
-              ],
-              "distances": [
-                "5KM",
-                "10KM",
-                "21KM",
-                "42KM"
-              ],
-              "currency": "VND"
+              ]
             }
           }
         ],
@@ -1479,7 +1124,294 @@
           "id": "ha-long-heritage-marathon",
           "name": "Giải Marathon Quốc tế Di sản Hạ Long"
         },
-        "readBy": "agent"
+        "images": [
+          {
+            "url": "https://halongmarathon.com/wp-content/uploads/2026/03/BANG-GIA-EB-HBHM.png",
+            "json": {
+              "prices": [
+                {
+                  "distance": "5 KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "16/03",
+                  "to": "31/05",
+                  "price": 500000
+                },
+                {
+                  "distance": "5 KM",
+                  "tier": "Group 5",
+                  "audience": "",
+                  "from": "16/03",
+                  "to": "31/05",
+                  "price": 475000
+                },
+                {
+                  "distance": "5 KM",
+                  "tier": "Group 10",
+                  "audience": "",
+                  "from": "16/03",
+                  "to": "31/05",
+                  "price": 450000
+                },
+                {
+                  "distance": "5 KM",
+                  "tier": "Group 20",
+                  "audience": "",
+                  "from": "16/03",
+                  "to": "31/05",
+                  "price": 400000
+                },
+                {
+                  "distance": "10 KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "16/03",
+                  "to": "31/05",
+                  "price": 650000
+                },
+                {
+                  "distance": "10 KM",
+                  "tier": "Group 5",
+                  "audience": "",
+                  "from": "16/03",
+                  "to": "31/05",
+                  "price": 617500
+                },
+                {
+                  "distance": "10 KM",
+                  "tier": "Group 10",
+                  "audience": "",
+                  "from": "16/03",
+                  "to": "31/05",
+                  "price": 585000
+                },
+                {
+                  "distance": "10 KM",
+                  "tier": "Group 20",
+                  "audience": "",
+                  "from": "16/03",
+                  "to": "31/05",
+                  "price": 520000
+                },
+                {
+                  "distance": "21 KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "16/03",
+                  "to": "31/05",
+                  "price": 850000
+                },
+                {
+                  "distance": "21 KM",
+                  "tier": "Group 5",
+                  "audience": "",
+                  "from": "16/03",
+                  "to": "31/05",
+                  "price": 807500
+                },
+                {
+                  "distance": "21 KM",
+                  "tier": "Group 10",
+                  "audience": "",
+                  "from": "16/03",
+                  "to": "31/05",
+                  "price": 765000
+                },
+                {
+                  "distance": "21 KM",
+                  "tier": "Group 20",
+                  "audience": "",
+                  "from": "16/03",
+                  "to": "31/05",
+                  "price": 680000
+                },
+                {
+                  "distance": "42 KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "16/03",
+                  "to": "31/05",
+                  "price": 950000
+                },
+                {
+                  "distance": "42 KM",
+                  "tier": "Group 5",
+                  "audience": "",
+                  "from": "16/03",
+                  "to": "31/05",
+                  "price": 902500
+                },
+                {
+                  "distance": "42 KM",
+                  "tier": "Group 10",
+                  "audience": "",
+                  "from": "16/03",
+                  "to": "31/05",
+                  "price": 855000
+                },
+                {
+                  "distance": "42 KM",
+                  "tier": "Group 20",
+                  "audience": "",
+                  "from": "16/03",
+                  "to": "31/05",
+                  "price": 760000
+                }
+              ],
+              "distances": [
+                "5 KM",
+                "10 KM",
+                "21 KM",
+                "42 KM"
+              ],
+              "date": "2026-03-16",
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://halongmarathon.com/wp-content/uploads/2026/09/Bang-gia-HBHMM-late-online-01.png",
+            "json": {
+              "prices": [
+                {
+                  "distance": "5KM",
+                  "tier": "Giá công bố",
+                  "audience": "",
+                  "from": "01/09",
+                  "to": "15/10",
+                  "price": 900000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Group 5",
+                  "audience": "",
+                  "from": "01/09",
+                  "to": "15/10",
+                  "price": 855000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Group 10",
+                  "audience": "",
+                  "from": "01/09",
+                  "to": "15/10",
+                  "price": 810000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Group 20",
+                  "audience": "",
+                  "from": "01/09",
+                  "to": "15/10",
+                  "price": 720000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Giá công bố",
+                  "audience": "",
+                  "from": "01/09",
+                  "to": "15/10",
+                  "price": 1500000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Group 5",
+                  "audience": "",
+                  "from": "01/09",
+                  "to": "15/10",
+                  "price": 1425000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Group 10",
+                  "audience": "",
+                  "from": "01/09",
+                  "to": "15/10",
+                  "price": 1350000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Group 20",
+                  "audience": "",
+                  "from": "01/09",
+                  "to": "15/10",
+                  "price": 1200000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Giá công bố",
+                  "audience": "",
+                  "from": "01/09",
+                  "to": "15/10",
+                  "price": 2000000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Group 5",
+                  "audience": "",
+                  "from": "01/09",
+                  "to": "15/10",
+                  "price": 1900000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Group 10",
+                  "audience": "",
+                  "from": "01/09",
+                  "to": "15/10",
+                  "price": 1800000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Group 20",
+                  "audience": "",
+                  "from": "01/09",
+                  "to": "15/10",
+                  "price": 1600000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Giá công bố",
+                  "audience": "",
+                  "from": "01/09",
+                  "to": "15/10",
+                  "price": 2300000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Group 5",
+                  "audience": "",
+                  "from": "01/09",
+                  "to": "15/10",
+                  "price": 2185000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Group 10",
+                  "audience": "",
+                  "from": "01/09",
+                  "to": "15/10",
+                  "price": 2070000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Group 20",
+                  "audience": "",
+                  "from": "01/09",
+                  "to": "15/10",
+                  "price": 1840000
+                }
+              ],
+              "distances": [
+                "5KM",
+                "10KM",
+                "21KM",
+                "42KM"
+              ],
+              "date": "2026-10-15",
+              "currency": "VND"
+            }
+          }
+        ]
       }
     },
     {
@@ -1664,5 +1596,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-12T17:55:59.976Z"
+  "updatedAt": "2026-10-15T20:35:09.449Z"
 }
