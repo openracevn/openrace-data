@@ -10,7 +10,7 @@
   "mainDate": null,
   "seriesId": "run-to-live",
   "organizerId": "miracle-entertainment-group",
-  "organizer": null,
+  "organizer": "Run To Live",
   "edition": 3,
   "courses": [
     {
@@ -34,101 +34,22 @@
   ],
   "location": {
     "venue": "Metropole Thủ Thiêm, TP. Thủ Đức",
-    "city": "Thành phố Hồ Chí Minh"
+    "city": "TP. Thủ Đức"
   },
-  "geo": {
-    "lat": 10.8204691,
-    "lng": 106.8139074,
-    "source": "nominatim",
-    "precision": "province",
-    "current": {
-      "province": "79",
-      "ward": null
-    },
-    "legacy": null,
-    "access": "road",
-    "fromPlaces": {
-      "hcmc": {
-        "km": 13.7,
-        "minutes": null,
-        "method": "straight_line",
-        "near": true
-      },
-      "ha-noi": {
-        "km": 1139.7,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "da-nang": {
-        "km": 602.4,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "nha-trang": {
-        "km": 303.8,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "da-lat": {
-        "km": 216.8,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "can-tho": {
-        "km": 142.2,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "hai-phong": {
-        "km": 1114.7,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "hue": {
-        "km": 633.1,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "vung-tau": {
-        "km": 60.5,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "quy-nhon": {
-        "km": 420.2,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "buon-ma-thuot": {
-        "km": 244.7,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "sa-pa": {
-        "km": 1318.9,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "ha-long": {
-        "km": 1126.9,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      }
+  "geo": null,
+  "prices": [
+    {
+      "distance": "21km",
+      "tier": "Elite",
+      "kind": "other",
+      "audience": null,
+      "price": 1400000,
+      "from": "2026-05-03",
+      "to": "2026-05-06",
+      "inferred": [],
+      "site": "run-to-live"
     }
-  },
-  "prices": [],
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [],
@@ -149,7 +70,12 @@
       "foundOn": "runtolive.vn"
     }
   ],
-  "participants": null,
+  "participants": {
+    "count": 7000,
+    "sourceUrl": "https://runtolive.vn/",
+    "quote": "Gần 7.000 vận động viên",
+    "confidence": "high"
+  },
   "flags": [],
   "overrides": {
     "edition": {
@@ -168,7 +94,7 @@
       "site": "run-to-live",
       "role": "official",
       "url": "https://runtolive.vn/",
-      "lastCheckedAt": "2026-09-25T05:01:22.419Z",
+      "lastCheckedAt": "2026-10-15T20:36:29.236Z",
       "lastChangedAt": "2026-09-25T05:01:22.419Z",
       "extracted": {
         "pages": [
@@ -181,36 +107,129 @@
               ],
               "name": "Giải chạy Run To Live 2027 – Chạy vì cuộc sống tốt đẹp hơn",
               "date": "2027-04-11",
+              "endDate": "2027-04-11",
+              "mainDate": "2027-04-11",
               "distances": [
                 "21km",
                 "10km",
                 "5km"
               ],
-              "venue": "Metropole Thủ Thiêm, TP. Thủ Đức",
-              "city": "Thành phố Hồ Chí Minh",
+              "courses": [
+                {
+                  "distance": "21km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "5km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 2027,
+              "editionQuote": "Mùa giải 2027 này",
+              "mapsUrl": "https://goo.gl/maps/4yZ4HkUtk8y",
+              "venue": "Metropole Thủ Thiêm",
+              "city": "TP. Thủ Đức",
+              "organizer": "Run To Live",
+              "currency": "VND",
               "registrationStatus": "open",
-              "prices": []
+              "participants": {
+                "count": 7000,
+                "quote": "Gần 7.000 vận động viên"
+              },
+              "prices": [
+                {
+                  "distance": "21km",
+                  "tier": "Elite",
+                  "audience": "Individual",
+                  "from": "03/05",
+                  "to": "06/05",
+                  "price": 1400000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Super Early Bird",
+                  "audience": "Individual",
+                  "from": "03/05/2024",
+                  "to": "06/05/2024",
+                  "price": 699000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Super Early Bird",
+                  "audience": "Individual",
+                  "from": "03/05/2024",
+                  "to": "06/05/2024",
+                  "price": 699000
+                }
+              ]
             }
           },
           {
             "url": "https://runtolive.vn/chinh-sach-doi-cu-ly/",
             "json": {
               "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
               "name": "Giải chạy Run To Live 2027 – Chạy vì cuộc sống tốt đẹp hơn",
+              "date": "2027-11-21",
+              "endDate": "2027-11-22",
+              "mainDate": "2027-11-21",
+              "distances": [
+                "21KM"
+              ],
+              "courses": [
+                {
+                  "distance": "21KM",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 2027,
+              "editionQuote": "Giải chạy Run To Live 2027",
+              "mapsUrl": "https://runtolive.vn/",
+              "venue": "Metropole Thủ Thiêm",
+              "city": "TP. Thủ Đức",
+              "organizer": "Ban tổ chức",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 7000,
+                "quote": "Run To Live thu hút gần 7.000 vận động viên"
+              },
               "prices": []
             }
           },
           {
             "url": "https://runtolive.vn/mua-ve/?event_id=25",
             "json": {
-              "pageKind": "none"
-            }
-          }
-        ],
-        "images": [
-          {
-            "url": "https://runtolive.vn/wp-content/uploads/2026/06/banner.png",
-            "json": {
+              "pageKind": "none",
+              "types": [],
+              "name": "",
+              "date": "",
+              "endDate": "",
+              "mainDate": "",
+              "distances": [],
+              "courses": [],
+              "edition": 0,
+              "editionQuote": "",
+              "mapsUrl": "",
+              "venue": "",
+              "city": "",
+              "organizer": "",
+              "currency": "",
+              "registrationStatus": "closed",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
               "prices": []
             }
           }
@@ -232,12 +251,11 @@
         "series": {
           "id": "run-to-live",
           "name": "Run To Live"
-        },
-        "readBy": "agent"
+        }
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T05:01:22.419Z",
-  "updatedAt": "2026-10-13T02:12:57.272Z"
+  "updatedAt": "2026-10-15T20:36:54.671Z"
 }
