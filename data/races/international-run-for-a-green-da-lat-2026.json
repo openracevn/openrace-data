@@ -11,7 +11,7 @@
   "seriesId": null,
   "organizerId": "da-hae-international-co-ltd",
   "organizer": "DA HAE INTERNATIONAL CO., LTD",
-  "edition": 1,
+  "edition": null,
   "courses": [
     {
       "label": "1.5km",
@@ -225,231 +225,44 @@
     },
     {
       "distance": "1.5km",
-      "tier": "SUPER EARLY BIRD",
-      "kind": "super_early",
-      "audience": null,
-      "price": 200000,
-      "from": "2026-09-23",
-      "to": "2026-10-15",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "1.5km",
-      "tier": "EARLY BIRD",
+      "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 280000,
+      "price": 400000,
       "from": "2026-10-16",
-      "to": "2026-10-30",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "1.5km",
-      "tier": "REGULAR",
-      "kind": "regular",
-      "audience": null,
-      "price": 320000,
-      "from": "2026-10-31",
       "to": "2026-11-12",
       "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "5km",
-      "tier": "SUPER EARLY BIRD",
-      "kind": "super_early",
-      "audience": null,
-      "price": 300000,
-      "from": "2026-09-23",
-      "to": "2026-10-15",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "5km",
-      "tier": "EARLY BIRD",
+      "tier": "Early Bird",
       "kind": "early",
-      "audience": null,
-      "price": 420000,
-      "from": "2026-10-16",
-      "to": "2026-10-30",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "5km",
-      "tier": "REGULAR",
-      "kind": "regular",
-      "audience": null,
-      "price": 480000,
-      "from": "2026-10-31",
-      "to": "2026-11-12",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "SUPER EARLY BIRD",
-      "kind": "super_early",
-      "audience": null,
-      "price": 375000,
-      "from": "2026-09-23",
-      "to": "2026-10-15",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "EARLY BIRD",
-      "kind": "early",
-      "audience": null,
-      "price": 525000,
-      "from": "2026-10-16",
-      "to": "2026-10-30",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "REGULAR",
-      "kind": "regular",
       "audience": null,
       "price": 600000,
-      "from": "2026-10-31",
+      "from": "2026-10-16",
       "to": "2026-11-12",
       "inferred": [],
       "site": "actiup"
     },
     {
-      "distance": "21km",
-      "tier": "SUPER EARLY BIRD",
-      "kind": "super_early",
-      "audience": null,
-      "price": 450000,
-      "from": "2026-09-23",
-      "to": "2026-10-15",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "21km",
-      "tier": "EARLY BIRD",
+      "distance": "10km",
+      "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 630000,
+      "price": 750000,
       "from": "2026-10-16",
-      "to": "2026-10-30",
+      "to": "2026-11-12",
       "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "21km",
-      "tier": "REGULAR",
-      "kind": "regular",
-      "audience": null,
-      "price": 720000,
-      "from": "2026-10-31",
-      "to": "2026-11-12",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": null,
-      "tier": "COMBO 1 (MUA 2 VÉ TICKETS) · SUPER EARLY BIRD",
-      "kind": "group",
-      "audience": null,
-      "price": 500000,
-      "from": "2026-09-23",
-      "to": "2026-10-15",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": null,
-      "tier": "COMBO 1 (MUA 2 VÉ TICKETS) · EARLY BIRD",
-      "kind": "group",
-      "audience": null,
-      "price": 700000,
-      "from": "2026-10-16",
-      "to": "2026-10-30",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": null,
-      "tier": "COMBO 1 (MUA 2 VÉ TICKETS) · REGULAR",
-      "kind": "group",
+      "tier": "Early Bird",
+      "kind": "early",
       "audience": null,
       "price": 900000,
-      "from": "2026-10-31",
-      "to": "2026-11-12",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": null,
-      "tier": "COMBO 2 (MUA 3 VÉ TICKETS) · SUPER EARLY BIRD",
-      "kind": "group",
-      "audience": null,
-      "price": 800000,
-      "from": "2026-09-23",
-      "to": "2026-10-15",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": null,
-      "tier": "COMBO 2 (MUA 3 VÉ TICKETS) · EARLY BIRD",
-      "kind": "group",
-      "audience": null,
-      "price": 1000000,
       "from": "2026-10-16",
-      "to": "2026-10-30",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": null,
-      "tier": "COMBO 2 (MUA 3 VÉ TICKETS) · REGULAR",
-      "kind": "group",
-      "audience": null,
-      "price": 1000000,
-      "from": "2026-10-31",
-      "to": "2026-11-12",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": null,
-      "tier": "COMBO 3 (MUA 4 VÉ TICKETS) · SUPER EARLY BIRD",
-      "kind": "group",
-      "audience": null,
-      "price": 1100000,
-      "from": "2026-09-23",
-      "to": "2026-10-15",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": null,
-      "tier": "COMBO 3 (MUA 4 VÉ TICKETS) · EARLY BIRD",
-      "kind": "group",
-      "audience": null,
-      "price": 1300000,
-      "from": "2026-10-16",
-      "to": "2026-10-30",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": null,
-      "tier": "COMBO 3 (MUA 4 VÉ TICKETS) · REGULAR",
-      "kind": "group",
-      "audience": null,
-      "price": 1500000,
-      "from": "2026-10-31",
       "to": "2026-11-12",
       "inferred": [],
       "site": "actiup"
@@ -537,7 +350,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/2026-international-run-for-a-green-da-lat",
-      "lastCheckedAt": "2026-10-16T21:01:13.969Z",
+      "lastCheckedAt": "2026-10-16T21:02:09.841Z",
       "lastChangedAt": "2026-09-23T18:30:39.001Z",
       "extracted": {
         "facts": {
@@ -558,20 +371,50 @@
               "types": [
                 "road_run"
               ],
-              "name": "Giải Chạy Quốc Tế Vì Đà Lạt Xanh 2026 (COOL RACE 1.5°C - DALAT 2026)",
+              "name": "Giải chạy Quốc tế vì Đà Lạt xanh 2026 (COOL RACE 1.5°C - DALAT 2026)",
               "date": "2026-11-21",
               "endDate": "2026-11-22",
+              "mainDate": "2026-11-21",
               "distances": [
-                "1,5km",
+                "1.5km",
                 "5km",
                 "10km",
                 "21km"
               ],
-              "venue": "Quảng trường Lâm Viên, Hồ Xuân Hương",
+              "courses": [
+                {
+                  "distance": "1.5km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "5km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "21km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "Giải chạy Quốc tế vì Đà Lạt xanh 2026",
+              "mapsUrl": "https://drive.google.com/file/d/11I7snMVc8-HvPdA_IlhGnI8P6PdEt8HJ/view?usp=drive_link",
+              "venue": "Quảng trường Lâm Viên",
               "city": "Đà Lạt",
-              "organizer": "",
+              "organizer": "Ban tổ chức COOL RACE",
               "currency": "VND",
               "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
               "prices": []
             }
           }
@@ -588,188 +431,49 @@
         },
         "images": [
           {
-            "url": "https://pix.actiup.net/2026/09/21/1789974993701695/b%E1%BA%A3ng-gi%C3%A1-DL-m%E1%BB%9Bi.jpg",
+            "url": "https://pix.actiup.net/2026/10/16/1792126428561778/BG-m%E1%BB%9Bi.jpg",
             "json": {
               "prices": [
                 {
                   "distance": "1.5KM",
-                  "tier": "SUPER EARLY BIRD",
-                  "audience": "",
-                  "from": "23/09",
-                  "to": "15/10",
-                  "price": 200000
-                },
-                {
-                  "distance": "1.5KM",
-                  "tier": "EARLY BIRD",
-                  "audience": "",
+                  "tier": "Early Bird",
+                  "audience": "Cá nhân",
                   "from": "16/10",
-                  "to": "30/10",
-                  "price": 280000
-                },
-                {
-                  "distance": "1.5KM",
-                  "tier": "REGULAR",
-                  "audience": "",
-                  "from": "31/10",
                   "to": "12/11",
-                  "price": 320000
+                  "price": 400000
                 },
                 {
                   "distance": "5KM",
-                  "tier": "SUPER EARLY BIRD",
-                  "audience": "",
-                  "from": "23/09",
-                  "to": "15/10",
-                  "price": 300000
-                },
-                {
-                  "distance": "5KM",
-                  "tier": "EARLY BIRD",
-                  "audience": "",
+                  "tier": "Early Bird",
+                  "audience": "Cá nhân",
                   "from": "16/10",
-                  "to": "30/10",
-                  "price": 420000
-                },
-                {
-                  "distance": "5KM",
-                  "tier": "REGULAR",
-                  "audience": "",
-                  "from": "31/10",
-                  "to": "12/11",
-                  "price": 480000
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "SUPER EARLY BIRD",
-                  "audience": "",
-                  "from": "23/09",
-                  "to": "15/10",
-                  "price": 375000
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "EARLY BIRD",
-                  "audience": "",
-                  "from": "16/10",
-                  "to": "30/10",
-                  "price": 525000
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "REGULAR",
-                  "audience": "",
-                  "from": "31/10",
                   "to": "12/11",
                   "price": 600000
                 },
                 {
-                  "distance": "21KM",
-                  "tier": "SUPER EARLY BIRD",
-                  "audience": "",
-                  "from": "23/09",
-                  "to": "15/10",
-                  "price": 450000
-                },
-                {
-                  "distance": "21KM",
-                  "tier": "EARLY BIRD",
-                  "audience": "",
+                  "distance": "10KM",
+                  "tier": "Early Bird",
+                  "audience": "Cá nhân",
                   "from": "16/10",
-                  "to": "30/10",
-                  "price": 630000
-                },
-                {
-                  "distance": "21KM",
-                  "tier": "REGULAR",
-                  "audience": "",
-                  "from": "31/10",
                   "to": "12/11",
-                  "price": 720000
+                  "price": 750000
                 },
                 {
-                  "distance": "COMBO 1 (MUA 2 VÉ TICKETS)",
-                  "tier": "SUPER EARLY BIRD",
-                  "audience": "",
-                  "from": "23/09",
-                  "to": "15/10",
-                  "price": 500000
-                },
-                {
-                  "distance": "COMBO 1 (MUA 2 VÉ TICKETS)",
-                  "tier": "EARLY BIRD",
-                  "audience": "",
+                  "distance": "21KM",
+                  "tier": "Early Bird",
+                  "audience": "Cá nhân",
                   "from": "16/10",
-                  "to": "30/10",
-                  "price": 700000
-                },
-                {
-                  "distance": "COMBO 1 (MUA 2 VÉ TICKETS)",
-                  "tier": "REGULAR",
-                  "audience": "",
-                  "from": "31/10",
                   "to": "12/11",
                   "price": 900000
-                },
-                {
-                  "distance": "COMBO 2 (MUA 3 VÉ TICKETS)",
-                  "tier": "SUPER EARLY BIRD",
-                  "audience": "",
-                  "from": "23/09",
-                  "to": "15/10",
-                  "price": 800000
-                },
-                {
-                  "distance": "COMBO 2 (MUA 3 VÉ TICKETS)",
-                  "tier": "EARLY BIRD",
-                  "audience": "",
-                  "from": "16/10",
-                  "to": "30/10",
-                  "price": 1000000
-                },
-                {
-                  "distance": "COMBO 2 (MUA 3 VÉ TICKETS)",
-                  "tier": "REGULAR",
-                  "audience": "",
-                  "from": "31/10",
-                  "to": "12/11",
-                  "price": 1000000
-                },
-                {
-                  "distance": "COMBO 3 (MUA 4 VÉ TICKETS)",
-                  "tier": "SUPER EARLY BIRD",
-                  "audience": "",
-                  "from": "23/09",
-                  "to": "15/10",
-                  "price": 1100000
-                },
-                {
-                  "distance": "COMBO 3 (MUA 4 VÉ TICKETS)",
-                  "tier": "EARLY BIRD",
-                  "audience": "",
-                  "from": "16/10",
-                  "to": "30/10",
-                  "price": 1300000
-                },
-                {
-                  "distance": "COMBO 3 (MUA 4 VÉ TICKETS)",
-                  "tier": "REGULAR",
-                  "audience": "",
-                  "from": "31/10",
-                  "to": "12/11",
-                  "price": 1500000
                 }
               ],
               "distances": [
                 "1.5KM",
                 "5KM",
                 "10KM",
-                "21KM",
-                "COMBO 1 (MUA 2 VÉ TICKETS)",
-                "COMBO 2 (MUA 3 VÉ TICKETS)",
-                "COMBO 3 (MUA 4 VÉ TICKETS)"
+                "21KM"
               ],
-              "date": "2026-11-12",
+              "date": "2026-06-24",
               "currency": "VND"
             }
           }
@@ -780,7 +484,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/quoc-te-vi-da-lat-xanh-2026",
-      "lastCheckedAt": "2026-10-16T21:01:27.627Z",
+      "lastCheckedAt": "2026-10-16T21:02:25.693Z",
       "lastChangedAt": "2026-10-15T20:27:33.887Z",
       "extracted": {
         "facts": {
@@ -887,7 +591,7 @@
                 }
               ],
               "edition": 1,
-              "editionQuote": "Giải Chạy Quốc Tế lần thứ nhất",
+              "editionQuote": "Giải Chạy Quốc Tế vì Đà Lạt Xanh 2026",
               "mapsUrl": "",
               "venue": "Lâm Đồng",
               "city": "Lâm Đồng",
@@ -903,169 +607,65 @@
                   "distance": "1.5km",
                   "tier": "Super Early Bird",
                   "audience": "",
-                  "from": "21/09",
-                  "to": "15/10",
+                  "from": "2023-09-21",
+                  "to": "2023-10-15",
                   "price": 200000
                 },
                 {
                   "distance": "1.5km",
                   "tier": "Early Bird",
                   "audience": "",
-                  "from": "16/10",
-                  "to": "30/10",
-                  "price": 280000
-                },
-                {
-                  "distance": "1.5km",
-                  "tier": "Regular",
-                  "audience": "",
-                  "from": "31/10",
-                  "to": "12/11",
-                  "price": 320000
+                  "from": "2023-10-16",
+                  "to": "2023-11-12",
+                  "price": 400000
                 },
                 {
                   "distance": "5km",
                   "tier": "Super Early Bird",
                   "audience": "",
-                  "from": "21/09",
-                  "to": "15/10",
+                  "from": "2023-09-21",
+                  "to": "2023-10-15",
                   "price": 300000
                 },
                 {
                   "distance": "5km",
                   "tier": "Early Bird",
                   "audience": "",
-                  "from": "16/10",
-                  "to": "30/10",
-                  "price": 420000
-                },
-                {
-                  "distance": "5km",
-                  "tier": "Regular",
-                  "audience": "",
-                  "from": "31/10",
-                  "to": "12/11",
-                  "price": 480000
+                  "from": "2023-10-16",
+                  "to": "2023-11-12",
+                  "price": 600000
                 },
                 {
                   "distance": "10km",
                   "tier": "Super Early Bird",
                   "audience": "",
-                  "from": "21/09",
-                  "to": "15/10",
+                  "from": "2023-09-21",
+                  "to": "2023-10-15",
                   "price": 375000
                 },
                 {
                   "distance": "10km",
                   "tier": "Early Bird",
                   "audience": "",
-                  "from": "16/10",
-                  "to": "30/10",
-                  "price": 525000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Regular",
-                  "audience": "",
-                  "from": "31/10",
-                  "to": "12/11",
-                  "price": 600000
+                  "from": "2023-10-16",
+                  "to": "2023-11-12",
+                  "price": 750000
                 },
                 {
                   "distance": "21km",
                   "tier": "Super Early Bird",
                   "audience": "",
-                  "from": "21/09",
-                  "to": "15/10",
+                  "from": "2023-09-21",
+                  "to": "2023-10-15",
                   "price": 450000
                 },
                 {
                   "distance": "21km",
                   "tier": "Early Bird",
                   "audience": "",
-                  "from": "16/10",
-                  "to": "30/10",
-                  "price": 630000
-                },
-                {
-                  "distance": "21km",
-                  "tier": "Regular",
-                  "audience": "",
-                  "from": "31/10",
-                  "to": "12/11",
-                  "price": 720000
-                },
-                {
-                  "distance": "Combo 1 (mua 2 vé tickets)",
-                  "tier": "Super Early Bird",
-                  "audience": "",
-                  "from": "21/09",
-                  "to": "15/10",
-                  "price": 500000
-                },
-                {
-                  "distance": "Combo 1 (mua 2 vé tickets)",
-                  "tier": "Early Bird",
-                  "audience": "",
-                  "from": "16/10",
-                  "to": "30/10",
-                  "price": 700000
-                },
-                {
-                  "distance": "Combo 1 (mua 2 vé tickets)",
-                  "tier": "Regular",
-                  "audience": "",
-                  "from": "31/10",
-                  "to": "12/11",
+                  "from": "2023-10-16",
+                  "to": "2023-11-12",
                   "price": 900000
-                },
-                {
-                  "distance": "Combo 2 (mua 3 vé tickets)",
-                  "tier": "Super Early Bird",
-                  "audience": "",
-                  "from": "21/09",
-                  "to": "15/10",
-                  "price": 800000
-                },
-                {
-                  "distance": "Combo 2 (mua 3 vé tickets)",
-                  "tier": "Early Bird",
-                  "audience": "",
-                  "from": "16/10",
-                  "to": "30/10",
-                  "price": 1000000
-                },
-                {
-                  "distance": "Combo 2 (mua 3 vé tickets)",
-                  "tier": "Regular",
-                  "audience": "",
-                  "from": "31/10",
-                  "to": "12/11",
-                  "price": 1000000
-                },
-                {
-                  "distance": "Combo 3 (mua 4 vé tickets)",
-                  "tier": "Super Early Bird",
-                  "audience": "",
-                  "from": "21/09",
-                  "to": "15/10",
-                  "price": 1100000
-                },
-                {
-                  "distance": "Combo 3 (mua 4 vé tickets)",
-                  "tier": "Early Bird",
-                  "audience": "",
-                  "from": "16/10",
-                  "to": "30/10",
-                  "price": 1300000
-                },
-                {
-                  "distance": "Combo 3 (mua 4 vé tickets)",
-                  "tier": "Regular",
-                  "audience": "",
-                  "from": "31/10",
-                  "to": "12/11",
-                  "price": 1500000
                 }
               ]
             }
@@ -1202,5 +802,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-16T21:01:36.928Z"
+  "updatedAt": "2026-10-16T21:02:35.942Z"
 }
