@@ -339,7 +339,7 @@
     }
   ],
   "currency": "VND",
-  "registrationStatus": "sold_out",
+  "registrationStatus": "closed",
   "registrations": [
     {
       "site": "actiup",
@@ -484,7 +484,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/giai-marathon-ca-mau-2026-cup-petrovietnam",
-      "lastCheckedAt": "2026-10-15T20:23:49.482Z",
+      "lastCheckedAt": "2026-10-16T21:01:12.634Z",
       "lastChangedAt": "2026-09-23T18:30:44.623Z",
       "extracted": {
         "facts": {
@@ -493,7 +493,7 @@
           "venue": "Trung tâm hội nghị tỉnh Cà Mau, Phường An Xuyên, Tỉnh Cà Mau.",
           "organizer": "VIETRACE365",
           "currency": "VND",
-          "registrationStatus": "sold_out",
+          "registrationStatus": "closed",
           "fromPrice": 368000
         },
         "pages": [
@@ -750,5 +750,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-15T20:26:01.820Z"
+  "updatedAt": "2026-10-16T21:01:36.928Z"
 }

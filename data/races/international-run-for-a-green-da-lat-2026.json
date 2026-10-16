@@ -151,19 +151,8 @@
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 280000,
+      "price": 400000,
       "from": "2026-10-16",
-      "to": "2026-10-30",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "1.5km",
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 320000,
-      "from": "2026-10-31",
       "to": "2026-11-12",
       "inferred": [],
       "site": "irace"
@@ -184,19 +173,8 @@
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 420000,
+      "price": 600000,
       "from": "2026-10-16",
-      "to": "2026-10-30",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "5km",
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 480000,
-      "from": "2026-10-31",
       "to": "2026-11-12",
       "inferred": [],
       "site": "irace"
@@ -217,19 +195,8 @@
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 525000,
+      "price": 750000,
       "from": "2026-10-16",
-      "to": "2026-10-30",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 600000,
-      "from": "2026-10-31",
       "to": "2026-11-12",
       "inferred": [],
       "site": "irace"
@@ -250,118 +217,8 @@
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 630000,
-      "from": "2026-10-16",
-      "to": "2026-10-30",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "21km",
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 720000,
-      "from": "2026-10-31",
-      "to": "2026-11-12",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": null,
-      "tier": "Combo 1 (mua 2 vé tickets) · Super Early Bird",
-      "kind": "group",
-      "audience": null,
-      "price": 500000,
-      "from": "2026-09-21",
-      "to": "2026-10-15",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": null,
-      "tier": "Combo 1 (mua 2 vé tickets) · Early Bird",
-      "kind": "group",
-      "audience": null,
-      "price": 700000,
-      "from": "2026-10-16",
-      "to": "2026-10-30",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": null,
-      "tier": "Combo 1 (mua 2 vé tickets) · Regular",
-      "kind": "group",
-      "audience": null,
       "price": 900000,
-      "from": "2026-10-31",
-      "to": "2026-11-12",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": null,
-      "tier": "Combo 2 (mua 3 vé tickets) · Super Early Bird",
-      "kind": "group",
-      "audience": null,
-      "price": 800000,
-      "from": "2026-09-21",
-      "to": "2026-10-15",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": null,
-      "tier": "Combo 2 (mua 3 vé tickets) · Early Bird",
-      "kind": "group",
-      "audience": null,
-      "price": 1000000,
       "from": "2026-10-16",
-      "to": "2026-10-30",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": null,
-      "tier": "Combo 2 (mua 3 vé tickets) · Regular",
-      "kind": "group",
-      "audience": null,
-      "price": 1000000,
-      "from": "2026-10-31",
-      "to": "2026-11-12",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": null,
-      "tier": "Combo 3 (mua 4 vé tickets) · Super Early Bird",
-      "kind": "group",
-      "audience": null,
-      "price": 1100000,
-      "from": "2026-09-21",
-      "to": "2026-10-15",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": null,
-      "tier": "Combo 3 (mua 4 vé tickets) · Early Bird",
-      "kind": "group",
-      "audience": null,
-      "price": 1300000,
-      "from": "2026-10-16",
-      "to": "2026-10-30",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": null,
-      "tier": "Combo 3 (mua 4 vé tickets) · Regular",
-      "kind": "group",
-      "audience": null,
-      "price": 1500000,
-      "from": "2026-10-31",
       "to": "2026-11-12",
       "inferred": [],
       "site": "irace"
@@ -680,7 +537,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/2026-international-run-for-a-green-da-lat",
-      "lastCheckedAt": "2026-09-23T18:49:38.268Z",
+      "lastCheckedAt": "2026-10-16T21:01:13.969Z",
       "lastChangedAt": "2026-09-23T18:30:39.001Z",
       "extracted": {
         "facts": {
@@ -923,13 +780,71 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/quoc-te-vi-da-lat-xanh-2026",
-      "lastCheckedAt": "2026-10-15T20:27:33.887Z",
+      "lastCheckedAt": "2026-10-16T21:01:27.627Z",
       "lastChangedAt": "2026-10-15T20:27:33.887Z",
       "extracted": {
         "facts": {
           "name": "Giải Chạy Quốc Tế vì Đà Lạt Xanh 2026",
           "venue": "Lâm Đồng",
-          "organizer": "DA HAE INTERNATIONAL CO., LTD"
+          "organizer": "DA HAE INTERNATIONAL CO., LTD",
+          "prices": [
+            {
+              "distance": "1.5km",
+              "tier": "Super Early Bird",
+              "from": "21/09",
+              "to": "15/10",
+              "price": 200000
+            },
+            {
+              "distance": "1.5km",
+              "tier": "Early Bird",
+              "from": "16/10",
+              "to": "12/11",
+              "price": 400000
+            },
+            {
+              "distance": "5km",
+              "tier": "Super Early Bird",
+              "from": "21/09",
+              "to": "15/10",
+              "price": 300000
+            },
+            {
+              "distance": "5km",
+              "tier": "Early Bird",
+              "from": "16/10",
+              "to": "12/11",
+              "price": 600000
+            },
+            {
+              "distance": "10km",
+              "tier": "Super Early Bird",
+              "from": "21/09",
+              "to": "15/10",
+              "price": 375000
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "from": "16/10",
+              "to": "12/11",
+              "price": 750000
+            },
+            {
+              "distance": "21km",
+              "tier": "Super Early Bird",
+              "from": "21/09",
+              "to": "15/10",
+              "price": 450000
+            },
+            {
+              "distance": "21km",
+              "tier": "Early Bird",
+              "from": "16/10",
+              "to": "12/11",
+              "price": 900000
+            }
+          ]
         },
         "pages": [
           {
@@ -1287,5 +1202,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-15T20:31:08.696Z"
+  "updatedAt": "2026-10-16T21:01:36.928Z"
 }
