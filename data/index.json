@@ -371,7 +371,7 @@
     "date": "2024-11-08",
     "endDate": "2024-11-10",
     "mainDate": null,
-    "lastModified": "2026-09-25T08:23:14.293Z",
+    "lastModified": "2026-10-17T13:14:46.772Z",
     "file": "lam-dong-trail-2024.json",
     "seriesId": "lamdong-trail",
     "sourceUrls": [
@@ -841,8 +841,8 @@
     "name": "Lamdong Trail 2026",
     "date": "2026-11-06",
     "endDate": "2026-11-08",
-    "mainDate": "2026-11-06",
-    "lastModified": "2026-10-15T20:36:15.851Z",
+    "mainDate": "2026-11-07",
+    "lastModified": "2026-10-17T13:14:46.772Z",
     "file": "lamdong-trail-2026.json",
     "seriesId": "lamdong-trail",
     "sourceUrls": [
@@ -1254,7 +1254,7 @@
     "date": "2026-11-14",
     "endDate": "2026-11-15",
     "mainDate": "2026-11-15",
-    "lastModified": "2026-10-16T21:02:35.942Z",
+    "lastModified": "2026-10-17T13:14:46.772Z",
     "file": "giai-marathon-ca-mau-2026-cup-petrovietnam-2026.json",
     "seriesId": "giai-marathon-ca-mau-cup-petrovietnam",
     "sourceUrls": [
@@ -1631,21 +1631,6 @@
     "linkUrls": []
   },
   {
-    "id": "3f1c18dc-8f7e-4306-a09d-1f541caf4dc9",
-    "slug": "nghe-an-legacy-marathon-2026",
-    "name": "Giải chạy Nghệ An Legacy Marathon – Dấu chân quê Bác năm 2026",
-    "date": "2026-12-06",
-    "endDate": null,
-    "mainDate": null,
-    "lastModified": "2026-10-15T20:31:08.696Z",
-    "file": "nghe-an-legacy-marathon-2026.json",
-    "seriesId": null,
-    "sourceUrls": [
-      "https://ticket.irace.vn/nghe-an-legacy-marathon-2026"
-    ],
-    "linkUrls": []
-  },
-  {
     "id": "3ffa3f84-320d-4679-97c5-3375924db68f",
     "slug": "the-5th-edition-of-the-techcombank-hanoi-international-marathon",
     "name": "Techcombank Hanoi International Marathon 2026",
@@ -1882,7 +1867,7 @@
     "date": "2022-11-11",
     "endDate": "2022-11-13",
     "mainDate": null,
-    "lastModified": "2026-09-28T05:58:42.803Z",
+    "lastModified": "2026-10-17T13:14:46.772Z",
     "file": "lam-dong-trail-2022.json",
     "seriesId": "lamdong-trail",
     "sourceUrls": [
@@ -2749,7 +2734,7 @@
     "date": "2026-11-22",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-10-15T20:35:09.449Z",
+    "lastModified": "2026-10-17T13:14:46.772Z",
     "file": "halong-bay-heritage-marathon-2026.json",
     "seriesId": "halong-bay-heritage-marathon",
     "sourceUrls": [
@@ -2809,15 +2794,16 @@
   {
     "id": "735d0cf0-11e0-4997-bd2d-2df1541d0cef",
     "slug": "bac-ninh-legacy-marathon-2027",
-    "name": "Giải chạy Bắc Ninh Dấu chân Miền Quan họ 2027",
+    "name": "Giải chạy Bắc Ninh Legacy Marathon 2027",
     "date": "2027-01-10",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-09-24T06:49:38.787Z",
+    "lastModified": "2026-10-17T13:14:46.772Z",
     "file": "bac-ninh-legacy-marathon-2027.json",
     "seriesId": "bac-ninh-legacy-marathon",
     "sourceUrls": [
-      "https://actiup.net/vi/event/bac-ninh-legacy-marathon-2027"
+      "https://actiup.net/vi/event/bac-ninh-legacy-marathon-2027",
+      "https://ticket.irace.vn/bac-ninh-legacy-marathon-2027"
     ],
     "linkUrls": []
   },
@@ -3305,15 +3291,16 @@
   {
     "id": "87fc1d38-87d8-4af4-ae3c-abc8958a287d",
     "slug": "run-to-live-2027",
-    "name": "Run To Live 2027",
+    "name": "Giải chạy Run To Live 2027 – Chạy vì cuộc sống tốt đẹp hơn",
     "date": "2027-04-11",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-10-15T20:26:01.820Z",
+    "lastModified": "2026-10-17T13:14:46.772Z",
     "file": "run-to-live-2027.json",
     "seriesId": "run-to-live",
     "sourceUrls": [
-      "https://actiup.net/vi/event/run-to-live-2027"
+      "https://actiup.net/vi/event/run-to-live-2027",
+      "https://runtolive.vn/"
     ],
     "linkUrls": []
   },
@@ -3650,7 +3637,7 @@
     "date": "2023-11-10",
     "endDate": "2023-11-12",
     "mainDate": null,
-    "lastModified": "2026-09-28T14:36:25.648Z",
+    "lastModified": "2026-10-17T13:14:46.772Z",
     "file": "lam-dong-trail-2023.json",
     "seriesId": "lamdong-trail",
     "sourceUrls": [
@@ -3922,8 +3909,8 @@
     "name": "Giải chạy Cuc Phuong Jungle Paths 2026",
     "date": "2026-12-26",
     "endDate": "2026-12-27",
-    "mainDate": "2026-12-26",
-    "lastModified": "2026-10-15T20:31:08.696Z",
+    "mainDate": null,
+    "lastModified": "2026-10-17T13:14:46.772Z",
     "file": "cuc-phuong-jungle-paths-2026.json",
     "seriesId": "cuc-phuong-jungle-paths",
     "sourceUrls": [
@@ -4520,15 +4507,16 @@
   {
     "id": "ba8ac318-f17e-49b5-aa90-95d6901dcbf6",
     "slug": "nghe-an-legacy-marathon-ve-mien-non-xanh-nuoc-biec",
-    "name": "NGHỆ AN LEGACY MARATHON - VỀ MIỀN NON XANH NƯỚC BIẾC",
-    "date": "2026-12-05",
-    "endDate": "2026-12-06",
+    "name": "Giải chạy Nghệ An Legacy Marathon – Dấu chân quê Bác năm 2026",
+    "date": "2026-12-06",
+    "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-09-29T07:54:13.257Z",
+    "lastModified": "2026-10-17T13:14:46.772Z",
     "file": "nghe-an-legacy-marathon-ve-mien-non-xanh-nuoc-biec-2026.json",
     "seriesId": "nghe-an-legacy-marathon",
     "sourceUrls": [
-      "https://actiup.net/vi/event/nghe-an-legacy-marathon-ve-mien-non-xanh-nuoc-biec"
+      "https://actiup.net/vi/event/nghe-an-legacy-marathon-ve-mien-non-xanh-nuoc-biec",
+      "https://ticket.irace.vn/nghe-an-legacy-marathon-2026"
     ],
     "linkUrls": []
   },
@@ -4888,21 +4876,6 @@
     "linkUrls": []
   },
   {
-    "id": "cdda5fec-fbbc-4b6a-b982-f93ac0d82b30",
-    "slug": "giai-chay-run-to-live-2027-chay-vi-cuoc-song-tot-dep-hon",
-    "name": "Giải chạy Run To Live 2027 – Chạy vì cuộc sống tốt đẹp hơn",
-    "date": "2027-04-11",
-    "endDate": null,
-    "mainDate": null,
-    "lastModified": "2026-10-15T20:36:54.671Z",
-    "file": "giai-chay-run-to-live-2027-chay-vi-cuoc-song-tot-dep-hon-2027.json",
-    "seriesId": "run-to-live",
-    "sourceUrls": [
-      "https://runtolive.vn/"
-    ],
-    "linkUrls": []
-  },
-  {
     "id": "cf16f97c-0cd6-4124-a3a7-8d9d70a06ee5",
     "slug": "2025-sunrise-sprint-viet-nam-in-phu-quoc",
     "name": "2025 SUNRISE SPRINT Viet Nam in Phu Quoc",
@@ -5162,21 +5135,6 @@
     "seriesId": null,
     "sourceUrls": [
       "https://actiup.net/vi/event/vietnam-international-half-marathon-2025"
-    ],
-    "linkUrls": []
-  },
-  {
-    "id": "d819e35b-d992-4289-a8f8-2182b0ab2c0e",
-    "slug": "bac-ninh-legacy-marathon-2027-2",
-    "name": "Giải chạy Bắc Ninh Legacy Marathon 2027",
-    "date": "2027-01-10",
-    "endDate": null,
-    "mainDate": null,
-    "lastModified": "2026-10-15T20:31:08.696Z",
-    "file": "bac-ninh-legacy-marathon-2027-2-2027.json",
-    "seriesId": "bac-ninh-legacy-marathon",
-    "sourceUrls": [
-      "https://ticket.irace.vn/bac-ninh-legacy-marathon-2027"
     ],
     "linkUrls": []
   },

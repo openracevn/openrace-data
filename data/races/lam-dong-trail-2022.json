@@ -7,10 +7,11 @@
   ],
   "date": "2022-11-11",
   "endDate": "2022-11-13",
+  "mainDate": null,
   "seriesId": "lamdong-trail",
   "organizerId": null,
   "organizer": "VietnamJoy",
-  "edition": null,
+  "edition": 1,
   "courses": [
     {
       "label": "3km",
@@ -315,6 +316,7 @@
     }
   ],
   "links": [],
+  "participants": null,
   "flags": [],
   "overrides": {
     "seriesId": {
@@ -492,6 +494,11 @@
       ],
       "reason": "iRace ticket price image (app.irace.vn/lam-dong-trail-2022, wp-content/uploads/2022/10/1.png, fetched via Wayback+Firecrawl JS render to find the image URL, then read directly): Early Birds/Regular/Late tiers, no explicit date windows shown in the image",
       "at": "2026-09-25T08:22:42.080Z"
+    },
+    "edition": {
+      "value": 1,
+      "reason": "Asia Trail Master 2023-03-08 'Back to Dalat for Lam Dong Trail on 11 November' (https://www.asiatrailmaster.com/news/2023/3/8/back-to-dalat-for-lam-dong-trail-on-11-november): 'Last year’s inaugural edition saw Vietnam’s trail heroes Quang Tran and Hau Ha ... win the long distance race'; TTC Group 2023 article: 'last year's first tournament'.",
+      "at": "2026-10-17T13:14:46.772Z"
     }
   },
   "sources": [
@@ -528,5 +535,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T08:00:46.737Z",
-  "updatedAt": "2026-09-28T05:58:42.803Z"
+  "updatedAt": "2026-10-17T13:14:46.772Z"
 }

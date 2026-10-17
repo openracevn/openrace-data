@@ -7,41 +7,41 @@
   ],
   "date": "2026-12-26",
   "endDate": "2026-12-27",
-  "mainDate": "2026-12-26",
+  "mainDate": null,
   "seriesId": "cuc-phuong-jungle-paths",
   "organizerId": "race-jungle",
-  "organizer": "Race Jungle",
-  "edition": 1,
+  "organizer": "Race Jungle | Ban tổ chức giải",
+  "edition": null,
   "courses": [
     {
       "label": "10km",
       "meters": 10000,
       "type": "trail_run",
-      "elevationGain": 1232
+      "elevationGain": 200
     },
     {
       "label": "25km",
       "meters": 25000,
       "type": "trail_run",
-      "elevationGain": 2112
+      "elevationGain": 700
     },
     {
       "label": "42km",
       "meters": 42195,
       "type": "trail_run",
-      "elevationGain": 2816
+      "elevationGain": 1200
     },
     {
       "label": "75km",
       "meters": 75000,
       "type": "trail_run",
-      "elevationGain": 3432
+      "elevationGain": 2500
     },
     {
       "label": "100km",
       "meters": 100000,
       "type": "trail_run",
-      "elevationGain": 3960
+      "elevationGain": 3500
     }
   ],
   "location": {
@@ -147,73 +147,8 @@
   "prices": [
     {
       "distance": "10km",
-      "tier": "Giá vé tiêu chuẩn",
-      "kind": "regular",
-      "audience": null,
-      "price": 1232000,
-      "from": null,
-      "to": "2026-12-26",
-      "inferred": [
-        "to"
-      ],
-      "site": "irace"
-    },
-    {
-      "distance": "25km",
-      "tier": "Giá vé tiêu chuẩn",
-      "kind": "regular",
-      "audience": null,
-      "price": 2112000,
-      "from": null,
-      "to": "2026-12-26",
-      "inferred": [
-        "to"
-      ],
-      "site": "irace"
-    },
-    {
-      "distance": "42km",
-      "tier": "Giá vé tiêu chuẩn",
-      "kind": "regular",
-      "audience": null,
-      "price": 2816000,
-      "from": null,
-      "to": "2026-12-26",
-      "inferred": [
-        "to"
-      ],
-      "site": "irace"
-    },
-    {
-      "distance": "75km",
-      "tier": "Giá vé tiêu chuẩn",
-      "kind": "regular",
-      "audience": null,
-      "price": 3432000,
-      "from": null,
-      "to": "2026-12-26",
-      "inferred": [
-        "to"
-      ],
-      "site": "irace"
-    },
-    {
-      "distance": "100km",
-      "tier": "Giá vé tiêu chuẩn",
-      "kind": "regular",
-      "audience": null,
-      "price": 3960000,
-      "from": null,
-      "to": "2026-12-26",
-      "inferred": [
-        "to"
-      ],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
       "tier": "Priority",
-      "kind": "other",
+      "kind": "super_early",
       "audience": null,
       "price": 840000,
       "from": "2025-11-19",
@@ -235,7 +170,7 @@
     {
       "distance": "10km",
       "tier": "Noon",
-      "kind": "other",
+      "kind": "early",
       "audience": null,
       "price": 1232000,
       "from": "2026-05-28",
@@ -257,7 +192,7 @@
     {
       "distance": "25km",
       "tier": "Priority",
-      "kind": "other",
+      "kind": "super_early",
       "audience": null,
       "price": 1440000,
       "from": "2025-11-19",
@@ -279,7 +214,7 @@
     {
       "distance": "25km",
       "tier": "Noon",
-      "kind": "other",
+      "kind": "early",
       "audience": null,
       "price": 2112000,
       "from": "2026-05-28",
@@ -301,7 +236,7 @@
     {
       "distance": "42km",
       "tier": "Priority",
-      "kind": "other",
+      "kind": "super_early",
       "audience": null,
       "price": 1920000,
       "from": "2025-11-19",
@@ -323,7 +258,7 @@
     {
       "distance": "42km",
       "tier": "Noon",
-      "kind": "other",
+      "kind": "early",
       "audience": null,
       "price": 2816000,
       "from": "2026-05-28",
@@ -345,7 +280,7 @@
     {
       "distance": "75km",
       "tier": "Priority",
-      "kind": "other",
+      "kind": "super_early",
       "audience": null,
       "price": 2340000,
       "from": "2025-11-19",
@@ -367,7 +302,7 @@
     {
       "distance": "75km",
       "tier": "Noon",
-      "kind": "other",
+      "kind": "early",
       "audience": null,
       "price": 3432000,
       "from": "2026-05-28",
@@ -389,7 +324,7 @@
     {
       "distance": "100km",
       "tier": "Priority",
-      "kind": "other",
+      "kind": "super_early",
       "audience": null,
       "price": 2700000,
       "from": "2025-11-19",
@@ -411,7 +346,7 @@
     {
       "distance": "100km",
       "tier": "Noon",
-      "kind": "other",
+      "kind": "early",
       "audience": null,
       "price": 3960000,
       "from": "2026-05-28",
@@ -620,6 +555,278 @@
       },
       "reason": "5BIB event data states province 'Tỉnh Ninh Bình' (ward Xã Cúc Phương); ActiUp gives only the venue. Province used as city like other provincial races (Ultra Trail Cao Bang). geo kept from the point already stored for this venue (state/geo.json 'vuon quoc gia cuc phuong ninh binh viet nam'), since the new location key has no geo entry yet.",
       "at": "2026-10-13T02:12:57.272Z"
+    },
+    "prices": {
+      "value": [
+        {
+          "distance": "10km",
+          "tier": "Priority",
+          "kind": "super_early",
+          "audience": null,
+          "price": 840000,
+          "from": "2025-11-19",
+          "to": "2026-03-18",
+          "inferred": [],
+          "site": "5bib"
+        },
+        {
+          "distance": "10km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 1050000,
+          "from": "2026-03-19",
+          "to": "2026-05-27",
+          "inferred": [],
+          "site": "5bib"
+        },
+        {
+          "distance": "10km",
+          "tier": "Noon",
+          "kind": "early",
+          "audience": null,
+          "price": 1232000,
+          "from": "2026-05-28",
+          "to": "2026-11-10",
+          "inferred": [],
+          "site": "5bib"
+        },
+        {
+          "distance": "10km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 1400000,
+          "from": "2026-11-11",
+          "to": "2026-12-25",
+          "inferred": [],
+          "site": "5bib"
+        },
+        {
+          "distance": "25km",
+          "tier": "Priority",
+          "kind": "super_early",
+          "audience": null,
+          "price": 1440000,
+          "from": "2025-11-19",
+          "to": "2026-03-18",
+          "inferred": [],
+          "site": "5bib"
+        },
+        {
+          "distance": "25km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 1800000,
+          "from": "2026-03-19",
+          "to": "2026-05-27",
+          "inferred": [],
+          "site": "5bib"
+        },
+        {
+          "distance": "25km",
+          "tier": "Noon",
+          "kind": "early",
+          "audience": null,
+          "price": 2112000,
+          "from": "2026-05-28",
+          "to": "2026-11-10",
+          "inferred": [],
+          "site": "5bib"
+        },
+        {
+          "distance": "25km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 2400000,
+          "from": "2026-11-11",
+          "to": "2026-12-25",
+          "inferred": [],
+          "site": "5bib"
+        },
+        {
+          "distance": "42km",
+          "tier": "Priority",
+          "kind": "super_early",
+          "audience": null,
+          "price": 1920000,
+          "from": "2025-11-19",
+          "to": "2026-03-18",
+          "inferred": [],
+          "site": "5bib"
+        },
+        {
+          "distance": "42km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 2400000,
+          "from": "2026-03-19",
+          "to": "2026-05-27",
+          "inferred": [],
+          "site": "5bib"
+        },
+        {
+          "distance": "42km",
+          "tier": "Noon",
+          "kind": "early",
+          "audience": null,
+          "price": 2816000,
+          "from": "2026-05-28",
+          "to": "2026-11-10",
+          "inferred": [],
+          "site": "5bib"
+        },
+        {
+          "distance": "42km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 3200000,
+          "from": "2026-11-11",
+          "to": "2026-12-25",
+          "inferred": [],
+          "site": "5bib"
+        },
+        {
+          "distance": "75km",
+          "tier": "Priority",
+          "kind": "super_early",
+          "audience": null,
+          "price": 2340000,
+          "from": "2025-11-19",
+          "to": "2026-03-18",
+          "inferred": [],
+          "site": "5bib"
+        },
+        {
+          "distance": "75km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 2925000,
+          "from": "2026-03-19",
+          "to": "2026-05-27",
+          "inferred": [],
+          "site": "5bib"
+        },
+        {
+          "distance": "75km",
+          "tier": "Noon",
+          "kind": "early",
+          "audience": null,
+          "price": 3432000,
+          "from": "2026-05-28",
+          "to": "2026-11-10",
+          "inferred": [],
+          "site": "5bib"
+        },
+        {
+          "distance": "75km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 3900000,
+          "from": "2026-11-11",
+          "to": "2026-12-25",
+          "inferred": [],
+          "site": "5bib"
+        },
+        {
+          "distance": "100km",
+          "tier": "Priority",
+          "kind": "super_early",
+          "audience": null,
+          "price": 2700000,
+          "from": "2025-11-19",
+          "to": "2026-03-18",
+          "inferred": [],
+          "site": "5bib"
+        },
+        {
+          "distance": "100km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 3375000,
+          "from": "2026-03-19",
+          "to": "2026-05-27",
+          "inferred": [],
+          "site": "5bib"
+        },
+        {
+          "distance": "100km",
+          "tier": "Noon",
+          "kind": "early",
+          "audience": null,
+          "price": 3960000,
+          "from": "2026-05-28",
+          "to": "2026-11-10",
+          "inferred": [],
+          "site": "5bib"
+        },
+        {
+          "distance": "100km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 4500000,
+          "from": "2026-11-11",
+          "to": "2026-12-25",
+          "inferred": [],
+          "site": "5bib"
+        }
+      ],
+      "reason": "prices: the 10-15 iRace read added 5 undated 'Giá vé tiêu chuẩn' tiers (the extraction prompt's example value); the live ticket.irace.vn page (fetched 2026-10-17) shows only the current price per course with no tier name and no dates (10km 1.232.000 ... 100km 3.960.000), and has no price image. Those are the 'Noon' prices. Dated tiers come from 5BIB's ticket data (5bib.com/vi/events/cuc-phuong-jungle-paths-2026, re-fetched 2026-10-17): Priority 19/11/2025-18/03/2026, Early Bird 19/03-27/05/2026, Noon 28/05-10/11/2026, Regular 11/11-25/12/2026; organizer racejungle.com product JSON confirms Noon as sale price and Regular as list price (-12%), ActiUp min_price 840000 = Priority. Kinds: Priority super_early, Early Bird and Noon early (Noon is a discounted pre-list phase), Regular regular. ActiUp has no price section. courses: the same iRace read put the prices/1000 into elevationGain (1232, 2112, 2816, 3432, 3960 m); organizer product page and ActiUp route text both say total elevation gain ~200/700/1200/2500/3500 m. edition: the iRace read's editionQuote 'Giải chạy lần thứ 1' is not on the page; 2025 was 'mùa giải thứ 4' (nongnghiepmoitruong.vn) and the organizer speaks of 'mùa giải trước đó', but no source states the 2026 number, so null. mainDate: no source names a main day (26/12 'EXPO/ULTRA RACE DAY', 27/12 'RACE DAY'), the 10-15 read copied date; null.",
+      "at": "2026-10-17T13:14:46.772Z"
+    },
+    "courses": {
+      "value": [
+        {
+          "label": "10km",
+          "meters": 10000,
+          "type": "trail_run",
+          "elevationGain": 200
+        },
+        {
+          "label": "25km",
+          "meters": 25000,
+          "type": "trail_run",
+          "elevationGain": 700
+        },
+        {
+          "label": "42km",
+          "meters": 42195,
+          "type": "trail_run",
+          "elevationGain": 1200
+        },
+        {
+          "label": "75km",
+          "meters": 75000,
+          "type": "trail_run",
+          "elevationGain": 2500
+        },
+        {
+          "label": "100km",
+          "meters": 100000,
+          "type": "trail_run",
+          "elevationGain": 3500
+        }
+      ],
+      "reason": "prices: the 10-15 iRace read added 5 undated 'Giá vé tiêu chuẩn' tiers (the extraction prompt's example value); the live ticket.irace.vn page (fetched 2026-10-17) shows only the current price per course with no tier name and no dates (10km 1.232.000 ... 100km 3.960.000), and has no price image. Those are the 'Noon' prices. Dated tiers come from 5BIB's ticket data (5bib.com/vi/events/cuc-phuong-jungle-paths-2026, re-fetched 2026-10-17): Priority 19/11/2025-18/03/2026, Early Bird 19/03-27/05/2026, Noon 28/05-10/11/2026, Regular 11/11-25/12/2026; organizer racejungle.com product JSON confirms Noon as sale price and Regular as list price (-12%), ActiUp min_price 840000 = Priority. Kinds: Priority super_early, Early Bird and Noon early (Noon is a discounted pre-list phase), Regular regular. ActiUp has no price section. courses: the same iRace read put the prices/1000 into elevationGain (1232, 2112, 2816, 3432, 3960 m); organizer product page and ActiUp route text both say total elevation gain ~200/700/1200/2500/3500 m. edition: the iRace read's editionQuote 'Giải chạy lần thứ 1' is not on the page; 2025 was 'mùa giải thứ 4' (nongnghiepmoitruong.vn) and the organizer speaks of 'mùa giải trước đó', but no source states the 2026 number, so null. mainDate: no source names a main day (26/12 'EXPO/ULTRA RACE DAY', 27/12 'RACE DAY'), the 10-15 read copied date; null.",
+      "at": "2026-10-17T13:14:46.772Z"
+    },
+    "edition": {
+      "value": null,
+      "reason": "prices: the 10-15 iRace read added 5 undated 'Giá vé tiêu chuẩn' tiers (the extraction prompt's example value); the live ticket.irace.vn page (fetched 2026-10-17) shows only the current price per course with no tier name and no dates (10km 1.232.000 ... 100km 3.960.000), and has no price image. Those are the 'Noon' prices. Dated tiers come from 5BIB's ticket data (5bib.com/vi/events/cuc-phuong-jungle-paths-2026, re-fetched 2026-10-17): Priority 19/11/2025-18/03/2026, Early Bird 19/03-27/05/2026, Noon 28/05-10/11/2026, Regular 11/11-25/12/2026; organizer racejungle.com product JSON confirms Noon as sale price and Regular as list price (-12%), ActiUp min_price 840000 = Priority. Kinds: Priority super_early, Early Bird and Noon early (Noon is a discounted pre-list phase), Regular regular. ActiUp has no price section. courses: the same iRace read put the prices/1000 into elevationGain (1232, 2112, 2816, 3432, 3960 m); organizer product page and ActiUp route text both say total elevation gain ~200/700/1200/2500/3500 m. edition: the iRace read's editionQuote 'Giải chạy lần thứ 1' is not on the page; 2025 was 'mùa giải thứ 4' (nongnghiepmoitruong.vn) and the organizer speaks of 'mùa giải trước đó', but no source states the 2026 number, so null. mainDate: no source names a main day (26/12 'EXPO/ULTRA RACE DAY', 27/12 'RACE DAY'), the 10-15 read copied date; null.",
+      "at": "2026-10-17T13:14:46.772Z"
+    },
+    "mainDate": {
+      "value": null,
+      "reason": "prices: the 10-15 iRace read added 5 undated 'Giá vé tiêu chuẩn' tiers (the extraction prompt's example value); the live ticket.irace.vn page (fetched 2026-10-17) shows only the current price per course with no tier name and no dates (10km 1.232.000 ... 100km 3.960.000), and has no price image. Those are the 'Noon' prices. Dated tiers come from 5BIB's ticket data (5bib.com/vi/events/cuc-phuong-jungle-paths-2026, re-fetched 2026-10-17): Priority 19/11/2025-18/03/2026, Early Bird 19/03-27/05/2026, Noon 28/05-10/11/2026, Regular 11/11-25/12/2026; organizer racejungle.com product JSON confirms Noon as sale price and Regular as list price (-12%), ActiUp min_price 840000 = Priority. Kinds: Priority super_early, Early Bird and Noon early (Noon is a discounted pre-list phase), Regular regular. ActiUp has no price section. courses: the same iRace read put the prices/1000 into elevationGain (1232, 2112, 2816, 3432, 3960 m); organizer product page and ActiUp route text both say total elevation gain ~200/700/1200/2500/3500 m. edition: the iRace read's editionQuote 'Giải chạy lần thứ 1' is not on the page; 2025 was 'mùa giải thứ 4' (nongnghiepmoitruong.vn) and the organizer speaks of 'mùa giải trước đó', but no source states the 2026 number, so null. mainDate: no source names a main day (26/12 'EXPO/ULTRA RACE DAY', 27/12 'RACE DAY'), the 10-15 read copied date; null.",
+      "at": "2026-10-17T13:14:46.772Z"
     }
   },
   "sources": [
@@ -1110,5 +1317,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-15T20:31:08.696Z"
+  "updatedAt": "2026-10-17T13:14:46.772Z"
 }

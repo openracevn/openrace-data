@@ -7,11 +7,11 @@
   ],
   "date": "2026-11-06",
   "endDate": "2026-11-08",
-  "mainDate": "2026-11-06",
+  "mainDate": "2026-11-07",
   "seriesId": "lamdong-trail",
   "organizerId": "greenhat",
   "organizer": "GreenHat",
-  "edition": 1,
+  "edition": 4,
   "courses": [
     {
       "label": "5km",
@@ -147,6 +147,83 @@
   "prices": [
     {
       "distance": "85km",
+      "tier": "FLASH SALE",
+      "kind": "other",
+      "audience": null,
+      "price": 1750000,
+      "from": "2026-04-17",
+      "to": "2026-04-21",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "55km",
+      "tier": "FLASH SALE",
+      "kind": "other",
+      "audience": null,
+      "price": 1400000,
+      "from": "2026-04-17",
+      "to": "2026-04-21",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "25km",
+      "tier": "FLASH SALE",
+      "kind": "other",
+      "audience": null,
+      "price": 850000,
+      "from": "2026-04-17",
+      "to": "2026-04-21",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "15km",
+      "tier": "FLASH SALE",
+      "kind": "other",
+      "audience": null,
+      "price": 650000,
+      "from": "2026-04-17",
+      "to": "2026-04-21",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "5km",
+      "tier": "FLASH SALE",
+      "kind": "other",
+      "audience": null,
+      "price": 450000,
+      "from": "2026-04-17",
+      "to": "2026-04-21",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "5km",
+      "tier": "Family Trail Run 5Km (1 Người lớn + 1 Trẻ em) FLASH SALE",
+      "kind": "other",
+      "audience": null,
+      "price": 900000,
+      "from": "2026-04-17",
+      "to": "2026-04-21",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "5km",
+      "tier": "Family Trail Run 5Km (2 người lớn + 1 trẻ em/1 người lớn + 2 trẻ em) FLASH SALE",
+      "kind": "other",
+      "audience": null,
+      "price": 1350000,
+      "from": "2026-04-17",
+      "to": "2026-04-21",
+      "inferred": [],
+      "site": "lamdong-trail"
+    },
+    {
+      "distance": "85km",
       "tier": "REGULAR",
       "kind": "regular",
       "audience": null,
@@ -213,7 +290,7 @@
     },
     {
       "distance": "5km",
-      "tier": "Family Trail Run 5Km (2 Người lớn + 1 Trẻ em hoặc 1 người lớn + 2 Trẻ em) REGULA",
+      "tier": "Family Trail Run 5Km (2 người lớn + 1 trẻ em/1 người lớn + 2 trẻ em) REGULAR",
       "kind": "regular",
       "audience": null,
       "price": 2100000,
@@ -290,7 +367,7 @@
     },
     {
       "distance": "5km",
-      "tier": "Family Trail Run 5Km (2 Người lớn + 1 Trẻ em hoặc 1 người lớn + 2 Trẻ em) LATE C",
+      "tier": "Family Trail Run 5Km (2 người lớn + 1 trẻ em/1 người lớn + 2 trẻ em) LATE COMER",
       "kind": "late",
       "audience": null,
       "price": 2700000,
@@ -602,6 +679,83 @@
       "value": [
         {
           "distance": "85km",
+          "tier": "FLASH SALE",
+          "kind": "other",
+          "audience": null,
+          "price": 1750000,
+          "from": "2026-04-17",
+          "to": "2026-04-21",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "55km",
+          "tier": "FLASH SALE",
+          "kind": "other",
+          "audience": null,
+          "price": 1400000,
+          "from": "2026-04-17",
+          "to": "2026-04-21",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "25km",
+          "tier": "FLASH SALE",
+          "kind": "other",
+          "audience": null,
+          "price": 850000,
+          "from": "2026-04-17",
+          "to": "2026-04-21",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "15km",
+          "tier": "FLASH SALE",
+          "kind": "other",
+          "audience": null,
+          "price": 650000,
+          "from": "2026-04-17",
+          "to": "2026-04-21",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "5km",
+          "tier": "FLASH SALE",
+          "kind": "other",
+          "audience": null,
+          "price": 450000,
+          "from": "2026-04-17",
+          "to": "2026-04-21",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "5km",
+          "tier": "Family Trail Run 5Km (1 Người lớn + 1 Trẻ em) FLASH SALE",
+          "kind": "other",
+          "audience": null,
+          "price": 900000,
+          "from": "2026-04-17",
+          "to": "2026-04-21",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "5km",
+          "tier": "Family Trail Run 5Km (2 người lớn + 1 trẻ em/1 người lớn + 2 trẻ em) FLASH SALE",
+          "kind": "other",
+          "audience": null,
+          "price": 1350000,
+          "from": "2026-04-17",
+          "to": "2026-04-21",
+          "inferred": [],
+          "site": "lamdong-trail"
+        },
+        {
+          "distance": "85km",
           "tier": "REGULAR",
           "kind": "regular",
           "audience": null,
@@ -668,7 +822,7 @@
         },
         {
           "distance": "5km",
-          "tier": "Family Trail Run 5Km (2 Người lớn + 1 Trẻ em hoặc 1 người lớn + 2 Trẻ em) REGULA",
+          "tier": "Family Trail Run 5Km (2 người lớn + 1 trẻ em/1 người lớn + 2 trẻ em) REGULAR",
           "kind": "regular",
           "audience": null,
           "price": 2100000,
@@ -745,7 +899,7 @@
         },
         {
           "distance": "5km",
-          "tier": "Family Trail Run 5Km (2 Người lớn + 1 Trẻ em hoặc 1 người lớn + 2 Trẻ em) LATE C",
+          "tier": "Family Trail Run 5Km (2 người lớn + 1 trẻ em/1 người lớn + 2 trẻ em) LATE COMER",
           "kind": "late",
           "audience": null,
           "price": 2700000,
@@ -953,8 +1107,18 @@
           "site": "irace"
         }
       ],
-      "reason": "ticket.irace.vn/lamdong-trail-2026 (user-supplied): Kid Trail (5Km) Regular tier was missing (750,000 VND, same window as the other Regular-tier entries) — no other source had it either",
-      "at": "2026-09-25T12:18:52.270Z"
+      "reason": "edition: Asia Trail Master race page (https://www.asiatrailmaster.com/1111-lam-dong-trail-vie, fetched 2026-10-17) states 'The 2026 edition has been scheduled for 7 November 2026 ... 4th edition of this Vietnamese event'; the organizer's site states no number ('Sau nhiều mùa tổ chức'), and the 'lần thứ nhất' / 'lần thứ 1' quotes behind edition 1 appear nowhere on lamdongtrail.vn (the 2025 edition was postponed by storms, ATM 2025-11-07). mainDate: organizer schedule image on ActiUp ('Lịch trình sự kiện', pix.actiup.net/2026/06/01/1780297333265355) shows 06.11 as check-in/EXPO only and the 85/55/25/15km starts on 07.11.2026 (5km and Kids Trail on 08.11). prices: existing tiers kept (Early Bird/Regular/Late re-checked against the organizer table at https://web.archive.org/web/20260421193728/https://lamdongtrail.vn/distance/, iRace Wayback 20260512 #personal table and ActiUp's Late Comer price image; all match), and the FLASH SALE 17/04-21/04/2026 tiers added from the organizer's own table in that snapshot (85Km 1,750,000; 55Km 1,400,000; 25Km 850,000; 15Km 650,000; 5Km/5Km Kids Trail 450,000; Family 1 adult + 1 child 900,000; Family 2+1 or 1+2 1,350,000; ActiUp API min_price 450000 agrees). Family 2+1 tier names shortened to fit 80 characters instead of being cut mid-word. Kids Trail = children; Family = adult(s) + child(ren).",
+      "at": "2026-10-17T13:14:46.772Z"
+    },
+    "edition": {
+      "value": 4,
+      "reason": "edition: Asia Trail Master race page (https://www.asiatrailmaster.com/1111-lam-dong-trail-vie, fetched 2026-10-17) states 'The 2026 edition has been scheduled for 7 November 2026 ... 4th edition of this Vietnamese event'; the organizer's site states no number ('Sau nhiều mùa tổ chức'), and the 'lần thứ nhất' / 'lần thứ 1' quotes behind edition 1 appear nowhere on lamdongtrail.vn (the 2025 edition was postponed by storms, ATM 2025-11-07). mainDate: organizer schedule image on ActiUp ('Lịch trình sự kiện', pix.actiup.net/2026/06/01/1780297333265355) shows 06.11 as check-in/EXPO only and the 85/55/25/15km starts on 07.11.2026 (5km and Kids Trail on 08.11). prices: existing tiers kept (Early Bird/Regular/Late re-checked against the organizer table at https://web.archive.org/web/20260421193728/https://lamdongtrail.vn/distance/, iRace Wayback 20260512 #personal table and ActiUp's Late Comer price image; all match), and the FLASH SALE 17/04-21/04/2026 tiers added from the organizer's own table in that snapshot (85Km 1,750,000; 55Km 1,400,000; 25Km 850,000; 15Km 650,000; 5Km/5Km Kids Trail 450,000; Family 1 adult + 1 child 900,000; Family 2+1 or 1+2 1,350,000; ActiUp API min_price 450000 agrees). Family 2+1 tier names shortened to fit 80 characters instead of being cut mid-word. Kids Trail = children; Family = adult(s) + child(ren).",
+      "at": "2026-10-17T13:14:46.772Z"
+    },
+    "mainDate": {
+      "value": "2026-11-07",
+      "reason": "edition: Asia Trail Master race page (https://www.asiatrailmaster.com/1111-lam-dong-trail-vie, fetched 2026-10-17) states 'The 2026 edition has been scheduled for 7 November 2026 ... 4th edition of this Vietnamese event'; the organizer's site states no number ('Sau nhiều mùa tổ chức'), and the 'lần thứ nhất' / 'lần thứ 1' quotes behind edition 1 appear nowhere on lamdongtrail.vn (the 2025 edition was postponed by storms, ATM 2025-11-07). mainDate: organizer schedule image on ActiUp ('Lịch trình sự kiện', pix.actiup.net/2026/06/01/1780297333265355) shows 06.11 as check-in/EXPO only and the 85/55/25/15km starts on 07.11.2026 (5km and Kids Trail on 08.11). prices: existing tiers kept (Early Bird/Regular/Late re-checked against the organizer table at https://web.archive.org/web/20260421193728/https://lamdongtrail.vn/distance/, iRace Wayback 20260512 #personal table and ActiUp's Late Comer price image; all match), and the FLASH SALE 17/04-21/04/2026 tiers added from the organizer's own table in that snapshot (85Km 1,750,000; 55Km 1,400,000; 25Km 850,000; 15Km 650,000; 5Km/5Km Kids Trail 450,000; Family 1 adult + 1 child 900,000; Family 2+1 or 1+2 1,350,000; ActiUp API min_price 450000 agrees). Family 2+1 tier names shortened to fit 80 characters instead of being cut mid-word. Kids Trail = children; Family = adult(s) + child(ren).",
+      "at": "2026-10-17T13:14:46.772Z"
     }
   },
   "sources": [
@@ -1702,5 +1866,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-15T20:36:15.851Z"
+  "updatedAt": "2026-10-17T13:14:46.772Z"
 }

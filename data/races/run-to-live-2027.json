@@ -1,7 +1,7 @@
 {
   "id": "87fc1d38-87d8-4af4-ae3c-abc8958a287d",
   "slug": "run-to-live-2027",
-  "name": "Run To Live 2027",
+  "name": "Giải chạy Run To Live 2027 – Chạy vì cuộc sống tốt đẹp hơn",
   "types": [
     "road_run"
   ],
@@ -34,12 +34,12 @@
   ],
   "location": {
     "venue": "Công viên bờ sông Sài Gòn",
-    "city": "TBU"
+    "city": "TP. Hồ Chí Minh"
   },
   "geo": {
     "lat": 10.7705461,
     "lng": 106.7120693,
-    "source": "nominatim",
+    "source": "manual",
     "precision": "venue",
     "current": {
       "province": "79",
@@ -135,8 +135,8 @@
   "prices": [
     {
       "distance": "5km",
-      "tier": "Super Early Bird",
-      "kind": "super_early",
+      "tier": "Super Fan",
+      "kind": "other",
       "audience": null,
       "price": 395000,
       "from": "2026-05-28",
@@ -146,8 +146,8 @@
     },
     {
       "distance": "5km",
-      "tier": "Early Bird",
-      "kind": "early",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
       "audience": null,
       "price": 715000,
       "from": "2026-05-30",
@@ -157,8 +157,8 @@
     },
     {
       "distance": "5km",
-      "tier": "Regular",
-      "kind": "regular",
+      "tier": "Early Bird",
+      "kind": "early",
       "audience": null,
       "price": 790000,
       "from": "2026-07-01",
@@ -168,8 +168,8 @@
     },
     {
       "distance": "5km",
-      "tier": "Late",
-      "kind": "late",
+      "tier": "Regular",
+      "kind": "regular",
       "audience": null,
       "price": 900000,
       "from": "2026-10-01",
@@ -179,8 +179,8 @@
     },
     {
       "distance": "5km",
-      "tier": "Giá vé tiêu chuẩn",
-      "kind": "regular",
+      "tier": "Late",
+      "kind": "late",
       "audience": null,
       "price": 1045000,
       "from": "2027-01-01",
@@ -190,8 +190,8 @@
     },
     {
       "distance": "10km",
-      "tier": "Super Early Bird",
-      "kind": "super_early",
+      "tier": "Super Fan",
+      "kind": "other",
       "audience": null,
       "price": 435000,
       "from": "2026-05-28",
@@ -201,8 +201,8 @@
     },
     {
       "distance": "10km",
-      "tier": "Early Bird",
-      "kind": "early",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
       "audience": null,
       "price": 790000,
       "from": "2026-05-30",
@@ -212,8 +212,8 @@
     },
     {
       "distance": "10km",
-      "tier": "Regular",
-      "kind": "regular",
+      "tier": "Early Bird",
+      "kind": "early",
       "audience": null,
       "price": 1065000,
       "from": "2026-07-01",
@@ -223,8 +223,8 @@
     },
     {
       "distance": "10km",
-      "tier": "Late",
-      "kind": "late",
+      "tier": "Regular",
+      "kind": "regular",
       "audience": null,
       "price": 1120000,
       "from": "2026-10-01",
@@ -234,8 +234,8 @@
     },
     {
       "distance": "10km",
-      "tier": "Giá vé tiêu chuẩn",
-      "kind": "regular",
+      "tier": "Late",
+      "kind": "late",
       "audience": null,
       "price": 1395000,
       "from": "2027-01-01",
@@ -245,8 +245,8 @@
     },
     {
       "distance": "21km",
-      "tier": "Super Early Bird",
-      "kind": "super_early",
+      "tier": "Super Fan",
+      "kind": "other",
       "audience": null,
       "price": 590000,
       "from": "2026-05-28",
@@ -256,8 +256,8 @@
     },
     {
       "distance": "21km",
-      "tier": "Early Bird",
-      "kind": "early",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
       "audience": null,
       "price": 1075000,
       "from": "2026-05-30",
@@ -267,8 +267,8 @@
     },
     {
       "distance": "21km",
-      "tier": "Regular",
-      "kind": "regular",
+      "tier": "Early Bird",
+      "kind": "early",
       "audience": null,
       "price": 1285000,
       "from": "2026-07-01",
@@ -278,8 +278,8 @@
     },
     {
       "distance": "21km",
-      "tier": "Late",
-      "kind": "late",
+      "tier": "Regular",
+      "kind": "regular",
       "audience": null,
       "price": 1485000,
       "from": "2026-10-01",
@@ -289,8 +289,8 @@
     },
     {
       "distance": "21km",
-      "tier": "Giá vé tiêu chuẩn",
-      "kind": "regular",
+      "tier": "Late",
+      "kind": "late",
       "audience": null,
       "price": 1770000,
       "from": "2027-01-01",
@@ -309,6 +309,21 @@
   ],
   "links": [
     {
+      "url": "https://facebook.com/sharer",
+      "kind": "facebook",
+      "foundOn": "runtolive.vn"
+    },
+    {
+      "url": "http://online.gov.vn/Home/WebDetails/122194",
+      "kind": "other",
+      "foundOn": "runtolive.vn"
+    },
+    {
+      "url": "https://instagram.com/",
+      "kind": "other",
+      "foundOn": "runtolive.vn"
+    },
+    {
       "url": "https://drive.google.com/file/d/1U4JR7slLrfFazqbgBfU9Febj-eI132_O/view",
       "kind": "rules",
       "foundOn": "actiup.net"
@@ -316,7 +331,307 @@
   ],
   "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "edition": {
+      "value": 3,
+      "reason": "runtolive.vn (official, read 2026-10-13). Edition: the 2027 banners uploaded to runtolive.vn/wp-content/uploads/2026/06/anh-cover-fanpage-tam-11.04.png and banner.png read 'RUN TO LV.03 INCOMING' with '11.04.2027' (stated season number 3; 2024 = lần thứ nhất, 2025 = mùa 2). Organizer: site footer 'CÔNG TY CỔ PHẦN MIRACLE ENTERTAINMENT GROUP MST: 0314909438', same operator as editions 1 and 2. Co-organizers for 2027 not stated (Ban tổ chức block is commented out), so none set.",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "organizerId": {
+      "value": "miracle-entertainment-group",
+      "reason": "runtolive.vn (official, read 2026-10-13). Edition: the 2027 banners uploaded to runtolive.vn/wp-content/uploads/2026/06/anh-cover-fanpage-tam-11.04.png and banner.png read 'RUN TO LV.03 INCOMING' with '11.04.2027' (stated season number 3; 2024 = lần thứ nhất, 2025 = mùa 2). Organizer: site footer 'CÔNG TY CỔ PHẦN MIRACLE ENTERTAINMENT GROUP MST: 0314909438', same operator as editions 1 and 2. Co-organizers for 2027 not stated (Ban tổ chức block is commented out), so none set.",
+      "at": "2026-10-13T02:12:57.272Z"
+    },
+    "location": {
+      "value": {
+        "venue": "Công viên bờ sông Sài Gòn",
+        "city": "TP. Hồ Chí Minh"
+      },
+      "reason": "Venue: ActiUp API place 'Công viên bờ sông Sài Gòn' (api.actiup.net/v2/content/events/slug/run-to-live-2027, read 2026-10-17), ActiUp key visual 'RACEDAY 11.04 2027 CÔNG VIÊN BỜ SÔNG SÀI GÒN', and runtolive.vn 2026/06 banners 'RUN TO LV.03 ... 04.2027 CÔNG VIÊN BỜ SÔNG SG'. 'Metropole Thủ Thiêm' on runtolive.vn is the 2024/2025 venue (2024 FAQ, 2025 news teasers). Geo set by hand from the point already stored for 'cong vien bo song sai gon' in state/geo.json (nominatim, venue precision). City 'TBU' was ActiUp's 'Lịch trình sự kiện: TBU' (to be updated) misread as a city. Prices: ActiUp price image pix.actiup.net/2026/10/10/1791619346406614/price-rtl27.png, checked by eye 2026-10-17: SUPER FAN 28.05-30.05.2026 395k/435k/590k; SUPER EARLY BIRD 30.05-30.06.2026 715k/790k/1.075k; EARLY BIRD 01.07-30.09.2026 790k/1.065k/1.285k; REGULAR 01.10-31.12.2026 900k/1.120k/1.485k; LATE 01.01-28.02.2027 1.045k/1.395k/1.770k (5/10/21km). The stored read had every tier name shifted one column (Super Fan stored as Super Early Bird, ..., Late stored as 'Giá vé tiêu chuẩn'); prices and dates were right. ActiUp min_price 900000 = 5km Regular, current on 2026-10-17.",
+      "at": "2026-10-17T13:14:46.772Z"
+    },
+    "geo": {
+      "value": {
+        "lat": 10.7705461,
+        "lng": 106.7120693,
+        "source": "manual",
+        "precision": "venue",
+        "current": {
+          "province": "79",
+          "ward": "27094"
+        },
+        "legacy": {
+          "province": "79",
+          "district": "769",
+          "ward": "27118"
+        },
+        "access": "road",
+        "fromPlaces": {
+          "hcmc": {
+            "km": 4.2,
+            "minutes": 6,
+            "method": "road",
+            "near": true
+          },
+          "ha-noi": {
+            "km": 1495.9,
+            "minutes": 1136,
+            "method": "road",
+            "near": false
+          },
+          "da-nang": {
+            "km": 862.6,
+            "minutes": 652,
+            "method": "road",
+            "near": false
+          },
+          "nha-trang": {
+            "km": 411.3,
+            "minutes": 294,
+            "method": "road",
+            "near": false
+          },
+          "da-lat": {
+            "km": 294.9,
+            "minutes": 222,
+            "method": "road",
+            "near": false
+          },
+          "can-tho": {
+            "km": 172.2,
+            "minutes": 137,
+            "method": "road",
+            "near": false
+          },
+          "hai-phong": {
+            "km": 1530,
+            "minutes": 1161,
+            "method": "road",
+            "near": false
+          },
+          "hue": {
+            "km": 945.3,
+            "minutes": 726,
+            "method": "road",
+            "near": false
+          },
+          "vung-tau": {
+            "km": 94.3,
+            "minutes": 87,
+            "method": "road",
+            "near": false
+          },
+          "quy-nhon": {
+            "km": 617.2,
+            "minutes": 457,
+            "method": "road",
+            "near": false
+          },
+          "buon-ma-thuot": {
+            "km": 358.6,
+            "minutes": 263,
+            "method": "road",
+            "near": false
+          },
+          "sa-pa": {
+            "km": 1803.6,
+            "minutes": 1369,
+            "method": "road",
+            "near": false
+          },
+          "ha-long": {
+            "km": 1579.7,
+            "minutes": 1193,
+            "method": "road",
+            "near": false
+          }
+        }
+      },
+      "reason": "Venue: ActiUp API place 'Công viên bờ sông Sài Gòn' (api.actiup.net/v2/content/events/slug/run-to-live-2027, read 2026-10-17), ActiUp key visual 'RACEDAY 11.04 2027 CÔNG VIÊN BỜ SÔNG SÀI GÒN', and runtolive.vn 2026/06 banners 'RUN TO LV.03 ... 04.2027 CÔNG VIÊN BỜ SÔNG SG'. 'Metropole Thủ Thiêm' on runtolive.vn is the 2024/2025 venue (2024 FAQ, 2025 news teasers). Geo set by hand from the point already stored for 'cong vien bo song sai gon' in state/geo.json (nominatim, venue precision). City 'TBU' was ActiUp's 'Lịch trình sự kiện: TBU' (to be updated) misread as a city. Prices: ActiUp price image pix.actiup.net/2026/10/10/1791619346406614/price-rtl27.png, checked by eye 2026-10-17: SUPER FAN 28.05-30.05.2026 395k/435k/590k; SUPER EARLY BIRD 30.05-30.06.2026 715k/790k/1.075k; EARLY BIRD 01.07-30.09.2026 790k/1.065k/1.285k; REGULAR 01.10-31.12.2026 900k/1.120k/1.485k; LATE 01.01-28.02.2027 1.045k/1.395k/1.770k (5/10/21km). The stored read had every tier name shifted one column (Super Fan stored as Super Early Bird, ..., Late stored as 'Giá vé tiêu chuẩn'); prices and dates were right. ActiUp min_price 900000 = 5km Regular, current on 2026-10-17.",
+      "at": "2026-10-17T13:14:46.772Z"
+    },
+    "prices": {
+      "value": [
+        {
+          "distance": "5km",
+          "tier": "Super Fan",
+          "kind": "other",
+          "audience": null,
+          "price": 395000,
+          "from": "2026-05-28",
+          "to": "2026-05-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "5km",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 715000,
+          "from": "2026-05-30",
+          "to": "2026-06-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "5km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 790000,
+          "from": "2026-07-01",
+          "to": "2026-09-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "5km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 900000,
+          "from": "2026-10-01",
+          "to": "2026-12-31",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "5km",
+          "tier": "Late",
+          "kind": "late",
+          "audience": null,
+          "price": 1045000,
+          "from": "2027-01-01",
+          "to": "2027-02-28",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "10km",
+          "tier": "Super Fan",
+          "kind": "other",
+          "audience": null,
+          "price": 435000,
+          "from": "2026-05-28",
+          "to": "2026-05-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "10km",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 790000,
+          "from": "2026-05-30",
+          "to": "2026-06-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "10km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 1065000,
+          "from": "2026-07-01",
+          "to": "2026-09-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "10km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 1120000,
+          "from": "2026-10-01",
+          "to": "2026-12-31",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "10km",
+          "tier": "Late",
+          "kind": "late",
+          "audience": null,
+          "price": 1395000,
+          "from": "2027-01-01",
+          "to": "2027-02-28",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "21km",
+          "tier": "Super Fan",
+          "kind": "other",
+          "audience": null,
+          "price": 590000,
+          "from": "2026-05-28",
+          "to": "2026-05-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "21km",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 1075000,
+          "from": "2026-05-30",
+          "to": "2026-06-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "21km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 1285000,
+          "from": "2026-07-01",
+          "to": "2026-09-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "21km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 1485000,
+          "from": "2026-10-01",
+          "to": "2026-12-31",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "21km",
+          "tier": "Late",
+          "kind": "late",
+          "audience": null,
+          "price": 1770000,
+          "from": "2027-01-01",
+          "to": "2027-02-28",
+          "inferred": [],
+          "site": "actiup"
+        }
+      ],
+      "reason": "Venue: ActiUp API place 'Công viên bờ sông Sài Gòn' (api.actiup.net/v2/content/events/slug/run-to-live-2027, read 2026-10-17), ActiUp key visual 'RACEDAY 11.04 2027 CÔNG VIÊN BỜ SÔNG SÀI GÒN', and runtolive.vn 2026/06 banners 'RUN TO LV.03 ... 04.2027 CÔNG VIÊN BỜ SÔNG SG'. 'Metropole Thủ Thiêm' on runtolive.vn is the 2024/2025 venue (2024 FAQ, 2025 news teasers). Geo set by hand from the point already stored for 'cong vien bo song sai gon' in state/geo.json (nominatim, venue precision). City 'TBU' was ActiUp's 'Lịch trình sự kiện: TBU' (to be updated) misread as a city. Prices: ActiUp price image pix.actiup.net/2026/10/10/1791619346406614/price-rtl27.png, checked by eye 2026-10-17: SUPER FAN 28.05-30.05.2026 395k/435k/590k; SUPER EARLY BIRD 30.05-30.06.2026 715k/790k/1.075k; EARLY BIRD 01.07-30.09.2026 790k/1.065k/1.285k; REGULAR 01.10-31.12.2026 900k/1.120k/1.485k; LATE 01.01-28.02.2027 1.045k/1.395k/1.770k (5/10/21km). The stored read had every tier name shifted one column (Super Fan stored as Super Early Bird, ..., Late stored as 'Giá vé tiêu chuẩn'); prices and dates were right. ActiUp min_price 900000 = 5km Regular, current on 2026-10-17.",
+      "at": "2026-10-17T13:14:46.772Z"
+    },
+    "participants": {
+      "value": null,
+      "reason": "Venue: ActiUp API place 'Công viên bờ sông Sài Gòn' (api.actiup.net/v2/content/events/slug/run-to-live-2027, read 2026-10-17), ActiUp key visual 'RACEDAY 11.04 2027 CÔNG VIÊN BỜ SÔNG SÀI GÒN', and runtolive.vn 2026/06 banners 'RUN TO LV.03 ... 04.2027 CÔNG VIÊN BỜ SÔNG SG'. 'Metropole Thủ Thiêm' on runtolive.vn is the 2024/2025 venue (2024 FAQ, 2025 news teasers). Geo set by hand from the point already stored for 'cong vien bo song sai gon' in state/geo.json (nominatim, venue precision). Prices: the only tier ('21km Elite 1.400.000đ, 03/05-06/05') is the hidden 'update Elite 1.400.000đ 699.000đ -50%' racekit upgrade from the 2024/2025 template (dates are 03-06 May 2024), not a 2027 entry fee; runtolive.vn sells nothing yet (EAR/REG/LATE 'SẮP BÁN'); the 2027 tiers are on ActiUp (duplicate record run-to-live-2027). Participants: 'Gần 7.000 vận động viên' is the 2024 season-1 recap teaser ('7049 VDV- SEASON 1'), not a 2027 count; race is upcoming. Organizer: ActiUp merchant 'Miracle Entertainment Group' and runtolive.vn footer 'CÔNG TY CỔ PHẦN MIRACLE ENTERTAINMENT GROUP'.",
+      "at": "2026-10-17T13:14:46.772Z"
+    },
+    "organizer": {
+      "value": "Miracle Entertainment Group",
+      "reason": "Venue: ActiUp API place 'Công viên bờ sông Sài Gòn' (api.actiup.net/v2/content/events/slug/run-to-live-2027, read 2026-10-17), ActiUp key visual 'RACEDAY 11.04 2027 CÔNG VIÊN BỜ SÔNG SÀI GÒN', and runtolive.vn 2026/06 banners 'RUN TO LV.03 ... 04.2027 CÔNG VIÊN BỜ SÔNG SG'. 'Metropole Thủ Thiêm' on runtolive.vn is the 2024/2025 venue (2024 FAQ, 2025 news teasers). Geo set by hand from the point already stored for 'cong vien bo song sai gon' in state/geo.json (nominatim, venue precision). Prices: the only tier ('21km Elite 1.400.000đ, 03/05-06/05') is the hidden 'update Elite 1.400.000đ 699.000đ -50%' racekit upgrade from the 2024/2025 template (dates are 03-06 May 2024), not a 2027 entry fee; runtolive.vn sells nothing yet (EAR/REG/LATE 'SẮP BÁN'); the 2027 tiers are on ActiUp (duplicate record run-to-live-2027). Participants: 'Gần 7.000 vận động viên' is the 2024 season-1 recap teaser ('7049 VDV- SEASON 1'), not a 2027 count; race is upcoming. Organizer: ActiUp merchant 'Miracle Entertainment Group' and runtolive.vn footer 'CÔNG TY CỔ PHẦN MIRACLE ENTERTAINMENT GROUP'.",
+      "at": "2026-10-17T13:14:46.772Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -540,9 +855,173 @@
           }
         ]
       }
+    },
+    {
+      "site": "run-to-live",
+      "role": "official",
+      "url": "https://runtolive.vn/",
+      "lastCheckedAt": "2026-10-15T20:36:29.236Z",
+      "lastChangedAt": "2026-09-25T05:01:22.419Z",
+      "extracted": {
+        "pages": [
+          {
+            "url": "https://runtolive.vn/",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Giải chạy Run To Live 2027 – Chạy vì cuộc sống tốt đẹp hơn",
+              "date": "2027-04-11",
+              "endDate": "2027-04-11",
+              "mainDate": "2027-04-11",
+              "distances": [
+                "21km",
+                "10km",
+                "5km"
+              ],
+              "courses": [
+                {
+                  "distance": "21km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "5km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 2027,
+              "editionQuote": "Mùa giải 2027 này",
+              "mapsUrl": "https://goo.gl/maps/4yZ4HkUtk8y",
+              "venue": "Metropole Thủ Thiêm",
+              "city": "TP. Thủ Đức",
+              "organizer": "Run To Live",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 7000,
+                "quote": "Gần 7.000 vận động viên"
+              },
+              "prices": [
+                {
+                  "distance": "21km",
+                  "tier": "Elite",
+                  "audience": "Individual",
+                  "from": "03/05",
+                  "to": "06/05",
+                  "price": 1400000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Super Early Bird",
+                  "audience": "Individual",
+                  "from": "03/05/2024",
+                  "to": "06/05/2024",
+                  "price": 699000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Super Early Bird",
+                  "audience": "Individual",
+                  "from": "03/05/2024",
+                  "to": "06/05/2024",
+                  "price": 699000
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://runtolive.vn/chinh-sach-doi-cu-ly/",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Giải chạy Run To Live 2027 – Chạy vì cuộc sống tốt đẹp hơn",
+              "date": "2027-11-21",
+              "endDate": "2027-11-22",
+              "mainDate": "2027-11-21",
+              "distances": [
+                "21KM"
+              ],
+              "courses": [
+                {
+                  "distance": "21KM",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 2027,
+              "editionQuote": "Giải chạy Run To Live 2027",
+              "mapsUrl": "https://runtolive.vn/",
+              "venue": "Metropole Thủ Thiêm",
+              "city": "TP. Thủ Đức",
+              "organizer": "Ban tổ chức",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 7000,
+                "quote": "Run To Live thu hút gần 7.000 vận động viên"
+              },
+              "prices": []
+            }
+          },
+          {
+            "url": "https://runtolive.vn/mua-ve/?event_id=25",
+            "json": {
+              "pageKind": "none",
+              "types": [],
+              "name": "",
+              "date": "",
+              "endDate": "",
+              "mainDate": "",
+              "distances": [],
+              "courses": [],
+              "edition": 0,
+              "editionQuote": "",
+              "mapsUrl": "",
+              "venue": "",
+              "city": "",
+              "organizer": "",
+              "currency": "",
+              "registrationStatus": "closed",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": []
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "http://online.gov.vn/Home/WebDetails/122194?AspxAutoDetectCookieSupport=1",
+            "text": ""
+          },
+          {
+            "url": "https://www.facebook.com/sharer?u=https://runtolive.vn/chinh-sach-doi-cu-ly/",
+            "text": ""
+          },
+          {
+            "url": "https://www.instagram.com/?url=https://runtolive.vn/chinh-sach-doi-cu-ly/",
+            "text": ""
+          }
+        ],
+        "series": {
+          "id": "run-to-live",
+          "name": "Run To Live"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-10-13T07:09:05.682Z",
-  "updatedAt": "2026-10-15T20:26:01.820Z"
+  "updatedAt": "2026-10-17T13:14:46.772Z"
 }

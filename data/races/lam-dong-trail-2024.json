@@ -7,10 +7,11 @@
   ],
   "date": "2024-11-08",
   "endDate": "2024-11-10",
+  "mainDate": null,
   "seriesId": "lamdong-trail",
   "organizerId": "greenhat",
   "organizer": "GreenHat",
-  "edition": null,
+  "edition": 3,
   "courses": [
     {
       "label": "5km",
@@ -424,6 +425,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "seriesId": {
@@ -743,6 +745,11 @@
       ],
       "reason": "ActiUp ticket price image (pix.raceez.com/2024/09/12/content_actiup_1description_vi, found via ActiUp's own public content API GET api.actiup.net/v2/content/events/slug/lam-dong-trail-2024, no Firecrawl needed): Super Early Bird/Early Bird/Regular/Late Comer tiers with explicit date windows; Regular-tier prices cross-checked and matched lamdongtrail.vn's own 20/05/2024 promo blog post exactly",
       "at": "2026-09-25T08:23:14.293Z"
+    },
+    "edition": {
+      "value": 3,
+      "reason": "Asia Trail Master 2024-11-06 (https://asiatrailmaster.com/news/2024/11/6/lam-dong-trail): 'continues this weekend with the 3rd edition of Lam Dong Trail in Dalat, Vietnam'.",
+      "at": "2026-10-17T13:14:46.772Z"
     }
   },
   "sources": [
@@ -777,5 +784,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-25T08:23:14.293Z"
+  "updatedAt": "2026-10-17T13:14:46.772Z"
 }

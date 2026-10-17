@@ -10,7 +10,7 @@
   "mainDate": "2026-11-15",
   "seriesId": "giai-marathon-ca-mau-cup-petrovietnam",
   "organizerId": "vietrace365",
-  "organizer": "VIETRACE365",
+  "organizer": "VietRace365 | Ban tổ chức sự kiện",
   "edition": 6,
   "courses": [
     {
@@ -147,199 +147,183 @@
   "prices": [
     {
       "distance": "5km",
-      "tier": "Giá vé tiêu chuẩn",
-      "kind": "regular",
-      "audience": "resident",
+      "tier": "Vé hời Live Stream",
+      "kind": "other",
+      "audience": null,
       "price": 250000,
-      "from": null,
-      "to": "2026-11-15",
-      "inferred": [
-        "to"
-      ],
+      "from": "2026-07-30",
+      "to": "2026-07-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "5km",
-      "tier": "Giá vé tiêu chuẩn",
-      "kind": "regular",
-      "audience": "non_resident",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
       "price": 368000,
-      "from": null,
-      "to": null,
+      "from": "2026-07-30",
+      "to": "2026-08-31",
       "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "5km",
-      "tier": "Giá vé tiêu chuẩn",
-      "kind": "regular",
-      "audience": "non_resident",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
       "price": 468000,
-      "from": null,
-      "to": null,
+      "from": "2026-09-01",
+      "to": "2026-09-30",
       "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "5km",
-      "tier": "Giá vé tiêu chuẩn",
+      "tier": "Regular",
       "kind": "regular",
-      "audience": "non_resident",
+      "audience": null,
       "price": 568000,
-      "from": null,
-      "to": "2026-11-15",
-      "inferred": [
-        "to"
-      ],
+      "from": "2026-10-01",
+      "to": "2026-10-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "10km",
-      "tier": "Giá vé tiêu chuẩn",
-      "kind": "regular",
-      "audience": "resident",
+      "tier": "Vé hời Live Stream",
+      "kind": "other",
+      "audience": null,
       "price": 250000,
-      "from": null,
-      "to": "2026-11-15",
-      "inferred": [
-        "to"
-      ],
+      "from": "2026-07-30",
+      "to": "2026-07-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "10km",
-      "tier": "Giá vé tiêu chuẩn",
-      "kind": "regular",
-      "audience": "non_resident",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
       "price": 468000,
-      "from": null,
-      "to": null,
+      "from": "2026-07-30",
+      "to": "2026-08-31",
       "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "10km",
-      "tier": "Giá vé tiêu chuẩn",
-      "kind": "regular",
-      "audience": "non_resident",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
       "price": 568000,
-      "from": null,
-      "to": null,
+      "from": "2026-09-01",
+      "to": "2026-09-30",
       "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "10km",
-      "tier": "Giá vé tiêu chuẩn",
+      "tier": "Regular",
       "kind": "regular",
-      "audience": "non_resident",
+      "audience": null,
       "price": 768000,
-      "from": null,
-      "to": "2026-11-15",
-      "inferred": [
-        "to"
-      ],
+      "from": "2026-10-01",
+      "to": "2026-10-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "21km",
-      "tier": "Giá vé tiêu chuẩn",
-      "kind": "regular",
-      "audience": "resident",
+      "tier": "Vé hời Live Stream",
+      "kind": "other",
+      "audience": null,
       "price": 370000,
-      "from": null,
-      "to": "2026-11-15",
-      "inferred": [
-        "to"
-      ],
+      "from": "2026-07-30",
+      "to": "2026-07-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "21km",
-      "tier": "Giá vé tiêu chuẩn",
-      "kind": "regular",
-      "audience": "non_resident",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
       "price": 568000,
-      "from": null,
-      "to": null,
+      "from": "2026-07-30",
+      "to": "2026-08-31",
       "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "21km",
-      "tier": "Giá vé tiêu chuẩn",
-      "kind": "regular",
-      "audience": "non_resident",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
       "price": 768000,
-      "from": null,
-      "to": null,
+      "from": "2026-09-01",
+      "to": "2026-09-30",
       "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "21km",
-      "tier": "Giá vé tiêu chuẩn",
+      "tier": "Regular",
       "kind": "regular",
-      "audience": "non_resident",
+      "audience": null,
       "price": 968000,
-      "from": null,
-      "to": "2026-11-15",
-      "inferred": [
-        "to"
-      ],
+      "from": "2026-10-01",
+      "to": "2026-10-15",
+      "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "42km",
-      "tier": "Giá vé tiêu chuẩn",
-      "kind": "regular",
-      "audience": "resident",
+      "tier": "Vé hời Live Stream",
+      "kind": "other",
+      "audience": null,
       "price": 450000,
-      "from": null,
-      "to": "2026-11-15",
-      "inferred": [
-        "to"
-      ],
+      "from": "2026-07-30",
+      "to": "2026-07-30",
+      "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "42km",
-      "tier": "Giá vé tiêu chuẩn",
-      "kind": "regular",
-      "audience": "non_resident",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
       "price": 668000,
-      "from": null,
-      "to": null,
+      "from": "2026-07-30",
+      "to": "2026-08-31",
       "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "42km",
-      "tier": "Giá vé tiêu chuẩn",
-      "kind": "regular",
-      "audience": "non_resident",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
       "price": 868000,
-      "from": null,
-      "to": null,
+      "from": "2026-09-01",
+      "to": "2026-09-30",
       "inferred": [],
       "site": "actiup"
     },
     {
       "distance": "42km",
-      "tier": "Giá vé tiêu chuẩn",
+      "tier": "Regular",
       "kind": "regular",
-      "audience": "non_resident",
+      "audience": null,
       "price": 1068000,
-      "from": null,
-      "to": "2026-11-15",
-      "inferred": [
-        "to"
-      ],
+      "from": "2026-10-01",
+      "to": "2026-10-15",
+      "inferred": [],
       "site": "actiup"
     }
   ],
   "currency": "VND",
-  "registrationStatus": "open",
+  "registrationStatus": "closed",
   "registrations": [
     {
       "site": "irace",
@@ -532,6 +516,193 @@
       },
       "reason": "edition: camaumarathon.com (organizer) and ticket.irace.vn state 'mùa giải năm thứ sáu' / 'sáu mùa liên tiếp' (iRace copy ends with a typo 'Mùa giải thứ tư'; organizer page says 'Mùa giải thứ sáu'). Days: organizer 'Ngày 14,15/11/2026'; VTC News ar1039261: 2km family run starts 14/11 16h, 42/21/10/5km on 15/11 from 3h30. City: venue is in Tỉnh Cà Mau (organizer site, iRace, ActiUp). Venue unchanged. Geo: city added changes the geo cache key, so the point already stored for this same venue (nominatim, 9.2913779,105.7255311) is kept by hand.",
       "at": "2026-10-13T02:12:57.272Z"
+    },
+    "prices": {
+      "value": [
+        {
+          "distance": "5km",
+          "tier": "Vé hời Live Stream",
+          "kind": "other",
+          "audience": null,
+          "price": 250000,
+          "from": "2026-07-30",
+          "to": "2026-07-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "5km",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 368000,
+          "from": "2026-07-30",
+          "to": "2026-08-31",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "5km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 468000,
+          "from": "2026-09-01",
+          "to": "2026-09-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "5km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 568000,
+          "from": "2026-10-01",
+          "to": "2026-10-15",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "10km",
+          "tier": "Vé hời Live Stream",
+          "kind": "other",
+          "audience": null,
+          "price": 250000,
+          "from": "2026-07-30",
+          "to": "2026-07-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "10km",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 468000,
+          "from": "2026-07-30",
+          "to": "2026-08-31",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "10km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 568000,
+          "from": "2026-09-01",
+          "to": "2026-09-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "10km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 768000,
+          "from": "2026-10-01",
+          "to": "2026-10-15",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "21km",
+          "tier": "Vé hời Live Stream",
+          "kind": "other",
+          "audience": null,
+          "price": 370000,
+          "from": "2026-07-30",
+          "to": "2026-07-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "21km",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 568000,
+          "from": "2026-07-30",
+          "to": "2026-08-31",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "21km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 768000,
+          "from": "2026-09-01",
+          "to": "2026-09-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "21km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 968000,
+          "from": "2026-10-01",
+          "to": "2026-10-15",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "42km",
+          "tier": "Vé hời Live Stream",
+          "kind": "other",
+          "audience": null,
+          "price": 450000,
+          "from": "2026-07-30",
+          "to": "2026-07-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "42km",
+          "tier": "Super Early Bird",
+          "kind": "super_early",
+          "audience": null,
+          "price": 668000,
+          "from": "2026-07-30",
+          "to": "2026-08-31",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "42km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 868000,
+          "from": "2026-09-01",
+          "to": "2026-09-30",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "42km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 1068000,
+          "from": "2026-10-01",
+          "to": "2026-10-15",
+          "inferred": [],
+          "site": "actiup"
+        }
+      ],
+      "reason": "prices: the price image (ActiUp pix.actiup.net/2026/08/07/.../bảng-giá-vé-cập-nhật-07082026.jpg, same image on ticket.irace.vn as irace.vn/wp-content/uploads/2026/08/bang-gia-ve-cap-nhat-07082026.webp) and the organizer's own text table on camaumarathon.com both have 4 phase columns, no resident/foreign split: 'VÉ HỜI LIVE STREAM 19H00 - 30.07.2026' 250k/250k/370k/450k, 'SUPER EARLY BIRD 30.07.2026 - 31.08.2026' 368k/468k/568k/668k, 'EARLY BIRD 01.09.2026 - 30.09.2026' 468k/568k/768k/868k, 'REGULAR 01.10.2026 - 15.10.2026' 568k/768k/968k/1,068k for 5/10/21/42KM (VAT included). The 2026-10-16 ActiUp image read (commit 5ae2637) labelled them 'Giá vé tiêu chuẩn' with audience Việt Nam / Nước ngoài x3 and no dates. 2KM is '0 VND' on the organizer site only (template value), left out. registrationStatus: ticket.irace.vn shows 'Đóng đăng ký' and 'Sự kiện đã đóng đăng ký.' (fetched 2026-10-17); ActiUp API selling_type 'sold_out'; Regular sale ended 15/10/2026. The 2026-10-17 iRace page read returned 'open' despite the closed tag.",
+      "at": "2026-10-17T13:14:46.772Z"
+    },
+    "registrationStatus": {
+      "value": "closed",
+      "reason": "prices: the price image (ActiUp pix.actiup.net/2026/08/07/.../bảng-giá-vé-cập-nhật-07082026.jpg, same image on ticket.irace.vn as irace.vn/wp-content/uploads/2026/08/bang-gia-ve-cap-nhat-07082026.webp) and the organizer's own text table on camaumarathon.com both have 4 phase columns, no resident/foreign split: 'VÉ HỜI LIVE STREAM 19H00 - 30.07.2026' 250k/250k/370k/450k, 'SUPER EARLY BIRD 30.07.2026 - 31.08.2026' 368k/468k/568k/668k, 'EARLY BIRD 01.09.2026 - 30.09.2026' 468k/568k/768k/868k, 'REGULAR 01.10.2026 - 15.10.2026' 568k/768k/968k/1,068k for 5/10/21/42KM (VAT included). The 2026-10-16 ActiUp image read (commit 5ae2637) labelled them 'Giá vé tiêu chuẩn' with audience Việt Nam / Nước ngoài x3 and no dates. 2KM is '0 VND' on the organizer site only (template value), left out. registrationStatus: ticket.irace.vn shows 'Đóng đăng ký' and 'Sự kiện đã đóng đăng ký.' (fetched 2026-10-17); ActiUp API selling_type 'sold_out'; Regular sale ended 15/10/2026. The 2026-10-17 iRace page read returned 'open' despite the closed tag.",
+      "at": "2026-10-17T13:14:46.772Z"
     }
   },
   "sources": [
@@ -971,5 +1142,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-16T21:02:35.942Z"
+  "updatedAt": "2026-10-17T13:14:46.772Z"
 }

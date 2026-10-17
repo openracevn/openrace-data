@@ -11,7 +11,7 @@
   "seriesId": "lamdong-trail",
   "organizerId": null,
   "organizer": null,
-  "edition": null,
+  "edition": 2,
   "courses": [
     {
       "label": "5km",
@@ -869,6 +869,11 @@
       ],
       "reason": "iRace ticket price image (app.irace.vn/lam-dong-trail-2023, wp-content/uploads/2023/03/gia-ve.png, fetched via Wayback+Firecrawl JS render to find the image URL, then read directly): Super Early Bird/Early Bird/Regular/Late/Onsite tiers with explicit date windows",
       "at": "2026-09-25T08:23:00.169Z"
+    },
+    "edition": {
+      "value": 2,
+      "reason": "TTC Group (venue owner) article https://www.ttcgroup.vn/en-US/business-sectors/hospitality/other-news-3/lam-dong-trail-2023-run-for-130-years-of-building-and-developing-da-lat: 'Lam Dong Trail Second Season 2023'; ATM 2024-11-06 says Quang Tran was 'winner of the previous two editions'.",
+      "at": "2026-10-17T13:14:46.772Z"
     }
   },
   "sources": [
@@ -902,5 +907,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T08:03:04.937Z",
-  "updatedAt": "2026-09-28T14:36:25.648Z"
+  "updatedAt": "2026-10-17T13:14:46.772Z"
 }
