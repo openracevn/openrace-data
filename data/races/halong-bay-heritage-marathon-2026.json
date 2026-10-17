@@ -39,8 +39,8 @@
     }
   ],
   "location": {
-    "venue": "Vịnh Hạ Long, tỉnh Quảng Ninh",
-    "city": "Hạ Long"
+    "venue": "thành phố Hạ Long, tỉnh Quảng Ninh",
+    "city": "Quảng Ninh"
   },
   "geo": {
     "lat": 20.9517,
@@ -1923,6 +1923,14 @@
       },
       "reason": "Prices: halongmarathon.com price images checked by eye 2026-10-17 (wp-content/uploads/2026/03/BANG-GIA-EB-HBHM.png Early Bird 16/03-31/05/2026; 2026/06/z7887359797734_...jpg Standard 1/6-31/8/2026; 2026/09/Bang-gia-HBHMM-late-online-01.png Late Online 1/9-15/10/2026, 'Giá công bố' = full price; group 5/10/20 discount columns); the page's text table dated 2024 (750k...2.375M) is a 2024 leftover, not 2026. iRace/ActiUp tiers kept as stored. Edition: VOV 2026-08-02 (vov.vn/du-lich/...-post1320602.vov) 'Năm 2026 là năm thứ 11 giải chạy tổ chức tại Hạ Long, Quảng Ninh'; the trial's edition 2 came from 'giữ Nhãn Thế giới năm thứ hai' (2nd year holding the World Athletics Label), not an edition. Geo: point already stored for this race's venue 'thành phố Hạ Long, tỉnh Quảng Ninh' (geo.json key 'thanh pho ha long tinh quang ninh | quang ninh'); lost when city changed to Hạ Long. Ages: 5km 5+, 10km 12+, 21km 16+, 42km 18+ (iRace).",
       "at": "2026-10-17T13:14:46.772Z"
+    },
+    "location": {
+      "value": {
+        "venue": "thành phố Hạ Long, tỉnh Quảng Ninh",
+        "city": "Quảng Ninh"
+      },
+      "reason": "halongmarathon.com (saved 2026-10-17 in .agent-read-archive/2026-10-17-halong-heritage-2026) says 'thành phố Hạ Long, tỉnh Quảng Ninh'; the 10-16 trial read 'Vịnh Hạ Long' from the site's tourism blurb",
+      "at": "2026-10-17T13:16:08.085Z"
     }
   },
   "sources": [
@@ -2814,5 +2822,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-17T13:14:46.772Z"
+  "updatedAt": "2026-10-17T13:16:08.085Z"
 }
