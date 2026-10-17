@@ -205,7 +205,8 @@ export const iraceRecipe: Recipe = {
     const event = readEventLd(html);
     const venue = str(first(event?.location)?.name);
     const organizer = first(event?.organizer);
-    const organizerName = str(organizer?.name);
+    // The organizer's name is its profile page's title on ticket.irace.vn: "VietRace365  | Ban tổ chức sự kiện".
+    const organizerName = str(organizer?.name?.split(" | ")[0]);
     const organizerSlug = organizer?.url?.match(/\/organizers\/([a-z0-9-]+)/)?.[1];
 
     const m = ref.url.match(RACE_PAGE);

@@ -159,9 +159,9 @@ describe("irace recipe", () => {
     assert.deepEqual(facts, {
       name: "Giải chạy Lâm Đồng Trail 2026",
       venue: "TTC World - Thung Lũng Tình Yêu, số 03-05-07 đường Mai Anh Đào, phường Lâm Viên, Tp. Đà Lạt, Lâm Đồng",
-      organizer: "GreenHat | Ban tổ chức sự kiện",
+      organizer: "GreenHat",
     });
-    assert.deepEqual(snap.hints, { organizer: { id: "greenhat", name: "GreenHat | Ban tổ chức sự kiện" } });
+    assert.deepEqual(snap.hints, { organizer: { id: "greenhat", name: "GreenHat" } });
     assert.equal(snap.slugHint, "lamdong-trail-2026");
     assert.deepEqual(snap.priceImages, []);
     const html = snap.pages[0]!.html;
