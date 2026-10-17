@@ -7,8 +7,9 @@ name: Main
 # would not). Pushes that only touch the check log are skipped entirely.
 # Run it by hand (Actions tab → Main → Run workflow) to resync the API without a
 # commit: it validates main, then calls the API (no Discord message).
-# No cron since plan 027: pushes start it, and a failed sync says so in Discord (run it
-# by hand to catch up). Unchanged files cost the API nothing.
+# No cron since plan 027: pushes start it. The resync retries a 5xx for about 7.5 minutes;
+# a failed sync says so in Discord, and Schedule 2 runs Main again the next morning if
+# it is still red (or run it by hand to catch up). Unchanged files cost the API nothing.
 # One job on purpose: every job bills at least a minute and reinstalls dependencies,
 # and data pushes are frequent. Typecheck and unit tests are skipped when a push
 # only touched data/.
@@ -88,6 +89,6 @@ jobs:
           SHA: ${{ github.sha }}
         run: |
           [[ -n "$DISCORD_WEBHOOK_URL" ]] || exit 0
-          msg=":red_circle: **Main failed** on \`main\` (${EVENT}, ${SHA:0:7}): validate or the API resync didn't pass. ${RUN_URL}"
+          msg=":red_circle: **Main failed** on \`main\` (${EVENT}, ${SHA:0:7}): validate or the API resync didn't pass (a failed resync is retried by tomorrow's Schedule 2). ${RUN_URL}"
           jq -n --arg content "$msg" '{content: $content}' |
             curl -fsS -X POST -H 'Content-Type: application/json' --data @- "$DISCORD_WEBHOOK_URL"

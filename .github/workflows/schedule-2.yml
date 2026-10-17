@@ -36,7 +36,7 @@ concurrency:
 
 permissions:
   contents: read
-  actions: read
+  actions: write # rebuild-web runs Main again when the last API resync failed
 
 jobs:
   details:
@@ -114,12 +114,25 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
         run: |
-          for _ in $(seq 1 40); do
-            busy=$(gh run list -R "$REPO" -w main.yml -L 10 --json status -q '[.[] | select(.status != "completed")] | length')
-            [[ "$busy" == "0" ]] && exit 0
-            sleep 30
-          done
-          echo "Main still running after 20 minutes; rebuilding anyway"
+          wait_main() {
+            for _ in $(seq 1 40); do
+              busy=$(gh run list -R "$REPO" -w main.yml -L 10 --json status -q '[.[] | select(.status != "completed")] | length')
+              [[ "$busy" == "0" ]] && return 0
+              sleep 30
+            done
+            echo "Main still running after 20 minutes; rebuilding anyway"
+            return 1
+          }
+          wait_main || exit 0
+          # A red Main (e.g. the API answered 500 all day, 2026-10-15) leaves the API behind
+          # until the next data push: run it again by hand, which resyncs the whole tree.
+          last=$(gh run list -R "$REPO" -w main.yml -L 1 --json conclusion -q '.[0].conclusion')
+          if [[ "$last" == "failure" ]]; then
+            echo "Last Main run failed; running Main again to resync the API"
+            gh workflow run main.yml -R "$REPO" --ref main
+            sleep 15
+            wait_main || true
+          fi
       - name: Rebuild openrace-web
         env:
           GH_TOKEN: ${{ secrets.OPENRACE_BOT_TOKEN }}

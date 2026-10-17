@@ -31,6 +31,10 @@ if (!url) {
 const secret = requireEnv("SYNC_SECRET");
 // Each call downloads up to SYNC_MAX_FETCH files (40 by default), so this covers thousands.
 const MAX_CALLS = 50;
+// A 5xx, a 429 or a network error is retried after these waits (about 7.5 minutes in all).
+// 2026-10-15: the API answered 500 for a whole UTC day once D1's free 5M rows-read cap was
+// hit; Schedule 2 resyncs the next morning when Main is still red (schedule-2.yml).
+const RETRY_DELAYS_MS = [30_000, 120_000, 300_000];
 
 type SyncResult = {
   inserted: number;
@@ -67,16 +71,36 @@ const totals = { inserted: 0, updated: 0, restored: 0, removed: 0 };
 const errors = new Map<string, string>();
 let result: SyncResult | undefined;
 
+async function post(call: number): Promise<Response> {
+  for (let attempt = 0; ; attempt++) {
+    let failure: string;
+    try {
+      const res = await fetch(url!, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "User-Agent": "openrace-data-actions",
+          "X-Sync-Secret": secret,
+        },
+        body: JSON.stringify(payload),
+      });
+      if (res.ok || (res.status < 500 && res.status !== 429)) return res;
+      failure = `${res.status} ${await res.text()}`;
+    } catch (err) {
+      failure = String(err);
+    }
+    const wait = RETRY_DELAYS_MS[attempt];
+    if (wait === undefined) {
+      console.error(`Sync webhook failed on call ${call} after ${attempt + 1} attempts: ${failure}`);
+      process.exit(1);
+    }
+    console.warn(`Sync webhook failed on call ${call} (${failure}); retrying in ${wait / 1000}s`);
+    await new Promise((r) => setTimeout(r, wait));
+  }
+}
+
 for (let call = 1; call <= MAX_CALLS; call++) {
-  const res = await fetch(url, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "User-Agent": "openrace-data-actions",
-      "X-Sync-Secret": secret,
-    },
-    body: JSON.stringify(payload),
-  });
+  const res = await post(call);
   if (!res.ok) {
     console.error(`Sync webhook failed on call ${call}: ${res.status} ${await res.text()}`);
     process.exit(1);
