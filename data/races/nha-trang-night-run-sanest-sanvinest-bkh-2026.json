@@ -36,7 +36,102 @@
     "venue": "Quảng trường 2/4, Phường Nha Trang, Tỉnh Khánh Hòa",
     "city": "Khánh Hòa"
   },
-  "geo": null,
+  "geo": {
+    "lat": 12.2379502,
+    "lng": 109.1969419,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "56",
+      "ward": "22366"
+    },
+    "legacy": {
+      "province": "56",
+      "district": "568",
+      "ward": "22363"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 407.2,
+        "minutes": 296,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1272.8,
+        "minutes": 1000,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 503.3,
+        "minutes": 397,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1.8,
+        "minutes": 2,
+        "method": "road",
+        "near": true
+      },
+      "da-lat": {
+        "km": 137.9,
+        "minutes": 131,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 572.7,
+        "minutes": 424,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1307,
+        "minutes": 1025,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 600.5,
+        "minutes": 472,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 400.3,
+        "minutes": 304,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 215.6,
+        "minutes": 176,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 190.1,
+        "minutes": 175,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1580.6,
+        "minutes": 1233,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1356.7,
+        "minutes": 1057,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
   "prices": [
     {
       "distance": "5km",
@@ -564,13 +659,13 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/nha-trang-night-run-sanest-sanvinest-bkh-2026",
-      "lastCheckedAt": "2026-10-15T20:26:30.383Z",
+      "lastCheckedAt": "2026-10-17T21:01:18.287Z",
       "lastChangedAt": "2026-10-15T20:26:30.383Z",
       "extracted": {
         "facts": {
           "name": "Giải chạy Nha Trang Night Run Sanest, Sanvinest – BKH 2026",
           "venue": "Tỉnh Khánh Hòa",
-          "organizer": "VietRace365 | Ban tổ chức sự kiện",
+          "organizer": "VietRace365",
           "prices": [
             {
               "distance": "5km",
@@ -929,12 +1024,12 @@
         ],
         "organizer": {
           "id": "vietrace365",
-          "name": "VietRace365 | Ban tổ chức sự kiện"
+          "name": "VietRace365"
         }
       }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-10-12T17:48:31.011Z",
-  "updatedAt": "2026-10-15T20:31:08.696Z"
+  "updatedAt": "2026-10-17T21:01:33.864Z"
 }
