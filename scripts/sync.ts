@@ -72,6 +72,8 @@ export type RaceChange = {
   fields: CanonicalField[];
   /** The slug (and file name) before a hand rename. */
   renamedFrom?: string;
+  /** Duplicate races merged into this one by hand (`slug (id)`); their files are gone. */
+  mergedFrom?: string[];
   /** Sites whose pages joined this race in this change. */
   joined?: string[];
   /** Flags raised in this change (see Race.flags). */
@@ -106,7 +108,16 @@ const legacyRaceFiles = new WeakSet<Race>();
 type Item = { input: SyncInput; date: string; name: string };
 type Group = { id: string; newSlug?: string; items: Item[] };
 /** What matching needs to know about a race: known ones from the index, plus races created in this run. */
-type Candidate = { id: string; name: string; date: string; sites: Set<string>; sourceUrls: Set<string>; linkUrls: Set<string> };
+type Candidate = {
+  id: string;
+  name: string;
+  date: string;
+  slug: string;
+  seriesId: string | null;
+  sites: Set<string>;
+  sourceUrls: Set<string>;
+  linkUrls: Set<string>;
+};
 
 export async function planSync(
   store: RaceStore,
@@ -125,6 +136,8 @@ export async function planSync(
     id: e.id,
     name: e.name,
     date: e.date,
+    slug: e.slug,
+    seriesId: e.seriesId,
     sites: new Set(e.sourceUrls.map((u) => siteKeyForUrl(config, u))),
     sourceUrls: new Set(e.sourceUrls),
     linkUrls: new Set(e.linkUrls),
@@ -185,7 +198,9 @@ export async function planSync(
         LINK_MATCH_DAYS,
       ) ??
       // 3. Another site's page for a race with nearly the same name on the same day.
-      findByName(candidates, input.site, name, date);
+      findByName(candidates, input.site, name, date) ??
+      // 4. Another site's page whose own slug names this race or its series, on the same day.
+      findBySlugHint(candidates, input.site, input.slugHint, date);
     if (match) {
       match.sites.add(input.site);
       match.sourceUrls.add(input.url);
@@ -201,7 +216,7 @@ export async function planSync(
     // than two unrelated races that only share generic Vietnamese race-naming words.
     const near = nearestByName(candidates, input.site, name, date);
     if (near && near.score >= 0.4) dupWarnings.set(id, `possible duplicate of "${near.name}" (name similarity ${near.score.toFixed(3)}, same day) — attach with matchId instead of adding a new race if so`);
-    candidates.push({ id, name, date, sites: new Set([input.site]), sourceUrls: new Set([input.url]), linkUrls: links });
+    candidates.push({ id, name, date, slug: newSlug, seriesId: null, sites: new Set([input.site]), sourceUrls: new Set([input.url]), linkUrls: links });
     addToGroup(id, item, newSlug);
   }
 
@@ -510,6 +525,43 @@ export async function planDropSource(store: RaceStore, race: string, site: strin
 }
 
 /**
+ * Merge a duplicate race into the race that stays: the duplicate's sources join it
+ * (its overrides too, for fields the kept race doesn't override), the kept race is
+ * recomposed, and the duplicate's file and index entry go. The API removes the
+ * duplicate's id on the next sync. For a same-race pair the matcher missed.
+ */
+export async function planMerge(store: RaceStore, keep: string, drop: string, config: SitesConfig, now = new Date().toISOString(), geoCacheOverride?: GeoCache): Promise<SyncPlan> {
+  const { index, prev } = await readRace(store, keep);
+  const { prev: dup } = await readRace(store, drop);
+  if (dup.id === prev.id) throw new Error(`${keep} and ${drop} are the same race`);
+  const geoCache = geoCacheOverride ?? parseGeoCache(await store.read(GEO_PATH));
+
+  const has = new Set(prev.sources.map((s) => `${s.site} ${s.url}`));
+  const moved = dup.sources.filter((s) => !has.has(`${s.site} ${s.url}`));
+  const sources = [...prev.sources, ...moved];
+  const overrides = { ...dup.overrides, ...prev.overrides };
+
+  const rest = index.filter((e) => e.id !== dup.id);
+  const series = inferSeries(rest.map((e) => ({ id: e.id, slug: e.slug, name: e.name, date: e.date }))).get(prev.id);
+  const composed = composeRace({ id: prev.id, slug: prev.slug, prev, sources, overrides, now, config, geoCache, stabilizeAgainstPrev: false, series });
+  if ("error" in composed) throw new Error(composed.error);
+  const { record, fields } = composed;
+
+  const files: Record<string, string | null> = {};
+  const nextIndex = new Map(rest.map((e) => [e.id, e]));
+  files[`${RACES_DIR}/${index.find((e) => e.id === dup.id)!.file}`] = null;
+  const clash = writeRace(files, nextIndex, record);
+  if (clash) throw new Error(clash);
+  files[INDEX_PATH] = serializeIndex(nextIndex);
+  const joined = [...new Set(moved.map((s) => s.site))].filter((site) => !prev.sources.some((s) => s.site === site));
+  return {
+    files,
+    changes: [{ id: record.id, slug: record.slug, kind: "updated", fields, mergedFrom: [`${dup.slug} (${dup.id})`], ...(joined.length && { joined }) }],
+    skipped: [],
+  };
+}
+
+/**
  * Give a race (found by id or slug) a new slug: its file moves to the new name and
  * the index follows, in one change. The id stays, so the API updates the same race.
  * Ingestion never changes a slug; this is the only way it moves.
@@ -557,6 +609,26 @@ function nearest(candidates: Candidate[], date: string, maxDays: number): Candid
 function findByName(candidates: Candidate[], site: string, name: string, date: string): Candidate | null {
   const near = nearestByName(candidates, site, name, date);
   return near && near.score >= MATCH_THRESHOLD ? near.candidate : null;
+}
+
+/**
+ * The race another site already has, found by this page's own URL slug: race day within
+ * a day, and the slug (without its year) is that race's slug or its series id. Seller
+ * titles can differ too much for findByName: iRace's "Bắc Ninh Legacy Marathon 2027"
+ * (ticket.irace.vn/bac-ninh-legacy-marathon-2027) vs ActiUp's "Bắc Ninh Dấu chân Miền
+ * Quan họ 2027", and ActiUp's 05/12 race-kit day for Nghệ An Legacy Marathon 2026, both
+ * added as duplicates on 2026-10-16.
+ */
+function findBySlugHint(candidates: Candidate[], site: string, slugHint: string | undefined, date: string): Candidate | null {
+  if (!slugHint) return null;
+  const stem = (slug: string) => slug.toLowerCase().replace(/-?(19|20)\d\d$/, "");
+  const hint = stem(slugHint);
+  if (!hint.includes("-")) return null;
+  return nearest(
+    candidates.filter((c) => !c.sites.has(site) && (stem(c.slug) === hint || c.seriesId === hint)),
+    date,
+    1,
+  );
 }
 
 /** The closest same-day, different-site name match, whatever its score (see findByName for the threshold that decides an actual merge). */
@@ -624,6 +696,7 @@ export function formatCommitMessage(plan: SyncPlan, context?: string): string {
     ...updated.map((c) => {
       const parts = [
         ...(c.renamedFrom ? [`slug (was ${c.renamedFrom})`] : []),
+        ...(c.mergedFrom ?? []).map((m) => `merged ${m}`),
         ...(c.joined ?? []).map((s) => `+${s}`),
         ...c.fields,
         ...(c.shadowed ?? []).map((f) => `${f} changed at the source (override kept)`),

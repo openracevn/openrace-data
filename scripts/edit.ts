@@ -43,6 +43,9 @@
  *       Remove one source, found by its exact site + url. For the duplicate left
  *       behind when a hand-added source's site tag changed after re-running add
  *       (see add above) — there's no other way to clear a stale source.
+ *   npm run edit -- merge <keep> <drop> --reason "<why they are the same race>"
+ *       Merge a duplicate race into the one that stays: <drop>'s sources (and its
+ *       overrides, where <keep> has none) move to <keep>, and <drop>'s file goes.
  *
  * <race> is a race id or slug. Add --dry-run to see the result without committing
  * (reads the local checkout). Committing needs GITHUB_TOKEN (e.g. $(gh auth token)).
@@ -53,7 +56,7 @@ import { manualGeo } from "./lib/geocode.ts";
 import { INDEX_PATH, IndexSchema, type CanonicalField, CANONICAL_FIELDS } from "./lib/schema.ts";
 import { isWaybackUrl, loadSites, siteForUrl, siteKeyForUrl } from "./lib/sites.ts";
 import { canonicalSourceUrl } from "./lib/slug.ts";
-import { commitToGitHub, formatCommitMessage, planDropSource, planEdit, planRename, planSync, type Edit, type RaceStore, type SyncPlan } from "./sync.ts";
+import { commitToGitHub, formatCommitMessage, planDropSource, planEdit, planMerge, planRename, planSync, type Edit, type RaceStore, type SyncPlan } from "./sync.ts";
 
 const EDITABLE_FIELDS: readonly string[] = CANONICAL_FIELDS;
 const VALUE_FLAGS = new Set(["--reason", "--url", "--json"]);
@@ -114,6 +117,12 @@ if (command === "set" || command === "unset") {
   if (!race || !site || !url) fail("usage: npm run edit -- drop-source <race> <site> <url> [--reason <why>]");
   planAt = (store) => planDropSource(store, race!, site!, url!, config, now);
   message = `edit: ${race}: drop stale source ${site} ${url}${reason ? `\n\n${reason}` : ""}`;
+} else if (command === "merge") {
+  const drop = field;
+  if (!race || !drop) fail("usage: npm run edit -- merge <keep> <drop> --reason <why>");
+  if (!reason) fail("merge needs --reason: why are these the same race?");
+  planAt = (store) => planMerge(store, race!, drop!, config, now);
+  message = `edit: merge ${drop} into ${race}\n\n${reason}`;
 } else if (command === "add") {
   let url = flag("url");
   const json = flag("json");
@@ -152,7 +161,7 @@ if (command === "set" || command === "unset") {
     planSync(store, [{ url: reference!, site: siteKeyForUrl(config, reference!), role: "reference", extracted, checkedAt: now, ...(matchId && { matchId }) }], config, now);
   message = ""; // generated from the plan below
 } else {
-  fail("usage: npm run edit -- set|set-many|unset|add|slug|drop-source … (see scripts/edit.ts)");
+  fail("usage: npm run edit -- set|set-many|unset|add|slug|drop-source|merge … (see scripts/edit.ts)");
 }
 
 const local: RaceStore = {

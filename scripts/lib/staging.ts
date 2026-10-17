@@ -6,6 +6,7 @@
  *   add       a race (or a new edition) from a reference page, like `edit add`
  *   set-many  overrides on one existing race, like `edit set-many`
  *   source    a page already read (agent-read result), as a sync input
+ *   merge     a duplicate race into the race that stays, like `edit merge`
  */
 import { existsSync, mkdirSync, readFileSync, readdirSync, renameSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
@@ -30,6 +31,8 @@ export const OpSchema = z.discriminatedUnion("op", [
     reason,
   }),
   z.object({ op: z.literal("set-many"), race: z.string().min(1), fields, reason }),
+  /** `drop`'s sources and file move into `keep` (ids or slugs). */
+  z.object({ op: z.literal("merge"), keep: z.string().min(1), drop: z.string().min(1), reason }),
   z.object({
     op: z.literal("source"),
     input: z.object({

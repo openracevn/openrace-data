@@ -8,7 +8,7 @@ import { fieldFlags, type StoredExtraction } from "../scripts/lib/reconcile.ts";
 import { INDEX_PATH, ORGANIZERS_PATH, RaceSchema, SERIES_PATH, racePath, type IndexEntry, type Race } from "../scripts/lib/schema.ts";
 import { parseSites, type SitesConfig } from "../scripts/lib/sites.ts";
 import { seriesName } from "../scripts/lib/series.ts";
-import { formatCommitMessage, freshnessFile, nameSimilarity, planEdit, planRename, planSync, type RaceStore, type SyncInput } from "../scripts/sync.ts";
+import { formatCommitMessage, freshnessFile, nameSimilarity, planEdit, planMerge, planRename, planSync, type RaceStore, type SyncInput } from "../scripts/sync.ts";
 
 const config: SitesConfig = parseSites(`
 monthlyCredits: 900
@@ -228,6 +228,32 @@ describe("planSync", () => {
     assert.match(formatCommitMessage(p), /⚠️ possible duplicate of/);
   });
 
+  it("joins another site's page whose URL slug names the race, though the titles differ", async () => {
+    // 2026-10-16: ticket.irace.vn/bac-ninh-legacy-marathon-2027 was added beside ActiUp's
+    // differently titled race of the same day; ActiUp's Nghệ An date was the race-kit day.
+    const store = memoryStore();
+    apply(store, (await plan(store, [officialInput()])).files);
+    const slug = index(store)[0]!.slug;
+    const irace = (hint: string, date: string): SyncInput => ({
+      url: `https://ticket.irace.vn/${hint}`,
+      site: "irace",
+      role: "seller",
+      extracted: { facts: { name: "Giải chạy Thành phố mùa thứ 15", date } },
+      checkedAt: "2026-09-24T10:00:00.000Z",
+      slugHint: hint,
+    });
+    for (const [hint, date] of [[slug, "2027-01-17"], ["hcmc-marathon-2027", "2027-01-16"]] as const) {
+      const p = await plan(store, [irace(hint, date)]);
+      assert.equal(p.changes.length, 1, hint);
+      assert.equal(p.changes[0]!.kind, "updated", hint);
+    }
+    // More than a day away, or a one-word slug: a different race.
+    for (const [hint, date] of [["hcmc-marathon-2027", "2027-01-20"], ["marathon-2027", "2027-01-17"]] as const) {
+      const p = await plan(store, [irace(hint, date)]);
+      assert.equal(p.changes[0]!.kind, "added", hint);
+    }
+  });
+
   it("doesn't warn on an added race with only generic same-day similarity", async () => {
     const store = memoryStore();
     apply(store, (await plan(store, [officialInput()])).files);
@@ -401,6 +427,28 @@ describe("OpenRace overrides and renames", () => {
     assert.equal(p.changes[0]!.slug, "lang-chay-bo-2026");
     const race = RaceSchema.parse(JSON.parse(p.files[racePath({ slug: "lang-chay-bo-2026", date: "2026-12-06" })]!));
     assert.deepEqual(race.prices, [{ distance: null, tier: "Vé", kind: "other", audience: null, price: 200000, from: null, to: null, inferred: [], site: "openrace" }]);
+  });
+});
+
+describe("merging a duplicate", () => {
+  it("moves the duplicate's sources and overrides into the kept race and removes its file", async () => {
+    const store = memoryStore();
+    apply(store, (await plan(store, [officialInput()])).files);
+    // A same-day ActiUp page titled too differently to match: a duplicate race.
+    apply(store, (await plan(store, [actiupInput(actiup({ name: "Giải chạy Thành phố mùa thứ 15" }), OTHER)])).files);
+    const [keep, drop] = index(store);
+    assert.ok(keep && drop);
+    apply(store, (await planEdit(store, drop.id, [{ kind: "set", field: "edition", value: 15, reason: "stated" }], config, LATER)).files);
+
+    const p = await planMerge(store, keep.slug, drop.slug, config, LATER);
+    apply(store, p.files);
+    assert.deepEqual(index(store).map((e) => e.id), [keep.id]);
+    assert.equal(store.files[`data/races/${drop.file}`], undefined);
+    const merged = readRace(store, keep.slug);
+    assert.deepEqual(merged.sources.map((s) => s.site).sort(), ["actiup", "hcmc-marathon"]);
+    assert.equal(merged.edition, 15);
+    assert.match(formatCommitMessage(p), new RegExp(`merged ${drop.slug} \\(${drop.id}\\)`));
+    await assert.rejects(planMerge(store, keep.id, keep.slug, config, LATER), /no race|same race/);
   });
 });
 

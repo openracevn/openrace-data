@@ -13,7 +13,7 @@ import { isWaybackUrl, siteForUrl, siteKeyForUrl, type SitesConfig } from "./sit
 import { canonicalSourceUrl } from "./slug.ts";
 import type { Bundle, Op } from "./staging.ts";
 import { manualGeo } from "./geocode.ts";
-import { planEdit, planSync, type Edit, type RaceChange, type RaceStore, type SyncInput, type SyncPlan } from "../sync.ts";
+import { planEdit, planMerge, planSync, type Edit, type RaceChange, type RaceStore, type SyncInput, type SyncPlan } from "../sync.ts";
 
 /** Repo files as a base store plus files written on top (null = deleted). */
 export function overlayStore(base: RaceStore, files: Readonly<Record<string, string | null>>): RaceStore {
@@ -33,6 +33,7 @@ async function planOp(store: RaceStore, op: Op, config: SitesConfig, now: string
     }
     return planEdit(store, op.race, edits, config, now);
   }
+  if (op.op === "merge") return planMerge(store, op.keep, op.drop, config, now);
   if (op.op === "add") {
     const reference = canonicalSourceUrl(op.url);
     const site = siteForUrl(config, reference);
@@ -103,6 +104,7 @@ export function mergeChanges(changes: readonly RaceChange[]): RaceChange[] {
     prev.shadowed = [...new Set([...(prev.shadowed ?? []), ...(c.shadowed ?? [])])];
     if (c.dupWarning) prev.dupWarning = c.dupWarning;
     if (c.renamedFrom) prev.renamedFrom = c.renamedFrom;
+    if (c.mergedFrom) prev.mergedFrom = [...(prev.mergedFrom ?? []), ...c.mergedFrom];
   }
   return [...byId.values()].map((c) => {
     const { joined, newFlags, shadowed, ...rest } = c;
