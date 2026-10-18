@@ -9,8 +9,8 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "halong-bay-heritage-marathon",
-  "organizerId": "cong-ty-dha-viet-nam",
-  "organizer": "Công ty DHA Việt Nam",
+  "organizerId": "dha",
+  "organizer": "DHA Vietnam",
   "edition": 11,
   "courses": [
     {
@@ -912,9 +912,29 @@
       "foundOn": "halongmarathon.com"
     },
     {
+      "url": "https://facebook.com/sharer/sharer.php",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "http://online.gov.vn/Home/WebDetails/51414",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
       "url": "http://online.gov.vn/Home/WebDetails/66238",
       "kind": "other",
       "foundOn": "halongmarathon.com"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
     },
     {
       "url": "https://bachmai.gov.vn/",
@@ -942,6 +962,11 @@
       "foundOn": "halongmarathon.com"
     },
     {
+      "url": "https://drive.google.com/file/d/13yP2VZLdX6H8RK5smeizFZyOaD_-fz6y/view",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
       "url": "https://haiminh.com.vn/",
       "kind": "other",
       "foundOn": "halongmarathon.com"
@@ -952,9 +977,29 @@
       "foundOn": "halongmarathon.com"
     },
     {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
       "url": "https://instagram.com/halongbay.heritagemarathon",
       "kind": "other",
       "foundOn": "halongmarathon.com"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
     },
     {
       "url": "https://lining.com/",
@@ -985,6 +1030,11 @@
       "url": "https://paymenthalong.vietnamheritagemarathon.com/",
       "kind": "other",
       "foundOn": "halongmarathon.com"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
     },
     {
       "url": "https://pocarisweat.com.vn/",
@@ -1035,6 +1085,11 @@
       "url": "https://youtube.com/@halongbayinternationalheri3074",
       "kind": "other",
       "foundOn": "halongmarathon.com"
+    },
+    {
+      "url": "https://youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
     },
     {
       "url": "https://zalo.me/s/2811521900459178604",
@@ -1938,7 +1993,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/halong-bay-heritage-marathon-2026",
-      "lastCheckedAt": "2026-10-12T17:52:25.333Z",
+      "lastCheckedAt": "2026-10-18T21:03:06.383Z",
       "lastChangedAt": "2026-09-23T18:30:52.268Z",
       "extracted": {
         "facts": {
@@ -1962,18 +2017,45 @@
               "date": "2026-11-21",
               "endDate": "2026-11-22",
               "mainDate": "2026-11-21",
-              "distances": [],
-              "courses": [],
-              "edition": 0,
-              "mapsUrl": "",
-              "venue": "Hạ Long",
+              "distances": [
+                "5KM",
+                "10KM",
+                "21KM",
+                "42KM"
+              ],
+              "courses": [
+                {
+                  "distance": "5KM",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10KM",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "21KM",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "42KM",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 2026,
+              "editionQuote": "Giải Marathon Quốc tế Di sản Hạ Long 2026",
+              "mapsUrl": "https://drive.google.com/file/d/1X9FOPRR8VfwfSr2f7mcYfWObqJmsf9QS/view?usp=sharing",
+              "venue": "Bên bờ Vịnh Hạ Long",
               "city": "Hạ Long",
-              "organizer": "",
+              "organizer": "Tổng cục Thể dục Thể thao Việt Nam",
               "currency": "VND",
               "registrationStatus": "open",
               "participants": {
                 "count": 0,
-                "quote": ""
+                "quote": "Chưa có thông tin số lượng người tham dự."
               },
               "prices": []
             }
@@ -2044,7 +2126,7 @@
       "site": "halong-marathon",
       "role": "official",
       "url": "https://halongmarathon.com/",
-      "lastCheckedAt": "2026-10-15T20:34:27.454Z",
+      "lastCheckedAt": "2026-10-18T21:05:53.154Z",
       "lastChangedAt": "2026-09-25T05:03:56.536Z",
       "extracted": {
         "pages": [
@@ -2644,13 +2726,13 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/giai-marathon-quoc-te-di-san-ha-long-2026",
-      "lastCheckedAt": "2026-09-27T02:38:00.142Z",
+      "lastCheckedAt": "2026-10-18T21:07:11.429Z",
       "lastChangedAt": "2026-09-27T02:38:00.143Z",
       "extracted": {
         "facts": {
           "name": "Giải Marathon Quốc tế Di sản Hạ Long 2026",
-          "date": "2026-11-22",
-          "venue": "Cung quy hoạch, hội chợ và triển lãm tỉnh Quảng Ninh"
+          "venue": "Cung quy hoạch, hội chợ và triển lãm tỉnh Quảng Ninh",
+          "organizer": "DHA Vietnam"
         },
         "pages": [
           {
@@ -2662,165 +2744,156 @@
               ],
               "name": "Giải Marathon Quốc tế Di sản Hạ Long 2026",
               "date": "2026-11-22",
-              "distances": [
-                "5km",
-                "10km",
-                "21km",
-                "42km"
-              ],
+              "endDate": "2026-11-22",
+              "mainDate": "2026-11-22",
+              "distances": [],
+              "courses": [],
+              "edition": 1,
+              "editionQuote": "Giải Marathon Quốc tế Di sản Hạ Long 2026",
+              "mapsUrl": "",
               "venue": "Cung quy hoạch, hội chợ và triển lãm tỉnh Quảng Ninh",
+              "city": "Quảng Ninh",
+              "organizer": "",
               "currency": "VND",
               "registrationStatus": "open",
-              "prices": [
-                {
-                  "distance": "5km",
-                  "tier": "Flash Sale",
-                  "from": "12/01",
-                  "to": "17/01",
-                  "price": 288000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Flash Sale",
-                  "from": "12/01",
-                  "to": "17/01",
-                  "price": 388000
-                },
-                {
-                  "distance": "21km",
-                  "tier": "Flash Sale",
-                  "from": "12/01",
-                  "to": "17/01",
-                  "price": 488000
-                },
-                {
-                  "distance": "42km",
-                  "tier": "Flash Sale",
-                  "from": "12/01",
-                  "to": "17/01",
-                  "price": 588000
-                },
-                {
-                  "distance": "5km",
-                  "tier": "SEB",
-                  "from": "18/01",
-                  "to": "15/03",
-                  "price": 368000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "SEB",
-                  "from": "18/01",
-                  "to": "15/03",
-                  "price": 488000
-                },
-                {
-                  "distance": "21km",
-                  "tier": "SEB",
-                  "from": "18/01",
-                  "to": "15/03",
-                  "price": 668000
-                },
-                {
-                  "distance": "42km",
-                  "tier": "SEB",
-                  "from": "18/01",
-                  "to": "15/03",
-                  "price": 768000
-                },
-                {
-                  "distance": "5km",
-                  "tier": "EB",
-                  "from": "16/03",
-                  "to": "31/05",
-                  "price": 500000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "EB",
-                  "from": "16/03",
-                  "to": "31/05",
-                  "price": 650000
-                },
-                {
-                  "distance": "21km",
-                  "tier": "EB",
-                  "from": "16/03",
-                  "to": "31/05",
-                  "price": 850000
-                },
-                {
-                  "distance": "42km",
-                  "tier": "EB",
-                  "from": "16/03",
-                  "to": "31/05",
-                  "price": 950000
-                },
-                {
-                  "distance": "5km",
-                  "tier": "ST",
-                  "from": "01/06",
-                  "to": "31/08",
-                  "price": 700000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "ST",
-                  "from": "01/06",
-                  "to": "31/08",
-                  "price": 1100000
-                },
-                {
-                  "distance": "21km",
-                  "tier": "ST",
-                  "from": "01/06",
-                  "to": "31/08",
-                  "price": 1300000
-                },
-                {
-                  "distance": "42km",
-                  "tier": "ST",
-                  "from": "01/06",
-                  "to": "31/08",
-                  "price": 1500000
-                },
-                {
-                  "distance": "5km",
-                  "tier": "Late",
-                  "from": "01/09",
-                  "to": "15/10",
-                  "price": 900000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Late",
-                  "from": "01/09",
-                  "to": "15/10",
-                  "price": 1500000
-                },
-                {
-                  "distance": "21km",
-                  "tier": "Late",
-                  "from": "01/09",
-                  "to": "15/10",
-                  "price": 2000000
-                },
-                {
-                  "distance": "42km",
-                  "tier": "Late",
-                  "from": "01/09",
-                  "to": "15/10",
-                  "price": 2300000
-                }
-              ]
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": []
             }
           }
         ],
-        "readBy": "agent"
+        "links": [
+          {
+            "url": "https://app.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://irace.vn/ban-ve/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ban ve su kien"
+          },
+          {
+            "url": "https://irace.vn/myfoto/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "tim hinh su kien"
+          },
+          {
+            "url": "https://irace.vn/doanh-nghiep/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "to chuc su kien"
+          },
+          {
+            "url": "https://irace.vn/affiliate/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kiem tien cung irace vn"
+          },
+          {
+            "url": "https://irace.vn/thiet-ke-huy-chuong/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huy chuong"
+          },
+          {
+            "url": "https://irace.vn/san-xuat-qua-tang-phu-kien-the-thao/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "quan ao phu kien"
+          },
+          {
+            "url": "https://irace.vn/about-us/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ve irace"
+          },
+          {
+            "url": "https://irace.vn/bao-chi/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "bao chi viet"
+          },
+          {
+            "url": "https://irace.vn/hoi-dap/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "hoi dap"
+          },
+          {
+            "url": "https://irace.vn/thong-tin/huong-dan/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huong dan su dung"
+          },
+          {
+            "url": "https://irace.vn/kien-thuc-tap-luyen/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kien thuc chay bo"
+          },
+          {
+            "url": "https://tools.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "cong cu tinh toan"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "shop the thao"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "dinh duong"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "phu kien"
+          },
+          {
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://ticket.irace.vn/giai-marathon-quoc-te-di-san-ha-long-2026",
+            "text": "chia se tren facebook"
+          },
+          {
+            "url": "https://drive.google.com/file/d/13yP2VZLdX6H8RK5smeizFZyOaD_-fz6y/view",
+            "text": "tai day"
+          },
+          {
+            "url": "http://online.gov.vn/Home/WebDetails/51414",
+            "text": ""
+          },
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/feed/",
+            "text": ""
+          },
+          {
+            "url": "https://www.youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+            "text": ""
+          },
+          {
+            "url": "https://play.google.com/store/apps/details?id=com.irace.app",
+            "text": ""
+          },
+          {
+            "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/chinh-sach-bao-mat/",
+            "text": "chinh sach bao mat"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-thanh-toan/",
+            "text": "dieu khoan thanh toan"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-su-dung/",
+            "text": "dieu khoan su dung"
+          },
+          {
+            "url": "https://irace.vn/tuyen-dung/",
+            "text": "tuyen dung"
+          },
+          {
+            "url": "https://irace.vn/lien-he/",
+            "text": "lien he"
+          }
+        ],
+        "organizer": {
+          "id": "dha",
+          "name": "DHA Vietnam"
+        }
       }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-17T13:16:08.085Z"
+  "updatedAt": "2026-10-18T21:09:13.459Z"
 }

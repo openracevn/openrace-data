@@ -11,7 +11,7 @@
   "seriesId": null,
   "organizerId": "cong-ty-tnhh-duoc-pham-hisamitsu-viet-nam",
   "organizer": "CÔNG TY TNHH DƯỢC PHẨM HISAMITSU VIỆT NAM",
-  "edition": 1,
+  "edition": null,
   "courses": [
     {
       "label": "3km",
@@ -40,7 +40,7 @@
   ],
   "location": {
     "venue": "Công viên Sáng Tạo, Phường An Khánh, Thành phố Hồ Chí Minh.",
-    "city": "Thông tin về lịch trình sự kiện sẽ được cập nhật chi tiết sau."
+    "city": null
   },
   "geo": {
     "lat": 10.7850885,
@@ -66,7 +66,7 @@
       },
       "ha-noi": {
         "km": 1495.1,
-        "minutes": 1135,
+        "minutes": 1133,
         "method": "road",
         "near": false
       },
@@ -108,7 +108,7 @@
       },
       "vung-tau": {
         "km": 91.9,
-        "minutes": 85,
+        "minutes": 84,
         "method": "road",
         "near": false
       },
@@ -125,14 +125,14 @@
         "near": false
       },
       "sa-pa": {
-        "km": 1802.9,
-        "minutes": 1368,
+        "km": 1803.6,
+        "minutes": 1369,
         "method": "road",
         "near": false
       },
       "ha-long": {
         "km": 1578.9,
-        "minutes": 1192,
+        "minutes": 1193,
         "method": "road",
         "near": false
       }
@@ -339,7 +339,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/salonpas-run-2026",
-      "lastCheckedAt": "2026-10-12T17:51:08.260Z",
+      "lastCheckedAt": "2026-10-18T21:02:23.974Z",
       "lastChangedAt": "2026-09-23T18:30:47.837Z",
       "extracted": {
         "facts": {
@@ -393,15 +393,16 @@
                 }
               ],
               "edition": 1,
-              "mapsUrl": "https://salonpasrun.vn/thong-tin-giai/",
-              "venue": "Thông tin về lịch trình sự kiện sẽ được cập nhật chi tiết sau.",
-              "city": "Thông tin về lịch trình sự kiện sẽ được cập nhật chi tiết sau.",
-              "organizer": "Thông tin về lịch trình sự kiện sẽ được cập nhật chi tiết sau.",
+              "editionQuote": "Giải chạy bộ Salonpas 2026",
+              "mapsUrl": "",
+              "venue": "",
+              "city": "",
+              "organizer": "",
               "currency": "VND",
               "registrationStatus": "open",
               "participants": {
                 "count": 0,
-                "quote": "Thông tin về lịch trình sự kiện sẽ được cập nhật chi tiết sau."
+                "quote": ""
               },
               "prices": []
             }
@@ -577,5 +578,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-13T02:40:11.333Z"
+  "updatedAt": "2026-10-18T21:09:13.459Z"
 }

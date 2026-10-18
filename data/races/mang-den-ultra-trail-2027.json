@@ -150,7 +150,7 @@
   "prices": [
     {
       "distance": "15km",
-      "tier": "Flash Sale",
+      "tier": "FLASH SALE*",
       "kind": "other",
       "audience": null,
       "price": 739000,
@@ -161,7 +161,7 @@
     },
     {
       "distance": "15km",
-      "tier": "Early Bird",
+      "tier": "EARLY BIRD",
       "kind": "early",
       "audience": null,
       "price": 1130000,
@@ -172,7 +172,7 @@
     },
     {
       "distance": "15km",
-      "tier": "Regular",
+      "tier": "REGULAR",
       "kind": "regular",
       "audience": null,
       "price": 1450000,
@@ -183,7 +183,7 @@
     },
     {
       "distance": "15km",
-      "tier": "Late",
+      "tier": "LATE",
       "kind": "late",
       "audience": null,
       "price": 2050000,
@@ -194,7 +194,7 @@
     },
     {
       "distance": "25km",
-      "tier": "Flash Sale",
+      "tier": "FLASH SALE*",
       "kind": "other",
       "audience": null,
       "price": 939000,
@@ -205,7 +205,7 @@
     },
     {
       "distance": "25km",
-      "tier": "Early Bird",
+      "tier": "EARLY BIRD",
       "kind": "early",
       "audience": null,
       "price": 1430000,
@@ -216,7 +216,7 @@
     },
     {
       "distance": "25km",
-      "tier": "Regular",
+      "tier": "REGULAR",
       "kind": "regular",
       "audience": null,
       "price": 1950000,
@@ -227,7 +227,7 @@
     },
     {
       "distance": "25km",
-      "tier": "Late",
+      "tier": "LATE",
       "kind": "late",
       "audience": null,
       "price": 2650000,
@@ -238,7 +238,7 @@
     },
     {
       "distance": "50km",
-      "tier": "Flash Sale",
+      "tier": "FLASH SALE*",
       "kind": "other",
       "audience": null,
       "price": 1339000,
@@ -249,7 +249,7 @@
     },
     {
       "distance": "50km",
-      "tier": "Early Bird",
+      "tier": "EARLY BIRD",
       "kind": "early",
       "audience": null,
       "price": 1830000,
@@ -260,7 +260,7 @@
     },
     {
       "distance": "50km",
-      "tier": "Regular",
+      "tier": "REGULAR",
       "kind": "regular",
       "audience": null,
       "price": 2450000,
@@ -271,7 +271,7 @@
     },
     {
       "distance": "50km",
-      "tier": "Late",
+      "tier": "LATE",
       "kind": "late",
       "audience": null,
       "price": 3350000,
@@ -282,7 +282,7 @@
     },
     {
       "distance": "70km",
-      "tier": "Flash Sale",
+      "tier": "FLASH SALE*",
       "kind": "other",
       "audience": null,
       "price": 1639000,
@@ -293,7 +293,7 @@
     },
     {
       "distance": "70km",
-      "tier": "Early Bird",
+      "tier": "EARLY BIRD",
       "kind": "early",
       "audience": null,
       "price": 2230000,
@@ -304,7 +304,7 @@
     },
     {
       "distance": "70km",
-      "tier": "Regular",
+      "tier": "REGULAR",
       "kind": "regular",
       "audience": null,
       "price": 2950000,
@@ -315,7 +315,7 @@
     },
     {
       "distance": "70km",
-      "tier": "Late",
+      "tier": "LATE",
       "kind": "late",
       "audience": null,
       "price": 4050000,
@@ -326,7 +326,7 @@
     },
     {
       "distance": "100km",
-      "tier": "Flash Sale",
+      "tier": "FLASH SALE*",
       "kind": "other",
       "audience": null,
       "price": 2039000,
@@ -337,7 +337,7 @@
     },
     {
       "distance": "100km",
-      "tier": "Early Bird",
+      "tier": "EARLY BIRD",
       "kind": "early",
       "audience": null,
       "price": 3230000,
@@ -348,7 +348,7 @@
     },
     {
       "distance": "100km",
-      "tier": "Regular",
+      "tier": "REGULAR",
       "kind": "regular",
       "audience": null,
       "price": 4250000,
@@ -359,7 +359,7 @@
     },
     {
       "distance": "100km",
-      "tier": "Late",
+      "tier": "LATE",
       "kind": "late",
       "audience": null,
       "price": 5350000,
@@ -408,37 +408,37 @@
       "foundOn": "irace.vn"
     },
     {
-      "url": "https://ifitness.vn/collections/mung-ngay-phu-nu-viet-nam-20-10",
-      "kind": "other",
-      "foundOn": "irace.vn"
-    },
-    {
       "url": "https://ifitness.vn/collections/phu-kien-the-thao",
       "kind": "other",
       "foundOn": "irace.vn"
     },
     {
-      "url": "https://ifitness.vn/products/creatine-monohydrate-scitec-nutrition-300g",
+      "url": "https://ifitness.vn/products/sua-tang-can-labrada-muscle-mass-gainer",
       "kind": "other",
       "foundOn": "irace.vn"
     },
     {
-      "url": "https://ifitness.vn/products/sua-tang-hieu-suat-scitec-bcaa-xpress",
+      "url": "https://ifitness.vn/products/thanh-dinh-duong-huu-co-tu-hat-va-trai-cay-raw-bite",
       "kind": "other",
       "foundOn": "irace.vn"
     },
     {
-      "url": "https://ifitness.vn/products/sua-tang-suc-manh-applied-nutrition-abe-pre-workout-315g",
+      "url": "https://ifitness.vn/products/thanh-hat-dinh-duong-faminuts-hat-dieu-yen-mach-100g-hop-4-thanh",
       "kind": "other",
       "foundOn": "irace.vn"
     },
     {
-      "url": "https://ifitness.vn/products/sua-uong-truoc-khi-tap-elite-labs-usa-pre-cut-white-raspberry",
+      "url": "https://ifitness.vn/products/thanh-nang-luong-lecka-granola-bites-40g",
       "kind": "other",
       "foundOn": "irace.vn"
     },
     {
-      "url": "https://ifitness.vn/products/sua-uong-truoc-khi-tap-vaporx5-next-gen-pre-workout-228g",
+      "url": "https://ifitness.vn/products/thanh-nang-luong-natural-energy-bar-lecka-4-mui",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/vien-uong-dien-giai-gu-roctane-electrolyte-capsules-hu-50-vien",
       "kind": "other",
       "foundOn": "irace.vn"
     },
@@ -474,7 +474,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/mang-den-ultra-trail-2027",
-      "lastCheckedAt": "2026-09-24T06:43:09.238Z",
+      "lastCheckedAt": "2026-10-18T21:04:53.082Z",
       "lastChangedAt": "2026-09-23T18:30:48.234Z",
       "extracted": {
         "facts": {
@@ -496,169 +496,29 @@
                 "trail_run"
               ],
               "name": "Măng Đen Ultra Trail 2027",
-              "prices": []
-            }
-          }
-        ],
-        "images": [
-          {
-            "url": "https://pix.actiup.net/2026/06/15/1781504163978066/TICKET-PRICE-2027.jpg",
-            "json": {
-              "prices": [
+              "date": "2027-11-21",
+              "endDate": "2027-11-22",
+              "mainDate": "2027-11-21",
+              "distances": [],
+              "courses": [
                 {
-                  "distance": "15KM",
-                  "tier": "Flash Sale",
-                  "from": "17/06",
-                  "to": "2026-06-18",
-                  "price": 739000
-                },
-                {
-                  "distance": "15KM",
-                  "tier": "Early Bird",
-                  "from": "19/06",
-                  "to": "2026-09-18",
-                  "price": 1130000
-                },
-                {
-                  "distance": "15KM",
-                  "tier": "Regular",
-                  "from": "19/09",
-                  "to": "2026-11-18",
-                  "price": 1450000
-                },
-                {
-                  "distance": "15KM",
-                  "tier": "Late",
-                  "from": "19/11",
-                  "to": "2026-12-18",
-                  "price": 2050000
-                },
-                {
-                  "distance": "25KM",
-                  "tier": "Flash Sale",
-                  "from": "17/06",
-                  "to": "2026-06-18",
-                  "price": 939000
-                },
-                {
-                  "distance": "25KM",
-                  "tier": "Early Bird",
-                  "from": "19/06",
-                  "to": "2026-09-18",
-                  "price": 1430000
-                },
-                {
-                  "distance": "25KM",
-                  "tier": "Regular",
-                  "from": "19/09",
-                  "to": "2026-11-18",
-                  "price": 1950000
-                },
-                {
-                  "distance": "25KM",
-                  "tier": "Late",
-                  "from": "19/11",
-                  "to": "2026-12-18",
-                  "price": 2650000
-                },
-                {
-                  "distance": "50KM",
-                  "tier": "Flash Sale",
-                  "from": "17/06",
-                  "to": "2026-06-18",
-                  "price": 1339000
-                },
-                {
-                  "distance": "50KM",
-                  "tier": "Early Bird",
-                  "from": "19/06",
-                  "to": "2026-09-18",
-                  "price": 1830000
-                },
-                {
-                  "distance": "50KM",
-                  "tier": "Regular",
-                  "from": "19/09",
-                  "to": "2026-11-18",
-                  "price": 2450000
-                },
-                {
-                  "distance": "50KM",
-                  "tier": "Late",
-                  "from": "19/11",
-                  "to": "2026-12-18",
-                  "price": 3350000
-                },
-                {
-                  "distance": "70KM",
-                  "tier": "Flash Sale",
-                  "from": "17/06",
-                  "to": "2026-06-18",
-                  "price": 1639000
-                },
-                {
-                  "distance": "70KM",
-                  "tier": "Early Bird",
-                  "from": "19/06",
-                  "to": "2026-09-18",
-                  "price": 2230000
-                },
-                {
-                  "distance": "70KM",
-                  "tier": "Regular",
-                  "from": "19/09",
-                  "to": "2026-11-18",
-                  "price": 2950000
-                },
-                {
-                  "distance": "70KM",
-                  "tier": "Late",
-                  "from": "19/11",
-                  "to": "2026-12-18",
-                  "price": 4050000
-                },
-                {
-                  "distance": "100KM",
-                  "tier": "Flash Sale",
-                  "from": "17/06",
-                  "to": "2026-06-18",
-                  "price": 2039000
-                },
-                {
-                  "distance": "100KM",
-                  "tier": "Early Bird",
-                  "from": "19/06",
-                  "to": "2026-09-18",
-                  "price": 3230000
-                },
-                {
-                  "distance": "100KM",
-                  "tier": "Regular",
-                  "from": "19/09",
-                  "to": "2026-11-18",
-                  "price": 4250000
-                },
-                {
-                  "distance": "100KM",
-                  "tier": "Late",
-                  "from": "19/11",
-                  "to": "2026-12-18",
-                  "price": 5350000
+                  "distance": "N/A",
+                  "type": "trail_run",
+                  "elevationGain": 0
                 }
               ],
-              "distances": [
-                "15KM",
-                "25KM",
-                "50KM",
-                "70KM",
-                "100KM"
-              ],
-              "currency": "VND"
-            }
-          },
-          {
-            "url": "https://pix.actiup.net/2026/06/16/1781602777776799/U%CC%9BU-%C4%90A%CC%83I-2027-(1).jpg",
-            "json": {
+              "edition": 1,
+              "editionQuote": "Măng Đen Ultra Trail 2027",
+              "mapsUrl": "",
+              "venue": "Măng Đen",
+              "city": "Kon Tum",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
               "prices": []
             }
           }
@@ -673,14 +533,200 @@
           "id": "ban-to-chuc-hoi-du-lich-mang-den-don-vi-van-hanh-pr-events",
           "name": "Ban Tổ Chức: Hội Du Lịch Măng Đen - Đơn vị vận hành: PR Events"
         },
-        "readBy": "agent"
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/06/15/1781504163978066/TICKET-PRICE-2027.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "15 KM",
+                  "tier": "FLASH SALE*",
+                  "audience": "",
+                  "from": "17/06",
+                  "to": "18/06",
+                  "price": 739000
+                },
+                {
+                  "distance": "15 KM",
+                  "tier": "EARLY BIRD",
+                  "audience": "",
+                  "from": "19/06",
+                  "to": "18/09",
+                  "price": 1130000
+                },
+                {
+                  "distance": "15 KM",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "19/09",
+                  "to": "18/11",
+                  "price": 1450000
+                },
+                {
+                  "distance": "15 KM",
+                  "tier": "LATE",
+                  "audience": "",
+                  "from": "19/11",
+                  "to": "18/12",
+                  "price": 2050000
+                },
+                {
+                  "distance": "25 KM",
+                  "tier": "FLASH SALE*",
+                  "audience": "",
+                  "from": "17/06",
+                  "to": "18/06",
+                  "price": 939000
+                },
+                {
+                  "distance": "25 KM",
+                  "tier": "EARLY BIRD",
+                  "audience": "",
+                  "from": "19/06",
+                  "to": "18/09",
+                  "price": 1430000
+                },
+                {
+                  "distance": "25 KM",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "19/09",
+                  "to": "18/11",
+                  "price": 1950000
+                },
+                {
+                  "distance": "25 KM",
+                  "tier": "LATE",
+                  "audience": "",
+                  "from": "19/11",
+                  "to": "18/12",
+                  "price": 2650000
+                },
+                {
+                  "distance": "50 KM",
+                  "tier": "FLASH SALE*",
+                  "audience": "",
+                  "from": "17/06",
+                  "to": "18/06",
+                  "price": 1339000
+                },
+                {
+                  "distance": "50 KM",
+                  "tier": "EARLY BIRD",
+                  "audience": "",
+                  "from": "19/06",
+                  "to": "18/09",
+                  "price": 1830000
+                },
+                {
+                  "distance": "50 KM",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "19/09",
+                  "to": "18/11",
+                  "price": 2450000
+                },
+                {
+                  "distance": "50 KM",
+                  "tier": "LATE",
+                  "audience": "",
+                  "from": "19/11",
+                  "to": "18/12",
+                  "price": 3350000
+                },
+                {
+                  "distance": "70 KM",
+                  "tier": "FLASH SALE*",
+                  "audience": "",
+                  "from": "17/06",
+                  "to": "18/06",
+                  "price": 1639000
+                },
+                {
+                  "distance": "70 KM",
+                  "tier": "EARLY BIRD",
+                  "audience": "",
+                  "from": "19/06",
+                  "to": "18/09",
+                  "price": 2230000
+                },
+                {
+                  "distance": "70 KM",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "19/09",
+                  "to": "18/11",
+                  "price": 2950000
+                },
+                {
+                  "distance": "70 KM",
+                  "tier": "LATE",
+                  "audience": "",
+                  "from": "19/11",
+                  "to": "18/12",
+                  "price": 4050000
+                },
+                {
+                  "distance": "100 KM",
+                  "tier": "FLASH SALE*",
+                  "audience": "",
+                  "from": "17/06",
+                  "to": "18/06",
+                  "price": 2039000
+                },
+                {
+                  "distance": "100 KM",
+                  "tier": "EARLY BIRD",
+                  "audience": "",
+                  "from": "19/06",
+                  "to": "18/09",
+                  "price": 3230000
+                },
+                {
+                  "distance": "100 KM",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "19/09",
+                  "to": "18/11",
+                  "price": 4250000
+                },
+                {
+                  "distance": "100 KM",
+                  "tier": "LATE",
+                  "audience": "",
+                  "from": "19/11",
+                  "to": "18/12",
+                  "price": 5350000
+                }
+              ],
+              "distances": [
+                "15 KM",
+                "25 KM",
+                "50 KM",
+                "70 KM",
+                "100 KM"
+              ],
+              "date": "2027-01-15",
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2026/06/16/1781602777776799/U%CC%9BU-%C4%90A%CC%83I-2027-(1).jpg",
+            "json": {
+              "prices": [],
+              "distances": [],
+              "date": "2027-01-15",
+              "currency": "VND"
+            }
+          }
+        ]
       }
     },
     {
       "site": "irace",
       "role": "seller",
       "url": "https://irace.vn/su-kien/mang-den-ultra-trail",
-      "lastCheckedAt": "2026-09-29T04:59:19.621Z",
+      "lastCheckedAt": "2026-10-18T21:07:47.953Z",
       "lastChangedAt": "2026-09-29T04:59:19.621Z",
       "extracted": {
         "facts": {
@@ -748,19 +794,19 @@
             "text": "them vao google calendar them vao google calendar"
           },
           {
-            "url": "https://ifitness.vn/products/sua-uong-truoc-khi-tap-vaporx5-next-gen-pre-workout-228g?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "url": "https://ifitness.vn/products/thanh-dinh-duong-huu-co-tu-hat-va-trai-cay-raw-bite?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
             "text": "mua ngay"
           },
           {
-            "url": "https://ifitness.vn/products/creatine-monohydrate-scitec-nutrition-300g?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "url": "https://ifitness.vn/products/thanh-nang-luong-natural-energy-bar-lecka-4-mui?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
             "text": "mua ngay"
           },
           {
-            "url": "https://ifitness.vn/products/sua-uong-truoc-khi-tap-elite-labs-usa-pre-cut-white-raspberry?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "url": "https://ifitness.vn/products/thanh-hat-dinh-duong-faminuts-hat-dieu-yen-mach-100g-hop-4-thanh?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
             "text": "mua ngay"
           },
           {
-            "url": "https://ifitness.vn/products/sua-tang-suc-manh-applied-nutrition-abe-pre-workout-315g?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "url": "https://ifitness.vn/products/thanh-nang-luong-lecka-granola-bites-40g?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
             "text": "mua ngay"
           },
           {
@@ -768,11 +814,11 @@
             "text": "dia diem"
           },
           {
-            "url": "https://ifitness.vn/collections/mung-ngay-phu-nu-viet-nam-20-10?utm_source=iRace.vn&utm_medium=Banner&utm_campaign=Top&utm_content=Optivita",
+            "url": "https://ifitness.vn/products/sua-tang-can-labrada-muscle-mass-gainer?ref=iRace&utm_source=iRace&utm_medium=Banner&utm_campaign=Topbanner&utm_content=%22Muscle-Mass-Gainer",
             "text": ""
           },
           {
-            "url": "https://ifitness.vn/products/sua-tang-hieu-suat-scitec-bcaa-xpress?ref=iRace&utm_source=iRace&utm_medium=Banner&utm_campaign=Topbanner&utm_content=%22Bcaa-Xpress%22",
+            "url": "https://ifitness.vn/products/vien-uong-dien-giai-gu-roctane-electrolyte-capsules-hu-50-vien?utm_source=iRace.vn&utm_medium=Banner&utm_campaign=Header&utm_content=GuRoctane",
             "text": ""
           }
         ],
@@ -782,5 +828,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T04:59:19.621Z"
+  "updatedAt": "2026-10-18T21:09:13.459Z"
 }

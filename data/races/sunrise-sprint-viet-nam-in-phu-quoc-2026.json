@@ -11,7 +11,7 @@
   "seriesId": "sunrise-sprint-viet-nam-in-phu-quoc",
   "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
-  "edition": 1,
+  "edition": null,
   "courses": [
     {
       "label": "Sprint",
@@ -290,7 +290,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/2026-sunrise-sprint-viet-nam-in-phu-quoc",
-      "lastCheckedAt": "2026-10-12T17:52:14.366Z",
+      "lastCheckedAt": "2026-10-18T21:02:37.071Z",
       "lastChangedAt": "2026-09-23T18:30:50.245Z",
       "extracted": {
         "facts": {
@@ -310,7 +310,7 @@
               "types": [
                 "triathlon"
               ],
-              "name": "2026 SUNRISE SPRINT Viet Nam",
+              "name": "SUNRISE SPRINT Việt Nam",
               "date": "2026-11-21",
               "endDate": "2026-11-22",
               "mainDate": "2026-11-21",
@@ -322,7 +322,7 @@
               "courses": [
                 {
                   "distance": "750m",
-                  "type": "open_water_swim",
+                  "type": "swim",
                   "elevationGain": 0
                 },
                 {
@@ -337,10 +337,11 @@
                 }
               ],
               "edition": 1,
+              "editionQuote": "cuộc đua ba môn phối hợp chính thức",
               "mapsUrl": "https://drive.google.com/file/d/1HimQZZpSmGWU_Ux4ukOvZksQmzZpzIcs/view?usp=sharing",
-              "venue": "Phu Quoc",
-              "city": "Phu Quoc",
-              "organizer": "",
+              "venue": "bãi biển cát trắng Phú Quốc",
+              "city": "Phú Quốc",
+              "organizer": "TBU",
               "currency": "VND",
               "registrationStatus": "open",
               "participants": {
@@ -412,5 +413,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-12T17:55:59.976Z"
+  "updatedAt": "2026-10-18T21:09:13.459Z"
 }

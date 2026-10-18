@@ -5,9 +5,9 @@
   "types": [
     "road_run"
   ],
-  "date": "2026-12-06",
-  "endDate": null,
-  "mainDate": null,
+  "date": "2026-12-01",
+  "endDate": "2026-12-31",
+  "mainDate": "2026-12-01",
   "seriesId": "hanh-trinh-tiep-suc",
   "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
@@ -145,6 +145,39 @@
       "site": "irace"
     },
     {
+      "distance": "3km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 199000,
+      "from": "2026-08-09",
+      "to": "2026-08-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "3km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 299000,
+      "from": "2026-09-01",
+      "to": "2026-10-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "3km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 399000,
+      "from": "2026-10-16",
+      "to": "2026-11-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
       "distance": "5km",
       "tier": "Flash Sale",
       "kind": "other",
@@ -152,6 +185,39 @@
       "price": 259000,
       "from": "2026-08-01",
       "to": "2026-08-08",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 299000,
+      "from": "2026-08-09",
+      "to": "2026-08-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 399000,
+      "from": "2026-09-01",
+      "to": "2026-10-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 499000,
+      "from": "2026-10-16",
+      "to": "2026-11-15",
       "inferred": [],
       "site": "irace"
     },
@@ -167,28 +233,6 @@
       "site": "irace"
     },
     {
-      "distance": "3km",
-      "tier": "Super Early Bird",
-      "kind": "super_early",
-      "audience": null,
-      "price": 199000,
-      "from": "2026-08-09",
-      "to": "2026-08-31",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "5km",
-      "tier": "Super Early Bird",
-      "kind": "super_early",
-      "audience": null,
-      "price": 299000,
-      "from": "2026-08-09",
-      "to": "2026-08-31",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
       "distance": "10km",
       "tier": "Super Early Bird",
       "kind": "super_early",
@@ -200,28 +244,6 @@
       "site": "irace"
     },
     {
-      "distance": "3km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 299000,
-      "from": "2026-09-01",
-      "to": "2026-10-15",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "5km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 399000,
-      "from": "2026-09-01",
-      "to": "2026-10-15",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
       "distance": "10km",
       "tier": "Early Bird",
       "kind": "early",
@@ -229,28 +251,6 @@
       "price": 499000,
       "from": "2026-09-01",
       "to": "2026-10-15",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "3km",
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 399000,
-      "from": "2026-10-16",
-      "to": "2026-11-15",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "5km",
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 499000,
-      "from": "2026-10-16",
-      "to": "2026-11-15",
       "inferred": [],
       "site": "irace"
     },
@@ -280,13 +280,90 @@
   ],
   "links": [
     {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "http://dhavietnam.vn/",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://google.com/calendar/event",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://google.com/maps/search/+ph+i+b+Trnh+Cng+Sn,+Ty+H,+H+Ni/@21.0782657,105.815719,17z/data=!3m1!4b1",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/pip",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/bot-bo-sung-nang-luong-tailwind-endurance-fuel-2-lan-dung",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/gel-uong-bo-sung-hammer-nutrition-hammer-gel-33g",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/gel-uong-bo-sung-nang-luong-gu-roctane-gel",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/goi-gel-honey-buddy-e-recovery-nang-luong-phuc-hoi-10g",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/sua-tang-hieu-suat-scitec-bcaa-xpress",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
       "url": "https://drive.google.com/file/d/1E2-jnjPV-6vVNBy1RoZylqvhUVeKtO07/view",
       "kind": "rules",
       "foundOn": "actiup.net"
     }
   ],
-  "participants": null,
-  "flags": [],
+  "participants": {
+    "count": 3000,
+    "sourceUrl": "https://actiup.net/vi/event/empower-run-2026",
+    "quote": "3.000 vận động viên",
+    "confidence": "medium"
+  },
+  "flags": [
+    "race spans 30 days (2026-12-01 to 2026-12-31); endDate may be the registration close"
+  ],
   "overrides": {
     "location": {
       "value": {
@@ -412,7 +489,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/empower-run-2026",
-      "lastCheckedAt": "2026-09-24T05:54:22.509Z",
+      "lastCheckedAt": "2026-10-18T21:03:58.664Z",
       "lastChangedAt": "2026-09-23T18:30:45.023Z",
       "extracted": {
         "facts": {
@@ -426,21 +503,52 @@
         },
         "pages": [
           {
+            "url": "https://actiup.net/vi/event/empower-run-2026",
             "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Hành Trình Tiếp Sức 2026",
               "date": "2026-12-06",
+              "endDate": "2026-12-06",
+              "mainDate": "2026-12-06",
               "distances": [
                 "3km",
                 "5km",
                 "10km"
               ],
-              "name": "Hành Trình Tiếp Sức 2026",
-              "pageKind": "sport",
-              "prices": [],
-              "types": [
-                "road_run"
-              ]
-            },
-            "url": "https://actiup.net/vi/event/empower-run-2026"
+              "courses": [
+                {
+                  "distance": "3km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "5km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 3,
+              "editionQuote": "mùa 3",
+              "mapsUrl": "",
+              "venue": "",
+              "city": "",
+              "organizer": "Bệnh viện K",
+              "currency": "",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 3000,
+                "quote": "3.000 vận động viên"
+              },
+              "prices": []
+            }
           }
         ],
         "links": [
@@ -452,133 +560,336 @@
         "organizer": {
           "id": "cong-ty-dha-viet-nam",
           "name": "Công ty DHA Việt Nam"
-        },
-        "readBy": "agent"
+        }
       }
     },
     {
       "site": "irace",
       "role": "seller",
       "url": "https://irace.vn/su-kien/hanh-trinh-tiep-suc",
-      "lastCheckedAt": "2026-09-29T00:00:00.000Z",
+      "lastCheckedAt": "2026-10-18T21:07:17.563Z",
       "lastChangedAt": "2026-09-29T00:00:00.000Z",
       "extracted": {
         "facts": {
           "name": "Hành Trình Tiếp Sức 2026",
-          "date": "2026-12-06",
-          "venue": "Vườn hoa phố đi bộ Trịnh Công Sơn, Tây Hồ, Hà Nội"
+          "venue": "Vườn hoa phố đi bộ Trịnh Công Sơn, Tây Hồ, Hà Nội",
+          "organizer": "DHA Viet Nam",
+          "prices": [
+            {
+              "distance": "3km",
+              "tier": "Flash Sale",
+              "from": "01/08",
+              "to": "08/08",
+              "price": 159000
+            },
+            {
+              "distance": "3km",
+              "tier": "Super Early Bird",
+              "from": "09/08",
+              "to": "31/08",
+              "price": 199000
+            },
+            {
+              "distance": "3km",
+              "tier": "Early Bird",
+              "from": "01/09",
+              "to": "15/10",
+              "price": 299000
+            },
+            {
+              "distance": "3km",
+              "tier": "Regular",
+              "from": "16/10",
+              "to": "15/11",
+              "price": 399000
+            },
+            {
+              "distance": "5km",
+              "tier": "Flash Sale",
+              "from": "01/08",
+              "to": "08/08",
+              "price": 259000
+            },
+            {
+              "distance": "5km",
+              "tier": "Super Early Bird",
+              "from": "09/08",
+              "to": "31/08",
+              "price": 299000
+            },
+            {
+              "distance": "5km",
+              "tier": "Early Bird",
+              "from": "01/09",
+              "to": "15/10",
+              "price": 399000
+            },
+            {
+              "distance": "5km",
+              "tier": "Regular",
+              "from": "16/10",
+              "to": "15/11",
+              "price": 499000
+            },
+            {
+              "distance": "10km",
+              "tier": "Flash Sale",
+              "from": "01/08",
+              "to": "08/08",
+              "price": 359000
+            },
+            {
+              "distance": "10km",
+              "tier": "Super Early Bird",
+              "from": "09/08",
+              "to": "31/08",
+              "price": 399000
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "from": "01/09",
+              "to": "15/10",
+              "price": 499000
+            },
+            {
+              "distance": "10km",
+              "tier": "Regular",
+              "from": "16/10",
+              "to": "15/11",
+              "price": 599000
+            }
+          ]
         },
         "pages": [
           {
-            "url": "https://irace.vn/su-kien/hanh-trinh-tiep-suc/",
+            "url": "https://irace.vn/su-kien/hanh-trinh-tiep-suc",
             "json": {
               "pageKind": "sport",
               "types": [
                 "road_run"
               ],
-              "name": "Hành Trình Tiếp Sức 2026",
-              "date": "2026-12-06",
+              "name": "Giải chạy lần thứ II – Hành Trình Tiếp Sức 2026",
+              "date": "2026-12-01",
+              "endDate": "2026-12-31",
+              "mainDate": "2026-12-01",
               "distances": [
-                "3km",
-                "5km",
-                "10km"
+                "3K",
+                "5K",
+                "10K"
               ],
-              "venue": "Vườn hoa phố đi bộ Trịnh Công Sơn, Tây Hồ, Hà Nội",
+              "courses": [
+                {
+                  "distance": "3K",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "5K",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10K",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 2,
+              "editionQuote": "Giải chạy lần thứ II – Hành Trình Tiếp Sức 2026",
+              "mapsUrl": "https://maps.google.com/?q=Vườn+hoa+phố+đi bộ+Trịnh+Công+Sơn,+Tây+Hồ,+Hà+Nội",
+              "venue": "Vườn hoa phố đi bộ Trịnh Công Sơn",
+              "city": "Hà Nội",
+              "organizer": "",
               "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
               "prices": [
                 {
                   "distance": "3km",
                   "tier": "Flash Sale",
-                  "from": "01/08",
-                  "to": "08/08",
+                  "audience": "",
+                  "from": "2023-08-01",
+                  "to": "2023-08-08",
                   "price": 159000
                 },
                 {
-                  "distance": "5km",
-                  "tier": "Flash Sale",
-                  "from": "01/08",
-                  "to": "08/08",
-                  "price": 259000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Flash Sale",
-                  "from": "01/08",
-                  "to": "08/08",
-                  "price": 359000
-                },
-                {
                   "distance": "3km",
                   "tier": "Super Early Bird",
-                  "from": "09/08",
-                  "to": "31/08",
+                  "audience": "",
+                  "from": "2023-08-09",
+                  "to": "2023-08-31",
                   "price": 199000
                 },
                 {
-                  "distance": "5km",
-                  "tier": "Super Early Bird",
-                  "from": "09/08",
-                  "to": "31/08",
-                  "price": 299000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Super Early Bird",
-                  "from": "09/08",
-                  "to": "31/08",
-                  "price": 399000
-                },
-                {
                   "distance": "3km",
                   "tier": "Early Bird",
-                  "from": "01/09",
-                  "to": "15/10",
+                  "audience": "",
+                  "from": "2023-09-01",
+                  "to": "2023-10-15",
                   "price": 299000
-                },
-                {
-                  "distance": "5km",
-                  "tier": "Early Bird",
-                  "from": "01/09",
-                  "to": "15/10",
-                  "price": 399000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Early Bird",
-                  "from": "01/09",
-                  "to": "15/10",
-                  "price": 499000
                 },
                 {
                   "distance": "3km",
                   "tier": "Regular",
-                  "from": "16/10",
-                  "to": "15/11",
+                  "audience": "",
+                  "from": "2023-10-16",
+                  "to": "2023-11-15",
+                  "price": 399000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Flash Sale",
+                  "audience": "",
+                  "from": "2023-08-01",
+                  "to": "2023-08-08",
+                  "price": 259000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "2023-08-09",
+                  "to": "2023-08-31",
+                  "price": 299000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "2023-09-01",
+                  "to": "2023-10-15",
                   "price": 399000
                 },
                 {
                   "distance": "5km",
                   "tier": "Regular",
-                  "from": "16/10",
-                  "to": "15/11",
+                  "audience": "",
+                  "from": "2023-10-16",
+                  "to": "2023-11-15",
+                  "price": 499000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Flash Sale",
+                  "audience": "",
+                  "from": "2023-08-01",
+                  "to": "2023-08-08",
+                  "price": 359000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "2023-08-09",
+                  "to": "2023-08-31",
+                  "price": 399000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "2023-09-01",
+                  "to": "2023-10-15",
                   "price": 499000
                 },
                 {
                   "distance": "10km",
                   "tier": "Regular",
-                  "from": "16/10",
-                  "to": "15/11",
+                  "audience": "",
+                  "from": "2023-10-16",
+                  "to": "2023-11-15",
                   "price": 599000
                 }
               ]
             }
           }
         ],
-        "readBy": "agent"
+        "links": [
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": "facebook facebook"
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn/",
+            "text": "instagram instagram"
+          },
+          {
+            "url": "https://app.irace.vn/",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=iRace&utm_medium=Menu&utm_campaign=Menu",
+            "text": "sports shop"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=iRace&utm_medium=Menu&utm_campaign=Menu",
+            "text": "nutritions"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=iRace&utm_medium=Menu&utm_campaign=Menu",
+            "text": "accessories"
+          },
+          {
+            "url": "https://ticket.irace.vn/",
+            "text": "su kien tai viet nam"
+          },
+          {
+            "url": "https://ticket.irace.vn/orders",
+            "text": "ve chay offline"
+          },
+          {
+            "url": "https://app.irace.vn/my-orders",
+            "text": "ve chay online"
+          },
+          {
+            "url": "https://ticket.irace.vn/hanh-trinh-tiep-suc-2026?ref=iRace",
+            "text": "06thang 1205 0009 00hanh trinh tiep suc 2026 giai chay gay quy ung ho benh nhan ung thu hanh trinh tiep suc empower run "
+          },
+          {
+            "url": "https://www.google.com/calendar/event?action=TEMPLATE&text=H%C3%A0nh%20Tr%C3%ACnh%20Ti%E1%BA%BFp%20S%E1%BB%A9c%202026&dates=20261205T220000Z/20261206T020000Z&ctz=Asia%2FSaigon&details=H%C3%A0nh%20Tr%C3%ACnh%20Ti%E1%BA%BFp%20S%E1%BB%A9c%202026&location=V%C6%B0%E1%BB%9Dn%20hoa%20ph%E1%BB%91%20%C4%91i%20b%E1%BB%99%20Tr%E1%BB%8Bnh%20C%C3%B4ng%20S%C6%A1n%2C%20T%C3%A2y%20H%E1%BB%93%2C%20H%C3%A0%20N%E1%BB%99i%203RH9%2B88H%2C%20P.%20Tr%E1%BB%8Bnh%20C%C3%B4ng%20S%C6%A1n%2C%20Nh%E1%BA%ADt%20T%C3%A2n%2C%20T%C3%A2y%20H%E1%BB%93%2C%20H%C3%A0%20N%E1%BB%99i%2C%20Vi%E1%BB%87t%20Nam",
+            "text": "them vao google calendar them vao google calendar"
+          },
+          {
+            "url": "https://ifitness.vn/products/goi-gel-honey-buddy-e-recovery-nang-luong-phuc-hoi-10g?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "text": "mua ngay"
+          },
+          {
+            "url": "https://ifitness.vn/products/gel-uong-bo-sung-nang-luong-gu-roctane-gel?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "text": "mua ngay"
+          },
+          {
+            "url": "https://ifitness.vn/products/bot-bo-sung-nang-luong-tailwind-endurance-fuel-2-lan-dung?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "text": "mua ngay"
+          },
+          {
+            "url": "https://ifitness.vn/products/gel-uong-bo-sung-hammer-nutrition-hammer-gel-33g?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "text": "mua ngay"
+          },
+          {
+            "url": "https://www.google.com/maps/search/+ph+i+b+Trnh+Cng+Sn,+Ty+H,+H+Ni/@21.0782657,105.815719,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDgwNC4wIKXMDSoASAFQAw",
+            "text": "dia diem"
+          },
+          {
+            "url": "https://ifitness.vn/collections/pip?ref=irace&utm_source=iracevn&utm_medium=Banner&utm_campaign=HomePageChayBo&utm_content=PIP",
+            "text": ""
+          },
+          {
+            "url": "https://ifitness.vn/products/sua-tang-hieu-suat-scitec-bcaa-xpress?ref=iRace&utm_source=iRace&utm_medium=Banner&utm_campaign=Topbanner&utm_content=%22Bcaa-Xpress%22",
+            "text": ""
+          },
+          {
+            "url": "http://dhavietnam.vn/",
+            "text": "dha viet nam"
+          }
+        ]
       }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T08:03:24.010Z"
+  "updatedAt": "2026-10-18T21:09:13.459Z"
 }

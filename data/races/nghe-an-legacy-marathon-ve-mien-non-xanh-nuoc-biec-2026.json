@@ -402,226 +402,6 @@
       "to": "2026-11-26",
       "inferred": [],
       "site": "irace"
-    },
-    {
-      "distance": "5km",
-      "tier": "Super Early Bird",
-      "kind": "super_early",
-      "audience": null,
-      "price": 300000,
-      "from": "2026-07-16",
-      "to": "2026-08-03",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "Super Early Bird",
-      "kind": "super_early",
-      "audience": null,
-      "price": 350000,
-      "from": "2026-07-16",
-      "to": "2026-08-03",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "21km",
-      "tier": "Super Early Bird",
-      "kind": "super_early",
-      "audience": null,
-      "price": 400000,
-      "from": "2026-07-16",
-      "to": "2026-08-03",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "42km",
-      "tier": "Super Early Bird",
-      "kind": "super_early",
-      "audience": null,
-      "price": 500000,
-      "from": "2026-07-16",
-      "to": "2026-08-03",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "5km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 400000,
-      "from": "2026-08-04",
-      "to": "2026-10-09",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 450000,
-      "from": "2026-08-04",
-      "to": "2026-10-09",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "21km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 550000,
-      "from": "2026-08-04",
-      "to": "2026-10-09",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "42km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 600000,
-      "from": "2026-08-04",
-      "to": "2026-10-09",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "5km",
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 450000,
-      "from": "2026-10-02",
-      "to": "2026-11-10",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 500000,
-      "from": "2026-10-02",
-      "to": "2026-11-10",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "21km",
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 650000,
-      "from": "2026-10-02",
-      "to": "2026-11-10",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "42km",
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 700000,
-      "from": "2026-10-02",
-      "to": "2026-11-10",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "5km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 600000,
-      "from": "2026-11-11",
-      "to": "2026-11-26",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 700000,
-      "from": "2026-11-11",
-      "to": "2026-11-26",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "21km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 800000,
-      "from": "2026-11-11",
-      "to": "2026-11-26",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "42km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 900000,
-      "from": "2026-11-11",
-      "to": "2026-11-26",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "5km",
-      "tier": "Flash Sale",
-      "kind": "other",
-      "audience": null,
-      "price": 137000,
-      "from": "2026-07-14",
-      "to": "2026-07-15",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "Flash Sale",
-      "kind": "other",
-      "audience": null,
-      "price": 238000,
-      "from": "2026-07-14",
-      "to": "2026-07-15",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "21km",
-      "tier": "Flash Sale",
-      "kind": "other",
-      "audience": null,
-      "price": 337000,
-      "from": "2026-07-14",
-      "to": "2026-07-15",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "42km",
-      "tier": "Flash Sale",
-      "kind": "other",
-      "audience": null,
-      "price": 438000,
-      "from": "2026-07-14",
-      "to": "2026-07-15",
-      "inferred": [],
-      "site": "actiup"
     }
   ],
   "currency": "VND",
@@ -691,6 +471,11 @@
       "url": "https://youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
       "kind": "other",
       "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://docs.google.com/document/d/1mVz7MUD_SB8EPCUX0a9LqpxG4WOQ9elk/edit",
+      "kind": "rules",
+      "foundOn": "actiup.net"
     }
   ],
   "participants": null,
@@ -717,7 +502,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/nghe-an-legacy-marathon-ve-mien-non-xanh-nuoc-biec",
-      "lastCheckedAt": "2026-09-29T00:00:00.000Z",
+      "lastCheckedAt": "2026-10-18T21:04:02.811Z",
       "lastChangedAt": "2026-09-23T18:30:45.821Z",
       "extracted": {
         "facts": {
@@ -732,178 +517,77 @@
         },
         "pages": [
           {
-            "url": "https://actiup.net/vi/event/6a4dbe107ac63513f69c069e/tickets",
+            "url": "https://actiup.net/vi/event/nghe-an-legacy-marathon-ve-mien-non-xanh-nuoc-biec",
             "json": {
               "pageKind": "sport",
-              "name": "NGHỆ AN LEGACY MARATHON - VỀ MIỀN NON XANH NƯỚC BIẾC",
-              "date": "2026-12-06",
               "types": [
                 "road_run"
               ],
+              "name": "NGHỆ AN LEGACY MARATHON - VỀ MIỀN NON XANH NƯỚC BIẾC",
+              "date": "2026-12-06",
+              "endDate": "2026-12-06",
+              "mainDate": "2026-12-06",
               "distances": [
                 "42KM",
                 "21KM",
                 "10KM",
                 "5KM"
               ],
-              "city": "Nghệ An",
-              "prices": [
+              "courses": [
                 {
-                  "distance": "5KM",
-                  "tier": "Super Early Bird",
-                  "from": "2026-07-16",
-                  "to": "2026-08-03",
-                  "price": 300000
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "Super Early Bird",
-                  "from": "2026-07-16",
-                  "to": "2026-08-03",
-                  "price": 350000
+                  "distance": "42KM",
+                  "type": "road_run",
+                  "elevationGain": 0
                 },
                 {
                   "distance": "21KM",
-                  "tier": "Super Early Bird",
-                  "from": "2026-07-16",
-                  "to": "2026-08-03",
-                  "price": 400000
-                },
-                {
-                  "distance": "42KM",
-                  "tier": "Super Early Bird",
-                  "from": "2026-07-16",
-                  "to": "2026-08-03",
-                  "price": 500000
-                },
-                {
-                  "distance": "5KM",
-                  "tier": "Early Bird",
-                  "from": "2026-08-04",
-                  "to": "2026-10-09",
-                  "price": 400000
+                  "type": "road_run",
+                  "elevationGain": 0
                 },
                 {
                   "distance": "10KM",
-                  "tier": "Early Bird",
-                  "from": "2026-08-04",
-                  "to": "2026-10-09",
-                  "price": 450000
-                },
-                {
-                  "distance": "21KM",
-                  "tier": "Early Bird",
-                  "from": "2026-08-04",
-                  "to": "2026-10-09",
-                  "price": 550000
-                },
-                {
-                  "distance": "42KM",
-                  "tier": "Early Bird",
-                  "from": "2026-08-04",
-                  "to": "2026-10-09",
-                  "price": 600000
+                  "type": "road_run",
+                  "elevationGain": 0
                 },
                 {
                   "distance": "5KM",
-                  "tier": "Regular",
-                  "from": "2026-10-02",
-                  "to": "2026-11-10",
-                  "price": 450000
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "Regular",
-                  "from": "2026-10-02",
-                  "to": "2026-11-10",
-                  "price": 500000
-                },
-                {
-                  "distance": "21KM",
-                  "tier": "Regular",
-                  "from": "2026-10-02",
-                  "to": "2026-11-10",
-                  "price": 650000
-                },
-                {
-                  "distance": "42KM",
-                  "tier": "Regular",
-                  "from": "2026-10-02",
-                  "to": "2026-11-10",
-                  "price": 700000
-                },
-                {
-                  "distance": "5KM",
-                  "tier": "Late",
-                  "from": "2026-11-11",
-                  "to": "2026-11-26",
-                  "price": 600000
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "Late",
-                  "from": "2026-11-11",
-                  "to": "2026-11-26",
-                  "price": 700000
-                },
-                {
-                  "distance": "21KM",
-                  "tier": "Late",
-                  "from": "2026-11-11",
-                  "to": "2026-11-26",
-                  "price": 800000
-                },
-                {
-                  "distance": "42KM",
-                  "tier": "Late",
-                  "from": "2026-11-11",
-                  "to": "2026-11-26",
-                  "price": 900000
-                },
-                {
-                  "distance": "5KM",
-                  "tier": "Flash Sale",
-                  "from": "2026-07-14",
-                  "to": "2026-07-15",
-                  "price": 137000
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "Flash Sale",
-                  "from": "2026-07-14",
-                  "to": "2026-07-15",
-                  "price": 238000
-                },
-                {
-                  "distance": "21KM",
-                  "tier": "Flash Sale",
-                  "from": "2026-07-14",
-                  "to": "2026-07-15",
-                  "price": 337000
-                },
-                {
-                  "distance": "42KM",
-                  "tier": "Flash Sale",
-                  "from": "2026-07-14",
-                  "to": "2026-07-15",
-                  "price": 438000
+                  "type": "road_run",
+                  "elevationGain": 0
                 }
-              ]
+              ],
+              "edition": 1,
+              "editionQuote": "Nghệ An Legacy Marathon",
+              "mapsUrl": "https://goo.gl/maps/uB7Z7fJwaBCq3m3t7",
+              "venue": "Quảng trường Bình Minh, Cửa Lò, Nghệ An",
+              "city": "Nghệ An",
+              "organizer": "Ban Tổ Chức",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": []
             }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://docs.google.com/document/d/1mVz7MUD_SB8EPCUX0a9LqpxG4WOQ9elk/edit?usp=drive_link&ouid=111350351941733978191&rtpof=true&sd=true",
+            "text": "quy dinh tham du xem tai day"
           }
         ],
         "organizer": {
           "id": "cong-ty-zaha-vietnam",
           "name": "Công ty Zaha Vietnam"
-        },
-        "readBy": "agent"
+        }
       }
     },
     {
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/nghe-an-legacy-marathon-2026",
-      "lastCheckedAt": "2026-10-15T20:29:19.795Z",
+      "lastCheckedAt": "2026-10-18T21:07:44.751Z",
       "lastChangedAt": "2026-10-15T20:29:19.795Z",
       "extracted": {
         "facts": {
@@ -1461,5 +1145,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-17T13:14:46.772Z"
+  "updatedAt": "2026-10-18T21:09:13.459Z"
 }

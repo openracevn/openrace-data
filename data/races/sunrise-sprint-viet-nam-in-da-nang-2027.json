@@ -11,7 +11,7 @@
   "seriesId": "sunrise-sprint-viet-nam-in-da-nang",
   "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
-  "edition": null,
+  "edition": 1,
   "courses": [
     {
       "label": "Sprint",
@@ -169,7 +169,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/2027-sunrise-sprint-viet-nam-in-da-nang",
-      "lastCheckedAt": "2026-09-23T18:52:10.297Z",
+      "lastCheckedAt": "2026-10-18T21:05:47.748Z",
       "lastChangedAt": "2026-09-23T18:30:41.808Z",
       "extracted": {
         "facts": {
@@ -189,19 +189,44 @@
               "types": [
                 "triathlon"
               ],
-              "name": "SUNRISE SPRINT Việt Nam",
+              "name": "SUNRISE SPRINT Viet Nam",
               "date": "2027-11-21",
               "endDate": "2027-11-22",
+              "mainDate": "2027-11-21",
               "distances": [
                 "750m",
                 "20km",
                 "5km"
               ],
-              "venue": "biển Đà Nẵng",
+              "courses": [
+                {
+                  "distance": "750m",
+                  "type": "swim",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "20km",
+                  "type": "road_cycle",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "5km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "mùa 1",
+              "mapsUrl": "",
+              "venue": "Bãi biển Đà Nẵng",
               "city": "Đà Nẵng",
-              "organizer": "Sunrise Events",
+              "organizer": "sunriseevents.com.vn",
               "currency": "VND",
               "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
               "prices": []
             }
           }
@@ -242,5 +267,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-13T02:12:57.272Z"
+  "updatedAt": "2026-10-18T21:09:13.459Z"
 }

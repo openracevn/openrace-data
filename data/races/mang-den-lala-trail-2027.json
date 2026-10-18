@@ -42,7 +42,102 @@
     "venue": "Măng Đen",
     "city": "Quảng Ngãi"
   },
-  "geo": null,
+  "geo": {
+    "lat": 14.6014606,
+    "lng": 108.2916225,
+    "source": "nominatim",
+    "precision": "ward",
+    "current": {
+      "province": "51",
+      "ward": "23473"
+    },
+    "legacy": {
+      "province": "62",
+      "district": "613",
+      "ward": "23473"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 619.2,
+        "minutes": 482,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1029.3,
+        "minutes": 803,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 274.2,
+        "minutes": 200,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 400.2,
+        "minutes": 354,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 447.6,
+        "minutes": 409,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 778.4,
+        "minutes": 610,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1063.4,
+        "minutes": 827,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 357,
+        "minutes": 275,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 668.1,
+        "minutes": 546,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 261.4,
+        "minutes": 197,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 279.7,
+        "minutes": 242,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1337.1,
+        "minutes": 1035,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1113.1,
+        "minutes": 860,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
   "prices": [
     {
       "distance": "5km",
@@ -512,7 +607,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/mang-den-lala-trail-2027",
-      "lastCheckedAt": "2026-10-15T20:21:17.005Z",
+      "lastCheckedAt": "2026-10-18T21:05:23.437Z",
       "lastChangedAt": "2026-10-12T17:47:13.559Z",
       "extracted": {
         "facts": {
@@ -707,7 +802,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/mang-den-lala-trail-2027",
-      "lastCheckedAt": "2026-10-15T20:27:17.547Z",
+      "lastCheckedAt": "2026-10-18T21:07:51.825Z",
       "lastChangedAt": "2026-10-15T20:27:17.547Z",
       "extracted": {
         "facts": {
@@ -1211,5 +1306,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-10-12T17:48:31.011Z",
-  "updatedAt": "2026-10-15T20:31:08.696Z"
+  "updatedAt": "2026-10-18T21:09:13.459Z"
 }

@@ -34,7 +34,7 @@
   ],
   "location": {
     "venue": "Khu C13, Đường Tân Trào, Khu đô thị Phú Mỹ Hưng, Phường Tân Mỹ, TP. Hồ Chí Minh",
-    "city": "HCMC"
+    "city": "Ho Chi Minh City"
   },
   "geo": {
     "lat": 10.7258082,
@@ -433,7 +433,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/gemadept-run-the-way-forward-2026",
-      "lastCheckedAt": "2026-10-12T17:50:02.314Z",
+      "lastCheckedAt": "2026-10-18T21:01:45.896Z",
       "lastChangedAt": "2026-09-23T18:30:48.639Z",
       "extracted": {
         "facts": {
@@ -481,15 +481,16 @@
                 }
               ],
               "edition": 5,
+              "editionQuote": "Mùa giải thứ năm.",
               "mapsUrl": "https://drive.google.com/file/d/1jfilJNoiY4O-6rrM8y8e4_xNnsr24eW6/view",
-              "venue": "unknown",
-              "city": "HCMC",
-              "organizer": "unknown",
+              "venue": "Gemadept",
+              "city": "Ho Chi Minh City",
+              "organizer": "Gemadept",
               "currency": "VND",
               "registrationStatus": "open",
               "participants": {
                 "count": 0,
-                "quote": ""
+                "quote": "Đang tiếp nhận đăng ký."
               },
               "prices": []
             }
@@ -662,5 +663,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-13T02:40:11.333Z"
+  "updatedAt": "2026-10-18T21:09:13.459Z"
 }

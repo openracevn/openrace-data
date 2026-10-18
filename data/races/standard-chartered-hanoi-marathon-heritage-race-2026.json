@@ -14,12 +14,6 @@
   "edition": 3,
   "courses": [
     {
-      "label": "2.1km",
-      "meters": 2100,
-      "type": "road_run",
-      "elevationGain": null
-    },
-    {
       "label": "5km",
       "meters": 5000,
       "type": "road_run",
@@ -153,77 +147,11 @@
       "site": "irace"
     },
     {
-      "distance": "10km",
-      "tier": "Flash Sale",
-      "kind": "other",
-      "audience": null,
-      "price": 358000,
-      "from": "2026-03-04",
-      "to": "2026-03-06",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "21km",
-      "tier": "Flash Sale",
-      "kind": "other",
-      "audience": null,
-      "price": 458000,
-      "from": "2026-03-04",
-      "to": "2026-03-06",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "42km",
-      "tier": "Flash Sale",
-      "kind": "other",
-      "audience": null,
-      "price": 558000,
-      "from": "2026-03-04",
-      "to": "2026-03-06",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
       "distance": "5km",
       "tier": "Super Early Bird",
       "kind": "super_early",
       "audience": null,
       "price": 358000,
-      "from": "2026-03-07",
-      "to": "2026-03-28",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Super Early Bird",
-      "kind": "super_early",
-      "audience": null,
-      "price": 478000,
-      "from": "2026-03-07",
-      "to": "2026-03-28",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "21km",
-      "tier": "Super Early Bird",
-      "kind": "super_early",
-      "audience": null,
-      "price": 658000,
-      "from": "2026-03-07",
-      "to": "2026-03-28",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "42km",
-      "tier": "Super Early Bird",
-      "kind": "super_early",
-      "audience": null,
-      "price": 758000,
       "from": "2026-03-07",
       "to": "2026-03-28",
       "inferred": [],
@@ -241,77 +169,11 @@
       "site": "irace"
     },
     {
-      "distance": "10km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 650000,
-      "from": "2026-03-29",
-      "to": "2026-06-30",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "21km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 850000,
-      "from": "2026-03-29",
-      "to": "2026-06-30",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "42km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 950000,
-      "from": "2026-03-29",
-      "to": "2026-06-30",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
       "distance": "5km",
       "tier": "Standard",
       "kind": "regular",
       "audience": null,
       "price": 500000,
-      "from": "2026-07-01",
-      "to": "2026-08-31",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Standard",
-      "kind": "regular",
-      "audience": null,
-      "price": 1100000,
-      "from": "2026-07-01",
-      "to": "2026-08-31",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "21km",
-      "tier": "Standard",
-      "kind": "regular",
-      "audience": null,
-      "price": 1300000,
-      "from": "2026-07-01",
-      "to": "2026-08-31",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "42km",
-      "tier": "Standard",
-      "kind": "regular",
-      "audience": null,
-      "price": 1500000,
       "from": "2026-07-01",
       "to": "2026-08-31",
       "inferred": [],
@@ -330,6 +192,50 @@
     },
     {
       "distance": "10km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 358000,
+      "from": "2026-03-04",
+      "to": "2026-03-06",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 478000,
+      "from": "2026-03-07",
+      "to": "2026-03-28",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 650000,
+      "from": "2026-03-29",
+      "to": "2026-06-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 1100000,
+      "from": "2026-07-01",
+      "to": "2026-08-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
       "tier": "Late",
       "kind": "late",
       "audience": null,
@@ -341,12 +247,100 @@
     },
     {
       "distance": "21km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 458000,
+      "from": "2026-03-04",
+      "to": "2026-03-06",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 658000,
+      "from": "2026-03-07",
+      "to": "2026-03-28",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 850000,
+      "from": "2026-03-29",
+      "to": "2026-06-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 1300000,
+      "from": "2026-07-01",
+      "to": "2026-08-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
       "tier": "Late",
       "kind": "late",
       "audience": null,
       "price": 2000000,
       "from": "2026-09-01",
       "to": "2026-09-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 558000,
+      "from": "2026-03-04",
+      "to": "2026-03-06",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 758000,
+      "from": "2026-03-07",
+      "to": "2026-03-28",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 950000,
+      "from": "2026-03-29",
+      "to": "2026-06-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 1500000,
+      "from": "2026-07-01",
+      "to": "2026-08-31",
       "inferred": [],
       "site": "irace"
     },
@@ -376,7 +370,7 @@
     }
   ],
   "currency": "VND",
-  "registrationStatus": "closed",
+  "registrationStatus": "open",
   "registrations": [
     {
       "site": "irace",
@@ -496,7 +490,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/standard-chartered-hanoi-marathon-heritage-race-2026",
-      "lastCheckedAt": "2026-10-12T17:51:39.718Z",
+      "lastCheckedAt": "2026-10-18T21:02:19.670Z",
       "lastChangedAt": "2026-09-23T18:30:51.452Z",
       "extracted": {
         "facts": {
@@ -532,6 +526,7 @@
                 }
               ],
               "edition": 10,
+              "editionQuote": "Giải marathon thứ 10 trong hệ thống giải Standard Chartered Marathon danh tiếng thế giới",
               "mapsUrl": "https://drive.google.com/file/d/1dWhJOepPOz7srAJf7NGjD27KhBn6YTNo/view?usp=drive_link",
               "venue": "Hồ Hoàn Kiếm",
               "city": "Hà Nội",
@@ -540,7 +535,7 @@
               "registrationStatus": "open",
               "participants": {
                 "count": 10000,
-                "quote": "hơn 10.000 người đăng ký thi đấu"
+                "quote": "hơn 10.000 người đăng ký thi đấu tại Giải"
               },
               "prices": []
             }
@@ -573,14 +568,155 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/standard-chartered-marathon-di-san-ha-noi-2026",
-      "lastCheckedAt": "2026-10-13T02:10:00.000Z",
+      "lastCheckedAt": "2026-10-18T21:07:29.826Z",
       "lastChangedAt": "2026-09-26T06:31:20.332Z",
       "extracted": {
         "facts": {
           "name": "Giải chạy Standard Chartered Marathon Di sản Hà Nội 2026",
           "venue": "Hà Nội, Việt Nam",
-          "organizer": "DHA Vietnam | Ban tổ chức sự kiện",
-          "registrationStatus": "closed"
+          "organizer": "DHA Vietnam",
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Flash Sale",
+              "from": "04/03",
+              "to": "06/03",
+              "price": 258000
+            },
+            {
+              "distance": "5km",
+              "tier": "Super Early Bird",
+              "from": "07/03",
+              "to": "28/03",
+              "price": 358000
+            },
+            {
+              "distance": "5km",
+              "tier": "Early Bird",
+              "from": "29/03",
+              "to": "30/06",
+              "price": 500000
+            },
+            {
+              "distance": "5km",
+              "tier": "Standard",
+              "from": "01/07",
+              "to": "31/08",
+              "price": 500000
+            },
+            {
+              "distance": "5km",
+              "tier": "Late",
+              "from": "01/09",
+              "to": "30/09",
+              "price": 900000
+            },
+            {
+              "distance": "10km",
+              "tier": "Flash Sale",
+              "from": "04/03",
+              "to": "06/03",
+              "price": 358000
+            },
+            {
+              "distance": "10km",
+              "tier": "Super Early Bird",
+              "from": "07/03",
+              "to": "28/03",
+              "price": 478000
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "from": "29/03",
+              "to": "30/06",
+              "price": 650000
+            },
+            {
+              "distance": "10km",
+              "tier": "Standard",
+              "from": "01/07",
+              "to": "31/08",
+              "price": 1100000
+            },
+            {
+              "distance": "10km",
+              "tier": "Late",
+              "from": "01/09",
+              "to": "30/09",
+              "price": 1500000
+            },
+            {
+              "distance": "21km",
+              "tier": "Flash Sale",
+              "from": "04/03",
+              "to": "06/03",
+              "price": 458000
+            },
+            {
+              "distance": "21km",
+              "tier": "Super Early Bird",
+              "from": "07/03",
+              "to": "28/03",
+              "price": 658000
+            },
+            {
+              "distance": "21km",
+              "tier": "Early Bird",
+              "from": "29/03",
+              "to": "30/06",
+              "price": 850000
+            },
+            {
+              "distance": "21km",
+              "tier": "Standard",
+              "from": "01/07",
+              "to": "31/08",
+              "price": 1300000
+            },
+            {
+              "distance": "21km",
+              "tier": "Late",
+              "from": "01/09",
+              "to": "30/09",
+              "price": 2000000
+            },
+            {
+              "distance": "42km",
+              "tier": "Flash Sale",
+              "from": "04/03",
+              "to": "06/03",
+              "price": 558000
+            },
+            {
+              "distance": "42km",
+              "tier": "Super Early Bird",
+              "from": "07/03",
+              "to": "28/03",
+              "price": 758000
+            },
+            {
+              "distance": "42km",
+              "tier": "Early Bird",
+              "from": "29/03",
+              "to": "30/06",
+              "price": 950000
+            },
+            {
+              "distance": "42km",
+              "tier": "Standard",
+              "from": "01/07",
+              "to": "31/08",
+              "price": 1500000
+            },
+            {
+              "distance": "42km",
+              "tier": "Late",
+              "from": "01/09",
+              "to": "30/09",
+              "price": 2300000
+            }
+          ]
         },
         "pages": [
           {
@@ -592,154 +728,205 @@
               ],
               "name": "Giải chạy Standard Chartered Marathon Di sản Hà Nội 2026",
               "date": "2026-11-08",
+              "endDate": "2026-11-09",
+              "mainDate": "2026-11-08",
               "distances": [
-                "2.1km",
                 "5km",
                 "10km",
                 "21km",
                 "42km"
               ],
+              "courses": [
+                {
+                  "distance": "5km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "21km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "42km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "Giải chạy lẫn thứ 1",
+              "mapsUrl": "",
               "venue": "Hà Nội, Việt Nam",
-              "organizer": "DHA Vietnam",
+              "city": "Hà Nội",
+              "organizer": "",
               "currency": "VND",
-              "registrationStatus": "closed",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
               "prices": [
                 {
                   "distance": "5km",
                   "tier": "Flash Sale",
+                  "audience": "",
                   "from": "04/03",
                   "to": "06/03",
                   "price": 258000
                 },
                 {
-                  "distance": "10km",
-                  "tier": "Flash Sale",
-                  "from": "04/03",
-                  "to": "06/03",
-                  "price": 358000
-                },
-                {
-                  "distance": "21km",
-                  "tier": "Flash Sale",
-                  "from": "04/03",
-                  "to": "06/03",
-                  "price": 458000
-                },
-                {
-                  "distance": "42km",
-                  "tier": "Flash Sale",
-                  "from": "04/03",
-                  "to": "06/03",
-                  "price": 558000
-                },
-                {
                   "distance": "5km",
                   "tier": "Super Early Bird",
+                  "audience": "",
                   "from": "07/03",
                   "to": "28/03",
                   "price": 358000
                 },
                 {
-                  "distance": "10km",
-                  "tier": "Super Early Bird",
-                  "from": "07/03",
-                  "to": "28/03",
-                  "price": 478000
-                },
-                {
-                  "distance": "21km",
-                  "tier": "Super Early Bird",
-                  "from": "07/03",
-                  "to": "28/03",
-                  "price": 658000
-                },
-                {
-                  "distance": "42km",
-                  "tier": "Super Early Bird",
-                  "from": "07/03",
-                  "to": "28/03",
-                  "price": 758000
-                },
-                {
                   "distance": "5km",
                   "tier": "Early Bird",
+                  "audience": "",
                   "from": "29/03",
                   "to": "30/06",
                   "price": 500000
                 },
                 {
-                  "distance": "10km",
-                  "tier": "Early Bird",
-                  "from": "29/03",
-                  "to": "30/06",
-                  "price": 650000
-                },
-                {
-                  "distance": "21km",
-                  "tier": "Early Bird",
-                  "from": "29/03",
-                  "to": "30/06",
-                  "price": 850000
-                },
-                {
-                  "distance": "42km",
-                  "tier": "Early Bird",
-                  "from": "29/03",
-                  "to": "30/06",
-                  "price": 950000
-                },
-                {
                   "distance": "5km",
                   "tier": "Standard",
+                  "audience": "",
                   "from": "01/07",
                   "to": "31/08",
                   "price": 500000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Standard",
-                  "from": "01/07",
-                  "to": "31/08",
-                  "price": 1100000
-                },
-                {
-                  "distance": "21km",
-                  "tier": "Standard",
-                  "from": "01/07",
-                  "to": "31/08",
-                  "price": 1300000
-                },
-                {
-                  "distance": "42km",
-                  "tier": "Standard",
-                  "from": "01/07",
-                  "to": "31/08",
-                  "price": 1500000
                 },
                 {
                   "distance": "5km",
                   "tier": "Late",
+                  "audience": "",
                   "from": "01/09",
                   "to": "30/09",
                   "price": 900000
                 },
                 {
                   "distance": "10km",
+                  "tier": "Flash Sale",
+                  "audience": "",
+                  "from": "04/03",
+                  "to": "06/03",
+                  "price": 358000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "07/03",
+                  "to": "28/03",
+                  "price": 478000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "29/03",
+                  "to": "30/06",
+                  "price": 650000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "01/07",
+                  "to": "31/08",
+                  "price": 1100000
+                },
+                {
+                  "distance": "10km",
                   "tier": "Late",
+                  "audience": "",
                   "from": "01/09",
                   "to": "30/09",
                   "price": 1500000
                 },
                 {
                   "distance": "21km",
+                  "tier": "Flash Sale",
+                  "audience": "",
+                  "from": "04/03",
+                  "to": "06/03",
+                  "price": 458000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "07/03",
+                  "to": "28/03",
+                  "price": 658000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "29/03",
+                  "to": "30/06",
+                  "price": 850000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "01/07",
+                  "to": "31/08",
+                  "price": 1300000
+                },
+                {
+                  "distance": "21km",
                   "tier": "Late",
+                  "audience": "",
                   "from": "01/09",
                   "to": "30/09",
                   "price": 2000000
                 },
                 {
                   "distance": "42km",
+                  "tier": "Flash Sale",
+                  "audience": "",
+                  "from": "04/03",
+                  "to": "06/03",
+                  "price": 558000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "07/03",
+                  "to": "28/03",
+                  "price": 758000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "29/03",
+                  "to": "30/06",
+                  "price": 950000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "01/07",
+                  "to": "31/08",
+                  "price": 1500000
+                },
+                {
+                  "distance": "42km",
                   "tier": "Late",
+                  "audience": "",
                   "from": "01/09",
                   "to": "30/09",
                   "price": 2300000
@@ -872,9 +1059,8 @@
         ],
         "organizer": {
           "id": "dha",
-          "name": "DHA Vietnam | Ban tổ chức sự kiện"
-        },
-        "readBy": "agent"
+          "name": "DHA Vietnam"
+        }
       }
     },
     {
@@ -902,5 +1088,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-13T02:40:11.333Z"
+  "updatedAt": "2026-10-18T21:09:13.459Z"
 }

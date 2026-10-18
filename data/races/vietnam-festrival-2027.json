@@ -654,7 +654,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/vietnam-festrival-2027",
-      "lastCheckedAt": "2026-09-23T18:50:56.802Z",
+      "lastCheckedAt": "2026-10-18T21:05:25.208Z",
       "lastChangedAt": "2026-09-23T18:30:40.594Z",
       "extracted": {
         "facts": {
@@ -675,18 +675,43 @@
                 "triathlon"
               ],
               "name": "Vietnam FesTRIval 2027",
-              "date": "2026-11-21",
-              "endDate": "2026-11-22",
+              "date": "2027-11-21",
+              "endDate": "2027-11-22",
+              "mainDate": "2027-11-21",
               "distances": [
                 "70.3",
                 "56.50",
                 "Sprint"
               ],
+              "courses": [
+                {
+                  "distance": "70.3",
+                  "type": "triathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "56.50",
+                  "type": "triathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "Sprint",
+                  "type": "triathlon",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 5,
+              "editionQuote": "lần thứ 5",
+              "mapsUrl": "https://drive.google.com/file/d/17B3H7j1Cq448xXmWerVd0X_CuGBHGTUc/view?usp=drive_link",
               "venue": "Hồ Bàu Trắng",
-              "city": "Vietnam",
-              "organizer": "Stop And Sports (SAS) / Vietnam Triathlon Community (VNTC)",
+              "city": "Việt Nam",
+              "organizer": "Stop And Sports (SAS) và Vietnam Triathlon Community (VNTC)",
               "currency": "VND",
               "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
               "prices": []
             }
           }
@@ -707,7 +732,7 @@
             "json": {
               "prices": [
                 {
-                  "distance": "70.3 - 56.50",
+                  "distance": "70.3",
                   "tier": "Super Early Bird",
                   "audience": "CÁ NHẦN (INDIVIDUAL)",
                   "from": "16/09",
@@ -715,7 +740,7 @@
                   "price": 3670000
                 },
                 {
-                  "distance": "70.3 - 56.50",
+                  "distance": "70.3",
                   "tier": "Early Bird",
                   "audience": "CÁ NHẦN (INDIVIDUAL)",
                   "from": "01/10",
@@ -723,7 +748,7 @@
                   "price": 4210000
                 },
                 {
-                  "distance": "70.3 - 56.50",
+                  "distance": "70.3",
                   "tier": "Standard",
                   "audience": "CÁ NHẦN (INDIVIDUAL)",
                   "from": "01/12",
@@ -731,7 +756,7 @@
                   "price": 4750000
                 },
                 {
-                  "distance": "70.3 - 56.50",
+                  "distance": "70.3",
                   "tier": "Super Early Bird",
                   "audience": "TIẾP SỰC (RELAY TEAM)",
                   "from": "16/09",
@@ -739,7 +764,7 @@
                   "price": 4530000
                 },
                 {
-                  "distance": "70.3 - 56.50",
+                  "distance": "70.3",
                   "tier": "Early Bird",
                   "audience": "TIẾP SỰC (RELAY TEAM)",
                   "from": "01/10",
@@ -747,7 +772,7 @@
                   "price": 5070000
                 },
                 {
-                  "distance": "70.3 - 56.50",
+                  "distance": "70.3",
                   "tier": "Standard",
                   "audience": "TIẾP SỰC (RELAY TEAM)",
                   "from": "01/12",
@@ -780,10 +805,10 @@
                 }
               ],
               "distances": [
-                "70.3 - 56.50",
+                "70.3",
                 "Sprint"
               ],
-              "date": "2026-06-16",
+              "date": "2026-03-01",
               "currency": "VND"
             }
           }
@@ -794,7 +819,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/vietnam-festrival-2027",
-      "lastCheckedAt": "2026-10-15T20:27:50.831Z",
+      "lastCheckedAt": "2026-10-18T21:07:52.597Z",
       "lastChangedAt": "2026-10-15T20:27:50.831Z",
       "extracted": {
         "facts": {
@@ -1116,5 +1141,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-15T20:31:08.696Z"
+  "updatedAt": "2026-10-18T21:09:13.459Z"
 }

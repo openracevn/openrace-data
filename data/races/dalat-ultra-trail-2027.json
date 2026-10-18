@@ -60,7 +60,102 @@
     "venue": "Thung Lũng Tình Yêu",
     "city": "Đà Lạt"
   },
-  "geo": null,
+  "geo": {
+    "lat": 11.9781853,
+    "lng": 108.4499229,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "68",
+      "ward": "24778"
+    },
+    "legacy": {
+      "province": "68",
+      "district": "672",
+      "ward": "24772"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 303,
+        "minutes": 233,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1400.4,
+        "minutes": 1119,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 630.9,
+        "minutes": 515,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 137.2,
+        "minutes": 132,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 5.8,
+        "minutes": 7,
+        "method": "road",
+        "near": true
+      },
+      "can-tho": {
+        "km": 468.5,
+        "minutes": 361,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1434.5,
+        "minutes": 1143,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 728.1,
+        "minutes": 590,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 332.4,
+        "minutes": 248,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 343.1,
+        "minutes": 294,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 189.6,
+        "minutes": 177,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1708.2,
+        "minutes": 1351,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1484.2,
+        "minutes": 1176,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
   "prices": [
     {
       "distance": "5km",
@@ -871,7 +966,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/dalat-ultra-trail-2027",
-      "lastCheckedAt": "2026-10-15T20:21:32.146Z",
+      "lastCheckedAt": "2026-10-18T21:05:24.938Z",
       "lastChangedAt": "2026-10-12T17:47:13.983Z",
       "extracted": {
         "facts": {
@@ -1218,7 +1313,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/dalat-ultra-trail-2027",
-      "lastCheckedAt": "2026-10-15T20:26:45.347Z",
+      "lastCheckedAt": "2026-10-18T21:07:52.176Z",
       "lastChangedAt": "2026-10-15T20:26:45.347Z",
       "extracted": {
         "facts": {
@@ -1929,5 +2024,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-10-12T17:48:31.011Z",
-  "updatedAt": "2026-10-15T20:31:08.696Z"
+  "updatedAt": "2026-10-18T21:09:13.459Z"
 }

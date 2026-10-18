@@ -181,7 +181,7 @@
     },
     {
       "distance": "5km",
-      "tier": "Vé tiêu chuẩn/ Standard",
+      "tier": "Giá vé tiêu chuẩn",
       "kind": "regular",
       "audience": null,
       "price": 659000,
@@ -191,8 +191,19 @@
       "site": "actiup"
     },
     {
+      "distance": "5km",
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": null,
+      "price": 799000,
+      "from": "2026-03-20",
+      "to": "2026-10-01",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
       "distance": "10km",
-      "tier": "Vé tiêu chuẩn/ Standard",
+      "tier": "Giá vé tiêu chuẩn",
       "kind": "regular",
       "audience": null,
       "price": 759000,
@@ -202,8 +213,19 @@
       "site": "actiup"
     },
     {
+      "distance": "10km",
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": null,
+      "price": 899000,
+      "from": "2026-03-20",
+      "to": "2026-10-01",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
       "distance": "21km",
-      "tier": "Vé tiêu chuẩn/ Standard",
+      "tier": "Giá vé tiêu chuẩn",
       "kind": "regular",
       "audience": null,
       "price": 959000,
@@ -213,11 +235,33 @@
       "site": "actiup"
     },
     {
+      "distance": "21km",
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": null,
+      "price": 1099000,
+      "from": "2026-03-20",
+      "to": "2026-10-01",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
       "distance": "42km",
-      "tier": "Vé tiêu chuẩn/ Standard",
+      "tier": "Giá vé tiêu chuẩn",
       "kind": "regular",
       "audience": null,
       "price": 1159000,
+      "from": "2026-03-20",
+      "to": "2026-10-01",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "42km",
+      "tier": "Giá vé tiêu chuẩn",
+      "kind": "regular",
+      "audience": null,
+      "price": 1399000,
       "from": "2026-03-20",
       "to": "2026-10-01",
       "inferred": [],
@@ -306,7 +350,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/trang-an-marathon-2026",
-      "lastCheckedAt": "2026-09-25T04:03:37.715Z",
+      "lastCheckedAt": "2026-10-18T21:02:44.669Z",
       "lastChangedAt": "2026-09-23T18:30:52.659Z",
       "extracted": {
         "facts": {
@@ -327,64 +371,49 @@
                 "road_run"
               ],
               "name": "Trang An Marathon 2026",
+              "date": "2026-11-21",
+              "endDate": "2026-11-22",
+              "mainDate": "2026-11-21",
               "distances": [
                 "5KM",
                 "10KM",
                 "21KM",
                 "42KM"
               ],
-              "edition": 6,
-              "organizer": "Công ty Cổ phần Vũ Media (VRace)",
-              "prices": []
-            }
-          }
-        ],
-        "images": [
-          {
-            "url": "https://pix.actiup.net/2026/03/20/1773974328919477/ba%CC%89ng-gia%CC%81-ve%CC%81-STD.jpg",
-            "json": {
-              "prices": [
+              "courses": [
                 {
                   "distance": "5KM",
-                  "tier": "Vé tiêu chuẩn/ Standard",
-                  "from": "20/03",
-                  "to": "2026-10-01",
-                  "price": 659000
+                  "type": "road_run",
+                  "elevationGain": 0
                 },
                 {
                   "distance": "10KM",
-                  "tier": "Vé tiêu chuẩn/ Standard",
-                  "from": "20/03",
-                  "to": "2026-10-01",
-                  "price": 759000
+                  "type": "road_run",
+                  "elevationGain": 0
                 },
                 {
                   "distance": "21KM",
-                  "tier": "Vé tiêu chuẩn/ Standard",
-                  "from": "20/03",
-                  "to": "2026-10-01",
-                  "price": 959000
+                  "type": "road_run",
+                  "elevationGain": 0
                 },
                 {
                   "distance": "42KM",
-                  "tier": "Vé tiêu chuẩn/ Standard",
-                  "from": "20/03",
-                  "to": "2026-10-01",
-                  "price": 1159000
+                  "type": "road_run",
+                  "elevationGain": 0
                 }
               ],
-              "distances": [
-                "5KM",
-                "10KM",
-                "21KM",
-                "42KM"
-              ],
-              "currency": "VND"
-            }
-          },
-          {
-            "url": "https://pix.actiup.net/2025/12/18/1766022175781974/nhom-(ENG).png",
-            "json": {
+              "edition": 6,
+              "editionQuote": "mùa giải thứ 6",
+              "mapsUrl": "https://drive.google.com/file/d/1YsPjseqegg39ZUa60-EpLHDkZWnVcA-5/view?usp=sharing",
+              "venue": "Danh thắng Tràng An",
+              "city": "Ninh Bình",
+              "organizer": "Công ty Cổ phần Vũ Media (VRace)",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
               "prices": []
             }
           }
@@ -399,20 +428,109 @@
           "id": "vrace-cong-ty-co-phan-vu-media",
           "name": "VRace (Công ty Cổ phần Vũ Media)"
         },
-        "readBy": "agent"
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/03/20/1773974328919477/ba%CC%89ng-gia%CC%81-ve%CC%81-STD.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "5KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "",
+                  "from": "20/03",
+                  "to": "01/10",
+                  "price": 659000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "",
+                  "from": "20/03",
+                  "to": "01/10",
+                  "price": 799000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "",
+                  "from": "20/03",
+                  "to": "01/10",
+                  "price": 759000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "",
+                  "from": "20/03",
+                  "to": "01/10",
+                  "price": 899000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "",
+                  "from": "20/03",
+                  "to": "01/10",
+                  "price": 959000
+                },
+                {
+                  "distance": "21KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "",
+                  "from": "20/03",
+                  "to": "01/10",
+                  "price": 1099000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "",
+                  "from": "20/03",
+                  "to": "01/10",
+                  "price": 1159000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "Giá vé tiêu chuẩn",
+                  "audience": "",
+                  "from": "20/03",
+                  "to": "01/10",
+                  "price": 1399000
+                }
+              ],
+              "distances": [
+                "5KM",
+                "10KM",
+                "21KM",
+                "42KM"
+              ],
+              "date": "2026-10-01",
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2025/12/18/1766022175781974/nhom-(ENG).png",
+            "json": {
+              "prices": [],
+              "distances": [],
+              "date": "",
+              "currency": ""
+            }
+          }
+        ]
       }
     },
     {
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/trang-an-marathon-2026",
-      "lastCheckedAt": "2026-10-15T20:29:50.677Z",
+      "lastCheckedAt": "2026-10-18T21:07:40.985Z",
       "lastChangedAt": "2026-10-15T20:29:50.677Z",
       "extracted": {
         "facts": {
           "name": "Giải chạy Trang An Marathon 2026",
           "venue": "Cố đô Hoa Lư, phường Tây Hoa Lư, tỉnh Ninh Bình",
-          "organizer": "VuMedia | Ban tổ chức sự kiện",
+          "organizer": "VuMedia",
           "prices": [
             {
               "distance": "5km",
@@ -657,12 +775,12 @@
         ],
         "organizer": {
           "id": "vumedia",
-          "name": "VuMedia | Ban tổ chức sự kiện"
+          "name": "VuMedia"
         }
       }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-15T20:31:08.696Z"
+  "updatedAt": "2026-10-18T21:09:13.459Z"
 }

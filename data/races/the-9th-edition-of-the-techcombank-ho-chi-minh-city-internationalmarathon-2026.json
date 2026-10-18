@@ -3,7 +3,8 @@
   "slug": "the-9th-edition-of-the-techcombank-ho-chi-minh-city-internationalmarathon",
   "name": "Giải Marathon Quốc tế Thành phố Hồ Chí Minh Techcombank Mùa thứ 9",
   "types": [
-    "road_run"
+    "road_run",
+    "other"
   ],
   "date": "2026-12-05",
   "endDate": "2026-12-06",
@@ -831,7 +832,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/the-9th-edition-of-the-techcombank-ho-chi-minh-city-internationalmarathon",
-      "lastCheckedAt": "2026-09-24T06:43:09.238Z",
+      "lastCheckedAt": "2026-10-18T21:03:50.746Z",
       "lastChangedAt": "2026-09-23T18:30:51.858Z",
       "extracted": {
         "facts": {
@@ -849,15 +850,53 @@
             "json": {
               "pageKind": "sport",
               "types": [
-                "road_run"
+                "road_run",
+                "other"
               ],
-              "name": "Giải Marathon Quốc tế Thành phố Hồ Chí Minh Techcombank Mùa thứ 9",
+              "name": "Giải Marathon Quốc tế Thành phố Hồ Chí Minh Techcombank",
+              "date": "2026-11-21",
+              "endDate": "2026-11-22",
+              "mainDate": "2026-11-21",
               "distances": [
-                "5KM",
+                "42.195km",
+                "21.1km",
                 "10KM",
-                "21KM",
-                "42KM"
+                "5KM"
               ],
+              "courses": [
+                {
+                  "distance": "42.195km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "21.1km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10KM",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "5KM",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 9,
+              "editionQuote": "Mùa thứ 9",
+              "mapsUrl": "https://pix.actiup.net/2026/01/23/1769154536691756/Policy.jpg",
+              "venue": "Thành phố Hồ Chí Minh",
+              "city": "Thành phố Hồ Chí Minh",
+              "organizer": "Sunrise Events Vietnam",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": "Vận động viên có thể nhận thưởng sau khi nộp hết các thông tin giải thưởng"
+              },
               "prices": []
             }
           }
@@ -866,8 +905,7 @@
         "organizer": {
           "id": "sunrise-events-vietnam",
           "name": "Sunrise Events Vietnam"
-        },
-        "readBy": "agent"
+        }
       }
     },
     {
@@ -1130,5 +1168,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-13T02:12:57.272Z"
+  "updatedAt": "2026-10-18T21:09:13.459Z"
 }

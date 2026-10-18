@@ -576,7 +576,7 @@
     }
   ],
   "currency": "VND",
-  "registrationStatus": "closed",
+  "registrationStatus": "open",
   "registrations": [
     {
       "site": "irace",
@@ -607,9 +607,54 @@
       "foundOn": "lamdongtrail.vn"
     },
     {
+      "url": "https://facebook.com/sharer/sharer.php",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "http://online.gov.vn/Home/WebDetails/51414",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
       "url": "https://bit.ly/LDT25-dangkynhom",
       "kind": "other",
       "foundOn": "lamdongtrail.vn"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1uZe9SDXHjmEP-SbFNUIT33X74xPiyarL/view",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
     },
     {
       "url": "https://instagram.com/lamdong.trail",
@@ -620,6 +665,11 @@
       "url": "https://o0e.676.mytemp.website/lamdongtrail/van-dong-vien",
       "kind": "other",
       "foundOn": "lamdongtrail.vn"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
     },
     {
       "url": "https://tiktok.com/@lamdongtrail",
@@ -635,6 +685,11 @@
       "url": "https://youtube.com/@lamdongtrail",
       "kind": "other",
       "foundOn": "lamdongtrail.vn"
+    },
+    {
+      "url": "https://youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
     },
     {
       "url": "https://youtube.com/watch",
@@ -1126,7 +1181,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/lamdong-trail-2026",
-      "lastCheckedAt": "2026-10-15T20:23:25.447Z",
+      "lastCheckedAt": "2026-10-18T21:02:18.575Z",
       "lastChangedAt": "2026-09-23T18:30:49.114Z",
       "extracted": {
         "facts": {
@@ -1310,7 +1365,7 @@
       "site": "lamdong-trail",
       "role": "official",
       "url": "https://lamdongtrail.vn/",
-      "lastCheckedAt": "2026-10-15T20:35:23.714Z",
+      "lastCheckedAt": "2026-10-18T21:07:53.404Z",
       "lastChangedAt": "2026-09-25T05:01:22.419Z",
       "extracted": {
         "pages": [
@@ -1749,122 +1804,174 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/lamdong-trail-2026",
-      "lastCheckedAt": "2026-09-25T12:07:59.424Z",
+      "lastCheckedAt": "2026-10-18T21:07:07.804Z",
       "lastChangedAt": "2026-09-25T12:07:59.424Z",
       "extracted": {
         "facts": {
-          "name": "Lamdong Trail 2026",
-          "date": "2026-11-06",
-          "types": [
-            "trail_run"
-          ],
-          "prices": [
-            {
-              "distance": "5km",
-              "tier": "Early Bird",
-              "kind": "early",
-              "audience": null,
-              "price": 650000,
-              "from": "2026-04-22",
-              "to": "2026-06-10",
-              "inferred": [],
-              "site": "irace"
-            },
-            {
-              "distance": "15km",
-              "tier": "Early Bird",
-              "kind": "early",
-              "audience": null,
-              "price": 850000,
-              "from": "2026-04-22",
-              "to": "2026-06-10",
-              "inferred": [],
-              "site": "irace"
-            },
-            {
-              "distance": "25km",
-              "tier": "Early Bird",
-              "kind": "early",
-              "audience": null,
-              "price": 1450000,
-              "from": "2026-04-22",
-              "to": "2026-06-10",
-              "inferred": [],
-              "site": "irace"
-            },
-            {
-              "distance": "55km",
-              "tier": "Early Bird",
-              "kind": "early",
-              "audience": null,
-              "price": 1950000,
-              "from": "2026-04-22",
-              "to": "2026-06-10",
-              "inferred": [],
-              "site": "irace"
-            },
-            {
-              "distance": "85km",
-              "tier": "Early Bird",
-              "kind": "early",
-              "audience": null,
-              "price": 2350000,
-              "from": "2026-04-22",
-              "to": "2026-06-10",
-              "inferred": [],
-              "site": "irace"
-            },
-            {
-              "distance": "5km",
-              "tier": "Kid Trail (5Km) Early Bird",
-              "kind": "early",
-              "audience": null,
-              "price": 650000,
-              "from": "2026-04-22",
-              "to": "2026-06-10",
-              "inferred": [],
-              "site": "irace"
-            },
-            {
-              "distance": "5km",
-              "tier": "5km Family (1 người lớn + 1 trẻ em) Early Bird",
-              "kind": "early",
-              "audience": null,
-              "price": 1200000,
-              "from": "2026-04-22",
-              "to": "2026-06-10",
-              "inferred": [],
-              "site": "irace"
-            },
-            {
-              "distance": "5km",
-              "tier": "5km Family (1 người lớn + 2 trẻ em) Early Bird",
-              "kind": "early",
-              "audience": null,
-              "price": 1800000,
-              "from": "2026-04-22",
-              "to": "2026-06-10",
-              "inferred": [],
-              "site": "irace"
-            },
-            {
-              "distance": "5km",
-              "tier": "5km Family (2 người lớn + 1 trẻ em) Early Bird",
-              "kind": "early",
-              "audience": null,
-              "price": 1800000,
-              "from": "2026-04-22",
-              "to": "2026-06-10",
-              "inferred": [],
-              "site": "irace"
+          "name": "Giải chạy Lâm Đồng Trail 2026",
+          "venue": "TTC World - Thung Lũng Tình Yêu, số 03-05-07 đường Mai Anh Đào, phường Lâm Viên, Tp. Đà Lạt, Lâm Đồng",
+          "organizer": "GreenHat"
+        },
+        "pages": [
+          {
+            "url": "https://ticket.irace.vn/lamdong-trail-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "trail_run"
+              ],
+              "name": "Giải chạy Lâm Đồng Trail 2026",
+              "date": "2026-11-06",
+              "endDate": "2026-11-08",
+              "mainDate": "2026-11-06",
+              "distances": [],
+              "courses": [],
+              "edition": 1,
+              "editionQuote": "Giải chạy Lâm Đồng Trail 2026",
+              "mapsUrl": "https://www.google.com/maps?q=TTC+World+-+Thung+Lũng+Tình+Yêu,+số+03-05-07+đường+Mai+Anh+Đào,+phường+Lâm+Viên,+Tp.+Đà+Lạt,+Lâm+Đồng",
+              "venue": "TTC World - Thung Lũng Tình Yêu, số 03-05-07 đường Mai Anh Đào, phường Lâm Viên, Tp. Đà Lạt, Lâm Đồng",
+              "city": "Đà Lạt",
+              "organizer": "",
+              "currency": "",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": []
             }
-          ],
-          "note": "user-supplied table read from ticket.irace.vn/lamdong-trail-2026: adds the missing Early Bird tier (22/04-10/06/2026) our other sources (lamdongtrail.vn, actiup) don't show; its Regular/Late numbers match our existing lamdong-trail-tagged prices exactly, corroborating the source"
+          }
+        ],
+        "links": [
+          {
+            "url": "https://app.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://irace.vn/ban-ve/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ban ve su kien"
+          },
+          {
+            "url": "https://irace.vn/myfoto/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "tim hinh su kien"
+          },
+          {
+            "url": "https://irace.vn/doanh-nghiep/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "to chuc su kien"
+          },
+          {
+            "url": "https://irace.vn/affiliate/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kiem tien cung irace vn"
+          },
+          {
+            "url": "https://irace.vn/thiet-ke-huy-chuong/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huy chuong"
+          },
+          {
+            "url": "https://irace.vn/san-xuat-qua-tang-phu-kien-the-thao/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "quan ao phu kien"
+          },
+          {
+            "url": "https://irace.vn/about-us/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ve irace"
+          },
+          {
+            "url": "https://irace.vn/bao-chi/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "bao chi viet"
+          },
+          {
+            "url": "https://irace.vn/hoi-dap/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "hoi dap"
+          },
+          {
+            "url": "https://irace.vn/thong-tin/huong-dan/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huong dan su dung"
+          },
+          {
+            "url": "https://irace.vn/kien-thuc-tap-luyen/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kien thuc chay bo"
+          },
+          {
+            "url": "https://tools.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "cong cu tinh toan"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "shop the thao"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "dinh duong"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "phu kien"
+          },
+          {
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://ticket.irace.vn/lamdong-trail-2026",
+            "text": "chia se tren facebook"
+          },
+          {
+            "url": "https://drive.google.com/file/d/1uZe9SDXHjmEP-SbFNUIT33X74xPiyarL/view?usp=drive_link",
+            "text": "day"
+          },
+          {
+            "url": "http://online.gov.vn/Home/WebDetails/51414",
+            "text": ""
+          },
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/feed/",
+            "text": ""
+          },
+          {
+            "url": "https://www.youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+            "text": ""
+          },
+          {
+            "url": "https://play.google.com/store/apps/details?id=com.irace.app",
+            "text": ""
+          },
+          {
+            "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/chinh-sach-bao-mat/",
+            "text": "chinh sach bao mat"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-thanh-toan/",
+            "text": "dieu khoan thanh toan"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-su-dung/",
+            "text": "dieu khoan su dung"
+          },
+          {
+            "url": "https://irace.vn/tuyen-dung/",
+            "text": "tuyen dung"
+          },
+          {
+            "url": "https://irace.vn/lien-he/",
+            "text": "lien he"
+          }
+        ],
+        "organizer": {
+          "id": "greenhat",
+          "name": "GreenHat"
         }
       }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-17T13:14:46.772Z"
+  "updatedAt": "2026-10-18T21:09:13.459Z"
 }

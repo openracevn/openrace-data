@@ -11,7 +11,7 @@
   "seriesId": null,
   "organizerId": "vietnam-mtb-series",
   "organizer": "Vietnam MTB Series",
-  "edition": 1,
+  "edition": null,
   "courses": [
     {
       "label": "7km",
@@ -488,7 +488,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/vung-tau-city-trail",
-      "lastCheckedAt": "2026-10-12T17:52:42.746Z",
+      "lastCheckedAt": "2026-10-18T21:03:46.561Z",
       "lastChangedAt": "2026-09-23T18:30:39.797Z",
       "extracted": {
         "facts": {
@@ -542,8 +542,9 @@
                 }
               ],
               "edition": 1,
+              "editionQuote": "Giải chạy Vũng Tàu City Trail 2026",
               "mapsUrl": "https://drive.google.com/file/d/1NlmkunBtqalMjKjI5dZyC6nM-GG5GhLp/view?usp=drive_link",
-              "venue": "Vũng Tàu, Việt Nam",
+              "venue": "Vũng Tàu",
               "city": "Vũng Tàu",
               "organizer": "ActiUp",
               "currency": "VND",
@@ -685,7 +686,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/vung-tau-city-trail-2026",
-      "lastCheckedAt": "2026-10-15T20:27:44.511Z",
+      "lastCheckedAt": "2026-10-18T21:07:43.778Z",
       "lastChangedAt": "2026-10-15T20:27:44.511Z",
       "extracted": {
         "facts": {
@@ -999,5 +1000,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-15T20:31:08.696Z"
+  "updatedAt": "2026-10-18T21:09:13.459Z"
 }
