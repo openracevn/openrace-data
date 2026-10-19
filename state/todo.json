@@ -1,7 +1,13 @@
 {
-  "discoveredAt": "2026-10-18T21:00:38.427Z",
+  "discoveredAt": "2026-10-19T21:00:20.716Z",
   "readAt": "2026-10-18T21:09:27.092Z",
   "entries": [
+    {
+      "url": "https://actiup.net/vi/event/trang-an-marathon-2026",
+      "raceId": "d022ca37-c7e1-4fe8-b3f4-a25e1adc6172",
+      "reason": "changed",
+      "addedAt": "2026-10-19T21:00:31.445Z"
+    },
     {
       "url": "https://irace.vn/su-kien/mang-den-ultra-trail",
       "raceId": "87255571-8845-43e2-a3f9-7422f28b50cc",
@@ -15,10 +21,22 @@
       "addedAt": "2026-10-18T21:00:38.427Z"
     },
     {
+      "url": "https://ticket.irace.vn/quang-truc-half-marathon-2026",
+      "raceId": "993a097f-5cf3-415f-84c6-6fe1eb1b7404",
+      "reason": "changed",
+      "addedAt": "2026-10-19T21:00:44.784Z"
+    },
+    {
       "url": "https://ticket.irace.vn/vung-tau-city-trail-2026",
       "raceId": "b54dfd25-8254-40cb-9dc7-df93782402d9",
       "reason": "changed",
       "addedAt": "2026-10-18T21:01:08.806Z"
+    },
+    {
+      "url": "https://ticket.irace.vn/yen-tu-heritage-marathon-2026",
+      "raceId": "119a1b5d-a88c-4509-880c-b5f127b32fd6",
+      "reason": "changed",
+      "addedAt": "2026-10-19T21:00:50.219Z"
     }
   ]
 }
