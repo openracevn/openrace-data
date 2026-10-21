@@ -11,8 +11,9 @@ workers_dev = false
 [triggers]
 # Times in UTC. 21:00 = 04:00 Vietnam (Schedule 1), 22:00 = 05:00 (Schedule 2's
 # fallback; it does nothing if the list was read after today's discovery), and
-# Monday 02:00 = 09:00 Vietnam (the digest).
-crons = ["0 21,22 * * *", "0 2 * * 1"]
+# Monday 02:00 = 09:00 Vietnam (the digest). Day names, not numbers: Cloudflare counts
+# 1 as Sunday, so "0 2 * * 1" fired on Sunday and the Worker skipped it.
+crons = ["0 21,22 * * *", "0 2 * * MON"]
 
 [vars]
 REPO = "openracevn/openrace-data"
