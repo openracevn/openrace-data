@@ -267,7 +267,7 @@
     }
   ],
   "currency": "VND",
-  "registrationStatus": "sold_out",
+  "registrationStatus": "closed",
   "registrations": [
     {
       "site": "actiup",
@@ -433,7 +433,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/gemadept-run-the-way-forward-2026",
-      "lastCheckedAt": "2026-10-21T21:01:07.487Z",
+      "lastCheckedAt": "2026-10-22T21:01:10.076Z",
       "lastChangedAt": "2026-09-23T18:30:48.639Z",
       "extracted": {
         "facts": {
@@ -443,7 +443,7 @@
           "venue": "Khu C13, Đường Tân Trào, Khu đô thị Phú Mỹ Hưng, Phường Tân Mỹ, TP. Hồ Chí Minh",
           "organizer": "GEMADEPT",
           "currency": "VND",
-          "registrationStatus": "sold_out",
+          "registrationStatus": "closed",
           "fromPrice": 488000
         },
         "pages": [
@@ -663,5 +663,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-21T21:01:38.860Z"
+  "updatedAt": "2026-10-22T21:01:39.571Z"
 }
