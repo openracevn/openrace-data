@@ -1,12 +1,12 @@
 {
-  "discoveredAt": "2026-10-23T21:01:00.570Z",
+  "discoveredAt": "2026-10-24T21:01:26.367Z",
   "readAt": "2026-10-23T21:02:31.481Z",
   "entries": [
     {
       "url": "https://actiup.net/vi/event/angkor-trail-2027",
+      "raceId": "52386991-dce7-4bf4-b4e9-213e5a40afbf",
       "reason": "new",
-      "addedAt": "2026-10-23T21:01:07.409Z",
-      "raceId": "52386991-dce7-4bf4-b4e9-213e5a40afbf"
+      "addedAt": "2026-10-23T21:01:07.409Z"
     },
     {
       "url": "https://actiup.net/vi/event/fv-run",
@@ -49,6 +49,11 @@
       "raceId": "ba8ac318-f17e-49b5-aa90-95d6901dcbf6",
       "reason": "changed",
       "addedAt": "2026-10-21T21:01:31.635Z"
+    },
+    {
+      "url": "https://ticket.irace.vn/tra-co-half-marathon-sai-buoc-noi-dia-dau-to-quoc",
+      "reason": "new",
+      "addedAt": "2026-10-24T21:01:50.830Z"
     },
     {
       "url": "https://ticket.irace.vn/vung-tau-city-trail-2026",
