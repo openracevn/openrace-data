@@ -403,7 +403,7 @@
   "registrations": [
     {
       "site": "njuko",
-      "url": "https://in.njuko.com/ho-chi-minh-city-marathon-2027"
+      "url": "https://in.njuko.com/eximbank-ho-chi-minh-city-marathon-2027"
     }
   ],
   "links": [
@@ -443,7 +443,7 @@
       "foundOn": "hcmcmarathon.com"
     },
     {
-      "url": "https://in.njuko.com/ho-chi-minh-city-marathon-2027",
+      "url": "https://in.njuko.com/eximbank-ho-chi-minh-city-marathon-2027",
       "kind": "seller",
       "foundOn": "hcmcmarathon.com"
     }
@@ -461,7 +461,7 @@
       "site": "hcmc-marathon",
       "role": "official",
       "url": "https://hcmcmarathon.com/",
-      "lastCheckedAt": "2026-10-18T21:06:00.253Z",
+      "lastCheckedAt": "2026-10-25T21:02:08.465Z",
       "lastChangedAt": "2026-09-25T05:01:22.419Z",
       "extracted": {
         "pages": [
@@ -780,7 +780,7 @@
             "text": "youtube"
           },
           {
-            "url": "https://in.njuko.com/ho-chi-minh-city-marathon-2027?currentPage=select-competition",
+            "url": "https://in.njuko.com/eximbank-ho-chi-minh-city-marathon-2027",
             "text": "register now"
           },
           {
@@ -1044,5 +1044,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T05:01:22.419Z",
-  "updatedAt": "2026-10-18T21:09:13.459Z"
+  "updatedAt": "2026-10-25T21:02:29.795Z"
 }

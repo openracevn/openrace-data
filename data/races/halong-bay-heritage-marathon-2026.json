@@ -1037,11 +1037,6 @@
       "foundOn": "ticket.irace.vn"
     },
     {
-      "url": "https://pocarisweat.com.vn/",
-      "kind": "other",
-      "foundOn": "halongmarathon.com"
-    },
-    {
       "url": "https://runjapan.jp/",
       "kind": "other",
       "foundOn": "halongmarathon.com"
@@ -1058,6 +1053,11 @@
     },
     {
       "url": "https://suntorypepsico.vn/",
+      "kind": "other",
+      "foundOn": "halongmarathon.com"
+    },
+    {
+      "url": "https://thbeverage.vn/",
       "kind": "other",
       "foundOn": "halongmarathon.com"
     },
@@ -2126,7 +2126,7 @@
       "site": "halong-marathon",
       "role": "official",
       "url": "https://halongmarathon.com/",
-      "lastCheckedAt": "2026-10-18T21:05:53.154Z",
+      "lastCheckedAt": "2026-10-25T21:02:13.832Z",
       "lastChangedAt": "2026-09-25T05:03:56.536Z",
       "extracted": {
         "pages": [
@@ -2336,7 +2336,7 @@
             "text": ""
           },
           {
-            "url": "https://www.pocarisweat.com.vn/",
+            "url": "https://thbeverage.vn/",
             "text": ""
           },
           {
@@ -2895,5 +2895,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-18T21:09:13.459Z"
+  "updatedAt": "2026-10-25T21:02:29.795Z"
 }
