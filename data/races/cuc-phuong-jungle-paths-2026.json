@@ -405,11 +405,6 @@
       "foundOn": "ticket.irace.vn"
     },
     {
-      "url": "https://goo.gl/maps/vqxmDcwj2cMhPFLPA",
-      "kind": "other",
-      "foundOn": "ticket.irace.vn"
-    },
-    {
       "url": "https://ifitness.vn/",
       "kind": "other",
       "foundOn": "ticket.irace.vn"
@@ -834,7 +829,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/cuc-phuong-jungle-paths-2026",
-      "lastCheckedAt": "2026-09-25T04:03:37.715Z",
+      "lastCheckedAt": "2026-10-25T21:03:37.496Z",
       "lastChangedAt": "2026-09-23T18:30:53.064Z",
       "extracted": {
         "facts": {
@@ -855,7 +850,10 @@
               "types": [
                 "trail_run"
               ],
-              "name": "CUC PHUONG JUNGLE PATHS 2026",
+              "name": "Cuc Phuong Jungle Paths 2026",
+              "date": "2026-04-05",
+              "endDate": "2026-04-06",
+              "mainDate": "2026-04-05",
               "distances": [
                 "10KM",
                 "25KM",
@@ -890,7 +888,18 @@
                   "elevationGain": 3500
                 }
               ],
+              "edition": 2026,
+              "editionQuote": "Cuc Phuong Jungle Paths 2026",
+              "mapsUrl": "https://www.google.com/maps?q=Khu+hồ+Mạc+-+VQG+Cúc+Phương",
+              "venue": "Khu hồ Mạc - VQG Cúc Phương",
+              "city": "Cúc Phương",
               "organizer": "Race Jungle",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": "Đang cập nhật số lượng."
+              },
               "prices": []
             }
           }
@@ -904,8 +913,7 @@
         "organizer": {
           "id": "race-jungle",
           "name": "Race Jungle"
-        },
-        "readBy": "agent"
+        }
       }
     },
     {
@@ -1071,13 +1079,13 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/cuc-phuong-jungle-paths-2026",
-      "lastCheckedAt": "2026-10-15T20:29:56.434Z",
+      "lastCheckedAt": "2026-10-25T21:04:18.726Z",
       "lastChangedAt": "2026-10-15T20:29:56.434Z",
       "extracted": {
         "facts": {
           "name": "Giải chạy Cuc Phuong Jungle Paths 2026",
           "venue": "VQG Cúc Phương, Ninh Bình, Việt Nam",
-          "organizer": "Race Jungle | Ban tổ chức giải"
+          "organizer": "Race Jungle"
         },
         "pages": [
           {
@@ -1252,10 +1260,6 @@
             "text": "chia se tren facebook"
           },
           {
-            "url": "https://goo.gl/maps/vqxmDcwj2cMhPFLPA",
-            "text": "khu ho mac vuon quoc gia cuc phuong ninh binh"
-          },
-          {
             "url": "https://docs.google.com/document/d/1kju8Rz16JPqESO-BJsjBBG00SB5KJTVB/edit",
             "text": "xem tai day"
           },
@@ -1310,12 +1314,12 @@
         ],
         "organizer": {
           "id": "race-jungle",
-          "name": "Race Jungle | Ban tổ chức giải"
+          "name": "Race Jungle"
         }
       }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-17T13:14:46.772Z"
+  "updatedAt": "2026-10-25T21:04:54.669Z"
 }

@@ -137,6 +137,94 @@
   "prices": [
     {
       "distance": "1.5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 269000,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 299000,
+      "from": "2026-10-01",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 399000,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 499000,
+      "from": "2026-10-01",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 499000,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 599000,
+      "from": "2026-10-01",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 649000,
+      "from": "2026-09-09",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 749000,
+      "from": "2026-10-01",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "1.5km",
       "tier": "Regular",
       "kind": "regular",
       "audience": null,
@@ -311,7 +399,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/quang-truc-half-marathon-2026-noi-nhip-bien-cuong",
-      "lastCheckedAt": "2026-10-15T20:23:35.012Z",
+      "lastCheckedAt": "2026-10-25T21:03:16.960Z",
       "lastChangedAt": "2026-09-23T18:30:40.997Z",
       "extracted": {
         "facts": {
@@ -506,13 +594,71 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/quang-truc-half-marathon-2026",
-      "lastCheckedAt": "2026-10-19T21:00:44.784Z",
+      "lastCheckedAt": "2026-10-25T21:04:08.887Z",
       "lastChangedAt": "2026-10-15T20:28:00.918Z",
       "extracted": {
         "facts": {
           "name": "Giải chạy Quảng Trực Half Marathon 2026 - Nối nhịp biên cương",
           "venue": "Xã Quảng Trực, tỉnh Lâm Đồng",
-          "organizer": "Báo Đắk Nông"
+          "organizer": "Báo Đắk Nông",
+          "prices": [
+            {
+              "distance": "1.5km",
+              "tier": "Early Bird",
+              "from": "09/09",
+              "to": "30/09",
+              "price": 269000
+            },
+            {
+              "distance": "1.5km",
+              "tier": "Regular",
+              "from": "01/10",
+              "to": "31/10",
+              "price": 299000
+            },
+            {
+              "distance": "5km",
+              "tier": "Early Bird",
+              "from": "09/09",
+              "to": "30/09",
+              "price": 399000
+            },
+            {
+              "distance": "5km",
+              "tier": "Regular",
+              "from": "01/10",
+              "to": "31/10",
+              "price": 499000
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "from": "09/09",
+              "to": "30/09",
+              "price": 499000
+            },
+            {
+              "distance": "10km",
+              "tier": "Regular",
+              "from": "01/10",
+              "to": "31/10",
+              "price": 599000
+            },
+            {
+              "distance": "21km",
+              "tier": "Early Bird",
+              "from": "09/09",
+              "to": "30/09",
+              "price": 649000
+            },
+            {
+              "distance": "21km",
+              "tier": "Regular",
+              "from": "01/10",
+              "to": "31/10",
+              "price": 749000
+            }
+          ]
         },
         "pages": [
           {
@@ -766,5 +912,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-19T21:01:19.394Z"
+  "updatedAt": "2026-10-25T21:04:54.669Z"
 }

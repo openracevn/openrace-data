@@ -526,11 +526,6 @@
       "foundOn": "ticket.irace.vn"
     },
     {
-      "url": "https://goo.gl/maps/vjuwF1ZZAkARpoLp9",
-      "kind": "other",
-      "foundOn": "ticket.irace.vn"
-    },
-    {
       "url": "https://google.com/maps/d/u/0/viewer",
       "kind": "other",
       "foundOn": "ticket.irace.vn"
@@ -552,26 +547,6 @@
     },
     {
       "url": "https://instagram.com/irace.vn",
-      "kind": "other",
-      "foundOn": "ticket.irace.vn"
-    },
-    {
-      "url": "https://maps.app.goo.gl/92sjpdnBVsntSCLz7",
-      "kind": "other",
-      "foundOn": "ticket.irace.vn"
-    },
-    {
-      "url": "https://maps.app.goo.gl/Fd5wZKutwygfuAwS8",
-      "kind": "other",
-      "foundOn": "ticket.irace.vn"
-    },
-    {
-      "url": "https://maps.app.goo.gl/mvSTEWJBe4ZdnV8P8",
-      "kind": "other",
-      "foundOn": "ticket.irace.vn"
-    },
-    {
-      "url": "https://maps.app.goo.gl/UsDxTyE6hLRui4Z99",
       "kind": "other",
       "foundOn": "ticket.irace.vn"
     },
@@ -618,7 +593,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/ultra-trail-cao-bang-2026",
-      "lastCheckedAt": "2026-10-18T21:03:14.028Z",
+      "lastCheckedAt": "2026-10-25T21:03:23.583Z",
       "lastChangedAt": "2026-09-23T18:30:49.445Z",
       "extracted": {
         "facts": {
@@ -870,7 +845,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/ultra-trail-cao-bang-2026",
-      "lastCheckedAt": "2026-10-18T21:07:41.777Z",
+      "lastCheckedAt": "2026-10-25T21:04:10.498Z",
       "lastChangedAt": "2026-10-15T20:29:29.428Z",
       "extracted": {
         "facts": {
@@ -1109,26 +1084,6 @@
             "text": "chia se tren facebook"
           },
           {
-            "url": "https://maps.app.goo.gl/92sjpdnBVsntSCLz7",
-            "text": "khach san sai gon ban gioc"
-          },
-          {
-            "url": "https://maps.app.goo.gl/Fd5wZKutwygfuAwS8",
-            "text": "khu vuc venue ban gioc cao bang"
-          },
-          {
-            "url": "https://goo.gl/maps/vjuwF1ZZAkARpoLp9",
-            "text": "trung tam trung khanh cao bang https goo gl maps vjuwf1zzakarpolp9"
-          },
-          {
-            "url": "https://maps.app.goo.gl/UsDxTyE6hLRui4Z99",
-            "text": "doi co vinh quy https maps app goo gl usdxtye6hlrui4z99"
-          },
-          {
-            "url": "https://maps.app.goo.gl/mvSTEWJBe4ZdnV8P8",
-            "text": "https maps app goo gl mvstewjbe4zdnv8p8"
-          },
-          {
             "url": "https://drive.google.com/drive/folders/1FXiFXthzjHS4CECZIqewb4xEydW8Nku-",
             "text": "file gpx"
           },
@@ -1202,5 +1157,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-18T21:09:13.459Z"
+  "updatedAt": "2026-10-25T21:04:54.669Z"
 }
