@@ -1,5 +1,5 @@
 {
-  "discoveredAt": "2026-10-25T21:00:58.727Z",
+  "discoveredAt": "2026-10-26T21:01:16.464Z",
   "readAt": "2026-10-25T21:05:08.309Z",
   "entries": [
     {
@@ -7,6 +7,12 @@
       "raceId": "52386991-dce7-4bf4-b4e9-213e5a40afbf",
       "reason": "new",
       "addedAt": "2026-10-23T21:01:07.409Z"
+    },
+    {
+      "url": "https://actiup.net/vi/event/dat-thep-city-trail-2027",
+      "raceId": "7581a618-e4de-45aa-9fde-733d70c8f1ca",
+      "reason": "changed",
+      "addedAt": "2026-10-26T21:01:36.331Z"
     },
     {
       "url": "https://actiup.net/vi/event/fv-run",
@@ -57,15 +63,31 @@
       "addedAt": "2026-10-18T21:00:38.427Z"
     },
     {
+      "url": "https://ticket.irace.vn/angkor-trail-2027",
+      "reason": "new",
+      "addedAt": "2026-10-26T21:01:42.467Z"
+    },
+    {
       "url": "https://ticket.irace.vn/nghe-an-legacy-marathon-2026",
       "raceId": "ba8ac318-f17e-49b5-aa90-95d6901dcbf6",
       "reason": "changed",
       "addedAt": "2026-10-21T21:01:31.635Z"
     },
     {
+      "url": "https://ticket.irace.vn/samsung-galaxy-run-2026",
+      "reason": "new",
+      "addedAt": "2026-10-26T21:01:41.730Z"
+    },
+    {
       "url": "https://ticket.irace.vn/tra-co-half-marathon-sai-buoc-noi-dia-dau-to-quoc",
       "reason": "new",
       "addedAt": "2026-10-24T21:01:50.830Z"
+    },
+    {
+      "url": "https://ticket.irace.vn/vnexpress-marathon-hai-phong-2026",
+      "raceId": "239b75b1-b4d4-45b7-8e8d-f6712160ab28",
+      "reason": "changed",
+      "addedAt": "2026-10-26T21:01:49.676Z"
     },
     {
       "url": "https://ticket.irace.vn/vung-tau-city-trail-2026",

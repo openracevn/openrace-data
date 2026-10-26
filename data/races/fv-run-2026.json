@@ -320,7 +320,7 @@
     }
   ],
   "currency": "VND",
-  "registrationStatus": "sold_out",
+  "registrationStatus": "closed",
   "registrations": [
     {
       "site": "actiup",
@@ -660,7 +660,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/fv-run",
-      "lastCheckedAt": "2026-10-25T21:01:06.095Z",
+      "lastCheckedAt": "2026-10-26T21:01:25.274Z",
       "lastChangedAt": "2026-09-23T18:30:45.444Z",
       "extracted": {
         "facts": {
@@ -670,7 +670,7 @@
           "venue": "KĐT Phú Mỹ Hưng, Phường Tân Hưng, TP. Hồ Chí Minh.",
           "organizer": "Bệnh viện FV - Đồng tổ chức: Quỹ Nâng Bước Tuổi Thơ",
           "currency": "VND",
-          "registrationStatus": "sold_out",
+          "registrationStatus": "closed",
           "fromPrice": 250000
         },
         "pages": [
@@ -923,5 +923,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-25T21:02:29.795Z"
+  "updatedAt": "2026-10-26T21:01:55.904Z"
 }
