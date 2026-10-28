@@ -1,5 +1,5 @@
 {
-  "discoveredAt": "2026-10-27T21:01:02.037Z",
+  "discoveredAt": "2026-10-28T21:01:02.144Z",
   "readAt": "2026-10-27T21:02:58.180Z",
   "entries": [
     {
@@ -7,6 +7,12 @@
       "raceId": "52386991-dce7-4bf4-b4e9-213e5a40afbf",
       "reason": "new",
       "addedAt": "2026-10-23T21:01:07.409Z"
+    },
+    {
+      "url": "https://actiup.net/vi/event/aqua-warriors-halong-bay-2027",
+      "raceId": "09f9ff76-e3ff-470c-891f-c6ace918b629",
+      "reason": "changed",
+      "addedAt": "2026-10-28T21:01:22.193Z"
     },
     {
       "url": "https://actiup.net/vi/event/dat-thep-city-trail-2027",
@@ -66,6 +72,12 @@
       "url": "https://ticket.irace.vn/angkor-trail-2027",
       "reason": "new",
       "addedAt": "2026-10-26T21:01:42.467Z"
+    },
+    {
+      "url": "https://ticket.irace.vn/marathon-quoc-te-di-san-can-tho-2026",
+      "raceId": "ddda98fb-5837-4b4c-b986-9056b42d5025",
+      "reason": "changed",
+      "addedAt": "2026-10-28T21:01:31.269Z"
     },
     {
       "url": "https://ticket.irace.vn/nghe-an-legacy-marathon-2026",

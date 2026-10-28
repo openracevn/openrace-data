@@ -168,22 +168,11 @@
     },
     {
       "distance": "5km",
-      "tier": "Standard",
+      "tier": "Regular",
       "kind": "regular",
       "audience": null,
       "price": 700000,
       "from": "2026-11-01",
-      "to": "2026-11-01",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "5km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 900000,
-      "from": "2026-11-02",
       "to": "2026-11-15",
       "inferred": [],
       "site": "irace"
@@ -223,22 +212,11 @@
     },
     {
       "distance": "10km",
-      "tier": "Standard",
+      "tier": "Regular",
       "kind": "regular",
       "audience": null,
       "price": 1100000,
       "from": "2026-11-01",
-      "to": "2026-11-01",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 1500000,
-      "from": "2026-11-02",
       "to": "2026-11-15",
       "inferred": [],
       "site": "irace"
@@ -278,22 +256,11 @@
     },
     {
       "distance": "21km",
-      "tier": "Standard",
+      "tier": "Regular",
       "kind": "regular",
       "audience": null,
       "price": 1300000,
       "from": "2026-11-01",
-      "to": "2026-11-01",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "21km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 2000000,
-      "from": "2026-11-02",
       "to": "2026-11-15",
       "inferred": [],
       "site": "irace"
@@ -765,13 +732,13 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/marathon-quoc-te-di-san-can-tho-2026",
-      "lastCheckedAt": "2026-10-15T20:28:58.149Z",
+      "lastCheckedAt": "2026-10-28T21:01:31.269Z",
       "lastChangedAt": "2026-10-15T20:28:58.149Z",
       "extracted": {
         "facts": {
           "name": "Giải chạy Marathon Quốc tế Di sản Cần Thơ 2026",
           "venue": "Cần Thơ",
-          "organizer": "DHA Vietnam | Ban tổ chức sự kiện",
+          "organizer": "DHA Vietnam",
           "prices": [
             {
               "distance": "5km",
@@ -796,17 +763,10 @@
             },
             {
               "distance": "5km",
-              "tier": "Standard",
+              "tier": "Regular",
               "from": "01/11",
-              "to": "01/11",
-              "price": 700000
-            },
-            {
-              "distance": "5km",
-              "tier": "Late",
-              "from": "02/11",
               "to": "15/11",
-              "price": 900000
+              "price": 700000
             },
             {
               "distance": "10km",
@@ -831,17 +791,10 @@
             },
             {
               "distance": "10km",
-              "tier": "Standard",
+              "tier": "Regular",
               "from": "01/11",
-              "to": "01/11",
-              "price": 1100000
-            },
-            {
-              "distance": "10km",
-              "tier": "Late",
-              "from": "02/11",
               "to": "15/11",
-              "price": 1500000
+              "price": 1100000
             },
             {
               "distance": "21km",
@@ -866,17 +819,10 @@
             },
             {
               "distance": "21km",
-              "tier": "Standard",
+              "tier": "Regular",
               "from": "01/11",
-              "to": "01/11",
-              "price": 1300000
-            },
-            {
-              "distance": "21km",
-              "tier": "Late",
-              "from": "02/11",
               "to": "15/11",
-              "price": 2000000
+              "price": 1300000
             }
           ]
         },
@@ -1175,12 +1121,12 @@
         ],
         "organizer": {
           "id": "dha",
-          "name": "DHA Vietnam | Ban tổ chức sự kiện"
+          "name": "DHA Vietnam"
         }
       }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-15T20:31:08.696Z"
+  "updatedAt": "2026-10-28T21:01:37.177Z"
 }
