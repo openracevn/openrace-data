@@ -1,5 +1,5 @@
 {
-  "discoveredAt": "2026-10-28T21:01:02.144Z",
+  "discoveredAt": "2026-10-29T21:01:01.956Z",
   "readAt": "2026-10-28T21:02:50.113Z",
   "entries": [
     {
@@ -72,6 +72,12 @@
       "url": "https://ticket.irace.vn/angkor-trail-2027",
       "reason": "new",
       "addedAt": "2026-10-26T21:01:42.467Z"
+    },
+    {
+      "url": "https://ticket.irace.vn/aqua-warriors-halong-bay-2027",
+      "raceId": "09f9ff76-e3ff-470c-891f-c6ace918b629",
+      "reason": "changed",
+      "addedAt": "2026-10-29T21:01:36.865Z"
     },
     {
       "url": "https://ticket.irace.vn/marathon-quoc-te-di-san-can-tho-2026",
