@@ -432,11 +432,6 @@
       "foundOn": "ticket.irace.vn"
     },
     {
-      "url": "https://drive.google.com/file/d/1R5Ide2fHXntZdVrqbPllQ68FiSTVYdsa/view",
-      "kind": "other",
-      "foundOn": "ticket.irace.vn"
-    },
-    {
       "url": "https://ifitness.vn/",
       "kind": "other",
       "foundOn": "ticket.irace.vn"
@@ -659,7 +654,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/nha-trang-night-run-sanest-sanvinest-bkh-2026",
-      "lastCheckedAt": "2026-10-17T21:01:18.287Z",
+      "lastCheckedAt": "2026-10-30T21:01:30.747Z",
       "lastChangedAt": "2026-10-15T20:26:30.383Z",
       "extracted": {
         "facts": {
@@ -970,10 +965,6 @@
             "text": "chia se tren facebook"
           },
           {
-            "url": "https://drive.google.com/file/d/1R5Ide2fHXntZdVrqbPllQ68FiSTVYdsa/view?usp=sharing",
-            "text": "tai day"
-          },
-          {
             "url": "http://online.gov.vn/Home/WebDetails/51414",
             "text": ""
           },
@@ -1031,5 +1022,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-10-12T17:48:31.011Z",
-  "updatedAt": "2026-10-17T21:01:33.864Z"
+  "updatedAt": "2026-10-30T21:01:38.428Z"
 }
