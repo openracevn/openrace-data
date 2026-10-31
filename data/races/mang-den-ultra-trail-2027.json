@@ -408,11 +408,6 @@
       "foundOn": "irace.vn"
     },
     {
-      "url": "https://ifitness.vn/collections/mung-ngay-phu-nu-viet-nam-20-10",
-      "kind": "other",
-      "foundOn": "irace.vn"
-    },
-    {
       "url": "https://ifitness.vn/collections/phu-kien-the-thao",
       "kind": "other",
       "foundOn": "irace.vn"
@@ -423,22 +418,27 @@
       "foundOn": "irace.vn"
     },
     {
-      "url": "https://ifitness.vn/products/balo-vest-nuoc-camelbak-nano-vest",
+      "url": "https://ifitness.vn/products/bo-dung-cu-hit-dat-va-tap-luyen-the-thao-chuyen-nghiep-livefit",
       "kind": "other",
       "foundOn": "irace.vn"
     },
     {
-      "url": "https://ifitness.vn/products/gay-leo-nui-sieu-nhe-ultra-light-trekking-poles-z1902-carbon-mix-aluminum",
+      "url": "https://ifitness.vn/products/thanh-dinh-duong-huu-co-tu-hat-va-trai-cay-raw-bite",
       "kind": "other",
       "foundOn": "irace.vn"
     },
     {
-      "url": "https://ifitness.vn/products/tui-chay-bo-deo-hong-camelbak-ultra-running-hydration-belt-500ml",
+      "url": "https://ifitness.vn/products/thanh-hat-dinh-duong-faminuts-hat-dieu-yen-mach-100g-hop-4-thanh",
       "kind": "other",
       "foundOn": "irace.vn"
     },
     {
-      "url": "https://ifitness.vn/products/tui-dung-nuoc-camelbak-repack-lr-4-belt-1-5l",
+      "url": "https://ifitness.vn/products/thanh-nang-luong-lecka-granola-bites-40g",
+      "kind": "other",
+      "foundOn": "irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/products/thanh-nang-luong-natural-energy-bar-lecka-4-mui",
       "kind": "other",
       "foundOn": "irace.vn"
     },
@@ -726,7 +726,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://irace.vn/su-kien/mang-den-ultra-trail",
-      "lastCheckedAt": "2026-10-29T21:02:30.420Z",
+      "lastCheckedAt": "2026-10-31T21:02:31.684Z",
       "lastChangedAt": "2026-09-29T04:59:19.621Z",
       "extracted": {
         "facts": {
@@ -794,19 +794,19 @@
             "text": "them vao google calendar them vao google calendar"
           },
           {
-            "url": "https://ifitness.vn/products/balo-vest-nuoc-camelbak-nano-vest?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "url": "https://ifitness.vn/products/thanh-dinh-duong-huu-co-tu-hat-va-trai-cay-raw-bite?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
             "text": "mua ngay"
           },
           {
-            "url": "https://ifitness.vn/products/tui-chay-bo-deo-hong-camelbak-ultra-running-hydration-belt-500ml?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "url": "https://ifitness.vn/products/thanh-nang-luong-natural-energy-bar-lecka-4-mui?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
             "text": "mua ngay"
           },
           {
-            "url": "https://ifitness.vn/products/tui-dung-nuoc-camelbak-repack-lr-4-belt-1-5l?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "url": "https://ifitness.vn/products/thanh-hat-dinh-duong-faminuts-hat-dieu-yen-mach-100g-hop-4-thanh?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
             "text": "mua ngay"
           },
           {
-            "url": "https://ifitness.vn/products/gay-leo-nui-sieu-nhe-ultra-light-trekking-poles-z1902-carbon-mix-aluminum?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
+            "url": "https://ifitness.vn/products/thanh-nang-luong-lecka-granola-bites-40g?ref=irace&utm_source=iracevn&utm_medium=BaiViet&utm_campaign=LinkTrongBaiViet",
             "text": "mua ngay"
           },
           {
@@ -818,7 +818,7 @@
             "text": ""
           },
           {
-            "url": "https://ifitness.vn/collections/mung-ngay-phu-nu-viet-nam-20-10?utm_source=iRace.vn&utm_medium=Banner&utm_campaign=Top&utm_content=Optivita",
+            "url": "https://ifitness.vn/products/bo-dung-cu-hit-dat-va-tap-luyen-the-thao-chuyen-nghiep-livefit?utm_source=iRace.vn&utm_medium=Banner&utm_campaign=Header&utm_content=BoHitDatLiveFit",
             "text": ""
           }
         ],
@@ -828,5 +828,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-29T21:02:41.940Z"
+  "updatedAt": "2026-10-31T21:02:47.195Z"
 }
