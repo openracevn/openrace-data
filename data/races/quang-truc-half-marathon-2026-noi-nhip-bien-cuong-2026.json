@@ -7,30 +7,12 @@
   ],
   "date": "2026-11-14",
   "endDate": "2026-11-15",
-  "mainDate": "2026-11-14",
+  "mainDate": "2026-11-15",
   "seriesId": null,
   "organizerId": "bao-dak-nong",
   "organizer": "Báo Đắk Nông",
   "edition": 1,
   "courses": [
-    {
-      "label": "1.5km",
-      "meters": 1500,
-      "type": "road_run",
-      "elevationGain": null
-    },
-    {
-      "label": "5km",
-      "meters": 5000,
-      "type": "road_run",
-      "elevationGain": null
-    },
-    {
-      "label": "10km",
-      "meters": 10000,
-      "type": "road_run",
-      "elevationGain": null
-    },
     {
       "label": "21km",
       "meters": 21097,
@@ -135,94 +117,6 @@
     }
   },
   "prices": [
-    {
-      "distance": "1.5km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 269000,
-      "from": "2026-09-09",
-      "to": "2026-09-30",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "1.5km",
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 299000,
-      "from": "2026-10-01",
-      "to": "2026-10-31",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "5km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 399000,
-      "from": "2026-09-09",
-      "to": "2026-09-30",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "5km",
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 499000,
-      "from": "2026-10-01",
-      "to": "2026-10-31",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 499000,
-      "from": "2026-09-09",
-      "to": "2026-09-30",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 599000,
-      "from": "2026-10-01",
-      "to": "2026-10-31",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "21km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 649000,
-      "from": "2026-09-09",
-      "to": "2026-09-30",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "21km",
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 749000,
-      "from": "2026-10-01",
-      "to": "2026-10-31",
-      "inferred": [],
-      "site": "irace"
-    },
     {
       "distance": "1.5km",
       "tier": "Regular",
@@ -399,7 +293,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/quang-truc-half-marathon-2026-noi-nhip-bien-cuong",
-      "lastCheckedAt": "2026-10-25T21:03:16.960Z",
+      "lastCheckedAt": "2026-11-01T21:14:24.041Z",
       "lastChangedAt": "2026-09-23T18:30:40.997Z",
       "extracted": {
         "facts": {
@@ -409,7 +303,7 @@
           "venue": "Xã Quảng Trực, tỉnh Lâm Đồng",
           "organizer": "Ủy ban nhân dân dân xã Quảng Trực",
           "currency": "VND",
-          "registrationStatus": "open",
+          "registrationStatus": "closed",
           "fromPrice": 269000
         },
         "pages": [
@@ -594,71 +488,13 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/quang-truc-half-marathon-2026",
-      "lastCheckedAt": "2026-10-25T21:04:08.887Z",
+      "lastCheckedAt": "2026-11-01T21:48:00.078Z",
       "lastChangedAt": "2026-10-15T20:28:00.918Z",
       "extracted": {
         "facts": {
           "name": "Giải chạy Quảng Trực Half Marathon 2026 - Nối nhịp biên cương",
           "venue": "Xã Quảng Trực, tỉnh Lâm Đồng",
-          "organizer": "Báo Đắk Nông",
-          "prices": [
-            {
-              "distance": "1.5km",
-              "tier": "Early Bird",
-              "from": "09/09",
-              "to": "30/09",
-              "price": 269000
-            },
-            {
-              "distance": "1.5km",
-              "tier": "Regular",
-              "from": "01/10",
-              "to": "31/10",
-              "price": 299000
-            },
-            {
-              "distance": "5km",
-              "tier": "Early Bird",
-              "from": "09/09",
-              "to": "30/09",
-              "price": 399000
-            },
-            {
-              "distance": "5km",
-              "tier": "Regular",
-              "from": "01/10",
-              "to": "31/10",
-              "price": 499000
-            },
-            {
-              "distance": "10km",
-              "tier": "Early Bird",
-              "from": "09/09",
-              "to": "30/09",
-              "price": 499000
-            },
-            {
-              "distance": "10km",
-              "tier": "Regular",
-              "from": "01/10",
-              "to": "31/10",
-              "price": 599000
-            },
-            {
-              "distance": "21km",
-              "tier": "Early Bird",
-              "from": "09/09",
-              "to": "30/09",
-              "price": 649000
-            },
-            {
-              "distance": "21km",
-              "tier": "Regular",
-              "from": "01/10",
-              "to": "31/10",
-              "price": 749000
-            }
-          ]
+          "organizer": "Báo Đắk Nông"
         },
         "pages": [
           {
@@ -671,113 +507,30 @@
               "name": "Giải chạy Quảng Trực Half Marathon 2026 - Nối nhịp biên cương",
               "date": "2026-11-14",
               "endDate": "2026-11-15",
-              "mainDate": "2026-11-14",
+              "mainDate": "2026-11-15",
               "distances": [
-                "1.5km",
-                "5km",
-                "10km",
-                "21km"
+                "21KM"
               ],
               "courses": [
                 {
-                  "distance": "1.5km",
-                  "type": "road_run",
-                  "elevationGain": 0
-                },
-                {
-                  "distance": "5km",
-                  "type": "road_run",
-                  "elevationGain": 0
-                },
-                {
-                  "distance": "10km",
-                  "type": "road_run",
-                  "elevationGain": 0
-                },
-                {
-                  "distance": "21km",
+                  "distance": "21KM",
                   "type": "road_run",
                   "elevationGain": 0
                 }
               ],
               "edition": 1,
-              "editionQuote": "Giải chạy Quảng Trực Half Marathon 2026",
+              "editionQuote": "Giải chạy này là lần thứ nhất.",
               "mapsUrl": "",
-              "venue": "Xã Quảng Trực, tỉnh Lâm Đồng",
+              "venue": "Xã Quảng Trực",
               "city": "Lâm Đồng",
               "organizer": "",
               "currency": "VND",
               "registrationStatus": "open",
               "participants": {
                 "count": 0,
-                "quote": ""
+                "quote": "Chưa có thông tin về số lượng người tham gia."
               },
-              "prices": [
-                {
-                  "distance": "1.5km",
-                  "tier": "Early Bird",
-                  "audience": "",
-                  "from": "2023-09-09",
-                  "to": "2023-09-30",
-                  "price": 269000
-                },
-                {
-                  "distance": "1.5km",
-                  "tier": "Regular",
-                  "audience": "",
-                  "from": "2023-10-01",
-                  "to": "2023-10-31",
-                  "price": 299000
-                },
-                {
-                  "distance": "5km",
-                  "tier": "Early Bird",
-                  "audience": "",
-                  "from": "2023-09-09",
-                  "to": "2023-09-30",
-                  "price": 399000
-                },
-                {
-                  "distance": "5km",
-                  "tier": "Regular",
-                  "audience": "",
-                  "from": "2023-10-01",
-                  "to": "2023-10-31",
-                  "price": 499000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Early Bird",
-                  "audience": "",
-                  "from": "2023-09-09",
-                  "to": "2023-09-30",
-                  "price": 499000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Regular",
-                  "audience": "",
-                  "from": "2023-10-01",
-                  "to": "2023-10-31",
-                  "price": 599000
-                },
-                {
-                  "distance": "21km",
-                  "tier": "Early Bird",
-                  "audience": "",
-                  "from": "2023-09-09",
-                  "to": "2023-09-30",
-                  "price": 649000
-                },
-                {
-                  "distance": "21km",
-                  "tier": "Regular",
-                  "audience": "",
-                  "from": "2023-10-01",
-                  "to": "2023-10-31",
-                  "price": 749000
-                }
-              ]
+              "prices": []
             }
           }
         ],
@@ -912,5 +665,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-25T21:04:54.669Z"
+  "updatedAt": "2026-11-01T21:51:13.044Z"
 }

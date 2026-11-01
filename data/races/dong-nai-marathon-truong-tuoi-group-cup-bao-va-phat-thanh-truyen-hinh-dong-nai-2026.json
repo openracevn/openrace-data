@@ -147,61 +147,6 @@
   "prices": [
     {
       "distance": "2km",
-      "tier": "(Kids) Late",
-      "kind": "late",
-      "audience": null,
-      "price": 269000,
-      "from": "2026-10-01",
-      "to": "2026-10-29",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "5km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 599000,
-      "from": "2026-10-01",
-      "to": "2026-10-29",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 749000,
-      "from": "2026-10-01",
-      "to": "2026-10-29",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "21km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 999000,
-      "from": "2026-10-01",
-      "to": "2026-10-29",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "42km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 1199000,
-      "from": "2026-10-01",
-      "to": "2026-10-29",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "2km",
       "tier": "Super Early Bird",
       "kind": "super_early",
       "audience": null,
@@ -503,7 +448,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/dong-nai-marathon-truong-tuoi-group-cup-bao-va-phat-thanh-truyen-hinh-dong-nai",
-      "lastCheckedAt": "2026-10-12T17:52:49.455Z",
+      "lastCheckedAt": "2026-11-01T21:21:22.379Z",
       "lastChangedAt": "2026-10-12T17:47:12.440Z",
       "extracted": {
         "facts": {
@@ -512,7 +457,7 @@
           "venue": "Quảng trường Phường Bình Phước, Phường Bình Phước, Thành phố Đồng Nai",
           "organizer": "VIETRACE365",
           "currency": "VND",
-          "registrationStatus": "open",
+          "registrationStatus": "closed",
           "fromPrice": 269000
         },
         "pages": [
@@ -562,7 +507,8 @@
                 }
               ],
               "edition": 1,
-              "mapsUrl": "https://goo.gl/maps/7Csk9j2B9Q72",
+              "editionQuote": "Lần 1",
+              "mapsUrl": "https://www.google.com/maps/place/Quảng+square+Phường+Bình+Phước,+Thành+phố+Đồng+Nai",
               "venue": "Quảng trường Phường Bình Phước",
               "city": "Thành phố Đồng Nai",
               "organizer": "Trường Tươi Group và Báo – Đài PT-TH Đồng Nai",
@@ -570,7 +516,7 @@
               "registrationStatus": "open",
               "participants": {
                 "count": 0,
-                "quote": ""
+                "quote": "Chưa có thông tin về số lượng tham gia."
               },
               "prices": []
             }
@@ -774,50 +720,13 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/dong-nai-marathon-truong-tuoi-group-cup-bao-va-phat-thanh-truyen-hinh-dong-nai",
-      "lastCheckedAt": "2026-10-15T20:26:38.473Z",
+      "lastCheckedAt": "2026-11-01T21:48:36.101Z",
       "lastChangedAt": "2026-10-15T20:26:38.473Z",
       "extracted": {
         "facts": {
           "name": "Giải chạy Đồng Nai Marathon - Trường Tươi Group Cúp Báo và Phát thanh Truyền hình Đồng Nai",
           "venue": "Quảng trường Phường Bình Phước, Phường Bình Phước, Thành phố Đồng Nai",
-          "organizer": "VietRace365 | Ban tổ chức sự kiện",
-          "prices": [
-            {
-              "distance": "2km",
-              "tier": "(Kids) Late",
-              "from": "01/10",
-              "to": "29/10",
-              "price": 269000
-            },
-            {
-              "distance": "5km",
-              "tier": "Late",
-              "from": "01/10",
-              "to": "29/10",
-              "price": 599000
-            },
-            {
-              "distance": "10km",
-              "tier": "Late",
-              "from": "01/10",
-              "to": "29/10",
-              "price": 749000
-            },
-            {
-              "distance": "21km",
-              "tier": "Late",
-              "from": "01/10",
-              "to": "29/10",
-              "price": 999000
-            },
-            {
-              "distance": "42km",
-              "tier": "Late",
-              "from": "01/10",
-              "to": "29/10",
-              "price": 1199000
-            }
-          ]
+          "organizer": "VietRace365"
         },
         "pages": [
           {
@@ -831,45 +740,13 @@
               "date": "2026-11-29",
               "endDate": "2026-11-29",
               "mainDate": "2026-11-29",
-              "distances": [
-                "2km (Kids)",
-                "5km",
-                "10km",
-                "21km",
-                "42km"
-              ],
-              "courses": [
-                {
-                  "distance": "2km (Kids)",
-                  "type": "road_run",
-                  "elevationGain": 0
-                },
-                {
-                  "distance": "5km",
-                  "type": "road_run",
-                  "elevationGain": 0
-                },
-                {
-                  "distance": "10km",
-                  "type": "road_run",
-                  "elevationGain": 0
-                },
-                {
-                  "distance": "21km",
-                  "type": "road_run",
-                  "elevationGain": 0
-                },
-                {
-                  "distance": "42km",
-                  "type": "road_run",
-                  "elevationGain": 0
-                }
-              ],
+              "distances": [],
+              "courses": [],
               "edition": 1,
-              "editionQuote": "Giải chạy lần thứ nhất",
-              "mapsUrl": "https://maps.google.com/?q=Quảng+trường+Phường+Bình+Phước,+Phường+Bình+Phước,+Thành+phố+Đồng+Nai",
+              "editionQuote": "Giải chạy Đồng Nai Marathon - Trường Tươi Group",
+              "mapsUrl": "",
               "venue": "Quảng trường Phường Bình Phước, Phường Bình Phước, Thành phố Đồng Nai",
-              "city": "Thành phố Đồng Nai",
+              "city": "Đồng Nai",
               "organizer": "",
               "currency": "VND",
               "registrationStatus": "open",
@@ -877,48 +754,7 @@
                 "count": 0,
                 "quote": ""
               },
-              "prices": [
-                {
-                  "distance": "2km (Kids)",
-                  "tier": "Late",
-                  "audience": "",
-                  "from": "01/10",
-                  "to": "29/10",
-                  "price": 269000
-                },
-                {
-                  "distance": "5km",
-                  "tier": "Late",
-                  "audience": "",
-                  "from": "01/10",
-                  "to": "29/10",
-                  "price": 599000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Late",
-                  "audience": "",
-                  "from": "01/10",
-                  "to": "29/10",
-                  "price": 749000
-                },
-                {
-                  "distance": "21km",
-                  "tier": "Late",
-                  "audience": "",
-                  "from": "01/10",
-                  "to": "29/10",
-                  "price": 999000
-                },
-                {
-                  "distance": "42km",
-                  "tier": "Late",
-                  "audience": "",
-                  "from": "01/10",
-                  "to": "29/10",
-                  "price": 1199000
-                }
-              ]
+              "prices": []
             }
           }
         ],
@@ -1042,12 +878,12 @@
         ],
         "organizer": {
           "id": "vietrace365",
-          "name": "VietRace365 | Ban tổ chức sự kiện"
+          "name": "VietRace365"
         }
       }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-10-12T17:48:31.011Z",
-  "updatedAt": "2026-10-15T20:31:08.696Z"
+  "updatedAt": "2026-11-01T21:51:13.044Z"
 }

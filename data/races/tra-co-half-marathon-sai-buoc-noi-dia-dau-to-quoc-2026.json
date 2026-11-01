@@ -1,0 +1,702 @@
+{
+  "id": "c8dcbc2e-cc06-4b3f-be26-d5d0dbad501a",
+  "slug": "tra-co-half-marathon-sai-buoc-noi-dia-dau-to-quoc",
+  "name": "Giải chạy TRÀ CỔ Half Marathon - Sải Bước Nơi Địa Đầu Tổ Quốc",
+  "types": [
+    "road_run"
+  ],
+  "date": "2026-12-19",
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": null,
+  "organizerId": "great-race-solution",
+  "organizer": "Great Race Solution",
+  "edition": 1,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Sa Vĩ - Trà Cổ - Phường Móng Cái 1, Quảng Ninh",
+    "city": "Quảng Ninh"
+  },
+  "geo": {
+    "lat": 20.9562629,
+    "lng": 107.0763212,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "22",
+      "ward": null
+    },
+    "legacy": null,
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1133.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 127.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 557.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 995.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1013,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1222.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 42.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 502.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1179.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 830.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 927.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 367.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 0.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": true
+      }
+    }
+  },
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "SUPER EARLY BIRD Bình Minh",
+      "kind": "super_early",
+      "audience": null,
+      "price": 299000,
+      "from": "2026-10-25",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "EARLY BIRD Nắng Mai",
+      "kind": "early",
+      "audience": null,
+      "price": 399000,
+      "from": "2026-10-30",
+      "to": "2026-11-12",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "STANDARD Xế Chiều",
+      "kind": "regular",
+      "audience": null,
+      "price": 499000,
+      "from": "2026-11-13",
+      "to": "2026-12-03",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "LATE Hoàng Hôn",
+      "kind": "late",
+      "audience": null,
+      "price": 599000,
+      "from": "2026-12-04",
+      "to": "2026-12-12",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "SUPER EARLY BIRD Bình Minh",
+      "kind": "super_early",
+      "audience": null,
+      "price": 349000,
+      "from": "2026-10-25",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "EARLY BIRD Nắng Mai",
+      "kind": "early",
+      "audience": null,
+      "price": 449000,
+      "from": "2026-10-30",
+      "to": "2026-11-12",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "STANDARD Xế Chiều",
+      "kind": "regular",
+      "audience": null,
+      "price": 599000,
+      "from": "2026-11-13",
+      "to": "2026-12-03",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "LATE Hoàng Hôn",
+      "kind": "late",
+      "audience": null,
+      "price": 699000,
+      "from": "2026-12-04",
+      "to": "2026-12-12",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "SUPER EARLY BIRD Bình Minh",
+      "kind": "super_early",
+      "audience": null,
+      "price": 399000,
+      "from": "2026-10-25",
+      "to": "2026-10-29",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "EARLY BIRD Nắng Mai",
+      "kind": "early",
+      "audience": null,
+      "price": 499000,
+      "from": "2026-10-30",
+      "to": "2026-11-12",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "STANDARD Xế Chiều",
+      "kind": "regular",
+      "audience": null,
+      "price": 699000,
+      "from": "2026-11-13",
+      "to": "2026-12-03",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "LATE Hoàng Hôn",
+      "kind": "late",
+      "audience": null,
+      "price": 899000,
+      "from": "2026-12-04",
+      "to": "2026-12-12",
+      "inferred": [],
+      "site": "irace"
+    }
+  ],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "irace",
+      "url": "https://ticket.irace.vn/tra-co-half-marathon-sai-buoc-noi-dia-dau-to-quoc"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://facebook.com/sharer/sharer.php",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "http://online.gov.vn/Home/WebDetails/51414",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    }
+  ],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://ticket.irace.vn/tra-co-half-marathon-sai-buoc-noi-dia-dau-to-quoc",
+      "lastCheckedAt": "2026-11-01T21:47:48.146Z",
+      "lastChangedAt": "2026-11-01T21:47:48.146Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy TRÀ CỔ Half Marathon - Sải Bước Nơi Địa Đầu Tổ Quốc",
+          "venue": "Sa Vĩ - Trà Cổ - Phường Móng Cái 1, Quảng Ninh",
+          "organizer": "Great Race Solution",
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "SUPER EARLY BIRD Bình Minh",
+              "from": "25/10",
+              "to": "29/10",
+              "price": 299000
+            },
+            {
+              "distance": "5km",
+              "tier": "EARLY BIRD Nắng Mai",
+              "from": "30/10",
+              "to": "12/11",
+              "price": 399000
+            },
+            {
+              "distance": "5km",
+              "tier": "STANDARD Xế Chiều",
+              "from": "13/11",
+              "to": "03/12",
+              "price": 499000
+            },
+            {
+              "distance": "5km",
+              "tier": "LATE Hoàng Hôn",
+              "from": "04/12",
+              "to": "12/12",
+              "price": 599000
+            },
+            {
+              "distance": "10km",
+              "tier": "SUPER EARLY BIRD Bình Minh",
+              "from": "25/10",
+              "to": "29/10",
+              "price": 349000
+            },
+            {
+              "distance": "10km",
+              "tier": "EARLY BIRD Nắng Mai",
+              "from": "30/10",
+              "to": "12/11",
+              "price": 449000
+            },
+            {
+              "distance": "10km",
+              "tier": "STANDARD Xế Chiều",
+              "from": "13/11",
+              "to": "03/12",
+              "price": 599000
+            },
+            {
+              "distance": "10km",
+              "tier": "LATE Hoàng Hôn",
+              "from": "04/12",
+              "to": "12/12",
+              "price": 699000
+            },
+            {
+              "distance": "21km",
+              "tier": "SUPER EARLY BIRD Bình Minh",
+              "from": "25/10",
+              "to": "29/10",
+              "price": 399000
+            },
+            {
+              "distance": "21km",
+              "tier": "EARLY BIRD Nắng Mai",
+              "from": "30/10",
+              "to": "12/11",
+              "price": 499000
+            },
+            {
+              "distance": "21km",
+              "tier": "STANDARD Xế Chiều",
+              "from": "13/11",
+              "to": "03/12",
+              "price": 699000
+            },
+            {
+              "distance": "21km",
+              "tier": "LATE Hoàng Hôn",
+              "from": "04/12",
+              "to": "12/12",
+              "price": 899000
+            }
+          ]
+        },
+        "pages": [
+          {
+            "url": "https://ticket.irace.vn/tra-co-half-marathon-sai-buoc-noi-dia-dau-to-quoc",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Giải chạy TRÀ CỔ Half Marathon - Sải Bước Nơi Địa Đầu Tổ Quốc",
+              "date": "2026-12-19",
+              "endDate": "2026-12-19",
+              "mainDate": "2026-12-19",
+              "distances": [
+                "5km",
+                "10km",
+                "21km"
+              ],
+              "courses": [
+                {
+                  "distance": "5km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "21km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "Giải chạy lần thứ 1",
+              "mapsUrl": "Sa Vĩ - Trà Cổ - Phường Móng Cái 1, Quảng Ninh",
+              "venue": "Sa Vĩ - Trà Cổ - Phường Móng Cái 1",
+              "city": "Quảng Ninh",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": [
+                {
+                  "distance": "5km",
+                  "tier": "SUPER EARLY BIRD",
+                  "audience": "",
+                  "from": "2026-10-25",
+                  "to": "2026-10-29",
+                  "price": 299000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "EARLY BIRD",
+                  "audience": "",
+                  "from": "2026-10-30",
+                  "to": "2026-11-12",
+                  "price": 399000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "STANDARD",
+                  "audience": "",
+                  "from": "2026-11-13",
+                  "to": "2026-12-03",
+                  "price": 499000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "LATE",
+                  "audience": "",
+                  "from": "2026-12-04",
+                  "to": "2026-12-12",
+                  "price": 599000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "SUPER EARLY BIRD",
+                  "audience": "",
+                  "from": "2026-10-25",
+                  "to": "2026-10-29",
+                  "price": 349000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "EARLY BIRD",
+                  "audience": "",
+                  "from": "2026-10-30",
+                  "to": "2026-11-12",
+                  "price": 449000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "STANDARD",
+                  "audience": "",
+                  "from": "2026-11-13",
+                  "to": "2026-12-03",
+                  "price": 599000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "LATE",
+                  "audience": "",
+                  "from": "2026-12-04",
+                  "to": "2026-12-12",
+                  "price": 699000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "SUPER EARLY BIRD",
+                  "audience": "",
+                  "from": "2026-10-25",
+                  "to": "2026-10-29",
+                  "price": 399000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "EARLY BIRD",
+                  "audience": "",
+                  "from": "2026-10-30",
+                  "to": "2026-11-12",
+                  "price": 499000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "STANDARD",
+                  "audience": "",
+                  "from": "2026-11-13",
+                  "to": "2026-12-03",
+                  "price": 699000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "LATE",
+                  "audience": "",
+                  "from": "2026-12-04",
+                  "to": "2026-12-12",
+                  "price": 899000
+                }
+              ]
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://app.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://irace.vn/ban-ve/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ban ve su kien"
+          },
+          {
+            "url": "https://irace.vn/myfoto/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "tim hinh su kien"
+          },
+          {
+            "url": "https://irace.vn/doanh-nghiep/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "to chuc su kien"
+          },
+          {
+            "url": "https://irace.vn/affiliate/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kiem tien cung irace vn"
+          },
+          {
+            "url": "https://irace.vn/thiet-ke-huy-chuong/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huy chuong"
+          },
+          {
+            "url": "https://irace.vn/san-xuat-qua-tang-phu-kien-the-thao/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "quan ao phu kien"
+          },
+          {
+            "url": "https://irace.vn/about-us/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ve irace"
+          },
+          {
+            "url": "https://irace.vn/bao-chi/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "bao chi viet"
+          },
+          {
+            "url": "https://irace.vn/hoi-dap/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "hoi dap"
+          },
+          {
+            "url": "https://irace.vn/thong-tin/huong-dan/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huong dan su dung"
+          },
+          {
+            "url": "https://irace.vn/kien-thuc-tap-luyen/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kien thuc chay bo"
+          },
+          {
+            "url": "https://tools.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "cong cu tinh toan"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "shop the thao"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "dinh duong"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "phu kien"
+          },
+          {
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://ticket.irace.vn/tra-co-half-marathon-sai-buoc-noi-dia-dau-to-quoc",
+            "text": "chia se tren facebook"
+          },
+          {
+            "url": "http://online.gov.vn/Home/WebDetails/51414",
+            "text": ""
+          },
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/feed/",
+            "text": ""
+          },
+          {
+            "url": "https://www.youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+            "text": ""
+          },
+          {
+            "url": "https://play.google.com/store/apps/details?id=com.irace.app",
+            "text": ""
+          },
+          {
+            "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/chinh-sach-bao-mat/",
+            "text": "chinh sach bao mat"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-thanh-toan/",
+            "text": "dieu khoan thanh toan"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-su-dung/",
+            "text": "dieu khoan su dung"
+          },
+          {
+            "url": "https://irace.vn/tuyen-dung/",
+            "text": "tuyen dung"
+          },
+          {
+            "url": "https://irace.vn/lien-he/",
+            "text": "lien he"
+          }
+        ],
+        "organizer": {
+          "id": "great-race-solution",
+          "name": "Great Race Solution"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-11-01T21:51:13.044Z",
+  "updatedAt": "2026-11-01T21:51:13.044Z"
+}

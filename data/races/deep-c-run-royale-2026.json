@@ -11,7 +11,7 @@
   "seriesId": null,
   "organizerId": "vumedia",
   "organizer": "VuMedia | Ban tổ chức sự kiện",
-  "edition": null,
+  "edition": 1,
   "courses": [
     {
       "label": "5km",
@@ -285,13 +285,13 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/deep-c-run-royale-2026",
-      "lastCheckedAt": "2026-10-15T20:28:09.579Z",
+      "lastCheckedAt": "2026-11-01T21:48:30.133Z",
       "lastChangedAt": "2026-10-15T20:28:09.579Z",
       "extracted": {
         "facts": {
           "name": "Giải chạy DEEP C RUN ROYALE 2026",
           "venue": "Vinhomes Royal Island – Vũ Yên, Hải Phòng",
-          "organizer": "VuMedia | Ban tổ chức sự kiện",
+          "organizer": "VuMedia",
           "prices": [
             {
               "distance": "5km",
@@ -379,9 +379,9 @@
                   "elevationGain": 0
                 }
               ],
-              "edition": 2026,
-              "editionQuote": "Giải chạy DEEP C RUN ROYALE 2026",
-              "mapsUrl": "https://goo.gl/maps/1nTcPTLjG8g9kFvh8",
+              "edition": 1,
+              "editionQuote": "Giải chạy này lần thứ nhất",
+              "mapsUrl": "",
               "venue": "Vinhomes Royal Island – Vũ Yên",
               "city": "Hải Phòng",
               "organizer": "",
@@ -413,7 +413,7 @@
                   "tier": "Early Bird",
                   "audience": "",
                   "from": "2023-09-22",
-                  "to": "2023-10-30",
+                  "to": "2023-09-30",
                   "price": 150000
                 },
                 {
@@ -445,7 +445,7 @@
                   "tier": "Early Bird",
                   "audience": "",
                   "from": "2023-09-22",
-                  "to": "2023-10-30",
+                  "to": "2023-09-30",
                   "price": 180000
                 },
                 {
@@ -584,12 +584,12 @@
         ],
         "organizer": {
           "id": "vumedia",
-          "name": "VuMedia | Ban tổ chức sự kiện"
+          "name": "VuMedia"
         }
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-10-15T20:31:08.696Z",
-  "updatedAt": "2026-10-15T20:31:08.696Z"
+  "updatedAt": "2026-11-01T21:51:13.044Z"
 }

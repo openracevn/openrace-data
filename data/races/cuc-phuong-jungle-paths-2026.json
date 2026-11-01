@@ -829,7 +829,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/cuc-phuong-jungle-paths-2026",
-      "lastCheckedAt": "2026-10-25T21:03:37.496Z",
+      "lastCheckedAt": "2026-11-01T21:21:36.531Z",
       "lastChangedAt": "2026-09-23T18:30:53.064Z",
       "extracted": {
         "facts": {
@@ -839,7 +839,7 @@
           "venue": "Vườn Quốc gia Cúc Phương, Ninh Bình, Việt Nam",
           "organizer": "Race Jungle",
           "currency": "VND",
-          "registrationStatus": "open",
+          "registrationStatus": "closed",
           "fromPrice": 840000
         },
         "pages": [
@@ -1079,7 +1079,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/cuc-phuong-jungle-paths-2026",
-      "lastCheckedAt": "2026-10-25T21:04:18.726Z",
+      "lastCheckedAt": "2026-11-01T21:49:18.968Z",
       "lastChangedAt": "2026-10-15T20:29:56.434Z",
       "extracted": {
         "facts": {
@@ -1095,7 +1095,7 @@
               "types": [
                 "trail_run"
               ],
-              "name": "Giải chạy Cuc Phuong Jungle Paths 2026",
+              "name": "Giải chạy Cuc Phuong Jungle Paths",
               "date": "2026-12-26",
               "endDate": "2026-12-27",
               "mainDate": "2026-12-26",
@@ -1110,45 +1110,45 @@
                 {
                   "distance": "10km",
                   "type": "trail_run",
-                  "elevationGain": 1232
+                  "elevationGain": 0
                 },
                 {
                   "distance": "25km",
                   "type": "trail_run",
-                  "elevationGain": 2112
+                  "elevationGain": 0
                 },
                 {
                   "distance": "42km",
                   "type": "trail_run",
-                  "elevationGain": 2816
+                  "elevationGain": 0
                 },
                 {
                   "distance": "75km",
                   "type": "trail_run",
-                  "elevationGain": 3432
+                  "elevationGain": 0
                 },
                 {
                   "distance": "100km",
                   "type": "trail_run",
-                  "elevationGain": 3960
+                  "elevationGain": 0
                 }
               ],
               "edition": 1,
-              "editionQuote": "Giải chạy lần thứ 1",
+              "editionQuote": "Giải chạy lần thứ nhất",
               "mapsUrl": "",
-              "venue": "VQG Cúc Phương, Ninh Bình, Việt Nam",
+              "venue": "VQG Cúc Phương",
               "city": "Ninh Bình",
               "organizer": "",
               "currency": "VND",
               "registrationStatus": "open",
               "participants": {
                 "count": 0,
-                "quote": ""
+                "quote": "Số lượng tham gia: 0"
               },
               "prices": [
                 {
                   "distance": "10km",
-                  "tier": "Giá vé tiêu chuẩn",
+                  "tier": "Đơn giá",
                   "audience": "",
                   "from": "",
                   "to": "",
@@ -1156,7 +1156,7 @@
                 },
                 {
                   "distance": "25km",
-                  "tier": "Giá vé tiêu chuẩn",
+                  "tier": "Đơn giá",
                   "audience": "",
                   "from": "",
                   "to": "",
@@ -1164,7 +1164,7 @@
                 },
                 {
                   "distance": "42km",
-                  "tier": "Giá vé tiêu chuẩn",
+                  "tier": "Đơn giá",
                   "audience": "",
                   "from": "",
                   "to": "",
@@ -1172,7 +1172,7 @@
                 },
                 {
                   "distance": "75km",
-                  "tier": "Giá vé tiêu chuẩn",
+                  "tier": "Đơn giá",
                   "audience": "",
                   "from": "",
                   "to": "",
@@ -1180,7 +1180,7 @@
                 },
                 {
                   "distance": "100km",
-                  "tier": "Giá vé tiêu chuẩn",
+                  "tier": "Đơn giá",
                   "audience": "",
                   "from": "",
                   "to": "",
@@ -1321,5 +1321,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-25T21:04:54.669Z"
+  "updatedAt": "2026-11-01T21:51:13.044Z"
 }

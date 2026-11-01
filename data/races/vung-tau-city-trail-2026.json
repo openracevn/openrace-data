@@ -17,25 +17,25 @@
       "label": "7km",
       "meters": 7000,
       "type": "trail_run",
-      "elevationGain": null
+      "elevationGain": 650
     },
     {
       "label": "12km",
       "meters": 12000,
       "type": "trail_run",
-      "elevationGain": null
+      "elevationGain": 750
     },
     {
       "label": "25km",
       "meters": 25000,
       "type": "trail_run",
-      "elevationGain": null
+      "elevationGain": 850
     },
     {
       "label": "35km",
       "meters": 35000,
       "type": "trail_run",
-      "elevationGain": null
+      "elevationGain": 1150
     }
   ],
   "location": {
@@ -488,7 +488,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/vung-tau-city-trail",
-      "lastCheckedAt": "2026-10-18T21:03:46.561Z",
+      "lastCheckedAt": "2026-11-01T21:21:25.020Z",
       "lastChangedAt": "2026-09-23T18:30:39.797Z",
       "extracted": {
         "facts": {
@@ -686,7 +686,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/vung-tau-city-trail-2026",
-      "lastCheckedAt": "2026-10-18T21:07:43.778Z",
+      "lastCheckedAt": "2026-11-01T21:48:40.353Z",
       "lastChangedAt": "2026-10-15T20:27:44.511Z",
       "extracted": {
         "facts": {
@@ -774,25 +774,25 @@
                 {
                   "distance": "7km",
                   "type": "trail_run",
-                  "elevationGain": 0
+                  "elevationGain": 650
                 },
                 {
                   "distance": "12km",
                   "type": "trail_run",
-                  "elevationGain": 0
+                  "elevationGain": 750
                 },
                 {
                   "distance": "25km",
                   "type": "trail_run",
-                  "elevationGain": 0
+                  "elevationGain": 850
                 },
                 {
                   "distance": "35km",
                   "type": "trail_run",
-                  "elevationGain": 0
+                  "elevationGain": 1150
                 }
               ],
-              "edition": 1,
+              "edition": 2026,
               "editionQuote": "Giải chạy Vung Tau City Trail 2026",
               "mapsUrl": "",
               "venue": "Nhà truyền thống cách mạng Vũng Tàu",
@@ -809,64 +809,64 @@
                   "distance": "7km",
                   "tier": "Early Bird",
                   "audience": "",
-                  "from": "2023-09-19",
-                  "to": "2023-10-18",
+                  "from": "19/09",
+                  "to": "18/10",
                   "price": 550000
                 },
                 {
                   "distance": "7km",
                   "tier": "Regular",
                   "audience": "",
-                  "from": "2023-10-19",
-                  "to": "2023-11-15",
+                  "from": "19/10",
+                  "to": "15/11",
                   "price": 650000
                 },
                 {
                   "distance": "12km",
                   "tier": "Early Bird",
                   "audience": "",
-                  "from": "2023-09-19",
-                  "to": "2023-10-18",
+                  "from": "19/09",
+                  "to": "18/10",
                   "price": 650000
                 },
                 {
                   "distance": "12km",
                   "tier": "Regular",
                   "audience": "",
-                  "from": "2023-10-19",
-                  "to": "2023-11-15",
+                  "from": "19/10",
+                  "to": "15/11",
                   "price": 750000
                 },
                 {
                   "distance": "25km",
                   "tier": "Early Bird",
                   "audience": "",
-                  "from": "2023-09-19",
-                  "to": "2023-10-18",
+                  "from": "19/09",
+                  "to": "18/10",
                   "price": 750000
                 },
                 {
                   "distance": "25km",
                   "tier": "Regular",
                   "audience": "",
-                  "from": "2023-10-19",
-                  "to": "2023-11-15",
+                  "from": "19/10",
+                  "to": "15/11",
                   "price": 850000
                 },
                 {
                   "distance": "35km",
                   "tier": "Early Bird",
                   "audience": "",
-                  "from": "2023-09-19",
-                  "to": "2023-10-18",
+                  "from": "19/09",
+                  "to": "18/10",
                   "price": 850000
                 },
                 {
                   "distance": "35km",
                   "tier": "Regular",
                   "audience": "",
-                  "from": "2023-10-19",
-                  "to": "2023-11-15",
+                  "from": "19/10",
+                  "to": "15/11",
                   "price": 1150000
                 }
               ]
@@ -1000,5 +1000,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-18T21:09:13.459Z"
+  "updatedAt": "2026-11-01T21:51:13.044Z"
 }

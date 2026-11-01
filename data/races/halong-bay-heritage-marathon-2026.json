@@ -1,7 +1,7 @@
 {
   "id": "6fe44e19-9bb3-4f00-903f-9ff875dc5a39",
   "slug": "halong-bay-heritage-marathon-2026",
-  "name": "Giải Marathon Quốc tế Di sản Hạ Long 2026",
+  "name": "Marathon Quốc Tế Di sản Hạ Long 2026",
   "types": [
     "road_run"
   ],
@@ -1993,7 +1993,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/halong-bay-heritage-marathon-2026",
-      "lastCheckedAt": "2026-10-18T21:03:06.383Z",
+      "lastCheckedAt": "2026-11-01T21:21:01.203Z",
       "lastChangedAt": "2026-09-23T18:30:52.268Z",
       "extracted": {
         "facts": {
@@ -2126,7 +2126,7 @@
       "site": "halong-marathon",
       "role": "official",
       "url": "https://halongmarathon.com/",
-      "lastCheckedAt": "2026-10-31T21:02:17.873Z",
+      "lastCheckedAt": "2026-11-01T21:28:07.574Z",
       "lastChangedAt": "2026-09-25T05:03:56.536Z",
       "extracted": {
         "pages": [
@@ -2137,7 +2137,7 @@
               "types": [
                 "road_run"
               ],
-              "name": "Giải Marathon Quốc tế Di sản Hạ Long 2026",
+              "name": "Marathon Quốc Tế Di sản Hạ Long 2026",
               "date": "2026-11-20",
               "endDate": "2026-11-22",
               "mainDate": "2026-11-22",
@@ -2169,21 +2169,21 @@
                   "elevationGain": 0
                 }
               ],
-              "edition": 2,
-              "editionQuote": "Giải Marathon Quốc tế Di sản Hạ Long giữ Nhãn Thế giới năm thứ hai",
+              "edition": 2026,
+              "editionQuote": "Giải Marathon Quốc tế Di sản Hạ Long 2026",
               "mapsUrl": "https://halongmarathon.com/",
-              "venue": "Vịnh Hạ Long, tỉnh Quảng Ninh",
-              "city": "Hạ Long",
+              "venue": "Vịnh Hạ Long",
+              "city": "Hạ Long, Quảng Ninh",
               "organizer": "Ban Tổ chức Giải Marathon Quốc tế Di sản Hạ Long",
               "currency": "VND",
               "registrationStatus": "open",
               "participants": {
                 "count": 18000,
-                "quote": "dự kiến thu hút khoảng 18.000 vận động viên."
+                "quote": "dự kiến thu hút khoảng 18.000 vận động viên"
               },
               "prices": [
                 {
-                  "distance": "5KM",
+                  "distance": "5KM(trẻ em/người lớn)",
                   "tier": "Đăng ký sớm",
                   "audience": "Cá nhân",
                   "from": "2024-01-16",
@@ -2213,102 +2213,6 @@
                   "from": "2024-01-16",
                   "to": "2024-04-26",
                   "price": 2125000
-                },
-                {
-                  "distance": "5KM",
-                  "tier": "Giá tiêu chuẩn",
-                  "audience": "Cá nhân",
-                  "from": "2024-04-27",
-                  "to": "2025-08-01",
-                  "price": 875000
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "Giá tiêu chuẩn",
-                  "audience": "Cá nhân",
-                  "from": "2024-04-27",
-                  "to": "2025-08-01",
-                  "price": 1250000
-                },
-                {
-                  "distance": "Bán marathon",
-                  "tier": "Giá tiêu chuẩn",
-                  "audience": "Cá nhân",
-                  "from": "2024-04-27",
-                  "to": "2025-08-01",
-                  "price": 1875000
-                },
-                {
-                  "distance": "Marathon",
-                  "tier": "Giá tiêu chuẩn",
-                  "audience": "Cá nhân",
-                  "from": "2024-04-27",
-                  "to": "2025-08-01",
-                  "price": 2125000
-                },
-                {
-                  "distance": "5KM",
-                  "tier": "Thẻ Standard Chartered",
-                  "audience": "Cá nhân",
-                  "from": "2024-02-05",
-                  "to": "2024-04-26",
-                  "price": 600000
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "Thẻ Standard Chartered",
-                  "audience": "Cá nhân",
-                  "from": "2024-02-05",
-                  "to": "2024-04-26",
-                  "price": 900000
-                },
-                {
-                  "distance": "Bán marathon",
-                  "tier": "Thẻ Standard Chartered",
-                  "audience": "Cá nhân",
-                  "from": "2024-02-05",
-                  "to": "2024-04-26",
-                  "price": 1100000
-                },
-                {
-                  "distance": "Marathon",
-                  "tier": "Thẻ Standard Chartered",
-                  "audience": "Cá nhân",
-                  "from": "2024-02-05",
-                  "to": "2024-04-26",
-                  "price": 1300000
-                },
-                {
-                  "distance": "5KM",
-                  "tier": "Giá muộn",
-                  "audience": "Cá nhân",
-                  "from": "2024-08-02",
-                  "to": "2024-09-18",
-                  "price": 1000000
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "Giá muộn",
-                  "audience": "Cá nhân",
-                  "from": "2024-08-02",
-                  "to": "2024-09-18",
-                  "price": 1375000
-                },
-                {
-                  "distance": "Bán marathon",
-                  "tier": "Giá muộn",
-                  "audience": "Cá nhân",
-                  "from": "2024-08-02",
-                  "to": "2024-09-18",
-                  "price": 2000000
-                },
-                {
-                  "distance": "Marathon",
-                  "tier": "Giá muộn",
-                  "audience": "Cá nhân",
-                  "from": "2024-08-02",
-                  "to": "2024-09-18",
-                  "price": 2375000
                 }
               ]
             }
@@ -2726,7 +2630,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/giai-marathon-quoc-te-di-san-ha-long-2026",
-      "lastCheckedAt": "2026-10-18T21:07:11.429Z",
+      "lastCheckedAt": "2026-11-01T21:48:08.652Z",
       "lastChangedAt": "2026-09-27T02:38:00.143Z",
       "extracted": {
         "facts": {
@@ -2895,5 +2799,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-31T21:02:47.195Z"
+  "updatedAt": "2026-11-01T21:51:13.044Z"
 }

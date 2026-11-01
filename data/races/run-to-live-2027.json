@@ -29,7 +29,7 @@
       "label": "21km",
       "meters": 21097,
       "type": "road_run",
-      "elevationGain": null
+      "elevationGain": 200
     }
   ],
   "location": {
@@ -637,7 +637,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/run-to-live-2027",
-      "lastCheckedAt": "2026-10-15T20:22:52.417Z",
+      "lastCheckedAt": "2026-11-01T21:28:03.545Z",
       "lastChangedAt": "2026-10-13T07:07:53.879Z",
       "extracted": {
         "facts": {
@@ -860,7 +860,7 @@
       "site": "run-to-live",
       "role": "official",
       "url": "https://runtolive.vn/",
-      "lastCheckedAt": "2026-10-15T20:36:29.236Z",
+      "lastCheckedAt": "2026-11-01T21:50:26.431Z",
       "lastChangedAt": "2026-09-25T05:01:22.419Z",
       "extracted": {
         "pages": [
@@ -944,7 +944,7 @@
               "types": [
                 "road_run"
               ],
-              "name": "Giải chạy Run To Live 2027 – Chạy vì cuộc sống tốt đẹp hơn",
+              "name": "Giải chạy Run To Live 2027",
               "date": "2027-11-21",
               "endDate": "2027-11-22",
               "mainDate": "2027-11-21",
@@ -955,20 +955,20 @@
                 {
                   "distance": "21KM",
                   "type": "road_run",
-                  "elevationGain": 0
+                  "elevationGain": 200
                 }
               ],
-              "edition": 2027,
+              "edition": 1,
               "editionQuote": "Giải chạy Run To Live 2027",
               "mapsUrl": "https://runtolive.vn/",
               "venue": "Metropole Thủ Thiêm",
               "city": "TP. Thủ Đức",
-              "organizer": "Ban tổ chức",
+              "organizer": "Ban tổ chức Run To Live",
               "currency": "VND",
               "registrationStatus": "open",
               "participants": {
                 "count": 7000,
-                "quote": "Run To Live thu hút gần 7.000 vận động viên"
+                "quote": "Gần 7.000 vận động viên"
               },
               "prices": []
             }
@@ -1023,5 +1023,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-10-13T07:09:05.682Z",
-  "updatedAt": "2026-10-17T13:14:46.772Z"
+  "updatedAt": "2026-11-01T21:51:13.044Z"
 }

@@ -16,25 +16,25 @@
     {
       "label": "5km",
       "meters": 5000,
-      "type": "trail_run",
+      "type": "city_trail",
       "elevationGain": null
     },
     {
       "label": "10km",
       "meters": 10000,
-      "type": "trail_run",
+      "type": "city_trail",
       "elevationGain": null
     },
     {
       "label": "21km",
       "meters": 21097,
-      "type": "trail_run",
+      "type": "city_trail",
       "elevationGain": null
     },
     {
       "label": "42km",
       "meters": 42195,
-      "type": "trail_run",
+      "type": "city_trail",
       "elevationGain": null
     }
   ],
@@ -491,7 +491,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/son-tra-city-trail-2026",
-      "lastCheckedAt": "2026-10-15T20:24:31.280Z",
+      "lastCheckedAt": "2026-11-01T21:21:36.920Z",
       "lastChangedAt": "2026-09-23T18:30:41.398Z",
       "extracted": {
         "facts": {
@@ -663,7 +663,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/son-tra-city-trail-2026",
-      "lastCheckedAt": "2026-10-15T20:28:27.335Z",
+      "lastCheckedAt": "2026-11-01T21:49:24.096Z",
       "lastChangedAt": "2026-10-15T20:28:27.335Z",
       "extracted": {
         "facts": {
@@ -763,7 +763,7 @@
             "json": {
               "pageKind": "sport",
               "types": [
-                "trail_run"
+                "city_trail"
               ],
               "name": "Giải chạy Sơn Trà City Trail 2026",
               "date": "2026-12-27",
@@ -778,27 +778,27 @@
               "courses": [
                 {
                   "distance": "5km",
-                  "type": "trail_run",
+                  "type": "city_trail",
                   "elevationGain": 0
                 },
                 {
                   "distance": "10km",
-                  "type": "trail_run",
+                  "type": "city_trail",
                   "elevationGain": 0
                 },
                 {
                   "distance": "21km",
-                  "type": "trail_run",
+                  "type": "city_trail",
                   "elevationGain": 0
                 },
                 {
                   "distance": "42km",
-                  "type": "trail_run",
+                  "type": "city_trail",
                   "elevationGain": 0
                 }
               ],
               "edition": 1,
-              "editionQuote": "Giải chạy lần thứ 1",
+              "editionQuote": "Giải chạy Sơn Trà City Trail 2026",
               "mapsUrl": "",
               "venue": "Sơn Trà",
               "city": "Đà Nẵng",
@@ -814,96 +814,96 @@
                   "distance": "5km",
                   "tier": "Early Bird",
                   "audience": "",
-                  "from": "11/10",
-                  "to": "31/10",
+                  "from": "2023-10-11",
+                  "to": "2023-10-31",
                   "price": 660000
                 },
                 {
                   "distance": "5km",
                   "tier": "Regular",
                   "audience": "",
-                  "from": "01/11",
-                  "to": "30/11",
+                  "from": "2023-11-01",
+                  "to": "2023-11-30",
                   "price": 866000
                 },
                 {
                   "distance": "5km",
                   "tier": "Late",
                   "audience": "",
-                  "from": "01/12",
-                  "to": "15/12",
+                  "from": "2023-12-01",
+                  "to": "2023-12-15",
                   "price": 1166000
                 },
                 {
                   "distance": "10km",
                   "tier": "Early Bird",
                   "audience": "",
-                  "from": "11/10",
-                  "to": "31/10",
+                  "from": "2023-10-11",
+                  "to": "2023-10-31",
                   "price": 766000
                 },
                 {
                   "distance": "10km",
                   "tier": "Regular",
                   "audience": "",
-                  "from": "01/11",
-                  "to": "30/11",
+                  "from": "2023-11-01",
+                  "to": "2023-11-30",
                   "price": 966000
                 },
                 {
                   "distance": "10km",
                   "tier": "Late",
                   "audience": "",
-                  "from": "01/12",
-                  "to": "15/12",
+                  "from": "2023-12-01",
+                  "to": "2023-12-15",
                   "price": 1266000
                 },
                 {
                   "distance": "21km",
                   "tier": "Early Bird",
                   "audience": "",
-                  "from": "11/10",
-                  "to": "31/10",
+                  "from": "2023-10-11",
+                  "to": "2023-10-31",
                   "price": 988000
                 },
                 {
                   "distance": "21km",
                   "tier": "Regular",
                   "audience": "",
-                  "from": "01/11",
-                  "to": "30/11",
+                  "from": "2023-11-01",
+                  "to": "2023-11-30",
                   "price": 1188000
                 },
                 {
                   "distance": "21km",
                   "tier": "Late",
                   "audience": "",
-                  "from": "01/12",
-                  "to": "15/12",
+                  "from": "2023-12-01",
+                  "to": "2023-12-15",
                   "price": 1488000
                 },
                 {
                   "distance": "42km",
                   "tier": "Early Bird",
                   "audience": "",
-                  "from": "11/10",
-                  "to": "31/10",
+                  "from": "2023-10-11",
+                  "to": "2023-10-31",
                   "price": 1088000
                 },
                 {
                   "distance": "42km",
                   "tier": "Regular",
                   "audience": "",
-                  "from": "01/11",
-                  "to": "30/11",
+                  "from": "2023-11-01",
+                  "to": "2023-11-30",
                   "price": 1388000
                 },
                 {
                   "distance": "42km",
                   "tier": "Late",
                   "audience": "",
-                  "from": "01/12",
-                  "to": "15/12",
+                  "from": "2023-12-01",
+                  "to": "2023-12-15",
                   "price": 1688000
                 }
               ]
@@ -1045,5 +1045,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-15T20:31:08.696Z"
+  "updatedAt": "2026-11-01T21:51:13.044Z"
 }

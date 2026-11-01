@@ -7,7 +7,7 @@
   ],
   "date": "2026-11-27",
   "endDate": "2026-11-29",
-  "mainDate": "2026-11-27",
+  "mainDate": "2026-11-28",
   "seriesId": "ultra-trail-cao-bang",
   "organizerId": "race-jungle",
   "organizer": "Race Jungle",
@@ -153,67 +153,67 @@
   "prices": [
     {
       "distance": "10km",
-      "tier": "Noon",
+      "tier": "Giá vé",
       "kind": "other",
       "audience": null,
-      "price": 1232000,
-      "from": "2026-05-22",
-      "to": "2026-10-28",
+      "price": 1400000,
+      "from": null,
+      "to": null,
       "inferred": [],
       "site": "irace"
     },
     {
       "distance": "25km",
-      "tier": "Noon",
+      "tier": "Giá vé",
       "kind": "other",
       "audience": null,
-      "price": 2112000,
-      "from": "2026-05-22",
-      "to": "2026-10-28",
+      "price": 2400000,
+      "from": null,
+      "to": null,
       "inferred": [],
       "site": "irace"
     },
     {
       "distance": "42km",
-      "tier": "Noon",
+      "tier": "Giá vé",
       "kind": "other",
       "audience": null,
-      "price": 2816000,
-      "from": "2026-05-22",
-      "to": "2026-10-28",
+      "price": 3200000,
+      "from": null,
+      "to": null,
       "inferred": [],
       "site": "irace"
     },
     {
       "distance": "70km",
-      "tier": "Noon",
+      "tier": "Giá vé",
       "kind": "other",
       "audience": null,
-      "price": 3432000,
-      "from": "2026-05-22",
-      "to": "2026-10-28",
+      "price": 3900000,
+      "from": null,
+      "to": null,
       "inferred": [],
       "site": "irace"
     },
     {
       "distance": "100km",
-      "tier": "Noon",
+      "tier": "Giá vé",
       "kind": "other",
       "audience": null,
-      "price": 3960000,
-      "from": "2026-05-22",
-      "to": "2026-10-28",
+      "price": 4500000,
+      "from": null,
+      "to": null,
       "inferred": [],
       "site": "irace"
     },
     {
       "distance": "160km",
-      "tier": "Noon",
+      "tier": "Giá vé",
       "kind": "other",
       "audience": null,
-      "price": 5984000,
-      "from": "2026-05-22",
-      "to": "2026-10-28",
+      "price": 6800000,
+      "from": null,
+      "to": null,
       "inferred": [],
       "site": "irace"
     },
@@ -593,7 +593,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/ultra-trail-cao-bang-2026",
-      "lastCheckedAt": "2026-10-25T21:03:23.583Z",
+      "lastCheckedAt": "2026-11-01T21:21:02.711Z",
       "lastChangedAt": "2026-09-23T18:30:49.445Z",
       "extracted": {
         "facts": {
@@ -603,7 +603,7 @@
           "venue": "Bản Giốc, Cao Bằng, Việt Nam",
           "organizer": "Race Jungle",
           "currency": "VND",
-          "registrationStatus": "open",
+          "registrationStatus": "closed",
           "fromPrice": 840000
         },
         "pages": [
@@ -845,57 +845,13 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/ultra-trail-cao-bang-2026",
-      "lastCheckedAt": "2026-10-25T21:04:10.498Z",
+      "lastCheckedAt": "2026-11-01T21:48:10.179Z",
       "lastChangedAt": "2026-10-15T20:29:29.428Z",
       "extracted": {
         "facts": {
           "name": "Giải chạy Ultra Trail Cao Bang 2026",
           "venue": "Bản Giốc - Cao Bằng",
-          "organizer": "Race Jungle",
-          "prices": [
-            {
-              "distance": "10km",
-              "tier": "Noon",
-              "from": "22/05",
-              "to": "28/10",
-              "price": 1232000
-            },
-            {
-              "distance": "25Km",
-              "tier": "Noon",
-              "from": "22/05",
-              "to": "28/10",
-              "price": 2112000
-            },
-            {
-              "distance": "42km",
-              "tier": "Noon",
-              "from": "22/05",
-              "to": "28/10",
-              "price": 2816000
-            },
-            {
-              "distance": "70km",
-              "tier": "Noon",
-              "from": "22/05",
-              "to": "28/10",
-              "price": 3432000
-            },
-            {
-              "distance": "100km",
-              "tier": "Noon",
-              "from": "22/05",
-              "to": "28/10",
-              "price": 3960000
-            },
-            {
-              "distance": "160km",
-              "tier": "Noon",
-              "from": "22/05",
-              "to": "28/10",
-              "price": 5984000
-            }
-          ]
+          "organizer": "Race Jungle"
         },
         "pages": [
           {
@@ -908,7 +864,7 @@
               "name": "Giải chạy Ultra Trail Cao Bang 2026",
               "date": "2026-11-27",
               "endDate": "2026-11-29",
-              "mainDate": "2026-11-27",
+              "mainDate": "2026-11-28",
               "distances": [
                 "10km",
                 "25Km",
@@ -950,9 +906,9 @@
                 }
               ],
               "edition": 1,
-              "editionQuote": "lần đầu",
+              "editionQuote": "Giải chạy lẫn thứ 1",
               "mapsUrl": "",
-              "venue": "Bản Giốc",
+              "venue": "Bản Giốc - Cao Bằng",
               "city": "Cao Bằng",
               "organizer": "",
               "currency": "VND",
@@ -964,51 +920,51 @@
               "prices": [
                 {
                   "distance": "10km",
-                  "tier": "Noon (22/05 - 28/10)",
+                  "tier": "Giá vé",
                   "audience": "",
-                  "from": "22/05",
-                  "to": "28/10",
-                  "price": 1232000
+                  "from": "",
+                  "to": "",
+                  "price": 1400000
                 },
                 {
                   "distance": "25Km",
-                  "tier": "Noon (22/05 - 28/10)",
+                  "tier": "Giá vé",
                   "audience": "",
-                  "from": "22/05",
-                  "to": "28/10",
-                  "price": 2112000
+                  "from": "",
+                  "to": "",
+                  "price": 2400000
                 },
                 {
                   "distance": "42km",
-                  "tier": "Noon (22/05 - 28/10)",
+                  "tier": "Giá vé",
                   "audience": "",
-                  "from": "22/05",
-                  "to": "28/10",
-                  "price": 2816000
+                  "from": "",
+                  "to": "",
+                  "price": 3200000
                 },
                 {
                   "distance": "70km",
-                  "tier": "Noon (22/05 - 28/10)",
+                  "tier": "Giá vé",
                   "audience": "",
-                  "from": "22/05",
-                  "to": "28/10",
-                  "price": 3432000
+                  "from": "",
+                  "to": "",
+                  "price": 3900000
                 },
                 {
                   "distance": "100km",
-                  "tier": "Noon (22/05 - 28/10)",
+                  "tier": "Giá vé",
                   "audience": "",
-                  "from": "22/05",
-                  "to": "28/10",
-                  "price": 3960000
+                  "from": "",
+                  "to": "",
+                  "price": 4500000
                 },
                 {
                   "distance": "160km",
-                  "tier": "Noon (22/05 - 28/10)",
+                  "tier": "Giá vé",
                   "audience": "",
-                  "from": "22/05",
-                  "to": "28/10",
-                  "price": 5984000
+                  "from": "",
+                  "to": "",
+                  "price": 6800000
                 }
               ]
             }
@@ -1157,5 +1113,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-25T21:04:54.669Z"
+  "updatedAt": "2026-11-01T21:51:13.044Z"
 }

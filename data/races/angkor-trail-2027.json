@@ -1,128 +1,235 @@
 {
   "id": "52386991-dce7-4bf4-b4e9-213e5a40afbf",
   "slug": "angkor-trail-2027",
-  "name": "ANGKOR TRAIL 2027",
+  "name": "Giải chạy ANGKOR TRAIL 2027",
   "types": [
-    "other"
+    "trail_run"
   ],
   "date": "2027-01-23",
   "endDate": null,
   "mainDate": null,
   "seriesId": null,
-  "organizerId": "sdpo-va-phoenix-voyages-sports-events",
+  "organizerId": "sdpo",
   "organizer": "SDPO và Phoenix Voyages Sports & Events",
   "edition": null,
-  "courses": [],
-  "location": {
-    "venue": "Siem Reap, Cambodia",
-    "city": null
-  },
-  "geo": {
-    "lat": 21.0216685,
-    "lng": 105.8482517,
-    "source": "nominatim",
-    "precision": "venue",
-    "current": {
-      "province": "01",
-      "ward": "00082"
+  "courses": [
+    {
+      "label": "4km",
+      "meters": 4000,
+      "type": "trail_run",
+      "elevationGain": null
     },
-    "legacy": {
-      "province": "01",
-      "district": "002",
-      "ward": "00082"
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "trail_run",
+      "elevationGain": null
     },
-    "access": "road",
-    "fromPlaces": {
-      "hcmc": {
-        "km": 1143.3,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "ha-noi": {
-        "km": 0.9,
-        "minutes": null,
-        "method": "straight_line",
-        "near": true
-      },
-      "da-nang": {
-        "km": 605.9,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "nha-trang": {
-        "km": 1039.6,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "da-lat": {
-        "km": 1046.9,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "can-tho": {
-        "km": 1221.8,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "hai-phong": {
-        "km": 89.4,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "hue": {
-        "km": 539,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "vung-tau": {
-        "km": 1194.4,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "quy-nhon": {
-        "km": 881.5,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "buon-ma-thuot": {
-        "km": 957.7,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "sa-pa": {
-        "km": 253.5,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "ha-long": {
-        "km": 128.1,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      }
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "32km",
+      "meters": 32000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "64km",
+      "meters": 64000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "100km",
+      "meters": 100000,
+      "type": "trail_run",
+      "elevationGain": null
     }
+  ],
+  "location": {
+    "venue": "Xiêm Riệp, Cam-pu-chia",
+    "city": "Cam-pu-chia"
   },
-  "prices": [],
+  "geo": null,
+  "prices": [
+    {
+      "distance": "4km",
+      "tier": "KIDS&#039; RACE REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 1100000,
+      "from": "2026-10-01",
+      "to": "2026-12-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "ANGKOR WALKING / HIKING REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 1400000,
+      "from": "2026-10-01",
+      "to": "2026-12-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "ELEPHANT TRAIL REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 1600000,
+      "from": "2026-10-01",
+      "to": "2026-12-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "ANGKOR WALKING / HIKING REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 2300000,
+      "from": "2026-10-01",
+      "to": "2026-12-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "NAGA TRAIL REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 2900000,
+      "from": "2026-10-01",
+      "to": "2026-12-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "32km",
+      "tier": "JUNGLE TRAIL REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 3600000,
+      "from": "2026-10-01",
+      "to": "2026-12-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "MARATHON TRAIL REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 4100000,
+      "from": "2026-10-01",
+      "to": "2026-12-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "64km",
+      "tier": "BAYON TRAIL REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 4400000,
+      "from": "2026-10-01",
+      "to": "2026-12-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "100km",
+      "tier": "ULTRA TRAIL ANGKOR REGULAR",
+      "kind": "regular",
+      "audience": null,
+      "price": 5700000,
+      "from": "2026-10-01",
+      "to": "2026-12-31",
+      "inferred": [],
+      "site": "irace"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
+    {
+      "site": "irace",
+      "url": "https://ticket.irace.vn/angkor-trail-2027"
+    },
     {
       "site": "actiup",
       "url": "https://actiup.net/vi/event/angkor-trail-2027"
     }
   ],
   "links": [
+    {
+      "url": "https://facebook.com/sharer/sharer.php",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "http://online.gov.vn/Home/WebDetails/51414",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://docs.google.com/document/d/1PASBGbMWzbW_Y5fILC00Vj5AAystBuzY/view",
+      "kind": "rules",
+      "foundOn": "ticket.irace.vn"
+    },
     {
       "url": "https://drive.google.com/file/d/1m4x44FIOwmy7d14R3hAxx9AgbOuT79Sv/view",
       "kind": "rules",
@@ -137,7 +244,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/angkor-trail-2027",
-      "lastCheckedAt": "2026-10-23T21:01:07.409Z",
+      "lastCheckedAt": "2026-11-01T21:02:05.091Z",
       "lastChangedAt": "2026-10-23T21:01:07.409Z",
       "extracted": {
         "facts": {
@@ -149,6 +256,80 @@
           "registrationStatus": "open",
           "fromPrice": 935000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/angkor-trail-2027",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "trail_run"
+              ],
+              "name": "Angkor Trail 2027",
+              "date": "2027-01-21",
+              "endDate": "2027-01-23",
+              "mainDate": "2027-01-23",
+              "distances": [
+                "100 km",
+                "64 km",
+                "42 km",
+                "32 km",
+                "21 km",
+                "10 km",
+                "4 km"
+              ],
+              "courses": [
+                {
+                  "distance": "100 km",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "64 km",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "42 km",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "32 km",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "21 km",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10 km",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "4 km",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "giải chạy trail đặc biệt",
+              "mapsUrl": "https://actiup.net/vi/events/attractions",
+              "venue": "Khách sạn Angkor Paradise",
+              "city": "Siem Reap",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1m4x44FIOwmy7d14R3hAxx9AgbOuT79Sv/view?usp=drive_link",
@@ -160,9 +341,361 @@
           "name": "SDPO và Phoenix Voyages Sports & Events"
         }
       }
+    },
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://ticket.irace.vn/angkor-trail-2027",
+      "lastCheckedAt": "2026-11-01T21:47:38.064Z",
+      "lastChangedAt": "2026-11-01T21:47:38.064Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy ANGKOR TRAIL 2027",
+          "venue": "Xiêm Riệp, Cam-pu-chia",
+          "organizer": "SDPO",
+          "prices": [
+            {
+              "distance": "4 KM",
+              "tier": "KIDS&#039; RACE REGULAR",
+              "from": "01/10",
+              "to": "31/12",
+              "price": 1100000
+            },
+            {
+              "distance": "10 KM",
+              "tier": "ANGKOR WALKING / HIKING REGULAR",
+              "from": "01/10",
+              "to": "31/12",
+              "price": 1400000
+            },
+            {
+              "distance": "10 KM",
+              "tier": "ELEPHANT TRAIL REGULAR",
+              "from": "01/10",
+              "to": "31/12",
+              "price": 1600000
+            },
+            {
+              "distance": "21 KM",
+              "tier": "ANGKOR WALKING / HIKING REGULAR",
+              "from": "01/10",
+              "to": "31/12",
+              "price": 2300000
+            },
+            {
+              "distance": "21 KM",
+              "tier": "NAGA TRAIL REGULAR",
+              "from": "01/10",
+              "to": "31/12",
+              "price": 2900000
+            },
+            {
+              "distance": "32 KM",
+              "tier": "JUNGLE TRAIL REGULAR",
+              "from": "01/10",
+              "to": "31/12",
+              "price": 3600000
+            },
+            {
+              "distance": "42KM",
+              "tier": "MARATHON TRAIL REGULAR",
+              "from": "01/10",
+              "to": "31/12",
+              "price": 4100000
+            },
+            {
+              "distance": "64KM",
+              "tier": "BAYON TRAIL REGULAR",
+              "from": "01/10",
+              "to": "31/12",
+              "price": 4400000
+            },
+            {
+              "distance": "100KM",
+              "tier": "ULTRA TRAIL ANGKOR REGULAR",
+              "from": "01/10",
+              "to": "31/12",
+              "price": 5700000
+            }
+          ]
+        },
+        "pages": [
+          {
+            "url": "https://ticket.irace.vn/angkor-trail-2027",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "trail_run"
+              ],
+              "name": "Giải chạy ANGKOR TRAIL 2027",
+              "date": "2027-01-23",
+              "endDate": "2027-01-23",
+              "mainDate": "2027-01-23",
+              "distances": [
+                "4 KM",
+                "10 KM",
+                "21 KM",
+                "32 KM",
+                "42KM",
+                "64KM",
+                "100KM"
+              ],
+              "courses": [
+                {
+                  "distance": "4 KM",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10 KM",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "21 KM",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "32 KM",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "42KM",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "64KM",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "100KM",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "Giải chạy ANGKOR TRAIL 2027",
+              "mapsUrl": "",
+              "venue": "Xiêm Riệp",
+              "city": "Cam-pu-chia",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": [
+                {
+                  "distance": "4 KM",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "31/12",
+                  "price": 1100000
+                },
+                {
+                  "distance": "10 KM",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "31/12",
+                  "price": 1400000
+                },
+                {
+                  "distance": "10 KM",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "31/12",
+                  "price": 1600000
+                },
+                {
+                  "distance": "21 KM",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "31/12",
+                  "price": 2300000
+                },
+                {
+                  "distance": "21 KM",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "31/12",
+                  "price": 2900000
+                },
+                {
+                  "distance": "32 KM",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "31/12",
+                  "price": 3600000
+                },
+                {
+                  "distance": "42KM",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "31/12",
+                  "price": 4100000
+                },
+                {
+                  "distance": "64KM",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "31/12",
+                  "price": 4400000
+                },
+                {
+                  "distance": "100KM",
+                  "tier": "REGULAR",
+                  "audience": "",
+                  "from": "01/10",
+                  "to": "31/12",
+                  "price": 5700000
+                }
+              ]
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://app.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://irace.vn/ban-ve/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ban ve su kien"
+          },
+          {
+            "url": "https://irace.vn/myfoto/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "tim hinh su kien"
+          },
+          {
+            "url": "https://irace.vn/doanh-nghiep/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "to chuc su kien"
+          },
+          {
+            "url": "https://irace.vn/affiliate/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kiem tien cung irace vn"
+          },
+          {
+            "url": "https://irace.vn/thiet-ke-huy-chuong/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huy chuong"
+          },
+          {
+            "url": "https://irace.vn/san-xuat-qua-tang-phu-kien-the-thao/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "quan ao phu kien"
+          },
+          {
+            "url": "https://irace.vn/about-us/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ve irace"
+          },
+          {
+            "url": "https://irace.vn/bao-chi/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "bao chi viet"
+          },
+          {
+            "url": "https://irace.vn/hoi-dap/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "hoi dap"
+          },
+          {
+            "url": "https://irace.vn/thong-tin/huong-dan/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huong dan su dung"
+          },
+          {
+            "url": "https://irace.vn/kien-thuc-tap-luyen/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kien thuc chay bo"
+          },
+          {
+            "url": "https://tools.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "cong cu tinh toan"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "shop the thao"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "dinh duong"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "phu kien"
+          },
+          {
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://ticket.irace.vn/angkor-trail-2027",
+            "text": "chia se tren facebook"
+          },
+          {
+            "url": "https://docs.google.com/document/d/1PASBGbMWzbW_Y5fILC00Vj5AAystBuzY/view",
+            "text": "tai day dieu le"
+          },
+          {
+            "url": "http://online.gov.vn/Home/WebDetails/51414",
+            "text": ""
+          },
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/feed/",
+            "text": ""
+          },
+          {
+            "url": "https://www.youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+            "text": ""
+          },
+          {
+            "url": "https://play.google.com/store/apps/details?id=com.irace.app",
+            "text": ""
+          },
+          {
+            "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/chinh-sach-bao-mat/",
+            "text": "chinh sach bao mat"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-thanh-toan/",
+            "text": "dieu khoan thanh toan"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-su-dung/",
+            "text": "dieu khoan su dung"
+          },
+          {
+            "url": "https://irace.vn/tuyen-dung/",
+            "text": "tuyen dung"
+          },
+          {
+            "url": "https://irace.vn/lien-he/",
+            "text": "lien he"
+          }
+        ],
+        "organizer": {
+          "id": "sdpo",
+          "name": "SDPO"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-10-23T21:01:37.063Z",
-  "updatedAt": "2026-10-23T21:01:37.063Z"
+  "updatedAt": "2026-11-01T21:51:13.044Z"
 }

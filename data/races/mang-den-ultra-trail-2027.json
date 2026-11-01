@@ -7,7 +7,7 @@
   ],
   "date": "2027-01-15",
   "endDate": "2027-01-17",
-  "mainDate": null,
+  "mainDate": "2027-01-15",
   "seriesId": "mang-den-ultra-trail",
   "organizerId": "pr-events-company-limited",
   "organizer": "Ban Tổ Chức: Hội Du Lịch Măng Đen - Đơn vị vận hành: PR Events",
@@ -474,7 +474,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/mang-den-ultra-trail-2027",
-      "lastCheckedAt": "2026-10-18T21:04:53.082Z",
+      "lastCheckedAt": "2026-11-01T21:21:43.645Z",
       "lastChangedAt": "2026-09-23T18:30:48.234Z",
       "extracted": {
         "facts": {
@@ -726,7 +726,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://irace.vn/su-kien/mang-den-ultra-trail",
-      "lastCheckedAt": "2026-10-31T21:02:31.684Z",
+      "lastCheckedAt": "2026-11-01T21:49:42.165Z",
       "lastChangedAt": "2026-09-29T04:59:19.621Z",
       "extracted": {
         "facts": {
@@ -742,12 +742,32 @@
               "types": [
                 "trail_run"
               ],
-              "name": "Măng Đen Ultra Trail 2027",
+              "name": "MĂNG ĐEN ULTRA TRAIL 2027 – MÙA 3",
               "date": "2027-01-15",
               "endDate": "2027-01-17",
-              "venue": "Thị trấn Măng Đen",
-              "city": "Kon Tum",
+              "mainDate": "2027-01-15",
+              "distances": [
+                "Đang cập nhật"
+              ],
+              "courses": [
+                {
+                  "distance": "Đang cập nhật",
+                  "type": "trail_run",
+                  "elevationGain": 0
+                }
+              ],
               "edition": 3,
+              "editionQuote": "Măng Đen Ultra Trail 2027 – MÙA 3",
+              "mapsUrl": "https://goo.gl/maps/vnRiMAVVkYH2",
+              "venue": "Thị Trấn Măng Đen, Huyện Kon Plong, Tỉnh Kon Tum",
+              "city": "Kon Tum",
+              "organizer": "Hội du lịch Măng Đen",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": "Đang cập nhật"
+              },
               "prices": []
             }
           }
@@ -821,12 +841,11 @@
             "url": "https://ifitness.vn/products/bo-dung-cu-hit-dat-va-tap-luyen-the-thao-chuyen-nghiep-livefit?utm_source=iRace.vn&utm_medium=Banner&utm_campaign=Header&utm_content=BoHitDatLiveFit",
             "text": ""
           }
-        ],
-        "readBy": "agent"
+        ]
       }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-31T21:02:47.195Z"
+  "updatedAt": "2026-11-01T21:51:13.044Z"
 }

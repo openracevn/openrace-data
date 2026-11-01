@@ -186,7 +186,7 @@
     "date": "2027-04-03",
     "endDate": "2027-04-04",
     "mainDate": "2027-04-03",
-    "lastModified": "2026-10-15T20:31:08.696Z",
+    "lastModified": "2026-11-01T21:51:13.044Z",
     "file": "aqua-warriors-halong-bay-2027.json",
     "seriesId": "aqua-warriors-halong-bay",
     "sourceUrls": [
@@ -354,8 +354,8 @@
     "name": "Giải chạy Yên Tử Heritage Marathon 2026",
     "date": "2026-11-28",
     "endDate": "2026-11-29",
-    "mainDate": "2026-11-29",
-    "lastModified": "2026-10-18T21:09:13.459Z",
+    "mainDate": "2026-11-28",
+    "lastModified": "2026-11-01T21:51:13.044Z",
     "file": "yen-tu-heritage-marathon-2026.json",
     "seriesId": "yen-tu-heritage-marathon",
     "sourceUrls": [
@@ -541,7 +541,7 @@
     "date": "2026-12-27",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-10-15T20:31:08.696Z",
+    "lastModified": "2026-11-01T21:51:13.044Z",
     "file": "son-tra-city-trail-2026.json",
     "seriesId": null,
     "sourceUrls": [
@@ -1791,7 +1791,7 @@
     "date": "2026-12-01",
     "endDate": "2026-12-31",
     "mainDate": "2026-12-01",
-    "lastModified": "2026-10-25T21:04:54.669Z",
+    "lastModified": "2026-11-01T21:51:13.044Z",
     "file": "empower-run-2026.json",
     "seriesId": "hanh-trinh-tiep-suc",
     "sourceUrls": [
@@ -2109,15 +2109,16 @@
   {
     "id": "52386991-dce7-4bf4-b4e9-213e5a40afbf",
     "slug": "angkor-trail-2027",
-    "name": "ANGKOR TRAIL 2027",
+    "name": "Giải chạy ANGKOR TRAIL 2027",
     "date": "2027-01-23",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-10-23T21:01:37.063Z",
+    "lastModified": "2026-11-01T21:51:13.044Z",
     "file": "angkor-trail-2027.json",
     "seriesId": null,
     "sourceUrls": [
-      "https://actiup.net/vi/event/angkor-trail-2027"
+      "https://actiup.net/vi/event/angkor-trail-2027",
+      "https://ticket.irace.vn/angkor-trail-2027"
     ],
     "linkUrls": []
   },
@@ -2666,7 +2667,7 @@
     "date": "2026-11-29",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-10-15T20:31:08.696Z",
+    "lastModified": "2026-11-01T21:51:13.044Z",
     "file": "dong-nai-marathon-truong-tuoi-group-cup-bao-va-phat-thanh-truyen-hinh-dong-nai-2026.json",
     "seriesId": null,
     "sourceUrls": [
@@ -2745,11 +2746,11 @@
   {
     "id": "6fe44e19-9bb3-4f00-903f-9ff875dc5a39",
     "slug": "halong-bay-heritage-marathon-2026",
-    "name": "Giải Marathon Quốc tế Di sản Hạ Long 2026",
+    "name": "Marathon Quốc Tế Di sản Hạ Long 2026",
     "date": "2026-11-22",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-10-31T21:02:47.195Z",
+    "lastModified": "2026-11-01T21:51:13.044Z",
     "file": "halong-bay-heritage-marathon-2026.json",
     "seriesId": "halong-bay-heritage-marathon",
     "sourceUrls": [
@@ -2828,8 +2829,8 @@
     "name": "Giải chạy Đất Thép City Trail 2027",
     "date": "2027-01-23",
     "endDate": "2027-01-24",
-    "mainDate": "2027-01-23",
-    "lastModified": "2026-10-15T20:31:08.696Z",
+    "mainDate": "2027-01-24",
+    "lastModified": "2026-11-01T21:51:13.044Z",
     "file": "dat-thep-city-trail-2027.json",
     "seriesId": null,
     "sourceUrls": [
@@ -3261,7 +3262,7 @@
     "date": "2027-01-17",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-10-25T21:02:29.795Z",
+    "lastModified": "2026-11-01T21:51:13.044Z",
     "file": "hcmc-marathon-2027.json",
     "seriesId": "hcmc-marathon",
     "sourceUrls": [
@@ -3293,8 +3294,8 @@
     "name": "Măng Đen Ultra Trail 2027",
     "date": "2027-01-15",
     "endDate": "2027-01-17",
-    "mainDate": null,
-    "lastModified": "2026-10-31T21:02:47.195Z",
+    "mainDate": "2027-01-15",
+    "lastModified": "2026-11-01T21:51:13.044Z",
     "file": "mang-den-ultra-trail-2027.json",
     "seriesId": "mang-den-ultra-trail",
     "sourceUrls": [
@@ -3310,7 +3311,7 @@
     "date": "2027-04-11",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-10-17T13:14:46.772Z",
+    "lastModified": "2026-11-01T21:51:13.044Z",
     "file": "run-to-live-2027.json",
     "seriesId": "run-to-live",
     "sourceUrls": [
@@ -3333,6 +3334,21 @@
       "http://web.archive.org/web/20240121174818/https://vm.vnexpress.net/ho-chi-minh-2024",
       "https://ticket.irace.vn/vpbank-vnexpress-marathon-ho-chi-minh-city-midnight-2024",
       "https://vm.vnexpress.net/ho-chi-minh-2024"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "8997e99d-fe5b-4faa-9dc1-6e58f56c1d37",
+    "slug": "samsung-galaxy-run-2026",
+    "name": "Giải chạy Samsung Galaxy Run 2026",
+    "date": "2026-11-22",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-01T21:51:13.044Z",
+    "file": "samsung-galaxy-run-2026.json",
+    "seriesId": null,
+    "sourceUrls": [
+      "https://ticket.irace.vn/samsung-galaxy-run-2026"
     ],
     "linkUrls": []
   },
@@ -3816,8 +3832,8 @@
     "name": "Giải chạy Quảng Trực Half Marathon 2026 - Nối nhịp biên cương",
     "date": "2026-11-14",
     "endDate": "2026-11-15",
-    "mainDate": "2026-11-14",
-    "lastModified": "2026-10-25T21:04:54.669Z",
+    "mainDate": "2026-11-15",
+    "lastModified": "2026-11-01T21:51:13.044Z",
     "file": "quang-truc-half-marathon-2026-noi-nhip-bien-cuong-2026.json",
     "seriesId": null,
     "sourceUrls": [
@@ -3895,7 +3911,7 @@
     "date": "2026-11-29",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-10-15T20:31:08.696Z",
+    "lastModified": "2026-11-01T21:51:13.044Z",
     "file": "deep-c-run-royale-2026.json",
     "seriesId": null,
     "sourceUrls": [
@@ -3925,7 +3941,7 @@
     "date": "2026-12-26",
     "endDate": "2026-12-27",
     "mainDate": null,
-    "lastModified": "2026-10-25T21:04:54.669Z",
+    "lastModified": "2026-11-01T21:51:13.044Z",
     "file": "cuc-phuong-jungle-paths-2026.json",
     "seriesId": "cuc-phuong-jungle-paths",
     "sourceUrls": [
@@ -4283,7 +4299,7 @@
     "date": "2026-11-29",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-10-18T21:09:13.459Z",
+    "lastModified": "2026-11-01T21:51:13.044Z",
     "file": "vung-tau-city-trail-2026.json",
     "seriesId": null,
     "sourceUrls": [
@@ -4753,6 +4769,21 @@
     "linkUrls": []
   },
   {
+    "id": "c8dcbc2e-cc06-4b3f-be26-d5d0dbad501a",
+    "slug": "tra-co-half-marathon-sai-buoc-noi-dia-dau-to-quoc",
+    "name": "Giải chạy TRÀ CỔ Half Marathon - Sải Bước Nơi Địa Đầu Tổ Quốc",
+    "date": "2026-12-19",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-01T21:51:13.044Z",
+    "file": "tra-co-half-marathon-sai-buoc-noi-dia-dau-to-quoc-2026.json",
+    "seriesId": null,
+    "sourceUrls": [
+      "https://ticket.irace.vn/tra-co-half-marathon-sai-buoc-noi-dia-dau-to-quoc"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "c8e8096b-e36c-4326-82ce-0295ee788dc6",
     "slug": "ironkids-phu-quoc-2024",
     "name": "IRONKIDS Phú Quốc 2024",
@@ -4927,7 +4958,7 @@
     "date": "2026-11-15",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-10-18T21:09:13.459Z",
+    "lastModified": "2026-11-01T21:51:13.044Z",
     "file": "trang-an-marathon-2026.json",
     "seriesId": "trang-an-marathon",
     "sourceUrls": [
@@ -5344,8 +5375,8 @@
     "name": "Giải chạy Ultra Trail Cao Bang 2026",
     "date": "2026-11-27",
     "endDate": "2026-11-29",
-    "mainDate": "2026-11-27",
-    "lastModified": "2026-10-25T21:04:54.669Z",
+    "mainDate": "2026-11-28",
+    "lastModified": "2026-11-01T21:51:13.044Z",
     "file": "ultra-trail-cao-bang-2026.json",
     "seriesId": "ultra-trail-cao-bang",
     "sourceUrls": [
