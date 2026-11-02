@@ -8347,6 +8347,12 @@
     "at": "2026-11-02T21:01:31.434Z",
     "note": "no point found"
   },
+  "dao xanh ecofarm | xanh dao": {
+    "geo": null,
+    "query": "Đảo Xanh Ecofarm, Xanh Đảo",
+    "at": "2026-11-02T21:14:37.276Z",
+    "note": "no point found"
+  },
   "di linh lam dong | ": {
     "geo": {
       "lat": 11.5816524,
@@ -8742,6 +8748,102 @@
     },
     "query": "Quảng Ninh",
     "at": "2026-10-18T21:08:48.602Z"
+  },
+  "di san van hoa the gioi yen tu tinh quang ninh | uong bi": {
+    "geo": {
+      "lat": 20.9562629,
+      "lng": 107.0763212,
+      "source": "nominatim",
+      "precision": "province",
+      "current": {
+        "province": "22",
+        "ward": null
+      },
+      "legacy": null,
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 1133.1,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "ha-noi": {
+          "km": 127.3,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "da-nang": {
+          "km": 557.7,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 995.3,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "da-lat": {
+          "km": 1013,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "can-tho": {
+          "km": 1222.3,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 42.2,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "hue": {
+          "km": 502.5,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 1179.8,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 830.2,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 927.4,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 367.6,
+          "minutes": null,
+          "method": "straight_line",
+          "near": false
+        },
+        "ha-long": {
+          "km": 0.6,
+          "minutes": null,
+          "method": "straight_line",
+          "near": true
+        }
+      }
+    },
+    "query": "Quảng Ninh",
+    "at": "2026-11-02T21:14:43.196Z"
   },
   "dia dao cu chi tp ho chi minh | ": {
     "geo": {

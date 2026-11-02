@@ -17,25 +17,25 @@
       "label": "5km",
       "meters": 5000,
       "type": "road_run",
-      "elevationGain": null
+      "elevationGain": 50
     },
     {
       "label": "10km",
       "meters": 10000,
       "type": "road_run",
-      "elevationGain": 50
+      "elevationGain": 100
     },
     {
       "label": "21km",
       "meters": 21097,
       "type": "road_run",
-      "elevationGain": 100
+      "elevationGain": 150
     },
     {
       "label": "42km",
       "meters": 42195,
       "type": "road_run",
-      "elevationGain": 200
+      "elevationGain": 250
     }
   ],
   "location": {
@@ -136,11 +136,11 @@
   },
   "prices": [
     {
-      "distance": "5km",
-      "tier": "Super Early Bird",
+      "distance": null,
+      "tier": "Kid · Super Early Bird",
       "kind": "super_early",
       "audience": null,
-      "price": 349000,
+      "price": 229000,
       "from": "2026-03-12",
       "to": "2026-04-24",
       "inferred": [],
@@ -148,67 +148,12 @@
     },
     {
       "distance": "5km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 419000,
-      "from": "2026-04-25",
-      "to": "2026-07-23",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "5km",
-      "tier": "Standard",
-      "kind": "regular",
-      "audience": null,
-      "price": 489000,
-      "from": "2026-07-24",
-      "to": "2026-09-22",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "5km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 589000,
-      "from": "2026-09-23",
-      "to": "2026-11-02",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "5km",
-      "tier": "Happy Vietnamese Women's Day",
-      "kind": "other",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
       "audience": null,
       "price": 349000,
-      "from": "2026-10-20",
-      "to": "2026-11-02",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "5km",
-      "tier": "Super Late",
-      "kind": "late",
-      "audience": null,
-      "price": 699000,
-      "from": "2026-11-03",
-      "to": "2026-11-13",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "5km",
-      "tier": "Super Super Late",
-      "kind": "late",
-      "audience": null,
-      "price": 799000,
-      "from": "2026-11-14",
-      "to": "2026-11-21",
+      "from": "2026-03-12",
+      "to": "2026-04-24",
       "inferred": [],
       "site": "irace"
     },
@@ -224,72 +169,6 @@
       "site": "irace"
     },
     {
-      "distance": "10km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 539000,
-      "from": "2026-04-25",
-      "to": "2026-07-23",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Standard",
-      "kind": "regular",
-      "audience": null,
-      "price": 639000,
-      "from": "2026-07-24",
-      "to": "2026-09-22",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 749000,
-      "from": "2026-09-23",
-      "to": "2026-11-02",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Happy Vietnamese Women's Day",
-      "kind": "other",
-      "audience": null,
-      "price": 469000,
-      "from": "2026-10-20",
-      "to": "2026-11-02",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Super Late",
-      "kind": "late",
-      "audience": null,
-      "price": 889000,
-      "from": "2026-11-03",
-      "to": "2026-11-13",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Super Super Late",
-      "kind": "late",
-      "audience": null,
-      "price": 1029000,
-      "from": "2026-11-14",
-      "to": "2026-11-21",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
       "distance": "21km",
       "tier": "Super Early Bird",
       "kind": "super_early",
@@ -301,72 +180,6 @@
       "site": "irace"
     },
     {
-      "distance": "21km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 679000,
-      "from": "2026-04-25",
-      "to": "2026-07-23",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "21km",
-      "tier": "Standard",
-      "kind": "regular",
-      "audience": null,
-      "price": 789000,
-      "from": "2026-07-24",
-      "to": "2026-09-22",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "21km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 929000,
-      "from": "2026-09-23",
-      "to": "2026-11-02",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "21km",
-      "tier": "Happy Vietnamese Women's Day",
-      "kind": "other",
-      "audience": null,
-      "price": 579000,
-      "from": "2026-10-20",
-      "to": "2026-11-02",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "21km",
-      "tier": "Super Late",
-      "kind": "late",
-      "audience": null,
-      "price": 1099000,
-      "from": "2026-11-03",
-      "to": "2026-11-13",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "21km",
-      "tier": "Super Super Late",
-      "kind": "late",
-      "audience": null,
-      "price": 1279000,
-      "from": "2026-11-14",
-      "to": "2026-11-21",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
       "distance": "42km",
       "tier": "Super Early Bird",
       "kind": "super_early",
@@ -374,72 +187,6 @@
       "price": 699000,
       "from": "2026-03-12",
       "to": "2026-04-24",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "42km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 799000,
-      "from": "2026-04-25",
-      "to": "2026-07-23",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "42km",
-      "tier": "Standard",
-      "kind": "regular",
-      "audience": null,
-      "price": 939000,
-      "from": "2026-07-24",
-      "to": "2026-09-22",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "42km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 1119000,
-      "from": "2026-09-23",
-      "to": "2026-11-02",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "42km",
-      "tier": "Happy Vietnamese Women's Day",
-      "kind": "other",
-      "audience": null,
-      "price": 699000,
-      "from": "2026-10-20",
-      "to": "2026-11-02",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "42km",
-      "tier": "Super Late",
-      "kind": "late",
-      "audience": null,
-      "price": 1329000,
-      "from": "2026-11-03",
-      "to": "2026-11-13",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "42km",
-      "tier": "Super Super Late",
-      "kind": "late",
-      "audience": null,
-      "price": 1539000,
-      "from": "2026-11-14",
-      "to": "2026-11-21",
       "inferred": [],
       "site": "irace"
     },
@@ -948,12 +695,7 @@
       "foundOn": "ticket.irace.vn"
     }
   ],
-  "participants": {
-    "count": 1500,
-    "sourceUrl": "https://actiup.net/vi/event/yen-tu-heritage-marathon-2026",
-    "quote": "Sẽ có khoảng 1500 vận động viên tham gia.",
-    "confidence": "medium"
-  },
+  "participants": null,
   "flags": [],
   "overrides": {},
   "sources": [
@@ -961,7 +703,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/yen-tu-heritage-marathon-2026",
-      "lastCheckedAt": "2026-11-01T21:21:02.935Z",
+      "lastCheckedAt": "2026-11-02T21:14:16.885Z",
       "lastChangedAt": "2026-09-23T18:30:51.053Z",
       "extracted": {
         "facts": {
@@ -989,61 +731,75 @@
               "distances": [
                 "42KM",
                 "21KM",
-                "10KM"
+                "10KM",
+                "5KM"
               ],
               "courses": [
                 {
                   "distance": "42KM",
                   "type": "road_run",
-                  "elevationGain": 200
+                  "elevationGain": 250
                 },
                 {
                   "distance": "21KM",
                   "type": "road_run",
-                  "elevationGain": 100
+                  "elevationGain": 150
                 },
                 {
                   "distance": "10KM",
                   "type": "road_run",
+                  "elevationGain": 100
+                },
+                {
+                  "distance": "5KM",
+                  "type": "road_run",
                   "elevationGain": 50
                 }
               ],
-              "edition": 2026,
+              "edition": 1,
               "editionQuote": "Giải chạy Yên Tử Heritage Marathon - Chạm vào vùng di sản 2026",
-              "mapsUrl": "https://www.google.com/maps/place/Yên+Tử",
-              "venue": "Khu di tích Yên Tử",
-              "city": "Quảng Ninh",
-              "organizer": "Ban Tổ Chức Giải Chạy Yên Tử",
+              "mapsUrl": "https://maps.google.com/?q=Yen%20Tu",
+              "venue": "Yên Tử",
+              "city": "Uông Bí",
+              "organizer": "Ban Tổ Chức",
               "currency": "VND",
               "registrationStatus": "open",
               "participants": {
-                "count": 1500,
-                "quote": "Sẽ có khoảng 1500 vận động viên tham gia."
+                "count": 0,
+                "quote": "đang mở đăng ký"
               },
               "prices": [
                 {
                   "distance": "42KM",
                   "tier": "Early Bird",
-                  "audience": "Non-resident",
-                  "from": "01/07",
-                  "to": "31/08",
-                  "price": 700000
+                  "audience": "Việt Nam",
+                  "from": "2026-06-01",
+                  "to": "2026-08-31",
+                  "price": 600000
                 },
                 {
                   "distance": "21KM",
-                  "tier": "Super Early Bird",
-                  "audience": "Resident",
-                  "from": "01/06",
-                  "to": "30/06",
+                  "tier": "Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "2026-06-01",
+                  "to": "2026-08-31",
                   "price": 400000
                 },
                 {
                   "distance": "10KM",
-                  "tier": "Regular",
-                  "audience": "Non-resident",
-                  "from": "01/09",
-                  "to": "20/10",
+                  "tier": "Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "2026-06-01",
+                  "to": "2026-08-31",
                   "price": 300000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Early Bird",
+                  "audience": "Việt Nam",
+                  "from": "2026-06-01",
+                  "to": "2026-08-31",
+                  "price": 200000
                 }
               ]
             }
@@ -1414,7 +1170,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/yen-tu-heritage-marathon-2026",
-      "lastCheckedAt": "2026-11-01T21:48:16.941Z",
+      "lastCheckedAt": "2026-11-02T21:14:28.368Z",
       "lastChangedAt": "2026-10-15T20:29:37.214Z",
       "extracted": {
         "facts": {
@@ -1476,60 +1232,20 @@
               },
               "prices": [
                 {
+                  "distance": "Kid",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "12/03",
+                  "to": "24/04",
+                  "price": 229000
+                },
+                {
                   "distance": "5km",
                   "tier": "Super Early Bird",
                   "audience": "",
                   "from": "12/03",
                   "to": "24/04",
                   "price": 349000
-                },
-                {
-                  "distance": "5km",
-                  "tier": "Early Bird",
-                  "audience": "",
-                  "from": "25/04",
-                  "to": "23/07",
-                  "price": 419000
-                },
-                {
-                  "distance": "5km",
-                  "tier": "Standard",
-                  "audience": "",
-                  "from": "24/07",
-                  "to": "22/09",
-                  "price": 489000
-                },
-                {
-                  "distance": "5km",
-                  "tier": "Late",
-                  "audience": "",
-                  "from": "23/09",
-                  "to": "02/11",
-                  "price": 589000
-                },
-                {
-                  "distance": "5km",
-                  "tier": "Happy Vietnamese Women's Day",
-                  "audience": "",
-                  "from": "20/10",
-                  "to": "02/11",
-                  "price": 349000
-                },
-                {
-                  "distance": "5km",
-                  "tier": "Super Late",
-                  "audience": "",
-                  "from": "03/11",
-                  "to": "13/11",
-                  "price": 699000
-                },
-                {
-                  "distance": "5km",
-                  "tier": "Super Super Late",
-                  "audience": "",
-                  "from": "14/11",
-                  "to": "21/11",
-                  "price": 799000
                 },
                 {
                   "distance": "10km",
@@ -1540,54 +1256,6 @@
                   "price": 469000
                 },
                 {
-                  "distance": "10km",
-                  "tier": "Early Bird",
-                  "audience": "",
-                  "from": "25/04",
-                  "to": "23/07",
-                  "price": 539000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Standard",
-                  "audience": "",
-                  "from": "24/07",
-                  "to": "22/09",
-                  "price": 639000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Late",
-                  "audience": "",
-                  "from": "23/09",
-                  "to": "02/11",
-                  "price": 749000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Happy Vietnamese Women's Day",
-                  "audience": "",
-                  "from": "20/10",
-                  "to": "02/11",
-                  "price": 469000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Super Late",
-                  "audience": "",
-                  "from": "03/11",
-                  "to": "13/11",
-                  "price": 889000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Super Super Late",
-                  "audience": "",
-                  "from": "14/11",
-                  "to": "21/11",
-                  "price": 1029000
-                },
-                {
                   "distance": "21km",
                   "tier": "Super Early Bird",
                   "audience": "",
@@ -1596,108 +1264,12 @@
                   "price": 579000
                 },
                 {
-                  "distance": "21km",
-                  "tier": "Early Bird",
-                  "audience": "",
-                  "from": "25/04",
-                  "to": "23/07",
-                  "price": 679000
-                },
-                {
-                  "distance": "21km",
-                  "tier": "Standard",
-                  "audience": "",
-                  "from": "24/07",
-                  "to": "22/09",
-                  "price": 789000
-                },
-                {
-                  "distance": "21km",
-                  "tier": "Late",
-                  "audience": "",
-                  "from": "23/09",
-                  "to": "02/11",
-                  "price": 929000
-                },
-                {
-                  "distance": "21km",
-                  "tier": "Happy Vietnamese Women's Day",
-                  "audience": "",
-                  "from": "20/10",
-                  "to": "02/11",
-                  "price": 579000
-                },
-                {
-                  "distance": "21km",
-                  "tier": "Super Late",
-                  "audience": "",
-                  "from": "03/11",
-                  "to": "13/11",
-                  "price": 1099000
-                },
-                {
-                  "distance": "21km",
-                  "tier": "Super Super Late",
-                  "audience": "",
-                  "from": "14/11",
-                  "to": "21/11",
-                  "price": 1279000
-                },
-                {
                   "distance": "42km",
                   "tier": "Super Early Bird",
                   "audience": "",
                   "from": "12/03",
                   "to": "24/04",
                   "price": 699000
-                },
-                {
-                  "distance": "42km",
-                  "tier": "Early Bird",
-                  "audience": "",
-                  "from": "25/04",
-                  "to": "23/07",
-                  "price": 799000
-                },
-                {
-                  "distance": "42km",
-                  "tier": "Standard",
-                  "audience": "",
-                  "from": "24/07",
-                  "to": "22/09",
-                  "price": 939000
-                },
-                {
-                  "distance": "42km",
-                  "tier": "Late",
-                  "audience": "",
-                  "from": "23/09",
-                  "to": "02/11",
-                  "price": 1119000
-                },
-                {
-                  "distance": "42km",
-                  "tier": "Happy Vietnamese Women's Day",
-                  "audience": "",
-                  "from": "20/10",
-                  "to": "02/11",
-                  "price": 699000
-                },
-                {
-                  "distance": "42km",
-                  "tier": "Super Late",
-                  "audience": "",
-                  "from": "03/11",
-                  "to": "13/11",
-                  "price": 1329000
-                },
-                {
-                  "distance": "42km",
-                  "tier": "Super Super Late",
-                  "audience": "",
-                  "from": "14/11",
-                  "to": "21/11",
-                  "price": 1539000
                 }
               ]
             }
@@ -1830,5 +1402,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-11-01T21:51:13.044Z"
+  "updatedAt": "2026-11-02T21:14:43.196Z"
 }

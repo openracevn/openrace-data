@@ -11,7 +11,7 @@
   "seriesId": "trang-an-marathon",
   "organizerId": "vumedia",
   "organizer": "VuMedia | Ban tổ chức sự kiện",
-  "edition": 6,
+  "edition": null,
   "courses": [
     {
       "label": "5km",
@@ -314,7 +314,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/trang-an-marathon-2026",
-      "lastCheckedAt": "2026-11-01T21:14:26.261Z",
+      "lastCheckedAt": "2026-11-02T21:08:09.599Z",
       "lastChangedAt": "2026-09-23T18:30:52.659Z",
       "extracted": {
         "facts": {
@@ -367,9 +367,9 @@
                 }
               ],
               "edition": 6,
-              "editionQuote": "mùa giải thứ 6",
-              "mapsUrl": "",
-              "venue": "",
+              "editionQuote": "giải chạy có quy mô lớn nhất tại vùng lõi Danh thắng Tràng An",
+              "mapsUrl": "https://drive.google.com/file/d/1YsPjseqegg39ZUa60-EpLHDkZWnVcA-5/view?usp=sharing",
+              "venue": "Di sản Kép Thế Giới",
               "city": "Ninh Bình",
               "organizer": "Công ty Cổ phần Vũ Media (VRace)",
               "currency": "VND",
@@ -648,5 +648,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-11-01T21:51:13.044Z"
+  "updatedAt": "2026-11-02T21:14:43.196Z"
 }
