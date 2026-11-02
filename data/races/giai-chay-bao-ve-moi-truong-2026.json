@@ -1,0 +1,62 @@
+{
+  "id": "c13bcb9b-0007-4443-a6c7-3b41dc5cad54",
+  "slug": "giai-chay-bao-ve-moi-truong",
+  "name": "Giải chạy “Bảo vệ môi trường”",
+  "types": [
+    "other"
+  ],
+  "date": "2026-11-29",
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": null,
+  "organizerId": "dao-xanh-ecofarm",
+  "organizer": "Đảo xanh Ecofarm",
+  "edition": null,
+  "courses": [],
+  "location": {
+    "venue": "Đảo Xanh Ecofarm",
+    "city": null
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/giai-chay-bao-ve-moi-truong"
+    }
+  ],
+  "links": [],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/giai-chay-bao-ve-moi-truong",
+      "lastCheckedAt": "2026-11-02T21:01:05.315Z",
+      "lastChangedAt": "2026-11-02T21:01:05.315Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy “Bảo vệ môi trường”",
+          "date": "2026-11-29",
+          "venue": "Đảo Xanh Ecofarm",
+          "organizer": "Đảo xanh Ecofarm",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 199000
+        },
+        "links": [],
+        "organizer": {
+          "id": "dao-xanh-ecofarm",
+          "name": "Đảo xanh Ecofarm"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-11-02T21:01:31.434Z",
+  "updatedAt": "2026-11-02T21:01:31.434Z"
+}
