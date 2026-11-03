@@ -142,6 +142,50 @@
       "audience": null,
       "price": 799000,
       "from": "2026-10-11",
+      "to": "2026-11-05",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 899000,
+      "from": "2026-10-11",
+      "to": "2026-11-05",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1099000,
+      "from": "2026-10-11",
+      "to": "2026-11-05",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1399000,
+      "from": "2026-10-11",
+      "to": "2026-11-05",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 799000,
+      "from": "2026-10-11",
       "to": "2026-10-30",
       "inferred": [],
       "site": "actiup"
@@ -479,13 +523,43 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/trang-an-marathon-2026",
-      "lastCheckedAt": "2026-11-01T21:48:02.451Z",
+      "lastCheckedAt": "2026-11-03T21:01:24.671Z",
       "lastChangedAt": "2026-10-15T20:29:50.677Z",
       "extracted": {
         "facts": {
           "name": "Giải chạy Trang An Marathon 2026",
           "venue": "Cố đô Hoa Lư, phường Tây Hoa Lư, tỉnh Ninh Bình",
-          "organizer": "VuMedia"
+          "organizer": "VuMedia",
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Late",
+              "from": "11/10",
+              "to": "05/11",
+              "price": 799000
+            },
+            {
+              "distance": "10km",
+              "tier": "Late",
+              "from": "11/10",
+              "to": "05/11",
+              "price": 899000
+            },
+            {
+              "distance": "21km",
+              "tier": "Late",
+              "from": "11/10",
+              "to": "05/11",
+              "price": 1099000
+            },
+            {
+              "distance": "42km",
+              "tier": "Late",
+              "from": "11/10",
+              "to": "05/11",
+              "price": 1399000
+            }
+          ]
         },
         "pages": [
           {
@@ -648,5 +722,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-11-02T21:14:43.196Z"
+  "updatedAt": "2026-11-03T21:01:33.919Z"
 }
