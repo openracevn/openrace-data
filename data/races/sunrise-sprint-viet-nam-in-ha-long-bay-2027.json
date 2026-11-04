@@ -1,0 +1,157 @@
+{
+  "id": "c003f4bb-d240-4cc1-b9e8-6d1652575128",
+  "slug": "2027-sunrise-sprint-viet-nam-in-ha-long-bay",
+  "name": "2027 SUNRISE SPRINT Viet Nam in HẠ LONG BAY",
+  "types": [
+    "other"
+  ],
+  "date": "2027-03-20",
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": null,
+  "organizerId": "sunrise-events-vietnam",
+  "organizer": "Sunrise Events Vietnam",
+  "edition": null,
+  "courses": [],
+  "location": {
+    "venue": "Hạ Long, Việt Nam",
+    "city": null
+  },
+  "geo": {
+    "lat": 20.9454443,
+    "lng": 107.1073079,
+    "source": "nominatim",
+    "precision": "ward",
+    "current": {
+      "province": "22",
+      "ward": "06652"
+    },
+    "legacy": {
+      "province": "22",
+      "district": "193",
+      "ward": "06664"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1579.2,
+        "minutes": 1190,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 161.3,
+        "minutes": 114,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 856.7,
+        "minutes": 677,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1359.3,
+        "minutes": 1063,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1486.7,
+        "minutes": 1181,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1690.1,
+        "minutes": 1310,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 56,
+        "minutes": 45,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 754.5,
+        "minutes": 594,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1670.2,
+        "minutes": 1273,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1167.3,
+        "minutes": 903,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1365.3,
+        "minutes": 1100,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 470.1,
+        "minutes": 360,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 4,
+        "minutes": 5,
+        "method": "road",
+        "near": true
+      }
+    }
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/2027-sunrise-sprint-viet-nam-in-ha-long-bay"
+    }
+  ],
+  "links": [],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/2027-sunrise-sprint-viet-nam-in-ha-long-bay",
+      "lastCheckedAt": "2026-11-04T21:01:08.931Z",
+      "lastChangedAt": "2026-11-04T21:01:08.931Z",
+      "extracted": {
+        "facts": {
+          "name": "2027 SUNRISE SPRINT Viet Nam in HẠ LONG BAY",
+          "date": "2027-03-20",
+          "venue": "Hạ Long, Việt Nam",
+          "organizer": "Sunrise Events Vietnam",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 2980000
+        },
+        "links": [],
+        "organizer": {
+          "id": "sunrise-events-vietnam",
+          "name": "Sunrise Events Vietnam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-11-04T21:01:38.058Z",
+  "updatedAt": "2026-11-04T21:01:38.058Z"
+}
