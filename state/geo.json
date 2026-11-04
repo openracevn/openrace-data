@@ -10845,6 +10845,106 @@
     "query": "Hạ Long, Việt Nam",
     "at": "2026-11-04T21:01:36.879Z"
   },
+  "ha long viet nam | ha long bay": {
+    "geo": {
+      "lat": 20.9454443,
+      "lng": 107.1073079,
+      "source": "nominatim",
+      "precision": "ward",
+      "current": {
+        "province": "22",
+        "ward": "06652"
+      },
+      "legacy": {
+        "province": "22",
+        "district": "193",
+        "ward": "06664"
+      },
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 1579.2,
+          "minutes": 1190,
+          "method": "road",
+          "near": false
+        },
+        "ha-noi": {
+          "km": 161.3,
+          "minutes": 114,
+          "method": "road",
+          "near": false
+        },
+        "da-nang": {
+          "km": 856.7,
+          "minutes": 677,
+          "method": "road",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 1359.3,
+          "minutes": 1063,
+          "method": "road",
+          "near": false
+        },
+        "da-lat": {
+          "km": 1486.7,
+          "minutes": 1181,
+          "method": "road",
+          "near": false
+        },
+        "can-tho": {
+          "km": 1690.1,
+          "minutes": 1310,
+          "method": "road",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 56,
+          "minutes": 45,
+          "method": "road",
+          "near": false
+        },
+        "hue": {
+          "km": 754.5,
+          "minutes": 594,
+          "method": "road",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 1670.2,
+          "minutes": 1273,
+          "method": "road",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 1167.3,
+          "minutes": 903,
+          "method": "road",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 1365.3,
+          "minutes": 1100,
+          "method": "road",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 470.1,
+          "minutes": 360,
+          "method": "road",
+          "near": false
+        },
+        "ha-long": {
+          "km": 4,
+          "minutes": 5,
+          "method": "road",
+          "near": true
+        }
+      }
+    },
+    "query": "Hạ Long, Việt Nam",
+    "at": "2026-11-04T21:03:26.080Z"
+  },
   "ha long vietnam | ": {
     "geo": {
       "lat": 20.9454443,

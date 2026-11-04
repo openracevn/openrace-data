@@ -3,19 +3,26 @@
   "slug": "2027-sunrise-sprint-viet-nam-in-ha-long-bay",
   "name": "2027 SUNRISE SPRINT Viet Nam in HẠ LONG BAY",
   "types": [
-    "other"
+    "triathlon"
   ],
   "date": "2027-03-20",
-  "endDate": null,
-  "mainDate": null,
+  "endDate": "2027-11-22",
+  "mainDate": "2027-11-21",
   "seriesId": null,
   "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "Sprint",
+      "meters": 25750,
+      "type": "triathlon",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Hạ Long, Việt Nam",
-    "city": null
+    "city": "HẠ LONG BAY"
   },
   "geo": {
     "lat": 20.9454443,
@@ -124,14 +131,16 @@
   ],
   "links": [],
   "participants": null,
-  "flags": [],
+  "flags": [
+    "race spans 247 days (2027-03-20 to 2027-11-22); endDate may be the registration close"
+  ],
   "overrides": {},
   "sources": [
     {
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/2027-sunrise-sprint-viet-nam-in-ha-long-bay",
-      "lastCheckedAt": "2026-11-04T21:01:08.931Z",
+      "lastCheckedAt": "2026-11-04T21:02:18.518Z",
       "lastChangedAt": "2026-11-04T21:01:08.931Z",
       "extracted": {
         "facts": {
@@ -143,6 +152,56 @@
           "registrationStatus": "open",
           "fromPrice": 2980000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/2027-sunrise-sprint-viet-nam-in-ha-long-bay",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "triathlon"
+              ],
+              "name": "SUNRISE SPRINT Việt Nam",
+              "date": "2027-11-21",
+              "endDate": "2027-11-22",
+              "mainDate": "2027-11-21",
+              "distances": [
+                "750m",
+                "20km",
+                "5km"
+              ],
+              "courses": [
+                {
+                  "distance": "750m",
+                  "type": "aquathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "20km",
+                  "type": "road_cycle",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "5km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "Sự kiện SUNRISE SPRINT Việt Nam",
+              "mapsUrl": "https://maps.google.com/?q=Hạ+Long+Bay",
+              "venue": "Bãi biển Hạ Long",
+              "city": "HẠ LONG BAY",
+              "organizer": "Sunrise Events",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": "Số người tham gia chưa được cập nhật"
+              },
+              "prices": []
+            }
+          }
+        ],
         "links": [],
         "organizer": {
           "id": "sunrise-events-vietnam",
@@ -153,5 +212,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-04T21:01:38.058Z",
-  "updatedAt": "2026-11-04T21:01:38.058Z"
+  "updatedAt": "2026-11-04T21:03:26.080Z"
 }

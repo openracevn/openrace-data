@@ -26,13 +26,13 @@
       "label": "5km",
       "meters": 5000,
       "type": "road_run",
-      "elevationGain": null
+      "elevationGain": 85
     },
     {
       "label": "10km",
       "meters": 10000,
       "type": "road_run",
-      "elevationGain": null
+      "elevationGain": 120
     }
   ],
   "location": {
@@ -226,7 +226,7 @@
     },
     {
       "distance": "2km",
-      "tier": "Giá vé tiểu chuẩn",
+      "tier": "Giá vé tiêu chuẩn",
       "kind": "regular",
       "audience": null,
       "price": 219000,
@@ -237,7 +237,7 @@
     },
     {
       "distance": "5km",
-      "tier": "Giá vé tiểu chuẩn",
+      "tier": "Giá vé tiêu chuẩn",
       "kind": "regular",
       "audience": null,
       "price": 239000,
@@ -248,12 +248,45 @@
     },
     {
       "distance": "10km",
-      "tier": "Giá vé tiểu chuẩn",
+      "tier": "Giá vé tiêu chuẩn",
       "kind": "regular",
       "audience": null,
       "price": 299000,
       "from": "2026-10-14",
       "to": "2026-11-10",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 259000,
+      "from": "2026-11-11",
+      "to": "2026-11-26",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 289000,
+      "from": "2026-11-11",
+      "to": "2026-11-26",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 349000,
+      "from": "2026-11-11",
+      "to": "2026-11-26",
       "inferred": [],
       "site": "actiup"
     }
@@ -335,7 +368,7 @@
   "participants": {
     "count": 2000,
     "sourceUrl": "https://actiup.net/vi/event/run-for-the-heart-2026",
-    "quote": "gần 2.000 trái tim nhỏ bé.",
+    "quote": "gần 2.000 trái tim nhỏ bé",
     "confidence": "medium"
   },
   "flags": [],
@@ -358,7 +391,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/run-for-the-heart-2026",
-      "lastCheckedAt": "2026-10-15T20:24:13.035Z",
+      "lastCheckedAt": "2026-11-04T21:02:26.506Z",
       "lastChangedAt": "2026-09-23T18:30:43.016Z",
       "extracted": {
         "facts": {
@@ -391,17 +424,17 @@
                 {
                   "distance": "5km",
                   "type": "road_run",
-                  "elevationGain": 0
+                  "elevationGain": 85
                 },
                 {
                   "distance": "10km",
                   "type": "road_run",
-                  "elevationGain": 0
+                  "elevationGain": 120
                 },
                 {
                   "distance": "21km",
                   "type": "road_run",
-                  "elevationGain": 0
+                  "elevationGain": 150
                 }
               ],
               "edition": 2026,
@@ -414,7 +447,7 @@
               "registrationStatus": "open",
               "participants": {
                 "count": 2000,
-                "quote": "gần 2.000 trái tim nhỏ bé."
+                "quote": "gần 2.000 trái tim nhỏ bé"
               },
               "prices": []
             }
@@ -432,12 +465,12 @@
         },
         "images": [
           {
-            "url": "https://pix.actiup.net/2026/10/13/1791888214380362/Gi%C3%A1-v%C3%A9-STD-(VN)---activeUP.png",
+            "url": "https://pix.actiup.net/2026/11/04/1793758677500934/Gia%CC%81-ve%CC%81-STD-(VN)---activeUP.png",
             "json": {
               "prices": [
                 {
                   "distance": "2KM",
-                  "tier": "Giá vé tiểu chuẩn",
+                  "tier": "Giá vé tiêu chuẩn",
                   "audience": "",
                   "from": "14/10",
                   "to": "10/11",
@@ -445,7 +478,7 @@
                 },
                 {
                   "distance": "5KM",
-                  "tier": "Giá vé tiểu chuẩn",
+                  "tier": "Giá vé tiêu chuẩn",
                   "audience": "",
                   "from": "14/10",
                   "to": "10/11",
@@ -453,7 +486,7 @@
                 },
                 {
                   "distance": "10KM",
-                  "tier": "Giá vé tiểu chuẩn",
+                  "tier": "Giá vé tiêu chuẩn",
                   "audience": "",
                   "from": "14/10",
                   "to": "10/11",
@@ -470,12 +503,50 @@
             }
           },
           {
-            "url": "https://pix.actiup.net/2026/08/25/1787654372631111/B%E1%BA%A2NG-CHI%E1%BA%BET-KH%E1%BA%A4U-H%E1%BB%98I-NH%C3%93M.png",
+            "url": "https://pix.actiup.net/2026/11/04/1793758694590591/Gia%CC%81-ve%CC%81-LATE-(VN)---activeUP.png",
+            "json": {
+              "prices": [
+                {
+                  "distance": "2KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "11/11",
+                  "to": "26/11",
+                  "price": 259000
+                },
+                {
+                  "distance": "5KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "11/11",
+                  "to": "26/11",
+                  "price": 289000
+                },
+                {
+                  "distance": "10KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "11/11",
+                  "to": "26/11",
+                  "price": 349000
+                }
+              ],
+              "distances": [
+                "2KM",
+                "5KM",
+                "10KM"
+              ],
+              "date": "2026-11-11",
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2026/11/04/1793758715812571/BA%CC%89NG-CHIE%CC%82%CC%81T-KHA%CC%82%CC%81U-NHO%CC%81M.png",
             "json": {
               "prices": [],
               "distances": [],
               "date": "",
-              "currency": ""
+              "currency": "VND"
             }
           }
         ]
@@ -797,5 +868,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-15T20:31:08.696Z"
+  "updatedAt": "2026-11-04T21:03:26.080Z"
 }
