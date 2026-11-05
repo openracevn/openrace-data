@@ -11,7 +11,7 @@
   "seriesId": null,
   "organizerId": "da-hae-international-co-ltd",
   "organizer": "DA HAE INTERNATIONAL CO., LTD",
-  "edition": null,
+  "edition": 1,
   "courses": [
     {
       "label": "1.5km",
@@ -228,8 +228,8 @@
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 400000,
-      "from": "2026-10-16",
+      "price": 360000,
+      "from": "2026-11-05",
       "to": "2026-11-12",
       "inferred": [],
       "site": "actiup"
@@ -239,8 +239,8 @@
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 600000,
-      "from": "2026-10-16",
+      "price": 540000,
+      "from": "2026-11-05",
       "to": "2026-11-12",
       "inferred": [],
       "site": "actiup"
@@ -250,8 +250,8 @@
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 750000,
-      "from": "2026-10-16",
+      "price": 675000,
+      "from": "2026-11-05",
       "to": "2026-11-12",
       "inferred": [],
       "site": "actiup"
@@ -261,8 +261,8 @@
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 900000,
-      "from": "2026-10-16",
+      "price": 810000,
+      "from": "2026-11-05",
       "to": "2026-11-12",
       "inferred": [],
       "site": "actiup"
@@ -350,7 +350,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/2026-international-run-for-a-green-da-lat",
-      "lastCheckedAt": "2026-11-05T21:01:06.622Z",
+      "lastCheckedAt": "2026-11-05T21:01:55.853Z",
       "lastChangedAt": "2026-09-23T18:30:39.001Z",
       "extracted": {
         "facts": {
@@ -371,19 +371,19 @@
               "types": [
                 "road_run"
               ],
-              "name": "Giải chạy Quốc tế vì Đà Lạt xanh 2026 (COOL RACE 1.5°C - DALAT 2026)",
+              "name": "Giải Chạy Quốc Tế Vì Đà Lạt Xanh 2026 (COOL RACE 1.5°C - DALAT 2026)",
               "date": "2026-11-21",
               "endDate": "2026-11-22",
               "mainDate": "2026-11-21",
               "distances": [
-                "1.5km",
+                "1,5km",
                 "5km",
                 "10km",
                 "21km"
               ],
               "courses": [
                 {
-                  "distance": "1.5km",
+                  "distance": "1,5km",
                   "type": "road_run",
                   "elevationGain": 0
                 },
@@ -404,11 +404,11 @@
                 }
               ],
               "edition": 1,
-              "editionQuote": "Giải chạy Quốc tế vì Đà Lạt xanh 2026",
+              "editionQuote": "Giải chạy Quốc tế vì Đà Lạt xanh 2026 (COOL RACE 1.5°C - DALAT 2026)",
               "mapsUrl": "https://drive.google.com/file/d/11I7snMVc8-HvPdA_IlhGnI8P6PdEt8HJ/view?usp=drive_link",
-              "venue": "Quảng trường Lâm Viên",
+              "venue": "Quảng trường Lâm Viên and Hồ Xuân Hương",
               "city": "Đà Lạt",
-              "organizer": "Ban tổ chức COOL RACE",
+              "organizer": "",
               "currency": "VND",
               "registrationStatus": "open",
               "participants": {
@@ -431,40 +431,40 @@
         },
         "images": [
           {
-            "url": "https://pix.actiup.net/2026/10/16/1792126428561778/BG-m%E1%BB%9Bi.jpg",
+            "url": "https://pix.actiup.net/2026/11/05/1793847878192879/DL-actiup.jpg",
             "json": {
               "prices": [
                 {
                   "distance": "1.5KM",
                   "tier": "Early Bird",
-                  "audience": "Cá nhân",
-                  "from": "16/10",
+                  "audience": "",
+                  "from": "05/11",
                   "to": "12/11",
-                  "price": 400000
+                  "price": 360000
                 },
                 {
                   "distance": "5KM",
                   "tier": "Early Bird",
-                  "audience": "Cá nhân",
-                  "from": "16/10",
+                  "audience": "",
+                  "from": "05/11",
                   "to": "12/11",
-                  "price": 600000
+                  "price": 540000
                 },
                 {
                   "distance": "10KM",
                   "tier": "Early Bird",
-                  "audience": "Cá nhân",
-                  "from": "16/10",
+                  "audience": "",
+                  "from": "05/11",
                   "to": "12/11",
-                  "price": 750000
+                  "price": 675000
                 },
                 {
                   "distance": "21KM",
                   "tier": "Early Bird",
-                  "audience": "Cá nhân",
-                  "from": "16/10",
+                  "audience": "",
+                  "from": "05/11",
                   "to": "12/11",
-                  "price": 900000
+                  "price": 810000
                 }
               ],
               "distances": [
@@ -473,7 +473,7 @@
                 "10KM",
                 "21KM"
               ],
-              "date": "2026-06-24",
+              "date": "2026-11-05",
               "currency": "VND"
             }
           }
@@ -484,7 +484,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/quoc-te-vi-da-lat-xanh-2026",
-      "lastCheckedAt": "2026-11-05T21:01:20.418Z",
+      "lastCheckedAt": "2026-11-05T21:02:10.231Z",
       "lastChangedAt": "2026-10-15T20:27:33.887Z",
       "extracted": {
         "facts": {
@@ -593,7 +593,7 @@
               "edition": 1,
               "editionQuote": "Giải Chạy Quốc Tế vì Đà Lạt Xanh 2026",
               "mapsUrl": "",
-              "venue": "Lâm Đồng",
+              "venue": "",
               "city": "Lâm Đồng",
               "organizer": "",
               "currency": "VND",
@@ -607,65 +607,65 @@
                   "distance": "1.5km",
                   "tier": "Super Early Bird",
                   "audience": "",
-                  "from": "2023-09-21",
-                  "to": "2023-10-15",
+                  "from": "21/09",
+                  "to": "15/10",
                   "price": 200000
                 },
                 {
                   "distance": "1.5km",
                   "tier": "Early Bird",
                   "audience": "",
-                  "from": "2023-10-16",
-                  "to": "2023-11-12",
-                  "price": 400000
+                  "from": "16/10",
+                  "to": "12/11",
+                  "price": 360000
                 },
                 {
                   "distance": "5km",
                   "tier": "Super Early Bird",
                   "audience": "",
-                  "from": "2023-09-21",
-                  "to": "2023-10-15",
+                  "from": "21/09",
+                  "to": "15/10",
                   "price": 300000
                 },
                 {
                   "distance": "5km",
                   "tier": "Early Bird",
                   "audience": "",
-                  "from": "2023-10-16",
-                  "to": "2023-11-12",
-                  "price": 600000
+                  "from": "16/10",
+                  "to": "12/11",
+                  "price": 540000
                 },
                 {
                   "distance": "10km",
                   "tier": "Super Early Bird",
                   "audience": "",
-                  "from": "2023-09-21",
-                  "to": "2023-10-15",
+                  "from": "21/09",
+                  "to": "15/10",
                   "price": 375000
                 },
                 {
                   "distance": "10km",
                   "tier": "Early Bird",
                   "audience": "",
-                  "from": "2023-10-16",
-                  "to": "2023-11-12",
-                  "price": 750000
+                  "from": "16/10",
+                  "to": "12/11",
+                  "price": 675000
                 },
                 {
                   "distance": "21km",
                   "tier": "Super Early Bird",
                   "audience": "",
-                  "from": "2023-09-21",
-                  "to": "2023-10-15",
+                  "from": "21/09",
+                  "to": "15/10",
                   "price": 450000
                 },
                 {
                   "distance": "21km",
                   "tier": "Early Bird",
                   "audience": "",
-                  "from": "2023-10-16",
-                  "to": "2023-11-12",
-                  "price": 900000
+                  "from": "16/10",
+                  "to": "12/11",
+                  "price": 810000
                 }
               ]
             }
@@ -802,5 +802,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-11-05T21:01:28.815Z"
+  "updatedAt": "2026-11-05T21:02:19.974Z"
 }

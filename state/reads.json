@@ -3780,6 +3780,54 @@
     },
     "usedAt": "2026-11-01T21:02:02.923Z"
   },
+  "image:00811f08402c:aecb9d7aee58fb6e533e94bea667a76e4c3a5d6809705257eaae40f8872ac722": {
+    "kind": "image",
+    "json": {
+      "prices": [
+        {
+          "distance": "1.5KM",
+          "tier": "Early Bird",
+          "audience": "",
+          "from": "05/11",
+          "to": "12/11",
+          "price": 360000
+        },
+        {
+          "distance": "5KM",
+          "tier": "Early Bird",
+          "audience": "",
+          "from": "05/11",
+          "to": "12/11",
+          "price": 540000
+        },
+        {
+          "distance": "10KM",
+          "tier": "Early Bird",
+          "audience": "",
+          "from": "05/11",
+          "to": "12/11",
+          "price": 675000
+        },
+        {
+          "distance": "21KM",
+          "tier": "Early Bird",
+          "audience": "",
+          "from": "05/11",
+          "to": "12/11",
+          "price": 810000
+        }
+      ],
+      "distances": [
+        "1.5KM",
+        "5KM",
+        "10KM",
+        "21KM"
+      ],
+      "date": "2026-11-05",
+      "currency": "VND"
+    },
+    "usedAt": "2026-11-05T21:01:54.312Z"
+  },
   "image:00811f08402c:b0252974cf14c82cd063e6aaa1dbb0d92407209a49d8432f47a2e2d160e15f20": {
     "kind": "image",
     "json": {
@@ -10115,6 +10163,61 @@
     },
     "usedAt": "2026-11-01T21:02:02.923Z"
   },
+  "page:5898fa2ce499:45b3944c00cdd25d2abeac2a221404f0431e8a87775a7ba4adc917d25a9ec452": {
+    "kind": "page",
+    "json": {
+      "pageKind": "sport",
+      "types": [
+        "road_run"
+      ],
+      "name": "Giải Chạy Quốc Tế Vì Đà Lạt Xanh 2026 (COOL RACE 1.5°C - DALAT 2026)",
+      "date": "2026-11-21",
+      "endDate": "2026-11-22",
+      "mainDate": "2026-11-21",
+      "distances": [
+        "1,5km",
+        "5km",
+        "10km",
+        "21km"
+      ],
+      "courses": [
+        {
+          "distance": "1,5km",
+          "type": "road_run",
+          "elevationGain": 0
+        },
+        {
+          "distance": "5km",
+          "type": "road_run",
+          "elevationGain": 0
+        },
+        {
+          "distance": "10km",
+          "type": "road_run",
+          "elevationGain": 0
+        },
+        {
+          "distance": "21km",
+          "type": "road_run",
+          "elevationGain": 0
+        }
+      ],
+      "edition": 1,
+      "editionQuote": "Giải chạy Quốc tế vì Đà Lạt xanh 2026 (COOL RACE 1.5°C - DALAT 2026)",
+      "mapsUrl": "https://drive.google.com/file/d/11I7snMVc8-HvPdA_IlhGnI8P6PdEt8HJ/view?usp=drive_link",
+      "venue": "Quảng trường Lâm Viên and Hồ Xuân Hương",
+      "city": "Đà Lạt",
+      "organizer": "",
+      "currency": "VND",
+      "registrationStatus": "open",
+      "participants": {
+        "count": 0,
+        "quote": ""
+      },
+      "prices": []
+    },
+    "usedAt": "2026-11-05T21:01:54.312Z"
+  },
   "page:5898fa2ce499:49836b8bac347a7ea875476dd8910c86fb32b238739ea552f993861cc51c3809": {
     "kind": "page",
     "json": {
@@ -14589,6 +14692,126 @@
       ]
     },
     "usedAt": "2026-10-15T20:26:16.431Z"
+  },
+  "page:5898fa2ce499:a5e70916d2d176a9f824f74e718d15ae62ac774997f82a49526ef63bf88873a7": {
+    "kind": "page",
+    "json": {
+      "pageKind": "sport",
+      "types": [
+        "road_run"
+      ],
+      "name": "Giải Chạy Quốc Tế vì Đà Lạt Xanh 2026",
+      "date": "2026-11-22",
+      "endDate": "2026-11-22",
+      "mainDate": "2026-11-22",
+      "distances": [
+        "1.5km",
+        "5km",
+        "10km",
+        "21km"
+      ],
+      "courses": [
+        {
+          "distance": "1.5km",
+          "type": "road_run",
+          "elevationGain": 0
+        },
+        {
+          "distance": "5km",
+          "type": "road_run",
+          "elevationGain": 0
+        },
+        {
+          "distance": "10km",
+          "type": "road_run",
+          "elevationGain": 0
+        },
+        {
+          "distance": "21km",
+          "type": "road_run",
+          "elevationGain": 0
+        }
+      ],
+      "edition": 1,
+      "editionQuote": "Giải Chạy Quốc Tế vì Đà Lạt Xanh 2026",
+      "mapsUrl": "",
+      "venue": "",
+      "city": "Lâm Đồng",
+      "organizer": "",
+      "currency": "VND",
+      "registrationStatus": "open",
+      "participants": {
+        "count": 0,
+        "quote": ""
+      },
+      "prices": [
+        {
+          "distance": "1.5km",
+          "tier": "Super Early Bird",
+          "audience": "",
+          "from": "21/09",
+          "to": "15/10",
+          "price": 200000
+        },
+        {
+          "distance": "1.5km",
+          "tier": "Early Bird",
+          "audience": "",
+          "from": "16/10",
+          "to": "12/11",
+          "price": 360000
+        },
+        {
+          "distance": "5km",
+          "tier": "Super Early Bird",
+          "audience": "",
+          "from": "21/09",
+          "to": "15/10",
+          "price": 300000
+        },
+        {
+          "distance": "5km",
+          "tier": "Early Bird",
+          "audience": "",
+          "from": "16/10",
+          "to": "12/11",
+          "price": 540000
+        },
+        {
+          "distance": "10km",
+          "tier": "Super Early Bird",
+          "audience": "",
+          "from": "21/09",
+          "to": "15/10",
+          "price": 375000
+        },
+        {
+          "distance": "10km",
+          "tier": "Early Bird",
+          "audience": "",
+          "from": "16/10",
+          "to": "12/11",
+          "price": 675000
+        },
+        {
+          "distance": "21km",
+          "tier": "Super Early Bird",
+          "audience": "",
+          "from": "21/09",
+          "to": "15/10",
+          "price": 450000
+        },
+        {
+          "distance": "21km",
+          "tier": "Early Bird",
+          "audience": "",
+          "from": "16/10",
+          "to": "12/11",
+          "price": 810000
+        }
+      ]
+    },
+    "usedAt": "2026-11-05T21:01:54.312Z"
   },
   "page:5898fa2ce499:a5ec5339ca762ae25ec095abf5c766a1d2e916741f55002c73b02ee9bf4e97db": {
     "kind": "page",
