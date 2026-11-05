@@ -151,7 +151,7 @@
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 400000,
+      "price": 360000,
       "from": "2026-10-16",
       "to": "2026-11-12",
       "inferred": [],
@@ -173,7 +173,7 @@
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 600000,
+      "price": 540000,
       "from": "2026-10-16",
       "to": "2026-11-12",
       "inferred": [],
@@ -195,7 +195,7 @@
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 750000,
+      "price": 675000,
       "from": "2026-10-16",
       "to": "2026-11-12",
       "inferred": [],
@@ -217,7 +217,7 @@
       "tier": "Early Bird",
       "kind": "early",
       "audience": null,
-      "price": 900000,
+      "price": 810000,
       "from": "2026-10-16",
       "to": "2026-11-12",
       "inferred": [],
@@ -350,7 +350,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/2026-international-run-for-a-green-da-lat",
-      "lastCheckedAt": "2026-10-16T21:02:09.841Z",
+      "lastCheckedAt": "2026-11-05T21:01:06.622Z",
       "lastChangedAt": "2026-09-23T18:30:39.001Z",
       "extracted": {
         "facts": {
@@ -484,7 +484,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/quoc-te-vi-da-lat-xanh-2026",
-      "lastCheckedAt": "2026-10-16T21:02:25.693Z",
+      "lastCheckedAt": "2026-11-05T21:01:20.418Z",
       "lastChangedAt": "2026-10-15T20:27:33.887Z",
       "extracted": {
         "facts": {
@@ -504,7 +504,7 @@
               "tier": "Early Bird",
               "from": "16/10",
               "to": "12/11",
-              "price": 400000
+              "price": 360000
             },
             {
               "distance": "5km",
@@ -518,7 +518,7 @@
               "tier": "Early Bird",
               "from": "16/10",
               "to": "12/11",
-              "price": 600000
+              "price": 540000
             },
             {
               "distance": "10km",
@@ -532,7 +532,7 @@
               "tier": "Early Bird",
               "from": "16/10",
               "to": "12/11",
-              "price": 750000
+              "price": 675000
             },
             {
               "distance": "21km",
@@ -546,7 +546,7 @@
               "tier": "Early Bird",
               "from": "16/10",
               "to": "12/11",
-              "price": 900000
+              "price": 810000
             }
           ]
         },
@@ -802,5 +802,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-16T21:02:35.942Z"
+  "updatedAt": "2026-11-05T21:01:28.815Z"
 }
