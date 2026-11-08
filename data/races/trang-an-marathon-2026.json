@@ -142,50 +142,6 @@
       "audience": null,
       "price": 799000,
       "from": "2026-10-11",
-      "to": "2026-11-05",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 899000,
-      "from": "2026-10-11",
-      "to": "2026-11-05",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "21km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 1099000,
-      "from": "2026-10-11",
-      "to": "2026-11-05",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "42km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 1399000,
-      "from": "2026-10-11",
-      "to": "2026-11-05",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "5km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 799000,
-      "from": "2026-10-11",
       "to": "2026-10-30",
       "inferred": [],
       "site": "actiup"
@@ -310,7 +266,7 @@
       "foundOn": "ticket.irace.vn"
     },
     {
-      "url": "https://drive.google.com/file/d/1pYMmBlfTe1uD9cNZfd3dzmP8xsnsyVx-/view",
+      "url": "https://drive.google.com/file/d/1UFqmv6HYOKICIZ72RvPR7VuCc7GVSGVm/view",
       "kind": "other",
       "foundOn": "ticket.irace.vn"
     },
@@ -358,11 +314,11 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/trang-an-marathon-2026",
-      "lastCheckedAt": "2026-11-06T21:02:01.726Z",
+      "lastCheckedAt": "2026-11-08T21:03:05.589Z",
       "lastChangedAt": "2026-09-23T18:30:52.659Z",
       "extracted": {
         "facts": {
-          "name": "Trang An Marathon 2026",
+          "name": "Trang An Marathon 2026 powered by Phở Đệ Nhất",
           "date": "2026-11-15",
           "venue": "Cố đô Hoa Lư, Phường Tây Hoa Lư, Tỉnh Ninh Bình",
           "organizer": "VRace (Công ty Cổ phần Vũ Media)",
@@ -378,7 +334,7 @@
               "types": [
                 "road_run"
               ],
-              "name": "Trang An Marathon 2026",
+              "name": "Trang An Marathon 2026 powered by Phở Đệ Nhất",
               "date": "2026-11-21",
               "endDate": "2026-11-22",
               "mainDate": "2026-11-21",
@@ -413,7 +369,7 @@
               "edition": 6,
               "editionQuote": "mùa giải thứ 6",
               "mapsUrl": "https://drive.google.com/file/d/10FUWXvAIbFfqVP-IuEW8vcQYyoL_cCYN/view?usp=sharing",
-              "venue": "Tràng An",
+              "venue": "Danh thắng Tràng An",
               "city": "Ninh Bình",
               "organizer": "Công ty Cổ phần Vũ Media (VRace)",
               "currency": "VND",
@@ -532,43 +488,13 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/trang-an-marathon-2026",
-      "lastCheckedAt": "2026-11-03T21:01:24.671Z",
+      "lastCheckedAt": "2026-11-08T21:06:46.119Z",
       "lastChangedAt": "2026-10-15T20:29:50.677Z",
       "extracted": {
         "facts": {
           "name": "Giải chạy Trang An Marathon 2026",
           "venue": "Cố đô Hoa Lư, phường Tây Hoa Lư, tỉnh Ninh Bình",
-          "organizer": "VuMedia",
-          "prices": [
-            {
-              "distance": "5km",
-              "tier": "Late",
-              "from": "11/10",
-              "to": "05/11",
-              "price": 799000
-            },
-            {
-              "distance": "10km",
-              "tier": "Late",
-              "from": "11/10",
-              "to": "05/11",
-              "price": 899000
-            },
-            {
-              "distance": "21km",
-              "tier": "Late",
-              "from": "11/10",
-              "to": "05/11",
-              "price": 1099000
-            },
-            {
-              "distance": "42km",
-              "tier": "Late",
-              "from": "11/10",
-              "to": "05/11",
-              "price": 1399000
-            }
-          ]
+          "organizer": "VuMedia"
         },
         "pages": [
           {
@@ -670,7 +596,7 @@
             "text": "chia se tren facebook"
           },
           {
-            "url": "https://drive.google.com/file/d/1pYMmBlfTe1uD9cNZfd3dzmP8xsnsyVx-/view",
+            "url": "https://drive.google.com/file/d/1UFqmv6HYOKICIZ72RvPR7VuCc7GVSGVm/view?usp=sharing",
             "text": "tai day"
           },
           {
@@ -731,5 +657,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-11-06T21:02:31.157Z"
+  "updatedAt": "2026-11-08T21:08:02.763Z"
 }

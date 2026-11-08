@@ -11,21 +11,8 @@
   "seriesId": null,
   "organizerId": "vumedia",
   "organizer": "VuMedia | Ban tổ chức sự kiện",
-  "edition": 1,
-  "courses": [
-    {
-      "label": "5km",
-      "meters": 5000,
-      "type": "road_run",
-      "elevationGain": null
-    },
-    {
-      "label": "10km",
-      "meters": 10000,
-      "type": "road_run",
-      "elevationGain": null
-    }
-  ],
+  "edition": null,
+  "courses": [],
   "location": {
     "venue": "Vinhomes Royal Island – Vũ Yên, Hải Phòng",
     "city": "Hải Phòng"
@@ -122,96 +109,7 @@
       }
     }
   },
-  "prices": [
-    {
-      "distance": "5km",
-      "tier": "Priority",
-      "kind": "other",
-      "audience": null,
-      "price": 100000,
-      "from": "2026-09-07",
-      "to": "2026-09-13",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "5km",
-      "tier": "Super Early Bird",
-      "kind": "super_early",
-      "audience": null,
-      "price": 100000,
-      "from": "2026-09-14",
-      "to": "2026-09-21",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "5km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 150000,
-      "from": "2026-09-22",
-      "to": "2026-10-30",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "5km",
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 200000,
-      "from": "2026-10-31",
-      "to": "2026-11-20",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Priority",
-      "kind": "other",
-      "audience": null,
-      "price": 145000,
-      "from": "2026-09-07",
-      "to": "2026-09-13",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Super Early Bird",
-      "kind": "super_early",
-      "audience": null,
-      "price": 145000,
-      "from": "2026-09-14",
-      "to": "2026-09-21",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 180000,
-      "from": "2026-09-22",
-      "to": "2026-10-30",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 230000,
-      "from": "2026-10-31",
-      "to": "2026-11-20",
-      "inferred": [],
-      "site": "irace"
-    }
-  ],
+  "prices": [],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -285,71 +183,13 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/deep-c-run-royale-2026",
-      "lastCheckedAt": "2026-11-01T21:48:30.133Z",
+      "lastCheckedAt": "2026-11-08T21:07:08.274Z",
       "lastChangedAt": "2026-10-15T20:28:09.579Z",
       "extracted": {
         "facts": {
           "name": "Giải chạy DEEP C RUN ROYALE 2026",
           "venue": "Vinhomes Royal Island – Vũ Yên, Hải Phòng",
-          "organizer": "VuMedia",
-          "prices": [
-            {
-              "distance": "5km",
-              "tier": "Priority",
-              "from": "07/09",
-              "to": "13/09",
-              "price": 100000
-            },
-            {
-              "distance": "5km",
-              "tier": "Super Early Bird",
-              "from": "14/09",
-              "to": "21/09",
-              "price": 100000
-            },
-            {
-              "distance": "5km",
-              "tier": "Early Bird",
-              "from": "22/09",
-              "to": "30/10",
-              "price": 150000
-            },
-            {
-              "distance": "5km",
-              "tier": "Regular",
-              "from": "31/10",
-              "to": "20/11",
-              "price": 200000
-            },
-            {
-              "distance": "10km",
-              "tier": "Priority",
-              "from": "07/09",
-              "to": "13/09",
-              "price": 145000
-            },
-            {
-              "distance": "10km",
-              "tier": "Super Early Bird",
-              "from": "14/09",
-              "to": "21/09",
-              "price": 145000
-            },
-            {
-              "distance": "10km",
-              "tier": "Early Bird",
-              "from": "22/09",
-              "to": "30/10",
-              "price": 180000
-            },
-            {
-              "distance": "10km",
-              "tier": "Regular",
-              "from": "31/10",
-              "to": "20/11",
-              "price": 230000
-            }
-          ]
+          "organizer": "VuMedia"
         },
         "pages": [
           {
@@ -363,24 +203,10 @@
               "date": "2026-11-29",
               "endDate": "2026-11-29",
               "mainDate": "2026-11-29",
-              "distances": [
-                "5km",
-                "10km"
-              ],
-              "courses": [
-                {
-                  "distance": "5km",
-                  "type": "road_run",
-                  "elevationGain": 0
-                },
-                {
-                  "distance": "10km",
-                  "type": "road_run",
-                  "elevationGain": 0
-                }
-              ],
-              "edition": 1,
-              "editionQuote": "Giải chạy này lần thứ nhất",
+              "distances": [],
+              "courses": [],
+              "edition": 0,
+              "editionQuote": "",
               "mapsUrl": "",
               "venue": "Vinhomes Royal Island – Vũ Yên",
               "city": "Hải Phòng",
@@ -391,72 +217,7 @@
                 "count": 0,
                 "quote": ""
               },
-              "prices": [
-                {
-                  "distance": "5km",
-                  "tier": "Priority",
-                  "audience": "",
-                  "from": "2023-09-07",
-                  "to": "2023-09-13",
-                  "price": 100000
-                },
-                {
-                  "distance": "5km",
-                  "tier": "Super Early Bird",
-                  "audience": "",
-                  "from": "2023-09-14",
-                  "to": "2023-09-21",
-                  "price": 100000
-                },
-                {
-                  "distance": "5km",
-                  "tier": "Early Bird",
-                  "audience": "",
-                  "from": "2023-09-22",
-                  "to": "2023-09-30",
-                  "price": 150000
-                },
-                {
-                  "distance": "5km",
-                  "tier": "Regular",
-                  "audience": "",
-                  "from": "2023-10-31",
-                  "to": "2023-11-20",
-                  "price": 200000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Priority",
-                  "audience": "",
-                  "from": "2023-09-07",
-                  "to": "2023-09-13",
-                  "price": 145000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Super Early Bird",
-                  "audience": "",
-                  "from": "2023-09-14",
-                  "to": "2023-09-21",
-                  "price": 145000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Early Bird",
-                  "audience": "",
-                  "from": "2023-09-22",
-                  "to": "2023-09-30",
-                  "price": 180000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Regular",
-                  "audience": "",
-                  "from": "2023-10-31",
-                  "to": "2023-11-20",
-                  "price": 230000
-                }
-              ]
+              "prices": []
             }
           }
         ],
@@ -591,5 +352,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-10-15T20:31:08.696Z",
-  "updatedAt": "2026-11-01T21:51:13.044Z"
+  "updatedAt": "2026-11-08T21:08:02.763Z"
 }

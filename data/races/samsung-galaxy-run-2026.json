@@ -12,14 +12,7 @@
   "organizerId": "vnexpress-marathon",
   "organizer": "VnExpress Marathon",
   "edition": null,
-  "courses": [
-    {
-      "label": "21km",
-      "meters": 21097,
-      "type": "road_run",
-      "elevationGain": null
-    }
-  ],
+  "courses": [],
   "location": {
     "venue": "Thành phố Hồ Chí Minh",
     "city": "Thành phố Hồ Chí Minh"
@@ -120,19 +113,7 @@
       }
     }
   },
-  "prices": [
-    {
-      "distance": "21km",
-      "tier": "GALAXY RUN 2026",
-      "kind": "other",
-      "audience": null,
-      "price": 399000,
-      "from": "2026-10-26",
-      "to": "2026-11-09",
-      "inferred": [],
-      "site": "irace"
-    }
-  ],
+  "prices": [],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -201,22 +182,13 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/samsung-galaxy-run-2026",
-      "lastCheckedAt": "2026-11-01T21:47:43.699Z",
+      "lastCheckedAt": "2026-11-08T21:06:47.324Z",
       "lastChangedAt": "2026-11-01T21:47:43.699Z",
       "extracted": {
         "facts": {
           "name": "Giải chạy Samsung Galaxy Run 2026",
           "venue": "Thành phố Hồ Chí Minh",
-          "organizer": "VnExpress Marathon",
-          "prices": [
-            {
-              "distance": "21km",
-              "tier": "GALAXY RUN 2026",
-              "from": "26/10",
-              "to": "09/11",
-              "price": 399000
-            }
-          ]
+          "organizer": "VnExpress Marathon"
         },
         "pages": [
           {
@@ -230,38 +202,21 @@
               "date": "2026-11-22",
               "endDate": "2026-11-22",
               "mainDate": "2026-11-22",
-              "distances": [
-                "21km"
-              ],
-              "courses": [
-                {
-                  "distance": "21km",
-                  "type": "road_run",
-                  "elevationGain": 0
-                }
-              ],
-              "edition": 2026,
+              "distances": [],
+              "courses": [],
+              "edition": 1,
               "editionQuote": "Giải chạy Samsung Galaxy Run 2026",
               "mapsUrl": "",
-              "venue": "Thành phố Hồ Chí Minh",
+              "venue": "",
               "city": "Thành phố Hồ Chí Minh",
               "organizer": "",
-              "currency": "VND",
+              "currency": "",
               "registrationStatus": "open",
               "participants": {
                 "count": 0,
                 "quote": ""
               },
-              "prices": [
-                {
-                  "distance": "21km",
-                  "tier": "GALAXY RUN 2026",
-                  "audience": "",
-                  "from": "26/10",
-                  "to": "09/11",
-                  "price": 399000
-                }
-              ]
+              "prices": []
             }
           }
         ],
@@ -392,5 +347,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-01T21:51:13.044Z",
-  "updatedAt": "2026-11-01T21:51:13.044Z"
+  "updatedAt": "2026-11-08T21:08:02.763Z"
 }

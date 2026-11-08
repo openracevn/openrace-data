@@ -246,6 +246,534 @@
       "to": "2026-11-12",
       "inferred": [],
       "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 2589000,
+      "from": "2026-09-29",
+      "to": "2026-11-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 3107000,
+      "from": "2026-11-13",
+      "to": "2026-12-13",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 3729000,
+      "from": "2026-12-14",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 4474000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 3366000,
+      "from": "2026-09-29",
+      "to": "2026-11-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 4039000,
+      "from": "2026-11-13",
+      "to": "2026-12-13",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 4847000,
+      "from": "2026-12-14",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 5816000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 3739000,
+      "from": "2026-09-29",
+      "to": "2026-11-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 4489000,
+      "from": "2026-11-13",
+      "to": "2026-12-13",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 5389000,
+      "from": "2026-12-14",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 6469000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 4869000,
+      "from": "2026-09-29",
+      "to": "2026-11-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 5849000,
+      "from": "2026-11-13",
+      "to": "2026-12-13",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 7019000,
+      "from": "2026-12-14",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 8429000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 3189000,
+      "from": "2026-09-29",
+      "to": "2026-11-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 3829000,
+      "from": "2026-11-13",
+      "to": "2026-12-13",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 4599000,
+      "from": "2026-12-14",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 5519000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 4149000,
+      "from": "2026-09-29",
+      "to": "2026-11-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 4979000,
+      "from": "2026-11-13",
+      "to": "2026-12-13",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 5979000,
+      "from": "2026-12-14",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 7179000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1619000,
+      "from": "2026-09-29",
+      "to": "2026-11-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1949000,
+      "from": "2026-11-13",
+      "to": "2026-12-13",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 2339000,
+      "from": "2026-12-14",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2809000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 2449000,
+      "from": "2026-09-29",
+      "to": "2026-11-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2939000,
+      "from": "2026-11-13",
+      "to": "2026-12-13",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 3529000,
+      "from": "2026-12-14",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "3km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 4239000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1219000,
+      "from": "2026-09-29",
+      "to": "2026-11-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1469000,
+      "from": "2026-11-13",
+      "to": "2026-12-13",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 1769000,
+      "from": "2026-12-14",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1.5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2129000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 1019000,
+      "from": "2026-09-29",
+      "to": "2026-11-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1229000,
+      "from": "2026-11-13",
+      "to": "2026-12-13",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 1479000,
+      "from": "2026-12-14",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1779000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 659000,
+      "from": "2026-09-29",
+      "to": "2026-11-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 799000,
+      "from": "2026-11-13",
+      "to": "2026-12-13",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 959000,
+      "from": "2026-12-14",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "2km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1159000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 529000,
+      "from": "2026-09-29",
+      "to": "2026-11-12",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 639000,
+      "from": "2026-11-13",
+      "to": "2026-12-13",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 769000,
+      "from": "2026-12-14",
+      "to": "2027-02-18",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "1km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 929000,
+      "from": "2027-02-19",
+      "to": "2027-03-19",
+      "inferred": [],
+      "site": "actiup"
     }
   ],
   "currency": "VND",
@@ -330,7 +858,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/aqua-warriors-halong-bay-2027",
-      "lastCheckedAt": "2026-11-01T21:21:56.834Z",
+      "lastCheckedAt": "2026-11-08T21:04:24.375Z",
       "lastChangedAt": "2026-10-12T17:47:14.353Z",
       "extracted": {
         "facts": {
@@ -404,14 +932,423 @@
         "organizer": {
           "id": "bolt-event",
           "name": "BOLT EVENT"
-        }
+        },
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/10/29/1793262911072223/HL.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "STANDARD DUATHLON (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) CHAY/RUN 10KM - DẶP XE/BIKE 40KM - CHAY/RUN 5KM",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "12/11",
+                  "price": 2589000
+                },
+                {
+                  "distance": "STANDARD DUATHLON (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) CHAY/RUN 10KM - DẶP XE/BIKE 40KM - CHAY/RUN 5KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "13/11",
+                  "to": "13/12",
+                  "price": 3107000
+                },
+                {
+                  "distance": "STANDARD DUATHLON (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) CHAY/RUN 10KM - DẶP XE/BIKE 40KM - CHAY/RUN 5KM",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "14/12",
+                  "to": "18/02",
+                  "price": 3729000
+                },
+                {
+                  "distance": "STANDARD DUATHLON (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) CHAY/RUN 10KM - DẶP XE/BIKE 40KM - CHAY/RUN 5KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 4474000
+                },
+                {
+                  "distance": "(RELAY) STANDARD DUATHLON (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) CHAY/RUN 10KM - DẶP XE/BIKE 40KM - CHAY/RUN 5KM",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "12/11",
+                  "price": 3366000
+                },
+                {
+                  "distance": "(RELAY) STANDARD DUATHLON (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) CHAY/RUN 10KM - DẶP XE/BIKE 40KM - CHAY/RUN 5KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "13/11",
+                  "to": "13/12",
+                  "price": 4039000
+                },
+                {
+                  "distance": "(RELAY) STANDARD DUATHLON (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) CHAY/RUN 10KM - DẶP XE/BIKE 40KM - CHAY/RUN 5KM",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "14/12",
+                  "to": "18/02",
+                  "price": 4847000
+                },
+                {
+                  "distance": "(RELAY) STANDARD DUATHLON (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) CHAY/RUN 10KM - DẶP XE/BIKE 40KM - CHAY/RUN 5KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 5816000
+                },
+                {
+                  "distance": "T103 ENDURO TRIATHLON SOLO (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 2KM - DẶP/BIKE 80KM - CHAY/RUN 21KM",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "12/11",
+                  "price": 3739000
+                },
+                {
+                  "distance": "T103 ENDURO TRIATHLON SOLO (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 2KM - DẶP/BIKE 80KM - CHAY/RUN 21KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "13/11",
+                  "to": "13/12",
+                  "price": 4489000
+                },
+                {
+                  "distance": "T103 ENDURO TRIATHLON SOLO (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 2KM - DẶP/BIKE 80KM - CHAY/RUN 21KM",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "14/12",
+                  "to": "18/02",
+                  "price": 5389000
+                },
+                {
+                  "distance": "T103 ENDURO TRIATHLON SOLO (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 2KM - DẶP/BIKE 80KM - CHAY/RUN 21KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 6469000
+                },
+                {
+                  "distance": "(RELAY) T103 ENDURO TRIATHLON (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 2KM - DẶP/BIKE 80KM - CHAY/RUN 21KM",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "12/11",
+                  "price": 4869000
+                },
+                {
+                  "distance": "(RELAY) T103 ENDURO TRIATHLON (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 2KM - DẶP/BIKE 80KM - CHAY/RUN 21KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "13/11",
+                  "to": "13/12",
+                  "price": 5849000
+                },
+                {
+                  "distance": "(RELAY) T103 ENDURO TRIATHLON (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 2KM - DẶP/BIKE 80KM - CHAY/RUN 21KM",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "14/12",
+                  "to": "18/02",
+                  "price": 7019000
+                },
+                {
+                  "distance": "(RELAY) T103 ENDURO TRIATHLON (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 2KM - DẶP/BIKE 80KM - CHAY/RUN 21KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 8429000
+                },
+                {
+                  "distance": "OLYMPIC TRIATHLON SOLO (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 1.5KM - DẶP/BIKE 40KM - CHAY/RUN 10KM",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "12/11",
+                  "price": 3189000
+                },
+                {
+                  "distance": "OLYMPIC TRIATHLON SOLO (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 1.5KM - DẶP/BIKE 40KM - CHAY/RUN 10KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "13/11",
+                  "to": "13/12",
+                  "price": 3829000
+                },
+                {
+                  "distance": "OLYMPIC TRIATHLON SOLO (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 1.5KM - DẶP/BIKE 40KM - CHAY/RUN 10KM",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "14/12",
+                  "to": "18/02",
+                  "price": 4599000
+                },
+                {
+                  "distance": "OLYMPIC TRIATHLON SOLO (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 1.5KM - DẶP/BIKE 40KM - CHAY/RUN 10KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 5519000
+                },
+                {
+                  "distance": "(RELAY) OLYMPIC TRIATHLON (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 1.5KM - DẶP/BIKE 40KM - CHAY/RUN 10KM",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "12/11",
+                  "price": 4149000
+                },
+                {
+                  "distance": "(RELAY) OLYMPIC TRIATHLON (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 1.5KM - DẶP/BIKE 40KM - CHAY/RUN 10KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "13/11",
+                  "to": "13/12",
+                  "price": 4979000
+                },
+                {
+                  "distance": "(RELAY) OLYMPIC TRIATHLON (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 1.5KM - DẶP/BIKE 40KM - CHAY/RUN 10KM",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "14/12",
+                  "to": "18/02",
+                  "price": 5979000
+                },
+                {
+                  "distance": "(RELAY) OLYMPIC TRIATHLON (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 1.5KM - DẶP/BIKE 40KM - CHAY/RUN 10KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 7179000
+                },
+                {
+                  "distance": "FULL AQUA WARRIORS SOLO (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 3KM - CHAY/RUN 15KM",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "12/11",
+                  "price": 1619000
+                },
+                {
+                  "distance": "FULL AQUA WARRIORS SOLO (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 3KM - CHAY/RUN 15KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "13/11",
+                  "to": "13/12",
+                  "price": 1949000
+                },
+                {
+                  "distance": "FULL AQUA WARRIORS SOLO (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 3KM - CHAY/RUN 15KM",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "14/12",
+                  "to": "18/02",
+                  "price": 2339000
+                },
+                {
+                  "distance": "FULL AQUA WARRIORS SOLO (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 3KM - CHAY/RUN 15KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 2809000
+                },
+                {
+                  "distance": "(RELAY) FULL AQUA WARRIORS (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 3KM - CHAY/RUN 15KM",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "12/11",
+                  "price": 2449000
+                },
+                {
+                  "distance": "(RELAY) FULL AQUA WARRIORS (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 3KM - CHAY/RUN 15KM",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "13/11",
+                  "to": "13/12",
+                  "price": 2939000
+                },
+                {
+                  "distance": "(RELAY) FULL AQUA WARRIORS (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 3KM - CHAY/RUN 15KM",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "14/12",
+                  "to": "18/02",
+                  "price": 3529000
+                },
+                {
+                  "distance": "(RELAY) FULL AQUA WARRIORS (TỪ 18 TUỔI TRỞ LÊN/18 YEARS OLD AND ABOVE) BOI/SWIM 3KM - CHAY/RUN 15KM",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 4239000
+                },
+                {
+                  "distance": "OLYMPIC AQUA WARRIORS (TỪ 16 TUỔI TRỞ LÊN/16 YEARS OLD AND ABOVE) BOI 1.5KM - CHAY 10KM / 1.5KM SWIM - 10KM RUN",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "12/11",
+                  "price": 1219000
+                },
+                {
+                  "distance": "OLYMPIC AQUA WARRIORS (TỪ 16 TUỔI TRỞ LÊN/16 YEARS OLD AND ABOVE) BOI 1.5KM - CHAY 10KM / 1.5KM SWIM - 10KM RUN",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "13/11",
+                  "to": "13/12",
+                  "price": 1469000
+                },
+                {
+                  "distance": "OLYMPIC AQUA WARRIORS (TỪ 16 TUỔI TRỞ LÊN/16 YEARS OLD AND ABOVE) BOI 1.5KM - CHAY 10KM / 1.5KM SWIM - 10KM RUN",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "14/12",
+                  "to": "18/02",
+                  "price": 1769000
+                },
+                {
+                  "distance": "OLYMPIC AQUA WARRIORS (TỪ 16 TUỔI TRỞ LÊN/16 YEARS OLD AND ABOVE) BOI 1.5KM - CHAY 10KM / 1.5KM SWIM - 10KM RUN",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 2129000
+                },
+                {
+                  "distance": "SPRINT AQUA WARRIORS (TỪ 12 TUỔI TRỞ LÊN/12 YEARS OLD AND ABOVE) BOI 750M - CHAY 5KM / 750M SWIM - 5KM RUN",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "12/11",
+                  "price": 1019000
+                },
+                {
+                  "distance": "SPRINT AQUA WARRIORS (TỪ 12 TUỔI TRỞ LÊN/12 YEARS OLD AND ABOVE) BOI 750M - CHAY 5KM / 750M SWIM - 5KM RUN",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "13/11",
+                  "to": "13/12",
+                  "price": 1229000
+                },
+                {
+                  "distance": "SPRINT AQUA WARRIORS (TỪ 12 TUỔI TRỞ LÊN/12 YEARS OLD AND ABOVE) BOI 750M - CHAY 5KM / 750M SWIM - 5KM RUN",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "14/12",
+                  "to": "18/02",
+                  "price": 1479000
+                },
+                {
+                  "distance": "SPRINT AQUA WARRIORS (TỪ 12 TUỔI TRỞ LÊN/12 YEARS OLD AND ABOVE) BOI 750M - CHAY 5KM / 750M SWIM - 5KM RUN",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 1779000
+                },
+                {
+                  "distance": "JUNIOR AQUA WARRIORS TỪ 9-11 TUỔI/FROM 9-11 YEARS OLD BOI 300M - CHAY 2KM / 300M SWIM - 2KM RUN",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "12/11",
+                  "price": 659000
+                },
+                {
+                  "distance": "JUNIOR AQUA WARRIORS TỪ 9-11 TUỔI/FROM 9-11 YEARS OLD BOI 300M - CHAY 2KM / 300M SWIM - 2KM RUN",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "13/11",
+                  "to": "13/12",
+                  "price": 799000
+                },
+                {
+                  "distance": "JUNIOR AQUA WARRIORS TỪ 9-11 TUỔI/FROM 9-11 YEARS OLD BOI 300M - CHAY 2KM / 300M SWIM - 2KM RUN",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "14/12",
+                  "to": "18/02",
+                  "price": 959000
+                },
+                {
+                  "distance": "JUNIOR AQUA WARRIORS TỪ 9-11 TUỔI/FROM 9-11 YEARS OLD BOI 300M - CHAY 2KM / 300M SWIM - 2KM RUN",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 1159000
+                },
+                {
+                  "distance": "KIDS AQUA WARRIORS TỪ 5-8 TUỔI/FROM 5-8 YEARS OLD BOI 150M - CHAY 1KM / 150M SWIM - 1KM RUN",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "29/09",
+                  "to": "12/11",
+                  "price": 529000
+                },
+                {
+                  "distance": "KIDS AQUA WARRIORS TỪ 5-8 TUỔI/FROM 5-8 YEARS OLD BOI 150M - CHAY 1KM / 150M SWIM - 1KM RUN",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "13/11",
+                  "to": "13/12",
+                  "price": 639000
+                },
+                {
+                  "distance": "KIDS AQUA WARRIORS TỪ 5-8 TUỔI/FROM 5-8 YEARS OLD BOI 150M - CHAY 1KM / 150M SWIM - 1KM RUN",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "14/12",
+                  "to": "18/02",
+                  "price": 769000
+                },
+                {
+                  "distance": "KIDS AQUA WARRIORS TỪ 5-8 TUỔI/FROM 5-8 YEARS OLD BOI 150M - CHAY 1KM / 150M SWIM - 1KM RUN",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "19/02",
+                  "to": "19/03",
+                  "price": 929000
+                }
+              ],
+              "distances": [
+                "STANDARD DUATHLON",
+                "(RELAY) STANDARD DUATHLON",
+                "T103 ENDURO TRIATHLON SOLO",
+                "(RELAY) T103 ENDURO TRIATHLON",
+                "OLYMPIC TRIATHLON SOLO",
+                "(RELAY) OLYMPIC TRIATHLON",
+                "FULL AQUA WARRIORS SOLO",
+                "(RELAY) FULL AQUA WARRIORS",
+                "OLYMPIC AQUA WARRIORS",
+                "SPRINT AQUA WARRIORS",
+                "JUNIOR AQUA WARRIORS",
+                "KIDS AQUA WARRIORS"
+              ],
+              "date": "2026-09-29",
+              "currency": "VND"
+            }
+          }
+        ]
       }
     },
     {
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/aqua-warriors-halong-bay-2027",
-      "lastCheckedAt": "2026-11-01T21:50:08.006Z",
+      "lastCheckedAt": "2026-11-08T21:07:27.317Z",
       "lastChangedAt": "2026-10-15T20:27:06.087Z",
       "extracted": {
         "facts": {
@@ -728,5 +1665,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-10-12T17:48:31.011Z",
-  "updatedAt": "2026-11-01T21:51:13.044Z"
+  "updatedAt": "2026-11-08T21:08:02.763Z"
 }

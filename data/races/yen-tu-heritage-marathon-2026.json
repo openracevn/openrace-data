@@ -136,17 +136,6 @@
   },
   "prices": [
     {
-      "distance": null,
-      "tier": "Kid · Super Early Bird",
-      "kind": "super_early",
-      "audience": null,
-      "price": 229000,
-      "from": "2026-03-12",
-      "to": "2026-04-24",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
       "distance": "5km",
       "tier": "Super Early Bird",
       "kind": "super_early",
@@ -154,6 +143,72 @@
       "price": 349000,
       "from": "2026-03-12",
       "to": "2026-04-24",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 419000,
+      "from": "2026-04-25",
+      "to": "2026-07-23",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 489000,
+      "from": "2026-07-24",
+      "to": "2026-09-22",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 589000,
+      "from": "2026-09-23",
+      "to": "2026-11-02",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Super Late",
+      "kind": "late",
+      "audience": null,
+      "price": 699000,
+      "from": "2026-11-03",
+      "to": "2026-11-13",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Flash Sale 11/11",
+      "kind": "other",
+      "audience": null,
+      "price": 360000,
+      "from": "2026-11-09",
+      "to": "2026-11-13",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Super Super Late",
+      "kind": "late",
+      "audience": null,
+      "price": 799000,
+      "from": "2026-11-14",
+      "to": "2026-11-21",
       "inferred": [],
       "site": "irace"
     },
@@ -169,6 +224,72 @@
       "site": "irace"
     },
     {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 539000,
+      "from": "2026-04-25",
+      "to": "2026-07-23",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 639000,
+      "from": "2026-07-24",
+      "to": "2026-09-22",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 749000,
+      "from": "2026-09-23",
+      "to": "2026-11-02",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Late",
+      "kind": "late",
+      "audience": null,
+      "price": 889000,
+      "from": "2026-11-03",
+      "to": "2026-11-13",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Flash Sale 11/11",
+      "kind": "other",
+      "audience": null,
+      "price": 480000,
+      "from": "2026-11-09",
+      "to": "2026-11-13",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Super Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1029000,
+      "from": "2026-11-14",
+      "to": "2026-11-21",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
       "distance": "21km",
       "tier": "Super Early Bird",
       "kind": "super_early",
@@ -180,6 +301,72 @@
       "site": "irace"
     },
     {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 679000,
+      "from": "2026-04-25",
+      "to": "2026-07-23",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 789000,
+      "from": "2026-07-24",
+      "to": "2026-09-22",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 929000,
+      "from": "2026-09-23",
+      "to": "2026-11-02",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1099000,
+      "from": "2026-11-03",
+      "to": "2026-11-13",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Flash Sale 11/11",
+      "kind": "other",
+      "audience": null,
+      "price": 590000,
+      "from": "2026-11-09",
+      "to": "2026-11-13",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Super Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1279000,
+      "from": "2026-11-14",
+      "to": "2026-11-21",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
       "distance": "42km",
       "tier": "Super Early Bird",
       "kind": "super_early",
@@ -187,6 +374,72 @@
       "price": 699000,
       "from": "2026-03-12",
       "to": "2026-04-24",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 799000,
+      "from": "2026-04-25",
+      "to": "2026-07-23",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 939000,
+      "from": "2026-07-24",
+      "to": "2026-09-22",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1119000,
+      "from": "2026-09-23",
+      "to": "2026-11-02",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Super Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1329000,
+      "from": "2026-11-03",
+      "to": "2026-11-13",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Flash Sale 11/11",
+      "kind": "other",
+      "audience": null,
+      "price": 710000,
+      "from": "2026-11-09",
+      "to": "2026-11-13",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Super Super Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1539000,
+      "from": "2026-11-14",
+      "to": "2026-11-21",
       "inferred": [],
       "site": "irace"
     },
@@ -703,7 +956,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/yen-tu-heritage-marathon-2026",
-      "lastCheckedAt": "2026-11-02T21:14:16.885Z",
+      "lastCheckedAt": "2026-11-08T21:03:10.414Z",
       "lastChangedAt": "2026-09-23T18:30:51.053Z",
       "extracted": {
         "facts": {
@@ -1170,7 +1423,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/yen-tu-heritage-marathon-2026",
-      "lastCheckedAt": "2026-11-02T21:14:28.368Z",
+      "lastCheckedAt": "2026-11-08T21:06:50.857Z",
       "lastChangedAt": "2026-10-15T20:29:37.214Z",
       "extracted": {
         "facts": {
@@ -1232,20 +1485,60 @@
               },
               "prices": [
                 {
-                  "distance": "Kid",
-                  "tier": "Super Early Bird",
-                  "audience": "",
-                  "from": "12/03",
-                  "to": "24/04",
-                  "price": 229000
-                },
-                {
                   "distance": "5km",
                   "tier": "Super Early Bird",
                   "audience": "",
                   "from": "12/03",
                   "to": "24/04",
                   "price": 349000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "25/04",
+                  "to": "23/07",
+                  "price": 419000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "24/07",
+                  "to": "22/09",
+                  "price": 489000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "23/09",
+                  "to": "02/11",
+                  "price": 589000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Super Late",
+                  "audience": "",
+                  "from": "03/11",
+                  "to": "13/11",
+                  "price": 699000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Flash Sale 11/11",
+                  "audience": "",
+                  "from": "09/11",
+                  "to": "13/11",
+                  "price": 360000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Super Super Late",
+                  "audience": "",
+                  "from": "14/11",
+                  "to": "21/11",
+                  "price": 799000
                 },
                 {
                   "distance": "10km",
@@ -1256,6 +1549,54 @@
                   "price": 469000
                 },
                 {
+                  "distance": "10km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "25/04",
+                  "to": "23/07",
+                  "price": 539000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "24/07",
+                  "to": "22/09",
+                  "price": 639000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "23/09",
+                  "to": "02/11",
+                  "price": 749000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Super Late",
+                  "audience": "",
+                  "from": "03/11",
+                  "to": "13/11",
+                  "price": 889000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Flash Sale 11/11",
+                  "audience": "",
+                  "from": "09/11",
+                  "to": "13/11",
+                  "price": 480000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Super Super Late",
+                  "audience": "",
+                  "from": "14/11",
+                  "to": "21/11",
+                  "price": 1029000
+                },
+                {
                   "distance": "21km",
                   "tier": "Super Early Bird",
                   "audience": "",
@@ -1264,12 +1605,108 @@
                   "price": 579000
                 },
                 {
+                  "distance": "21km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "25/04",
+                  "to": "23/07",
+                  "price": 679000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "24/07",
+                  "to": "22/09",
+                  "price": 789000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "23/09",
+                  "to": "02/11",
+                  "price": 929000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Super Late",
+                  "audience": "",
+                  "from": "03/11",
+                  "to": "13/11",
+                  "price": 1099000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Flash Sale 11/11",
+                  "audience": "",
+                  "from": "09/11",
+                  "to": "13/11",
+                  "price": 590000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Super Super Late",
+                  "audience": "",
+                  "from": "14/11",
+                  "to": "21/11",
+                  "price": 1279000
+                },
+                {
                   "distance": "42km",
                   "tier": "Super Early Bird",
                   "audience": "",
                   "from": "12/03",
                   "to": "24/04",
                   "price": 699000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "25/04",
+                  "to": "23/07",
+                  "price": 799000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "24/07",
+                  "to": "22/09",
+                  "price": 939000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "23/09",
+                  "to": "02/11",
+                  "price": 1119000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Super Late",
+                  "audience": "",
+                  "from": "03/11",
+                  "to": "13/11",
+                  "price": 1329000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Flash Sale 11/11",
+                  "audience": "",
+                  "from": "09/11",
+                  "to": "13/11",
+                  "price": 710000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Super Super Late",
+                  "audience": "",
+                  "from": "14/11",
+                  "to": "21/11",
+                  "price": 1539000
                 }
               ]
             }
@@ -1402,5 +1839,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-11-02T21:14:43.196Z"
+  "updatedAt": "2026-11-08T21:08:02.763Z"
 }

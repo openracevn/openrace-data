@@ -29,7 +29,7 @@
       "label": "21km",
       "meters": 21097,
       "type": "road_run",
-      "elevationGain": 200
+      "elevationGain": null
     }
   ],
   "location": {
@@ -637,7 +637,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/run-to-live-2027",
-      "lastCheckedAt": "2026-11-01T21:28:03.545Z",
+      "lastCheckedAt": "2026-11-08T21:05:35.232Z",
       "lastChangedAt": "2026-10-13T07:07:53.879Z",
       "extracted": {
         "facts": {
@@ -860,7 +860,7 @@
       "site": "run-to-live",
       "role": "official",
       "url": "https://runtolive.vn/",
-      "lastCheckedAt": "2026-11-01T21:50:26.431Z",
+      "lastCheckedAt": "2026-11-08T21:07:27.738Z",
       "lastChangedAt": "2026-09-25T05:01:22.419Z",
       "extracted": {
         "pages": [
@@ -944,18 +944,24 @@
               "types": [
                 "road_run"
               ],
-              "name": "Giải chạy Run To Live 2027",
-              "date": "2027-11-21",
-              "endDate": "2027-11-22",
-              "mainDate": "2027-11-21",
+              "name": "Giải chạy Run To Live 2027 – Chạy vì cuộc sống tốt đẹp hơn",
+              "date": "2026-11-21",
+              "endDate": "2026-11-22",
+              "mainDate": "2026-11-21",
               "distances": [
-                "21KM"
+                "21KM",
+                "Half Marathon"
               ],
               "courses": [
                 {
                   "distance": "21KM",
                   "type": "road_run",
-                  "elevationGain": 200
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "Half Marathon",
+                  "type": "road_run",
+                  "elevationGain": 0
                 }
               ],
               "edition": 1,
@@ -963,12 +969,12 @@
               "mapsUrl": "https://runtolive.vn/",
               "venue": "Metropole Thủ Thiêm",
               "city": "TP. Thủ Đức",
-              "organizer": "Ban tổ chức Run To Live",
+              "organizer": "Run To Live",
               "currency": "VND",
               "registrationStatus": "open",
               "participants": {
                 "count": 7000,
-                "quote": "Gần 7.000 vận động viên"
+                "quote": "thu hút gần 7.000 vận động viên"
               },
               "prices": []
             }
@@ -1023,5 +1029,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-10-13T07:09:05.682Z",
-  "updatedAt": "2026-11-01T21:51:13.044Z"
+  "updatedAt": "2026-11-08T21:08:02.763Z"
 }

@@ -9637,6 +9637,106 @@
     "query": "Quận Ninh Kiều, Thành phố Cần Thơ",
     "at": "2026-09-24T06:46:43.112Z"
   },
+  "duong tan trao phuong tan my tp ho chi minh | tp ho chi minh": {
+    "geo": {
+      "lat": 10.7291814,
+      "lng": 106.723775,
+      "source": "nominatim",
+      "precision": "venue",
+      "current": {
+        "province": "79",
+        "ward": "27487"
+      },
+      "legacy": {
+        "province": "79",
+        "district": "778",
+        "ward": "27487"
+      },
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 7.9,
+          "minutes": 10,
+          "method": "road",
+          "near": true
+        },
+        "ha-noi": {
+          "km": 1501,
+          "minutes": 1143,
+          "method": "road",
+          "near": false
+        },
+        "da-nang": {
+          "km": 867.8,
+          "minutes": 658,
+          "method": "road",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 413.4,
+          "minutes": 298,
+          "method": "road",
+          "near": false
+        },
+        "da-lat": {
+          "km": 297,
+          "minutes": 226,
+          "method": "road",
+          "near": false
+        },
+        "can-tho": {
+          "km": 167.9,
+          "minutes": 132,
+          "method": "road",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 1535.2,
+          "minutes": 1167,
+          "method": "road",
+          "near": false
+        },
+        "hue": {
+          "km": 950.4,
+          "minutes": 732,
+          "method": "road",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 96.4,
+          "minutes": 90,
+          "method": "road",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 619.2,
+          "minutes": 460,
+          "method": "road",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 363.8,
+          "minutes": 270,
+          "method": "road",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 1808.8,
+          "minutes": 1375,
+          "method": "road",
+          "near": false
+        },
+        "ha-long": {
+          "km": 1584.9,
+          "minutes": 1200,
+          "method": "road",
+          "near": false
+        }
+      }
+    },
+    "query": "Tân Trào, Tân Mỹ, Hồ Chí Minh, Hồ Chí Minh",
+    "at": "2026-11-08T21:08:02.763Z"
+  },
   "duong tran bach dang phuong an khanh tp ho chi minh | ho chi minh": {
     "geo": {
       "lat": 10.778745,

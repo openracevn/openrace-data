@@ -3,24 +3,172 @@
   "slug": "vnexpress-marathon-galaxy-run-2",
   "name": "Galaxy Run 2 2026",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2026-11-22",
   "endDate": null,
   "mainDate": null,
-  "seriesId": "vnexpress-marathon-galaxy-run-2",
+  "seriesId": null,
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
-    "venue": null,
-    "city": null
+    "venue": "Đường Tân Trào, phường Tân Mỹ, TP Hồ Chí Minh",
+    "city": "TP Hồ Chí Minh"
   },
-  "geo": null,
-  "prices": [],
+  "geo": {
+    "lat": 10.7291814,
+    "lng": 106.723775,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "27487"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "778",
+      "ward": "27487"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 7.9,
+        "minutes": 10,
+        "method": "road",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1501,
+        "minutes": 1143,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 867.8,
+        "minutes": 658,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 413.4,
+        "minutes": 298,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 297,
+        "minutes": 226,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 167.9,
+        "minutes": 132,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1535.2,
+        "minutes": 1167,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 950.4,
+        "minutes": 732,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 96.4,
+        "minutes": 90,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 619.2,
+        "minutes": 460,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 363.8,
+        "minutes": 270,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1808.8,
+        "minutes": 1375,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1584.9,
+        "minutes": 1200,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Giai đoạn Duy Nhất",
+      "kind": "group",
+      "audience": null,
+      "price": 199000,
+      "from": "2026-10-26",
+      "to": "2026-11-11",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "10km",
+      "tier": "Giai đoạn Duy Nhất",
+      "kind": "group",
+      "audience": null,
+      "price": 299000,
+      "from": "2026-10-26",
+      "to": "2026-11-11",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    },
+    {
+      "distance": "21km",
+      "tier": "Giai đoạn Duy Nhất",
+      "kind": "group",
+      "audience": null,
+      "price": 399000,
+      "from": "2026-10-26",
+      "to": "2026-11-11",
+      "inferred": [],
+      "site": "vnexpress-marathon"
+    }
+  ],
   "currency": "VND",
-  "registrationStatus": null,
+  "registrationStatus": "open",
   "registrations": [],
   "links": [],
   "participants": null,
@@ -31,18 +179,115 @@
       "site": "vnexpress-marathon",
       "role": "official",
       "url": "https://vm.vnexpress.net/galaxy-run-2-2026",
-      "lastCheckedAt": "2026-11-08T21:01:45.109Z",
+      "lastCheckedAt": "2026-11-08T21:07:33.585Z",
       "lastChangedAt": "2026-11-08T21:01:45.109Z",
       "extracted": {
         "facts": {
           "name": "Galaxy Run 2 2026",
           "date": "2026-11-22"
         },
+        "pages": [
+          {
+            "url": "https://vm.vnexpress.net/galaxy-run-2-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Galaxy Run 2026",
+              "date": "2026-11-22",
+              "endDate": "2026-11-22",
+              "mainDate": "2026-11-22",
+              "distances": [
+                "5 km",
+                "10 km",
+                "21 km"
+              ],
+              "courses": [
+                {
+                  "distance": "5 km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10 km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "21 km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 2,
+              "editionQuote": "Galaxy Run 2026",
+              "mapsUrl": "https://vm.vnexpress.net/galaxy-run-2-2026/thong-tin-cuoc-dua/dia-diem",
+              "venue": "Đường Tân Trào, phường Tân Mỹ, TP Hồ Chí Minh",
+              "city": "TP Hồ Chí Minh",
+              "organizer": "BTC",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": [
+                {
+                  "distance": "5 km",
+                  "tier": "Giai đoạn Duy Nhất",
+                  "audience": "",
+                  "from": "2026-10-26",
+                  "to": "2026-11-11",
+                  "price": 199000
+                },
+                {
+                  "distance": "10 km",
+                  "tier": "Giai đoạn Duy Nhất",
+                  "audience": "",
+                  "from": "2026-10-26",
+                  "to": "2026-11-11",
+                  "price": 299000
+                },
+                {
+                  "distance": "21 km",
+                  "tier": "Giai đoạn Duy Nhất",
+                  "audience": "",
+                  "from": "2026-10-26",
+                  "to": "2026-11-11",
+                  "price": 399000
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://vm.vnexpress.net/galaxy-run-2-2026/thong-tin-cuoc-dua",
+            "json": {
+              "pageKind": "none",
+              "types": [],
+              "name": "",
+              "date": "",
+              "endDate": "",
+              "mainDate": "",
+              "distances": [],
+              "courses": [],
+              "edition": 0,
+              "editionQuote": "",
+              "mapsUrl": "",
+              "venue": "",
+              "city": "",
+              "organizer": "",
+              "currency": "",
+              "registrationStatus": "closed",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": []
+            }
+          }
+        ],
         "links": [],
-        "series": {
-          "id": "vnexpress-marathon-galaxy-run-2",
-          "name": "VnExpress Marathon Galaxy Run 2"
-        },
         "organizer": {
           "id": "vnexpress",
           "name": "VnExpress",
@@ -53,5 +298,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-08T21:02:32.590Z",
-  "updatedAt": "2026-11-08T21:02:32.590Z"
+  "updatedAt": "2026-11-08T21:08:02.763Z"
 }
