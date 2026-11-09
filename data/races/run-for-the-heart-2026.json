@@ -26,13 +26,13 @@
       "label": "5km",
       "meters": 5000,
       "type": "road_run",
-      "elevationGain": 85
+      "elevationGain": null
     },
     {
       "label": "10km",
       "meters": 10000,
       "type": "road_run",
-      "elevationGain": 120
+      "elevationGain": null
     }
   ],
   "location": {
@@ -368,7 +368,7 @@
   "participants": {
     "count": 2000,
     "sourceUrl": "https://actiup.net/vi/event/run-for-the-heart-2026",
-    "quote": "gần 2.000 trái tim nhỏ bé",
+    "quote": "gần 2.000 trái tim nhỏ bé.",
     "confidence": "medium"
   },
   "flags": [],
@@ -391,7 +391,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/run-for-the-heart-2026",
-      "lastCheckedAt": "2026-11-04T21:02:26.506Z",
+      "lastCheckedAt": "2026-11-09T21:02:24.672Z",
       "lastChangedAt": "2026-09-23T18:30:43.016Z",
       "extracted": {
         "facts": {
@@ -424,22 +424,22 @@
                 {
                   "distance": "5km",
                   "type": "road_run",
-                  "elevationGain": 85
+                  "elevationGain": 0
                 },
                 {
                   "distance": "10km",
                   "type": "road_run",
-                  "elevationGain": 120
+                  "elevationGain": 0
                 },
                 {
                   "distance": "21km",
                   "type": "road_run",
-                  "elevationGain": 150
+                  "elevationGain": 0
                 }
               ],
               "edition": 2026,
               "editionQuote": "Năm 2026",
-              "mapsUrl": "https://drive.google.com/file/d/1as7sB7Azzz8NLPLDxijX8h-Memw1aZi6/view?usp=drive_link",
+              "mapsUrl": "https://goo.gl/maps/1as7sB7Azzz8NLPLDxijX8h-Memw1aZi6",
               "venue": "Hà Nội",
               "city": "Hà Nội",
               "organizer": "Gamuda Land Việt Nam",
@@ -447,7 +447,7 @@
               "registrationStatus": "open",
               "participants": {
                 "count": 2000,
-                "quote": "gần 2.000 trái tim nhỏ bé"
+                "quote": "gần 2.000 trái tim nhỏ bé."
               },
               "prices": []
             }
@@ -868,5 +868,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-11-04T21:03:26.080Z"
+  "updatedAt": "2026-11-09T21:02:51.265Z"
 }

@@ -876,9 +876,9 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/run-for-the-heart-2026": {
-    "lastCheckedAt": "2026-11-09T21:01:10.779Z",
+    "lastCheckedAt": "2026-11-09T21:02:24.672Z",
     "status": "ok",
-    "fingerprint": "b3aca28d77e81272c887776a9b47866b"
+    "fingerprint": "386b7ce47a47193ed1202ca1bf23a6bd"
   },
   "https://actiup.net/vi/event/run-for-the-heart-chay-vi-trai-tim-2025": {
     "lastCheckedAt": "2026-09-23T18:31:30.830Z",
@@ -1149,7 +1149,7 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/ultra-trail-cao-bang-2026": {
-    "lastCheckedAt": "2026-11-08T21:03:10.202Z",
+    "lastCheckedAt": "2026-11-09T21:02:06.009Z",
     "status": "error",
     "reason": "HTTP 404 for https://api.actiup.net/v2/content/events/slug/ultra-trail-cao-bang-2026",
     "fingerprint": "f80aed2839f4b09df96d11bcb476015c"
@@ -1308,9 +1308,9 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/yen-tu-heritage-marathon-2026": {
-    "lastCheckedAt": "2026-11-09T21:01:08.925Z",
+    "lastCheckedAt": "2026-11-09T21:02:06.609Z",
     "status": "ok",
-    "fingerprint": "f2fd64d83e767ec3ebd355cc50b1bcfb"
+    "fingerprint": "3cc9b7bc94e8a8714291f9401db9ba69"
   },
   "https://actiup.net/vi/event/yen-tu-mountain-hiking-2025": {
     "lastCheckedAt": "2026-09-23T18:31:41.288Z",
@@ -1539,9 +1539,9 @@
     "fingerprint": "ca4eaa9c28245318099a0d7c2407dc04"
   },
   "https://ticket.irace.vn/vnexpress-marathon-hanoi-midnight-2026": {
-    "lastCheckedAt": "2026-11-09T21:01:22.362Z",
+    "lastCheckedAt": "2026-11-09T21:02:33.835Z",
     "status": "ok",
-    "fingerprint": "faf482098e9527b7a792911c7912548d"
+    "fingerprint": "26037ffbb86f59c20a3eea6320d494ba"
   },
   "https://ticket.irace.vn/vpbank-dat-sen-hong-music-marathon-2025": {
     "lastCheckedAt": "2026-09-27T02:43:40.147Z",
