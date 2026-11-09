@@ -1,7 +1,13 @@
 {
-  "discoveredAt": "2026-11-08T21:00:57.352Z",
+  "discoveredAt": "2026-11-09T21:00:58.830Z",
   "readAt": "2026-11-08T21:08:17.797Z",
   "entries": [
+    {
+      "url": "https://actiup.net/vi/event/run-for-the-heart-2026",
+      "raceId": "d4dfbf65-41fc-4d85-af08-4a3b4f25d7ba",
+      "reason": "changed",
+      "addedAt": "2026-11-09T21:01:10.779Z"
+    },
     {
       "url": "https://actiup.net/vi/event/ultra-trail-cao-bang-2026",
       "raceId": "dee28bd9-ba1a-433c-a8e3-8007067bc7a2",
@@ -9,6 +15,18 @@
       "addedAt": "2026-11-08T21:00:57.352Z",
       "failures": 1,
       "lastError": "HTTP 404 for https://api.actiup.net/v2/content/events/slug/ultra-trail-cao-bang-2026"
+    },
+    {
+      "url": "https://actiup.net/vi/event/yen-tu-heritage-marathon-2026",
+      "raceId": "119a1b5d-a88c-4509-880c-b5f127b32fd6",
+      "reason": "changed",
+      "addedAt": "2026-11-09T21:01:08.925Z"
+    },
+    {
+      "url": "https://ticket.irace.vn/vnexpress-marathon-hanoi-midnight-2026",
+      "raceId": "24762d46-dc3d-4918-b9fc-55dd46cfffb1",
+      "reason": "changed",
+      "addedAt": "2026-11-09T21:01:22.362Z"
     }
   ]
 }

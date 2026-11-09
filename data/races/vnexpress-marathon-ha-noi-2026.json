@@ -393,17 +393,6 @@
       "site": "irace"
     },
     {
-      "distance": "10km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 950000,
-      "from": "2026-11-05",
-      "to": "2026-11-17",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
       "distance": "21km",
       "tier": "Super Early Bird",
       "kind": "super_early",
@@ -792,7 +781,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/vnexpress-marathon-hanoi-midnight-2026",
-      "lastCheckedAt": "2026-10-17T21:01:11.687Z",
+      "lastCheckedAt": "2026-11-09T21:01:22.362Z",
       "lastChangedAt": "2026-10-13T02:09:07.000Z",
       "extracted": {
         "facts": {
@@ -848,13 +837,6 @@
               "from": "14/10",
               "to": "04/11",
               "price": 790000
-            },
-            {
-              "distance": "10km",
-              "tier": "Late",
-              "from": "05/11",
-              "to": "17/11",
-              "price": 950000
             },
             {
               "distance": "21km",
@@ -1216,5 +1198,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T05:01:22.419Z",
-  "updatedAt": "2026-10-17T21:01:33.864Z"
+  "updatedAt": "2026-11-09T21:01:30.770Z"
 }
