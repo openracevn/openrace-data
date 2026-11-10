@@ -171,7 +171,7 @@
     },
     {
       "distance": "2km",
-      "tier": "1 người &amp; 1 thú cưng Standard",
+      "tier": "Standard",
       "kind": "regular",
       "audience": null,
       "price": 459000,
@@ -182,7 +182,7 @@
     },
     {
       "distance": "2km",
-      "tier": "2 người &amp; 1 thú cưng Standard",
+      "tier": "Standard",
       "kind": "regular",
       "audience": null,
       "price": 609000,
@@ -193,7 +193,7 @@
     },
     {
       "distance": "2km",
-      "tier": "3 người &amp; 1 thú cưng Standard",
+      "tier": "Standard",
       "kind": "regular",
       "audience": null,
       "price": 759000,
@@ -204,7 +204,7 @@
     },
     {
       "distance": "2km",
-      "tier": "4 người &amp; 1 thú cưng Standard",
+      "tier": "Standard",
       "kind": "regular",
       "audience": null,
       "price": 909000,
@@ -215,7 +215,7 @@
     },
     {
       "distance": "2km",
-      "tier": "5 người &amp; 1 thú cưng Standard",
+      "tier": "Standard",
       "kind": "regular",
       "audience": null,
       "price": 1059000,
@@ -556,71 +556,13 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/run-for-the-heart-2026",
-      "lastCheckedAt": "2026-10-15T20:28:50.550Z",
+      "lastCheckedAt": "2026-11-10T21:01:22.066Z",
       "lastChangedAt": "2026-10-15T20:28:50.550Z",
       "extracted": {
         "facts": {
           "name": "Giải chạy Run For The Heart - Chạy vì trái tim 2026",
           "venue": "Công viên Yên Sở, Km 1.5 đường Pháp Vân, phường Yên Sở, Tp.Hà Nội",
-          "organizer": "VuMedia | Ban tổ chức sự kiện",
-          "prices": [
-            {
-              "distance": "2km",
-              "tier": "Standard",
-              "from": "14/10",
-              "to": "10/11",
-              "price": 219000
-            },
-            {
-              "distance": "5km",
-              "tier": "Standard",
-              "from": "14/10",
-              "to": "10/11",
-              "price": 239000
-            },
-            {
-              "distance": "10km",
-              "tier": "Standard",
-              "from": "14/10",
-              "to": "10/11",
-              "price": 299000
-            },
-            {
-              "distance": "2km",
-              "tier": "1 người &amp; 1 thú cưng Standard",
-              "from": "14/10",
-              "to": "10/11",
-              "price": 459000
-            },
-            {
-              "distance": "2km",
-              "tier": "2 người &amp; 1 thú cưng Standard",
-              "from": "14/10",
-              "to": "10/11",
-              "price": 609000
-            },
-            {
-              "distance": "2km",
-              "tier": "3 người &amp; 1 thú cưng Standard",
-              "from": "14/10",
-              "to": "10/11",
-              "price": 759000
-            },
-            {
-              "distance": "2km",
-              "tier": "4 người &amp; 1 thú cưng Standard",
-              "from": "14/10",
-              "to": "10/11",
-              "price": 909000
-            },
-            {
-              "distance": "2km",
-              "tier": "5 người &amp; 1 thú cưng Standard",
-              "from": "14/10",
-              "to": "10/11",
-              "price": 1059000
-            }
-          ]
+          "organizer": "VuMedia"
         },
         "pages": [
           {
@@ -861,12 +803,12 @@
         ],
         "organizer": {
           "id": "vumedia",
-          "name": "VuMedia | Ban tổ chức sự kiện"
+          "name": "VuMedia"
         }
       }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-11-09T21:02:51.265Z"
+  "updatedAt": "2026-11-10T21:01:29.402Z"
 }

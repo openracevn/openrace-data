@@ -179,17 +179,6 @@
       "audience": null,
       "price": 450000,
       "from": "2026-10-10",
-      "to": "2026-11-20",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "5km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 600000,
-      "from": "2026-11-21",
       "to": "2026-11-26",
       "inferred": [],
       "site": "irace"
@@ -234,17 +223,6 @@
       "audience": null,
       "price": 500000,
       "from": "2026-10-10",
-      "to": "2026-11-20",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 700000,
-      "from": "2026-11-21",
       "to": "2026-11-26",
       "inferred": [],
       "site": "irace"
@@ -289,17 +267,6 @@
       "audience": null,
       "price": 650000,
       "from": "2026-10-10",
-      "to": "2026-11-20",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "21km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 800000,
-      "from": "2026-11-21",
       "to": "2026-11-26",
       "inferred": [],
       "site": "irace"
@@ -344,17 +311,6 @@
       "audience": null,
       "price": 700000,
       "from": "2026-10-10",
-      "to": "2026-11-20",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "42km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 900000,
-      "from": "2026-11-21",
       "to": "2026-11-26",
       "inferred": [],
       "site": "irace"
@@ -543,7 +499,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/nghe-an-legacy-marathon-2026",
-      "lastCheckedAt": "2026-10-21T21:01:31.635Z",
+      "lastCheckedAt": "2026-11-10T21:01:23.140Z",
       "lastChangedAt": "2026-10-15T20:29:19.795Z",
       "extracted": {
         "facts": {
@@ -576,15 +532,8 @@
               "distance": "5km",
               "tier": "Regular",
               "from": "10/10",
-              "to": "20/11",
-              "price": 450000
-            },
-            {
-              "distance": "5km",
-              "tier": "Late",
-              "from": "21/11",
               "to": "26/11",
-              "price": 600000
+              "price": 450000
             },
             {
               "distance": "10km",
@@ -611,15 +560,8 @@
               "distance": "10km",
               "tier": "Regular",
               "from": "10/10",
-              "to": "20/11",
-              "price": 500000
-            },
-            {
-              "distance": "10km",
-              "tier": "Late",
-              "from": "21/11",
               "to": "26/11",
-              "price": 700000
+              "price": 500000
             },
             {
               "distance": "21km",
@@ -646,15 +588,8 @@
               "distance": "21km",
               "tier": "Regular",
               "from": "10/10",
-              "to": "20/11",
-              "price": 650000
-            },
-            {
-              "distance": "21km",
-              "tier": "Late",
-              "from": "21/11",
               "to": "26/11",
-              "price": 800000
+              "price": 650000
             },
             {
               "distance": "42km",
@@ -681,15 +616,8 @@
               "distance": "42km",
               "tier": "Regular",
               "from": "10/10",
-              "to": "20/11",
-              "price": 700000
-            },
-            {
-              "distance": "42km",
-              "tier": "Late",
-              "from": "21/11",
               "to": "26/11",
-              "price": 900000
+              "price": 700000
             }
           ]
         },
@@ -1073,5 +1001,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-21T21:01:38.860Z"
+  "updatedAt": "2026-11-10T21:01:29.402Z"
 }
