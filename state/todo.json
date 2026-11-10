@@ -1,26 +1,14 @@
 {
   "discoveredAt": "2026-11-10T21:00:58.186Z",
-  "readAt": "2026-11-09T21:03:07.248Z",
+  "readAt": "2026-11-10T21:02:41.309Z",
   "entries": [
     {
       "url": "https://actiup.net/vi/event/ultra-trail-cao-bang-2026",
       "raceId": "dee28bd9-ba1a-433c-a8e3-8007067bc7a2",
       "reason": "weekly",
       "addedAt": "2026-11-08T21:00:57.352Z",
-      "failures": 2,
+      "failures": 3,
       "lastError": "HTTP 404 for https://api.actiup.net/v2/content/events/slug/ultra-trail-cao-bang-2026"
-    },
-    {
-      "url": "https://ticket.irace.vn/nghe-an-legacy-marathon-2026",
-      "raceId": "ba8ac318-f17e-49b5-aa90-95d6901dcbf6",
-      "reason": "changed",
-      "addedAt": "2026-11-10T21:01:23.140Z"
-    },
-    {
-      "url": "https://ticket.irace.vn/run-for-the-heart-2026",
-      "raceId": "d4dfbf65-41fc-4d85-af08-4a3b4f25d7ba",
-      "reason": "changed",
-      "addedAt": "2026-11-10T21:01:22.066Z"
     }
   ]
 }

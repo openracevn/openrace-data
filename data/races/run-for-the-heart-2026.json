@@ -14,7 +14,7 @@
   "coOrganizerIds": [
     "quy-nhip-tim-viet-nam"
   ],
-  "edition": 1,
+  "edition": null,
   "courses": [
     {
       "label": "2km",
@@ -136,94 +136,6 @@
     }
   },
   "prices": [
-    {
-      "distance": "2km",
-      "tier": "Standard",
-      "kind": "regular",
-      "audience": null,
-      "price": 219000,
-      "from": "2026-10-14",
-      "to": "2026-11-10",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "5km",
-      "tier": "Standard",
-      "kind": "regular",
-      "audience": null,
-      "price": 239000,
-      "from": "2026-10-14",
-      "to": "2026-11-10",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Standard",
-      "kind": "regular",
-      "audience": null,
-      "price": 299000,
-      "from": "2026-10-14",
-      "to": "2026-11-10",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "2km",
-      "tier": "Standard",
-      "kind": "regular",
-      "audience": null,
-      "price": 459000,
-      "from": "2026-10-14",
-      "to": "2026-11-10",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "2km",
-      "tier": "Standard",
-      "kind": "regular",
-      "audience": null,
-      "price": 609000,
-      "from": "2026-10-14",
-      "to": "2026-11-10",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "2km",
-      "tier": "Standard",
-      "kind": "regular",
-      "audience": null,
-      "price": 759000,
-      "from": "2026-10-14",
-      "to": "2026-11-10",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "2km",
-      "tier": "Standard",
-      "kind": "regular",
-      "audience": null,
-      "price": 909000,
-      "from": "2026-10-14",
-      "to": "2026-11-10",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "2km",
-      "tier": "Standard",
-      "kind": "regular",
-      "audience": null,
-      "price": 1059000,
-      "from": "2026-10-14",
-      "to": "2026-11-10",
-      "inferred": [],
-      "site": "irace"
-    },
     {
       "distance": "2km",
       "tier": "Giá vé tiêu chuẩn",
@@ -556,7 +468,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/run-for-the-heart-2026",
-      "lastCheckedAt": "2026-11-10T21:01:22.066Z",
+      "lastCheckedAt": "2026-11-10T21:02:21.608Z",
       "lastChangedAt": "2026-10-15T20:28:50.550Z",
       "extracted": {
         "facts": {
@@ -579,7 +491,12 @@
               "distances": [
                 "2km",
                 "5km",
-                "10km"
+                "10km",
+                "2km - 1 người & 1 thú cưng",
+                "2km - 2 người & 1 thú cưng",
+                "2km - 3 người & 1 thú cưng",
+                "2km - 4 người & 1 thú cưng",
+                "2km - 5 người & 1 thú cưng"
               ],
               "courses": [
                 {
@@ -596,86 +513,46 @@
                   "distance": "10km",
                   "type": "road_run",
                   "elevationGain": 0
+                },
+                {
+                  "distance": "2km - 1 người & 1 thú cưng",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "2km - 2 người & 1 thú cưng",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "2km - 3 người & 1 thú cưng",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "2km - 4 người & 1 thú cưng",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "2km - 5 người & 1 thú cưng",
+                  "type": "road_run",
+                  "elevationGain": 0
                 }
               ],
-              "edition": 1,
-              "editionQuote": "Giải chạy lần thứ 1",
+              "edition": 2026,
+              "editionQuote": "Giải chạy Run For The Heart - Chạy vì trái tim 2026",
               "mapsUrl": "Công viên Yên Sở, Km 1.5 đường Pháp Vân, phường Yên Sở, Tp.Hà Nội",
               "venue": "Công viên Yên Sở",
               "city": "Hà Nội",
               "organizer": "",
-              "currency": "VND",
+              "currency": "",
               "registrationStatus": "open",
               "participants": {
                 "count": 0,
                 "quote": ""
               },
-              "prices": [
-                {
-                  "distance": "2km",
-                  "tier": "Standard",
-                  "audience": "",
-                  "from": "14/10",
-                  "to": "10/11",
-                  "price": 219000
-                },
-                {
-                  "distance": "5km",
-                  "tier": "Standard",
-                  "audience": "",
-                  "from": "14/10",
-                  "to": "10/11",
-                  "price": 239000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Standard",
-                  "audience": "",
-                  "from": "14/10",
-                  "to": "10/11",
-                  "price": 299000
-                },
-                {
-                  "distance": "2km - 1 người & 1 thú cưng",
-                  "tier": "Standard",
-                  "audience": "",
-                  "from": "14/10",
-                  "to": "10/11",
-                  "price": 459000
-                },
-                {
-                  "distance": "2km - 2 người & 1 thú cưng",
-                  "tier": "Standard",
-                  "audience": "",
-                  "from": "14/10",
-                  "to": "10/11",
-                  "price": 609000
-                },
-                {
-                  "distance": "2km - 3 người & 1 thú cưng",
-                  "tier": "Standard",
-                  "audience": "",
-                  "from": "14/10",
-                  "to": "10/11",
-                  "price": 759000
-                },
-                {
-                  "distance": "2km - 4 người & 1 thú cưng",
-                  "tier": "Standard",
-                  "audience": "",
-                  "from": "14/10",
-                  "to": "10/11",
-                  "price": 909000
-                },
-                {
-                  "distance": "2km - 5 người & 1 thú cưng",
-                  "tier": "Standard",
-                  "audience": "",
-                  "from": "14/10",
-                  "to": "10/11",
-                  "price": 1059000
-                }
-              ]
+              "prices": []
             }
           }
         ],
@@ -810,5 +687,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-11-10T21:01:29.402Z"
+  "updatedAt": "2026-11-10T21:02:30.938Z"
 }

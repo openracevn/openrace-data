@@ -1149,7 +1149,7 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/ultra-trail-cao-bang-2026": {
-    "lastCheckedAt": "2026-11-09T21:02:06.009Z",
+    "lastCheckedAt": "2026-11-10T21:02:10.429Z",
     "status": "error",
     "reason": "HTTP 404 for https://api.actiup.net/v2/content/events/slug/ultra-trail-cao-bang-2026",
     "fingerprint": "f80aed2839f4b09df96d11bcb476015c"
@@ -1469,9 +1469,9 @@
     "fingerprint": "975d6f25398e9a30f3847a823eb71948"
   },
   "https://ticket.irace.vn/nghe-an-legacy-marathon-2026": {
-    "lastCheckedAt": "2026-11-10T21:01:23.140Z",
+    "lastCheckedAt": "2026-11-10T21:02:11.054Z",
     "status": "ok",
-    "fingerprint": "2ac7b6ff14db1c43606d24fef5922e6f"
+    "fingerprint": "8060c4e6531efd7747ad1cbe8db4daa1"
   },
   "https://ticket.irace.vn/nha-trang-night-run-sanest-sanvinest-bkh-2026": {
     "lastCheckedAt": "2026-11-10T21:01:23.758Z",
@@ -1489,9 +1489,9 @@
     "fingerprint": "62f7d7933f675e8428074b6ab86be41e"
   },
   "https://ticket.irace.vn/run-for-the-heart-2026": {
-    "lastCheckedAt": "2026-11-10T21:01:22.066Z",
+    "lastCheckedAt": "2026-11-10T21:02:21.608Z",
     "status": "ok",
-    "fingerprint": "412cf20fef63ed1978405effc1a83326"
+    "fingerprint": "1a5d1a5812b888d5411251a9700abf45"
   },
   "https://ticket.irace.vn/samsung-galaxy-run-2026": {
     "lastCheckedAt": "2026-11-08T21:06:47.324Z",
