@@ -8,7 +8,7 @@
   "date": "2026-11-22",
   "endDate": null,
   "mainDate": null,
-  "seriesId": null,
+  "seriesId": "vnexpress-marathon-galaxy-run-2",
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
   "edition": null,
@@ -173,7 +173,13 @@
   "links": [],
   "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "seriesId": {
+      "value": "vnexpress-marathon-galaxy-run-2",
+      "reason": "check.ts nulled seriesId in c7f68b2, orphaning the series and failing Main since 2026-11-09",
+      "at": "2026-11-10T09:54:32.600Z"
+    }
+  },
   "sources": [
     {
       "site": "vnexpress-marathon",
@@ -298,5 +304,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-08T21:02:32.590Z",
-  "updatedAt": "2026-11-08T21:08:02.763Z"
+  "updatedAt": "2026-11-10T09:54:32.600Z"
 }
