@@ -734,6 +734,60 @@ export async function syncToGitHub(target: GitHubTarget, inputs: readonly SyncIn
   return commitToGitHub(target, (store) => planSync(store, inputs, config, opts.now, undefined, opts.geoCache), { ...opts, config });
 }
 
+/** A race change left out of a commit because the tree failed validation with it. */
+export type HeldRace = { slug: string; urls: string[]; errors: string[] };
+
+/**
+ * planSync, validated before anything is committed (roadmap trust principle 6; plan 028).
+ * When the whole plan fails, each race's inputs are added one at a time on top of the
+ * ones that passed, and a race whose change breaks the tree is held back with its
+ * errors. Changes no input caused (earlier editions joining a series) come with every
+ * plan: if those alone fail, every race is held and nothing changes.
+ */
+export async function planValidSync(
+  store: RaceStore,
+  inputs: readonly SyncInput[],
+  config: SitesConfig,
+  validate: (files: Readonly<Record<string, string | null>>) => Promise<string[]>,
+  now?: string,
+  geoCache?: GeoCache,
+): Promise<SyncPlan & { held: HeldRace[] }> {
+  // Reads at one commit never change; the retries below read the same files again.
+  const cache = new Map<string, Promise<string | null>>();
+  const cached: RaceStore = { read: (path) => cache.get(path) ?? cache.set(path, store.read(path)).get(path)! };
+  const planOf = (subset: readonly SyncInput[]) => planSync(cached, subset, config, now, undefined, geoCache);
+
+  const full = await planOf(inputs);
+  if (full.changes.length === 0) return { ...full, held: [] };
+  const fullErrors = await validate(full.files);
+  if (fullErrors.length === 0) return { ...full, held: [] };
+
+  // Which inputs made each change: the source urls in its planned race file.
+  const index = IndexSchema.parse(JSON.parse(full.files[INDEX_PATH] ?? "[]"));
+  const urlsOf = (id: string): Set<string> => {
+    const entry = index.find((e) => e.id === id);
+    const text = entry && full.files[`${RACES_DIR}/${entry.file}`];
+    return new Set(text ? (JSON.parse(text) as Race).sources.map((s) => s.url) : []);
+  };
+  const groups = full.changes.map((c) => ({ slug: c.slug, urls: urlsOf(c.id) })).filter((g) => g.urls.size > 0);
+  const grouped = new Set(groups.flatMap((g) => [...g.urls]));
+  let accepted = inputs.filter((i) => !grouped.has(i.url));
+  const held: HeldRace[] = [];
+  for (const group of groups) {
+    const mine = inputs.filter((i) => group.urls.has(i.url));
+    const errors = await validate((await planOf([...accepted, ...mine])).files);
+    if (errors.length === 0) accepted = [...accepted, ...mine];
+    else held.push({ slug: group.slug, urls: mine.map((i) => i.url), errors });
+  }
+  const plan = await planOf(accepted);
+  const leftErrors = plan.changes.length > 0 ? await validate(plan.files) : [];
+  if (leftErrors.length > 0) {
+    const all = inputs.map((i) => i.url);
+    return { files: {}, changes: [], skipped: plan.skipped, held: [{ slug: "(every race in this run)", urls: all, errors: leftErrors }] };
+  }
+  return { ...plan, held };
+}
+
 /**
  * state/freshness.json for a commit: how fresh each race was when it landed, from
  * the index after the commit's race changes (plan.files) and state/checks.json

@@ -1,6 +1,6 @@
 # 028: Validate before a scheduled run commits
 
-Status: proposed, waiting for the user's go.
+Status: built 2026-11-10 (items 1, 2 and 4; item 3 dropped, see Outcome).
 
 ## Roadmap fit
 
@@ -27,3 +27,12 @@ Serves trust principle 6, **"Automated, not reviewed"**: validation does the rev
 ## Check
 
 `npm run typecheck && npm test && npm run validate`. Then run `npm run check -- --dry-run` against a copy of `c7f68b2^`'s data with the Nov 9 readings, and confirm it would have kept `seriesId` and committed nothing invalid.
+
+## Outcome (2026-11-10)
+
+- **Cause, more precisely:** the VnExpress Marathon recipe sends a series hint only when the site's menu names the race. On the Nov 8 re-read it didn't, so the hint was empty and `composeRace` set `seriesId: null`.
+- **Item 2** is built in `stabilize` (scripts/lib/diff.ts): when a re-read names no series, the race keeps the one it had. Edits (`planEdit`) don't stabilize, so an override can still take a race out of a series.
+- **Item 1** is `planValidSync` (scripts/sync.ts), used by `scripts/check.ts` for both commit and dry runs. A valid plan is validated once. Otherwise each race is added in turn and any race that breaks the tree is held back. A held page is recorded as an `error` check (so it gets read again) and goes back on the to-do list as a failure (the digest picks it up after `MAX_FAILURES`), and the run posts a 🚫 Discord alert.
+- **Item 3 is dropped:** with items 1 and 2, an orphaned series can't be committed by a scheduled run, and deleting series automatically would be the riskier choice.
+- **Checks:** typecheck, 174 tests and validate all pass. A replay of the real Nov 8 reading on `c7f68b2^`'s data keeps `seriesId` and still lands the other updates. Without the item 2 fix, the same replay holds the race back with the orphaned-series error instead of committing it.
+- agent-read, renormalize and sync-cli still commit through `syncToGitHub` without this check. They run from sessions where a person sees Main's result.

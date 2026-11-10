@@ -84,7 +84,8 @@ import {
   type SiteState,
 } from "./lib/state.ts";
 import { TODO_PATH, addTodo, discoverySites, failTodo, isMonday, isPast, parseTodo, readDoneToday, removeTodo, serializeTodo, weeklyPages, type Todo } from "./lib/todo.ts";
-import { formatCommitMessage, planSync, syncToGitHub, type RaceStore, type SyncInput, type SyncPlan } from "./sync.ts";
+import { commitToGitHub, formatCommitMessage, planValidSync, type HeldRace, type RaceStore, type SyncInput, type SyncPlan } from "./sync.ts";
+import { treeValidator } from "./lib/flush.ts";
 
 const args = process.argv.slice(2);
 const arg = (name: string) => {
@@ -398,6 +399,11 @@ const credits = reader.credits;
 const scope = raceArg ? `race ${raceArg}` : todoMode ? "the to-do list, Schedule 2" : siteArg ? `site ${siteArg}` : discover ? "discovery, Schedule 1" : "every site with a recipe";
 const context = `Checked by scripts/check.ts (${scope}${includePast ? ", with past races" : ""}).`;
 
+// Races held back because the tree failed validation with them (plan 028): set by the
+// plan, read by stateFiles, which runs after it in the same commit attempt.
+let held: HeldRace[] = [];
+const heldReason = (h: HeldRace) => `validate failed: ${h.errors.filter((e) => !/problem\(s\) found/.test(e)).slice(0, 3).join("; ")}`;
+
 async function stateFiles(store: RaceStore): Promise<Record<string, string>> {
   const out: Record<string, string> = {};
   if (filledGeo.size > 0) {
@@ -408,6 +414,8 @@ async function stateFiles(store: RaceStore): Promise<Record<string, string>> {
   if (runChecks.size > 0) {
     const merged = parseChecks(await store.read(CHECKS_PATH));
     for (const [url, check] of runChecks) merged[url] = check;
+    // Not "ok": the next run reads a held page again instead of trusting its fingerprint.
+    for (const h of held) for (const url of h.urls) merged[url] = { ...merged[url], lastCheckedAt: finishedAt, status: "error", reason: heldReason(h) };
     out[CHECKS_PATH] = serializeSorted(merged);
   }
   if (runSites.size > 0) {
@@ -416,9 +424,16 @@ async function stateFiles(store: RaceStore): Promise<Record<string, string>> {
     out[SITES_STATE_PATH] = serializeSorted(merged);
   }
   if (credits > 0) out[CREDITS_PATH] = serializeSorted(addCredits(parseCredits(await store.read(CREDITS_PATH)), credits, now));
-  if (todoOps.length > 0) {
+  if (todoOps.length > 0 || held.length > 0) {
     const merged = parseTodo(await store.read(TODO_PATH));
     for (const op of todoOps) op(merged);
+    // Back on the list as a failure: after MAX_FAILURES it goes to the digest for a person.
+    for (const h of held) {
+      for (const url of h.urls) {
+        addTodo(merged, { url, reason: "changed", addedAt: finishedAt });
+        failTodo(merged, url, heldReason(h));
+      }
+    }
     out[TODO_PATH] = serializeTodo(merged);
   }
   if (counts.paidReads + counts.cachedReads > 0) {
@@ -430,8 +445,13 @@ async function stateFiles(store: RaceStore): Promise<Record<string, string>> {
 
 let plan: SyncPlan;
 let commitSha: string | null = null;
+// Validated on the checkout (data/, config/, schema/) with the plan on top: CI checks out
+// the head this run commits on, so the base is the same tree.
+const validate = treeValidator(process.cwd());
 if (dryRun) {
-  plan = await planSync(local, inputs, config, finishedAt, undefined, geoCache);
+  const valid = await planValidSync(local, inputs, config, validate, finishedAt, geoCache);
+  held = valid.held;
+  plan = valid;
   // Keep what was paid for: the next run (dry or not, once committed) reads it from the cache.
   if (counts.paidReads > 0) writeFileSync(READS_PATH, (await stateFiles(local))[READS_PATH]!);
   if (previewDir) {
@@ -442,7 +462,11 @@ if (dryRun) {
     }
   }
 } else {
-  const result = await syncToGitHub(target!, inputs, config, {
+  const result = await commitToGitHub(target!, async (store) => {
+    const valid = await planValidSync(store, inputs, config, validate, finishedAt, geoCache);
+    held = valid.held;
+    return valid;
+  }, {
     now: finishedAt,
     context,
     bookkeepingMessage: `state: checked ${runChecks.size} page(s), to-do list ${todo.entries.length}, no race changes\n\n${context}`,
@@ -459,6 +483,10 @@ if (counts.deferred > 0 && !free && budget < CREDITS_PER_READ + credits) {
   alerts.push(`💳 Credit cap reached: ${counts.deferred} race(s) left on the to-do list for the next run (month ${month}: ${spentThisMonth + credits} of ${monthlyCap}${scheduled ? " scheduled" : ""}).`);
 }
 for (const s of plan.skipped) report.push(`· skipped ${s.url}: ${s.reason}`);
+for (const h of held) report.push(`🚫 held back ${h.slug} (${h.urls.length} page(s)): ${heldReason(h)}`);
+if (held.length > 0) {
+  alerts.push(`🚫 ${held.length} race(s) held back: the data failed validation with them, so they weren't committed and are back on the to-do list.\n${held.map((h) => `- ${h.slug}: ${heldReason(h)}`).join("\n")}`);
+}
 
 const summary = [
   `## Race check${dryRun ? " (dry run)" : ""}${discover ? " (Schedule 1: discovery, free)" : todoMode ? " (Schedule 2: the to-do list)" : factsOnly ? " (facts only: no reads)" : free ? " (free: cached reads only)" : ""}`,

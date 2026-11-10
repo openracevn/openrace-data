@@ -13,11 +13,17 @@ export function changedFields(before: Partial<CanonicalRace>, after: Partial<Can
  * Xuân Hương" vs "Quảng trường Lâm Viên, bên Hồ Xuân Hương"). Keep the previous
  * venue/city/organizer when the new one shares most of its words, so rewording alone
  * isn't a change.
+ *
+ * A series is the race's identity, not something a page states each time: a re-read
+ * that names none (VnExpress Marathon's menu dropped the race, 2026-11-08) keeps the
+ * series the race had, instead of orphaning it. Moving a race to another series still
+ * works (a new hint or inferred series wins); taking it out of one is an override.
  */
 export function stabilize(before: CanonicalRace, after: CanonicalRace): CanonicalRace {
   const keep = (a: string | null, b: string | null) => (sameText(a, b) ? a : b);
   return {
     ...after,
+    seriesId: after.seriesId ?? before.seriesId,
     location: { venue: keep(before.location.venue, after.location.venue), city: keep(before.location.city, after.location.city) },
     organizer: keep(before.organizer, after.organizer),
   };

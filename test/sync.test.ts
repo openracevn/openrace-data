@@ -8,7 +8,7 @@ import { fieldFlags, type StoredExtraction } from "../scripts/lib/reconcile.ts";
 import { INDEX_PATH, ORGANIZERS_PATH, RaceSchema, SERIES_PATH, racePath, type IndexEntry, type Race } from "../scripts/lib/schema.ts";
 import { parseSites, type SitesConfig } from "../scripts/lib/sites.ts";
 import { seriesName } from "../scripts/lib/series.ts";
-import { formatCommitMessage, freshnessFile, nameSimilarity, planEdit, planMerge, planRename, planSync, type RaceStore, type SyncInput } from "../scripts/sync.ts";
+import { formatCommitMessage, freshnessFile, nameSimilarity, planEdit, planMerge, planRename, planSync, planValidSync, type RaceStore, type SyncInput } from "../scripts/sync.ts";
 
 const config: SitesConfig = parseSites(`
 monthlyCredits: 900
@@ -470,5 +470,62 @@ describe("helpers", () => {
     const messages = splitMessages(["a".repeat(900), "b".repeat(900), "c".repeat(900)], 2000);
     assert.equal(messages.length, 2);
     assert.ok(messages.every((m) => m.length <= 2000));
+  });
+});
+
+// Plan 028: Schedule 2 orphaned a series (2026-11-08) and Main failed for two days.
+describe("series and validation before a commit", () => {
+  const { series: _dropped, ...noSeries } = official();
+
+  it("keeps a race's series when a re-read names none", async () => {
+    const store = memoryStore();
+    apply(store, (await plan(store, [officialInput()])).files);
+    const p = await plan(store, [officialInput({ ...noSeries, pages: [{ url: OFFICIAL, json: { ...officialPage, venue: "Công viên 30/4" } }] }, LATER)], LATER);
+    apply(store, p.files);
+    assert.equal(p.changes.length, 1, "the re-read still lands");
+    assert.ok(!p.changes[0]!.fields.includes("seriesId"));
+    assert.equal(readRace(store, "hcmc-marathon-2027").seriesId, "hcmc-marathon");
+  });
+
+  it("still lets an override take a race out of its series", async () => {
+    const store = memoryStore();
+    apply(store, (await plan(store, [officialInput()])).files);
+    apply(store, (await planEdit(store, "hcmc-marathon-2027", [{ kind: "set", field: "seriesId", value: null, reason: "test" }], config, LATER)).files);
+    assert.equal(readRace(store, "hcmc-marathon-2027").seriesId, null);
+  });
+
+  const other = (name: string, url: string): SyncInput => ({
+    url,
+    site: "actiup",
+    role: "seller",
+    checkedAt: "2026-09-24T10:00:00.000Z",
+    slugHint: new URL(url).pathname.split("/")[3],
+    extracted: { facts: { name, date: "2026-12-06", venue: "Hồ Tây", organizer: "X" }, pages: [{ url, json: { pageKind: "sport", types: ["road_run"], distances: ["21km"] } }] },
+  });
+  const BAD = "https://actiup.net/vi/event/broken-run-2026";
+  const flagsBroken = async (files: Readonly<Record<string, string | null>>) => (Object.values(files).some((c) => c?.includes("Broken Run")) ? ['data/races/x.json: broken', "1 problem(s) found."] : []);
+
+  it("holds back only the race that fails validation", async () => {
+    const store = memoryStore();
+    const inputs = [officialInput(), other("Broken Run 2026", BAD), other("Tây Hồ Half Marathon 2026", OTHER)];
+    const p = await planValidSync(store, inputs, config, flagsBroken, "2026-09-24T10:00:05.000Z");
+    assert.deepEqual(p.changes.map((c) => c.slug).sort(), ["hcmc-marathon-2027", "tay-ho-half-marathon-2026"]);
+    assert.equal(p.held.length, 1);
+    assert.deepEqual(p.held[0]!.urls, [BAD]);
+    assert.match(p.held[0]!.errors[0]!, /broken/);
+    assert.ok(!Object.values(p.files).some((c) => c?.includes("Broken Run")), "the held race leaves no trace");
+  });
+
+  it("commits nothing when every change fails, and validates nothing it doesn't need to", async () => {
+    let calls = 0;
+    const always = async () => (calls++, ["data/series.json: series \"x\" has no races"]);
+    const p = await planValidSync(memoryStore(), [officialInput()], config, always);
+    assert.equal(p.changes.length, 0);
+    assert.deepEqual(p.files, {});
+    assert.equal(p.held.length, 1);
+    calls = 0;
+    const ok = await planValidSync(memoryStore(), [officialInput()], config, async () => (calls++, []));
+    assert.equal(ok.changes.length, 1);
+    assert.equal(calls, 1, "a valid plan is validated once");
   });
 });
