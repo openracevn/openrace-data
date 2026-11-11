@@ -876,9 +876,9 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/run-for-the-heart-2026": {
-    "lastCheckedAt": "2026-11-11T21:01:20.407Z",
+    "lastCheckedAt": "2026-11-11T21:02:32.231Z",
     "status": "ok",
-    "fingerprint": "386b7ce47a47193ed1202ca1bf23a6bd"
+    "fingerprint": "f4191d40bc2da68e68178a97152c5bb8"
   },
   "https://actiup.net/vi/event/run-for-the-heart-chay-vi-trai-tim-2025": {
     "lastCheckedAt": "2026-09-23T18:31:30.830Z",
@@ -1149,7 +1149,7 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/ultra-trail-cao-bang-2026": {
-    "lastCheckedAt": "2026-11-10T21:02:10.429Z",
+    "lastCheckedAt": "2026-11-11T21:02:31.589Z",
     "status": "error",
     "reason": "HTTP 404 for https://api.actiup.net/v2/content/events/slug/ultra-trail-cao-bang-2026",
     "fingerprint": "f80aed2839f4b09df96d11bcb476015c"
@@ -1489,9 +1489,9 @@
     "fingerprint": "62f7d7933f675e8428074b6ab86be41e"
   },
   "https://ticket.irace.vn/run-for-the-heart-2026": {
-    "lastCheckedAt": "2026-11-11T21:01:35.239Z",
+    "lastCheckedAt": "2026-11-11T21:02:38.587Z",
     "status": "ok",
-    "fingerprint": "1a5d1a5812b888d5411251a9700abf45"
+    "fingerprint": "36800bf91652e24710e3229bdbff73d5"
   },
   "https://ticket.irace.vn/samsung-galaxy-run-2026": {
     "lastCheckedAt": "2026-11-08T21:06:47.324Z",

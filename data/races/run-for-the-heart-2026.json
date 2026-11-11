@@ -14,7 +14,7 @@
   "coOrganizerIds": [
     "quy-nhip-tim-viet-nam"
   ],
-  "edition": null,
+  "edition": 1,
   "courses": [
     {
       "label": "2km",
@@ -26,13 +26,13 @@
       "label": "5km",
       "meters": 5000,
       "type": "road_run",
-      "elevationGain": null
+      "elevationGain": 100
     },
     {
       "label": "10km",
       "meters": 10000,
       "type": "road_run",
-      "elevationGain": null
+      "elevationGain": 150
     }
   ],
   "location": {
@@ -226,39 +226,6 @@
     },
     {
       "distance": "2km",
-      "tier": "Giá vé tiêu chuẩn",
-      "kind": "regular",
-      "audience": null,
-      "price": 219000,
-      "from": "2026-10-14",
-      "to": "2026-11-10",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "5km",
-      "tier": "Giá vé tiêu chuẩn",
-      "kind": "regular",
-      "audience": null,
-      "price": 239000,
-      "from": "2026-10-14",
-      "to": "2026-11-10",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "10km",
-      "tier": "Giá vé tiêu chuẩn",
-      "kind": "regular",
-      "audience": null,
-      "price": 299000,
-      "from": "2026-10-14",
-      "to": "2026-11-10",
-      "inferred": [],
-      "site": "actiup"
-    },
-    {
-      "distance": "2km",
       "tier": "Late",
       "kind": "late",
       "audience": null,
@@ -391,7 +358,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/run-for-the-heart-2026",
-      "lastCheckedAt": "2026-11-11T21:01:20.407Z",
+      "lastCheckedAt": "2026-11-11T21:02:32.231Z",
       "lastChangedAt": "2026-09-23T18:30:43.016Z",
       "extracted": {
         "facts": {
@@ -411,35 +378,29 @@
               "types": [
                 "road_run"
               ],
-              "name": "Run For The Heart - Chạy Vì Trái Tim 2026",
+              "name": "Giải chạy Run For The Heart - Chạy vì trái tim 2026",
               "date": "2026-11-21",
               "endDate": "2026-11-22",
               "mainDate": "2026-11-21",
               "distances": [
                 "5km",
-                "10km",
-                "21km"
+                "10km"
               ],
               "courses": [
                 {
                   "distance": "5km",
                   "type": "road_run",
-                  "elevationGain": 0
+                  "elevationGain": 100
                 },
                 {
                   "distance": "10km",
                   "type": "road_run",
-                  "elevationGain": 0
-                },
-                {
-                  "distance": "21km",
-                  "type": "road_run",
-                  "elevationGain": 0
+                  "elevationGain": 150
                 }
               ],
               "edition": 2026,
-              "editionQuote": "Năm 2026",
-              "mapsUrl": "https://goo.gl/maps/1as7sB7Azzz8NLPLDxijX8h-Memw1aZi6",
+              "editionQuote": "Giải chạy Run For The Heart - Chạy vì trái tim 2026",
+              "mapsUrl": "https://drive.google.com/file/d/1as7sB7Azzz8NLPLDxijX8h-Memw1aZi6/view?usp=drive_link",
               "venue": "Hà Nội",
               "city": "Hà Nội",
               "organizer": "Gamuda Land Việt Nam",
@@ -464,44 +425,6 @@
           "name": "Gamuda Land Việt Nam phối hợp cùng Nhịp Tim Việt Nam"
         },
         "images": [
-          {
-            "url": "https://pix.actiup.net/2026/11/04/1793758677500934/Gia%CC%81-ve%CC%81-STD-(VN)---activeUP.png",
-            "json": {
-              "prices": [
-                {
-                  "distance": "2KM",
-                  "tier": "Giá vé tiêu chuẩn",
-                  "audience": "",
-                  "from": "14/10",
-                  "to": "10/11",
-                  "price": 219000
-                },
-                {
-                  "distance": "5KM",
-                  "tier": "Giá vé tiêu chuẩn",
-                  "audience": "",
-                  "from": "14/10",
-                  "to": "10/11",
-                  "price": 239000
-                },
-                {
-                  "distance": "10KM",
-                  "tier": "Giá vé tiêu chuẩn",
-                  "audience": "",
-                  "from": "14/10",
-                  "to": "10/11",
-                  "price": 299000
-                }
-              ],
-              "distances": [
-                "2KM",
-                "5KM",
-                "10KM"
-              ],
-              "date": "2026-10-14",
-              "currency": "VND"
-            }
-          },
           {
             "url": "https://pix.actiup.net/2026/11/04/1793758694590591/Gia%CC%81-ve%CC%81-LATE-(VN)---activeUP.png",
             "json": {
@@ -556,7 +479,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/run-for-the-heart-2026",
-      "lastCheckedAt": "2026-11-11T21:01:35.239Z",
+      "lastCheckedAt": "2026-11-11T21:02:38.587Z",
       "lastChangedAt": "2026-10-15T20:28:50.550Z",
       "extracted": {
         "facts": {
@@ -659,46 +582,86 @@
                   "distance": "10km",
                   "type": "road_run",
                   "elevationGain": 0
-                },
-                {
-                  "distance": "2km - 1 người & 1 thú cưng",
-                  "type": "road_run",
-                  "elevationGain": 0
-                },
-                {
-                  "distance": "2km - 2 người & 1 thú cưng",
-                  "type": "road_run",
-                  "elevationGain": 0
-                },
-                {
-                  "distance": "2km - 3 người & 1 thú cưng",
-                  "type": "road_run",
-                  "elevationGain": 0
-                },
-                {
-                  "distance": "2km - 4 người & 1 thú cưng",
-                  "type": "road_run",
-                  "elevationGain": 0
-                },
-                {
-                  "distance": "2km - 5 người & 1 thú cưng",
-                  "type": "road_run",
-                  "elevationGain": 0
                 }
               ],
-              "edition": 2026,
-              "editionQuote": "Giải chạy Run For The Heart - Chạy vì trái tim 2026",
-              "mapsUrl": "Công viên Yên Sở, Km 1.5 đường Pháp Vân, phường Yên Sở, Tp.Hà Nội",
-              "venue": "Công viên Yên Sở",
-              "city": "Hà Nội",
+              "edition": 1,
+              "editionQuote": "Giải chạy lần thứ 1",
+              "mapsUrl": "https://maps.google.com/?q=C%C3%B4ng+vi%C3%AAn+Y%C3%AAn+S%E1%BB%8D,+Km+1.5+%C4%91%C6%B0%E1%BB%9Dng+Ph%C3%A1p+V%C3%A2n,+ph%Cường+Y%C3%AAn+S%E1%BB%8D,+Tp.H%C3%A0+N%E1%BB%99i",
+              "venue": "Công viên Yên Sở, Km 1.5 đường Pháp Vân, phường Yên Sở",
+              "city": "Tp.Hà Nội",
               "organizer": "",
-              "currency": "",
+              "currency": "VND",
               "registrationStatus": "open",
               "participants": {
                 "count": 0,
-                "quote": ""
+                "quote": "Chưa có số liệu người tham gia."
               },
-              "prices": []
+              "prices": [
+                {
+                  "distance": "2km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "11/11",
+                  "to": "26/11",
+                  "price": 259000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "11/11",
+                  "to": "26/11",
+                  "price": 289000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "11/11",
+                  "to": "26/11",
+                  "price": 349000
+                },
+                {
+                  "distance": "2km - 1 người & 1 thú cưng",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "11/11",
+                  "to": "26/11",
+                  "price": 479000
+                },
+                {
+                  "distance": "2km - 2 người & 1 thú cưng",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "11/11",
+                  "to": "26/11",
+                  "price": 629000
+                },
+                {
+                  "distance": "2km - 3 người & 1 thú cưng",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "11/11",
+                  "to": "26/11",
+                  "price": 779000
+                },
+                {
+                  "distance": "2km - 4 người & 1 thú cưng",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "11/11",
+                  "to": "26/11",
+                  "price": 929000
+                },
+                {
+                  "distance": "2km - 5 người & 1 thú cưng",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "11/11",
+                  "to": "26/11",
+                  "price": 1079000
+                }
+              ]
             }
           }
         ],
@@ -833,5 +796,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-11-11T21:01:54.785Z"
+  "updatedAt": "2026-11-11T21:03:24.135Z"
 }

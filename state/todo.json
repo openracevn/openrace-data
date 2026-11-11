@@ -1,26 +1,14 @@
 {
   "discoveredAt": "2026-11-11T21:01:08.390Z",
-  "readAt": "2026-11-10T21:02:41.309Z",
+  "readAt": "2026-11-11T21:03:39.790Z",
   "entries": [
-    {
-      "url": "https://actiup.net/vi/event/run-for-the-heart-2026",
-      "raceId": "d4dfbf65-41fc-4d85-af08-4a3b4f25d7ba",
-      "reason": "changed",
-      "addedAt": "2026-11-11T21:01:20.407Z"
-    },
     {
       "url": "https://actiup.net/vi/event/ultra-trail-cao-bang-2026",
       "raceId": "dee28bd9-ba1a-433c-a8e3-8007067bc7a2",
       "reason": "weekly",
       "addedAt": "2026-11-08T21:00:57.352Z",
-      "failures": 3,
+      "failures": 4,
       "lastError": "HTTP 404 for https://api.actiup.net/v2/content/events/slug/ultra-trail-cao-bang-2026"
-    },
-    {
-      "url": "https://ticket.irace.vn/run-for-the-heart-2026",
-      "raceId": "d4dfbf65-41fc-4d85-af08-4a3b4f25d7ba",
-      "reason": "changed",
-      "addedAt": "2026-11-11T21:01:35.239Z"
     }
   ]
 }
