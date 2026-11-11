@@ -138,6 +138,94 @@
   "prices": [
     {
       "distance": "2km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 259000,
+      "from": "2026-11-11",
+      "to": "2026-11-26",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 289000,
+      "from": "2026-11-11",
+      "to": "2026-11-26",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 349000,
+      "from": "2026-11-11",
+      "to": "2026-11-26",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "2km",
+      "tier": "1 người &amp; 1 thú cưng Late",
+      "kind": "late",
+      "audience": null,
+      "price": 479000,
+      "from": "2026-11-11",
+      "to": "2026-11-26",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "2km",
+      "tier": "2 người &amp; 1 thú cưng Late",
+      "kind": "late",
+      "audience": null,
+      "price": 629000,
+      "from": "2026-11-11",
+      "to": "2026-11-26",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "2km",
+      "tier": "3 người &amp; 1 thú cưng Late",
+      "kind": "late",
+      "audience": null,
+      "price": 779000,
+      "from": "2026-11-11",
+      "to": "2026-11-26",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "2km",
+      "tier": "4 người &amp; 1 thú cưng Late",
+      "kind": "late",
+      "audience": null,
+      "price": 929000,
+      "from": "2026-11-11",
+      "to": "2026-11-26",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "2km",
+      "tier": "5 người &amp; 1 thú cưng Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1079000,
+      "from": "2026-11-11",
+      "to": "2026-11-26",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "2km",
       "tier": "Giá vé tiêu chuẩn",
       "kind": "regular",
       "audience": null,
@@ -303,7 +391,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/run-for-the-heart-2026",
-      "lastCheckedAt": "2026-11-09T21:02:24.672Z",
+      "lastCheckedAt": "2026-11-11T21:01:20.407Z",
       "lastChangedAt": "2026-09-23T18:30:43.016Z",
       "extracted": {
         "facts": {
@@ -468,13 +556,71 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/run-for-the-heart-2026",
-      "lastCheckedAt": "2026-11-10T21:02:21.608Z",
+      "lastCheckedAt": "2026-11-11T21:01:35.239Z",
       "lastChangedAt": "2026-10-15T20:28:50.550Z",
       "extracted": {
         "facts": {
           "name": "Giải chạy Run For The Heart - Chạy vì trái tim 2026",
           "venue": "Công viên Yên Sở, Km 1.5 đường Pháp Vân, phường Yên Sở, Tp.Hà Nội",
-          "organizer": "VuMedia"
+          "organizer": "VuMedia",
+          "prices": [
+            {
+              "distance": "2km",
+              "tier": "Late",
+              "from": "11/11",
+              "to": "26/11",
+              "price": 259000
+            },
+            {
+              "distance": "5km",
+              "tier": "Late",
+              "from": "11/11",
+              "to": "26/11",
+              "price": 289000
+            },
+            {
+              "distance": "10km",
+              "tier": "Late",
+              "from": "11/11",
+              "to": "26/11",
+              "price": 349000
+            },
+            {
+              "distance": "2km",
+              "tier": "1 người &amp; 1 thú cưng Late",
+              "from": "11/11",
+              "to": "26/11",
+              "price": 479000
+            },
+            {
+              "distance": "2km",
+              "tier": "2 người &amp; 1 thú cưng Late",
+              "from": "11/11",
+              "to": "26/11",
+              "price": 629000
+            },
+            {
+              "distance": "2km",
+              "tier": "3 người &amp; 1 thú cưng Late",
+              "from": "11/11",
+              "to": "26/11",
+              "price": 779000
+            },
+            {
+              "distance": "2km",
+              "tier": "4 người &amp; 1 thú cưng Late",
+              "from": "11/11",
+              "to": "26/11",
+              "price": 929000
+            },
+            {
+              "distance": "2km",
+              "tier": "5 người &amp; 1 thú cưng Late",
+              "from": "11/11",
+              "to": "26/11",
+              "price": 1079000
+            }
+          ]
         },
         "pages": [
           {
@@ -687,5 +833,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-11-10T21:02:30.938Z"
+  "updatedAt": "2026-11-11T21:01:54.785Z"
 }
