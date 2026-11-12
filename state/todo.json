@@ -1,32 +1,14 @@
 {
   "discoveredAt": "2026-11-12T21:00:56.160Z",
-  "readAt": "2026-11-11T21:03:39.790Z",
+  "readAt": "2026-11-12T21:03:09.594Z",
   "entries": [
-    {
-      "url": "https://actiup.net/vi/event/dalat-ultra-trail-2027",
-      "raceId": "f0d29981-7aea-4daa-af25-2c2576b736c4",
-      "reason": "changed",
-      "addedAt": "2026-11-12T21:01:17.032Z"
-    },
     {
       "url": "https://actiup.net/vi/event/ultra-trail-cao-bang-2026",
       "raceId": "dee28bd9-ba1a-433c-a8e3-8007067bc7a2",
       "reason": "weekly",
       "addedAt": "2026-11-08T21:00:57.352Z",
-      "failures": 4,
+      "failures": 5,
       "lastError": "HTTP 404 for https://api.actiup.net/v2/content/events/slug/ultra-trail-cao-bang-2026"
-    },
-    {
-      "url": "https://ticket.irace.vn/aqua-warriors-halong-bay-2027",
-      "raceId": "09f9ff76-e3ff-470c-891f-c6ace918b629",
-      "reason": "changed",
-      "addedAt": "2026-11-12T21:01:39.118Z"
-    },
-    {
-      "url": "https://ticket.irace.vn/tra-co-half-marathon-sai-buoc-noi-dia-dau-to-quoc",
-      "raceId": "c8dcbc2e-cc06-4b3f-be26-d5d0dbad501a",
-      "reason": "changed",
-      "addedAt": "2026-11-12T21:01:28.621Z"
     }
   ]
 }

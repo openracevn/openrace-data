@@ -17,19 +17,19 @@
       "label": "5km",
       "meters": 5000,
       "type": "road_run",
-      "elevationGain": null
+      "elevationGain": 499
     },
     {
       "label": "10km",
       "meters": 10000,
       "type": "road_run",
-      "elevationGain": null
+      "elevationGain": 599
     },
     {
       "label": "21km",
       "meters": 21097,
       "type": "road_run",
-      "elevationGain": null
+      "elevationGain": 699
     }
   ],
   "location": {
@@ -330,7 +330,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/tra-co-half-marathon-sai-buoc-noi-dia-dau-to-quoc",
-      "lastCheckedAt": "2026-11-01T21:47:48.146Z",
+      "lastCheckedAt": "2026-11-12T21:02:18.487Z",
       "lastChangedAt": "2026-11-01T21:47:48.146Z",
       "extracted": {
         "facts": {
@@ -445,22 +445,22 @@
                 {
                   "distance": "5km",
                   "type": "road_run",
-                  "elevationGain": 0
+                  "elevationGain": 499
                 },
                 {
                   "distance": "10km",
                   "type": "road_run",
-                  "elevationGain": 0
+                  "elevationGain": 599
                 },
                 {
                   "distance": "21km",
                   "type": "road_run",
-                  "elevationGain": 0
+                  "elevationGain": 699
                 }
               ],
               "edition": 1,
               "editionQuote": "Giải chạy lần thứ 1",
-              "mapsUrl": "Sa Vĩ - Trà Cổ - Phường Móng Cái 1, Quảng Ninh",
+              "mapsUrl": "https://www.google.com/maps/place/Sa+Vĩ+-+Trà+Cổ+-+Phường+Móng+Cái+1,+Quảng+Ninh",
               "venue": "Sa Vĩ - Trà Cổ - Phường Móng Cái 1",
               "city": "Quảng Ninh",
               "organizer": "",
@@ -698,5 +698,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-01T21:51:13.044Z",
-  "updatedAt": "2026-11-01T21:51:13.044Z"
+  "updatedAt": "2026-11-12T21:02:58.333Z"
 }

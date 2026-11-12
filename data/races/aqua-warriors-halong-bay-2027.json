@@ -16,7 +16,7 @@
   "courses": [],
   "location": {
     "venue": "Hạ Long, Quảng Ninh, Việt Nam",
-    "city": "Hạ Long"
+    "city": "Quảng Ninh"
   },
   "geo": {
     "lat": 20.9454443,
@@ -53,13 +53,13 @@
         "near": false
       },
       "nha-trang": {
-        "km": 1359.3,
+        "km": 1360.5,
         "minutes": 1063,
         "method": "road",
         "near": false
       },
       "da-lat": {
-        "km": 1486.7,
+        "km": 1488,
         "minutes": 1181,
         "method": "road",
         "near": false
@@ -89,7 +89,7 @@
         "near": false
       },
       "quy-nhon": {
-        "km": 1167.3,
+        "km": 1168.5,
         "minutes": 903,
         "method": "road",
         "near": false
@@ -117,7 +117,7 @@
   "prices": [
     {
       "distance": null,
-      "tier": "STANDARD DUATHLON · SUPER EARLY BIRD",
+      "tier": "Standard Duathlon · SUPER EARLY BIRD",
       "kind": "super_early",
       "audience": null,
       "price": 2589000,
@@ -128,7 +128,7 @@
     },
     {
       "distance": null,
-      "tier": "(RELAY) STANDARD DUATHLON · SUPER EARLY BIRD",
+      "tier": "(Relay) Standard Duathlon · SUPER EARLY BIRD",
       "kind": "group",
       "audience": null,
       "price": 3366000,
@@ -139,7 +139,7 @@
     },
     {
       "distance": null,
-      "tier": "T103 ENDURO TRIATHLON SOLO · SUPER EARLY BIRD",
+      "tier": "T103 Enduro Triathlon Solo · SUPER EARLY BIRD",
       "kind": "super_early",
       "audience": null,
       "price": 3739000,
@@ -150,7 +150,7 @@
     },
     {
       "distance": null,
-      "tier": "[RELAY] T103 ENDURO TRIATHLON · SUPER EARLY BIRD",
+      "tier": "[Relay] T103 Enduro Triathlon · SUPER EARLY BIRD",
       "kind": "group",
       "audience": null,
       "price": 4869000,
@@ -161,7 +161,7 @@
     },
     {
       "distance": null,
-      "tier": "OLYMPIC TRIATHLON SOLO · SUPER EARLY BIRD",
+      "tier": "Olympic Triathlon Solo · SUPER EARLY BIRD",
       "kind": "super_early",
       "audience": null,
       "price": 3189000,
@@ -172,7 +172,7 @@
     },
     {
       "distance": null,
-      "tier": "[RELAY] OLYMPIC TRIATHLON · SUPER EARLY BIRD",
+      "tier": "[Relay] Olympic Triathlon · SUPER EARLY BIRD",
       "kind": "group",
       "audience": null,
       "price": 4149000,
@@ -183,7 +183,7 @@
     },
     {
       "distance": null,
-      "tier": "FULL AQUA WARRIORS SOLO · SUPER EARLY BIRD",
+      "tier": "Full Aqua Warriors Solo · SUPER EARLY BIRD",
       "kind": "super_early",
       "audience": null,
       "price": 1619000,
@@ -194,7 +194,7 @@
     },
     {
       "distance": null,
-      "tier": "[RELAY] FULL AQUA WARRIORS · SUPER EARLY BIRD",
+      "tier": "[Relay] Full Aqua Warriors · SUPER EARLY BIRD",
       "kind": "group",
       "audience": null,
       "price": 2449000,
@@ -205,7 +205,7 @@
     },
     {
       "distance": null,
-      "tier": "OLYMPIC AQUA WARRIORS · SUPER EARLY BIRD",
+      "tier": "Olympic Aqua Warriors · SUPER EARLY BIRD",
       "kind": "super_early",
       "audience": null,
       "price": 1219000,
@@ -216,7 +216,7 @@
     },
     {
       "distance": null,
-      "tier": "SPRINT AQUA WARRIORS · SUPER EARLY BIRD",
+      "tier": "Sprint Aqua Warriors · SUPER EARLY BIRD",
       "kind": "super_early",
       "audience": null,
       "price": 1019000,
@@ -227,7 +227,7 @@
     },
     {
       "distance": null,
-      "tier": "JUNIOR AQUA WARRIORS · SUPER EARLY BIRD",
+      "tier": "Junior Aqua Warriors · SUPER EARLY BIRD",
       "kind": "super_early",
       "audience": null,
       "price": 659000,
@@ -238,7 +238,7 @@
     },
     {
       "distance": null,
-      "tier": "KIDS AQUA WARRIORS · SUPER EARLY BIRD",
+      "tier": "Kids Aqua Warriors · SUPER EARLY BIRD",
       "kind": "super_early",
       "audience": null,
       "price": 529000,
@@ -1348,7 +1348,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/aqua-warriors-halong-bay-2027",
-      "lastCheckedAt": "2026-11-08T21:07:27.317Z",
+      "lastCheckedAt": "2026-11-12T21:02:36.385Z",
       "lastChangedAt": "2026-10-15T20:27:06.087Z",
       "extracted": {
         "facts": {
@@ -1370,72 +1370,96 @@
               "endDate": "2027-04-04",
               "mainDate": "2027-04-03",
               "distances": [
-                "STANDARD DUATHLON",
-                "T103 ENDURO TRIATHLON SOLO",
-                "OLYMPIC TRIATHLON SOLO",
-                "FULL AQUA WARRIORS SOLO",
-                "OLYMPIC AQUA WARRIORS",
-                "SPRINT AQUA WARRIORS",
-                "JUNIOR AQUA WARRIORS",
-                "KIDS AQUA WARRIORS"
+                "Standard Duathlon",
+                "(Relay) Standard Duathlon",
+                "T103 Enduro Triathlon Solo",
+                "[Relay] T103 Enduro Triathlon",
+                "Olympic Triathlon Solo",
+                "[Relay] Olympic Triathlon",
+                "Full Aqua Warriors Solo",
+                "[Relay] Full Aqua Warriors",
+                "Olympic Aqua Warriors",
+                "Sprint Aqua Warriors",
+                "Junior Aqua Warriors",
+                "Kids Aqua Warriors"
               ],
               "courses": [
                 {
-                  "distance": "STANDARD DUATHLON",
+                  "distance": "Standard Duathlon",
                   "type": "duathlon",
                   "elevationGain": 0
                 },
                 {
-                  "distance": "T103 ENDURO TRIATHLON SOLO",
+                  "distance": "(Relay) Standard Duathlon",
+                  "type": "duathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "T103 Enduro Triathlon Solo",
                   "type": "triathlon",
                   "elevationGain": 0
                 },
                 {
-                  "distance": "OLYMPIC TRIATHLON SOLO",
+                  "distance": "[Relay] T103 Enduro Triathlon",
                   "type": "triathlon",
                   "elevationGain": 0
                 },
                 {
-                  "distance": "FULL AQUA WARRIORS SOLO",
+                  "distance": "Olympic Triathlon Solo",
                   "type": "triathlon",
                   "elevationGain": 0
                 },
                 {
-                  "distance": "OLYMPIC AQUA WARRIORS",
+                  "distance": "[Relay] Olympic Triathlon",
                   "type": "triathlon",
                   "elevationGain": 0
                 },
                 {
-                  "distance": "SPRINT AQUA WARRIORS",
-                  "type": "triathlon",
+                  "distance": "Full Aqua Warriors Solo",
+                  "type": "other",
                   "elevationGain": 0
                 },
                 {
-                  "distance": "JUNIOR AQUA WARRIORS",
-                  "type": "triathlon",
+                  "distance": "[Relay] Full Aqua Warriors",
+                  "type": "other",
                   "elevationGain": 0
                 },
                 {
-                  "distance": "KIDS AQUA WARRIORS",
-                  "type": "triathlon",
+                  "distance": "Olympic Aqua Warriors",
+                  "type": "other",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "Sprint Aqua Warriors",
+                  "type": "other",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "Junior Aqua Warriors",
+                  "type": "other",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "Kids Aqua Warriors",
+                  "type": "other",
                   "elevationGain": 0
                 }
               ],
               "edition": 1,
-              "editionQuote": "mùa 1",
+              "editionQuote": "Mùa 1",
               "mapsUrl": "",
-              "venue": "Hạ Long, Quảng Ninh",
-              "city": "Hạ Long",
+              "venue": "Hạ Long",
+              "city": "Quảng Ninh",
               "organizer": "",
               "currency": "VND",
               "registrationStatus": "open",
               "participants": {
                 "count": 0,
-                "quote": "đang mở đăng ký"
+                "quote": ""
               },
               "prices": [
                 {
-                  "distance": "STANDARD DUATHLON",
+                  "distance": "Standard Duathlon",
                   "tier": "SUPER EARLY BIRD",
                   "audience": "",
                   "from": "29/09",
@@ -1443,7 +1467,7 @@
                   "price": 2589000
                 },
                 {
-                  "distance": "(RELAY) STANDARD DUATHLON",
+                  "distance": "(Relay) Standard Duathlon",
                   "tier": "SUPER EARLY BIRD",
                   "audience": "",
                   "from": "29/09",
@@ -1451,7 +1475,7 @@
                   "price": 3366000
                 },
                 {
-                  "distance": "T103 ENDURO TRIATHLON SOLO",
+                  "distance": "T103 Enduro Triathlon Solo",
                   "tier": "SUPER EARLY BIRD",
                   "audience": "",
                   "from": "29/09",
@@ -1459,7 +1483,7 @@
                   "price": 3739000
                 },
                 {
-                  "distance": "[RELAY] T103 ENDURO TRIATHLON",
+                  "distance": "[Relay] T103 Enduro Triathlon",
                   "tier": "SUPER EARLY BIRD",
                   "audience": "",
                   "from": "29/09",
@@ -1467,7 +1491,7 @@
                   "price": 4869000
                 },
                 {
-                  "distance": "OLYMPIC TRIATHLON SOLO",
+                  "distance": "Olympic Triathlon Solo",
                   "tier": "SUPER EARLY BIRD",
                   "audience": "",
                   "from": "29/09",
@@ -1475,7 +1499,7 @@
                   "price": 3189000
                 },
                 {
-                  "distance": "[RELAY] OLYMPIC TRIATHLON",
+                  "distance": "[Relay] Olympic Triathlon",
                   "tier": "SUPER EARLY BIRD",
                   "audience": "",
                   "from": "29/09",
@@ -1483,7 +1507,7 @@
                   "price": 4149000
                 },
                 {
-                  "distance": "FULL AQUA WARRIORS SOLO",
+                  "distance": "Full Aqua Warriors Solo",
                   "tier": "SUPER EARLY BIRD",
                   "audience": "",
                   "from": "29/09",
@@ -1491,7 +1515,7 @@
                   "price": 1619000
                 },
                 {
-                  "distance": "[RELAY] FULL AQUA WARRIORS",
+                  "distance": "[Relay] Full Aqua Warriors",
                   "tier": "SUPER EARLY BIRD",
                   "audience": "",
                   "from": "29/09",
@@ -1499,7 +1523,7 @@
                   "price": 2449000
                 },
                 {
-                  "distance": "OLYMPIC AQUA WARRIORS",
+                  "distance": "Olympic Aqua Warriors",
                   "tier": "SUPER EARLY BIRD",
                   "audience": "",
                   "from": "29/09",
@@ -1507,7 +1531,7 @@
                   "price": 1219000
                 },
                 {
-                  "distance": "SPRINT AQUA WARRIORS",
+                  "distance": "Sprint Aqua Warriors",
                   "tier": "SUPER EARLY BIRD",
                   "audience": "",
                   "from": "29/09",
@@ -1515,7 +1539,7 @@
                   "price": 1019000
                 },
                 {
-                  "distance": "JUNIOR AQUA WARRIORS",
+                  "distance": "Junior Aqua Warriors",
                   "tier": "SUPER EARLY BIRD",
                   "audience": "",
                   "from": "29/09",
@@ -1523,7 +1547,7 @@
                   "price": 659000
                 },
                 {
-                  "distance": "KIDS AQUA WARRIORS",
+                  "distance": "Kids Aqua Warriors",
                   "tier": "SUPER EARLY BIRD",
                   "audience": "",
                   "from": "29/09",
@@ -1665,5 +1689,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-10-12T17:48:31.011Z",
-  "updatedAt": "2026-11-08T21:08:02.763Z"
+  "updatedAt": "2026-11-12T21:02:58.333Z"
 }
