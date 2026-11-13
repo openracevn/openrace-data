@@ -136,6 +136,72 @@
   },
   "prices": [
     {
+      "distance": null,
+      "tier": "Kid · Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 229000,
+      "from": "2026-03-12",
+      "to": "2026-04-24",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "Kid · Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 279000,
+      "from": "2026-04-25",
+      "to": "2026-07-23",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "Kid · Standard",
+      "kind": "regular",
+      "audience": null,
+      "price": 349000,
+      "from": "2026-07-24",
+      "to": "2026-09-22",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "Kid · Late",
+      "kind": "late",
+      "audience": null,
+      "price": 419000,
+      "from": "2026-09-23",
+      "to": "2026-11-02",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "Kid · Super Late",
+      "kind": "late",
+      "audience": null,
+      "price": 489000,
+      "from": "2026-11-03",
+      "to": "2026-11-13",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": null,
+      "tier": "Kid · Super Super Late",
+      "kind": "late",
+      "audience": null,
+      "price": 589000,
+      "from": "2026-11-15",
+      "to": "2026-11-21",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
       "distance": "5km",
       "tier": "Super Early Bird",
       "kind": "super_early",
@@ -192,22 +258,11 @@
     },
     {
       "distance": "5km",
-      "tier": "Flash Sale 11/11",
-      "kind": "other",
-      "audience": null,
-      "price": 360000,
-      "from": "2026-11-09",
-      "to": "2026-11-13",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "5km",
       "tier": "Super Super Late",
       "kind": "late",
       "audience": null,
       "price": 799000,
-      "from": "2026-11-14",
+      "from": "2026-11-15",
       "to": "2026-11-21",
       "inferred": [],
       "site": "irace"
@@ -269,22 +324,11 @@
     },
     {
       "distance": "10km",
-      "tier": "Flash Sale 11/11",
-      "kind": "other",
-      "audience": null,
-      "price": 480000,
-      "from": "2026-11-09",
-      "to": "2026-11-13",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
       "tier": "Super Super Late",
       "kind": "late",
       "audience": null,
       "price": 1029000,
-      "from": "2026-11-14",
+      "from": "2026-11-15",
       "to": "2026-11-21",
       "inferred": [],
       "site": "irace"
@@ -346,22 +390,11 @@
     },
     {
       "distance": "21km",
-      "tier": "Flash Sale 11/11",
-      "kind": "other",
-      "audience": null,
-      "price": 590000,
-      "from": "2026-11-09",
-      "to": "2026-11-13",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "21km",
       "tier": "Super Super Late",
       "kind": "late",
       "audience": null,
       "price": 1279000,
-      "from": "2026-11-14",
+      "from": "2026-11-15",
       "to": "2026-11-21",
       "inferred": [],
       "site": "irace"
@@ -423,22 +456,11 @@
     },
     {
       "distance": "42km",
-      "tier": "Flash Sale 11/11",
-      "kind": "other",
-      "audience": null,
-      "price": 710000,
-      "from": "2026-11-09",
-      "to": "2026-11-13",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "42km",
       "tier": "Super Super Late",
       "kind": "late",
       "audience": null,
       "price": 1539000,
-      "from": "2026-11-14",
+      "from": "2026-11-15",
       "to": "2026-11-21",
       "inferred": [],
       "site": "irace"
@@ -1312,7 +1334,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/yen-tu-heritage-marathon-2026",
-      "lastCheckedAt": "2026-11-08T21:06:50.857Z",
+      "lastCheckedAt": "2026-11-13T21:02:14.914Z",
       "lastChangedAt": "2026-10-15T20:29:37.214Z",
       "extracted": {
         "facts": {
@@ -1333,12 +1355,18 @@
               "endDate": "2026-11-29",
               "mainDate": "2026-11-28",
               "distances": [
+                "Kid",
                 "5km",
                 "10km",
                 "21km",
                 "42km"
               ],
               "courses": [
+                {
+                  "distance": "Kid",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
                 {
                   "distance": "5km",
                   "type": "road_run",
@@ -1363,7 +1391,7 @@
               "edition": 1,
               "editionQuote": "Giải chạy Yên Tử Heritage Marathon 2026",
               "mapsUrl": "",
-              "venue": "Yên Tử",
+              "venue": "Yên Tử, Quảng Ninh",
               "city": "Quảng Ninh",
               "organizer": "",
               "currency": "VND",
@@ -1373,6 +1401,54 @@
                 "quote": ""
               },
               "prices": [
+                {
+                  "distance": "Kid",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "12/03",
+                  "to": "24/04",
+                  "price": 229000
+                },
+                {
+                  "distance": "Kid",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "25/04",
+                  "to": "23/07",
+                  "price": 279000
+                },
+                {
+                  "distance": "Kid",
+                  "tier": "Standard",
+                  "audience": "",
+                  "from": "24/07",
+                  "to": "22/09",
+                  "price": 349000
+                },
+                {
+                  "distance": "Kid",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "23/09",
+                  "to": "02/11",
+                  "price": 419000
+                },
+                {
+                  "distance": "Kid",
+                  "tier": "Super Late",
+                  "audience": "",
+                  "from": "03/11",
+                  "to": "13/11",
+                  "price": 489000
+                },
+                {
+                  "distance": "Kid",
+                  "tier": "Super Super Late",
+                  "audience": "",
+                  "from": "15/11",
+                  "to": "21/11",
+                  "price": 589000
+                },
                 {
                   "distance": "5km",
                   "tier": "Super Early Bird",
@@ -1415,17 +1491,9 @@
                 },
                 {
                   "distance": "5km",
-                  "tier": "Flash Sale 11/11",
-                  "audience": "",
-                  "from": "09/11",
-                  "to": "13/11",
-                  "price": 360000
-                },
-                {
-                  "distance": "5km",
                   "tier": "Super Super Late",
                   "audience": "",
-                  "from": "14/11",
+                  "from": "15/11",
                   "to": "21/11",
                   "price": 799000
                 },
@@ -1471,17 +1539,9 @@
                 },
                 {
                   "distance": "10km",
-                  "tier": "Flash Sale 11/11",
-                  "audience": "",
-                  "from": "09/11",
-                  "to": "13/11",
-                  "price": 480000
-                },
-                {
-                  "distance": "10km",
                   "tier": "Super Super Late",
                   "audience": "",
-                  "from": "14/11",
+                  "from": "15/11",
                   "to": "21/11",
                   "price": 1029000
                 },
@@ -1527,17 +1587,9 @@
                 },
                 {
                   "distance": "21km",
-                  "tier": "Flash Sale 11/11",
-                  "audience": "",
-                  "from": "09/11",
-                  "to": "13/11",
-                  "price": 590000
-                },
-                {
-                  "distance": "21km",
                   "tier": "Super Super Late",
                   "audience": "",
-                  "from": "14/11",
+                  "from": "15/11",
                   "to": "21/11",
                   "price": 1279000
                 },
@@ -1583,17 +1635,9 @@
                 },
                 {
                   "distance": "42km",
-                  "tier": "Flash Sale 11/11",
-                  "audience": "",
-                  "from": "09/11",
-                  "to": "13/11",
-                  "price": 710000
-                },
-                {
-                  "distance": "42km",
                   "tier": "Super Super Late",
                   "audience": "",
-                  "from": "14/11",
+                  "from": "15/11",
                   "to": "21/11",
                   "price": 1539000
                 }
@@ -1728,5 +1772,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-11-09T21:02:51.265Z"
+  "updatedAt": "2026-11-13T21:03:13.035Z"
 }
