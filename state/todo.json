@@ -1,5 +1,5 @@
 {
-  "discoveredAt": "2026-11-12T21:00:56.160Z",
+  "discoveredAt": "2026-11-13T21:01:00.225Z",
   "readAt": "2026-11-12T21:03:09.594Z",
   "entries": [
     {
@@ -9,6 +9,18 @@
       "addedAt": "2026-11-08T21:00:57.352Z",
       "failures": 5,
       "lastError": "HTTP 404 for https://api.actiup.net/v2/content/events/slug/ultra-trail-cao-bang-2026"
+    },
+    {
+      "url": "https://ticket.irace.vn/dalat-ultra-trail-2027",
+      "raceId": "f0d29981-7aea-4daa-af25-2c2576b736c4",
+      "reason": "changed",
+      "addedAt": "2026-11-13T21:01:37.358Z"
+    },
+    {
+      "url": "https://ticket.irace.vn/yen-tu-heritage-marathon-2026",
+      "raceId": "119a1b5d-a88c-4509-880c-b5f127b32fd6",
+      "reason": "changed",
+      "addedAt": "2026-11-13T21:01:21.992Z"
     }
   ]
 }
