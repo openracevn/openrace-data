@@ -9045,6 +9045,106 @@
     "query": "Dinh Độc Lập - TP HCM",
     "at": "2026-09-24T06:37:49.991Z"
   },
+  "dong anh ha noi | ha noi": {
+    "geo": {
+      "lat": 21.1538329,
+      "lng": 105.8516744,
+      "source": "nominatim",
+      "precision": "venue",
+      "current": {
+        "province": "01",
+        "ward": "00475"
+      },
+      "legacy": {
+        "province": "01",
+        "district": "017",
+        "ward": "00487"
+      },
+      "access": "road",
+      "fromPlaces": {
+        "hcmc": {
+          "km": 1514,
+          "minutes": 1158,
+          "method": "road",
+          "near": false
+        },
+        "ha-noi": {
+          "km": 19.7,
+          "minutes": 23,
+          "method": "road",
+          "near": true
+        },
+        "da-nang": {
+          "km": 792.9,
+          "minutes": 646,
+          "method": "road",
+          "near": false
+        },
+        "nha-trang": {
+          "km": 1295.4,
+          "minutes": 1033,
+          "method": "road",
+          "near": false
+        },
+        "da-lat": {
+          "km": 1422.8,
+          "minutes": 1151,
+          "method": "road",
+          "near": false
+        },
+        "can-tho": {
+          "km": 1624.9,
+          "minutes": 1278,
+          "method": "road",
+          "near": false
+        },
+        "hai-phong": {
+          "km": 125.9,
+          "minutes": 95,
+          "method": "road",
+          "near": false
+        },
+        "hue": {
+          "km": 690.6,
+          "minutes": 564,
+          "method": "road",
+          "near": false
+        },
+        "vung-tau": {
+          "km": 1605,
+          "minutes": 1241,
+          "method": "road",
+          "near": false
+        },
+        "quy-nhon": {
+          "km": 1103.4,
+          "minutes": 872,
+          "method": "road",
+          "near": false
+        },
+        "buon-ma-thuot": {
+          "km": 1301.4,
+          "minutes": 1070,
+          "method": "road",
+          "near": false
+        },
+        "sa-pa": {
+          "km": 299.5,
+          "minutes": 237,
+          "method": "road",
+          "near": false
+        },
+        "ha-long": {
+          "km": 170.5,
+          "minutes": 125,
+          "method": "road",
+          "near": false
+        }
+      }
+    },
+    "query": "Đông Anh - Hà Nội",
+    "at": "2026-11-14T21:02:30.943Z"
+  },
   "dong ha quang tri | ": {
     "geo": {
       "lat": 16.802493,

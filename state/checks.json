@@ -1149,7 +1149,7 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/ultra-trail-cao-bang-2026": {
-    "lastCheckedAt": "2026-11-13T21:02:14.158Z",
+    "lastCheckedAt": "2026-11-14T21:02:06.403Z",
     "status": "error",
     "reason": "HTTP 404 for https://api.actiup.net/v2/content/events/slug/ultra-trail-cao-bang-2026",
     "fingerprint": "f80aed2839f4b09df96d11bcb476015c"
@@ -1394,8 +1394,9 @@
     "fingerprint": "91a63caa7f96ca0e43b7fdf3b16e2b76"
   },
   "https://ticket.irace.vn/carlympic-family-run-2026": {
-    "lastCheckedAt": "2026-11-14T21:01:20.631Z",
-    "status": "facts"
+    "lastCheckedAt": "2026-11-14T21:02:07.109Z",
+    "status": "ok",
+    "fingerprint": "8c44fac9a691eeafac33b9c91dd346ee"
   },
   "https://ticket.irace.vn/cuc-phuong-jungle-paths-2026": {
     "lastCheckedAt": "2026-11-08T21:07:20.204Z",
@@ -1568,9 +1569,9 @@
     "fingerprint": "78d174eaeb93682c4b05be3016a0ba8f"
   },
   "https://ticket.irace.vn/yen-tu-heritage-marathon-2026": {
-    "lastCheckedAt": "2026-11-14T21:01:21.440Z",
+    "lastCheckedAt": "2026-11-14T21:02:11.387Z",
     "status": "ok",
-    "fingerprint": "3020206e965970d3e718f077ebd2f2de"
+    "fingerprint": "4a201d35c32986b9ea69cf494dca3639"
   },
   "https://vm.vnexpress.net/all-star-2026": {
     "lastCheckedAt": "2026-11-08T21:01:50.135Z",

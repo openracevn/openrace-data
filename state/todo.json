@@ -1,25 +1,14 @@
 {
   "discoveredAt": "2026-11-14T21:00:59.596Z",
-  "readAt": "2026-11-13T21:03:24.903Z",
+  "readAt": "2026-11-14T21:02:42.493Z",
   "entries": [
     {
       "url": "https://actiup.net/vi/event/ultra-trail-cao-bang-2026",
       "raceId": "dee28bd9-ba1a-433c-a8e3-8007067bc7a2",
       "reason": "weekly",
       "addedAt": "2026-11-08T21:00:57.352Z",
-      "failures": 6,
+      "failures": 7,
       "lastError": "HTTP 404 for https://api.actiup.net/v2/content/events/slug/ultra-trail-cao-bang-2026"
-    },
-    {
-      "url": "https://ticket.irace.vn/carlympic-family-run-2026",
-      "reason": "new",
-      "addedAt": "2026-11-14T21:01:20.631Z"
-    },
-    {
-      "url": "https://ticket.irace.vn/yen-tu-heritage-marathon-2026",
-      "raceId": "119a1b5d-a88c-4509-880c-b5f127b32fd6",
-      "reason": "changed",
-      "addedAt": "2026-11-14T21:01:21.440Z"
     }
   ]
 }
