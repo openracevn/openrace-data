@@ -34,7 +34,7 @@
   ],
   "location": {
     "venue": "Quảng trường 2/4, Phường Nha Trang, Tỉnh Khánh Hòa",
-    "city": "Khánh Hòa"
+    "city": "Nha Trang"
   },
   "geo": {
     "lat": 12.2379502,
@@ -133,138 +133,6 @@
     }
   },
   "prices": [
-    {
-      "distance": "5km",
-      "tier": "Flash Sale",
-      "kind": "other",
-      "audience": null,
-      "price": 250000,
-      "from": "2026-08-21",
-      "to": "2026-08-24",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "5km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 350000,
-      "from": "2026-08-24",
-      "to": "2026-10-05",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "5km",
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 500000,
-      "from": "2026-10-06",
-      "to": "2026-10-30",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "5km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 650000,
-      "from": "2026-10-31",
-      "to": "2026-11-12",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Flash Sale",
-      "kind": "other",
-      "audience": null,
-      "price": 350000,
-      "from": "2026-08-21",
-      "to": "2026-08-24",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 450000,
-      "from": "2026-08-24",
-      "to": "2026-10-05",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 600000,
-      "from": "2026-10-06",
-      "to": "2026-10-30",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "10km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 750000,
-      "from": "2026-10-31",
-      "to": "2026-11-12",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "21km",
-      "tier": "Flash Sale",
-      "kind": "other",
-      "audience": null,
-      "price": 500000,
-      "from": "2026-08-21",
-      "to": "2026-08-24",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "21km",
-      "tier": "Early Bird",
-      "kind": "early",
-      "audience": null,
-      "price": 600000,
-      "from": "2026-08-24",
-      "to": "2026-10-05",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "21km",
-      "tier": "Regular",
-      "kind": "regular",
-      "audience": null,
-      "price": 800000,
-      "from": "2026-10-06",
-      "to": "2026-10-30",
-      "inferred": [],
-      "site": "irace"
-    },
-    {
-      "distance": "21km",
-      "tier": "Late",
-      "kind": "late",
-      "audience": null,
-      "price": 1000000,
-      "from": "2026-10-31",
-      "to": "2026-11-12",
-      "inferred": [],
-      "site": "irace"
-    },
     {
       "distance": "5km",
       "tier": "Flash Sale",
@@ -475,7 +343,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/nha-trang-night-run-sanest-sanvinest-bkh-2026",
-      "lastCheckedAt": "2026-10-15T20:20:45.195Z",
+      "lastCheckedAt": "2026-11-15T21:02:14.095Z",
       "lastChangedAt": "2026-10-12T17:47:12.799Z",
       "extracted": {
         "facts": {
@@ -484,7 +352,7 @@
           "venue": "Quảng trường 2/4, Phường Nha Trang, Tỉnh Khánh Hòa",
           "organizer": "VIETRACE365",
           "currency": "VND",
-          "registrationStatus": "open",
+          "registrationStatus": "closed",
           "fromPrice": 500000
         },
         "pages": [
@@ -654,99 +522,13 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/nha-trang-night-run-sanest-sanvinest-bkh-2026",
-      "lastCheckedAt": "2026-10-30T21:01:30.747Z",
+      "lastCheckedAt": "2026-11-15T21:03:30.733Z",
       "lastChangedAt": "2026-10-15T20:26:30.383Z",
       "extracted": {
         "facts": {
           "name": "Giải chạy Nha Trang Night Run Sanest, Sanvinest – BKH 2026",
           "venue": "Tỉnh Khánh Hòa",
-          "organizer": "VietRace365",
-          "prices": [
-            {
-              "distance": "5km",
-              "tier": "Flash Sale",
-              "from": "21/08",
-              "to": "24/08",
-              "price": 250000
-            },
-            {
-              "distance": "5km",
-              "tier": "Early Bird",
-              "from": "24/08",
-              "to": "05/10",
-              "price": 350000
-            },
-            {
-              "distance": "5km",
-              "tier": "Regular",
-              "from": "06/10",
-              "to": "30/10",
-              "price": 500000
-            },
-            {
-              "distance": "5km",
-              "tier": "Late",
-              "from": "31/10",
-              "to": "12/11",
-              "price": 650000
-            },
-            {
-              "distance": "10km",
-              "tier": "Flash Sale",
-              "from": "21/08",
-              "to": "24/08",
-              "price": 350000
-            },
-            {
-              "distance": "10km",
-              "tier": "Early Bird",
-              "from": "24/08",
-              "to": "05/10",
-              "price": 450000
-            },
-            {
-              "distance": "10km",
-              "tier": "Regular",
-              "from": "06/10",
-              "to": "30/10",
-              "price": 600000
-            },
-            {
-              "distance": "10km",
-              "tier": "Late",
-              "from": "31/10",
-              "to": "12/11",
-              "price": 750000
-            },
-            {
-              "distance": "21km",
-              "tier": "Flash Sale",
-              "from": "21/08",
-              "to": "24/08",
-              "price": 500000
-            },
-            {
-              "distance": "21km",
-              "tier": "Early Bird",
-              "from": "24/08",
-              "to": "05/10",
-              "price": 600000
-            },
-            {
-              "distance": "21km",
-              "tier": "Regular",
-              "from": "06/10",
-              "to": "30/10",
-              "price": 800000
-            },
-            {
-              "distance": "21km",
-              "tier": "Late",
-              "from": "31/10",
-              "to": "12/11",
-              "price": 1000000
-            }
-          ]
+          "organizer": "VietRace365"
         },
         "pages": [
           {
@@ -760,33 +542,13 @@
               "date": "2026-12-12",
               "endDate": "2026-12-12",
               "mainDate": "2026-12-12",
-              "distances": [
-                "5km",
-                "10km",
-                "21km"
-              ],
-              "courses": [
-                {
-                  "distance": "5km",
-                  "type": "road_run",
-                  "elevationGain": 0
-                },
-                {
-                  "distance": "10km",
-                  "type": "road_run",
-                  "elevationGain": 0
-                },
-                {
-                  "distance": "21km",
-                  "type": "road_run",
-                  "elevationGain": 0
-                }
-              ],
+              "distances": [],
+              "courses": [],
               "edition": 2026,
-              "editionQuote": "Giải chạy Nha Trang Night Run Sanest, Sanvinest – BKH 2026",
+              "editionQuote": "BKH 2026",
               "mapsUrl": "",
-              "venue": "Tỉnh Khánh Hòa",
-              "city": "Khánh Hòa",
+              "venue": "",
+              "city": "Nha Trang",
               "organizer": "",
               "currency": "VND",
               "registrationStatus": "open",
@@ -794,104 +556,7 @@
                 "count": 0,
                 "quote": ""
               },
-              "prices": [
-                {
-                  "distance": "5km",
-                  "tier": "Flash Sale",
-                  "audience": "",
-                  "from": "21/08",
-                  "to": "24/08",
-                  "price": 250000
-                },
-                {
-                  "distance": "5km",
-                  "tier": "Early Bird",
-                  "audience": "",
-                  "from": "24/08",
-                  "to": "05/10",
-                  "price": 350000
-                },
-                {
-                  "distance": "5km",
-                  "tier": "Regular",
-                  "audience": "",
-                  "from": "06/10",
-                  "to": "30/10",
-                  "price": 500000
-                },
-                {
-                  "distance": "5km",
-                  "tier": "Late",
-                  "audience": "",
-                  "from": "31/10",
-                  "to": "12/11",
-                  "price": 650000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Flash Sale",
-                  "audience": "",
-                  "from": "21/08",
-                  "to": "24/08",
-                  "price": 350000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Early Bird",
-                  "audience": "",
-                  "from": "24/08",
-                  "to": "05/10",
-                  "price": 450000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Regular",
-                  "audience": "",
-                  "from": "06/10",
-                  "to": "30/10",
-                  "price": 600000
-                },
-                {
-                  "distance": "10km",
-                  "tier": "Late",
-                  "audience": "",
-                  "from": "31/10",
-                  "to": "12/11",
-                  "price": 750000
-                },
-                {
-                  "distance": "21km",
-                  "tier": "Flash Sale",
-                  "audience": "",
-                  "from": "21/08",
-                  "to": "24/08",
-                  "price": 500000
-                },
-                {
-                  "distance": "21km",
-                  "tier": "Early Bird",
-                  "audience": "",
-                  "from": "24/08",
-                  "to": "05/10",
-                  "price": 600000
-                },
-                {
-                  "distance": "21km",
-                  "tier": "Regular",
-                  "audience": "",
-                  "from": "06/10",
-                  "to": "30/10",
-                  "price": 800000
-                },
-                {
-                  "distance": "21km",
-                  "tier": "Late",
-                  "audience": "",
-                  "from": "31/10",
-                  "to": "12/11",
-                  "price": 1000000
-                }
-              ]
+              "prices": []
             }
           }
         ],
@@ -1022,5 +687,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-10-12T17:48:31.011Z",
-  "updatedAt": "2026-10-30T21:01:38.428Z"
+  "updatedAt": "2026-11-15T21:04:59.230Z"
 }

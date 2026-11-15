@@ -17,25 +17,25 @@
       "label": "7km",
       "meters": 7000,
       "type": "trail_run",
-      "elevationGain": 650
+      "elevationGain": null
     },
     {
       "label": "12km",
       "meters": 12000,
       "type": "trail_run",
-      "elevationGain": 750
+      "elevationGain": null
     },
     {
       "label": "25km",
       "meters": 25000,
       "type": "trail_run",
-      "elevationGain": 850
+      "elevationGain": null
     },
     {
       "label": "35km",
       "meters": 35000,
       "type": "trail_run",
-      "elevationGain": 1150
+      "elevationGain": null
     }
   ],
   "location": {
@@ -488,7 +488,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/vung-tau-city-trail",
-      "lastCheckedAt": "2026-11-01T21:21:25.020Z",
+      "lastCheckedAt": "2026-11-15T21:02:04.992Z",
       "lastChangedAt": "2026-09-23T18:30:39.797Z",
       "extracted": {
         "facts": {
@@ -498,7 +498,7 @@
           "venue": "Nhà Truyền Thống Cách Mạng Thành Phố Vũng Tàu",
           "organizer": "Vietnam MTB Series",
           "currency": "VND",
-          "registrationStatus": "open",
+          "registrationStatus": "sold_out",
           "fromPrice": 350000
         },
         "pages": [
@@ -686,71 +686,13 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/vung-tau-city-trail-2026",
-      "lastCheckedAt": "2026-11-01T21:48:40.353Z",
+      "lastCheckedAt": "2026-11-15T21:03:17.027Z",
       "lastChangedAt": "2026-10-15T20:27:44.511Z",
       "extracted": {
         "facts": {
           "name": "Giải chạy Vung Tau City Trail 2026",
           "venue": "Nhà truyền thống cách mạng Vũng Tàu",
-          "organizer": "Vietnam MTB Series",
-          "prices": [
-            {
-              "distance": "7km",
-              "tier": "Early Bird",
-              "from": "19/09",
-              "to": "18/10",
-              "price": 550000
-            },
-            {
-              "distance": "7km",
-              "tier": "Regular",
-              "from": "19/10",
-              "to": "15/11",
-              "price": 650000
-            },
-            {
-              "distance": "12km",
-              "tier": "Early Bird",
-              "from": "19/09",
-              "to": "18/10",
-              "price": 650000
-            },
-            {
-              "distance": "12km",
-              "tier": "Regular",
-              "from": "19/10",
-              "to": "15/11",
-              "price": 750000
-            },
-            {
-              "distance": "25km",
-              "tier": "Early Bird",
-              "from": "19/09",
-              "to": "18/10",
-              "price": 750000
-            },
-            {
-              "distance": "25km",
-              "tier": "Regular",
-              "from": "19/10",
-              "to": "15/11",
-              "price": 850000
-            },
-            {
-              "distance": "35km",
-              "tier": "Early Bird",
-              "from": "19/09",
-              "to": "18/10",
-              "price": 850000
-            },
-            {
-              "distance": "35km",
-              "tier": "Regular",
-              "from": "19/10",
-              "to": "15/11",
-              "price": 1150000
-            }
-          ]
+          "organizer": "Vietnam MTB Series"
         },
         "pages": [
           {
@@ -758,118 +700,27 @@
             "json": {
               "pageKind": "sport",
               "types": [
-                "trail_run"
+                "city_trail"
               ],
               "name": "Giải chạy Vung Tau City Trail 2026",
               "date": "2026-11-29",
               "endDate": "2026-11-29",
               "mainDate": "2026-11-29",
-              "distances": [
-                "7km",
-                "12km",
-                "25km",
-                "35km"
-              ],
-              "courses": [
-                {
-                  "distance": "7km",
-                  "type": "trail_run",
-                  "elevationGain": 650
-                },
-                {
-                  "distance": "12km",
-                  "type": "trail_run",
-                  "elevationGain": 750
-                },
-                {
-                  "distance": "25km",
-                  "type": "trail_run",
-                  "elevationGain": 850
-                },
-                {
-                  "distance": "35km",
-                  "type": "trail_run",
-                  "elevationGain": 1150
-                }
-              ],
-              "edition": 2026,
+              "distances": [],
+              "courses": [],
+              "edition": 1,
               "editionQuote": "Giải chạy Vung Tau City Trail 2026",
               "mapsUrl": "",
               "venue": "Nhà truyền thống cách mạng Vũng Tàu",
               "city": "Vũng Tàu",
               "organizer": "",
-              "currency": "VND",
+              "currency": "",
               "registrationStatus": "open",
               "participants": {
                 "count": 0,
                 "quote": ""
               },
-              "prices": [
-                {
-                  "distance": "7km",
-                  "tier": "Early Bird",
-                  "audience": "",
-                  "from": "19/09",
-                  "to": "18/10",
-                  "price": 550000
-                },
-                {
-                  "distance": "7km",
-                  "tier": "Regular",
-                  "audience": "",
-                  "from": "19/10",
-                  "to": "15/11",
-                  "price": 650000
-                },
-                {
-                  "distance": "12km",
-                  "tier": "Early Bird",
-                  "audience": "",
-                  "from": "19/09",
-                  "to": "18/10",
-                  "price": 650000
-                },
-                {
-                  "distance": "12km",
-                  "tier": "Regular",
-                  "audience": "",
-                  "from": "19/10",
-                  "to": "15/11",
-                  "price": 750000
-                },
-                {
-                  "distance": "25km",
-                  "tier": "Early Bird",
-                  "audience": "",
-                  "from": "19/09",
-                  "to": "18/10",
-                  "price": 750000
-                },
-                {
-                  "distance": "25km",
-                  "tier": "Regular",
-                  "audience": "",
-                  "from": "19/10",
-                  "to": "15/11",
-                  "price": 850000
-                },
-                {
-                  "distance": "35km",
-                  "tier": "Early Bird",
-                  "audience": "",
-                  "from": "19/09",
-                  "to": "18/10",
-                  "price": 850000
-                },
-                {
-                  "distance": "35km",
-                  "tier": "Regular",
-                  "audience": "",
-                  "from": "19/10",
-                  "to": "15/11",
-                  "price": 1150000
-                }
-              ]
+              "prices": []
             }
           }
         ],
@@ -1000,5 +851,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-11-01T21:51:13.044Z"
+  "updatedAt": "2026-11-15T21:04:59.230Z"
 }

@@ -1,7 +1,7 @@
 {
   "id": "6fe44e19-9bb3-4f00-903f-9ff875dc5a39",
   "slug": "halong-bay-heritage-marathon-2026",
-  "name": "Marathon Quốc Tế Di sản Hạ Long 2026",
+  "name": "Giải Marathon Quốc tế Di sản Hạ Long",
   "types": [
     "road_run"
   ],
@@ -967,7 +967,17 @@
       "foundOn": "ticket.irace.vn"
     },
     {
+      "url": "https://fotobots.com/",
+      "kind": "other",
+      "foundOn": "halongmarathon.com"
+    },
+    {
       "url": "https://haiminhtsc.vn/",
+      "kind": "other",
+      "foundOn": "halongmarathon.com"
+    },
+    {
+      "url": "https://healthyyum.vn/vi",
       "kind": "other",
       "foundOn": "halongmarathon.com"
     },
@@ -990,6 +1000,11 @@
       "url": "https://ifitness.vn/collections/phu-kien-the-thao",
       "kind": "other",
       "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://indomie.com/region/vietnam/index.html",
+      "kind": "other",
+      "foundOn": "halongmarathon.com"
     },
     {
       "url": "https://instagram.com/halongbay.heritagemarathon",
@@ -1037,16 +1052,6 @@
       "foundOn": "ticket.irace.vn"
     },
     {
-      "url": "https://runjapan.jp/",
-      "kind": "other",
-      "foundOn": "halongmarathon.com"
-    },
-    {
-      "url": "https://runmagazine.asia/",
-      "kind": "other",
-      "foundOn": "halongmarathon.com"
-    },
-    {
       "url": "https://samsung.com/vn/watches/all-watches",
       "kind": "other",
       "foundOn": "halongmarathon.com"
@@ -1057,12 +1062,12 @@
       "foundOn": "halongmarathon.com"
     },
     {
-      "url": "https://thbeverage.vn/",
+      "url": "https://thai.run/",
       "kind": "other",
       "foundOn": "halongmarathon.com"
     },
     {
-      "url": "https://vexere.com/",
+      "url": "https://thbeverage.vn/",
       "kind": "other",
       "foundOn": "halongmarathon.com"
     },
@@ -1993,7 +1998,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/halong-bay-heritage-marathon-2026",
-      "lastCheckedAt": "2026-11-01T21:21:01.203Z",
+      "lastCheckedAt": "2026-11-15T21:01:55.881Z",
       "lastChangedAt": "2026-09-23T18:30:52.268Z",
       "extracted": {
         "facts": {
@@ -2126,7 +2131,7 @@
       "site": "halong-marathon",
       "role": "official",
       "url": "https://halongmarathon.com/",
-      "lastCheckedAt": "2026-11-01T21:28:07.574Z",
+      "lastCheckedAt": "2026-11-15T21:02:42.767Z",
       "lastChangedAt": "2026-09-25T05:03:56.536Z",
       "extracted": {
         "pages": [
@@ -2137,7 +2142,7 @@
               "types": [
                 "road_run"
               ],
-              "name": "Marathon Quốc Tế Di sản Hạ Long 2026",
+              "name": "Giải Marathon Quốc tế Di sản Hạ Long",
               "date": "2026-11-20",
               "endDate": "2026-11-22",
               "mainDate": "2026-11-22",
@@ -2173,8 +2178,8 @@
               "editionQuote": "Giải Marathon Quốc tế Di sản Hạ Long 2026",
               "mapsUrl": "https://halongmarathon.com/",
               "venue": "Vịnh Hạ Long",
-              "city": "Hạ Long, Quảng Ninh",
-              "organizer": "Ban Tổ chức Giải Marathon Quốc tế Di sản Hạ Long",
+              "city": "Quảng Ninh",
+              "organizer": "Sở Văn hóa & Thể thao tỉnh Quảng Ninh",
               "currency": "VND",
               "registrationStatus": "open",
               "participants": {
@@ -2183,7 +2188,7 @@
               },
               "prices": [
                 {
-                  "distance": "5KM(trẻ em/người lớn)",
+                  "distance": "5KM",
                   "tier": "Đăng ký sớm",
                   "audience": "Cá nhân",
                   "from": "2024-01-16",
@@ -2288,11 +2293,7 @@
             "text": ""
           },
           {
-            "url": "https://runjapan.jp/",
-            "text": ""
-          },
-          {
-            "url": "https://www.runmagazine.asia/",
+            "url": "https://healthyyum.vn/vi",
             "text": ""
           },
           {
@@ -2308,7 +2309,15 @@
             "text": ""
           },
           {
-            "url": "https://vexere.com/",
+            "url": "https://www.indomie.com/region/vietnam/index.html",
+            "text": ""
+          },
+          {
+            "url": "https://www.thai.run/",
+            "text": ""
+          },
+          {
+            "url": "https://fotobots.com/",
             "text": ""
           },
           {
@@ -2630,7 +2639,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/giai-marathon-quoc-te-di-san-ha-long-2026",
-      "lastCheckedAt": "2026-11-01T21:48:08.652Z",
+      "lastCheckedAt": "2026-11-15T21:03:09.055Z",
       "lastChangedAt": "2026-09-27T02:38:00.143Z",
       "extracted": {
         "facts": {
@@ -2799,5 +2808,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-11-01T21:51:13.044Z"
+  "updatedAt": "2026-11-15T21:04:59.230Z"
 }

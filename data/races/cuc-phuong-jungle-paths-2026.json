@@ -829,7 +829,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/cuc-phuong-jungle-paths-2026",
-      "lastCheckedAt": "2026-11-01T21:21:36.531Z",
+      "lastCheckedAt": "2026-11-15T21:02:19.494Z",
       "lastChangedAt": "2026-09-23T18:30:53.064Z",
       "extracted": {
         "facts": {
@@ -1079,7 +1079,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/cuc-phuong-jungle-paths-2026",
-      "lastCheckedAt": "2026-11-01T21:49:18.968Z",
+      "lastCheckedAt": "2026-11-15T21:03:41.450Z",
       "lastChangedAt": "2026-10-15T20:29:56.434Z",
       "extracted": {
         "facts": {
@@ -1095,7 +1095,7 @@
               "types": [
                 "trail_run"
               ],
-              "name": "Giải chạy Cuc Phuong Jungle Paths",
+              "name": "Giải chạy Cuc Phuong Jungle Paths 2026",
               "date": "2026-12-26",
               "endDate": "2026-12-27",
               "mainDate": "2026-12-26",
@@ -1134,8 +1134,8 @@
                 }
               ],
               "edition": 1,
-              "editionQuote": "Giải chạy lần thứ nhất",
-              "mapsUrl": "",
+              "editionQuote": "Giải chạy lần thứ 1",
+              "mapsUrl": "VQG Cúc Phương, Ninh Bình, Việt Nam",
               "venue": "VQG Cúc Phương",
               "city": "Ninh Bình",
               "organizer": "",
@@ -1143,48 +1143,48 @@
               "registrationStatus": "open",
               "participants": {
                 "count": 0,
-                "quote": "Số lượng tham gia: 0"
+                "quote": ""
               },
               "prices": [
                 {
                   "distance": "10km",
-                  "tier": "Đơn giá",
+                  "tier": "",
                   "audience": "",
                   "from": "",
                   "to": "",
-                  "price": 1232000
+                  "price": 1400000
                 },
                 {
                   "distance": "25km",
-                  "tier": "Đơn giá",
+                  "tier": "",
                   "audience": "",
                   "from": "",
                   "to": "",
-                  "price": 2112000
+                  "price": 2400000
                 },
                 {
                   "distance": "42km",
-                  "tier": "Đơn giá",
+                  "tier": "",
                   "audience": "",
                   "from": "",
                   "to": "",
-                  "price": 2816000
+                  "price": 3200000
                 },
                 {
                   "distance": "75km",
-                  "tier": "Đơn giá",
+                  "tier": "",
                   "audience": "",
                   "from": "",
                   "to": "",
-                  "price": 3432000
+                  "price": 3900000
                 },
                 {
                   "distance": "100km",
-                  "tier": "Đơn giá",
+                  "tier": "",
                   "audience": "",
                   "from": "",
                   "to": "",
-                  "price": 3960000
+                  "price": 4500000
                 }
               ]
             }
@@ -1321,5 +1321,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-11-01T21:51:13.044Z"
+  "updatedAt": "2026-11-15T21:04:59.230Z"
 }
