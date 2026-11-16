@@ -1,5 +1,5 @@
 {
-  "discoveredAt": "2026-11-15T21:00:57.248Z",
+  "discoveredAt": "2026-11-16T21:00:59.318Z",
   "readAt": "2026-11-15T21:05:14.224Z",
   "entries": [
     {
@@ -9,6 +9,22 @@
       "addedAt": "2026-11-08T21:00:57.352Z",
       "failures": 8,
       "lastError": "HTTP 404 for https://api.actiup.net/v2/content/events/slug/ultra-trail-cao-bang-2026"
+    },
+    {
+      "url": "https://actiup.net/vi/event/unique-111",
+      "reason": "new",
+      "addedAt": "2026-11-16T21:01:05.949Z"
+    },
+    {
+      "url": "https://actiup.net/vi/event/unique-vietnam-sea-sportival-2027",
+      "reason": "new",
+      "addedAt": "2026-11-16T21:01:06.360Z"
+    },
+    {
+      "url": "https://ticket.irace.vn/marathon-quoc-te-di-san-can-tho-2026",
+      "raceId": "ddda98fb-5837-4b4c-b986-9056b42d5025",
+      "reason": "changed",
+      "addedAt": "2026-11-16T21:01:23.547Z"
     }
   ]
 }

@@ -1,0 +1,165 @@
+{
+  "id": "4dc8cf15-be02-4c05-becb-e852e9879720",
+  "slug": "unique-vietnam-sea-sportival-2027",
+  "name": "UNIQUE VIETNAM SEA SPORTIVAL 2027",
+  "types": [
+    "other"
+  ],
+  "date": "2027-04-09",
+  "endDate": "2027-04-11",
+  "mainDate": null,
+  "seriesId": null,
+  "organizerId": "cong-ty-tnhh-dau-tu-thuong-mai-dich-vu-unique",
+  "organizer": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE",
+  "edition": null,
+  "courses": [],
+  "location": {
+    "venue": "CaraWorld, Cam Ranh, Khánh Hòa",
+    "city": null
+  },
+  "geo": {
+    "lat": 11.9152494,
+    "lng": 109.0884663,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "56",
+      "ward": null
+    },
+    "legacy": null,
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 289.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1070.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 470.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 37.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 70.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 416.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1025.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 530.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 279.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 207.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 141.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1285.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1027.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/unique-vietnam-sea-sportival-2027"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1TohKpl9Z233Trb77ttSV6h72MRMRIB9Q/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/unique-vietnam-sea-sportival-2027",
+      "lastCheckedAt": "2026-11-16T21:01:06.360Z",
+      "lastChangedAt": "2026-11-16T21:01:06.360Z",
+      "extracted": {
+        "facts": {
+          "name": "UNIQUE VIETNAM SEA SPORTIVAL 2027",
+          "date": "2027-04-09",
+          "endDate": "2027-04-11",
+          "venue": "CaraWorld, Cam Ranh, Khánh Hòa",
+          "organizer": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 300000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1TohKpl9Z233Trb77ttSV6h72MRMRIB9Q/view?usp=drive_link",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-tnhh-dau-tu-thuong-mai-dich-vu-unique",
+          "name": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-11-16T21:01:42.381Z",
+  "updatedAt": "2026-11-16T21:01:42.381Z"
+}

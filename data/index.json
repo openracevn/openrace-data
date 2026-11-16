@@ -436,9 +436,9 @@
     "date": "2026-01-01",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-09-28T12:41:20.854Z",
+    "lastModified": "2026-11-16T21:01:42.381Z",
     "file": "vietnam-international-half-marathon-2026.json",
-    "seriesId": null,
+    "seriesId": "vietnam-international-half-marathon",
     "sourceUrls": [
       "https://actiup.net/vi/event/vietnam-international-half-marathon-2026"
     ],
@@ -2048,6 +2048,21 @@
     "linkUrls": []
   },
   {
+    "id": "4dc8cf15-be02-4c05-becb-e852e9879720",
+    "slug": "unique-vietnam-sea-sportival-2027",
+    "name": "UNIQUE VIETNAM SEA SPORTIVAL 2027",
+    "date": "2027-04-09",
+    "endDate": "2027-04-11",
+    "mainDate": null,
+    "lastModified": "2026-11-16T21:01:42.381Z",
+    "file": "unique-vietnam-sea-sportival-2027.json",
+    "seriesId": null,
+    "sourceUrls": [
+      "https://actiup.net/vi/event/unique-vietnam-sea-sportival-2027"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "4e3e6ba7-d691-4c59-b27c-f316c6b01c74",
     "slug": "run-to-live",
     "name": "Run To Live 2025",
@@ -3116,6 +3131,21 @@
     "seriesId": "trang-an-marathon",
     "sourceUrls": [
       "https://actiup.net/vi/event/trang-an-marathon-2025"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "7ed5343b-6515-46b3-9b63-19a51201f39f",
+    "slug": "unique-111",
+    "name": "UNIQUE 111",
+    "date": "2027-04-09",
+    "endDate": "2027-04-11",
+    "mainDate": null,
+    "lastModified": "2026-11-16T21:01:42.381Z",
+    "file": "unique-111-2027.json",
+    "seriesId": null,
+    "sourceUrls": [
+      "https://actiup.net/vi/event/unique-111"
     ],
     "linkUrls": []
   },
@@ -5226,9 +5256,9 @@
     "date": "2025-01-01",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-11-16T07:50:10.155Z",
+    "lastModified": "2026-11-16T21:01:42.381Z",
     "file": "vietnam-international-half-marathon-2025.json",
-    "seriesId": null,
+    "seriesId": "vietnam-international-half-marathon",
     "sourceUrls": [
       "https://actiup.net/vi/event/vietnam-international-half-marathon-2025"
     ],
@@ -5346,7 +5376,7 @@
     "date": "2026-12-20",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-11-15T21:04:59.230Z",
+    "lastModified": "2026-11-16T21:01:42.381Z",
     "file": "giai-marathon-quoc-te-di-san-can-tho-quan-quan-21-2026.json",
     "seriesId": "can-tho-heritage-marathon",
     "sourceUrls": [

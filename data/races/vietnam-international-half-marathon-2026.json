@@ -7,7 +7,8 @@
   ],
   "date": "2026-01-01",
   "endDate": null,
-  "seriesId": null,
+  "mainDate": null,
+  "seriesId": "vietnam-international-half-marathon",
   "organizerId": "vietcontent",
   "organizer": "Liên đoàn điền kinh Việt Nam - Ủy ban nhân dân Thành phố Hà Nội - VietContent",
   "coOrganizerIds": [
@@ -188,5 +189,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T12:41:20.854Z"
+  "updatedAt": "2026-11-16T21:01:42.381Z"
 }

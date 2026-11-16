@@ -142,6 +142,138 @@
       "from": "2026-08-11",
       "to": "2026-08-15",
       "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 330000,
+      "from": "2026-08-16",
+      "to": "2026-09-06",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 450000,
+      "from": "2026-09-07",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 700000,
+      "from": "2026-11-01",
+      "to": "2026-11-25",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 420000,
+      "from": "2026-08-11",
+      "to": "2026-08-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 450000,
+      "from": "2026-08-16",
+      "to": "2026-09-06",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 550000,
+      "from": "2026-09-07",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1100000,
+      "from": "2026-11-01",
+      "to": "2026-11-25",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 495000,
+      "from": "2026-08-11",
+      "to": "2026-08-15",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 530000,
+      "from": "2026-08-16",
+      "to": "2026-09-06",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 650000,
+      "from": "2026-09-07",
+      "to": "2026-10-31",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1300000,
+      "from": "2026-11-01",
+      "to": "2026-11-25",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Flash Sale",
+      "kind": "other",
+      "audience": null,
+      "price": 295000,
+      "from": "2026-08-11",
+      "to": "2026-08-15",
+      "inferred": [],
       "site": "canthomarathon-com"
     },
     {
@@ -630,13 +762,99 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/marathon-quoc-te-di-san-can-tho-2026",
-      "lastCheckedAt": "2026-11-15T21:03:34.751Z",
+      "lastCheckedAt": "2026-11-16T21:01:23.547Z",
       "lastChangedAt": "2026-10-15T20:28:58.149Z",
       "extracted": {
         "facts": {
           "name": "Giải chạy Marathon Quốc tế Di sản Cần Thơ 2026",
           "venue": "Cần Thơ",
-          "organizer": "DHA Vietnam"
+          "organizer": "DHA Vietnam",
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Flash Sale",
+              "from": "11/08",
+              "to": "15/08",
+              "price": 295000
+            },
+            {
+              "distance": "5km",
+              "tier": "Super Early Bird",
+              "from": "16/08",
+              "to": "06/09",
+              "price": 330000
+            },
+            {
+              "distance": "5km",
+              "tier": "Early Bird",
+              "from": "07/09",
+              "to": "31/10",
+              "price": 450000
+            },
+            {
+              "distance": "5km",
+              "tier": "Regular",
+              "from": "01/11",
+              "to": "25/11",
+              "price": 700000
+            },
+            {
+              "distance": "10km",
+              "tier": "Flash Sale",
+              "from": "11/08",
+              "to": "15/08",
+              "price": 420000
+            },
+            {
+              "distance": "10km",
+              "tier": "Super Early Bird",
+              "from": "16/08",
+              "to": "06/09",
+              "price": 450000
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "from": "07/09",
+              "to": "31/10",
+              "price": 550000
+            },
+            {
+              "distance": "10km",
+              "tier": "Regular",
+              "from": "01/11",
+              "to": "25/11",
+              "price": 1100000
+            },
+            {
+              "distance": "21km",
+              "tier": "Flash Sale",
+              "from": "11/08",
+              "to": "15/08",
+              "price": 495000
+            },
+            {
+              "distance": "21km",
+              "tier": "Super Early Bird",
+              "from": "16/08",
+              "to": "06/09",
+              "price": 530000
+            },
+            {
+              "distance": "21km",
+              "tier": "Early Bird",
+              "from": "07/09",
+              "to": "31/10",
+              "price": 650000
+            },
+            {
+              "distance": "21km",
+              "tier": "Regular",
+              "from": "01/11",
+              "to": "25/11",
+              "price": 1300000
+            }
+          ]
         },
         "pages": [
           {
@@ -799,5 +1017,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-11-15T21:04:59.230Z"
+  "updatedAt": "2026-11-16T21:01:42.381Z"
 }
