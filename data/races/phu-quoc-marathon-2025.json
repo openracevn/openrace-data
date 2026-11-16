@@ -7,6 +7,7 @@
   ],
   "date": "2025-04-06",
   "endDate": null,
+  "mainDate": null,
   "seriesId": null,
   "organizerId": "vietcontent",
   "organizer": "Đài truyền hình Việt Nam VTV, Liên đoàn Điền kinh Việt Nam, Sở VHTT Kiên Giang, Lions Entertainment JSC, Công ty CP Thương mại và nội dung Số Việt - Vietcontent",
@@ -125,9 +126,18 @@
     {
       "site": "actiup",
       "url": "https://actiup.net/vi/event/phu-quoc-marathon-2025"
+    },
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/vtv-phu-quoc-marathon-2025-combo"
     }
   ],
   "links": [
+    {
+      "url": "https://drive.google.com/drive/folders/1q5fqA8EjFxKOVA_k2W1JWx4d7bJ_XC1V",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    },
     {
       "url": "https://drive.google.com/file/d/1gcpCKAZ7DnIkUL6H1vNDFZRecH2VlSp5/view",
       "kind": "rules",
@@ -188,9 +198,37 @@
           "name": "Đài truyền hình Việt Nam VTV, Liên đoàn Điền kinh Việt Nam, Sở VHTT Kiên Giang, Lions Entertainment JSC, Công ty CP Thương mại và nội dung Số Việt - Vietcontent"
         }
       }
+    },
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/vtv-phu-quoc-marathon-2025-combo",
+      "lastCheckedAt": "2026-09-23T18:32:21.079Z",
+      "lastChangedAt": "2026-09-23T18:32:21.079Z",
+      "extracted": {
+        "facts": {
+          "name": "VTV PHÚ QUỐC MARATHON 2025 - BIB CHẠY VÀ COMBO BIB CHẠY + LƯU TRÚ + VÉ CA NHẠC",
+          "date": "2025-04-06",
+          "venue": "Bãi Biển Phú Quốc - Quảng trường biển Grand World, Gành Dầu, đảo Phú Quốc, Thành phố Phú Quốc, Tỉnh Kiên Giang",
+          "organizer": "Đài truyền hình Việt Nam VTV, Liên đoàn Điền kinh Việt Nam, Sở VHTT Kiên Giang, Lions Entertainment JSC, Công ty CP Thương mại và nội dung Số Việt - Vietcontent",
+          "currency": "VND",
+          "registrationStatus": "closed",
+          "fromPrice": 1350000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/drive/folders/1q5fqA8EjFxKOVA_k2W1JWx4d7bJ_XC1V?usp=sharing",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "dai-truyen-hinh-viet-nam-vtv-lien-doan-dien-kinh-viet-nam-so-vhtt-kien-giang-lio",
+          "name": "Đài truyền hình Việt Nam VTV, Liên đoàn Điền kinh Việt Nam, Sở VHTT Kiên Giang, Lions Entertainment JSC, Công ty CP Thương mại và nội dung Số Việt - Vietcontent"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T12:41:20.774Z"
+  "updatedAt": "2026-11-16T07:50:00.973Z"
 }
