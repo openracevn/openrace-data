@@ -1,0 +1,53 @@
+# Pairs of races that validate's duplicate check (plan 029, scripts/lib/duplicates.ts)
+# flags but that are different races: within a day of each other, similar names, not
+# known to be in different provinces. Each entry needs the reason. Real duplicates are
+# merged instead: npm run edit -- merge <keep> <drop>.
+# An entry whose slug no longer exists is ignored.
+
+# IRONMAN's kids' race and its sprint triathlon run the same weekend, same venue.
+- races: [2027-ironkids-viet-nam-in-ha-long-bay, 2027-sunrise-sprint-viet-nam-in-ha-long-bay]
+  reason: IRONKIDS (kids' race) and SUNRISE SPRINT (sprint triathlon) are separate events at one IRONMAN weekend
+- races: [2025-ironkids-viet-nam-in-phu-quoc, 2025-sunrise-sprint-viet-nam-in-phu-quoc]
+  reason: IRONKIDS (kids' race) and SUNRISE SPRINT (sprint triathlon) are separate events at one IRONMAN weekend
+- races: [2026-ironkids-viet-nam-in-phu-quoc, 2026-sunrise-sprint-viet-nam-in-phu-quoc]
+  reason: IRONKIDS (kids' race) and SUNRISE SPRINT (sprint triathlon) are separate events at one IRONMAN weekend
+- races: [2025-ironkids-viet-nam-in-da-nang, 2025-sunrise-sprint-viet-nam-in-da-nang]
+  reason: IRONKIDS (kids' race) and SUNRISE SPRINT (sprint triathlon) are separate events at one IRONMAN weekend
+- races: [2026-ironkids-viet-nam-in-da-nang, 2026-sunrise-sprint-viet-nam-in-da-nang]
+  reason: IRONKIDS (kids' race) and SUNRISE SPRINT (sprint triathlon) are separate events at one IRONMAN weekend
+- races: [2027-ironkids-viet-nam-in-da-nang, 2027-sunrise-sprint-viet-nam-in-da-nang]
+  reason: IRONKIDS (kids' race) and SUNRISE SPRINT (sprint triathlon) are separate events at one IRONMAN weekend
+- races: [ironkids-phu-quoc-2024, sunrise-sprint-phu-quoc-2024]
+  reason: IRONKIDS (kids' race) and SUNRISE SPRINT (sprint triathlon) are separate events at one IRONMAN weekend
+
+# The marathon and the AQUA WARRIORS event run the same weekend in one province.
+- races: [aqua-warriors-quang-tri-2026, quang-tri-amazing-marathon-2026]
+  reason: AQUA WARRIORS is a separate event from the marathon held the same weekend
+- races: [aqua-warriors-quang-binh-2025, quang-binh-international-marathon-2025]
+  reason: AQUA WARRIORS is a separate event from the marathon held the same weekend
+
+# Different places in the name (no province on one side, so the check can't tell).
+- races: [angkor-trail-2027, dat-thep-city-trail-2027]
+  reason: Angkor Trail and Đất Thép City Trail are different races
+- races: [phan-thiet-marathon-2024, run-to-a-land-2024-marathon]
+  reason: Phan Thiết Marathon and Run to A-Land are different races
+- races: [phan-thiet-marathon-2024, giai-marathon-quoc-te-di-san-ha-long-2024]
+  reason: Phan Thiết and Hạ Long are different races
+- races: [giai-marathon-quoc-te-di-san-ha-long-2024, run-to-a-land-2024-marathon]
+  reason: Hạ Long Heritage Marathon and Run to A-Land are different races
+- races: [giai-chay-marathon-quoc-te-strong-viet-nam-vung-tau-2024, giai-marathon-quoc-te-di-san-ha-long-2024]
+  reason: Vũng Tàu and Hạ Long are different races
+- races: [con-dao-run-challenge-2025, kun-fun-run-da-lat-music-night-run-2025]
+  reason: Côn Đảo and Đà Lạt are different races
+- races: [giai-chay-bao-ve-moi-truong, vung-tau-city-trail]
+  reason: an environment fun run and Vung Tau City Trail are different races
+
+# Different races in one province on one day.
+- races: [carlympic-family-run-2026, run-for-the-heart-2026]
+  reason: Carlympic Family Run and Run For The Heart are different races
+- races: [hanh-trinh-tiep-suc-2026, run-for-the-heart-2026]
+  reason: Hành Trình Tiếp Sức and Run For The Heart are different races
+
+# A kids' run held within a bigger race.
+- races: [dalat-music-night-run-2025, kun-fun-run-da-lat-music-night-run-2025]
+  reason: KUN FUN RUN ĐÀ LẠT 2025 is a free run for 6–10 year olds held within Da Lat Music Night Run (ActiUp's own text), a separate race

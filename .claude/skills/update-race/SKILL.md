@@ -83,6 +83,7 @@ Write the unit's results as a bundle, `.staging/<unit>.json` (in the main checko
 - `source`: a page already read, as a sync input `{ "op": "source", "input": { url, site, role, extracted, checkedAt } }` (an agent-read result).
 - New series: add the entry to `data/series.json` (sorted by id; organizerId must exist) and commit it in the same commit as the races that use it: `npm run flush -- --also data/series.json`. Bundle order doesn't matter: the new series may have no races until the bundle that links it is applied, then the whole batch is validated and a series no bundle links blocks the commit. `flush` refuses an unknown argument (`--help` prints usage).
 - Check your own bundle: `npm run flush -- --dry-run --unit <unit>` plans it and runs `validate` on a temporary tree. Fix a ✗ REJECTED before reporting.
+- `possible duplicate races: a ~ b` (plan 029): two races within a day, similar names, not known to be in different provinces. Decide from the pages, never by the score: one race → put the page on the existing race (`attachTo`, or `npm run edit -- merge <keep> <drop>` when both exist); different races → add the pair to `config/not-duplicates.yaml` with the reason (commit it with `--also config/not-duplicates.yaml`). A scheduled run holds such a race back until this is done; the digest shows it.
 
 ## 5. Flush once, then report
 

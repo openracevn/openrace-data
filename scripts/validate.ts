@@ -4,6 +4,7 @@
  * parse and are in canonical formatting.
  */
 import { existsSync, readdirSync, readFileSync } from "node:fs";
+import { NOT_DUPLICATES_PATH, formatDuplicate, loadNotDuplicates, possibleDuplicates, type NotDuplicates } from "./lib/duplicates.ts";
 import { FRESHNESS_PATH, FreshnessSchema } from "./lib/freshness.ts";
 import { AdminUnitsSchema, GEO_PATH, GeoCacheSchema, PlacesListSchema } from "./lib/geo.ts";
 import { jsonSchemaFiles } from "./lib/jsonschema.ts";
@@ -139,6 +140,17 @@ for (const [path, expected] of Object.entries(jsonSchemaFiles())) {
   const actual = existsSync(path) ? readFileSync(path, "utf8") : null;
   if (actual !== expected) errors.push(`${path}: out of date with scripts/lib/schema.ts (run npm run schema)`);
 }
+
+// Plan 029: two races a day apart with similar names, not known to be in different
+// provinces, are one race until a person says otherwise (merge, or list the pair).
+let reviewed: NotDuplicates = [];
+try {
+  reviewed = loadNotDuplicates();
+} catch (err) {
+  errors.push(`${NOT_DUPLICATES_PATH}: ${(err as Error).message}`);
+}
+const duplicateCandidates = [...races.values()].map((r) => ({ slug: r.slug, name: r.name, date: r.date, province: r.geo?.current?.province ?? null }));
+for (const pair of possibleDuplicates(duplicateCandidates, reviewed)) errors.push(formatDuplicate(pair));
 
 if (errors.length) {
   console.error(errors.join("\n"));
