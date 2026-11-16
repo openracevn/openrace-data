@@ -1149,7 +1149,7 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/ultra-trail-cao-bang-2026": {
-    "lastCheckedAt": "2026-11-15T21:01:57.804Z",
+    "lastCheckedAt": "2026-11-16T21:03:15.543Z",
     "status": "error",
     "reason": "HTTP 404 for https://api.actiup.net/v2/content/events/slug/ultra-trail-cao-bang-2026",
     "fingerprint": "f80aed2839f4b09df96d11bcb476015c"
@@ -1167,16 +1167,18 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/unique-111": {
-    "lastCheckedAt": "2026-11-16T21:01:05.949Z",
-    "status": "facts"
+    "lastCheckedAt": "2026-11-16T21:02:23.806Z",
+    "status": "ok",
+    "fingerprint": "cd18551ce3a2d5811d989ffe2691a90a"
   },
   "https://actiup.net/vi/event/unique-nha-trang-h-marathon-2024": {
     "lastCheckedAt": "2026-09-23T18:32:27.911Z",
     "status": "facts"
   },
   "https://actiup.net/vi/event/unique-vietnam-sea-sportival-2027": {
-    "lastCheckedAt": "2026-11-16T21:01:06.360Z",
-    "status": "facts"
+    "lastCheckedAt": "2026-11-16T21:02:48.011Z",
+    "status": "ok",
+    "fingerprint": "3688afb826209ed6a0381c51a1f068ef"
   },
   "https://actiup.net/vi/event/via-life-run-marathon-sam-son-bien-xanh-2026": {
     "lastCheckedAt": "2026-09-23T18:31:11.147Z",
@@ -1477,9 +1479,9 @@
     "fingerprint": "222eded878825d2dd98e8400d722dce8"
   },
   "https://ticket.irace.vn/marathon-quoc-te-di-san-can-tho-2026": {
-    "lastCheckedAt": "2026-11-16T21:01:23.547Z",
+    "lastCheckedAt": "2026-11-16T21:03:16.297Z",
     "status": "ok",
-    "fingerprint": "cc8f085b300b3be70b0bdb5e5fac83a8"
+    "fingerprint": "5f1df7c44928e8b8f00977ce8cec44f0"
   },
   "https://ticket.irace.vn/nghe-an-legacy-marathon-2026": {
     "lastCheckedAt": "2026-11-16T21:01:22.125Z",

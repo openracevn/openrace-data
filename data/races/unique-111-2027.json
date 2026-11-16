@@ -3,11 +3,12 @@
   "slug": "unique-111",
   "name": "UNIQUE 111",
   "types": [
+    "triathlon",
     "other"
   ],
   "date": "2027-04-09",
   "endDate": "2027-04-11",
-  "mainDate": null,
+  "mainDate": "2027-04-09",
   "seriesId": null,
   "organizerId": "cong-ty-tnhh-dau-tu-thuong-mai-dich-vu-unique",
   "organizer": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE",
@@ -15,7 +16,7 @@
   "courses": [],
   "location": {
     "venue": "CaraWorld, Cam Ranh, Khánh Hòa",
-    "city": null
+    "city": "Cam Ranh, Khánh Hòa"
   },
   "geo": {
     "lat": 11.9152494,
@@ -109,7 +110,272 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": null,
+      "tier": "UNIQUE · Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 3700000,
+      "from": "2026-11-16",
+      "to": "2026-12-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "UNIQUE · Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 4450000,
+      "from": "2026-12-16",
+      "to": "2027-02-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "UNIQUE · Late",
+      "kind": "late",
+      "audience": null,
+      "price": 5350000,
+      "from": "2027-02-16",
+      "to": "2027-03-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "OLYMPIC D. · Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 3400000,
+      "from": "2026-11-16",
+      "to": "2026-12-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "OLYMPIC D. · Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 4100000,
+      "from": "2026-12-16",
+      "to": "2027-02-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "OLYMPIC D. · Late",
+      "kind": "late",
+      "audience": null,
+      "price": 4950000,
+      "from": "2027-02-16",
+      "to": "2027-03-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "SPRINT D. · Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2300000,
+      "from": "2026-11-16",
+      "to": "2026-12-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "SPRINT D. · Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2800000,
+      "from": "2026-12-16",
+      "to": "2027-02-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "SPRINT D. · Late",
+      "kind": "late",
+      "audience": null,
+      "price": 3350000,
+      "from": "2027-02-16",
+      "to": "2027-03-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "OLYMPIC D. · Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 950000,
+      "from": "2026-11-16",
+      "to": "2026-12-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "OLYMPIC D. · Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1450000,
+      "from": "2026-12-16",
+      "to": "2027-02-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "OLYMPIC D. · Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1400000,
+      "from": "2027-02-16",
+      "to": "2027-03-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "SPRINT D. · Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 750000,
+      "from": "2026-11-16",
+      "to": "2026-12-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "SPRINT D. · Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 900000,
+      "from": "2026-12-16",
+      "to": "2027-02-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "SPRINT D. · Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1100000,
+      "from": "2027-02-16",
+      "to": "2027-03-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "UNIQUE DUO. · Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 3400000,
+      "from": "2026-11-16",
+      "to": "2026-12-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "UNIQUE DUO. · Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 4100000,
+      "from": "2026-12-16",
+      "to": "2027-02-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "UNIQUE DUO. · Late",
+      "kind": "late",
+      "audience": null,
+      "price": 4950000,
+      "from": "2027-02-16",
+      "to": "2027-03-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "UNIQUE Mili · Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 750000,
+      "from": "2026-11-16",
+      "to": "2026-12-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "UNIQUE Mili · Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 900000,
+      "from": "2026-12-16",
+      "to": "2027-02-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "UNIQUE Mili · Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1100000,
+      "from": "2027-02-16",
+      "to": "2027-03-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "S3000m · Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1400000,
+      "from": "2026-11-16",
+      "to": "2026-12-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "S3000m · Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1700000,
+      "from": "2026-12-16",
+      "to": "2027-02-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "S3000m · Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2050000,
+      "from": "2027-02-16",
+      "to": "2027-03-31",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -133,7 +399,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/unique-111",
-      "lastCheckedAt": "2026-11-16T21:01:05.949Z",
+      "lastCheckedAt": "2026-11-16T21:02:23.806Z",
       "lastChangedAt": "2026-11-16T21:01:05.949Z",
       "extracted": {
         "facts": {
@@ -146,6 +412,57 @@
           "registrationStatus": "open",
           "fromPrice": 750000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/unique-111",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "triathlon",
+                "other"
+              ],
+              "name": "Unique 111",
+              "date": "2027-04-09",
+              "endDate": "2027-04-11",
+              "mainDate": "2027-04-09",
+              "distances": [
+                "Unique 111",
+                "Unique Aqua (Bơi – Chạy)",
+                "Unique Duo (Chạy – Đạp xe – Chạy)"
+              ],
+              "courses": [
+                {
+                  "distance": "Unique 111",
+                  "type": "triathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "Unique Aqua (Bơi – Chạy)",
+                  "type": "aquathlon",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "Unique Duo (Chạy – Đạp xe – Chạy)",
+                  "type": "duathlon",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "Giải đấu ba môn phối hợp thuộc hệ thống Unique Race Series (URS)",
+              "mapsUrl": "https://www.google.com/maps/place/Khu+tổ+hợp+nghỉ+dưỡng+Caraworld,+Cam+Ranh,+Khánh+Hòa",
+              "venue": "Khu tổ hợp nghỉ dưỡng Caraworld",
+              "city": "Cam Ranh, Khánh Hòa",
+              "organizer": "Unique Events & Media",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": "đang chờ thông tin"
+              },
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1TohKpl9Z233Trb77ttSV6h72MRMRIB9Q/view?usp=drive_link",
@@ -155,11 +472,231 @@
         "organizer": {
           "id": "cong-ty-tnhh-dau-tu-thuong-mai-dich-vu-unique",
           "name": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE"
-        }
+        },
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/11/16/1794796111058971/IMG_2832.JPG",
+            "json": {
+              "prices": [
+                {
+                  "distance": "UNIQUE",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "16/11",
+                  "to": "15/12",
+                  "price": 3700000
+                },
+                {
+                  "distance": "UNIQUE",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "16/12",
+                  "to": "15/02",
+                  "price": 4450000
+                },
+                {
+                  "distance": "UNIQUE",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "16/02",
+                  "to": "31/03",
+                  "price": 5350000
+                },
+                {
+                  "distance": "OLYMPIC D.",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "16/11",
+                  "to": "15/12",
+                  "price": 3400000
+                },
+                {
+                  "distance": "OLYMPIC D.",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "16/12",
+                  "to": "15/02",
+                  "price": 4100000
+                },
+                {
+                  "distance": "OLYMPIC D.",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "16/02",
+                  "to": "31/03",
+                  "price": 4950000
+                },
+                {
+                  "distance": "SPRINT D.",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "16/11",
+                  "to": "15/12",
+                  "price": 2300000
+                },
+                {
+                  "distance": "SPRINT D.",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "16/12",
+                  "to": "15/02",
+                  "price": 2800000
+                },
+                {
+                  "distance": "SPRINT D.",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "16/02",
+                  "to": "31/03",
+                  "price": 3350000
+                },
+                {
+                  "distance": "OLYMPIC D.",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "16/11",
+                  "to": "15/12",
+                  "price": 950000
+                },
+                {
+                  "distance": "OLYMPIC D.",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "16/12",
+                  "to": "15/02",
+                  "price": 1450000
+                },
+                {
+                  "distance": "OLYMPIC D.",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "16/02",
+                  "to": "31/03",
+                  "price": 1400000
+                },
+                {
+                  "distance": "SPRINT D.",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "16/11",
+                  "to": "15/12",
+                  "price": 750000
+                },
+                {
+                  "distance": "SPRINT D.",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "16/12",
+                  "to": "15/02",
+                  "price": 900000
+                },
+                {
+                  "distance": "SPRINT D.",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "16/02",
+                  "to": "31/03",
+                  "price": 1100000
+                },
+                {
+                  "distance": "UNIQUE DUO.",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "16/11",
+                  "to": "15/12",
+                  "price": 3400000
+                },
+                {
+                  "distance": "UNIQUE DUO.",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "16/12",
+                  "to": "15/02",
+                  "price": 4100000
+                },
+                {
+                  "distance": "UNIQUE DUO.",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "16/02",
+                  "to": "31/03",
+                  "price": 4950000
+                },
+                {
+                  "distance": "UNIQUE Mili",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "16/11",
+                  "to": "15/12",
+                  "price": 750000
+                },
+                {
+                  "distance": "UNIQUE Mili",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "16/12",
+                  "to": "15/02",
+                  "price": 900000
+                },
+                {
+                  "distance": "UNIQUE Mili",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "16/02",
+                  "to": "31/03",
+                  "price": 1100000
+                },
+                {
+                  "distance": "S3000m",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "16/11",
+                  "to": "15/12",
+                  "price": 1400000
+                },
+                {
+                  "distance": "S3000m",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "16/12",
+                  "to": "15/02",
+                  "price": 1700000
+                },
+                {
+                  "distance": "S3000m",
+                  "tier": "Late",
+                  "audience": "",
+                  "from": "16/02",
+                  "to": "31/03",
+                  "price": 2050000
+                }
+              ],
+              "distances": [
+                "UNIQUE",
+                "OLYMPIC D.",
+                "SPRINT D.",
+                "UNIQUE DUO.",
+                "UNIQUE Mili",
+                "S3000m"
+              ],
+              "date": "",
+              "currency": "VND"
+            }
+          },
+          {
+            "url": "https://pix.actiup.net/2026/11/13/1794564204483852/UDN.jpg",
+            "json": {
+              "prices": [],
+              "distances": [],
+              "date": "",
+              "currency": ""
+            }
+          }
+        ]
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-16T21:01:42.381Z",
-  "updatedAt": "2026-11-16T21:01:42.381Z"
+  "updatedAt": "2026-11-16T21:03:32.913Z"
 }
