@@ -17,25 +17,25 @@
       "label": "7km",
       "meters": 7000,
       "type": "trail_run",
-      "elevationGain": null
+      "elevationGain": 650
     },
     {
       "label": "12km",
       "meters": 12000,
       "type": "trail_run",
-      "elevationGain": null
+      "elevationGain": 750
     },
     {
       "label": "25km",
       "meters": 25000,
       "type": "trail_run",
-      "elevationGain": null
+      "elevationGain": 850
     },
     {
       "label": "35km",
       "meters": 35000,
       "type": "trail_run",
-      "elevationGain": null
+      "elevationGain": 1150
     }
   ],
   "location": {
@@ -706,8 +706,34 @@
               "date": "2026-11-29",
               "endDate": "2026-11-29",
               "mainDate": "2026-11-29",
-              "distances": [],
-              "courses": [],
+              "distances": [
+                "7km",
+                "12km",
+                "25km",
+                "35km"
+              ],
+              "courses": [
+                {
+                  "distance": "7km",
+                  "type": "trail_run",
+                  "elevationGain": 650
+                },
+                {
+                  "distance": "12km",
+                  "type": "trail_run",
+                  "elevationGain": 750
+                },
+                {
+                  "distance": "25km",
+                  "type": "trail_run",
+                  "elevationGain": 850
+                },
+                {
+                  "distance": "35km",
+                  "type": "trail_run",
+                  "elevationGain": 1150
+                }
+              ],
               "edition": 1,
               "editionQuote": "Giải chạy Vung Tau City Trail 2026",
               "mapsUrl": "",
@@ -720,7 +746,72 @@
                 "count": 0,
                 "quote": ""
               },
-              "prices": []
+              "prices": [
+                {
+                  "distance": "7km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "19/09",
+                  "to": "18/10",
+                  "price": 550000
+                },
+                {
+                  "distance": "7km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "19/10",
+                  "to": "15/11",
+                  "price": 650000
+                },
+                {
+                  "distance": "12km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "19/09",
+                  "to": "18/10",
+                  "price": 650000
+                },
+                {
+                  "distance": "12km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "19/10",
+                  "to": "15/11",
+                  "price": 750000
+                },
+                {
+                  "distance": "25km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "19/09",
+                  "to": "18/10",
+                  "price": 750000
+                },
+                {
+                  "distance": "25km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "19/10",
+                  "to": "15/11",
+                  "price": 850000
+                },
+                {
+                  "distance": "35km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "19/09",
+                  "to": "18/10",
+                  "price": 850000
+                },
+                {
+                  "distance": "35km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "19/10",
+                  "to": "15/11",
+                  "price": 1150000
+                }
+              ]
             }
           }
         ],
@@ -851,5 +942,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-11-15T21:04:59.230Z"
+  "updatedAt": "2026-11-16T07:41:13.830Z"
 }

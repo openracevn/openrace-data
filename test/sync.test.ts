@@ -146,6 +146,26 @@ describe("planSync", () => {
     assert.deepEqual(again, { files: {}, changes: [], skipped: [] });
   });
 
+  it("keeps a page's distances and prices when a re-read comes back without them (sales closed)", async () => {
+    const store = memoryStore();
+    apply(store, (await plan(store, [officialInput()])).files);
+    const closed = official({ ...officialPage, distances: [], prices: [] });
+    const again = await plan(store, [officialInput(closed, "2026-10-01T10:00:00.000Z")], "2026-10-01T10:00:05.000Z");
+    apply(store, again.files);
+    const race = readRace(store, "hcmc-marathon-2027");
+    assert.deepEqual(race.courses.map((course) => course.label), ["10km", "21km", "42km"]);
+    assert.equal(race.prices.length, 2);
+    assert.deepEqual((race.sources[0]!.extracted as StoredExtraction).pages![0]!.json.prices, officialPage.prices);
+  });
+
+  it("still takes a real change in a re-read's distances", async () => {
+    const store = memoryStore();
+    apply(store, (await plan(store, [officialInput()])).files);
+    const fewer = official({ ...officialPage, distances: ["21km", "10km"] });
+    apply(store, (await plan(store, [officialInput(fewer, "2026-10-01T10:00:00.000Z")], "2026-10-01T10:00:05.000Z")).files);
+    assert.deepEqual(readRace(store, "hcmc-marathon-2027").courses.map((course) => course.label), ["10km", "21km"]);
+  });
+
   it("joins the ActiUp page the official site links to, even under another name, and keeps both sellers' prices", async () => {
     const store = memoryStore();
     const links = [

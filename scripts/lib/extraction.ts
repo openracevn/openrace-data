@@ -172,6 +172,36 @@ export type SourceExtraction = {
   links?: { url: string; text: string }[];
 };
 
+// Lists a page loses when its sales end, not because the race changed: a closed iRace
+// ticket page has no ticket table, so a re-read gets no distances, courses or prices.
+const KEPT_LISTS = ["distances", "courses", "prices"] as const;
+
+const nonEmpty = (v: unknown): v is unknown[] => Array.isArray(v) && v.length > 0;
+
+/**
+ * A re-read of the same source, with any list that came back empty where the earlier
+ * read had values taken from the earlier read (per page and image by URL, and facts).
+ * Seen 2026-11-16: hanh-trinh-tiep-suc-2026 lost all its distances and prices, and
+ * vung-tau-city-trail-2026 its elevation gains, once iRace closed registration.
+ * The values still came from this source; its last read just no longer shows them.
+ */
+export function keepEarlierLists<T extends SourceExtraction>(prev: SourceExtraction | undefined, next: T): T {
+  if (!prev) return next;
+  const fill = (before: Record<string, unknown> | undefined, after: Record<string, unknown>): Record<string, unknown> => {
+    if (!before) return after;
+    const kept = KEPT_LISTS.filter((k) => nonEmpty(before[k]) && !nonEmpty(after[k]));
+    return kept.length === 0 ? after : { ...after, ...Object.fromEntries(kept.map((k) => [k, before[k]])) };
+  };
+  const byUrl = (before: { url: string; json: Record<string, unknown> }[] | undefined, after: { url: string; json: Record<string, unknown> }[] | undefined) =>
+    after?.map((item) => ({ ...item, json: fill(before?.find((b) => b.url === item.url)?.json, item.json) }));
+  return {
+    ...next,
+    ...(next.facts && { facts: fill(prev.facts, next.facts) }),
+    ...(next.pages && { pages: byUrl(prev.pages, next.pages) }),
+    ...(next.images && { images: byUrl(prev.images, next.images) }),
+  };
+}
+
 export type Tier = { distance: string | null; tier: string; kind: TierKind; audience: Audience | null; price: number; from: string | null; to: string | null };
 
 /** A source's normalized facts about a race. */

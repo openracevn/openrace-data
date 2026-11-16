@@ -7,7 +7,7 @@
 import { changedFields, deepEqual, stabilize } from "./lib/diff.ts";
 import { FRESHNESS_PATH, buildFreshness } from "./lib/freshness.ts";
 import { GitHubRepo, isNotFastForward, type GitHubTarget } from "./lib/github.ts";
-import { normalizeExtraction } from "./lib/extraction.ts";
+import { keepEarlierLists, normalizeExtraction } from "./lib/extraction.ts";
 import { applyOverrides, fieldFlags, isEntityRef, reconcile, type EntityRef, type StoredExtraction } from "./lib/reconcile.ts";
 import { CHECKS_PATH, parseChecks, serializeSorted } from "./lib/state.ts";
 import {
@@ -248,15 +248,16 @@ export async function planSync(
     const joined: string[] = [];
     for (const { input } of items) {
       const prevSource = sources.find((s) => s.site === input.site && s.url === input.url);
+      const extracted = keepEarlierLists(prevSource?.extracted as StoredExtraction | undefined, input.extracted);
       const nextSource: RaceSource = {
         site: input.site,
         role: input.role,
         url: input.url,
         lastCheckedAt: input.checkedAt,
         lastChangedAt: prevSource?.lastChangedAt ?? input.checkedAt,
-        extracted: input.extracted,
+        extracted,
       };
-      if (!prevSource || !deepEqual(prevSource.extracted, input.extracted) || prevSource.role !== input.role) touched.push(nextSource);
+      if (!prevSource || !deepEqual(prevSource.extracted, extracted) || prevSource.role !== input.role) touched.push(nextSource);
       if (!prevSource && prev) joined.push(input.site);
       sources = prevSource ? sources.map((s) => (s === prevSource ? nextSource : s)) : [...sources, nextSource];
     }
