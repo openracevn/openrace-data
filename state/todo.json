@@ -1,5 +1,5 @@
 {
-  "discoveredAt": "2026-11-17T21:01:13.656Z",
+  "discoveredAt": "2026-11-18T21:00:56.724Z",
   "readAt": "2026-11-17T21:02:39.734Z",
   "entries": [
     {
@@ -9,6 +9,12 @@
       "addedAt": "2026-11-08T21:00:57.352Z",
       "failures": 10,
       "lastError": "HTTP 404 for https://api.actiup.net/v2/content/events/slug/ultra-trail-cao-bang-2026"
+    },
+    {
+      "url": "https://actiup.net/vi/event/unique-111",
+      "raceId": "7ed5343b-6515-46b3-9b63-19a51201f39f",
+      "reason": "changed",
+      "addedAt": "2026-11-18T21:01:13.862Z"
     }
   ]
 }
