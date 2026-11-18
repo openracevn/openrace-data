@@ -4,7 +4,8 @@
   "name": "UNIQUE 111",
   "types": [
     "triathlon",
-    "other"
+    "duathlon",
+    "aquathlon"
   ],
   "date": "2027-04-09",
   "endDate": "2027-04-11",
@@ -113,8 +114,8 @@
   "prices": [
     {
       "distance": null,
-      "tier": "UNIQUE · Early Bird",
-      "kind": "early",
+      "tier": "SOLO RELAY · Early Bird",
+      "kind": "group",
       "audience": null,
       "price": 3700000,
       "from": "2026-11-16",
@@ -124,8 +125,8 @@
     },
     {
       "distance": null,
-      "tier": "UNIQUE · Regular",
-      "kind": "regular",
+      "tier": "SOLO RELAY · Regular",
+      "kind": "group",
       "audience": null,
       "price": 4450000,
       "from": "2026-12-16",
@@ -135,10 +136,43 @@
     },
     {
       "distance": null,
-      "tier": "UNIQUE · Late",
-      "kind": "late",
+      "tier": "SOLO RELAY · Late",
+      "kind": "group",
       "audience": null,
       "price": 5350000,
+      "from": "2027-02-16",
+      "to": "2027-03-31",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "SOLO RELAY · Early Bird",
+      "kind": "group",
+      "audience": null,
+      "price": 4850000,
+      "from": "2026-11-16",
+      "to": "2026-12-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "SOLO RELAY · Regular",
+      "kind": "group",
+      "audience": null,
+      "price": 5850000,
+      "from": "2026-12-16",
+      "to": "2027-02-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "SOLO RELAY · Late",
+      "kind": "group",
+      "audience": null,
+      "price": 7050000,
       "from": "2027-02-16",
       "to": "2027-03-31",
       "inferred": [],
@@ -226,7 +260,7 @@
       "tier": "OLYMPIC D. · Regular",
       "kind": "regular",
       "audience": null,
-      "price": 1450000,
+      "price": 1150000,
       "from": "2026-12-16",
       "to": "2027-02-15",
       "inferred": [],
@@ -311,7 +345,7 @@
     },
     {
       "distance": null,
-      "tier": "UNIQUE Mili · Early Bird",
+      "tier": "UNIQUE IIIiii · Early Bird",
       "kind": "early",
       "audience": null,
       "price": 750000,
@@ -322,7 +356,7 @@
     },
     {
       "distance": null,
-      "tier": "UNIQUE Mili · Regular",
+      "tier": "UNIQUE IIIiii · Regular",
       "kind": "regular",
       "audience": null,
       "price": 900000,
@@ -333,7 +367,7 @@
     },
     {
       "distance": null,
-      "tier": "UNIQUE Mili · Late",
+      "tier": "UNIQUE IIIiii · Late",
       "kind": "late",
       "audience": null,
       "price": 1100000,
@@ -344,7 +378,7 @@
     },
     {
       "distance": null,
-      "tier": "S3000m · Early Bird",
+      "tier": "SUN SPA SUMI · Early Bird",
       "kind": "early",
       "audience": null,
       "price": 1400000,
@@ -355,7 +389,7 @@
     },
     {
       "distance": null,
-      "tier": "S3000m · Regular",
+      "tier": "SUN SPA SUMI · Regular",
       "kind": "regular",
       "audience": null,
       "price": 1700000,
@@ -366,7 +400,7 @@
     },
     {
       "distance": null,
-      "tier": "S3000m · Late",
+      "tier": "SUN SPA SUMI · Late",
       "kind": "late",
       "audience": null,
       "price": 2050000,
@@ -399,7 +433,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/unique-111",
-      "lastCheckedAt": "2026-11-16T21:02:23.806Z",
+      "lastCheckedAt": "2026-11-18T21:01:55.959Z",
       "lastChangedAt": "2026-11-16T21:01:05.949Z",
       "extracted": {
         "facts": {
@@ -419,7 +453,8 @@
               "pageKind": "sport",
               "types": [
                 "triathlon",
-                "other"
+                "aquathlon",
+                "duathlon"
               ],
               "name": "Unique 111",
               "date": "2027-04-09",
@@ -432,24 +467,24 @@
               ],
               "courses": [
                 {
-                  "distance": "Unique 111",
+                  "distance": "",
                   "type": "triathlon",
                   "elevationGain": 0
                 },
                 {
-                  "distance": "Unique Aqua (Bơi – Chạy)",
+                  "distance": "",
                   "type": "aquathlon",
                   "elevationGain": 0
                 },
                 {
-                  "distance": "Unique Duo (Chạy – Đạp xe – Chạy)",
+                  "distance": "",
                   "type": "duathlon",
                   "elevationGain": 0
                 }
               ],
               "edition": 1,
-              "editionQuote": "Giải đấu ba môn phối hợp thuộc hệ thống Unique Race Series (URS)",
-              "mapsUrl": "https://www.google.com/maps/place/Khu+tổ+hợp+nghỉ+dưỡng+Caraworld,+Cam+Ranh,+Khánh+Hòa",
+              "editionQuote": "Unique 111 là giải đấu ba môn phối hợp",
+              "mapsUrl": "https://drive.google.com/file/d/1TohKpl9Z233Trb77ttSV6h72MRMRIB9Q/view?usp=drive_link",
               "venue": "Khu tổ hợp nghỉ dưỡng Caraworld",
               "city": "Cam Ranh, Khánh Hòa",
               "organizer": "Unique Events & Media",
@@ -457,7 +492,7 @@
               "registrationStatus": "open",
               "participants": {
                 "count": 0,
-                "quote": "đang chờ thông tin"
+                "quote": ""
               },
               "prices": []
             }
@@ -475,37 +510,61 @@
         },
         "images": [
           {
-            "url": "https://pix.actiup.net/2026/11/16/1794796111058971/IMG_2832.JPG",
+            "url": "https://pix.actiup.net/2026/11/18/1794970878348941/price-(1).jpg",
             "json": {
               "prices": [
                 {
-                  "distance": "UNIQUE",
+                  "distance": "SOLO RELAY",
                   "tier": "Early Bird",
-                  "audience": "",
+                  "audience": "Age From 18",
                   "from": "16/11",
                   "to": "15/12",
                   "price": 3700000
                 },
                 {
-                  "distance": "UNIQUE",
+                  "distance": "SOLO RELAY",
                   "tier": "Regular",
-                  "audience": "",
+                  "audience": "Age From 18",
                   "from": "16/12",
                   "to": "15/02",
                   "price": 4450000
                 },
                 {
-                  "distance": "UNIQUE",
+                  "distance": "SOLO RELAY",
                   "tier": "Late",
-                  "audience": "",
+                  "audience": "Age From 18",
                   "from": "16/02",
                   "to": "31/03",
                   "price": 5350000
                 },
                 {
+                  "distance": "SOLO RELAY",
+                  "tier": "Early Bird",
+                  "audience": "Age From 18",
+                  "from": "16/11",
+                  "to": "15/12",
+                  "price": 4850000
+                },
+                {
+                  "distance": "SOLO RELAY",
+                  "tier": "Regular",
+                  "audience": "Age From 18",
+                  "from": "16/12",
+                  "to": "15/02",
+                  "price": 5850000
+                },
+                {
+                  "distance": "SOLO RELAY",
+                  "tier": "Late",
+                  "audience": "Age From 18",
+                  "from": "16/02",
+                  "to": "31/03",
+                  "price": 7050000
+                },
+                {
                   "distance": "OLYMPIC D.",
                   "tier": "Early Bird",
-                  "audience": "",
+                  "audience": "Age From 15",
                   "from": "16/11",
                   "to": "15/12",
                   "price": 3400000
@@ -513,7 +572,7 @@
                 {
                   "distance": "OLYMPIC D.",
                   "tier": "Regular",
-                  "audience": "",
+                  "audience": "Age From 15",
                   "from": "16/12",
                   "to": "15/02",
                   "price": 4100000
@@ -521,7 +580,7 @@
                 {
                   "distance": "OLYMPIC D.",
                   "tier": "Late",
-                  "audience": "",
+                  "audience": "Age From 15",
                   "from": "16/02",
                   "to": "31/03",
                   "price": 4950000
@@ -529,7 +588,7 @@
                 {
                   "distance": "SPRINT D.",
                   "tier": "Early Bird",
-                  "audience": "",
+                  "audience": "Age From 15",
                   "from": "16/11",
                   "to": "15/12",
                   "price": 2300000
@@ -537,7 +596,7 @@
                 {
                   "distance": "SPRINT D.",
                   "tier": "Regular",
-                  "audience": "",
+                  "audience": "Age From 15",
                   "from": "16/12",
                   "to": "15/02",
                   "price": 2800000
@@ -545,7 +604,7 @@
                 {
                   "distance": "SPRINT D.",
                   "tier": "Late",
-                  "audience": "",
+                  "audience": "Age From 15",
                   "from": "16/02",
                   "to": "31/03",
                   "price": 3350000
@@ -553,7 +612,7 @@
                 {
                   "distance": "OLYMPIC D.",
                   "tier": "Early Bird",
-                  "audience": "",
+                  "audience": "Age From 15",
                   "from": "16/11",
                   "to": "15/12",
                   "price": 950000
@@ -561,15 +620,15 @@
                 {
                   "distance": "OLYMPIC D.",
                   "tier": "Regular",
-                  "audience": "",
+                  "audience": "Age From 15",
                   "from": "16/12",
                   "to": "15/02",
-                  "price": 1450000
+                  "price": 1150000
                 },
                 {
                   "distance": "OLYMPIC D.",
                   "tier": "Late",
-                  "audience": "",
+                  "audience": "Age From 15",
                   "from": "16/02",
                   "to": "31/03",
                   "price": 1400000
@@ -577,7 +636,7 @@
                 {
                   "distance": "SPRINT D.",
                   "tier": "Early Bird",
-                  "audience": "",
+                  "audience": "Age From 12",
                   "from": "16/11",
                   "to": "15/12",
                   "price": 750000
@@ -585,7 +644,7 @@
                 {
                   "distance": "SPRINT D.",
                   "tier": "Regular",
-                  "audience": "",
+                  "audience": "Age From 12",
                   "from": "16/12",
                   "to": "15/02",
                   "price": 900000
@@ -593,7 +652,7 @@
                 {
                   "distance": "SPRINT D.",
                   "tier": "Late",
-                  "audience": "",
+                  "audience": "Age From 12",
                   "from": "16/02",
                   "to": "31/03",
                   "price": 1100000
@@ -601,7 +660,7 @@
                 {
                   "distance": "UNIQUE DUO.",
                   "tier": "Early Bird",
-                  "audience": "",
+                  "audience": "Age From 15",
                   "from": "16/11",
                   "to": "15/12",
                   "price": 3400000
@@ -609,7 +668,7 @@
                 {
                   "distance": "UNIQUE DUO.",
                   "tier": "Regular",
-                  "audience": "",
+                  "audience": "Age From 15",
                   "from": "16/12",
                   "to": "15/02",
                   "price": 4100000
@@ -617,69 +676,69 @@
                 {
                   "distance": "UNIQUE DUO.",
                   "tier": "Late",
-                  "audience": "",
+                  "audience": "Age From 15",
                   "from": "16/02",
                   "to": "31/03",
                   "price": 4950000
                 },
                 {
-                  "distance": "UNIQUE Mili",
+                  "distance": "UNIQUE IIIiii",
                   "tier": "Early Bird",
-                  "audience": "",
+                  "audience": "Age From 10:15",
                   "from": "16/11",
                   "to": "15/12",
                   "price": 750000
                 },
                 {
-                  "distance": "UNIQUE Mili",
+                  "distance": "UNIQUE IIIiii",
                   "tier": "Regular",
-                  "audience": "",
+                  "audience": "Age From 10:15",
                   "from": "16/12",
                   "to": "15/02",
                   "price": 900000
                 },
                 {
-                  "distance": "UNIQUE Mili",
+                  "distance": "UNIQUE IIIiii",
                   "tier": "Late",
-                  "audience": "",
+                  "audience": "Age From 10:15",
                   "from": "16/02",
                   "to": "31/03",
                   "price": 1100000
                 },
                 {
-                  "distance": "S3000m",
+                  "distance": "SUN SPA SUMI",
                   "tier": "Early Bird",
-                  "audience": "",
+                  "audience": "Use Of A",
                   "from": "16/11",
                   "to": "15/12",
                   "price": 1400000
                 },
                 {
-                  "distance": "S3000m",
+                  "distance": "SUN SPA SUMI",
                   "tier": "Regular",
-                  "audience": "",
+                  "audience": "Use Of A",
                   "from": "16/12",
                   "to": "15/02",
                   "price": 1700000
                 },
                 {
-                  "distance": "S3000m",
+                  "distance": "SUN SPA SUMI",
                   "tier": "Late",
-                  "audience": "",
+                  "audience": "Use Of A",
                   "from": "16/02",
                   "to": "31/03",
                   "price": 2050000
                 }
               ],
               "distances": [
-                "UNIQUE",
+                "SOLO RELAY",
                 "OLYMPIC D.",
                 "SPRINT D.",
                 "UNIQUE DUO.",
-                "UNIQUE Mili",
-                "S3000m"
+                "UNIQUE IIIiii",
+                "SUN SPA SUMI"
               ],
-              "date": "",
+              "date": "2026-11-16",
               "currency": "VND"
             }
           },
@@ -698,5 +757,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-16T21:01:42.381Z",
-  "updatedAt": "2026-11-16T21:03:32.913Z"
+  "updatedAt": "2026-11-18T21:02:21.966Z"
 }

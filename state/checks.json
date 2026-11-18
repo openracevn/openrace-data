@@ -1149,7 +1149,7 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/ultra-trail-cao-bang-2026": {
-    "lastCheckedAt": "2026-11-17T21:02:28.200Z",
+    "lastCheckedAt": "2026-11-18T21:01:55.189Z",
     "status": "error",
     "reason": "HTTP 404 for https://api.actiup.net/v2/content/events/slug/ultra-trail-cao-bang-2026",
     "fingerprint": "f80aed2839f4b09df96d11bcb476015c"
@@ -1167,9 +1167,9 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/unique-111": {
-    "lastCheckedAt": "2026-11-18T21:01:13.862Z",
+    "lastCheckedAt": "2026-11-18T21:01:55.959Z",
     "status": "ok",
-    "fingerprint": "cd18551ce3a2d5811d989ffe2691a90a"
+    "fingerprint": "e61c196c6a46c0edc36c59d5c05656a6"
   },
   "https://actiup.net/vi/event/unique-nha-trang-h-marathon-2024": {
     "lastCheckedAt": "2026-09-23T18:32:27.911Z",
