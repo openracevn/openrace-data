@@ -13,7 +13,56 @@
   "organizerId": "cong-ty-co-phan-su-kien-bolt",
   "organizer": "Công ty Cổ phần Sự kiện BOLT",
   "edition": 1,
-  "courses": [],
+  "courses": [
+    {
+      "label": "55km",
+      "meters": 55000,
+      "type": "duathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "103km",
+      "meters": 103000,
+      "type": "triathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "Olympic",
+      "meters": 51500,
+      "type": "triathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "18km",
+      "meters": 18000,
+      "type": "aquathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "11.5km",
+      "meters": 11500,
+      "type": "aquathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "5.75km",
+      "meters": 5750,
+      "type": "aquathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "2.3km",
+      "meters": 2300,
+      "type": "aquathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "1.15km",
+      "meters": 1150,
+      "type": "aquathlon",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Hạ Long, Quảng Ninh, Việt Nam",
     "city": "Quảng Ninh"
@@ -852,7 +901,62 @@
   ],
   "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "courses": {
+      "value": [
+        {
+          "label": "55km",
+          "meters": 55000,
+          "type": "duathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "103km",
+          "meters": 103000,
+          "type": "triathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "Olympic",
+          "meters": 51500,
+          "type": "triathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "18km",
+          "meters": 18000,
+          "type": "aquathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "11.5km",
+          "meters": 11500,
+          "type": "aquathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "5.75km",
+          "meters": 5750,
+          "type": "aquathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "2.3km",
+          "meters": 2300,
+          "type": "aquathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "1.15km",
+          "meters": 1150,
+          "type": "aquathlon",
+          "elevationGain": null
+        }
+      ],
+      "reason": "iRace event description (https://ticket.irace.vn/aqua-warriors-halong-bay-2027) lists each course by legs; meters/label = sum of legs: Standard Duathlon run10+bike40+run5; T103 Enduro swim2+bike80+run21; Olympic Triathlon swim1.5+bike40+run10; Full Aqua swim3+run15; Olympic Aqua swim1.5+run10; Sprint Aqua swim0.75+run5; Junior swim0.3+run2; Kid swim0.15+run1",
+      "at": "2026-11-19T09:46:59.225Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -1689,5 +1793,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-10-12T17:48:31.011Z",
-  "updatedAt": "2026-11-12T21:02:58.333Z"
+  "updatedAt": "2026-11-19T09:46:59.225Z"
 }

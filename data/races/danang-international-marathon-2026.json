@@ -1,0 +1,113 @@
+{
+  "id": "0a13c8f0-b688-46d6-823a-3384bd15509c",
+  "slug": "danang-international-marathon-2026",
+  "name": "Danang International Marathon 2026",
+  "types": [
+    "road_run"
+  ],
+  "date": "2026-03-22",
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": "danang-international-marathon",
+  "organizerId": null,
+  "organizer": "Pulse Active",
+  "edition": 13,
+  "courses": [
+    {
+      "label": "1.5km",
+      "meters": 1500,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "500m",
+      "meters": 500,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Công viên Biển Đông (East Sea Park)",
+    "city": "Đà Nẵng"
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "participants": {
+    "count": 9000,
+    "sourceUrl": "https://tuoitre.vn/gan-9-000-runner-tranh-tai-tai-marathon-quoc-te-da-nang-2026-20260319154746163.htm",
+    "quote": "thu hút gần 9.000 vận động viên trong và ngoài nước",
+    "confidence": "medium"
+  },
+  "flags": [],
+  "overrides": {
+    "seriesId": {
+      "value": "danang-international-marathon",
+      "reason": "Same series (organizer Pulse Active, rundanang.com); edition number stated by Bao Dau tu (lan thu XIII)",
+      "at": "2026-11-19T09:46:59.225Z"
+    },
+    "edition": {
+      "value": 13,
+      "reason": "Same series (organizer Pulse Active, rundanang.com); edition number stated by Bao Dau tu (lan thu XIII)",
+      "at": "2026-11-19T09:46:59.225Z"
+    }
+  },
+  "sources": [
+    {
+      "site": "baodautu-vn",
+      "role": "reference",
+      "url": "https://baodautu.vn/cuoc-thi-marathon-quoc-te-da-nang-lan-thu-xiii-nam-2026-sap-dien-ra-d544310.html",
+      "lastCheckedAt": "2026-11-19T09:46:59.225Z",
+      "lastChangedAt": "2026-11-19T09:46:59.225Z",
+      "extracted": {
+        "facts": {
+          "name": "Danang International Marathon 2026",
+          "date": "2026-03-22",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "42km",
+            "21km",
+            "5km",
+            "1.5km",
+            "500m"
+          ],
+          "venue": "Công viên Biển Đông (East Sea Park)",
+          "city": "Đà Nẵng",
+          "organizer": "Pulse Active",
+          "participants": {
+            "count": 9000,
+            "sourceUrl": "https://tuoitre.vn/gan-9-000-runner-tranh-tai-tai-marathon-quoc-te-da-nang-2026-20260319154746163.htm",
+            "quote": "thu hút gần 9.000 vận động viên trong và ngoài nước"
+          },
+          "note": "Bao Dau tu: UBND plan for the 13th edition, main races 22/3, Ronny Dash 21/3"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-11-19T09:46:59.225Z",
+  "updatedAt": "2026-11-19T09:46:59.225Z"
+}

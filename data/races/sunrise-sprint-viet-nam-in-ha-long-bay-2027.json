@@ -6,9 +6,9 @@
     "triathlon"
   ],
   "date": "2027-03-20",
-  "endDate": "2027-11-22",
-  "mainDate": "2027-11-21",
-  "seriesId": null,
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": "sunrise-sprint-viet-nam-in-ha-long-bay",
   "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
   "edition": null,
@@ -120,7 +120,19 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "Sprint",
+      "tier": "General Entry",
+      "kind": "other",
+      "audience": null,
+      "price": 2980000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -131,10 +143,41 @@
   ],
   "links": [],
   "participants": null,
-  "flags": [
-    "race spans 247 days (2027-03-20 to 2027-11-22); endDate may be the registration close"
-  ],
-  "overrides": {},
+  "flags": [],
+  "overrides": {
+    "endDate": {
+      "value": null,
+      "reason": "ironman.com/races/5150-ha-long-bay/sunrise-sprint (fetched 2026-11-19): 'March 20, 2027', General entry 2,980,000 VND (phase not stated), Relay entry 4,180,000 VND (team, not stored). ActiUp API start_date = end_date = 2027-03-20 (close_registration 2027-02-28), so endDate 2027-11-22 and mainDate 2027-11-21 were a misread.",
+      "at": "2026-11-19T09:46:59.225Z"
+    },
+    "mainDate": {
+      "value": null,
+      "reason": "ironman.com/races/5150-ha-long-bay/sunrise-sprint (fetched 2026-11-19): 'March 20, 2027', General entry 2,980,000 VND (phase not stated), Relay entry 4,180,000 VND (team, not stored). ActiUp API start_date = end_date = 2027-03-20 (close_registration 2027-02-28), so endDate 2027-11-22 and mainDate 2027-11-21 were a misread.",
+      "at": "2026-11-19T09:46:59.225Z"
+    },
+    "prices": {
+      "value": [
+        {
+          "distance": "Sprint",
+          "tier": "General Entry",
+          "kind": "other",
+          "audience": null,
+          "price": 2980000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        }
+      ],
+      "reason": "ironman.com/races/5150-ha-long-bay/sunrise-sprint (fetched 2026-11-19): 'March 20, 2027', General entry 2,980,000 VND (phase not stated), Relay entry 4,180,000 VND (team, not stored). ActiUp API start_date = end_date = 2027-03-20 (close_registration 2027-02-28), so endDate 2027-11-22 and mainDate 2027-11-21 were a misread.",
+      "at": "2026-11-19T09:46:59.225Z"
+    },
+    "seriesId": {
+      "value": "sunrise-sprint-viet-nam-in-ha-long-bay",
+      "reason": "ironman.com/races/5150-ha-long-bay/sunrise-sprint (fetched 2026-11-19): 'March 20, 2027', General entry 2,980,000 VND (phase not stated), Relay entry 4,180,000 VND (team, not stored). ActiUp API start_date = end_date = 2027-03-20 (close_registration 2027-02-28), so endDate 2027-11-22 and mainDate 2027-11-21 were a misread.",
+      "at": "2026-11-19T09:46:59.225Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -208,9 +251,32 @@
           "name": "Sunrise Events Vietnam"
         }
       }
+    },
+    {
+      "site": "ironman-com",
+      "role": "reference",
+      "url": "https://ironman.com/races/5150-ha-long-bay/sunrise-sprint",
+      "lastCheckedAt": "2026-11-19T09:46:59.225Z",
+      "lastChangedAt": "2026-11-19T09:46:59.225Z",
+      "extracted": {
+        "facts": {
+          "name": "Sunrise Sprint Viet Nam in Ha Long Bay 2027",
+          "date": "2027-03-20",
+          "venue": "Hạ Long",
+          "city": "Hạ Long",
+          "prices": [
+            {
+              "distance": "Sprint",
+              "tier": "General Entry",
+              "price": 2980000
+            }
+          ],
+          "note": "Organizer page: 'Sunrise Sprint, March 20, 2027', General entry ₫2,980,000 VND, Relay entry ₫4,180,000 VND"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-11-04T21:01:38.058Z",
-  "updatedAt": "2026-11-04T21:03:26.080Z"
+  "updatedAt": "2026-11-19T09:46:59.225Z"
 }

@@ -1,0 +1,113 @@
+{
+  "id": "14d86119-ceb8-41b8-80dc-79bfc51b7856",
+  "slug": "danang-international-marathon-2025",
+  "name": "Danang International Marathon 2025",
+  "types": [
+    "road_run"
+  ],
+  "date": "2025-03-23",
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": "danang-international-marathon",
+  "organizerId": null,
+  "organizer": "Pulse Active",
+  "edition": 12,
+  "courses": [
+    {
+      "label": "1.5km",
+      "meters": 1500,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "500m",
+      "meters": 500,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Công viên Biển Đông (East Sea Park)",
+    "city": "Đà Nẵng"
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "participants": {
+    "count": 7000,
+    "sourceUrl": "https://www.vietnamplus.vn/hon-7000-van-dong-vien-tranh-tai-o-giai-marathon-quoc-te-tai-da-nang-post1021884.vnp",
+    "quote": "Năm 2025, cuộc thi chào đón hơn 7.000 vận động viên tranh tài",
+    "confidence": "medium"
+  },
+  "flags": [],
+  "overrides": {
+    "seriesId": {
+      "value": "danang-international-marathon",
+      "reason": "Same series (organizer Pulse Active, rundanang.com); edition number stated by Bao Da Nang (mua giai thu 12)",
+      "at": "2026-11-19T09:46:59.225Z"
+    },
+    "edition": {
+      "value": 12,
+      "reason": "Same series (organizer Pulse Active, rundanang.com); edition number stated by Bao Da Nang (mua giai thu 12)",
+      "at": "2026-11-19T09:46:59.225Z"
+    }
+  },
+  "sources": [
+    {
+      "site": "baodanang-vn",
+      "role": "reference",
+      "url": "https://baodanang.vn/cuoc-thi-marathon-quoc-te-da-nang-2025-hua-hen-hap-dan-3275365.html",
+      "lastCheckedAt": "2026-11-19T09:46:59.225Z",
+      "lastChangedAt": "2026-11-19T09:46:59.225Z",
+      "extracted": {
+        "facts": {
+          "name": "Danang International Marathon 2025",
+          "date": "2025-03-23",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "42km",
+            "21km",
+            "5km",
+            "1.5km",
+            "500m"
+          ],
+          "venue": "Công viên Biển Đông (East Sea Park)",
+          "city": "Đà Nẵng",
+          "organizer": "Pulse Active",
+          "participants": {
+            "count": 7000,
+            "sourceUrl": "https://www.vietnamplus.vn/hon-7000-van-dong-vien-tranh-tai-o-giai-marathon-quoc-te-tai-da-nang-post1021884.vnp",
+            "quote": "Năm 2025, cuộc thi chào đón hơn 7.000 vận động viên tranh tài"
+          },
+          "note": "Bao Da Nang: 12th season, adult races 23/3, 5km not 10km, Ronny Dash 500m and 1.5km"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-11-19T09:46:59.225Z",
+  "updatedAt": "2026-11-19T09:46:59.225Z"
+}

@@ -14,7 +14,56 @@
   "organizerId": "cong-ty-tnhh-dau-tu-thuong-mai-dich-vu-unique",
   "organizer": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "111km",
+      "meters": 111000,
+      "type": "triathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "55.5km",
+      "meters": 55500,
+      "type": "triathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "25.75km",
+      "meters": 25750,
+      "type": "triathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "13.3km",
+      "meters": 13300,
+      "type": "triathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "59km",
+      "meters": 59000,
+      "type": "duathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "11.5km",
+      "meters": 11500,
+      "type": "aquathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "5.75km",
+      "meters": 5750,
+      "type": "aquathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "3000m",
+      "meters": 3000,
+      "type": null,
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "CaraWorld, Cam Ranh, Khánh Hòa",
     "city": "Cam Ranh, Khánh Hòa"
@@ -427,7 +476,62 @@
   ],
   "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "courses": {
+      "value": [
+        {
+          "label": "111km",
+          "meters": 111000,
+          "type": "triathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "55.5km",
+          "meters": 55500,
+          "type": "triathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "25.75km",
+          "meters": 25750,
+          "type": "triathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "13.3km",
+          "meters": 13300,
+          "type": "triathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "59km",
+          "meters": 59000,
+          "type": "duathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "11.5km",
+          "meters": 11500,
+          "type": "aquathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "5.75km",
+          "meters": 5750,
+          "type": "aquathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "3000m",
+          "meters": 3000,
+          "type": null,
+          "elevationGain": null
+        }
+      ],
+      "reason": "ActiUp 'Lịch trình sự kiện dự kiến' image https://pix.actiup.net/2026/11/16/1794796168623315/LTSK-(1).jpg lists each course with swim/bike/run distances (tentative schedule); meters are the sum of the legs; labels are total distance, per-course names: 111km=Unique 111 Solo/Relay, 55.5km=Unique Olympic, 25.75km=Unique Sprint, 13.3km=Unique Mini, 59km=Unique Duo, 11.5km=Unique Aqua Olympic, 5.75km=Unique Aqua Sprint, 3000m=Unique Sun Sea Swim",
+      "at": "2026-11-19T09:46:59.225Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -757,5 +861,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-16T21:01:42.381Z",
-  "updatedAt": "2026-11-18T21:02:21.966Z"
+  "updatedAt": "2026-11-19T09:46:59.225Z"
 }

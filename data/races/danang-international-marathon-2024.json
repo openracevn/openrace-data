@@ -1,0 +1,113 @@
+{
+  "id": "8468caf2-22a2-4155-9d60-24e5486de787",
+  "slug": "danang-international-marathon-2024",
+  "name": "Danang International Marathon 2024",
+  "types": [
+    "road_run"
+  ],
+  "date": "2024-03-24",
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": "danang-international-marathon",
+  "organizerId": null,
+  "organizer": "Pulse Active",
+  "edition": 11,
+  "courses": [
+    {
+      "label": "1.5km",
+      "meters": 1500,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Công viên Biển Đông (East Sea Park)",
+    "city": "Đà Nẵng"
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "participants": {
+    "count": 9000,
+    "sourceUrl": "https://en.vietnamplus.vn/danang-international-marathon-2024-draws-9000-runners-post283333.vnp",
+    "quote": "drawing more than 9,000runners",
+    "confidence": "medium"
+  },
+  "flags": [],
+  "overrides": {
+    "seriesId": {
+      "value": "danang-international-marathon",
+      "reason": "Same series (organizer Pulse Active, rundanang.com); edition number stated by Bao Da Nang (lan thu 11)",
+      "at": "2026-11-19T09:46:59.225Z"
+    },
+    "edition": {
+      "value": 11,
+      "reason": "Same series (organizer Pulse Active, rundanang.com); edition number stated by Bao Da Nang (lan thu 11)",
+      "at": "2026-11-19T09:46:59.225Z"
+    }
+  },
+  "sources": [
+    {
+      "site": "en-vietnamplus-vn",
+      "role": "reference",
+      "url": "https://en.vietnamplus.vn/danang-international-marathon-2024-draws-9000-runners-post283333.vnp",
+      "lastCheckedAt": "2026-11-19T09:46:59.225Z",
+      "lastChangedAt": "2026-11-19T09:46:59.225Z",
+      "extracted": {
+        "facts": {
+          "name": "Danang International Marathon 2024",
+          "date": "2024-03-24",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "42km",
+            "21km",
+            "10km",
+            "5km",
+            "1.5km"
+          ],
+          "venue": "Công viên Biển Đông (East Sea Park)",
+          "city": "Đà Nẵng",
+          "organizer": "Pulse Active",
+          "participants": {
+            "count": 9000,
+            "sourceUrl": "https://en.vietnamplus.vn/danang-international-marathon-2024-draws-9000-runners-post283333.vnp",
+            "quote": "drawing more than 9,000runners"
+          },
+          "note": "VietnamPlus: 42/21/10/5km on 24 March, 1.5km Ronny Dash on 23 March; 11th edition per Bao Da Nang https://baodanang.vn/giai-marathon-quoc-te-da-nang-lan-thu-11-dien-ra-ngay-24-3-2024-3044887.html"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-11-19T09:46:59.225Z",
+  "updatedAt": "2026-11-19T09:46:59.225Z"
+}

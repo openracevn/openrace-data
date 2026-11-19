@@ -186,12 +186,27 @@
     "date": "2027-04-03",
     "endDate": "2027-04-04",
     "mainDate": "2027-04-03",
-    "lastModified": "2026-11-12T21:02:58.333Z",
+    "lastModified": "2026-11-19T09:46:59.225Z",
     "file": "aqua-warriors-halong-bay-2027.json",
     "seriesId": "aqua-warriors-halong-bay",
     "sourceUrls": [
       "https://actiup.net/vi/event/aqua-warriors-halong-bay-2027",
       "https://ticket.irace.vn/aqua-warriors-halong-bay-2027"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "0a13c8f0-b688-46d6-823a-3384bd15509c",
+    "slug": "danang-international-marathon-2026",
+    "name": "Danang International Marathon 2026",
+    "date": "2026-03-22",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-19T09:46:59.225Z",
+    "file": "danang-international-marathon-2026.json",
+    "seriesId": "danang-international-marathon",
+    "sourceUrls": [
+      "https://baodautu.vn/cuoc-thi-marathon-quoc-te-da-nang-lan-thu-xiii-nam-2026-sap-dien-ra-d544310.html"
     ],
     "linkUrls": []
   },
@@ -430,6 +445,21 @@
     "linkUrls": []
   },
   {
+    "id": "14d86119-ceb8-41b8-80dc-79bfc51b7856",
+    "slug": "danang-international-marathon-2025",
+    "name": "Danang International Marathon 2025",
+    "date": "2025-03-23",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-19T09:46:59.225Z",
+    "file": "danang-international-marathon-2025.json",
+    "seriesId": "danang-international-marathon",
+    "sourceUrls": [
+      "https://baodanang.vn/cuoc-thi-marathon-quoc-te-da-nang-2025-hua-hen-hap-dan-3275365.html"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "15481d94-22b5-4f16-b5c8-7f50f7aa7405",
     "slug": "vietnam-international-half-marathon-2026",
     "name": "Giải bán marathon Quốc tế Việt Nam 2026 tài trợ bởi Herbalife",
@@ -635,12 +665,12 @@
     "id": "1dcfdad2-c3be-44a4-aca0-7f00b6334730",
     "slug": "vietnam-highlands-trail-2025",
     "name": "Vietnam Highlands Trail 2025",
-    "date": "2026-01-14",
-    "endDate": null,
+    "date": "2026-01-09",
+    "endDate": "2026-01-10",
     "mainDate": null,
-    "lastModified": "2026-09-28T12:41:20.850Z",
+    "lastModified": "2026-11-19T09:46:59.225Z",
     "file": "vietnam-highlands-trail-2025-2026.json",
-    "seriesId": null,
+    "seriesId": "vietnam-highlands-trail",
     "sourceUrls": [
       "https://actiup.net/vi/event/vietnam-highlands-trail-2025"
     ],
@@ -1526,6 +1556,21 @@
     "linkUrls": []
   },
   {
+    "id": "3b379d0b-1fe8-4bdb-a67d-29797684964a",
+    "slug": "manulife-danang-international-marathon-2016",
+    "name": "Manulife Danang International Marathon 2016",
+    "date": "2016-08-06",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-19T09:46:59.225Z",
+    "file": "manulife-danang-international-marathon-2016.json",
+    "seriesId": "manulife-danang-international-marathon",
+    "sourceUrls": [
+      "https://baodanang.vn/cuoc-thi-marathon-quoc-te-da-nang-2016-tao-hieu-ung-xa-hoi-lon-3263625.html"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "3ba82dd6-6954-4a49-9d40-caf0b9ebe87f",
     "slug": "2030-entrepreneurs-sports-festival-olympic-2030-9th-edition-2025-entrepreneurs-archery-event-seazen",
     "name": "HỘI THAO DOANH NHÂN 2030 - HƯỞNG ỨNG PHONG TRÀO OLYMPIC VIỆT NAM | MÔN VIỆT DÃ DOANH NHÂN - TRANH GIẢI SEAZEN",
@@ -1583,6 +1628,21 @@
     "seriesId": null,
     "sourceUrls": [
       "https://actiup.net/vi/event/cu-chi-tunnel-historic-trail-2025"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "3cb8d02a-3cb5-4986-b736-9f8340b37318",
+    "slug": "vietnam-trail-marathon-2021",
+    "name": "Vietnam Trail Marathon 2021",
+    "date": "2021-04-23",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-19T09:46:59.225Z",
+    "file": "vietnam-trail-marathon-2021.json",
+    "seriesId": "vietnam-trail-marathon",
+    "sourceUrls": [
+      "https://english.vov.vn/en/sports/vietnam-trail-marathon-attracts-4300-runners-852621.vov"
     ],
     "linkUrls": []
   },
@@ -2187,6 +2247,36 @@
     "linkUrls": []
   },
   {
+    "id": "531e56ac-fff1-4e84-b306-2a571fb3bcfd",
+    "slug": "manulife-danang-international-marathon-2022",
+    "name": "Manulife Danang International Marathon 2022",
+    "date": "2022-03-20",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-19T09:46:59.225Z",
+    "file": "manulife-danang-international-marathon-2022.json",
+    "seriesId": "manulife-danang-international-marathon",
+    "sourceUrls": [
+      "https://vietnamplus.vn/viet-nam-doat-giai-cao-tai-cuoc-thi-marathon-quoc-te-da-nang-2022-post779172.vnp"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "53524036-db3d-4403-9db1-30b55d6eae50",
+    "slug": "vietnam-trail-marathon-2022",
+    "name": "Vietnam Trail Marathon 2022",
+    "date": "2022-05-21",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-19T09:46:59.225Z",
+    "file": "vietnam-trail-marathon-2022.json",
+    "seriesId": "vietnam-trail-marathon",
+    "sourceUrls": [
+      "https://dtinews.dantri.com.vn/print/20220521153617263.htm"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "5477a6c4-9193-4f91-b846-cb2018ceeaff",
     "slug": "vnexpress-marathon-vung-tau",
     "name": "VnExpress Vung Tau International Half Marathon Herbalife Cup",
@@ -2342,6 +2432,21 @@
     "linkUrls": []
   },
   {
+    "id": "58b1ebfa-0ddb-47e0-9b3b-817765cbb49d",
+    "slug": "vietnam-trail-marathon-2019",
+    "name": "Vietnam Trail Marathon 2019",
+    "date": "2019-01-19",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-19T09:46:59.225Z",
+    "file": "vietnam-trail-marathon-2019.json",
+    "seriesId": "vietnam-trail-marathon",
+    "sourceUrls": [
+      "https://vietnamtrailseries.com/vietnam-trail-marathon-s-results-1900-runners-conquer-trails-of-beautiful-moc-chau"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "5a677267-2e08-41b0-a86f-11d1c010b2e0",
     "slug": "save-turtles-run-2025",
     "name": "Chạy Bộ Vì Rùa Biển 2025",
@@ -2418,6 +2523,21 @@
     "linkUrls": []
   },
   {
+    "id": "5d8df09a-d6f3-4b9d-b650-452116cb0155",
+    "slug": "vietnam-trail-marathon-2020",
+    "name": "Vietnam Trail Marathon 2020",
+    "date": "2020-01-11",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-19T09:46:59.225Z",
+    "file": "vietnam-trail-marathon-2020.json",
+    "seriesId": "vietnam-trail-marathon",
+    "sourceUrls": [
+      "https://vietnamnet.vn/en/over-3000-runners-join-vietnam-trail-marathon-in-son-la-608722.html"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "5e090b5a-50f0-4c92-88e4-1a2c3289a4ce",
     "slug": "vnexpress-marathon-galaxy-run",
     "name": "Galaxy Run 2026",
@@ -2429,6 +2549,21 @@
     "seriesId": "vnexpress-marathon-galaxy-run",
     "sourceUrls": [
       "https://vm.vnexpress.net/galaxy-run-2026"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "5e6aa52a-3db4-4179-b0ed-30762a709c44",
+    "slug": "vietnam-trail-marathon-2024",
+    "name": "Vietnam Trail Marathon 2024",
+    "date": "2024-01-20",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-19T09:46:59.225Z",
+    "file": "vietnam-trail-marathon-2024.json",
+    "seriesId": "vietnam-trail-marathon",
+    "sourceUrls": [
+      "https://en.nhandan.vn/more-than-4000-runners-join-vietnam-trail-marathon-post132768.html"
     ],
     "linkUrls": []
   },
@@ -2686,11 +2821,12 @@
     "date": "2027-03-20",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-11-04T21:01:38.058Z",
+    "lastModified": "2026-11-19T09:46:59.225Z",
     "file": "ironkids-viet-nam-in-ha-long-bay-2027.json",
-    "seriesId": null,
+    "seriesId": "ironkids-viet-nam-in-ha-long-bay",
     "sourceUrls": [
-      "https://actiup.net/vi/event/2027-ironkids-viet-nam-in-ha-long-bay"
+      "https://actiup.net/vi/event/2027-ironkids-viet-nam-in-ha-long-bay",
+      "https://ironman.com/races/5150-ha-long-bay/ironkids"
     ],
     "linkUrls": []
   },
@@ -3141,7 +3277,7 @@
     "date": "2027-04-09",
     "endDate": "2027-04-11",
     "mainDate": "2027-04-09",
-    "lastModified": "2026-11-18T21:02:21.966Z",
+    "lastModified": "2026-11-19T09:46:59.225Z",
     "file": "unique-111-2027.json",
     "seriesId": null,
     "sourceUrls": [
@@ -3301,6 +3437,21 @@
     "seriesId": "brah-yang-trail-summit",
     "sourceUrls": [
       "https://actiup.net/vi/event/brah-yang-trail-summit-2026"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "8468caf2-22a2-4155-9d60-24e5486de787",
+    "slug": "danang-international-marathon-2024",
+    "name": "Danang International Marathon 2024",
+    "date": "2024-03-24",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-19T09:46:59.225Z",
+    "file": "danang-international-marathon-2024.json",
+    "seriesId": "danang-international-marathon",
+    "sourceUrls": [
+      "https://en.vietnamplus.vn/danang-international-marathon-2024-draws-9000-runners-post283333.vnp"
     ],
     "linkUrls": []
   },
@@ -3489,6 +3640,21 @@
     "seriesId": null,
     "sourceUrls": [
       "https://actiup.net/vi/event/amata-happy-run-2025"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "8cb913fa-e74d-413f-b964-b510961aa034",
+    "slug": "manulife-danang-international-marathon-2019",
+    "name": "Manulife Danang International Marathon 2019",
+    "date": "2019-08-11",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-19T09:46:59.225Z",
+    "file": "manulife-danang-international-marathon-2019.json",
+    "seriesId": "manulife-danang-international-marathon",
+    "sourceUrls": [
+      "https://baodanang.vn/channel/5422/201908/cuoc-thi-marathon-quoc-te-da-nang-2019-su-khang-dinh-cua-van-dong-vien-viet-nam-3230253"
     ],
     "linkUrls": []
   },
@@ -3960,7 +4126,7 @@
     "date": "2026-11-29",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-11-08T21:08:02.763Z",
+    "lastModified": "2026-11-19T09:46:59.225Z",
     "file": "deep-c-run-royale-2026.json",
     "seriesId": null,
     "sourceUrls": [
@@ -4110,6 +4276,21 @@
     "linkUrls": []
   },
   {
+    "id": "a7d14e60-7d9c-4db5-86af-3172121fc546",
+    "slug": "deep-c-run-royal-2025",
+    "name": "DEEP C Run Royal 2025",
+    "date": "2025-12-07",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-19T09:46:59.225Z",
+    "file": "deep-c-run-royal-2025.json",
+    "seriesId": null,
+    "sourceUrls": [
+      "https://en.haiphong.gov.vn/news/exciting-deep-c-run-royal-opens-828633"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "aa148665-22f1-4604-8958-d8039c41f2bd",
     "slug": "ly-son-cross-island-2024",
     "name": "Lý Sơn Cross Island 2024",
@@ -4153,6 +4334,21 @@
     "seriesId": null,
     "sourceUrls": [
       "https://actiup.net/vi/event/dak-nong-marathon-2025"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "ae85750c-e170-4ce8-8388-6861e9deb4af",
+    "slug": "manulife-danang-international-marathon-2018",
+    "name": "Manulife Danang International Marathon 2018",
+    "date": "2018-08-12",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-19T09:46:59.225Z",
+    "file": "manulife-danang-international-marathon-2018.json",
+    "seriesId": "manulife-danang-international-marathon",
+    "sourceUrls": [
+      "https://danangfantasticity.com/en/tin-tuc/manulife-danang-international-marathon-lan-to-chuc-thu-vi-soi-dong-voi-chu-de-boi-vi-toi-yeu-da-nang"
     ],
     "linkUrls": []
   },
@@ -4232,6 +4428,21 @@
     "seriesId": null,
     "sourceUrls": [
       "https://actiup.net/vi/event/vtv-lpbank-international-marathon-cat-ba-sunset-2024"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "b29b2fa9-7b3b-42ef-89d1-2d5c74f55c7f",
+    "slug": "vietnam-highlands-trail-by-utmb-2027",
+    "name": "Vietnam Highlands Trail by UTMB 2027",
+    "date": "2027-01-07",
+    "endDate": "2027-01-10",
+    "mainDate": "2027-01-09",
+    "lastModified": "2026-11-19T09:46:59.225Z",
+    "file": "vietnam-highlands-trail-by-utmb-2027.json",
+    "seriesId": null,
+    "sourceUrls": [
+      "https://vietnamhighlands.utmb.world/runners/entry-info"
     ],
     "linkUrls": []
   },
@@ -4663,6 +4874,21 @@
     "linkUrls": []
   },
   {
+    "id": "bda76bc0-2698-40eb-8f7b-6b8375317e45",
+    "slug": "vietnam-trail-marathon-2023",
+    "name": "Vietnam Trail Marathon 2023",
+    "date": "2023-01-07",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-19T09:46:59.225Z",
+    "file": "vietnam-trail-marathon-2023.json",
+    "seriesId": "vietnam-trail-marathon",
+    "sourceUrls": [
+      "https://en.nhandan.vn/vietnam-trail-marathon-2023-attracts-3500-runners-post121614.html"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "be49c95e-d195-44e8-a318-d1033a8154c8",
     "slug": "giai-chay-ban-marathon-run-to-live-2024",
     "name": "GIẢI CHẠY BÁN MARATHON RUN TO LIVE 2024",
@@ -4675,6 +4901,21 @@
     "sourceUrls": [
       "https://actiup.net/vi/event/giai-chay-ban-marathon-run-to-live-2024",
       "https://nhandan.vn/6000-van-dong-vien-tranh-tai-tai-giai-chay-bo-run-to-live-post799379.html"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "bea037b6-cc8a-4a53-afe7-f342e3bb1fa7",
+    "slug": "vietnam-trail-marathon-2026",
+    "name": "Vietnam Trail Marathon 2026",
+    "date": "2026-01-31",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-19T09:46:59.225Z",
+    "file": "vietnam-trail-marathon-2026.json",
+    "seriesId": "vietnam-trail-marathon",
+    "sourceUrls": [
+      "https://vietnamtrailseries.com/records-fall-at-vietnam-trail-marathon-2026"
     ],
     "linkUrls": []
   },
@@ -4728,13 +4969,29 @@
     "slug": "2027-sunrise-sprint-viet-nam-in-ha-long-bay",
     "name": "2027 SUNRISE SPRINT Viet Nam in HẠ LONG BAY",
     "date": "2027-03-20",
-    "endDate": "2027-11-22",
-    "mainDate": "2027-11-21",
-    "lastModified": "2026-11-04T21:03:26.080Z",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-19T09:46:59.225Z",
     "file": "sunrise-sprint-viet-nam-in-ha-long-bay-2027.json",
-    "seriesId": null,
+    "seriesId": "sunrise-sprint-viet-nam-in-ha-long-bay",
     "sourceUrls": [
-      "https://actiup.net/vi/event/2027-sunrise-sprint-viet-nam-in-ha-long-bay"
+      "https://actiup.net/vi/event/2027-sunrise-sprint-viet-nam-in-ha-long-bay",
+      "https://ironman.com/races/5150-ha-long-bay/sunrise-sprint"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "c0fa5d54-819a-44e0-a0e0-2158342036d9",
+    "slug": "vietnam-trail-marathon-2027",
+    "name": "Vietnam Trail Marathon 2027",
+    "date": "2027-01-16",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-19T09:46:59.225Z",
+    "file": "vietnam-trail-marathon-2027.json",
+    "seriesId": "vietnam-trail-marathon",
+    "sourceUrls": [
+      "https://vietnamtrailseries.com/trail-marathon"
     ],
     "linkUrls": []
   },
@@ -4745,7 +5002,7 @@
     "date": "2026-11-29",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-11-02T21:14:43.196Z",
+    "lastModified": "2026-11-19T09:46:59.225Z",
     "file": "giai-chay-bao-ve-moi-truong-2026.json",
     "seriesId": null,
     "sourceUrls": [
@@ -4782,6 +5039,21 @@
       "https://actiup.net/vi/event/gia-lai-city-trail-2025-giac-mo-dai-ngan",
       "https://baogialai.com.vn/gan-3000-runner-chinh-phuc-thanh-cong-giac-mo-dai-ngan-2025-post571039.html",
       "https://p2pnow.vn/su-kien/gia-lai-city-trail-2025"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "c4529195-c602-487c-8eef-776634103d08",
+    "slug": "danang-international-marathon-2027",
+    "name": "Danang International Marathon 2027",
+    "date": "2027-03-21",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-19T09:46:59.225Z",
+    "file": "danang-international-marathon-2027.json",
+    "seriesId": "danang-international-marathon",
+    "sourceUrls": [
+      "https://rundanang.com/en/2027-race-info"
     ],
     "linkUrls": []
   },
@@ -5310,6 +5582,21 @@
     "linkUrls": []
   },
   {
+    "id": "dac6c8b5-0874-4dd7-bef4-427f22ea4448",
+    "slug": "danang-international-marathon-2015",
+    "name": "Danang International Marathon 2015",
+    "date": "2015-08-30",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-19T09:46:59.225Z",
+    "file": "danang-international-marathon-2015.json",
+    "seriesId": "danang-international-marathon",
+    "sourceUrls": [
+      "https://baodanang.vn/khoi-tranh-cuoc-thi-marathon-quoc-te-da-nang-2015-3262411.html"
+    ],
+    "linkUrls": []
+  },
+  {
     "id": "dbbb28fe-0cd2-465b-8a87-0edad244d147",
     "slug": "gemadept-run",
     "name": "Giải chạy Gemadept Run",
@@ -5351,6 +5638,21 @@
     "seriesId": null,
     "sourceUrls": [
       "https://actiup.net/vi/event/ta-nang-half-marathon-2025"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "dd25dd9f-628c-4a44-a625-66a7d2061f25",
+    "slug": "manulife-danang-international-marathon-2017",
+    "name": "Manulife Danang International Marathon 2017",
+    "date": "2017-08-06",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-19T09:46:59.225Z",
+    "file": "manulife-danang-international-marathon-2017.json",
+    "seriesId": "manulife-danang-international-marathon",
+    "sourceUrls": [
+      "https://vnexpress.net/sap-dien-ra-cuoc-thi-chay-manulife-danang-international-marathon-2017-3610019.html"
     ],
     "linkUrls": []
   },
@@ -5879,6 +6181,21 @@
     "seriesId": "cat-tien-jungle-paths",
     "sourceUrls": [
       "https://actiup.net/vi/event/cat-tien-jungle-paths-2025"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "f0b8449a-4ea5-429d-9370-427a3c3a517a",
+    "slug": "manulife-danang-international-marathon-2023",
+    "name": "Manulife Danang International Marathon 2023",
+    "date": "2023-08-06",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-19T09:46:59.225Z",
+    "file": "manulife-danang-international-marathon-2023.json",
+    "seriesId": "manulife-danang-international-marathon",
+    "sourceUrls": [
+      "https://tuoitre.vn/9-000-van-dong-vien-tranh-tai-tai-giai-marathon-quoc-te-da-nang-20230805103922641.htm"
     ],
     "linkUrls": []
   },

@@ -1,0 +1,77 @@
+{
+  "id": "3b379d0b-1fe8-4bdb-a67d-29797684964a",
+  "slug": "manulife-danang-international-marathon-2016",
+  "name": "Manulife Danang International Marathon 2016",
+  "types": [
+    "road_run"
+  ],
+  "date": "2016-08-06",
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": "manulife-danang-international-marathon",
+  "organizerId": null,
+  "organizer": null,
+  "edition": null,
+  "courses": [
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Công viên Biển Đông (East Sea Park)",
+    "city": "Đà Nẵng"
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "baodanang-vn",
+      "role": "reference",
+      "url": "https://baodanang.vn/cuoc-thi-marathon-quoc-te-da-nang-2016-tao-hieu-ung-xa-hoi-lon-3263625.html",
+      "lastCheckedAt": "2026-11-19T09:46:59.225Z",
+      "lastChangedAt": "2026-11-19T09:46:59.225Z",
+      "extracted": {
+        "facts": {
+          "name": "Manulife Danang International Marathon 2016",
+          "date": "2016-08-06",
+          "types": [
+            "road_run"
+          ],
+          "distances": [
+            "42km",
+            "21km",
+            "10km"
+          ],
+          "venue": "Công viên Biển Đông (East Sea Park)",
+          "city": "Đà Nẵng",
+          "note": "Bao Da Nang: 5 and 6 Aug 2016 (race results 42/21/10km; Family Fun Day 5/8)"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-11-19T09:46:59.225Z",
+  "updatedAt": "2026-11-19T09:46:59.225Z"
+}

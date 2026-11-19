@@ -80,6 +80,14 @@
     "statedEditionCount": null
   },
   {
+    "id": "danang-international-marathon",
+    "name": "Danang International Marathon",
+    "website": "https://rundanang.com/",
+    "organizerId": "pulse-active",
+    "description": null,
+    "statedEditionCount": null
+  },
+  {
     "id": "fv-run",
     "name": "FV RUN",
     "website": null,
@@ -138,6 +146,14 @@
   {
     "id": "ironkids-viet-nam-in-da-nang",
     "name": "IRONKIDS Viet Nam in Da Nang",
+    "website": null,
+    "organizerId": "sunrise-events-vietnam",
+    "description": null,
+    "statedEditionCount": null
+  },
+  {
+    "id": "ironkids-viet-nam-in-ha-long-bay",
+    "name": "IRONKIDS Viet Nam in Ha Long Bay",
     "website": null,
     "organizerId": "sunrise-events-vietnam",
     "description": null,
@@ -288,6 +304,14 @@
     "statedEditionCount": null
   },
   {
+    "id": "sunrise-sprint-viet-nam-in-ha-long-bay",
+    "name": "SUNRISE SPRINT Viet Nam in Ha Long Bay",
+    "website": null,
+    "organizerId": "sunrise-events-vietnam",
+    "description": null,
+    "statedEditionCount": null
+  },
+  {
     "id": "sunrise-sprint-viet-nam-in-phu-quoc",
     "name": "SUNRISE SPRINT Viet Nam in Phu Quoc",
     "website": null,
@@ -360,12 +384,28 @@
     "statedEditionCount": null
   },
   {
+    "id": "vietnam-highlands-trail",
+    "name": "Vietnam Highlands Trail",
+    "website": "https://vietnamhighlands.utmb.world",
+    "organizerId": "nexus-sport-events",
+    "description": "Trail race in Da Lat, Lam Dong, run by Nexus Sport Events with the Vietnam People's Public Security Sports Association and the Lam Dong People's Committee. First edition: Vietnam Highlands Trail - Hoa Sen Home Cup, 9-10 January 2026 (announced for 22 November 2025, held in January 2026; 50km, 25km, 10km; more than 1,000 athletes; Vietnam News calls it 'the first edition'). 2027: Vietnam Highlands Trail by UTMB, 7-10 January 2027 (UTMB's calendar and the race site; Lao Dong says 8-10), the first UTMB World Series race in Vietnam (100K, 50K, 20K, 10K; a 5K was announced).",
+    "statedEditionCount": null
+  },
+  {
     "id": "vietnam-international-half-marathon",
     "name": "Giải bán marathon Quốc tế Việt Nam tài trợ bởi Herbalife",
     "website": null,
     "organizerId": "vietcontent",
     "description": null,
     "statedEditionCount": null
+  },
+  {
+    "id": "vietnam-trail-marathon",
+    "name": "Vietnam Trail Marathon",
+    "website": "https://vietnamtrailseries.com/trail-marathon/",
+    "organizerId": "topas-travel",
+    "description": "Trail race in Mộc Châu, Sơn La, part of Topas's Vietnam Trail Series. First edition 2019-01-19, second 2020-01-11, eighth 2026-01-31, ninth 2027-01-16 (organizer pages). Editions 2021-2025 are dated from news and ITRA; 2021 and 2022 were moved to April and May by COVID-19.",
+    "statedEditionCount": 9
   },
   {
     "id": "vnexpress-marathon-all-star",

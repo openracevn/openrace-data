@@ -12,13 +12,32 @@
   "organizerId": "dao-xanh-ecofarm",
   "organizer": "Đảo xanh Ecofarm",
   "edition": 1,
-  "courses": [],
+  "courses": [
+    {
+      "label": "6km",
+      "meters": 6000,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
-    "venue": "Đảo Xanh Ecofarm",
-    "city": "Xanh Đảo"
+    "venue": "Khu du lịch sinh thái Đảo Xanh Ecofarm, Thôn Quỳnh Ngọc 1, xã Ea Na, tỉnh Đắk Lắk",
+    "city": "Đắk Lắk"
   },
   "geo": null,
-  "prices": [],
+  "prices": [
+    {
+      "distance": "6km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 199000,
+      "from": "2026-11-02",
+      "to": "2026-11-27",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -30,7 +49,45 @@
   "links": [],
   "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "courses": {
+      "value": [
+        {
+          "label": "6km",
+          "meters": 6000,
+          "type": "road_run",
+          "elevationGain": null
+        }
+      ],
+      "reason": "ActiUp event page 2026-11-19: agenda image 'Hoàn thành đường chạy 6 km'; price image 'BIB chạy 199.000đ/người' (sale 02/11-27/11 per ActiUp open/close dates); poster footer 'Địa chỉ: Thôn Quỳnh Ngọc 1, xã Ea Na, tỉnh Đắk Lắk'. Lodging/transport packages (849k, 2.199M, 2.099M, 120k bus) are not run tiers and left out. Saved in .agent-read/giai-chay-bao-ve-moi-truong/images/.",
+      "at": "2026-11-19T09:46:59.225Z"
+    },
+    "prices": {
+      "value": [
+        {
+          "distance": "6km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 199000,
+          "from": "2026-11-02",
+          "to": "2026-11-27",
+          "inferred": [],
+          "site": "actiup"
+        }
+      ],
+      "reason": "ActiUp event page 2026-11-19: agenda image 'Hoàn thành đường chạy 6 km'; price image 'BIB chạy 199.000đ/người' (sale 02/11-27/11 per ActiUp open/close dates); poster footer 'Địa chỉ: Thôn Quỳnh Ngọc 1, xã Ea Na, tỉnh Đắk Lắk'. Lodging/transport packages (849k, 2.199M, 2.099M, 120k bus) are not run tiers and left out. Saved in .agent-read/giai-chay-bao-ve-moi-truong/images/.",
+      "at": "2026-11-19T09:46:59.225Z"
+    },
+    "location": {
+      "value": {
+        "venue": "Khu du lịch sinh thái Đảo Xanh Ecofarm, Thôn Quỳnh Ngọc 1, xã Ea Na, tỉnh Đắk Lắk",
+        "city": "Đắk Lắk"
+      },
+      "reason": "ActiUp event page 2026-11-19: agenda image 'Hoàn thành đường chạy 6 km'; price image 'BIB chạy 199.000đ/người' (sale 02/11-27/11 per ActiUp open/close dates); poster footer 'Địa chỉ: Thôn Quỳnh Ngọc 1, xã Ea Na, tỉnh Đắk Lắk'. Lodging/transport packages (849k, 2.199M, 2.099M, 120k bus) are not run tiers and left out. Saved in .agent-read/giai-chay-bao-ve-moi-truong/images/.",
+      "at": "2026-11-19T09:46:59.225Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -88,5 +145,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-02T21:01:31.434Z",
-  "updatedAt": "2026-11-02T21:14:43.196Z"
+  "updatedAt": "2026-11-19T09:46:59.225Z"
 }

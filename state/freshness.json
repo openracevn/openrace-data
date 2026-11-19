@@ -85,10 +85,17 @@
   },
   "09f9ff76-e3ff-470c-891f-c6ace918b629": {
     "lastCheckedAt": "2026-11-18T21:01:25.180Z",
-    "lastChangedAt": "2026-11-12T21:02:58.333Z",
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
     "cadence": "weekly",
     "dueAt": "2026-11-26",
     "final": false
+  },
+  "0a13c8f0-b688-46d6-823a-3384bd15509c": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
+    "cadence": "manual",
+    "dueAt": null,
+    "final": true
   },
   "0a2a61d8-6591-435c-a357-6a055e412244": {
     "lastCheckedAt": "2026-09-26T13:37:21.014Z",
@@ -195,6 +202,13 @@
     "dueAt": "2026-10-01",
     "final": true
   },
+  "14d86119-ceb8-41b8-80dc-79bfc51b7856": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
+    "cadence": "manual",
+    "dueAt": null,
+    "final": true
+  },
   "15481d94-22b5-4f16-b5c8-7f50f7aa7405": {
     "lastCheckedAt": "2026-09-23T18:31:26.014Z",
     "lastChangedAt": "2026-11-16T21:01:42.381Z",
@@ -288,7 +302,7 @@
   },
   "1dcfdad2-c3be-44a4-aca0-7f00b6334730": {
     "lastCheckedAt": "2026-09-23T18:31:18.451Z",
-    "lastChangedAt": "2026-09-28T12:41:20.850Z",
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
     "cadence": "weekly",
     "dueAt": "2026-10-01",
     "final": true
@@ -685,6 +699,13 @@
     "dueAt": "2026-10-01",
     "final": true
   },
+  "3b379d0b-1fe8-4bdb-a67d-29797684964a": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
+    "cadence": "manual",
+    "dueAt": null,
+    "final": true
+  },
   "3ba82dd6-6954-4a49-9d40-caf0b9ebe87f": {
     "lastCheckedAt": "2026-09-23T18:31:11.952Z",
     "lastChangedAt": "2026-09-26T13:09:43.471Z",
@@ -711,6 +732,13 @@
     "lastChangedAt": "2026-09-26T13:21:53.036Z",
     "cadence": "weekly",
     "dueAt": "2026-10-01",
+    "final": true
+  },
+  "3cb8d02a-3cb5-4986-b736-9f8340b37318": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
+    "cadence": "manual",
+    "dueAt": null,
     "final": true
   },
   "3d68bf6c-be4b-4d4b-ab07-ceaaa8a27c0a": {
@@ -986,6 +1014,20 @@
     "dueAt": "2026-10-01",
     "final": true
   },
+  "531e56ac-fff1-4e84-b306-2a571fb3bcfd": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
+    "cadence": "manual",
+    "dueAt": null,
+    "final": true
+  },
+  "53524036-db3d-4403-9db1-30b55d6eae50": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
+    "cadence": "manual",
+    "dueAt": null,
+    "final": true
+  },
   "5477a6c4-9193-4f91-b846-cb2018ceeaff": {
     "lastCheckedAt": "2026-11-08T21:02:03.629Z",
     "lastChangedAt": "2026-10-15T20:33:57.116Z",
@@ -1056,6 +1098,13 @@
     "dueAt": "2026-11-26",
     "final": false
   },
+  "58b1ebfa-0ddb-47e0-9b3b-817765cbb49d": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
+    "cadence": "manual",
+    "dueAt": null,
+    "final": true
+  },
   "5a677267-2e08-41b0-a86f-11d1c010b2e0": {
     "lastCheckedAt": "2026-09-23T18:31:35.259Z",
     "lastChangedAt": "2026-09-28T12:41:20.801Z",
@@ -1091,11 +1140,25 @@
     "dueAt": "2026-10-01",
     "final": true
   },
+  "5d8df09a-d6f3-4b9d-b650-452116cb0155": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
+    "cadence": "manual",
+    "dueAt": null,
+    "final": true
+  },
   "5e090b5a-50f0-4c92-88e4-1a2c3289a4ce": {
     "lastCheckedAt": "2026-11-08T21:01:56.377Z",
     "lastChangedAt": "2026-09-28T13:50:23.300Z",
     "cadence": "weekly",
     "dueAt": "2026-11-16",
+    "final": true
+  },
+  "5e6aa52a-3db4-4179-b0ed-30762a709c44": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
+    "cadence": "manual",
+    "dueAt": null,
     "final": true
   },
   "5fc235d5-4754-4471-8787-b0252f5edf0c": {
@@ -1212,7 +1275,7 @@
   },
   "6bb125bb-6329-42de-9577-d5739e2a6d8d": {
     "lastCheckedAt": "2026-11-18T21:01:12.688Z",
-    "lastChangedAt": "2026-11-04T21:01:38.058Z",
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
     "cadence": "weekly",
     "dueAt": "2026-11-26",
     "final": false
@@ -1415,7 +1478,7 @@
   },
   "7ed5343b-6515-46b3-9b63-19a51201f39f": {
     "lastCheckedAt": "2026-11-18T21:01:55.959Z",
-    "lastChangedAt": "2026-11-18T21:02:21.966Z",
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
     "cadence": "weekly",
     "dueAt": "2026-11-26",
     "final": false
@@ -1488,6 +1551,13 @@
     "lastChangedAt": "2026-09-26T13:12:09.904Z",
     "cadence": "weekly",
     "dueAt": "2026-10-01",
+    "final": true
+  },
+  "8468caf2-22a2-4155-9d60-24e5486de787": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
+    "cadence": "manual",
+    "dueAt": null,
     "final": true
   },
   "849f3493-1e62-4ee2-bdf6-6ff1ed79f734": {
@@ -1572,6 +1642,13 @@
     "lastChangedAt": "2026-09-26T13:10:49.407Z",
     "cadence": "weekly",
     "dueAt": "2026-10-01",
+    "final": true
+  },
+  "8cb913fa-e74d-413f-b964-b510961aa034": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
+    "cadence": "manual",
+    "dueAt": null,
     "final": true
   },
   "8d103a62-e07f-43ea-9913-bc77a7c4049f": {
@@ -1786,7 +1863,7 @@
   },
   "9d93d041-635b-4f6c-9b9b-445a2b713769": {
     "lastCheckedAt": "2026-11-15T21:03:15.617Z",
-    "lastChangedAt": "2026-11-08T21:08:02.763Z",
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
     "cadence": "weekly",
     "dueAt": "2026-11-23",
     "final": false
@@ -1854,6 +1931,13 @@
     "dueAt": "2026-11-26",
     "final": false
   },
+  "a7d14e60-7d9c-4db5-86af-3172121fc546": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
+    "cadence": "manual",
+    "dueAt": null,
+    "final": true
+  },
   "aa148665-22f1-4604-8958-d8039c41f2bd": {
     "lastCheckedAt": "2026-09-25T08:42:58.682Z",
     "lastChangedAt": "2026-09-29T04:59:39.990Z",
@@ -1873,6 +1957,13 @@
     "lastChangedAt": "2026-09-26T13:21:53.036Z",
     "cadence": "weekly",
     "dueAt": "2026-10-01",
+    "final": true
+  },
+  "ae85750c-e170-4ce8-8388-6861e9deb4af": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
+    "cadence": "manual",
+    "dueAt": null,
     "final": true
   },
   "af047737-4b02-4b4b-9fbe-d322fe38345c": {
@@ -1909,6 +2000,13 @@
     "cadence": "weekly",
     "dueAt": "2026-10-01",
     "final": true
+  },
+  "b29b2fa9-7b3b-42ef-89d1-2d5c74f55c7f": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
+    "cadence": "manual",
+    "dueAt": null,
+    "final": false
   },
   "b2d24c8b-0275-43c9-a598-809ed28ecf34": {
     "lastCheckedAt": "2026-09-23T18:32:35.551Z",
@@ -2106,11 +2204,25 @@
     "dueAt": "2026-10-01",
     "final": true
   },
+  "bda76bc0-2698-40eb-8f7b-6b8375317e45": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
+    "cadence": "manual",
+    "dueAt": null,
+    "final": true
+  },
   "be49c95e-d195-44e8-a318-d1033a8154c8": {
     "lastCheckedAt": "2026-09-23T18:32:33.538Z",
     "lastChangedAt": "2026-09-28T12:41:20.728Z",
     "cadence": "weekly",
     "dueAt": "2026-10-01",
+    "final": true
+  },
+  "bea037b6-cc8a-4a53-afe7-f342e3bb1fa7": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
+    "cadence": "manual",
+    "dueAt": null,
     "final": true
   },
   "bea28b99-9688-4fc4-beac-a211e4447055": {
@@ -2136,14 +2248,21 @@
   },
   "c003f4bb-d240-4cc1-b9e8-6d1652575128": {
     "lastCheckedAt": "2026-11-18T21:01:12.252Z",
-    "lastChangedAt": "2026-11-04T21:03:26.080Z",
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
     "cadence": "weekly",
     "dueAt": "2026-11-26",
     "final": false
   },
+  "c0fa5d54-819a-44e0-a0e0-2158342036d9": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
+    "cadence": "manual",
+    "dueAt": null,
+    "final": false
+  },
   "c13bcb9b-0007-4443-a6c7-3b41dc5cad54": {
     "lastCheckedAt": "2026-11-18T21:01:04.652Z",
-    "lastChangedAt": "2026-11-02T21:14:43.196Z",
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
     "cadence": "weekly",
     "dueAt": "2026-11-26",
     "final": false
@@ -2161,6 +2280,13 @@
     "cadence": "weekly",
     "dueAt": "2026-10-05",
     "final": true
+  },
+  "c4529195-c602-487c-8eef-776634103d08": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
+    "cadence": "manual",
+    "dueAt": null,
+    "final": false
   },
   "c5837919-265f-4b92-bb28-90a6b9424767": {
     "lastCheckedAt": "2026-09-23T18:31:27.623Z",
@@ -2400,6 +2526,13 @@
     "dueAt": "2026-10-01",
     "final": true
   },
+  "dac6c8b5-0874-4dd7-bef4-427f22ea4448": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
+    "cadence": "manual",
+    "dueAt": null,
+    "final": true
+  },
   "dbbb28fe-0cd2-465b-8a87-0edad244d147": {
     "lastCheckedAt": "2026-09-23T18:31:24.014Z",
     "lastChangedAt": "2026-09-26T13:21:53.036Z",
@@ -2419,6 +2552,13 @@
     "lastChangedAt": "2026-09-26T13:21:53.036Z",
     "cadence": "weekly",
     "dueAt": "2026-10-01",
+    "final": true
+  },
+  "dd25dd9f-628c-4a44-a625-66a7d2061f25": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
+    "cadence": "manual",
+    "dueAt": null,
     "final": true
   },
   "dda9bc90-bf5c-4ac8-a2d0-44c929d2462c": {
@@ -2657,6 +2797,13 @@
     "lastChangedAt": "2026-09-26T13:12:43.464Z",
     "cadence": "weekly",
     "dueAt": "2026-10-01",
+    "final": true
+  },
+  "f0b8449a-4ea5-429d-9370-427a3c3a517a": {
+    "lastCheckedAt": null,
+    "lastChangedAt": "2026-11-19T09:46:59.225Z",
+    "cadence": "manual",
+    "dueAt": null,
     "final": true
   },
   "f0d29981-7aea-4daa-af25-2c2576b736c4": {

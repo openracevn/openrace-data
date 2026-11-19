@@ -1,0 +1,67 @@
+{
+  "id": "bea037b6-cc8a-4a53-afe7-f342e3bb1fa7",
+  "slug": "vietnam-trail-marathon-2026",
+  "name": "Vietnam Trail Marathon 2026",
+  "types": [
+    "trail_run"
+  ],
+  "date": "2026-01-31",
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": "vietnam-trail-marathon",
+  "organizerId": null,
+  "organizer": "Topas Travel",
+  "edition": 8,
+  "courses": [],
+  "location": {
+    "venue": "Mộc Châu",
+    "city": "Sơn La"
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "participants": {
+    "count": 4000,
+    "sourceUrl": "https://vietnamtrailseries.com/records-fall-at-vietnam-trail-marathon-2026/",
+    "quote": "Over 4000 raced the Trails of Moc Chau at VTM 2026",
+    "confidence": "medium"
+  },
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "vietnamtrailseries-com",
+      "role": "reference",
+      "url": "https://vietnamtrailseries.com/records-fall-at-vietnam-trail-marathon-2026",
+      "lastCheckedAt": "2026-11-19T09:46:59.225Z",
+      "lastChangedAt": "2026-11-19T09:46:59.225Z",
+      "extracted": {
+        "facts": {
+          "name": "Vietnam Trail Marathon 2026",
+          "date": "2026-01-31",
+          "types": [
+            "trail_run"
+          ],
+          "venue": "Mộc Châu",
+          "city": "Sơn La",
+          "organizer": "Topas Travel",
+          "seriesId": "vietnam-trail-marathon",
+          "prices": [],
+          "edition": 8,
+          "participants": {
+            "count": 4000,
+            "sourceUrl": "https://vietnamtrailseries.com/records-fall-at-vietnam-trail-marathon-2026/",
+            "quote": "Over 4000 raced the Trails of Moc Chau at VTM 2026"
+          },
+          "note": "Organizer news: 'Over 4000 raced the Trails of Moc Chau at VTM 2026'; preview page (vietnamtrailseries.com/more-than-4000-to-race-vietnam-trail-marathon-moc-chau/): 'On January 31, 2026 ... returns for its eighth edition ... 5km right up to 70km'"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-11-19T09:46:59.225Z",
+  "updatedAt": "2026-11-19T09:46:59.225Z"
+}

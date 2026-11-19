@@ -1,0 +1,187 @@
+{
+  "id": "c0fa5d54-819a-44e0-a0e0-2158342036d9",
+  "slug": "vietnam-trail-marathon-2027",
+  "name": "Vietnam Trail Marathon 2027",
+  "types": [
+    "trail_run"
+  ],
+  "date": "2027-01-16",
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": "vietnam-trail-marathon",
+  "organizerId": null,
+  "organizer": "Topas Travel",
+  "edition": 9,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "50km",
+      "meters": 50000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "70km",
+      "meters": 70000,
+      "type": "trail_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Mộc Châu",
+    "city": "Sơn La"
+  },
+  "geo": null,
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1700000,
+      "from": null,
+      "to": "2027-01-16",
+      "inferred": [
+        "to"
+      ],
+      "site": "vietnamtrailseries-com"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1900000,
+      "from": null,
+      "to": "2027-01-16",
+      "inferred": [
+        "to"
+      ],
+      "site": "vietnamtrailseries-com"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 3300000,
+      "from": null,
+      "to": "2027-01-16",
+      "inferred": [
+        "to"
+      ],
+      "site": "vietnamtrailseries-com"
+    },
+    {
+      "distance": "50km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 4100000,
+      "from": null,
+      "to": "2027-01-16",
+      "inferred": [
+        "to"
+      ],
+      "site": "vietnamtrailseries-com"
+    },
+    {
+      "distance": "70km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 4400000,
+      "from": null,
+      "to": "2027-01-16",
+      "inferred": [
+        "to"
+      ],
+      "site": "vietnamtrailseries-com"
+    }
+  ],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "vietnamtrailseries-com",
+      "role": "reference",
+      "url": "https://vietnamtrailseries.com/trail-marathon",
+      "lastCheckedAt": "2026-11-19T09:46:59.225Z",
+      "lastChangedAt": "2026-11-19T09:46:59.225Z",
+      "extracted": {
+        "facts": {
+          "name": "Vietnam Trail Marathon 2027",
+          "date": "2027-01-16",
+          "types": [
+            "trail_run"
+          ],
+          "venue": "Mộc Châu",
+          "city": "Sơn La",
+          "organizer": "Topas Travel",
+          "seriesId": "vietnam-trail-marathon",
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Regular",
+              "price": 1700000
+            },
+            {
+              "distance": "10km",
+              "tier": "Regular",
+              "price": 1900000
+            },
+            {
+              "distance": "21km",
+              "tier": "Regular",
+              "price": 3300000
+            },
+            {
+              "distance": "50km",
+              "tier": "Regular",
+              "price": 4100000
+            },
+            {
+              "distance": "70km",
+              "tier": "Regular",
+              "price": 4400000
+            }
+          ],
+          "distances": [
+            "5km",
+            "10km",
+            "21km",
+            "50km",
+            "70km"
+          ],
+          "edition": 9,
+          "note": "Organizer page: '9th Edition | 16/1/2027 | OPEN NOW'; '5km | 10km | 21km | 50km | 70km' (50km new for 2027, no 42km listed); prices from the organizer's VTM race-fees page image VTM-2027_Race-entry-fee_STD.jpg ('RACE FEE | Phí tiêu chuẩn', one standard fee per distance, no phases): 5km 1,700,000; 10km 1,900,000; 21km 3,300,000; Ultra 50km 4,100,000; Ultra 70km 4,400,000 VND. 5km Kid (under 16) 1,000,000 VND not stored as a tier (age audience). Group discount 5%/10% not stored."
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-11-19T09:46:59.225Z",
+  "updatedAt": "2026-11-19T09:46:59.225Z"
+}

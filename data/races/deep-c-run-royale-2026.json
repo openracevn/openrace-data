@@ -10,9 +10,22 @@
   "mainDate": null,
   "seriesId": null,
   "organizerId": "vumedia",
-  "organizer": "VuMedia | Ban tổ chức sự kiện",
-  "edition": null,
-  "courses": [],
+  "organizer": "VuMedia",
+  "edition": 2,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Vinhomes Royal Island – Vũ Yên, Hải Phòng",
     "city": "Hải Phòng"
@@ -109,7 +122,74 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 100000,
+      "from": "2026-09-14",
+      "to": "2026-09-21",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 145000,
+      "from": "2026-09-14",
+      "to": "2026-09-21",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 150000,
+      "from": "2026-09-22",
+      "to": "2026-10-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 180000,
+      "from": "2026-09-22",
+      "to": "2026-10-30",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 200000,
+      "from": "2026-10-31",
+      "to": "2026-11-20",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 230000,
+      "from": "2026-10-31",
+      "to": "2026-11-20",
+      "inferred": [],
+      "site": "irace"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -177,7 +257,103 @@
   ],
   "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "edition": {
+      "value": 2,
+      "reason": "irace page https://ticket.irace.vn/deep-c-run-royale-2026: 'chính thức trở lại với mùa giải thứ 2'; price image Bang-gia-ve.webp (5KM/10KM x Super Early Bird 14-21.09, Early Bird 22.09-30.10, Regular 31.10-20.11.2026, VND); schedule image: 10KM and 5KM starts on 29.11",
+      "at": "2026-11-19T09:46:59.225Z"
+    },
+    "courses": {
+      "value": [
+        {
+          "label": "5km",
+          "meters": 5000,
+          "type": "road_run",
+          "elevationGain": null
+        },
+        {
+          "label": "10km",
+          "meters": 10000,
+          "type": "road_run",
+          "elevationGain": null
+        }
+      ],
+      "reason": "irace page https://ticket.irace.vn/deep-c-run-royale-2026: 'chính thức trở lại với mùa giải thứ 2'; price image Bang-gia-ve.webp (5KM/10KM x Super Early Bird 14-21.09, Early Bird 22.09-30.10, Regular 31.10-20.11.2026, VND); schedule image: 10KM and 5KM starts on 29.11",
+      "at": "2026-11-19T09:46:59.225Z"
+    },
+    "prices": {
+      "value": [
+        {
+          "distance": "5km",
+          "tier": "Super Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 100000,
+          "from": "2026-09-14",
+          "to": "2026-09-21",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "10km",
+          "tier": "Super Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 145000,
+          "from": "2026-09-14",
+          "to": "2026-09-21",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "5km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 150000,
+          "from": "2026-09-22",
+          "to": "2026-10-30",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "10km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 180000,
+          "from": "2026-09-22",
+          "to": "2026-10-30",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "5km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 200000,
+          "from": "2026-10-31",
+          "to": "2026-11-20",
+          "inferred": [],
+          "site": "irace"
+        },
+        {
+          "distance": "10km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 230000,
+          "from": "2026-10-31",
+          "to": "2026-11-20",
+          "inferred": [],
+          "site": "irace"
+        }
+      ],
+      "reason": "irace page https://ticket.irace.vn/deep-c-run-royale-2026: 'chính thức trở lại với mùa giải thứ 2'; price image Bang-gia-ve.webp (5KM/10KM x Super Early Bird 14-21.09, Early Bird 22.09-30.10, Regular 31.10-20.11.2026, VND); schedule image: 10KM and 5KM starts on 29.11",
+      "at": "2026-11-19T09:46:59.225Z"
+    }
+  },
   "sources": [
     {
       "site": "irace",
@@ -352,5 +528,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-10-15T20:31:08.696Z",
-  "updatedAt": "2026-11-08T21:08:02.763Z"
+  "updatedAt": "2026-11-19T09:46:59.225Z"
 }

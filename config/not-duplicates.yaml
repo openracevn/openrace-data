@@ -51,3 +51,17 @@
 # A kids' run held within a bigger race.
 - races: [dalat-music-night-run-2025, kun-fun-run-da-lat-music-night-run-2025]
   reason: KUN FUN RUN ĐÀ LẠT 2025 is a free run for 6–10 year olds held within Da Lat Music Night Run (ActiUp's own text), a separate race
+
+# Vietnam Trail Marathon (Mộc Châu, Sơn La) against races elsewhere on the same weekend (plan 031).
+- races: [vietnam-trail-marathon-2023, salonpas-hcmc-marathon-2023]
+  reason: Vietnam Trail Marathon is a trail race in Mộc Châu, Sơn La; the HCMC Marathon is a road race in Ho Chi Minh City
+- races: [vietnam-trail-marathon-2026, tet-run-mien-nam-2026]
+  reason: Vietnam Trail Marathon is a trail race in Mộc Châu, Sơn La; Tet Run Mien Nam is in the south
+- races: [vietnam-trail-marathon-2027, hcmc-marathon-2027]
+  reason: Vietnam Trail Marathon is a trail race in Mộc Châu, Sơn La; the HCMC Marathon is a road race in Ho Chi Minh City
+- races: [vietnam-trail-marathon-2027, mang-den-ultra-trail-2027]
+  reason: Vietnam Trail Marathon is in Mộc Châu, Sơn La; Măng Đen Ultra Trail is in Kon Tum (Quảng Ngãi), different organizers
+
+# Different provinces, same weekend (plan 031).
+- races: [pho-hien-marathon-2026, danang-international-marathon-2026]
+  reason: Phố Hiến Marathon is in Hưng Yên; Danang International Marathon is in Đà Nẵng

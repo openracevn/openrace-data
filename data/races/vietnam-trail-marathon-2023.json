@@ -1,0 +1,104 @@
+{
+  "id": "bda76bc0-2698-40eb-8f7b-6b8375317e45",
+  "slug": "vietnam-trail-marathon-2023",
+  "name": "Vietnam Trail Marathon 2023",
+  "types": [
+    "trail_run"
+  ],
+  "date": "2023-01-07",
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": "vietnam-trail-marathon",
+  "organizerId": null,
+  "organizer": "Topas Travel",
+  "edition": null,
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "70km",
+      "meters": 70000,
+      "type": "trail_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Mộc Châu",
+    "city": "Sơn La"
+  },
+  "geo": null,
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "participants": {
+    "count": 3500,
+    "sourceUrl": "https://en.nhandan.vn/vietnam-trail-marathon-2023-attracts-3500-runners-post121614.html",
+    "quote": "nearly 3,500 runners from 32 countries and territories",
+    "confidence": "medium"
+  },
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "en-nhandan-vn",
+      "role": "reference",
+      "url": "https://en.nhandan.vn/vietnam-trail-marathon-2023-attracts-3500-runners-post121614.html",
+      "lastCheckedAt": "2026-11-19T09:46:59.225Z",
+      "lastChangedAt": "2026-11-19T09:46:59.225Z",
+      "extracted": {
+        "facts": {
+          "name": "Vietnam Trail Marathon 2023",
+          "date": "2023-01-07",
+          "types": [
+            "trail_run"
+          ],
+          "venue": "Mộc Châu",
+          "city": "Sơn La",
+          "organizer": "Topas Travel",
+          "seriesId": "vietnam-trail-marathon",
+          "prices": [],
+          "distances": [
+            "5km",
+            "10km",
+            "21km",
+            "42km",
+            "70km"
+          ],
+          "participants": {
+            "count": 3500,
+            "sourceUrl": "https://en.nhandan.vn/vietnam-trail-marathon-2023-attracts-3500-runners-post121614.html",
+            "quote": "nearly 3,500 runners from 32 countries and territories"
+          },
+          "note": "Nhan Dan 07/01/2023: opened January 7, 'nearly 3,500 runners'; 5km, 10km, 21km, 42km, 70km"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-11-19T09:46:59.225Z",
+  "updatedAt": "2026-11-19T09:46:59.225Z"
+}

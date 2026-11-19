@@ -5,118 +5,110 @@
   "types": [
     "trail_run"
   ],
-  "date": "2026-01-14",
-  "endDate": null,
-  "seriesId": null,
+  "date": "2026-01-09",
+  "endDate": "2026-01-10",
+  "mainDate": null,
+  "seriesId": "vietnam-highlands-trail",
   "organizerId": "nexus-sport-events",
   "organizer": "Đơn vị tổ chức: Hiệp hội Thể thao CAND Việt Nam phối hợp UBND tỉnh Lâm Đồng - Đơn vị đồng tổ chức - thực hiện: Công ty cổ phần truyền thông NEXUS",
   "coOrganizerIds": [
     "hiep-hoi-the-thao-cand-viet-nam",
     "ubnd-tinh-lam-dong"
   ],
-  "edition": null,
-  "courses": [],
+  "edition": 1,
+  "courses": [
+    {
+      "label": "50km",
+      "meters": 54800,
+      "type": "trail_run",
+      "elevationGain": 3030
+    },
+    {
+      "label": "25km",
+      "meters": 25200,
+      "type": "trail_run",
+      "elevationGain": 1140
+    },
+    {
+      "label": "10km",
+      "meters": 13700,
+      "type": "trail_run",
+      "elevationGain": 550
+    }
+  ],
   "location": {
     "venue": "Lâm Viên, Lâm Đồng",
-    "city": null
+    "city": "Đà Lạt"
   },
-  "geo": {
-    "lat": 11.9458436,
-    "lng": 108.4575864,
-    "source": "nominatim",
-    "precision": "ward",
-    "current": {
-      "province": "68",
-      "ward": "24778"
+  "geo": null,
+  "prices": [
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 950000,
+      "from": "2025-09-15",
+      "to": "2025-10-15",
+      "inferred": [],
+      "site": "actiup"
     },
-    "legacy": {
-      "province": "68",
-      "district": "672",
-      "ward": "24778"
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1150000,
+      "from": "2025-10-16",
+      "to": "2025-11-15",
+      "inferred": [],
+      "site": "actiup"
     },
-    "access": "road",
-    "fromPlaces": {
-      "hcmc": {
-        "km": 298.7,
-        "minutes": 228,
-        "method": "road",
-        "near": false
-      },
-      "ha-noi": {
-        "km": 1396.1,
-        "minutes": 1113,
-        "method": "road",
-        "near": false
-      },
-      "da-nang": {
-        "km": 626.6,
-        "minutes": 510,
-        "method": "road",
-        "near": false
-      },
-      "nha-trang": {
-        "km": 133,
-        "minutes": 127,
-        "method": "road",
-        "near": false
-      },
-      "da-lat": {
-        "km": 2.3,
-        "minutes": 3,
-        "method": "road",
-        "near": true
-      },
-      "can-tho": {
-        "km": 464.2,
-        "minutes": 356,
-        "method": "road",
-        "near": false
-      },
-      "hai-phong": {
-        "km": 1430.2,
-        "minutes": 1140,
-        "method": "road",
-        "near": false
-      },
-      "hue": {
-        "km": 723.8,
-        "minutes": 585,
-        "method": "road",
-        "near": false
-      },
-      "vung-tau": {
-        "km": 328.1,
-        "minutes": 244,
-        "method": "road",
-        "near": false
-      },
-      "quy-nhon": {
-        "km": 338.9,
-        "minutes": 289,
-        "method": "road",
-        "near": false
-      },
-      "buon-ma-thuot": {
-        "km": 193.6,
-        "minutes": 182,
-        "method": "road",
-        "near": false
-      },
-      "sa-pa": {
-        "km": 1704.6,
-        "minutes": 1349,
-        "method": "road",
-        "near": false
-      },
-      "ha-long": {
-        "km": 1479.9,
-        "minutes": 1173,
-        "method": "road",
-        "near": false
-      }
+    {
+      "distance": "25km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1350000,
+      "from": "2025-09-15",
+      "to": "2025-10-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "25km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1650000,
+      "from": "2025-10-16",
+      "to": "2025-11-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "50km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1950000,
+      "from": "2025-09-15",
+      "to": "2025-10-15",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": "50km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2150000,
+      "from": "2025-10-16",
+      "to": "2025-11-15",
+      "inferred": [],
+      "site": "actiup"
     }
-  },
-  "prices": [],
+  ],
   "currency": "VND",
   "registrationStatus": "closed",
   "registrations": [
@@ -154,6 +146,130 @@
       ],
       "reason": "organizer cleanup (plan 013): \"Đơn vị tổ chức: Hiệp hội Thể thao CAND Việt Nam phối hợp UBND tỉnh Lâm Đồng - Đơn vị đồng tổ chức - thực hiện: Công ty cổ phần truyền thông NEXUS\" packed several bodies into one entity; primary organizer nexus-sport-events, co-organizers hiep-hoi-the-thao-cand-viet-nam, ubnd-tinh-lam-dong",
       "at": "2026-09-28T12:41:20.850Z"
+    },
+    "date": {
+      "value": "2026-01-09",
+      "reason": "Vietnam News 12/01/2026 (https://vietnamnews.vn/sports/1763593/hieu-ngoc-win-first-the-vietnam-highlands-trail.html): race held 10 January 2026, 'the first edition', 50km/25km/10km, more than 1,000 athletes; Lao Dong 11/01/2026 (https://news.laodong.vn/ldt/an-choi/vietnam-highlands-trail-hoa-sen-home-cup-tao-dau-an-tai-lam-dong-1639088.ldo): two days 9-10 January 2026. ActiUp's own images show the original date 22.11.2025 (hence the 2025 name), later moved to January 2026; ActiUp's 2026-01-14 matches neither. Name kept (ActiUp listing); official 2026 name was Vietnam Highlands Trail - Hoa Sen Home Cup.",
+      "at": "2026-11-19T09:46:59.225Z"
+    },
+    "endDate": {
+      "value": "2026-01-10",
+      "reason": "Vietnam News 12/01/2026 (https://vietnamnews.vn/sports/1763593/hieu-ngoc-win-first-the-vietnam-highlands-trail.html): race held 10 January 2026, 'the first edition', 50km/25km/10km, more than 1,000 athletes; Lao Dong 11/01/2026 (https://news.laodong.vn/ldt/an-choi/vietnam-highlands-trail-hoa-sen-home-cup-tao-dau-an-tai-lam-dong-1639088.ldo): two days 9-10 January 2026. ActiUp's own images show the original date 22.11.2025 (hence the 2025 name), later moved to January 2026; ActiUp's 2026-01-14 matches neither. Name kept (ActiUp listing); official 2026 name was Vietnam Highlands Trail - Hoa Sen Home Cup.",
+      "at": "2026-11-19T09:46:59.225Z"
+    },
+    "edition": {
+      "value": 1,
+      "reason": "Vietnam News 12/01/2026 (https://vietnamnews.vn/sports/1763593/hieu-ngoc-win-first-the-vietnam-highlands-trail.html): race held 10 January 2026, 'the first edition', 50km/25km/10km, more than 1,000 athletes; Lao Dong 11/01/2026 (https://news.laodong.vn/ldt/an-choi/vietnam-highlands-trail-hoa-sen-home-cup-tao-dau-an-tai-lam-dong-1639088.ldo): two days 9-10 January 2026. ActiUp's own images show the original date 22.11.2025 (hence the 2025 name), later moved to January 2026; ActiUp's 2026-01-14 matches neither. Name kept (ActiUp listing); official 2026 name was Vietnam Highlands Trail - Hoa Sen Home Cup.",
+      "at": "2026-11-19T09:46:59.225Z"
+    },
+    "seriesId": {
+      "value": "vietnam-highlands-trail",
+      "reason": "Vietnam News 12/01/2026 (https://vietnamnews.vn/sports/1763593/hieu-ngoc-win-first-the-vietnam-highlands-trail.html): race held 10 January 2026, 'the first edition', 50km/25km/10km, more than 1,000 athletes; Lao Dong 11/01/2026 (https://news.laodong.vn/ldt/an-choi/vietnam-highlands-trail-hoa-sen-home-cup-tao-dau-an-tai-lam-dong-1639088.ldo): two days 9-10 January 2026. ActiUp's own images show the original date 22.11.2025 (hence the 2025 name), later moved to January 2026; ActiUp's 2026-01-14 matches neither. Name kept (ActiUp listing); official 2026 name was Vietnam Highlands Trail - Hoa Sen Home Cup.",
+      "at": "2026-11-19T09:46:59.225Z"
+    },
+    "courses": {
+      "value": [
+        {
+          "label": "50km",
+          "meters": 54800,
+          "type": "trail_run",
+          "elevationGain": 3030
+        },
+        {
+          "label": "25km",
+          "meters": 25200,
+          "type": "trail_run",
+          "elevationGain": 1140
+        },
+        {
+          "label": "10km",
+          "meters": 13700,
+          "type": "trail_run",
+          "elevationGain": 550
+        }
+      ],
+      "reason": "Vietnam News 12/01/2026 (https://vietnamnews.vn/sports/1763593/hieu-ngoc-win-first-the-vietnam-highlands-trail.html): race held 10 January 2026, 'the first edition', 50km/25km/10km, more than 1,000 athletes; Lao Dong 11/01/2026 (https://news.laodong.vn/ldt/an-choi/vietnam-highlands-trail-hoa-sen-home-cup-tao-dau-an-tai-lam-dong-1639088.ldo): two days 9-10 January 2026. ActiUp's own images show the original date 22.11.2025 (hence the 2025 name), later moved to January 2026; ActiUp's 2026-01-14 matches neither. Name kept (ActiUp listing); official 2026 name was Vietnam Highlands Trail - Hoa Sen Home Cup.",
+      "at": "2026-11-19T09:46:59.225Z"
+    },
+    "prices": {
+      "value": [
+        {
+          "distance": "10km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 950000,
+          "from": "2025-09-15",
+          "to": "2025-10-15",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "10km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 1150000,
+          "from": "2025-10-16",
+          "to": "2025-11-15",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "25km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 1350000,
+          "from": "2025-09-15",
+          "to": "2025-10-15",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "25km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 1650000,
+          "from": "2025-10-16",
+          "to": "2025-11-15",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "50km",
+          "tier": "Early Bird",
+          "kind": "early",
+          "audience": null,
+          "price": 1950000,
+          "from": "2025-09-15",
+          "to": "2025-10-15",
+          "inferred": [],
+          "site": "actiup"
+        },
+        {
+          "distance": "50km",
+          "tier": "Regular",
+          "kind": "regular",
+          "audience": null,
+          "price": 2150000,
+          "from": "2025-10-16",
+          "to": "2025-11-15",
+          "inferred": [],
+          "site": "actiup"
+        }
+      ],
+      "reason": "Vietnam News 12/01/2026 (https://vietnamnews.vn/sports/1763593/hieu-ngoc-win-first-the-vietnam-highlands-trail.html): race held 10 January 2026, 'the first edition', 50km/25km/10km, more than 1,000 athletes; Lao Dong 11/01/2026 (https://news.laodong.vn/ldt/an-choi/vietnam-highlands-trail-hoa-sen-home-cup-tao-dau-an-tai-lam-dong-1639088.ldo): two days 9-10 January 2026. ActiUp's own images show the original date 22.11.2025 (hence the 2025 name), later moved to January 2026; ActiUp's 2026-01-14 matches neither. Name kept (ActiUp listing); official 2026 name was Vietnam Highlands Trail - Hoa Sen Home Cup.",
+      "at": "2026-11-19T09:46:59.225Z"
+    },
+    "location": {
+      "value": {
+        "venue": "Lâm Viên, Lâm Đồng",
+        "city": "Đà Lạt"
+      },
+      "reason": "Vietnam News 12/01/2026 (https://vietnamnews.vn/sports/1763593/hieu-ngoc-win-first-the-vietnam-highlands-trail.html): race held 10 January 2026, 'the first edition', 50km/25km/10km, more than 1,000 athletes; Lao Dong 11/01/2026 (https://news.laodong.vn/ldt/an-choi/vietnam-highlands-trail-hoa-sen-home-cup-tao-dau-an-tai-lam-dong-1639088.ldo): two days 9-10 January 2026. ActiUp's own images show the original date 22.11.2025 (hence the 2025 name), later moved to January 2026; ActiUp's 2026-01-14 matches neither. Name kept (ActiUp listing); official 2026 name was Vietnam Highlands Trail - Hoa Sen Home Cup.",
+      "at": "2026-11-19T09:46:59.225Z"
     }
   },
   "sources": [
@@ -188,5 +304,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T12:41:20.850Z"
+  "updatedAt": "2026-11-19T09:46:59.225Z"
 }

@@ -1,0 +1,424 @@
+{
+  "id": "b29b2fa9-7b3b-42ef-89d1-2d5c74f55c7f",
+  "slug": "vietnam-highlands-trail-by-utmb-2027",
+  "name": "Vietnam Highlands Trail by UTMB 2027",
+  "types": [
+    "trail_run"
+  ],
+  "date": "2027-01-07",
+  "endDate": "2027-01-10",
+  "mainDate": "2027-01-09",
+  "seriesId": null,
+  "organizerId": null,
+  "organizer": "Nexus Sport Events",
+  "edition": null,
+  "courses": [
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "20km",
+      "meters": 20000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "50km",
+      "meters": 50000,
+      "type": "trail_run",
+      "elevationGain": null
+    },
+    {
+      "label": "100km",
+      "meters": 100000,
+      "type": "trail_run",
+      "elevationGain": null
+    }
+  ],
+  "location": {
+    "venue": "Lâm Viên, Lâm Đồng",
+    "city": "Đà Lạt"
+  },
+  "geo": null,
+  "prices": [
+    {
+      "distance": "100km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 3914712,
+      "from": "2026-06-09",
+      "to": "2026-06-26",
+      "inferred": [],
+      "site": "vietnamhighlands-utmb-world",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 162
+      },
+      "fxRate": {
+        "rate": 24164.89,
+        "asOf": "2024"
+      }
+    },
+    {
+      "distance": "100km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 4857143,
+      "from": "2026-06-27",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "vietnamhighlands-utmb-world",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 201
+      },
+      "fxRate": {
+        "rate": 24164.89,
+        "asOf": "2024"
+      }
+    },
+    {
+      "distance": "100km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 5582090,
+      "from": "2026-10-01",
+      "to": "2026-12-25",
+      "inferred": [],
+      "site": "vietnamhighlands-utmb-world",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 231
+      },
+      "fxRate": {
+        "rate": 24164.89,
+        "asOf": "2024"
+      }
+    },
+    {
+      "distance": "50km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 2343994,
+      "from": "2026-06-09",
+      "to": "2026-06-26",
+      "inferred": [],
+      "site": "vietnamhighlands-utmb-world",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 97
+      },
+      "fxRate": {
+        "rate": 24164.89,
+        "asOf": "2024"
+      }
+    },
+    {
+      "distance": "50km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 2609808,
+      "from": "2026-06-27",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "vietnamhighlands-utmb-world",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 108
+      },
+      "fxRate": {
+        "rate": 24164.89,
+        "asOf": "2024"
+      }
+    },
+    {
+      "distance": "50km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 3165601,
+      "from": "2026-10-01",
+      "to": "2026-12-25",
+      "inferred": [],
+      "site": "vietnamhighlands-utmb-world",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 131
+      },
+      "fxRate": {
+        "rate": 24164.89,
+        "asOf": "2024"
+      }
+    },
+    {
+      "distance": "20km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 1594883,
+      "from": "2026-06-09",
+      "to": "2026-06-26",
+      "inferred": [],
+      "site": "vietnamhighlands-utmb-world",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 66
+      },
+      "fxRate": {
+        "rate": 24164.89,
+        "asOf": "2024"
+      }
+    },
+    {
+      "distance": "20km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1836532,
+      "from": "2026-06-27",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "vietnamhighlands-utmb-world",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 76
+      },
+      "fxRate": {
+        "rate": 24164.89,
+        "asOf": "2024"
+      }
+    },
+    {
+      "distance": "20km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 2295665,
+      "from": "2026-10-01",
+      "to": "2026-12-25",
+      "inferred": [],
+      "site": "vietnamhighlands-utmb-world",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 95
+      },
+      "fxRate": {
+        "rate": 24164.89,
+        "asOf": "2024"
+      }
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 990760,
+      "from": "2026-06-09",
+      "to": "2026-06-26",
+      "inferred": [],
+      "site": "vietnamhighlands-utmb-world",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 41
+      },
+      "fxRate": {
+        "rate": 24164.89,
+        "asOf": "2024"
+      }
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 1280739,
+      "from": "2026-06-27",
+      "to": "2026-09-30",
+      "inferred": [],
+      "site": "vietnamhighlands-utmb-world",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 53
+      },
+      "fxRate": {
+        "rate": 24164.89,
+        "asOf": "2024"
+      }
+    },
+    {
+      "distance": "10km",
+      "tier": "Late",
+      "kind": "late",
+      "audience": null,
+      "price": 1739872,
+      "from": "2026-10-01",
+      "to": "2026-12-25",
+      "inferred": [],
+      "site": "vietnamhighlands-utmb-world",
+      "priceOriginal": {
+        "currency": "USD",
+        "amount": 72
+      },
+      "fxRate": {
+        "rate": 24164.89,
+        "asOf": "2024"
+      }
+    }
+  ],
+  "currency": "VND",
+  "registrationStatus": null,
+  "registrations": [],
+  "links": [],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "vietnamhighlands-utmb-world",
+      "role": "reference",
+      "url": "https://vietnamhighlands.utmb.world/runners/entry-info",
+      "lastCheckedAt": "2026-11-19T09:46:59.225Z",
+      "lastChangedAt": "2026-11-19T09:46:59.225Z",
+      "extracted": {
+        "facts": {
+          "name": "Vietnam Highlands Trail by UTMB 2027",
+          "date": "2027-01-07",
+          "endDate": "2027-01-10",
+          "mainDate": "2027-01-09",
+          "types": [
+            "trail_run"
+          ],
+          "venue": "Lâm Viên, Lâm Đồng",
+          "city": "Đà Lạt",
+          "organizer": "Nexus Sport Events",
+          "seriesId": "vietnam-highlands-trail",
+          "currency": "USD",
+          "courses": [
+            {
+              "label": "100km",
+              "meters": 101500,
+              "type": "trail_run",
+              "elevationGain": null
+            },
+            {
+              "label": "50km",
+              "meters": 54600,
+              "type": "trail_run",
+              "elevationGain": 3106
+            },
+            {
+              "label": "20km",
+              "meters": 22200,
+              "type": "trail_run",
+              "elevationGain": 1171
+            },
+            {
+              "label": "10km",
+              "meters": 10600,
+              "type": "trail_run",
+              "elevationGain": 435
+            }
+          ],
+          "prices": [
+            {
+              "distance": "100km",
+              "tier": "Early Bird",
+              "from": "2026-06-09",
+              "to": "2026-06-26",
+              "price": 161.7
+            },
+            {
+              "distance": "100km",
+              "tier": "Regular",
+              "from": "2026-06-27",
+              "to": "2026-09-30",
+              "price": 201.3
+            },
+            {
+              "distance": "100km",
+              "tier": "Late",
+              "from": "2026-10-01",
+              "to": "2026-12-25",
+              "price": 231
+            },
+            {
+              "distance": "50km",
+              "tier": "Early Bird",
+              "from": "2026-06-09",
+              "to": "2026-06-26",
+              "price": 96.8
+            },
+            {
+              "distance": "50km",
+              "tier": "Regular",
+              "from": "2026-06-27",
+              "to": "2026-09-30",
+              "price": 107.8
+            },
+            {
+              "distance": "50km",
+              "tier": "Late",
+              "from": "2026-10-01",
+              "to": "2026-12-25",
+              "price": 130.9
+            },
+            {
+              "distance": "20km",
+              "tier": "Early Bird",
+              "from": "2026-06-09",
+              "to": "2026-06-26",
+              "price": 66
+            },
+            {
+              "distance": "20km",
+              "tier": "Regular",
+              "from": "2026-06-27",
+              "to": "2026-09-30",
+              "price": 75.9
+            },
+            {
+              "distance": "20km",
+              "tier": "Late",
+              "from": "2026-10-01",
+              "to": "2026-12-25",
+              "price": 94.6
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "from": "2026-06-09",
+              "to": "2026-06-26",
+              "price": 40.7
+            },
+            {
+              "distance": "10km",
+              "tier": "Regular",
+              "from": "2026-06-27",
+              "to": "2026-09-30",
+              "price": 52.8
+            },
+            {
+              "distance": "10km",
+              "tier": "Late",
+              "from": "2026-10-01",
+              "to": "2026-12-25",
+              "price": 71.5
+            }
+          ],
+          "note": "official race site (UTMB): entry info lists race dates 07-10 Jan 2027, four distances, start times and USD prices incl. tax and fees; race pages list distance and elevation. Lao Dong 26/05/2026 says 8-10 January; the official site and UTMB's calendar say 07-10, main day 9 Jan."
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-11-19T09:46:59.225Z",
+  "updatedAt": "2026-11-19T09:46:59.225Z"
+}

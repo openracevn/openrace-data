@@ -3,16 +3,42 @@
   "slug": "2027-ironkids-viet-nam-in-ha-long-bay",
   "name": "2027 IRONKIDS Viet Nam in HA LONG BAY",
   "types": [
-    "other"
+    "triathlon",
+    "aquathlon"
   ],
   "date": "2027-03-20",
   "endDate": null,
   "mainDate": null,
-  "seriesId": null,
+  "seriesId": "ironkids-viet-nam-in-ha-long-bay",
   "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "1075m",
+      "meters": 1075,
+      "type": "aquathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "4075m",
+      "meters": 4075,
+      "type": "triathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "2150m",
+      "meters": 2150,
+      "type": "aquathlon",
+      "elevationGain": null
+    },
+    {
+      "label": "8150m",
+      "meters": 8150,
+      "type": "triathlon",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Hạ Long",
     "city": null
@@ -113,7 +139,30 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "1075m",
+      "tier": "Aquathlon General Entry",
+      "kind": "other",
+      "audience": null,
+      "price": 980000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    },
+    {
+      "distance": "2150m",
+      "tier": "Aquathlon General Entry",
+      "kind": "other",
+      "audience": null,
+      "price": 980000,
+      "from": null,
+      "to": null,
+      "inferred": [],
+      "site": "ironman-com"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -125,7 +174,71 @@
   "links": [],
   "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "courses": {
+      "value": [
+        {
+          "label": "1075m",
+          "meters": 1075,
+          "type": "aquathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "4075m",
+          "meters": 4075,
+          "type": "triathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "2150m",
+          "meters": 2150,
+          "type": "aquathlon",
+          "elevationGain": null
+        },
+        {
+          "label": "8150m",
+          "meters": 8150,
+          "type": "triathlon",
+          "elevationGain": null
+        }
+      ],
+      "reason": "ironman.com/races/5150-ha-long-bay/ironkids (fetched 2026-11-19): aquathlon ages 5-10 = 75m swim + 1km run, ages 11-15 = 150m + 2km; triathlon 5-10 = 75m swim, 3km bike, 1km run, 11-15 = 150m, 6km bike, 2km run (meters are the sum of the legs). Only the Aquathlon entry price (980,000, General Entry, phase not stated so kind other) is shown; no triathlon price. ActiUp API start_date = end_date = 2027-03-20.",
+      "at": "2026-11-19T09:46:59.225Z"
+    },
+    "prices": {
+      "value": [
+        {
+          "distance": "1075m",
+          "tier": "Aquathlon General Entry",
+          "kind": "other",
+          "audience": null,
+          "price": 980000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        },
+        {
+          "distance": "2150m",
+          "tier": "Aquathlon General Entry",
+          "kind": "other",
+          "audience": null,
+          "price": 980000,
+          "from": null,
+          "to": null,
+          "inferred": [],
+          "site": "ironman-com"
+        }
+      ],
+      "reason": "ironman.com/races/5150-ha-long-bay/ironkids (fetched 2026-11-19): aquathlon ages 5-10 = 75m swim + 1km run, ages 11-15 = 150m + 2km; triathlon 5-10 = 75m swim, 3km bike, 1km run, 11-15 = 150m, 6km bike, 2km run (meters are the sum of the legs). Only the Aquathlon entry price (980,000, General Entry, phase not stated so kind other) is shown; no triathlon price. ActiUp API start_date = end_date = 2027-03-20.",
+      "at": "2026-11-19T09:46:59.225Z"
+    },
+    "seriesId": {
+      "value": "ironkids-viet-nam-in-ha-long-bay",
+      "reason": "ironman.com/races/5150-ha-long-bay/ironkids (fetched 2026-11-19): aquathlon ages 5-10 = 75m swim + 1km run, ages 11-15 = 150m + 2km; triathlon 5-10 = 75m swim, 3km bike, 1km run, 11-15 = 150m, 6km bike, 2km run (meters are the sum of the legs). Only the Aquathlon entry price (980,000, General Entry, phase not stated so kind other) is shown; no triathlon price. ActiUp API start_date = end_date = 2027-03-20.",
+      "at": "2026-11-19T09:46:59.225Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -149,9 +262,36 @@
           "name": "Sunrise Events Vietnam"
         }
       }
+    },
+    {
+      "site": "ironman-com",
+      "role": "reference",
+      "url": "https://ironman.com/races/5150-ha-long-bay/ironkids",
+      "lastCheckedAt": "2026-11-19T09:46:59.225Z",
+      "lastChangedAt": "2026-11-19T09:46:59.225Z",
+      "extracted": {
+        "facts": {
+          "name": "IRONKIDS Viet Nam in Ha Long Bay 2027",
+          "date": "2027-03-20",
+          "types": [
+            "aquathlon",
+            "triathlon"
+          ],
+          "venue": "Hạ Long",
+          "city": "Hạ Long",
+          "prices": [
+            {
+              "distance": null,
+              "tier": "Aquathlon General Entry",
+              "price": 980000
+            }
+          ],
+          "note": "Organizer page: 'IRONKIDS, March 20, 2027', 'Aquathlon ₫980,000 VND General Entry'"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-11-04T21:01:38.058Z",
-  "updatedAt": "2026-11-04T21:01:38.058Z"
+  "updatedAt": "2026-11-19T09:46:59.225Z"
 }
