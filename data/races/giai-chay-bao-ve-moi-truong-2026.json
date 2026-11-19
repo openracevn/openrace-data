@@ -24,7 +24,98 @@
     "venue": "Khu du lịch sinh thái Đảo Xanh Ecofarm, Thôn Quỳnh Ngọc 1, xã Ea Na, tỉnh Đắk Lắk",
     "city": "Đắk Lắk"
   },
-  "geo": null,
+  "geo": {
+    "lat": 12.5431603,
+    "lng": 108.0031899,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "66",
+      "ward": null
+    },
+    "legacy": null,
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 242.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 970.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 391.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 134,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 82.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 369,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 933.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 438.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 264,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 190.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 14.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": true
+      },
+      "sa-pa": {
+        "km": 1174.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 940.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
   "prices": [
     {
       "distance": "6km",
@@ -84,8 +175,8 @@
         "venue": "Khu du lịch sinh thái Đảo Xanh Ecofarm, Thôn Quỳnh Ngọc 1, xã Ea Na, tỉnh Đắk Lắk",
         "city": "Đắk Lắk"
       },
-      "reason": "ActiUp event page 2026-11-19: agenda image 'Hoàn thành đường chạy 6 km'; price image 'BIB chạy 199.000đ/người' (sale 02/11-27/11 per ActiUp open/close dates); poster footer 'Địa chỉ: Thôn Quỳnh Ngọc 1, xã Ea Na, tỉnh Đắk Lắk'. Lodging/transport packages (849k, 2.199M, 2.099M, 120k bus) are not run tiers and left out. Saved in .agent-read/giai-chay-bao-ve-moi-truong/images/.",
-      "at": "2026-11-19T09:46:59.225Z"
+      "reason": "Re-apply the location (unchanged) so the race picks up its point from state/geo.json, geocoded in 074fa87 (plan 031)",
+      "at": "2026-11-19T10:01:29.153Z"
     }
   },
   "sources": [
@@ -145,5 +236,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-02T21:01:31.434Z",
-  "updatedAt": "2026-11-19T09:46:59.225Z"
+  "updatedAt": "2026-11-19T10:01:29.153Z"
 }

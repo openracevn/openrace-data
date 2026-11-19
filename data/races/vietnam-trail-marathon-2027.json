@@ -48,7 +48,98 @@
     "venue": "Mộc Châu",
     "city": "Sơn La"
   },
-  "geo": null,
+  "geo": {
+    "lat": 20.8702795,
+    "lng": 104.6292295,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "14",
+      "ward": null
+    },
+    "legacy": null,
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1144.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 128.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 655.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1075.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1072.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1211.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 214,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 580.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1199.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 927.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 981.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 182.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 254.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
   "prices": [
     {
       "distance": "5km",
@@ -122,7 +213,16 @@
   "links": [],
   "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "location": {
+      "value": {
+        "venue": "Mộc Châu",
+        "city": "Sơn La"
+      },
+      "reason": "Re-apply the location (unchanged) so the race picks up its point from state/geo.json, geocoded in 074fa87 (plan 031)",
+      "at": "2026-11-19T10:01:29.153Z"
+    }
+  },
   "sources": [
     {
       "site": "vietnamtrailseries-com",
@@ -183,5 +283,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-19T09:46:59.225Z",
-  "updatedAt": "2026-11-19T09:46:59.225Z"
+  "updatedAt": "2026-11-19T10:01:29.153Z"
 }
