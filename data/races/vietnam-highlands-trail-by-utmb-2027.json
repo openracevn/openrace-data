@@ -8,7 +8,7 @@
   "date": "2027-01-07",
   "endDate": "2027-01-10",
   "mainDate": "2027-01-09",
-  "seriesId": null,
+  "seriesId": "vietnam-highlands-trail",
   "organizerId": null,
   "organizer": "Nexus Sport Events",
   "edition": null,
@@ -42,7 +42,102 @@
     "venue": "Lâm Viên, Lâm Đồng",
     "city": "Đà Lạt"
   },
-  "geo": null,
+  "geo": {
+    "lat": 11.954368,
+    "lng": 108.44048,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "68",
+      "ward": "24778"
+    },
+    "legacy": {
+      "province": "68",
+      "district": "672",
+      "ward": "24772"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 297.7,
+        "minutes": 232,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1398.8,
+        "minutes": 1118,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 629.1,
+        "minutes": 514,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 135.5,
+        "minutes": 130,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 3.1,
+        "minutes": 5,
+        "method": "road",
+        "near": true
+      },
+      "can-tho": {
+        "km": 466.7,
+        "minutes": 360,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1432.9,
+        "minutes": 1143,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 725.2,
+        "minutes": 589,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 330.6,
+        "minutes": 247,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 341.3,
+        "minutes": 293,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 189.9,
+        "minutes": 177,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1706.4,
+        "minutes": 1351,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1482.6,
+        "minutes": 1176,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
   "prices": [
     {
       "distance": "100km",
@@ -279,7 +374,13 @@
   "links": [],
   "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "seriesId": {
+      "value": "vietnam-highlands-trail",
+      "reason": "Same event as the 2026-01 Vietnam Highlands Trail (Đà Lạt, Nexus Sport Events); 2027 runs as Vietnam Highlands Trail by UTMB (vietnamhighlands.utmb.world, Lao Dong 2026). The add op's seriesId was not applied.",
+      "at": "2026-11-19T10:00:44.323Z"
+    }
+  },
   "sources": [
     {
       "site": "vietnamhighlands-utmb-world",
@@ -420,5 +521,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-19T09:46:59.225Z",
-  "updatedAt": "2026-11-19T09:46:59.225Z"
+  "updatedAt": "2026-11-19T10:00:44.323Z"
 }
