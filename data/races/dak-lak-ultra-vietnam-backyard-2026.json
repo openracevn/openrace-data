@@ -7,6 +7,7 @@
   ],
   "date": "2026-08-14",
   "endDate": "2026-08-16",
+  "mainDate": null,
   "seriesId": null,
   "organizerId": "4miles",
   "organizer": "4MILES",
@@ -23,7 +24,102 @@
     "venue": "Hồ du lịch sinh thái Ea Cuôr Kăp - Phường Tân Lập - Tỉnh Đắk Lắk",
     "city": null
   },
-  "geo": null,
+  "geo": {
+    "lat": 12.6855126,
+    "lng": 108.0938229,
+    "source": "nominatim",
+    "precision": "ward",
+    "current": {
+      "province": "66",
+      "ward": "24121"
+    },
+    "legacy": {
+      "province": "66",
+      "district": "643",
+      "ward": "24121"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 364.3,
+        "minutes": 268,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1268.5,
+        "minutes": 1033,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 512.2,
+        "minutes": 429,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 180.4,
+        "minutes": 166,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 179.8,
+        "minutes": 178,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 523.5,
+        "minutes": 396,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1302.6,
+        "minutes": 1057,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 594.9,
+        "minutes": 503,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 415.4,
+        "minutes": 331,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 254.7,
+        "minutes": 239,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 8,
+        "minutes": 8,
+        "method": "road",
+        "near": true
+      },
+      "sa-pa": {
+        "km": 1576.1,
+        "minutes": 1266,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1352.3,
+        "minutes": 1090,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
   "prices": [
     {
       "distance": null,
@@ -63,6 +159,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "endDate": {
@@ -142,5 +239,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-11-19T10:36:37.343Z"
 }

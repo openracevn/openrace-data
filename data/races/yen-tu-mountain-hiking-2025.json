@@ -7,6 +7,7 @@
   ],
   "date": "2025-04-20",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "yen-tu-mountain-hiking",
   "organizerId": "great-race-vietnam",
   "organizer": "Great Race Vietnam",
@@ -16,7 +17,102 @@
     "venue": "Làng Nương - Yên Tử",
     "city": null
   },
-  "geo": null,
+  "geo": {
+    "lat": 21.0420805,
+    "lng": 106.7178343,
+    "source": "nominatim",
+    "precision": "ward",
+    "current": {
+      "province": "22",
+      "ward": "06832"
+    },
+    "legacy": {
+      "province": "22",
+      "district": "196",
+      "ward": "06832"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1539.3,
+        "minutes": 1161,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 123.5,
+        "minutes": 89,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 818.1,
+        "minutes": 649,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1320.6,
+        "minutes": 1035,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1448.1,
+        "minutes": 1154,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1650.3,
+        "minutes": 1282,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 27.2,
+        "minutes": 30,
+        "method": "road",
+        "near": true
+      },
+      "hue": {
+        "km": 715.8,
+        "minutes": 566,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1630.2,
+        "minutes": 1244,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1128.6,
+        "minutes": 875,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1326.6,
+        "minutes": 1073,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 399.6,
+        "minutes": 334,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 46.7,
+        "minutes": 52,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
   "prices": [],
   "currency": "VND",
   "registrationStatus": "closed",
@@ -33,6 +129,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {},
   "sources": [
@@ -67,5 +164,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-11-19T10:36:37.343Z"
 }

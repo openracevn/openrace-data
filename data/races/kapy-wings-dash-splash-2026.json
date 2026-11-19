@@ -7,6 +7,7 @@
   ],
   "date": "2026-03-21",
   "endDate": null,
+  "mainDate": null,
   "seriesId": null,
   "organizerId": "the-lakes-race",
   "organizer": "THE LAKES RACE",
@@ -16,7 +17,102 @@
     "venue": "Lakeview Villas - Quận 9 - HCM",
     "city": null
   },
-  "geo": null,
+  "geo": {
+    "lat": 10.8441678,
+    "lng": 106.7791381,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "26842"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "769",
+      "ward": "26839"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 15.6,
+        "minutes": 17,
+        "method": "road",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1488.3,
+        "minutes": 1132,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 855,
+        "minutes": 648,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 408.2,
+        "minutes": 296,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 281.4,
+        "minutes": 216,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 184,
+        "minutes": 148,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1522.5,
+        "minutes": 1157,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 937.7,
+        "minutes": 722,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 91.2,
+        "minutes": 89,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 614.1,
+        "minutes": 458,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 351.1,
+        "minutes": 260,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1796,
+        "minutes": 1365,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1572.2,
+        "minutes": 1190,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
   "prices": [],
   "currency": "VND",
   "registrationStatus": "closed",
@@ -27,6 +123,7 @@
     }
   ],
   "links": [],
+  "participants": null,
   "flags": [],
   "overrides": {},
   "sources": [
@@ -56,5 +153,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-11-19T10:36:37.343Z"
 }

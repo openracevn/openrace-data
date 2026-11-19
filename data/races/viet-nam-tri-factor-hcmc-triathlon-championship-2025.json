@@ -7,6 +7,7 @@
   ],
   "date": "2025-08-15",
   "endDate": "2025-08-17",
+  "mainDate": null,
   "seriesId": null,
   "organizerId": "cong-ty-tnhh-dau-tu-thuong-mai-dich-vu-unique",
   "organizer": "CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI DỊCH VỤ UNIQUE",
@@ -16,7 +17,102 @@
     "venue": "Cần Giờ - TP HCM",
     "city": null
   },
-  "geo": null,
+  "geo": {
+    "lat": 10.3941245,
+    "lng": 106.9325441,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "27664"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "787",
+      "ward": "27664"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 56.3,
+        "minutes": 77,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1549.4,
+        "minutes": 1209,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 916.1,
+        "minutes": 724,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 460,
+        "minutes": 364,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 343.6,
+        "minutes": 293,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 212.3,
+        "minutes": 196,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1583.5,
+        "minutes": 1234,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 998.8,
+        "minutes": 799,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 135.4,
+        "minutes": 152,
+        "method": "road",
+        "near": true
+      },
+      "quy-nhon": {
+        "km": 665.9,
+        "minutes": 527,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 412.1,
+        "minutes": 336,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1857,
+        "minutes": 1442,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1633.2,
+        "minutes": 1266,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
   "prices": [],
   "currency": "VND",
   "registrationStatus": "closed",
@@ -33,6 +129,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -76,5 +173,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:30:54.869Z"
+  "updatedAt": "2026-11-19T10:36:37.343Z"
 }
