@@ -62,3 +62,8 @@ Fix four tool gaps that plan 031 hit, so a batch that passes `flush --dry-run` c
 4. **Not built.** With `renormalize` safe, it is the bulk tool for applying new geocodes; `flush` doesn't re-derive geo by itself.
 - Also: the existing test "merges two operations on one race" asserted an exact override list and broke when `hcmc-marathon-2025` got an `organizerId` override in `e56e812`; it now checks only the two keys it is about.
 - Optional organizer allow-list: not done (owner's call).
+
+### Follow-up: geocoding (2026-11-19)
+
+- The geocoder only split venues on commas, so "Cần Giờ - TP HCM" was tried whole and never fell back to the place or province. It now also splits on spaced dashes and expands `TP HCM`/`HCM`/`BRVT` (`c685389`, with 15 new `state/geo.json` points). `renormalize --commit` (`221645b`) applied them to 19 races: geo 90% → 95% (399/422).
+- 23 left: 5 have no location text (halong-bay-half-marathon-2015, halong-bay-heritage-marathon-2019 and -2020, the-lakes-race-mua-3, the 2019 Tiền Phong 60th); angkor-trail-2027 is in Cambodia (points are Vietnam-only); 17 have venues Nominatim doesn't know (English names such as "Quang Ninh Museum Library", "METROPOLE THỦ THIÊM", Trần Bạch Đằng street) or whose point falls "outside Vietnam's wards" (Vân Đồn, Rạch Giá). They need a sourced point (a maps link from the race's page) or a location found first: update-race work, per race.
