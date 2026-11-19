@@ -9,7 +9,7 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "hcmc-marathon",
-  "organizerId": null,
+  "organizerId": "pulse-active",
   "organizer": "Pulse Active",
   "edition": 13,
   "courses": [
@@ -36,7 +36,98 @@
     "venue": "Công viên 30/4, Lê Duẩn, Quận 1",
     "city": "TP.HCM"
   },
-  "geo": null,
+  "geo": {
+    "lat": 10.7753939,
+    "lng": 106.6996264,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "79",
+      "ward": null
+    },
+    "legacy": null,
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 0.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1143.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 610.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 317,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 229.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 129.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1119.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 639.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 63.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 431.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 255.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1320.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1132.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
   "prices": [
     {
       "distance": "10km",
@@ -116,7 +207,13 @@
     "confidence": "medium"
   },
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "organizerId": {
+      "value": "pulse-active",
+      "reason": "vietnamnews.vn/sports/1763457 (2026 HCM City Marathon): 'According to Lê Thị Thanh Thủy of Pulse Active, the event operator, the marathon is being managed through an integrated system'.",
+      "at": "2026-11-19T10:11:32.982Z"
+    }
+  },
   "sources": [
     {
       "site": "decathlon-vn",
@@ -210,5 +307,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:40:23.377Z",
-  "updatedAt": "2026-09-29T04:04:52.077Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

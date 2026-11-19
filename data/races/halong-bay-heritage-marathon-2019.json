@@ -9,7 +9,7 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "halong-bay-heritage-marathon",
-  "organizerId": null,
+  "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
   "edition": null,
   "courses": [
@@ -436,7 +436,13 @@
     "confidence": "medium"
   },
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "organizerId": {
+      "value": "cong-ty-dha-viet-nam",
+      "reason": "Wayback 20190915124723 of halongmarathon.com: 'Address: DHA Vietnam, 2nd floor, V+ mall, Hoa Binh Green City Building, 505 Minh Khai street ... Hanoi', halongrace@dhavietnam.vn.",
+      "at": "2026-11-19T10:11:32.982Z"
+    }
+  },
   "sources": [
     {
       "site": "halong-marathon",
@@ -651,5 +657,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-27T02:46:27.823Z",
-  "updatedAt": "2026-09-28T14:39:24.114Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

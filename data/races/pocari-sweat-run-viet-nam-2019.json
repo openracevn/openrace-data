@@ -9,7 +9,7 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "pocari-sweat-run-viet-nam",
-  "organizerId": null,
+  "organizerId": "pocari-sweat-run-vietnam",
   "organizer": "Pocari Sweat Run Vietnam",
   "edition": 1,
   "courses": [
@@ -36,7 +36,102 @@
     "venue": "Khu đô thị Sala",
     "city": "TP. Hồ Chí Minh"
   },
-  "geo": null,
+  "geo": {
+    "lat": 10.7718613,
+    "lng": 106.7247815,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "27094"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "769",
+      "ward": "27115"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 4.6,
+        "minutes": 7,
+        "method": "road",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1495.1,
+        "minutes": 1136,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 861.8,
+        "minutes": 651,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 410.2,
+        "minutes": 294,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 293.8,
+        "minutes": 222,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 172.7,
+        "minutes": 138,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1529.2,
+        "minutes": 1161,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 944.5,
+        "minutes": 726,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 93.3,
+        "minutes": 87,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 616.1,
+        "minutes": 456,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 357.8,
+        "minutes": 263,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1802.7,
+        "minutes": 1369,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1578.9,
+        "minutes": 1193,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
   "prices": [
     {
       "distance": "5km",
@@ -160,6 +255,11 @@
       "value": 1,
       "reason": "iRace page: 2019 is the first year the run is held in Vietnam",
       "at": "2026-09-28T16:26:10.635Z"
+    },
+    "organizerId": {
+      "value": "pocari-sweat-run-vietnam",
+      "reason": "organizerId for this year: race's own organizer text 'Pocari Sweat Run Vietnam' (same brand entity already used for 2024/2026); official site pocarisweatrun.com.vn lists 'Đơn vị tổ chức' under 'Về chúng tôi' (Wayback 2020-09-26/2022-09-29/2023-09-23, saved in .agent-read-archive/2026-09-28-pocari-wayback-prices); Tiền Phong: 'Năm 2019, Pocari Sweat Run chính thức được tổ chức tại Việt Nam bởi Công ty TNHH Otsuka Nutraceutical Việt Nam (ONV)'. Whether to split Otsuka out is left to the lead.",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -289,5 +389,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:23:36.352Z",
-  "updatedAt": "2026-09-29T04:32:16.750Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

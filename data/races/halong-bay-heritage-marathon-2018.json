@@ -9,7 +9,7 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "halong-bay-heritage-marathon",
-  "organizerId": null,
+  "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
   "edition": null,
   "courses": [
@@ -55,7 +55,13 @@
     "confidence": "medium"
   },
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "organizerId": {
+      "value": "cong-ty-dha-viet-nam",
+      "reason": "Wayback 20180807042023 of halongmarathon.com: 'Halong Bay Heritage Marathon is brought to you by DUCHUONGANH CO., LTD', contact halongrace@dhavietnam.vn. DHA Vietnam is the trade name of CÔNG TY TNHH ĐỨC HƯƠNG ANH (halongmarathon.com Wayback 20221102155926: 'CÔNG TY TNHH ĐỨC HƯƠNG ANH (DHA VIỆT NAM)').",
+      "at": "2026-11-19T10:11:32.982Z"
+    }
+  },
   "sources": [
     {
       "site": "halong-marathon",
@@ -104,5 +110,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-27T02:46:05.039Z",
-  "updatedAt": "2026-09-29T04:11:41.854Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

@@ -9,7 +9,7 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "andros-the-lakes-race",
-  "organizerId": null,
+  "organizerId": "athlete-trotter",
   "organizer": "Athlete Trotter",
   "edition": 4,
   "courses": [
@@ -209,6 +209,11 @@
       ],
       "reason": "Andros Lakes Race: user says every edition is city trail; course types follow. Distances unchanged.",
       "at": "2026-09-28T16:08:27.964Z"
+    },
+    "organizerId": {
+      "value": "athlete-trotter",
+      "reason": "irace.vn/su-kien/run-for-orphans-the-lakes-race: 'Ban tổ chức: ATHLETE TROTTER' and organizer box 'Athlete Trotter: Sports Agency operating in France, USA and Vietnam, fundraising orphans and carrying out Green Initiatives'.",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -239,5 +244,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T06:48:59.089Z",
-  "updatedAt": "2026-09-28T16:08:27.964Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

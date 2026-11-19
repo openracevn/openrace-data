@@ -9,7 +9,7 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "vietnam-trail-marathon",
-  "organizerId": null,
+  "organizerId": "topas-travel",
   "organizer": "Topas Travel",
   "edition": 9,
   "courses": [
@@ -221,6 +221,11 @@
       },
       "reason": "Re-apply the location (unchanged) so the race picks up its point from state/geo.json, geocoded in 074fa87 (plan 031)",
       "at": "2026-11-19T10:01:29.153Z"
+    },
+    "organizerId": {
+      "value": "topas-travel",
+      "reason": "organizerId for this year: vietnamtrailseries.com/trail-marathon: 'organised by Topas Travel'; registrations: BOOK NOW button on the 9th-edition page (HTTP 200, fetched 2026-11-19)",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -283,5 +288,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-19T09:46:59.225Z",
-  "updatedAt": "2026-11-19T10:01:29.153Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

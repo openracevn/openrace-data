@@ -453,8 +453,8 @@
     },
     "endDate": {
       "value": "2026-04-19",
-      "reason": "User-confirmed: event runs 18-19/04/2026 (irace says 04-18, actiup 04-19)",
-      "at": "2026-09-28T13:27:36.050Z"
+      "reason": "ticket.irace.vn/andros-lakes-race-8th (organizer Athlete Trotter's ticket page) is titled '18-19/04/2026': a two-day event. irace.vn write-up says 'Ngày đua 15:00 - 18/04/2026'; ActiUp API start/end 2026-04-19. Both fit 18-19 Apr, so the sellers do not truly conflict. No main day stated, mainDate left unset.",
+      "at": "2026-11-19T10:11:32.982Z"
     },
     "types": {
       "value": [
@@ -510,6 +510,11 @@
       ],
       "reason": "Andros Lakes Race: user says every edition is city trail; course types follow. Distances unchanged.",
       "at": "2026-09-28T16:07:54.162Z"
+    },
+    "date": {
+      "value": "2026-04-18",
+      "reason": "ticket.irace.vn/andros-lakes-race-8th (organizer Athlete Trotter's ticket page) is titled '18-19/04/2026': a two-day event. irace.vn write-up says 'Ngày đua 15:00 - 18/04/2026'; ActiUp API start/end 2026-04-19. Both fit 18-19 Apr, so the sellers do not truly conflict. No main day stated, mainDate left unset.",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -565,5 +570,5 @@
   ],
   "confidence": "conflicting",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T16:07:54.162Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

@@ -9,7 +9,7 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "hcmc-marathon",
-  "organizerId": null,
+  "organizerId": "pulse-active",
   "organizer": "Pulse Active",
   "edition": null,
   "courses": [
@@ -36,7 +36,102 @@
     "venue": "105 Nguyễn Khắc Viện, Phú Mỹ Hưng, Quận 7",
     "city": "TP.HCM"
   },
-  "geo": null,
+  "geo": {
+    "lat": 10.7411061,
+    "lng": 106.7213432,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "27478"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "778",
+      "ward": "27478"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 6,
+        "minutes": 9,
+        "method": "road",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1499.3,
+        "minutes": 1141,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 866,
+        "minutes": 656,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 415.8,
+        "minutes": 301,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 299.4,
+        "minutes": 230,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 171.1,
+        "minutes": 136,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1533.5,
+        "minutes": 1165,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 948.7,
+        "minutes": 731,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 98.9,
+        "minutes": 94,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 621.7,
+        "minutes": 464,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 362.1,
+        "minutes": 268,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1807,
+        "minutes": 1373,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1583.2,
+        "minutes": 1198,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
   "prices": [],
   "currency": "VND",
   "registrationStatus": null,
@@ -49,6 +144,11 @@
       "value": "hcmc-marathon",
       "reason": "Same race as the HCMC Marathon series (Pulse Active, Ho Chi Minh City; earlier called HCMC Run / Salonpas HCMC Marathon after its title sponsor); the name-based grouping had put it in its own series.",
       "at": "2026-09-28T16:43:35.919Z"
+    },
+    "organizerId": {
+      "value": "pulse-active",
+      "reason": "phumyhung.vn/khoi-dong-giai-chay-viet-da-tp-hcm: 'Giải việt dã TP HCM 2015 do Pulse Active tổ chức' and 'Thông tin đơn vị tổ chức Công ty TNHH PULSE ACTIVE'.",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -80,5 +180,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-28T16:32:10.848Z",
-  "updatedAt": "2026-09-28T16:43:35.919Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

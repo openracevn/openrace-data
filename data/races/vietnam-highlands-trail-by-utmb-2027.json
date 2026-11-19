@@ -9,7 +9,7 @@
   "endDate": "2027-01-10",
   "mainDate": "2027-01-09",
   "seriesId": "vietnam-highlands-trail",
-  "organizerId": null,
+  "organizerId": "nexus-sport-events",
   "organizer": "Nexus Sport Events",
   "edition": null,
   "courses": [
@@ -379,6 +379,11 @@
       "value": "vietnam-highlands-trail",
       "reason": "Same event as the 2026-01 Vietnam Highlands Trail (Đà Lạt, Nexus Sport Events); 2027 runs as Vietnam Highlands Trail by UTMB (vietnamhighlands.utmb.world, Lao Dong 2026). The add op's seriesId was not applied.",
       "at": "2026-11-19T10:00:44.323Z"
+    },
+    "organizerId": {
+      "value": "nexus-sport-events",
+      "reason": "organizerId: UTMB 'Vietnam Highlands Trail by UTMB' overview: 'co-organized and delivered by Nexus Sport Events' (vietnamhighlands.utmb.world overview; utmb.world news 'co-organized by Nexus Sport Events'); Lao Dong: 'in coordination with Nexus Sport Events'. registrations: the site's 'Register Now' button leads to /runners/entry-info ('Entry & Registration', registration until 2026-12-25), fetched 2026-11-19",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -521,5 +526,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-19T09:46:59.225Z",
-  "updatedAt": "2026-11-19T10:00:44.323Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

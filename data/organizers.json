@@ -29,6 +29,18 @@
   {
     "id": "artlive-a-virtual-art-campus",
     "name": "artLIVE – a virtual art campus",
+    "website": "https://artlive.vn",
+    "links": [
+      {
+        "url": "https://artlive.vn/ve-chung-toi",
+        "kind": "official",
+        "foundOn": "artlive.vn"
+      }
+    ]
+  },
+  {
+    "id": "athlete-trotter",
+    "name": "Athlete Trotter",
     "website": null
   },
   {
@@ -96,6 +108,11 @@
   {
     "id": "benh-vien-fv-dong-to-chuc-quy-nang-buoc-tuoi-tho",
     "name": "Bệnh viện FV - Đồng tổ chức: Quỹ Nâng Bước Tuổi Thơ",
+    "website": null
+  },
+  {
+    "id": "benh-vien-k",
+    "name": "Bệnh viện K",
     "website": null
   },
   {
@@ -383,6 +400,11 @@
     "website": null
   },
   {
+    "id": "deep-c-industrial-park-complex",
+    "name": "DEEP C Industrial Park Complex",
+    "website": null
+  },
+  {
     "id": "dha",
     "name": "DHA Vietnam",
     "website": null
@@ -484,6 +506,11 @@
     "website": null
   },
   {
+    "id": "hcmc-peace-and-development-foundation",
+    "name": "HCMC Peace and Development Foundation",
+    "website": null
+  },
+  {
     "id": "hiep-hoi-the-thao-cand-viet-nam",
     "name": "Hiệp hội Thể thao CAND Việt Nam",
     "website": null
@@ -539,6 +566,21 @@
     "website": null
   },
   {
+    "id": "lien-doan-dien-kinh-campuchia",
+    "name": "Liên đoàn Điền kinh Campuchia",
+    "website": null
+  },
+  {
+    "id": "lien-doan-dien-kinh-lao",
+    "name": "Liên đoàn Điền kinh Lào",
+    "website": null
+  },
+  {
+    "id": "lien-doan-dien-kinh-thanh-pho-ho-chi-minh",
+    "name": "Liên đoàn Điền kinh Thành phố Hồ Chí Minh",
+    "website": null
+  },
+  {
     "id": "lien-doan-dien-kinh-viet-nam",
     "name": "Liên Đoàn Điền Kinh Việt Nam",
     "website": null
@@ -566,7 +608,19 @@
   {
     "id": "mang-luoi-ung-thu-vu-viet-nam-bcnv",
     "name": "Mạng Lưới Ung Thu Vú Việt Nam - BCNV",
-    "website": null
+    "website": "https://bcnv.org.vn",
+    "links": [
+      {
+        "url": "https://bcnv.org.vn",
+        "kind": "official",
+        "foundOn": "bcnv.org.vn"
+      },
+      {
+        "url": "https://www.facebook.com/bcnvietnam",
+        "kind": "facebook",
+        "foundOn": "bcnv.org.vn"
+      }
+    ]
   },
   {
     "id": "miracle-entertainment-group",
@@ -633,6 +687,11 @@
   {
     "id": "quy-nang-buoc-tuoi-tho",
     "name": "Quỹ Nâng Bước Tuổi Thơ",
+    "website": null
+  },
+  {
+    "id": "quy-ngay-mai-tuoi-sang",
+    "name": "Quỹ Ngày mai tươi sáng",
     "website": null
   },
   {
@@ -713,8 +772,18 @@
     "website": null
   },
   {
+    "id": "so-du-lich-tp-ho-chi-minh",
+    "name": "Sở Du lịch Thành phố Hồ Chí Minh",
+    "website": null
+  },
+  {
     "id": "so-van-hoa-the-thao-du-lich-tinh-dien-bien",
     "name": "Sở Văn hóa, Thể thao và Du lịch tỉnh Điện Biên",
+    "website": null
+  },
+  {
+    "id": "so-van-hoa-the-thao-tinh-ba-ria-vung-tau",
+    "name": "Sở Văn hóa - Thể thao tỉnh Bà Rịa Vũng Tàu",
     "website": null
   },
   {
@@ -740,6 +809,11 @@
   {
     "id": "so-van-hoa-the-thao-va-du-lich-tinh-long-an",
     "name": "Sở Văn hóa, Thể thao và Du lịch tỉnh Long An",
+    "website": null
+  },
+  {
+    "id": "so-van-hoa-the-thao-va-du-lich-tinh-quang-ngai",
+    "name": "Sở Văn hóa, Thể thao và Du lịch tỉnh Quảng Ngãi",
     "website": null
   },
   {
@@ -845,6 +919,11 @@
     "website": null
   },
   {
+    "id": "ubnd-dac-khu-ly-son",
+    "name": "UBND Đặc khu Lý Sơn",
+    "website": null
+  },
+  {
     "id": "ubnd-huyen-cam-xuyen",
     "name": "Ủy ban nhân dân huyện Cẩm Xuyên",
     "website": null
@@ -892,6 +971,11 @@
   {
     "id": "ubnd-thanh-pho-ho-chi-minh",
     "name": "Ủy ban nhân dân Thành phố Hồ Chí Minh",
+    "website": null
+  },
+  {
+    "id": "ubnd-tinh-lai-chau",
+    "name": "Ủy ban nhân dân tỉnh Lai Châu",
     "website": null
   },
   {
@@ -962,6 +1046,11 @@
     "website": null
   },
   {
+    "id": "vietnamjoy",
+    "name": "VietnamJoy",
+    "website": null
+  },
+  {
     "id": "vietrace365",
     "name": "VIETRACE365",
     "website": "https://vietrace365.vn/",
@@ -975,6 +1064,18 @@
         "url": "https://www.facebook.com/vietrace365",
         "kind": "facebook",
         "foundOn": "vietrace365.vn"
+      }
+    ]
+  },
+  {
+    "id": "viettel",
+    "name": "Tập đoàn Công nghiệp - Viễn thông Quân đội (Viettel Group)",
+    "website": "https://viettel.com.vn/",
+    "links": [
+      {
+        "url": "https://viettel.com.vn/",
+        "kind": "official",
+        "foundOn": "viettel.com.vn"
       }
     ]
   },

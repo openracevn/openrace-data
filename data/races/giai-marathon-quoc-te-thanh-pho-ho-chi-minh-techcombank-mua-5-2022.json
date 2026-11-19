@@ -9,8 +9,13 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "techcombank-ho-chi-minh-city-international-marathon",
-  "organizerId": null,
+  "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
+  "coOrganizerIds": [
+    "so-du-lich-tp-ho-chi-minh",
+    "so-van-hoa-va-the-thao-tp-ho-chi-minh",
+    "lien-doan-dien-kinh-thanh-pho-ho-chi-minh"
+  ],
   "edition": 5,
   "courses": [
     {
@@ -155,6 +160,20 @@
       "value": "techcombank-ho-chi-minh-city-international-marathon",
       "reason": "unify series id across all editions of this race",
       "at": "2026-09-27T08:08:20.242Z"
+    },
+    "organizerId": {
+      "value": "sunrise-events-vietnam",
+      "reason": "techcombank.com/thong-tin/thong-bao/giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-an-tuong-mua-5: 'đồng tổ chức bởi Sở Du lịch, Sở Văn hoá và Thể thao Thành phố Hồ Chí Minh, Liên đoàn Điền kinh Thành phố Hồ Chí Minh, Công ty Sunrise Events Việt Nam'.",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "so-du-lich-tp-ho-chi-minh",
+        "so-van-hoa-va-the-thao-tp-ho-chi-minh",
+        "lien-doan-dien-kinh-thanh-pho-ho-chi-minh"
+      ],
+      "reason": "techcombank.com/thong-tin/thong-bao/giai-marathon-quoc-te-thanh-pho-ho-chi-minh-techcombank-an-tuong-mua-5: 'đồng tổ chức bởi Sở Du lịch, Sở Văn hoá và Thể thao Thành phố Hồ Chí Minh, Liên đoàn Điền kinh Thành phố Hồ Chí Minh, Công ty Sunrise Events Việt Nam'.",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -207,5 +226,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-27T08:05:25.233Z",
-  "updatedAt": "2026-09-28T14:40:36.103Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

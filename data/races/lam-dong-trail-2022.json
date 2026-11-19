@@ -9,7 +9,7 @@
   "endDate": "2022-11-13",
   "mainDate": null,
   "seriesId": "lamdong-trail",
-  "organizerId": null,
+  "organizerId": "vietnamjoy",
   "organizer": "VietnamJoy",
   "edition": 1,
   "courses": [
@@ -499,6 +499,11 @@
       "value": 1,
       "reason": "Asia Trail Master 2023-03-08 'Back to Dalat for Lam Dong Trail on 11 November' (https://www.asiatrailmaster.com/news/2023/3/8/back-to-dalat-for-lam-dong-trail-on-11-november): 'Last year’s inaugural edition saw Vietnam’s trail heroes Quang Tran and Hau Ha ... win the long distance race'; TTC Group 2023 article: 'last year's first tournament'.",
       "at": "2026-10-17T13:14:46.772Z"
+    },
+    "organizerId": {
+      "value": "vietnamjoy",
+      "reason": "organizerId for this year: app.irace.vn/lam-dong-trail-2022: 'VietnamJoy là tập thể ... sự kiện Lâm Đồng Trail ra đời ... mở đầu cho chuỗi các giải chạy của cộng đồng VietnamJoy'; race organizer text 'VietnamJoy'.",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -535,5 +540,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T08:00:46.737Z",
-  "updatedAt": "2026-10-17T13:14:46.772Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

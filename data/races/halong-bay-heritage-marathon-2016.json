@@ -7,8 +7,9 @@
   ],
   "date": "2016-11-26",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "halong-bay-heritage-marathon",
-  "organizerId": null,
+  "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
   "edition": null,
   "courses": [
@@ -47,8 +48,15 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "organizerId": {
+      "value": "cong-ty-dha-viet-nam",
+      "reason": "Wayback 20161005062804 of halongmarathon.com: 'News from Organizer ... Hanoi Tourist building, No.18 Ly Thuong Kiet ... halongrace@dhavietnam.vn'. DHA Vietnam is the trade name of CÔNG TY TNHH ĐỨC HƯƠNG ANH (halongmarathon.com Wayback 20221102155926: 'CÔNG TY TNHH ĐỨC HƯƠNG ANH (DHA VIỆT NAM)').",
+      "at": "2026-11-19T10:11:32.982Z"
+    }
+  },
   "sources": [
     {
       "site": "halong-marathon",
@@ -78,5 +86,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-27T02:44:54.772Z",
-  "updatedAt": "2026-09-27T02:44:54.772Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

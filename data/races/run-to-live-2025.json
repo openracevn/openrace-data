@@ -7,6 +7,7 @@
   ],
   "date": "2025-03-09",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "run-to-live",
   "organizerId": "miracle-entertainment-group",
   "organizer": "Báo Sài Gòn Giải Phóng; Sở Văn hóa, Thể thao Thành phố Hồ Chí Minh; Công ty Miracle Entertainment Group; Ban Quản lý phát triển đô thị Thủ Thiêm",
@@ -286,6 +287,16 @@
       ],
       "reason": "organizer cleanup (plan 013): \"Báo Sài Gòn Giải Phóng; Sở Văn hóa, Thể thao Thành phố Hồ Chí Minh; Công ty Miracle Entertainment Group; Ban Quản lý phát triển đô thị Thủ Thiêm\" packed several bodies into one entity; primary organizer miracle-entertainment-group, co-organizers bao-sai-gon-giai-phong, so-van-hoa-va-the-thao-tp-ho-chi-minh, ban-quan-ly-phat-trien-do-thi-thu-thiem",
       "at": "2026-09-28T12:41:20.796Z"
+    },
+    "date": {
+      "value": "2025-03-09",
+      "reason": "Race day 9 March 2025: irace.vn 'Thời gian: 09/03/2025', nhandan.vn, and the organizer Báo SGGP's own report (en.sggp.org.vn 'early morning of March 9'; event days March 7-9). pace8.vn's '13-14 tháng 03, 2025' is a pre-sale reseller date that no report supports.",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "endDate": {
+      "value": null,
+      "reason": "Race day 9 March 2025: irace.vn 'Thời gian: 09/03/2025', nhandan.vn, and the organizer Báo SGGP's own report (en.sggp.org.vn 'early morning of March 9'; event days March 7-9). pace8.vn's '13-14 tháng 03, 2025' is a pre-sale reseller date that no report supports.",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -519,5 +530,5 @@
   ],
   "confidence": "conflicting",
   "createdAt": "2026-09-27T08:06:39.781Z",
-  "updatedAt": "2026-09-28T12:41:20.796Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

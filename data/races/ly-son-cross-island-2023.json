@@ -9,8 +9,11 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "ly-son-cross-island",
-  "organizerId": null,
+  "organizerId": "cong-ty-co-phan-duong-chay-xanh",
   "organizer": null,
+  "coOrganizerIds": [
+    "ubnd-huyen-ly-son"
+  ],
   "edition": 1,
   "courses": [
     {
@@ -36,7 +39,98 @@
     "venue": "Huyện đảo Lý Sơn, tỉnh Quảng Ngãi",
     "city": "Lý Sơn"
   },
-  "geo": null,
+  "geo": {
+    "lat": 15.3809098,
+    "lng": 109.1174595,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "51",
+      "ward": "21548"
+    },
+    "legacy": null,
+    "access": "flight_or_ferry",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 575.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 716.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 121.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 349.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 389.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 695.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 659.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 202.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 601.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 178.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 323.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 951.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 655.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
   "prices": [],
   "currency": "VND",
   "registrationStatus": null,
@@ -59,6 +153,18 @@
       "value": 1,
       "reason": "dantri 2024-05-13 (https://dantri.com.vn/the-thao/600-nguoi-tham-gia-boi-vuot-bien-o-ly-son-20240513112538743.htm) says 2024 is the second time and the race was first held in 2023; petrotimes calls 2023 'mùa 1'",
       "at": "2026-09-29T04:49:50.450Z"
+    },
+    "organizerId": {
+      "value": "cong-ty-co-phan-duong-chay-xanh",
+      "reason": "organizerId for this year: vietnamnews.vn/sports/1544873: 'the local authority [Lý Sơn District People's Committee] and staff of the Green Path Joint Stock Company ... decided to organise the event' (Green Path = Đường Chạy Xanh, primary for 2024-2026)",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "ubnd-huyen-ly-son"
+      ],
+      "reason": "organizerId for this year: vietnamnews.vn/sports/1544873: 'the local authority [Lý Sơn District People's Committee] and staff of the Green Path Joint Stock Company ... decided to organise the event' (Green Path = Đường Chạy Xanh, primary for 2024-2026)",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -107,5 +213,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-29T04:49:15.046Z",
-  "updatedAt": "2026-09-29T05:01:11.611Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

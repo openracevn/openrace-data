@@ -7,11 +7,41 @@
   ],
   "date": "2024-11-30",
   "endDate": "2024-12-01",
-  "seriesId": null,
-  "organizerId": null,
+  "mainDate": null,
+  "seriesId": "viettel-marathon",
+  "organizerId": "vietcontent",
   "organizer": "Liên đoàn Điền kinh Việt Nam, Liên đoàn Điền kinh Lào, Liên đoàn Điền kinh Campuchia tổ chức; Tập đoàn Công nghiệp - Viễn thông Quân đội (Viettel Group) đồng tổ chức và tài trợ; Hiệp hội Điền kinh Châu Á giám sát và tư vấn, Công ty Vietcontent thực hiện",
-  "edition": null,
-  "courses": [],
+  "coOrganizerIds": [
+    "lien-doan-dien-kinh-viet-nam",
+    "viettel"
+  ],
+  "edition": 1,
+  "courses": [
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Khu liên hợp thể thao Quốc gia, Mỹ Đình, Quận Nam Từ Liêm, Thành phố Hà Nội",
     "city": null
@@ -133,6 +163,12 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": {
+    "count": 10000,
+    "sourceUrl": "https://vietnamnews.vn/sports/1688094/indochina-marathon-s-vie-t-nam-leg-takes-place-with-new-designed-route.html",
+    "quote": "About 10,000 runners check in at the Viettel Marathon Series 2024's Việt Nam leg",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {
     "types": {
@@ -141,6 +177,59 @@
       ],
       "reason": "inferred from race name/price-tier text (marathon); no source states an explicit type",
       "at": "2026-09-26T13:21:53.036Z"
+    },
+    "organizerId": {
+      "value": "vietcontent",
+      "reason": "organizerId/series/edition/courses. Organizers: official site viettelmarathon.com: 'Giải Viettel Marathon 2024 ... do Liên đoàn Điền kinh Châu Á, Liên đoàn Điền kinh Việt Nam và Tập đoàn Công nghiệp - Viễn thông Quân đội phối hợp với Liên đoàn Điền kinh Campuchia và Liên đoàn Điền kinh Lào tổ chức'; ActiUp (race source): '... Công ty Vietcontent thực hiện' and site contact info@vietcontent.com.vn; nhandan.vn: 'Viettel Group là đơn vị đồng tổ chức và tài trợ'. Series: vietnamnews 1692243 'Viettel Marathon Series ... in its second edition this November [2025]' and 1688801 'first year of organisation'. Edition 1: vietnamnews 1688801 says 'the first year of organisation' (series launched 2024). Courses: vietnamnews.vn/sports/1688094: 'will begin with the 42km category ... followed by the 21km, 10km and 5km'",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "lien-doan-dien-kinh-viet-nam",
+        "viettel"
+      ],
+      "reason": "organizerId/series/edition/courses. Organizers: official site viettelmarathon.com: 'Giải Viettel Marathon 2024 ... do Liên đoàn Điền kinh Châu Á, Liên đoàn Điền kinh Việt Nam và Tập đoàn Công nghiệp - Viễn thông Quân đội phối hợp với Liên đoàn Điền kinh Campuchia và Liên đoàn Điền kinh Lào tổ chức'; ActiUp (race source): '... Công ty Vietcontent thực hiện' and site contact info@vietcontent.com.vn; nhandan.vn: 'Viettel Group là đơn vị đồng tổ chức và tài trợ'. Series: vietnamnews 1692243 'Viettel Marathon Series ... in its second edition this November [2025]' and 1688801 'first year of organisation'. Edition 1: vietnamnews 1688801 says 'the first year of organisation' (series launched 2024). Courses: vietnamnews.vn/sports/1688094: 'will begin with the 42km category ... followed by the 21km, 10km and 5km'",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "seriesId": {
+      "value": "viettel-marathon",
+      "reason": "organizerId/series/edition/courses. Organizers: official site viettelmarathon.com: 'Giải Viettel Marathon 2024 ... do Liên đoàn Điền kinh Châu Á, Liên đoàn Điền kinh Việt Nam và Tập đoàn Công nghiệp - Viễn thông Quân đội phối hợp với Liên đoàn Điền kinh Campuchia và Liên đoàn Điền kinh Lào tổ chức'; ActiUp (race source): '... Công ty Vietcontent thực hiện' and site contact info@vietcontent.com.vn; nhandan.vn: 'Viettel Group là đơn vị đồng tổ chức và tài trợ'. Series: vietnamnews 1692243 'Viettel Marathon Series ... in its second edition this November [2025]' and 1688801 'first year of organisation'. Edition 1: vietnamnews 1688801 says 'the first year of organisation' (series launched 2024). Courses: vietnamnews.vn/sports/1688094: 'will begin with the 42km category ... followed by the 21km, 10km and 5km'",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "edition": {
+      "value": 1,
+      "reason": "organizerId/series/edition/courses. Organizers: official site viettelmarathon.com: 'Giải Viettel Marathon 2024 ... do Liên đoàn Điền kinh Châu Á, Liên đoàn Điền kinh Việt Nam và Tập đoàn Công nghiệp - Viễn thông Quân đội phối hợp với Liên đoàn Điền kinh Campuchia và Liên đoàn Điền kinh Lào tổ chức'; ActiUp (race source): '... Công ty Vietcontent thực hiện' and site contact info@vietcontent.com.vn; nhandan.vn: 'Viettel Group là đơn vị đồng tổ chức và tài trợ'. Series: vietnamnews 1692243 'Viettel Marathon Series ... in its second edition this November [2025]' and 1688801 'first year of organisation'. Edition 1: vietnamnews 1688801 says 'the first year of organisation' (series launched 2024). Courses: vietnamnews.vn/sports/1688094: 'will begin with the 42km category ... followed by the 21km, 10km and 5km'",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "courses": {
+      "value": [
+        {
+          "label": "42km",
+          "meters": 42195,
+          "type": "road_run",
+          "elevationGain": null
+        },
+        {
+          "label": "21km",
+          "meters": 21097,
+          "type": "road_run",
+          "elevationGain": null
+        },
+        {
+          "label": "10km",
+          "meters": 10000,
+          "type": "road_run",
+          "elevationGain": null
+        },
+        {
+          "label": "5km",
+          "meters": 5000,
+          "type": "road_run",
+          "elevationGain": null
+        }
+      ],
+      "reason": "organizerId/series/edition/courses. Organizers: official site viettelmarathon.com: 'Giải Viettel Marathon 2024 ... do Liên đoàn Điền kinh Châu Á, Liên đoàn Điền kinh Việt Nam và Tập đoàn Công nghiệp - Viễn thông Quân đội phối hợp với Liên đoàn Điền kinh Campuchia và Liên đoàn Điền kinh Lào tổ chức'; ActiUp (race source): '... Công ty Vietcontent thực hiện' and site contact info@vietcontent.com.vn; nhandan.vn: 'Viettel Group là đơn vị đồng tổ chức và tài trợ'. Series: vietnamnews 1692243 'Viettel Marathon Series ... in its second edition this November [2025]' and 1688801 'first year of organisation'. Edition 1: vietnamnews 1688801 says 'the first year of organisation' (series launched 2024). Courses: vietnamnews.vn/sports/1688094: 'will begin with the 42km category ... followed by the 21km, 10km and 5km'",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -176,9 +265,28 @@
           "name": "Liên đoàn Điền kinh Việt Nam, Liên đoàn Điền kinh Lào, Liên đoàn Điền kinh Campuchia tổ chức; Tập đoàn Công nghiệp - Viễn thông Quân đội (Viettel Group) đồng tổ chức và tài trợ; Hiệp hội Điền kinh Châu Á giám sát và tư vấn, Công ty Vietcontent thực hiện"
         }
       }
+    },
+    {
+      "site": "vietnamnews-vn",
+      "role": "reference",
+      "url": "https://vietnamnews.vn/sports/1688094/indochina-marathon-s-vie-t-nam-leg-takes-place-with-new-designed-route.html",
+      "lastCheckedAt": "2026-11-19T10:11:32.982Z",
+      "lastChangedAt": "2026-11-19T10:11:32.982Z",
+      "extracted": {
+        "facts": {
+          "name": "VIETTEL MARATHON HANOI VIETNAM 2024",
+          "date": "2024-11-30",
+          "participants": {
+            "count": 10000,
+            "sourceUrl": "https://vietnamnews.vn/sports/1688094/indochina-marathon-s-vie-t-nam-leg-takes-place-with-new-designed-route.html",
+            "quote": "About 10,000 runners check in at the Viettel Marathon Series 2024's Việt Nam leg"
+          },
+          "note": "check-in count stated on the page, verified by backfill-verify (dry)"
+        }
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

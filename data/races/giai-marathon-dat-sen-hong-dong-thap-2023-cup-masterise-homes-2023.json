@@ -7,9 +7,9 @@
   ],
   "date": "2023-10-14",
   "endDate": "2023-10-15",
-  "mainDate": null,
+  "mainDate": "2023-10-15",
   "seriesId": "vpbank-dat-sen-hong-music-marathon",
-  "organizerId": null,
+  "organizerId": "nexus-sport-events",
   "organizer": "Tỉnh Ủy – Ủy ban Nhân dân tỉnh Đồng Tháp (chỉ đạo); Sở Văn hoá, Thể thao và Du lịch tỉnh Đồng Tháp và Công ty Cổ phần Truyền thông Nexus (tổ chức)",
   "edition": 2,
   "courses": [
@@ -158,6 +158,26 @@
       "value": 2,
       "reason": "A thanhnien.vn article about the 2024 edition (raw file 10-thanhnien-2024-10000.html) states the 2024 turnout 'tăng đột biến gần gấp đôi so với mùa giải lần 2' (nearly doubled vs season 2) while calling 2024 itself 'lần 3' — placing the immediately-preceding annual edition (2023) as lần 2. No source states 2023's number directly on its own page.",
       "at": "2026-09-27T02:26:02.319Z"
+    },
+    "date": {
+      "value": "2023-10-14",
+      "reason": "Organizer text (dongthapmarathon.com, as quoted on yeuchaybo.com): 'tổ chức vào ngày 14,15/10/2023' (two-day event). Thanh Nien 15/10/2023: 'Sáng 15.10 ... gần 6.000 VĐV chính thức bước vào ngày thi đấu chính thức' so the main race day is 15 Oct; 14 Oct is the opening evening (baodautu). yeuchaybo lists 15/10 as the race. Sources agree once 14 is the first event day and 15 the race day.",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "endDate": {
+      "value": "2023-10-15",
+      "reason": "Organizer text (dongthapmarathon.com, as quoted on yeuchaybo.com): 'tổ chức vào ngày 14,15/10/2023' (two-day event). Thanh Nien 15/10/2023: 'Sáng 15.10 ... gần 6.000 VĐV chính thức bước vào ngày thi đấu chính thức' so the main race day is 15 Oct; 14 Oct is the opening evening (baodautu). yeuchaybo lists 15/10 as the race. Sources agree once 14 is the first event day and 15 the race day.",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "mainDate": {
+      "value": "2023-10-15",
+      "reason": "Organizer text (dongthapmarathon.com, as quoted on yeuchaybo.com): 'tổ chức vào ngày 14,15/10/2023' (two-day event). Thanh Nien 15/10/2023: 'Sáng 15.10 ... gần 6.000 VĐV chính thức bước vào ngày thi đấu chính thức' so the main race day is 15 Oct; 14 Oct is the opening evening (baodautu). yeuchaybo lists 15/10 as the race. Sources agree once 14 is the first event day and 15 the race day.",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "organizerId": {
+      "value": "nexus-sport-events",
+      "reason": "organizerId for this year: vietnamnews.vn/sports/1594356: 'The Masterise Homes Cup event is hosted by the provincial Culture, Sports and Tourism Department and managed by Nexus Sport Events'",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -235,5 +255,5 @@
   ],
   "confidence": "conflicting",
   "createdAt": "2026-09-27T02:24:23.189Z",
-  "updatedAt": "2026-09-28T16:12:57.979Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

@@ -9,8 +9,12 @@
   "endDate": "2022-03-27",
   "mainDate": "2022-03-27",
   "seriesId": "tien-phong-marathon",
-  "organizerId": null,
+  "organizerId": "bao-tien-phong",
   "organizer": "Báo Tiền Phong",
+  "coOrganizerIds": [
+    "lien-doan-dien-kinh-viet-nam",
+    "so-van-hoa-the-thao-tinh-ba-ria-vung-tau"
+  ],
   "edition": 63,
   "courses": [
     {
@@ -42,7 +46,98 @@
     "venue": "Côn Đảo",
     "city": "Bà Rịa - Vũng Tàu"
   },
-  "geo": null,
+  "geo": {
+    "lat": 8.6778963,
+    "lng": 106.6011901,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "26732"
+    },
+    "legacy": null,
+    "access": "flight_or_ferry",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 233.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1375.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 839.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 487.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 414.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 175.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1352.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 872.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 192.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 635,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 470.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1547.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1365.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
   "prices": [
     {
       "distance": "42km",
@@ -165,6 +260,19 @@
       "value": 63,
       "reason": "Tiền Phong article states 'lần thứ 63'",
       "at": "2026-09-29T04:54:34.181Z"
+    },
+    "organizerId": {
+      "value": "bao-tien-phong",
+      "reason": "tienphong.vn tien-phong-marathon-2022-mo-cong-dang-ky-post1410403: 'Giải do báo Tiền Phong phối hợp Liên đoàn Điền kinh Việt Nam và Sở Văn hóa - Thể thao tỉnh Bà Rịa Vũng Tàu tổ chức'.",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "lien-doan-dien-kinh-viet-nam",
+        "so-van-hoa-the-thao-tinh-ba-ria-vung-tau"
+      ],
+      "reason": "tienphong.vn tien-phong-marathon-2022-mo-cong-dang-ky-post1410403: 'Giải do báo Tiền Phong phối hợp Liên đoàn Điền kinh Việt Nam và Sở Văn hóa - Thể thao tỉnh Bà Rịa Vũng Tàu tổ chức'.",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -284,5 +392,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-29T04:46:51.499Z",
-  "updatedAt": "2026-09-29T04:56:47.891Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

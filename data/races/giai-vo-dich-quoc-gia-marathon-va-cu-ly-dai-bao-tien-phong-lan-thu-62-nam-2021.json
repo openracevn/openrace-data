@@ -9,8 +9,11 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "tien-phong-marathon",
-  "organizerId": null,
+  "organizerId": "bao-tien-phong",
   "organizer": "Báo Tiền Phong",
+  "coOrganizerIds": [
+    "lien-doan-dien-kinh-viet-nam"
+  ],
   "edition": 62,
   "courses": [
     {
@@ -42,7 +45,98 @@
     "venue": "Thành phố Pleiku",
     "city": "Gia Lai"
   },
-  "geo": null,
+  "geo": {
+    "lat": 13.9602456,
+    "lng": 108.015887,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "52",
+      "ward": null
+    },
+    "legacy": null,
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 382.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 818.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 234.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 230.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 229.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 499.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 778.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 282.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 414.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 132,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 143.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1030.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 783.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
   "prices": [],
   "currency": "VND",
   "registrationStatus": "closed",
@@ -65,6 +159,18 @@
       "value": 62,
       "reason": "Tiền Phong article states 'lần thứ 62'",
       "at": "2026-09-29T04:54:17.313Z"
+    },
+    "organizerId": {
+      "value": "bao-tien-phong",
+      "reason": "tienphong.vn tien-phong-marathon-2021-cung-nhau-ve-dich-post1323544: 'báo Tiền Phong và Liên đoàn Điền kinh Việt Nam đã nhận được sự phối hợp, ủng hộ hết sức nhiệt tình của lãnh đạo tỉnh Gia Lai'; 'Gia Lai và Agribank phối hợp với báo Tiền Phong tổ chức'.",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "lien-doan-dien-kinh-viet-nam"
+      ],
+      "reason": "tienphong.vn tien-phong-marathon-2021-cung-nhau-ve-dich-post1323544: 'báo Tiền Phong và Liên đoàn Điền kinh Việt Nam đã nhận được sự phối hợp, ủng hộ hết sức nhiệt tình của lãnh đạo tỉnh Gia Lai'; 'Gia Lai và Agribank phối hợp với báo Tiền Phong tổ chức'.",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -118,5 +224,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-29T04:51:21.179Z",
-  "updatedAt": "2026-09-29T04:56:18.045Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

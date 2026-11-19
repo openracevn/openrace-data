@@ -9,7 +9,7 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "hcmc-marathon",
-  "organizerId": null,
+  "organizerId": "pulse-active",
   "organizer": "Pulse Active",
   "edition": 11,
   "courses": [
@@ -42,7 +42,98 @@
     "venue": "Trung tâm TP.HCM, Quận 1",
     "city": "TP.HCM"
   },
-  "geo": null,
+  "geo": {
+    "lat": 10.7753939,
+    "lng": 106.6996264,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "79",
+      "ward": null
+    },
+    "legacy": null,
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 0.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1143.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 610.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 317,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 229.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 129.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1119.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 639.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 63.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 431.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 255.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1320.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1132.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
   "prices": [],
   "currency": "VND",
   "registrationStatus": null,
@@ -55,7 +146,13 @@
     "confidence": "medium"
   },
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "organizerId": {
+      "value": "pulse-active",
+      "reason": "thegioichaybo.vn/blogs/giai-chay/giai-chay-hcmc-marathon-2024: 'Ban tổ chức: Pulse Active ... Pulse Active mong muốn mang lại niềm tự hào cho những người dân của thành phố này khi là địa điểm tổ chức Giải'.",
+      "at": "2026-11-19T10:11:32.982Z"
+    }
+  },
   "sources": [
     {
       "site": "thegioichaybo-vn",
@@ -106,5 +203,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:39:03.028Z",
-  "updatedAt": "2026-09-29T03:56:38.104Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

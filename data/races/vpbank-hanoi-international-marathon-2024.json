@@ -9,7 +9,7 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "vpbank-hanoi-international-marathon",
-  "organizerId": null,
+  "organizerId": "vpbank",
   "organizer": "Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
   "edition": null,
   "courses": [
@@ -150,7 +150,13 @@
     "confidence": "medium"
   },
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "organizerId": {
+      "value": "vpbank",
+      "reason": "organizerId for this year: baophapluat (doanhnhan.baophapluat.vn vpim-2024...78209): 'Giải chạy VPIM 2024 do VPBank phối hợp cùng LynkID và VnExpress Marathon tổ chức'",
+      "at": "2026-11-19T10:11:32.982Z"
+    }
+  },
   "sources": [
     {
       "site": "en-vietnamplus-vn",
@@ -186,5 +192,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-27T02:22:59.760Z",
-  "updatedAt": "2026-09-28T14:36:25.648Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

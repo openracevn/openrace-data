@@ -9,7 +9,7 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "danang-international-marathon",
-  "organizerId": null,
+  "organizerId": "pulse-active",
   "organizer": "Pulse Active",
   "edition": 14,
   "courses": [
@@ -434,6 +434,11 @@
       },
       "reason": "Re-apply the location (unchanged) so the race picks up its point from state/geo.json, geocoded in 074fa87 (plan 031)",
       "at": "2026-11-19T10:01:29.153Z"
+    },
+    "organizerId": {
+      "value": "pulse-active",
+      "reason": "organizerId for this year: rundanang.com 2027 pages footer 'Copyrights All Rights Reserved by Pulse Active', contacts @pulse.vn; baomoi/Báo Đà Nẵng 2026-07-21 keyword 'Công ty Pulse Active' on the 2027 registration announcement; registrations: the organizer's 2027 REGISTER page (HTTP 200, fetched 2026-11-19)",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -637,5 +642,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-19T09:46:59.225Z",
-  "updatedAt": "2026-11-19T10:01:29.153Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

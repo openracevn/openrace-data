@@ -9,8 +9,13 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "techcombank-ho-chi-minh-city-international-marathon",
-  "organizerId": null,
+  "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
+  "coOrganizerIds": [
+    "so-du-lich-tp-ho-chi-minh",
+    "so-van-hoa-va-the-thao-tp-ho-chi-minh",
+    "lien-doan-dien-kinh-thanh-pho-ho-chi-minh"
+  ],
   "edition": 4,
   "courses": [
     {
@@ -155,6 +160,20 @@
       "value": "techcombank-ho-chi-minh-city-international-marathon",
       "reason": "unify series id across all editions of this race",
       "at": "2026-09-27T08:08:12.350Z"
+    },
+    "organizerId": {
+      "value": "sunrise-events-vietnam",
+      "reason": "baovanhoa.vn/the-thao/hon-13000-nguoi-tham-du-giai-marathon-quoc-te-tphcm-2021-49116.html: 'do Sở Du Lịch TP.HCM, Sở Văn hóa và Thể thao TP.HCM phối hợp cùng Liên đoàn điền kinh TP.HCM, Trung tâm Xúc tiến Du lịch Thành phố và Công ty Sự kiện Sunrise Việt Nam tổ chức'; vietnamnews.vn/life-style/923047: 'co-organised by ... Sunrise Việt Nam, and Techcombank'.",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "so-du-lich-tp-ho-chi-minh",
+        "so-van-hoa-va-the-thao-tp-ho-chi-minh",
+        "lien-doan-dien-kinh-thanh-pho-ho-chi-minh"
+      ],
+      "reason": "baovanhoa.vn/the-thao/hon-13000-nguoi-tham-du-giai-marathon-quoc-te-tphcm-2021-49116.html: 'do Sở Du Lịch TP.HCM, Sở Văn hóa và Thể thao TP.HCM phối hợp cùng Liên đoàn điền kinh TP.HCM, Trung tâm Xúc tiến Du lịch Thành phố và Công ty Sự kiện Sunrise Việt Nam tổ chức'; vietnamnews.vn/life-style/923047: 'co-organised by ... Sunrise Việt Nam, and Techcombank'.",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -193,5 +212,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-27T08:04:53.237Z",
-  "updatedAt": "2026-09-28T14:36:25.648Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

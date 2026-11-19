@@ -7,7 +7,7 @@
   ],
   "date": "2025-02-15",
   "endDate": "2025-02-16",
-  "mainDate": null,
+  "mainDate": "2025-02-15",
   "seriesId": "mang-den-ultra-trail",
   "organizerId": "vud",
   "organizer": "Công ty Cổ phần Khám phá Không giới hạn Việt Nam (VUD)",
@@ -416,6 +416,21 @@
       "value": 1,
       "reason": "Tuổi Trẻ (2025-12-26) calls 2025 'mùa giải đầu tiên'; irace.vn/su-kien/mang-den-ultra-trail numbers 2027 as 'mùa 3' after 'mùa đầu tiên' and 'mùa 2'",
       "at": "2026-09-29T05:00:12.859Z"
+    },
+    "date": {
+      "value": "2025-02-15",
+      "reason": "Racing is 15-16 Feb 2025: ticket.irace.vn 'Giải chạy Măng Đen Ultra Trail 2025 15/02/2025'; ActiUp API start 2025-02-15 02:00, end 2025-02-16 10:00 (ultra cut-off). The 14th is the expo and opening ceremony (baovanhoa.vn: event 14-16.2, 'Lễ khai mạc ... tối 14.2'; tuoitre 20/02/2025 reports it closed 16-2), which explains the sources that say 14 Feb.",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "endDate": {
+      "value": "2025-02-16",
+      "reason": "Racing is 15-16 Feb 2025: ticket.irace.vn 'Giải chạy Măng Đen Ultra Trail 2025 15/02/2025'; ActiUp API start 2025-02-15 02:00, end 2025-02-16 10:00 (ultra cut-off). The 14th is the expo and opening ceremony (baovanhoa.vn: event 14-16.2, 'Lễ khai mạc ... tối 14.2'; tuoitre 20/02/2025 reports it closed 16-2), which explains the sources that say 14 Feb.",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "mainDate": {
+      "value": "2025-02-15",
+      "reason": "Racing is 15-16 Feb 2025: ticket.irace.vn 'Giải chạy Măng Đen Ultra Trail 2025 15/02/2025'; ActiUp API start 2025-02-15 02:00, end 2025-02-16 10:00 (ultra cut-off). The 14th is the expo and opening ceremony (baovanhoa.vn: event 14-16.2, 'Lễ khai mạc ... tối 14.2'; tuoitre 20/02/2025 reports it closed 16-2), which explains the sources that say 14 Feb.",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -773,5 +788,5 @@
   ],
   "confidence": "conflicting",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-29T06:27:42.599Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

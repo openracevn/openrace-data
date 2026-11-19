@@ -9,7 +9,7 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "danang-international-marathon",
-  "organizerId": null,
+  "organizerId": "pulse-active",
   "organizer": "Pulse Active",
   "edition": 13,
   "courses": [
@@ -48,7 +48,102 @@
     "venue": "Công viên Biển Đông (East Sea Park)",
     "city": "Đà Nẵng"
   },
-  "geo": null,
+  "geo": {
+    "lat": 16.0683513,
+    "lng": 108.2459339,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "48",
+      "ward": "20275"
+    },
+    "legacy": {
+      "province": "48",
+      "district": "493",
+      "ward": "20275"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 863.3,
+        "minutes": 652,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 772.4,
+        "minutes": 618,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 3.5,
+        "minutes": 4,
+        "method": "road",
+        "near": true
+      },
+      "nha-trang": {
+        "km": 505.8,
+        "minutes": 399,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 633.3,
+        "minutes": 518,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1022.5,
+        "minutes": 780,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 806.5,
+        "minutes": 642,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 98.8,
+        "minutes": 88,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 904.7,
+        "minutes": 692,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 313.8,
+        "minutes": 239,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 524.7,
+        "minutes": 437,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1080,
+        "minutes": 850,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 856.2,
+        "minutes": 675,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
   "prices": [],
   "currency": "VND",
   "registrationStatus": null,
@@ -71,6 +166,11 @@
       "value": 13,
       "reason": "Same series (organizer Pulse Active, rundanang.com); edition number stated by Bao Dau tu (lan thu XIII)",
       "at": "2026-11-19T09:46:59.225Z"
+    },
+    "organizerId": {
+      "value": "pulse-active",
+      "reason": "organizerId for this year: danangfantasticity 2026: 'organised by Pulse Active, under the direction of the Da Nang People's Committee, in coordination with the Department of Culture, Sports and Tourism'",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -109,5 +209,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-19T09:46:59.225Z",
-  "updatedAt": "2026-11-19T09:46:59.225Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

@@ -7,8 +7,9 @@
   ],
   "date": "2025-11-07",
   "endDate": "2025-11-09",
+  "mainDate": null,
   "seriesId": "lamdong-trail",
-  "organizerId": null,
+  "organizerId": "greenhat",
   "organizer": null,
   "edition": null,
   "courses": [
@@ -426,6 +427,7 @@
     }
   ],
   "links": [],
+  "participants": null,
   "flags": [],
   "overrides": {
     "seriesId": {
@@ -714,6 +716,11 @@
       ],
       "reason": "fix: price site must reference one of this race's own sources (validate.ts) — this race only has the 'irace' reference source (irace.vn/su-kien/lam-dong-trail), so tagging with 'lamdong-trail' broke CI validate and blocked sync since 2026-09-25T08:23. Prices themselves are unchanged; actual origin was lamdongtrail.vn's distance/ page via Wayback (2025-10-06 snapshot), which lamdongtrail.vn being a recipe site meant it couldn't be added as a formal source",
       "at": "2026-09-25T08:31:26.326Z"
+    },
+    "organizerId": {
+      "value": "greenhat",
+      "reason": "organizerId for this year: baolamdong.vn (Oct 2025): 'năm thứ 4 Công ty Cổ phần Nón Xanh (Greenhat) phối hợp với các đơn vị chức năng để tổ chức Lâm Đồng Trail tại Đà Lạt'; irace.vn page 'Tổ chức Greenhat ... đồng hành cùng tập thể VietnamJoy'.",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -749,5 +756,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T08:03:59.469Z",
-  "updatedAt": "2026-09-28T05:58:42.803Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

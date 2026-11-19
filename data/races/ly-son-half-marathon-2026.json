@@ -7,8 +7,9 @@
   ],
   "date": "2026-06-27",
   "endDate": "2026-06-28",
+  "mainDate": null,
   "seriesId": "ly-son-half-marathon",
-  "organizerId": null,
+  "organizerId": "ubnd-dac-khu-ly-son",
   "organizer": "UBND Đặc Khu Lý Sơn",
   "edition": null,
   "courses": [
@@ -132,12 +133,18 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": null,
   "flags": [],
   "overrides": {
     "seriesId": {
       "value": "ly-son-half-marathon",
       "reason": "same series as ly-son-half-marathon-2024/2025",
       "at": "2026-09-25T08:18:16.912Z"
+    },
+    "organizerId": {
+      "value": "ubnd-dac-khu-ly-son",
+      "reason": "organizerId for this year: pace8.vn page 'Ban Tổ Chức UBND Đặc Khu Lý Sơn ... do UBND đặc khu Lý Sơn chỉ đạo thực hiện' (the race's only source). 2024/2025 name Đường Chạy Xanh; no 2026 page names an operating company. New id used, not ubnd-huyen-ly-son: no page confirms the huyện became the đặc khu entity.",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -169,5 +176,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T08:17:52.523Z",
-  "updatedAt": "2026-09-28T05:58:42.803Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

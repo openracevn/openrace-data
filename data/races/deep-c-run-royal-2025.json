@@ -8,10 +8,10 @@
   "date": "2025-12-07",
   "endDate": null,
   "mainDate": null,
-  "seriesId": null,
-  "organizerId": null,
+  "seriesId": "deep-c-run-royale",
+  "organizerId": "deep-c-industrial-park-complex",
   "organizer": "DEEP C Industrial Park Complex",
-  "edition": null,
+  "edition": 1,
   "courses": [
     {
       "label": "5km",
@@ -134,7 +134,23 @@
     "confidence": "medium"
   },
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "organizerId": {
+      "value": "deep-c-industrial-park-complex",
+      "reason": "Hai Phong Portal (en.haiphong.gov.vn, 2025-12-09): 'DEEP C Run Royal, organized by the DEEP C Industrial Park Complex ... first time DEEP C has organized a large-scale community run'; same event as 2026 (iRace: 'mùa giải thứ 2', Vinhomes Royal Island, 5km+10km), so season 1",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "seriesId": {
+      "value": "deep-c-run-royale",
+      "reason": "Hai Phong Portal (en.haiphong.gov.vn, 2025-12-09): 'DEEP C Run Royal, organized by the DEEP C Industrial Park Complex ... first time DEEP C has organized a large-scale community run'; same event as 2026 (iRace: 'mùa giải thứ 2', Vinhomes Royal Island, 5km+10km), so season 1",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "edition": {
+      "value": 1,
+      "reason": "Hai Phong Portal (en.haiphong.gov.vn, 2025-12-09): 'DEEP C Run Royal, organized by the DEEP C Industrial Park Complex ... first time DEEP C has organized a large-scale community run'; same event as 2026 (iRace: 'mùa giải thứ 2', Vinhomes Royal Island, 5km+10km), so season 1",
+      "at": "2026-11-19T10:11:32.982Z"
+    }
+  },
   "sources": [
     {
       "site": "en-haiphong-gov-vn",
@@ -169,5 +185,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-19T09:46:59.225Z",
-  "updatedAt": "2026-11-19T09:46:59.225Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

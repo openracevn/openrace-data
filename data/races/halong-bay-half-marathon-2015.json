@@ -7,8 +7,9 @@
   ],
   "date": "2015-11-28",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "halong-bay-heritage-marathon",
-  "organizerId": null,
+  "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
   "edition": null,
   "courses": [
@@ -35,12 +36,18 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": null,
   "flags": [],
   "overrides": {
     "seriesId": {
       "value": "halong-bay-heritage-marathon",
       "reason": "first edition of the same annual race (renamed Halong Bay Half Marathon -> Halong Bay Heritage Marathon -> Giải Marathon Quốc tế Di sản Hạ Long over the years); unify with all other editions",
       "at": "2026-09-27T02:47:42.617Z"
+    },
+    "organizerId": {
+      "value": "cong-ty-dha-viet-nam",
+      "reason": "Wayback 20150621-20150801 of halongmarathon.com: sponsor/partner logo 'Duc Huong Anh Co.ltd' and contact 'Hanoi Tourist building, No.18 Ly Thuong Kiet ... Email: haanh.tl@dhavietnam.vn'; 'On behalf of Halong Half Marathon organizers'. DHA Vietnam is the trade name of CÔNG TY TNHH ĐỨC HƯƠNG ANH (halongmarathon.com Wayback 20221102155926: 'CÔNG TY TNHH ĐỨC HƯƠNG ANH (DHA VIỆT NAM)').",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -69,5 +76,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-27T02:44:22.383Z",
-  "updatedAt": "2026-09-27T02:47:42.617Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

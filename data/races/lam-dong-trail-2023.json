@@ -9,8 +9,11 @@
   "endDate": "2023-11-12",
   "mainDate": null,
   "seriesId": "lamdong-trail",
-  "organizerId": null,
+  "organizerId": "vietnamjoy",
   "organizer": null,
+  "coOrganizerIds": [
+    "greenhat"
+  ],
   "edition": 2,
   "courses": [
     {
@@ -874,6 +877,18 @@
       "value": 2,
       "reason": "TTC Group (venue owner) article https://www.ttcgroup.vn/en-US/business-sectors/hospitality/other-news-3/lam-dong-trail-2023-run-for-130-years-of-building-and-developing-da-lat: 'Lam Dong Trail Second Season 2023'; ATM 2024-11-06 says Quang Tran was 'winner of the previous two editions'.",
       "at": "2026-10-17T13:14:46.772Z"
+    },
+    "organizerId": {
+      "value": "vietnamjoy",
+      "reason": "organizerId for this year: asiatrailmaster.com 2023-03-08: 'Lam Dong Trail is organised by Vietnam Joy and Green Hat'; app.irace.vn/lam-dong-trail-2023 racekit text 'Vietnam Joy - Lâm Đồng Trail'. VietnamJoy primary (brand on the race page), GreenHat co.",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "greenhat"
+      ],
+      "reason": "organizerId for this year: asiatrailmaster.com 2023-03-08: 'Lam Dong Trail is organised by Vietnam Joy and Green Hat'; app.irace.vn/lam-dong-trail-2023 racekit text 'Vietnam Joy - Lâm Đồng Trail'. VietnamJoy primary (brand on the race page), GreenHat co.",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -907,5 +922,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T08:03:04.937Z",
-  "updatedAt": "2026-10-17T13:14:46.772Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

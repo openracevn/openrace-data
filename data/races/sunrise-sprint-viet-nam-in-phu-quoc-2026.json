@@ -6,8 +6,8 @@
     "triathlon"
   ],
   "date": "2026-11-14",
-  "endDate": "2026-11-22",
-  "mainDate": "2026-11-21",
+  "endDate": null,
+  "mainDate": null,
   "seriesId": "sunrise-sprint-viet-nam-in-phu-quoc",
   "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
@@ -200,9 +200,7 @@
     }
   ],
   "participants": null,
-  "flags": [
-    "race spans 8 days (2026-11-14 to 2026-11-22); endDate may be the registration close"
-  ],
+  "flags": [],
   "overrides": {
     "location": {
       "value": {
@@ -283,6 +281,16 @@
       ],
       "reason": "ironman.com Sunrise Sprint page: General entry Tier 1/2/3 (3,000,000 / 3,400,000 / 3,950,000) and Relay entry Tier 1/2/3 (4,350,000 / 4,950,000 / 5,500,000). Tier names kept as the source writes them; distance set to the Sprint course and kinds early/regular/late assigned by tier order so the price table shows one column per tier (the source gives no tier dates or phase names). Relay tiers are not tagged group because the price table drops group tiers.",
       "at": "2026-09-29T07:39:55.750Z"
+    },
+    "date": {
+      "value": "2026-11-14",
+      "reason": "ironman.com/races/im703-phu-quoc/sunrise-sprint header: 'Sunrise Sprint Viet Nam Saturday, 14 November 2026'; ActiUp API start/end 2026-11-14, registration closes 2026-09-30. A single day; the 2026-11-22 end was not a stated date.",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "endDate": {
+      "value": null,
+      "reason": "ironman.com/races/im703-phu-quoc/sunrise-sprint header: 'Sunrise Sprint Viet Nam Saturday, 14 November 2026'; ActiUp API start/end 2026-11-14, registration closes 2026-09-30. A single day; the 2026-11-22 end was not a stated date.",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -413,5 +421,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-18T21:09:13.459Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

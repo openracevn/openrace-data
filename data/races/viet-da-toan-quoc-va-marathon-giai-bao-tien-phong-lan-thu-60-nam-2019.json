@@ -9,7 +9,7 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "tien-phong-marathon",
-  "organizerId": null,
+  "organizerId": "bao-tien-phong",
   "organizer": null,
   "edition": 60,
   "courses": [],
@@ -40,6 +40,11 @@
       "value": 60,
       "reason": "Dân trí states 'lần thứ 60'",
       "at": "2026-09-29T04:53:46.791Z"
+    },
+    "organizerId": {
+      "value": "bao-tien-phong",
+      "reason": "dantri.com.vn 20190314144455069: 'Nhà báo Lê Xuân Sơn, Tổng Biên tập báo Tiền Phong, Trưởng ban tổ chức giải'.",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -65,5 +70,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-29T04:52:15.910Z",
-  "updatedAt": "2026-09-29T04:55:12.824Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

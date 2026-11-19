@@ -7,6 +7,7 @@
   ],
   "date": "2024-11-02",
   "endDate": "2024-11-24",
+  "mainDate": null,
   "seriesId": null,
   "organizerId": "ngan-hang-tmcp-dau-tu-va-phat-trien-viet-nam",
   "organizer": "Ngân hàng TMCP Đầu tư và Phát triển Việt Nam",
@@ -128,10 +129,22 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [
     "race spans 22 days (2024-11-02 to 2024-11-24); endDate may be the registration close"
   ],
-  "overrides": {},
+  "overrides": {
+    "date": {
+      "value": "2024-11-02",
+      "reason": "endDate is the real end of the run, not the registration close: BIDV's launch report (vtcnews.vn, 4/11/2024) says the online charity run 'Tết ấm cho người nghèo Xuân Ất Tỵ 2025' ran 23 days, 2-24/11. ActiUp API registration close is 2024-10-25, a different date.",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "endDate": {
+      "value": "2024-11-24",
+      "reason": "endDate is the real end of the run, not the registration close: BIDV's launch report (vtcnews.vn, 4/11/2024) says the online charity run 'Tết ấm cho người nghèo Xuân Ất Tỵ 2025' ran 23 days, 2-24/11. ActiUp API registration close is 2024-10-25, a different date.",
+      "at": "2026-11-19T10:11:32.982Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -165,5 +178,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

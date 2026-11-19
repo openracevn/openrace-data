@@ -7,8 +7,8 @@
     "aquathlon"
   ],
   "date": "2026-11-14",
-  "endDate": "2026-11-22",
-  "mainDate": "2026-11-21",
+  "endDate": null,
+  "mainDate": null,
   "seriesId": "ironkids-viet-nam-in-phu-quoc",
   "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
@@ -285,9 +285,7 @@
     }
   ],
   "participants": null,
-  "flags": [
-    "race spans 8 days (2026-11-14 to 2026-11-22); endDate may be the registration close"
-  ],
+  "flags": [],
   "overrides": {
     "location": {
       "value": {
@@ -464,6 +462,16 @@
       ],
       "reason": "ironman.com IRONKIDS page: Aquathlon Tier 1/2/3 950,000 / 1,200,000 / 1,300,000 and Triathlon Tier 1/2/3 1,250,000 / 1,450,000 / 1,650,000, one price per category for both age bands, so each price is repeated on that category's two courses (aquathlon 1075m ages 5-10 and 2150m ages 11-15, triathlon 4075m and 8150m). Tier names kept as written; kinds early/regular/late by tier order so the price table shows one column per tier.",
       "at": "2026-09-29T07:39:55.750Z"
+    },
+    "date": {
+      "value": "2026-11-14",
+      "reason": "ActiUp API (api.actiup.net event) start_date 2026-11-14 00:00, end_date 2026-11-14 23:59; registration closes 2026-10-09 (so no registration-close endDate). ironman.com/races/im703-phu-quoc/ironkids gives no day, only 'held over the weekend' with the 70.3 and Sunrise Sprint (Sunrise Sprint page: Saturday 14 November 2026). The earlier 2026-11-22 end came from an AI page reading of the ActiUp description, not a stated date.",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "endDate": {
+      "value": null,
+      "reason": "ActiUp API (api.actiup.net event) start_date 2026-11-14 00:00, end_date 2026-11-14 23:59; registration closes 2026-10-09 (so no registration-close endDate). ironman.com/races/im703-phu-quoc/ironkids gives no day, only 'held over the weekend' with the 70.3 and Sunrise Sprint (Sunrise Sprint page: Saturday 14 November 2026). The earlier 2026-11-22 end came from an AI page reading of the ActiUp description, not a stated date.",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -612,5 +620,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-12T17:55:59.976Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

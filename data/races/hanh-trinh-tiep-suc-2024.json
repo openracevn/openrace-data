@@ -9,8 +9,11 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "hanh-trinh-tiep-suc",
-  "organizerId": null,
+  "organizerId": "benh-vien-k",
   "organizer": null,
+  "coOrganizerIds": [
+    "quy-ngay-mai-tuoi-sang"
+  ],
   "edition": 1,
   "courses": [
     {
@@ -148,6 +151,18 @@
       "value": 1,
       "reason": "Dân trí 2025-10-09 ('Hành trình tiếp sức' mùa 2): 'Tiếp nối thành công từ mùa giải đầu tiên' and 'Trong mùa giải đầu tiên năm 2024'. https://dantri.com.vn/the-thao/hanh-trinh-tiep-suc-mua-2-khi-yeu-thuong-lan-toa-qua-moi-buoc-chay-20251009111812136.htm",
       "at": "2026-09-29T08:07:25.931Z"
+    },
+    "organizerId": {
+      "value": "benh-vien-k",
+      "reason": "organizerId for this year: dantri.com.vn 2024-12-08: 'giải chạy \"Hành trình tiếp sức\" do Bệnh viện K phát động ... Chương trình do Bệnh viện K, Quỹ Ngày mai tươi sáng và đơn vị tài trợ tổ chức'. NOTE: 2025 edition is set to cong-ty-dha-viet-nam although daibieunhandan.vn (2025-10-15) says 'lần II do Bệnh viện K tổ chức'; DHA's role not confirmed by any page I found: lead should review.",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "quy-ngay-mai-tuoi-sang"
+      ],
+      "reason": "organizerId for this year: dantri.com.vn 2024-12-08: 'giải chạy \"Hành trình tiếp sức\" do Bệnh viện K phát động ... Chương trình do Bệnh viện K, Quỹ Ngày mai tươi sáng và đơn vị tài trợ tổ chức'. NOTE: 2025 edition is set to cong-ty-dha-viet-nam although daibieunhandan.vn (2025-10-15) says 'lần II do Bệnh viện K tổ chức'; DHA's role not confirmed by any page I found: lead should review.",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -182,5 +197,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-29T08:07:25.931Z",
-  "updatedAt": "2026-09-29T08:07:25.931Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

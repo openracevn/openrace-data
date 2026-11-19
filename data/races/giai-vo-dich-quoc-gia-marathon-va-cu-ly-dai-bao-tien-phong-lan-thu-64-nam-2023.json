@@ -9,8 +9,11 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "tien-phong-marathon",
-  "organizerId": null,
+  "organizerId": "bao-tien-phong",
   "organizer": "Báo Tiền Phong",
+  "coOrganizerIds": [
+    "ubnd-tinh-lai-chau"
+  ],
   "edition": 64,
   "courses": [
     {
@@ -42,7 +45,98 @@
     "venue": "Thành phố Lai Châu",
     "city": "Lai Châu"
   },
-  "geo": null,
+  "geo": {
+    "lat": 22.4061543,
+    "lng": 103.4357574,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "12",
+      "ward": null
+    },
+    "legacy": null,
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1339.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 292.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 866.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1284.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1279.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1398.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 378.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 791.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1396.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1137.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1187.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 42.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 409.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
   "prices": [
     {
       "distance": "5km",
@@ -110,6 +204,18 @@
       "value": 64,
       "reason": "Tiền Phong article states 'lần thứ 64'",
       "at": "2026-09-29T04:54:52.533Z"
+    },
+    "organizerId": {
+      "value": "bao-tien-phong",
+      "reason": "tienphong.vn post-1520145 (lần thứ 64): 'Sự kiện do báo Tiền Phong phối hợp UBND tỉnh Lai Châu, Tổng cục Thể dục Thể thao tổ chức'.",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "ubnd-tinh-lai-chau"
+      ],
+      "reason": "tienphong.vn post-1520145 (lần thứ 64): 'Sự kiện do báo Tiền Phong phối hợp UBND tỉnh Lai Châu, Tổng cục Thể dục Thể thao tổ chức'.",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -188,5 +294,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-29T04:53:00.325Z",
-  "updatedAt": "2026-09-29T04:57:21.972Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

@@ -9,7 +9,7 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "halong-bay-heritage-marathon",
-  "organizerId": null,
+  "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "Công ty DHA Việt Nam",
   "edition": null,
   "courses": [
@@ -235,7 +235,13 @@
     "confidence": "medium"
   },
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "organizerId": {
+      "value": "cong-ty-dha-viet-nam",
+      "reason": "Wayback 20220110132844 of halongmarathon.com: 'DUCHUONGANH COMPANY, LTD, 5th floor, V+ mall, 505 Minh Khai ... Tax code 0102563058, halongrace@dhavietnam.vn'; Wayback 20221102155926: 'BAN TỔ CHỨC ... CÔNG TY TNHH ĐỨC HƯƠNG ANH (DHA VIỆT NAM)'.",
+      "at": "2026-11-19T10:11:32.982Z"
+    }
+  },
   "sources": [
     {
       "site": "justrunlah-com",
@@ -315,5 +321,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-27T02:50:56.279Z",
-  "updatedAt": "2026-09-28T14:36:25.648Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

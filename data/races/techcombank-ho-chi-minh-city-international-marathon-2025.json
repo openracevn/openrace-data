@@ -9,7 +9,7 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "techcombank-ho-chi-minh-city-international-marathon",
-  "organizerId": null,
+  "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
   "edition": 8,
   "courses": [
@@ -150,7 +150,13 @@
     "confidence": "medium"
   },
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "organizerId": {
+      "value": "sunrise-events-vietnam",
+      "reason": "marathonhcmc.com blog (8th edition): 'The race is organized by Sunrise Events Vietnam'; dientuungdung.vn 12396: 'đơn vị tổ chức Sunrise Events Vietnam'.",
+      "at": "2026-11-19T10:11:32.982Z"
+    }
+  },
   "sources": [
     {
       "site": "marathonhcmc-com",
@@ -201,5 +207,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-27T08:06:58.162Z",
-  "updatedAt": "2026-09-29T04:12:08.997Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

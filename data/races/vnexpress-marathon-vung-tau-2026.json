@@ -14,6 +14,18 @@
   "edition": 1,
   "courses": [
     {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
       "label": "21km",
       "meters": 21097,
       "type": "road_run",
@@ -267,6 +279,30 @@
       "value": 1,
       "reason": "vnexpress.net article (mo-dang-ky-5089743) states this is the first time VnExpress Marathon is held in Vũng Tàu: 'Giải chạy VnExpress Marathon lần đầu tổ chức tại Vũng Tàu vào ngày 30/8/2026' (meta description), and the 12th city in the series",
       "at": "2026-09-27T02:04:36.102Z"
+    },
+    "courses": {
+      "value": [
+        {
+          "label": "5km",
+          "meters": 5000,
+          "type": "road_run",
+          "elevationGain": null
+        },
+        {
+          "label": "10km",
+          "meters": 10000,
+          "type": "road_run",
+          "elevationGain": null
+        },
+        {
+          "label": "21km",
+          "meters": 21097,
+          "type": "road_run",
+          "elevationGain": null
+        }
+      ],
+      "reason": "VnExpress's announcement (vnexpress.net/vnexpress-marathon-vung-tau-2026-mo-dang-ky-5089743: 'bán marathon với ba cự ly 5, 10 và 21km') and the race's ticket page (5km/10km/21km price tiers 460,000+) list three courses; vm.vnexpress.net/vung-tau-2026 only shows race day 30/08/2026, no course list. The 21km-only course list came from that thin page.",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -456,5 +492,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T04:11:49.673Z",
-  "updatedAt": "2026-10-15T20:33:57.116Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

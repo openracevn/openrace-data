@@ -9,7 +9,7 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "techcombank-ho-chi-minh-city-international-marathon",
-  "organizerId": null,
+  "organizerId": "sunrise-events-vietnam",
   "organizer": "Sunrise Events Vietnam",
   "edition": 3,
   "courses": [
@@ -150,7 +150,13 @@
     "confidence": "medium"
   },
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "organizerId": {
+      "value": "sunrise-events-vietnam",
+      "reason": "dtinews.dantri.com.vn/print/20190911095320973.htm: 'The Techcombank Ho Chi Minh City International Marathon 2019, organized by Sunrise Events Vietnam' and 'The organizing team at Sunrise Events Vietnam'.",
+      "at": "2026-11-19T10:11:32.982Z"
+    }
+  },
   "sources": [
     {
       "site": "scribd-com",
@@ -201,5 +207,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-27T08:04:23.006Z",
-  "updatedAt": "2026-09-28T14:43:35.743Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

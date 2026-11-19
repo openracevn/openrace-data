@@ -9,8 +9,12 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "tien-phong-marathon",
-  "organizerId": null,
+  "organizerId": "bao-tien-phong",
   "organizer": "Báo Tiền Phong",
+  "coOrganizerIds": [
+    "lien-doan-dien-kinh-viet-nam",
+    "so-van-hoa-the-thao-va-du-lich-tinh-quang-ngai"
+  ],
   "edition": 61,
   "courses": [
     {
@@ -42,7 +46,98 @@
     "venue": "Đảo Lý Sơn",
     "city": "Quảng Ngãi"
   },
-  "geo": null,
+  "geo": {
+    "lat": 15.3809098,
+    "lng": 109.1174595,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "51",
+      "ward": "21548"
+    },
+    "legacy": null,
+    "access": "flight_or_ferry",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 575.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 716.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 121.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 349.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 389.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 695.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 659.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 202.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 601.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 178.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 323.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 951.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 655.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
   "prices": [],
   "currency": "VND",
   "registrationStatus": "closed",
@@ -65,6 +160,19 @@
       "value": 61,
       "reason": "racevietnam page states 'lần tổ chức thứ 61'",
       "at": "2026-09-29T04:54:01.949Z"
+    },
+    "organizerId": {
+      "value": "bao-tien-phong",
+      "reason": "vietnamplus.vn post650018: 'lần thứ 61 do Liên đoàn Điền kinh Việt Nam phối hợp với Sở Văn hóa, Thể thao và Du lịch tỉnh Quảng Ngãi, báo Tiền Phong tổ chức tại đảo Lý Sơn'. Báo Tiền Phong is the title owner of the championship (series primary in 2024-26); VAA and the provincial Sở are co-organizers.",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "lien-doan-dien-kinh-viet-nam",
+        "so-van-hoa-the-thao-va-du-lich-tinh-quang-ngai"
+      ],
+      "reason": "vietnamplus.vn post650018: 'lần thứ 61 do Liên đoàn Điền kinh Việt Nam phối hợp với Sở Văn hóa, Thể thao và Du lịch tỉnh Quảng Ngãi, báo Tiền Phong tổ chức tại đảo Lý Sơn'. Báo Tiền Phong is the title owner of the championship (series primary in 2024-26); VAA and the provincial Sở are co-organizers.",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -118,5 +226,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-29T04:51:48.729Z",
-  "updatedAt": "2026-09-29T04:55:48.204Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

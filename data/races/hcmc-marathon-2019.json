@@ -9,8 +9,11 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "hcmc-marathon",
-  "organizerId": null,
+  "organizerId": "pulse-active",
   "organizer": "Pulse Active",
+  "coOrganizerIds": [
+    "lien-doan-dien-kinh-thanh-pho-ho-chi-minh"
+  ],
   "edition": 6,
   "courses": [
     {
@@ -42,7 +45,102 @@
     "venue": "Phú Mỹ Hưng, Quận 7",
     "city": "TP.HCM"
   },
-  "geo": null,
+  "geo": {
+    "lat": 10.7411061,
+    "lng": 106.7213432,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "27478"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "778",
+      "ward": "27478"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 6,
+        "minutes": 9,
+        "method": "road",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1499.3,
+        "minutes": 1141,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 866,
+        "minutes": 656,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 415.8,
+        "minutes": 301,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 299.4,
+        "minutes": 230,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 171.1,
+        "minutes": 136,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1533.5,
+        "minutes": 1165,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 948.7,
+        "minutes": 731,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 98.9,
+        "minutes": 94,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 621.7,
+        "minutes": 464,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 362.1,
+        "minutes": 268,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1807,
+        "minutes": 1373,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1583.2,
+        "minutes": 1198,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
   "prices": [],
   "currency": "VND",
   "registrationStatus": null,
@@ -55,7 +153,20 @@
     "confidence": "medium"
   },
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "organizerId": {
+      "value": "pulse-active",
+      "reason": "pulse.vn/tiep-noi-truyen-thong-cua-marathon-tp-ho-chi-minh-lan-thu-vi-2019: 'Đơn vị tổ chức, công ty Pulse Active ... Cty Pulse Active cũng là đơn vị đại diện BTC HCMC Marathon'; congthuong.vn: 'Giải đấu do Liên đoàn điền kinh TP. Hồ Chí Minh tổ chức'.",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "lien-doan-dien-kinh-thanh-pho-ho-chi-minh"
+      ],
+      "reason": "pulse.vn/tiep-noi-truyen-thong-cua-marathon-tp-ho-chi-minh-lan-thu-vi-2019: 'Đơn vị tổ chức, công ty Pulse Active ... Cty Pulse Active cũng là đơn vị đại diện BTC HCMC Marathon'; congthuong.vn: 'Giải đấu do Liên đoàn điền kinh TP. Hồ Chí Minh tổ chức'.",
+      "at": "2026-11-19T10:11:32.982Z"
+    }
+  },
   "sources": [
     {
       "site": "pulse-vn",
@@ -106,5 +217,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:36:56.674Z",
-  "updatedAt": "2026-09-29T03:52:22.966Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

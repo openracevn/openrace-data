@@ -9,8 +9,11 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "gia-lai-city-trail-giac-mo-dai-ngan",
-  "organizerId": null,
+  "organizerId": "vietrace365",
   "organizer": "VIETRACE365",
+  "coOrganizerIds": [
+    "cau-lac-bo-gia-lai-marathon"
+  ],
   "edition": 1,
   "courses": [
     {
@@ -42,7 +45,102 @@
     "venue": "Cổng chính Khu du lịch Biển Hồ, Đường Tôn Đức Thắng, xã Biển Hồ, Thành phố Pleiku, Gia Lai",
     "city": "Pleiku"
   },
-  "geo": null,
+  "geo": {
+    "lat": 14.0395502,
+    "lng": 107.9995095,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "52",
+      "ward": "23590"
+    },
+    "legacy": {
+      "province": "64",
+      "district": "622",
+      "ward": "23590"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 531.8,
+        "minutes": 423,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 1090.7,
+        "minutes": 871,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 334.4,
+        "minutes": 267,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 305.9,
+        "minutes": 286,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 353.4,
+        "minutes": 341,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 690.9,
+        "minutes": 551,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1124.8,
+        "minutes": 895,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 417.1,
+        "minutes": 341,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 580.7,
+        "minutes": 487,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 171.9,
+        "minutes": 162,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 185.4,
+        "minutes": 174,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1398.3,
+        "minutes": 1103,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1174.5,
+        "minutes": 928,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
   "prices": [
     {
       "distance": "5km",
@@ -333,6 +431,18 @@
       "value": 1,
       "reason": "Organizer site (gialaicitytrail.com 2024 snapshot) says Mùa 1 is 2023; Báo Gia Lai calls 2024 the second and 2023 the first",
       "at": "2026-09-28T16:33:39.616Z"
+    },
+    "organizerId": {
+      "value": "vietrace365",
+      "reason": "organizerId for this year: plo.vn and baovanhoa.vn 2023-08-16: 'UBND TP Pleiku, UBND huyện Chư Păh phối hợp với Công ty cổ phần VietRace365 và Câu lạc bộ Gia Lai Marathon tổ chức' (VietRace365 is the operating company; also already primary for 2025/2026)",
+      "at": "2026-11-19T10:11:32.982Z"
+    },
+    "coOrganizerIds": {
+      "value": [
+        "cau-lac-bo-gia-lai-marathon"
+      ],
+      "reason": "organizerId for this year: plo.vn and baovanhoa.vn 2023-08-16: 'UBND TP Pleiku, UBND huyện Chư Păh phối hợp với Công ty cổ phần VietRace365 và Câu lạc bộ Gia Lai Marathon tổ chức' (VietRace365 is the operating company; also already primary for 2025/2026)",
+      "at": "2026-11-19T10:11:32.982Z"
     }
   },
   "sources": [
@@ -535,5 +645,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-28T16:29:34.804Z",
-  "updatedAt": "2026-09-28T16:40:05.200Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }

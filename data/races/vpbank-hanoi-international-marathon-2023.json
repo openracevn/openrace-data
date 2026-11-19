@@ -7,8 +7,9 @@
   ],
   "date": "2023-10-08",
   "endDate": null,
+  "mainDate": null,
   "seriesId": "vpbank-hanoi-international-marathon",
-  "organizerId": null,
+  "organizerId": "vpbank",
   "organizer": "Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
   "edition": null,
   "courses": [
@@ -38,101 +39,10 @@
     }
   ],
   "location": {
-    "venue": "Phố đi bộ Hồ Gươm, Hà Nội",
+    "venue": "Phố đi bộ Hồ Hoàn Kiếm, Hà Nội",
     "city": null
   },
-  "geo": {
-    "lat": 21.0283334,
-    "lng": 105.854041,
-    "source": "nominatim",
-    "precision": "province",
-    "current": {
-      "province": "01",
-      "ward": null
-    },
-    "legacy": null,
-    "access": "road",
-    "fromPlaces": {
-      "hcmc": {
-        "km": 1144,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "ha-noi": {
-        "km": 0.2,
-        "minutes": null,
-        "method": "straight_line",
-        "near": true
-      },
-      "da-nang": {
-        "km": 606.3,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "nha-trang": {
-        "km": 1040.1,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "da-lat": {
-        "km": 1047.4,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "can-tho": {
-        "km": 1222.5,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "hai-phong": {
-        "km": 89,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "hue": {
-        "km": 539.5,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "vung-tau": {
-        "km": 1195.1,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "quy-nhon": {
-        "km": 882,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "buon-ma-thuot": {
-        "km": 958.3,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "sa-pa": {
-        "km": 253.6,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      },
-      "ha-long": {
-        "km": 127.6,
-        "minutes": null,
-        "method": "straight_line",
-        "near": false
-      }
-    }
-  },
+  "geo": null,
   "prices": [
     {
       "distance": "5km",
@@ -271,8 +181,15 @@
   "registrationStatus": null,
   "registrations": [],
   "links": [],
+  "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "organizerId": {
+      "value": "vpbank",
+      "reason": "organizerId for this year: vpbank.com.vn press release 2023-03-16: 'hoạt động thể thao trọng điểm ... do Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank) tổ chức'",
+      "at": "2026-11-19T10:11:32.982Z"
+    }
+  },
   "sources": [
     {
       "site": "vietnam-vn",
@@ -404,5 +321,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-27T02:22:22.611Z",
-  "updatedAt": "2026-09-28T05:58:42.803Z"
+  "updatedAt": "2026-11-19T10:11:32.982Z"
 }
