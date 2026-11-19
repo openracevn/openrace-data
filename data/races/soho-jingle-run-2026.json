@@ -1,0 +1,169 @@
+{
+  "id": "fc3059ba-4d38-4232-b3d8-93639b292e49",
+  "slug": "soho-jingle-run-2026",
+  "name": "SOHO JINGLE RUN 2026",
+  "types": [
+    "other"
+  ],
+  "date": "2026-12-19",
+  "endDate": "2026-12-20",
+  "mainDate": null,
+  "seriesId": null,
+  "organizerId": "nexus-sport-events",
+  "organizer": "Nexus Sport Events",
+  "edition": null,
+  "courses": [],
+  "location": {
+    "venue": "khu đô thị The Global City",
+    "city": null
+  },
+  "geo": {
+    "lat": 10.8023873,
+    "lng": 106.7737936,
+    "source": "nominatim",
+    "precision": "venue",
+    "current": {
+      "province": "79",
+      "ward": "27097"
+    },
+    "legacy": {
+      "province": "79",
+      "district": "769",
+      "ward": "27097"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 11.8,
+        "minutes": 14,
+        "method": "road",
+        "near": true
+      },
+      "ha-noi": {
+        "km": 1492.4,
+        "minutes": 1137,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 859.1,
+        "minutes": 653,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 405.1,
+        "minutes": 291,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 288.7,
+        "minutes": 220,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 179.9,
+        "minutes": 145,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 1526.6,
+        "minutes": 1162,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 941.8,
+        "minutes": 727,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 88.2,
+        "minutes": 84,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 611,
+        "minutes": 454,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 355.2,
+        "minutes": 265,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 1800.1,
+        "minutes": 1370,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 1576.2,
+        "minutes": 1195,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/soho-jingle-run-2026"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1n_YDSVbCtsk1qxxXzssnlTwpoafO4wxP/view",
+      "kind": "rules",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/soho-jingle-run-2026",
+      "lastCheckedAt": "2026-11-19T21:01:04.728Z",
+      "lastChangedAt": "2026-11-19T21:01:04.728Z",
+      "extracted": {
+        "facts": {
+          "name": "SOHO JINGLE RUN 2026",
+          "date": "2026-12-19",
+          "endDate": "2026-12-20",
+          "venue": "khu đô thị The Global City",
+          "organizer": "Nexus Sport Events",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 250000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1n_YDSVbCtsk1qxxXzssnlTwpoafO4wxP/view?usp=drive_link",
+            "text": "quy dinh tham du xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "nexus-sport-events",
+          "name": "Nexus Sport Events"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-11-19T21:01:27.094Z",
+  "updatedAt": "2026-11-19T21:01:27.094Z"
+}
