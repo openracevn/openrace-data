@@ -277,7 +277,9 @@ export function geocodeQueries(location: GeoTarget["location"]): string[] {
   // and often use pre-2025 units Nominatim no longer finds. Drop leading parts one at a
   // time, so at worst the province is found (precision then says how coarse it is).
   // Each step is tried as written, then with the unit prefixes stripped.
-  const parts = venue.split(",").map((p) => p.trim()).filter(Boolean);
+  // Organizers separate parts with commas or with spaced dashes ("Cần Giờ - TP HCM",
+  // "Côn Đảo - BRVT"); a dash inside a name ("Bà Rịa-Vũng Tàu") has no spaces and stays.
+  const parts = venue.split(/,|\s+[-–—]\s+/).map((p) => expandAbbreviation(p.trim())).filter(Boolean);
   const withCity = venue && city ? [...parts, city] : [];
   const steps = [withCity, parts, ...parts.slice(1).map((_, i) => parts.slice(i + 1)), city ? [city] : []];
   return [
@@ -289,6 +291,17 @@ export function geocodeQueries(location: GeoTarget["location"]): string[] {
         .filter(Boolean),
     ),
   ];
+}
+
+// Short forms Nominatim doesn't know, as a whole part of the location text.
+const ABBREVIATIONS: [RegExp, string][] = [
+  [/^(?:tp\.?\s*)?hcm(?:c)?$/iu, "Hồ Chí Minh"],
+  [/^brvt$/iu, "Bà Rịa - Vũng Tàu"],
+];
+
+function expandAbbreviation(part: string): string {
+  for (const [pattern, full] of ABBREVIATIONS) if (pattern.test(part)) return full;
+  return part;
 }
 
 function precisionOf(addressType: unknown, type: unknown): Geo["precision"] {

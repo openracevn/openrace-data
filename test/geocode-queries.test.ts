@@ -29,6 +29,16 @@ describe("geocodeQueries: what Nominatim is asked, most specific first", () => {
     assert.equal(new Set(queries).size, queries.length);
   });
 
+  // Plan 032 follow-up: 36 races had no point because "A - B" was only ever tried whole.
+  it("splits on spaced dashes and expands TP HCM / BRVT, falling back to the place alone", () => {
+    const canGio = geocodeQueries({ venue: "Cần Giờ - TP HCM", city: null });
+    assert.equal(canGio[0], "Cần Giờ, Hồ Chí Minh");
+    assert.ok(canGio.includes("Hồ Chí Minh"));
+    assert.deepEqual(geocodeQueries({ venue: "Côn Đảo - BRVT", city: null })[0], "Côn Đảo, Bà Rịa - Vũng Tàu");
+    assert.ok(geocodeQueries({ venue: "Lakeview Villas - Quận 9 - HCM", city: null }).includes("Quận 9, Hồ Chí Minh"));
+    assert.equal(geocodeQueries({ venue: "Bà Rịa-Vũng Tàu", city: null })[0], "Bà Rịa-Vũng Tàu", "an unspaced dash is part of the name");
+  });
+
   it("returns nothing for no location text", () => {
     assert.deepEqual(geocodeQueries({ venue: null, city: null }), []);
   });
