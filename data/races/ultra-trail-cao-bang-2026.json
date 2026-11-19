@@ -47,7 +47,7 @@
       "label": "160km",
       "meters": 160000,
       "type": "trail_run",
-      "elevationGain": 3000
+      "elevationGain": null
     }
   ],
   "location": {
@@ -488,10 +488,6 @@
     {
       "site": "irace",
       "url": "https://ticket.irace.vn/ultra-trail-cao-bang-2026"
-    },
-    {
-      "site": "actiup",
-      "url": "https://actiup.net/vi/event/ultra-trail-cao-bang-2026"
     }
   ],
   "links": [
@@ -564,11 +560,6 @@
       "url": "https://youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
       "kind": "other",
       "foundOn": "ticket.irace.vn"
-    },
-    {
-      "url": "https://drive.google.com/file/d/1RUdii2tITB54J5fiSoIP1h8Wes_pbrsr/view",
-      "kind": "rules",
-      "foundOn": "actiup.net"
     }
   ],
   "participants": null,
@@ -589,73 +580,6 @@
     }
   },
   "sources": [
-    {
-      "site": "actiup",
-      "role": "seller",
-      "url": "https://actiup.net/vi/event/ultra-trail-cao-bang-2026",
-      "lastCheckedAt": "2026-11-01T21:21:02.711Z",
-      "lastChangedAt": "2026-09-23T18:30:49.445Z",
-      "extracted": {
-        "facts": {
-          "name": "ULTRA TRAIL CAO BANG 2026",
-          "date": "2026-11-27",
-          "endDate": "2026-11-29",
-          "venue": "Bản Giốc, Cao Bằng, Việt Nam",
-          "organizer": "Race Jungle",
-          "currency": "VND",
-          "registrationStatus": "closed",
-          "fromPrice": 840000
-        },
-        "pages": [
-          {
-            "url": "https://actiup.net/vi/event/ultra-trail-cao-bang-2026",
-            "json": {
-              "pageKind": "sport",
-              "types": [
-                "trail_run"
-              ],
-              "name": "ULTRA TRAIL CAO BANG 2026",
-              "date": "2026-11-21",
-              "endDate": "2026-11-22",
-              "mainDate": "2026-11-21",
-              "distances": [
-                "160km"
-              ],
-              "courses": [
-                {
-                  "distance": "160km",
-                  "type": "trail_run",
-                  "elevationGain": 3000
-                }
-              ],
-              "edition": 5,
-              "editionQuote": "mùa giải thứ 05",
-              "mapsUrl": "https://goo.gl/maps/NJwKS6S1Ggtq3Pmt7",
-              "venue": "Cao Bằng",
-              "city": "Cao Bằng",
-              "organizer": "Race Jungle",
-              "currency": "VND",
-              "registrationStatus": "open",
-              "participants": {
-                "count": 0,
-                "quote": "Chưa xác định số lượng tham gia."
-              },
-              "prices": []
-            }
-          }
-        ],
-        "links": [
-          {
-            "url": "https://drive.google.com/file/d/1RUdii2tITB54J5fiSoIP1h8Wes_pbrsr/view?usp=drive_link",
-            "text": "quy dinh tham du tai day"
-          }
-        ],
-        "organizer": {
-          "id": "race-jungle",
-          "name": "Race Jungle"
-        }
-      }
-    },
     {
       "site": "5bib",
       "role": "reference",
@@ -1113,5 +1037,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-11-01T21:51:13.044Z"
+  "updatedAt": "2026-11-19T10:21:17.005Z"
 }
