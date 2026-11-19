@@ -7,7 +7,8 @@
   ],
   "date": "2024-01-01",
   "endDate": null,
-  "seriesId": null,
+  "mainDate": null,
+  "seriesId": "vietnam-international-half-marathon",
   "organizerId": "lien-doan-dien-kinh-viet-nam",
   "organizer": "Liên Đoàn Điền Kinh Việt Nam",
   "edition": null,
@@ -129,6 +130,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {
     "types": {
@@ -137,6 +139,11 @@
       ],
       "reason": "inferred from race name/price-tier text (marathon); no source states an explicit type",
       "at": "2026-09-26T13:21:53.036Z"
+    },
+    "seriesId": {
+      "value": "vietnam-international-half-marathon",
+      "reason": "Same event as the 2025/2026 editions: baolaocai.vn post395591 (1/1/2025) calls 2025 the 3rd year ('Như hai mùa đầu tiên'); baovanhoa.vn 55324 reports VIHM 2024 Herbalife on 1/1/2024 at Hồ Thiền Quang",
+      "at": "2026-11-19T10:28:22.617Z"
     }
   },
   "sources": [
@@ -174,5 +181,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-26T13:21:53.036Z"
+  "updatedAt": "2026-11-19T10:28:22.617Z"
 }

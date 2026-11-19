@@ -11,7 +11,7 @@
   "seriesId": "vietnam-international-half-marathon",
   "organizerId": "lien-doan-dien-kinh-viet-nam",
   "organizer": "Liên Đoàn Điền Kinh Việt Nam",
-  "edition": null,
+  "edition": 3,
   "courses": [],
   "location": {
     "venue": "Hồ Hoàn Kiếm, Quận Hoàn Kiếm, Hà Nội",
@@ -143,6 +143,11 @@
       "value": "2025-01-01",
       "reason": "ActiUp's API dates the 2025 edition 2026-01-01, but its registration closed 2024-12-25 and its own text says the race is held every year on 1/1, so the 2025 edition ran 2025-01-01 (plan 029)",
       "at": "2026-11-16T07:50:10.155Z"
+    },
+    "edition": {
+      "value": 3,
+      "reason": "baolaocai.vn/nguyen-thi-oanh-lan-thu-hai-pha-ky-luc-quoc-gia-21km-post395591.html: 'trong năm thứ 3 tổ chức, Giải bán Marathon quốc tế Việt Nam 2025'",
+      "at": "2026-11-19T10:28:22.617Z"
     }
   },
   "sources": [
@@ -177,5 +182,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-11-16T21:01:42.381Z"
+  "updatedAt": "2026-11-19T10:28:22.617Z"
 }
