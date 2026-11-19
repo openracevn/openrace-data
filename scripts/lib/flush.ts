@@ -22,6 +22,9 @@ export function overlayStore(base: RaceStore, files: Readonly<Record<string, str
   };
 }
 
+/** `add` fields that are links to other entities, not facts a page states: set as overrides. */
+const ADD_OVERRIDES = new Set<string>(["seriesId", "organizerId", "coOrganizerIds"]);
+
 /** Turns one staged operation into sync inputs or edits; throws a plain message when it can't. */
 async function planOp(store: RaceStore, op: Op, config: SitesConfig, now: string): Promise<SyncPlan> {
   if (op.op === "set-many") {
@@ -47,15 +50,24 @@ async function planOp(store: RaceStore, op: Op, config: SitesConfig, now: string
       if (!target) throw new Error(`attachTo "${op.attachTo}" matches no race`);
       matchId = target.id;
     }
+    // Links a page can't state as a fact: applied as overrides on the race the add lands on
+    // (plan 032; they used to be dropped silently and needed a follow-up set-many).
+    const facts = Object.fromEntries(Object.entries(op.fields).filter(([k]) => !ADD_OVERRIDES.has(k)));
+    const linked = Object.entries(op.fields).filter(([k]) => ADD_OVERRIDES.has(k));
     const input: SyncInput = {
       url: reference,
       site: siteKeyForUrl(config, reference),
       role: "reference",
-      extracted: { facts: { ...op.fields, note: op.reason } },
+      extracted: { facts: { ...facts, note: op.reason } },
       checkedAt: now,
       ...(matchId && { matchId }),
     };
-    return planSync(store, [input], config, now);
+    const added = await planSync(store, [input], config, now);
+    if (linked.length === 0 || added.skipped.length || added.changes.length === 0) return added;
+    if (added.changes.length > 1) throw new Error(`add ${reference} changed ${added.changes.length} races; set ${linked.map(([k]) => k).join(", ")} with a set-many instead`);
+    const edits: Edit[] = linked.map(([field, value]) => ({ kind: "set", field: field as CanonicalField, value, reason: op.reason }));
+    const edited = await planEdit(overlayStore(store, added.files), added.changes[0]!.id, edits, config, now);
+    return { files: { ...added.files, ...edited.files }, changes: mergeChanges([...added.changes, ...edited.changes]), skipped: [] };
   }
   const { input } = op;
   return planSync(store, [{ ...input, url: canonicalSourceUrl(input.url) }], config, now);
@@ -193,6 +205,28 @@ export async function planBatch(base: RaceStore, bundles: readonly Bundle[], con
   }
   const finalErrors = validate && options.tolerate && accepted.length > 0 ? await validate(files) : [];
   return { plan: { files, changes: mergeChanges(changes), skipped: [] }, accepted, unchanged, rejected, finalErrors };
+}
+
+/**
+ * planBatch with locally edited `--also` files (e.g. data/series.json) as part of the base:
+ * bundles are planned on top of them and the result carries them, so additions the plan
+ * makes to the same file (series inferred from slugs, new organizers) land on the edited
+ * copy instead of being overwritten by it. The dry run and the commit both go through
+ * here, so the tree that is validated is the tree that is committed (plan 032: commit
+ * 1444cb4 passed its dry run and then failed validate on main).
+ */
+export async function planBatchWithAlso(
+  base: RaceStore,
+  bundles: readonly Bundle[],
+  config: SitesConfig,
+  now: string,
+  also: Readonly<Record<string, string>>,
+  validate: Validator | null,
+  options: BatchOptions = {},
+): Promise<BatchResult> {
+  const withAlso: Validator | null = validate && ((files) => validate({ ...also, ...files }));
+  const result = await planBatch(overlayStore(base, also), bundles, config, now, withAlso, options);
+  return { ...result, plan: { ...result.plan, files: { ...also, ...result.plan.files } } };
 }
 
 /** `npm run validate` on a temporary copy of the checkout's data with `files` written on top. */

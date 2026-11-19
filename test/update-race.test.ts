@@ -4,7 +4,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { describe, it } from "node:test";
 import { CLAIM_TTL_MS, claimAll, listClaims, releaseUnit } from "../scripts/lib/claims.ts";
-import { overlayStore, planBatch, seriesIdsIn, tolerateNewSeries, treeValidator, untolerated, type Validator } from "../scripts/lib/flush.ts";
+import { overlayStore, planBatch, planBatchWithAlso, seriesIdsIn, tolerateNewSeries, treeValidator, untolerated, type Validator } from "../scripts/lib/flush.ts";
 import { formatRaceChecklist, formatSeriesChecklist, raceChecklist, seriesChecklist } from "../scripts/lib/race-gaps.ts";
 import { RaceSchema, type Race } from "../scripts/lib/schema.ts";
 import { loadSites } from "../scripts/lib/sites.ts";
@@ -124,7 +124,8 @@ describe("flush batch", () => {
     const result = await planBatch(local, [two], config, now, null);
     assert.equal(result.plan.changes.length, 1);
     const file = Object.entries(result.plan.files).find(([path]) => path.endsWith("hcmc-marathon-2025.json"))![1]!;
-    assert.deepEqual(Object.keys(JSON.parse(file).overrides).sort(), ["edition", "seriesId"], "the second op builds on the first");
+    const overrides = JSON.parse(file).overrides;
+    assert.ok("edition" in overrides && "seriesId" in overrides, "the second op builds on the first");
     const empty = await planBatch(local, [parseBundle(JSON.stringify({ unit: "unit-empty", summary: "nothing", ops: [] }))], config, now, null);
     assert.deepEqual(empty.unchanged, ["unit-empty"]);
   });
@@ -143,6 +144,41 @@ describe("flush batch", () => {
     const unlinked = await planBatch(local, [bundles[0]!], config, now, orphanCheck, { tolerate });
     assert.deepEqual(unlinked.accepted.map((a) => a.unit), ["a-unit"]);
     assert.match(unlinked.finalErrors.join("\n"), /new-series" has no races/, "an orphan series still blocks the commit");
+  });
+
+  // Plan 032 / commit 1444cb4: the dry run validated { ...also, ...plan } but the commit wrote
+  // { ...plan, ...also }, so series inferred from new races' slugs were dropped from series.json.
+  it("keeps both the --also series and the series the plan infers, and the tree validates", { timeout: 120_000 }, async () => {
+    const seriesJson = JSON.parse(readFileSync("data/series.json", "utf8")) as { id: string }[];
+    const added = { id: "zz-also-series", name: "ZZ Also Series", website: null, organizerId: null, description: null, statedEditionCount: null };
+    const also = { "data/series.json": `${JSON.stringify([...seriesJson, added].sort((a, b) => a.id.localeCompare(b.id)), null, 2)}\n` };
+    const addRace = (unit: string, year: number) =>
+      parseBundle(JSON.stringify({ unit, summary: `add ${year}`, ops: [{ op: "add", url: `https://example.org/zz-inferred-trail-${year}`, fields: { name: `ZZ Inferred Trail ${year}`, date: `${year}-03-01` }, reason: "test" }] }));
+    const bundles = [setMany("unit-link", "hcmc-marathon-2024", { seriesId: "zz-also-series" }), addRace("unit-2025", 2025), addRace("unit-2026", 2026)];
+    const tolerate = tolerateNewSeries(new Set(["zz-also-series"]));
+    const result = await planBatchWithAlso(local, bundles, config, now, also, treeValidator(process.cwd()), { tolerate });
+    assert.deepEqual(result.rejected, []);
+    assert.deepEqual(result.finalErrors, []);
+    const committed = seriesIdsIn(result.plan.files["data/series.json"] ?? undefined);
+    assert.ok(committed.has("zz-also-series"), "the --also series stays");
+    assert.ok(committed.has("zz-inferred-trail"), "the inferred series is added on top of the --also copy");
+    assert.deepEqual(await treeValidator(process.cwd())(result.plan.files), [], "the committed tree is the validated tree");
+  });
+
+  // Plan 032: vietnam-highlands-trail-by-utmb-2027 came out of an add with no series.
+  it("honours seriesId, organizerId and edition in an add's fields", async () => {
+    const add = parseBundle(JSON.stringify({ unit: "unit-add", summary: "add", ops: [{ op: "add", url: "https://example.org/zz-linked-race-2025", reason: "test",
+      fields: { name: "ZZ Linked Race 2025", date: "2025-05-04", seriesId: "hcmc-marathon", organizerId: "pulse-active", edition: 7 } }] }));
+    const result = await planBatch(local, [add], config, now, null);
+    assert.deepEqual(result.rejected, []);
+    assert.equal(result.plan.changes.length, 1);
+    assert.equal(result.plan.changes[0]!.kind, "added");
+    const file = Object.entries(result.plan.files).find(([path]) => path.includes("zz-linked-race"))![1]!;
+    const race = JSON.parse(file);
+    assert.equal(race.seriesId, "hcmc-marathon");
+    assert.equal(race.organizerId, "pulse-active");
+    assert.equal(race.edition, 7);
+    assert.ok(!("seriesId" in race.sources[0].extracted.facts), "links are overrides, not facts");
   });
 
   it("tolerates only the new series' orphan error", () => {

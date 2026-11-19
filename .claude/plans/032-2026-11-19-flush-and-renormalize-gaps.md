@@ -1,6 +1,6 @@
 # 032: Flush and renormalize gaps found in plan 031
 
-Written: 2026-11-19. Status: Draft
+Written: 2026-11-19. Status: Done 2026-11-19
 Related: plan 031, plan 019 (update-race), plan 029 (duplicate check), `scripts/flush.ts`, `scripts/sync.ts`, `scripts/renormalize.ts`
 
 ## Roadmap fit
@@ -51,3 +51,14 @@ Fix four tool gaps that plan 031 hit, so a batch that passes `flush --dry-run` c
 - The test for item 1 passes, and a real batch with `--also data/series.json` plus inferred series commits a tree that `validate` accepts.
 - Item 2 behaves as documented in SKILL.md.
 - `npm run renormalize` dry run lists only `geo` changes (no `+` lines); after `--commit`, `validate` is green and geo is ~99%.
+
+## Outcome (2026-11-19)
+
+1. **Fixed.** `planBatchWithAlso` (`scripts/lib/flush.ts`) plans on top of the `--also` files and returns `{ ...also, ...plan.files }`; `scripts/flush.ts` uses it for both the dry run and the commit (no more `extraFiles`). Test "keeps both the --also series and the series the plan infers" fails on the old order and passes now.
+2. **Honoured.** An `add`'s `seriesId`, `organizerId`, `coOrganizerIds` are applied as overrides on the race it lands on (`edition` was already kept as a fact). Test added; SKILL.md section 4 updated.
+3. **Fixed.** `renormalize` passes `matchId: race.id` for every stored source. The dry run lost its `+ giai-ban-marathon-…-herbalife` line. The 44 geo-only changes were already gone: `e56e812` (plan 031 wave B) had re-composed those races and applied the geocodes. `renormalize --commit` (`5aadf0d`) wrote the one change left (`vietnam-ultra-marathon-2026` links → official); a second dry run says "No changes"; validate green.
+   - Geo stays at 90% (380/422): the 42 races without a point have no `state/geo.json` entry for their location (venue-only strings, no city). That needs geocoding, not renormalize.
+   - **Data check:** the 1 January dates are real. VIHM is a New Year's Day race every year (baolaocai.vn: "Sáng 1/1/2025", "Ngày 1/1 … VIHM 2026"; 2024 "đến ngày 1/1/2024"). `b0d1a7e`: 2024 edition joined series `vietnam-international-half-marathon`; 2025 got edition 3 ("trong năm thứ 3 tổ chức"). The 2023 first edition is not on record ("Như hai mùa đầu tiên").
+4. **Not built.** With `renormalize` safe, it is the bulk tool for applying new geocodes; `flush` doesn't re-derive geo by itself.
+- Also: the existing test "merges two operations on one race" asserted an exact override list and broke when `hcmc-marathon-2025` got an `organizerId` override in `e56e812`; it now checks only the two keys it is about.
+- Optional organizer allow-list: not done (owner's call).

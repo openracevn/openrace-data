@@ -28,7 +28,10 @@ const config = loadSites();
 const inputs: SyncInput[] = [];
 for (const entry of IndexSchema.parse(JSON.parse((await local.read(INDEX_PATH)) ?? "[]"))) {
   const race = RaceSchema.parse(upgradeRace(JSON.parse((await local.read(racePath(entry)))!)));
-  for (const s of race.sources) inputs.push({ url: s.url, site: s.site, role: s.role, extracted: s.extracted, checkedAt: s.lastCheckedAt });
+  // Each source stays on the race that holds it (matchId), never re-matched by name or
+  // date: a stored extraction whose date disagrees with the race used to match nothing
+  // and come back as a new race on every run (plan 032).
+  for (const s of race.sources) inputs.push({ url: s.url, site: s.site, role: s.role, extracted: s.extracted, checkedAt: s.lastCheckedAt, matchId: race.id });
 }
 
 const context = "Re-derived from stored extractions by scripts/renormalize.ts (no reading).";

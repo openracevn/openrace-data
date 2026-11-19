@@ -16,7 +16,7 @@
 import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 import { env, requireEnv } from "./lib/env.ts";
-import { batchContext, planBatch, seriesIdsIn, tolerateNewSeries, treeValidator } from "./lib/flush.ts";
+import { batchContext, planBatchWithAlso, seriesIdsIn, tolerateNewSeries, treeValidator } from "./lib/flush.ts";
 import { loadSites } from "./lib/sites.ts";
 import { archiveUnit, readStaged, type Bundle } from "./lib/staging.ts";
 import { defaultWorkspace } from "./lib/workspace.ts";
@@ -66,7 +66,7 @@ const validateTree = treeValidator(process.cwd());
 // Series the --also file adds that the checkout's committed series.json doesn't have yet.
 const committedSeries = seriesIdsIn(gitShow("HEAD:data/series.json"));
 const newSeries = new Set([...seriesIdsIn(also["data/series.json"])].filter((id) => !committedSeries.has(id)));
-const result = await planBatch(local, bundles, config, now, (files) => validateTree({ ...also, ...files }), newSeries.size ? { tolerate: tolerateNewSeries(newSeries) } : {});
+const result = await planBatchWithAlso(local, bundles, config, now, also, validateTree, newSeries.size ? { tolerate: tolerateNewSeries(newSeries) } : {});
 result.rejected.unshift(...unreadable);
 
 for (const a of result.accepted) console.log(`✓ ${a.unit}: ${a.summary} → ${a.changes.map((c) => `${c.kind === "added" ? "+" : "~"}${c.slug}`).join(", ")}`);
@@ -95,9 +95,10 @@ if (result.accepted.length > 0) {
       repo: env("GITHUB_REPO") ?? "openrace-data",
       branch: env("GITHUB_BRANCH") ?? "main",
     },
-    // Re-planned on the branch head on a retry; validation already ran on the same bundles.
-    async (store) => (await planBatch(store, acceptedBundles, config, now, null)).plan,
-    { config, now, context, extraFiles: async () => also },
+    // Planned on the branch head with the --also files under it (as in the dry run), so
+    // series or organizers the plan adds land on the edited copy. Re-planned on a retry.
+    async (store) => (await planBatchWithAlso(store, acceptedBundles, config, now, also, null)).plan,
+    { config, now, context },
   );
   commitSha = committed.commitSha;
   console.log(`\n${formatCommitMessage(committed, context)}`);
