@@ -12,7 +12,14 @@
   "organizerId": "nexus-sport-events",
   "organizer": "Nexus Sport Events",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": null,
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "khu đô thị The Global City",
     "city": null
@@ -113,7 +120,30 @@
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Giá vé tiểu chuẩn",
+      "kind": "regular",
+      "audience": null,
+      "price": 250000,
+      "from": "2026-11-19",
+      "to": "2026-12-02",
+      "inferred": [],
+      "site": "actiup"
+    },
+    {
+      "distance": null,
+      "tier": "Ekiden · Giá vé tiểu chuẩn",
+      "kind": "regular",
+      "audience": null,
+      "price": 500000,
+      "from": "2026-11-19",
+      "to": "2026-12-02",
+      "inferred": [],
+      "site": "actiup"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
@@ -137,7 +167,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/soho-jingle-run-2026",
-      "lastCheckedAt": "2026-11-19T21:01:04.728Z",
+      "lastCheckedAt": "2026-11-19T21:02:05.324Z",
       "lastChangedAt": "2026-11-19T21:01:04.728Z",
       "extracted": {
         "facts": {
@@ -150,6 +180,34 @@
           "registrationStatus": "open",
           "fromPrice": 250000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/soho-jingle-run-2026",
+            "json": {
+              "pageKind": "none",
+              "types": [],
+              "name": "",
+              "date": "",
+              "endDate": "",
+              "mainDate": "",
+              "distances": [],
+              "courses": [],
+              "edition": 0,
+              "editionQuote": "",
+              "mapsUrl": "",
+              "venue": "",
+              "city": "",
+              "organizer": "",
+              "currency": "",
+              "registrationStatus": "closed",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1n_YDSVbCtsk1qxxXzssnlTwpoafO4wxP/view?usp=drive_link",
@@ -159,11 +217,42 @@
         "organizer": {
           "id": "nexus-sport-events",
           "name": "Nexus Sport Events"
-        }
+        },
+        "images": [
+          {
+            "url": "https://pix.actiup.net/2026/11/18/1794982755649404/Price-2-m%E1%BB%9Bi.jpg",
+            "json": {
+              "prices": [
+                {
+                  "distance": "5KM",
+                  "tier": "Giá vé tiểu chuẩn",
+                  "audience": "",
+                  "from": "19/11",
+                  "to": "02/12",
+                  "price": 250000
+                },
+                {
+                  "distance": "Ekiden",
+                  "tier": "Giá vé tiểu chuẩn",
+                  "audience": "",
+                  "from": "19/11",
+                  "to": "02/12",
+                  "price": 500000
+                }
+              ],
+              "distances": [
+                "5KM",
+                "Ekiden"
+              ],
+              "date": "2026-12-02",
+              "currency": "VND"
+            }
+          }
+        ]
       }
     }
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-19T21:01:27.094Z",
-  "updatedAt": "2026-11-19T21:01:27.094Z"
+  "updatedAt": "2026-11-19T21:02:18.933Z"
 }
