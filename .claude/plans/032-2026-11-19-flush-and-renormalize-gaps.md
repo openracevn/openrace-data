@@ -1,0 +1,53 @@
+# 032: Flush and renormalize gaps found in plan 031
+
+Written: 2026-11-19. Status: Draft
+Related: plan 031, plan 019 (update-race), plan 029 (duplicate check), `scripts/flush.ts`, `scripts/sync.ts`, `scripts/renormalize.ts`
+
+## Roadmap fit
+
+Serves path step 1, **trusted data**: a commit that passes its own dry run must not break `validate` on main (a broken main stops the API sync), and every race should get its map point. Code only: no paid reads, no LLM API, nothing scheduled. No tension with the trust principles, constraints or non-goals.
+
+## Goal
+
+Fix four tool gaps that plan 031 hit, so a batch that passes `flush --dry-run` commits the same tree it validated, a staged `add` keeps the series it names, and `renormalize` can be used to apply geocodes without re-adding races.
+
+## 1. `flush --also` validates one tree and commits another
+
+**Seen:** commit `1444cb4` (plan 031 wave A) passed `flush --dry-run`, then failed `validate` on main: 6 races carried `seriesId "manulife-danang-international-marathon"` with no entry in `data/series.json`. Fixed by `199c9a8` a few minutes later.
+
+**Cause:** the merge order differs.
+- Dry run / validation (`scripts/flush.ts:69`): `validateTree({ ...also, ...files })`. The planned `data/series.json` (with the series sync infers from slugs, `lib/series.ts`) wins over the `--also` copy.
+- Commit (`scripts/sync.ts:809`): `{ ...plan.files, ...extra }`. The `--also` copy wins and drops the inferred entries.
+- Also: the dry run plans on the local checkout (where `data/series.json` is already the edited copy), the commit plans on the GitHub head (without it).
+
+**Fix:** one rule in both places. Plan on top of the `--also` files (`overlayStore(store, also)`) and commit `{ ...also, ...plan.files }`, so planned additions to `series.json` / `organizers.json` land on the edited copy instead of being overwritten. Add a test: a batch with `--also data/series.json` adding series A, plus a bundle whose new races infer series B; the committed `series.json` has both and `validate` passes.
+
+## 2. A staged `add` ignores `seriesId` in its fields
+
+**Seen:** `vietnam-highlands-trail-by-utmb-2027` was added with `fields.seriesId` set and came out with no series; it needed a follow-up `set-many` (`b608d9f`). Same for the Đà Nẵng editions, which got the inferred `manulife-…` series instead of the one named.
+
+**Fix:** either honour `seriesId` (and `organizerId`, `edition`) in an `add`'s fields as overrides on the new race, or reject them with a clear message ("put seriesId in a set-many after the add"). Update SKILL.md section 4 to match.
+
+## 3. `renormalize` re-adds a race
+
+**Seen:** `npm run renormalize` (dry run) on 2026-11-19 lists 44 races whose only change is `geo` (the geocodes from `074fa87`), plus `+ giai-ban-marathon-quoc-te-viet-nam-2025-tai-tro-boi-herbalife` (a new id on every run).
+
+**Cause (to confirm):** `vietnam-international-half-marathon-2025` (date 2025-01-01) holds an ActiUp source whose stored extraction says `date: 2026-01-01`. On replay that source matches no race and becomes a new one. SKILL.md already warns against `renormalize --commit` for a batch (it re-added an orphan series in the plan 019 pilot); this may be the same class of bug.
+
+**Fix:** when replaying, attach each stored source to the race that holds it (`matchId` = the race's id), never match by date/name. Then run `renormalize --commit` once to give the 41 past races their map points, and check `npm run gaps` (geo 90% → ~99%).
+
+**Data to check in the same session:** `giai-ban-marathon-quoc-te-viet-nam-2024`, `vietnam-international-half-marathon-2025` and `-2026` are all dated 1 January, which looks like a placeholder from ActiUp. Find the real race days (update-race).
+
+## 4. Touching a race is the only way to apply a new geocode
+
+**Seen:** after committing `state/geo.json`, races got their point only when a later commit touched them (`a70d802` re-applied 3 locations by hand). Item 3 covers the bulk case; also consider having `flush` re-derive `geo` for races whose location key gained an entry in an `--also state/geo.json`.
+
+## Optional, if the owner wants it
+
+`npm run gaps` lists 47 "merged-looking" organizer names; plan 031 found the top 10 are all single entities (legal names with " - ", "&", commas). An allow-list (a `oneEntity: true` flag in `data/organizers.json` or a list in `gaps.ts`) would let a checked name leave the list.
+
+## Done when
+
+- The test for item 1 passes, and a real batch with `--also data/series.json` plus inferred series commits a tree that `validate` accepts.
+- Item 2 behaves as documented in SKILL.md.
+- `npm run renormalize` dry run lists only `geo` changes (no `+` lines); after `--commit`, `validate` is green and geo is ~99%.
