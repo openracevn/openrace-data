@@ -164,6 +164,24 @@ sites:
     series: { id: andros-the-lakes-race, name: Andros Lakes Race }
     organizer: { id: the-lakes-race, name: THE LAKES RACE }
 
+  - key: rundanang-com
+    name: Danang International Marathon (official site)
+    kind: race-site
+    url: https://rundanang.com/
+    recipe: none # booking link only (plan 031)
+
+  - key: vietnamtrailseries-com
+    name: Vietnam Trail Series (official site)
+    kind: race-site
+    url: https://vietnamtrailseries.com/
+    recipe: none # booking link only (plan 031)
+
+  - key: vietnamhighlands-utmb-world
+    name: Vietnam Highlands Trail by UTMB (official site)
+    kind: race-site
+    url: https://vietnamhighlands.utmb.world/
+    recipe: none # booking link only (plan 031)
+
   # --- Race sites seen in the ActiUp study (.claude/docs/study/, 2026-09-24) ---
   # Recognized in links (official) but not read yet: give each a paid check first
   # (scripts/lib/recipes/README.md), then recipe: default and a cadence.

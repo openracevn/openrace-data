@@ -9,7 +9,7 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "halong-bay-heritage-marathon",
-  "organizerId": "dha",
+  "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "DHA Vietnam",
   "edition": 11,
   "courses": [
@@ -1991,6 +1991,11 @@
       },
       "reason": "halongmarathon.com (saved 2026-10-17 in .agent-read-archive/2026-10-17-halong-heritage-2026) says 'thành phố Hạ Long, tỉnh Quảng Ninh'; the 10-16 trial read 'Vịnh Hạ Long' from the site's tourism blurb",
       "at": "2026-10-17T13:16:08.085Z"
+    },
+    "organizerId": {
+      "value": "cong-ty-dha-viet-nam",
+      "reason": "Organizer duplicate: 'DHA Vietnam' (dha) and 'Công ty DHA Việt Nam' are one company (Công ty TNHH Đức Hương Anh, DHA Việt Nam; halongmarathon.com 2018-2022 footers). Kept the id with the most races (plan 031).",
+      "at": "2026-11-19T10:20:34.970Z"
     }
   },
   "sources": [
@@ -2808,5 +2813,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-11-15T21:04:59.230Z"
+  "updatedAt": "2026-11-19T10:20:34.970Z"
 }

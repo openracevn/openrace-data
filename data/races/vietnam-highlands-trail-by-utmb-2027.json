@@ -370,7 +370,12 @@
   ],
   "currency": "VND",
   "registrationStatus": null,
-  "registrations": [],
+  "registrations": [
+    {
+      "site": "vietnamhighlands-utmb-world",
+      "url": "https://vietnamhighlands.utmb.world/runners/entry-info"
+    }
+  ],
   "links": [],
   "participants": null,
   "flags": [],
@@ -384,6 +389,16 @@
       "value": "nexus-sport-events",
       "reason": "organizerId: UTMB 'Vietnam Highlands Trail by UTMB' overview: 'co-organized and delivered by Nexus Sport Events' (vietnamhighlands.utmb.world overview; utmb.world news 'co-organized by Nexus Sport Events'); Lao Dong: 'in coordination with Nexus Sport Events'. registrations: the site's 'Register Now' button leads to /runners/entry-info ('Entry & Registration', registration until 2026-12-25), fetched 2026-11-19",
       "at": "2026-11-19T10:11:32.982Z"
+    },
+    "registrations": {
+      "value": [
+        {
+          "site": "vietnamhighlands-utmb-world",
+          "url": "https://vietnamhighlands.utmb.world/runners/entry-info"
+        }
+      ],
+      "reason": "Organizer's own booking page, checked live 2026-11-19 (plan 031, organizers-new-series unit)",
+      "at": "2026-11-19T10:20:34.970Z"
     }
   },
   "sources": [
@@ -526,5 +541,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-19T09:46:59.225Z",
-  "updatedAt": "2026-11-19T10:11:32.982Z"
+  "updatedAt": "2026-11-19T10:20:34.970Z"
 }

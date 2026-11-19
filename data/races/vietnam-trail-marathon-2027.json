@@ -209,7 +209,12 @@
   ],
   "currency": "VND",
   "registrationStatus": null,
-  "registrations": [],
+  "registrations": [
+    {
+      "site": "vietnamtrailseries-com",
+      "url": "https://vietnamtrailseries.com/trail-marathon/vtm-book-now/"
+    }
+  ],
   "links": [],
   "participants": null,
   "flags": [],
@@ -226,6 +231,16 @@
       "value": "topas-travel",
       "reason": "organizerId for this year: vietnamtrailseries.com/trail-marathon: 'organised by Topas Travel'; registrations: BOOK NOW button on the 9th-edition page (HTTP 200, fetched 2026-11-19)",
       "at": "2026-11-19T10:11:32.982Z"
+    },
+    "registrations": {
+      "value": [
+        {
+          "site": "vietnamtrailseries-com",
+          "url": "https://vietnamtrailseries.com/trail-marathon/vtm-book-now/"
+        }
+      ],
+      "reason": "Organizer's own booking page, checked live 2026-11-19 (plan 031, organizers-new-series unit)",
+      "at": "2026-11-19T10:20:34.970Z"
     }
   },
   "sources": [
@@ -288,5 +303,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-19T09:46:59.225Z",
-  "updatedAt": "2026-11-19T10:11:32.982Z"
+  "updatedAt": "2026-11-19T10:20:34.970Z"
 }

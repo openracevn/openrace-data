@@ -9,8 +9,8 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "bac-ninh-legacy-marathon",
-  "organizerId": "dha",
-  "organizer": "DHA Vietnam | Ban tổ chức sự kiện",
+  "organizerId": "cong-ty-dha-viet-nam",
+  "organizer": "DHA Vietnam",
   "edition": null,
   "courses": [
     {
@@ -466,7 +466,13 @@
   ],
   "participants": null,
   "flags": [],
-  "overrides": {},
+  "overrides": {
+    "organizerId": {
+      "value": "cong-ty-dha-viet-nam",
+      "reason": "Organizer duplicate: 'DHA Vietnam' (dha) and 'Công ty DHA Việt Nam' are one company (Công ty TNHH Đức Hương Anh, DHA Việt Nam; halongmarathon.com 2018-2022 footers). Kept the id with the most races (plan 031).",
+      "at": "2026-11-19T10:20:34.970Z"
+    }
+  },
   "sources": [
     {
       "site": "actiup",
@@ -1052,5 +1058,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-18T21:09:13.459Z"
+  "updatedAt": "2026-11-19T10:20:34.970Z"
 }

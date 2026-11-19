@@ -412,7 +412,12 @@
   ],
   "currency": "VND",
   "registrationStatus": null,
-  "registrations": [],
+  "registrations": [
+    {
+      "site": "rundanang-com",
+      "url": "https://rundanang.com/en/register/"
+    }
+  ],
   "links": [],
   "participants": null,
   "flags": [],
@@ -439,6 +444,16 @@
       "value": "pulse-active",
       "reason": "organizerId for this year: rundanang.com 2027 pages footer 'Copyrights All Rights Reserved by Pulse Active', contacts @pulse.vn; baomoi/Báo Đà Nẵng 2026-07-21 keyword 'Công ty Pulse Active' on the 2027 registration announcement; registrations: the organizer's 2027 REGISTER page (HTTP 200, fetched 2026-11-19)",
       "at": "2026-11-19T10:11:32.982Z"
+    },
+    "registrations": {
+      "value": [
+        {
+          "site": "rundanang-com",
+          "url": "https://rundanang.com/en/register/"
+        }
+      ],
+      "reason": "Organizer's own booking page, checked live 2026-11-19 (plan 031, organizers-new-series unit)",
+      "at": "2026-11-19T10:20:34.970Z"
     }
   },
   "sources": [
@@ -642,5 +657,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-19T09:46:59.225Z",
-  "updatedAt": "2026-11-19T10:11:32.982Z"
+  "updatedAt": "2026-11-19T10:20:34.970Z"
 }

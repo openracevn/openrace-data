@@ -9,7 +9,7 @@
   "endDate": null,
   "mainDate": null,
   "seriesId": "hanh-trinh-tiep-suc",
-  "organizerId": "dha",
+  "organizerId": "cong-ty-dha-viet-nam",
   "organizer": "DHA Vietnam",
   "edition": 3,
   "courses": [
@@ -646,6 +646,11 @@
       },
       "reason": "The venue is the Trịnh Công Sơn pedestrian street garden, Tây Hồ, Hà Nội (irace.vn address 'Vườn hoa phố đi bộ Trịnh Công Sơn, Tây Hồ, Hà Nội'); geocoding the venue name only found Hà Nội's province centre. Point: the Nominatim result already stored for the same place on tay-ho-half-marathon-2024..2026 and set on hanh-trinh-tiep-suc-2025, ward precision.",
       "at": "2026-09-29T08:03:24.010Z"
+    },
+    "organizerId": {
+      "value": "cong-ty-dha-viet-nam",
+      "reason": "Organizer duplicate: 'DHA Vietnam' (dha) and 'Công ty DHA Việt Nam' are one company (Công ty TNHH Đức Hương Anh, DHA Việt Nam; halongmarathon.com 2018-2022 footers). Kept the id with the most races (plan 031).",
+      "at": "2026-11-19T10:20:34.970Z"
     }
   },
   "sources": [
@@ -1342,5 +1347,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-10-15T20:31:08.696Z",
-  "updatedAt": "2026-11-19T10:11:32.982Z"
+  "updatedAt": "2026-11-19T10:20:34.970Z"
 }
