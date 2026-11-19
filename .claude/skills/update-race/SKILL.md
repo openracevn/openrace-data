@@ -1,6 +1,6 @@
 ---
 name: update-race
-description: The one skill for finding and fixing race data in openrace-data. Use for any request to update, check, fix, complete, add, research or backfill races or a series, e.g. "update race A, race B, series C", "check this race", "add this race", "find all editions of X", "fill the gaps", "what's missing on X", or a race URL, slug or id. Claude leads with its own web search and page reads, works units in parallel, stages the results and commits once.
+description: The one skill for finding and fixing race data in openrace-data. Use for any request to update, check, fix, complete, add, research or backfill races or a series, e.g. "update race A, race B, series C", "check this race", "add this race", "find all editions of X", "fill the gaps", "what's missing on X", or a race URL, slug or id. With no target ("check the data", "sweep", "what needs work", "update-race" alone) it runs a sweep of the whole dataset (new races, missed races, failed pages, duplicates, missing data) and stops with a ranked list. Claude leads with its own web search and page reads, works units in parallel, stages the results and commits once.
 ---
 
 # Update races (plan 019)
@@ -10,6 +10,37 @@ The user says `update race A, race B, series C`. You decide what each target nee
 Read `.claude/docs/roadmap.md` first (trust principles). Firecrawl is **opt-in**: use it only when the user asks, and say the cost first. Everything below is free.
 
 **Where the targets come from (plans 026, 027):** the Monday Discord digest (`npm run notify:stale -- --dry-run` prints it any day) lists the races that need a session and why, and the pages Schedule 2 couldn't read. Pages on the to-do list (`state/todo.json`) are read by the next morning's Schedule 2: don't spend a session on those unless the user asks. New races created from free facts (status `facts`) get their prices from that run too.
+
+## 0. No target: sweep (plan 030)
+
+When the user names no race or series ("check the data", "sweep", "what needs work", `update-race` alone), sweep the whole dataset, show one list, and **stop**. Nothing is read, staged or committed for a fix until the user picks.
+
+1. **New races from the sources** (free):
+   ```bash
+   git pull -q
+   GITHUB_TOKEN=$(gh auth token) npm run -s check -- --discover   # Schedule 1; commits new races from free facts + the to-do list
+   git pull -q
+   ```
+   "Schedule 1 already ran today" is fine: use the list it made. Don't add `--force` unless the user asks.
+2. **Collect** (all read-only, run in parallel):
+   ```bash
+   npm run -s notify:stale -- --dry-run   # the digest: stale races, unpriced distances, pages Schedule 2 couldn't read
+   cat state/todo.json                    # to-do pages; `failures` and `lastError` show the stuck ones
+   npm run -s gaps                        # completeness, organizer splits, no-location, series year gaps
+   npm run -s validate                    # errors and `possible duplicate races: a ~ b`
+   ```
+3. **Races we miss:** 4–6 `WebSearch` queries in parallel for races in Vietnam in the next 3 months (`giải chạy tháng <m> <yyyy>`, `marathon <yyyy> Việt Nam đăng ký`, `trail <yyyy> Việt Nam`, `giải chạy bộ sắp diễn ra`), then `npm run find -- "<name>"` for each race found. Keep the ones not on record. Log every query and its result in `.agent-read/sweep-<date>/search-log.md`.
+4. **One ranked list**, biggest first, numbered so the user can pick by number:
+   1. validate errors and possible duplicates (they hold scheduled runs back);
+   2. stuck to-do pages (`failures` ≥ 3: gone, moved or renamed?);
+   3. races we miss (name, date, the page that lists it);
+   4. upcoming races with gaps (no prices, distances or location), soonest first;
+   5. stale races and unpriced distances from the digest;
+   6. organizer splits and missing links (top 10 by races);
+   7. past-race gaps as counts only (courses, edition, participants), not one line per race.
+
+   Each line: target, what's wrong, the proposed fix. Above the list, one line of numbers: races, completeness, what discovery added today. Say that everything is free unless a line says otherwise.
+5. **Stop** and ask which to fix (AskUserQuestion: "all", "top N", a group, or numbers). The chosen lines become targets for sections 1–5: one unit per race or series, parallel workers, one flush.
 
 ## 1. Resolve each target into a unit
 
