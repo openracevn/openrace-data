@@ -7,6 +7,7 @@
   ],
   "date": "2025-09-27",
   "endDate": "2025-09-28",
+  "mainDate": null,
   "seriesId": "aqua-warriors-van-don",
   "organizerId": "bolt-event",
   "organizer": "BOLT EVENT",
@@ -16,7 +17,102 @@
     "venue": "Vân Đồn, Quảng Ninh",
     "city": null
   },
-  "geo": null,
+  "geo": {
+    "lat": 21.0711296,
+    "lng": 107.4209946,
+    "source": "nominatim",
+    "precision": "ward",
+    "current": {
+      "province": "22",
+      "ward": "06994"
+    },
+    "legacy": {
+      "province": "22",
+      "district": "203",
+      "ward": "07015"
+    },
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1620.4,
+        "minutes": 1215,
+        "method": "road",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 202.8,
+        "minutes": 139,
+        "method": "road",
+        "near": false
+      },
+      "da-nang": {
+        "km": 899.2,
+        "minutes": 703,
+        "method": "road",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 1401.8,
+        "minutes": 1089,
+        "method": "road",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1529.2,
+        "minutes": 1208,
+        "method": "road",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1731.5,
+        "minutes": 1336,
+        "method": "road",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 97.2,
+        "minutes": 70,
+        "method": "road",
+        "near": false
+      },
+      "hue": {
+        "km": 797,
+        "minutes": 620,
+        "method": "road",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1711.4,
+        "minutes": 1298,
+        "method": "road",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 1209.8,
+        "minutes": 929,
+        "method": "road",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 1407.8,
+        "minutes": 1127,
+        "method": "road",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 511.1,
+        "minutes": 385,
+        "method": "road",
+        "near": false
+      },
+      "ha-long": {
+        "km": 45.3,
+        "minutes": 41,
+        "method": "road",
+        "near": false
+      }
+    }
+  },
   "prices": [],
   "currency": "VND",
   "registrationStatus": "closed",
@@ -33,6 +129,7 @@
       "foundOn": "actiup.net"
     }
   ],
+  "participants": null,
   "flags": [],
   "overrides": {},
   "sources": [
@@ -68,5 +165,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-24T06:49:38.787Z"
+  "updatedAt": "2026-11-20T03:20:47.043Z"
 }

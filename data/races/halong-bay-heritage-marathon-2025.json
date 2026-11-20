@@ -49,12 +49,12 @@
     "precision": "ward",
     "current": {
       "province": "22",
-      "ward": "06652"
+      "ward": "06688"
     },
     "legacy": {
       "province": "22",
       "district": "193",
-      "ward": "06664"
+      "ward": "06688"
     },
     "access": "road",
     "fromPlaces": {
@@ -473,5 +473,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-09-28T14:36:25.648Z"
+  "updatedAt": "2026-11-20T03:20:47.043Z"
 }
