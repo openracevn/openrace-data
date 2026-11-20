@@ -86,7 +86,10 @@ for (const { code: province, path } of provinceGeometry.sort((a, b) => a.code.lo
     // only when the name matches nothing: island zones have centres on water, and a centre
     // can sit inside a neighbour's polygon (Kỳ Lừa, plan 032 follow-up).
     const named = wards.filter((candidate) => candidate.province === province && nameMatchesFile(candidate, file));
-    const ward: CurrentWard | undefined = named.length === 1 ? named[0] : inside.length === 1 ? inside[0] : undefined;
+    // A name already taken by another file falls back to the centre match rather than dropping the polygon.
+    const byName = named.length === 1 && named[0] && !matchedWards.has(named[0].code) ? named[0] : undefined;
+    const byCentre = inside.length === 1 ? inside[0] : undefined;
+    const ward: CurrentWard | undefined = byName ?? byCentre;
     if (!ward || matchedWards.has(ward.code)) {
       unmatchedGeometry.push(pathName);
       continue;
@@ -105,7 +108,7 @@ const missingWards = wards.filter((ward) => !matchedWards.has(ward.code));
 console.log(`Matched ${matchedWards.size} of ${wards.length} CSV wards to ZIP polygons.`);
 if (missingWards.length) console.log(`CSV wards without a polygon: ${missingWards.map((ward) => `${ward.code} ${ward.name}`).join("; ")}`);
 if (unmatchedGeometry.length) console.log(`ZIP wards matched to nothing: ${unmatchedGeometry.join("; ")}`);
-if (matchedWards.size < 3_300) throw new Error(`only ${matchedWards.size} wards matched; need at least 3300`);
+if (missingWards.length) throw new Error(`${missingWards.length} of ${wards.length} wards have no polygon; every ward needs one`);
 
 mkdirSync(OUTPUT_DIR, { recursive: true });
 writeFileSync(join(OUTPUT_DIR, "units-2025.json"), serialize({ provinces, wards }));
@@ -389,8 +392,10 @@ function placeNamesMatch(folder: string, province: CurrentProvince): boolean {
 }
 
 function nameMatchesFile(ward: CurrentWard, file: string): boolean {
-  // Fold before stripping the type: files spell it "đac_khu", with the đ.
-  const name = foldVietnamese(basename(file, ".geojson").replace(/^\d+_/, "").replace(/_/g, " ")).replace(/\s+(?:xa|phuong|dac khu)$/, "");
+  // Strip the type only as the file's own "_xa" / "_phuong" / "_đac_khu" suffix (spelt with the đ),
+  // so a name that itself ends in "xa" (Phú Xá) keeps it.
+  const stem = basename(file, ".geojson").replace(/^\d+_/, "").replace(/_(?:xa|phuong|[đd]ac_khu)$/, "");
+  const name = foldVietnamese(stem.replace(/_/g, " "));
   const short = foldVietnamese(ward.short);
   const full = foldVietnamese(ward.name).replace(/^(?:phuong|xa|thi tran|thon|dac khu)\s+/, "");
   return name === short || name === full;
