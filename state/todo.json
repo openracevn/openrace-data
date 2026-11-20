@@ -1,5 +1,18 @@
 {
-  "discoveredAt": "2026-11-19T21:00:57.695Z",
+  "discoveredAt": "2026-11-20T21:01:00.154Z",
   "readAt": "2026-11-19T21:02:31.601Z",
-  "entries": []
+  "entries": [
+    {
+      "url": "https://actiup.net/vi/event/soho-jingle-run-2026",
+      "raceId": "fc3059ba-4d38-4232-b3d8-93639b292e49",
+      "reason": "changed",
+      "addedAt": "2026-11-20T21:01:11.324Z"
+    },
+    {
+      "url": "https://ticket.irace.vn/vietnam-festrival-2027",
+      "raceId": "40d499a7-1536-4fd1-9d27-552e1844ebb7",
+      "reason": "changed",
+      "addedAt": "2026-11-20T21:01:25.765Z"
+    }
+  ]
 }

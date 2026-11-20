@@ -10,7 +10,7 @@
   "mainDate": null,
   "seriesId": "bac-ninh-legacy-marathon",
   "organizerId": "cong-ty-dha-viet-nam",
-  "organizer": "DHA Vietnam",
+  "organizer": "Công ty CP Zaha Việt Nam",
   "edition": null,
   "courses": [
     {
@@ -620,13 +620,13 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/bac-ninh-legacy-marathon-2027",
-      "lastCheckedAt": "2026-10-18T21:07:47.571Z",
+      "lastCheckedAt": "2026-11-20T21:01:23.559Z",
       "lastChangedAt": "2026-10-15T20:28:39.489Z",
       "extracted": {
         "facts": {
           "name": "Giải chạy Bắc Ninh Legacy Marathon 2027",
           "venue": "Quảng trường Trung tâm Văn hóa Kinh Bắc, đường Kinh Dương Vương, phường Suối Hoa, Bắc Ninh",
-          "organizer": "DHA Vietnam",
+          "organizer": "Công ty CP Zaha Việt Nam",
           "prices": [
             {
               "distance": "5km",
@@ -784,7 +784,7 @@
               ],
               "edition": 1,
               "editionQuote": "Giải chạy Bắc Ninh Legacy Marathon 2027",
-              "mapsUrl": "https://www.google.com/maps?q=Quảng%20trường%20Trung%20tâm%20Văn%20hóa%20Kinh%20Bắc,%20đường%20Kinh%20Dương%20Vương,%20phường%20Suối%20Hoa,%20Bắc%20Ninh",
+              "mapsUrl": "https://maps.google.com/?q=Qu%C3%A0ng%20tr%C232ng%20Trung%20t%C3%A2m%20V%C4%83n%20h%C3%B3a%20Kinh%20B%C3%A2c%2C%20%C4%91%C6%B0%E1%BB%9Dng%20Kinh%20D%C6%B0%C6%A1ng%20V%C6%B0%C6%9Bng%2C%20ph%C432%B9ng%20Su%C3%AD%20Hoa%2C%20B%C3%A1c%20Ninh",
               "venue": "Quảng trường Trung tâm Văn hóa Kinh Bắc, đường Kinh Dương Vương, phường Suối Hoa, Bắc Ninh",
               "city": "Bắc Ninh",
               "organizer": "",
@@ -798,129 +798,129 @@
                 {
                   "distance": "5km",
                   "tier": "Super Early Bird",
-                  "audience": "",
-                  "from": "2026-08-27",
-                  "to": "2026-09-04",
+                  "audience": "Individuals",
+                  "from": "2023-08-27",
+                  "to": "2023-09-04",
                   "price": 350000
                 },
                 {
                   "distance": "5km",
                   "tier": "Early Bird",
-                  "audience": "",
-                  "from": "2026-09-05",
-                  "to": "2026-11-15",
+                  "audience": "Individuals",
+                  "from": "2023-09-05",
+                  "to": "2023-11-15",
                   "price": 400000
                 },
                 {
                   "distance": "5km",
                   "tier": "Regular",
-                  "audience": "",
-                  "from": "2026-11-16",
-                  "to": "2026-12-15",
+                  "audience": "Individuals",
+                  "from": "2023-11-16",
+                  "to": "2023-12-15",
                   "price": 450000
                 },
                 {
                   "distance": "5km",
                   "tier": "Late",
-                  "audience": "",
-                  "from": "2026-12-16",
-                  "to": "2026-12-31",
+                  "audience": "Individuals",
+                  "from": "2023-12-16",
+                  "to": "2023-12-31",
                   "price": 500000
                 },
                 {
                   "distance": "10km",
                   "tier": "Super Early Bird",
-                  "audience": "",
-                  "from": "2026-08-27",
-                  "to": "2026-09-04",
+                  "audience": "Individuals",
+                  "from": "2023-08-27",
+                  "to": "2023-09-04",
                   "price": 350000
                 },
                 {
                   "distance": "10km",
                   "tier": "Early Bird",
-                  "audience": "",
-                  "from": "2026-09-05",
-                  "to": "2026-11-15",
+                  "audience": "Individuals",
+                  "from": "2023-09-05",
+                  "to": "2023-11-15",
                   "price": 400000
                 },
                 {
                   "distance": "10km",
                   "tier": "Regular",
-                  "audience": "",
-                  "from": "2026-11-16",
-                  "to": "2026-12-15",
+                  "audience": "Individuals",
+                  "from": "2023-11-16",
+                  "to": "2023-12-15",
                   "price": 450000
                 },
                 {
                   "distance": "10km",
                   "tier": "Late",
-                  "audience": "",
-                  "from": "2026-12-16",
-                  "to": "2026-12-31",
+                  "audience": "Individuals",
+                  "from": "2023-12-16",
+                  "to": "2023-12-31",
                   "price": 500000
                 },
                 {
                   "distance": "21km",
                   "tier": "Super Early Bird",
-                  "audience": "",
-                  "from": "2026-08-27",
-                  "to": "2026-09-04",
+                  "audience": "Individuals",
+                  "from": "2023-08-27",
+                  "to": "2023-09-04",
                   "price": 450000
                 },
                 {
                   "distance": "21km",
                   "tier": "Early Bird",
-                  "audience": "",
-                  "from": "2026-09-05",
-                  "to": "2026-11-15",
+                  "audience": "Individuals",
+                  "from": "2023-09-05",
+                  "to": "2023-11-15",
                   "price": 500000
                 },
                 {
                   "distance": "21km",
                   "tier": "Regular",
-                  "audience": "",
-                  "from": "2026-11-16",
-                  "to": "2026-12-15",
+                  "audience": "Individuals",
+                  "from": "2023-11-16",
+                  "to": "2023-12-15",
                   "price": 550000
                 },
                 {
                   "distance": "21km",
                   "tier": "Late",
-                  "audience": "",
-                  "from": "2026-12-16",
-                  "to": "2026-12-31",
+                  "audience": "Individuals",
+                  "from": "2023-12-16",
+                  "to": "2023-12-31",
                   "price": 700000
                 },
                 {
                   "distance": "42km",
                   "tier": "Super Early Bird",
-                  "audience": "",
-                  "from": "2026-08-27",
-                  "to": "2026-09-04",
+                  "audience": "Individuals",
+                  "from": "2023-08-27",
+                  "to": "2023-09-04",
                   "price": 450000
                 },
                 {
                   "distance": "42km",
                   "tier": "Early Bird",
-                  "audience": "",
-                  "from": "2026-09-05",
-                  "to": "2026-11-15",
+                  "audience": "Individuals",
+                  "from": "2023-09-05",
+                  "to": "2023-11-15",
                   "price": 500000
                 },
                 {
                   "distance": "42km",
                   "tier": "Regular",
-                  "audience": "",
-                  "from": "2026-11-16",
-                  "to": "2026-12-15",
+                  "audience": "Individuals",
+                  "from": "2023-11-16",
+                  "to": "2023-12-15",
                   "price": 550000
                 },
                 {
                   "distance": "42km",
                   "tier": "Late",
-                  "audience": "",
-                  "from": "2026-12-16",
-                  "to": "2026-12-31",
+                  "audience": "Individuals",
+                  "from": "2023-12-16",
+                  "to": "2023-12-31",
                   "price": 800000
                 }
               ]
@@ -1050,13 +1050,13 @@
           }
         ],
         "organizer": {
-          "id": "dha",
-          "name": "DHA Vietnam"
+          "id": "cong-ty-cp-zaha-viet-nam",
+          "name": "Công ty CP Zaha Việt Nam"
         }
       }
     }
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-11-19T10:20:34.970Z"
+  "updatedAt": "2026-11-20T21:01:27.878Z"
 }

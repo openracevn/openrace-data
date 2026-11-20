@@ -444,7 +444,7 @@
     }
   ],
   "currency": "VND",
-  "registrationStatus": "open",
+  "registrationStatus": "closed",
   "registrations": [
     {
       "site": "actiup",
@@ -832,7 +832,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/the-9th-edition-of-the-techcombank-ho-chi-minh-city-internationalmarathon",
-      "lastCheckedAt": "2026-10-18T21:03:50.746Z",
+      "lastCheckedAt": "2026-11-20T21:01:10.122Z",
       "lastChangedAt": "2026-09-23T18:30:51.858Z",
       "extracted": {
         "facts": {
@@ -841,7 +841,7 @@
           "venue": "Thành Phố Hồ Chí Minh",
           "organizer": "Sunrise Events Vietnam",
           "currency": "VND",
-          "registrationStatus": "open",
+          "registrationStatus": "closed",
           "fromPrice": 390000
         },
         "pages": [
@@ -1168,5 +1168,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-18T21:09:13.459Z"
+  "updatedAt": "2026-11-20T21:01:27.878Z"
 }
