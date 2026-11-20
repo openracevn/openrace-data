@@ -82,9 +82,11 @@ for (const { code: province, path } of provinceGeometry.sort((a, b) => a.code.lo
     const raw = multiPolygon(readJson(pathName) as GeoJson);
     const bbox = rawBbox(raw);
     const inside = centerCandidates(bbox, centers).filter((ward) => pointInMulti([ward.lng, ward.lat], raw));
-    let ward: CurrentWard | undefined;
-    if (inside.length === 1) ward = inside[0];
-    else ward = wards.find((candidate) => candidate.province === province && nameMatchesFile(candidate, file));
+    // The file's own name first (unique within a province); a ward centre inside the polygon
+    // only when the name matches nothing: island zones have centres on water, and a centre
+    // can sit inside a neighbour's polygon (Kỳ Lừa, plan 032 follow-up).
+    const named = wards.filter((candidate) => candidate.province === province && nameMatchesFile(candidate, file));
+    const ward: CurrentWard | undefined = named.length === 1 ? named[0] : inside.length === 1 ? inside[0] : undefined;
     if (!ward || matchedWards.has(ward.code)) {
       unmatchedGeometry.push(pathName);
       continue;
@@ -387,9 +389,10 @@ function placeNamesMatch(folder: string, province: CurrentProvince): boolean {
 }
 
 function nameMatchesFile(ward: CurrentWard, file: string): boolean {
-  const name = foldVietnamese(basename(file, ".geojson").replace(/^\d+_/, "").replace(/_(?:xa|phuong|dac_khu)$/i, ""));
+  // Fold before stripping the type: files spell it "đac_khu", with the đ.
+  const name = foldVietnamese(basename(file, ".geojson").replace(/^\d+_/, "").replace(/_/g, " ")).replace(/\s+(?:xa|phuong|dac khu)$/, "");
   const short = foldVietnamese(ward.short);
-  const full = foldVietnamese(ward.name).replace(/^(?:phuong|xa|thi tran|thon)\s+/, "");
+  const full = foldVietnamese(ward.name).replace(/^(?:phuong|xa|thi tran|thon|dac khu)\s+/, "");
   return name === short || name === full;
 }
 
