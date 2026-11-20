@@ -6,8 +6,8 @@
     "triathlon"
   ],
   "date": "2027-03-21",
-  "endDate": "2027-03-22",
-  "mainDate": "2027-03-21",
+  "endDate": null,
+  "mainDate": null,
   "seriesId": "vietnam-festrival",
   "organizerId": "stop-and-sports",
   "organizer": "CÔNG TY TNHH STOP AND SPORTS",
@@ -819,7 +819,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/vietnam-festrival-2027",
-      "lastCheckedAt": "2026-10-18T21:07:52.597Z",
+      "lastCheckedAt": "2026-11-20T21:02:09.506Z",
       "lastChangedAt": "2026-10-15T20:27:50.831Z",
       "extracted": {
         "facts": {
@@ -837,7 +837,7 @@
               ],
               "name": "Vietnam FesTRIval lần 5",
               "date": "2027-03-21",
-              "endDate": "2027-03-22",
+              "endDate": "2027-03-21",
               "mainDate": "2027-03-21",
               "distances": [
                 "70.3 (Cá nhân)",
@@ -875,7 +875,7 @@
               ],
               "edition": 5,
               "editionQuote": "lần 5",
-              "mapsUrl": "Bàu Trắng, Hòa Thắng, Lâm Đồng",
+              "mapsUrl": "",
               "venue": "Bàu Trắng, Hòa Thắng, Lâm Đồng",
               "city": "Lâm Đồng",
               "organizer": "",
@@ -904,6 +904,14 @@
                 },
                 {
                   "distance": "70.3 (Cá nhân)",
+                  "tier": "Flash Sale",
+                  "audience": "",
+                  "from": "21/11",
+                  "to": "23/11",
+                  "price": 4210000
+                },
+                {
+                  "distance": "70.3 (Cá nhân)",
                   "tier": "Standard",
                   "audience": "",
                   "from": "01/12",
@@ -924,6 +932,14 @@
                   "audience": "",
                   "from": "01/10",
                   "to": "30/11",
+                  "price": 5070000
+                },
+                {
+                  "distance": "70.3 (Tiếp sức)",
+                  "tier": "Flash Sale",
+                  "audience": "",
+                  "from": "21/11",
+                  "to": "23/11",
                   "price": 5070000
                 },
                 {
@@ -952,6 +968,14 @@
                 },
                 {
                   "distance": "56.50 (Cá nhân)",
+                  "tier": "Flash Sale",
+                  "audience": "",
+                  "from": "21/11",
+                  "to": "23/11",
+                  "price": 3800000
+                },
+                {
+                  "distance": "56.50 (Cá nhân)",
                   "tier": "Standard",
                   "audience": "",
                   "from": "01/12",
@@ -976,6 +1000,14 @@
                 },
                 {
                   "distance": "56.50 (Tiếp sức)",
+                  "tier": "Flash Sale",
+                  "audience": "",
+                  "from": "21/11",
+                  "to": "23/11",
+                  "price": 4700000
+                },
+                {
+                  "distance": "56.50 (Tiếp sức)",
                   "tier": "Standard",
                   "audience": "",
                   "from": "01/12",
@@ -996,6 +1028,14 @@
                   "audience": "",
                   "from": "01/10",
                   "to": "30/11",
+                  "price": 3130000
+                },
+                {
+                  "distance": "Sprint",
+                  "tier": "Flash Sale",
+                  "audience": "",
+                  "from": "21/11",
+                  "to": "23/11",
                   "price": 3130000
                 },
                 {
@@ -1141,5 +1181,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-10-18T21:09:13.459Z"
+  "updatedAt": "2026-11-20T21:02:28.370Z"
 }
