@@ -538,7 +538,7 @@
       "site": "vnexpress-marathon",
       "role": "official",
       "url": "https://vm.vnexpress.net/ha-noi-2026",
-      "lastCheckedAt": "2026-10-15T20:33:09.295Z",
+      "lastCheckedAt": "2026-11-22T21:04:45.789Z",
       "lastChangedAt": "2026-09-25T05:01:22.419Z",
       "extracted": {
         "facts": {
@@ -587,22 +587,22 @@
                 }
               ],
               "edition": 1,
-              "editionQuote": "lần thứ 1",
+              "editionQuote": "VnExpress Marathon",
               "mapsUrl": "https://vm.vnexpress.net/ha-noi-2026/thong-tin-cuoc-dua/dia-diem",
               "venue": "Hà Nội",
               "city": "Hà Nội",
-              "organizer": "",
+              "organizer": "VnExpress",
               "currency": "VND",
               "registrationStatus": "open",
               "participants": {
                 "count": 0,
-                "quote": ""
+                "quote": "Không có dữ liệu tham gia."
               },
               "prices": [
                 {
                   "distance": "5 km",
                   "tier": "Super Early Bird",
-                  "audience": "",
+                  "audience": "Individual",
                   "from": "2026-09-04",
                   "to": "2026-09-24",
                   "price": 420000
@@ -610,7 +610,7 @@
                 {
                   "distance": "5 km",
                   "tier": "Early Bird",
-                  "audience": "",
+                  "audience": "Individual",
                   "from": "2026-09-25",
                   "to": "2026-10-15",
                   "price": 500000
@@ -618,7 +618,7 @@
                 {
                   "distance": "5 km",
                   "tier": "Regular",
-                  "audience": "",
+                  "audience": "Individual",
                   "from": "2026-10-16",
                   "to": "2026-11-06",
                   "price": 620000
@@ -626,7 +626,7 @@
                 {
                   "distance": "5 km",
                   "tier": "Late",
-                  "audience": "",
+                  "audience": "Individual",
                   "from": "2026-11-07",
                   "to": "2026-11-19",
                   "price": 790000
@@ -634,7 +634,7 @@
                 {
                   "distance": "10 km",
                   "tier": "Super Early Bird",
-                  "audience": "",
+                  "audience": "Individual",
                   "from": "2026-09-04",
                   "to": "2026-09-24",
                   "price": 480000
@@ -642,7 +642,7 @@
                 {
                   "distance": "10 km",
                   "tier": "Early Bird",
-                  "audience": "",
+                  "audience": "Individual",
                   "from": "2026-09-25",
                   "to": "2026-10-15",
                   "price": 620000
@@ -650,7 +650,7 @@
                 {
                   "distance": "10 km",
                   "tier": "Regular",
-                  "audience": "",
+                  "audience": "Individual",
                   "from": "2026-10-16",
                   "to": "2026-11-06",
                   "price": 790000
@@ -658,7 +658,7 @@
                 {
                   "distance": "10 km",
                   "tier": "Late",
-                  "audience": "",
+                  "audience": "Individual",
                   "from": "2026-11-07",
                   "to": "2026-11-19",
                   "price": 950000
@@ -666,7 +666,7 @@
                 {
                   "distance": "21 km",
                   "tier": "Super Early Bird",
-                  "audience": "",
+                  "audience": "Individual",
                   "from": "2026-09-04",
                   "to": "2026-09-24",
                   "price": 660000
@@ -674,7 +674,7 @@
                 {
                   "distance": "21 km",
                   "tier": "Early Bird",
-                  "audience": "",
+                  "audience": "Individual",
                   "from": "2026-09-25",
                   "to": "2026-10-15",
                   "price": 790000
@@ -682,7 +682,7 @@
                 {
                   "distance": "21 km",
                   "tier": "Regular",
-                  "audience": "",
+                  "audience": "Individual",
                   "from": "2026-10-16",
                   "to": "2026-11-06",
                   "price": 950000
@@ -690,7 +690,7 @@
                 {
                   "distance": "21 km",
                   "tier": "Late",
-                  "audience": "",
+                  "audience": "Individual",
                   "from": "2026-11-07",
                   "to": "2026-11-19",
                   "price": 1150000
@@ -698,7 +698,7 @@
                 {
                   "distance": "42 km",
                   "tier": "Super Early Bird",
-                  "audience": "",
+                  "audience": "Individual",
                   "from": "2026-09-04",
                   "to": "2026-09-24",
                   "price": 780000
@@ -706,7 +706,7 @@
                 {
                   "distance": "42 km",
                   "tier": "Early Bird",
-                  "audience": "",
+                  "audience": "Individual",
                   "from": "2026-09-25",
                   "to": "2026-10-15",
                   "price": 950000
@@ -714,7 +714,7 @@
                 {
                   "distance": "42 km",
                   "tier": "Regular",
-                  "audience": "",
+                  "audience": "Individual",
                   "from": "2026-10-16",
                   "to": "2026-11-06",
                   "price": 1150000
@@ -722,7 +722,7 @@
                 {
                   "distance": "42 km",
                   "tier": "Late",
-                  "audience": "",
+                  "audience": "Individual",
                   "from": "2026-11-07",
                   "to": "2026-11-19",
                   "price": 1350000
@@ -781,7 +781,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/vnexpress-marathon-hanoi-midnight-2026",
-      "lastCheckedAt": "2026-11-09T21:01:22.362Z",
+      "lastCheckedAt": "2026-11-22T21:04:07.463Z",
       "lastChangedAt": "2026-10-13T02:09:07.000Z",
       "extracted": {
         "facts": {
@@ -922,11 +922,11 @@
                   "elevationGain": 0
                 }
               ],
-              "edition": 1,
-              "editionQuote": "Giải chạy lầ thứ 1",
+              "edition": 0,
+              "editionQuote": "",
               "mapsUrl": "",
-              "venue": "Thành phố Hà Nội",
-              "city": "Hà Nội",
+              "venue": "",
+              "city": "Thành phố Hà Nội",
               "organizer": "",
               "currency": "VND",
               "registrationStatus": "open",
@@ -1198,5 +1198,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-25T05:01:22.419Z",
-  "updatedAt": "2026-11-09T21:01:30.770Z"
+  "updatedAt": "2026-11-22T21:05:15.116Z"
 }

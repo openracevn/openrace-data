@@ -3,7 +3,7 @@
   "slug": "vnexpress-marathon-long-chau-thanh-hoa",
   "name": "VnExpress Marathon Long Châu Family Day 2026 - Thanh Hóa",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2026-12-20",
   "endDate": null,
@@ -11,40 +11,157 @@
   "seriesId": "vnexpress-marathon-long-chau-thanh-hoa",
   "organizerId": "vnexpress",
   "organizer": "VnExpress",
-  "edition": null,
+  "edition": 4,
   "courses": [],
   "location": {
-    "venue": null,
+    "venue": "Quảng trường Lam Sơn",
     "city": "Thanh Hóa"
   },
-  "geo": null,
+  "geo": {
+    "lat": 19.9781573,
+    "lng": 105.4816107,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "38",
+      "ward": null
+    },
+    "legacy": null,
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1031.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 123,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 523.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 947.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 948,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1106.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 158.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hue": {
+        "km": 449.8,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1084.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 796.2,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 857.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 312.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 198.6,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
   "prices": [],
   "currency": "VND",
-  "registrationStatus": null,
+  "registrationStatus": "open",
   "registrations": [],
   "links": [],
   "participants": null,
-  "flags": [
-    "location: no source states a city; guessed \"Thanh Hóa\" from the race's name"
-  ],
+  "flags": [],
   "overrides": {},
   "sources": [
     {
       "site": "vnexpress-marathon",
       "role": "official",
       "url": "https://vm.vnexpress.net/long-chau-thanh-hoa-2026",
-      "lastCheckedAt": "2026-11-22T21:01:26.362Z",
+      "lastCheckedAt": "2026-11-22T21:04:38.240Z",
       "lastChangedAt": "2026-11-22T21:01:26.362Z",
       "extracted": {
         "facts": {
           "name": "VnExpress Marathon Long Châu Family Day 2026 - Thanh Hóa",
           "date": "2026-12-20"
         },
+        "pages": [
+          {
+            "url": "https://vm.vnexpress.net/long-chau-thanh-hoa-2026",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Ngày Hội Gia Đình",
+              "date": "2026-12-19",
+              "endDate": "2026-12-20",
+              "mainDate": "2026-12-20",
+              "distances": [
+                "Not specified"
+              ],
+              "courses": [],
+              "edition": 4,
+              "editionQuote": "mùa 4",
+              "mapsUrl": "https://vm.vnexpress.net/long-chau-thanh-hoa-2026/thong-tin-cuoc-dua/dia-diem",
+              "venue": "Quảng trường Lam Sơn",
+              "city": "Thanh Hóa",
+              "organizer": "Not specified",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": "Not specified"
+              },
+              "prices": []
+            }
+          }
+        ],
         "links": [],
-        "series": {
-          "id": "vnexpress-marathon-long-chau-thanh-hoa",
-          "name": "VnExpress Marathon Long Châu Thanh Hóa"
-        },
         "organizer": {
           "id": "vnexpress",
           "name": "VnExpress",
@@ -55,5 +172,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-22T21:02:16.564Z",
-  "updatedAt": "2026-11-22T21:02:16.564Z"
+  "updatedAt": "2026-11-22T21:05:15.116Z"
 }
