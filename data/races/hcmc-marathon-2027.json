@@ -416,17 +416,16 @@
     {
       "site": "njuko",
       "url": "https://in.njuko.com/eximbank-ho-chi-minh-city-marathon-2027"
+    },
+    {
+      "site": "irace",
+      "url": "https://app.irace.vn/5km-virtual-run-eximbank-hcmc-marathon-2027"
     }
   ],
   "links": [
     {
       "url": "https://facebook.com/hcmcmarathon",
       "kind": "facebook",
-      "foundOn": "hcmcmarathon.com"
-    },
-    {
-      "url": "https://docs.google.com/forms/d/e/1FAIpQLSeinw43HjtEtbz6e3ZqVEAzH0XYyRs_zPMOONLn7ArtXBaN0Q/viewform",
-      "kind": "other",
       "foundOn": "hcmcmarathon.com"
     },
     {
@@ -450,8 +449,18 @@
       "foundOn": "hcmcmarathon.com"
     },
     {
+      "url": "https://share.google/v74AwwjsGMBBO4IBD",
+      "kind": "other",
+      "foundOn": "hcmcmarathon.com"
+    },
+    {
       "url": "https://youtube.com/@PulseActive",
       "kind": "other",
+      "foundOn": "hcmcmarathon.com"
+    },
+    {
+      "url": "https://app.irace.vn/5km-virtual-run-eximbank-hcmc-marathon-2027",
+      "kind": "seller",
       "foundOn": "hcmcmarathon.com"
     },
     {
@@ -473,7 +482,7 @@
       "site": "hcmc-marathon",
       "role": "official",
       "url": "https://hcmcmarathon.com/",
-      "lastCheckedAt": "2026-11-08T21:05:41.477Z",
+      "lastCheckedAt": "2026-11-22T21:01:58.095Z",
       "lastChangedAt": "2026-09-25T05:01:22.419Z",
       "extracted": {
         "pages": [
@@ -808,8 +817,12 @@
             "text": "here"
           },
           {
-            "url": "https://docs.google.com/forms/d/e/1FAIpQLSeinw43HjtEtbz6e3ZqVEAzH0XYyRs_zPMOONLn7ArtXBaN0Q/viewform",
-            "text": "register group now"
+            "url": "https://app.irace.vn/5km-virtual-run-eximbank-hcmc-marathon-2027",
+            "text": "register now"
+          },
+          {
+            "url": "https://share.google/v74AwwjsGMBBO4IBD",
+            "text": "google maps"
           }
         ],
         "series": {
@@ -1056,5 +1069,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-09-25T05:01:22.419Z",
-  "updatedAt": "2026-11-08T21:08:02.763Z"
+  "updatedAt": "2026-11-22T21:02:16.564Z"
 }

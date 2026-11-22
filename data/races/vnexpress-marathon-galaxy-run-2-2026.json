@@ -241,7 +241,7 @@
       "site": "vnexpress-marathon",
       "role": "official",
       "url": "https://vm.vnexpress.net/galaxy-run-2-2026",
-      "lastCheckedAt": "2026-11-08T21:07:33.585Z",
+      "lastCheckedAt": "2026-11-22T21:01:52.808Z",
       "lastChangedAt": "2026-11-08T21:01:45.109Z",
       "extracted": {
         "facts": {
@@ -354,6 +354,10 @@
           "id": "vnexpress",
           "name": "VnExpress",
           "website": "https://vnexpress.net/"
+        },
+        "series": {
+          "id": "vnexpress-marathon-galaxy-run-2",
+          "name": "VnExpress Marathon Galaxy Run 2"
         }
       }
     },
@@ -526,5 +530,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-11-08T21:02:32.590Z",
-  "updatedAt": "2026-11-16T07:44:44.741Z"
+  "updatedAt": "2026-11-22T21:02:16.564Z"
 }
