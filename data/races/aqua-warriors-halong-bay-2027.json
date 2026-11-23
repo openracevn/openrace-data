@@ -12,7 +12,7 @@
   "seriesId": "aqua-warriors-halong-bay",
   "organizerId": "cong-ty-co-phan-su-kien-bolt",
   "organizer": "Công ty Cổ phần Sự kiện BOLT",
-  "edition": 1,
+  "edition": null,
   "courses": [
     {
       "label": "55km",
@@ -65,7 +65,7 @@
   ],
   "location": {
     "venue": "Hạ Long, Quảng Ninh, Việt Nam",
-    "city": "Quảng Ninh"
+    "city": "Hạ Long"
   },
   "geo": {
     "lat": 20.9454443,
@@ -102,13 +102,13 @@
         "near": false
       },
       "nha-trang": {
-        "km": 1360.5,
+        "km": 1359.3,
         "minutes": 1063,
         "method": "road",
         "near": false
       },
       "da-lat": {
-        "km": 1488,
+        "km": 1486.7,
         "minutes": 1181,
         "method": "road",
         "near": false
@@ -138,7 +138,7 @@
         "near": false
       },
       "quy-nhon": {
-        "km": 1168.5,
+        "km": 1167.3,
         "minutes": 903,
         "method": "road",
         "near": false
@@ -166,133 +166,133 @@
   "prices": [
     {
       "distance": null,
-      "tier": "Standard Duathlon · SUPER EARLY BIRD",
-      "kind": "super_early",
+      "tier": "Standard Duathlon · EB - EXTEND",
+      "kind": "early",
       "audience": null,
-      "price": 2589000,
-      "from": "2026-09-29",
-      "to": "2026-11-12",
+      "price": 2796000,
+      "from": "2026-11-24",
+      "to": "2026-12-13",
       "inferred": [],
       "site": "irace"
     },
     {
       "distance": null,
-      "tier": "(Relay) Standard Duathlon · SUPER EARLY BIRD",
+      "tier": "Relay Standard Duathlon · EB - EXTEND",
       "kind": "group",
       "audience": null,
-      "price": 3366000,
-      "from": "2026-09-29",
-      "to": "2026-11-12",
+      "price": 3635000,
+      "from": "2026-11-24",
+      "to": "2026-12-13",
       "inferred": [],
       "site": "irace"
     },
     {
       "distance": null,
-      "tier": "T103 Enduro Triathlon Solo · SUPER EARLY BIRD",
-      "kind": "super_early",
+      "tier": "T103 Enduro Triathlon Solo · EB - EXTEND",
+      "kind": "early",
       "audience": null,
-      "price": 3739000,
-      "from": "2026-09-29",
-      "to": "2026-11-12",
+      "price": 4040000,
+      "from": "2026-11-24",
+      "to": "2026-12-13",
       "inferred": [],
       "site": "irace"
     },
     {
       "distance": null,
-      "tier": "[Relay] T103 Enduro Triathlon · SUPER EARLY BIRD",
+      "tier": "Relay T103 Enduro Triathlon · EB - EXTEND",
       "kind": "group",
       "audience": null,
-      "price": 4869000,
-      "from": "2026-09-29",
-      "to": "2026-11-12",
+      "price": 5264000,
+      "from": "2026-11-24",
+      "to": "2026-12-13",
       "inferred": [],
       "site": "irace"
     },
     {
       "distance": null,
-      "tier": "Olympic Triathlon Solo · SUPER EARLY BIRD",
-      "kind": "super_early",
+      "tier": "Olympic Triathlon Solo · EB - EXTEND",
+      "kind": "early",
       "audience": null,
-      "price": 3189000,
-      "from": "2026-09-29",
-      "to": "2026-11-12",
+      "price": 3446000,
+      "from": "2026-11-24",
+      "to": "2026-12-13",
       "inferred": [],
       "site": "irace"
     },
     {
       "distance": null,
-      "tier": "[Relay] Olympic Triathlon · SUPER EARLY BIRD",
+      "tier": "Relay Olympic Triathlon · EB - EXTEND",
       "kind": "group",
       "audience": null,
-      "price": 4149000,
-      "from": "2026-09-29",
-      "to": "2026-11-12",
+      "price": 4481000,
+      "from": "2026-11-24",
+      "to": "2026-12-13",
       "inferred": [],
       "site": "irace"
     },
     {
       "distance": null,
-      "tier": "Full Aqua Warriors Solo · SUPER EARLY BIRD",
-      "kind": "super_early",
+      "tier": "Full Aqua Warriors Solo · EB - EXTEND",
+      "kind": "early",
       "audience": null,
-      "price": 1619000,
-      "from": "2026-09-29",
-      "to": "2026-11-12",
+      "price": 1754000,
+      "from": "2026-11-24",
+      "to": "2026-12-13",
       "inferred": [],
       "site": "irace"
     },
     {
       "distance": null,
-      "tier": "[Relay] Full Aqua Warriors · SUPER EARLY BIRD",
+      "tier": "Relay Full Aqua Warriors · EB - EXTEND",
       "kind": "group",
       "audience": null,
-      "price": 2449000,
-      "from": "2026-09-29",
-      "to": "2026-11-12",
+      "price": 2645000,
+      "from": "2026-11-24",
+      "to": "2026-12-13",
       "inferred": [],
       "site": "irace"
     },
     {
       "distance": null,
-      "tier": "Olympic Aqua Warriors · SUPER EARLY BIRD",
-      "kind": "super_early",
+      "tier": "Olympic Aqua Warriors · EB - EXTEND",
+      "kind": "early",
       "audience": null,
-      "price": 1219000,
-      "from": "2026-09-29",
-      "to": "2026-11-12",
+      "price": 1322000,
+      "from": "2026-11-24",
+      "to": "2026-12-13",
       "inferred": [],
       "site": "irace"
     },
     {
       "distance": null,
-      "tier": "Sprint Aqua Warriors · SUPER EARLY BIRD",
-      "kind": "super_early",
+      "tier": "Sprint Aqua Warriors · EB - EXTEND",
+      "kind": "early",
       "audience": null,
-      "price": 1019000,
-      "from": "2026-09-29",
-      "to": "2026-11-12",
+      "price": 1106000,
+      "from": "2026-11-24",
+      "to": "2026-12-13",
       "inferred": [],
       "site": "irace"
     },
     {
       "distance": null,
-      "tier": "Junior Aqua Warriors · SUPER EARLY BIRD",
-      "kind": "super_early",
+      "tier": "Junior Aqua Warriors · EB - EXTEND",
+      "kind": "early",
       "audience": null,
-      "price": 659000,
-      "from": "2026-09-29",
-      "to": "2026-11-12",
+      "price": 719000,
+      "from": "2026-11-24",
+      "to": "2026-12-13",
       "inferred": [],
       "site": "irace"
     },
     {
       "distance": null,
-      "tier": "Kids Aqua Warriors · SUPER EARLY BIRD",
-      "kind": "super_early",
+      "tier": "Kids Aqua Warriors · EB - EXTEND",
+      "kind": "early",
       "audience": null,
-      "price": 529000,
-      "from": "2026-09-29",
-      "to": "2026-11-12",
+      "price": 575000,
+      "from": "2026-11-24",
+      "to": "2026-12-13",
       "inferred": [],
       "site": "irace"
     },
@@ -1452,7 +1452,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/aqua-warriors-halong-bay-2027",
-      "lastCheckedAt": "2026-11-12T21:02:36.385Z",
+      "lastCheckedAt": "2026-11-23T21:02:45.017Z",
       "lastChangedAt": "2026-10-15T20:27:06.087Z",
       "extracted": {
         "facts": {
@@ -1475,13 +1475,13 @@
               "mainDate": "2027-04-03",
               "distances": [
                 "Standard Duathlon",
-                "(Relay) Standard Duathlon",
+                "Relay Standard Duathlon",
                 "T103 Enduro Triathlon Solo",
-                "[Relay] T103 Enduro Triathlon",
+                "Relay T103 Enduro Triathlon",
                 "Olympic Triathlon Solo",
-                "[Relay] Olympic Triathlon",
+                "Relay Olympic Triathlon",
                 "Full Aqua Warriors Solo",
-                "[Relay] Full Aqua Warriors",
+                "Relay Full Aqua Warriors",
                 "Olympic Aqua Warriors",
                 "Sprint Aqua Warriors",
                 "Junior Aqua Warriors",
@@ -1494,7 +1494,7 @@
                   "elevationGain": 0
                 },
                 {
-                  "distance": "(Relay) Standard Duathlon",
+                  "distance": "Relay Standard Duathlon",
                   "type": "duathlon",
                   "elevationGain": 0
                 },
@@ -1504,7 +1504,7 @@
                   "elevationGain": 0
                 },
                 {
-                  "distance": "[Relay] T103 Enduro Triathlon",
+                  "distance": "Relay T103 Enduro Triathlon",
                   "type": "triathlon",
                   "elevationGain": 0
                 },
@@ -1514,46 +1514,46 @@
                   "elevationGain": 0
                 },
                 {
-                  "distance": "[Relay] Olympic Triathlon",
+                  "distance": "Relay Olympic Triathlon",
                   "type": "triathlon",
                   "elevationGain": 0
                 },
                 {
                   "distance": "Full Aqua Warriors Solo",
-                  "type": "other",
+                  "type": "triathlon",
                   "elevationGain": 0
                 },
                 {
-                  "distance": "[Relay] Full Aqua Warriors",
-                  "type": "other",
+                  "distance": "Relay Full Aqua Warriors",
+                  "type": "triathlon",
                   "elevationGain": 0
                 },
                 {
                   "distance": "Olympic Aqua Warriors",
-                  "type": "other",
+                  "type": "triathlon",
                   "elevationGain": 0
                 },
                 {
                   "distance": "Sprint Aqua Warriors",
-                  "type": "other",
+                  "type": "triathlon",
                   "elevationGain": 0
                 },
                 {
                   "distance": "Junior Aqua Warriors",
-                  "type": "other",
+                  "type": "triathlon",
                   "elevationGain": 0
                 },
                 {
                   "distance": "Kids Aqua Warriors",
-                  "type": "other",
+                  "type": "triathlon",
                   "elevationGain": 0
                 }
               ],
               "edition": 1,
-              "editionQuote": "Mùa 1",
+              "editionQuote": "2027",
               "mapsUrl": "",
-              "venue": "Hạ Long",
-              "city": "Quảng Ninh",
+              "venue": "Hạ Long, Quảng Ninh, Việt Nam",
+              "city": "Hạ Long",
               "organizer": "",
               "currency": "VND",
               "registrationStatus": "open",
@@ -1564,99 +1564,99 @@
               "prices": [
                 {
                   "distance": "Standard Duathlon",
-                  "tier": "SUPER EARLY BIRD",
+                  "tier": "EB - EXTEND",
                   "audience": "",
-                  "from": "29/09",
-                  "to": "12/11",
-                  "price": 2589000
+                  "from": "2026-11-24",
+                  "to": "2026-12-13",
+                  "price": 2796000
                 },
                 {
-                  "distance": "(Relay) Standard Duathlon",
-                  "tier": "SUPER EARLY BIRD",
+                  "distance": "Relay Standard Duathlon",
+                  "tier": "EB - EXTEND",
                   "audience": "",
-                  "from": "29/09",
-                  "to": "12/11",
-                  "price": 3366000
+                  "from": "2026-11-24",
+                  "to": "2026-12-13",
+                  "price": 3635000
                 },
                 {
                   "distance": "T103 Enduro Triathlon Solo",
-                  "tier": "SUPER EARLY BIRD",
+                  "tier": "EB - EXTEND",
                   "audience": "",
-                  "from": "29/09",
-                  "to": "12/11",
-                  "price": 3739000
+                  "from": "2026-11-24",
+                  "to": "2026-12-13",
+                  "price": 4040000
                 },
                 {
-                  "distance": "[Relay] T103 Enduro Triathlon",
-                  "tier": "SUPER EARLY BIRD",
+                  "distance": "Relay T103 Enduro Triathlon",
+                  "tier": "EB - EXTEND",
                   "audience": "",
-                  "from": "29/09",
-                  "to": "12/11",
-                  "price": 4869000
+                  "from": "2026-11-24",
+                  "to": "2026-12-13",
+                  "price": 5264000
                 },
                 {
                   "distance": "Olympic Triathlon Solo",
-                  "tier": "SUPER EARLY BIRD",
+                  "tier": "EB - EXTEND",
                   "audience": "",
-                  "from": "29/09",
-                  "to": "12/11",
-                  "price": 3189000
+                  "from": "2026-11-24",
+                  "to": "2026-12-13",
+                  "price": 3446000
                 },
                 {
-                  "distance": "[Relay] Olympic Triathlon",
-                  "tier": "SUPER EARLY BIRD",
+                  "distance": "Relay Olympic Triathlon",
+                  "tier": "EB - EXTEND",
                   "audience": "",
-                  "from": "29/09",
-                  "to": "12/11",
-                  "price": 4149000
+                  "from": "2026-11-24",
+                  "to": "2026-12-13",
+                  "price": 4481000
                 },
                 {
                   "distance": "Full Aqua Warriors Solo",
-                  "tier": "SUPER EARLY BIRD",
+                  "tier": "EB - EXTEND",
                   "audience": "",
-                  "from": "29/09",
-                  "to": "12/11",
-                  "price": 1619000
+                  "from": "2026-11-24",
+                  "to": "2026-12-13",
+                  "price": 1754000
                 },
                 {
-                  "distance": "[Relay] Full Aqua Warriors",
-                  "tier": "SUPER EARLY BIRD",
+                  "distance": "Relay Full Aqua Warriors",
+                  "tier": "EB - EXTEND",
                   "audience": "",
-                  "from": "29/09",
-                  "to": "12/11",
-                  "price": 2449000
+                  "from": "2026-11-24",
+                  "to": "2026-12-13",
+                  "price": 2645000
                 },
                 {
                   "distance": "Olympic Aqua Warriors",
-                  "tier": "SUPER EARLY BIRD",
+                  "tier": "EB - EXTEND",
                   "audience": "",
-                  "from": "29/09",
-                  "to": "12/11",
-                  "price": 1219000
+                  "from": "2026-11-24",
+                  "to": "2026-12-13",
+                  "price": 1322000
                 },
                 {
                   "distance": "Sprint Aqua Warriors",
-                  "tier": "SUPER EARLY BIRD",
+                  "tier": "EB - EXTEND",
                   "audience": "",
-                  "from": "29/09",
-                  "to": "12/11",
-                  "price": 1019000
+                  "from": "2026-11-24",
+                  "to": "2026-12-13",
+                  "price": 1106000
                 },
                 {
                   "distance": "Junior Aqua Warriors",
-                  "tier": "SUPER EARLY BIRD",
+                  "tier": "EB - EXTEND",
                   "audience": "",
-                  "from": "29/09",
-                  "to": "12/11",
-                  "price": 659000
+                  "from": "2026-11-24",
+                  "to": "2026-12-13",
+                  "price": 719000
                 },
                 {
                   "distance": "Kids Aqua Warriors",
-                  "tier": "SUPER EARLY BIRD",
+                  "tier": "EB - EXTEND",
                   "audience": "",
-                  "from": "29/09",
-                  "to": "12/11",
-                  "price": 529000
+                  "from": "2026-11-24",
+                  "to": "2026-12-13",
+                  "price": 575000
                 }
               ]
             }
@@ -1793,5 +1793,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-10-12T17:48:31.011Z",
-  "updatedAt": "2026-11-20T03:20:47.043Z"
+  "updatedAt": "2026-11-23T21:03:07.543Z"
 }

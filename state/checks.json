@@ -531,8 +531,9 @@
     "status": "facts"
   },
   "https://actiup.net/vi/event/hai-phong-legacy-marathon-dau-chan-thanh-pho-cang-2027": {
-    "lastCheckedAt": "2026-11-23T21:01:04.456Z",
-    "status": "facts"
+    "lastCheckedAt": "2026-11-23T21:02:19.251Z",
+    "status": "ok",
+    "fingerprint": "e60b4ed402c8b9eab61e6ca0749fa33d"
   },
   "https://actiup.net/vi/event/halong-bay-heritage-marathon-2025": {
     "lastCheckedAt": "2026-09-27T03:06:58.870Z",
@@ -1403,9 +1404,9 @@
     "fingerprint": "67b02f2007ded8dcf5be31e9241a73c1"
   },
   "https://ticket.irace.vn/aqua-warriors-halong-bay-2027": {
-    "lastCheckedAt": "2026-11-23T21:01:24.130Z",
+    "lastCheckedAt": "2026-11-23T21:02:45.017Z",
     "status": "ok",
-    "fingerprint": "74890832b17b8819aed550f3d9234cf8"
+    "fingerprint": "75dcdfdebc9fd6eb304d5180c1cf6e4b"
   },
   "https://ticket.irace.vn/bac-ninh-legacy-marathon-2027": {
     "lastCheckedAt": "2026-11-23T21:01:21.605Z",
@@ -1458,8 +1459,9 @@
     "fingerprint": "1352949e0cde1fef67ffcf2201604e2a"
   },
   "https://ticket.irace.vn/hai-phong-legacy-marathon-dau-chan-thanh-pho-cang-2027": {
-    "lastCheckedAt": "2026-11-23T21:01:18.163Z",
-    "status": "facts"
+    "lastCheckedAt": "2026-11-23T21:02:24.758Z",
+    "status": "ok",
+    "fingerprint": "3d85121ba928e1142201a655097e0aab"
   },
   "https://ticket.irace.vn/halong-bay-heritage-marathon-2023": {
     "lastCheckedAt": "2026-09-27T02:49:56.839Z",
@@ -1537,9 +1539,9 @@
     "fingerprint": "44d395369ac866f0e47e9ea4b2d690d4"
   },
   "https://ticket.irace.vn/tra-co-half-marathon-sai-buoc-noi-dia-dau-to-quoc": {
-    "lastCheckedAt": "2026-11-23T21:01:19.687Z",
+    "lastCheckedAt": "2026-11-23T21:02:34.158Z",
     "status": "ok",
-    "fingerprint": "2a9a8581a7f46db5cf25860377e77a8a"
+    "fingerprint": "0db0774bb64708631c881ca091343f7e"
   },
   "https://ticket.irace.vn/trang-an-marathon-2026": {
     "lastCheckedAt": "2026-11-08T21:06:46.119Z",

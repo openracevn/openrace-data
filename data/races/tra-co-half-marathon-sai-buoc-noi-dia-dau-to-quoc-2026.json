@@ -17,114 +17,118 @@
       "label": "5km",
       "meters": 5000,
       "type": "road_run",
-      "elevationGain": 499
+      "elevationGain": null
     },
     {
       "label": "10km",
       "meters": 10000,
       "type": "road_run",
-      "elevationGain": 599
+      "elevationGain": null
     },
     {
       "label": "21km",
       "meters": 21097,
       "type": "road_run",
-      "elevationGain": 699
+      "elevationGain": null
     }
   ],
   "location": {
     "venue": "Sa Vĩ - Trà Cổ - Phường Móng Cái 1, Quảng Ninh",
-    "city": "Quảng Ninh"
+    "city": "Móng Cái"
   },
   "geo": {
-    "lat": 20.9562629,
-    "lng": 107.0763212,
+    "lat": 21.4776993,
+    "lng": 108.0184865,
     "source": "nominatim",
-    "precision": "province",
+    "precision": "ward",
     "current": {
       "province": "22",
-      "ward": null
+      "ward": "06712"
     },
-    "legacy": null,
+    "legacy": {
+      "province": "22",
+      "district": "194",
+      "ward": "06721"
+    },
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 1133.1,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1714.7,
+        "minutes": 1276,
+        "method": "road",
         "near": false
       },
       "ha-noi": {
-        "km": 127.3,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 297.1,
+        "minutes": 201,
+        "method": "road",
         "near": false
       },
       "da-nang": {
-        "km": 557.7,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 993.5,
+        "minutes": 764,
+        "method": "road",
         "near": false
       },
       "nha-trang": {
-        "km": 995.3,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1496,
+        "minutes": 1150,
+        "method": "road",
         "near": false
       },
       "da-lat": {
-        "km": 1013,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1623.4,
+        "minutes": 1269,
+        "method": "road",
         "near": false
       },
       "can-tho": {
-        "km": 1222.3,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1825.7,
+        "minutes": 1397,
+        "method": "road",
         "near": false
       },
       "hai-phong": {
-        "km": 42.2,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 191.5,
+        "minutes": 131,
+        "method": "road",
         "near": false
       },
       "hue": {
-        "km": 502.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 891.2,
+        "minutes": 681,
+        "method": "road",
         "near": false
       },
       "vung-tau": {
-        "km": 1179.8,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1805.6,
+        "minutes": 1359,
+        "method": "road",
         "near": false
       },
       "quy-nhon": {
-        "km": 830.2,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1304,
+        "minutes": 990,
+        "method": "road",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 927.4,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1502,
+        "minutes": 1188,
+        "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 367.6,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 605.3,
+        "minutes": 446,
+        "method": "road",
         "near": false
       },
       "ha-long": {
-        "km": 0.6,
-        "minutes": null,
-        "method": "straight_line",
-        "near": true
+        "km": 142.8,
+        "minutes": 106,
+        "method": "road",
+        "near": false
       }
     }
   },
@@ -363,7 +367,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/tra-co-half-marathon-sai-buoc-noi-dia-dau-to-quoc",
-      "lastCheckedAt": "2026-11-23T21:01:19.687Z",
+      "lastCheckedAt": "2026-11-23T21:02:34.158Z",
       "lastChangedAt": "2026-11-01T21:47:48.146Z",
       "extracted": {
         "facts": {
@@ -499,24 +503,24 @@
                 {
                   "distance": "5km",
                   "type": "road_run",
-                  "elevationGain": 499
+                  "elevationGain": 0
                 },
                 {
                   "distance": "10km",
                   "type": "road_run",
-                  "elevationGain": 599
+                  "elevationGain": 0
                 },
                 {
                   "distance": "21km",
                   "type": "road_run",
-                  "elevationGain": 699
+                  "elevationGain": 0
                 }
               ],
               "edition": 1,
-              "editionQuote": "Giải chạy lần thứ 1",
+              "editionQuote": "Giải chạy lấn thứ 1",
               "mapsUrl": "https://www.google.com/maps/place/Sa+Vĩ+-+Trà+Cổ+-+Phường+Móng+Cái+1,+Quảng+Ninh",
               "venue": "Sa Vĩ - Trà Cổ - Phường Móng Cái 1",
-              "city": "Quảng Ninh",
+              "city": "Móng Cái",
               "organizer": "",
               "currency": "VND",
               "registrationStatus": "open",
@@ -527,7 +531,7 @@
               "prices": [
                 {
                   "distance": "5km",
-                  "tier": "SUPER EARLY BIRD",
+                  "tier": "SUPER EARLY BIRD Bình Minh",
                   "audience": "",
                   "from": "2026-10-25",
                   "to": "2026-10-29",
@@ -535,7 +539,7 @@
                 },
                 {
                   "distance": "5km",
-                  "tier": "EARLY BIRD",
+                  "tier": "EARLY BIRD Nắng Mai",
                   "audience": "",
                   "from": "2026-10-30",
                   "to": "2026-11-12",
@@ -543,7 +547,7 @@
                 },
                 {
                   "distance": "5km",
-                  "tier": "STANDARD",
+                  "tier": "STANDARD Xế Chiều",
                   "audience": "",
                   "from": "2026-11-13",
                   "to": "2026-12-03",
@@ -551,7 +555,15 @@
                 },
                 {
                   "distance": "5km",
-                  "tier": "LATE",
+                  "tier": "Ngày Văn Hóa Việt Nam",
+                  "audience": "",
+                  "from": "2026-11-24",
+                  "to": "2026-12-03",
+                  "price": 399000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "LATE Hoàng Hôn",
                   "audience": "",
                   "from": "2026-12-04",
                   "to": "2026-12-12",
@@ -559,7 +571,7 @@
                 },
                 {
                   "distance": "10km",
-                  "tier": "SUPER EARLY BIRD",
+                  "tier": "SUPER EARLY BIRD Bình Minh",
                   "audience": "",
                   "from": "2026-10-25",
                   "to": "2026-10-29",
@@ -567,7 +579,7 @@
                 },
                 {
                   "distance": "10km",
-                  "tier": "EARLY BIRD",
+                  "tier": "EARLY BIRD Nắng Mai",
                   "audience": "",
                   "from": "2026-10-30",
                   "to": "2026-11-12",
@@ -575,7 +587,7 @@
                 },
                 {
                   "distance": "10km",
-                  "tier": "STANDARD",
+                  "tier": "STANDARD Xế Chiều",
                   "audience": "",
                   "from": "2026-11-13",
                   "to": "2026-12-03",
@@ -583,7 +595,15 @@
                 },
                 {
                   "distance": "10km",
-                  "tier": "LATE",
+                  "tier": "Ngày Văn Hóa Việt Nam",
+                  "audience": "",
+                  "from": "2026-11-24",
+                  "to": "2026-12-03",
+                  "price": 449000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "LATE Hoàng Hôn",
                   "audience": "",
                   "from": "2026-12-04",
                   "to": "2026-12-12",
@@ -591,7 +611,7 @@
                 },
                 {
                   "distance": "21km",
-                  "tier": "SUPER EARLY BIRD",
+                  "tier": "SUPER EARLY BIRD Bình Minh",
                   "audience": "",
                   "from": "2026-10-25",
                   "to": "2026-10-29",
@@ -599,7 +619,7 @@
                 },
                 {
                   "distance": "21km",
-                  "tier": "EARLY BIRD",
+                  "tier": "EARLY BIRD Nắng Mai",
                   "audience": "",
                   "from": "2026-10-30",
                   "to": "2026-11-12",
@@ -607,7 +627,7 @@
                 },
                 {
                   "distance": "21km",
-                  "tier": "STANDARD",
+                  "tier": "STANDARD Xế Chiều",
                   "audience": "",
                   "from": "2026-11-13",
                   "to": "2026-12-03",
@@ -615,7 +635,15 @@
                 },
                 {
                   "distance": "21km",
-                  "tier": "LATE",
+                  "tier": "Ngày Văn Hóa Việt Nam",
+                  "audience": "",
+                  "from": "2026-11-24",
+                  "to": "2026-12-03",
+                  "price": 549000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "LATE Hoàng Hôn",
                   "audience": "",
                   "from": "2026-12-04",
                   "to": "2026-12-12",
@@ -752,5 +780,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-01T21:51:13.044Z",
-  "updatedAt": "2026-11-23T21:01:27.267Z"
+  "updatedAt": "2026-11-23T21:03:07.543Z"
 }

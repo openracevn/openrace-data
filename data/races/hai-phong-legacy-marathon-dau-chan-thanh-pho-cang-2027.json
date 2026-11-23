@@ -1,9 +1,9 @@
 {
   "id": "4a2c84a6-cde5-4ae7-9df0-4579a1111d57",
   "slug": "hai-phong-legacy-marathon-dau-chan-thanh-pho-cang-2027",
-  "name": "Giải chạy Hải Phòng - Dấu chân miền đất Cảng 2027",
+  "name": "Giải chạy Hai Phong Legacy Marathon - Dấu chân Thành phố cảng 2027",
   "types": [
-    "other"
+    "road_run"
   ],
   "date": "2027-05-16",
   "endDate": null,
@@ -12,107 +12,273 @@
   "organizerId": "cong-ty-zaha-vietnam",
   "organizer": "Công ty Zaha Vietnam",
   "edition": null,
-  "courses": [],
+  "courses": [
+    {
+      "label": "5km",
+      "meters": 5000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "10km",
+      "meters": 10000,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "21km",
+      "meters": 21097,
+      "type": "road_run",
+      "elevationGain": null
+    },
+    {
+      "label": "42km",
+      "meters": 42195,
+      "type": "road_run",
+      "elevationGain": null
+    }
+  ],
   "location": {
     "venue": "Hải phòng",
-    "city": null
+    "city": "Hải phòng"
   },
   "geo": {
-    "lat": 20.8830967,
-    "lng": 106.6790381,
+    "lat": 20.856022,
+    "lng": 106.6875207,
     "source": "nominatim",
-    "precision": "province",
+    "precision": "venue",
     "current": {
       "province": "31",
-      "ward": null
+      "ward": "11359"
     },
-    "legacy": null,
+    "legacy": {
+      "province": "31",
+      "district": "304",
+      "ward": "11341"
+    },
     "access": "road",
     "fromPlaces": {
       "hcmc": {
-        "km": 1124.3,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1524.7,
+        "minutes": 1157,
+        "method": "road",
         "near": false
       },
       "ha-noi": {
-        "km": 87.4,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 108.9,
+        "minutes": 84,
+        "method": "road",
         "near": false
       },
       "da-nang": {
-        "km": 560.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 803.5,
+        "minutes": 645,
+        "method": "road",
         "near": false
       },
       "nha-trang": {
-        "km": 997.9,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1306.1,
+        "minutes": 1031,
+        "method": "road",
         "near": false
       },
       "da-lat": {
-        "km": 1012,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1433.5,
+        "minutes": 1149,
+        "method": "road",
         "near": false
       },
       "can-tho": {
-        "km": 1210.1,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1635.8,
+        "minutes": 1277,
+        "method": "road",
         "near": false
       },
       "hai-phong": {
-        "km": 4.4,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 2.6,
+        "minutes": 5,
+        "method": "road",
         "near": true
       },
       "hue": {
-        "km": 500.7,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 701.3,
+        "minutes": 562,
+        "method": "road",
         "near": false
       },
       "vung-tau": {
-        "km": 1172.5,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1615.7,
+        "minutes": 1240,
+        "method": "road",
         "near": false
       },
       "quy-nhon": {
-        "km": 835,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1114.1,
+        "minutes": 871,
+        "method": "road",
         "near": false
       },
       "buon-ma-thuot": {
-        "km": 925,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 1312.1,
+        "minutes": 1068,
+        "method": "road",
         "near": false
       },
       "sa-pa": {
-        "km": 334.7,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 417.2,
+        "minutes": 330,
+        "method": "road",
         "near": false
       },
       "ha-long": {
-        "km": 42.3,
-        "minutes": null,
-        "method": "straight_line",
+        "km": 54.9,
+        "minutes": 46,
+        "method": "road",
         "near": false
       }
     }
   },
-  "prices": [],
+  "prices": [
+    {
+      "distance": "5km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 259000,
+      "from": "2026-11-20",
+      "to": "2026-12-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 299000,
+      "from": "2026-12-11",
+      "to": "2027-01-07",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 359000,
+      "from": "2027-01-08",
+      "to": "2027-05-07",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 259000,
+      "from": "2026-11-20",
+      "to": "2026-12-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 299000,
+      "from": "2026-12-11",
+      "to": "2027-01-07",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 359000,
+      "from": "2027-01-08",
+      "to": "2027-05-07",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 399000,
+      "from": "2026-11-20",
+      "to": "2026-12-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 459000,
+      "from": "2026-12-11",
+      "to": "2027-01-07",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 499000,
+      "from": "2027-01-08",
+      "to": "2027-05-07",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Super Early Bird",
+      "kind": "super_early",
+      "audience": null,
+      "price": 399000,
+      "from": "2026-11-20",
+      "to": "2026-12-10",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Early Bird",
+      "kind": "early",
+      "audience": null,
+      "price": 459000,
+      "from": "2026-12-11",
+      "to": "2027-01-07",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "42km",
+      "tier": "Regular",
+      "kind": "regular",
+      "audience": null,
+      "price": 499000,
+      "from": "2027-01-08",
+      "to": "2027-05-07",
+      "inferred": [],
+      "site": "irace"
+    }
+  ],
   "currency": "VND",
   "registrationStatus": "open",
   "registrations": [
+    {
+      "site": "irace",
+      "url": "https://ticket.irace.vn/hai-phong-legacy-marathon-dau-chan-thanh-pho-cang-2027"
+    },
     {
       "site": "actiup",
       "url": "https://actiup.net/vi/event/hai-phong-legacy-marathon-dau-chan-thanh-pho-cang-2027"
@@ -120,12 +286,72 @@
   ],
   "links": [
     {
+      "url": "https://facebook.com/sharer/sharer.php",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://fb.com/irace.vn",
+      "kind": "facebook",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "http://online.gov.vn/Home/WebDetails/51414",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://docs.google.com/document/d/1QdbqFVkZO3S1RV4fiisQTCVIy3JM9QKE/edit",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
       "url": "https://drive.google.com/file/d/1nnx_M2N96mmk4BwqLu6EbHW0srIB_57M/view",
       "kind": "other",
       "foundOn": "actiup.net"
+    },
+    {
+      "url": "https://ifitness.vn/",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://ifitness.vn/collections/phu-kien-the-thao",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://instagram.com/irace.vn",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
+    },
+    {
+      "url": "https://youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+      "kind": "other",
+      "foundOn": "ticket.irace.vn"
     }
   ],
-  "participants": null,
+  "participants": {
+    "count": 11000,
+    "sourceUrl": "https://actiup.net/vi/event/hai-phong-legacy-marathon-dau-chan-thanh-pho-cang-2027",
+    "quote": "giải chạy sẽ thu hút 11,000 vận động viên.",
+    "confidence": "medium"
+  },
   "flags": [],
   "overrides": {},
   "sources": [
@@ -133,7 +359,7 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/hai-phong-legacy-marathon-dau-chan-thanh-pho-cang-2027",
-      "lastCheckedAt": "2026-11-23T21:01:04.456Z",
+      "lastCheckedAt": "2026-11-23T21:02:19.251Z",
       "lastChangedAt": "2026-11-23T21:01:04.456Z",
       "extracted": {
         "facts": {
@@ -145,6 +371,52 @@
           "registrationStatus": "open",
           "fromPrice": 99000
         },
+        "pages": [
+          {
+            "url": "https://actiup.net/vi/event/hai-phong-legacy-marathon-dau-chan-thanh-pho-cang-2027",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Giải chạy Hải Phòng - Dấu chân miền đất Cảng 2027",
+              "date": "2027-05-16",
+              "endDate": "2027-05-16",
+              "mainDate": "2027-05-16",
+              "distances": [],
+              "courses": [
+                {
+                  "distance": "21KM",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10KM",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "5KM",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 1,
+              "editionQuote": "Hai Phong Legacy Marathon 2026",
+              "mapsUrl": "https://drive.google.com/file/d/1nnx_M2N96mmk4BwqLu6EbHW0srIB_57M/view?usp=drive_link",
+              "venue": "Hải Phòng",
+              "city": "Hải Phòng",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 11000,
+                "quote": "giải chạy sẽ thu hút 11,000 vận động viên."
+              },
+              "prices": []
+            }
+          }
+        ],
         "links": [
           {
             "url": "https://drive.google.com/file/d/1nnx_M2N96mmk4BwqLu6EbHW0srIB_57M/view?usp=drive_link",
@@ -156,9 +428,383 @@
           "name": "Công ty Zaha Vietnam"
         }
       }
+    },
+    {
+      "site": "irace",
+      "role": "seller",
+      "url": "https://ticket.irace.vn/hai-phong-legacy-marathon-dau-chan-thanh-pho-cang-2027",
+      "lastCheckedAt": "2026-11-23T21:02:24.758Z",
+      "lastChangedAt": "2026-11-23T21:02:24.758Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Hai Phong Legacy Marathon - Dấu chân Thành phố cảng 2027",
+          "venue": "Hải phòng",
+          "prices": [
+            {
+              "distance": "5km",
+              "tier": "Super Early Bird",
+              "from": "20/11",
+              "to": "10/12",
+              "price": 259000
+            },
+            {
+              "distance": "5km",
+              "tier": "Early Bird",
+              "from": "11/12",
+              "to": "07/01",
+              "price": 299000
+            },
+            {
+              "distance": "5km",
+              "tier": "Regular",
+              "from": "08/01",
+              "to": "07/05",
+              "price": 359000
+            },
+            {
+              "distance": "10km",
+              "tier": "Super Early Bird",
+              "from": "20/11",
+              "to": "10/12",
+              "price": 259000
+            },
+            {
+              "distance": "10km",
+              "tier": "Early Bird",
+              "from": "11/12",
+              "to": "07/01",
+              "price": 299000
+            },
+            {
+              "distance": "10km",
+              "tier": "Regular",
+              "from": "08/01",
+              "to": "07/05",
+              "price": 359000
+            },
+            {
+              "distance": "21km",
+              "tier": "Super Early Bird",
+              "from": "20/11",
+              "to": "10/12",
+              "price": 399000
+            },
+            {
+              "distance": "21km",
+              "tier": "Early Bird",
+              "from": "11/12",
+              "to": "07/01",
+              "price": 459000
+            },
+            {
+              "distance": "21km",
+              "tier": "Regular",
+              "from": "08/01",
+              "to": "07/05",
+              "price": 499000
+            },
+            {
+              "distance": "42km",
+              "tier": "Super Early Bird",
+              "from": "20/11",
+              "to": "10/12",
+              "price": 399000
+            },
+            {
+              "distance": "42km",
+              "tier": "Early Bird",
+              "from": "11/12",
+              "to": "07/01",
+              "price": 459000
+            },
+            {
+              "distance": "42km",
+              "tier": "Regular",
+              "from": "08/01",
+              "to": "07/05",
+              "price": 499000
+            }
+          ]
+        },
+        "pages": [
+          {
+            "url": "https://ticket.irace.vn/hai-phong-legacy-marathon-dau-chan-thanh-pho-cang-2027",
+            "json": {
+              "pageKind": "sport",
+              "types": [
+                "road_run"
+              ],
+              "name": "Giải chạy Hai Phong Legacy Marathon - Dấu chân Thành phố cảng 2027",
+              "date": "2027-05-16",
+              "endDate": "2027-05-16",
+              "mainDate": "2027-05-16",
+              "distances": [
+                "5km",
+                "10km",
+                "21km",
+                "42km"
+              ],
+              "courses": [
+                {
+                  "distance": "5km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "10km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "21km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "42km",
+                  "type": "road_run",
+                  "elevationGain": 0
+                }
+              ],
+              "edition": 2027,
+              "editionQuote": "Giải chạy Hai Phong Legacy Marathon - Dấu chân Thành phố cảng 2027",
+              "mapsUrl": "",
+              "venue": "Hải phòng",
+              "city": "Hải phòng",
+              "organizer": "",
+              "currency": "VND",
+              "registrationStatus": "open",
+              "participants": {
+                "count": 0,
+                "quote": ""
+              },
+              "prices": [
+                {
+                  "distance": "5km",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "20/11",
+                  "to": "10/12",
+                  "price": 259000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "11/12",
+                  "to": "07/01",
+                  "price": 299000
+                },
+                {
+                  "distance": "5km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "08/01",
+                  "to": "07/05",
+                  "price": 359000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "20/11",
+                  "to": "10/12",
+                  "price": 259000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "11/12",
+                  "to": "07/01",
+                  "price": 299000
+                },
+                {
+                  "distance": "10km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "08/01",
+                  "to": "07/05",
+                  "price": 359000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "20/11",
+                  "to": "10/12",
+                  "price": 399000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "11/12",
+                  "to": "07/01",
+                  "price": 459000
+                },
+                {
+                  "distance": "21km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "08/01",
+                  "to": "07/05",
+                  "price": 499000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Super Early Bird",
+                  "audience": "",
+                  "from": "20/11",
+                  "to": "10/12",
+                  "price": 399000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Early Bird",
+                  "audience": "",
+                  "from": "11/12",
+                  "to": "07/01",
+                  "price": 459000
+                },
+                {
+                  "distance": "42km",
+                  "tier": "Regular",
+                  "audience": "",
+                  "from": "08/01",
+                  "to": "07/05",
+                  "price": 499000
+                }
+              ]
+            }
+          }
+        ],
+        "links": [
+          {
+            "url": "https://app.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "virtual race"
+          },
+          {
+            "url": "https://irace.vn/ban-ve/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ban ve su kien"
+          },
+          {
+            "url": "https://irace.vn/myfoto/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "tim hinh su kien"
+          },
+          {
+            "url": "https://irace.vn/doanh-nghiep/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "to chuc su kien"
+          },
+          {
+            "url": "https://irace.vn/affiliate/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kiem tien cung irace vn"
+          },
+          {
+            "url": "https://irace.vn/thiet-ke-huy-chuong/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huy chuong"
+          },
+          {
+            "url": "https://irace.vn/san-xuat-qua-tang-phu-kien-the-thao/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "quan ao phu kien"
+          },
+          {
+            "url": "https://irace.vn/about-us/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "ve irace"
+          },
+          {
+            "url": "https://irace.vn/bao-chi/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "bao chi viet"
+          },
+          {
+            "url": "https://irace.vn/hoi-dap/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "hoi dap"
+          },
+          {
+            "url": "https://irace.vn/thong-tin/huong-dan/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "huong dan su dung"
+          },
+          {
+            "url": "https://irace.vn/kien-thuc-tap-luyen/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "kien thuc chay bo"
+          },
+          {
+            "url": "https://tools.irace.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "cong cu tinh toan"
+          },
+          {
+            "url": "https://ifitness.vn/?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "shop the thao"
+          },
+          {
+            "url": "https://ifitness.vn/collections/gel-dien-giai-phuc-hoi-co?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "dinh duong"
+          },
+          {
+            "url": "https://ifitness.vn/collections/phu-kien-the-thao?utm_source=Ticket&utm_medium=Menu&utm_campaign=Menu",
+            "text": "phu kien"
+          },
+          {
+            "url": "https://www.facebook.com/sharer/sharer.php?u=https://ticket.irace.vn/hai-phong-legacy-marathon-dau-chan-thanh-pho-cang-2027",
+            "text": "chia se tren facebook"
+          },
+          {
+            "url": "https://docs.google.com/document/d/1QdbqFVkZO3S1RV4fiisQTCVIy3JM9QKE/edit?usp=sharing&ouid=112186841958023711427&rtpof=true&sd=true",
+            "text": "tai day"
+          },
+          {
+            "url": "http://online.gov.vn/Home/WebDetails/51414",
+            "text": ""
+          },
+          {
+            "url": "https://www.fb.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://www.instagram.com/irace.vn",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/feed/",
+            "text": ""
+          },
+          {
+            "url": "https://www.youtube.com/channel/UC6GLDKj2p99vl30YnNFVoDA",
+            "text": ""
+          },
+          {
+            "url": "https://play.google.com/store/apps/details?id=com.irace.app",
+            "text": ""
+          },
+          {
+            "url": "https://apps.apple.com/us/app/irace-virtual-run-events/id6764525517",
+            "text": ""
+          },
+          {
+            "url": "https://irace.vn/chinh-sach-bao-mat/",
+            "text": "chinh sach bao mat"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-thanh-toan/",
+            "text": "dieu khoan thanh toan"
+          },
+          {
+            "url": "https://irace.vn/dieu-khoan-su-dung/",
+            "text": "dieu khoan su dung"
+          },
+          {
+            "url": "https://irace.vn/tuyen-dung/",
+            "text": "tuyen dung"
+          },
+          {
+            "url": "https://irace.vn/lien-he/",
+            "text": "lien he"
+          }
+        ]
+      }
     }
   ],
-  "confidence": "single-sourced",
+  "confidence": "multi-sourced",
   "createdAt": "2026-11-23T21:01:27.267Z",
-  "updatedAt": "2026-11-23T21:01:27.267Z"
+  "updatedAt": "2026-11-23T21:03:07.543Z"
 }
