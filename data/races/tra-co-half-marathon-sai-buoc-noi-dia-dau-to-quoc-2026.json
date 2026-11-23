@@ -164,6 +164,17 @@
     },
     {
       "distance": "5km",
+      "tier": "Ngày Văn Hóa Việt Nam",
+      "kind": "other",
+      "audience": null,
+      "price": 399000,
+      "from": "2026-11-24",
+      "to": "2026-12-03",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "5km",
       "tier": "LATE Hoàng Hôn",
       "kind": "late",
       "audience": null,
@@ -208,6 +219,17 @@
     },
     {
       "distance": "10km",
+      "tier": "Ngày Văn Hóa Việt Nam",
+      "kind": "other",
+      "audience": null,
+      "price": 449000,
+      "from": "2026-11-24",
+      "to": "2026-12-03",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "10km",
       "tier": "LATE Hoàng Hôn",
       "kind": "late",
       "audience": null,
@@ -246,6 +268,17 @@
       "audience": null,
       "price": 699000,
       "from": "2026-11-13",
+      "to": "2026-12-03",
+      "inferred": [],
+      "site": "irace"
+    },
+    {
+      "distance": "21km",
+      "tier": "Ngày Văn Hóa Việt Nam",
+      "kind": "other",
+      "audience": null,
+      "price": 549000,
+      "from": "2026-11-24",
       "to": "2026-12-03",
       "inferred": [],
       "site": "irace"
@@ -330,7 +363,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/tra-co-half-marathon-sai-buoc-noi-dia-dau-to-quoc",
-      "lastCheckedAt": "2026-11-12T21:02:18.487Z",
+      "lastCheckedAt": "2026-11-23T21:01:19.687Z",
       "lastChangedAt": "2026-11-01T21:47:48.146Z",
       "extracted": {
         "facts": {
@@ -358,6 +391,13 @@
               "from": "13/11",
               "to": "03/12",
               "price": 499000
+            },
+            {
+              "distance": "5km",
+              "tier": "Ngày Văn Hóa Việt Nam",
+              "from": "24/11",
+              "to": "03/12",
+              "price": 399000
             },
             {
               "distance": "5km",
@@ -389,6 +429,13 @@
             },
             {
               "distance": "10km",
+              "tier": "Ngày Văn Hóa Việt Nam",
+              "from": "24/11",
+              "to": "03/12",
+              "price": 449000
+            },
+            {
+              "distance": "10km",
               "tier": "LATE Hoàng Hôn",
               "from": "04/12",
               "to": "12/12",
@@ -414,6 +461,13 @@
               "from": "13/11",
               "to": "03/12",
               "price": 699000
+            },
+            {
+              "distance": "21km",
+              "tier": "Ngày Văn Hóa Việt Nam",
+              "from": "24/11",
+              "to": "03/12",
+              "price": 549000
             },
             {
               "distance": "21km",
@@ -698,5 +752,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-01T21:51:13.044Z",
-  "updatedAt": "2026-11-12T21:02:58.333Z"
+  "updatedAt": "2026-11-23T21:01:27.267Z"
 }

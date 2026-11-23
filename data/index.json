@@ -1748,9 +1748,9 @@
     "slug": "vietnam-festrival-2027",
     "name": "Vietnam FesTRIval lần 5",
     "date": "2027-03-21",
-    "endDate": null,
-    "mainDate": null,
-    "lastModified": "2026-11-20T21:02:28.370Z",
+    "endDate": "2027-03-22",
+    "mainDate": "2027-03-21",
+    "lastModified": "2026-11-23T21:01:27.267Z",
     "file": "vietnam-festrival-2027.json",
     "seriesId": "vietnam-festrival",
     "sourceUrls": [
@@ -2030,6 +2030,21 @@
     "seriesId": "tet-run-mien-nam",
     "sourceUrls": [
       "https://actiup.net/vi/event/tet-run-mien-nam-2026"
+    ],
+    "linkUrls": []
+  },
+  {
+    "id": "4a2c84a6-cde5-4ae7-9df0-4579a1111d57",
+    "slug": "hai-phong-legacy-marathon-dau-chan-thanh-pho-cang-2027",
+    "name": "Giải chạy Hải Phòng - Dấu chân miền đất Cảng 2027",
+    "date": "2027-05-16",
+    "endDate": null,
+    "mainDate": null,
+    "lastModified": "2026-11-23T21:01:27.267Z",
+    "file": "hai-phong-legacy-marathon-dau-chan-thanh-pho-cang-2027.json",
+    "seriesId": null,
+    "sourceUrls": [
+      "https://actiup.net/vi/event/hai-phong-legacy-marathon-dau-chan-thanh-pho-cang-2027"
     ],
     "linkUrls": []
   },
@@ -5132,7 +5147,7 @@
     "date": "2026-12-19",
     "endDate": null,
     "mainDate": null,
-    "lastModified": "2026-11-12T21:02:58.333Z",
+    "lastModified": "2026-11-23T21:01:27.267Z",
     "file": "tra-co-half-marathon-sai-buoc-noi-dia-dau-to-quoc-2026.json",
     "seriesId": null,
     "sourceUrls": [

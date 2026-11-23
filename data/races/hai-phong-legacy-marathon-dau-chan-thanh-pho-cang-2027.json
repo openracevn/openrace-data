@@ -1,0 +1,164 @@
+{
+  "id": "4a2c84a6-cde5-4ae7-9df0-4579a1111d57",
+  "slug": "hai-phong-legacy-marathon-dau-chan-thanh-pho-cang-2027",
+  "name": "Giải chạy Hải Phòng - Dấu chân miền đất Cảng 2027",
+  "types": [
+    "other"
+  ],
+  "date": "2027-05-16",
+  "endDate": null,
+  "mainDate": null,
+  "seriesId": null,
+  "organizerId": "cong-ty-zaha-vietnam",
+  "organizer": "Công ty Zaha Vietnam",
+  "edition": null,
+  "courses": [],
+  "location": {
+    "venue": "Hải phòng",
+    "city": null
+  },
+  "geo": {
+    "lat": 20.8830967,
+    "lng": 106.6790381,
+    "source": "nominatim",
+    "precision": "province",
+    "current": {
+      "province": "31",
+      "ward": null
+    },
+    "legacy": null,
+    "access": "road",
+    "fromPlaces": {
+      "hcmc": {
+        "km": 1124.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-noi": {
+        "km": 87.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-nang": {
+        "km": 560.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "nha-trang": {
+        "km": 997.9,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "da-lat": {
+        "km": 1012,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "can-tho": {
+        "km": 1210.1,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "hai-phong": {
+        "km": 4.4,
+        "minutes": null,
+        "method": "straight_line",
+        "near": true
+      },
+      "hue": {
+        "km": 500.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "vung-tau": {
+        "km": 1172.5,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "quy-nhon": {
+        "km": 835,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "buon-ma-thuot": {
+        "km": 925,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "sa-pa": {
+        "km": 334.7,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      },
+      "ha-long": {
+        "km": 42.3,
+        "minutes": null,
+        "method": "straight_line",
+        "near": false
+      }
+    }
+  },
+  "prices": [],
+  "currency": "VND",
+  "registrationStatus": "open",
+  "registrations": [
+    {
+      "site": "actiup",
+      "url": "https://actiup.net/vi/event/hai-phong-legacy-marathon-dau-chan-thanh-pho-cang-2027"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://drive.google.com/file/d/1nnx_M2N96mmk4BwqLu6EbHW0srIB_57M/view",
+      "kind": "other",
+      "foundOn": "actiup.net"
+    }
+  ],
+  "participants": null,
+  "flags": [],
+  "overrides": {},
+  "sources": [
+    {
+      "site": "actiup",
+      "role": "seller",
+      "url": "https://actiup.net/vi/event/hai-phong-legacy-marathon-dau-chan-thanh-pho-cang-2027",
+      "lastCheckedAt": "2026-11-23T21:01:04.456Z",
+      "lastChangedAt": "2026-11-23T21:01:04.456Z",
+      "extracted": {
+        "facts": {
+          "name": "Giải chạy Hải Phòng - Dấu chân miền đất Cảng 2027",
+          "date": "2027-05-16",
+          "venue": "Hải phòng",
+          "organizer": "Công ty Zaha Vietnam",
+          "currency": "VND",
+          "registrationStatus": "open",
+          "fromPrice": 99000
+        },
+        "links": [
+          {
+            "url": "https://drive.google.com/file/d/1nnx_M2N96mmk4BwqLu6EbHW0srIB_57M/view?usp=drive_link",
+            "text": "lich trinh su kien xem tai day"
+          }
+        ],
+        "organizer": {
+          "id": "cong-ty-zaha-vietnam",
+          "name": "Công ty Zaha Vietnam"
+        }
+      }
+    }
+  ],
+  "confidence": "single-sourced",
+  "createdAt": "2026-11-23T21:01:27.267Z",
+  "updatedAt": "2026-11-23T21:01:27.267Z"
+}
