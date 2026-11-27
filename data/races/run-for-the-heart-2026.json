@@ -26,13 +26,13 @@
       "label": "5km",
       "meters": 5000,
       "type": "road_run",
-      "elevationGain": 100
+      "elevationGain": null
     },
     {
       "label": "10km",
       "meters": 10000,
       "type": "road_run",
-      "elevationGain": 150
+      "elevationGain": null
     }
   ],
   "location": {
@@ -335,7 +335,7 @@
   "participants": {
     "count": 2000,
     "sourceUrl": "https://actiup.net/vi/event/run-for-the-heart-2026",
-    "quote": "gần 2.000 trái tim nhỏ bé.",
+    "quote": "gần 2.000 trái tim nhỏ bé",
     "confidence": "medium"
   },
   "flags": [],
@@ -358,16 +358,16 @@
       "site": "actiup",
       "role": "seller",
       "url": "https://actiup.net/vi/event/run-for-the-heart-2026",
-      "lastCheckedAt": "2026-11-11T21:02:32.231Z",
+      "lastCheckedAt": "2026-11-27T21:01:55.494Z",
       "lastChangedAt": "2026-09-23T18:30:43.016Z",
       "extracted": {
         "facts": {
-          "name": "Giải chạy Run For The Heart - Chạy vì trái tim 2026",
+          "name": "Run For The Heart - Chạy vì trái tim 2026",
           "date": "2026-12-06",
           "venue": "Công viên Yên Sở, phường Yên Sở, TP. Hà Nội",
           "organizer": "Gamuda Land Việt Nam phối hợp cùng Nhịp Tim Việt Nam",
           "currency": "VND",
-          "registrationStatus": "open",
+          "registrationStatus": "closed",
           "fromPrice": 219000
         },
         "pages": [
@@ -378,28 +378,34 @@
               "types": [
                 "road_run"
               ],
-              "name": "Giải chạy Run For The Heart - Chạy vì trái tim 2026",
+              "name": "Run For The Heart - Chạy vì trái tim 2026",
               "date": "2026-11-21",
               "endDate": "2026-11-22",
               "mainDate": "2026-11-21",
               "distances": [
                 "5km",
-                "10km"
+                "10km",
+                "21km"
               ],
               "courses": [
                 {
                   "distance": "5km",
                   "type": "road_run",
-                  "elevationGain": 100
+                  "elevationGain": 0
                 },
                 {
                   "distance": "10km",
                   "type": "road_run",
-                  "elevationGain": 150
+                  "elevationGain": 0
+                },
+                {
+                  "distance": "21km",
+                  "type": "road_run",
+                  "elevationGain": 0
                 }
               ],
               "edition": 2026,
-              "editionQuote": "Giải chạy Run For The Heart - Chạy vì trái tim 2026",
+              "editionQuote": "Năm 2026",
               "mapsUrl": "https://drive.google.com/file/d/1as7sB7Azzz8NLPLDxijX8h-Memw1aZi6/view?usp=drive_link",
               "venue": "Hà Nội",
               "city": "Hà Nội",
@@ -408,7 +414,7 @@
               "registrationStatus": "open",
               "participants": {
                 "count": 2000,
-                "quote": "gần 2.000 trái tim nhỏ bé."
+                "quote": "gần 2.000 trái tim nhỏ bé"
               },
               "prices": []
             }
@@ -796,5 +802,5 @@
   ],
   "confidence": "multi-sourced",
   "createdAt": "2026-09-23T18:32:39.566Z",
-  "updatedAt": "2026-11-26T21:02:26.423Z"
+  "updatedAt": "2026-11-27T21:02:14.108Z"
 }
