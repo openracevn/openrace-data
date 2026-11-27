@@ -128,7 +128,7 @@
       "audience": null,
       "price": 60000,
       "from": "2026-10-28",
-      "to": "2026-11-26",
+      "to": "2026-11-29",
       "inferred": [],
       "site": "irace"
     }
@@ -206,7 +206,7 @@
       "site": "irace",
       "role": "seller",
       "url": "https://ticket.irace.vn/carlympic-family-run-2026",
-      "lastCheckedAt": "2026-11-14T21:02:07.109Z",
+      "lastCheckedAt": "2026-11-27T21:01:16.920Z",
       "lastChangedAt": "2026-11-14T21:02:07.109Z",
       "extracted": {
         "facts": {
@@ -218,7 +218,7 @@
               "distance": "3km",
               "tier": "Giai đoạn duy nhất",
               "from": "28/10",
-              "to": "26/11",
+              "to": "29/11",
               "price": 60000
             }
           ]
@@ -401,5 +401,5 @@
   ],
   "confidence": "single-sourced",
   "createdAt": "2026-11-14T21:02:30.943Z",
-  "updatedAt": "2026-11-14T21:02:30.943Z"
+  "updatedAt": "2026-11-27T21:01:23.528Z"
 }
